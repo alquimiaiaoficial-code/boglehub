@@ -41,6 +41,9 @@ export default function AnalyzerPage() {
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-8 space-y-6">
+      <div className="rounded-lg bg-amber-50 border border-amber-200 px-4 py-2 text-sm text-amber-900">
+        ⚠️ Información educativa, no asesoramiento financiero. Tus datos viven en tu navegador y no se almacenan.
+      </div>
       <header>
         <h1 className="text-3xl font-bold">Analizador de cartera</h1>
         <p className="mt-2 text-zinc-600">Introduce tus posiciones y la IA te da un análisis en español.</p>

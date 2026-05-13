@@ -34,10 +34,16 @@ export async function POST(req: NextRequest) {
       })
     }
 
+    const warnings: string[] = []
+
     const positionSummary = body.positions.map(p => {
-      const value = p.shares * (pricesResult.value[p.ticker.toUpperCase()] ?? 0)
+      const ticker = p.ticker.toUpperCase()
+      if (pricesResult.value[ticker] == null) {
+        warnings.push(`No se pudo obtener precio para ${ticker}`)
+      }
+      const value = p.shares * (pricesResult.value[ticker] ?? 0)
       return {
-        ticker: p.ticker.toUpperCase(),
+        ticker,
         valueEUR: value,
         weight: allocation.totalValueEUR > 0 ? value / allocation.totalValueEUR : 0,
       }
@@ -52,7 +58,7 @@ export async function POST(req: NextRequest) {
         allocation,
         fire,
         aiNarrative,
-        warnings: [],
+        warnings,
       },
     })
   } catch (err) {

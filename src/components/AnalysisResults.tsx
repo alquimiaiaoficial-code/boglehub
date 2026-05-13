@@ -7,6 +7,8 @@ import { AllocationPie } from '@/components/charts/AllocationPie'
 import { RegionBar } from '@/components/charts/RegionBar'
 import { SectorBar } from '@/components/charts/SectorBar'
 import { formatEUR, formatPct, cn } from '@/lib/utils'
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 
 type Tab = 'overview' | 'geo' | 'sector' | 'ai'
 
@@ -54,8 +56,8 @@ export function AnalysisResults({ analysis }: { analysis: Analysis }) {
       {tab === 'sector' && <SectorBar breakdown={analysis.allocation} />}
 
       {tab === 'ai' && (
-        <div className="prose prose-sm max-w-none">
-          <pre className="whitespace-pre-wrap font-sans text-sm leading-relaxed text-zinc-800">{analysis.aiNarrative}</pre>
+        <div className="prose prose-sm max-w-none prose-headings:text-zinc-900 prose-strong:text-zinc-900">
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{analysis.aiNarrative}</ReactMarkdown>
         </div>
       )}
 

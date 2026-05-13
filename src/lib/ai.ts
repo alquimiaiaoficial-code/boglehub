@@ -1,8 +1,11 @@
 import Groq from 'groq-sdk'
 import { AllocationBreakdown, FireProjection, Result } from '@/types/analysis'
 
-const groq = new Groq({ apiKey: process.env.GROQ_API_KEY })
 const MODEL = 'llama-3.3-70b-versatile'
+
+function getGroqClient() {
+  return new Groq({ apiKey: process.env.GROQ_API_KEY })
+}
 
 const SYSTEM_PROMPT = `Eres un asesor educativo (NO asesor financiero) experto en inversión pasiva e indexación. Tu trabajo es analizar la cartera de un inversor Boglehead hispano y darle insights accionables en español de España, claros y honestos.
 
@@ -23,9 +26,12 @@ interface AnalyzeInput {
 }
 
 export async function generateAiNarrative(input: AnalyzeInput): Promise<Result<string>> {
+  if (!process.env.GROQ_API_KEY) {
+    return { ok: false, error: new Error('Falta configuración del servidor (GROQ_API_KEY)') }
+  }
   try {
     const payload = JSON.stringify(input, null, 2)
-    const completion = await groq.chat.completions.create({
+    const completion = await getGroqClient().chat.completions.create({
       model: MODEL,
       messages: [
         { role: 'system', content: SYSTEM_PROMPT },

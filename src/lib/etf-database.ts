@@ -1,6 +1,8 @@
 import { EtfMetadata, EtfMetadataSchema } from '@/types/etf'
 import rawData from '@/data/etfs.json'
 
+// Note: Some ETFs share ISINs (e.g., SXR8/CSPX, EUNL/IWDA) because they are the same UCITS fund
+// listed on different exchanges. ISIN is therefore NOT a unique key — use ticker.
 const ETF_DB: EtfMetadata[] = (rawData as unknown[]).map(item => EtfMetadataSchema.parse(item))
 const ETF_BY_TICKER = new Map(ETF_DB.map(etf => [etf.ticker.toUpperCase(), etf]))
 
