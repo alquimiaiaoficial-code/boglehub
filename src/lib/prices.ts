@@ -1,4 +1,7 @@
+import YahooFinance from 'yahoo-finance2'
 import { Result } from '@/types/analysis'
+
+const yf = new YahooFinance()
 
 // Yahoo Finance suffix map for European ETF tickers
 const SUFFIX_MAP: Record<string, string> = {
@@ -8,7 +11,7 @@ const SUFFIX_MAP: Record<string, string> = {
   IUSA: '.L', EQDS: '.L', XDWD: '.DE', VWRL: '.L', LCUW: '.PA',
 }
 
-// Map ticker → currency it's quoted in on Yahoo
+// Currency each ticker is quoted in on Yahoo (GBp = pence sterling)
 const QUOTE_CURRENCY: Record<string, 'USD' | 'EUR' | 'GBp' | 'GBP'> = {
   VWCE: 'EUR', CSPX: 'USD', IWDA: 'USD', EIMI: 'USD', AGGH: 'USD',
   VEUR: 'EUR', VFEM: 'USD', IMEU: 'EUR', SEMB: 'USD', VAGF: 'EUR',
@@ -21,21 +24,16 @@ function toYahooSymbol(ticker: string): string {
   return `${ticker.toUpperCase()}${suffix}`
 }
 
-interface YahooQuoteResponse {
-  quoteResponse: { result: Array<{ symbol: string; regularMarketPrice?: number }> }
-}
-
 async function fetchFxRates(): Promise<{ USD: number; GBP: number }> {
   try {
-    const res = await fetch('https://query2.finance.yahoo.com/v7/finance/quote?symbols=EURUSD=X,EURGBP=X', {
-      headers: { 'User-Agent': 'Mozilla/5.0 BogleHub/1.0' },
-      next: { revalidate: 600 },
-    })
-    if (!res.ok) return { USD: 1.08, GBP: 0.85 } // sensible fallback
-    const data = await res.json() as { quoteResponse: { result: Array<{ symbol: string; regularMarketPrice?: number }> } }
-    const usdRate = data.quoteResponse?.result?.find(r => r.symbol === 'EURUSD=X')?.regularMarketPrice ?? 1.08
-    const gbpRate = data.quoteResponse?.result?.find(r => r.symbol === 'EURGBP=X')?.regularMarketPrice ?? 0.85
-    return { USD: usdRate, GBP: gbpRate }
+    const [usdResult, gbpResult] = await Promise.all([
+      yf.quote('EURUSD=X').catch(() => null),
+      yf.quote('EURGBP=X').catch(() => null),
+    ])
+    return {
+      USD: usdResult?.regularMarketPrice ?? 1.08,
+      GBP: gbpResult?.regularMarketPrice ?? 0.85,
+    }
   } catch {
     return { USD: 1.08, GBP: 0.85 }
   }
@@ -47,7 +45,7 @@ function convertToEur(price: number, ticker: string, fx: { USD: number; GBP: num
     case 'EUR': return price
     case 'USD': return price / fx.USD
     case 'GBP': return price / fx.GBP
-    case 'GBp': return (price / 100) / fx.GBP // GBp = pence
+    case 'GBp': return (price / 100) / fx.GBP
   }
 }
 
@@ -55,33 +53,26 @@ export async function fetchPrices(tickers: string[]): Promise<Result<Record<stri
   if (tickers.length === 0) return { ok: true, value: {} }
 
   try {
-    const symbols = tickers.map(toYahooSymbol).join(',')
-    const url = `https://query2.finance.yahoo.com/v7/finance/quote?symbols=${symbols}`
+    const symbols = tickers.map(toYahooSymbol)
 
-    const [res, fx] = await Promise.all([
-      fetch(url, {
-        headers: { 'User-Agent': 'Mozilla/5.0 BogleHub/1.0' },
-        next: { revalidate: 300 },
-      }),
+    const [quotes, fx] = await Promise.all([
+      yf.quote(symbols),
       fetchFxRates(),
     ])
 
-    if (!res.ok) {
-      return { ok: false, error: new Error(`Yahoo Finance returned ${res.status}`) }
-    }
-
-    const data = (await res.json()) as YahooQuoteResponse
+    const quotesArray = Array.isArray(quotes) ? quotes : [quotes]
     const priceMap: Record<string, number> = {}
 
-    for (const item of data.quoteResponse?.result ?? []) {
+    for (const item of quotesArray) {
       const baseTicker = item.symbol.split('.')[0]
-      if (item.regularMarketPrice != null) {
-        priceMap[baseTicker] = convertToEur(item.regularMarketPrice, baseTicker, fx)
+      const rawPrice = item.regularMarketPrice
+      if (rawPrice != null) {
+        priceMap[baseTicker] = convertToEur(rawPrice, baseTicker, fx)
       }
     }
 
     return { ok: true, value: priceMap }
   } catch (err) {
-    return { ok: false, error: err instanceof Error ? err : new Error('Unknown error') }
+    return { ok: false, error: err instanceof Error ? err : new Error('Price fetch failed') }
   }
 }

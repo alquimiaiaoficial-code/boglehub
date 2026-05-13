@@ -1,25 +1,18 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
+
+const mockQuote = vi.hoisted(() => vi.fn())
+
+vi.mock('yahoo-finance2', () => {
+  class MockYahooFinance {
+    quote = mockQuote
+  }
+  return { default: MockYahooFinance }
+})
+
 import { fetchPrices } from './prices'
 
-global.fetch = vi.fn() as unknown as typeof fetch
-
-const mockFetch = () => global.fetch as unknown as ReturnType<typeof vi.fn>
-
-// Helper: mock the FX rate response
-const fxMockResponse = {
-  ok: true,
-  json: async () => ({
-    quoteResponse: {
-      result: [
-        { symbol: 'EURUSD=X', regularMarketPrice: 1.10 },
-        { symbol: 'EURGBP=X', regularMarketPrice: 0.86 },
-      ],
-    },
-  }),
-}
-
 beforeEach(() => {
-  vi.resetAllMocks()
+  mockQuote.mockReset()
 })
 
 describe('fetchPrices', () => {
@@ -29,46 +22,36 @@ describe('fetchPrices', () => {
     if (result.ok) expect(result.value).toEqual({})
   })
 
-  it('returns EUR price unchanged for EUR-quoted ticker (VWCE)', async () => {
-    // fetchPrices runs Promise.all([priceFetch, fxFetch]) — both resolve in parallel
-    mockFetch()
-      .mockResolvedValueOnce({
-        ok: true,
-        json: async () => ({
-          quoteResponse: { result: [{ symbol: 'VWCE.DE', regularMarketPrice: 110.5 }] },
-        }),
-      })
-      .mockResolvedValueOnce(fxMockResponse)
+  it('returns price map for valid EUR ticker', async () => {
+    mockQuote.mockImplementation(async (sym: string | string[]) => {
+      if (Array.isArray(sym)) {
+        return [{ symbol: 'VWCE.DE', regularMarketPrice: 110.5 }]
+      }
+      if (sym === 'EURUSD=X') return { regularMarketPrice: 1.08 }
+      if (sym === 'EURGBP=X') return { regularMarketPrice: 0.85 }
+      return null
+    })
     const result = await fetchPrices(['VWCE'])
     expect(result.ok).toBe(true)
-    if (result.ok) expect(result.value.VWCE).toBeCloseTo(110.5) // EUR → no conversion
+    if (result.ok) expect(result.value.VWCE).toBeCloseTo(110.5)
   })
 
-  it('converts GBp-quoted ticker to EUR (VUSA)', async () => {
-    // VUSA is quoted in GBp (pence); with GBP/EUR rate of 0.86, 820 GBp = (8.20 GBP) / 0.86 ≈ 9.535 EUR
-    mockFetch()
-      .mockResolvedValueOnce({
-        ok: true,
-        json: async () => ({
-          quoteResponse: { result: [{ symbol: 'VUSA.L', regularMarketPrice: 820 }] },
-        }),
-      })
-      .mockResolvedValueOnce(fxMockResponse)
+  it('converts GBp prices to EUR', async () => {
+    mockQuote.mockImplementation(async (sym: string | string[]) => {
+      if (Array.isArray(sym)) {
+        return [{ symbol: 'VUSA.L', regularMarketPrice: 10000 }] // 100 GBP in pence
+      }
+      if (sym === 'EURUSD=X') return { regularMarketPrice: 1.08 }
+      if (sym === 'EURGBP=X') return { regularMarketPrice: 0.85 }
+      return null
+    })
     const result = await fetchPrices(['VUSA'])
     expect(result.ok).toBe(true)
-    if (result.ok) expect(result.value.VUSA).toBeCloseTo((820 / 100) / 0.86, 4)
+    if (result.ok) expect(result.value.VUSA).toBeCloseTo(100 / 0.85)
   })
 
-  it('returns error result on fetch failure', async () => {
-    mockFetch().mockRejectedValueOnce(new Error('Network'))
-    const result = await fetchPrices(['VWCE'])
-    expect(result.ok).toBe(false)
-  })
-
-  it('returns error on non-ok price response', async () => {
-    mockFetch()
-      .mockResolvedValueOnce({ ok: false, status: 503 })
-      .mockResolvedValueOnce(fxMockResponse)
+  it('returns error on fetch failure', async () => {
+    mockQuote.mockRejectedValueOnce(new Error('Network'))
     const result = await fetchPrices(['VWCE'])
     expect(result.ok).toBe(false)
   })
