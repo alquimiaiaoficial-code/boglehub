@@ -1,7 +1,8 @@
 'use client'
 
-import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Tooltip } from 'recharts'
+import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, CartesianGrid } from 'recharts'
 import { AllocationBreakdown } from '@/types/analysis'
+import { ChartTooltip } from './ChartTooltip'
 
 const LABEL_MAP: Record<string, string> = {
   US: 'EE. UU.',
@@ -22,13 +23,14 @@ export function RegionBar({ breakdown }: { breakdown: AllocationBreakdown }) {
     .sort((a, b) => b.value - a.value)
 
   return (
-    <div className="h-72 w-full">
+    <div className="h-80 w-full">
       <ResponsiveContainer>
-        <BarChart data={data} layout="vertical" margin={{ left: 80 }}>
-          <XAxis type="number" tickFormatter={(v) => `${v}%`} />
-          <YAxis type="category" dataKey="name" width={80} />
-          <Tooltip formatter={(v: any) => `${Number(v).toFixed(1)}%`} />
-          <Bar dataKey="value" fill="#0e8ee6" radius={[0, 4, 4, 0]} />
+        <BarChart data={data} layout="vertical" margin={{ left: 80, right: 20 }}>
+          <CartesianGrid strokeDasharray="2 4" stroke="#262626" horizontal={false} />
+          <XAxis type="number" tickFormatter={(v) => `${v}%`} tick={{ fill: '#71717a', fontSize: 11 }} axisLine={{ stroke: '#262626' }} tickLine={false} />
+          <YAxis type="category" dataKey="name" width={80} tick={{ fill: '#a1a1aa', fontSize: 12 }} axisLine={false} tickLine={false} />
+          <ChartTooltip />
+          <Bar dataKey="value" fill="#3b82f6" radius={[0, 6, 6, 0]} />
         </BarChart>
       </ResponsiveContainer>
     </div>

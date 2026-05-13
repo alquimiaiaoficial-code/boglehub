@@ -25,14 +25,14 @@ export function AnalysisResults({ analysis }: { analysis: Analysis }) {
   return (
     <Card>
       <CardTitle>Análisis de tu cartera</CardTitle>
-      <div className="mt-2 mb-6 flex gap-2 border-b border-zinc-200">
+      <div className="mt-2 mb-6 flex gap-2 border-b border-border">
         {tabs.map((t) => (
           <button
             key={t.id}
             onClick={() => setTab(t.id)}
             className={cn(
               'px-3 py-2 text-sm font-medium border-b-2 transition-colors',
-              tab === t.id ? 'border-brand-600 text-brand-700' : 'border-transparent text-zinc-500 hover:text-zinc-700'
+              tab === t.id ? 'border-brand-500 text-brand-400' : 'border-transparent text-fg-muted hover:text-fg'
             )}
           >
             {t.label}
@@ -56,13 +56,13 @@ export function AnalysisResults({ analysis }: { analysis: Analysis }) {
       {tab === 'sector' && <SectorBar breakdown={analysis.allocation} />}
 
       {tab === 'ai' && (
-        <div className="prose prose-sm max-w-none prose-headings:text-zinc-900 prose-strong:text-zinc-900">
+        <div className="prose prose-sm prose-invert max-w-none prose-headings:text-fg prose-strong:text-fg">
           <ReactMarkdown remarkPlugins={[remarkGfm]}>{analysis.aiNarrative}</ReactMarkdown>
         </div>
       )}
 
       {analysis.fire && (
-        <div className="mt-6 rounded-lg bg-brand-50 p-4 text-sm text-brand-900">
+        <div className="mt-6 rounded-lg bg-accent/10 border border-accent/30 p-4 text-sm text-accent">
           <strong>Proyección FIRE:</strong> con {formatEUR(analysis.fire.monthlyContribution)}/mes y un 7 % de rentabilidad,
           alcanzas {formatEUR(analysis.fire.targetAmount)} en{' '}
           {analysis.fire.yearsToFire === Infinity ? 'más de 50 años' : `${analysis.fire.yearsToFire} años`}.
@@ -74,9 +74,9 @@ export function AnalysisResults({ analysis }: { analysis: Analysis }) {
 
 function Stat({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-lg bg-zinc-50 p-3">
-      <div className="text-xs uppercase tracking-wide text-zinc-500">{label}</div>
-      <div className="mt-1 text-lg font-semibold text-zinc-900">{value}</div>
+    <div className="rounded-lg bg-surface-2 p-3">
+      <div className="text-xs uppercase tracking-wide text-fg-muted">{label}</div>
+      <div className="mt-1 text-lg font-semibold text-fg">{value}</div>
     </div>
   )
 }

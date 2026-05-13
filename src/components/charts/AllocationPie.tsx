@@ -1,9 +1,10 @@
 'use client'
 
-import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from 'recharts'
+import { PieChart, Pie, Cell, ResponsiveContainer, Legend } from 'recharts'
 import { AllocationBreakdown } from '@/types/analysis'
+import { ChartTooltip } from './ChartTooltip'
 
-const COLORS = ['#0e8ee6', '#36aaf5', '#7cc7fb', '#bae0fd', '#e0eefe', '#0259a0']
+const COLORS = ['#3b82f6', '#10b981', '#60a5fa', '#34d399', '#fbbf24', '#f87171']
 
 const LABEL_MAP: Record<string, string> = {
   EQUITY: 'Renta variable',
@@ -20,7 +21,7 @@ export function AllocationPie({ breakdown }: { breakdown: AllocationBreakdown })
     .map(([key, value]) => ({ name: LABEL_MAP[key] ?? key, value: value * 100 }))
 
   return (
-    <div className="h-72 w-full">
+    <div className="h-80 w-full">
       <ResponsiveContainer>
         <PieChart>
           <Pie
@@ -29,13 +30,19 @@ export function AllocationPie({ breakdown }: { breakdown: AllocationBreakdown })
             nameKey="name"
             cx="50%"
             cy="50%"
-            outerRadius={90}
-            label={(d: { value: number }) => `${d.value.toFixed(1)}%`}
+            innerRadius={50}
+            outerRadius={100}
+            paddingAngle={2}
+            stroke="#0a0a0a"
+            strokeWidth={2}
           >
             {data.map((_, i) => <Cell key={i} fill={COLORS[i % COLORS.length]} />)}
           </Pie>
-          <Tooltip formatter={(v: any) => `${Number(v).toFixed(1)}%`} />
-          <Legend />
+          <ChartTooltip />
+          <Legend
+            wrapperStyle={{ color: '#a1a1aa', fontSize: '12px' }}
+            iconType="circle"
+          />
         </PieChart>
       </ResponsiveContainer>
     </div>
