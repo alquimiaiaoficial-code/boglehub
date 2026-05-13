@@ -2,18 +2,20 @@ import { ButtonHTMLAttributes, forwardRef } from 'react'
 import { cn } from '@/lib/utils'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'ghost'
+  variant?: 'primary' | 'secondary' | 'ghost' | 'accent' | 'danger'
   size?: 'sm' | 'md' | 'lg'
   loading?: boolean
 }
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant = 'primary', size = 'md', loading, children, disabled, ...props }, ref) => {
-    const base = 'inline-flex items-center justify-center rounded-lg font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50'
+    const base = 'inline-flex items-center justify-center rounded-lg font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg disabled:pointer-events-none disabled:opacity-40'
     const variants = {
-      primary: 'bg-brand-600 text-white hover:bg-brand-700',
-      secondary: 'bg-white text-zinc-900 border border-zinc-200 hover:bg-zinc-50',
-      ghost: 'text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100',
+      primary: 'bg-brand-600 text-white hover:bg-brand-500 shadow-lg shadow-brand-600/20',
+      secondary: 'bg-surface-2 text-fg border border-border hover:border-border-strong hover:bg-surface-3',
+      ghost: 'text-fg-muted hover:text-fg hover:bg-surface',
+      accent: 'bg-accent text-bg font-semibold hover:bg-accent-hover shadow-lg shadow-accent/30',
+      danger: 'bg-danger-dim text-danger border border-danger/30 hover:bg-danger/20',
     }
     const sizes = {
       sm: 'h-8 px-3 text-sm gap-1.5',

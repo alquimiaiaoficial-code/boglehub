@@ -1,22 +1,51 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-brand-50: #f0f7ff;
-  --color-brand-100: #e0eefe;
-  --color-brand-200: #bae0fd;
-  --color-brand-300: #7cc7fb;
-  --color-brand-400: #36aaf5;
-  --color-brand-500: #0e8ee6;
-  --color-brand-600: #0070c4;
-  --color-brand-700: #0259a0;
-  --color-brand-800: #064a84;
-  --color-brand-900: #0b3e6e;
+  /* Dark base */
+  --color-bg: #0a0a0a;
+  --color-surface: #141414;
+  --color-surface-2: #1c1c1c;
+  --color-surface-3: #262626;
+  --color-border: #262626;
+  --color-border-strong: #3f3f46;
 
-  --font-sans: 'Inter', system-ui, sans-serif;
-  --font-serif: 'Source Serif Pro', Georgia, serif;
+  /* Text */
+  --color-fg: #fafafa;
+  --color-fg-muted: #a1a1aa;
+  --color-fg-subtle: #71717a;
+
+  /* Accents */
+  --color-accent: #10b981;
+  --color-accent-hover: #059669;
+  --color-accent-dim: rgba(16, 185, 129, 0.1);
+  --color-danger: #ef4444;
+  --color-danger-dim: rgba(239, 68, 68, 0.1);
+  --color-info: #3b82f6;
+  --color-warn: #f59e0b;
+  --color-warn-dim: rgba(245, 158, 11, 0.1);
+
+  /* Brand */
+  --color-brand-400: #60a5fa;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
+
+  /* Fonts */
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), 'Fira Code', monospace;
 }
 
 @layer base {
-  html { font-family: var(--font-sans); }
-  body { background: #fafafa; color: #18181b; }
+  * { border-color: var(--color-border); }
+  html {
+    background: var(--color-bg);
+    color: var(--color-fg);
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+  }
+  ::selection { background: rgba(16, 185, 129, 0.3); }
 }

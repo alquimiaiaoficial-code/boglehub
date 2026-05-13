@@ -1,20 +1,21 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const geist = Geist({ subsets: ['latin'], variable: '--font-geist-sans' })
+const geistMono = Geist_Mono({ subsets: ['latin'], variable: '--font-geist-mono' })
 
 export const metadata: Metadata = {
-  title: 'BogleHub — Tu cartera de fondos indexados optimizada con IA',
-  description: 'Analiza tu cartera de ETFs con IA. Asignación de activos, diversificación geográfica, costes y proyección FIRE. Gratis para Bogleheads hispanos.',
+  title: 'BogleHub — Análisis de cartera para inversores indexados',
+  description: 'Analiza tu cartera de ETFs con IA. Asignación, diversificación, costes y FIRE. Gratis para Bogleheads hispanos.',
   openGraph: { type: 'website', locale: 'es_ES' },
   robots: { index: true, follow: true },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es">
-      <body className={inter.className}>{children}</body>
+    <html lang="es" className={`${geist.variable} ${geistMono.variable}`}>
+      <body className="min-h-screen bg-bg text-fg antialiased">{children}</body>
     </html>
   )
 }
