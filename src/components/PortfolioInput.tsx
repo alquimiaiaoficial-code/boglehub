@@ -42,7 +42,7 @@ export function PortfolioInput() {
         <div className="relative sm:col-span-2">
           <Input placeholder="Ticker (ej. VWCE)" value={ticker} onChange={(e) => handleTickerChange(e.target.value)} />
           {suggestions.length > 0 && (
-            <ul className="absolute z-10 mt-1 w-full rounded-lg border border-zinc-200 bg-white shadow-lg">
+            <ul className="absolute z-10 mt-1 w-full rounded-lg border border-border bg-surface-2 shadow-lg">
               {suggestions.map((s) => {
                 const t = s.split(' — ')[0]
                 return (
@@ -50,7 +50,7 @@ export function PortfolioInput() {
                     <button
                       type="button"
                       onClick={() => { setTicker(t); setSuggestions([]) }}
-                      className="block w-full px-3 py-2 text-left text-sm hover:bg-zinc-50"
+                      className="block w-full px-3 py-2 text-left text-sm text-fg hover:bg-surface-3"
                     >
                       {s}
                     </button>

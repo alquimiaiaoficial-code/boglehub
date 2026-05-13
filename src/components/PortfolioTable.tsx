@@ -12,7 +12,7 @@ export function PortfolioTable() {
 
   if (positions.length === 0) {
     return (
-      <Card className="text-center text-zinc-500">
+      <Card className="text-center text-fg-muted">
         <p>Añade tu primera posición para empezar.</p>
       </Card>
     )
@@ -24,7 +24,7 @@ export function PortfolioTable() {
       <div className="mt-4 overflow-x-auto">
         <table className="w-full text-sm">
           <thead>
-            <tr className="border-b border-zinc-200 text-left text-zinc-500">
+            <tr className="border-b border-border text-left text-fg-muted">
               <th className="py-2">Ticker</th>
               <th className="py-2">Participaciones</th>
               <th className="py-2">Precio medio</th>
@@ -34,7 +34,7 @@ export function PortfolioTable() {
           </thead>
           <tbody>
             {positions.map((p) => (
-              <tr key={p.id} className="border-b border-zinc-100">
+              <tr key={p.id} className="border-b border-border">
                 <td className="py-3 font-medium">{p.ticker}</td>
                 <td className="py-3">{p.shares}</td>
                 <td className="py-3">{formatEUR(p.avgPrice)}</td>
