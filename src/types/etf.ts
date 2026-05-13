@@ -17,15 +17,18 @@ export const SectorSchema = z.enum([
 ])
 export type Sector = z.infer<typeof SectorSchema>
 
+export const CurrencySchema = z.enum(['EUR', 'USD', 'GBP'])
+export type Currency = z.infer<typeof CurrencySchema>
+
 export const EtfMetadataSchema = z.object({
   ticker: z.string(),
   isin: z.string().optional(),
   name: z.string(),
   ter: z.number().min(0).max(5),
   assetClass: AssetClassSchema,
-  regionAllocation: z.record(RegionSchema, z.number()),
-  sectorAllocation: z.record(SectorSchema, z.number()).optional(),
-  baseCurrency: z.enum(['EUR', 'USD', 'GBP']),
+  regionAllocation: z.record(RegionSchema, z.number().min(0).max(1)),
+  sectorAllocation: z.record(SectorSchema, z.number().min(0).max(1)).optional(),
+  baseCurrency: CurrencySchema,
   accumulating: z.boolean(),
 })
 

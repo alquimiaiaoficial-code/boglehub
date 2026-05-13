@@ -1,11 +1,12 @@
 import { z } from 'zod'
+import { CurrencySchema } from './etf'
 
 export const PositionSchema = z.object({
   id: z.string(),
   ticker: z.string().min(1).max(10),
   shares: z.number().positive(),
   avgPrice: z.number().nonnegative(),
-  currency: z.enum(['EUR', 'USD', 'GBP']),
+  currency: CurrencySchema,
   addedAt: z.string().datetime(),
 })
 
