@@ -12,7 +12,6 @@ export function Header() {
         <nav className="hidden md:flex items-center gap-6 text-sm text-fg-muted">
           <Link href="/" className="hover:text-fg transition-colors">Inicio</Link>
           <Link href="/analyzer" className="hover:text-fg transition-colors">Analizador</Link>
-          <Link href="https://github.com/alquimiaiaoficial-code/boglehub" target="_blank" rel="noopener" className="hover:text-fg transition-colors">GitHub</Link>
         </nav>
         <Link href="/analyzer">
           <Button size="sm" variant="accent">Empezar gratis</Button>

@@ -26,23 +26,21 @@ export function PortfolioInput() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     const sharesNum = parseFloat(shares)
-    const priceNum = parseFloat(avgPrice)
+    const priceNum = avgPrice.trim() === '' ? 0 : parseFloat(avgPrice)
     if (!ticker || isNaN(sharesNum) || sharesNum <= 0 || isNaN(priceNum) || priceNum < 0) return
     addPosition({ ticker, shares: sharesNum, avgPrice: priceNum, currency: 'EUR' })
-    setTicker('')
-    setShares('')
-    setAvgPrice('')
-    setSuggestions([])
+    setTicker(''); setShares(''); setAvgPrice(''); setSuggestions([])
   }
 
   return (
     <Card>
       <CardTitle>Añadir posición</CardTitle>
-      <form onSubmit={handleSubmit} className="grid grid-cols-1 sm:grid-cols-4 gap-3 mt-4">
-        <div className="relative sm:col-span-2">
-          <Input placeholder="Ticker (ej. VWCE)" value={ticker} onChange={(e) => handleTickerChange(e.target.value)} />
+      <form onSubmit={handleSubmit} className="space-y-3 mt-4">
+        <div className="relative">
+          <label className="block text-xs font-medium text-fg-muted mb-1.5">Ticker del ETF</label>
+          <Input placeholder="VWCE, CSPX, IWDA..." value={ticker} onChange={(e) => handleTickerChange(e.target.value)} />
           {suggestions.length > 0 && (
-            <ul className="absolute z-10 mt-1 w-full rounded-lg border border-border bg-surface-2 shadow-lg">
+            <ul className="absolute z-10 mt-1 w-full rounded-lg border border-border bg-surface-2 shadow-xl">
               {suggestions.map((s) => {
                 const t = s.split(' — ')[0]
                 return (
@@ -60,9 +58,25 @@ export function PortfolioInput() {
             </ul>
           )}
         </div>
-        <Input type="number" step="0.0001" placeholder="Participaciones" value={shares} onChange={(e) => setShares(e.target.value)} />
-        <Input type="number" step="0.01" placeholder="Precio medio €" value={avgPrice} onChange={(e) => setAvgPrice(e.target.value)} />
-        <Button type="submit" className="sm:col-span-4">Añadir</Button>
+
+        <div className="grid grid-cols-2 gap-3">
+          <div>
+            <label className="block text-xs font-medium text-fg-muted mb-1.5">Participaciones</label>
+            <Input type="number" step="0.0001" placeholder="100" value={shares} onChange={(e) => setShares(e.target.value)} />
+          </div>
+          <div>
+            <label className="block text-xs font-medium text-fg-muted mb-1.5">
+              Precio que pagaste <span className="text-fg-subtle font-normal">(opcional)</span>
+            </label>
+            <Input type="number" step="0.01" placeholder="0,00 €" value={avgPrice} onChange={(e) => setAvgPrice(e.target.value)} />
+          </div>
+        </div>
+
+        <p className="text-xs text-fg-subtle leading-relaxed">
+          El precio actual lo cogemos de Yahoo Finance automáticamente. Solo necesitas decirnos lo que pagaste si quieres ver ganancias/pérdidas. Si no, déjalo vacío.
+        </p>
+
+        <Button type="submit" className="w-full">Añadir posición</Button>
       </form>
     </Card>
   )

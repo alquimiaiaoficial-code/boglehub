@@ -18,7 +18,7 @@ export default function HomePage() {
           <div className="mx-auto max-w-5xl px-4 sm:px-6 py-20 sm:py-32 text-center">
             <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/50 backdrop-blur px-3 py-1 text-xs text-fg-muted mb-6">
               <Sparkles className="h-3 w-3 text-accent" />
-              <span>Análisis con IA · 100% gratis · Open source</span>
+              <span>Análisis con IA · 100% gratis · Privado</span>
             </div>
             <h1 className="text-5xl sm:text-7xl font-bold tracking-tight text-fg leading-[1.05]">
               Tu cartera de fondos indexados,<br/>
@@ -49,7 +49,7 @@ export default function HomePage() {
               { label: 'Hecho para', value: 'Bogleheads' },
               { label: 'Coste', value: '100% gratis' },
               { label: 'Datos', value: 'En tu navegador' },
-              { label: 'Código', value: 'Open source' },
+              { label: 'Privacidad', value: 'En tu navegador' },
             ].map((item) => (
               <div key={item.label}>
                 <div className="text-xs uppercase tracking-wide text-fg-subtle">{item.label}</div>
@@ -165,12 +165,11 @@ export default function HomePage() {
             </div>
             <div className="space-y-3">
               {[
-                { q: '¿Es de verdad gratis? ¿Cuál es el truco?', a: 'Sí, totalmente gratis. No vendemos tus datos (no los tenemos — viven en tu navegador). El proyecto es open source. En el futuro habrá funciones Pro opcionales, pero el análisis básico será siempre gratuito.' },
+                { q: '¿Es de verdad gratis? ¿Cuál es el truco?', a: 'Sí, totalmente gratis. No vendemos tus datos (no los tenemos — viven en tu navegador). Es un proyecto educativo personal hecho para la comunidad de inversores indexados hispanos. En el futuro habrá funciones Pro opcionales, pero el análisis básico será siempre gratuito.' },
                 { q: '¿Esto es asesoramiento financiero?', a: 'No. Es información educativa. BogleHub no recomienda comprar o vender activos específicos. Es una herramienta para que entiendas tu cartera, no para sustituir a un asesor regulado.' },
                 { q: '¿Qué brokers están soportados?', a: 'Manualmente puedes introducir cualquier ETF UCITS. Con detección automática por PDF: Trade Republic, DEGIRO, MyInvestor, ING. Más brokers se añaden a demanda.' },
                 { q: '¿Qué modelo de IA usáis?', a: 'Llama 3.3 70B Versatile a través de Groq. Es uno de los modelos open-weight más potentes del mundo, en infraestructura ultrarrápida. Coste para nosotros: ~14.400 análisis/día gratis.' },
                 { q: '¿Mis datos son privados?', a: 'Sí. Tus posiciones se guardan en localStorage de tu navegador, no en nuestros servidores. Solo viajan al servidor durante el análisis y se descartan inmediatamente.' },
-                { q: '¿Puedo contribuir al código?', a: 'Por supuesto. El repo está en GitHub. PRs, issues y forks son bienvenidos.' },
               ].map((item, i) => (
                 <details key={i} className="group rounded-xl border border-border bg-surface p-5">
                   <summary className="flex justify-between items-center cursor-pointer text-fg font-medium list-none">
