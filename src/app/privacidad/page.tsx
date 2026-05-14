@@ -17,7 +17,7 @@ export default function PrivacidadPage() {
 
           <h2>1. Responsable del tratamiento</h2>
           <p>El responsable del tratamiento de los datos es el titular de BogleHub (proyecto educativo personal).</p>
-          <p><strong>Contacto:</strong> contacto@boglehub.com</p>
+          <p><strong>Contacto:</strong> alquimiaia.oficial@gmail.com</p>
 
           <h2>2. Datos que tratamos</h2>
           <p>BogleHub está diseñado para minimizar al máximo la recogida de datos personales:</p>
@@ -53,7 +53,7 @@ export default function PrivacidadPage() {
 
           <h2>7. Tus derechos (RGPD)</h2>
           <p>Puedes ejercer en cualquier momento tus derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición. Al no almacenar datos en servidor, la mayoría de derechos se ejercen directamente desde tu navegador (borrando el <code>localStorage</code>).</p>
-          <p>Para consultas sobre privacidad: contacto@boglehub.com</p>
+          <p>Para consultas sobre privacidad: alquimiaia.oficial@gmail.com</p>
 
           <h2>8. Reclamaciones</h2>
           <p>Tienes derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" target="_blank" rel="noopener" className="text-brand-400 hover:text-brand-300">www.aepd.es</a>).</p>

@@ -20,7 +20,7 @@ export default function AvisoLegalPage() {
           <ul>
             <li><strong>Titular del proyecto:</strong> BogleHub (proyecto educativo personal, sin ánimo de lucro)</li>
             <li><strong>Naturaleza del servicio:</strong> Herramienta web gratuita de análisis de carteras de fondos indexados con fines educativos</li>
-            <li><strong>Contacto:</strong> contacto@boglehub.com (o el email que prefieras)</li>
+            <li><strong>Contacto:</strong> alquimiaia.oficial@gmail.com</li>
           </ul>
 
           <h2>2. Naturaleza del servicio</h2>
