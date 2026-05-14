@@ -39,6 +39,9 @@ export default function HomePage() {
               </Link>
             </div>
             <p className="mt-4 text-sm text-fg-subtle">Sin registro · Tus datos viven en tu navegador</p>
+            <p className="mt-2 text-sm text-fg-subtle">
+              O <Link href="/chat" className="text-brand-400 hover:text-brand-300 underline-offset-4 hover:underline">prueba el chat IA</Link> para hacer preguntas libres sobre inversión.
+            </p>
           </div>
         </section>
 
