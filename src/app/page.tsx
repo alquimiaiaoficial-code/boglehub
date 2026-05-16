@@ -5,6 +5,8 @@ import { Footer } from '@/components/Footer'
 import { Button } from '@/components/ui/Button'
 import { JsonLd } from '@/components/JsonLd'
 import { NewsletterSignup } from '@/components/NewsletterSignup'
+import { GlobeHero } from '@/components/globe/GlobeHero'
+import { Reveal } from '@/components/Reveal'
 import { ArrowRight, BarChart3, Globe2, PiggyBank, Sparkles, ShieldCheck, FileText, Check, X } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -36,7 +38,9 @@ export default function HomePage() {
           <div className="absolute inset-0 -z-10">
             <div className="absolute left-1/2 top-0 -translate-x-1/2 h-[600px] w-[1200px] rounded-full bg-gradient-to-b from-brand-600/20 via-accent/10 to-transparent blur-3xl" />
           </div>
-          <div className="mx-auto max-w-5xl px-4 sm:px-6 py-20 sm:py-32 text-center">
+          {/* 3D globe — lazy-loaded, decorative */}
+          <GlobeHero />
+          <Reveal className="mx-auto max-w-5xl px-4 sm:px-6 py-20 sm:py-32 text-center">
             <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/50 backdrop-blur px-3 py-1 text-xs text-fg-muted mb-6">
               <Sparkles className="h-3 w-3 text-accent" />
               <span>Análisis con IA · 100% gratis · Privado</span>
@@ -63,7 +67,7 @@ export default function HomePage() {
             <p className="mt-2 text-sm text-fg-subtle">
               O <Link href="/chat" className="text-brand-400 hover:text-brand-300 underline-offset-4 hover:underline">prueba el chat IA</Link> para hacer preguntas libres sobre inversión.
             </p>
-          </div>
+          </Reveal>
         </section>
 
         {/* TRUST STRIP */}
@@ -85,6 +89,7 @@ export default function HomePage() {
 
         {/* HOW IT WORKS */}
         <section id="como-funciona" className="mx-auto max-w-5xl px-4 sm:px-6 py-24">
+          <Reveal>
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-fg">Tres pasos. Cero fricción.</h2>
             <p className="mt-3 text-fg-muted">De extracto a insight en menos de un minuto.</p>
@@ -95,18 +100,19 @@ export default function HomePage() {
               { num: '02', title: 'La IA analiza', desc: 'Llama 3.3 70B examina tu asignación, diversificación geográfica, sectorial, divisas y costes. Compara con benchmarks Boglehead.' },
               { num: '03', title: 'Recibe insights', desc: 'Gráficos interactivos, métricas clave, narrativa educativa en español y proyección FIRE personalizada. Todo en una pantalla.' },
             ].map((step) => (
-              <div key={step.num} className="rounded-2xl border border-border bg-surface p-6">
+              <div key={step.num} className="rounded-2xl border border-border bg-surface p-6 transition-all hover:-translate-y-1 hover:border-border-strong">
                 <div className="text-3xl font-bold font-mono text-brand-500/80 mb-3">{step.num}</div>
                 <h3 className="text-lg font-semibold text-fg mb-2">{step.title}</h3>
                 <p className="text-sm text-fg-muted leading-relaxed">{step.desc}</p>
               </div>
             ))}
           </div>
+          </Reveal>
         </section>
 
         {/* FEATURES GRID */}
         <section className="bg-surface/30 border-y border-border">
-          <div className="mx-auto max-w-6xl px-4 sm:px-6 py-24">
+          <Reveal className="mx-auto max-w-6xl px-4 sm:px-6 py-24">
             <div className="text-center mb-16">
               <h2 className="text-3xl sm:text-4xl font-bold text-fg">Todo lo que un Boglehead necesita.</h2>
               <p className="mt-3 text-fg-muted">Funciones que las robo-advisors no te dan porque su modelo es esconder, no educar.</p>
@@ -120,7 +126,7 @@ export default function HomePage() {
                 { icon: ShieldCheck, title: 'Privado por diseño', desc: 'Tus posiciones viven en tu navegador, nunca en nuestros servidores. GDPR-friendly.' },
                 { icon: FileText, title: 'Multi-broker', desc: 'Trade Republic, DEGIRO, MyInvestor, ING. Sube el PDF y detectamos las posiciones automáticamente.' },
               ].map(({ icon: Icon, title, desc }) => (
-                <div key={title} className="rounded-2xl border border-border bg-surface p-6 hover:border-border-strong transition-colors">
+                <div key={title} className="rounded-2xl border border-border bg-surface p-6 transition-all hover:-translate-y-1 hover:border-border-strong">
                   <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-brand-500/10 text-brand-400 mb-4">
                     <Icon className="h-5 w-5" />
                   </div>
@@ -129,11 +135,12 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
-          </div>
+          </Reveal>
         </section>
 
         {/* COMPARISON */}
         <section className="mx-auto max-w-5xl px-4 sm:px-6 py-24">
+          <Reveal>
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-fg">¿Qué cambia con BogleHub?</h2>
             <p className="mt-3 text-fg-muted">Comparativa honesta con las alternativas habituales.</p>
@@ -179,11 +186,12 @@ export default function HomePage() {
               </tbody>
             </table>
           </div>
+          </Reveal>
         </section>
 
         {/* FAQ */}
         <section className="bg-surface/30 border-y border-border">
-          <div className="mx-auto max-w-3xl px-4 sm:px-6 py-24">
+          <Reveal className="mx-auto max-w-3xl px-4 sm:px-6 py-24">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-bold text-fg">Preguntas frecuentes</h2>
             </div>
@@ -204,12 +212,12 @@ export default function HomePage() {
                 </details>
               ))}
             </div>
-          </div>
+          </Reveal>
         </section>
 
         {/* NEWSLETTER */}
         <section className="mx-auto max-w-3xl px-4 sm:px-6 py-20">
-          <div className="flex flex-col items-center text-center">
+          <Reveal className="flex flex-col items-center text-center">
             <h2 className="text-2xl sm:text-3xl font-bold text-fg tracking-tight">
               Aprende a invertir mejor, cada quince días.
             </h2>
@@ -220,21 +228,23 @@ export default function HomePage() {
             <div className="mt-6">
               <NewsletterSignup variant="inline" />
             </div>
-          </div>
+          </Reveal>
         </section>
 
         {/* FINAL CTA */}
         <section className="mx-auto max-w-3xl px-4 sm:px-6 py-24 text-center">
-          <h2 className="text-3xl sm:text-5xl font-bold text-fg tracking-tight">
-            Analiza tu cartera ahora.
-          </h2>
-          <p className="mt-4 text-lg text-fg-muted">Sin registro. En 30 segundos.</p>
-          <Link href="/analyzer" className="mt-8 inline-block">
-            <Button variant="accent" size="lg">
-              Empezar gratis
-              <ArrowRight className="h-4 w-4" />
-            </Button>
-          </Link>
+          <Reveal>
+            <h2 className="text-3xl sm:text-5xl font-bold text-fg tracking-tight">
+              Analiza tu cartera ahora.
+            </h2>
+            <p className="mt-4 text-lg text-fg-muted">Sin registro. En 30 segundos.</p>
+            <Link href="/analyzer" className="mt-8 inline-block">
+              <Button variant="accent" size="lg">
+                Empezar gratis
+                <ArrowRight className="h-4 w-4" />
+              </Button>
+            </Link>
+          </Reveal>
         </section>
       </main>
       <Footer />
