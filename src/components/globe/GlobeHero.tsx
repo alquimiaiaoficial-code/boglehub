@@ -12,10 +12,10 @@ const Globe3D = dynamic(() => import('./Globe3D'), {
 export function GlobeHero() {
   return (
     <div
-      className="pointer-events-none absolute inset-0 -z-10 flex items-center justify-center"
+      className="pointer-events-none absolute inset-0 z-0 flex items-center justify-center"
       aria-hidden="true"
     >
-      <div className="h-[560px] w-[560px] max-w-[90vw] opacity-60 sm:h-[680px] sm:w-[680px]">
+      <div className="h-[560px] w-[560px] max-w-[95vw] opacity-80 sm:h-[720px] sm:w-[720px]">
         <Globe3D />
       </div>
     </div>

@@ -33,14 +33,14 @@ export default function HomePage() {
       <Header />
       <main className="bg-bg">
         {/* HERO */}
-        <section className="relative overflow-hidden">
+        <section className="relative overflow-hidden isolate">
           {/* gradient backdrop */}
-          <div className="absolute inset-0 -z-10">
+          <div className="absolute inset-0 z-0">
             <div className="absolute left-1/2 top-0 -translate-x-1/2 h-[600px] w-[1200px] rounded-full bg-gradient-to-b from-brand-600/20 via-accent/10 to-transparent blur-3xl" />
           </div>
           {/* 3D globe — lazy-loaded, decorative */}
           <GlobeHero />
-          <Reveal className="mx-auto max-w-5xl px-4 sm:px-6 py-20 sm:py-32 text-center">
+          <Reveal className="relative z-10 mx-auto max-w-5xl px-4 sm:px-6 py-20 sm:py-32 text-center">
             <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/50 backdrop-blur px-3 py-1 text-xs text-fg-muted mb-6">
               <Sparkles className="h-3 w-3 text-accent" />
               <span>Análisis con IA · 100% gratis · Privado</span>
