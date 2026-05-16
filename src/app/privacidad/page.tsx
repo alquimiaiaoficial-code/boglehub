@@ -2,8 +2,11 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 
 export const metadata = {
-  title: 'Política de Privacidad — BogleHub',
+  title: 'Política de Privacidad',
   robots: { index: true, follow: false },
+  openGraph: {
+    images: [`/api/og?title=${encodeURIComponent('Política de Privacidad')}&subtitle=${encodeURIComponent('BogleHub')}`],
+  },
 }
 
 export default function PrivacidadPage() {

@@ -1,0 +1,240 @@
+import type { Metadata } from 'next'
+import Link from 'next/link'
+import { notFound } from 'next/navigation'
+import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
+import { Card, CardTitle } from '@/components/ui/Card'
+import { getEtfByTicker, getAllEtfs } from '@/lib/etf-database'
+import { formatPct } from '@/lib/utils'
+import type { EtfMetadata } from '@/types/etf'
+
+const ASSET_CLASS_LABEL: Record<string, string> = {
+  EQUITY: 'Renta variable',
+  BOND: 'Renta fija',
+  COMMODITY: 'Materias primas',
+  REIT: 'Inmobiliario',
+  CASH: 'Liquidez',
+  MIXED: 'Mixto',
+}
+
+const REGION_LABEL: Record<string, string> = {
+  US: 'Estados Unidos',
+  EUROPE: 'Europa',
+  EM: 'Mercados emergentes',
+  JAPAN: 'Japón',
+  GLOBAL: 'Global',
+  UK: 'Reino Unido',
+  PACIFIC_EX_JAPAN: 'Pacífico (ex-Japón)',
+  CHINA: 'China',
+  OTHER: 'Otros',
+}
+
+const SECTOR_LABEL: Record<string, string> = {
+  TECHNOLOGY: 'Tecnología',
+  FINANCIAL: 'Financiero',
+  HEALTHCARE: 'Salud',
+  CONSUMER_DISC: 'Consumo discrecional',
+  CONSUMER_STAPLES: 'Consumo básico',
+  INDUSTRIAL: 'Industrial',
+  ENERGY: 'Energía',
+  UTILITIES: 'Utilities',
+  MATERIALS: 'Materiales',
+  COMMUNICATION: 'Comunicación',
+  REAL_ESTATE: 'Inmobiliario',
+  DIVERSIFIED: 'Diversificado',
+}
+
+export function generateStaticParams() {
+  return getAllEtfs().map((etf) => ({ ticker: etf.ticker.toLowerCase() }))
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ ticker: string }>
+}): Promise<Metadata> {
+  const { ticker } = await params
+  const etf = getEtfByTicker(ticker)
+  if (!etf) {
+    return { title: 'ETF no encontrado' }
+  }
+  const title = `${etf.name} (${etf.ticker})`
+  const description = `Análisis de ${etf.name}: TER ${formatPct(etf.ter / 100, 2)}, ${ASSET_CLASS_LABEL[etf.assetClass] ?? etf.assetClass}, distribución geográfica y sectorial. Datos para inversores indexados.`
+  return {
+    title,
+    description,
+    openGraph: {
+      title: `${title} | BogleHub`,
+      description,
+      locale: 'es_ES',
+      images: [
+        `/api/og?title=${encodeURIComponent(etf.ticker)}&subtitle=${encodeURIComponent(etf.name)}`,
+      ],
+    },
+  }
+}
+
+function AllocationBars({
+  data,
+  labelMap,
+}: {
+  data: Record<string, number>
+  labelMap: Record<string, string>
+}) {
+  const entries = Object.entries(data)
+    .filter(([, v]) => v > 0)
+    .sort((a, b) => b[1] - a[1])
+
+  if (entries.length === 0) {
+    return <p className="text-sm text-fg-subtle">Datos no disponibles para este ETF.</p>
+  }
+
+  return (
+    <div className="space-y-3">
+      {entries.map(([key, value]) => (
+        <div key={key}>
+          <div className="flex justify-between text-sm mb-1">
+            <span className="text-fg">{labelMap[key] ?? key}</span>
+            <span className="text-fg-muted font-mono">{formatPct(value, 1)}</span>
+          </div>
+          <div className="h-2 rounded-full bg-surface-2 overflow-hidden">
+            <div
+              className="h-full rounded-full bg-gradient-to-r from-brand-500 to-accent"
+              style={{ width: `${Math.min(100, value * 100)}%` }}
+            />
+          </div>
+        </div>
+      ))}
+    </div>
+  )
+}
+
+function Stat({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="rounded-lg bg-surface-2 p-3">
+      <div className="text-xs uppercase tracking-wide text-fg-muted">{label}</div>
+      <div className="mt-1 text-lg font-semibold text-fg">{value}</div>
+    </div>
+  )
+}
+
+export default async function EtfPage({ params }: { params: Promise<{ ticker: string }> }) {
+  const { ticker } = await params
+  const etf = getEtfByTicker(ticker)
+
+  if (!etf) {
+    notFound()
+  }
+
+  const similar: EtfMetadata[] = getAllEtfs()
+    .filter((e) => e.assetClass === etf.assetClass && e.ticker !== etf.ticker)
+    .slice(0, 3)
+
+  return (
+    <>
+      <Header />
+      <main className="bg-bg min-h-screen">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 py-10">
+          {/* Breadcrumb */}
+          <nav className="text-sm text-fg-subtle mb-6">
+            <Link href="/" className="hover:text-fg transition-colors">
+              Inicio
+            </Link>
+            <span className="mx-2">/</span>
+            <span className="text-fg-muted">ETF</span>
+            <span className="mx-2">/</span>
+            <span className="text-fg">{etf.ticker}</span>
+          </nav>
+
+          {/* Header */}
+          <header className="mb-8">
+            <div className="flex items-center gap-3 mb-2">
+              <span className="font-mono text-2xl font-bold text-brand-400">{etf.ticker}</span>
+              <span className="rounded-full bg-brand-500/10 px-2.5 py-0.5 text-xs text-brand-400">
+                {ASSET_CLASS_LABEL[etf.assetClass] ?? etf.assetClass}
+              </span>
+            </div>
+            <h1 className="text-2xl sm:text-3xl font-bold text-fg tracking-tight">{etf.name}</h1>
+            {etf.isin && (
+              <p className="mt-1 text-sm text-fg-subtle font-mono">ISIN: {etf.isin}</p>
+            )}
+          </header>
+
+          {/* Key stats */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+            <Stat label="TER anual" value={formatPct(etf.ter / 100, 2)} />
+            <Stat label="Clase de activo" value={ASSET_CLASS_LABEL[etf.assetClass] ?? etf.assetClass} />
+            <Stat label="Divisa base" value={etf.baseCurrency} />
+            <Stat
+              label="Reparto"
+              value={etf.accumulating ? 'Acumulación' : 'Distribución'}
+            />
+          </div>
+
+          {/* Region allocation */}
+          <Card className="mb-6">
+            <CardTitle className="mb-4">Distribución geográfica</CardTitle>
+            <AllocationBars data={etf.regionAllocation} labelMap={REGION_LABEL} />
+          </Card>
+
+          {/* Sector allocation */}
+          {etf.sectorAllocation && (
+            <Card className="mb-6">
+              <CardTitle className="mb-4">Distribución sectorial</CardTitle>
+              <AllocationBars data={etf.sectorAllocation} labelMap={SECTOR_LABEL} />
+            </Card>
+          )}
+
+          {/* Similar ETFs */}
+          {similar.length > 0 && (
+            <Card className="mb-6">
+              <CardTitle className="mb-4">ETFs similares</CardTitle>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                {similar.map((s) => (
+                  <Link
+                    key={s.ticker}
+                    href={`/etf/${s.ticker.toLowerCase()}`}
+                    className="rounded-lg border border-border bg-surface-2 p-3 hover:border-border-strong transition-colors"
+                  >
+                    <div className="font-mono font-semibold text-brand-400">{s.ticker}</div>
+                    <div className="text-xs text-fg-muted mt-1 line-clamp-2">{s.name}</div>
+                    <div className="text-xs text-fg-subtle mt-2">
+                      TER {formatPct(s.ter / 100, 2)}
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </Card>
+          )}
+
+          {/* CTA */}
+          <Card className="text-center">
+            <p className="text-fg-muted text-sm">
+              ¿Quieres comparar {etf.ticker} con otro ETF?{' '}
+              <Link
+                href="/comparar"
+                className="text-brand-400 hover:text-brand-300 underline-offset-4 hover:underline"
+              >
+                Usa el comparador
+              </Link>
+              {' '}o{' '}
+              <Link
+                href="/chat"
+                className="text-brand-400 hover:text-brand-300 underline-offset-4 hover:underline"
+              >
+                pregúntale al Chat IA
+              </Link>
+              .
+            </p>
+          </Card>
+
+          <p className="mt-6 text-xs text-fg-subtle text-center">
+            Información educativa, no asesoramiento financiero. Los datos de composición son
+            orientativos y pueden variar respecto a los publicados por el emisor.
+          </p>
+        </div>
+      </main>
+      <Footer />
+    </>
+  )
+}

@@ -1,12 +1,33 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Button } from '@/components/ui/Button'
+import { JsonLd } from '@/components/JsonLd'
+import { NewsletterSignup } from '@/components/NewsletterSignup'
 import { ArrowRight, BarChart3, Globe2, PiggyBank, Sparkles, ShieldCheck, FileText, Check, X } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'BogleHub — Análisis de cartera para inversores indexados',
+  description: 'Analiza tu cartera de ETFs con IA. Asignación, diversificación, costes y FIRE. Gratis para Bogleheads hispanos.',
+  openGraph: {
+    images: ['/api/og?title=BogleHub&subtitle=An%C3%A1lisis%20de%20cartera%20con%20IA'],
+  },
+}
+
+const FAQ_QUESTIONS = [
+  { q: '¿Es de verdad gratis? ¿Cuál es el truco?', a: 'Sí, totalmente gratis. No vendemos tus datos (no los tenemos — viven en tu navegador). Es un proyecto educativo personal hecho para la comunidad de inversores indexados hispanos. En el futuro habrá funciones Pro opcionales, pero el análisis básico será siempre gratuito.' },
+  { q: '¿Esto es asesoramiento financiero?', a: 'No. Es información educativa. BogleHub no recomienda comprar o vender activos específicos. Es una herramienta para que entiendas tu cartera, no para sustituir a un asesor regulado.' },
+  { q: '¿Qué brokers están soportados?', a: 'Manualmente puedes introducir cualquier ETF UCITS. Con detección automática por PDF: Trade Republic, DEGIRO, MyInvestor, ING. Más brokers se añaden a demanda.' },
+  { q: '¿Qué modelo de IA usáis?', a: 'Llama 3.3 70B Versatile a través de Groq. Es uno de los modelos open-weight más potentes del mundo, en infraestructura ultrarrápida. Coste para nosotros: ~14.400 análisis/día gratis.' },
+  { q: '¿Mis datos son privados?', a: 'Sí. Tus posiciones se guardan en localStorage de tu navegador, no en nuestros servidores. Solo viajan al servidor durante el análisis y se descartan inmediatamente.' },
+]
 
 export default function HomePage() {
   return (
     <>
+      <JsonLd schema={{ type: 'WebApplication' }} />
+      <JsonLd schema={{ type: 'FAQPage', questions: FAQ_QUESTIONS }} />
       <Header />
       <main className="bg-bg">
         {/* HERO */}
@@ -51,8 +72,8 @@ export default function HomePage() {
             {[
               { label: 'Hecho para', value: 'Bogleheads' },
               { label: 'Coste', value: '100% gratis' },
+              { label: 'Registro', value: 'No hace falta' },
               { label: 'Datos', value: 'En tu navegador' },
-              { label: 'Privacidad', value: 'En tu navegador' },
             ].map((item) => (
               <div key={item.label}>
                 <div className="text-xs uppercase tracking-wide text-fg-subtle">{item.label}</div>
@@ -182,6 +203,22 @@ export default function HomePage() {
                   <p className="mt-3 text-sm text-fg-muted leading-relaxed">{item.a}</p>
                 </details>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* NEWSLETTER */}
+        <section className="mx-auto max-w-3xl px-4 sm:px-6 py-20">
+          <div className="flex flex-col items-center text-center">
+            <h2 className="text-2xl sm:text-3xl font-bold text-fg tracking-tight">
+              Aprende a invertir mejor, cada quince días.
+            </h2>
+            <p className="mt-3 text-fg-muted max-w-lg">
+              Análisis de ETFs, novedades del mercado y guías prácticas de fiscalidad e inversión
+              indexada. Sin spam.
+            </p>
+            <div className="mt-6">
+              <NewsletterSignup variant="inline" />
             </div>
           </div>
         </section>

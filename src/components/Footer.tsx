@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <footer className="border-t border-border bg-bg mt-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="col-span-2 md:col-span-1">
             <Logo size="md" />
             <p className="mt-4 text-sm text-fg-muted max-w-xs">
@@ -16,8 +16,17 @@ export function Footer() {
             <h4 className="font-semibold text-sm text-fg mb-3">Producto</h4>
             <ul className="space-y-2 text-sm text-fg-muted">
               <li><Link href="/analyzer" className="hover:text-fg transition-colors">Analizador</Link></li>
+              <li><Link href="/comparar" className="hover:text-fg transition-colors">Comparar ETFs</Link></li>
               <li><Link href="/chat" className="hover:text-fg transition-colors">Chat IA</Link></li>
-              <li><Link href="/" className="hover:text-fg transition-colors">Cómo funciona</Link></li>
+              <li><Link href="/calculadora/interes-compuesto" className="hover:text-fg transition-colors">Interés compuesto</Link></li>
+              <li><Link href="/calculadora/fire-monte-carlo" className="hover:text-fg transition-colors">Calculadora FIRE</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-semibold text-sm text-fg mb-3">Recursos</h4>
+            <ul className="space-y-2 text-sm text-fg-muted">
+              <li><Link href="/blog" className="hover:text-fg transition-colors">Blog</Link></li>
+              <li><Link href="/metodologia" className="hover:text-fg transition-colors">Metodología</Link></li>
             </ul>
           </div>
           <div>

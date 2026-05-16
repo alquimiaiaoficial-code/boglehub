@@ -2,8 +2,11 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 
 export const metadata = {
-  title: 'Aviso Legal — BogleHub',
+  title: 'Aviso Legal',
   robots: { index: true, follow: false },
+  openGraph: {
+    images: [`/api/og?title=${encodeURIComponent('Aviso Legal')}&subtitle=${encodeURIComponent('BogleHub')}`],
+  },
 }
 
 export default function AvisoLegalPage() {
