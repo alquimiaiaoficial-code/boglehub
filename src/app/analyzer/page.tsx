@@ -8,6 +8,7 @@ import { AnalysisResults } from '@/components/AnalysisResults'
 import { PdfUpload } from '@/components/PdfUpload'
 import { SnapshotHistory } from '@/components/SnapshotHistory'
 import { SharePortfolio } from '@/components/SharePortfolio'
+import { OverlapAnalysis } from '@/components/OverlapAnalysis'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Button } from '@/components/ui/Button'
@@ -131,7 +132,10 @@ export default function AnalyzerPage() {
               </Button>
 
               {analysis ? (
-                <AnalysisResults analysis={analysis} />
+                <>
+                  <AnalysisResults analysis={analysis} />
+                  <OverlapAnalysis />
+                </>
               ) : (
                 <Card className="text-center py-16">
                   <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-brand-500/10 text-brand-400 mb-4">
