@@ -6,6 +6,8 @@ import { PortfolioInput } from '@/components/PortfolioInput'
 import { PortfolioTable } from '@/components/PortfolioTable'
 import { AnalysisResults } from '@/components/AnalysisResults'
 import { PdfUpload } from '@/components/PdfUpload'
+import { SnapshotHistory } from '@/components/SnapshotHistory'
+import { SharePortfolio } from '@/components/SharePortfolio'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Button } from '@/components/ui/Button'
@@ -15,13 +17,21 @@ import { Analysis } from '@/types/analysis'
 import { Sparkles, AlertTriangle } from 'lucide-react'
 
 export default function AnalyzerPage() {
-  const { positions, monthlyContribution, targetAmount, setMonthlyContribution, setTargetAmount } = usePortfolio()
+  const {
+    positions,
+    monthlyContribution,
+    targetAmount,
+    setMonthlyContribution,
+    setTargetAmount,
+    saveSnapshot,
+  } = usePortfolio()
   const [analysis, setAnalysis] = useState<Analysis | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
   const handleAnalyze = async () => {
-    setLoading(true); setError(null)
+    setLoading(true)
+    setError(null)
     try {
       const res = await fetch('/api/analyze', {
         method: 'POST',
@@ -35,9 +45,15 @@ export default function AnalyzerPage() {
       const data = await res.json()
       if (!data.success) throw new Error(data.error)
       setAnalysis(data.data)
+      // Save a snapshot of the portfolio value for the history / switching-cost moat.
+      if (data.data?.allocation?.totalValueEUR != null) {
+        saveSnapshot(data.data.allocation.totalValueEUR)
+      }
     } catch (e) {
       setError(e instanceof Error ? e.message : 'Error desconocido')
-    } finally { setLoading(false) }
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -47,12 +63,18 @@ export default function AnalyzerPage() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 py-8">
           <div className="rounded-lg bg-warn/10 border border-warn/30 px-4 py-2 text-sm text-warn mb-6 flex items-center gap-2">
             <AlertTriangle className="h-4 w-4 flex-shrink-0" />
-            <span>Información educativa, no asesoramiento financiero. Tus datos viven en tu navegador.</span>
+            <span>
+              Información educativa, no asesoramiento financiero. Tus datos viven en tu navegador.
+            </span>
           </div>
 
           <header className="mb-8">
-            <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">Analizador de cartera</h1>
-            <p className="mt-2 text-fg-muted">Introduce tus posiciones o sube un PDF. La IA hace el resto.</p>
+            <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">
+              Analizador de cartera
+            </h1>
+            <p className="mt-2 text-fg-muted">
+              Introduce tus posiciones o sube un PDF. La IA hace el resto.
+            </p>
           </header>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -61,14 +83,28 @@ export default function AnalyzerPage() {
               <PortfolioInput />
               <PortfolioTable />
               {positions.length > 0 && (
-                <Card>
-                  <CardTitle>Plan FIRE (opcional)</CardTitle>
-                  <div className="grid grid-cols-2 gap-2 mt-4">
-                    <Input type="number" placeholder="Aporte mensual €" value={monthlyContribution || ''} onChange={(e) => setMonthlyContribution(parseFloat(e.target.value) || 0)} />
-                    <Input type="number" placeholder="Objetivo €" value={targetAmount || ''} onChange={(e) => setTargetAmount(parseFloat(e.target.value) || 0)} />
-                  </div>
-                </Card>
+                <>
+                  <Card>
+                    <CardTitle>Plan FIRE (opcional)</CardTitle>
+                    <div className="grid grid-cols-2 gap-2 mt-4">
+                      <Input
+                        type="number"
+                        placeholder="Aporte mensual €"
+                        value={monthlyContribution || ''}
+                        onChange={(e) => setMonthlyContribution(parseFloat(e.target.value) || 0)}
+                      />
+                      <Input
+                        type="number"
+                        placeholder="Objetivo €"
+                        value={targetAmount || ''}
+                        onChange={(e) => setTargetAmount(parseFloat(e.target.value) || 0)}
+                      />
+                    </div>
+                  </Card>
+                  <SharePortfolio />
+                </>
               )}
+              <SnapshotHistory />
             </div>
 
             <div className="lg:col-span-2 space-y-4">
@@ -78,9 +114,20 @@ export default function AnalyzerPage() {
                 </Card>
               )}
 
-              <Button onClick={handleAnalyze} disabled={positions.length === 0} loading={loading} variant="accent" size="lg" className="w-full">
+              <Button
+                onClick={handleAnalyze}
+                disabled={positions.length === 0}
+                loading={loading}
+                variant="accent"
+                size="lg"
+                className="w-full"
+              >
                 <Sparkles className="h-4 w-4" />
-                {loading ? 'Analizando con IA...' : positions.length === 0 ? 'Añade posiciones para analizar' : 'Analizar cartera con IA'}
+                {loading
+                  ? 'Analizando con IA...'
+                  : positions.length === 0
+                    ? 'Añade posiciones para analizar'
+                    : 'Analizar cartera con IA'}
               </Button>
 
               {analysis ? (
