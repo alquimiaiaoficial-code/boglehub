@@ -1149,7 +1149,7 @@ Menos posiciones, bien elegidas, baten a cinco ETFs que en el fondo son el mismo
 
 **¿Quieres ver el solapamiento real de tu cartera?** Prueba el [analizador gratis](/analyzer).
 **¿Tienes preguntas?** Pregúntale al [Chat IA en español](/chat).
-\`,
+`,
   },
   {
     slug: 'fondos-indexados-vs-etfs-espana',
@@ -1275,7 +1275,7 @@ Esto no convierte al ETF en mala opción. Si tu plan es comprar un ETF global y 
 
 **¿Quieres analizar tu cartera con IA?** Prueba el [analizador gratis](/analyzer).
 **¿Tienes preguntas?** Pregúntale al [Chat IA en español](/chat).
-\`,
+`,
   },
   {
     slug: 'interes-compuesto-inversion',
@@ -1398,7 +1398,7 @@ Sobre una cartera mantenida 30 años, la diferencia entre pagar un 1,5 % y un 0,
 
 **¿Quieres ver cuánto puede crecer tu dinero?** Prueba la [calculadora de interés compuesto](/calculadora/interes-compuesto).
 **¿Quieres analizar tu cartera con IA?** Usa el [analizador gratis](/analyzer).
-\`,
+`,
   },
   {
     slug: 'dca-vs-lump-sum-aportar-mensual',
@@ -1492,7 +1492,7 @@ La decisión real nunca es "invertir o esperar". Es "de golpe o promediando". Y 
 
 **¿Quieres analizar tu cartera con IA?** Prueba el [analizador gratis](/analyzer).
 **¿Tienes preguntas?** Pregúntale al [Chat IA en español](/chat).
-\`,
+`,
   },
   {
     slug: 'roboadvisors-espana-merecen-comision',
@@ -1613,7 +1613,7 @@ La pregunta no es "son buenos los roboadvisors". Es "cuál de los dos tipos de i
 
 **¿Quieres ver cuánto pagas de comisiones?** Analiza tu cartera con el [analizador gratis](/analyzer).
 **¿Tienes preguntas?** Pregúntale al [Chat IA en español](/chat).
-\`,
+`,
   },
   {
     slug: 'que-hacer-cuando-el-mercado-cae',
@@ -1709,7 +1709,7 @@ El mercado va a caer. Tu plan ya lo sabe. Tú también, ahora.
 
 **¿Quieres analizar tu cartera con IA?** Prueba el [analizador gratis](/analyzer).
 **¿Tienes preguntas?** Pregúntale al [Chat IA en español](/chat).
-\`,
+`,
   },
   {
     slug: 'como-rebalancear-cartera-indexada',
@@ -1811,7 +1811,7 @@ Rebalancear bien es aburrido, rápido y poco frecuente. Así debe ser.
 
 **¿Quieres ver cómo está repartida tu cartera?** Prueba el [analizador gratis](/analyzer).
 **¿Tienes preguntas?** Pregúntale al [Chat IA en español](/chat).
-\`,
+`,
   },
   {
     slug: 'plan-de-pensiones-vs-fondo-indexado',
@@ -1929,7 +1929,7 @@ El dinero con el que pienses vivir un retiro anticipado tiene que estar en vehí
 
 **¿Quieres analizar tu cartera con IA?** Prueba el [analizador gratis](/analyzer).
 **¿Tienes preguntas?** Pregúntale al [Chat IA en español](/chat).
-\`,
+`,
   },
   {
     slug: 'que-es-el-msci-world',
@@ -2032,7 +2032,7 @@ Si esas dos cosas te encajan, el MSCI World cumple de sobra como núcleo de una 
 
 **¿Quieres analizar tu cartera con IA?** Prueba el [analizador gratis](/analyzer).
 **¿Tienes preguntas?** Pregúntale al [Chat IA en español](/chat).
-\`,
+`,
   },
   {
     slug: 'como-empezar-a-invertir-poco-dinero',
@@ -2117,6 +2117,6 @@ Empezar con poco no es empezar en desventaja. Es, simplemente, empezar. Y empeza
 
 **¿Quieres analizar tu cartera con IA?** Prueba el [analizador gratis](/analyzer).
 **¿Tienes preguntas?** Pregúntale al [Chat IA en español](/chat).
-\`,
+`,
   },
 ]
