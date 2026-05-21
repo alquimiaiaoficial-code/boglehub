@@ -7,6 +7,7 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { JsonLd } from '@/components/JsonLd'
 import { BLOG_ARTICLES } from '@/data/blog-articles'
+import { RELATED_ARTICLES } from '@/data/related-articles'
 
 const BASE_URL = 'https://boglehub.vercel.app'
 
@@ -54,6 +55,13 @@ export default async function BlogArticlePage({
   }
 
   const articleUrl = `${BASE_URL}/blog/${article.slug}`
+
+  // Artículos relacionados: hasta 3, filtrados para que existan en BLOG_ARTICLES
+  const relatedSlugs = RELATED_ARTICLES[article.slug] ?? []
+  const relatedArticles = relatedSlugs
+    .map(slug => BLOG_ARTICLES.find(a => a.slug === slug))
+    .filter(Boolean)
+    .slice(0, 3) as typeof BLOG_ARTICLES
 
   return (
     <>
@@ -107,8 +115,32 @@ export default async function BlogArticlePage({
             <ReactMarkdown remarkPlugins={[remarkGfm]}>{article.content}</ReactMarkdown>
           </div>
 
+          {/* Artículos relacionados */}
+          {relatedArticles.length > 0 && (
+            <nav aria-label="Artículos relacionados" className="mt-12 pt-6 border-t border-border">
+              <h2 className="text-lg font-semibold text-fg mb-4">También te puede interesar</h2>
+              <ul className="space-y-3">
+                {relatedArticles.map(related => (
+                  <li key={related.slug}>
+                    <Link
+                      href={`/blog/${related.slug}`}
+                      className="group flex flex-col gap-0.5 rounded-lg border border-border bg-surface p-3 hover:border-border-strong transition-colors"
+                    >
+                      <span className="text-sm font-medium text-fg group-hover:text-brand-400 transition-colors">
+                        {related.title}
+                      </span>
+                      <span className="text-xs text-fg-subtle line-clamp-1">
+                        {related.excerpt}
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          )}
+
           {/* Footer disclaimer + CTA */}
-          <div className="mt-12 pt-6 border-t border-border">
+          <div className="mt-8 pt-6 border-t border-border">
             <p className="text-sm text-fg-muted italic">
               Información educativa, no asesoramiento financiero. Verifica con tu asesor fiscal
               antes de tomar decisiones.
