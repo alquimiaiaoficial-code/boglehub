@@ -5,6 +5,7 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Card, CardTitle } from '@/components/ui/Card'
 import { getEtfByTicker, getAllEtfs } from '@/lib/etf-database'
+import { computeFiscalGrade, GRADE_STYLES } from '@/lib/fiscal'
 import { formatPct } from '@/lib/utils'
 import type { EtfMetadata } from '@/types/etf'
 
@@ -58,8 +59,9 @@ export async function generateMetadata({
   if (!etf) {
     return { title: 'ETF no encontrado' }
   }
+  const fiscal = computeFiscalGrade(etf.isin, etf.accumulating)
   const title = `${etf.name} (${etf.ticker})`
-  const description = `Análisis de ${etf.name}: TER ${formatPct(etf.ter / 100, 2)}, ${ASSET_CLASS_LABEL[etf.assetClass] ?? etf.assetClass}, distribución geográfica y sectorial. Datos para inversores indexados.`
+  const description = `Análisis de ${etf.name}: TER ${formatPct(etf.ter / 100, 2)}, ${ASSET_CLASS_LABEL[etf.assetClass] ?? etf.assetClass}, domicilio ${fiscal.domicileLabel} (eficiencia fiscal ${fiscal.grade}), distribución geográfica y sectorial. Datos para inversores indexados.`
   return {
     title,
     description,
@@ -126,6 +128,9 @@ export default async function EtfPage({ params }: { params: Promise<{ ticker: st
     notFound()
   }
 
+  const fiscal = computeFiscalGrade(etf.isin, etf.accumulating)
+  const fiscalStyle = GRADE_STYLES[fiscal.grade]
+
   const similar: EtfMetadata[] = getAllEtfs()
     .filter((e) => e.assetClass === etf.assetClass && e.ticker !== etf.ticker)
     .slice(0, 3)
@@ -170,6 +175,29 @@ export default async function EtfPage({ params }: { params: Promise<{ ticker: st
               value={etf.accumulating ? 'Acumulación' : 'Distribución'}
             />
           </div>
+
+          {/* Fiscal grade (residente España) */}
+          <Card className="mb-6">
+            <CardTitle className="mb-3">Eficiencia fiscal (residente en España)</CardTitle>
+            <div className="flex items-center gap-4">
+              <div
+                className={`inline-flex items-center justify-center h-16 w-16 rounded-xl text-3xl font-bold ${fiscalStyle.bg} ${fiscalStyle.color} flex-shrink-0`}
+              >
+                {fiscal.grade}
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="text-sm font-semibold text-fg">
+                  Domicilio: {fiscal.domicileLabel} · {etf.accumulating ? 'Acumulación' : 'Distribución'}
+                </div>
+                <p className="text-xs text-fg-muted mt-1 leading-relaxed">{fiscal.reason}</p>
+              </div>
+            </div>
+            <p className="mt-4 text-xs text-fg-subtle">
+              El grado refleja la eficiencia fiscal estimada para un inversor residente en España,
+              en base a domicilio del ETF y política de reparto. Información educativa, no
+              asesoramiento — confirma con tu asesor fiscal.
+            </p>
+          </Card>
 
           {/* Region allocation */}
           <Card className="mb-6">
