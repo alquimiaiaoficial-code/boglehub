@@ -5,7 +5,10 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
+import { JsonLd } from '@/components/JsonLd'
 import { BLOG_ARTICLES } from '@/data/blog-articles'
+
+const BASE_URL = 'https://boglehub.vercel.app'
 
 export function generateStaticParams() {
   return BLOG_ARTICLES.map((article) => ({ slug: article.slug }))
@@ -50,8 +53,30 @@ export default async function BlogArticlePage({
     notFound()
   }
 
+  const articleUrl = `${BASE_URL}/blog/${article.slug}`
+
   return (
     <>
+      {/* Structured data */}
+      <JsonLd
+        schema={{
+          type: 'Article',
+          headline: article.title,
+          description: article.excerpt,
+          url: articleUrl,
+          datePublished: article.publishedAt,
+        }}
+      />
+      <JsonLd
+        schema={{
+          type: 'BreadcrumbList',
+          items: [
+            { name: 'Inicio', url: BASE_URL },
+            { name: 'Blog', url: `${BASE_URL}/blog` },
+            { name: article.title, url: articleUrl },
+          ],
+        }}
+      />
       <Header />
       <main className="bg-bg min-h-screen">
         <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">

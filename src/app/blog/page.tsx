@@ -6,12 +6,12 @@ import { Card } from '@/components/ui/Card'
 import { BLOG_ARTICLES } from '@/data/blog-articles'
 
 export const metadata: Metadata = {
-  title: 'Blog',
+  title: 'Blog de inversión indexada: ETFs, FIRE y fiscalidad',
   description:
-    'Guías sobre inversión indexada, ETFs, fiscalidad española y FIRE. Contenido educativo para inversores pasivos hispanos.',
+    'Guías prácticas sobre inversión indexada, ETFs UCITS, fiscalidad en España y FIRE. Contenido educativo en español para inversores Boglehead.',
   openGraph: {
-    title: 'Blog | BogleHub',
-    description: 'Guías sobre inversión indexada, ETFs, fiscalidad y FIRE.',
+    title: 'Blog de inversión indexada | BogleHub',
+    description: 'Guías sobre ETFs, fondos indexados, fiscalidad española y FIRE.',
     locale: 'es_ES',
     images: [
       `/api/og?title=${encodeURIComponent('Blog')}&subtitle=${encodeURIComponent('Guías de inversión indexada')}`,

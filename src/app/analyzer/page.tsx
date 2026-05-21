@@ -1,153 +1,49 @@
-'use client'
-
-import { useState } from 'react'
-import { usePortfolio } from '@/lib/store'
-import { PortfolioInput } from '@/components/PortfolioInput'
-import { PortfolioTable } from '@/components/PortfolioTable'
-import { AnalysisResults } from '@/components/AnalysisResults'
-import { PdfUpload } from '@/components/PdfUpload'
-import { SnapshotHistory } from '@/components/SnapshotHistory'
-import { SharePortfolio } from '@/components/SharePortfolio'
-import { OverlapAnalysis } from '@/components/OverlapAnalysis'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
-import { Button } from '@/components/ui/Button'
-import { Card, CardTitle } from '@/components/ui/Card'
-import { Input } from '@/components/ui/Input'
-import { Analysis } from '@/types/analysis'
-import { Sparkles, AlertTriangle } from 'lucide-react'
+import { AnalyzerClient } from './AnalyzerClient'
 
+/**
+ * Server Component wrapper.
+ *
+ * Renderiza en servidor:
+ * - Header + Footer (navegación)
+ * - Sección SEO con H1 y descripción visible para Googlebot
+ * - Lista de funciones (contenido indexable)
+ *
+ * La herramienta interactiva vive en AnalyzerClient (Client Component).
+ */
 export default function AnalyzerPage() {
-  const {
-    positions,
-    monthlyContribution,
-    targetAmount,
-    setMonthlyContribution,
-    setTargetAmount,
-    saveSnapshot,
-  } = usePortfolio()
-  const [analysis, setAnalysis] = useState<Analysis | null>(null)
-  const [loading, setLoading] = useState(false)
-  const [error, setError] = useState<string | null>(null)
-
-  const handleAnalyze = async () => {
-    setLoading(true)
-    setError(null)
-    try {
-      const res = await fetch('/api/analyze', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          positions,
-          monthlyContribution: monthlyContribution || undefined,
-          targetAmount: targetAmount || undefined,
-        }),
-      })
-      const data = await res.json()
-      if (!data.success) throw new Error(data.error)
-      setAnalysis(data.data)
-      // Save a snapshot of the portfolio value for the history / switching-cost moat.
-      if (data.data?.allocation?.totalValueEUR != null) {
-        saveSnapshot(data.data.allocation.totalValueEUR)
-      }
-    } catch (e) {
-      setError(e instanceof Error ? e.message : 'Error desconocido')
-    } finally {
-      setLoading(false)
-    }
-  }
-
   return (
     <>
       <Header />
       <main className="bg-bg min-h-screen">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 py-8">
-          <div className="rounded-lg bg-warn/10 border border-warn/30 px-4 py-2 text-sm text-warn mb-6 flex items-center gap-2">
-            <AlertTriangle className="h-4 w-4 flex-shrink-0" />
-            <span>
-              Información educativa, no asesoramiento financiero. Tus datos viven en tu navegador.
-            </span>
-          </div>
-
-          <header className="mb-8">
+        {/* ── Sección SEO — visible para Googlebot ────────────────────────
+            H1, descripción y lista de características se renderizan en el
+            servidor. AnalyzerClient es Client Component y se hidrata en el
+            cliente sin afectar al crawl del contenido estático.
+        ─────────────────────────────────────────────────────────────────── */}
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 pt-8 pb-4">
+          <header className="mb-6">
             <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">
-              Analizador de cartera
+              Analizador de cartera de ETFs con IA
             </h1>
-            <p className="mt-2 text-fg-muted">
-              Introduce tus posiciones o sube un PDF. La IA hace el resto.
+            <p className="mt-2 text-fg-muted max-w-2xl">
+              Analiza tu cartera de fondos indexados en segundos: asignación por
+              clase de activo, diversificación geográfica y sectorial, TER ponderado,
+              solapamiento entre ETFs y proyección FIRE personalizada. Gratis, sin
+              registro. Tus datos nunca salen de tu navegador.
             </p>
+            <ul className="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-sm text-fg-subtle">
+              <li>✓ Trade Republic, DEGIRO, MyInvestor, ING — detección por PDF</li>
+              <li>✓ Precios en tiempo real y conversión a EUR automática</li>
+              <li>✓ Análisis con Llama 3.3 70B en español</li>
+              <li>✓ Grado fiscal A–F por ETF (residente en España)</li>
+            </ul>
           </header>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <div className="lg:col-span-1 space-y-4">
-              <PdfUpload />
-              <PortfolioInput />
-              <PortfolioTable />
-              {positions.length > 0 && (
-                <>
-                  <Card>
-                    <CardTitle>Plan FIRE (opcional)</CardTitle>
-                    <div className="grid grid-cols-2 gap-2 mt-4">
-                      <Input
-                        type="number"
-                        placeholder="Aporte mensual €"
-                        value={monthlyContribution || ''}
-                        onChange={(e) => setMonthlyContribution(parseFloat(e.target.value) || 0)}
-                      />
-                      <Input
-                        type="number"
-                        placeholder="Objetivo €"
-                        value={targetAmount || ''}
-                        onChange={(e) => setTargetAmount(parseFloat(e.target.value) || 0)}
-                      />
-                    </div>
-                  </Card>
-                  <SharePortfolio />
-                </>
-              )}
-              <SnapshotHistory />
-            </div>
-
-            <div className="lg:col-span-2 space-y-4">
-              {error && (
-                <Card className="border-danger/30 bg-danger-dim">
-                  <p className="text-sm text-danger">{error}</p>
-                </Card>
-              )}
-
-              <Button
-                onClick={handleAnalyze}
-                disabled={positions.length === 0}
-                loading={loading}
-                variant="accent"
-                size="lg"
-                className="w-full"
-              >
-                <Sparkles className="h-4 w-4" />
-                {loading
-                  ? 'Analizando con IA...'
-                  : positions.length === 0
-                    ? 'Añade posiciones para analizar'
-                    : 'Analizar cartera con IA'}
-              </Button>
-
-              {analysis ? (
-                <>
-                  <AnalysisResults analysis={analysis} />
-                  <OverlapAnalysis />
-                </>
-              ) : (
-                <Card className="text-center py-16">
-                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-brand-500/10 text-brand-400 mb-4">
-                    <Sparkles className="h-5 w-5" />
-                  </div>
-                  <p className="text-fg-muted">Tu análisis aparecerá aquí.</p>
-                  <p className="text-xs text-fg-subtle mt-1">Tarda ~10 segundos.</p>
-                </Card>
-              )}
-            </div>
-          </div>
         </div>
+
+        {/* ── Herramienta interactiva (Client Component) ─────────────── */}
+        <AnalyzerClient />
       </main>
       <Footer />
     </>

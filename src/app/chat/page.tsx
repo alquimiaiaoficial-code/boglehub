@@ -2,10 +2,10 @@ import { Header } from '@/components/Header'
 import { Chat } from '@/components/Chat'
 
 export const metadata = {
-  title: 'Chat IA',
-  description: 'Pregunta lo que quieras sobre inversión, fondos indexados, FIRE. Chat con IA gratis en español.',
+  title: 'Chat IA sobre inversión indexada en español',
+  description: 'Pregunta lo que quieras sobre fondos indexados, ETFs, FIRE o fiscalidad. Chat con IA especializado en inversión pasiva, gratis y en español.',
   openGraph: {
-    images: [`/api/og?title=${encodeURIComponent('Chat IA')}&subtitle=${encodeURIComponent('Pregunta sobre inversión y fondos indexados')}`],
+    images: [`/api/og?title=${encodeURIComponent('Chat IA')}&subtitle=${encodeURIComponent('Preguntas sobre ETFs, FIRE y fiscalidad')}`],
   },
 }
 

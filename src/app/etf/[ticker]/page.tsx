@@ -4,10 +4,13 @@ import { notFound } from 'next/navigation'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Card, CardTitle } from '@/components/ui/Card'
+import { JsonLd } from '@/components/JsonLd'
 import { getEtfByTicker, getAllEtfs } from '@/lib/etf-database'
 import { computeFiscalGrade, GRADE_STYLES } from '@/lib/fiscal'
 import { formatPct } from '@/lib/utils'
 import type { EtfMetadata } from '@/types/etf'
+
+const BASE_URL = 'https://boglehub.vercel.app'
 
 const ASSET_CLASS_LABEL: Record<string, string> = {
   EQUITY: 'Renta variable',
@@ -137,6 +140,16 @@ export default async function EtfPage({ params }: { params: Promise<{ ticker: st
 
   return (
     <>
+      <JsonLd
+        schema={{
+          type: 'BreadcrumbList',
+          items: [
+            { name: 'Inicio', url: BASE_URL },
+            { name: 'ETF', url: `${BASE_URL}/etf` },
+            { name: etf.ticker, url: `${BASE_URL}/etf/${etf.ticker.toLowerCase()}` },
+          ],
+        }}
+      />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 py-10">

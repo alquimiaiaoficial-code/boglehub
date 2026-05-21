@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# cowork brief (interno — fuera del repo)
+COWORK-X.md

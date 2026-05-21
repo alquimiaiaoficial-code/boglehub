@@ -3,9 +3,9 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Metodología',
+  title: 'Metodología: cómo calculamos tu cartera indexada',
   description:
-    'Cómo calcula BogleHub cada métrica: valor de cartera, asignación de activos, TER ponderado, proyección FIRE y simulación Monte Carlo. Transparencia total.',
+    'Cómo calcula BogleHub cada métrica: valor de cartera en EUR, TER ponderado, asignación de activos, proyección FIRE y simulación Monte Carlo. Fórmulas exactas, total transparencia.',
   openGraph: {
     title: 'Metodología | BogleHub',
     description: 'Las fórmulas exactas detrás de cada métrica de BogleHub.',
