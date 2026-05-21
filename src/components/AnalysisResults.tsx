@@ -10,7 +10,7 @@ import { SectorBar } from '@/components/charts/SectorBar'
 import { formatEUR, cn } from '@/lib/utils'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import { Sparkles, ArrowRight } from 'lucide-react'
+import { Sparkles, ArrowRight, Share2 } from 'lucide-react'
 
 type Tab = 'overview' | 'geo' | 'sector' | 'ai'
 
@@ -71,6 +71,8 @@ export function AnalysisResults({ analysis }: { analysis: Analysis }) {
         </div>
       )}
 
+      <ShareSection analysis={analysis} />
+
       <div className="mt-6 rounded-xl border border-border bg-gradient-to-br from-brand-500/10 via-surface to-accent/10 p-5">
         <div className="flex flex-col sm:flex-row sm:items-center gap-4">
           <div className="flex-shrink-0 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-brand-500 to-accent text-white">
@@ -100,6 +102,53 @@ function Stat({ label, value }: { label: string; value: string }) {
     <div className="rounded-lg bg-surface-2 p-3">
       <div className="text-xs uppercase tracking-wide text-fg-muted">{label}</div>
       <div className="mt-1 text-lg font-semibold text-fg">{value}</div>
+    </div>
+  )
+}
+
+function ShareSection({ analysis }: { analysis: Analysis }) {
+  function computeScore(): number {
+    const ter = analysis.allocation.weightedTER
+    const classes = Object.keys(analysis.allocation.byAssetClass).length
+    let score = 100
+    if (ter > 0.5) score -= 25
+    else if (ter > 0.3) score -= 15
+    else if (ter > 0.2) score -= 8
+    if (classes < 2) score -= 20
+    return Math.max(0, Math.min(100, Math.round(score)))
+  }
+
+  function handleShare() {
+    const score = computeScore()
+    const ter = analysis.allocation.weightedTER
+    const classes = Object.keys(analysis.allocation.byAssetClass).length
+    const base = typeof window !== 'undefined' ? window.location.origin : 'https://boglehub.vercel.app'
+    const url = `${base}/score?score=${score}&ter=${ter.toFixed(2)}&etfs=${classes}`
+    const text = `Mi nota Boglehead: ${score}/100 — cartera analizada gratis en BogleHub.`
+    const intent = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`
+    window.open(intent, '_blank', 'noopener,noreferrer')
+  }
+
+  return (
+    <div className="mt-6 rounded-xl border border-border bg-surface-2 p-5">
+      <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+        <div className="flex-shrink-0 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-brand-500 to-accent text-white">
+          <Share2 className="h-5 w-5" />
+        </div>
+        <div className="flex-1">
+          <h4 className="text-sm font-semibold text-fg">Comparte tu nota</h4>
+          <p className="text-xs text-fg-muted mt-0.5">
+            Una imagen con tu puntuación Boglehead — sin datos personales, lista para pegar en X.
+          </p>
+        </div>
+        <button
+          onClick={handleShare}
+          className="inline-flex items-center justify-center gap-1.5 rounded-lg bg-brand-600 hover:bg-brand-500 px-4 py-2 text-sm font-medium text-white transition-colors whitespace-nowrap"
+        >
+          Compartir en X
+          <ArrowRight className="h-4 w-4" />
+        </button>
+      </div>
     </div>
   )
 }
