@@ -354,13 +354,13 @@ Si eres consciente de la concentración y la aceptas, el CSPX es una opción per
 
 ### Sin emergentes: ¿ventaja o limitación?
 
-El MSCI World cubre 23 países desarrollados y aproximadamente 1 400 empresas. Al excluir emergentes, elimina el riesgo político y regulatorio de China, la volatilidad de Brasil o la opacidad contable de ciertas empresas rusas (ya excluidas del índice desde 2022, de todas formas).
+El [MSCI World](/blog/que-es-el-msci-world) cubre 23 países desarrollados y aproximadamente 1 400 empresas. Al excluir emergentes, elimina el riesgo político y regulatorio de China, la volatilidad de Brasil o la opacidad contable de ciertas empresas rusas (ya excluidas del índice desde 2022, de todas formas).
 
 La contraparte: si India o Indonesia se convierten en las grandes economías del siglo XXI, el IWDA no las capturará hasta que pasen a "desarrollado" según criterios MSCI.
 
 ### El combo IWDA + EMIM
 
-Una estrategia popular entre inversores avanzados es construir el equivalente al VWCE manualmente: 88 % IWDA + 12 % EMIM (iShares Core MSCI Emerging Markets, ISIN IE00BKM4GZ66, TER 0,18 %). El resultado es exposición similar al FTSE All-World con TER ponderado de ~0,20 % (vs 0,22 % del VWCE). La ventaja: control preciso del peso a emergentes.
+Una estrategia popular entre inversores avanzados es [construir el equivalente al VWCE manualmente](/blog/solapamiento-etfs-error-silencioso): 88 % IWDA + 12 % EMIM (iShares Core MSCI Emerging Markets, ISIN IE00BKM4GZ66, TER 0,18 %). El resultado es exposición similar al FTSE All-World con TER ponderado de ~0,20 % (vs 0,22 % del VWCE). La ventaja: control preciso del peso a emergentes.
 
 ---
 
@@ -468,7 +468,7 @@ Los dividendos se reinvierten automáticamente dentro del fondo. No hay ningún 
 
 **El efecto en 30 años es enorme**. Con 50 000 € al 7 % anual (incluyendo dividendos reinvertidos):
 - **ETF distribución**: tributas ~133 € cada año por dividendos + al vender final
-- **ETF acumulación**: solo tributas al vender. El capital que habrías pagado en impuestos anuales sigue compuesto en el fondo durante décadas
+- **[ETF de acumulación](/blog/fondos-indexados-vs-etfs-espana)**: solo tributas al vender. El capital que habrías pagado en impuestos anuales sigue compuesto en el fondo durante décadas
 
 La diferencia puede superar los 20 000–30 000 € en una cartera grande a largo plazo. **Salvo que necesites flujo de caja, usa siempre ETFs de acumulación.**
 
@@ -555,7 +555,7 @@ Pero hay más: si un inversor europeo pudiera comprar ETFs americanos, existirí
 
 ### Irlanda (IE)
 
-El convenio fiscal entre Irlanda y EE. UU. establece una retención reducida del 15 % sobre dividendos de acciones americanas pagados al ETF. Como el S&P 500 y el MSCI World son principalmente empresas americanas, esto es muy relevante.
+El convenio fiscal entre Irlanda y EE. UU. establece una retención reducida del 15 % sobre dividendos de acciones americanas pagados al ETF. Como el S&P 500 y el [MSCI World](/blog/que-es-el-msci-world) son principalmente empresas americanas, esto es muy relevante.
 
 Un ETF domiciliado en Irlanda pagará el 15 % de retención a la fuente sobre dividendos de sus acciones americanas. Ese coste ya está descontado del NAV del ETF antes de que te llegue a ti.
 
@@ -758,7 +758,7 @@ Con la regla del 3,5 % (multiplicador 28,5):
 Vamos a calcular tres escenarios concretos. Asumimos:
 - Aportación mensual fija
 - Retorno real anual del 6 % (nominal ~8 %, menos ~2 % inflación)
-- ETF de acumulación (sin fricción fiscal anual)
+- [ETF de acumulación](/blog/fondos-indexados-vs-etfs-espana) (sin fricción fiscal anual)
 - Sin rendimientos adicionales salvo el crecimiento de cartera
 
 ### Objetivo: 700 000 € (Regular FIRE ciudad media)
@@ -793,7 +793,7 @@ Falso. La tasa de ahorro importa más que el sueldo absoluto. Una persona que ga
 No cuentes con ello para FIRE antes de los 60. La pensión contributiva española solo se genera tras cotizar 15+ años, y para la pensión máxima necesitas cotizar 37+ años con bases máximas. Si te retiras a los 45, tendrás 20 años de brecha antes de cualquier pensión y la cuantía será muy baja.
 
 ### Mito 3: "Con el mercado tan alto, ahora no es buen momento"
-El timing del mercado no funciona. Los estudios muestran que "lump sum" (invertir todo de una vez) bate al "dollar cost averaging" el ~66 % del tiempo. Y ambos baten a esperar.
+El timing del mercado no funciona. Los estudios muestran que ["lump sum"](/blog/dca-vs-lump-sum-aportar-mensual) (invertir todo de una vez) bate al "dollar cost averaging" el ~66 % del tiempo. Y ambos baten a esperar.
 
 ### Mito 4: "FIRE significa aburrirse"
 El movimiento FIRE en su versión madura trata sobre libertad, no inactividad. La mayoría de personas que alcanzan FIRE trabajan en algo diferente: proyectos propios, trabajo parcial elegido, voluntariado. La diferencia es que ya no **necesitan** el dinero de ese trabajo.
@@ -1009,9 +1009,9 @@ La diferencia entre saber y actuar es donde la mayoría de los inversores se que
 
 **Día 2**: Calcula tu tasa de ahorro actual: (Ingresos − Gastos) / Ingresos × 100. Si no sabes cuánto gastas, revisa los últimos 3 meses en tu banco.
 
-**Día 3**: Define tu objetivo: ¿cuánto necesitas para tu número FIRE? Usa la regla del 3,5 % y las tablas de esta guía.
+**Día 3**: Define tu objetivo: ¿cuánto necesitas para tu [número FIRE](/blog/fire-espana-cuanto-necesitas)? Usa la regla del 3,5 % y las tablas de esta guía.
 
-**Día 4**: Elige tu cartera. Para la mayoría: 100 % VWCE si eres joven y agresivo; 80/20 VWCE/AGGH si quieres algo de estabilidad. Una posición, un ETF.
+**Día 4**: [Elige tu cartera](/blog/como-elegir-tu-primer-etf-espana-2026). Para la mayoría: 100 % VWCE si eres joven y agresivo; 80/20 VWCE/AGGH si quieres algo de estabilidad. Una posición, un ETF.
 
 **Día 5**: Configura una aportación mensual automática (Trade Republic lo llama "plan de ahorro"). Aunque sea 50 € al mes. El hábito importa más que el importe inicial.
 
