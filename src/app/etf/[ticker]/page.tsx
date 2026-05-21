@@ -8,6 +8,7 @@ import { JsonLd } from '@/components/JsonLd'
 import { getEtfByTicker, getAllEtfs } from '@/lib/etf-database'
 import { computeFiscalGrade, GRADE_STYLES } from '@/lib/fiscal'
 import { formatPct } from '@/lib/utils'
+import { ETF_PAIRS, pairToSlug } from '@/data/etf-pairs'
 import type { EtfMetadata } from '@/types/etf'
 
 const BASE_URL = 'https://boglehub.vercel.app'
@@ -138,6 +139,15 @@ export default async function EtfPage({ params }: { params: Promise<{ ticker: st
     .filter((e) => e.assetClass === etf.assetClass && e.ticker !== etf.ticker)
     .slice(0, 3)
 
+  // Comparativas curadas disponibles para este ticker
+  const availablePairs = ETF_PAIRS
+    .filter(([a, b]) => a === etf.ticker || b === etf.ticker)
+    .slice(0, 4)
+    .map(([a, b]) => ({
+      slug: pairToSlug(a, b),
+      other: a === etf.ticker ? b : a,
+    }))
+
   return (
     <>
       <JsonLd
@@ -242,6 +252,24 @@ export default async function EtfPage({ params }: { params: Promise<{ ticker: st
                     <div className="text-xs text-fg-subtle mt-2">
                       TER {formatPct(s.ter / 100, 2)}
                     </div>
+                  </Link>
+                ))}
+              </div>
+            </Card>
+          )}
+
+          {/* Comparativas disponibles */}
+          {availablePairs.length > 0 && (
+            <Card className="mb-6">
+              <CardTitle className="mb-3">Comparativas con {etf.ticker}</CardTitle>
+              <div className="flex flex-wrap gap-2">
+                {availablePairs.map(({ slug, other }) => (
+                  <Link
+                    key={slug}
+                    href={`/comparar/${slug}`}
+                    className="rounded-lg border border-border bg-surface-2 px-3 py-1.5 text-sm text-brand-400 hover:border-border-strong hover:text-brand-300 transition-colors font-mono"
+                  >
+                    {etf.ticker} vs {other}
                   </Link>
                 ))}
               </div>

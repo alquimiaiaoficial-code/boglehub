@@ -35,6 +35,7 @@ export async function generateMetadata({
       type: 'article',
       locale: 'es_ES',
       publishedTime: article.publishedAt,
+      modifiedTime: article.updatedAt ?? article.publishedAt,
       images: [
         `/api/og?title=${encodeURIComponent(article.title)}&subtitle=${encodeURIComponent('Blog BogleHub')}`,
       ],
@@ -73,6 +74,7 @@ export default async function BlogArticlePage({
           description: article.excerpt,
           url: articleUrl,
           datePublished: article.publishedAt,
+          dateModified: article.updatedAt ?? article.publishedAt,
         }}
       />
       <JsonLd
@@ -99,13 +101,28 @@ export default async function BlogArticlePage({
 
           {/* Meta */}
           <div className="flex items-center gap-2 text-xs text-fg-subtle mb-6">
-            <time>
+            <time dateTime={article.publishedAt}>
               {new Date(article.publishedAt).toLocaleDateString('es-ES', {
                 day: 'numeric',
                 month: 'long',
                 year: 'numeric',
               })}
             </time>
+            {article.updatedAt && article.updatedAt !== article.publishedAt && (
+              <>
+                <span>·</span>
+                <span>
+                  Actualizado{' '}
+                  <time dateTime={article.updatedAt}>
+                    {new Date(article.updatedAt).toLocaleDateString('es-ES', {
+                      day: 'numeric',
+                      month: 'long',
+                      year: 'numeric',
+                    })}
+                  </time>
+                </span>
+              </>
+            )}
             <span>·</span>
             <span>{article.readingMinutes} min de lectura</span>
           </div>

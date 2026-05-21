@@ -3,6 +3,8 @@ export interface BlogArticle {
   title: string
   excerpt: string
   publishedAt: string
+  /** ISO date de la última revisión sustancial. Si no se define, se usa publishedAt. */
+  updatedAt?: string
   readingMinutes: number
   keywords: string[]
   content: string // markdown
