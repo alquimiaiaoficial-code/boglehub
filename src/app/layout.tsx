@@ -11,7 +11,7 @@ const geist = Geist({ subsets: ['latin'], variable: '--font-geist-sans' })
 const geistMono = Geist_Mono({ subsets: ['latin'], variable: '--font-geist-mono' })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://boglehub.vercel.app'),
+  metadataBase: new URL('https://boglehub.com'),
   title: { default: 'BogleHub', template: '%s | BogleHub' },
   description: 'Análisis de cartera con IA para inversores indexados hispanos. Gratis.',
   openGraph: {

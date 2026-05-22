@@ -21,14 +21,14 @@
 **[Seg 35-52] — Visual: comparativa de precios VWCE en distintas fechas del día**
 **Voiceover:** "Tercero: VWCE cotiza en bolsa en tiempo real. Si lo compras en la apertura o en el cierre, pagas precios distintos. Los inversores en fondos indexados no tienen este problema — compran al precio del día, siempre igual."
 
-**[Seg 52-65] — Visual: pantalla de boglehub.vercel.app/comparar**
+**[Seg 52-65] — Visual: pantalla de boglehub.com/comparar**
 **Voiceover:** "¿Significa esto que no deberías comprar VWCE? Para nada. Es uno de los mejores ETFs del mercado. Pero entiende exactamente lo que compras antes de hacerlo."
 
 **[Seg 65-75] — Visual: pantalla del comparador de ETFs de BogleHub**
 **Voiceover:** "Compara VWCE con otras opciones en BogleHub — gratis, sin registro, con datos reales."
 
 ## CTA final
-**Texto en pantalla:** "Compara ETFs en boglehub.vercel.app/comparar"
+**Texto en pantalla:** "Compara ETFs en boglehub.com/comparar"
 **Visual:** logo BogleHub + URL visible 3 segundos
 
 ## Hashtags

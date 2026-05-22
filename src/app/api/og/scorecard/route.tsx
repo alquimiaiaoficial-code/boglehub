@@ -124,7 +124,7 @@ export async function GET(req: NextRequest) {
         {/* Footer */}
         <div style={{ display: 'flex', marginTop: 30 }}>
           <span style={{ fontSize: 24, color: '#a1a1aa' }}>
-            Hazte tu propia nota en boglehub.vercel.app
+            Hazte tu propia nota en boglehub.com
           </span>
         </div>
       </div>

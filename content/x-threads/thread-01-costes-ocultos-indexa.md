@@ -48,7 +48,7 @@ La trampa psicológica: Indexa te muestra rentabilidad NETA de sus comisiones pe
 Transparencia mejorable.
 
 **Tweet final con CTA:**
-Si quieres ver cuánto te cuesta realmente tu cartera en Indexa vs hacerlo tú con ETFs, compara ambos escenarios en boglehub.vercel.app — calcula la diferencia en euros reales a 20 años.
+Si quieres ver cuánto te cuesta realmente tu cartera en Indexa vs hacerlo tú con ETFs, compara ambos escenarios en boglehub.com — calcula la diferencia en euros reales a 20 años.
 
 **Hashtags sugeridos:** #FIRE #ETF #Boglehead #InversiónPasiva #IndexaCapital
 **Mejor hora publicar:** 9:00 o 19:00 hora ESP

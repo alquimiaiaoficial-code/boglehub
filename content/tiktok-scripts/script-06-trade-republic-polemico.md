@@ -24,11 +24,11 @@
 **[Seg 58-70] — Visual: pantalla de un plan automático en Trade Republic configurado**
 **Voiceover:** "¿La conclusión? Para aportaciones pequeñas y regulares, Trade Republic es probablemente el mejor broker europeo en 2026. Para patrimonios grandes o estrategias complejas, considera DEGIRO o MyInvestor como complemento."
 
-**[Seg 70-75] — Visual: boglehub.vercel.app/comparar**
+**[Seg 70-75] — Visual: boglehub.com/comparar**
 **Voiceover:** "Compara brokers con tus números reales en BogleHub."
 
 ## CTA final
-**Texto en pantalla:** "Comparador de brokers en boglehub.vercel.app/comparar"
+**Texto en pantalla:** "Comparador de brokers en boglehub.com/comparar"
 **Visual:** comparador mostrando Trade Republic vs DEGIRO vs MyInvestor
 
 ## Hashtags

@@ -21,11 +21,11 @@
 **[Seg 42-55] — Visual: comparativa con barra: DEGIRO+VWCE 0,07% vs Indexa 0,55%**
 **Voiceover:** "La alternativa en DEGIRO con VWCE cuesta 0,07% de TER más la comisión de custodia. En total, menos de 0,15% anual. La diferencia sobre 50.000 euros en 20 años: unos 40.000 euros."
 
-**[Seg 55-65] — Visual: pantalla de boglehub.vercel.app/comparar**
+**[Seg 55-65] — Visual: pantalla de boglehub.com/comparar**
 **Voiceover:** "Compara exactamente los dos escenarios con tus números en BogleHub. Gratis."
 
 ## CTA final
-**Texto en pantalla:** "Calcula la diferencia en boglehub.vercel.app/comparar"
+**Texto en pantalla:** "Calcula la diferencia en boglehub.com/comparar"
 **Visual:** comparador de BogleHub mostrando Indexa vs ETF directo
 
 ## Hashtags

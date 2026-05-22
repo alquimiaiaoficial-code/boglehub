@@ -7,7 +7,7 @@ import { getAllEtfs } from '@/lib/etf-database'
 import { computeFiscalGrade, GRADE_STYLES } from '@/lib/fiscal'
 import { formatPct } from '@/lib/utils'
 
-const BASE_URL = 'https://boglehub.vercel.app'
+const BASE_URL = 'https://boglehub.com'
 
 export const metadata: Metadata = {
   title: 'Catálogo de ETFs UCITS para inversores españoles 2026 | BogleHub',

@@ -24,11 +24,11 @@
 **[Seg 57-67] — Visual: tabla final con coste total real de cada ETF**
 **Voiceover:** "El coste total real de VWCE en DEGIRO Core: 0,22% TER más spreads negligibles. En total, aproximadamente 0,25% anual. Algunos ETFs de sectores o small caps pueden superar el 0,50% real aunque su TER diga 0,20%."
 
-**[Seg 67-72] — Visual: boglehub.vercel.app/comparar**
+**[Seg 67-72] — Visual: boglehub.com/comparar**
 **Voiceover:** "Compara el coste real de tus ETFs favoritos en BogleHub."
 
 ## CTA final
-**Texto en pantalla:** "Comparador de ETFs en boglehub.vercel.app/comparar"
+**Texto en pantalla:** "Comparador de ETFs en boglehub.com/comparar"
 **Visual:** comparador mostrando tabla de costes reales
 
 ## Hashtags

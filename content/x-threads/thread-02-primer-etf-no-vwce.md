@@ -49,7 +49,7 @@ Lo que sí deberías hacer antes de tu primer ETF:
 Sin esto, cualquier ETF es el ETF equivocado.
 
 **Tweet final con CTA:**
-En boglehub.vercel.app tienes un analizador de cartera que te dice si lo que llevas tiene sentido para tu perfil. No te cobro nada. Solo quiero que no cometas los errores que cometen todos. Úsalo.
+En boglehub.com tienes un analizador de cartera que te dice si lo que llevas tiene sentido para tu perfil. No te cobro nada. Solo quiero que no cometas los errores que cometen todos. Úsalo.
 
 **Hashtags sugeridos:** #FIRE #ETF #Boglehead #InversiónPasiva #VWCE
 **Mejor hora publicar:** 9:00 o 19:00 hora ESP

@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/'],
       },
     ],
-    sitemap: 'https://boglehub.vercel.app/sitemap.xml',
+    sitemap: 'https://boglehub.com/sitemap.xml',
   }
 }

@@ -122,7 +122,7 @@ function ShareSection({ analysis }: { analysis: Analysis }) {
     const score = computeScore()
     const ter = analysis.allocation.weightedTER
     const classes = Object.keys(analysis.allocation.byAssetClass).length
-    const base = typeof window !== 'undefined' ? window.location.origin : 'https://boglehub.vercel.app'
+    const base = typeof window !== 'undefined' ? window.location.origin : 'https://boglehub.com'
     const url = `${base}/score?score=${score}&ter=${ter.toFixed(2)}&etfs=${classes}`
     const text = `Mi nota Boglehead: ${score}/100 — cartera analizada gratis en BogleHub.`
     const intent = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`

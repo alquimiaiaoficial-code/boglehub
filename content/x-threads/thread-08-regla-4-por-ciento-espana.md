@@ -41,7 +41,7 @@ Muy diferente al 600.000€ que calcularías sin contar la pensión.
 La herramienta que cambia el resultado: la simulación Monte Carlo. No usa un promedio histórico fijo, sino miles de escenarios posibles con inflación y rentabilidad variables. Te da probabilidades reales de éxito, no falsas certezas.
 
 **Tweet final con CTA:**
-Calcula tu número FIRE real con Monte Carlo y pensión española integrada en boglehub.vercel.app/calculadora/fire-monte-carlo — en 2 minutos tienes la tasa de retirada segura para TU situación concreta. Gratis.
+Calcula tu número FIRE real con Monte Carlo y pensión española integrada en boglehub.com/calculadora/fire-monte-carlo — en 2 minutos tienes la tasa de retirada segura para TU situación concreta. Gratis.
 
 **Hashtags:** #FIRE #ETF #Boglehead #InversiónPasiva #IndependenciaFinanciera
 **Mejor hora:** 9:00 o 19:00 hora ESP

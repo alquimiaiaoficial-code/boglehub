@@ -14,7 +14,7 @@ export function SharePortfolio() {
 
   const handleShare = async () => {
     const encoded = encodePortfolio(positions)
-    const origin = typeof window !== 'undefined' ? window.location.origin : 'https://boglehub.vercel.app'
+    const origin = typeof window !== 'undefined' ? window.location.origin : 'https://boglehub.com'
     const url = `${origin}/cartera?d=${encoded}`
 
     try {

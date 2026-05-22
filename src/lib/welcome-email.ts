@@ -1,7 +1,7 @@
 // Email de bienvenida que se envía al suscribirse a la newsletter.
 // HTML con estilos en línea para máxima compatibilidad entre clientes de correo.
 
-const BASE_URL = 'https://boglehub.vercel.app'
+const BASE_URL = 'https://boglehub.com'
 
 export interface EmailContent {
   subject: string
@@ -56,7 +56,7 @@ El analizador revisa tu cartera y te dice si está bien diversificada, qué comi
 </td></tr>
 <tr><td style="padding:0 32px 28px 32px;border-top:1px solid #e4e4e7;">
 <p style="margin:18px 0 0 0;font-size:12px;line-height:1.6;color:#a1a1aa;">
-Recibes este correo porque te suscribiste en boglehub.vercel.app. Información educativa, no asesoramiento financiero. Para darte de baja, responde con la palabra BAJA.
+Recibes este correo porque te suscribiste en boglehub.com. Información educativa, no asesoramiento financiero. Para darte de baja, responde con la palabra BAJA.
 </p>
 </td></tr>
 </table>
@@ -83,7 +83,7 @@ Mientras tanto, tres cosas por las que empezar:
 ¿Una duda sobre tu cartera? Responde a este correo y la leo.
 
 —
-Recibes este correo porque te suscribiste en boglehub.vercel.app. Información educativa, no asesoramiento financiero. Para darte de baja, responde con la palabra BAJA.`
+Recibes este correo porque te suscribiste en boglehub.com. Información educativa, no asesoramiento financiero. Para darte de baja, responde con la palabra BAJA.`
 
   return { subject, html, text }
 }

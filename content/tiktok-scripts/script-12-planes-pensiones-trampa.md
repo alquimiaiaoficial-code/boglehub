@@ -28,7 +28,7 @@
 **Voiceover:** "¿Tienes dudas sobre si te conviene un plan de pensiones según tu situación? Pregunta al chat de IA de BogleHub. Respuestas personalizadas, gratis."
 
 ## CTA final
-**Texto en pantalla:** "Consulta en boglehub.vercel.app/chat"
+**Texto en pantalla:** "Consulta en boglehub.com/chat"
 **Visual:** chat de BogleHub con pregunta sobre planes de pensiones
 
 ## Hashtags

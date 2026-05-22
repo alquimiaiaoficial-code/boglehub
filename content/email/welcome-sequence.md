@@ -34,7 +34,7 @@ Contenido sobre inversión pasiva en España, noticias fiscales que afectan a tu
 
 Sin spam. Sin venderte cursos de 997€. Sin "el sistema que los bancos no quieren que sepas".
 
-Para empezar, prueba a introducir tu cartera en el analizador: [boglehub.vercel.app/analyzer](https://boglehub.vercel.app/analyzer)
+Para empezar, prueba a introducir tu cartera en el analizador: [boglehub.com/analyzer](https://boglehub.com/analyzer)
 
 Tarda 2 minutos y te dice si lo que tienes tiene sentido o si hay algo que mejorar.
 
@@ -42,7 +42,7 @@ Nos vemos en el próximo email.
 
 ---
 
-**CTA:** [Analiza tu cartera gratis → boglehub.vercel.app/analyzer](https://boglehub.vercel.app/analyzer)
+**CTA:** [Analiza tu cartera gratis → boglehub.com/analyzer](https://boglehub.com/analyzer)
 
 ---
 
@@ -77,13 +77,13 @@ Una cartera que sube un 12% en un año en el que el S&P 500 sube un 18% está pe
 
 El analizador de BogleHub hace este diagnóstico automáticamente. Introduce tus posiciones y en 2 minutos tienes un informe completo.
 
-¿Has probado ya el comparador de ETFs? Si estás entre VWCE y CSPX o dudas de qué broker usar, el comparador te da los números con tus datos específicos: [boglehub.vercel.app/comparar](https://boglehub.vercel.app/comparar)
+¿Has probado ya el comparador de ETFs? Si estás entre VWCE y CSPX o dudas de qué broker usar, el comparador te da los números con tus datos específicos: [boglehub.com/comparar](https://boglehub.com/comparar)
 
 Nos vemos en 3 días.
 
 ---
 
-**CTA:** [Comparador de ETFs → boglehub.vercel.app/comparar](https://boglehub.vercel.app/comparar)
+**CTA:** [Comparador de ETFs → boglehub.com/comparar](https://boglehub.com/comparar)
 
 ---
 
@@ -122,11 +122,11 @@ He visto carteras con 12 ETFs de 6 gestoras distintas, incluyendo ETFs sectorial
 
 Más ETFs no significa más diversificación real. Significa más seguimiento, más rebalanceo y más confusión. Una cartera de 2-3 ETFs bien elegidos supera en práctica a una de 15 mal gestionada.
 
-Si quieres ver si tu cartera tiene alguno de estos problemas, el analizador de BogleHub te hace el diagnóstico gratis: [boglehub.vercel.app/analyzer](https://boglehub.vercel.app/analyzer)
+Si quieres ver si tu cartera tiene alguno de estos problemas, el analizador de BogleHub te hace el diagnóstico gratis: [boglehub.com/analyzer](https://boglehub.com/analyzer)
 
 ---
 
-**CTA:** [Diagnóstico de cartera → boglehub.vercel.app/analyzer](https://boglehub.vercel.app/analyzer)
+**CTA:** [Diagnóstico de cartera → boglehub.com/analyzer](https://boglehub.com/analyzer)
 
 ---
 
@@ -161,10 +161,10 @@ El producto sigue mejorando. Cada mes hay novedades. Las comunico primero a los 
 
 **Lo que tienes pendiente de explorar si llevas aquí menos de 2 semanas:**
 
-- Analizador de cartera con IA: [boglehub.vercel.app/analyzer](https://boglehub.vercel.app/analyzer)
-- Comparador de ETFs y brokers: [boglehub.vercel.app/comparar](https://boglehub.vercel.app/comparar)
-- Calculadora FIRE con Monte Carlo: [boglehub.vercel.app/calculadora/fire-monte-carlo](https://boglehub.vercel.app/calculadora/fire-monte-carlo)
-- Chat de IA especializado: [boglehub.vercel.app/chat](https://boglehub.vercel.app/chat)
+- Analizador de cartera con IA: [boglehub.com/analyzer](https://boglehub.com/analyzer)
+- Comparador de ETFs y brokers: [boglehub.com/comparar](https://boglehub.com/comparar)
+- Calculadora FIRE con Monte Carlo: [boglehub.com/calculadora/fire-monte-carlo](https://boglehub.com/calculadora/fire-monte-carlo)
+- Chat de IA especializado: [boglehub.com/chat](https://boglehub.com/chat)
 
 Si hay algo que eches de menos en BogleHub o un tema que quieras ver en el newsletter, responde a este email. Leo todos los mensajes.
 
@@ -172,7 +172,7 @@ Nos vemos la semana que viene.
 
 ---
 
-**CTA:** [Calculadora FIRE Monte Carlo → boglehub.vercel.app/calculadora/fire-monte-carlo](https://boglehub.vercel.app/calculadora/fire-monte-carlo)
+**CTA:** [Calculadora FIRE Monte Carlo → boglehub.com/calculadora/fire-monte-carlo](https://boglehub.com/calculadora/fire-monte-carlo)
 
 ---
 
@@ -223,4 +223,4 @@ Gracias por estar aquí.
 
 **CTA:** Responde a este email con tu opción (A, B, C o D) o con tu sugerencia directamente.
 
-**[Explorar BogleHub → boglehub.vercel.app](https://boglehub.vercel.app)**
+**[Explorar BogleHub → boglehub.com](https://boglehub.com)**

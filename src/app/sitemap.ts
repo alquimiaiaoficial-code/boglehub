@@ -4,7 +4,7 @@ import { BLOG_ARTICLES } from '@/data/blog-articles'
 import { ETF_PAIRS, pairToSlug } from '@/data/etf-pairs'
 import { ETF_THEMES } from '@/data/etf-themes'
 
-const BASE_URL = 'https://boglehub.vercel.app'
+const BASE_URL = 'https://boglehub.com'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Prioridades por tipo de contenido:

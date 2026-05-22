@@ -31,7 +31,7 @@ Vanguard no cotiza en bolsa, no tiene accionistas externos y fue fundada por alg
 9. VWCE no es idéntico a VT (el equivalente americano). VT incluye más empresas de small caps y tiene diferente metodología de ponderación. Los europeos compramos una versión ligeramente simplificada del producto original.
 
 **Tweet final con CTA:**
-10. La mejor forma de honrar la filosofía de Bogle: invertir de manera consistente, con costes mínimos y sin intentar batir al mercado. Analiza si tu cartera actual sigue esos principios en boglehub.vercel.app/analyzer — gratis y sin registro.
+10. La mejor forma de honrar la filosofía de Bogle: invertir de manera consistente, con costes mínimos y sin intentar batir al mercado. Analiza si tu cartera actual sigue esos principios en boglehub.com/analyzer — gratis y sin registro.
 
 **Hashtags:** #FIRE #ETF #Boglehead #InversiónPasiva #Vanguard
 **Mejor hora:** 9:00 o 19:00 hora ESP

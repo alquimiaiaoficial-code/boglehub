@@ -66,7 +66,7 @@ Por eso lo lanzo ahora y no "cuando esté perfecto". Quiero feedback real de gen
 Si pruebas algo raro, dímelo. Lo arreglo.
 
 **Tweet 8 (CTA):**
-Pruébala aquí 👉 boglehub.vercel.app
+Pruébala aquí 👉 boglehub.com
 
 Es gratis, no pide registro y tarda 30 segundos en darte el primer análisis.
 

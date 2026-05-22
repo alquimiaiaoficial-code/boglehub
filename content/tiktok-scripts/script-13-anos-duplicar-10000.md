@@ -25,7 +25,7 @@
 **Voiceover:** "Calcula exactamente cuánto tiempo tardas tú con tu inversión y tu rentabilidad esperada en BogleHub. La calculadora incluye inflación real."
 
 ## CTA final
-**Texto en pantalla:** "Calculadora gratuita en boglehub.vercel.app"
+**Texto en pantalla:** "Calculadora gratuita en boglehub.com"
 **Visual:** calculadora de BogleHub mostrando años para duplicar
 
 ## Hashtags

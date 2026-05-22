@@ -25,7 +25,7 @@
 **Voiceover:** "¿Cuál elige más gente? Depende del perfil. Compara ambos con tus números en BogleHub."
 
 ## CTA final
-**Texto en pantalla:** "Compara en boglehub.vercel.app/comparar"
+**Texto en pantalla:** "Compara en boglehub.com/comparar"
 **Visual:** comparador mostrando VWCE vs CSPX con métricas
 
 ## Hashtags

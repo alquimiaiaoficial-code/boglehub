@@ -24,11 +24,11 @@
 **[Seg 54-68] — Visual: número 5, luego pantalla de comisiones de un broker caro**
 **Voiceover:** "Error 5: no calcular el impacto de las comisiones del broker. Si compras 100 euros con una comisión de 5 euros, pagas el 5% de entrada. La regla básica: la comisión nunca debe superar el 1% de la compra. Con menos de 1.000 euros, Trade Republic o DEGIRO Core son la respuesta."
 
-**[Seg 68-78] — Visual: boglehub.vercel.app/analyzer**
+**[Seg 68-78] — Visual: boglehub.com/analyzer**
 **Voiceover:** "Analiza si tu cartera actual tiene alguno de estos errores en BogleHub. Gratis, en 2 minutos."
 
 ## CTA final
-**Texto en pantalla:** "Analiza tu cartera en boglehub.vercel.app/analyzer"
+**Texto en pantalla:** "Analiza tu cartera en boglehub.com/analyzer"
 **Visual:** analizador de BogleHub con checklist de errores
 
 ## Hashtags

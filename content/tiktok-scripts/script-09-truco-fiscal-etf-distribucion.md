@@ -24,11 +24,11 @@
 **[Seg 55-65] — Visual: excepción — texto en pantalla '¿Cuándo usar distribución?'**
 **Voiceover:** "¿Cuándo tiene sentido el ETF de distribución? En la fase de retirada, cuando ya estás jubilado y necesitas el dividendo como ingreso regular sin vender participaciones. Mientras acumulas: acumulación siempre."
 
-**[Seg 65-70] — Visual: boglehub.vercel.app/comparar**
+**[Seg 65-70] — Visual: boglehub.com/comparar**
 **Voiceover:** "Comprueba qué tipo de ETFs llevas en tu cartera en BogleHub."
 
 ## CTA final
-**Texto en pantalla:** "Analiza tu cartera en boglehub.vercel.app/analyzer"
+**Texto en pantalla:** "Analiza tu cartera en boglehub.com/analyzer"
 **Visual:** analizador mostrando tipos de ETFs en cartera
 
 ## Hashtags

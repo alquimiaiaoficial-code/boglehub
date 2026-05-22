@@ -60,7 +60,7 @@ Mi recomendación por perfil en 2026:
 — Quieres lo mejor de dos mundos → DEGIRO + MyInvestor juntos
 
 **Tweet final con CTA:**
-Compara los tres brokers con tu situación real en boglehub.vercel.app/comparar — cuánto pagas en comisiones cada año según tu capital y frecuencia de compra. Los números concretos importan más que las opiniones.
+Compara los tres brokers con tu situación real en boglehub.com/comparar — cuánto pagas en comisiones cada año según tu capital y frecuencia de compra. Los números concretos importan más que las opiniones.
 
 **Hashtags:** #FIRE #ETF #Boglehead #InversiónPasiva #TradeRepublic #DEGIRO
 **Mejor hora:** 9:00 o 19:00 hora ESP

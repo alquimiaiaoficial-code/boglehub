@@ -38,7 +38,7 @@ Lo que SÍ puedes hacer legalmente:
 El truco que muy pocos conocen: en España los ETFs NO tienen el régimen de traspaso de fondos de inversión. Cada venta tributa. Pero si tienes fondos indexados (Amundi, Vanguard via MyInvestor), sí puedes traspasar sin tributar. Para algunas carteras, fondos > ETFs por fiscalidad.
 
 **Tweet final con CTA:**
-Antes de vender cualquier ETF, calcula el impacto fiscal real. En boglehub.vercel.app puedes analizar tu cartera y ver cuánto te cuesta realmente mantener vs vender. Hacienda ya cobra bastante — no le regales más.
+Antes de vender cualquier ETF, calcula el impacto fiscal real. En boglehub.com puedes analizar tu cartera y ver cuánto te cuesta realmente mantener vs vender. Hacienda ya cobra bastante — no le regales más.
 
 **Hashtags:** #FIRE #ETF #Boglehead #InversiónPasiva #FiscalidadETF
 **Mejor hora:** 9:00 o 19:00 hora ESP

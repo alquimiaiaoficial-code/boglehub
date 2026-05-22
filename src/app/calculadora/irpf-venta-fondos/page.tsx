@@ -7,7 +7,7 @@ import { IRPF_SAVINGS_BRACKETS } from '@/lib/fiscal'
 import { formatEUR, formatPct } from '@/lib/utils'
 import { IrpfCalculator } from './IrpfCalculator'
 
-const BASE_URL = 'https://boglehub.vercel.app'
+const BASE_URL = 'https://boglehub.com'
 
 const FAQ_ITEMS: { q: string; a: string }[] = [
   {

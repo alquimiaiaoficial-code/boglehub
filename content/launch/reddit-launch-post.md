@@ -40,7 +40,7 @@ Hola r/SpainFIRE,
 
 Llevo un tiempo aprendiendo a invertir en indexados y me frustraba una cosa: para analizar bien tu propia cartera de ETFs, o usas Excel a mano, o pagas un robo-advisor, o tiras de herramientas en inglés que no entienden la fiscalidad de aquí.
 
-Así que he construido **BogleHub** (boglehub.vercel.app). Es gratis, no pide registro y tus datos se quedan en tu navegador (no los guardo en ningún servidor).
+Así que he construido **BogleHub** (boglehub.com). Es gratis, no pide registro y tus datos se quedan en tu navegador (no los guardo en ningún servidor).
 
 **Qué hace:**
 

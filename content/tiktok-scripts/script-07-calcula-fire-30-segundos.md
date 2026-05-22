@@ -25,7 +25,7 @@
 **Voiceover:** "Prueba esto: sube el ahorro mensual 100 euros. El FIRE se acorta 3 años. Eso vale 3 años de libertad. ¿Puedes recortar 100 euros de algún lado? Calcula en BogleHub."
 
 ## CTA final
-**Texto en pantalla:** "Calculadora FIRE gratis en boglehub.vercel.app/calculadora/fire-monte-carlo"
+**Texto en pantalla:** "Calculadora FIRE gratis en boglehub.com/calculadora/fire-monte-carlo"
 **Visual:** pantalla de la calculadora con resultado visible
 
 ## Hashtags

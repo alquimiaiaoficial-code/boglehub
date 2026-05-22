@@ -43,7 +43,7 @@ Fiscalidad igual para ambos (ambos son de acumulación, domiciliados en Irlanda,
 Lo que sí decide: tu tolerancia a concentración geográfica y cuánto te molesta pagar más TER.
 
 **Tweet final con CTA:**
-En boglehub.vercel.app puedes simular ambas carteras a 20-30 años con tu capital inicial y aportaciones mensuales. Pon los números tuyos y decide con datos reales, no con opiniones de Twitter.
+En boglehub.com puedes simular ambas carteras a 20-30 años con tu capital inicial y aportaciones mensuales. Pon los números tuyos y decide con datos reales, no con opiniones de Twitter.
 
 **Hashtags sugeridos:** #FIRE #ETF #Boglehead #InversiónPasiva #CSPX #VWCE
 **Mejor hora publicar:** 9:00 o 19:00 hora ESP

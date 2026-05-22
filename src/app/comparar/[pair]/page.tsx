@@ -11,7 +11,7 @@ import { formatPct } from '@/lib/utils'
 import { ETF_PAIRS, slugToPair, pairToSlug } from '@/data/etf-pairs'
 import type { EtfMetadata, Region } from '@/types/etf'
 
-const BASE_URL = 'https://boglehub.vercel.app'
+const BASE_URL = 'https://boglehub.com'
 const CURRENT_YEAR = 2026
 
 // ─── Static params ────────────────────────────────────────────────────────────

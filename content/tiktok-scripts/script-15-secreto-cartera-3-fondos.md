@@ -28,7 +28,7 @@
 **Voiceover:** "¿Por qué funciona? Porque elimina las decisiones emocionales, minimiza los costes y captura toda la rentabilidad del mercado global. Analiza tu cartera actual y compárala con la de 3 fondos en BogleHub."
 
 ## CTA final
-**Texto en pantalla:** "Analiza tu cartera en boglehub.vercel.app/analyzer"
+**Texto en pantalla:** "Analiza tu cartera en boglehub.com/analyzer"
 **Visual:** analizador de BogleHub mostrando comparativa de carteras
 
 ## Hashtags

@@ -8,7 +8,7 @@ import { getAllEtfs } from '@/lib/etf-database'
 import { ETF_THEMES } from '@/data/etf-themes'
 import type { EtfMetadata } from '@/types/etf'
 
-const BASE_URL = 'https://boglehub.vercel.app'
+const BASE_URL = 'https://boglehub.com'
 
 export const metadata: Metadata = {
   title: 'ETFs por categoría para inversores españoles 2026 | BogleHub',

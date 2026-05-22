@@ -59,7 +59,7 @@ Cómo hacerlo con 50€:
 — Tiempo dedicado al año: 0 horas
 
 **Tweet final con CTA:**
-Calcula exactamente qué genera TU dinero mes a mes en boglehub.vercel.app — pon tus 50€, 100€ o 200€ y ve el resultado real a 10, 20 y 30 años con y sin inflación. La calculadora de interés compuesto es gratis. El tiempo que pierdes sin usarla no lo es.
+Calcula exactamente qué genera TU dinero mes a mes en boglehub.com — pon tus 50€, 100€ o 200€ y ve el resultado real a 10, 20 y 30 años con y sin inflación. La calculadora de interés compuesto es gratis. El tiempo que pierdes sin usarla no lo es.
 
 **Hashtags:** #FIRE #ETF #Boglehead #InversiónPasiva #InterésCompuesto
 **Mejor hora:** 9:00 o 19:00 hora ESP

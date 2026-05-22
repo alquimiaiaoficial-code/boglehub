@@ -1,4 +1,4 @@
-const BASE_URL = 'https://boglehub.vercel.app'
+const BASE_URL = 'https://boglehub.com'
 
 const PUBLISHER = {
   '@type': 'Organization',

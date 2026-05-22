@@ -11,7 +11,7 @@ import { NewsletterSignup } from '@/components/NewsletterSignup'
 import { BLOG_ARTICLES } from '@/data/blog-articles'
 import { RELATED_ARTICLES } from '@/data/related-articles'
 
-const BASE_URL = 'https://boglehub.vercel.app'
+const BASE_URL = 'https://boglehub.com'
 
 export function generateStaticParams() {
   return BLOG_ARTICLES.map((article) => ({ slug: article.slug }))

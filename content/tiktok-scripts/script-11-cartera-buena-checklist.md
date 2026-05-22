@@ -24,11 +24,11 @@
 **[Seg 51-63] — Visual: pregunta 5 en pantalla**
 **Voiceover:** "Pregunta 5: ¿tu cartera te deja dormir tranquilo? No es broma. Una cartera que te genera ansiedad es una cartera con demasiado riesgo para ti. La tolerancia real al riesgo se descubre en las caídas, no en los formularios."
 
-**[Seg 63-75] — Visual: pantalla de boglehub.vercel.app/analyzer con el checklist visual**
+**[Seg 63-75] — Visual: pantalla de boglehub.com/analyzer con el checklist visual**
 **Voiceover:** "El analizador de BogleHub hace este checklist por ti en 2 minutos. Introduce tu cartera y recibe un diagnóstico completo. Gratis."
 
 ## CTA final
-**Texto en pantalla:** "Checklist gratuito en boglehub.vercel.app/analyzer"
+**Texto en pantalla:** "Checklist gratuito en boglehub.com/analyzer"
 **Visual:** analizador de BogleHub mostrando puntuación de cartera
 
 ## Hashtags

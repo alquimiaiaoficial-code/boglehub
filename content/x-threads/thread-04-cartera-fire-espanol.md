@@ -66,7 +66,7 @@ Diferir impuestos = retorno extra sin riesgo.
 El 80% falla en el punto 3. Las caídas del 40% se sienten como fin del mundo. La cartera aguanta. La cabeza no siempre.
 
 **Tweet final con CTA:**
-Calcula tu número FIRE personal en boglehub.vercel.app — cuánto necesitas ahorrar, cuántos años te quedan y qué cartera te lleva antes. Gratis, sin registro, en 2 minutos.
+Calcula tu número FIRE personal en boglehub.com — cuánto necesitas ahorrar, cuántos años te quedan y qué cartera te lleva antes. Gratis, sin registro, en 2 minutos.
 
 **Hashtags sugeridos:** #FIRE #ETF #Boglehead #InversiónPasiva #IndependenciaFinanciera
 **Mejor hora publicar:** 9:00 o 19:00 hora ESP

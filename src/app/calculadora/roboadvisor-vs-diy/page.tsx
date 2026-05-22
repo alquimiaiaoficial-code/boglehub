@@ -5,7 +5,7 @@ import { Footer } from '@/components/Footer'
 import { JsonLd } from '@/components/JsonLd'
 import { RoboadvisorComparator } from './RoboadvisorComparator'
 
-const BASE_URL = 'https://boglehub.vercel.app'
+const BASE_URL = 'https://boglehub.com'
 
 const FAQ_ITEMS: { q: string; a: string }[] = [
   {

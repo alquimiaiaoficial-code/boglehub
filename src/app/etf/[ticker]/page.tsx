@@ -11,7 +11,7 @@ import { formatPct } from '@/lib/utils'
 import { ETF_PAIRS, pairToSlug } from '@/data/etf-pairs'
 import type { EtfMetadata } from '@/types/etf'
 
-const BASE_URL = 'https://boglehub.vercel.app'
+const BASE_URL = 'https://boglehub.com'
 
 // ---------------------------------------------------------------------------
 // Theme cross-links: map an ETF to its relevant category page(s)

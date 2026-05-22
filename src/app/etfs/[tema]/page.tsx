@@ -11,7 +11,7 @@ import { formatPct } from '@/lib/utils'
 import { ETF_THEMES, getThemeBySlug } from '@/data/etf-themes'
 import type { EtfMetadata } from '@/types/etf'
 
-const BASE_URL = 'https://boglehub.vercel.app'
+const BASE_URL = 'https://boglehub.com'
 
 // ---------------------------------------------------------------------------
 // Filter functions keyed by slug — keep in sync with ETF_THEMES slugs

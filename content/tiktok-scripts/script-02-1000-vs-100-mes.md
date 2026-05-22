@@ -24,11 +24,11 @@
 **[Seg 55-65] — Visual: pantalla de Trade Republic con un plan de ahorro automático configurado**
 **Voiceover:** "Puedes hacer esto en Trade Republic en 5 minutos. Plan automático mensual a VWCE, sin comisión, sin pensar. Funciona mientras duermes."
 
-**[Seg 65-70] — Visual: URL boglehub.vercel.app en pantalla grande**
+**[Seg 65-70] — Visual: URL boglehub.com en pantalla grande**
 **Voiceover:** "Calcula tu escenario exacto en BogleHub. Gratis."
 
 ## CTA final
-**Texto en pantalla:** "Tu calculadora en boglehub.vercel.app"
+**Texto en pantalla:** "Tu calculadora en boglehub.com"
 **Visual:** pantalla de la calculadora de interés compuesto de BogleHub con números reales
 
 ## Hashtags

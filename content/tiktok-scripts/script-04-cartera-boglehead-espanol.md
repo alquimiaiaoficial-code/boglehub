@@ -24,11 +24,11 @@
 **[Seg 58-70] — Visual: gráfico de rendimiento histórico de la cartera 70/20/10**
 **Voiceover:** "El rebalanceo: una vez al año, en enero. Si los porcentajes se desvían más de 5 puntos, ajustas. Eso es todo. 30 minutos al año de gestión activa."
 
-**[Seg 70-80] — Visual: pantalla boglehub.vercel.app/analyzer**
+**[Seg 70-80] — Visual: pantalla boglehub.com/analyzer**
 **Voiceover:** "Analiza tu cartera actual y compárala con esta en BogleHub. Sin registro. En 2 minutos."
 
 ## CTA final
-**Texto en pantalla:** "Analiza tu cartera en boglehub.vercel.app/analyzer"
+**Texto en pantalla:** "Analiza tu cartera en boglehub.com/analyzer"
 **Visual:** analizador de BogleHub mostrando distribución de cartera
 
 ## Hashtags

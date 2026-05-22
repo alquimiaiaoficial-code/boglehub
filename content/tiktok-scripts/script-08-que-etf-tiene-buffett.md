@@ -24,11 +24,11 @@
 **[Seg 55-65] — Visual: cartera sencilla: 90% CSPX + 10% bono**
 **Voiceover:** "La cartera que recomienda Buffett para su familia: 90% S&P 500, 10% renta fija segura. No 15 ETFs. No sectores especiales. Lo más simple que existe."
 
-**[Seg 65-72] — Visual: boglehub.vercel.app**
+**[Seg 65-72] — Visual: boglehub.com**
 **Voiceover:** "Analiza si tu cartera es más compleja de lo necesario en BogleHub. Menos es más."
 
 ## CTA final
-**Texto en pantalla:** "Analiza tu cartera en boglehub.vercel.app/analyzer"
+**Texto en pantalla:** "Analiza tu cartera en boglehub.com/analyzer"
 **Visual:** analizador de BogleHub con una cartera sencilla
 
 ## Hashtags

@@ -48,7 +48,7 @@ Lo que sí hace bien Indexa:
 No es un mal producto. Es un producto que no necesitas cuando aprendes lo básico.
 
 **Tweet final con CTA:**
-Compara lo que pagas en tu robo-advisor vs hacerlo tú mismo con ETFs en /comparar de boglehub.vercel.app — calcula la diferencia real en euros a 10, 20 y 30 años. Sin registrarte. Sin trampa.
+Compara lo que pagas en tu robo-advisor vs hacerlo tú mismo con ETFs en /comparar de boglehub.com — calcula la diferencia real en euros a 10, 20 y 30 años. Sin registrarte. Sin trampa.
 
 **Hashtags:** #FIRE #ETF #Boglehead #InversiónPasiva #RoboAdvisor
 **Mejor hora:** 9:00 o 19:00 hora ESP
