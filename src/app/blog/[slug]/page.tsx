@@ -7,6 +7,7 @@ import { remarkAutolinkTickers } from '@/lib/remark-autolink-tickers'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { JsonLd } from '@/components/JsonLd'
+import { NewsletterSignup } from '@/components/NewsletterSignup'
 import { BLOG_ARTICLES } from '@/data/blog-articles'
 import { RELATED_ARTICLES } from '@/data/related-articles'
 
@@ -140,6 +141,18 @@ export default async function BlogArticlePage({
           <div className="prose prose-invert prose-zinc max-w-none prose-headings:text-fg prose-strong:text-fg prose-a:text-brand-400 prose-code:text-brand-300">
             <ReactMarkdown remarkPlugins={[remarkGfm, remarkAutolinkTickers]}>{article.content}</ReactMarkdown>
           </div>
+
+          {/* Newsletter */}
+          <aside className="mt-12 rounded-2xl border border-border bg-surface p-6 sm:p-8">
+            <h2 className="text-lg font-semibold text-fg">¿Te ha servido este artículo?</h2>
+            <p className="mt-1 text-sm text-fg-muted">
+              Recibe el análisis quincenal de BogleHub: ETFs, fiscalidad y novedades. Sin
+              spam, te das de baja con un clic.
+            </p>
+            <div className="mt-4">
+              <NewsletterSignup variant="inline" />
+            </div>
+          </aside>
 
           {/* Artículos relacionados */}
           {relatedArticles.length > 0 && (
