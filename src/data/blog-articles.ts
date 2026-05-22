@@ -2121,4 +2121,466 @@ Empezar con poco no es empezar en desventaja. Es, simplemente, empezar. Y empeza
 **¿Tienes preguntas?** Pregúntale al [Chat IA en español](/chat).
 `,
   },
+  {
+    slug: 'mejores-etfs-espana-2026',
+    title: 'Mejores ETFs para invertir en España 2026: la lista definitiva',
+    excerpt:
+      'Los 10 ETFs UCITS más recomendados para el inversor residente en España en 2026: criterios de selección, TER real, domicilio fiscal y para qué perfil encaja cada uno.',
+    publishedAt: '2026-05-21',
+    readingMinutes: 12,
+    keywords: ['mejores ETFs España 2026', 'qué ETF comprar España', 'ETF recomendado inversor español'],
+    content: `# Mejores ETFs para invertir en España 2026: la lista definitiva
+
+No existe un único "mejor ETF". Existe el mejor ETF para tu objetivo, tu horizonte temporal y tu situación fiscal. Esta guía selecciona los 10 ETFs que más aparecen en las carteras de los inversores indexados españoles, explica por qué y te ayuda a elegir entre ellos.
+
+**Criterios de selección**: TER bajo, UCITS domiciliado en Irlanda (eficiencia fiscal óptima para residente en España), alta liquidez (AUM >1.000 M€), disponibilidad en los brokers más usados en España y acumulación (por eficiencia fiscal a largo plazo).
+
+---
+
+## Los 10 ETFs más recomendados para España en 2026
+
+### 1. VWCE — Vanguard FTSE All-World Acc (IE00B3RBWM25)
+
+| Dato | Valor |
+|------|-------|
+| TER | 0,22 % |
+| AUM | ~60.000 M€ |
+| Holdings | ~3.600 empresas |
+| Índice | FTSE All-World |
+| Grado fiscal (España) | A |
+
+**Para quién**: el inversor que quiere una sola posición que lo cubra todo — desarrollados y emergentes — sin pensar más. Es la navaja suiza de los Bogleheads españoles. Más de la mitad de las carteras analizadas en BogleHub lo incluyen.
+
+**Dónde comprarlo**: Trade Republic (0 €/orden), DEGIRO, MyInvestor.
+
+---
+
+### 2. IWDA — iShares Core MSCI World Acc (IE00B4L5Y983)
+
+| Dato | Valor |
+|------|-------|
+| TER | 0,20 % |
+| AUM | ~95.000 M€ |
+| Holdings | ~1.400 empresas |
+| Índice | MSCI World |
+| Grado fiscal (España) | A |
+
+**Para quién**: quien prefiere limitarse a mercados desarrollados (23 países) sin la volatilidad adicional de emergentes. Es el ETF de mayor AUM de Europa. Ligeramente más barato que VWCE. Si quieres añadir emergentes manualmente, combínalo con [EMIM](/etf/emim).
+
+---
+
+### 3. CSPX — iShares Core S&P 500 Acc (IE00B5BMR087)
+
+| Dato | Valor |
+|------|-------|
+| TER | 0,07 % |
+| AUM | ~80.000 M€ |
+| Holdings | ~503 empresas |
+| Índice | S&P 500 |
+| Grado fiscal (España) | A |
+
+**Para quién**: quien prioriza el menor coste posible y acepta concentración en EE.UU. El TER de 0,07 % es uno de los más bajos del mercado UCITS. Ideal para quienes creen que EE.UU. seguirá siendo el mercado dominante. Su gemelo en Xetra en euros es [SXR8](/etf/sxr8).
+
+---
+
+### 4. SWRD — SPDR MSCI World Acc (IE00BFY0GT14)
+
+| Dato | Valor |
+|------|-------|
+| TER | 0,12 % |
+| AUM | >10.000 M€ |
+| Holdings | ~1.600 empresas |
+| Índice | MSCI World |
+| Grado fiscal (España) | A |
+
+**Para quién**: alternativa más barata al IWDA con el mismo índice (MSCI World). La diferencia de 0,08 % anual en TER puede suponer miles de euros a décadas vista en carteras grandes. Buena liquidez y creciendo rápido en AUM. [Compara IWDA vs SWRD](/comparar/iwda-vs-swrd).
+
+---
+
+### 5. AGGH — iShares Core Global Agg Bond Acc EUR Hedged (IE00BDBRDM35)
+
+| Dato | Valor |
+|------|-------|
+| TER | 0,10 % |
+| AUM | >15.000 M€ |
+| Holdings | ~9.800 bonos |
+| Índice | Bloomberg Global Agg |
+| Grado fiscal (España) | A |
+
+**Para quién**: el componente de renta fija de una cartera 80/20 o 70/30. Cobertura a euros (hedged) elimina el riesgo divisa en la parte de bonos. TER muy bajo para un ETF de renta fija diversificada. Ideal para inversores que se acercan a la fase de retiro o que buscan reducir la volatilidad de la cartera.
+
+---
+
+### 6. EMIM — iShares Core MSCI EM IMI Acc (IE00BKM4GZ66)
+
+| Dato | Valor |
+|------|-------|
+| TER | 0,18 % |
+| AUM | >20.000 M€ |
+| Holdings | ~3.200 empresas |
+| Índice | MSCI EM IMI |
+| Grado fiscal (España) | A |
+
+**Para quién**: el complemento de IWDA o SWRD para quien quiere replicar el FTSE All-World manualmente. La combinación 88 % IWDA + 12 % EMIM replica el universo del VWCE con un TER ponderado de ~0,20 % (frente al 0,22 % del VWCE). Más complejo pero ligeramente más barato.
+
+---
+
+### 7. VEUR — Vanguard FTSE Developed Europe Acc (IE00B945VV12)
+
+| Dato | Valor |
+|------|-------|
+| TER | 0,10 % |
+| AUM | >5.000 M€ |
+| Holdings | ~490 empresas |
+| Índice | FTSE Developed Europe |
+| Grado fiscal (España) | A |
+
+**Para quién**: quien quiere sobreponderar Europa respecto al peso que le asigna el MSCI World (~16 %). Habitual en carteras que combinan un ETF global + un ETF europeo para reducir el sesgo en EE.UU. TER muy competitivo para Europa.
+
+---
+
+### 8. VHYL — Vanguard FTSE All-World High Div Yield Dist (IE00B8GKDB10)
+
+| Dato | Valor |
+|------|-------|
+| TER | 0,29 % |
+| AUM | >5.000 M€ |
+| Índice | FTSE All-World High Dividend Yield |
+| Grado fiscal (España) | B |
+
+**Para quién**: inversores en fase de retiro que necesitan flujo de caja sin vender posiciones. El dividendo anual ronda el 3-4 %. El grado fiscal B (distribución + Irlanda) es inferior al A de los de acumulación, pero es la opción de distribución más eficiente para España. No combinar con ETFs de acumulación si se busca eficiencia fiscal pura.
+
+---
+
+### 9. EQQQ — Invesco NASDAQ-100 Acc (IE0032077012)
+
+| Dato | Valor |
+|------|-------|
+| TER | 0,30 % |
+| AUM | >10.000 M€ |
+| Holdings | ~100 empresas |
+| Índice | NASDAQ-100 |
+| Grado fiscal (España) | A |
+
+**Para quién**: inversor con convicción en tecnología y tolerancia alta a la volatilidad. No es una alternativa al MSCI World — es una posición de alta concentración. Si no entiendes por qué quieres el NASDAQ-100 en lugar de un índice global, no lo compres. TER más alto y concentración sectorial en tecnología (~50 %).
+
+---
+
+### 10. SGLN — iShares Physical Gold ETC (IE00B4ND3602)
+
+| Dato | Valor |
+|------|-------|
+| TER | 0,12 % |
+| AUM | >15.000 M€ |
+| Activo subyacente | Oro físico |
+| Grado fiscal (España) | A |
+
+**Para quién**: cobertura frente a escenarios de alta inflación o crisis del sistema financiero. No es un ETF en sentido estricto (es un ETC respaldado por oro físico), pero funciona de forma similar. Una asignación del 5-10 % en carteras de inversores conservadores con horizonte largo. La filosofía Boglehead clásica no lo incluye, pero hay inversores que lo usan como cobertura.
+
+---
+
+## Tabla resumen
+
+| Ticker | Índice | TER | Perfil |
+|--------|--------|-----|--------|
+| VWCE | FTSE All-World | 0,22 % | Todo-en-uno global |
+| IWDA | MSCI World | 0,20 % | Desarrollados sin emergentes |
+| CSPX | S&P 500 | 0,07 % | Solo EE.UU., máximo ahorro en TER |
+| SWRD | MSCI World | 0,12 % | MSCI World más barato que IWDA |
+| AGGH | Bloomberg Global Agg | 0,10 % | Renta fija global EUR-hedged |
+| EMIM | MSCI EM IMI | 0,18 % | Emergentes para combinar con IWDA |
+| VEUR | FTSE Dev. Europe | 0,10 % | Sobreponderar Europa |
+| VHYL | FTSE All-World HiDiv | 0,29 % | Dividendo para fase retiro |
+| EQQQ | NASDAQ-100 | 0,30 % | Alta concentración tech |
+| SGLN | Oro físico | 0,12 % | Cobertura inflación |
+
+---
+
+## ¿Cómo elegir?
+
+1. **Si empiezas y quieres simplicidad máxima**: VWCE. Un ETF, todo el mundo, done.
+2. **Si quieres reducir el TER 0,02 %**: IWDA (pero añade EMIM si quieres emergentes).
+3. **Si solo quieres EE.UU. y el TER más bajo posible**: CSPX o SXR8 en Xetra.
+4. **Si buscas renta fija para tu cartera**: AGGH como complemento al ETF de renta variable.
+5. **Si necesitas ingresos regulares**: VHYL, asumiendo la menor eficiencia fiscal.
+
+Antes de decidir, analiza cómo encaja cada ETF en tu cartera completa. El [analizador de BogleHub](/analyzer) te muestra la asignación real, el TER ponderado y el solapamiento entre posiciones.
+
+---
+
+*Información educativa, no asesoramiento financiero. Los datos de TER y AUM son aproximados a mayo 2026 y pueden variar. Verifica siempre con el emisor del fondo y tu asesor fiscal antes de invertir.*
+`,
+  },
+  {
+    slug: 'cartera-boglehead-3-fondos-espana',
+    title: 'La cartera Boglehead de 3 fondos para España: guía práctica 2026',
+    excerpt:
+      'Cómo construir la cartera lazy de 3 fondos adaptada al inversor español: qué ETFs elegir, en qué proporciones, qué broker usar y cómo rebalancear. Con datos reales y sin rodeos.',
+    publishedAt: '2026-05-21',
+    readingMinutes: 10,
+    keywords: ['cartera boglehead 3 fondos', 'cartera lazy españa', 'cartera indexada 3 ETFs'],
+    content: `# La cartera Boglehead de 3 fondos para España: guía práctica 2026
+
+La cartera de 3 fondos es la implementación más sencilla y eficaz de la [filosofía Boglehead](/blog/bogleheads-espana-guia-completa). Tres posiciones, una revisión anual, décadas de retornos ajustados a coste mínimo. No es la única forma correcta de invertir, pero es la que más inversores han llevado a la práctica con éxito sostenido.
+
+Esta guía te muestra cómo construirla en España con ETFs UCITS reales, qué brokers usarla y cuándo y cómo rebalancear.
+
+---
+
+## Por qué 3 fondos y no 1 ni 10
+
+**1 fondo (VWCE)**: máxima simplicidad. Funciona. Si solo puedes o quieres tener uno, este es el camino.
+
+**3 fondos**: más control sobre las proporciones de renta variable/fija y emergentes/desarrollados. Permite ajustar el nivel de riesgo con más precisión a medida que cambian tus circunstancias.
+
+**10 fondos**: falsa diversificación. Si ya tienes VWCE, añadir IWDA o CSPX no te diversifica — te concentra en las mismas posiciones con más fricción administrativa.
+
+La cartera de 3 fondos es el punto óptimo entre simplicidad y control.
+
+---
+
+## Los 3 componentes y su función
+
+### Fondo 1: Renta variable mundial desarrollada
+
+**Objetivo**: capturar el crecimiento de los mercados globales desarrollados.
+
+| ETF | TER | Índice |
+|-----|-----|--------|
+| [IWDA](/etf/iwda) | 0,20 % | MSCI World (23 países desarrollados) |
+| [SWRD](/etf/swrd) | 0,12 % | MSCI World (alternativa más barata) |
+| [VWCE](/etf/vwce) | 0,22 % | FTSE All-World (incluye emergentes) |
+
+Si usas VWCE aquí, el fondo 2 (emergentes) ya está incluido — tendrías una cartera de 2 fondos, no 3.
+
+**Recomendación para empezar**: IWDA o SWRD (si quieres control sobre el peso a emergentes) o VWCE (si quieres simplicidad total).
+
+---
+
+### Fondo 2: Renta variable mercados emergentes
+
+**Objetivo**: exposición a las economías de mayor crecimiento — India, China, Brasil, Taiwán, Corea del Sur.
+
+| ETF | TER | Índice |
+|-----|-----|--------|
+| [EMIM](/etf/emim) | 0,18 % | MSCI EM IMI (~3.200 empresas) |
+| [EIMI](/etf/eimi) | 0,18 % | MSCI EM IMI (mismo fondo, distinto ticker) |
+| [VFEM](/etf/vfem) | 0,22 % | FTSE Emerging Markets |
+
+**Peso recomendado**: 10-15 % del total de renta variable. El FTSE All-World le asigna ~12 %.
+
+---
+
+### Fondo 3: Renta fija global
+
+**Objetivo**: reducir la volatilidad de la cartera y actuar como amortiguador en caídas de bolsa.
+
+| ETF | TER | Índice |
+|-----|-----|--------|
+| [AGGH](/etf/aggh) | 0,10 % | Bloomberg Global Agg EUR-hedged |
+| [VAGF](/etf/vagf) | 0,10 % | Bloomberg Global Agg EUR-hedged |
+| [VGEA](/etf/vgea) | 0,09 % | Bloomberg Global Agg EUR-hedged |
+
+Los tres son equivalentes en exposición. AGGH tiene mayor AUM y liquidez.
+
+---
+
+## Proporciones según tu perfil
+
+La división renta variable / renta fija depende de tu horizonte temporal y tolerancia al riesgo:
+
+| Perfil | RV / RF | Lógica |
+|--------|---------|--------|
+| Joven (20-35 años, horizonte >20 años) | 90 / 10 | Tiempo para recuperar caídas. La RF solo amortigua. |
+| Intermedio (35-50 años) | 80 / 20 | Equilibrio clásico Boglehead |
+| Conservador o cerca de retiro | 60 / 40 | Más estabilidad, menos crecimiento |
+
+Dentro del 80-90 % de renta variable, la división entre desarrollados y emergentes suele seguir la capitalización de mercado: ~88 % desarrollados, ~12 % emergentes.
+
+**Ejemplo cartera 80/20**:
+- 70 % IWDA (renta variable desarrollados)
+- 10 % EMIM (renta variable emergentes)
+- 20 % AGGH (renta fija)
+
+**TER ponderado**: 0,70×0,20 + 0,10×0,18 + 0,20×0,10 = 0,176 % — excelente.
+
+---
+
+## Qué broker usar
+
+### Trade Republic
+- 0 € por orden. Planes de ahorro automáticos desde 1 €/mes.
+- Disponibles: IWDA, SWRD, EMIM, EIMI, AGGH, VWCE y la mayoría de los ETFs de la lista.
+- Ideal para: importes pequeños o medianos, automatización total.
+
+### DEGIRO
+- 0,50-2 € por orden en bolsas principales. Acceso a más de 50 bolsas.
+- Lista mensual de ETFs sin comisión (rota).
+- Ideal para: importes más grandes donde la comisión fija importa menos.
+
+### MyInvestor
+- Permite mezclar ETFs con fondos indexados Vanguard/Amundi (ventaja si quieres el traspaso fiscal).
+- 0,20 € + 0,03 % por orden de ETF.
+- Ideal para: quienes mezclan fondos y ETFs, o quieren operar en euros en Xetra directamente.
+
+---
+
+## Cuándo y cómo rebalancear
+
+El rebalanceo es el único mantenimiento que requiere esta cartera.
+
+**Cuándo**: una vez al año, en una fecha fija que recuerdes (el 1 de enero, tu cumpleaños). No rebalancees cuando el mercado cae — eso es market timing.
+
+**Cómo**: compara los pesos actuales con los objetivos. Si alguna posición se desvía más de 5 puntos porcentuales de su objetivo, compra el activo infraponderado con tu siguiente aportación en lugar de vender el sobreponderado (así evitas el evento fiscal de la venta).
+
+**Ejemplo**:
+- Objetivo: 70 % IWDA / 10 % EMIM / 20 % AGGH
+- Situación actual tras un año bueno en bolsa: 76 % / 11 % / 13 %
+- La renta fija está infraponderada. Próximas aportaciones → íntegramente a AGGH hasta volver al 20 %.
+
+Si la desviación es grande y no hay suficiente aportación para corregirla, solo entonces vende una parte de la posición sobreponderada (y asume el evento fiscal).
+
+---
+
+## La pregunta que siempre surge: ¿fondos o ETFs?
+
+Si usas MyInvestor, tienes acceso a los mismos índices en formato fondo indexado (Vanguard Global Stock, Amundi Prime Global, etc.). La ventaja: el traspaso entre fondos no tributa en España. La desventaja: sin comisión, sin horario de mercado, sin precio en tiempo real.
+
+Para esta cartera de 3 fondos, si operas en MyInvestor y tu horizonte es >10 años, los fondos indexados pueden tener ventaja fiscal sobre los ETFs. [Lee el artículo completo sobre fondos vs ETFs](/blog/fondos-indexados-vs-etfs-espana).
+
+---
+
+## Errores frecuentes al construir esta cartera
+
+1. **Añadir un cuarto o quinto ETF "por si acaso"**: no mejora la diversificación, añade complejidad.
+2. **Rebalancear con cada caída**: el mercado cae para recuperarse. Rebalancear en pánico es vender barato.
+3. **Mezclar ETFs de distribución y acumulación sin criterio**: mejor unificar en acumulación para diferir el IRPF.
+4. **Ignorar el TER ponderado de la cartera**: el coste total importa. Un TER ponderado por encima de 0,25 % merece revisión.
+5. **No aportar con regularidad**: el interés compuesto necesita tiempo y aportaciones regulares. [Calcula el impacto](/calculadora/interes-compuesto).
+
+---
+
+*Información educativa, no asesoramiento financiero. Los pesos y ETFs sugeridos son orientativos — tu situación personal, tolerancia al riesgo y horizonte temporal determinan la cartera óptima para ti.*
+
+**¿Ya tienes esta cartera? Analízala gratis** en el [analizador de BogleHub](/analyzer): TER ponderado, solapamiento, diversificación y proyección FIRE.
+`,
+  },
+  {
+    slug: 'degiro-vs-trade-republic-vs-myinvestor-2026',
+    title: 'DEGIRO vs Trade Republic vs MyInvestor: qué broker elegir en España (2026)',
+    excerpt:
+      'Comparativa honesta de los tres brokers más usados por inversores indexados en España en 2026: comisiones reales, ETFs disponibles, seguridad y para qué perfil encaja cada uno.',
+    publishedAt: '2026-05-21',
+    readingMinutes: 11,
+    keywords: ['mejor broker ETF España 2026', 'DEGIRO vs Trade Republic', 'MyInvestor opiniones', 'broker inversión indexada España'],
+    content: `# DEGIRO vs Trade Republic vs MyInvestor: qué broker elegir en España (2026)
+
+Elegir broker es la segunda decisión más importante después de elegir tus ETFs. Una mala elección te cuesta en comisiones, spreads y fricciones que se acumulan durante décadas. Esta comparativa se centra en los tres brokers más usados por la comunidad de inversores indexados en España.
+
+Spoiler: no hay un broker "mejor" para todos. Hay uno que encaja con tu volumen de inversión, tu frecuencia de compra y si mezclas ETFs con fondos indexados.
+
+---
+
+## Comparativa rápida
+
+| | Trade Republic | DEGIRO | MyInvestor |
+|---|---|---|---|
+| Comisión por orden ETF | **0 €** | 0,50-2 € | 0,20 € + 0,03 % |
+| Planes de ahorro automáticos | ✓ (desde 1 €/mes) | ✗ | ✗ |
+| Fondos indexados | ✗ | ✗ | ✓ Vanguard, Amundi |
+| Cuenta remunerada | ✓ (~2-3 % TAE) | ✗ | ✓ (~2 % TAE) |
+| Regulación | BaFin (Alemania) | AFM (Holanda) | CNMV (España) |
+| Custodia segregada | ✓ | Parcial (Custody account) | ✓ |
+| Compensación (Fondo garantía) | 100.000 € (ESIF) | 20.000 € (IFD) | 100.000 € (FGD) |
+| ETFs disponibles | +2.000 | +5.000 | Selección popular |
+| Interfaz | Mobile-first, sencilla | Web completa, técnica | Web bancaria |
+
+---
+
+## Trade Republic: el broker sin fricciones
+
+Trade Republic ha conquistado el mercado español por una razón simple: **0 € de comisión por operación**. No hay asteriscos. No hay lista mensual que cambia. No hay spread oculto disfrazado de "cambio de divisa favorable".
+
+**Cómo gana dinero**: order flow (cobra a los creadores de mercado por enrutar órdenes a través de ellos) y la cuenta remunerada. Es un modelo legítimo y habitual en brokers neobancarios europeos.
+
+**Planes de ahorro automáticos**: la función que lo diferencia de todo lo demás. Puedes programar compras mensuales desde 1 € en cualquiera de sus 2.000+ ETFs. La automatización elimina la tentación de hacer market timing.
+
+**Seguridad**: regulado por BaFin, el regulador alemán más exigente de Europa. Activos custodiados en Citibank. Hasta 100.000 € cubiertos por el Fondo Europeo de Garantía de Inversiones (ESIF).
+
+**Limitaciones**:
+- No ofrece fondos indexados (solo ETFs)
+- En algunos ETFs menos líquidos el spread puede ser mayor que en Xetra directo
+- La interfaz no permite órdenes límite complejas ni stop-loss
+- No hay acceso a acciones fuera de los mercados más populares
+
+**Ideal para**: inversores que empiezan, importes bajos-medios (<50.000-100.000 €), inversores que quieren automatizar al máximo.
+
+---
+
+## DEGIRO: el broker para el inversor más exigente
+
+DEGIRO lleva más tiempo en el mercado y ofrece acceso a más de 50 bolsas mundiales con tarifas muy bajas (0,50 € + 0,004 % en Xetra, mínimo 0,90 €). Para importes grandes, esos 0,90 € fijos son irrelevantes.
+
+**ETFs sin comisión mensual**: DEGIRO publica una lista de ETFs seleccionados por los que no cobra comisión de compra — pero la lista cambia mensualmente y tiene restricciones (solo una operación gratuita por ETF al mes, comisión de gestión si no operas suficiente en un periodo).
+
+**Custodia no completamente segregada**: este es el punto que más debate genera. En la cuenta estándar ("Custody" en el selector), los activos sí están segregados. En la cuenta básica, tus activos pueden ser prestados a terceros (préstamo de valores). Asegúrate de abrir una cuenta "Custody" si la segregación te preocupa.
+
+**Compensación**: hasta 20.000 € cubiertos por el Fondo de Garantía de Inversiones holandés (IFD). Es más bajo que los 100.000 € de Trade Republic y MyInvestor — relevante si tienes más de ese importe en el broker.
+
+**Ideal para**: inversores con carteras más grandes (>100.000 €), acceso a ETFs y activos específicos no disponibles en Trade Republic, inversores técnicos que necesitan tipos de órdenes avanzadas.
+
+---
+
+## MyInvestor: el único que combina ETFs y fondos indexados
+
+MyInvestor es el neobanco del grupo Andbank y el único de los tres que ofrece fondos indexados Vanguard y Amundi directamente. Esto lo convierte en la única opción si quieres aprovechar el **traspaso fiscal entre fondos** (la gran ventaja de los fondos sobre los ETFs en España: puedes mover dinero entre fondos sin tributar).
+
+**Comisiones ETF**: 0,20 € fijo + 0,03 % del importe. Para órdenes pequeñas (<667 €) la comisión mínima de 0,20 € es inferior a la de DEGIRO. Para órdenes grandes, el 0,03 % variable puede ser significativo.
+
+**Fondos indexados**: Vanguard Global Stock Index, Amundi Prime Global, Amundi Index MSCI Emerging Markets. Misma exposición que los ETFs equivalentes, sin comisión de compra, traspaso sin tributar.
+
+**Regulación española**: el único de los tres regulado por la CNMV. Para muchos inversores, tener su dinero en una entidad supervisada en España da tranquilidad adicional.
+
+**Limitaciones**:
+- Interfaz menos ágil que Trade Republic
+- Selección de ETFs más limitada
+- Sin planes de ahorro automáticos en ETFs (sí en fondos)
+
+**Ideal para**: inversores que mezclan ETFs con fondos indexados, quien quiere aprovechar el traspaso fiscal, quien prefiere regulación española directa.
+
+---
+
+## ¿Y la seguridad? ¿Qué pasa si quiebra el broker?
+
+Los tres están regulados bajo normativa UCITS/MiFID II. En caso de quiebra de un broker europeo, tus activos (las acciones y participaciones de ETF) **no forman parte de la masa concursal** del broker — están custodiados en nombre de los clientes.
+
+Lo que cubre el fondo de garantía es el riesgo de que el broker haya cometido fraude o mala gestión con esos activos. No cubre pérdidas de inversión.
+
+| Broker | Fondo garantía | Límite |
+|--------|---------------|--------|
+| Trade Republic | ESIF (EU) | 100.000 € |
+| DEGIRO (cuenta Custody) | IFD (Holanda) | 20.000 € |
+| MyInvestor | FGD (España) | 100.000 € |
+
+Para carteras superiores a 20.000 €, la diferencia de cobertura entre DEGIRO y los otros dos es relevante. Para carteras grandes, diversificar entre dos brokers es una estrategia razonable.
+
+---
+
+## La recomendación práctica
+
+**Si empiezas con menos de 500 €/mes y quieres automatizar**: Trade Republic. Sin dudarlo.
+
+**Si ya tienes una cartera consolidada (>100.000 €) y quieres máximo control**: DEGIRO o diversifica entre Trade Republic + DEGIRO.
+
+**Si quieres mezclar ETFs con fondos indexados y aprovechar el traspaso fiscal**: MyInvestor para los fondos, Trade Republic o DEGIRO para los ETFs.
+
+**Si tu cartera ya es de ETFs en Trade Republic y funciona**: no cambies de broker por cambiar. Los costes de fricción de mover una cartera rara vez compensan las diferencias en comisiones.
+
+---
+
+*Información educativa, no asesoramiento financiero. Las comisiones y condiciones pueden cambiar. Verifica siempre con el broker antes de operar.*
+
+**¿Ya tienes cuenta en alguno de estos brokers?** [Analiza tu cartera gratis](/analyzer) e identifica si tu TER y diversificación están optimizados.
+`,
+  },
 ]
