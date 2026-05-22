@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/calculadora/interes-compuesto',priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/fire-monte-carlo', priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/roboadvisor-vs-diy', priority: 0.8, freq: 'monthly' },
+    { path: '/calculadora/irpf-venta-fondos', priority: 0.8, freq: 'monthly' },
     { path: '/score',                        priority: 0.6, freq: 'monthly' },
     { path: '/metodologia',                  priority: 0.5, freq: 'monthly' },
     { path: '/aviso-legal',                  priority: 0.3, freq: 'yearly'  },
