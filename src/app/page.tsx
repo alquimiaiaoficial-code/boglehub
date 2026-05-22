@@ -189,6 +189,73 @@ export default function HomePage() {
           </Reveal>
         </section>
 
+        {/* ETF HUB — internal link equity to key ETF pages */}
+        <section className="mx-auto max-w-5xl px-4 sm:px-6 py-20">
+          <Reveal>
+          <div className="text-center mb-10">
+            <h2 className="text-2xl sm:text-3xl font-bold text-fg">
+              ETFs más buscados por inversores españoles
+            </h2>
+            <p className="mt-2 text-fg-muted text-sm">
+              Análisis individual, comparativas curadas y categorías por tipo de activo.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {/* Categorías */}
+            <div>
+              <h3 className="text-xs font-semibold uppercase tracking-wide text-fg-muted mb-3">Categorías de ETF</h3>
+              <ul className="space-y-1.5">
+                {[
+                  { label: 'ETFs MSCI World para España', href: '/etfs/msci-world' },
+                  { label: 'ETFs S&P 500 UCITS', href: '/etfs/sp500' },
+                  { label: 'ETFs All-World (global)', href: '/etfs/todo-mundo' },
+                  { label: 'ETFs mercados emergentes', href: '/etfs/emergentes' },
+                  { label: 'ETFs de acumulación', href: '/etfs/acumulacion' },
+                  { label: 'ETFs de renta fija', href: '/etfs/renta-fija' },
+                  { label: 'ETFs bolsa europea', href: '/etfs/europa' },
+                  { label: 'Ver todos los ETFs', href: '/etf' },
+                ].map(({ label, href }) => (
+                  <li key={href}>
+                    <Link
+                      href={href}
+                      className="text-sm text-fg-muted hover:text-brand-400 transition-colors flex items-center gap-1.5"
+                    >
+                      <span className="text-brand-500/60">›</span> {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            {/* ETFs individuales más buscados */}
+            <div>
+              <h3 className="text-xs font-semibold uppercase tracking-wide text-fg-muted mb-3">ETFs individuales</h3>
+              <ul className="space-y-1.5">
+                {[
+                  { ticker: 'VWCE', name: 'Vanguard FTSE All-World (Acc)' },
+                  { ticker: 'CSPX', name: 'iShares Core S&P 500 (Acc)' },
+                  { ticker: 'IWDA', name: 'iShares Core MSCI World (Acc)' },
+                  { ticker: 'SWRD', name: 'SPDR MSCI World (Acc)' },
+                  { ticker: 'EIMI', name: 'iShares MSCI EM IMI (Acc)' },
+                  { ticker: 'VUAA', name: 'Vanguard S&P 500 (Acc)' },
+                  { ticker: 'AGGH', name: 'iShares Global Aggregate Bond EUR-H' },
+                  { ticker: 'EQQQ', name: 'Invesco Nasdaq-100 UCITS ETF' },
+                ].map(({ ticker, name }) => (
+                  <li key={ticker}>
+                    <Link
+                      href={`/etf/${ticker.toLowerCase()}`}
+                      className="text-sm text-fg-muted hover:text-brand-400 transition-colors flex items-center gap-1.5"
+                    >
+                      <span className="font-mono text-brand-400 w-10 shrink-0">{ticker}</span>
+                      <span className="truncate">{name}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          </Reveal>
+        </section>
+
         {/* FAQ */}
         <section className="bg-surface/30 border-y border-border">
           <Reveal className="mx-auto max-w-3xl px-4 sm:px-6 py-24">
