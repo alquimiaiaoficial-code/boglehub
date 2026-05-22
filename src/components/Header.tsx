@@ -12,6 +12,7 @@ export function Header() {
         <nav className="hidden md:flex items-center gap-6 text-sm text-fg-muted">
           <Link href="/analyzer" className="hover:text-fg transition-colors">Analizador</Link>
           <Link href="/comparar" className="hover:text-fg transition-colors">Comparar ETFs</Link>
+          <Link href="/etfs" className="hover:text-fg transition-colors">ETFs</Link>
           <Link href="/chat" className="hover:text-fg transition-colors">Chat IA</Link>
           <Link href="/blog" className="hover:text-fg transition-colors">Blog</Link>
         </nav>

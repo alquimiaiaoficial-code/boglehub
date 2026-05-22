@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next'
 import { getAllEtfs } from '@/lib/etf-database'
 import { BLOG_ARTICLES } from '@/data/blog-articles'
 import { ETF_PAIRS, pairToSlug } from '@/data/etf-pairs'
+import { ETF_THEMES } from '@/data/etf-themes'
 
 const BASE_URL = 'https://boglehub.vercel.app'
 
@@ -49,5 +50,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }))
 
-  return [...staticRoutes, ...etfRoutes, ...blogRoutes, ...pairRoutes]
+  // ETF category/theme pages (/etfs/[tema]) — high-value keyword landing pages
+  const etfsIndexRoute = {
+    url: `${BASE_URL}/etfs`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }
+  const themeRoutes = ETF_THEMES.map((theme) => ({
+    url: `${BASE_URL}/etfs/${theme.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }))
+
+  return [...staticRoutes, ...etfRoutes, ...blogRoutes, ...pairRoutes, etfsIndexRoute, ...themeRoutes]
 }
