@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import { remarkAutolinkTickers } from '@/lib/remark-autolink-tickers'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { JsonLd } from '@/components/JsonLd'
@@ -137,7 +138,7 @@ export default async function BlogArticlePage({
 
           {/* Content */}
           <div className="prose prose-invert prose-zinc max-w-none prose-headings:text-fg prose-strong:text-fg prose-a:text-brand-400 prose-code:text-brand-300">
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>{article.content}</ReactMarkdown>
+            <ReactMarkdown remarkPlugins={[remarkGfm, remarkAutolinkTickers]}>{article.content}</ReactMarkdown>
           </div>
 
           {/* Artículos relacionados */}
