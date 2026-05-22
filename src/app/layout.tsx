@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     description: 'Análisis de cartera con IA para inversores indexados hispanos. Gratis.',
     images: ['/api/og?title=BogleHub&subtitle=An%C3%A1lisis%20de%20cartera%20con%20IA'],
   },
+  verification: {
+    google: '0u-LWSiLc1VlQtyxhAkWRSXYises80aqhMOl3ZAAPao',
+  },
   robots: { index: true, follow: true },
   appleWebApp: {
     capable: true,
