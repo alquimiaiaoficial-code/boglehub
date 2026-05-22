@@ -246,6 +246,24 @@ Ya tienes los criterios, los brokers y los ETFs. El siguiente paso lógico es co
     publishedAt: '2026-05-11',
     readingMinutes: 13,
     keywords: ['VWCE vs CSPX', 'CSPX vs IWDA', 'mejor ETF mundial'],
+    faq: [
+      {
+        q: '¿Cuál es mejor: VWCE, CSPX o IWDA?',
+        a: 'Depende de tu estrategia. VWCE es la opción más diversificada (4.000+ empresas, incluye emergentes), ideal para una cartera en un solo ETF. IWDA cubre solo países desarrollados (sin emergentes, TER 0,20%) y CSPX se centra en las 500 mayores empresas de EE.UU. (TER 0,07%). Para un inversor español en fase de acumulación sin posiciones adicionales, VWCE o IWDA+EIMI son los puntos de partida más recomendados.',
+      },
+      {
+        q: '¿Cuánto solapamiento hay entre VWCE, CSPX e IWDA?',
+        a: 'CSPX e IWDA tienen un solapamiento muy alto (~85-90%) ya que ambos incluyen las mismas empresas americanas de gran capitalización. VWCE incluye todo lo de IWDA más los mercados emergentes, por lo que el solapamiento entre VWCE e IWDA es también alto (~75-80%). Si tienes tanto CSPX como IWDA en cartera, estás duplicando exposición sin añadir diversificación real.',
+      },
+      {
+        q: '¿Por qué CSPX tiene un TER más bajo que VWCE?',
+        a: 'El TER refleja el coste de gestionar el fondo. CSPX cubre solo 500 empresas americanas (simple de replicar), mientras que VWCE cubre más de 4.000 empresas en 50 países (más complejo). VWCE cobra 0,22% frente al 0,07% de CSPX. La diferencia de coste real anual sobre 10.000€ es de apenas 15€ — significativa a largo plazo pero no determinante si VWCE es la opción que mejor encaja en tu estrategia.',
+      },
+      {
+        q: '¿Puedo combinar VWCE y CSPX en la misma cartera?',
+        a: 'Técnicamente sí, pero no tiene mucho sentido. Si tienes VWCE, ya incluyes exposición a S&P 500 (EE.UU. representa ~63% del FTSE All-World). Añadir CSPX encima simplemente sobreponderaría EE.UU., que ya es el mayor componente. Si quieres más exposición a EE.UU. que la del mercado global, la forma correcta es usar VWCE + CSPX a porcentajes definidos intencionalmente.',
+      },
+    ],
     content: `# VWCE vs CSPX vs IWDA: comparativa exhaustiva 2026
 
 Si llevas un tiempo en comunidades de inversores indexados españoles (forobogleheads.es, r/SpainFIRE), te habrás topado con este debate decenas de veces. Tres tickers, tres filosofías ligeramente distintas, y ninguna respuesta universal correcta.
@@ -904,6 +922,20 @@ Con una retirada de 28 000 €/año en base del ahorro y bien planificada, el IR
     publishedAt: '2026-05-14',
     readingMinutes: 12,
     keywords: ['bogleheads España', 'inversión pasiva España', 'cartera bogle'],
+    faq: [
+      {
+        q: '¿Qué es un Boglehead y cómo se aplica en España?',
+        a: 'Un Boglehead es un inversor que sigue la filosofía de John Bogle (fundador de Vanguard): invertir a largo plazo en fondos indexados de bajo coste, diversificados globalmente, con mínima intervención activa. En España se aplica mediante ETFs UCITS domiciliados en Irlanda (eficientes fiscalmente), con carteras simples de 2-3 ETFs y aportaciones periódicas automáticas.',
+      },
+      {
+        q: '¿Cuáles son los principios básicos de la inversión Boglehead?',
+        a: 'Los cinco principios Boglehead son: (1) Empieza a invertir pronto y mantén el rumbo. (2) Diversifica ampliamente (acciones + bonos, varios países y sectores). (3) Minimiza los costes (busca TER bajos, evita comisiones innecesarias). (4) Mantén los impuestos al mínimo (ETFs de acumulación, domicilio en Irlanda). (5) Nunca trates de cronometrar el mercado (DCA mensual, ignora la volatilidad).',
+      },
+      {
+        q: '¿Cuál es la diferencia entre inversión activa e indexada?',
+        a: 'La inversión activa busca superar al mercado eligiendo acciones o timing: históricamente, más del 90% de los fondos activos no superan a su índice de referencia a 10+ años. La inversión indexada simplemente replica el mercado entero a coste mínimo, capturando toda la rentabilidad disponible sin fricción. Evidencia empírica amplia (Sharpe, French, Malkiel) respalda la superioridad de la indexación a largo plazo.',
+      },
+    ],
     content: `# Bogleheads España: la guía completa para empezar
 
 La inversión pasiva lleva décadas siendo la estrategia con mejor relación rentabilidad-esfuerzo que existe para el inversor no profesional. No hace falta analizar balances, leer informes de resultados ni predecir el ciclo económico. Solo hace falta entender tres principios, elegir los vehículos adecuados y no hacer nada (casi literalmente).
