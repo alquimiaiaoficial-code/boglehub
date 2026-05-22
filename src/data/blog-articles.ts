@@ -228,6 +228,14 @@ Ya tienes los criterios, los brokers y los ETFs. El siguiente paso lógico es co
 
 **¿Quieres analizar tu cartera con IA?** Prueba el [analizador gratis](/analyzer).
 **¿Tienes preguntas?** Pregúntale al [Chat IA en español](/chat).
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [JustETF — Buscador de ETFs UCITS para Europa](https://www.justetf.com/es/) — Compara TER, domicilio y tracking difference de cualquier ETF disponible en bolsas europeas.
+- [Vanguard — Página oficial VWCE (IE00BK5BQT80)](https://www.vanguard.co.uk/professional/product/etf/equity/9679/ftse-all-world-ucits-etf-usd-accumulating) — Folleto, costes y composición oficiales del Vanguard FTSE All-World.
+- [iShares — Página oficial IWDA](https://www.ishares.com/uk/individual/en/products/251882/ISHARES-MSCI-WORLD-UCITS-ETF) — Datos oficiales del iShares Core MSCI World.
 `,
   },
   {
@@ -661,6 +669,14 @@ Al ser entidad española, **retiene a cuenta** el 19 % sobre dividendos abonados
 
 **¿Quieres analizar tu cartera con IA?** Prueba el [analizador gratis](/analyzer).
 **¿Tienes preguntas?** Pregúntale al [Chat IA en español](/chat).
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [AEAT — IRPF: Rendimientos del capital mobiliario](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2023.html) — Manual oficial de la Agencia Tributaria sobre tributación de dividendos e inversiones.
+- [JustETF — Comparativa domicilio fiscal de ETFs](https://www.justetf.com/es/) — Filtra por país de domicilio (Irlanda, Luxemburgo) para evaluar la eficiencia fiscal de cada ETF.
+- [MSCI — Metodología de índices y withholding tax](https://www.msci.com/real-time-index-data-search) — Datos oficiales sobre composición de índices MSCI World y ACWI.
 `,
   },
   {
@@ -870,6 +886,14 @@ Con una retirada de 28 000 €/año en base del ahorro y bien planificada, el IR
 
 **¿Quieres analizar tu cartera con IA?** Prueba el [analizador gratis](/analyzer).
 **¿Tienes preguntas?** Pregúntale al [Chat IA en español](/chat).
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Trinity Study (Cooley, Hubbard, Walz, 1998)](https://www.financialplanningassociation.org/article/journal/JAN98-retirement-savings-choosing-withdrawal-rate-sustainable) — El estudio original que fundamenta la regla del 4% y las tasas de retirada seguras.
+- [Early Retirement Now — Safe Withdrawal Rate Series](https://earlyretirementnow.com/safe-withdrawal-rate-series/) — La serie más completa de análisis sobre la regla del 4% para FIRE con horizontes de 40-60 años.
+- [Calculadora FIRE de BogleHub con simulación Monte Carlo](/calculadora/fire-monte-carlo) — Simula tu caso concreto con datos históricos y diferentes tasas de retirada.
 `,
   },
   {
@@ -2384,6 +2408,14 @@ Antes de decidir, analiza cómo encaja cada ETF en tu cartera completa. El [anal
 ---
 
 *Información educativa, no asesoramiento financiero. Los datos de TER y AUM son aproximados a mayo 2026 y pueden variar. Verifica siempre con el emisor del fondo y tu asesor fiscal antes de invertir.*
+
+---
+
+## Fuentes y verificación de datos
+
+- [JustETF — Búsqueda avanzada de ETFs UCITS](https://www.justetf.com/es/) — Verifica TER, domicilio, tracking difference y rentabilidad histórica de cada ETF listado.
+- [iShares by BlackRock — Productos UCITS](https://www.ishares.com/uk/) — Folletos y datos oficiales de CSPX, IWDA, EIMI y el resto de ETFs iShares.
+- [Vanguard Europa — ETFs UCITS](https://www.vanguard.co.uk/professional/products/ucits-etfs) — Información oficial de VWCE, VUAA, VGEA y otros fondos Vanguard domiciliados en Irlanda.
 `,
   },
   {
@@ -2692,6 +2724,14 @@ Para carteras superiores a 20.000 €, la diferencia de cobertura entre DEGIRO y
 *Información educativa, no asesoramiento financiero. Las comisiones y condiciones pueden cambiar. Verifica siempre con el broker antes de operar.*
 
 **¿Ya tienes cuenta en alguno de estos brokers?** [Analiza tu cartera gratis](/analyzer) e identifica si tu TER y diversificación están optimizados.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [DEGIRO — Tarifas oficiales 2026](https://www.degiro.es/tarifas) — Verifica las comisiones actuales antes de abrir cuenta.
+- [Trade Republic — Información sobre la cuenta de inversión](https://traderepublic.com/es-es) — Condiciones actualizadas y ETFs disponibles en la plataforma.
+- [Banco de España — Registro de Entidades](https://www.bde.es/bde/es/secciones/servicios/Particulares_y_e/Registros_de_En/) — Comprueba que el broker está registrado y supervisado en España.
 `,
   },
 ]
