@@ -87,6 +87,14 @@ export default async function BlogArticlePage({
           ],
         }}
       />
+      {article.faq && article.faq.length > 0 && (
+        <JsonLd
+          schema={{
+            type: 'FAQPage',
+            questions: article.faq.map(({ q, a }) => ({ q, a })),
+          }}
+        />
+      )}
       <Header />
       <main className="bg-bg min-h-screen">
         <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">

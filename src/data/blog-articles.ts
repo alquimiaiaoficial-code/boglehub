@@ -1,3 +1,8 @@
+export interface BlogArticleFaq {
+  q: string
+  a: string
+}
+
 export interface BlogArticle {
   slug: string
   title: string
@@ -7,6 +12,8 @@ export interface BlogArticle {
   updatedAt?: string
   readingMinutes: number
   keywords: string[]
+  /** Preguntas frecuentes para FAQPage schema. Máximo 5 pares Q&A. */
+  faq?: BlogArticleFaq[]
   content: string // markdown
 }
 
@@ -19,6 +26,24 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     publishedAt: '2026-05-10',
     readingMinutes: 11,
     keywords: ['primer ETF España', 'ETF para empezar', 'cómo invertir en ETFs'],
+    faq: [
+      {
+        q: '¿Cuál es el mejor ETF para empezar a invertir en España?',
+        a: 'Para un primer inversor en España, VWCE (Vanguard FTSE All-World Acc) es la opción más recomendada: domiciliado en Irlanda (fiscalmente eficiente), acumulación, TER 0,22% y diversificación global en un solo fondo. Si prefieres mayor exposición a EE.UU., IWDA o SWRD son alternativas de MSCI World igualmente válidas.',
+      },
+      {
+        q: '¿Qué domicilio debe tener un ETF para ser eficiente fiscalmente en España?',
+        a: 'Irlanda es el domicilio óptimo para inversores residentes en España. Los ETFs irlandeses se benefician del convenio de doble imposición con EE.UU., lo que reduce la retención de dividendos al 15% (frente al 30% de otros domicilios). Busca ISINs que empiecen por IE.',
+      },
+      {
+        q: '¿Qué TER máximo debería aceptar en un ETF indexado?',
+        a: 'Para ETFs de renta variable global (MSCI World, S&P 500, All-World), un TER por encima del 0,30% anual es difícilmente justificable en 2026, cuando existen alternativas desde 0,03% (SPXS) hasta 0,22% (VWCE). Para renta fija o emergentes, un TER hasta 0,25% es razonable.',
+      },
+      {
+        q: '¿Es mejor un ETF de acumulación o de distribución para empezar?',
+        a: 'Para la mayoría de inversores en fase de ahorro, acumulación es más eficiente fiscalmente: los dividendos se reinvierten automáticamente sin tributar. Solo conviene distribución si necesitas ingresos periódicos sin vender participaciones (fase de retiro o FIRE).',
+      },
+    ],
     content: `# Cómo elegir tu primer ETF en España: guía 2026
 
 Empezar a invertir en ETFs puede parecer sencillo: abres un broker, buscas un ticker y pulsas comprar. Pero si te sales del camino correcto desde el principio — por elegir el domicilio fiscal equivocado, un TER demasiado alto o un broker con comisiones ocultas —, el coste compuesto de ese error te perseguirá décadas.
@@ -435,6 +460,24 @@ La diferencia entre CSPX y VWCE es ~7 000 € a 25 años. Relevante, pero no dra
     publishedAt: '2026-05-12',
     readingMinutes: 15,
     keywords: ['fiscalidad ETF España', 'declarar ETFs IRPF', 'impuestos ETFs'],
+    faq: [
+      {
+        q: '¿Cómo tributan los ETFs en España en el IRPF?',
+        a: 'Los ETFs tributan como fondos de inversión en cuanto a ganancia/pérdida patrimonial: cuando vendes, la diferencia entre precio de venta y coste de compra tributa entre el 19% y el 28% según el importe. Los dividendos de ETFs de distribución tributan como rendimientos del capital mobiliario (mismos tipos). A diferencia de los fondos de inversión, los ETFs no permiten traspasos sin tributar.',
+      },
+      {
+        q: '¿Tengo que declarar ETFs en España aunque no los haya vendido?',
+        a: 'Si no has vendido y el ETF es de acumulación, no debes declarar nada por IRPF ese año (no hay hecho imponible). Si el ETF es de distribución y pagó dividendos, sí debes declararlos aunque no hayas vendido. Para el modelo 720/721 (bienes en el extranjero), debes declarar si el valor conjunto supera los 50.000€.',
+      },
+      {
+        q: '¿Qué es la doble imposición de dividendos en ETFs y cómo recuperarla?',
+        a: 'Cuando un ETF recibe dividendos de empresas estadounidenses, el país de origen retiene un porcentaje (15% si el ETF está domiciliado en Irlanda, 30% en otros casos). En un ETF de acumulación esto ocurre internamente y el fondo lo gestiona. En un ETF de distribución domiciliado en Luxemburgo u otro país sin convenio, puedes recuperar la diferencia vía "deducción por doble imposición internacional" en tu declaración de la renta.',
+      },
+      {
+        q: '¿Los ETFs de acumulación son más eficientes fiscalmente que los de distribución?',
+        a: 'Para inversores en fase de ahorro: sí. Los ETFs de acumulación reinvierten los dividendos internamente sin que tributen en tu declaración. En un ETF de distribución, esos dividendos tributan cada año como rendimientos del capital mobiliario (19%-28%), reduciendo el capital disponible para el interés compuesto.',
+      },
+    ],
     content: `# Fiscalidad de ETFs en España: la guía que tu broker no te da
 
 La fiscalidad es el aspecto más ignorado por los nuevos inversores y el más costoso si se gestiona mal. Un error en la declaración de la renta puede costarte multas, recargos e intereses. Un ETF mal elegido puede hacerte tributar dividendos que podrías haber diferido décadas.
@@ -628,6 +671,24 @@ Al ser entidad española, **retiene a cuenta** el 19 % sobre dividendos abonados
     publishedAt: '2026-05-13',
     readingMinutes: 14,
     keywords: ['FIRE España', 'libertad financiera España', 'jubilarte joven'],
+    faq: [
+      {
+        q: '¿Cuánto dinero necesito para FIRE en España?',
+        a: 'Depende de tus gastos anuales. Aplicando la regla del 4%, necesitas 25 veces tus gastos anuales (o 28-33 veces si usas el 3,5%-3% para mayor seguridad en España). Con gastos de 18.000€/año en un pueblo, necesitarías ~450.000-500.000€. En Madrid o Barcelona con 30.000€/año, serían ~750.000-850.000€.',
+      },
+      {
+        q: '¿Qué es la regla del 4% y funciona en España?',
+        a: 'La regla del 4% (estudio Trinity) dice que puedes retirar el 4% de tu cartera el primer año y ajustar por inflación cada año, con probabilidad >95% de no quedarte sin dinero en 30 años. En España se recomienda usar el 3,5% por mayor longevidad, menor rentabilidad histórica bursátil europea y riesgo de inflación. Usa nuestra calculadora FIRE Monte Carlo para simular tu caso concreto.',
+      },
+      {
+        q: '¿Cómo funciona el movimiento FIRE en España?',
+        a: 'FIRE (Financial Independence, Retire Early) es alcanzar independencia financiera mediante ahorro e inversión indexada de alta tasa de ahorro (40-70% de los ingresos). En España la comunidad FIRE se reúne en foros como Bogleheads.es, r/SpainFIRE y grupos de Telegram. La filosofía combina reducción de gastos, inversión en ETFs indexados y planificación fiscal.',
+      },
+      {
+        q: '¿Cuánto tiempo tarda en conseguirse el FIRE en España?',
+        a: 'Depende de tu tasa de ahorro. Con ingresos de 35.000€ netos y gastos de 18.000€, ahorras ~49%. Con esa tasa de ahorro, desde cero tardarías aproximadamente 17-20 años en alcanzar FIRE (según las simulaciones Monte Carlo con rentabilidad real del 5-6% y aportaciones constantes). Tasas de ahorro superiores al 60% pueden reducirlo a 10-12 años.',
+      },
+    ],
     content: `# FIRE en España: cuánto necesitas realmente y cómo llegar
 
 FIRE (Financial Independence, Retire Early) es el movimiento que más ha cambiado la forma de pensar sobre el dinero en la última década. Pero la mayoría de la información disponible está diseñada para americanos con 401(k), Roth IRA y Medicaid. Los números no se trasladan directamente a España.
@@ -2129,6 +2190,20 @@ Empezar con poco no es empezar en desventaja. Es, simplemente, empezar. Y empeza
     publishedAt: '2026-05-21',
     readingMinutes: 12,
     keywords: ['mejores ETFs España 2026', 'qué ETF comprar España', 'ETF recomendado inversor español'],
+    faq: [
+      {
+        q: '¿Cuál es el mejor ETF para un inversor español en 2026?',
+        a: 'No existe un único "mejor" ETF universal, pero para simplificar: VWCE (Vanguard FTSE All-World, acumulación, IE, TER 0,22%) es la opción todo-en-uno más recomendada por su diversificación global, domicilio irlandés y acumulación. Para quienes prefieren solo EE.UU., CSPX o SPXS son las opciones más eficientes en TER.',
+      },
+      {
+        q: '¿Qué criterios son más importantes para elegir un ETF en España?',
+        a: 'Los cuatro criterios clave son: (1) Domicilio en Irlanda (ISIN IE...) para máxima eficiencia fiscal; (2) Clase acumulación para diferir la tributación de dividendos; (3) TER bajo, idealmente inferior al 0,25% para renta variable global; (4) Réplica física (no sintética) para mayor seguridad del patrimonio.',
+      },
+      {
+        q: '¿Dónde puedo comprar ETFs UCITS en España?',
+        a: 'Los principales brokers para ETFs UCITS en España en 2026 son: Trade Republic (sin comisión de compra, ideal para aportaciones periódicas), DEGIRO (comisiones bajas, amplio catálogo), MyInvestor (permite también fondos indexados con traspaso libre) e Interactive Brokers (para patrimonios mayores). Todos permiten comprar ETFs domiciliados en Irlanda.',
+      },
+    ],
     content: `# Mejores ETFs para invertir en España 2026: la lista definitiva
 
 No existe un único "mejor ETF". Existe el mejor ETF para tu objetivo, tu horizonte temporal y tu situación fiscal. Esta guía selecciona los 10 ETFs que más aparecen en las carteras de los inversores indexados españoles, explica por qué y te ayuda a elegir entre ellos.
@@ -2319,6 +2394,24 @@ Antes de decidir, analiza cómo encaja cada ETF en tu cartera completa. El [anal
     publishedAt: '2026-05-21',
     readingMinutes: 10,
     keywords: ['cartera boglehead 3 fondos', 'cartera lazy españa', 'cartera indexada 3 ETFs'],
+    faq: [
+      {
+        q: '¿Qué ETFs forman la cartera Boglehead de 3 fondos para España?',
+        a: 'La cartera de 3 fondos para España combina: (1) ETF MSCI World o All-World (IWDA, SWRD o VWCE) para renta variable desarrollada o global; (2) ETF de mercados emergentes (EIMI o VFEM) si usas MSCI World en el fondo principal; (3) ETF de bonos globales o europeos (AGGH o VGEA). La proporción renta variable/bonos depende del horizonte y tolerancia al riesgo.',
+      },
+      {
+        q: '¿Cuánto debería aportar mensualmente a una cartera indexada?',
+        a: 'No hay una cantidad mínima: con Trade Republic puedes comprar fracciones de ETFs desde 1€. Lo más importante es la consistencia (Dollar Cost Averaging, DCA mensual) y la tasa de ahorro. Una aportación de 200-500€/mes durante 20-30 años genera un patrimonio significativo gracias al interés compuesto, incluso con rentabilidades moderadas del 5-7% real anual.',
+      },
+      {
+        q: '¿Con qué frecuencia hay que rebalancear una cartera de 3 fondos?',
+        a: 'La mayoría de inversores Boglehead rebalancean anualmente (una vez al año) o cuando alguna clase de activo se desvía más de un 5-10% de su peso objetivo. El rebalanceo aprovecha las aportaciones periódicas (comprando el activo que más ha caído) para minimizar eventos de venta y su impacto fiscal. No es necesario ni conveniente rebalancear con más frecuencia.',
+      },
+      {
+        q: '¿Es mejor una cartera de 3 fondos o un único ETF All-World?',
+        a: 'Depende de la simplicidad que busques. Un único ETF All-World (como VWCE) ya diversifica en más de 3.700 empresas de 50 países y ajusta automáticamente los pesos. La cartera de 3 fondos permite personalizar el peso de emergentes y bonos, pero requiere más gestión. Para la mayoría de inversores que empiezan, un único ETF global es suficiente.',
+      },
+    ],
     content: `# La cartera Boglehead de 3 fondos para España: guía práctica 2026
 
 La cartera de 3 fondos es la implementación más sencilla y eficaz de la [filosofía Boglehead](/blog/bogleheads-espana-guia-completa). Tres posiciones, una revisión anual, décadas de retornos ajustados a coste mínimo. No es la única forma correcta de invertir, pero es la que más inversores han llevado a la práctica con éxito sostenido.
@@ -2473,6 +2566,24 @@ Para esta cartera de 3 fondos, si operas en MyInvestor y tu horizonte es >10 añ
     publishedAt: '2026-05-21',
     readingMinutes: 11,
     keywords: ['mejor broker ETF España 2026', 'DEGIRO vs Trade Republic', 'MyInvestor opiniones', 'broker inversión indexada España'],
+    faq: [
+      {
+        q: '¿Cuál es el mejor broker para comprar ETFs en España en 2026?',
+        a: 'Para aportaciones periódicas pequeñas (DCA mensual): Trade Republic (sin comisión, fracciones, app muy sencilla). Para más variedad de ETFs y volumen mayor: DEGIRO (0,50-1€ por operación en la mayoría de ETFs europeos). Para combinar ETFs y fondos indexados con traspaso libre: MyInvestor. Todos son seguros y están regulados.',
+      },
+      {
+        q: '¿Es seguro DEGIRO para invertir en España?',
+        a: 'Sí. DEGIRO está regulado por la AFM holandesa y es subsidiaria de flatexDEGIRO Bank AG, supervisado por el BaFin alemán. El Fondo de Garantía de Inversores cubre hasta 20.000€ en caso de insolvencia del broker (no cubre pérdidas de mercado). Desde 2021 es parte de un banco regulado, lo que añade solidez al grupo.',
+      },
+      {
+        q: '¿Trade Republic es seguro para invertir en España?',
+        a: 'Sí. Trade Republic es un banco alemán regulado por el BaFin con licencia bancaria completa desde 2023. Los depósitos en euros hasta 100.000€ están cubiertos por el Fondo de Garantía de Depósitos alemán. Los ETFs y acciones se custodian como patrimonio segregado (no del banco), cubiertos por el Fondo de Garantía de Inversores hasta 20.000€.',
+      },
+      {
+        q: '¿Puedo traspasar ETFs entre brokers sin tributar en España?',
+        a: 'No. A diferencia de los fondos de inversión, los ETFs no permiten traspaso libre entre brokers sin tributar. Si transfieres ETFs de DEGIRO a Trade Republic, se considera una transmisión y debes declarar la ganancia o pérdida patrimonial en el IRPF. Para evitar este coste, decide bien el broker antes de empezar a invertir.',
+      },
+    ],
     content: `# DEGIRO vs Trade Republic vs MyInvestor: qué broker elegir en España (2026)
 
 Elegir broker es la segunda decisión más importante después de elegir tus ETFs. Una mala elección te cuesta en comisiones, spreads y fricciones que se acumulan durante décadas. Esta comparativa se centra en los tres brokers más usados por la comunidad de inversores indexados en España.
