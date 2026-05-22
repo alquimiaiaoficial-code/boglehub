@@ -34,6 +34,9 @@ export async function POST(req: NextRequest) {
   const apiKey = process.env.RESEND_API_KEY
   const audienceId = process.env.RESEND_AUDIENCE_ID
   const from = process.env.RESEND_FROM ?? 'BogleHub <onboarding@resend.dev>'
+  // Las respuestas al email de bienvenida van a este buzón (p. ej. el Gmail
+  // del fundador), así no hace falta montar recepción de correo en el dominio.
+  const replyTo = process.env.RESEND_REPLY_TO
 
   if (!apiKey) {
     console.warn('[newsletter] RESEND_API_KEY ausente — alta no persistida:', email)
@@ -76,6 +79,7 @@ export async function POST(req: NextRequest) {
       body: JSON.stringify({
         from,
         to: email,
+        ...(replyTo ? { reply_to: replyTo } : {}),
         subject: mail.subject,
         html: mail.html,
         text: mail.text,
