@@ -13,6 +13,65 @@ import type { EtfMetadata } from '@/types/etf'
 
 const BASE_URL = 'https://boglehub.vercel.app'
 
+// ---------------------------------------------------------------------------
+// Theme cross-links: map an ETF to its relevant category page(s)
+// ---------------------------------------------------------------------------
+const SP500_TICKERS = new Set(['CSPX', 'SXR8', 'VUSA', 'IUSA', 'VUAA', 'SPXS'])
+
+function getRelevantThemes(etf: EtfMetadata): { slug: string; label: string }[] {
+  const themes: { slug: string; label: string }[] = []
+
+  if (etf.assetClass === 'COMMODITY') {
+    themes.push({ slug: 'materias-primas', label: 'Materias primas y oro' })
+    return themes
+  }
+  if (etf.assetClass === 'BOND') {
+    themes.push({ slug: 'renta-fija', label: 'Renta fija' })
+    return themes
+  }
+  if (etf.assetClass !== 'EQUITY') return themes
+
+  // EM
+  if (((etf.regionAllocation.EM ?? 0) + (etf.regionAllocation.CHINA ?? 0)) > 0.5) {
+    themes.push({ slug: 'emergentes', label: 'Mercados emergentes' })
+  }
+  // Europe-focused
+  if ((etf.regionAllocation.EUROPE ?? 0) >= 0.5) {
+    themes.push({ slug: 'europa', label: 'Bolsa europea' })
+  }
+  // S&P 500
+  if (SP500_TICKERS.has(etf.ticker)) {
+    themes.push({ slug: 'sp500', label: 'S&P 500' })
+  }
+  // All-World (includes EM)
+  if (
+    (etf.regionAllocation.EM ?? 0) > 0.05 &&
+    (etf.regionAllocation.US ?? 0) >= 0.40 &&
+    (etf.regionAllocation.US ?? 0) < 0.80 &&
+    (etf.regionAllocation.EUROPE ?? 0) > 0.05
+  ) {
+    themes.push({ slug: 'todo-mundo', label: 'All-World / global' })
+  }
+  // MSCI World (developed, no EM)
+  if (
+    (etf.regionAllocation.EM ?? 0) < 0.01 &&
+    (etf.regionAllocation.JAPAN ?? 0) > 0.02 &&
+    (etf.regionAllocation.US ?? 0) >= 0.55 &&
+    (etf.regionAllocation.US ?? 0) < 0.85
+  ) {
+    themes.push({ slug: 'msci-world', label: 'MSCI World / mercados desarrollados' })
+  }
+
+  // Acumulación / Distribución
+  if (etf.accumulating) {
+    themes.push({ slug: 'acumulacion', label: 'ETFs de acumulación' })
+  } else {
+    themes.push({ slug: 'distribucion', label: 'ETFs de distribución' })
+  }
+
+  return themes
+}
+
 const ASSET_CLASS_LABEL: Record<string, string> = {
   EQUITY: 'Renta variable',
   BOND: 'Renta fija',
@@ -139,6 +198,9 @@ export default async function EtfPage({ params }: { params: Promise<{ ticker: st
     .filter((e) => e.assetClass === etf.assetClass && e.ticker !== etf.ticker)
     .slice(0, 3)
 
+  // Categorías relevantes para este ETF
+  const relevantThemes = getRelevantThemes(etf)
+
   // Comparativas curadas disponibles para este ticker
   const availablePairs = ETF_PAIRS
     .filter(([a, b]) => a === etf.ticker || b === etf.ticker)
@@ -252,6 +314,24 @@ export default async function EtfPage({ params }: { params: Promise<{ ticker: st
                     <div className="text-xs text-fg-subtle mt-2">
                       TER {formatPct(s.ter / 100, 2)}
                     </div>
+                  </Link>
+                ))}
+              </div>
+            </Card>
+          )}
+
+          {/* Categorías relevantes */}
+          {relevantThemes.length > 0 && (
+            <Card className="mb-6">
+              <CardTitle className="mb-3">Categorías de {etf.ticker}</CardTitle>
+              <div className="flex flex-wrap gap-2">
+                {relevantThemes.map(({ slug, label }) => (
+                  <Link
+                    key={slug}
+                    href={`/etfs/${slug}`}
+                    className="rounded-lg border border-border bg-surface-2 px-3 py-1.5 text-sm text-fg-muted hover:border-border-strong hover:text-fg transition-colors"
+                  >
+                    Ver todos los ETFs de {label} →
                   </Link>
                 ))}
               </div>

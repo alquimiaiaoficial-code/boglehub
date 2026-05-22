@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: Array<{ url: string; lastModified: Date; changeFrequency: 'weekly' | 'monthly' | 'yearly'; priority: number }> = [
     { path: '',                              priority: 1.0, freq: 'weekly'  },
     { path: '/analyzer',                     priority: 0.9, freq: 'weekly'  },
+    { path: '/etf',                            priority: 0.8, freq: 'monthly' },
     { path: '/comparar',                     priority: 0.9, freq: 'weekly'  },
     { path: '/chat',                         priority: 0.9, freq: 'weekly'  },
     { path: '/blog',                         priority: 0.8, freq: 'weekly'  },
