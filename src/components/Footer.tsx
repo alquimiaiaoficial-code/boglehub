@@ -20,6 +20,7 @@ export function Footer() {
               <li><Link href="/chat" className="hover:text-fg transition-colors">Chat IA</Link></li>
               <li><Link href="/calculadora/interes-compuesto" className="hover:text-fg transition-colors">Interés compuesto</Link></li>
               <li><Link href="/calculadora/fire-monte-carlo" className="hover:text-fg transition-colors">Calculadora FIRE</Link></li>
+              <li><Link href="/calculadora/roboadvisor-vs-diy" className="hover:text-fg transition-colors">Roboadvisor vs DIY</Link></li>
             </ul>
           </div>
           <div>
