@@ -10,10 +10,10 @@ export function Header() {
           <Logo size="md" />
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm text-fg-muted">
+          <Link href="/empezar" className="hover:text-fg transition-colors">Empezar</Link>
           <Link href="/analyzer" className="hover:text-fg transition-colors">Analizador</Link>
-          <Link href="/comparar" className="hover:text-fg transition-colors">Comparar ETFs</Link>
+          <Link href="/comparar" className="hover:text-fg transition-colors">Comparar</Link>
           <Link href="/etfs" className="hover:text-fg transition-colors">ETFs</Link>
-          <Link href="/chat" className="hover:text-fg transition-colors">Chat IA</Link>
           <Link href="/blog" className="hover:text-fg transition-colors">Blog</Link>
         </nav>
         <Link href="/analyzer">

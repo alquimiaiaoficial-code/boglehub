@@ -15,6 +15,7 @@ export function Footer() {
           <div>
             <h4 className="font-semibold text-sm text-fg mb-3">Producto</h4>
             <ul className="space-y-2 text-sm text-fg-muted">
+              <li><Link href="/empezar" className="hover:text-fg transition-colors">Cómo empezar</Link></li>
               <li><Link href="/analyzer" className="hover:text-fg transition-colors">Analizador</Link></li>
               <li><Link href="/comparar" className="hover:text-fg transition-colors">Comparar ETFs</Link></li>
               <li><Link href="/chat" className="hover:text-fg transition-colors">Chat IA</Link></li>

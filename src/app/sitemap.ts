@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // 1.0 = home | 0.9 = herramientas core | 0.8 = blog hub + calculadoras | 0.5 = metodología | 0.3 = legales
   const staticRoutes: Array<{ url: string; lastModified: Date; changeFrequency: 'weekly' | 'monthly' | 'yearly'; priority: number }> = [
     { path: '',                              priority: 1.0, freq: 'weekly'  },
+    { path: '/empezar',                      priority: 0.9, freq: 'monthly' },
     { path: '/analyzer',                     priority: 0.9, freq: 'weekly'  },
     { path: '/etf',                            priority: 0.8, freq: 'monthly' },
     { path: '/comparar',                     priority: 0.9, freq: 'weekly'  },
