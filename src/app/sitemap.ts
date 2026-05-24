@@ -14,6 +14,8 @@ import {
 } from '@/data/etf-broker-availability'
 import { INVESTOR_PROFILES } from '@/data/investor-profiles'
 import { MONTHLY_AMOUNTS } from '@/data/monthly-amounts'
+import { BROKER_PAIRS, brokerPairToSlug } from '@/data/broker-pairs'
+import { OBJECTIVES } from '@/data/objectives'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -139,6 +141,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
+  // Broker vs Broker comparison pages
+  const vsBrokerRoutes = BROKER_PAIRS.map(([a, b]) => ({
+    url: `${BASE_URL}/vs-broker/${brokerPairToSlug(a, b)}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }))
+
+  // Objective pages /cuanto-necesito/[slug]
+  const objectiveRoutes = OBJECTIVES.map((o) => ({
+    url: `${BASE_URL}/cuanto-necesito/${o.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.75,
+  }))
+
   // Programmatic: comprar [ETF] en [broker] — high commercial intent
   const comprarRoutes: typeof staticRoutes = []
   for (const ticker of POPULAR_ETF_TICKERS) {
@@ -167,6 +185,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...gestoraRoutes,
     ...profileRoutes,
     ...invertirRoutes,
+    ...vsBrokerRoutes,
+    ...objectiveRoutes,
     ...comprarRoutes,
   ]
 }
