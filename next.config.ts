@@ -9,7 +9,6 @@ const nextConfig: NextConfig = {
         source: '/:path*',
         has: [{ type: 'host', value: 'boglehub.vercel.app' }],
         destination: 'https://boglehub.com/:path*',
-        permanent: true,
         statusCode: 301,
       },
     ]
