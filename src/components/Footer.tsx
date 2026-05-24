@@ -23,6 +23,7 @@ export function Footer() {
               <li><Link href="/calculadora/fire-monte-carlo" className="hover:text-fg transition-colors">Calculadora FIRE</Link></li>
               <li><Link href="/calculadora/roboadvisor-vs-diy" className="hover:text-fg transition-colors">Roboadvisor vs DIY</Link></li>
               <li><Link href="/calculadora/irpf-venta-fondos" className="hover:text-fg transition-colors">Calculadora IRPF</Link></li>
+              <li><Link href="/calculadora/comparar-brokers" className="hover:text-fg transition-colors">Comparador de brokers</Link></li>
             </ul>
           </div>
           <div>

@@ -5,6 +5,7 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
+import { NewsletterSignup } from '@/components/NewsletterSignup'
 import { getEtfByTicker, getAllEtfs } from '@/lib/etf-database'
 import { computeFiscalGrade, GRADE_STYLES } from '@/lib/fiscal'
 import { formatPct } from '@/lib/utils'
@@ -390,6 +391,20 @@ export default async function EtfPage({ params }: { params: Promise<{ ticker: st
               ))}
             </div>
           </section>
+
+          {/* Newsletter */}
+          <aside className="mb-6 rounded-xl border border-border bg-surface p-6">
+            <h2 className="text-base font-semibold text-fg">
+              ¿Te ha sido útil esta ficha?
+            </h2>
+            <p className="mt-1 text-sm text-fg-muted">
+              Análisis quincenal de ETFs, fiscalidad y novedades de BogleHub. Sin spam, te
+              das de baja con un clic.
+            </p>
+            <div className="mt-4">
+              <NewsletterSignup variant="inline" />
+            </div>
+          </aside>
 
           {/* CTA */}
           <Card className="text-center">

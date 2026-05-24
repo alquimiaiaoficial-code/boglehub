@@ -43,6 +43,13 @@ const CALCULATORS: CalculatorCard[] = [
     pitch:
       'Cuánto paga Hacienda al vender, con desglose por tramos del IRPF del ahorro 2026 y compensación de pérdidas.',
   },
+  {
+    slug: 'comparar-brokers',
+    name: 'Comparador de brókers',
+    tag: 'Brókers',
+    pitch:
+      'MyInvestor, Trade Republic, DEGIRO, Scalable, IBKR y XTB. Cuánto te cuesta cada uno al año según cómo inviertes.',
+  },
 ]
 
 const FAQ_ITEMS: { q: string; a: string }[] = [
@@ -111,7 +118,7 @@ export default function CalculadoraHubPage() {
 
         {/* Grid de calculadoras */}
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {CALCULATORS.map((calc) => (
               <Link
                 key={calc.slug}
