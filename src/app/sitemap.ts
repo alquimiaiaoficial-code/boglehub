@@ -7,6 +7,12 @@ import { GLOSSARY_TERMS } from '@/data/glossary'
 import { BROKERS } from '@/data/brokers'
 import { ROBOADVISORS } from '@/data/roboadvisors'
 import { GESTORAS } from '@/data/gestoras'
+import {
+  POPULAR_ETF_TICKERS,
+  COVERED_BROKER_SLUGS,
+  getAvailability,
+} from '@/data/etf-broker-availability'
+import { INVESTOR_PROFILES } from '@/data/investor-profiles'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -28,6 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/broker',                       priority: 0.8, freq: 'monthly' },
     { path: '/roboadvisor',                  priority: 0.8, freq: 'monthly' },
     { path: '/gestora',                      priority: 0.7, freq: 'monthly' },
+    { path: '/perfil',                       priority: 0.8, freq: 'monthly' },
     { path: '/calculadora',                  priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/interes-compuesto',priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/fire-monte-carlo', priority: 0.8, freq: 'monthly' },
@@ -114,6 +121,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
+  // Profile pages (perfiles de inversor)
+  const profileRoutes = INVESTOR_PROFILES.map((p) => ({
+    url: `${BASE_URL}/perfil/${p.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }))
+
+  // Programmatic: comprar [ETF] en [broker] — high commercial intent
+  const comprarRoutes: typeof staticRoutes = []
+  for (const ticker of POPULAR_ETF_TICKERS) {
+    for (const broker of COVERED_BROKER_SLUGS) {
+      if (getAvailability(ticker, broker).available) {
+        comprarRoutes.push({
+          url: `${BASE_URL}/comprar/${ticker.toLowerCase()}/${broker}`,
+          lastModified: new Date(),
+          changeFrequency: 'monthly' as const,
+          priority: 0.7,
+        })
+      }
+    }
+  }
+
   return [
     ...staticRoutes,
     ...etfRoutes,
@@ -125,5 +155,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...brokerRoutes,
     ...roboadvisorRoutes,
     ...gestoraRoutes,
+    ...profileRoutes,
+    ...comprarRoutes,
   ]
 }
