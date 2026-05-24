@@ -189,6 +189,143 @@ export default function HomePage() {
           </Reveal>
         </section>
 
+        {/* START HERE — three curated learning paths */}
+        <section className="mx-auto max-w-6xl px-4 sm:px-6 py-20">
+          <Reveal>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-fg">¿Por dónde empiezo?</h2>
+            <p className="mt-3 text-fg-muted">
+              Tres caminos según en qué punto de tu vida inversora te encuentras.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            {/* Path 1: Principiante */}
+            <div className="rounded-2xl border border-border bg-surface p-6 flex flex-col">
+              <div className="text-xs font-semibold uppercase tracking-wide text-brand-400 mb-2">
+                Nivel principiante
+              </div>
+              <h3 className="text-lg font-bold text-fg mb-3">
+                Nunca he invertido antes
+              </h3>
+              <p className="text-sm text-fg-muted leading-relaxed mb-4 flex-1">
+                Empieza por aprender los conceptos básicos y elegir broker. En 6 pasos pasarás de
+                cero a tener una cartera funcionando.
+              </p>
+              <ul className="space-y-1.5 text-sm">
+                <li>
+                  <Link href="/empezar" className="text-brand-400 hover:text-brand-300 hover:underline">
+                    → Guía para empezar paso a paso
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog/bogleheads-espana-guia-completa" className="text-brand-400 hover:text-brand-300 hover:underline">
+                    → La filosofía Boglehead
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog/como-elegir-tu-primer-etf-espana-2026" className="text-brand-400 hover:text-brand-300 hover:underline">
+                    → Cómo elegir tu primer ETF
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog/como-empezar-a-invertir-poco-dinero" className="text-brand-400 hover:text-brand-300 hover:underline">
+                    → Empezar con poco dinero
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/glosario" className="text-brand-400 hover:text-brand-300 hover:underline">
+                    → Glosario de términos
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Path 2: Construir cartera */}
+            <div className="rounded-2xl border border-border bg-surface p-6 flex flex-col">
+              <div className="text-xs font-semibold uppercase tracking-wide text-accent mb-2">
+                Construyendo cartera
+              </div>
+              <h3 className="text-lg font-bold text-fg mb-3">
+                Tengo broker pero busco ETFs
+              </h3>
+              <p className="text-sm text-fg-muted leading-relaxed mb-4 flex-1">
+                Explora el catálogo, compara opciones y diseña la cartera Boglehead que mejor
+                encaja contigo. 68 ETFs UCITS analizados con grado fiscal.
+              </p>
+              <ul className="space-y-1.5 text-sm">
+                <li>
+                  <Link href="/etf" className="text-brand-400 hover:text-brand-300 hover:underline">
+                    → Catálogo completo de ETFs
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/etfs/msci-world" className="text-brand-400 hover:text-brand-300 hover:underline">
+                    → Mejores MSCI World
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog/cartera-boglehead-3-fondos-espana" className="text-brand-400 hover:text-brand-300 hover:underline">
+                    → Cartera Boglehead de 3 fondos
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog/mejores-etfs-renta-fija-2026" className="text-brand-400 hover:text-brand-300 hover:underline">
+                    → Mejores ETFs de renta fija
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/comparar" className="text-brand-400 hover:text-brand-300 hover:underline">
+                    → Comparador de ETFs
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Path 3: Optimizar */}
+            <div className="rounded-2xl border border-border bg-surface p-6 flex flex-col">
+              <div className="text-xs font-semibold uppercase tracking-wide text-warn mb-2">
+                Optimizar y proteger
+              </div>
+              <h3 className="text-lg font-bold text-fg mb-3">
+                Ya invierto, quiero optimizar
+              </h3>
+              <p className="text-sm text-fg-muted leading-relaxed mb-4 flex-1">
+                Reduce comisiones, mejora la fiscalidad y planifica tu jubilación. Calculadoras
+                gratis y guías prácticas para residentes en España.
+              </p>
+              <ul className="space-y-1.5 text-sm">
+                <li>
+                  <Link href="/analyzer" className="text-brand-400 hover:text-brand-300 hover:underline">
+                    → Analizar mi cartera
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/calculadora/fire-monte-carlo" className="text-brand-400 hover:text-brand-300 hover:underline">
+                    → Calculadora FIRE Monte Carlo
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog/fiscalidad-etfs-espana-guia-completa" className="text-brand-400 hover:text-brand-300 hover:underline">
+                    → Fiscalidad de ETFs en España
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog/plan-pensiones-indexado-espana-2026" className="text-brand-400 hover:text-brand-300 hover:underline">
+                    → Plan de pensiones indexado
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/calculadora" className="text-brand-400 hover:text-brand-300 hover:underline">
+                    → Todas las calculadoras
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+          </Reveal>
+        </section>
+
         {/* ETF HUB — internal link equity to key ETF pages */}
         <section className="mx-auto max-w-5xl px-4 sm:px-6 py-20">
           <Reveal>
