@@ -3664,4 +3664,1376 @@ Para comparar ETFs con y sin cobertura divisa disponibles en España, usa el [co
 - [Guía de ETFs MSCI World para España — BogleHub](/etfs/msci-world) — Comparativa de todos los ETFs de MSCI World disponibles en España con datos de TER y domicilio.
 `,
   },
+  {
+    slug: 'plan-pensiones-indexado-espana-2026',
+    title: 'Plan de pensiones indexado en España: guía completa 2026',
+    excerpt:
+      'Todo sobre los planes de pensiones indexados en España en 2026: ventajas fiscales, comisiones, mejores opciones (Indexa, Finizens, MyInvestor) y comparativa con fondos indexados.',
+    publishedAt: '2026-05-24',
+    readingMinutes: 11,
+    keywords: ['plan de pensiones indexado España', 'mejor plan de pensiones 2026', 'Indexa Pensiones opinión', 'MyInvestor plan de pensiones', 'plan pensiones vs fondo indexado'],
+    faq: [
+      {
+        q: '¿Cuál es la principal ventaja fiscal de un plan de pensiones en España?',
+        a: 'Las aportaciones a un plan de pensiones reducen tu base imponible general del IRPF en el año en que se realizan. El límite máximo es 1.500€ anuales en planes individuales (la cifra ha bajado desde los 8.000€ que se permitían antes de 2021). Esta deducción supone un ahorro inmediato del 19-47% según tu marginal del IRPF: para un contribuyente al 37%, aportar 1.500€ supone pagar 555€ menos de impuestos ese año. Sin embargo, al rescatar el plan, todo el dinero (aportaciones + ganancias) tributa como rendimientos del trabajo, no como rentas del ahorro.',
+      },
+      {
+        q: '¿Qué plan de pensiones indexado tiene la comisión más baja en España?',
+        a: 'En 2026, los planes de pensiones indexados más competitivos son los de MyInvestor (gestionados por Indexa o por el propio MyInvestor desde 0,30% de comisión total), Indexa Pensiones (~0,40-0,50% total) y Finizens Pensiones (~0,40% total). Todos ellos están por debajo del 1% que cobran los planes de pensiones tradicionales de la banca, lo que se traduce en decenas de miles de euros más en la jubilación.',
+      },
+      {
+        q: '¿Es mejor un plan de pensiones o un fondo indexado para la jubilación?',
+        a: 'Depende de tu situación fiscal actual y futura. Si pagas IRPF al 37% o más actualmente y esperas tributar al 19-24% en la jubilación, el plan de pensiones es muy ventajoso por la deducción inmediata. Si pagas al 19-24% actualmente y esperas tributar igual o más en la jubilación, el fondo indexado es generalmente mejor: tributa al tipo del ahorro (19-28%) y no como rendimiento del trabajo. La combinación inteligente es usar el plan hasta el límite de 1.500€/año y el resto en fondos indexados.',
+      },
+      {
+        q: '¿Cuándo puedo rescatar un plan de pensiones?',
+        a: 'Las contingencias clásicas son: jubilación, incapacidad permanente, dependencia severa, fallecimiento (los beneficiarios) y enfermedad grave. Además, desde 2025 puedes rescatar libremente las aportaciones con más de 10 años de antigüedad (la primera ventana se abrió en 2025). También se permite el rescate por desempleo de larga duración o por emergencia financiera con limitaciones. Verifica las condiciones específicas con tu gestora antes de hacer cuentas con ese dinero.',
+      },
+      {
+        q: '¿Puedo traspasar mi plan de pensiones de banco a un plan indexado sin coste?',
+        a: 'Sí. El traspaso entre planes de pensiones está exento de tributación y de comisiones de salida en España (la mayoría de gestoras no las aplican). Es uno de los movimientos más rentables que puedes hacer si tienes un plan de pensiones en un banco con comisión del 1,5% y lo traspasas a un plan indexado con comisión del 0,40%. El traspaso tarda 5-15 días hábiles y no requiere vender ni rescatar nada.',
+      },
+    ],
+    content: `# Plan de pensiones indexado en España: guía completa 2026
+
+Los planes de pensiones indexados son la versión moderna y barata del producto que durante décadas ha sido el rey del ahorro para la jubilación en España. La diferencia con los planes tradicionales de banco no es estética: es estructural. Comisiones cinco veces más bajas, gestión pasiva en lugar de activa, y transparencia total en lo que compras.
+
+Esta guía cubre cómo funcionan, las ventajas fiscales reales, las mejores opciones disponibles en 2026 y cuándo tienen sentido frente a fondos indexados normales.
+
+---
+
+## La ventaja fiscal del plan de pensiones
+
+Las aportaciones a un plan de pensiones individual reducen la base imponible general del IRPF en el año de la aportación. El límite máximo es 1.500€ anuales (planes individuales) o hasta 8.500€ adicionales si tu empresa tiene plan de pensiones de empleo y tú aportas.
+
+**Ejemplo numérico**: si tu marginal del IRPF es del 37% y aportas 1.500€ al plan de pensiones, tu factura fiscal baja en 555€ ese año. El coste real de tu aportación es 945€, no 1.500€.
+
+Esta ventaja se conoce como **deducción a la aportación**. Es lo que hace que los planes de pensiones tengan sentido para contribuyentes con marginales altos del IRPF.
+
+**El trade-off**: al rescatar el plan, todo el dinero (aportaciones más rendimientos acumulados) tributa como **rendimientos del trabajo**, no como rentas del ahorro. Esto puede penalizar si el rescate se hace en un único año, ya que llevarás tu tipo marginal al máximo.
+
+---
+
+## La estrategia óptima de rescate
+
+Para minimizar el impacto fiscal al rescatar:
+
+**1. Rescate en forma de renta periódica**: cobrar el plan como una pensión mensual durante varios años distribuye el impacto fiscal en lugar de concentrarlo. Cada año tributas como un trabajador con un salario adicional reducido.
+
+**2. Coordinación con la pensión pública**: si vas a cobrar pensión pública de 1.500€/mes, no rescates el plan en el mismo año en grandes cantidades — saturarías tu tipo marginal.
+
+**3. Aprovechar la reducción del 40%**: si tu plan tiene aportaciones anteriores a 2007, esas aportaciones específicas se benefician de una reducción del 40% si las rescatas en forma de capital en el año de la jubilación o en los dos siguientes.
+
+---
+
+## Mejores planes de pensiones indexados en 2026
+
+### 1. Plan de pensiones de Indexa Capital
+
+Indexa Pensiones aplica la misma filosofía que su roboadvisor de fondos: carteras indexadas de bajo coste con rebalanceo automático. Comisión total estimada: 0,40-0,50% anual.
+
+**Ventajas**:
+- Sin mínimo de aportación
+- Bonificación del 0,10% sobre las aportaciones nuevas en el primer año (suele renovarse)
+- Carteras según perfil de riesgo (1/10 al 10/10)
+- Misma metodología que su fondo, fácil de combinar
+
+**Limitaciones**: comisión total ligeramente superior a las opciones más baratas (~0,10% más que MyInvestor).
+
+### 2. Plan de pensiones de MyInvestor
+
+MyInvestor tiene varios planes de pensiones indexados, algunos gestionados por su equipo y otros como white-label de Indexa. El más barato actualmente: el **MyInvestor Indexado Global** con comisión total ~0,30%.
+
+**Ventajas**:
+- La comisión total más baja del mercado español
+- Aportación mínima 1€
+- Integración con el resto de productos de MyInvestor
+
+**Limitaciones**: cartera menos personalizada que Indexa (suele ser un único producto global, no una cartera ajustada a tu perfil).
+
+### 3. Finizens Pensiones
+
+Mismo enfoque que el roboadvisor de Finizens: carteras de 1/5 a 5/5 con rebalanceo automático. Comisión total ~0,40%.
+
+**Ventajas**:
+- Carteras incluyen oro (a través de ETC)
+- App muy intuitiva
+- Mínimo bajo
+
+**Limitaciones**: solo 5 perfiles de riesgo (menos granularidad que Indexa).
+
+---
+
+## El traspaso de plan de pensiones: el movimiento más rentable
+
+Si tienes un plan de pensiones en un banco con comisión del 1,5-1,75%, el traspaso a uno indexado al 0,40% es probablemente el movimiento financiero más rentable que puedes hacer este año. La diferencia anual del 1% sobre el saldo se acumula durante décadas hasta convertirse en una proporción significativa del plan al rescatar.
+
+**El proceso**:
+1. Solicita el traspaso desde la web del nuevo gestor (Indexa, MyInvestor, Finizens)
+2. Aportas los datos del plan actual (entidad, número de cuenta del plan)
+3. El nuevo gestor inicia el traspaso, sin coste para ti
+4. En 5-15 días hábiles el dinero aparece en el nuevo plan
+5. **No hay evento fiscal**: el traspaso entre planes de pensiones no tributa
+
+Para calcular el impacto exacto del cambio, usa la [calculadora de interés compuesto](/calculadora/interes-compuesto) introduciendo tu saldo actual, los años hasta la jubilación y la diferencia de comisiones (~1%).
+
+---
+
+## Plan de pensiones vs fondo indexado: cuál elegir
+
+| | Plan de pensiones indexado | Fondo indexado |
+|---|---|---|
+| Deducción IRPF aportación | ✓ (hasta 1.500€/año) | ✗ |
+| Comisiones | 0,30-0,50% | 0,05-0,20% |
+| Liquidez | Limitada (jubilación, 10 años...) | Total |
+| Tributación rescate | Rendimientos del trabajo | Base del ahorro |
+| Mínimos | Sin mínimo o muy bajos | Desde 1€ (MyInvestor) |
+| Traspaso libre | ✓ (entre planes pensiones) | ✓ (entre fondos) |
+
+**Regla práctica**:
+- **Hasta 1.500€/año** → plan de pensiones indexado (aprovechas la deducción)
+- **Más allá de 1.500€/año** → fondos indexados (mayor liquidez y menores comisiones)
+
+Esta estrategia combinada es lo que recomienda la mayoría de planificadores financieros indexados en España. Para profundizar en la diferencia fiscal entre ambos productos, lee la [comparativa entre plan de pensiones y fondo indexado](/blog/plan-de-pensiones-vs-fondo-indexado).
+
+---
+
+## Errores frecuentes al elegir plan de pensiones
+
+1. **Aportar al plan más caro de tu banco** "porque ya lo tienes ahí": la comisión del 1,5% se come la deducción fiscal en pocos años.
+2. **Aportar más de 1.500€/año en un plan individual**: el exceso no es deducible y queda atrapado en el plan con la fiscalidad menos ventajosa que el fondo indexado.
+3. **Rescatar todo el plan en un único año al jubilarse**: dispara el tipo marginal del IRPF. Mejor en forma de renta o en varios ejercicios.
+4. **Olvidar la opción de traspaso**: si llevas años en un plan caro, el traspaso a un plan indexado puede salvar decenas de miles de euros del rescate final.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Indexa Pensiones — Información y rentabilidad](https://indexacapital.com/es/pensiones) — Datos oficiales del plan de pensiones indexado más popular en España.
+- [MyInvestor — Planes de pensiones indexados](https://myinvestor.es/planes-de-pensiones/) — Comparativa de los planes indexados de MyInvestor con comisiones actualizadas.
+- [AEAT — Aportaciones a planes de pensiones](https://sede.agenciatributaria.gob.es) — Información oficial sobre límites y deducciones aplicables.
+`,
+  },
+  {
+    slug: 'mejores-etfs-renta-fija-2026',
+    title: 'Mejores ETFs de renta fija para inversores en España (2026)',
+    excerpt:
+      'Análisis de los mejores ETFs de renta fija UCITS disponibles en España en 2026: bonos globales, eurozona, corporativos y high yield. TER, cobertura EUR y para qué cartera encaja cada uno.',
+    publishedAt: '2026-05-24',
+    readingMinutes: 10,
+    keywords: ['mejores ETF renta fija España 2026', 'ETF bonos España', 'AGGH análisis', 'ETF renta fija EUR hedged', 'ETF deuda soberana eurozona'],
+    faq: [
+      {
+        q: '¿Por qué incluir renta fija en una cartera indexada?',
+        a: 'La renta fija actúa como amortiguador de la cartera durante caídas bursátiles. Cuando la renta variable cae un 30-40%, la renta fija de calidad (bonos gubernamentales de la eurozona y bonos corporativos de grado de inversión) suele caer poco o incluso subir, lo que reduce la volatilidad total de la cartera. Esto es especialmente importante para inversores cerca de la jubilación o con baja tolerancia psicológica al riesgo. Para inversores jóvenes con horizonte largo, una asignación pequeña (10-20%) de renta fija puede tener sentido como ejercicio de rebalanceo.',
+      },
+      {
+        q: '¿Qué ETF de renta fija es el más recomendado para inversores en España?',
+        a: 'El más popular es AGGH (iShares Core Global Aggregate Bond UCITS ETF EUR Hedged, ISIN IE00BDBRDM35), con TER 0,10%, cobertura EUR y exposición global a bonos gubernamentales y corporativos de grado de inversión. Es el ETF que más usan las carteras Boglehead españolas para la parte de renta fija. Alternativas: EUNA (eurozona soberana), VGEA (gobiernos globales) o IEAG (corporativos eurozona).',
+      },
+      {
+        q: '¿Por qué es importante la cobertura EUR en ETFs de renta fija?',
+        a: 'La renta fija tiene volatilidad baja (2-7% anual). Sin cobertura EUR, el riesgo divisa puede añadir 5-10% adicional de volatilidad, dominando completamente el comportamiento del ETF. Un bono americano puede caer un 5% en USD, pero si el dólar cae un 10% frente al euro, el inversor en euros pierde el 15%. La cobertura EUR elimina este efecto y mantiene la renta fija como amortiguador real de la cartera.',
+      },
+      {
+        q: '¿Cuál es la diferencia entre bonos gubernamentales y bonos corporativos?',
+        a: 'Los bonos gubernamentales están emitidos por estados (Alemania, Francia, España, EE.UU...) y son los más seguros: el riesgo de impago es muy bajo en economías desarrolladas. A cambio, ofrecen rentabilidad más baja. Los bonos corporativos los emiten empresas (Microsoft, Apple, Telefónica...) y pagan más rentabilidad para compensar el mayor riesgo de impago. Dentro de corporativos, los de "grado de inversión" (AAA-BBB) son más seguros que los "high yield" (BB-CCC). Para la parte conservadora de una cartera indexada, lo más común es gubernamentales o agregado (mezcla de ambos).',
+      },
+      {
+        q: '¿Tiene sentido invertir en ETFs de renta fija high yield?',
+        a: 'Los ETFs de high yield (bonos basura, con rating inferior a BBB-) tienen rendimientos esperados más altos pero también mayor correlación con la renta variable en momentos de estrés. Tienden a caer cuando la bolsa cae, lo que reduce su utilidad como amortiguador. Para la mayoría de inversores indexados, no aportan diversificación real: si vas a asumir riesgo, mejor renta variable; si quieres seguridad, mejor grado de inversión. El high yield tiene sentido para inversores más sofisticados que buscan un componente específico de "carry trade".',
+      },
+    ],
+    content: `# Mejores ETFs de renta fija para inversores en España (2026)
+
+La renta fija es la gran olvidada en muchas carteras indexadas españolas. La rentabilidad bursátil del 2024-2025 ha hecho que muchos inversores la consideren "innecesaria". Es un error: la renta fija no está ahí para hacer dinero, está ahí para que la cartera siga siendo manejable cuando la renta variable caiga un 40%.
+
+Esta guía revisa los mejores ETFs de renta fija UCITS disponibles en España en 2026, organizados por tipo de activo y con criterios objetivos: TER, cobertura EUR, dominio fiscal y liquidez.
+
+---
+
+## Por qué la renta fija sigue importando
+
+Una cartera 100% renta variable tiene rentabilidad esperada superior a una cartera 60/40 (60% acciones, 40% bonos). Pero también tiene volatilidad mucho mayor: caídas del 50% son históricamente posibles. Esa volatilidad es el principal motivo por el que los inversores particulares abandonan sus carteras en los peores momentos.
+
+La renta fija de calidad cumple tres funciones:
+1. **Reducir la volatilidad total** de la cartera
+2. **Proporcionar liquidez** sin tener que vender renta variable en momentos malos
+3. **Permitir el rebalanceo**: comprar renta variable barata cuando cae, vendiendo renta fija que ha aguantado
+
+No tener nada de renta fija no es ni mejor ni peor: es una decisión de riesgo. Lo importante es ser consciente.
+
+---
+
+## Los mejores ETFs de renta fija disponibles en España
+
+### 1. AGGH — iShares Core Global Aggregate Bond UCITS ETF EUR Hedged
+
+| Dato | Valor |
+|---|---|
+| ISIN | IE00BDBRDM35 |
+| TER | 0,10% |
+| Cobertura | EUR Hedged |
+| Tipo | Renta fija global (soberana + corporativa) |
+| Domicilio | Irlanda |
+
+El ETF de renta fija más popular entre Bogleheads españoles. Replica el índice Bloomberg Global Aggregate Bond, que incluye más de 7.000 bonos de gobiernos y empresas de grado de inversión de todo el mundo. La cobertura EUR es esencial.
+
+**Para qué cartera**: la elección por defecto para la parte de renta fija de cualquier cartera Boglehead estándar. Diversificación máxima, coste mínimo, cobertura adecuada.
+
+### 2. EUNA — iShares Core Euro Government Bond UCITS ETF
+
+| Dato | Valor |
+|---|---|
+| ISIN | IE00B4WXJJ64 |
+| TER | 0,07% |
+| Cobertura | EUR (activos en EUR) |
+| Tipo | Renta fija soberana eurozona |
+| Domicilio | Irlanda |
+
+Si quieres exposición exclusiva a bonos gubernamentales de países de la eurozona (Alemania, Francia, Italia, España, Países Bajos...). No hay riesgo divisa porque todos los activos son en euros.
+
+**Para qué cartera**: inversores que prefieren máxima seguridad y simplicidad, sin exposición a high yield ni divisas extranjeras. Idóneo para perfiles muy conservadores.
+
+### 3. IBCS — iShares € Corp Bond UCITS ETF
+
+| Dato | Valor |
+|---|---|
+| ISIN | IE00B3F81R35 |
+| TER | 0,20% |
+| Cobertura | EUR (activos en EUR) |
+| Tipo | Renta fija corporativa eurozona, grado de inversión |
+| Domicilio | Irlanda |
+
+Bonos emitidos por empresas grandes de la eurozona con rating de grado de inversión. Rentabilidad esperada algo superior a los soberanos a cambio de mayor riesgo de crédito.
+
+**Para qué cartera**: complemento de bonos soberanos en cartera diversificada, o sustituto si quieres más rentabilidad sin salir del grado de inversión.
+
+### 4. VGEA — Vanguard Global Aggregate Bond UCITS ETF EUR Hedged
+
+| Dato | Valor |
+|---|---|
+| ISIN | IE00BG47KH54 |
+| TER | 0,10% |
+| Cobertura | EUR Hedged |
+| Tipo | Renta fija global (soberana + corporativa) |
+| Domicilio | Irlanda |
+
+Alternativa de Vanguard al AGGH. Misma filosofía (renta fija global cubierta en euros), TER similar. Diferencia menor en el índice replicado, pero el comportamiento es prácticamente equivalente.
+
+**Para qué cartera**: alternativa a AGGH si prefieres la marca Vanguard o si tu broker tiene mejor spread en este ETF.
+
+### 5. IBGS — iShares € Govt Bond 1-3yr UCITS ETF
+
+| Dato | Valor |
+|---|---|
+| ISIN | IE00B14X4Q57 |
+| TER | 0,15% |
+| Cobertura | EUR |
+| Tipo | Bonos soberanos eurozona corto plazo |
+| Domicilio | Irlanda |
+
+Renta fija de corto plazo (1-3 años de duración). Muy poca sensibilidad a los cambios de tipos de interés, baja volatilidad. Útil como alternativa a la liquidez.
+
+**Para qué cartera**: para el fondo de emergencia o como sustituto de la cuenta corriente cuando los tipos remunerados son bajos. No es para "invertir" en el sentido tradicional.
+
+---
+
+## Composición de la parte renta fija según perfil
+
+**Perfil conservador (60% renta fija)**:
+- 70% AGGH (global, agregado)
+- 20% EUNA (eurozona soberana)
+- 10% IBCS (corporativos eurozona)
+
+**Perfil moderado (20-30% renta fija)**:
+- 100% AGGH (simplicidad máxima)
+
+**Perfil agresivo (10% renta fija)**:
+- 100% AGGH (función amortiguadora, no rentabilidad)
+
+**Cerca de jubilación o ya retirado**:
+- 50% IBGS (corto plazo, liquidez)
+- 50% AGGH (global, agregado)
+
+---
+
+## Errores frecuentes con renta fija
+
+**1. Comprar bonos sin cobertura EUR**
+El riesgo divisa puede dominar completamente la rentabilidad de un ETF de renta fija. Sin cobertura, no estás invirtiendo en bonos: estás invirtiendo en divisas con bonos como vehículo. Para entender mejor por qué, lee [riesgo divisa en ETFs](/blog/riesgo-divisa-etf-hedged-espana).
+
+**2. Buscar la rentabilidad alta con high yield**
+Los bonos high yield (rating BB o inferior) tienen mayor correlación con la renta variable en crisis. Cuando más amortiguador necesitas, peor cumplen su función.
+
+**3. Querer "tradear" la renta fija con cambios de tipos**
+Predecir los movimientos de los bancos centrales es imposible. Mantener una asignación de renta fija constante y rebalancear es más rentable que intentar entrar y salir según tu pronóstico macroeconómico.
+
+**4. Asignar 0% renta fija "porque soy joven y mi horizonte es largo"**
+Esa lógica es matemáticamente correcta pero psicológicamente peligrosa: la primera caída del 50% te enseñará si tu tolerancia al riesgo real coincide con tu tolerancia teórica. Mejor empezar con un 10-20% de renta fija y subir el peso de renta variable cuando hayas vivido al menos una caída fuerte.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [iShares — Ficha técnica AGGH](https://www.ishares.com/es/inversores-particulares/es/productos/291768/ishares-core-global-aggregate-bond-ucits-etf) — Composición, rentabilidad y datos de TER actualizados.
+- [Vanguard — VGEA](https://www.vanguard.co.uk/) — Alternativa a AGGH con datos de cartera y duración.
+- [JustETF — Comparador de ETFs de renta fija](https://www.justetf.com/es/find-etf.html) — Filtra por tipo, TER y cobertura para encontrar el ETF que encaje con tu cartera.
+`,
+  },
+  {
+    slug: 'myinvestor-opinion-2026',
+    title: 'MyInvestor: opinión y análisis completo 2026',
+    excerpt:
+      'Análisis honesto de MyInvestor en 2026: cuenta remunerada, fondos indexados Vanguard y Amundi, comisiones reales, seguridad y para quién encaja este neobanco español.',
+    publishedAt: '2026-05-24',
+    readingMinutes: 9,
+    keywords: ['MyInvestor opinión', 'MyInvestor cuenta remunerada', 'MyInvestor fondos indexados', 'MyInvestor seguridad', 'MyInvestor vs Indexa'],
+    faq: [
+      {
+        q: '¿Es seguro MyInvestor?',
+        a: 'Sí. MyInvestor es el neobanco del grupo Andbank España, una entidad regulada por el Banco de España y la CNMV. Los depósitos en euros hasta 100.000€ están cubiertos por el Fondo de Garantía de Depósitos español. Los fondos de inversión y ETFs se custodian como patrimonio separado del banco — en caso de insolvencia, son tuyos y están cubiertos adicionalmente por el Fondo de Garantía de Inversiones hasta 100.000€. La cuenta es 100% online sin oficinas físicas.',
+      },
+      {
+        q: '¿Qué fondos indexados ofrece MyInvestor?',
+        a: 'MyInvestor ofrece la mayor selección de fondos indexados de bajo coste disponible al inversor particular en España. Incluye gama Vanguard (Global Stock, Emerging Markets, EUR Investment Grade Bond), Amundi (Prime Global con TER 0,05%, Prime Eurozone, Index Emerging Markets), Fidelity (MSCI World, Index Emerging Markets) y otras gestoras. Todos permiten traspaso fiscal libre entre fondos, lo que es la mayor ventaja fiscal de los fondos sobre los ETFs en España.',
+      },
+      {
+        q: '¿Cuál es el TAE de la cuenta remunerada de MyInvestor en 2026?',
+        a: 'La cuenta remunerada de MyInvestor paga el 2% TAE el primer año hasta 70.000€ (con condiciones: aportación periódica desde nómina, recibos domiciliados, etc.). Después del primer año baja al 1% TAE. La cuenta es gratis sin comisiones de mantenimiento. Esta remuneración es competitiva con las mejores cuentas del mercado español, aunque no es la más alta. Verifica las condiciones actuales en la web ya que pueden cambiar.',
+      },
+      {
+        q: '¿MyInvestor cobra comisión por comprar ETFs?',
+        a: 'Sí, pero bajas. La comisión por orden de ETF es 0,20€ fijos + 0,03% del importe. Para órdenes pequeñas (<667€), la comisión mínima de 0,20€ es muy competitiva. Para órdenes grandes, el componente variable del 0,03% puede sumar más que en Trade Republic (0€) o DEGIRO (0,50€ + 0,004%). Para el inversor que quiere combinar ETFs y fondos indexados en una sola plataforma, MyInvestor es la mejor opción.',
+      },
+      {
+        q: '¿Puedo abrir una cuenta de pensiones indexada en MyInvestor?',
+        a: 'Sí. MyInvestor ofrece varios planes de pensiones indexados, algunos gestionados internamente y otros como white-label de Indexa Capital. Las comisiones totales rondan el 0,30-0,50% anual, entre las más bajas del mercado español. El mínimo de aportación es de 1€ y permite traspaso libre desde otros planes de pensiones sin coste fiscal ni operativo.',
+      },
+    ],
+    content: `# MyInvestor: opinión y análisis completo 2026
+
+MyInvestor es el neobanco del grupo Andbank España y se ha convertido en una de las plataformas más populares entre inversores indexados en España. Su propuesta combina cuenta corriente remunerada, broker para ETFs y, sobre todo, el acceso al mayor catálogo de fondos indexados de bajo coste disponible al inversor particular español.
+
+Este análisis cubre qué hace bien, qué hace mal y para qué tipo de inversor tiene más sentido.
+
+---
+
+## Qué es MyInvestor
+
+MyInvestor es la marca digital de Andbank España, un banco con licencia de la CNMV y supervisión del Banco de España desde 2010. La diferencia con un banco tradicional: 100% online, sin oficinas físicas, sin comisiones de mantenimiento en la mayoría de productos.
+
+Lo que ofrece:
+- Cuenta corriente y de ahorro remuneradas
+- Broker para acciones, ETFs y fondos
+- Fondos indexados Vanguard, Amundi, Fidelity (entre otros)
+- Planes de pensiones indexados
+- Hipotecas
+- Tarjetas
+- Carteras gestionadas (roboadvisor propio)
+
+---
+
+## La gran fortaleza: fondos indexados al menor coste
+
+Aquí MyInvestor no tiene competencia real en España. Es el único banco que ofrece a la vez:
+
+- **Fondos Vanguard institucionales** (no las clases minoristas más caras)
+- **Amundi Prime Global** con TER del 0,05% (el fondo indexado global más barato disponible al inversor español)
+- **Sin comisión de compra ni custodia**
+- **Mínimo de aportación 1€** (aportaciones recurrentes desde el primer euro)
+- **Traspaso fiscal libre** entre fondos (la mayor ventaja fiscal de los fondos sobre los ETFs en España)
+
+Para inversores que quieren una cartera de fondos indexados con la máxima eficiencia fiscal y el mínimo coste, MyInvestor es la opción objetivamente mejor en España.
+
+Las alternativas (Renta 4, Selfbank) ofrecen menos fondos o con comisiones de custodia. Los brokers extranjeros como DEGIRO o Trade Republic solo ofrecen ETFs, no fondos.
+
+---
+
+## La cuenta remunerada de MyInvestor
+
+MyInvestor remunera la cuenta corriente al 2% TAE el primer año (hasta 70.000€) con condiciones razonables: aportación mensual de al menos 50€ desde una nómina o ingreso periódico, o domiciliación de algunos recibos. Sin esas condiciones, baja al 1% TAE el primer año.
+
+Después del primer año, la remuneración baja: actualmente al 1% TAE. Es competitiva pero no la mejor del mercado.
+
+Una característica interesante: el dinero remunerado está en una cuenta corriente regular (no en un depósito ni un fondo monetario). Tiene disponibilidad inmediata y está cubierta por el Fondo de Garantía de Depósitos hasta 100.000€.
+
+---
+
+## Comisiones por operar en bolsa
+
+**Acciones y ETFs**:
+- 0,20€ fijos + 0,03% del importe (compra y venta)
+- Mínimo 1€, máximo 200€
+
+**Fondos de inversión**:
+- 0€ de comisión de compra
+- 0€ de comisión de custodia
+- 0€ de comisión de traspaso
+
+**Planes de pensiones**:
+- 0€ de comisión de apertura/aportación
+- 0€ de comisión de traspaso
+
+Para ETFs, la comisión de MyInvestor es más alta que Trade Republic (0€) y más alta que DEGIRO en órdenes grandes. Para fondos indexados, es la mejor del mercado.
+
+---
+
+## Roboadvisor de MyInvestor
+
+MyInvestor ofrece un servicio de gestión automatizada de carteras similar a Indexa o Finizens, con comisiones del 0,30-0,40% total. Es competitivo pero no ofrece una diferencia significativa con los competidores especializados (Indexa, Finizens).
+
+Si ya tienes cuenta en MyInvestor por otros motivos y quieres delegar la gestión sin abrir una segunda entidad, tiene sentido. Si vas a empezar desde cero buscando el mejor roboadvisor, Indexa o Finizens están más enfocados al producto.
+
+---
+
+## Para quién tiene sentido MyInvestor
+
+MyInvestor es la opción correcta si:
+
+- **Quieres una cartera de fondos indexados** con traspaso fiscal libre
+- **Valoras tener todo en una sola plataforma**: cuenta, fondos, ETFs, pensiones, hipoteca
+- **Aportas cantidades pequeñas regulares**: 1€ de mínimo, sin comisión de compra
+- **Prefieres un banco regulado en España** sobre brokers extranjeros
+- **Quieres el plan de pensiones indexado más barato del mercado**
+
+---
+
+## Para quién NO tiene sentido MyInvestor
+
+MyInvestor no es la mejor opción si:
+
+- **Solo invertirás en ETFs sin fondos**: Trade Republic o DEGIRO son más baratos para órdenes grandes
+- **Tu cartera tiene poco patrimonio y valoras mucho la cuenta remunerada**: hay cuentas con TAE más alta en otros neobancos
+- **Quieres acceso a mercados internacionales avanzados**: MyInvestor cubre bien Europa y EEUU pero no es tan extensivo como brokers especializados
+
+---
+
+## Cartera mínima recomendada en MyInvestor
+
+Para un inversor en fase de acumulación que quiera la máxima eficiencia fiscal y mínimo coste:
+
+- **80% Amundi Prime Global** (TER 0,05%, equivalente a MSCI World)
+- **10% Amundi Index MSCI Emerging Markets** (TER 0,20%, emergentes)
+- **10% Amundi Index Eurozone Government Bond** (TER 0,15%, renta fija eurozona)
+
+Coste total ponderado: ~0,08-0,10% anual. Mínimo de aportación: 1€ por fondo. Traspaso libre entre los tres. Para muchos inversores en España, esta es la cartera óptima.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [MyInvestor — Catálogo de fondos indexados](https://myinvestor.es/fondos-de-inversion/) — Lista completa de fondos disponibles con datos de TER actualizados.
+- [Banco de España — Registro de entidades](https://www.bde.es/) — Verifica el registro de Andbank España (matriz de MyInvestor).
+- [Análisis Amundi Prime Global — BogleHub](/blog/amundi-prime-global-analisis) — Por qué este fondo de MyInvestor es el más eficiente del mercado español.
+`,
+  },
+  {
+    slug: 'trade-republic-opinion-2026',
+    title: 'Trade Republic: opinión y análisis completo 2026',
+    excerpt:
+      'Análisis de Trade Republic en 2026: 0€ por operar ETFs, planes de ahorro automáticos, cuenta remunerada al 3% TAE y por qué se ha hecho tan popular en España.',
+    publishedAt: '2026-05-24',
+    readingMinutes: 9,
+    keywords: ['Trade Republic opinión', 'Trade Republic España', 'Trade Republic seguridad', 'Trade Republic comisiones', 'Trade Republic cuenta remunerada'],
+    faq: [
+      {
+        q: '¿Es seguro Trade Republic para invertir desde España?',
+        a: 'Sí. Trade Republic es un banco alemán con licencia bancaria completa supervisado por el BaFin (regulador alemán) y el Bundesbank desde 2023. Los depósitos en euros hasta 100.000€ están cubiertos por el Fondo de Garantía de Depósitos alemán (Entschädigungseinrichtung deutscher Banken). Las acciones y ETFs se custodian como patrimonio separado del banco — son de tu propiedad legalmente, independiente del banco. Adicionalmente cubiertos hasta 20.000€ por el Fondo Europeo de Garantía de Inversiones (ESIF).',
+      },
+      {
+        q: '¿Cuánto cobra Trade Republic por operar ETFs?',
+        a: '0€ por operación, en cualquier ETF disponible en la plataforma (más de 2.000 ETFs). No hay comisión mínima, no hay comisión de custodia, no hay comisión de mantenimiento. Trade Republic gana dinero principalmente por order flow (cobra a los creadores de mercado por enrutar órdenes) y por el margen de la cuenta remunerada. Es un modelo legítimo y común en brokers neobancarios europeos.',
+      },
+      {
+        q: '¿Qué son los planes de ahorro automáticos de Trade Republic?',
+        a: 'Una funcionalidad única que permite programar compras periódicas (semanal, mensual o trimestral) de cualquier ETF desde 1€. La automatización es total: indicas qué ETF, cuánto invertir, con qué frecuencia y el día del mes, y Trade Republic ejecuta la compra automáticamente. Sin comisión, fracciones de participación admitidas. Es la mejor herramienta del mercado para implementar dollar cost averaging (DCA) sin esfuerzo.',
+      },
+      {
+        q: '¿Cuál es el TAE de la cuenta remunerada de Trade Republic en 2026?',
+        a: 'Trade Republic remunera el saldo en cuenta en euros con el tipo de depósito del BCE menos un margen. En 2026, con tipos del BCE alrededor del 2,5-3%, la cuenta paga aproximadamente 2-2,5% TAE sin condiciones. La remuneración se paga mensualmente. No hay límites en el saldo remunerado (a diferencia de otras cuentas que limitan a 30.000-100.000€). La cuenta es 100% gratuita.',
+      },
+      {
+        q: '¿Trade Republic ofrece fondos indexados o solo ETFs?',
+        a: 'Solo ETFs. Trade Republic no ofrece fondos de inversión tradicionales. Esto significa que no puedes aprovechar el traspaso fiscal libre entre fondos que sí existe en MyInvestor con Vanguard o Amundi. Para inversores que quieren combinar la ventaja del 0% en ETFs con el traspaso fiscal de los fondos, la estrategia óptima es tener cuenta en Trade Republic (ETFs) y MyInvestor (fondos indexados).',
+      },
+    ],
+    content: `# Trade Republic: opinión y análisis completo 2026
+
+Trade Republic ha sido el broker que más ha cambiado la inversión particular en España en los últimos cinco años. Antes, comprar un ETF costaba 5-15€ por orden en cualquier broker español. Trade Republic llegó con 0€ por operación, planes de ahorro automáticos desde 1€ y una app diseñada para que el inversor no se complique.
+
+Este análisis cubre cómo funciona, dónde está la trampa (porque siempre hay una), y para qué inversor encaja realmente.
+
+---
+
+## Qué es Trade Republic
+
+Trade Republic es un neobanco alemán fundado en Berlín en 2015. Tiene licencia bancaria completa desde 2023, supervisado por el BaFin (regulador alemán de mercados financieros) y el Bundesbank. En 2024 superó los 5 millones de clientes en Europa y los 1.000 millones de euros en cuentas remuneradas.
+
+Su propuesta es deliberadamente simple:
+- 0€ por comprar o vender ETFs y acciones
+- Cuenta remunerada al 2-3% TAE sin condiciones
+- App móvil sencilla, diseñada para no equivocarse
+- Planes de ahorro automáticos en ETFs desde 1€
+
+---
+
+## La pregunta inevitable: ¿cómo gana dinero?
+
+Si cobra 0€ por operar, ¿cómo es viable? Trade Republic gana dinero principalmente por:
+
+**1. Payment for Order Flow (PFOF)**
+Cobra a los creadores de mercado (market makers) por enrutar las órdenes de los clientes hacia ellos. Los market makers obtienen un margen entre el precio de compra y venta (spread), y comparten parte de ese margen con Trade Republic. La práctica está regulada en Europa.
+
+**Implicación para el usuario**: el spread en algunas operaciones puede ser ligeramente mayor que si compraras directamente en Xetra. Para ETFs muy líquidos como VWCE o IWDA, la diferencia es marginal (céntimos por operación). Para ETFs menos líquidos puede ser más notable.
+
+**2. La cuenta remunerada**
+Trade Republic recibe el tipo de depósito del BCE por el dinero en cuenta de sus clientes. Paga al cliente un poco menos que ese tipo (por ejemplo, BCE al 3% y cliente recibe 2,5%) y se queda con la diferencia.
+
+**3. Tarjetas, cripto y otros productos**
+Cobra comisiones en otros productos que no son ETFs ni acciones (criptomonedas, tarjetas, etc.).
+
+Es un modelo de negocio legítimo y común en bancos de inversión digital europeos. No es "demasiado bueno para ser verdad": es simplemente más eficiente que los bancos tradicionales.
+
+---
+
+## La verdadera ventaja: planes de ahorro automáticos
+
+Esta es la funcionalidad que más impacta al inversor indexado de largo plazo. Permite programar compras periódicas de ETFs con automatización total:
+
+- Eliges el ETF (cualquiera de los 2.000+ disponibles)
+- Indicas el importe (desde 1€)
+- Eliges la frecuencia (semanal, mensual o trimestral)
+- Indicas el día del mes
+- Trade Republic compra automáticamente, sin comisión, en fracciones si es necesario
+
+¿Por qué importa tanto? Porque elimina la fricción y la tentación de hacer market timing. Un inversor que quiere aportar 200€ al mes a VWCE programa el plan una vez y se olvida durante años. Sin decisiones que tomar, sin recordatorios, sin tentación de esperar "a que baje".
+
+Es objetivamente la mejor herramienta del mercado español para implementar [Dollar Cost Averaging](/blog/dca-vs-lump-sum-aportar-mensual) sin esfuerzo.
+
+---
+
+## La cuenta remunerada de Trade Republic
+
+Sin condiciones (no requiere nómina, ni recibos domiciliados, ni aportación mínima), Trade Republic remunera el saldo en cuenta al tipo de depósito del BCE menos un pequeño margen. En 2026, con tipos del BCE en el 2,5-3%, la cuenta paga aproximadamente 2-2,5% TAE.
+
+**Sin límite de saldo remunerado**: a diferencia de cuentas como las de MyInvestor (limitada a 70.000€) o N26 (limitada a 100.000€), Trade Republic remunera todo el saldo independientemente del importe. Útil para inversores con liquidez alta esperando ser invertida.
+
+**Pago mensual**: los intereses se acreditan cada mes en la cuenta. Visibilidad clara, sin sorpresas.
+
+---
+
+## Limitaciones de Trade Republic
+
+**1. Solo ETFs, no fondos de inversión**
+No puedes comprar fondos Vanguard, Amundi o Fidelity. Si quieres aprovechar el traspaso fiscal libre entre fondos en España, necesitas un segundo broker (MyInvestor).
+
+**2. Mercados limitados**
+Trade Republic da acceso a bolsas europeas principales y a EEUU (NYSE, NASDAQ). No tiene acceso a mercados asiáticos directos ni a ETFs menos comunes.
+
+**3. Pocas opciones avanzadas**
+No hay órdenes stop-loss complejas, no hay análisis técnico avanzado, no hay derivados. Es deliberadamente simple, lo que para el inversor indexado es una virtud pero para el trader técnico es una limitación.
+
+**4. Spread en ETFs menos líquidos**
+El order flow puede generar spreads ligeramente mayores que en compra directa en Xetra. Para ETFs como CSPX, VWCE o IWDA, la diferencia es despreciable. Para ETFs nicho, puede ser relevante.
+
+---
+
+## Trade Republic vs DEGIRO vs MyInvestor
+
+| | Trade Republic | DEGIRO | MyInvestor |
+|---|---|---|---|
+| Comisión ETF | 0€ | 0,50€ + 0,004% | 0,20€ + 0,03% |
+| Planes ahorro automáticos | ✓ | ✗ | ✗ |
+| Fondos indexados | ✗ | ✗ | ✓ |
+| Cuenta remunerada | ✓ (2-2,5%) | ✗ | ✓ (1-2%) |
+| Mercados | Europa + EEUU | 50+ bolsas mundiales | Principalmente Europa |
+| Tipo de entidad | Banco alemán (BaFin) | Broker holandés (AFM) | Banco español (BdE+CNMV) |
+
+**Si solo vas a invertir en ETFs**: Trade Republic gana en sencillez y coste.
+**Si quieres acceso a más mercados**: DEGIRO.
+**Si quieres fondos indexados o todo en una entidad española**: MyInvestor.
+**La cartera óptima**: Trade Republic para ETFs + MyInvestor para fondos.
+
+Para profundizar en la comparativa, lee el [análisis completo de DEGIRO vs Trade Republic vs MyInvestor](/blog/degiro-vs-trade-republic-vs-myinvestor-2026).
+
+---
+
+## Para quién es Trade Republic
+
+Es la opción ideal si:
+- Quieres invertir en ETFs sin complicaciones
+- Aportas pequeñas cantidades de forma regular (DCA)
+- Valoras la simplicidad sobre las funciones avanzadas
+- Buscas la cuenta remunerada sin condiciones
+- Eres un inversor que tiende a sobrepensar las decisiones: la app te ayuda a aportar y olvidar
+
+No es ideal si:
+- Quieres fondos indexados con traspaso fiscal
+- Necesitas acceso a mercados asiáticos o ETFs nicho
+- Tu cartera es muy grande y quieres negociar con órdenes técnicas avanzadas
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Trade Republic — Cuenta de inversión](https://traderepublic.com/es-es) — Información oficial sobre comisiones, cuenta remunerada y catálogo de productos.
+- [BaFin — Registro de entidades reguladas](https://www.bafin.de) — Verifica el registro de Trade Republic como banco supervisado en Alemania.
+- [DEGIRO vs Trade Republic vs MyInvestor — BogleHub](/blog/degiro-vs-trade-republic-vs-myinvestor-2026) — Comparativa detallada de los tres brokers más usados por inversores indexados en España.
+`,
+  },
+  {
+    slug: 'etfs-dividendos-vivir-rentas-espana',
+    title: 'ETFs de dividendos para vivir de las rentas en España (2026)',
+    excerpt:
+      'Estrategia de inversión en ETFs de dividendos para inversores españoles: mejores ETFs, fiscalidad, comparativa con acumulación y cuánto capital necesitas para vivir de las rentas.',
+    publishedAt: '2026-05-24',
+    readingMinutes: 10,
+    keywords: ['ETF dividendos España', 'vivir de los dividendos España', 'mejores ETF dividendos crecientes', 'ETF distribución alta rentabilidad', 'cuánto capital para vivir de rentas'],
+    faq: [
+      {
+        q: '¿Cuánto capital necesito para vivir de los dividendos en España?',
+        a: 'Depende del estilo de vida y de la rentabilidad por dividendo de tu cartera. Una cartera de ETFs de dividendos crecientes (como SCHD o VHYL) reparte aproximadamente un 3-4% anual de dividend yield. Para vivir con 1.500€/mes (18.000€ anuales) necesitarías una cartera de 450.000-600.000€. Para 2.500€/mes, entre 750.000€ y 1.000.000€. La pensión pública reduce significativamente este capital necesario: si tu pensión cubre 1.000€, solo necesitas dividendos para los 500-1.500€ restantes.',
+      },
+      {
+        q: '¿Cuál es el mejor ETF de dividendos disponible en España?',
+        a: 'Para inversores españoles, los más populares son: VHYL (Vanguard FTSE All-World High Dividend Yield UCITS ETF, TER 0,29%, dividend yield ~3,5%), TDIV (VanEck Morningstar Developed Markets Dividend Leaders, TER 0,38%, yield ~4%) y FUSD (Fidelity US Quality Income UCITS ETF, TER 0,25%, foco en EEUU). Todos son de distribución y domiciliados en Irlanda. SCHD es muy popular pero no está disponible directamente en España (es un ETF americano).',
+      },
+      {
+        q: '¿Tributan más los ETFs de distribución que los de acumulación en España?',
+        a: 'Sí, en la fase de acumulación. Los dividendos repartidos tributan inmediatamente como rendimientos del capital mobiliario (19-28% según importe). Un ETF de acumulación reinvierte esos dividendos sin generar evento fiscal, difiriendo el impuesto hasta la venta. Para un inversor en fase de crecimiento del patrimonio, la acumulación es más eficiente. Para un inversor que quiere vivir de las rentas, la distribución es funcionalmente necesaria.',
+      },
+      {
+        q: '¿Es mejor invertir en ETFs de alto dividendo o de dividendos crecientes?',
+        a: 'Los ETFs de alto dividendo (high yield) buscan empresas con dividend yield alto en el momento actual. Suelen tener exposición concentrada a sectores maduros (utilities, telecomunicaciones, bancos) que pueden recortar dividendos en crisis. Los ETFs de dividendos crecientes (dividend growth) buscan empresas con historial de aumentar el dividendo cada año, lo que indica calidad financiera. Para una estrategia de "vivir de las rentas" a largo plazo, dividend growth tiende a ser más estable que high yield.',
+      },
+      {
+        q: '¿Es mejor estrategia vivir de dividendos o vender un 4% anual?',
+        a: 'Matemáticamente, son equivalentes a largo plazo si la rentabilidad total (precio + dividendos) es la misma. La diferencia es psicológica y operativa: vivir de dividendos no requiere "decidir cuándo vender", lo que reduce el riesgo de errores de timing. Pero limita la cartera a ETFs de dividendos, generalmente más caros y menos diversificados que la renta variable global. La estrategia más eficiente para la mayoría: cartera diversificada (VWCE/IWDA) y vender un porcentaje anual o un import necesario. Lee la guía de [retirada FIRE](/blog/fire-espana-cuanto-necesitas).',
+      },
+    ],
+    content: `# ETFs de dividendos para vivir de las rentas en España (2026)
+
+"Vivir de los dividendos" es una de las grandes aspiraciones del inversor particular. La promesa: una cartera que genere ingresos pasivos sin necesidad de vender participaciones, financiando tu estilo de vida indefinidamente. La realidad en España tiene matices importantes — fiscales, de selección de ETFs y de tamaño de cartera necesaria.
+
+Esta guía cubre cómo funciona, qué ETFs disponibles en España tienen sentido y cuándo conviene la estrategia frente a alternativas como la regla del 4%.
+
+---
+
+## Dividend yield vs dividend growth: dos filosofías diferentes
+
+**ETFs de alto dividendo (High Yield)**
+Buscan empresas con dividend yield alto en el momento actual (4-6%+). El criterio de selección es el porcentaje de dividendo sobre el precio. Resultado: exposición concentrada a sectores maduros como utilities, telecomunicaciones, bancos y energía. Históricamente más volátiles en términos de dividendo: las empresas pueden recortarlo en crisis.
+
+Ejemplos: VHYL (Vanguard FTSE All-World High Dividend Yield), TDIV (VanEck Dividend Leaders).
+
+**ETFs de dividendos crecientes (Dividend Growth)**
+Buscan empresas con historial de aumentar el dividendo año tras año, generalmente 10+ años consecutivos. El criterio implica calidad financiera: solo empresas con balances sólidos y crecimiento estable pueden mantener subidas sistemáticas del dividendo.
+
+Ejemplos: SCHD (no disponible directamente en España como UCITS), VIG (Vanguard Dividend Appreciation, no disponible en versión UCITS para España).
+
+**Para inversores en España con productos UCITS**: la mayoría de opciones son de alto dividendo. La estrategia de dividend growth pura es más difícil de implementar con ETFs UCITS.
+
+---
+
+## Los mejores ETFs de dividendos disponibles en España
+
+### 1. VHYL — Vanguard FTSE All-World High Dividend Yield UCITS ETF
+
+| Dato | Valor |
+|---|---|
+| ISIN | IE00B8GKDB10 |
+| TER | 0,29% |
+| Distribución | Trimestral |
+| Dividend yield aprox | 3,5% |
+| Domicilio | Irlanda |
+
+El ETF más popular para una estrategia de dividendos diversificada globalmente. Replica el índice FTSE All-World High Dividend Yield, que selecciona empresas globales con dividend yield por encima de la media. Diversificación amplia (más de 1.700 valores) y peso razonable a EEUU (~45%) y Europa (~25%).
+
+### 2. TDIV — VanEck Morningstar Developed Markets Dividend Leaders UCITS ETF
+
+| Dato | Valor |
+|---|---|
+| ISIN | NL0011683594 |
+| TER | 0,38% |
+| Distribución | Trimestral |
+| Dividend yield aprox | 4% |
+| Domicilio | Países Bajos |
+
+Selecciona 100 empresas con mayor dividend yield de mercados desarrollados. Concentración mayor que VHYL pero yields más altos. Domicilio en Países Bajos (menos eficiente fiscalmente que Irlanda para dividendos USA).
+
+### 3. FUSD — Fidelity US Quality Income UCITS ETF
+
+| Dato | Valor |
+|---|---|
+| ISIN | IE00BYXVGZ48 |
+| TER | 0,25% |
+| Distribución | Trimestral |
+| Dividend yield aprox | 2,5-3% |
+| Domicilio | Irlanda |
+
+Foco exclusivo en EEUU, con criterio de calidad. No es estrictamente "alto dividendo" sino "calidad con dividendo decente". Buena complementariedad si quieres exposición específica al mercado americano.
+
+### 4. ZPRG — SPDR S&P Global Dividend Aristocrats UCITS ETF
+
+| Dato | Valor |
+|---|---|
+| ISIN | IE00B9CQXS71 |
+| TER | 0,45% |
+| Distribución | Trimestral |
+| Dividend yield aprox | 4% |
+| Domicilio | Irlanda |
+
+Empresas que han mantenido o aumentado el dividendo durante al menos 10 años consecutivos. Es lo más parecido a una estrategia "dividend growth" disponible en versión UCITS.
+
+---
+
+## La fiscalidad de los ETFs de dividendos en España
+
+Los dividendos de ETFs UCITS tributan como **rendimientos del capital mobiliario** en el IRPF español:
+
+| Tramo | Tipo |
+|---|---|
+| Hasta 6.000€ | 19% |
+| 6.000-50.000€ | 21% |
+| 50.000-200.000€ | 23% |
+| 200.000-300.000€ | 27% |
+| Más de 300.000€ | 28% |
+
+**El cobro funciona así**:
+1. La empresa paga dividendo
+2. El país de origen aplica retención (15% si el ETF es irlandés y la empresa es americana; 21% para empresas españolas)
+3. El ETF cobra el dividendo neto y lo reparte al partícipe
+4. Si el broker es español, aplica retención adicional del 19%
+5. En la declaración de la renta, el partícipe ajusta el impuesto final
+
+**Doble imposición**: parte de la retención en origen puede recuperarse en la declaración como deducción por doble imposición internacional, hasta el límite del impuesto español.
+
+---
+
+## Cuánto capital necesitas para vivir de los dividendos
+
+Con un dividend yield medio del 3-4% en una cartera diversificada:
+
+| Gasto mensual | Capital necesario (yield 3%) | Capital necesario (yield 4%) |
+|---|---|---|
+| 1.000€ | 400.000€ | 300.000€ |
+| 1.500€ | 600.000€ | 450.000€ |
+| 2.000€ | 800.000€ | 600.000€ |
+| 3.000€ | 1.200.000€ | 900.000€ |
+
+**Restando pensión pública**: si esperas cobrar 1.000€/mes de pensión, solo necesitas dividendos para cubrir lo restante. Para 1.500€/mes con 1.000€ de pensión: solo necesitas 500€/mes en dividendos = capital de 150.000-200.000€.
+
+**Crítica honesta**: el dividend yield del 4% es difícil de mantener sin asumir riesgo concentrado. Una cartera diversificada estilo VWCE tiene yield de ~1,5-2%. Para lograr 4% sostenible necesitas concentrar en sectores específicos o aceptar menor crecimiento.
+
+---
+
+## ¿Dividendos o retirada al 4%?
+
+**Estrategia dividendos**:
+- ✓ No requiere decidir cuándo vender
+- ✓ Ingresos relativamente estables
+- ✗ Concentra en ciertos sectores
+- ✗ Menor diversificación
+- ✗ Yield difícil de mantener sin riesgo
+- ✗ Tributación inmediata cada año
+
+**Estrategia retirada al 4%**:
+- ✓ Cartera totalmente diversificada (VWCE/IWDA)
+- ✓ Mejor rentabilidad total esperada
+- ✓ Diferimiento fiscal hasta vender
+- ✗ Requiere disciplina para vender en mal momento
+- ✗ Necesita planificación más activa
+
+Para la mayoría de inversores, la estrategia 60/40 (cartera diversificada con retirada al 4%) supera a la estrategia pura de dividendos en términos de rentabilidad total y diversificación. Para más detalles sobre cuánto capital necesitas según estrategia, lee la [guía FIRE en España](/blog/fire-espana-cuanto-necesitas) y prueba la [calculadora FIRE con Monte Carlo](/calculadora/fire-monte-carlo).
+
+---
+
+## Estrategia híbrida: lo mejor de ambos mundos
+
+Una opción muy razonable para inversores que quieren la psicología de los dividendos sin renunciar a la diversificación:
+
+- **60-70% en cartera global de acumulación** (VWCE o IWDA): crecimiento del patrimonio
+- **20-30% en ETFs de dividendos** (VHYL): ingresos parcialmente pasivos
+- **10% renta fija** (AGGH): estabilidad
+
+En la fase de retirada, los dividendos del 20-30% en VHYL cubren parte de las necesidades sin tener que vender. La parte de acumulación se vende según necesidades. Esta combinación equilibra los pros y contras de cada estrategia.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Vanguard — VHYL](https://www.vanguard.co.uk/) — Ficha técnica del ETF de dividendos más popular para inversores españoles.
+- [JustETF — Filtro de ETFs de dividendos](https://www.justetf.com/es/) — Comparador con dividend yield, frecuencia y domicilio.
+- [Calculadora FIRE Monte Carlo — BogleHub](/calculadora/fire-monte-carlo) — Simula la probabilidad de que tu cartera de dividendos aguante toda la jubilación.
+`,
+  },
+  {
+    slug: 'swrd-vs-iwda',
+    title: 'SWRD vs IWDA: comparativa de los dos ETFs MSCI World más populares (2026)',
+    excerpt:
+      'Comparativa detallada entre SWRD (SPDR MSCI World) e IWDA (iShares Core MSCI World) en 2026: TER, liquidez, tracking difference y cuál es mejor para el inversor español.',
+    publishedAt: '2026-05-24',
+    readingMinutes: 8,
+    keywords: ['SWRD vs IWDA', 'mejor ETF MSCI World España', 'SPDR MSCI World análisis', 'iShares Core MSCI World', 'SWRD análisis', 'IWDA análisis'],
+    faq: [
+      {
+        q: '¿Cuál tiene el TER más bajo, SWRD o IWDA?',
+        a: 'SWRD tiene el TER más bajo: 0,12% anual frente al 0,20% de IWDA. La diferencia de 0,08% anual puede parecer pequeña, pero sobre una cartera de 100.000€ son 80€ al año, y sobre 30 años con interés compuesto puede superar los 5.000€ de diferencia acumulada. Para carteras grandes, la ventaja de SWRD es significativa.',
+      },
+      {
+        q: '¿IWDA es más líquido que SWRD?',
+        a: 'Sí, considerablemente. IWDA tiene un patrimonio gestionado superior a 75.000 millones de USD, mientras que SWRD ronda los 10.000 millones. Esta diferencia de tamaño se refleja en spreads más estrechos en IWDA (más fácil comprar y vender al mejor precio). Para órdenes pequeñas la diferencia es marginal, pero para órdenes grandes o si operas en horarios de baja liquidez, IWDA tiene ventaja operativa.',
+      },
+      {
+        q: '¿Ambos están domiciliados en Irlanda?',
+        a: 'Sí. Tanto SWRD (ISIN IE00BFY0GT14) como IWDA (ISIN IE00B4L5Y983) están domiciliados en Irlanda y aprovechan el convenio fiscal Irlanda-EE.UU. que reduce la retención sobre dividendos americanos del 30% al 15%. Ambos son de acumulación: reinvierten los dividendos automáticamente sin generar evento fiscal hasta la venta. La fiscalidad es prácticamente idéntica.',
+      },
+      {
+        q: '¿Cuál replica mejor el MSCI World, SWRD o IWDA?',
+        a: 'Ambos hacen un trabajo excelente. La métrica clave es el tracking difference (la diferencia entre el retorno del ETF y el retorno del índice). En los últimos años, IWDA ha tenido un tracking difference ligeramente mejor que SWRD, lo que parcialmente compensa su TER más alto. La diferencia neta entre ambos suele ser inferior a 0,05% anual una vez consideradas todas las variables. En la práctica, para el inversor de largo plazo, el comportamiento es casi idéntico.',
+      },
+      {
+        q: '¿Cuál debo elegir para mi cartera, SWRD o IWDA?',
+        a: 'Para la mayoría de inversores, ambos son válidos y la diferencia es marginal. Si priorizas TER más bajo: SWRD. Si priorizas liquidez y patrimonio gestionado más alto: IWDA. Para carteras grandes (>200.000€) o con horizonte muy largo (30+ años), el ahorro de TER en SWRD se acumula. Para carteras pequeñas o si tu broker tiene mejor spread en IWDA, la diferencia operativa es despreciable.',
+      },
+    ],
+    content: `# SWRD vs IWDA: comparativa de los dos ETFs MSCI World más populares (2026)
+
+SWRD (SPDR MSCI World UCITS ETF Acc) e IWDA (iShares Core MSCI World UCITS ETF) son los dos ETFs de MSCI World más utilizados por inversores indexados españoles. Ambos replican el mismo índice. Ambos están domiciliados en Irlanda. Ambos son de acumulación. La pregunta es cuál elegir cuando la diferencia parece tan pequeña.
+
+Esta comparativa cubre los criterios objetivos: TER, liquidez, tracking difference y los matices que importan para una decisión informada.
+
+---
+
+## Ficha técnica comparada
+
+| Dato | SWRD | IWDA |
+|---|---|---|
+| Nombre | SPDR MSCI World UCITS ETF | iShares Core MSCI World UCITS ETF |
+| ISIN | IE00BFY0GT14 | IE00B4L5Y983 |
+| Gestora | State Street (SPDR) | BlackRock (iShares) |
+| Índice | MSCI World | MSCI World |
+| TER | 0,12% | 0,20% |
+| Política | Acumulación | Acumulación |
+| Domicilio | Irlanda | Irlanda |
+| Patrimonio | ~10.000 M USD | ~75.000 M USD |
+| Replicación | Física por muestreo | Física por muestreo |
+| Lanzamiento | 2019 | 2009 |
+
+---
+
+## Ventaja de SWRD: TER más bajo
+
+SWRD es el ETF de MSCI World más barato disponible en España. Su TER del 0,12% anual es un 40% inferior al de IWDA (0,20%). Sobre una cartera de 50.000€, esto significa:
+
+- SWRD: 60€/año en comisiones
+- IWDA: 100€/año en comisiones
+- Diferencia: 40€/año
+
+A 30 años con interés compuesto, los 40€ anuales se convierten en aproximadamente 4.000€ de diferencia acumulada. Para carteras de 200.000€, la diferencia se cuadruplica a ~16.000€.
+
+Esta diferencia es real y significativa para carteras grandes. Para carteras pequeñas en términos absolutos es menor, pero el porcentaje es el mismo.
+
+---
+
+## Ventaja de IWDA: liquidez y tamaño
+
+IWDA gestiona aproximadamente 75.000 millones de USD frente a los 10.000 millones de SWRD. Esta diferencia tiene implicaciones prácticas:
+
+**1. Spreads más estrechos**
+En un ETF con más volumen de negociación, la diferencia entre el precio de compra y el precio de venta (bid-ask spread) es típicamente menor. Para órdenes grandes esto significa un coste implícito menor que no aparece en el TER pero sí en el resultado real.
+
+**2. Menor riesgo de cierre del fondo**
+Los ETFs con muy poco patrimonio (<100 M USD) corren riesgo de ser cerrados por la gestora si no son rentables. Tanto SWRD como IWDA están muy por encima de ese umbral, pero IWDA tiene un colchón mayor.
+
+**3. Disponibilidad en más brokers**
+IWDA está disponible en casi cualquier broker europeo. SWRD también está bien distribuido pero en algunos brokers menores puede no aparecer.
+
+---
+
+## Tracking difference: el coste real
+
+El TER es solo una parte del coste real de un ETF. El **tracking difference** mide cuánto se desvía el ETF del índice subyacente. Un ETF con TER del 0,20% pero tracking difference de -0,10% (el ETF supera al índice neto de costes en 0,10%) es en realidad más barato que un ETF con TER del 0,12% y tracking difference de -0,01%.
+
+**Datos históricos aproximados** (verificar siempre con JustETF):
+- IWDA: tracking difference cercano a 0 o ligeramente positivo gracias a optimización de retención en origen de dividendos
+- SWRD: tracking difference ligeramente negativo, en línea con su TER
+
+La gestora con más experiencia y patrimonio (BlackRock con iShares) suele tener mejor eficiencia operativa, lo que se traduce en mejor tracking difference. Esta ventaja parcialmente compensa el TER más alto de IWDA.
+
+---
+
+## Composición y exposición regional
+
+Ambos replican el MSCI World, que incluye aproximadamente 1.500 grandes y medianas empresas de 23 países desarrollados. La composición es prácticamente idéntica:
+
+**Por país** (aproximado):
+- EEUU: ~70%
+- Japón: ~6%
+- Reino Unido: ~4%
+- Canadá: ~3%
+- Francia, Suiza, Alemania: ~3% cada uno
+- Otros desarrollados: ~10%
+
+**Por sector** (aproximado):
+- Tecnología: ~24%
+- Financiero: ~14%
+- Salud: ~13%
+- Consumo discrecional: ~11%
+- Industrial: ~10%
+- Otros: ~28%
+
+**Importante**: ninguno de los dos incluye mercados emergentes. Para tener exposición global completa, necesitas añadir un ETF de emergentes como EIMI (~12% del peso global) o usar VWCE que ya incluye emergentes internamente.
+
+---
+
+## Dónde comprar cada uno en España
+
+| Broker | SWRD | IWDA |
+|---|---|---|
+| Trade Republic | ✓ (planes de ahorro) | ✓ (planes de ahorro) |
+| DEGIRO | ✓ | ✓ |
+| MyInvestor | ✓ | ✓ |
+| XTB | ✓ | ✓ |
+
+Ambos están disponibles en todos los brokers principales del mercado español. La comisión por orden y los spreads pueden variar entre brokers, así que verifica las condiciones antes de elegir.
+
+---
+
+## La decisión práctica
+
+**Elige SWRD si**:
+- Tu prioridad es el TER mínimo
+- Tu cartera es grande (>100.000€) y el ahorro acumulado importa
+- Te quedas con un ETF durante décadas sin operar
+- Tu broker tiene buen spread en SWRD
+
+**Elige IWDA si**:
+- Valoras la liquidez y el patrimonio gestionado
+- Haces órdenes grandes y quieres spreads más estrechos
+- Prefieres la gestora más establecida (BlackRock)
+- El tracking difference compensa el mayor TER en tu broker
+
+**La verdad incómoda**: para la mayoría de inversores particulares con carteras de 5.000-50.000€, la diferencia práctica entre SWRD e IWDA es despreciable. Ambos son excelentes ETFs y la decisión correcta es elegir uno y mantenerlo, no cambiar de ETF buscando el "óptimo perfecto".
+
+Para una comparativa más amplia que incluya VWCE (FTSE All-World que sí incluye emergentes), lee el [análisis VWCE vs CSPX vs IWDA](/blog/vwce-vs-cspx-vs-iwda).
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [SPDR — Ficha SWRD](https://www.ssga.com/) — Datos oficiales del ETF de SPDR, incluyendo composición y tracking difference.
+- [iShares — Ficha IWDA](https://www.ishares.com/es/inversores-particulares/es/productos/251882/) — Datos oficiales de BlackRock con historial completo.
+- [Análisis VWCE — BogleHub](/blog/vwce-analisis-completo) — La alternativa que incluye emergentes en un solo ETF.
+`,
+  },
+  {
+    slug: 'cartera-permanente-harry-browne-espana',
+    title: 'La cartera permanente de Harry Browne adaptada al inversor español (2026)',
+    excerpt:
+      'Guía completa de la cartera permanente de Harry Browne para inversores en España: composición 25/25/25/25, ETFs disponibles UCITS, rentabilidad histórica y para qué perfil encaja.',
+    publishedAt: '2026-05-24',
+    readingMinutes: 10,
+    keywords: ['cartera permanente España', 'cartera permanente Harry Browne', 'cartera permanente ETF UCITS', 'cartera permanente rentabilidad', 'oro en cartera inversión'],
+    faq: [
+      {
+        q: '¿Qué es la cartera permanente de Harry Browne?',
+        a: 'Es una asignación de activos diseñada por el economista americano Harry Browne en los años 80 con cuatro componentes a partes iguales: 25% renta variable, 25% bonos de largo plazo, 25% oro y 25% liquidez (efectivo o bonos de corto plazo). La filosofía es que cada activo se comporta bien en uno de los cuatro escenarios económicos posibles: prosperidad, deflación, inflación o recesión. La cartera está pensada para no perder valor real significativamente en ningún escenario, sacrificando rentabilidad máxima a cambio de robustez.',
+      },
+      {
+        q: '¿Funciona la cartera permanente para inversores españoles en 2026?',
+        a: 'Sí, con adaptaciones. La cartera permanente original usa activos americanos (bonos del Tesoro USA, oro físico, S&P 500). Para un inversor español, hay que adaptar los componentes a productos UCITS disponibles: ETFs de renta variable global o eurozona, bonos europeos a largo plazo (15-30 años), ETC de oro físico domiciliado en Europa y ETFs de bonos a corto plazo o cuenta remunerada. La rentabilidad histórica real de la cartera permanente en versión española ha sido del 4-6% anual con volatilidad mucho más baja que una cartera 100% acciones.',
+      },
+      {
+        q: '¿Cómo incluyo oro en una cartera permanente desde España?',
+        a: 'La forma más eficiente es a través de un ETC físico de oro como SGLN (iShares Physical Gold ETC) o EGLN (Invesco Physical Gold ETC), ambos respaldados por oro físico custodiado en Londres. Tienen TER del 0,12-0,20% y se compran como cualquier ETF en bolsa. Alternativas: oro físico (monedas o lingotes), pero implica costes de custodia y problemas de liquidez. Los fondos de minería de oro no son sustitutos: tienen correlación con renta variable y no replican el comportamiento del metal.',
+      },
+      {
+        q: '¿Cuál es la rentabilidad histórica de la cartera permanente?',
+        a: 'La cartera permanente ha rendido históricamente entre el 4% y el 7% anual real (descontando inflación) desde los años 80, con volatilidad muy baja comparada con carteras de renta variable pura. En periodos de gran caída bursátil (2000-2002, 2008, 2022), la cartera permanente ha caído mucho menos que el MSCI World gracias al equilibrio entre los cuatro activos. En periodos alcistas largos (2010-2020), ha sido superada significativamente por carteras 100% renta variable.',
+      },
+      {
+        q: '¿Para quién es buena la cartera permanente?',
+        a: 'Es ideal para inversores que priorizan la estabilidad sobre el crecimiento máximo: jubilados o cerca de jubilación, inversores con baja tolerancia psicológica a las caídas, personas que necesitan poder retirar dinero en cualquier momento sin riesgo de vender en mal momento. No es ideal para inversores jóvenes con horizonte largo (40+ años) y alta tolerancia al riesgo: una cartera más concentrada en renta variable tendrá mayor rentabilidad esperada a costa de mayor volatilidad.',
+      },
+    ],
+    content: `# La cartera permanente de Harry Browne adaptada al inversor español (2026)
+
+La cartera permanente es una de las estrategias de inversión más comentadas en la comunidad de inversión particular. Diseñada por Harry Browne en los años 80, propone una asignación deliberadamente equilibrada entre cuatro activos para sobrevivir a cualquier escenario económico posible.
+
+Esta guía cubre cómo funciona, cómo adaptarla a productos UCITS disponibles en España y para qué tipo de inversor tiene sentido frente a alternativas más concentradas en renta variable.
+
+---
+
+## La filosofía: cuatro activos para cuatro escenarios
+
+Harry Browne identificó cuatro escenarios económicos posibles:
+
+| Escenario | Activo que mejor se comporta |
+|---|---|
+| **Prosperidad** (crecimiento económico) | Renta variable |
+| **Deflación** (caída de precios) | Bonos de largo plazo |
+| **Inflación** (subida de precios) | Oro |
+| **Recesión / Crisis** | Liquidez (efectivo) |
+
+La cartera permanente asigna el 25% a cada uno. La idea: independientemente de qué escenario se materialice, al menos un componente importante de la cartera estará subiendo, compensando las pérdidas de los demás.
+
+Es una filosofía de **diversificación entre regímenes económicos**, no solo entre activos. Esto la diferencia de una cartera 60/40 tradicional (acciones + bonos), que está optimizada para entornos de prosperidad-deflación pero sufre en estanflación.
+
+---
+
+## La cartera permanente original (versión americana)
+
+| Activo | Peso | Implementación clásica |
+|---|---|---|
+| Renta variable | 25% | S&P 500 |
+| Bonos largo plazo | 25% | Bonos del Tesoro USA 20-30 años |
+| Oro | 25% | Oro físico o ETF de oro |
+| Liquidez | 25% | Bonos del Tesoro USA corto plazo |
+
+Esta versión funciona excelentemente para inversores americanos. Para un inversor español que reside en la eurozona, requiere adaptaciones.
+
+---
+
+## La cartera permanente para inversores españoles (UCITS)
+
+| Activo | Peso | Implementación recomendada en España |
+|---|---|---|
+| Renta variable | 25% | VWCE (FTSE All-World) o IWDA (MSCI World) |
+| Bonos largo plazo | 25% | IBGL (iShares Euro Govt Bond 15-30y) o equivalente |
+| Oro | 25% | SGLN (iShares Physical Gold ETC) o EGLN (Invesco Physical Gold) |
+| Liquidez / corto plazo | 25% | IBGS (iShares Euro Govt Bond 1-3y), cuenta remunerada o IB01 (Treasury 0-1y EUR Hedged) |
+
+**Ventajas de esta versión española**:
+- Sin riesgo divisa significativo (todos los componentes son en euros o cubiertos)
+- Productos UCITS disponibles en cualquier broker europeo
+- Fiscalmente eficientes para residentes en España
+
+---
+
+## ETFs concretos para cada componente
+
+### Componente 1: Renta variable (25%)
+
+**Opción A — VWCE** (Vanguard FTSE All-World UCITS ETF Acc)
+- ISIN: IE00B3RBWM25
+- TER: 0,22%
+- Diversificación máxima global, incluye emergentes
+- Acumulación
+
+**Opción B — IWDA** (iShares Core MSCI World UCITS ETF)
+- ISIN: IE00B4L5Y983
+- TER: 0,20%
+- Solo mercados desarrollados
+- Acumulación
+
+### Componente 2: Bonos de largo plazo (25%)
+
+**IBGL — iShares Euro Government Bond 15-30yr UCITS ETF**
+- ISIN: IE00B1FZS913
+- TER: 0,20%
+- Bonos gubernamentales eurozona 15-30 años
+- Alta sensibilidad a tipos de interés (deseable: amplifica el efecto en deflación)
+
+### Componente 3: Oro (25%)
+
+**SGLN — iShares Physical Gold ETC**
+- ISIN: IE00B4ND3602
+- TER: 0,12%
+- Respaldado por oro físico custodiado en Londres
+- Sin riesgo de derivados, oro real
+
+**Alternativa: EGLN — Invesco Physical Gold ETC**
+- ISIN: IE00B579F325
+- TER: 0,12%
+- Mismo concepto, gestora diferente
+
+### Componente 4: Liquidez / Bonos corto plazo (25%)
+
+**IBGS — iShares Euro Govt Bond 1-3yr UCITS ETF**
+- ISIN: IE00B14X4Q57
+- TER: 0,15%
+- Bonos soberanos eurozona corto plazo
+- Volatilidad mínima
+
+**Alternativa**: cuenta remunerada al 2-2,5% en Trade Republic o MyInvestor.
+
+---
+
+## Rentabilidad histórica de la cartera permanente
+
+Datos aproximados de la cartera permanente (versión americana, 1972-2024):
+
+- **Rentabilidad anual media**: 8% nominal, ~4-5% real (descontando inflación)
+- **Peor año**: aproximadamente -12% (2022, año difícil para casi todos los activos)
+- **Volatilidad anual**: ~8% (frente al 15-20% de una cartera 100% acciones)
+- **Caída máxima histórica**: ~20% (frente al 50% del S&P 500 en 2008)
+
+**Para la versión española**: rendimientos similares en términos de relación rentabilidad/riesgo. La menor exposición a renta variable americana ha penalizado en algunos periodos (2010-2020) pero ha favorecido en otros (años 70).
+
+---
+
+## Cuándo la cartera permanente brilla y cuándo no
+
+**Periodos en los que ha funcionado excepcionalmente bien**:
+- 1973-1980 (estanflación con oro disparado)
+- 2000-2002 (burbuja .com, bonos y oro suben mientras renta variable cae)
+- 2008-2009 (crisis financiera, bonos suben mientras renta variable cae)
+- 2020 (COVID, oro y bonos amortiguan caída bursátil de marzo)
+
+**Periodos en los que ha quedado por detrás de renta variable pura**:
+- 1980-1999 (mercado alcista secular en acciones, oro lateral)
+- 2010-2020 (mercado alcista en acciones, oro lateral)
+- 2024-2025 (renta variable americana en máximos)
+
+A largo plazo, una cartera 100% renta variable supera a la cartera permanente en rentabilidad, pero a costa de mayor volatilidad y caídas mucho más profundas.
+
+---
+
+## Rebalanceo: pieza clave de la cartera permanente
+
+Browne recomendaba rebalancear cuando algún componente se desvía más del 35% o menos del 15% (en lugar de cada uno de los 25% objetivo). Esto permite que los movimientos pequeños del mercado no generen operaciones constantes.
+
+**Ejemplo**: si la renta variable sube mucho y pasa del 25% al 35% del total, vendes el exceso y compras los componentes que han caído (probablemente oro o bonos). Es el rebalanceo clásico: vender alto, comprar bajo.
+
+Para más detalles sobre cómo rebalancear de forma eficiente, lee [cómo rebalancear cartera indexada](/blog/como-rebalancear-cartera-indexada).
+
+---
+
+## Para quién es la cartera permanente
+
+**Es ideal si**:
+- Estás cerca de la jubilación o ya retirado
+- Tu tolerancia psicológica a caídas es baja
+- Necesitas poder rescatar dinero en cualquier momento sin gran impacto
+- Valoras la robustez sobre la rentabilidad máxima
+- Has vivido al menos una caída del 50% en bolsa y sabes que no lo soportarías de nuevo
+
+**No es ideal si**:
+- Eres joven con horizonte de 40+ años
+- Tu prioridad es maximizar rentabilidad esperada
+- Toleras bien la volatilidad
+- Tu ahorro mensual es alto y vas a aportar durante décadas
+
+---
+
+## Variantes y carteras parecidas
+
+**Cartera Golden Butterfly** (Tyler de Portfolio Charts):
+- 20% renta variable total mercado
+- 20% renta variable small caps value
+- 20% bonos largo plazo
+- 20% bonos corto plazo
+- 20% oro
+
+Es una variación que añade exposición a small caps value, históricamente con prima de rentabilidad.
+
+**Cartera All-Weather** (Ray Dalio):
+- 30% renta variable
+- 40% bonos largo plazo
+- 15% bonos intermedios
+- 7,5% oro
+- 7,5% materias primas
+
+Otra cartera "todo terreno" con mayor peso en bonos. Útil para perfiles más conservadores que la permanente original.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- ["Fail-Safe Investing" — Harry Browne](https://www.amazon.com/Fail-Safe-Investing-Lifelong-Financial-Security/dp/0312263216) — Libro original donde Harry Browne expone la filosofía completa.
+- [Portfolio Charts — Permanent Portfolio](https://portfoliocharts.com/portfolio/permanent-portfolio/) — Análisis histórico con datos y simulaciones de la cartera permanente.
+- [iShares — SGLN](https://www.ishares.com/es/inversores-particulares/es/productos/258728/) — ETC de oro físico para implementar el componente oro de la cartera.
+`,
+  },
+  {
+    slug: 'cuanto-invertir-al-mes-jubilarse-millonario',
+    title: '¿Cuánto invertir al mes para llegar al millón con interés compuesto? (2026)',
+    excerpt:
+      'Calcula exactamente cuánto necesitas aportar cada mes para acumular 500.000€, 1 millón o 2 millones en función de la edad a la que empiezas. Tablas, ejemplos y plan de acción.',
+    publishedAt: '2026-05-24',
+    readingMinutes: 9,
+    keywords: ['cuanto invertir al mes', 'cuanto invertir para jubilarse', 'aportacion mensual para 1 millon', 'cuanto ahorrar al mes inversion', 'cuanto necesito invertir cada mes'],
+    faq: [
+      {
+        q: '¿Cuánto debo invertir al mes para llegar a 1 millón de euros?',
+        a: 'Depende de los años que tengas por delante y la rentabilidad anual esperada. Asumiendo un 7% anual (rentabilidad histórica del MSCI World): si tienes 25 años (40 años hasta los 65), necesitas aportar ~400€/mes. Si tienes 35 años (30 años), unos 850€/mes. Si tienes 45 años (20 años), unos 1.900€/mes. Si tienes 55 años (10 años), unos 5.800€/mes. La diferencia muestra el poder brutal del tiempo en el interés compuesto: empezar 10 años antes equivale a duplicar (o más) la aportación.',
+      },
+      {
+        q: '¿Qué rentabilidad anual es realista para planificar?',
+        a: 'Para una cartera de renta variable global indexada (MSCI World o FTSE All-World), la rentabilidad histórica nominal a largo plazo ha sido del 7-10% anual. Descontando inflación (2-3%), la rentabilidad real ha estado en el 5-7%. Para planificación realista, usa el 7% nominal como escenario base, el 5% como escenario conservador y el 10% como escenario optimista. Carteras con renta fija (60/40 o cartera permanente) tienen rentabilidades esperadas más bajas: 5-6% nominal.',
+      },
+      {
+        q: '¿Es mejor aportar todos los meses o de golpe cuando tenga el dinero?',
+        a: 'Si tienes el dinero hoy, invertirlo de golpe (lump sum) es estadísticamente superior al DCA mensual en aproximadamente 2/3 de los periodos históricos. La razón: el tiempo en el mercado supera al market timing. Sin embargo, si no tienes el dinero todavía y lo ahorras del salario, las aportaciones periódicas (DCA) son la única opción práctica y aprovechan plenamente el interés compuesto. Para más detalles, lee [DCA vs lump sum](/blog/dca-vs-lump-sum-aportar-mensual).',
+      },
+      {
+        q: '¿Cuánto necesito acumular para vivir de mi cartera?',
+        a: 'La regla del 4% sugiere que necesitas 25 veces tu gasto anual para vivir indefinidamente de la cartera. Si gastas 30.000€/año (2.500€/mes), necesitas 750.000€. Si gastas 50.000€/año, necesitas 1.250.000€. Si en España cuentas con pensión pública (digamos 1.500€/mes = 18.000€/año), tu cartera solo necesita cubrir 12.000€/año = 300.000€. La pensión pública reduce dramáticamente el capital necesario para el FIRE. Usa la [calculadora FIRE con Monte Carlo](/calculadora/fire-monte-carlo) para tu caso específico.',
+      },
+      {
+        q: '¿Qué pasa si el mercado cae justo cuando voy a jubilarme?',
+        a: 'Este es el riesgo de secuencia de retornos, uno de los más importantes en planificación. Una caída del 30-40% en los primeros años de la jubilación puede destruir un plan que en papel parecía sólido. Las defensas: aumentar progresivamente la renta fija a medida que te acercas a la jubilación (regla glide path), mantener un colchón de liquidez para 2-3 años de gastos, considerar el "bond tent" (subir bonos al máximo justo antes y después de jubilarse). La cartera permanente y la cartera 60/40 son menos vulnerables a este riesgo que una cartera 100% acciones.',
+      },
+    ],
+    content: `# ¿Cuánto invertir al mes para llegar al millón con interés compuesto? (2026)
+
+La pregunta más frecuente entre inversores que empiezan: "¿Cuánto necesito ahorrar cada mes para tener X dinero cuando me jubile?". La respuesta exacta depende de cuatro variables: cuánto tiempo tienes, qué rentabilidad esperas, cuánto puedes aportar y cuánto quieres acumular.
+
+Esta guía te da tablas concretas, ejemplos numéricos y un plan de acción según tu edad y objetivo. Para cálculos personalizados, usa la [calculadora de interés compuesto](/calculadora/interes-compuesto).
+
+---
+
+## El motor del cálculo: interés compuesto
+
+Antes de las tablas, recuerda la fórmula básica. Si aportas A euros al mes durante N años a una rentabilidad anual r, el patrimonio final será:
+
+**Patrimonio final = A × ((1 + r/12)^(N × 12) − 1) / (r/12)**
+
+Tres variables que cambian el resultado de forma exponencial:
+- **Tiempo (N)**: cada año adicional añade aportaciones + crecimiento compuesto
+- **Rentabilidad (r)**: pequeñas diferencias se amplifican con el tiempo
+- **Aportación (A)**: lineal, pero importa cuando se combina con el tiempo
+
+---
+
+## Cuánto necesitas invertir al mes para llegar a 500.000€
+
+Asumiendo rentabilidad anual del 7% (histórica del MSCI World):
+
+| Edad inicial | Años hasta 65 | Aportación mensual necesaria |
+|---|---|---|
+| 25 años | 40 años | ~190€/mes |
+| 30 años | 35 años | ~280€/mes |
+| 35 años | 30 años | ~420€/mes |
+| 40 años | 25 años | ~640€/mes |
+| 45 años | 20 años | ~1.000€/mes |
+| 50 años | 15 años | ~1.640€/mes |
+| 55 años | 10 años | ~2.940€/mes |
+
+---
+
+## Cuánto necesitas invertir al mes para llegar a 1 millón de euros
+
+Asumiendo rentabilidad anual del 7%:
+
+| Edad inicial | Años hasta 65 | Aportación mensual necesaria |
+|---|---|---|
+| 25 años | 40 años | ~380€/mes |
+| 30 años | 35 años | ~560€/mes |
+| 35 años | 30 años | ~850€/mes |
+| 40 años | 25 años | ~1.290€/mes |
+| 45 años | 20 años | ~1.940€/mes |
+| 50 años | 15 años | ~3.280€/mes |
+| 55 años | 10 años | ~5.800€/mes |
+
+---
+
+## Cuánto necesitas invertir al mes para llegar a 2 millones de euros
+
+Asumiendo rentabilidad anual del 7%:
+
+| Edad inicial | Años hasta 65 | Aportación mensual necesaria |
+|---|---|---|
+| 25 años | 40 años | ~760€/mes |
+| 30 años | 35 años | ~1.120€/mes |
+| 35 años | 30 años | ~1.700€/mes |
+| 40 años | 25 años | ~2.580€/mes |
+| 45 años | 20 años | ~3.880€/mes |
+| 50 años | 15 años | ~6.560€/mes |
+| 55 años | 10 años | ~11.600€/mes |
+
+---
+
+## El impacto brutal del tiempo
+
+Mira de cerca las tablas anteriores. Las cifras gritan una sola cosa: **el tiempo importa más que la cantidad**.
+
+- Alguien que empieza a los 25 con 380€/mes llega al millón a los 65.
+- Alguien que empieza a los 35 necesita 850€/mes — más del doble.
+- Alguien que empieza a los 45 necesita 1.940€/mes — más de 5 veces.
+
+**El coste de procrastinar 10 años**: si decides empezar con 25 años a 380€/mes y procrastinas hasta los 35, ya no llegas con 380€. Necesitas 850€ — habrás "pagado" 470€/mes extras durante 30 años, equivalente a 169.200€ de aportaciones adicionales solo por haber empezado 10 años después.
+
+Este es el motivo por el que cualquier guía Boglehead insiste: **el peor momento para empezar es ayer; el segundo peor momento es esperar más**.
+
+---
+
+## ¿Y si solo puedo aportar 100€/mes? ¿Vale la pena?
+
+Sí, absolutamente. Veamos qué consigues con 100€/mes a un 7% anual:
+
+| Años aportando | Capital acumulado |
+|---|---|
+| 10 años | ~17.300€ |
+| 20 años | ~52.000€ |
+| 30 años | ~122.000€ |
+| 40 años | ~262.000€ |
+| 45 años | ~380.000€ |
+
+Empezar a los 20 años con 100€/mes y mantener ese ritmo durante 45 años te lleva a casi 400.000€ — más que la mayoría de pensiones de la Seguridad Social capitalizadas. Y eso solo con 100€/mes.
+
+**El mensaje**: nunca te detengas por pensar que "es poco". Lo importante es empezar y mantener.
+
+---
+
+## Cómo aumentar las aportaciones de forma sostenible
+
+**1. Aumentar con la inflación / con el sueldo**
+Cada vez que tu sueldo sube, aumenta proporcionalmente la aportación. Si subes 5% de sueldo, sube 5% la aportación mensual. Mantiene el porcentaje de ahorro constante y aprovecha el aumento sin notarlo.
+
+**2. Dirigir bonos / extras automáticamente**
+La paga extra, el bonus anual, el reembolso de Hacienda, los regalos de cumpleaños. Programar que una parte fija (50-100%) vaya directamente a la inversión evita la tentación de "gastármelo este año".
+
+**3. Optimizar gastos fijos una vez al año**
+Cancelar suscripciones que no usas, renegociar tarifas de telefonía y energía, comparar seguros. Cada euro ahorrado en gastos fijos se convierte en euros adicionales en aportaciones sin cambiar tu estilo de vida.
+
+---
+
+## El plan de acción según tu edad
+
+**Si tienes 20-30 años**:
+- Aporta entre el 15-20% de tus ingresos a inversión indexada
+- Usa el plan de pensiones indexado hasta el límite de 1.500€/año por la deducción
+- El resto en fondos indexados (MyInvestor) o ETFs (Trade Republic)
+- Cartera: 90% renta variable global (VWCE o IWDA) + 10% renta fija
+
+**Si tienes 30-40 años**:
+- Aporta entre el 20-25% de tus ingresos
+- Plan de pensiones indexado al máximo
+- Fondos indexados / ETFs con cartera 80/20 (renta variable / renta fija)
+- Considera abrir plan de pensiones de empleo si tu empresa lo ofrece
+
+**Si tienes 40-50 años**:
+- Aporta el 25-30% si puedes
+- Optimiza fiscalidad al máximo
+- Cartera 70/30 (más renta fija para reducir volatilidad)
+- Empieza a planificar el rescate progresivo
+
+**Si tienes 50+ años**:
+- Aporta todo lo posible
+- Cartera 60/40 o más conservadora
+- Construye colchón de liquidez para los primeros años de jubilación (2-3 años de gastos)
+- Planifica el rescate del plan de pensiones para minimizar IRPF
+
+---
+
+## La rentabilidad del 7% no es garantía
+
+Todas las tablas asumen un 7% anual constante. La realidad: el mercado no da rentabilidades constantes. Puede dar 30% un año, -15% al siguiente, 8% el siguiente. La media a largo plazo es 7-9% nominal, pero los caminos individuales varían enormemente.
+
+**Implicación práctica**: tu cartera podría llegar a los 65 con 500.000€ o con 1.500.000€ habiendo hecho exactamente las mismas aportaciones, dependiendo de cómo se comporten los mercados.
+
+Para entender este riesgo y planificar con la incertidumbre real del mercado, usa la [calculadora FIRE con simulación Monte Carlo](/calculadora/fire-monte-carlo), que prueba miles de escenarios de rentabilidad variable y te da la probabilidad real de alcanzar tu objetivo.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Calculadora de interés compuesto — BogleHub](/calculadora/interes-compuesto) — Calcula tu plan personalizado con tus números reales.
+- [Calculadora FIRE Monte Carlo — BogleHub](/calculadora/fire-monte-carlo) — Simula la probabilidad de alcanzar tu objetivo con volatilidad real del mercado.
+- [Guía FIRE en España — BogleHub](/blog/fire-espana-cuanto-necesitas) — Cuánto capital necesitas realmente para vivir de tu cartera en España.
+`,
+  },
 ]
