@@ -2766,4 +2766,902 @@ Para carteras superiores a 20.000 €, la diferencia de cobertura entre DEGIRO y
 - [Banco de España — Registro de Entidades](https://www.bde.es/bde/es/secciones/servicios/Particulares_y_e/Registros_de_En/) — Comprueba que el broker está registrado y supervisado en España.
 `,
   },
+  {
+    slug: 'indexa-capital-opinion-2026',
+    title: 'Indexa Capital: opinión y análisis completo 2026',
+    excerpt:
+      'Análisis honesto de Indexa Capital en 2026: carteras, comisiones reales, rentabilidad histórica y para quién tiene sentido el roboadvisor líder de España.',
+    publishedAt: '2026-05-24',
+    readingMinutes: 10,
+    keywords: ['Indexa Capital opinión', 'Indexa Capital comisiones', 'Indexa Capital rentabilidad', 'mejor roboadvisor España 2026'],
+    faq: [
+      {
+        q: '¿Es seguro Indexa Capital?',
+        a: 'Sí. Indexa Capital está registrado en la CNMV como empresa de servicios de inversión (ESI) con número de registro 257. Tu dinero no está en Indexa sino en una cuenta de valores a tu nombre en el banco custodio (actualmente Inversis). En caso de insolvencia de Indexa, tu cartera de fondos quedaría intacta porque es tuya, no de ellos. Los fondos en sí están cubiertos por el Fondo de Garantía de Inversores hasta 100.000 €.',
+      },
+      {
+        q: '¿Cuánto cobra Indexa Capital de verdad?',
+        a: 'El coste total tiene tres capas: la comisión de gestión de Indexa (0,15% hasta 10.000€, bajando hasta 0,10% para patrimonios grandes), la comisión de custodia del banco depositario (~0,12%), y el TER de los fondos indexados en los que invierte (0,07%-0,22% según el activo). En total, la mayoría de clientes pagan entre 0,40% y 0,60% anual sobre el patrimonio, incluyendo todos los costes.',
+      },
+      {
+        q: '¿Es mejor Indexa Capital que gestionar yo mi propia cartera?',
+        a: 'Las matemáticas favorecen al inversor DIY: una cartera de fondos indexados propia puede costar 0,10%-0,20% anual frente al 0,40%-0,60% de Indexa. En 30 años sobre 100.000€, esa diferencia puede superar 30.000€. Sin embargo, Indexa aporta algo que las matemáticas no capturan: rebalanceo automático, aportaciones periódicas automatizadas y una barrera psicológica que evita vender en las caídas. Si esa automatización te hace mantener el plan donde tú no lo harías, la comisión sale rentable.',
+      },
+      {
+        q: '¿Qué rentabilidad ha tenido Indexa Capital históricamente?',
+        a: 'Indexa publica datos históricos auditados desde 2015 en su web. Las carteras 6/10 (moderada) y 10/10 (máxima renta variable) han batido consistentemente a sus benchmarks netos de comisiones, principalmente gracias al rebalanceo sistemático. Para los datos actualizados, consulta directamente indexacapital.com/es/rentabilidad, que publica los rendimientos reales de cada cartera.',
+      },
+      {
+        q: '¿Cuánto dinero necesito para abrir una cuenta en Indexa Capital?',
+        a: 'El mínimo de apertura es 3.000€ para la cuenta de fondos. Para el plan de pensiones indexado de Indexa no hay mínimo. Indexa también ofrece una cuenta de acciones (carteras de ETFs individuales) desde 10.000€. Con el enlace de referido de un amigo, los primeros 10.000€ se gestionan gratis durante un año.',
+      },
+    ],
+    content: `# Indexa Capital: opinión y análisis completo 2026
+
+Indexa Capital es el roboadvisor con más patrimonio gestionado de España. En 2026 supera los 2.000 millones de euros en activos bajo gestión y gestiona las carteras de más de 70.000 clientes. Es la opción que primero sale en Google cuando alguien busca "invertir sin complicaciones" en España, y con razón: fue pionero en el modelo de gestión automatizada de fondos indexados en el mercado español.
+
+Esta opinión no es un artículo patrocinado. Analizamos los datos reales: comisiones, rentabilidad histórica, regulación y en qué casos concretos Indexa tiene sentido y en cuáles no.
+
+---
+
+## Qué es Indexa Capital y cómo funciona
+
+Indexa Capital es una empresa de asesoramiento y gestión automatizada de inversiones (roboadvisor). Su modelo es sencillo: completas un cuestionario de perfil inversor, Indexa te asigna una cartera entre 1/10 (máximo conservador) y 10/10 (máximo riesgo), y a partir de ahí gestiona automáticamente:
+
+- Invierte tu dinero en fondos indexados de Vanguard, iShares y Amundi
+- Rebalancea la cartera cuando se aleja del peso objetivo
+- Reinvierte los dividendos automáticamente
+- Gestiona las aportaciones periódicas que programes
+
+Lo que no hace Indexa: asesoramiento fiscal personalizado, planificación financiera integral ni selección de activos fuera del universo indexado.
+
+---
+
+## La cartera de fondos que usa Indexa
+
+Las carteras de Indexa están compuestas exclusivamente por fondos indexados UCITS de bajo coste. Una cartera moderada típica (perfil 6/10) incluye aproximadamente:
+
+| Activo | Peso aproximado |
+|---|---|
+| Renta variable mundial (MSCI World / FTSE All-World) | 50-55% |
+| Renta variable emergentes | 10-15% |
+| Renta fija corporativa Europa | 10-15% |
+| Renta fija gobierno eurozona | 10-15% |
+| Renta variable pequeñas empresas | 5-10% |
+
+Los pesos exactos varían según el perfil y se rebalancean automáticamente cuando la desviación supera los umbrales definidos. Esta es una ventaja real sobre el inversor DIY que necesita acordarse de rebalancear.
+
+---
+
+## Comisiones reales: el desglose completo
+
+El error más común es pensar que Indexa solo cobra lo que anuncia como "comisión de gestión". El coste real tiene tres capas:
+
+**1. Comisión de Indexa** (por gestión y asesoramiento):
+- 0,15% anual para los primeros 10.000€
+- 0,14% para 10.000–100.000€
+- Baja progresivamente hasta 0,10% para patrimonios grandes
+
+**2. Comisión del banco custodio** (Inversis o similar):
+- ~0,12% anual sobre el patrimonio
+
+**3. TER de los fondos indexados**:
+- Los fondos institucionales que usa Indexa tienen TER entre 0,07% y 0,25%
+- La media ponderada de una cartera Indexa suele rondar el 0,12%
+
+**Coste total estimado para un cliente típico**: 0,39% a 0,50% anual, según el patrimonio y la cartera asignada.
+
+Comparado con un fondo de gestión activa en España (1,5–2% anual), Indexa es notablemente más barato. Comparado con una cartera DIY de fondos indexados propia (0,10–0,20% total), Indexa cuesta aproximadamente el doble.
+
+---
+
+## Rentabilidad histórica: datos reales
+
+Indexa publica en su web la rentabilidad histórica auditada de cada cartera desde 2015. Los datos muestran que las carteras de Indexa han batido sistemáticamente a sus benchmarks de fondos de gestión activa equivalentes, y han estado cerca del retorno bruto del índice menos comisiones.
+
+Para comparar con alternativas DIY: una cartera de fondos indexados con un 80% en MSCI World y 20% en renta fija global habría tenido un comportamiento muy similar al de la cartera 7/10 de Indexa, con algo menos de coste total.
+
+Los datos históricos no predicen rentabilidades futuras, pero sí confirman que el modelo funciona: baja rotación, sin apostas activas, rebalanceo sistemático.
+
+---
+
+## Para quién tiene sentido Indexa Capital
+
+Indexa es la opción correcta si:
+
+- **No tienes tiempo o interés** en gestionar tu propia cartera pero quieres invertir mejor que con un banco tradicional
+- **Valoras la automatización**: el rebalanceo y las aportaciones periódicas funcionan solas, sin que dependan de tu fuerza de voluntad
+- **Estás empezando** y no sabes qué fondos elegir ni en qué proporción
+- **Tienes un historial de vender en caídas**: la interfaz limpia de Indexa, sin cotizaciones en tiempo real, ayuda a no sobre-reaccionar
+- **Quieres un plan de pensiones indexado**: Indexa ofrece también plan de pensiones con la misma filosofía, sin mínimo de apertura
+
+---
+
+## Para quién NO tiene sentido Indexa Capital
+
+Indexa puede no ser la mejor opción si:
+
+- **Tienes disciplina para gestionar tu propia cartera**: el ahorro de 0,25–0,30% anual en comisiones se acumula de forma significativa en 20-30 años. Usa la [calculadora de interés compuesto](/calculadora/interes-compuesto) para ver exactamente cuánto.
+- **Tu patrimonio es pequeño**: para carteras por debajo de 5.000–10.000€, las comisiones de custodia mínimas hacen que el porcentaje real sea más alto
+- **Usas MyInvestor y fondos Vanguard**: si ya tienes una cartera de fondos indexados en MyInvestor con un TER ponderado de 0,15%, cambiar a Indexa supondría triplicar el coste sin mejorar la diversificación
+
+---
+
+## Alternativa: gestionar tú mismo con fondos indexados
+
+Una cartera DIY básica para el inversor español puede ser tan sencilla como dos fondos en MyInvestor:
+
+- 80% Vanguard Global Stock Index (o Amundi Prime Global)
+- 20% Amundi Prime Euro Investment Grade Corporate Bond
+
+Coste total: ~0,12–0,18% anual. Rebalanceo manual una vez al año. Traspaso entre fondos sin tributar. Es la [cartera de 3 fondos Boglehead](/blog/cartera-boglehead-3-fondos-espana) en su versión mínima.
+
+El [comparador de costes roboadvisor vs DIY](/calculadora/roboadvisor-vs-diy) te muestra exactamente en euros la diferencia a 10, 20 y 30 años según tu capital.
+
+---
+
+## Veredicto
+
+Indexa Capital es un producto bien construido, con comisiones justas para ser un servicio gestionado, regulado por la CNMV y con historial auditado. Es la mejor opción dentro de los roboadvisors españoles para el inversor que quiere despreocuparse por completo de la gestión.
+
+Si tienes la disciplina para construir y mantener una cartera de fondos indexados propia, el DIY es más barato. Si no la tienes — y seamos honestos con nosotros mismos — Indexa puede ser el mejor seguro contra los errores de comportamiento que destruyen rentabilidades.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Indexa Capital — Rentabilidad histórica auditada](https://indexacapital.com/es/rentabilidad) — Datos oficiales verificados por auditor externo.
+- [CNMV — Registro de ESIs](https://www.cnmv.es/Portal/Consultas/BusquedaEntidades.aspx) — Verifica el registro de Indexa como entidad supervisada.
+- [Comparador roboadvisor vs DIY — BogleHub](/calculadora/roboadvisor-vs-diy) — Calcula el coste real de Indexa frente a tu propia cartera.
+`,
+  },
+  {
+    slug: 'vwce-analisis-completo',
+    title: 'VWCE: análisis completo del ETF All-World de Vanguard para España (2026)',
+    excerpt:
+      'Todo sobre el VWCE en 2026: composición, TER, fiscalidad para inversores españoles, diferencias con VWRA e IWDA, y dónde comprarlo al menor coste.',
+    publishedAt: '2026-05-24',
+    readingMinutes: 9,
+    keywords: ['VWCE análisis', 'VWCE ETF España', 'Vanguard FTSE All-World acumulación', 'VWCE vs IWDA', 'VWCE ISIN'],
+    faq: [
+      {
+        q: '¿Qué es el VWCE y qué índice replica?',
+        a: 'VWCE es el ticker del Vanguard FTSE All-World UCITS ETF (Accumulating), un ETF domiciliado en Irlanda (ISIN IE00B3RBWM25) que replica el índice FTSE All-World. Este índice incluye más de 3.700 empresas de mercados desarrollados y emergentes de todo el mundo, cubriendo aproximadamente el 90-95% de la capitalización bursátil global. Es el ETF de referencia para inversores españoles que buscan máxima diversificación en un solo producto.',
+      },
+      {
+        q: '¿Cuál es el TER del VWCE?',
+        a: 'El TER del VWCE es del 0,22% anual. Es algo más caro que sus alternativas de MSCI World (IWDA: 0,20%, SWRD: 0,12%) pero incluye emergentes dentro del mismo fondo, lo que elimina la necesidad de un segundo ETF. Si consideramos una cartera MSCI World + Emergentes por separado con pesos equivalentes, el TER combinado suele ser similar o ligeramente inferior al del VWCE.',
+      },
+      {
+        q: '¿VWCE o IWDA? ¿Cuál es mejor para un inversor en España?',
+        a: 'VWCE incluye emergentes (~12%) y IWDA solo tiene mercados desarrollados. Si quieres exposición global sin gestionar dos ETFs, VWCE es más sencillo. Si quieres control sobre la proporción de emergentes o prefieres el TER más bajo de IWDA, la combinación IWDA + EIMI (emergentes por separado) tiene más flexibilidad. Para la mayoría de inversores que empiezan, VWCE es la opción más simple y suficiente.',
+      },
+      {
+        q: '¿Es VWCE fiscalmente eficiente para inversores en España?',
+        a: 'Sí. VWCE está domiciliado en Irlanda (ISIN empieza por IE), lo que le da acceso al convenio fiscal Irlanda-EE.UU. que reduce la retención en origen sobre dividendos de empresas americanas del 30% al 15%. Al ser de acumulación, los dividendos se reinvierten sin generar evento fiscal inmediato. Esta combinación lo convierte en uno de los ETFs fiscalmente más eficientes para un inversor residente en España.',
+      },
+      {
+        q: '¿Cuál es la diferencia entre VWCE y VWRA?',
+        a: 'VWCE y VWRA replican exactamente el mismo índice (FTSE All-World) con la misma política de acumulación. La diferencia es la bolsa donde cotizan y la divisa de cotización: VWCE cotiza en Xetra (EUR), Euronext Ámsterdam (EUR) y otras bolsas europeas; VWRA cotiza principalmente en la Bolsa de Londres (USD). Para un inversor español que usa un broker europeo como Trade Republic o DEGIRO, VWCE es el ticker correcto. El ISIN es el mismo: IE00B3RBWM25.',
+      },
+    ],
+    content: `# VWCE: análisis completo del ETF All-World de Vanguard para España (2026)
+
+VWCE es el ticker más buscado en los foros de inversión españoles. El Vanguard FTSE All-World UCITS ETF (Accumulating) se ha convertido en el ETF de referencia para inversores particulares en España que quieren diversificación global máxima en un solo producto, con eficiencia fiscal, bajo coste y sin complicaciones.
+
+Este análisis cubre todo lo que necesitas saber: qué hay dentro, cuánto cuesta, si es el más adecuado para un inversor español y cómo compararlo con sus principales alternativas.
+
+---
+
+## Ficha técnica del VWCE
+
+| Dato | Valor |
+|---|---|
+| Nombre completo | Vanguard FTSE All-World UCITS ETF (Acc) |
+| Ticker más común | VWCE (Xetra), VWRA (LSE) |
+| ISIN | IE00B3RBWM25 |
+| Domicilio | Irlanda |
+| Gestora | Vanguard |
+| Índice replicado | FTSE All-World |
+| TER | 0,22% anual |
+| Política de dividendos | Acumulación |
+| Replicación | Física por muestreo |
+| Nº de valores aproximado | ~3.700 empresas |
+| Patrimonio bajo gestión | >15.000 millones USD |
+
+---
+
+## Qué hay dentro del VWCE: composición por país y sector
+
+El FTSE All-World cubre mercados desarrollados y emergentes. La composición aproximada en 2026:
+
+**Por región:**
+- Estados Unidos: ~63%
+- Europa desarrollada: ~14%
+- Japón: ~6%
+- Reino Unido: ~4%
+- Mercados emergentes (China, India, Taiwán, Corea, Brasil, etc.): ~12%
+
+**Por sector:**
+- Tecnología: ~25%
+- Financiero: ~15%
+- Salud: ~12%
+- Consumo discrecional: ~11%
+- Industriales: ~10%
+- Resto: ~27%
+
+Esta distribución refleja el peso real de cada empresa y región en la economía mundial, sin apostar por ningún sector ni región concreta. Es la definición práctica de "invertir en el mundo entero".
+
+---
+
+## Por qué VWCE es tan popular entre inversores españoles
+
+**1. Un solo ETF, diversificación global completa**
+
+La alternativa a VWCE para obtener cobertura similar sería combinar un ETF de MSCI World (desarrollados) con uno de mercados emergentes en proporción ~88/12. VWCE hace eso automáticamente y rebalancea el peso de emergentes según su capitalización de mercado. Menos decisiones, menos operaciones, menos fricción.
+
+**2. Domicilio en Irlanda: máxima eficiencia fiscal**
+
+El ISIN IE00B3RBWM25 confirma que el fondo está domiciliado en Irlanda. Esto tiene consecuencias fiscales concretas para inversores españoles:
+
+- El convenio Irlanda–EE.UU. reduce la retención sobre dividendos americanos del 30% al 15%
+- Como el ~63% del fondo son empresas americanas, esto supone un ahorro real en la "fuga fiscal" de dividendos
+- La retención efectiva sobre el dividendo total del fondo se estima en torno al 10-15%, frente al 20-30% de ETFs domiciliados en Luxemburgo
+
+**3. Acumulación: el dividendo se reinvierte sin tributar**
+
+Cada dividendo que las empresas del fondo reparten se reinvierte automáticamente sin generar un evento fiscal para el inversor. Tributarás cuando vendas — y solo por la ganancia real. Para un inversor en fase de acumulación con horizonte de 20-30 años, este diferimiento fiscal es equivalente a tener un porcentaje de rentabilidad extra compuesta cada año.
+
+---
+
+## VWCE vs IWDA: ¿cuál elegir?
+
+Esta es la comparativa que más se repite en los foros de inversión españoles:
+
+| | VWCE | IWDA |
+|---|---|---|
+| Índice | FTSE All-World | MSCI World |
+| Emergentes incluidos | ✓ (~12%) | ✗ |
+| TER | 0,22% | 0,20% |
+| Domicilio | Irlanda | Irlanda |
+| Acumulación | ✓ | ✓ |
+| Patrimonio gestionado | >15.000 M USD | >75.000 M USD |
+
+La diferencia clave: IWDA solo incluye países desarrollados (no emergentes). Para tener exposición global completa con IWDA necesitas añadir un segundo ETF de emergentes (como EIMI) en proporción ~88/12. VWCE ya lo hace internamente.
+
+**Cuándo elegir VWCE**: quieres simplicidad máxima, un solo ETF que lo cubra todo, y no quieres decidir cuánto poner en emergentes.
+
+**Cuándo elegir IWDA**: quieres más control sobre el peso de emergentes, o buscas el TER más bajo, o ya tienes exposición a emergentes por otro lado.
+
+Para la mayoría de inversores que empiezan: **VWCE es la respuesta más sencilla y correcta**.
+
+---
+
+## VWCE vs SWRD: la comparativa de MSCI World barato
+
+SWRD (SPDR MSCI World UCITS ETF) tiene un TER de 0,12%, el más barato entre los ETFs de MSCI World disponibles en España. Pero SWRD no incluye emergentes. Si añades EIMI (emergentes, TER 0,18%) en un 12%, el TER ponderado de la combinación es aproximadamente:
+
+0,88 × 0,12% + 0,12 × 0,18% ≈ 0,128%
+
+Frente al 0,22% del VWCE. El ahorro es de ~0,09% anual: sobre 100.000€, son ~90€ al año.
+
+A largo plazo eso importa, pero la complejidad añadida (dos ETFs, dos órdenes, rebalanceo manual de la proporción) puede no merecer la pena para carteras pequeñas o inversores que empiezan. Con carteras grandes (>100.000–200.000€), la combinación SWRD+EIMI es más eficiente en costes.
+
+---
+
+## Dónde comprar VWCE en España
+
+| Broker | Comisión por orden |
+|---|---|
+| Trade Republic | 0 € (planes de ahorro automáticos desde 1 €/mes) |
+| DEGIRO | 0,50 € + 0,004% (mín. 0,90 €) |
+| MyInvestor | 0,20 € + 0,03% |
+| XTB | 0 € hasta 100.000 €/mes en ETFs |
+
+Para aportaciones mensuales pequeñas, Trade Republic es la opción más eficiente. Para órdenes más grandes y control técnico, DEGIRO. El VWCE no está disponible en MyInvestor como ETF, pero sí su equivalente en fondo indexado (Vanguard Global Stock Index, que replica MSCI World, no FTSE All-World — índice diferente).
+
+---
+
+## ¿Es VWCE la opción definitiva para un inversor indexado en España?
+
+Para muchos sí. Es diversificado globalmente, domiciliado en Irlanda, de acumulación, con un TER aceptable y gestionado por Vanguard, una gestora fundada por John Bogle —el padre de la inversión indexada.
+
+Sus únicas limitaciones son el TER algo superior a las alternativas más baratas, y que no está disponible como fondo de inversión (lo que significaría traspaso fiscal libre en España).
+
+Si usas Trade Republic o DEGIRO y buscas la solución más simple para largo plazo: **VWCE es probablemente la mejor opción disponible en España para un ETF todo-en-uno**.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Vanguard — Ficha técnica VWCE](https://www.vanguard.co.uk/professional/en/etf/equity/9505/ftse-all-world-ucits-etf-usd-accumulating) — Datos oficiales, composición y metodología del fondo.
+- [JustETF — VWCE](https://www.justetf.com/es/etf-profile.html?isin=IE00B3RBWM25) — Histórico de precios, patrimonio gestionado y datos de distribución.
+- [Comparador VWCE vs CSPX vs IWDA — BogleHub](/blog/vwce-vs-cspx-vs-iwda) — Comparativa detallada de los tres ETFs más populares en España.
+`,
+  },
+  {
+    slug: 'amundi-prime-global-analisis',
+    title: 'Amundi Prime Global: análisis del fondo indexado más barato de España (2026)',
+    excerpt:
+      'Análisis completo del Amundi Prime Global en 2026: TER 0,05%, disponible en MyInvestor con traspaso fiscal libre, comparativa con IWDA y Vanguard Global Stock.',
+    publishedAt: '2026-05-24',
+    readingMinutes: 8,
+    keywords: ['Amundi Prime Global análisis', 'Amundi Prime Global MyInvestor', 'fondo indexado más barato España', 'Amundi Prime Global TER'],
+    faq: [
+      {
+        q: '¿Qué es el Amundi Prime Global y qué índice replica?',
+        a: 'El Amundi Prime Global es un fondo indexado UCITS que replica el índice Solactive GBS Global Markets Large & Mid Cap Index, que incluye aproximadamente 1.500-2.000 grandes y medianas empresas de mercados desarrollados de todo el mundo. Es equivalente funcional al MSCI World — no incluye mercados emergentes. Está disponible en MyInvestor desde 1 € de inversión mínima y permite traspaso fiscal entre fondos sin tributar.',
+      },
+      {
+        q: '¿Cuánto cobra el Amundi Prime Global?',
+        a: 'El TER del Amundi Prime Global es del 0,05% anual, el más bajo entre los fondos indexados globales disponibles en España para el inversor particular. Es notablemente más barato que el Vanguard Global Stock Index (0,18%) o el MSCI World de Fidelity (0,12%). Sobre 10.000€, la diferencia de coste entre Amundi Prime Global y Vanguard Global Stock es de ~13€ al año — pequeña, pero se acumula.',
+      },
+      {
+        q: '¿Es mejor el Amundi Prime Global que el Vanguard Global Stock Index?',
+        a: 'Depende de lo que valores. El Amundi Prime Global es más barato (TER 0,05% vs 0,18%) pero replica un índice diferente (Solactive en vez de MSCI). Los dos tienen rendimientos muy similares históricamente porque cubren el mismo universo de mercados desarrollados. Vanguard tiene más historial y es una gestora más conocida. En la práctica, para el inversor de largo plazo en España, ambos son excelentes opciones y la diferencia de 0,13% en TER es el único criterio objetivo de peso.',
+      },
+      {
+        q: '¿El Amundi Prime Global incluye emergentes?',
+        a: 'No. El índice Solactive GBS Global Markets Large & Mid Cap que replica cubre solo mercados desarrollados. Es equivalente funcional al MSCI World, no al FTSE All-World (que sí incluye emergentes). Si quieres exposición a emergentes junto con Amundi Prime Global, necesitas añadir un fondo de emergentes por separado. MyInvestor ofrece el Amundi Index MSCI Emerging Markets para completar la cobertura global.',
+      },
+      {
+        q: '¿Cómo comprar el Amundi Prime Global en España?',
+        a: 'El Amundi Prime Global está disponible principalmente en MyInvestor (desde 1 €, sin comisión de compra, con traspaso fiscal libre). También está disponible en otros brokers como Selfbank o a través de algunas gestoras, pero MyInvestor ofrece las mejores condiciones para el inversor particular. No está disponible en DEGIRO ni en Trade Republic porque es un fondo de inversión, no un ETF.',
+      },
+    ],
+    content: `# Amundi Prime Global: análisis del fondo indexado más barato de España (2026)
+
+El Amundi Prime Global es el fondo indexado con el TER más bajo disponible para inversores particulares en España: 0,05% anual. Combina ese coste mínimo con disponibilidad en MyInvestor sin mínimo significativo, acceso desde 1 €, y la ventaja fiscal del traspaso entre fondos sin tributar.
+
+Para un inversor en España que quiere una exposición global a mercados desarrollados al menor coste posible y aprovechar la fiscalidad de los fondos de inversión, el Amundi Prime Global es difícilmente superable.
+
+---
+
+## Ficha técnica
+
+| Dato | Valor |
+|---|---|
+| Nombre completo | Amundi Index Solutions - Amundi Prime Global |
+| ISIN | LU1931974692 |
+| Índice replicado | Solactive GBS Global Markets Large & Mid Cap |
+| TER | 0,05% anual |
+| Tipo de producto | Fondo de inversión UCITS |
+| Política de dividendos | Acumulación |
+| Mínimo de inversión (MyInvestor) | 1 € |
+| Disponible para traspaso fiscal | ✓ (como fondo de inversión en España) |
+| Domicilio | Luxemburgo |
+
+---
+
+## El índice Solactive: ¿es lo mismo que el MSCI World?
+
+El Amundi Prime Global no replica el MSCI World sino el **Solactive GBS Global Markets Large & Mid Cap Index**, un índice propiedad de la empresa alemana Solactive AG. La razón es económica: los derechos de licencia del MSCI World son caros para la gestora; Solactive ofrece un índice alternativo más barato con la misma cobertura.
+
+En la práctica, ambos índices cubren el mismo universo:
+- Grandes y medianas empresas de mercados desarrollados
+- Aproximadamente 23 países incluidos
+- ~1.500-2.000 valores (frente a ~1.400 en el MSCI World)
+- Ponderación por capitalización de mercado
+
+La correlación histórica entre ambos índices supera el 99,9%. Para el inversor de largo plazo, la diferencia es estadísticamente irrelevante. Lo que sí importa es el TER: 0,05% frente al 0,20% del IWDA (MSCI World) o el 0,18% del Vanguard Global Stock Index.
+
+---
+
+## La ventaja fiscal clave: traspaso entre fondos
+
+Aquí está la diferencia fundamental entre este fondo y un ETF equivalente como IWDA o SWRD.
+
+En España, los fondos de inversión gozan del régimen de **traspaso fiscal diferido**: puedes mover dinero de un fondo a otro sin que el cambio genere un evento fiscal. El IRPF se difiere hasta el momento en que realmente retiras el dinero de los fondos y lo llevas a tu cuenta corriente.
+
+Esto tiene implicaciones prácticas enormes:
+- Puedes rebalancear tu cartera (de más renta variable a más renta fija a medida que te acercas a la jubilación) sin tributar por las plusvalías acumuladas
+- Puedes cambiar de fondo si aparece uno mejor o más barato, sin coste fiscal
+- Los dividendos ya se acumulan dentro del fondo sin tributar
+
+Un ETF como IWDA no tiene este régimen: cada venta de ETF realiza la ganancia y tributa en el IRPF del año.
+
+---
+
+## Comparativa de costes: Amundi Prime Global vs alternativas
+
+| Fondo/ETF | TER | Índice | Traspaso fiscal | Dónde |
+|---|---|---|---|---|
+| Amundi Prime Global | **0,05%** | Solactive GBS | ✓ | MyInvestor |
+| Fidelity MSCI World | 0,12% | MSCI World | ✓ | MyInvestor, Fidelity |
+| Vanguard Global Stock Index | 0,18% | MSCI World | ✓ | MyInvestor |
+| SWRD (ETF) | 0,12% | MSCI World | ✗ | DEGIRO, Trade Republic |
+| IWDA (ETF) | 0,20% | MSCI World | ✗ | DEGIRO, Trade Republic |
+
+El Amundi Prime Global es el más barato de todos. La única razón para elegir Vanguard Global Stock Index sobre él es la preferencia por la marca Vanguard o la confianza en el índice MSCI frente al Solactive.
+
+---
+
+## El domicilio en Luxemburgo: ¿afecta a la fiscalidad?
+
+A diferencia de los ETFs irlandeses (que aprovechan el convenio Irlanda-EE.UU. para pagar solo 15% de retención sobre dividendos americanos), el Amundi Prime Global está domiciliado en Luxemburgo. Luxemburgo tiene un convenio menos favorable con EE.UU. (retención del 30% en origen sobre dividendos americanos).
+
+En la práctica, como el fondo es de **acumulación**, los dividendos se reinvierten internamente y el inversor no los declara hasta vender. La "pérdida" por la mayor retención en origen ya está reflejada en el precio de la participación — no se puede recuperar, pero tampoco genera un evento fiscal para el partícipe.
+
+Para un fondo de acumulación a largo plazo, el impacto del domicilio es real pero difícil de cuantificar con precisión. La ventaja del menor TER (0,05% vs 0,20% del IWDA) suele compensar la menor eficiencia del domicilio luxemburgués.
+
+---
+
+## Para quién es el Amundi Prime Global
+
+Es la opción ideal si:
+- **Usas MyInvestor** como plataforma principal
+- **Quieres el coste mínimo posible** en un fondo de mercados desarrollados
+- **Valoras el traspaso fiscal libre** entre fondos
+- **No necesitas emergentes** en ese fondo (los añadirías por separado)
+- **Aportas cantidades pequeñas**: desde 1 €, sin comisión de compra
+
+Para un inversor que ya usa Trade Republic o DEGIRO y no tiene intención de cambiar, los ETFs SWRD o IWDA son alternativas igualmente válidas y con el mismo nivel de calidad.
+
+---
+
+## La cartera mínima con Amundi Prime Global en MyInvestor
+
+La cartera más sencilla que puedes construir con Amundi Prime Global:
+
+- **80-90% Amundi Prime Global** (desarrollados globales)
+- **10-20% Amundi Index MSCI Emerging Markets** (emergentes, TER 0,20%)
+
+El resultado es una cartera global similar al FTSE All-World del VWCE, con traspaso fiscal libre, desde 1 € de aportación mínima y un coste total ponderado inferior al 0,10% anual. Para muchos inversores en España, esto es la cartera óptima.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Amundi — Ficha del fondo Amundi Prime Global](https://www.amundi.es) — Documentos oficiales, cartera y metodología del índice.
+- [MyInvestor — Fondos indexados disponibles](https://myinvestor.es) — Plataforma donde encontrar el fondo con las mejores condiciones para el inversor particular en España.
+- [Fondos indexados vs ETFs en España — BogleHub](/blog/fondos-indexados-vs-etfs-espana) — Guía completa sobre cuándo elegir cada vehículo.
+`,
+  },
+  {
+    slug: 'finizens-vs-indexa-capital-2026',
+    title: 'Finizens vs Indexa Capital: qué roboadvisor elegir en España (2026)',
+    excerpt:
+      'Comparativa honesta entre Finizens e Indexa Capital en 2026: carteras, comisiones reales, rentabilidad y para qué perfil encaja mejor cada roboadvisor.',
+    publishedAt: '2026-05-24',
+    readingMinutes: 9,
+    keywords: ['Finizens vs Indexa Capital', 'mejor roboadvisor España 2026', 'Finizens opinión', 'Finizens comisiones', 'comparativa roboadvisors España'],
+    faq: [
+      {
+        q: '¿Cuál es más barato, Finizens o Indexa Capital?',
+        a: 'Depende del patrimonio. Para patrimonios pequeños (<30.000€), Indexa suele ser ligeramente más barato en comisión de gestión. Para patrimonios medianos-grandes (>50.000€), Finizens aplica descuentos progresivos más agresivos y puede resultar más económico. En cualquier caso, la diferencia total entre ambos raramente supera el 0,10-0,15% anual. Ambos son significativamente más baratos que los fondos de gestión activa de los bancos tradicionales.',
+      },
+      {
+        q: '¿Cuál tiene mejor rentabilidad histórica, Finizens o Indexa?',
+        a: 'Ambos publican rentabilidades históricas auditadas en sus webs, pero la comparación directa es complicada porque sus perfiles de riesgo y los índices que usan son diferentes. Las diferencias de rentabilidad entre carteras equivalentes son mínimas a largo plazo (décimas de punto), ya que ambos invierten en fondos indexados de bajo coste con filosofía similar. Lo que más influye en la rentabilidad final es el perfil de riesgo que eliges y cuánto tiempo dejas crecer la inversión.',
+      },
+      {
+        q: '¿Es seguro Finizens?',
+        a: 'Sí. Finizens está registrado en la CNMV como agencia de valores (número de registro 286). El dinero se custodia en entidades bancarias reguladas separadas de Finizens. En caso de insolvencia de Finizens, los fondos en los que invierte son de tu propiedad y estarían cubiertos por el Fondo de Garantía de Inversores hasta 100.000€. Finizens tiene respaldo del grupo Global Savings Group y de varios fondos de inversión europeos.',
+      },
+      {
+        q: '¿Puedo cambiar de Finizens a Indexa Capital sin tributar?',
+        a: 'Sí, con matices. Tanto Finizens como Indexa invierten a través de fondos de inversión UCITS. El traspaso entre fondos de inversión en España no genera evento fiscal — el IRPF se difiere. Sin embargo, el proceso de traspasar de un roboadvisor a otro requiere coordinación entre ambas entidades y puede tardar semanas. Consulta con ambas antes de iniciar el proceso.',
+      },
+      {
+        q: '¿Finizens tiene plan de pensiones indexado?',
+        a: 'Sí. Finizens ofrece también plan de pensiones indexado (Finizens Pensiones), con la misma filosofía de carteras diversificadas en fondos de bajo coste. Es el equivalente al plan de pensiones de Indexa. Ambos son buenas opciones para el ahorro para la jubilación con ventaja fiscal en el IRPF (deducibles en la base imponible general hasta los límites legales).',
+      },
+    ],
+    content: `# Finizens vs Indexa Capital: qué roboadvisor elegir en España (2026)
+
+Indexa Capital e Finizens son los dos roboadvisors más utilizados entre los inversores indexados en España. Ambos invierten en fondos indexados de bajo coste, ambos rebalancean automáticamente y ambos son alternativas sólidas a la gestión activa de la banca tradicional. La pregunta es cuál encaja mejor con tu situación concreta.
+
+Esta comparativa usa datos actualizados a 2026 y no recibe compensación de ninguna de las dos entidades.
+
+---
+
+## Comparativa rápida
+
+| | Finizens | Indexa Capital |
+|---|---|---|
+| Tipo de entidad | Agencia de valores (CNMV 286) | ESI (CNMV 257) |
+| Fondos usados | iShares, Vanguard, Amundi | Vanguard, iShares, Amundi |
+| Nº de carteras | 5 (1-5) | 10 (1-10) |
+| Mínimo apertura | 1.000 € | 3.000 € (fondos) |
+| Plan de pensiones | ✓ | ✓ |
+| Cuenta sin comisión | 0-10.000€ primer año (referido) | Primeros 10.000€ gratis (referido) |
+| App móvil | ✓ | ✓ |
+| Rebalanceo automático | ✓ | ✓ |
+| Informe fiscal | ✓ | ✓ |
+
+---
+
+## Las carteras de Finizens
+
+Finizens ofrece 5 carteras numeradas del 1 al 5, del más conservador al más arriesgado. La cartera 5 (máximo riesgo) tiene aproximadamente:
+
+- ~80-85% renta variable global (vía ETFs de iShares y Vanguard)
+- ~15-20% renta fija diversificada global
+
+Los fondos que usa Finizens son en su mayoría de iShares (BlackRock) y Vanguard, todos UCITS con TER muy bajo. La composición incluye exposición a mercados desarrollados, emergentes, renta fija soberana y corporativa.
+
+Una característica de Finizens es que también incluye oro en su cartera (a través de un ETC físico) para las carteras más conservadoras. Esto no es común en Indexa, que no incluye materias primas.
+
+---
+
+## Las carteras de Indexa Capital
+
+Indexa ofrece una escala del 1 al 10, con más granularidad que Finizens. La cartera 10/10 (máximo riesgo) tiene aproximadamente:
+
+- ~80% renta variable (global, emergentes, pequeñas empresas)
+- ~20% renta fija (bonos gubernamentales y corporativos Europa)
+
+Indexa usa fondos de Vanguard, iShares y Amundi. Una particularidad es su exposición explícita a **pequeñas empresas** (small caps) en las carteras con más riesgo, que históricamente han dado prima de rentabilidad adicional. Este factor pequeñas empresas no está presente en Finizens.
+
+---
+
+## Comisiones reales: quién cobra menos
+
+Ambas entidades tienen estructura similar de tres capas de coste:
+
+**Finizens** (coste total estimado):
+- Comisión de gestión: 0,12% para los primeros 10.000€, hasta 0,099% para >100.000€
+- Comisión custodia: ~0,10%
+- TER de fondos: ~0,10-0,15%
+- **Total aproximado: 0,32-0,37% para patrimonio pequeño**
+
+**Indexa Capital** (coste total estimado):
+- Comisión de gestión: 0,15% hasta 10.000€, bajando a 0,10% para >100.000€
+- Comisión custodia: ~0,12%
+- TER de fondos: ~0,10-0,15%
+- **Total aproximado: 0,37-0,42% para patrimonio pequeño**
+
+**Conclusión**: Finizens es marginalmente más barato en comisiones de gestión. La diferencia es pequeña (0-0,10% anual) y puede variar según el patrimonio.
+
+---
+
+## Rentabilidad histórica: un empate técnico
+
+Ambos publican rentabilidades históricas en sus webs. La comparación directa es compleja porque sus perfiles de riesgo no son equivalentes (el perfil 3/5 de Finizens no tiene exactamente el mismo riesgo que el 6/10 de Indexa).
+
+Lo que sí se puede afirmar con datos: ambos han sido consistentemente más rentables que los fondos de gestión activa equivalentes de la banca española, con diferencias inferiores al 1% anual entre carteras de riesgo similar. A largo plazo, las diferencias entre los dos roboadvisors son menores que las diferencias entre cualquiera de ellos y la gestión activa de banco.
+
+---
+
+## Diferencias que importan en la práctica
+
+**Mínimo de apertura**: Finizens permite empezar desde 1.000 €; Indexa exige 3.000 € para la cuenta de fondos. Si tienes menos de 3.000 €, Finizens es la única opción de las dos.
+
+**Granularidad del perfil de riesgo**: Indexa tiene 10 niveles frente a 5 de Finizens. Para quien quiere afinar más su asignación de activos, Indexa ofrece más precisión.
+
+**Oro en cartera**: Finizens incluye ETC de oro en carteras conservadoras. Indexa no incluye materias primas.
+
+**Small caps**: Indexa incluye factor pequeñas empresas en carteras de riesgo alto. Finizens no.
+
+**Experiencia de usuario**: la app de Trade Republic tiene más usuarios satisfechos según valoraciones en tiendas de aplicaciones. Ambas son funcionales pero con diseños diferentes.
+
+---
+
+## ¿Cuál elegir?
+
+**Elige Finizens si**:
+- Tu patrimonio inicial es inferior a 3.000 €
+- Prefieres carteras con más activos (oro incluido)
+- Valoras la interfaz visual más sencilla
+- Quieres el roboadvisor ligeramente más barato en comisiones de gestión
+
+**Elige Indexa Capital si**:
+- Quieres más granularidad en el perfil de riesgo (10 niveles)
+- Prefieres exposición explícita a small caps
+- Tienes más de 3.000 € para empezar
+- Buscas la entidad con más historial y más patrimonio gestionado en España
+
+En cualquier caso: **ambas son infinitamente mejores que un fondo de gestión activa bancario**. Si tienes que decidir en 10 minutos, elige cualquiera de las dos y empieza. La diferencia entre Finizens e Indexa es mucho menor que la diferencia entre cualquiera de los dos y no hacer nada.
+
+Para cuantificar exactamente el coste de un roboadvisor frente a gestionar tu propia cartera, usa el [comparador de costes roboadvisor vs DIY](/calculadora/roboadvisor-vs-diy).
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Finizens — Rentabilidad histórica oficial](https://finizens.com/rentabilidades) — Datos auditados de las carteras desde la apertura.
+- [Indexa Capital — Rentabilidad histórica oficial](https://indexacapital.com/es/rentabilidad) — Datos auditados por tercero desde 2015.
+- [CNMV — Registros de empresas de servicios de inversión](https://www.cnmv.es) — Verifica el registro de ambas entidades.
+`,
+  },
+  {
+    slug: 'como-declarar-etfs-hacienda',
+    title: 'Cómo declarar ETFs en la declaración de la renta en España (2026)',
+    excerpt:
+      'Guía paso a paso para declarar la venta de ETFs en el IRPF 2026: cómo calcular la ganancia, el criterio FIFO, la retención a cuenta y cómo compensar pérdidas.',
+    publishedAt: '2026-05-24',
+    readingMinutes: 11,
+    keywords: ['declarar ETFs renta España', 'ETFs IRPF 2026', 'como tributar ETFs España', 'ganancia patrimonial ETF IRPF', 'declaración renta ETFs'],
+    faq: [
+      {
+        q: '¿Hay que declarar los ETFs en la declaración de la renta aunque no los haya vendido?',
+        a: 'No, si solo los tienes y no los has vendido. Los ETFs de acumulación no generan ningún evento fiscal mientras los mantienes: los dividendos se reinvierten dentro del fondo y no se declaran. Solo tienes que incluir una operación con ETFs en la renta cuando la hayas vendido (reembolsado) y hayas obtenido una ganancia o pérdida patrimonial. Si el año pasado no vendiste nada, no hay nada que declarar por tus ETFs.',
+      },
+      {
+        q: '¿Cuánto se paga de IRPF por vender un ETF con beneficio?',
+        a: 'La ganancia tributa en la base del ahorro del IRPF con la escala progresiva 2026: 19% para los primeros 6.000€ de ganancia, 21% de 6.000€ a 50.000€, 23% de 50.000€ a 200.000€, 27% de 200.000€ a 300.000€ y 28% por encima de 300.000€. La mayoría de inversores particulares se quedan en el tramo del 19% o del 21%. Solo tributas por la ganancia (diferencia entre precio de venta y precio de compra), no por el total del dinero recibido.',
+      },
+      {
+        q: '¿Qué es el criterio FIFO y cómo me afecta?',
+        a: 'FIFO (First In, First Out) es el criterio que aplica Hacienda cuando has comprado el mismo ETF en varias ocasiones a precios distintos y luego vendes solo una parte. Hacienda considera que vendes primero las participaciones que compraste antes. Esto afecta al precio de compra que se usa para calcular la ganancia: si tus primeras compras fueron más baratas, la ganancia calculada puede ser mayor que si se usaran las más recientes.',
+      },
+      {
+        q: '¿Tengo que incluir en la renta los ETFs de distribución aunque no haya vendido?',
+        a: 'Sí, si el ETF reparte dividendos. Los dividendos de un ETF de distribución tributan como rendimientos del capital mobiliario en el año en que se cobran, aunque no vendas ninguna participación. Tu broker te enviará un certificado fiscal con los importes. Los dividendos ya llevan retención a cuenta del 19% aplicada en origen (en el caso de brokers españoles), que luego se descuenta del IRPF a pagar.',
+      },
+      {
+        q: '¿Puedo compensar las pérdidas de ETFs con ganancias de otros ETFs o acciones?',
+        a: 'Sí. Las pérdidas y ganancias patrimoniales derivadas de la venta de ETFs, acciones y fondos de inversión pueden compensarse entre sí dentro del mismo ejercicio. Si el saldo final es negativo, puedes arrastrarlo a los cuatro ejercicios siguientes. También puedes compensar (con límites) las pérdidas patrimoniales con los rendimientos del capital mobiliario (dividendos, intereses). La calculadora de IRPF de BogleHub te ayuda a estimar el impuesto antes de vender.',
+      },
+    ],
+    content: `# Cómo declarar ETFs en la declaración de la renta en España (2026)
+
+Declarar correctamente la venta de ETFs en el IRPF es más sencillo de lo que parece, pero hay detalles que conviene tener claros antes de rellenar el borrador: el criterio FIFO, la distinción entre ETFs de distribución y acumulación, la retención a cuenta y cómo compensar pérdidas.
+
+Esta guía cubre el proceso completo para la declaración de la renta del ejercicio 2025 (campaña 2026), con los tipos del IRPF del ahorro vigentes.
+
+---
+
+## Cuándo tienes que declarar algo por tus ETFs
+
+**Debes declarar si**:
+- Has vendido (reembolsado) participaciones de un ETF y has obtenido ganancia o pérdida
+- Has cobrado dividendos de un ETF de distribución
+- Tienes cuentas en el extranjero con saldo superior a 50.000€ (Modelo 720, aunque solo para información — sin efecto en cuota)
+
+**No debes declarar si**:
+- Tienes ETFs de acumulación que no has vendido (no hay evento fiscal)
+- Has traspasado fondos de inversión entre sí (no aplica a ETFs — los ETFs no tienen régimen de traspaso)
+- Tienes ETFs con pérdidas que no has vendido
+
+---
+
+## Paso 1: Calcular la ganancia o pérdida patrimonial
+
+La ganancia es la diferencia entre:
+- **Valor de transmisión**: lo que recibiste por vender, menos comisiones de venta
+- **Valor de adquisición**: lo que pagaste al comprar, más comisiones de compra
+
+\`\`\`
+Ganancia = (Precio venta × nº participaciones − comisiones venta)
+         − (Precio compra × nº participaciones + comisiones compra)
+\`\`\`
+
+**Ejemplo práctico**:
+- Compraste 100 participaciones de VWCE a 90€ + 1€ de comisión = 9.001€
+- Vendiste 100 participaciones a 115€ − 1€ de comisión = 11.499€
+- Ganancia = 11.499 − 9.001 = **2.498€**
+- Impuesto al 19% = 474,62€
+
+La [calculadora de IRPF de BogleHub](/calculadora/irpf-venta-fondos) te hace este cálculo automáticamente con desglose por tramos.
+
+---
+
+## Paso 2: El criterio FIFO — qué pasa si compraste en varias veces
+
+Si has comprado el mismo ETF en distintas fechas a precios diferentes y luego vendes solo una parte, Hacienda aplica el **criterio FIFO** (First In, First Out): se consideran vendidas primero las participaciones más antiguas.
+
+**Ejemplo**:
+- Enero 2023: 50 participaciones a 80€ = 4.000€
+- Enero 2024: 50 participaciones a 100€ = 5.000€
+- Julio 2025: vendes 50 participaciones a 120€
+
+FIFO considera que vendiste las 50 de enero 2023:
+- Ganancia = (50 × 120) − 4.000 = 6.000 − 4.000 = **2.000€**
+
+Si en cambio usáramos LIFO (últimas en entrar, primeras en salir):
+- Ganancia = 6.000 − 5.000 = 1.000€ (menos impuesto, pero no es lo que aplica Hacienda)
+
+Tu broker debería informarte del precio medio de adquisición y la ganancia calculada en el certificado fiscal anual.
+
+---
+
+## Paso 3: Dónde se declara en el borrador de la renta
+
+Las ganancias y pérdidas por venta de ETFs van en la **base del ahorro**, sección de ganancias y pérdidas patrimoniales derivadas de la transmisión de elementos patrimoniales:
+
+1. Accede a la Renta Web de la AEAT (renta.agenciatributaria.gob.es)
+2. Importa el borrador con los datos fiscales de tu broker (muchos brokers envían los datos a la AEAT directamente)
+3. Revisa el apartado "Ganancias y pérdidas patrimoniales — transmisiones"
+4. Cada operación de venta aparece con: fecha de compra, fecha de venta, valor de adquisición, valor de transmisión y ganancia/pérdida
+
+Si el broker no ha enviado los datos (frecuente con brokers extranjeros como DEGIRO o Trade Republic), tendrás que introducirlos manualmente con el certificado fiscal que te enviaron.
+
+---
+
+## Paso 4: Los tipos del IRPF del ahorro en 2026
+
+La ganancia patrimonial tributa en la base del ahorro con esta escala progresiva:
+
+| Base del ahorro | Tipo |
+|---|---|
+| Hasta 6.000€ | 19% |
+| 6.000€ – 50.000€ | 21% |
+| 50.000€ – 200.000€ | 23% |
+| 200.000€ – 300.000€ | 27% |
+| Más de 300.000€ | 28% |
+
+El impuesto es progresivo: si ganas 10.000€, pagas el 19% de los primeros 6.000€ (1.140€) y el 21% de los 4.000€ restantes (840€). Total: 1.980€, no 10.000 × 21% = 2.100€.
+
+---
+
+## Paso 5: Compensar pérdidas con ganancias
+
+Las pérdidas patrimoniales del año (incluidas las de ETFs, acciones y fondos) compensan las ganancias del mismo tipo. El proceso:
+
+1. Suma todas las ganancias del año: +5.000€
+2. Suma todas las pérdidas del año: −2.000€
+3. Base imponible neta: +3.000€
+4. Impuesto: 19% de 3.000€ = 570€
+
+Si el saldo es negativo (más pérdidas que ganancias), puedes arrastrarlo a los **4 ejercicios siguientes** para compensar futuras ganancias.
+
+**Regla de los dos meses**: si vendes un ETF o acción con pérdidas y recompras el mismo valor cotizado en los dos meses anteriores o posteriores, Hacienda rechaza la pérdida (anti-lavado de pérdidas fiscales). Espera más de dos meses antes de recomprar, o compra un ETF diferente que siga el mismo índice.
+
+---
+
+## ETFs de distribución: los dividendos sí tributan cada año
+
+Si tienes ETFs que reparten dividendos (distribución), cada pago tributa como rendimiento del capital mobiliario al 19-28% según importe. No importa que no hayas vendido ninguna participación.
+
+Los brokers con sede en España aplican una **retención a cuenta del 19%** en el momento del cobro. Esa retención se resta del impuesto final a pagar en la declaración. Si la retención fue suficiente, puede que te devuelvan parte.
+
+Los brokers extranjeros (DEGIRO, Trade Republic) normalmente no aplican retención española — eres tú quien debe declarar y pagar directamente. El certificado fiscal del broker desglosará todos los dividendos del año.
+
+---
+
+## ETFs de acumulación: sin eventos fiscales hasta que vendas
+
+Los ETFs de acumulación (Acc) reinvierten los dividendos dentro del fondo. Desde la perspectiva del IRPF español, **no hay evento fiscal** por los dividendos reinvertidos. Solo tributas cuando vendes participaciones, por la diferencia entre precio de venta y precio de compra.
+
+Este es uno de los principales motivos por los que los ETFs de acumulación son más eficientes para inversores en España en fase de crecimiento.
+
+---
+
+## Errores frecuentes al declarar ETFs
+
+1. **Declarar el importe total de la venta como ganancia**: solo tributa la ganancia (venta menos compra), no el total recibido
+2. **Olvidar las comisiones**: tanto las de compra como las de venta reducen la ganancia declarable
+3. **No aplicar el FIFO correctamente**: puede calcular una ganancia diferente a la real
+4. **Confundir el traspaso de fondos con la venta de ETFs**: el traspaso entre fondos no tributa; vender un ETF sí lo hace siempre
+5. **No declarar dividendos de ETFs de distribución en brokers extranjeros**: son rendimientos del capital mobiliario aunque no hayas vendido nada
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [AEAT — Renta Web 2026](https://sede.agenciatributaria.gob.es) — Plataforma oficial para presentar la declaración de la renta.
+- [AEAT — Manual IRPF 2025](https://www.agenciatributaria.es/AEAT.internet/Inicio/Ayuda/Manuales__Folletos_y_Videos/Manuales_de_ayuda_en_la_presentacion_de_declaraciones/Ejercicio_2025/) — Manual oficial con los criterios aplicables a ganancias patrimoniales.
+- [Calculadora IRPF venta de fondos y ETFs — BogleHub](/calculadora/irpf-venta-fondos) — Calcula el impuesto antes de vender con desglose por tramos.
+`,
+  },
+  {
+    slug: 'riesgo-divisa-etf-hedged-espana',
+    title: 'Riesgo divisa en ETFs: ¿cubrir o no cubrir siendo inversor en euros? (2026)',
+    excerpt:
+      'Qué es el riesgo de tipo de cambio en ETFs globales, por qué los ETFs en USD no implican riesgo USD real, y cuándo tiene sentido un ETF hedged para inversores en España.',
+    publishedAt: '2026-05-24',
+    readingMinutes: 8,
+    keywords: ['riesgo divisa ETF España', 'ETF hedged vs no hedged', 'ETF cubierto divisa euros', 'riesgo tipo cambio inversión indexada', 'IWDA hedged EUR'],
+    faq: [
+      {
+        q: '¿Un ETF que cotiza en USD me expone al riesgo del dólar?',
+        a: 'No directamente. La divisa en la que cotiza el ETF (USD, EUR, GBP) es solo la divisa de negociación, no la divisa de los activos subyacentes. Un ETF de MSCI World que cotiza en USD invierte en acciones de empresas de todo el mundo en sus divisas locales: Microsoft en USD, ASML en EUR, Toyota en JPY. Tu exposición real es a esa cesta de divisas, no al USD. Si el euro se aprecia frente a esa cesta de divisas, tu retorno en euros será inferior al retorno en USD; si se deprecia, será superior.',
+      },
+      {
+        q: '¿Qué es un ETF hedged (cubierto de divisa)?',
+        a: 'Un ETF hedged utiliza contratos de divisa a plazo (forwards) para neutralizar el efecto del tipo de cambio entre la divisa de los activos y el euro. Por ejemplo, IWDA (MSCI World sin cobertura) y IWDE o equivalentes (MSCI World con cobertura EUR) invierten en los mismos activos, pero el hedged elimina la variación del tipo de cambio. A cambio, la cobertura tiene un coste: el "coste de cobertura" o roll yield, que puede ser positivo o negativo según el diferencial de tipos de interés entre divisas.',
+      },
+      {
+        q: '¿Conviene usar ETFs hedged en euros para renta variable?',
+        a: 'Para renta variable a largo plazo, generalmente NO merece la pena. El coste de cobertura puede oscilar entre el 0,5% y el 2% anual según el diferencial de tipos de interés. A largo plazo (10-30 años), las divisas tienden a revertir a la media y los efectos cambiarios se diluyen. La volatilidad divisa añade un 2-4% de volatilidad anual a una cartera global, que ya tiene un 15-20% de volatilidad intrínseca — no cambia significativamente el riesgo. El coste de la cobertura, en cambio, sí es permanente.',
+      },
+      {
+        q: '¿Y para renta fija? ¿Tienen sentido los ETFs de bonos hedged?',
+        a: 'Para renta fija, la cobertura de divisa tiene mucho más sentido. Los bonos tienen una volatilidad baja (2-5% anual), por lo que el riesgo divisa (que añade otro 5-10% de volatilidad) puede dominar completamente el retorno. Un ETF de bonos gubernamentales globales sin cobertura se comporta más como un ETF de divisas que como un inversor en renta fija. Por eso, para la parte de renta fija de una cartera indexada en España, los ETFs con cobertura EUR son generalmente preferibles.',
+      },
+      {
+        q: '¿Qué ETFs hedged en EUR están disponibles en España?',
+        a: 'Algunos de los más usados: HEDJ (WisdomTree Europe Hedged Equity, aunque más específico), EUNL o equivalentes en versión hedged de iShares para MSCI World EUR hedged, y para renta fija: AGGH (iShares Core Global Aggregate Bond UCITS ETF EUR Hedged, TER 0,10%) que cubre bonos globales en euros. La versión EUR Hedged suele llevar "EUR Hedged" o "EUNL" en el nombre. Verifica siempre en JustETF el TER y la liquidez antes de comprar.',
+      },
+    ],
+    content: `# Riesgo divisa en ETFs: ¿cubrir o no cubrir siendo inversor en euros? (2026)
+
+Una de las preguntas más frecuentes entre inversores indexados españoles: "Si compro un ETF que cotiza en dólares, ¿estoy expuesto al riesgo del dólar?". La respuesta no es obvia y hay una confusión muy extendida entre la divisa de cotización y la divisa de los activos subyacentes.
+
+Esta guía aclara qué riesgo divisa real tiene un ETF global, cuándo tiene sentido cubrirlo y cuándo no.
+
+---
+
+## La confusión fundamental: divisa de cotización vs divisa de activos
+
+Cuando compras VWCE en Xetra, el ETF cotiza en euros y pagas en euros. Si compras VWRA en la Bolsa de Londres, cotiza en dólares y necesitas dólares. Pero **el valor del fondo en ambos casos depende exactamente de las mismas acciones subyacentes**: Microsoft, Apple, Samsung, Nestlé, Toyota y otras 3.700 empresas en sus respectivas divisas locales.
+
+La divisa de cotización solo afecta a la divisa en que ves el precio en pantalla y en la que tu broker liquida la operación. No cambia el riesgo real de la cartera.
+
+---
+
+## El riesgo divisa real de un ETF de renta variable global
+
+Cuando inviertes en un ETF global como VWCE o IWDA, tienes exposición a una cesta de divisas ponderada por capitalización de mercado aproximadamente así:
+
+| Divisa | Peso aproximado |
+|---|---|
+| Dólar estadounidense (USD) | ~63% |
+| Euro (EUR) | ~11% |
+| Yen japonés (JPY) | ~6% |
+| Libra esterlina (GBP) | ~4% |
+| Otras divisas desarrolladas | ~5% |
+| Divisas emergentes | ~11% |
+
+Esto significa que si el euro se aprecia un 10% frente a todas esas divisas, tu cartera global valdrá aproximadamente un 10% menos en euros (a igual precio de las acciones en sus divisas locales). Y si el euro se deprecia un 10%, tu cartera valdría ~10% más en euros.
+
+Esto es el riesgo divisa real: la variación del euro frente a la cesta de divisas del fondo.
+
+---
+
+## ¿Por qué no cubrir la divisa en renta variable?
+
+Para inversores a largo plazo en renta variable, hay tres razones principales para no cubrir:
+
+**1. El coste de la cobertura es permanente; el efecto divisa, no**
+
+Cubrir la divisa tiene un coste: el diferencial de tipos de interés entre el euro y las divisas cubiertas (principalmente el USD). Cuando los tipos en EE.UU. son más altos que en la eurozona, cubrir el USD cuesta dinero (puedes pagar 0,5-2% anual adicional). Ese coste es seguro y se paga todos los años.
+
+El efecto del tipo de cambio, en cambio, es volátil: a veces beneficia al inversor en euros y a veces perjudica. A largo plazo (10-30 años), las divisas tienden a revertir hacia valores de equilibrio. El coste de cobertura acumulado puede superar fácilmente el efecto divisa neto.
+
+**2. La volatilidad que añade el riesgo divisa es relativamente pequeña**
+
+La renta variable global ya tiene una volatilidad intrínseca de ~15-20% anual. El riesgo divisa añade aproximadamente 2-4% adicional de volatilidad. Para el inversor de largo plazo, esa diferencia tiene poco impacto en el resultado final: la prima de riesgo de la renta variable compensa con creces la volatilidad adicional.
+
+**3. Diversificación de divisas como protección**
+
+Tener activos en múltiples divisas es en sí mismo una forma de diversificación. Si la economía española o la eurozona atraviesa una crisis con depreciación del euro, tener inversiones en USD, JPY y otras divisas puede amortiguar el impacto en tu patrimonio real.
+
+---
+
+## Cuándo sí tiene sentido cubrir la divisa: renta fija
+
+Aquí la respuesta cambia radicalmente. Los bonos tienen una volatilidad intrínseca baja: los bonos gubernamentales de alta calidad oscilan entre el 2% y el 7% anual de volatilidad. Si añades el riesgo divisa (5-10% adicional de volatilidad), el comportamiento de la renta fija pasa a estar dominado por el tipo de cambio, no por el riesgo de crédito o de tipos de interés.
+
+Un ejemplo: el índice Bloomberg Global Aggregate Bond (bonos globales sin cubrir) tuvo en 2022 una caída del ~16% en USD. Desde la perspectiva de un inversor en euros, la caída fue diferente según la evolución del EUR/USD. La renta fija dejó de actuar como amortiguador de la cartera porque el movimiento de divisas dominó el resultado.
+
+**Regla práctica**: para la parte de renta fija de una cartera indexada en España, usa ETFs con cobertura EUR. El ETF más popular para esto es **AGGH** (iShares Core Global Aggregate Bond UCITS ETF EUR Hedged, TER 0,10%), que cubre bonos gubernamentales y corporativos globales en euros.
+
+---
+
+## ETFs hedged vs no hedged: el coste real
+
+La versión hedged de cualquier ETF suele tener:
+- Un TER algo más alto (0,05-0,15% adicional)
+- Un "coste de roll" de la cobertura que varía con los tipos de interés
+
+En 2022-2024, con tipos americanos más altos que europeos, cubrir el USD costaba aproximadamente 1,5-2% anual adicional. En entornos de tipos similares entre zonas, el coste puede ser casi nulo o incluso ligeramente positivo.
+
+Este coste no aparece siempre visible en el TER del fondo: queda implícito en el "tracking difference" respecto al índice no cubierto.
+
+---
+
+## Conclusión práctica para un inversor en España
+
+| Activo | ¿Cubrir divisa? | Razón |
+|---|---|---|
+| Renta variable global | **No** | Coste > beneficio a largo plazo |
+| Renta variable mercados emergentes | **No** | Coste de cobertura muy alto; divisas EM ya son volátiles |
+| Renta fija global | **Sí** | Volatilidad baja → divisa domina; cobertura tiene sentido |
+| Renta fija corporativa high yield | **Opcional** | Más volatilidad que IG; el argumento de cobertura es más débil |
+
+La cartera indexada estándar para un inversor español: renta variable sin cubrir (VWCE o IWDA+EIMI) + renta fija con cobertura EUR (AGGH o equivalente). Este esquema da la exposición global que buscamos sin pagar el coste innecesario de cubrir la divisa en la parte de mayor retorno esperado.
+
+Para comparar ETFs con y sin cobertura divisa disponibles en España, usa el [comparador de ETFs de BogleHub](/comparar).
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [JustETF — Comparador de ETFs con cobertura EUR](https://www.justetf.com/es/) — Filtra por "EUR Hedged" para ver las opciones disponibles en España con datos de TER y tracking difference.
+- [iShares — Ficha AGGH](https://www.ishares.com/es/inversores-particulares/es/productos/291768/ishares-core-global-aggregate-bond-ucits-etf) — ETF de renta fija global con cobertura EUR, el más popular para la parte de bonos de una cartera indexada.
+- [Guía de ETFs MSCI World para España — BogleHub](/etfs/msci-world) — Comparativa de todos los ETFs de MSCI World disponibles en España con datos de TER y domicilio.
+`,
+  },
 ]
