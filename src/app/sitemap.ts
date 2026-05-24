@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/chat',                         priority: 0.9, freq: 'weekly'  },
     { path: '/blog',                         priority: 0.8, freq: 'weekly'  },
     { path: '/glosario',                     priority: 0.7, freq: 'monthly' },
+    { path: '/faq',                          priority: 0.8, freq: 'monthly' },
     { path: '/calculadora',                  priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/interes-compuesto',priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/fire-monte-carlo', priority: 0.8, freq: 'monthly' },

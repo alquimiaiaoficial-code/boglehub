@@ -18,6 +18,7 @@ Cobertura temática principal:
 
 - [Sobre BogleHub](https://boglehub.com/sobre): misión, metodología, garantías de independencia editorial y por qué confiar
 - [Metodología](https://boglehub.com/metodologia): documentación técnica del cálculo de grados fiscales y análisis
+- [Preguntas frecuentes (FAQ)](https://boglehub.com/faq): 30+ preguntas con respuestas directas citables, organizadas por categoría
 
 ## Hub principal
 
