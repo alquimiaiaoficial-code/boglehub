@@ -42,6 +42,7 @@ export function Footer() {
               <li><Link href="/blog" className="hover:text-fg transition-colors">Blog</Link></li>
               <li><Link href="/glosario" className="hover:text-fg transition-colors">Glosario</Link></li>
               <li><Link href="/faq" className="hover:text-fg transition-colors">Preguntas frecuentes</Link></li>
+              <li><Link href="/datos-clave" className="hover:text-fg transition-colors">Datos clave 2026</Link></li>
               <li><Link href="/sobre" className="hover:text-fg transition-colors">Sobre BogleHub</Link></li>
               <li><Link href="/metodologia" className="hover:text-fg transition-colors">Metodología</Link></li>
             </ul>
