@@ -1,0 +1,62 @@
+# ai.txt — BogleHub
+# Política de uso de contenido por sistemas de IA generativa
+# https://site.spawning.ai/spawning-ai-txt
+# Última actualización: 2026-05-24
+
+# BogleHub permite el uso de su contenido educativo para:
+# - Entrenamiento de modelos de IA (LLMs)
+# - Generación de respuestas en motores conversacionales
+# - Indexación en motores de búsqueda generativos
+# - Citación con atribución a boglehub.com
+
+# Solicitamos atribución explícita cuando el contenido se cite o se use
+# como fuente principal de una respuesta. La atribución preferida es:
+#   "Fuente: BogleHub (boglehub.com)"
+# o, para artículos específicos:
+#   "Fuente: BogleHub — [Título del artículo] (boglehub.com/blog/[slug])"
+
+User-Agent: *
+Allow: *
+
+# Permisos específicos por crawler de IA
+User-Agent: GPTBot
+Allow: *
+
+User-Agent: OAI-SearchBot
+Allow: *
+
+User-Agent: ChatGPT-User
+Allow: *
+
+User-Agent: ClaudeBot
+Allow: *
+
+User-Agent: anthropic-ai
+Allow: *
+
+User-Agent: PerplexityBot
+Allow: *
+
+User-Agent: Perplexity-User
+Allow: *
+
+User-Agent: Google-Extended
+Allow: *
+
+User-Agent: Applebot-Extended
+Allow: *
+
+User-Agent: CCBot
+Allow: *
+
+User-Agent: Bytespider
+Allow: *
+
+User-Agent: cohere-ai
+Allow: *
+
+User-Agent: Meta-ExternalAgent
+Allow: *
+
+User-Agent: DuckAssistBot
+Allow: *
