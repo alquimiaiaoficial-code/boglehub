@@ -5036,4 +5036,552 @@ Para entender este riesgo y planificar con la incertidumbre real del mercado, us
 - [Guía FIRE en España — BogleHub](/blog/fire-espana-cuanto-necesitas) — Cuánto capital necesitas realmente para vivir de tu cartera en España.
 `,
   },
+  {
+    slug: 'mejores-etfs-nasdaq-100-espana',
+    title: 'Mejores ETFs Nasdaq 100 UCITS para inversores en España (2026)',
+    excerpt:
+      'Comparativa de los mejores ETFs Nasdaq 100 disponibles en España: EQQQ, SXRV, CNDX. TER, fiscalidad, concentración tecnológica y cuándo tiene sentido incluir Nasdaq en tu cartera.',
+    publishedAt: '2026-05-24',
+    readingMinutes: 9,
+    keywords: ['mejor ETF Nasdaq 100 España', 'EQQQ análisis', 'SXRV CNDX comparativa', 'Nasdaq 100 vs S&P 500', 'ETF tecnología España'],
+    faq: [
+      {
+        q: '¿Cuál es el mejor ETF Nasdaq 100 para inversores en España?',
+        a: 'Para la mayoría de inversores en España, EQQQ (Invesco EQQQ Nasdaq 100 UCITS ETF, ISIN IE0032077012) es la opción más popular: TER 0,30%, domiciliado en Irlanda, cotiza en múltiples bolsas europeas con buen volumen. Alternativas válidas: SXRV (iShares NASDAQ 100, TER 0,33%, acumulación) y CNDX (iShares NASDAQ 100 en LSE). EQQQ suele ser ligeramente más eficiente por su menor TER y mayor liquidez en Xetra.',
+      },
+      {
+        q: '¿Cuál es la diferencia entre Nasdaq 100 y S&P 500?',
+        a: 'El Nasdaq 100 incluye solo 100 empresas no financieras cotizadas en el Nasdaq, con peso muy alto del sector tecnológico (~50%). El S&P 500 incluye 500 empresas de cualquier sector cotizadas en NYSE o Nasdaq, con tecnología pesando ~30%. Históricamente el Nasdaq ha rendido más en mercados alcistas tecnológicos pero también ha caído más en correcciones (2000-2002 perdió ~80%, 2022 perdió ~33%). Para diversificación menos volátil, el S&P 500 es más equilibrado.',
+      },
+      {
+        q: '¿Tiene sentido invertir en Nasdaq 100 como cartera principal?',
+        a: 'Como cartera única, generalmente no. El Nasdaq 100 concentra demasiado en un solo sector (tecnología) y un solo país (EEUU), lo que va contra los principios de diversificación de la filosofía Boglehead. Como complemento a una cartera diversificada (10-20% del total), puede aportar exposición temática a empresas de mayor crecimiento. La decisión depende de tu tolerancia a la volatilidad y de tu convicción en el liderazgo tecnológico americano.',
+      },
+      {
+        q: '¿Por qué EQQQ tiene TER del 0,30%, más alto que otros ETFs indexados?',
+        a: 'El TER del 0,30% es elevado comparado con un ETF MSCI World (0,12-0,20%) o S&P 500 (0,03-0,07%). La razón principal: el índice Nasdaq 100 es propiedad de Nasdaq Inc. y la licencia que pagan las gestoras es más cara. SPDR no ofrece ETFs Nasdaq 100 UCITS por ese coste. Para reducir TER, algunos inversores combinan S&P 500 (cubre la mayoría de las grandes tecnológicas americanas a TER 0,07%) con un sesgo a tecnología vía ETFs sectoriales.',
+      },
+      {
+        q: '¿Es Nasdaq 100 fiscalmente eficiente para inversores en España?',
+        a: 'Sí. Los principales ETFs Nasdaq 100 UCITS están domiciliados en Irlanda (EQQQ: ISIN IE0032077012; SXRV: ISIN IE00B53SZB19), lo que les da acceso al convenio fiscal Irlanda-EEUU y reduce la retención sobre dividendos americanos del 30% al 15%. EQQQ es de acumulación, lo que difiere el evento fiscal hasta la venta. Es una de las opciones más eficientes fiscalmente para exposición concentrada al mercado tecnológico americano.',
+      },
+    ],
+    content: `# Mejores ETFs Nasdaq 100 UCITS para inversores en España (2026)
+
+El Nasdaq 100 es uno de los índices más buscados por inversores particulares en España. Concentra las 100 empresas no financieras más grandes del Nasdaq estadounidense, con un peso enorme de tecnología (~50%) y compañías como Apple, Microsoft, Nvidia, Google, Meta, Amazon, Tesla y Netflix. Esta guía analiza los mejores ETFs UCITS disponibles en España para exponerse al índice, sus costes reales y cuándo tiene sentido incluirlo en una cartera Boglehead.
+
+---
+
+## El Nasdaq 100 en una frase
+
+El Nasdaq 100 es un índice de las **100 empresas no financieras más grandes cotizadas en el Nasdaq**, ponderado por capitalización ajustada (con tope para evitar concentración extrema en un solo valor). Es el índice de referencia para invertir en el sector tecnológico americano y empresas de crecimiento.
+
+**Composición sectorial aproximada en 2026:**
+- Tecnología: ~50%
+- Consumo discrecional: ~15%
+- Comunicación: ~15%
+- Salud: ~7%
+- Otros: ~13%
+
+Las 10 mayores empresas suelen pesar 45-55% del índice: Apple, Microsoft, Nvidia, Amazon, Alphabet (Google), Meta, Tesla, Broadcom, Costco, Netflix.
+
+---
+
+## Los 3 mejores ETFs Nasdaq 100 disponibles en España
+
+### 1. EQQQ — Invesco EQQQ Nasdaq 100 UCITS ETF
+
+| Dato | Valor |
+|---|---|
+| ISIN | IE0032077012 |
+| TER | 0,30% |
+| Domicilio | Irlanda |
+| Política | Distribución (hay versión Acc: EQAC) |
+| Patrimonio | >7.000 M USD |
+
+El más popular y antiguo. Cotiza en Xetra (EUR), LSE (USD) y otras bolsas europeas con buena liquidez. La versión EQQQ es de distribución; si prefieres acumulación, busca **EQAC** (mismo fondo, política de acumulación).
+
+### 2. SXRV — iShares NASDAQ 100 UCITS ETF (Acc)
+
+| Dato | Valor |
+|---|---|
+| ISIN | IE00B53SZB19 |
+| TER | 0,33% |
+| Domicilio | Irlanda |
+| Política | Acumulación |
+| Patrimonio | >4.000 M USD |
+
+La alternativa de BlackRock. TER ligeramente superior pero misma exposición exacta. Para inversores que prefieren la marca iShares o que ya tienen el resto de la cartera con esta gestora.
+
+### 3. CNDX — iShares NASDAQ 100 UCITS ETF (LSE)
+
+| Dato | Valor |
+|---|---|
+| ISIN | IE00B53SZB19 |
+| TER | 0,33% |
+| Domicilio | Irlanda |
+| Política | Acumulación |
+
+Funcionalmente equivalente a SXRV (mismo ISIN), pero cotiza en la Bolsa de Londres en USD. Útil para inversores que operan principalmente en LSE.
+
+---
+
+## Nasdaq 100 vs S&P 500: la comparativa que importa
+
+| | Nasdaq 100 | S&P 500 |
+|---|---|---|
+| Nº empresas | 100 | 500 |
+| Sectores | Sin financieras | Todos |
+| Peso tecnología | ~50% | ~30% |
+| TER ETF UCITS | 0,30% (EQQQ) | 0,03-0,07% (SPXS, CSPX) |
+| Volatilidad histórica | Alta | Moderada |
+| Caída max histórica | ~80% (2000-2002) | ~50% (2008) |
+| Mejor periodo reciente | 2010-2020 (gran ciclo tech) | Más estable |
+
+**Para la mayoría de inversores indexados**, el S&P 500 es preferible como exposición americana principal por:
+1. Mayor diversificación (500 vs 100 empresas)
+2. TER muy inferior (0,07% vs 0,30%)
+3. Menor concentración sectorial
+4. Caídas históricas menos profundas
+
+El Nasdaq 100 tiene sentido como **complemento estratégico** (10-20% del total) si quieres sobreponderar tecnología, no como cartera principal.
+
+---
+
+## Cuándo tiene sentido invertir en Nasdaq 100
+
+**Sí, tiene sentido si:**
+- Ya tienes una cartera global diversificada (MSCI World o FTSE All-World) y quieres añadir 10-20% de sesgo tecnológico
+- Tienes alta tolerancia a la volatilidad y horizonte muy largo (20+ años)
+- Quieres exposición específica a las megacompañías tecnológicas americanas
+- Entiendes que el rendimiento histórico no garantiza el futuro y que el sector tech puede sufrir correcciones del 50-70%
+
+**No, no tiene sentido si:**
+- Es tu única posición de renta variable (concentración geográfica y sectorial extrema)
+- No toleras psicológicamente caídas de >50%
+- Estás cerca de la jubilación o necesitas el dinero en menos de 10 años
+- Tu broker cobra comisiones altas en Nasdaq 100 frente a alternativas
+
+---
+
+## La trampa de la rentabilidad histórica reciente
+
+Entre 2010 y 2024, el Nasdaq 100 ha superado al S&P 500 con rentabilidad anualizada del ~17% vs ~13%. Esto ha creado una narrativa de "el Nasdaq siempre gana" que no se sostiene en periodos más largos.
+
+**Datos clave:**
+- 2000-2010: el Nasdaq 100 perdió dinero acumulado en términos reales. El S&P 500 también, pero menos.
+- 2000-2002 (burbuja .com): el Nasdaq 100 cayó ~80% desde el pico. Tardó 15 años en recuperar el nivel.
+- 2022: el Nasdaq 100 cayó ~33%, el S&P 500 ~18%.
+
+**Lección**: la concentración sectorial amplifica tanto las subidas como las bajadas. La rentabilidad histórica reciente no es indicativa del futuro, especialmente con valoraciones tecnológicas elevadas.
+
+---
+
+## Cómo construir una posición Nasdaq 100 prudente
+
+Si decides incluir Nasdaq 100 en tu cartera, una asignación razonable:
+
+| Activo | Peso |
+|---|---|
+| Renta variable global diversificada (VWCE o IWDA) | 60-70% |
+| Nasdaq 100 (EQQQ o SXRV) como sesgo táctico | 10-15% |
+| Renta fija global hedged EUR (AGGH) | 15-25% |
+
+Esta cartera mantiene la diversificación como base y añade un sesgo controlado a tecnología sin convertirla en una apuesta dominante.
+
+Para el rebalanceo: si el Nasdaq supera mucho al resto y pasa del 15% al 25% de la cartera, vende el exceso y compra los otros activos. Aprovechas las subidas exponenciales sin convertirte en hostage de la posición.
+
+---
+
+## Dónde comprar EQQQ en España
+
+| Broker | Comisión por orden |
+|---|---|
+| Trade Republic | 0€ (planes ahorro automáticos disponibles) |
+| DEGIRO | 0,50€ + 0,004% |
+| MyInvestor | 0,20€ + 0,03% |
+| XTB | 0€ hasta 100.000€/mes |
+
+Para aportaciones recurrentes pequeñas: Trade Republic. Para órdenes grandes: cualquiera, la comisión es marginal frente al TER anual.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Invesco — Ficha técnica EQQQ](https://www.invesco.com/uk/en/etf/EQQQ.html) — Datos oficiales, composición y rentabilidad histórica del ETF.
+- [Nasdaq — Composición Nasdaq 100](https://www.nasdaq.com/market-activity/quotes/nasdaq-ndx-index) — Lista completa de empresas y pesos actuales.
+- [Mejores ETFs S&P 500 — BogleHub](/etfs/sp500) — Alternativas de exposición americana con menor TER y diversificación más amplia.
+`,
+  },
+  {
+    slug: 'oro-etf-fisico-vs-mineria-espana',
+    title: 'Oro físico vs ETC de oro vs ETF de mineras: cuál elegir en España (2026)',
+    excerpt:
+      'Análisis de las tres formas de invertir en oro desde España: oro físico (monedas/lingotes), ETC de oro físico (SGLN, IGLN) y ETF de mineras de oro. Fiscalidad, costes y para qué cartera encaja cada uno.',
+    publishedAt: '2026-05-24',
+    readingMinutes: 9,
+    keywords: ['oro ETC España', 'SGLN análisis', 'invertir en oro España', 'ETF oro vs físico', 'oro mineria vs ETC'],
+    faq: [
+      {
+        q: '¿Cuál es la mejor forma de invertir en oro desde España?',
+        a: 'Para la mayoría de inversores indexados, los ETC de oro físico (SGLN de iShares, IGLN o 4GLD de Xtrackers) son la opción más eficiente: replican el precio del oro spot con TER bajo (0,12-0,20%), están respaldados por lingotes custodiados en bóvedas auditadas y se compran como cualquier ETF. Más eficientes que comprar oro físico (que tiene costes de custodia, seguro y spread alto) y mejor diversificación que invertir en mineras (que tienen riesgos empresariales adicionales).',
+      },
+      {
+        q: '¿Cómo tributa la venta de oro en España?',
+        a: 'Depende del formato. Los ETC de oro (SGLN, IGLN, 4GLD) tributan igual que cualquier ETF: la ganancia patrimonial se declara en la base del ahorro del IRPF (19-28%). El oro físico también tributa como ganancia patrimonial al venderlo, sumando todas las ventas del año por encima de los 1.000€. Los ETFs de mineras también tributan como ganancias patrimoniales. En todos los casos, no hay régimen especial por ser oro.',
+      },
+      {
+        q: '¿Es mejor invertir en oro físico o en ETC de oro?',
+        a: 'Para la mayoría de inversores, el ETC es más eficiente. Ventajas del ETC: bajo coste (TER 0,12-0,20%), liquidez inmediata, sin costes de custodia ni seguro, fracciones admitidas (puedes comprar 100€ de oro). Ventajas del oro físico: posesión real (útil en escenarios catastróficos), no hay riesgo de contraparte. La elección depende de por qué quieres oro: para diversificación de cartera, ETC; para "seguro contra el colapso del sistema", oro físico.',
+      },
+      {
+        q: '¿Qué pesa el oro en la cartera permanente de Harry Browne?',
+        a: 'En la cartera permanente clásica, el oro pesa el 25% del total: 25% renta variable, 25% bonos largo plazo, 25% oro y 25% liquidez. Esta asignación está diseñada para sobrevivir a cualquier escenario económico (prosperidad, deflación, inflación, recesión). En carteras Boglehead más típicas, el oro pesa 0-10% como diversificador opcional. La filosofía Boglehead pura no incluye oro porque no genera rendimientos internos (dividendos, cupones).',
+      },
+      {
+        q: '¿Por qué los ETFs de mineras de oro tienen comportamiento diferente al oro físico?',
+        a: 'Los ETFs de mineras (como GDX o GDXJ, aunque no UCITS) invierten en acciones de empresas extractoras de oro. Su precio depende no solo del precio del oro sino también de costes de producción, gestión empresarial, geopolítica de los países donde extraen, y de los riesgos generales del mercado de renta variable. Históricamente tienen mayor volatilidad que el oro físico y mayor correlación con la renta variable global, lo que reduce su utilidad como diversificador. Si buscas exposición al precio del oro, los ETC físicos son más puros.',
+      },
+    ],
+    content: `# Oro físico vs ETC de oro vs ETF de mineras: cuál elegir en España (2026)
+
+El oro tiene una historia particular en la cartera de cualquier inversor. No genera dividendos ni cupones, no tiene flujo de caja interno, no "produce" nada. Y aun así, durante siglos ha sido el refugio favorito en momentos de incertidumbre y la cobertura clásica frente a la inflación. Para un inversor en España en 2026, hay tres formas principales de exponerse al oro: el metal físico, los ETC de oro físico y los ETFs de mineras. Cada uno con sus pros y contras concretos.
+
+---
+
+## Las tres formas de invertir en oro desde España
+
+### 1. Oro físico (monedas y lingotes)
+
+Compras oro real (Krugerrand, Vienna Philharmonic, Maple Leaf, lingotes de 1g a 1kg) en una tienda especializada o broker de metales preciosos. Posees el oro físicamente, lo guardas en casa o en una caja de seguridad bancaria.
+
+**Costes típicos en España:**
+- Spread compra-venta: 4-8% del precio spot
+- Custodia (caja de seguridad bancaria): 50-200€/año según tamaño
+- Seguro doméstico (si lo guardas en casa): coste opcional
+- Pruebas de autenticidad al revender: pueden requerir ensayo
+
+**Ventajas:**
+- Posesión física real, sin riesgo de contraparte
+- Privacidad (compras de menos de 1.000€ son anónimas en España)
+- Liquidez universal — siempre habrá quien lo compre
+
+**Desventajas:**
+- Spread elevado en compras pequeñas
+- Costes recurrentes de custodia
+- Riesgo de robo o pérdida
+- Difícil de fraccionar (no puedes vender 200€ de un lingote de 1kg)
+
+### 2. ETC de oro físico (la opción más popular)
+
+Los Exchange Traded Commodities (ETC) de oro físico están respaldados al 100% por lingotes custodiados en bóvedas auditadas regularmente. Replican el precio del oro spot con baja fricción. Para el inversor particular, su comportamiento es prácticamente idéntico al de un ETF.
+
+**Los más populares disponibles en España:**
+
+| ETC | ISIN | TER | Custodio |
+|---|---|---|---|
+| SGLN — iShares Physical Gold | IE00B4ND3602 | 0,12% | JP Morgan London |
+| IGLN — iShares Physical Gold | IE00B4ND3602 | 0,12% | JP Morgan London |
+| 4GLD — Xtrackers Physical Gold | DE000A1E0HR8 | 0,15% | Deutsche Bank |
+| EGLN — Invesco Physical Gold | IE00B579F325 | 0,12% | JP Morgan London |
+
+**Ventajas:**
+- TER muy bajo (0,12-0,20%)
+- Liquidez total (compras y vendes como cualquier ETF)
+- Sin costes de custodia ni seguro
+- Fracciones admitidas (puedes invertir 50€)
+- Respaldo físico verificable
+
+**Desventajas:**
+- No tienes el metal físico en tu poder
+- Pequeño riesgo de contraparte (custodio, emisor)
+- Spread de mercado al operar
+
+### 3. ETF de mineras de oro
+
+Invierten en acciones de empresas extractoras de oro (Barrick Gold, Newmont, Agnico Eagle, Franco-Nevada). Su precio depende no solo del oro sino también de costes de producción, gestión empresarial y geopolítica.
+
+**Disponibles en versión UCITS:**
+- iShares Gold Producers UCITS ETF (IS0E): TER 0,55%
+- VanEck Gold Miners UCITS ETF: TER 0,53%
+
+**Ventajas:**
+- Apalancamiento natural al precio del oro (suben/bajan más que el spot)
+- Pueden pagar dividendos
+- Sensibles a la innovación operativa de las empresas
+
+**Desventajas:**
+- Mayor volatilidad que el oro físico
+- Mayor correlación con renta variable general en momentos de estrés
+- Riesgos empresariales adicionales (deuda, geopolítica, costes)
+- TER significativamente mayor (0,50%+)
+
+---
+
+## Para el inversor indexado en España: ETC de oro
+
+Para la mayoría de inversores que siguen la filosofía Boglehead y quieren añadir oro a una cartera diversificada, los ETC de oro físico son la opción más eficiente:
+
+- **Coste mínimo**: TER 0,12% vs 4-8% de spread del oro físico
+- **Liquidez total**: compras y vendes en segundos
+- **Sin costes de custodia**: el TER ya lo incluye
+- **Fracciones**: puedes empezar con 50€
+- **Eficiencia fiscal**: tributa como cualquier ETF, sin tratamiento especial
+
+**Recomendación práctica**: SGLN o IGLN de iShares. Ambos respaldados por oro físico custodiado en Londres por JP Morgan, con auditorías regulares. Coste anual del 0,12%, liquidez excelente en Xetra y LSE.
+
+---
+
+## ¿Cuánto oro en cartera?
+
+**Filosofía Boglehead pura**: 0%. La cartera Boglehead clásica se centra en acciones y bonos diversificados, sin commodities.
+
+**Cartera permanente de Harry Browne**: 25%. Diseñada para sobrevivir a cualquier escenario económico, con oro como cobertura específica contra inflación y crisis sistémica.
+
+**Cartera moderada con oro**: 5-10%. Punto intermedio para inversores que quieren la diversificación del oro sin renunciar al peso de renta variable.
+
+| Cartera | Renta variable | Renta fija | Oro |
+|---|---|---|---|
+| Boglehead estándar | 80% | 20% | 0% |
+| Boglehead con sesgo de oro | 75% | 18% | 7% |
+| Conservadora con oro | 50% | 35% | 15% |
+| Cartera permanente | 25% | 25% (largo) + 25% (corto) | 25% |
+
+Para más detalles sobre la cartera permanente, lee la [guía completa adaptada a inversores en España](/blog/cartera-permanente-harry-browne-espana).
+
+---
+
+## El comportamiento histórico del oro
+
+**Datos clave del oro 1971-2024:**
+- Rentabilidad anual media: ~7-8% en USD (similar a la renta variable global pero con perfil distinto)
+- Volatilidad anual: ~15-18%
+- Peor año: -30% (1981)
+- Mejor año: +127% (1979, en plena estanflación)
+
+**Periodos en los que el oro brilló:**
+- 1973-1980 (estanflación): +1.500% acumulado
+- 2000-2011 (crisis tecnológica y financiera): +600% acumulado
+- 2020 (COVID): +25% en un año
+
+**Periodos en los que el oro fue mediocre:**
+- 1981-2000 (mercado alcista bursátil): -50% acumulado en términos reales
+- 2013-2018: lateral, sin progreso significativo
+
+El oro no es un activo de rentabilidad sostenida — es un activo descorrelacionado con comportamiento diferenciado, útil para amortiguar caídas bursátiles pero con largos periodos de bajo rendimiento absoluto.
+
+---
+
+## Fiscalidad del oro en España
+
+Independientemente del formato (físico, ETC, mineras), las ganancias por venta de oro tributan en la **base del ahorro del IRPF**:
+
+| Tramo de ganancia | Tipo |
+|---|---|
+| Hasta 6.000€ | 19% |
+| 6.000-50.000€ | 21% |
+| 50.000-200.000€ | 23% |
+| 200.000-300.000€ | 27% |
+| Más de 300.000€ | 28% |
+
+No hay tratamiento fiscal especial por ser oro. Las pérdidas pueden compensar ganancias del mismo año.
+
+**Caso particular del oro físico**: ventas inferiores a 1.000€ no requieren identificación del comprador en España, pero la ganancia sigue siendo declarable. No es "oro negro" ni una forma de ocultar patrimonio: el IRPF aplica igual.
+
+---
+
+## Conclusión práctica
+
+Si quieres añadir oro a tu cartera indexada como diversificador (5-15% del total), los **ETC de oro físico como SGLN o IGLN** son la mejor opción para el inversor en España: bajo coste, liquidez total, respaldo físico verificable y sin costes de custodia adicionales. Para descubrir más sobre ETFs de oro y materias primas, mira la [categoría completa de ETFs de oro](/etfs/oro).
+
+Para profundizar en cómo integrar oro en una cartera con filosofía robust, lee la [guía de la cartera permanente adaptada a España](/blog/cartera-permanente-harry-browne-espana).
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [iShares — Ficha SGLN](https://www.ishares.com/es/inversores-particulares/es/productos/258728/) — Información oficial sobre el ETC de oro más popular, custodia y auditorías.
+- [World Gold Council](https://www.gold.org/) — Datos oficiales sobre el mercado del oro a nivel mundial, oferta y demanda.
+- [Categoría ETFs de oro — BogleHub](/etfs/oro) — Comparativa de los principales ETC de oro físico disponibles para inversores en España.
+`,
+  },
+  {
+    slug: 'msci-world-vs-msci-acwi-diferencias',
+    title: 'MSCI World vs MSCI ACWI: diferencias clave para tu cartera indexada (2026)',
+    excerpt:
+      'Comparativa entre MSCI World (solo desarrollados) y MSCI ACWI (con emergentes). Diferencias en composición, rentabilidad histórica, riesgo y qué índice replicar según tu estrategia.',
+    publishedAt: '2026-05-24',
+    readingMinutes: 8,
+    keywords: ['MSCI World vs MSCI ACWI', 'MSCI ACWI análisis', 'diferencia ACWI All-World', 'mejor índice global', 'incluir emergentes cartera'],
+    faq: [
+      {
+        q: '¿Cuál es la diferencia entre MSCI World y MSCI ACWI?',
+        a: 'MSCI World incluye unas 1.500 empresas grandes y medianas de 23 países desarrollados (EEUU, Japón, Reino Unido, Canadá, Suiza, Alemania, Francia, etc.). MSCI ACWI (All Country World Index) añade además unos 24 países emergentes (China, India, Taiwán, Corea del Sur, Brasil, México...), llegando a aproximadamente 3.000 empresas en total. ACWI es por tanto más diversificado: cubre alrededor del 85% de la capitalización bursátil mundial real, mientras que MSCI World cubre solo los desarrollados.',
+      },
+      {
+        q: '¿Es mejor MSCI World o MSCI ACWI para una cartera indexada?',
+        a: 'Para diversificación máxima global en un solo ETF, MSCI ACWI (o su equivalente FTSE All-World) es preferible: refleja el mercado real sin excluir economías importantes como China o India. Para quien quiera mayor control sobre el peso de emergentes o prefiera TER más bajo, combinar MSCI World + un ETF de emergentes por separado puede ser igual de bueno con mayor flexibilidad. Para la mayoría de inversores que empiezan, ACWI o All-World es la opción más sencilla.',
+      },
+      {
+        q: '¿Qué peso tienen los emergentes en MSCI ACWI?',
+        a: 'Los mercados emergentes pesan aproximadamente el 10-12% en MSCI ACWI (a nivel grandes y medianas empresas). En el MSCI ACWI IMI (que incluye también pequeñas) el peso es similar. China suele ser el mayor componente individual de emergentes con un 25-30% dentro del subíndice de emergentes, seguido de Taiwán, India, Corea del Sur y Brasil. Esto significa que China pesa alrededor del 3% en el índice global ACWI completo.',
+      },
+      {
+        q: '¿Hay ETFs UCITS que repliquen MSCI ACWI disponibles en España?',
+        a: 'Sí. ISAC (iShares MSCI ACWI UCITS ETF, ISIN IE00B6R52259) es el ETF UCITS más popular para replicar ACWI: TER 0,20%, acumulación, domiciliado en Irlanda. Otra alternativa es SSAC (SPDR MSCI ACWI IMI UCITS ETF, TER 0,17%) que añade también small caps. Para el inversor español, ambos son válidos. La alternativa más popular es VWCE (FTSE All-World de Vanguard), que es un índice diferente pero cubre el mismo universo con metodología similar.',
+      },
+      {
+        q: '¿Cuál es la diferencia entre MSCI ACWI y FTSE All-World?',
+        a: 'Ambos son índices "global incluyendo emergentes" muy similares en composición y rendimiento. Diferencias técnicas: MSCI ACWI excluye micro caps; FTSE All-World incluye también algunas micro caps. MSCI clasifica a Corea del Sur como emergente; FTSE la clasifica como desarrollada. Esto cambia el peso de Corea (~2% del índice global). En la práctica, los rendimientos históricos de ambos índices son prácticamente idénticos (>99% de correlación) y la elección depende más de TER y disponibilidad que del índice en sí.',
+      },
+    ],
+    content: `# MSCI World vs MSCI ACWI: diferencias clave para tu cartera indexada (2026)
+
+Si estás eligiendo un ETF "global" para tu cartera indexada, te habrás topado con dos índices que se mencionan constantemente: MSCI World y MSCI ACWI. Suenan parecidos, pero la diferencia es importante: incluyen o no incluyen los mercados emergentes, y eso afecta directamente a la diversificación de tu cartera.
+
+Esta guía explica las diferencias, cuándo elegir cada uno y los ETFs disponibles para inversores en España.
+
+---
+
+## La diferencia fundamental en una frase
+
+- **MSCI World** = grandes y medianas empresas de **23 países desarrollados** (EEUU, Japón, UK, Canadá, Alemania, Francia...)
+- **MSCI ACWI** = MSCI World + **24 mercados emergentes** (China, India, Taiwán, Corea, Brasil...)
+
+En cifras: MSCI World cubre ~1.500 empresas; MSCI ACWI cubre ~3.000 empresas. MSCI ACWI representa aproximadamente el 85% de la capitalización bursátil mundial real, MSCI World solo el ~70%.
+
+---
+
+## Composición geográfica comparada
+
+| País / Región | MSCI World | MSCI ACWI |
+|---|---|---|
+| Estados Unidos | 70% | 62% |
+| Japón | 6% | 5% |
+| Reino Unido | 4% | 3,5% |
+| Canadá | 3% | 2,7% |
+| Francia / Suiza / Alemania | 3% cada uno | 2,5% cada uno |
+| Otros desarrollados | 8% | 7% |
+| **Emergentes (China, India, Taiwán, Corea...)** | **0%** | **~12%** |
+
+El MSCI World concentra más en EEUU porque, al excluir emergentes, los pesos de los desarrollados se redistribuyen proporcionalmente al alza. El MSCI ACWI tiene EEUU menos peso (~62%) pero más diversificación geográfica.
+
+---
+
+## Composición sectorial
+
+Ambos índices tienen pesos sectoriales muy similares porque los emergentes no cambian dramáticamente el perfil sectorial global:
+
+| Sector | MSCI World | MSCI ACWI |
+|---|---|---|
+| Tecnología | ~24% | ~23% |
+| Financiero | ~14% | ~15% (algo más por bancos chinos) |
+| Salud | ~13% | ~12% |
+| Consumo discrecional | ~11% | ~11% |
+| Industrial | ~10% | ~10% |
+| Otros | ~28% | ~29% |
+
+Diferencia clave: el sector financiero pesa algo más en ACWI por el peso de bancos chinos y emergentes. La tecnología pesa ligeramente menos por el efecto de dilución.
+
+---
+
+## ETFs UCITS disponibles para inversores en España
+
+### ETFs MSCI World (sin emergentes)
+
+| Ticker | Nombre | TER | Política |
+|---|---|---|---|
+| IWDA | iShares Core MSCI World | 0,20% | Acumulación |
+| SWRD | SPDR MSCI World | 0,12% | Acumulación |
+| XDWD | Xtrackers MSCI World | 0,19% | Acumulación |
+| MWRD | Lyxor Core MSCI World | 0,12% | Acumulación |
+
+### ETFs MSCI ACWI (con emergentes)
+
+| Ticker | Nombre | TER | Política |
+|---|---|---|---|
+| ISAC | iShares MSCI ACWI | 0,20% | Acumulación |
+| SSAC | SPDR MSCI ACWI IMI | 0,17% | Acumulación |
+| IUSQ | iShares MSCI ACWI (USD) | 0,40% | Distribución |
+
+### Alternativa: FTSE All-World (índice equivalente)
+
+| Ticker | Nombre | TER | Política |
+|---|---|---|---|
+| VWCE | Vanguard FTSE All-World | 0,22% | Acumulación |
+| VWRL | Vanguard FTSE All-World | 0,22% | Distribución |
+
+VWCE es funcionalmente equivalente a ISAC: cubre desarrollados + emergentes en un solo ETF. La diferencia es solo de metodología del índice (FTSE vs MSCI). Para más detalles sobre VWCE, lee el [análisis completo del ETF](/blog/vwce-analisis-completo).
+
+---
+
+## Rentabilidad histórica: ¿qué índice ha rendido más?
+
+En los últimos 10 años (2014-2024), MSCI World ha superado a MSCI ACWI por aproximadamente 1-2% anual. La razón: los mercados emergentes han rendido por debajo de los desarrollados durante este periodo, especialmente China.
+
+Pero los rendimientos relativos cambian por ciclos:
+- **2003-2007**: emergentes rentaron muchísimo más que desarrollados → ACWI batió a World
+- **2010-2024**: desarrollados (sobre todo EEUU) dominaron → World batió a ACWI
+- **Próximo ciclo**: imposible de predecir
+
+A muy largo plazo (>30 años), MSCI ACWI ha rendido similar al MSCI World, con menor concentración geográfica y mayor diversificación.
+
+---
+
+## Cuándo elegir MSCI World y cuándo MSCI ACWI
+
+**Elige MSCI World (IWDA, SWRD) si:**
+- Quieres TER más bajo (SWRD 0,12% vs ISAC 0,20%)
+- Quieres control sobre el peso de emergentes en tu cartera (los añades por separado)
+- Estás de acuerdo en sobreponderar EEUU vs el resto del mundo
+- Tu cartera ya tiene exposición específica a emergentes por otro lado
+
+**Elige MSCI ACWI (ISAC, SSAC) o FTSE All-World (VWCE) si:**
+- Quieres la solución más simple: un solo ETF que cubra "todo"
+- Quieres replicar fielmente el mercado global por capitalización
+- No quieres preocuparte por gestionar el peso de emergentes manualmente
+- Empiezas y prefieres minimizar el número de decisiones
+
+---
+
+## La cartera mínima con cualquiera de las dos opciones
+
+**Con MSCI World (necesitas dos ETFs para cubrir global):**
+- 88% IWDA o SWRD (MSCI World, desarrollados)
+- 12% EIMI o EMIM (MSCI Emerging Markets)
+- Resultado: exposición global con mayor control y TER ponderado del ~0,14%
+
+**Con MSCI ACWI o FTSE All-World (un solo ETF):**
+- 100% ISAC, SSAC o VWCE
+- Resultado: exposición global automática, menos decisiones, TER 0,17-0,22%
+
+Para la mayoría de inversores que empiezan, **la segunda opción (ACWI o All-World) es más sencilla y suficiente**. La diferencia de TER es marginal en términos absolutos.
+
+---
+
+## Errores frecuentes al elegir
+
+1. **Asumir que MSCI World incluye "el mundo entero"** — solo cubre desarrollados, falta ~30% del PIB mundial
+2. **Combinar MSCI World con MSCI ACWI** — solapamiento del 88%, no añade nada
+3. **Combinar MSCI World con FTSE All-World** — el FTSE All-World ya incluye desarrollados, doble exposición innecesaria
+4. **Excluir emergentes "porque son arriesgados"** — los emergentes ya pesan solo ~12% en ACWI, no dominan el riesgo
+5. **Sobreponderar emergentes >25%** — apuesta activa significativa contra la capitalización de mercado real
+
+---
+
+## Conclusión práctica
+
+Para la mayoría de inversores que empiezan en España, **un ETF MSCI ACWI o FTSE All-World** es la opción más sencilla y completa. Cubre desarrollados y emergentes en su peso natural, sin decisiones adicionales que tomar. Para más alternativas sobre ETFs globales, mira el [hub de ETFs All-World](/etfs/todo-mundo).
+
+Si prefieres MSCI World por su TER ligeramente inferior, combínalo con un ETF de emergentes (12% del total) para tener exposición global comparable. Mira el [hub de ETFs MSCI World](/etfs/msci-world) y el [hub de ETFs emergentes](/etfs/emergentes) para los productos concretos disponibles.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [MSCI — Metodología MSCI ACWI](https://www.msci.com/acwi) — Documentación oficial sobre la composición y metodología del índice.
+- [MSCI — Metodología MSCI World](https://www.msci.com/world) — Documentación oficial sobre el índice de mercados desarrollados.
+- [Análisis VWCE — BogleHub](/blog/vwce-analisis-completo) — El ETF FTSE All-World más popular para inversores españoles, alternativa a MSCI ACWI.
+`,
+  },
 ]

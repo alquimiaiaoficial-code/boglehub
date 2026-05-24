@@ -121,6 +121,11 @@ export const ARTICLE_CATEGORY: Record<string, BlogCategory> = {
   // Planificación y FIRE
   'fire-espana-cuanto-necesitas': 'planificacion-fire',
   'cuanto-invertir-al-mes-jubilarse-millonario': 'planificacion-fire',
+
+  // Nuevos (sesión 2026-05-24, batch 3)
+  'mejores-etfs-nasdaq-100-espana': 'etfs-especificos',
+  'oro-etf-fisico-vs-mineria-espana': 'etfs-especificos',
+  'msci-world-vs-msci-acwi-diferencias': 'etfs-especificos',
 }
 
 /**

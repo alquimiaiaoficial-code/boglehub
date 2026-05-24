@@ -208,4 +208,24 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'dca-vs-lump-sum-aportar-mensual',
     'como-empezar-a-invertir-poco-dinero',
   ],
+
+  // Batch 3 (sesión 2026-05-24)
+  'mejores-etfs-nasdaq-100-espana': [
+    'mejores-etfs-espana-2026',
+    'vwce-vs-cspx-vs-iwda',
+    'que-es-el-msci-world',
+    'msci-world-vs-msci-acwi-diferencias',
+  ],
+  'oro-etf-fisico-vs-mineria-espana': [
+    'cartera-permanente-harry-browne-espana',
+    'mejores-etfs-renta-fija-2026',
+    'mejores-etfs-espana-2026',
+    'cartera-boglehead-3-fondos-espana',
+  ],
+  'msci-world-vs-msci-acwi-diferencias': [
+    'vwce-analisis-completo',
+    'swrd-vs-iwda',
+    'vwce-vs-cspx-vs-iwda',
+    'que-es-el-msci-world',
+  ],
 }
