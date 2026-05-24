@@ -3,12 +3,14 @@ import Link from 'next/link'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Card } from '@/components/ui/Card'
+import { JsonLd } from '@/components/JsonLd'
 import { BLOG_ARTICLES, type BlogArticle } from '@/data/blog-articles'
 import {
   BLOG_CATEGORIES,
   getArticleCategory,
-  type BlogCategory,
 } from '@/data/blog-categories'
+
+const BASE_URL = 'https://boglehub.com'
 
 export const metadata: Metadata = {
   title: 'Blog de inversión indexada: ETFs, FIRE y fiscalidad en España',
@@ -51,6 +53,27 @@ export default function BlogIndexPage() {
 
   return (
     <>
+      <JsonLd
+        schema={{
+          type: 'BreadcrumbList',
+          items: [
+            { name: 'Inicio', url: BASE_URL },
+            { name: 'Blog', url: `${BASE_URL}/blog` },
+          ],
+        }}
+      />
+      <JsonLd
+        schema={{
+          type: 'CollectionPage',
+          name: 'Blog de inversión indexada para España',
+          description: `${BLOG_ARTICLES.length} artículos sobre inversión indexada, ETFs UCITS, fiscalidad española y FIRE. Contenido educativo organizado en ${BLOG_CATEGORIES.length} categorías editoriales.`,
+          url: `${BASE_URL}/blog`,
+          hasPart: sorted.slice(0, 20).map(a => ({
+            name: a.title,
+            url: `${BASE_URL}/blog/${a.slug}`,
+          })),
+        }}
+      />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 py-12">

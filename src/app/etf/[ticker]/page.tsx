@@ -234,6 +234,18 @@ export default async function EtfPage({ params }: { params: Promise<{ ticker: st
           questions: etfFaqs.map(({ q, a }) => ({ q, a })),
         }}
       />
+      <JsonLd
+        schema={{
+          type: 'FinancialProduct',
+          name: etf.name,
+          description: etfDescription,
+          url: `${BASE_URL}/etf/${etf.ticker.toLowerCase()}`,
+          category: `${ASSET_CLASS_LABEL[etf.assetClass] ?? etf.assetClass} — ETF UCITS`,
+          annualFee: `${etf.ter.toFixed(2)}%`,
+          provider: etf.name.split(' ')[0],
+          isin: etf.isin,
+        }}
+      />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 py-10">

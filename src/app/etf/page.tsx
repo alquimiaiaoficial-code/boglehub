@@ -55,6 +55,42 @@ export default function EtfIndexPage() {
           ],
         }}
       />
+      <JsonLd
+        schema={{
+          type: 'Dataset',
+          name: 'Catálogo de ETFs UCITS para inversores españoles (BogleHub)',
+          description: `Conjunto de datos de ${allEtfs.length} ETFs UCITS disponibles para inversores residentes en España, incluyendo ticker, ISIN, TER, clase de activo, política de reparto (acumulación / distribución), distribución geográfica, distribución sectorial y grado fiscal estimado para residentes en España.`,
+          url: `${BASE_URL}/etf`,
+          keywords: [
+            'ETFs UCITS',
+            'inversores españoles',
+            'TER',
+            'ISIN',
+            'distribución geográfica',
+            'grado fiscal',
+            'fondos indexados',
+          ],
+          variableMeasured: [
+            'TER (Total Expense Ratio) anual',
+            'Domicilio fiscal',
+            'Política de reparto (acumulación / distribución)',
+            'Distribución geográfica',
+            'Distribución sectorial',
+            'Grado fiscal estimado (A/B/C/D) para residentes en España',
+            'Divisa base',
+            'Clase de activo (renta variable, renta fija, materias primas, REIT)',
+          ],
+          license: 'Información educativa con uso libre con atribución',
+        }}
+      />
+      <JsonLd
+        schema={{
+          type: 'CollectionPage',
+          name: 'Catálogo de ETFs UCITS para inversores españoles',
+          description: `${allEtfs.length} ETFs UCITS analizados con TER, domicilio fiscal, distribución geográfica y grado de eficiencia fiscal para residentes en España.`,
+          url: `${BASE_URL}/etf`,
+        }}
+      />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 py-10">

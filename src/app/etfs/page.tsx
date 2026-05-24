@@ -77,6 +77,18 @@ export default function EtfsIndexPage() {
           ],
         }}
       />
+      <JsonLd
+        schema={{
+          type: 'CollectionPage',
+          name: 'ETFs UCITS por categoría para inversores españoles',
+          description: `Explora ${allEtfs.length} ETFs UCITS organizados en ${ETF_THEMES.length} categorías temáticas: MSCI World, S&P 500, All-World, acumulación, distribución, emergentes, Europa, renta fija, materias primas, Nasdaq 100, small caps, oro físico y factor calidad/momentum.`,
+          url: `${BASE_URL}/etfs`,
+          hasPart: ETF_THEMES.map(t => ({
+            name: t.h1,
+            url: `${BASE_URL}/etfs/${t.slug}`,
+          })),
+        }}
+      />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 py-10">
