@@ -200,6 +200,20 @@ export default async function EtfPairPage({
         ? `Ambos tienen la misma eficiencia fiscal (grado ${fiscalA.grade}): los dos están domiciliados en ${fiscalA.domicileLabel} y tienen la misma política de distribución.`
         : `${fiscalA.grade < fiscalB.grade ? tickerA : tickerB} es más eficiente fiscalmente (grado ${fiscalA.grade < fiscalB.grade ? fiscalA.grade : fiscalB.grade} vs ${fiscalA.grade < fiscalB.grade ? fiscalB.grade : fiscalA.grade}). ${fiscalA.grade < fiscalB.grade ? fiscalA.reason : fiscalB.reason}`,
     },
+    {
+      q: `¿Tiene sentido tener ${tickerA} y ${tickerB} a la vez en la cartera?`,
+      a: sameFund
+        ? `No. Al ser esencialmente el mismo fondo (solapamiento del ${formatPct(overlap, 0)}), tener ambos no aporta diversificación. Sería mejor consolidar en uno solo para simplificar la cartera y reducir la fricción operativa de gestionar dos posiciones idénticas.`
+        : overlap > 0.6
+          ? `En general no. Tienen un solapamiento del ${formatPct(overlap, 0)}, lo que significa que la mayor parte de su exposición regional es compartida. Sumarlos no añade diversificación real, solo complejidad. Elige uno y mantén la posición consolidada — el rebalanceo será más sencillo.`
+          : etfA.assetClass !== etfB.assetClass
+            ? `Sí. ${tickerA} y ${tickerB} pertenecen a clases de activo diferentes (${ASSET_CLASS_LABEL[etfA.assetClass] ?? etfA.assetClass} y ${ASSET_CLASS_LABEL[etfB.assetClass] ?? etfB.assetClass}), por lo que son complementarios, no alternativos. Pueden formar parte de una cartera diversificada juntos.`
+            : `Puede tener sentido. El solapamiento es solo del ${formatPct(overlap, 0)}, lo que indica que aportan exposición a regiones o estrategias diferenciadas dentro de la misma clase de activo. Si tu objetivo es diversificación real, combinarlos puede ser razonable; si buscas simplicidad, elige uno solo.`,
+    },
+    {
+      q: `¿Dónde puedo comprar ${tickerA} y ${tickerB} en España?`,
+      a: `${tickerA} y ${tickerB} cotizan en bolsas europeas y pueden comprarse en los principales brokers usados por inversores indexados españoles: Trade Republic (0€ por orden, planes de ahorro automáticos desde 1€), DEGIRO (0,50€ + 0,004% por operación, acceso amplio a bolsas) y MyInvestor (0,20€ + 0,03%, único broker español del listado que también ofrece fondos indexados con traspaso fiscal libre). Verifica siempre el spread efectivo y la liquidez en el momento de la operación.`,
+    },
   ]
 
   return (
