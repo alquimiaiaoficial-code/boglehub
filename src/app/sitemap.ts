@@ -4,6 +4,9 @@ import { BLOG_ARTICLES } from '@/data/blog-articles'
 import { ETF_PAIRS, pairToSlug } from '@/data/etf-pairs'
 import { ETF_THEMES } from '@/data/etf-themes'
 import { GLOSSARY_TERMS } from '@/data/glossary'
+import { BROKERS } from '@/data/brokers'
+import { ROBOADVISORS } from '@/data/roboadvisors'
+import { GESTORAS } from '@/data/gestoras'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -22,6 +25,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/faq',                          priority: 0.8, freq: 'monthly' },
     { path: '/datos-clave',                  priority: 0.8, freq: 'monthly' },
     { path: '/llms',                         priority: 0.5, freq: 'monthly' },
+    { path: '/broker',                       priority: 0.8, freq: 'monthly' },
+    { path: '/roboadvisor',                  priority: 0.8, freq: 'monthly' },
+    { path: '/gestora',                      priority: 0.7, freq: 'monthly' },
     { path: '/calculadora',                  priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/interes-compuesto',priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/fire-monte-carlo', priority: 0.8, freq: 'monthly' },
@@ -84,6 +90,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }))
 
+  // Broker individual pages
+  const brokerRoutes = BROKERS.map((b) => ({
+    url: `${BASE_URL}/broker/${b.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.75,
+  }))
+
+  // Roboadvisor individual pages
+  const roboadvisorRoutes = ROBOADVISORS.map((r) => ({
+    url: `${BASE_URL}/roboadvisor/${r.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.75,
+  }))
+
+  // Gestora individual pages
+  const gestoraRoutes = GESTORAS.map((g) => ({
+    url: `${BASE_URL}/gestora/${g.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }))
+
   return [
     ...staticRoutes,
     ...etfRoutes,
@@ -92,5 +122,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     etfsIndexRoute,
     ...themeRoutes,
     ...glossaryRoutes,
+    ...brokerRoutes,
+    ...roboadvisorRoutes,
+    ...gestoraRoutes,
   ]
 }
