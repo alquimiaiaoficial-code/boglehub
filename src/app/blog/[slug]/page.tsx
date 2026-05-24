@@ -12,6 +12,10 @@ import { ArticleKeyFacts } from '@/components/ArticleKeyFacts'
 import { NewsletterSignup } from '@/components/NewsletterSignup'
 import { BLOG_ARTICLES } from '@/data/blog-articles'
 import { RELATED_ARTICLES } from '@/data/related-articles'
+import {
+  BLOG_CATEGORIES,
+  getArticleCategory,
+} from '@/data/blog-categories'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -68,6 +72,11 @@ export default async function BlogArticlePage({
     .filter(Boolean)
     .slice(0, 3) as typeof BLOG_ARTICLES
 
+  // Datos enriquecidos para Article schema (GEO/AEO)
+  const categorySlug = getArticleCategory(article.slug)
+  const category = BLOG_CATEGORIES.find((c) => c.slug === categorySlug)
+  const wordCount = article.content.split(/\s+/).length
+
   return (
     <>
       {/* Structured data */}
@@ -79,6 +88,9 @@ export default async function BlogArticlePage({
           url: articleUrl,
           datePublished: article.publishedAt,
           dateModified: article.updatedAt ?? article.publishedAt,
+          wordCount,
+          articleSection: category?.label,
+          keywords: article.keywords,
         }}
       />
       <JsonLd

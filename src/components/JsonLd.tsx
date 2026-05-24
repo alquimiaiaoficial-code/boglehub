@@ -15,6 +15,31 @@ const PUBLISHER = {
   },
 }
 
+/**
+ * Author de los artículos: equipo editorial de BogleHub.
+ * Identificado como Organization (no Person) porque el contenido es
+ * colectivo y revisado por la comunidad. Le damos un @id propio para
+ * que los LLMs puedan referenciarlo como entidad distinta del Publisher.
+ */
+const AUTHOR = {
+  '@type': 'Organization',
+  '@id': `${BASE_URL}/#author`,
+  name: 'BogleHub Editorial',
+  url: `${BASE_URL}/sobre`,
+  description:
+    'Equipo editorial de BogleHub. Contenido educativo sobre inversión indexada en español, independiente y revisado por la comunidad Boglehead.',
+  knowsAbout: [
+    'inversión indexada',
+    'ETFs UCITS',
+    'fiscalidad española de fondos',
+    'planes de pensiones',
+    'roboadvisors',
+    'FIRE',
+    'filosofía Boglehead',
+  ],
+  parentOrganization: { '@id': `${BASE_URL}/#organization` },
+}
+
 // ─── Schema type definitions ───────────────────────────────────────────────
 
 interface OrganizationSchema {
@@ -39,6 +64,13 @@ interface QAPageSchema {
   question: string
   answer: string
   url: string
+}
+
+interface SpeakableSchema {
+  type: 'Speakable'
+  url: string
+  /** CSS selectors of elements that should be readable by voice assistants */
+  cssSelectors: string[]
 }
 
 interface ArticleSchema {
@@ -141,6 +173,7 @@ type Schema =
   | WebApplicationSchema
   | FAQSchema
   | QAPageSchema
+  | SpeakableSchema
   | ArticleSchema
   | BreadcrumbSchema
   | HowToSchema
@@ -284,6 +317,17 @@ export function JsonLd({ schema }: { schema: Schema }) {
         },
       },
     }
+  } else if (schema.type === 'Speakable') {
+    data = {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      url: schema.url,
+      speakable: {
+        '@type': 'SpeakableSpecification',
+        cssSelector: schema.cssSelectors,
+      },
+      inLanguage: 'es-ES',
+    }
   } else if (schema.type === 'Article') {
     const ogImage = schema.image ??
       `${BASE_URL}/api/og?title=${encodeURIComponent(schema.headline)}&subtitle=${encodeURIComponent('BogleHub')}`
@@ -296,7 +340,7 @@ export function JsonLd({ schema }: { schema: Schema }) {
       datePublished: schema.datePublished,
       dateModified: schema.dateModified ?? schema.datePublished,
       inLanguage: 'es-ES',
-      author: PUBLISHER,
+      author: AUTHOR,
       publisher: PUBLISHER,
       image: {
         '@type': 'ImageObject',

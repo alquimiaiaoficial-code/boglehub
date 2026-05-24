@@ -211,6 +211,13 @@ export default function FaqPage() {
           ],
         }}
       />
+      <JsonLd
+        schema={{
+          type: 'Speakable',
+          url: `${BASE_URL}/faq`,
+          cssSelectors: ['h1', 'article h3', 'article p'],
+        }}
+      />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 py-10">
