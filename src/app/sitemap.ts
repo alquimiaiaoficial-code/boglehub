@@ -3,6 +3,7 @@ import { getAllEtfs } from '@/lib/etf-database'
 import { BLOG_ARTICLES } from '@/data/blog-articles'
 import { ETF_PAIRS, pairToSlug } from '@/data/etf-pairs'
 import { ETF_THEMES } from '@/data/etf-themes'
+import { GLOSSARY_TERMS } from '@/data/glossary'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -16,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/comparar',                     priority: 0.9, freq: 'weekly'  },
     { path: '/chat',                         priority: 0.9, freq: 'weekly'  },
     { path: '/blog',                         priority: 0.8, freq: 'weekly'  },
+    { path: '/glosario',                     priority: 0.7, freq: 'monthly' },
     { path: '/calculadora',                  priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/interes-compuesto',priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/fire-monte-carlo', priority: 0.8, freq: 'monthly' },
@@ -68,5 +70,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  return [...staticRoutes, ...etfRoutes, ...blogRoutes, ...pairRoutes, etfsIndexRoute, ...themeRoutes]
+  // Glossary term pages — informational queries ("qué es X")
+  const glossaryRoutes = GLOSSARY_TERMS.map((term) => ({
+    url: `${BASE_URL}/glosario/${term.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }))
+
+  return [
+    ...staticRoutes,
+    ...etfRoutes,
+    ...blogRoutes,
+    ...pairRoutes,
+    etfsIndexRoute,
+    ...themeRoutes,
+    ...glossaryRoutes,
+  ]
 }
