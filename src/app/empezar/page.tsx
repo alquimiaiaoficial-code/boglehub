@@ -59,6 +59,49 @@ export default function EmpezarPage() {
           ],
         }}
       />
+      <JsonLd
+        schema={{
+          type: 'HowTo',
+          name: 'Cómo empezar a invertir en España (guía paso a paso)',
+          description:
+            'Guía completa para empezar a invertir en fondos indexados y ETFs en España en 2026 desde cero, en 6 pasos concretos.',
+          url: `${BASE_URL}/empezar`,
+          totalTime: 'PT1H',
+          estimatedCost: { currency: 'EUR', value: '0' },
+          steps: [
+            {
+              name: 'Aprende los conceptos básicos',
+              text: 'Estudia los términos clave: ETF, fondo indexado, TER, UCITS, ISIN, acumulación vs distribución, IRPF del ahorro, asset allocation, interés compuesto y filosofía Boglehead. Dedica 1-2 horas antes de poner el primer euro.',
+              url: `${BASE_URL}/empezar#paso-1`,
+            },
+            {
+              name: 'Decide tu estrategia',
+              text: 'Elige entre tres caminos: cartera DIY (tú gestionas, coste ~0,15% anual), roboadvisor (Indexa, Finizens, MyInvestor gestionan, coste ~0,40-0,50%), o plan de pensiones indexado (hasta 1.500€/año con deducción IRPF).',
+              url: `${BASE_URL}/empezar#paso-2`,
+            },
+            {
+              name: 'Elige tu broker',
+              text: 'Trade Republic (0€ por operación, planes ahorro automáticos), DEGIRO (0,50€ + 0,004%, acceso amplio a bolsas) o MyInvestor (0,20€ + 0,03%, único con fondos indexados y traspaso fiscal libre).',
+              url: `${BASE_URL}/empezar#paso-3`,
+            },
+            {
+              name: 'Selecciona tus ETFs o fondos',
+              text: 'Cartera mínima recomendada: 80% VWCE (Vanguard FTSE All-World, TER 0,22%, ISIN IE00B3RBWM25) + 20% AGGH (renta fija global hedged EUR, TER 0,10%). Coste total ponderado ~0,20% anual.',
+              url: `${BASE_URL}/empezar#paso-4`,
+            },
+            {
+              name: 'Planifica tus aportaciones',
+              text: 'Usa la calculadora de interés compuesto para ver tu proyección. Empezar 10 años antes equivale a duplicar la aportación mensual. Configura aportaciones automáticas para no depender de tu fuerza de voluntad.',
+              url: `${BASE_URL}/empezar#paso-5`,
+            },
+            {
+              name: 'Mantén la disciplina a largo plazo',
+              text: 'El mercado va a caer un 20-40% varias veces. La diferencia entre buenos y malos inversores no es predecir las caídas: es no vender durante ellas. Rebalancea una vez al año y mantén el plan.',
+              url: `${BASE_URL}/empezar#paso-6`,
+            },
+          ],
+        }}
+      />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 py-10">

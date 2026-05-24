@@ -62,6 +62,16 @@ export default function IrpfVentaFondosPage() {
           ],
         }}
       />
+      <JsonLd
+        schema={{
+          type: 'SoftwareApplication',
+          name: 'Calculadora de IRPF por venta de fondos y ETFs',
+          description:
+            'Calculadora gratuita en español que estima el IRPF a pagar por la venta de fondos indexados, ETFs o acciones con beneficio. Aplica los tramos del IRPF del ahorro 2026 con desglose por tramo y soporte para compensación de pérdidas.',
+          url: `${BASE_URL}/calculadora/irpf-venta-fondos`,
+          applicationCategory: 'FinanceApplication',
+        }}
+      />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 pt-10 pb-8">

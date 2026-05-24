@@ -86,6 +86,16 @@ export default async function GlossaryTermPage({
           ],
         }}
       />
+      <JsonLd
+        schema={{
+          type: 'DefinedTerm',
+          name: term.term,
+          alternateName: term.fullForm,
+          description: term.shortDefinition,
+          url: pageUrl,
+          termSetUrl: `${BASE_URL}/glosario`,
+        }}
+      />
       {term.faq && term.faq.length > 0 && (
         <JsonLd
           schema={{

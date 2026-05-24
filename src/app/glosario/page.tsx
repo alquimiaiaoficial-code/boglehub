@@ -46,6 +46,31 @@ export default function GlossaryIndexPage() {
           ],
         }}
       />
+      <JsonLd
+        schema={{
+          type: 'DefinedTermSet',
+          name: 'Glosario de inversión indexada y ETFs para España',
+          description: `Glosario completo con ${GLOSSARY_TERMS.length} términos esenciales para invertir de forma indexada en España: definiciones, ejemplos prácticos y enlaces a artículos relacionados.`,
+          url: `${BASE_URL}/glosario`,
+          hasDefinedTerm: GLOSSARY_TERMS.map(t => ({
+            name: t.term,
+            url: `${BASE_URL}/glosario/${t.slug}`,
+            description: t.shortDefinition,
+          })),
+        }}
+      />
+      <JsonLd
+        schema={{
+          type: 'CollectionPage',
+          name: 'Glosario de inversión indexada para España',
+          description: `${GLOSSARY_TERMS.length} términos financieros definidos para inversores indexados hispanohablantes.`,
+          url: `${BASE_URL}/glosario`,
+          hasPart: GLOSSARY_TERMS.map(t => ({
+            name: t.term,
+            url: `${BASE_URL}/glosario/${t.slug}`,
+          })),
+        }}
+      />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 py-10">

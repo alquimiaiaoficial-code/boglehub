@@ -60,6 +60,16 @@ export default function CompoundInterestPage() {
           ],
         }}
       />
+      <JsonLd
+        schema={{
+          type: 'SoftwareApplication',
+          name: 'Calculadora de interés compuesto',
+          description:
+            'Calculadora gratuita en español que proyecta el crecimiento de una inversión con interés compuesto, aportaciones periódicas y rentabilidad anual personalizable. Visualización año a año.',
+          url: `${BASE_URL}/calculadora/interes-compuesto`,
+          applicationCategory: 'FinanceApplication',
+        }}
+      />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 pt-8 pb-2">

@@ -60,6 +60,16 @@ export default function RoboadvisorVsDiyPage() {
           ],
         }}
       />
+      <JsonLd
+        schema={{
+          type: 'SoftwareApplication',
+          name: 'Calculadora roboadvisor vs cartera DIY',
+          description:
+            'Calculadora gratuita en español que compara el coste real de un roboadvisor como Indexa Capital frente a gestionar tú una cartera de fondos o ETFs indexados. Resultados en euros a 10, 20 y 30 años.',
+          url: `${BASE_URL}/calculadora/roboadvisor-vs-diy`,
+          applicationCategory: 'FinanceApplication',
+        }}
+      />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 pt-10 pb-8">

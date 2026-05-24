@@ -47,6 +47,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="es" className={`${geist.variable} ${geistMono.variable}`}>
       <body className="min-h-screen bg-bg text-fg antialiased">
         <JsonLd schema={{ type: 'Organization' }} />
+        <JsonLd schema={{ type: 'WebSite' }} />
         {children}
         <PWAInit />
         <PWAInstallPrompt />

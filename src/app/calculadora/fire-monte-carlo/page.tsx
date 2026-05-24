@@ -60,6 +60,16 @@ export default function MonteCarloPage() {
           ],
         }}
       />
+      <JsonLd
+        schema={{
+          type: 'SoftwareApplication',
+          name: 'Calculadora FIRE con simulación Monte Carlo',
+          description:
+            'Calculadora gratuita en español que simula 1.000 escenarios de mercado para tu plan de independencia financiera. Calcula la probabilidad de que tu cartera sobreviva a la jubilación con datos históricos de volatilidad del MSCI World.',
+          url: `${BASE_URL}/calculadora/fire-monte-carlo`,
+          applicationCategory: 'FinanceApplication',
+        }}
+      />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 pt-8 pb-2">
