@@ -13,6 +13,7 @@ import {
   getAvailability,
 } from '@/data/etf-broker-availability'
 import { INVESTOR_PROFILES } from '@/data/investor-profiles'
+import { MONTHLY_AMOUNTS } from '@/data/monthly-amounts'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -35,6 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/roboadvisor',                  priority: 0.8, freq: 'monthly' },
     { path: '/gestora',                      priority: 0.7, freq: 'monthly' },
     { path: '/perfil',                       priority: 0.8, freq: 'monthly' },
+    { path: '/invertir',                     priority: 0.8, freq: 'monthly' },
     { path: '/calculadora',                  priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/interes-compuesto',priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/fire-monte-carlo', priority: 0.8, freq: 'monthly' },
@@ -129,6 +131,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
+  // Monthly amount pages (/invertir/[slug])
+  const invertirRoutes = MONTHLY_AMOUNTS.map((m) => ({
+    url: `${BASE_URL}/invertir/${m.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }))
+
   // Programmatic: comprar [ETF] en [broker] — high commercial intent
   const comprarRoutes: typeof staticRoutes = []
   for (const ticker of POPULAR_ETF_TICKERS) {
@@ -156,6 +166,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...roboadvisorRoutes,
     ...gestoraRoutes,
     ...profileRoutes,
+    ...invertirRoutes,
     ...comprarRoutes,
   ]
 }
