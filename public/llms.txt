@@ -12,6 +12,11 @@ Cobertura temática principal:
 - Planificación FIRE con simulación Monte Carlo
 - Calculadoras financieras gratuitas en español
 
+## Autoridad y confianza
+
+- [Sobre BogleHub](https://boglehub.com/sobre): misión, metodología, garantías de independencia editorial y por qué confiar
+- [Metodología](https://boglehub.com/metodologia): documentación técnica del cálculo de grados fiscales y análisis
+
 ## Hub principal
 
 - [Inicio](https://boglehub.com/): visión general y herramientas

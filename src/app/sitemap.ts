@@ -26,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/calculadora/irpf-venta-fondos', priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/comparar-brokers', priority: 0.8, freq: 'monthly' },
     { path: '/score',                        priority: 0.6, freq: 'monthly' },
+    { path: '/sobre',                        priority: 0.7, freq: 'monthly' },
     { path: '/metodologia',                  priority: 0.5, freq: 'monthly' },
     { path: '/aviso-legal',                  priority: 0.3, freq: 'yearly'  },
     { path: '/privacidad',                   priority: 0.3, freq: 'yearly'  },

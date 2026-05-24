@@ -8,6 +8,7 @@ import { remarkAutolinkGlossary } from '@/lib/remark-autolink-glossary'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { JsonLd } from '@/components/JsonLd'
+import { ArticleKeyFacts } from '@/components/ArticleKeyFacts'
 import { NewsletterSignup } from '@/components/NewsletterSignup'
 import { BLOG_ARTICLES } from '@/data/blog-articles'
 import { RELATED_ARTICLES } from '@/data/related-articles'
@@ -137,6 +138,9 @@ export default async function BlogArticlePage({
             <span>·</span>
             <span>{article.readingMinutes} min de lectura</span>
           </div>
+
+          {/* Key facts box — citable summary for LLMs + UX boost */}
+          <ArticleKeyFacts article={article} />
 
           {/* Content */}
           <div className="prose prose-invert prose-zinc max-w-none prose-headings:text-fg prose-strong:text-fg prose-a:text-brand-400 prose-code:text-brand-300">
