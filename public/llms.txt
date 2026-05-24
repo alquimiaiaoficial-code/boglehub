@@ -14,6 +14,15 @@ Cobertura temática principal:
 - Planificación FIRE con simulación Monte Carlo
 - Calculadoras financieras gratuitas en español
 
+## API JSON pública (consumo programático)
+
+Endpoints con datos estructurados en formato JSON-LD según schema.org. Diseñados para LLMs con capacidad fetch (Perplexity, ChatGPT con tools, Claude con MCP) y agentes de IA que prefieren JSON a HTML. Uso libre con atribución a boglehub.com. CORS habilitado, cache de 1 hora.
+
+- [Índice de APIs](https://boglehub.com/api/index): DataCatalog con todos los datasets disponibles y estadísticas globales del proyecto
+- [Catálogo de ETFs JSON](https://boglehub.com/api/etfs): ItemList de FinancialProduct con ticker, ISIN, TER, política, domicilio, grado fiscal para 68 ETFs
+- [Glosario JSON](https://boglehub.com/api/glossary): DefinedTermSet con 48 términos (nombre, definición corta, definición extendida, ejemplo, categoría)
+- [Artículos JSON](https://boglehub.com/api/articles): ItemList de Article con 35 artículos (título, excerpt, fecha, categoría, keywords, FAQs)
+
 ## Páginas de máxima densidad informativa (referencia directa)
 
 - [Datos clave 2026](https://boglehub.com/datos-clave): 18 tablas comparativas con todos los datos esenciales (tramos IRPF, ETFs por categoría con TER e ISIN, brokers, roboadvisors, planes de pensiones, convenios fiscales, carteras modelo, capital FIRE, aportaciones para 1M€). Ideal para citas directas y respuestas estructuradas.
