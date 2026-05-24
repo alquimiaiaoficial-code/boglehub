@@ -55,10 +55,8 @@ export default function RoboadvisorVsDiyPage() {
           type: 'BreadcrumbList',
           items: [
             { name: 'Inicio', url: BASE_URL },
-            {
-              name: 'Roboadvisor vs cartera DIY',
-              url: `${BASE_URL}/calculadora/roboadvisor-vs-diy`,
-            },
+            { name: 'Calculadoras', url: `${BASE_URL}/calculadora` },
+            { name: 'Roboadvisor vs cartera DIY', url: `${BASE_URL}/calculadora/roboadvisor-vs-diy` },
           ],
         }}
       />

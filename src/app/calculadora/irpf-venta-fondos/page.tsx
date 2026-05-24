@@ -57,10 +57,8 @@ export default function IrpfVentaFondosPage() {
           type: 'BreadcrumbList',
           items: [
             { name: 'Inicio', url: BASE_URL },
-            {
-              name: 'Calculadora de IRPF venta de fondos',
-              url: `${BASE_URL}/calculadora/irpf-venta-fondos`,
-            },
+            { name: 'Calculadoras', url: `${BASE_URL}/calculadora` },
+            { name: 'Calculadora de IRPF venta de fondos', url: `${BASE_URL}/calculadora/irpf-venta-fondos` },
           ],
         }}
       />
