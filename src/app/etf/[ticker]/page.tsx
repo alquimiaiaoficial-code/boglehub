@@ -8,6 +8,7 @@ import { JsonLd } from '@/components/JsonLd'
 import { getEtfByTicker, getAllEtfs } from '@/lib/etf-database'
 import { computeFiscalGrade, GRADE_STYLES } from '@/lib/fiscal'
 import { formatPct } from '@/lib/utils'
+import { generateEtfDescription, generateEtfFaqs } from '@/lib/etf-faqs'
 import { ETF_PAIRS, pairToSlug } from '@/data/etf-pairs'
 import type { EtfMetadata } from '@/types/etf'
 
@@ -210,6 +211,10 @@ export default async function EtfPage({ params }: { params: Promise<{ ticker: st
       other: a === etf.ticker ? b : a,
     }))
 
+  // FAQs autogeneradas y descripción textual indexable
+  const etfDescription = generateEtfDescription(etf)
+  const etfFaqs = generateEtfFaqs(etf)
+
   return (
     <>
       <JsonLd
@@ -220,6 +225,12 @@ export default async function EtfPage({ params }: { params: Promise<{ ticker: st
             { name: 'ETF', url: `${BASE_URL}/etf` },
             { name: etf.ticker, url: `${BASE_URL}/etf/${etf.ticker.toLowerCase()}` },
           ],
+        }}
+      />
+      <JsonLd
+        schema={{
+          type: 'FAQPage',
+          questions: etfFaqs.map(({ q, a }) => ({ q, a })),
         }}
       />
       <Header />
@@ -248,6 +259,7 @@ export default async function EtfPage({ params }: { params: Promise<{ ticker: st
             {etf.isin && (
               <p className="mt-1 text-sm text-fg-subtle font-mono">ISIN: {etf.isin}</p>
             )}
+            <p className="mt-4 text-fg-muted leading-relaxed">{etfDescription}</p>
           </header>
 
           {/* Key stats */}
@@ -355,6 +367,29 @@ export default async function EtfPage({ params }: { params: Promise<{ ticker: st
               </div>
             </Card>
           )}
+
+          {/* FAQs autogeneradas */}
+          <section className="mb-6" aria-labelledby="etf-faq-heading">
+            <h2 id="etf-faq-heading" className="text-lg font-semibold text-fg mb-4">
+              Preguntas frecuentes sobre {etf.ticker}
+            </h2>
+            <div className="space-y-3">
+              {etfFaqs.map(({ q, a }) => (
+                <details
+                  key={q}
+                  className="group rounded-xl border border-border bg-surface px-5 py-4"
+                >
+                  <summary className="flex items-center justify-between gap-3 font-medium text-fg list-none cursor-pointer select-none">
+                    {q}
+                    <span className="shrink-0 text-fg-muted transition-transform group-open:rotate-180">
+                      ▾
+                    </span>
+                  </summary>
+                  <p className="mt-3 text-sm text-fg-muted leading-relaxed">{a}</p>
+                </details>
+              ))}
+            </div>
+          </section>
 
           {/* CTA */}
           <Card className="text-center">
