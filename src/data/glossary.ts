@@ -499,6 +499,215 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       'AGGH (iShares Core Global Aggregate Bond UCITS ETF EUR Hedged) cubre la divisa para neutralizar el riesgo cambiario de los bonos globales. Es el ETF de renta fija más popular en carteras Boglehead españolas precisamente por esta cobertura.',
     relatedArticles: ['riesgo-divisa-etf-hedged-espana'],
   },
+  // ---------------------------------------------------------------------------
+  // Métricas avanzadas
+  // ---------------------------------------------------------------------------
+  {
+    slug: 'sharpe-ratio',
+    term: 'Sharpe ratio',
+    category: 'metricas',
+    shortDefinition:
+      'El Sharpe ratio mide la rentabilidad ajustada al riesgo de un activo o cartera. Cuanto más alto, mejor: indica cuánta rentabilidad extra se obtiene por cada unidad de volatilidad asumida.',
+    longDefinition:
+      'El Sharpe ratio es una métrica diseñada por William Sharpe (Premio Nobel de Economía en 1990) para evaluar si la rentabilidad de un activo justifica el riesgo asumido. Se calcula como la rentabilidad del activo menos el activo libre de riesgo (típicamente bonos del Tesoro), dividida entre la desviación típica de los retornos del activo.\n\nUn Sharpe ratio superior a 1 se considera bueno; superior a 2, excelente; por debajo de 0, el activo ha perdido frente al activo libre de riesgo. Para comparar carteras es muy útil: una cartera con rentabilidad del 12% y volatilidad del 20% tiene peor Sharpe que otra con rentabilidad del 8% y volatilidad del 10%, aunque la primera "gane más" en términos brutos.',
+    example:
+      'Cartera A: rentabilidad 10%, volatilidad 15%. Cartera B: rentabilidad 7%, volatilidad 7%. Con activo libre de riesgo del 2%: Sharpe A = (10-2)/15 = 0,53. Sharpe B = (7-2)/7 = 0,71. La cartera B tiene mejor rentabilidad ajustada al riesgo a pesar de menos rentabilidad bruta.',
+  },
+  {
+    slug: 'tracking-difference',
+    term: 'Tracking difference',
+    category: 'metricas',
+    shortDefinition:
+      'El tracking difference es la diferencia acumulada entre la rentabilidad de un ETF y la rentabilidad de su índice subyacente. Mide el coste real de la replicación, más útil que el TER aislado.',
+    longDefinition:
+      'El tracking difference (TD) es la métrica más precisa para evaluar la eficiencia real de un ETF indexado. Si el TER de un ETF es 0,20% pero el TD acumulado es −0,10%, significa que en realidad el ETF solo "cuesta" 0,10% al año porque la gestora compensa parte del TER con préstamo de valores, optimización de retención de dividendos en origen y otras eficiencias operativas.\n\nUn TD positivo significa que el ETF ha rendido por encima del índice (raro pero posible). Un TD negativo y similar al TER indica gestión normal. Un TD mucho más negativo que el TER apunta a problemas de replicación. Para comparar ETFs del mismo índice, el TD es más informativo que el TER.',
+    example:
+      'IWDA (iShares MSCI World, TER 0,20%) ha tenido un tracking difference cercano a 0 en los últimos años gracias al préstamo de valores. SWRD (SPDR MSCI World, TER 0,12%) tiene TD ligeramente negativo. La diferencia real entre ambos puede ser inferior a la sugerida por el TER aislado.',
+  },
+  {
+    slug: 'alpha-beta',
+    term: 'Alpha y Beta',
+    category: 'metricas',
+    shortDefinition:
+      'Beta mide cuánto se mueve un activo en relación al mercado (beta de 1 = se mueve como el mercado). Alpha es la rentabilidad adicional sobre lo que se esperaría dado el riesgo asumido.',
+    longDefinition:
+      'Beta y alpha son métricas del Capital Asset Pricing Model (CAPM). **Beta** mide la sensibilidad de un activo a los movimientos del mercado: beta de 1,2 significa que cuando el mercado sube 10%, el activo tiende a subir 12% (y viceversa). Una beta de 0,8 indica menor sensibilidad. La beta media del mercado es 1 por definición.\n\n**Alpha** es la rentabilidad obtenida por encima de la que correspondería al riesgo asumido. Un alpha positivo indica gestión exitosa (rentabilidad superior al mercado ajustada por riesgo). Para los Bogleheads, el debate es claro: la mayoría de gestores activos no consigue alpha positivo neto de comisiones a largo plazo, por lo que la indexación pasiva (alpha = 0 por definición) acaba ganando.',
+    example:
+      'Las acciones tecnológicas tienden a tener beta superior a 1 (más volátiles que el mercado). Los bonos gubernamentales tienen beta cercana a 0 (poco correlacionados con renta variable). Un fondo activo con alpha de +2% neto durante 10 años sería extraordinario; la mayoría de fondos tienen alpha entre -1% y -2%.',
+  },
+  {
+    slug: 'spread',
+    term: 'Spread (bid-ask)',
+    category: 'metricas',
+    shortDefinition:
+      'El spread es la diferencia entre el precio máximo al que un comprador está dispuesto a pagar (bid) y el precio mínimo al que un vendedor está dispuesto a vender (ask). Mide el coste implícito de operar.',
+    longDefinition:
+      'El bid-ask spread es un coste implícito en cada operación de bolsa que no aparece en las comisiones del broker pero sí en el resultado final. Si un ETF tiene bid 100,00€ y ask 100,10€, comprar y vender inmediatamente te cuesta 0,10€ por participación (0,1%), aparte de las comisiones.\n\nLos ETFs muy líquidos (IWDA, VWCE, CSPX) tienen spreads muy estrechos (1-3 centésimas porcentuales). ETFs poco líquidos o operados en horarios de baja actividad pueden tener spreads de 0,2-0,5% o más. Para órdenes grandes, el spread puede ser más costoso que la comisión del broker. Operar en horario de máxima liquidez (cuando la bolsa principal del fondo está abierta) reduce el spread.',
+    example:
+      'Si compras CSPX en Xetra a las 11:00 (mercado europeo abierto), el spread típico es 0,02-0,05%. Si lo intentas comprar a las 22:00 (mercado cerrado, solo mercados secundarios), el spread puede ser 0,2-0,5% o más.',
+  },
+  // ---------------------------------------------------------------------------
+  // Productos y conceptos de mercado
+  // ---------------------------------------------------------------------------
+  {
+    slug: 'replicacion-fisica-sintetica',
+    term: 'Replicación física vs sintética',
+    category: 'productos',
+    shortDefinition:
+      'Un ETF puede replicar su índice comprando físicamente las acciones (replicación física) o usando derivados con un banco contraparte (replicación sintética). La física es más transparente.',
+    longDefinition:
+      'Hay tres formas de replicación en un ETF:\n\n- **Replicación física total**: el ETF compra literalmente todas las acciones del índice en sus proporciones exactas. Máxima transparencia, sin riesgo de contraparte. Ejemplo: IWDA.\n- **Replicación física por muestreo (optimizada)**: el ETF compra una muestra representativa del índice (suficiente para replicar el comportamiento sin tener que mantener miles de posiciones pequeñas). Útil para índices con muchos valores ilíquidos. Mayoría de ETFs.\n- **Replicación sintética (swap)**: el ETF firma un contrato con un banco (típicamente la propia gestora o un banco asociado) por el cual el banco le paga el rendimiento del índice a cambio de una comisión. Sin acciones físicas en la cartera del ETF. Mayor eficiencia fiscal en algunos casos, pero introduce riesgo de contraparte (que el banco quiebre).\n\nPara la mayoría de inversores indexados, la replicación física (total o por muestreo) es la opción preferida por transparencia.',
+    example:
+      'IWDA replica físicamente comprando ~1.500 acciones. Algunos ETFs de Xtrackers (XACT) usan replicación sintética. Ambos tienen TER similar pero estructura de riesgo distinta.',
+  },
+  {
+    slug: 'investment-grade',
+    term: 'Investment grade vs high yield',
+    category: 'productos',
+    shortDefinition:
+      'Los bonos investment grade son emisiones con rating crediticio alto (AAA a BBB-), considerados seguros. Los high yield (BB+ y por debajo) son "bonos basura" con mayor riesgo y rendimiento.',
+    longDefinition:
+      'Las agencias de calificación crediticia (Moody\'s, S&P, Fitch) clasifican los bonos según el riesgo de impago del emisor. La línea divisoria está entre BBB- (último escalón investment grade) y BB+ (primer high yield).\n\n**Investment grade**: bonos de empresas o gobiernos solventes. Tasa histórica de impago muy baja (<0,5% anual). Rendimientos modestos (3-5% en condiciones normales). Apropiados para la parte conservadora de una cartera. Ejemplos: bonos del Tesoro Alemán (AAA), bonos de Microsoft (AAA), bonos de Telefónica (BBB).\n\n**High yield (bonos basura)**: bonos de empresas en dificultades o de emisores con balance frágil. Tasa de impago histórica del 2-5% anual. Rendimientos altos (6-10%+) para compensar el riesgo. Mayor correlación con renta variable, lo que reduce su utilidad como diversificador.',
+    example:
+      'Los bonos del Tesoro español tienen rating A. Los bonos de Banco Santander, rating A-. Bonos de empresas en restructuración (como Boeing en 2024 o Casino en Francia) pueden tener rating B o CCC, considerados high yield.',
+  },
+  {
+    slug: 'esg-sri',
+    term: 'ESG / Inversión socialmente responsable',
+    category: 'productos',
+    shortDefinition:
+      'ESG (Environmental, Social, Governance) son criterios extra-financieros usados para evaluar empresas. Los ETFs ESG/SRI excluyen sectores polémicos o seleccionan empresas mejor calificadas en estos criterios.',
+    longDefinition:
+      'La inversión ESG se ha convertido en una tendencia importante en los últimos años. Los criterios son:\n- **E (Environmental)**: huella de carbono, gestión de residuos, eficiencia energética\n- **S (Social)**: relaciones laborales, diversidad, derechos humanos en la cadena de suministro\n- **G (Governance)**: estructura corporativa, transparencia, ética en la gestión\n\nLos ETFs ESG/SRI aplican estos criterios de dos formas: **exclusión** (eliminan sectores como armas, tabaco, combustibles fósiles) o **best-in-class** (seleccionan dentro de cada sector las empresas con mejores ratings ESG). La rentabilidad histórica de ETFs ESG ha sido similar o ligeramente superior a sus índices estándar, aunque con sesgo hacia ciertos sectores.',
+    example:
+      'iShares MSCI World SRI UCITS ETF (IUSE, TER 0,20%) replica el MSCI World excluyendo empresas de armas, tabaco, combustibles fósiles y otras polémicas. Su rendimiento histórico ha sido muy similar al MSCI World tradicional.',
+  },
+  // ---------------------------------------------------------------------------
+  // Fiscalidad española
+  // ---------------------------------------------------------------------------
+  {
+    slug: 'modelo-720',
+    term: 'Modelo 720',
+    category: 'fiscalidad',
+    shortDefinition:
+      'El Modelo 720 es la declaración informativa anual obligatoria para residentes fiscales en España con bienes y derechos en el extranjero por más de 50.000€. No genera impuestos, solo informa.',
+    longDefinition:
+      'El Modelo 720 es una declaración informativa (no tributaria) que deben presentar los residentes fiscales en España cuando poseen, en el extranjero, alguno de los siguientes superando los 50.000€:\n- Cuentas bancarias\n- Valores, fondos, ETFs, acciones\n- Inmuebles\n\nSi tienes ETFs en un broker como DEGIRO (Países Bajos) o Trade Republic (Alemania) y el valor supera los 50.000€, debes presentar el Modelo 720. El plazo es entre enero y marzo del año siguiente al hecho. Hay obligación de declarar también incrementos posteriores significativos.\n\nLas sanciones por no presentar el modelo fueron históricamente desproporcionadas (incluso del 150% del valor) hasta que el Tribunal Constitucional las anuló en 2022. Hoy las sanciones son más razonables pero la obligación de declarar persiste.',
+    example:
+      'Si en diciembre de 2025 tienes 60.000€ en ETFs en DEGIRO, debes presentar el Modelo 720 entre enero y marzo de 2026. Si los siguientes años el valor sube significativamente (más de 20.000€), debes volver a presentarlo.',
+    relatedArticles: ['fiscalidad-etfs-espana-guia-completa'],
+  },
+  {
+    slug: 'convenio-doble-imposicion',
+    term: 'Convenio doble imposición',
+    category: 'fiscalidad',
+    shortDefinition:
+      'Los convenios de doble imposición son acuerdos bilaterales entre países que evitan que la misma renta tribute dos veces. Para inversores en ETFs determinan la retención sobre dividendos en origen.',
+    longDefinition:
+      'Cuando una empresa española como Telefónica paga dividendos a un fondo americano, hay dos potenciales tributaciones: en España (origen del dividendo) y en EE.UU. (residencia del fondo). Los convenios de doble imposición evitan esta doble tributación reduciendo la retención en origen.\n\nPara los inversores españoles en ETFs, el convenio más relevante es **Irlanda-EE.UU.**: reduce la retención de dividendos americanos del 30% al 15%, lo que beneficia indirectamente a los partícipes de ETFs irlandeses. Por eso un ETF como VWCE (irlandés) es más eficiente que el equivalente luxemburgués: la retención interna es menor y por tanto el patrimonio del fondo crece más.\n\nLa devolución de retenciones pagadas en el extranjero por dividendos cobrados directamente como persona física se gestiona vía la **deducción por doble imposición internacional** en la declaración de la renta.',
+    example:
+      'VWCE (irlandés) recibe dividendos de Apple con retención USA del 15% (convenio IE-USA). Un ETF equivalente domiciliado en Luxemburgo recibiría los mismos dividendos con retención del 30%. Sobre un yield del 2% del fondo, la diferencia es de aproximadamente 0,3% anual.',
+    relatedArticles: ['fiscalidad-etfs-espana-guia-completa'],
+  },
+  {
+    slug: 'regla-dos-meses',
+    term: 'Regla de los dos meses',
+    category: 'fiscalidad',
+    shortDefinition:
+      'En España, si vendes un valor con pérdidas y recompras el mismo (o equivalente) en los dos meses anteriores o posteriores, Hacienda no permite computar esa pérdida fiscalmente. Anti-lavado fiscal.',
+    longDefinition:
+      'La regla de los dos meses (también llamada "wash sale" en inglés) es un mecanismo anti-elusión que impide a los inversores generar pérdidas fiscales artificiales sin cambiar realmente su posición en el mercado. Si vendes un valor con pérdidas (para compensar ganancias y reducir IRPF) pero lo recompras dentro de los dos meses anteriores o posteriores a la venta, Hacienda no acepta esa pérdida.\n\nEsto importa para optimización fiscal de fin de año: si quieres realizar una pérdida en un ETF (por ejemplo, VWCE) para compensar ganancias, no puedes recomprar VWCE en los siguientes dos meses. Una estrategia alternativa: vender VWCE y comprar un ETF de índice diferente pero exposición similar (como IWDA), lo que técnicamente no es "el mismo valor" según la AEAT.',
+    example:
+      'Vendes 100 participaciones de VWCE con pérdida de 1.500€. Tres semanas después recompras 100 participaciones de VWCE. La AEAT rechaza la pérdida fiscal — no podrás usarla para compensar ganancias. Si en lugar de recomprar VWCE compras IWDA, la pérdida es aceptable.',
+    relatedArticles: ['como-declarar-etfs-hacienda'],
+  },
+  // ---------------------------------------------------------------------------
+  // Estrategias adicionales
+  // ---------------------------------------------------------------------------
+  {
+    slug: 'lump-sum',
+    term: 'Lump sum',
+    category: 'estrategias',
+    shortDefinition:
+      'Lump sum es la estrategia de invertir una cantidad grande de dinero de una sola vez, en oposición al DCA (aportaciones periódicas). Estadísticamente supera al DCA en 2 de cada 3 periodos.',
+    longDefinition:
+      'Lump sum significa invertir todo el dinero disponible en una sola operación, en lugar de fraccionarlo en aportaciones periódicas (DCA). Si recibes una herencia de 50.000€ o una indemnización por despido, la decisión es: ¿lo invierto todo hoy, o lo divido en 12-24 cuotas mensuales?\n\nLos estudios académicos muestran que el lump sum supera al DCA en aproximadamente el 66-75% de los periodos históricos. La razón es matemática: el mercado tiende a subir más que a bajar, por lo que cuanto antes esté tu dinero invertido, más tiempo está creciendo. El DCA reduce la varianza del resultado pero también reduce la rentabilidad esperada.\n\nLa decisión depende también de aspectos psicológicos. Si invertir todo de golpe te genera ansiedad y te haría vender en pánico ante la primera caída, el DCA puede ser preferible aunque sea matemáticamente inferior.',
+    example:
+      'Si recibes 24.000€ y los inviertes en VWCE hoy (lump sum), tienes el 100% del dinero trabajando desde el día 1. Si en cambio divides en 12 cuotas mensuales de 2.000€, durante el primer mes solo 2.000€ están invertidos; el dinero restante está en cuenta corriente sin generar rentabilidad de mercado.',
+    relatedArticles: ['dca-vs-lump-sum-aportar-mensual'],
+  },
+  {
+    slug: 'glide-path',
+    term: 'Glide path',
+    category: 'estrategias',
+    shortDefinition:
+      'Glide path es la estrategia de ir reduciendo progresivamente el peso de renta variable y aumentar la renta fija a medida que el inversor se acerca a la edad de jubilación. Reduce la volatilidad cuando más importa.',
+    longDefinition:
+      'El glide path es una técnica de planificación financiera personal que ajusta el asset allocation a lo largo del tiempo según se acerca el objetivo (jubilación, hipoteca, hijo en universidad). La idea: cuando falta mucho tiempo, puedes tolerar alta volatilidad porque tienes tiempo de recuperarte de caídas. Cuando se acerca el momento, prefieres estabilidad sobre rentabilidad esperada.\n\nUna regla clásica es "100 menos tu edad" en renta variable: a los 30, 70% acciones; a los 60, 40% acciones. Las versiones modernas usan "120 menos tu edad" porque la esperanza de vida ha aumentado: a los 30, 90% acciones; a los 60, 60% acciones.\n\nEl glide path defiende contra el **riesgo de secuencia de retornos**: una caída del 40% justo cuando empiezas a vivir de la cartera puede destruir el plan. Reducir progresivamente la exposición a renta variable los 5-10 años antes de necesitarla mitiga este riesgo.',
+    example:
+      'Un inversor de 40 años con cartera 80/20. A los 50 baja a 70/30. A los 55 a 60/40. A los 60 a 50/50. A los 65 a 40/60. El glide path se ejecuta gradualmente (rebalanceando hacia más renta fija con las aportaciones nuevas) en lugar de en saltos bruscos.',
+  },
+  {
+    slug: 'home-bias',
+    term: 'Home bias',
+    category: 'estrategias',
+    shortDefinition:
+      'El home bias es la tendencia de los inversores a sobreponderar inversiones de su propio país. Es un sesgo psicológico que reduce la diversificación pero da seguridad emocional.',
+    longDefinition:
+      'El home bias ("sesgo doméstico") es la tendencia de los inversores a sobreponderar empresas de su propio país más allá de lo que su peso en la economía global justificaría. Un inversor español indexado al MSCI World tiene un 1-2% de exposición a España (proporcional al peso real de la economía española). Pero muchos inversores españoles sobreponderan España al 10-15% comprando ETFs del IBEX 35 o acciones individuales.\n\nLos argumentos a favor del home bias: divisa propia, mejor conocimiento del entorno empresarial, menor riesgo cambiario. Los argumentos en contra: concentración geográfica, ignorar que muchas multinacionales españolas (Telefónica, Santander, Iberdrola) ya tienen exposición internacional, perder diversificación real.\n\nLa filosofía Boglehead pura recomienda no aplicar home bias: replicar el mercado global tal como es, según capitalización. Pero un home bias moderado del 5-10% suele considerarse aceptable si reduce la ansiedad y ayuda a mantener el plan a largo plazo.',
+    example:
+      'Si tu cartera es 60% VWCE + 20% IBEX 35 ETF + 20% renta fija, tienes un home bias significativo: España pasa de pesar ~1% global a ~21% en tu cartera. Esto es una apuesta activa que puede acertar o no, pero rompe con la indexación pura.',
+  },
+  // ---------------------------------------------------------------------------
+  // Plataformas y servicios
+  // ---------------------------------------------------------------------------
+  {
+    slug: 'custodia',
+    term: 'Custodia',
+    category: 'plataformas',
+    shortDefinition:
+      'La custodia es el servicio de un banco o broker de mantener los valores (acciones, ETFs, fondos) en nombre del inversor. Es esencial para que tus inversiones estén legalmente seguras.',
+    longDefinition:
+      'Cuando compras un ETF, no recibes papelitos físicos: los valores quedan registrados electrónicamente en una entidad custodia. Esta entidad mantiene los valores en cuentas segregadas del banco/broker — son tu propiedad, no del broker. Esta segregación es fundamental: en caso de quiebra del broker, tus valores siguen siendo tuyos y no forman parte de la masa concursal.\n\nLos brokers cobran (o no) por la custodia. Trade Republic: 0€ de custodia. DEGIRO: 0€ en la cuenta básica, comisión menor en la Custody account. MyInvestor: 0€ tanto en ETFs como en fondos. Los bancos tradicionales en España cobran a menudo comisiones de custodia del 0,2-0,5% anual, lo que es competitivamente inaceptable en 2026.\n\nVerifica siempre que el broker ofrece custodia segregada de tus valores. En caso de duda, mira si el broker está adherido a un fondo de garantía de inversiones (el español cubre 100.000€, el holandés 20.000€, el alemán 100.000€).',
+    example:
+      'Si tienes 50.000€ en VWCE en Trade Republic, esos VWCE son tu propiedad legal, custodiados por Citibank (custodio de Trade Republic). Si Trade Republic quebrara, tus VWCE seguirían siendo tuyos y los podrías transferir a otro broker.',
+  },
+  {
+    slug: 'comision-gestion',
+    term: 'Comisión de gestión',
+    category: 'plataformas',
+    shortDefinition:
+      'La comisión de gestión es la tarifa anual que cobra la gestora de un fondo de inversión o ETF por administrar la cartera. Es el componente principal del TER.',
+    longDefinition:
+      'La comisión de gestión es el ingreso principal de las gestoras (Vanguard, BlackRock, Amundi, Fidelity) y la principal diferencia entre fondos baratos y caros. Se aplica como porcentaje anual sobre el patrimonio del fondo y se descuenta automáticamente del valor liquidativo, día a día.\n\nPara fondos de gestión activa, la comisión de gestión típica en España es 1,2-2% anual. Para fondos indexados, varía entre 0,05% (Amundi Prime Global) y 0,30% (algunos fondos especializados). La diferencia acumulada durante 30 años puede transformar tu cartera final entre el doble y la mitad.\n\nAdemás de la comisión de gestión, los fondos pueden tener: **comisión de éxito** (porcentaje sobre la rentabilidad obtenida), **comisión de suscripción** (al entrar), **comisión de reembolso** (al salir), **comisión de custodia** (al banco depositario). El conjunto se refleja en el TER.',
+    example:
+      'Un fondo activo del banco con comisión de gestión 1,75% + comisión éxito 9% sobre beneficio anual. Frente a Amundi Prime Global con comisión gestión 0,05% sin comisión éxito. Sobre 100.000€ a 30 años, la diferencia acumulada supera los 200.000€.',
+  },
+  // ---------------------------------------------------------------------------
+  // Conceptos adicionales
+  // ---------------------------------------------------------------------------
+  {
+    slug: 'value-vs-growth',
+    term: 'Value vs Growth',
+    category: 'conceptos',
+    shortDefinition:
+      'Value y growth son dos estilos de inversión opuestos. Value busca empresas baratas según fundamentales (P/E, P/B bajos). Growth busca empresas con alto crecimiento aunque coticen caras.',
+    longDefinition:
+      'Value y growth son los dos estilos de inversión más debatidos en la teoría financiera moderna.\n\n**Value investing** (Benjamin Graham, Warren Buffett): seleccionar empresas que cotizan por debajo de su valor intrínseco. Indicadores típicos: P/E bajo, P/B bajo, alto dividendo, balance sólido. La premisa: el mercado a veces sobrerreacciona a la baja con buenas empresas que están temporalmente baratas.\n\n**Growth investing**: seleccionar empresas con altos crecimientos esperados de beneficios o ventas, aunque coticen con valoraciones altas. Indicadores: P/E alto, crecimiento de ingresos >15%, márgenes en expansión. La premisa: el crecimiento se traduce en beneficios futuros que justifican pagar caro hoy.\n\nLa literatura académica ha documentado una "prima value" históricamente — value supera a growth a largo plazo. Pero en periodos largos (2010-2020) growth ha dominado. Para Bogleheads, ambos estilos son apuestas activas; un ETF de mercado total (VWCE) los combina automáticamente según capitalización.',
+    example:
+      'Apple es típicamente growth (P/E ~30, crecimiento alto). Berkshire Hathaway es value (P/E ~10, dividendos modestos pero balance sólido). ZPRV (S&P 600 US Small Cap Value) es un ETF que combina los factores small + value.',
+  },
+  {
+    slug: 'yield-to-maturity',
+    term: 'Yield to Maturity (YTM)',
+    category: 'conceptos',
+    shortDefinition:
+      'YTM es la rentabilidad anualizada que obtendrá un inversor si compra un bono y lo mantiene hasta vencimiento. Es la métrica principal para comparar rentabilidades de bonos.',
+    longDefinition:
+      'El Yield to Maturity es la tasa de retorno interna (TIR) de un bono asumiendo que el inversor lo mantiene hasta vencimiento y reinvierte los cupones a la misma tasa. Tiene en cuenta:\n- Precio actual del bono (puede ser superior o inferior al nominal)\n- Cupones periódicos\n- Devolución del principal al vencimiento\n\nEs la métrica más útil para comparar bonos diferentes. Un bono cotizando a 95€ con cupón del 3% y vencimiento a 10 años tiene un YTM superior al 3% porque al vencimiento recibes 100€ (ganancia de capital). Inversamente, un bono cotizando a 105€ con cupón del 3% tiene YTM inferior al 3%.\n\nPara ETFs de renta fija, el YTM ponderado de la cartera es un buen indicador de la rentabilidad esperada del fondo en los próximos años, asumiendo que se mantienen las posiciones hasta vencimiento.',
+    example:
+      'Un ETF de bonos eurozona con YTM del 3,2% indica que, mantenido durante la duración media del fondo, debería rentar aproximadamente 3,2% anual antes de TER. Es una proyección razonable pero no garantizada — los cambios de tipos pueden afectar.',
+  },
 ]
 
 /** Devuelve un término por su slug, o undefined si no existe */
