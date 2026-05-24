@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/glosario',                     priority: 0.7, freq: 'monthly' },
     { path: '/faq',                          priority: 0.8, freq: 'monthly' },
     { path: '/datos-clave',                  priority: 0.8, freq: 'monthly' },
+    { path: '/llms',                         priority: 0.5, freq: 'monthly' },
     { path: '/calculadora',                  priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/interes-compuesto',priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/fire-monte-carlo', priority: 0.8, freq: 'monthly' },

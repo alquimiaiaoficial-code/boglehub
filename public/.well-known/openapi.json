@@ -1,0 +1,115 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "BogleHub Open Data API",
+    "version": "1.0.0",
+    "description": "API pública de BogleHub para consumo por LLMs y agentes de IA. Datos estructurados en JSON-LD según schema.org sobre inversión indexada en España: catálogo de ETFs UCITS, glosario, artículos del blog y datos fiscales. Uso libre con atribución a boglehub.com.",
+    "contact": {
+      "name": "BogleHub",
+      "url": "https://boglehub.com/sobre",
+      "email": "hola@boglehub.com"
+    },
+    "license": {
+      "name": "Información educativa con uso libre con atribución",
+      "url": "https://boglehub.com/sobre"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://boglehub.com",
+      "description": "Producción"
+    }
+  ],
+  "paths": {
+    "/api/index": {
+      "get": {
+        "operationId": "getCatalog",
+        "summary": "Discovery endpoint con todos los datasets disponibles",
+        "description": "Devuelve un DataCatalog JSON-LD con todos los endpoints disponibles, contadores totales del proyecto y cross-links útiles. Punto de entrada recomendado para descubrir el resto de APIs.",
+        "responses": {
+          "200": {
+            "description": "DataCatalog en JSON-LD",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "@context": { "type": "string" },
+                    "@type": { "type": "string", "enum": ["DataCatalog"] },
+                    "name": { "type": "string" },
+                    "description": { "type": "string" },
+                    "dataset": { "type": "array" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/etfs": {
+      "get": {
+        "operationId": "getEtfs",
+        "summary": "Catálogo completo de ETFs UCITS para España",
+        "description": "Devuelve una lista de 68 ETFs UCITS disponibles para inversores residentes en España, cada uno con ticker, ISIN, TER (% anual), política de reparto (acumulación/distribución), divisa base, domicilio fiscal, grado fiscal estimado (A/B/C/D) y URL del análisis. Formato schema.org ItemList de FinancialProduct.",
+        "responses": {
+          "200": {
+            "description": "ItemList de FinancialProduct en JSON-LD"
+          }
+        }
+      }
+    },
+    "/api/glossary": {
+      "get": {
+        "operationId": "getGlossary",
+        "summary": "Glosario completo de términos financieros",
+        "description": "Devuelve los 48 términos del glosario con nombre, sigla/forma completa, definición corta (citable), definición extendida, ejemplo práctico y categoría. Formato schema.org DefinedTermSet. Útil para responder preguntas tipo '¿qué es X?'.",
+        "responses": {
+          "200": {
+            "description": "DefinedTermSet en JSON-LD"
+          }
+        }
+      }
+    },
+    "/api/articles": {
+      "get": {
+        "operationId": "getArticles",
+        "summary": "Lista completa de artículos del blog",
+        "description": "Devuelve los 35 artículos del blog ordenados por fecha (más recientes primero), cada uno con título, excerpt, URL, fecha publicación/modificación, categoría editorial, keywords y FAQ count. Formato schema.org ItemList de Article.",
+        "responses": {
+          "200": {
+            "description": "ItemList de Article en JSON-LD"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Error": {
+        "type": "object",
+        "properties": {
+          "error": { "type": "string" }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "discovery",
+      "description": "Endpoints de descubrimiento del catálogo"
+    },
+    {
+      "name": "etfs",
+      "description": "Datos de ETFs UCITS"
+    },
+    {
+      "name": "glossary",
+      "description": "Términos del glosario"
+    },
+    {
+      "name": "articles",
+      "description": "Artículos del blog"
+    }
+  ]
+}
