@@ -49,9 +49,44 @@ export const ETF_PAIRS: [string, string][] = [
   ['CSPX', 'EQQQ'],
   // Small caps
   ['WSML', 'IUSN'],
+  ['WSML', 'ZPRV'],
+  ['IUSN', 'ZPRS'],
   // Oro
   ['SGLN', 'IGLN'],
   ['SGLN', '4GLD'],
+  ['IGLN', '4GLD'],
+  // Nasdaq 100
+  ['EQQQ', 'SXRV'],
+  ['EQQQ', 'CNDX'],
+  ['SXRV', 'CNDX'],
+  ['EQQQ', 'CSPX'],   // Nasdaq vs S&P 500
+  ['EQQQ', 'IWDA'],   // Nasdaq vs MSCI World
+  // Factor: calidad y momentum
+  ['IWQU', 'IWMO'],
+  ['IWQU', 'IWDA'],   // quality vs MSCI World plain
+  ['IWMO', 'IWDA'],   // momentum vs MSCI World plain
+  ['XDEQ', 'IWQU'],
+  ['XDWL', 'IWDA'],
+  // Acumulación vs distribución (mismo fondo, distinta política)
+  ['VWCE', 'VHYL'],   // acumulación global vs dividendos
+  ['CSPX', 'VUSA'],   // S&P 500 acc vs dist
+  ['IWDA', 'VWRL'],   // MSCI World acc vs All-World dist
+  // EE.UU. value y growth
+  ['ZPRV', 'CSPX'],   // small value vs S&P 500
+  // Dividendos
+  ['VHYL', 'FGEQ'],   // dividendos altos vs calidad
+  ['TDIV', 'ISPA'],   // dividendos lideres vs aristócratas
+  // Materias primas más allá de oro
+  ['SGLN', 'EXSG'],   // oro vs commodities amplias
+  // Renta fija extra
+  ['VGOV', 'VGEA'],   // bonos gov UK vs eurozona
+  ['IGLH', 'AGGH'],   // global hedged variantes
+  ['EUNH', 'AGGH'],   // high yield hedged vs agregado
+  // Robotic / temáticos
+  ['RBOT', 'IQQH'],   // robotica vs hidrogeno (temáticos)
+  ['EQQQ', 'RBOT'],   // Nasdaq tradicional vs robotica tematica
+  // Japón
+  ['SJPA', 'CPXJ'],   // Japón core vs Pacífico ex-Japón
 ]
 
 /** Convierte un par a slug URL */

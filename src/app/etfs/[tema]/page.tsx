@@ -33,6 +33,11 @@ const ALL_WORLD_FILTER = (etf: EtfMetadata) =>
   (etf.regionAllocation.US ?? 0) < 0.80 &&
   (etf.regionAllocation.EUROPE ?? 0) > 0.05
 
+const NASDAQ_100_TICKERS = new Set(['EQQQ', 'SXRV', 'CNDX'])
+const SMALL_CAPS_TICKERS = new Set(['WSML', 'IUSN', 'ZPRS', 'ZPRV'])
+const GOLD_TICKERS = new Set(['SGLN', 'IGLN', '4GLD'])
+const QUALITY_MOMENTUM_TICKERS = new Set(['IWQU', 'IWMO', 'XDEQ', 'XDWL'])
+
 const THEME_FILTERS: Record<string, (etf: EtfMetadata) => boolean> = {
   'msci-world': MSCI_WORLD_FILTER,
   'sp500': (etf) => SP500_TICKERS.has(etf.ticker),
@@ -46,6 +51,10 @@ const THEME_FILTERS: Record<string, (etf: EtfMetadata) => boolean> = {
     etf.assetClass === 'EQUITY' && (etf.regionAllocation.EUROPE ?? 0) >= 0.5,
   'renta-fija': (etf) => etf.assetClass === 'BOND',
   'materias-primas': (etf) => etf.assetClass === 'COMMODITY',
+  'nasdaq-100': (etf) => NASDAQ_100_TICKERS.has(etf.ticker),
+  'small-caps': (etf) => SMALL_CAPS_TICKERS.has(etf.ticker),
+  'oro': (etf) => GOLD_TICKERS.has(etf.ticker),
+  'factor-calidad-momentum': (etf) => QUALITY_MOMENTUM_TICKERS.has(etf.ticker),
 }
 
 // ---------------------------------------------------------------------------

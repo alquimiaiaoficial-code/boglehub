@@ -259,6 +259,124 @@ export const ETF_THEMES: EtfTheme[] = [
     note:
       'Los productos listados son ETCs (Exchange Traded Commodities) respaldados físicamente, no ETFs tradicionales. Su tratamiento fiscal en España es equivalente al de un ETF.',
   },
+  {
+    slug: 'nasdaq-100',
+    h1: 'Los mejores ETFs Nasdaq 100 UCITS disponibles en España (2026)',
+    metaTitle: 'Mejores ETFs Nasdaq 100 para España 2026: EQQQ, SXRV, CNDX | BogleHub',
+    metaDescription:
+      'Comparativa de ETFs Nasdaq 100 UCITS para inversores españoles: EQQQ, SXRV, CNDX. TER, fiscalidad, acumulación vs distribución y por qué el Nasdaq concentra en tecnología.',
+    intro:
+      'El Nasdaq 100 agrupa las 100 mayores empresas no financieras cotizadas en el Nasdaq estadounidense, con un peso muy elevado del sector tecnológico (~50%). Es el índice más popular entre inversores particulares que quieren concentrar exposición en gigantes como Apple, Microsoft, Nvidia, Google, Meta o Amazon. Los ETFs UCITS Nasdaq 100 disponibles en España son una alternativa al S&P 500 con mayor concentración tecnológica, mayor volatilidad histórica y mayor rentabilidad esperada — y también mayor riesgo de concentración sectorial.',
+    listH2: 'ETFs Nasdaq 100 disponibles en España',
+    faq: [
+      {
+        q: '¿Es buena idea invertir en un ETF Nasdaq 100 en lugar del S&P 500?',
+        a: 'Depende de tu apetito por concentración sectorial. El Nasdaq 100 tiene ~50% en tecnología frente al ~30% del S&P 500. Esto ha dado mejores rentabilidades en la última década, pero con mayor volatilidad y caídas más profundas en correcciones tecnológicas (caída del 35% en 2022). Para una cartera Boglehead diversificada, el Nasdaq 100 puede ser un complemento (10-20% del total) pero raramente debería ser el núcleo.',
+      },
+      {
+        q: '¿Cuál es la diferencia entre EQQQ, SXRV y CNDX?',
+        a: 'Los tres son ETFs Nasdaq 100 UCITS, todos domiciliados en Irlanda. EQQQ (Invesco, TER 0,30%) es el más popular y cotiza en múltiples bolsas europeas. SXRV (iShares NASDAQ 100, TER 0,33%) es la versión de BlackRock. CNDX (iShares, TER 0,33%) es funcionalmente equivalente a SXRV pero cotiza en LSE. Para el inversor español, EQQQ suele ser la opción más eficiente por su menor TER y mayor liquidez en bolsas europeas.',
+      },
+      {
+        q: '¿Qué riesgos tiene concentrar la cartera en Nasdaq 100?',
+        a: 'Tres riesgos principales: (1) concentración sectorial — si la tecnología sufre una corrección importante, el Nasdaq cae más que un índice diversificado; (2) concentración geográfica — 100% en EE.UU., sin exposición a Europa o emergentes; (3) concentración en pocas empresas — las 10 mayores empresas suelen pesar más del 50% del índice. Para un inversor de largo plazo, estos riesgos son tolerables si forman parte de una cartera más amplia.',
+      },
+      {
+        q: '¿El Nasdaq 100 es lo mismo que el Nasdaq Composite?',
+        a: 'No. El Nasdaq Composite incluye más de 3.000 empresas cotizadas en el Nasdaq (también pequeñas). El Nasdaq 100 selecciona las 100 mayores no financieras. La mayoría de ETFs UCITS replican el Nasdaq 100, que es el índice más usado como referencia. Los ETFs del Nasdaq Composite son poco comunes en formato UCITS para inversores europeos.',
+      },
+    ],
+    note:
+      'El Nasdaq 100 excluye empresas del sector financiero. Para exposición diversificada al mercado americano completo, considera ETFs S&P 500 (que sí incluyen bancos y financieras).',
+  },
+  {
+    slug: 'small-caps',
+    h1: 'ETFs de pequeñas empresas (small caps) UCITS para España (2026)',
+    metaTitle: 'Mejores ETFs small caps UCITS para España 2026 | BogleHub',
+    metaDescription:
+      'Comparativa de ETFs small caps disponibles en España: WSML, IUSN, ZPRS, ZPRV. Por qué las pequeñas empresas pueden añadir rentabilidad y diversificación a tu cartera Boglehead.',
+    intro:
+      'Los ETFs de pequeñas empresas (small caps) replican índices de compañías de menor capitalización bursátil, históricamente asociados a una prima de rentabilidad sobre las grandes empresas (el llamado size factor). En una cartera Boglehead, un peso del 5-15% en small caps puede aportar diversificación y rentabilidad esperada algo superior, con mayor volatilidad. Los ETFs UCITS disponibles en España cubren small caps globales (WSML, IUSN) y específicas de EE.UU. (ZPRV).',
+    listH2: 'ETFs small caps disponibles en España',
+    faq: [
+      {
+        q: '¿Las pequeñas empresas dan más rentabilidad que las grandes?',
+        a: 'Históricamente sí, según los estudios de Fama y French (1992): las small caps han ofrecido una prima de aproximadamente 2-3% anual sobre las grandes empresas en periodos largos. Sin embargo, esta prima no es constante: hay décadas enteras donde las grandes empresas superan a las pequeñas (como 2010-2020). La prima es estadísticamente significativa a muy largo plazo (30+ años) pero puede no aparecer en horizontes más cortos.',
+      },
+      {
+        q: '¿Cuánto peso debo dar a small caps en mi cartera?',
+        a: 'En carteras Boglehead que incluyen factor size, lo habitual es entre el 5% y el 15% del total de renta variable. Más allá del 15% se considera una apuesta activa significativa. Si usas un ETF MSCI World (que solo incluye grandes y medianas), añadir un 10% en small caps globales (WSML) completa la exposición a todas las capitalizaciones. ETFs como MSCI ACWI IMI ya incluyen small caps en su proporción natural.',
+      },
+      {
+        q: '¿Qué diferencia hay entre WSML e IUSN?',
+        a: 'WSML (SPDR MSCI World Small Cap UCITS ETF) y IUSN (iShares MSCI World Small Cap UCITS ETF) replican ambos el índice MSCI World Small Cap. WSML tiene TER de 0,45% y IUSN de 0,35%. Ambos son de acumulación, domiciliados en Irlanda y cotizan en bolsas europeas. IUSN es ligeramente más barato; ambos cumplen la misma función en la cartera.',
+      },
+      {
+        q: '¿ZPRV es lo mismo que las small caps globales?',
+        a: 'No. ZPRV (SPDR S&P 600 US Small Cap Value UCITS ETF) se centra exclusivamente en small caps americanas con sesgo "value" (empresas baratas según métricas fundamentales). Es una apuesta más concentrada y específica: doble factor (size + value) en un solo mercado. Para diversificación global de small caps, WSML o IUSN son más adecuados. ZPRV tiene sentido como complemento factorial para inversores más sofisticados.',
+      },
+    ],
+  },
+  {
+    slug: 'oro',
+    h1: 'Los mejores ETC de oro físico UCITS para inversores en España (2026)',
+    metaTitle: 'Mejores ETC de oro físico para España 2026: SGLN, IGLN, 4GLD | BogleHub',
+    metaDescription:
+      'Comparativa de ETC de oro físico UCITS para inversores españoles: SGLN, IGLN, 4GLD. TER, custodia, fiscalidad y cuándo tiene sentido añadir oro a tu cartera indexada.',
+    intro:
+      'Los ETC (Exchange Traded Commodities) de oro físico están respaldados por lingotes de oro custodiados en bóvedas seguras (principalmente Londres y Zúrich). Replican el precio del oro spot con baja fricción y son la forma más eficiente de tener exposición al oro sin comprar lingotes físicos. Para un inversor en España, el oro puede actuar como cobertura frente a la inflación, diversificador descorrelacionado de acciones y bonos, y componente clave de carteras como la cartera permanente de Harry Browne. Su rentabilidad histórica a largo plazo ha sido inferior a la renta variable pero con comportamiento diferenciador en crisis.',
+    listH2: 'ETC de oro físico disponibles en España',
+    faq: [
+      {
+        q: '¿Es seguro un ETC de oro físico?',
+        a: 'Sí, en términos operativos. Los principales ETC (SGLN de iShares, IGLN de iShares, 4GLD de Xtrackers) están respaldados por oro físico custodiado en bóvedas auditadas regularmente. El oro está segregado del emisor y permanece como propiedad del fondo. El riesgo principal no es operativo sino de mercado: el precio del oro es volátil (puede caer 20-30% en un año) y no genera ingresos como acciones o bonos.',
+      },
+      {
+        q: '¿Cómo tributa la venta de un ETC de oro en España?',
+        a: 'Igual que cualquier ETF: la ganancia o pérdida al vender se declara como ganancia o pérdida patrimonial en el IRPF, en la base del ahorro con tipos del 19% al 28% según el importe. No hay tratamiento fiscal especial por ser materias primas. Las plusvalías pueden compensarse con minusvalías de otros activos del mismo año.',
+      },
+      {
+        q: '¿Cuánto oro debería tener en mi cartera?',
+        a: 'No hay una respuesta única. La filosofía Boglehead pura no incluye oro. La cartera permanente de Harry Browne sugiere 25%. Para una cartera indexada estándar, los inversores que añaden oro suelen ubicarlo en el 5-10% del total. Más del 15% supone una apuesta concentrada en un activo que no genera rendimientos internos.',
+      },
+      {
+        q: '¿Cuál es la diferencia entre SGLN, IGLN y 4GLD?',
+        a: 'SGLN (iShares Physical Gold ETC, TER 0,12%) e IGLN (iShares Physical Gold ETC, TER 0,12%) son productos muy similares de iShares, con respaldo físico en JP Morgan London. 4GLD (Xtrackers Physical Gold ETC EUR, TER 0,15%) tiene la particularidad de cotizar en euros y estar pensado específicamente para inversores europeos. La elección entre ellos depende más de la disponibilidad y comisión en tu broker que de diferencias estructurales relevantes.',
+      },
+    ],
+    note:
+      'Los ETC de oro están respaldados al 100% por oro físico custodiado en bóvedas (no son derivados ni futuros). La rentabilidad replica el precio spot del oro menos el TER anual.',
+  },
+  {
+    slug: 'factor-calidad-momentum',
+    h1: 'ETFs factor calidad y momentum UCITS para España (2026)',
+    metaTitle: 'Mejores ETFs factor calidad y momentum para España 2026 | BogleHub',
+    metaDescription:
+      'Comparativa de ETFs de factor calidad y momentum disponibles en España: IWQU, IWMO, XDEQ, XDWL. Cómo funcionan los factor ETFs y cuándo añadirlos a una cartera Boglehead.',
+    intro:
+      'Los ETFs de factor (smart beta) seleccionan empresas según métricas específicas en lugar de capitalización bursátil. Los factores más estudiados académicamente son: calidad (empresas con balance sólido), momentum (empresas en tendencia alcista), valor (empresas baratas según ratios) y baja volatilidad. Para inversores Boglehead más sofisticados, una pequeña asignación (5-15%) a factor ETFs puede añadir diversificación de fuentes de rentabilidad sin abandonar la filosofía indexada. Esta sección cubre ETFs de calidad y momentum disponibles en España.',
+    listH2: 'ETFs factor calidad y momentum disponibles en España',
+    faq: [
+      {
+        q: '¿Qué es exactamente el factor calidad?',
+        a: 'El factor calidad selecciona empresas con balance financiero sólido: alta rentabilidad sobre fondos propios (ROE), bajo nivel de deuda, crecimiento estable de beneficios. Empresas como Microsoft, Apple, Visa o Mastercard suelen aparecer en índices de calidad. La premisa: empresas de calidad son más resilientes en recesiones y han ofrecido rentabilidad ajustada al riesgo superior al mercado en periodos largos. IWQU (iShares Edge MSCI World Quality Factor UCITS ETF, TER 0,30%) es el más popular en formato UCITS.',
+      },
+      {
+        q: '¿Qué es el factor momentum y cómo funciona?',
+        a: 'El factor momentum selecciona empresas que han subido más en los últimos 6-12 meses, bajo la premisa de que las tendencias del mercado tienden a continuar a corto plazo. Es un factor con base académica sólida (Jegadeesh y Titman, 1993) pero con alta rotación interna del índice (las empresas entran y salen frecuentemente). IWMO (iShares Edge MSCI World Momentum Factor, TER 0,30%) y XDEQ son las opciones principales en España.',
+      },
+      {
+        q: '¿Merece la pena invertir en factor ETFs frente a un MSCI World normal?',
+        a: 'Es un debate abierto. Los factores han ofrecido prima histórica a largo plazo, pero pueden tener periodos largos (5-10 años) de bajo rendimiento frente al mercado. Para un inversor disciplinado que va a mantener la apuesta factorial durante décadas sin desviarse, pueden aportar valor. Para quien va a abandonar el ETF cuando no rinda, es mejor un ETF de capitalización tradicional (MSCI World). El sesgo de comportamiento es el mayor riesgo del factor investing.',
+      },
+      {
+        q: '¿Puedo combinar varios factor ETFs en mi cartera?',
+        a: 'Sí, y muchas estrategias avanzadas combinan calidad + momentum + valor + baja volatilidad en proporciones iguales. La idea: cada factor tiene periodos buenos y malos, pero su combinación tiene rentabilidad ajustada al riesgo superior. Sin embargo, el TER ponderado aumenta y la complejidad de gestión también. Para la mayoría de inversores, un único ETF MSCI World es más sencillo y suficiente.',
+      },
+    ],
+    note:
+      'Los factor ETFs requieren disciplina psicológica: pueden tener periodos largos de bajo rendimiento frente a ETFs de capitalización clásica. No abandones la estrategia en mitad del ciclo si has elegido factor investing.',
+  },
 ]
 
 /** Devuelve un tema por su slug, o undefined si no existe */
