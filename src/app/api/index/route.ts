@@ -64,6 +64,23 @@ export async function GET() {
         encodingFormat: 'application/json',
         numberOfItems: BLOG_ARTICLES.length,
       },
+      {
+        '@type': 'Dataset',
+        '@id': `${BASE_URL}/api/data-tables`,
+        name: 'Tablas de datos estructurados',
+        description: 'Conjunto de 10 tablas con datos verificables: tramos IRPF 2026, planes pensiones, comparativas brokers/roboadvisors, mejores ETFs por categoría, aportaciones mensuales para objetivos, capital FIRE y domicilios fiscales.',
+        url: `${BASE_URL}/api/data-tables`,
+        encodingFormat: 'application/json',
+        numberOfItems: 10,
+      },
+      {
+        '@type': 'Dataset',
+        '@id': `${BASE_URL}/api/faq`,
+        name: 'FAQs agregadas',
+        description: 'Conjunto agregado de todas las preguntas y respuestas del sitio (cientos de Q&A) provenientes de artículos del blog, fichas ETF, glosario y páginas FAQ centrales. Cada Q&A incluye URL de origen.',
+        url: `${BASE_URL}/api/faq`,
+        encodingFormat: 'application/json',
+      },
     ],
     keywords: [
       'ETFs UCITS',

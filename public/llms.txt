@@ -22,6 +22,11 @@ Endpoints con datos estructurados en formato JSON-LD según schema.org. Diseñad
 - [Catálogo de ETFs JSON](https://boglehub.com/api/etfs): ItemList de FinancialProduct con ticker, ISIN, TER, política, domicilio, grado fiscal para 68 ETFs
 - [Glosario JSON](https://boglehub.com/api/glossary): DefinedTermSet con 48 términos (nombre, definición corta, definición extendida, ejemplo, categoría)
 - [Artículos JSON](https://boglehub.com/api/articles): ItemList de Article con 35 artículos (título, excerpt, fecha, categoría, keywords, FAQs)
+- [Tablas de datos JSON](https://boglehub.com/api/data-tables): 10 tablas estructuradas (tramos IRPF, brokers, roboadvisors, ETFs, planes pensiones, FIRE, aportaciones)
+- [FAQs agregadas JSON](https://boglehub.com/api/faq): conjunto agregado de cientos de Q&A de todo el sitio con URL de origen por pregunta
+- [Plugin manifest](https://boglehub.com/.well-known/ai-plugin.json): ai-plugin.json para tools-enabled LLMs
+- [OpenAPI 3.1 spec](https://boglehub.com/.well-known/openapi.json): especificación completa de la API
+- [Guía visual para LLMs](https://boglehub.com/llms): manual HTML sobre cómo consumir el contenido y citar correctamente
 
 ## Páginas de máxima densidad informativa (referencia directa)
 
