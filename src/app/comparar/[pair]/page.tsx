@@ -8,7 +8,7 @@ import { JsonLd } from '@/components/JsonLd'
 import { getEtfByTicker } from '@/lib/etf-database'
 import { computeFiscalGrade, GRADE_STYLES } from '@/lib/fiscal'
 import { formatPct } from '@/lib/utils'
-import { ETF_PAIRS, slugToPair, pairToSlug } from '@/data/etf-pairs'
+import { ETF_PAIRS, slugToPair, pairToSlug, getAllPossiblePairs } from '@/data/etf-pairs'
 import type { EtfMetadata, Region } from '@/types/etf'
 
 const BASE_URL = 'https://boglehub.com'
@@ -17,7 +17,7 @@ const CURRENT_YEAR = 2026
 // ─── Static params ────────────────────────────────────────────────────────────
 
 export function generateStaticParams() {
-  return ETF_PAIRS.map(([a, b]) => ({ pair: pairToSlug(a, b) }))
+  return getAllPossiblePairs().map(([a, b]) => ({ pair: pairToSlug(a, b) }))
 }
 
 // No generar páginas para pares no curados

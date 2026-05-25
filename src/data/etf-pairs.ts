@@ -102,3 +102,48 @@ export function slugToPair(slug: string): [string, string] | null {
   if (!a || !b || a === b) return null
   return [a, b]
 }
+
+/**
+ * Tickers populares para generación masiva de pares C(20, 2) = 190 combinaciones.
+ * Mantenemos ETF_PAIRS arriba para las comparativas destacadas con orden curado.
+ * Esta función devuelve TODOS los pares posibles (incluidos los de ETF_PAIRS)
+ * sin duplicados.
+ */
+const COMPREHENSIVE_TICKERS: string[] = [
+  'VWCE', 'IWDA', 'CSPX', 'SWRD', 'EIMI', 'AGGH',
+  'VUAA', 'EQQQ', 'SGLN', 'VHYL', 'ISAC', 'XDWD',
+  'VEUR', 'VFEM', 'SXR8', 'VWRL', 'MWRD', 'CNDX',
+  'IUSA', 'EUNA',
+]
+
+/**
+ * Devuelve todos los pares únicos posibles entre los tickers comprehensivos
+ * + los pares curados originales. Sin duplicados (orden de tickers normalizado).
+ */
+export function getAllPossiblePairs(): [string, string][] {
+  const seen = new Set<string>()
+  const result: [string, string][] = []
+
+  // Helper para añadir un par sin duplicar (canonicaliza orden)
+  const addPair = (a: string, b: string) => {
+    if (a === b) return
+    const key = [a, b].sort().join('|')
+    if (seen.has(key)) return
+    seen.add(key)
+    result.push([a, b])
+  }
+
+  // Primero los curados (mantienen orden preferido)
+  for (const [a, b] of ETF_PAIRS) {
+    addPair(a, b)
+  }
+
+  // Después los generados (C(20,2) combinaciones)
+  for (let i = 0; i < COMPREHENSIVE_TICKERS.length; i++) {
+    for (let j = i + 1; j < COMPREHENSIVE_TICKERS.length; j++) {
+      addPair(COMPREHENSIVE_TICKERS[i], COMPREHENSIVE_TICKERS[j])
+    }
+  }
+
+  return result
+}

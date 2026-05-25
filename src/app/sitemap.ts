@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 import { getAllEtfs } from '@/lib/etf-database'
 import { BLOG_ARTICLES } from '@/data/blog-articles'
-import { ETF_PAIRS, pairToSlug } from '@/data/etf-pairs'
+import { ETF_PAIRS, pairToSlug, getAllPossiblePairs } from '@/data/etf-pairs'
 import { ETF_THEMES } from '@/data/etf-themes'
 import { GLOSSARY_TERMS } from '@/data/glossary'
 import { BROKERS } from '@/data/brokers'
@@ -83,11 +83,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  const pairRoutes = ETF_PAIRS.map(([a, b]) => ({
+  const pairRoutes = getAllPossiblePairs().map(([a, b]) => ({
     url: `${BASE_URL}/comparar/${pairToSlug(a, b)}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
-    priority: 0.75,
+    priority: 0.7,
   }))
 
   // ETF category/theme pages (/etfs/[tema]) — high-value keyword landing pages
