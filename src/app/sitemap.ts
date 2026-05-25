@@ -19,6 +19,7 @@ import { OBJECTIVES } from '@/data/objectives'
 import { ETF_ASPECTS } from '@/data/etf-aspects'
 import { SECTORS } from '@/data/sectors'
 import { COUNTRIES } from '@/data/countries'
+import { AGES } from '@/data/ages'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -44,6 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/invertir',                     priority: 0.8, freq: 'monthly' },
     { path: '/sector',                       priority: 0.7, freq: 'monthly' },
     { path: '/pais',                         priority: 0.7, freq: 'monthly' },
+    { path: '/plan',                         priority: 0.8, freq: 'monthly' },
     { path: '/calculadora',                  priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/interes-compuesto',priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/fire-monte-carlo', priority: 0.8, freq: 'monthly' },
@@ -206,6 +208,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
+  // Programmatic: /plan/[edad]/[objetivo] — 8 ages × 10 objectives = 80 pages
+  const planRoutes: typeof staticRoutes = []
+  for (const age of AGES) {
+    for (const obj of OBJECTIVES) {
+      planRoutes.push({
+        url: `${BASE_URL}/plan/${age.slug}/${obj.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+      })
+    }
+  }
+
   return [
     ...staticRoutes,
     ...etfRoutes,
@@ -225,5 +240,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...analizaRoutes,
     ...sectorRoutes,
     ...countryRoutes,
+    ...planRoutes,
   ]
 }
