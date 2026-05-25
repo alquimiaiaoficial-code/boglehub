@@ -16,6 +16,9 @@ import { INVESTOR_PROFILES } from '@/data/investor-profiles'
 import { MONTHLY_AMOUNTS } from '@/data/monthly-amounts'
 import { BROKER_PAIRS, brokerPairToSlug } from '@/data/broker-pairs'
 import { OBJECTIVES } from '@/data/objectives'
+import { ETF_ASPECTS } from '@/data/etf-aspects'
+import { SECTORS } from '@/data/sectors'
+import { COUNTRIES } from '@/data/countries'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -39,6 +42,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/gestora',                      priority: 0.7, freq: 'monthly' },
     { path: '/perfil',                       priority: 0.8, freq: 'monthly' },
     { path: '/invertir',                     priority: 0.8, freq: 'monthly' },
+    { path: '/sector',                       priority: 0.7, freq: 'monthly' },
+    { path: '/pais',                         priority: 0.7, freq: 'monthly' },
     { path: '/calculadora',                  priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/interes-compuesto',priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/fire-monte-carlo', priority: 0.8, freq: 'monthly' },
@@ -172,6 +177,35 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
+  // Programmatic: /analiza/[ticker]/[aspecto] (20 ETFs × 4 aspects = 80 pages)
+  const analizaRoutes: typeof staticRoutes = []
+  for (const ticker of POPULAR_ETF_TICKERS) {
+    for (const aspect of ETF_ASPECTS) {
+      analizaRoutes.push({
+        url: `${BASE_URL}/analiza/${ticker.toLowerCase()}/${aspect.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.65,
+      })
+    }
+  }
+
+  // Sector individual pages
+  const sectorRoutes = SECTORS.map((s) => ({
+    url: `${BASE_URL}/sector/${s.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.65,
+  }))
+
+  // Country individual pages
+  const countryRoutes = COUNTRIES.map((c) => ({
+    url: `${BASE_URL}/pais/${c.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }))
+
   return [
     ...staticRoutes,
     ...etfRoutes,
@@ -188,5 +222,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...vsBrokerRoutes,
     ...objectiveRoutes,
     ...comprarRoutes,
+    ...analizaRoutes,
+    ...sectorRoutes,
+    ...countryRoutes,
   ]
 }
