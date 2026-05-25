@@ -241,6 +241,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }))
 
+  // /ahorrar/[cantidad]/para/[objetivo] — 10 amounts × 10 objectives = 100 pages
+  const ahorrarRoutes: typeof staticRoutes = []
+  for (const m of MONTHLY_AMOUNTS) {
+    for (const o of OBJECTIVES) {
+      ahorrarRoutes.push({
+        url: `${BASE_URL}/ahorrar/${m.slug}/para/${o.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+      })
+    }
+  }
+
   return [
     ...staticRoutes,
     ...etfRoutes,
@@ -263,5 +276,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...planRoutes,
     ...simulacionRoutes,
     ...carteraRoutes,
+    ...ahorrarRoutes,
   ]
 }
