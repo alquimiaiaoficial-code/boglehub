@@ -21,6 +21,7 @@ import { SECTORS } from '@/data/sectors'
 import { COUNTRIES } from '@/data/countries'
 import { AGES } from '@/data/ages'
 import { getAllHistoricalCombos } from '@/data/historical-returns'
+import { MODEL_PORTFOLIOS } from '@/data/model-portfolios'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -48,6 +49,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/pais',                         priority: 0.7, freq: 'monthly' },
     { path: '/plan',                         priority: 0.8, freq: 'monthly' },
     { path: '/simulacion',                   priority: 0.7, freq: 'monthly' },
+    { path: '/cartera',                      priority: 0.8, freq: 'monthly' },
     { path: '/calculadora',                  priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/interes-compuesto',priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/fire-monte-carlo', priority: 0.8, freq: 'monthly' },
@@ -231,6 +233,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }))
 
+  // Model portfolio pages
+  const carteraRoutes = MODEL_PORTFOLIOS.map((p) => ({
+    url: `${BASE_URL}/cartera/${p.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.75,
+  }))
+
   return [
     ...staticRoutes,
     ...etfRoutes,
@@ -252,5 +262,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...countryRoutes,
     ...planRoutes,
     ...simulacionRoutes,
+    ...carteraRoutes,
   ]
 }
