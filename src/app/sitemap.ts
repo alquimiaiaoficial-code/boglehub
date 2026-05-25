@@ -24,6 +24,7 @@ import { getAllHistoricalCombos } from '@/data/historical-returns'
 import { MODEL_PORTFOLIOS } from '@/data/model-portfolios'
 import { getAllPortfolioPairs, portfolioPairToSlug } from '@/data/portfolio-pairs'
 import { FIRE_AGES } from '@/data/fire-ages'
+import { YEAR_EVENTS, HISTORICAL_YEAR_TICKERS, getReturn } from '@/data/historical-years'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -53,6 +54,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/simulacion',                   priority: 0.7, freq: 'monthly' },
     { path: '/cartera',                      priority: 0.8, freq: 'monthly' },
     { path: '/jubilacion',                   priority: 0.8, freq: 'monthly' },
+    { path: '/historico',                    priority: 0.7, freq: 'yearly'  },
     { path: '/calculadora',                  priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/interes-compuesto',priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/fire-monte-carlo', priority: 0.8, freq: 'monthly' },
@@ -273,6 +275,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }))
 
+  // Historical year × ticker pages
+  const historicoRoutes: typeof staticRoutes = []
+  for (const event of YEAR_EVENTS) {
+    for (const ticker of HISTORICAL_YEAR_TICKERS) {
+      if (getReturn(event.year, ticker) !== null) {
+        historicoRoutes.push({
+          url: `${BASE_URL}/historico/${event.year}/${ticker.toLowerCase()}`,
+          lastModified: new Date(),
+          changeFrequency: 'yearly' as const,
+          priority: 0.6,
+        })
+      }
+    }
+  }
+
   // /ahorrar/[cantidad]/para/[objetivo] — 10 amounts × 10 objectives = 100 pages
   const ahorrarRoutes: typeof staticRoutes = []
   for (const m of MONTHLY_AMOUNTS) {
@@ -312,5 +329,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...portfolioPairRoutes,
     ...dcaRoutes,
     ...fireRoutes,
+    ...historicoRoutes,
   ]
 }
