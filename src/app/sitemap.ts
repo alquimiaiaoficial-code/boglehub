@@ -22,6 +22,7 @@ import { COUNTRIES } from '@/data/countries'
 import { AGES } from '@/data/ages'
 import { getAllHistoricalCombos } from '@/data/historical-returns'
 import { MODEL_PORTFOLIOS } from '@/data/model-portfolios'
+import { getAllPortfolioPairs, portfolioPairToSlug } from '@/data/portfolio-pairs'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -241,6 +242,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }))
 
+  // Portfolio vs portfolio pages (C(10,2) = 45)
+  const portfolioPairRoutes = getAllPortfolioPairs().map(([a, b]) => ({
+    url: `${BASE_URL}/comparar-cartera/${portfolioPairToSlug(a, b)}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.65,
+  }))
+
   // /ahorrar/[cantidad]/para/[objetivo] — 10 amounts × 10 objectives = 100 pages
   const ahorrarRoutes: typeof staticRoutes = []
   for (const m of MONTHLY_AMOUNTS) {
@@ -277,5 +286,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...simulacionRoutes,
     ...carteraRoutes,
     ...ahorrarRoutes,
+    ...portfolioPairRoutes,
   ]
 }
