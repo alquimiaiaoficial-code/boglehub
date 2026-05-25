@@ -250,6 +250,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.65,
   }))
 
+  // /dca/[ticker]/[anos] — 20 tickers × 6 horizons = 120 pages
+  const dcaRoutes: typeof staticRoutes = []
+  for (const ticker of POPULAR_ETF_TICKERS) {
+    for (const y of [5, 10, 15, 20, 25, 30]) {
+      dcaRoutes.push({
+        url: `${BASE_URL}/dca/${ticker.toLowerCase()}/${y}-anios`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.65,
+      })
+    }
+  }
+
   // /ahorrar/[cantidad]/para/[objetivo] — 10 amounts × 10 objectives = 100 pages
   const ahorrarRoutes: typeof staticRoutes = []
   for (const m of MONTHLY_AMOUNTS) {
@@ -287,5 +300,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...carteraRoutes,
     ...ahorrarRoutes,
     ...portfolioPairRoutes,
+    ...dcaRoutes,
   ]
 }
