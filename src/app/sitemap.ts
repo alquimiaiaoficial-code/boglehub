@@ -23,6 +23,7 @@ import { AGES } from '@/data/ages'
 import { getAllHistoricalCombos } from '@/data/historical-returns'
 import { MODEL_PORTFOLIOS } from '@/data/model-portfolios'
 import { getAllPortfolioPairs, portfolioPairToSlug } from '@/data/portfolio-pairs'
+import { FIRE_AGES } from '@/data/fire-ages'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -51,6 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/plan',                         priority: 0.8, freq: 'monthly' },
     { path: '/simulacion',                   priority: 0.7, freq: 'monthly' },
     { path: '/cartera',                      priority: 0.8, freq: 'monthly' },
+    { path: '/jubilacion',                   priority: 0.8, freq: 'monthly' },
     { path: '/calculadora',                  priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/interes-compuesto',priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/fire-monte-carlo', priority: 0.8, freq: 'monthly' },
@@ -263,6 +265,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
+  // FIRE retirement age pages
+  const fireRoutes = FIRE_AGES.map((f) => ({
+    url: `${BASE_URL}/jubilacion/${f.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.75,
+  }))
+
   // /ahorrar/[cantidad]/para/[objetivo] — 10 amounts × 10 objectives = 100 pages
   const ahorrarRoutes: typeof staticRoutes = []
   for (const m of MONTHLY_AMOUNTS) {
@@ -301,5 +311,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...ahorrarRoutes,
     ...portfolioPairRoutes,
     ...dcaRoutes,
+    ...fireRoutes,
   ]
 }
