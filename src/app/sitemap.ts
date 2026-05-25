@@ -20,6 +20,7 @@ import { ETF_ASPECTS } from '@/data/etf-aspects'
 import { SECTORS } from '@/data/sectors'
 import { COUNTRIES } from '@/data/countries'
 import { AGES } from '@/data/ages'
+import { getAllHistoricalCombos } from '@/data/historical-returns'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -46,6 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/sector',                       priority: 0.7, freq: 'monthly' },
     { path: '/pais',                         priority: 0.7, freq: 'monthly' },
     { path: '/plan',                         priority: 0.8, freq: 'monthly' },
+    { path: '/simulacion',                   priority: 0.7, freq: 'monthly' },
     { path: '/calculadora',                  priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/interes-compuesto',priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/fire-monte-carlo', priority: 0.8, freq: 'monthly' },
@@ -221,6 +223,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
+  // Programmatic: /simulacion/[cantidad]/[ticker]/[ano] — 7×6×5 = up to 210 pages
+  const simulacionRoutes = getAllHistoricalCombos().map(({ amount, ticker, year }) => ({
+    url: `${BASE_URL}/simulacion/${amount}/${ticker.toLowerCase()}/${year}`,
+    lastModified: new Date(),
+    changeFrequency: 'yearly' as const,
+    priority: 0.6,
+  }))
+
   return [
     ...staticRoutes,
     ...etfRoutes,
@@ -241,5 +251,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...sectorRoutes,
     ...countryRoutes,
     ...planRoutes,
+    ...simulacionRoutes,
   ]
 }
