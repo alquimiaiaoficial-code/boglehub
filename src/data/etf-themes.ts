@@ -141,7 +141,7 @@ export const ETF_THEMES: EtfTheme[] = [
     faq: [
       {
         q: '¿Cómo tributan los dividendos de ETFs en España?',
-        a: 'Los dividendos tributan como rendimientos del capital mobiliario: 19% hasta 6.000€, 21% entre 6.000€ y 50.000€, 23% entre 50.000€ y 200.000€ y 28% a partir de ahí. Además, si el ETF aplica retención en origen (por ejemplo, ETFs domiciliados en Luxemburgo), puedes recuperarla mediante la deducción por doble imposición internacional en la declaración de la renta.',
+        a: 'Los dividendos tributan como rendimientos del capital mobiliario en la base del ahorro: 19% hasta 6.000€, 21% entre 6.000€ y 50.000€, 23% entre 50.000€ y 200.000€, 27% entre 200.000€ y 300.000€ y 28% por encima de 300.000€. Además, si el ETF aplica retención en origen (por ejemplo, ETFs domiciliados en Luxemburgo), puedes recuperarla mediante la deducción por doble imposición internacional en la declaración de la renta.',
       },
       {
         q: '¿Es posible vivir de los dividendos de ETFs en España?',
