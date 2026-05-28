@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { JsonLd } from '@/components/JsonLd'
+import { BLOG_ARTICLES } from '@/data/blog-articles'
+import { GLOSSARY_TERMS } from '@/data/glossary'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -539,8 +541,8 @@ export default function DatosClavePage() {
               ¿Quieres profundizar en algún dato?
             </h2>
             <p className="text-sm text-fg-muted leading-relaxed mb-4 max-w-2xl mx-auto">
-              Cada tabla tiene artículos detallados detrás. Explora el blog con 35 artículos
-              educativos, el glosario con 48 términos o las calculadoras para tu caso concreto.
+              Cada tabla tiene artículos detallados detrás. Explora el blog con {BLOG_ARTICLES.length} artículos
+              educativos, el glosario con {GLOSSARY_TERMS.length} términos o las calculadoras para tu caso concreto.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               <Link

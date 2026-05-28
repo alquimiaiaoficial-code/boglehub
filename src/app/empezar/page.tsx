@@ -4,6 +4,7 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
+import { GLOSSARY_TERMS } from '@/data/glossary'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -197,7 +198,7 @@ export default function EmpezarPage() {
                 <Link href="/glosario" className="text-brand-400 hover:text-brand-300 underline underline-offset-2">
                   glosario completo
                 </Link>{' '}
-                tiene 48 términos explicados con ejemplos.
+                tiene {GLOSSARY_TERMS.length} términos explicados con ejemplos.
               </p>
             </Card>
 

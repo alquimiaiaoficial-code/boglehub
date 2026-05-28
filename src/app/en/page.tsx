@@ -4,6 +4,7 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Card } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
+import { GLOSSARY_TERMS } from '@/data/glossary'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -35,7 +36,7 @@ export default function EnHomePage() {
           <nav className="text-sm text-fg-subtle mb-6"><Link href="/" className="hover:text-fg">Home</Link><span className="mx-2">/</span><span className="text-fg">English</span></nav>
 
           <div className="mb-6 rounded-lg bg-surface-2 border border-border p-3 text-xs text-fg-muted">
-            🇪🇸 <Link href="/" className="text-brand-400 hover:text-brand-300 underline">Versión española completa</Link> (35+ artículos, glosario 48 términos, 68 ETFs, calculadoras)
+            🇪🇸 <Link href="/" className="text-brand-400 hover:text-brand-300 underline">Versión española completa</Link> (35+ artículos, glosario {GLOSSARY_TERMS.length} términos, 68 ETFs, calculadoras)
           </div>
 
           <header className="mb-8">

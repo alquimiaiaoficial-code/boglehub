@@ -5,6 +5,7 @@ import { Footer } from '@/components/Footer'
 import { Card } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
 import { HISPANO_MARKETS } from '@/data/hispano-markets'
+import { GLOSSARY_TERMS } from '@/data/glossary'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -40,7 +41,7 @@ export default function MercadoIndexPage() {
             ))}
           </div>
 
-          <p className="mt-8 text-xs text-fg-subtle text-center">Para residentes en España, el resto del sitio cubre fiscalidad española en detalle (35+ artículos, 48-term glosario, 68 ETFs).</p>
+          <p className="mt-8 text-xs text-fg-subtle text-center">Para residentes en España, el resto del sitio cubre fiscalidad española en detalle (35+ artículos, glosario de {GLOSSARY_TERMS.length} términos, 68 ETFs).</p>
         </div>
       </main>
       <Footer />

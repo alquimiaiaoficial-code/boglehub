@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const FAQ_ITEMS: { q: string; a: string }[] = [
   {
     q: '¿Qué es BogleHub?',
-    a: 'BogleHub es una plataforma educativa gratuita en español sobre inversión indexada (filosofía Boglehead) orientada a residentes en España. Ofrece análisis de carteras con IA, comparador de ETFs UCITS, calculadoras financieras, blog con 35 artículos, glosario con 48 términos y catálogo de 68 ETFs UCITS con grado fiscal específico para España.',
+    a: `BogleHub es una plataforma educativa gratuita en español sobre inversión indexada (filosofía Boglehead) orientada a residentes en España. Ofrece análisis de carteras con IA, comparador de ETFs UCITS, calculadoras financieras, blog con ${BLOG_ARTICLES.length} artículos, glosario con ${GLOSSARY_TERMS.length} términos y catálogo de 68 ETFs UCITS con grado fiscal específico para España.`,
   },
   {
     q: '¿Quién está detrás del proyecto?',

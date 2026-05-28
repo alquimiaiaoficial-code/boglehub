@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { JsonLd } from '@/components/JsonLd'
+import { BLOG_ARTICLES } from '@/data/blog-articles'
+import { GLOSSARY_TERMS } from '@/data/glossary'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -286,8 +288,9 @@ export default function FaqPage() {
               ¿No encuentras tu respuesta?
             </h2>
             <p className="text-sm text-fg-muted leading-relaxed mb-4 max-w-2xl mx-auto">
-              Explora el blog con 35 artículos detallados, consulta el glosario con 48 términos
-              explicados, o usa el chat IA para preguntas libres sobre inversión indexada.
+              Explora el blog con {BLOG_ARTICLES.length} artículos detallados, consulta el glosario
+              con {GLOSSARY_TERMS.length} términos explicados, o usa el chat IA para preguntas
+              libres sobre inversión indexada.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               <Link

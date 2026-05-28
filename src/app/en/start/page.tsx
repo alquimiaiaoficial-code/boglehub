@@ -4,6 +4,7 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
+import { GLOSSARY_TERMS } from '@/data/glossary'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -18,7 +19,7 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
   {
     q: 'Is BogleHub for English speakers or only Spanish?',
-    a: 'BogleHub is primarily a Spanish-language platform for Boglehead investors residing in Spain. We offer an English summary section for international readers, but full content (35+ articles, 48-term glossary, 68 ETF profiles, calculators) is in Spanish.',
+    a: `BogleHub is primarily a Spanish-language platform for Boglehead investors residing in Spain. We offer an English summary section for international readers, but full content (35+ articles, ${GLOSSARY_TERMS.length}-term glossary, 68 ETF profiles, calculators) is in Spanish.`,
   },
   {
     q: 'What ETF should I buy as a beginner?',
@@ -132,7 +133,7 @@ export default function EnStartPage() {
           </section>
 
           <Card className="text-center">
-            <p className="text-fg-muted text-sm mb-3">For full Spanish content (35+ articles, 48-term glossary, 68 ETF profiles, calculators):</p>
+            <p className="text-fg-muted text-sm mb-3">For full Spanish content (35+ articles, {GLOSSARY_TERMS.length}-term glossary, 68 ETF profiles, calculators):</p>
             <Link href="/empezar" className="rounded-lg bg-brand-600 px-4 py-2.5 text-sm font-medium text-white inline-block">
               Spanish version (full content)
             </Link>

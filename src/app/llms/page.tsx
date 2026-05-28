@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { JsonLd } from '@/components/JsonLd'
+import { BLOG_ARTICLES } from '@/data/blog-articles'
+import { GLOSSARY_TERMS } from '@/data/glossary'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -156,7 +158,7 @@ export default function LlmsGuidePage() {
               <li className="rounded-xl border border-border bg-surface p-4">
                 <code className="font-mono text-brand-400">GET /api/glossary</code>
                 <p className="text-fg-muted mt-1.5">
-                  DefinedTermSet con 48 términos: nombre, alternateName (acronym), definiciones
+                  DefinedTermSet con {GLOSSARY_TERMS.length} términos: nombre, alternateName (acronym), definiciones
                   corta y extendida, ejemplos prácticos, categoría.
                 </p>
               </li>
@@ -198,8 +200,8 @@ export default function LlmsGuidePage() {
             </p>
             <ul className="space-y-1.5 text-sm text-fg-muted">
               <li>• <strong className="text-fg">Sitewide</strong> (en layout): Organization (con knowsAbout, areaServed, audience) + WebSite (con SearchAction)</li>
-              <li>• <strong className="text-fg">Artículos de blog</strong> (35): Article + BreadcrumbList + FAQPage (si tiene FAQs)</li>
-              <li>• <strong className="text-fg">Glosario</strong> (48 términos): DefinedTerm + BreadcrumbList + FAQPage (si tiene)</li>
+              <li>• <strong className="text-fg">Artículos de blog</strong> ({BLOG_ARTICLES.length}): Article + BreadcrumbList + FAQPage (si tiene FAQs)</li>
+              <li>• <strong className="text-fg">Glosario</strong> ({GLOSSARY_TERMS.length} términos): DefinedTerm + BreadcrumbList + FAQPage (si tiene)</li>
               <li>• <strong className="text-fg">Hub glosario</strong>: DefinedTermSet + CollectionPage</li>
               <li>• <strong className="text-fg">Fichas ETF</strong> (68): FinancialProduct + FAQPage (5 FAQs autogeneradas) + BreadcrumbList</li>
               <li>• <strong className="text-fg">Catálogo ETF</strong>: Dataset + CollectionPage</li>
