@@ -27,6 +27,7 @@ import { FIRE_AGES } from '@/data/fire-ages'
 import { YEAR_EVENTS, HISTORICAL_YEAR_TICKERS, getReturn } from '@/data/historical-years'
 import { HISPANO_MARKETS } from '@/data/hispano-markets'
 import { INDEX_FUNDS } from '@/data/index-funds'
+import { FUND_PAIRS, fundPairToSlug } from '@/data/fund-pairs'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -300,6 +301,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }))
 
+  // Fund vs fund comparison pages
+  const fundPairRoutes = FUND_PAIRS.map(([a, b]) => ({
+    url: `${BASE_URL}/comparar-fondo/${fundPairToSlug(a, b)}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.65,
+  }))
+
   // Historical year × ticker pages
   const historicoRoutes: typeof staticRoutes = []
   for (const event of YEAR_EVENTS) {
@@ -357,5 +366,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...historicoRoutes,
     ...mercadoRoutes,
     ...fondoRoutes,
+    ...fundPairRoutes,
   ]
 }
