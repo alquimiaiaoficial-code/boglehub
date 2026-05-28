@@ -13,6 +13,44 @@ import { BLOG_ARTICLES } from '@/data/blog-articles'
 
 const BASE_URL = 'https://boglehub.com'
 
+/**
+ * Artículos de respaldo por categoría del glosario. Para los términos que aún
+ * no tienen `relatedArticles` curados, garantizan internal linking glosario ->
+ * blog. Los slugs se filtran contra BLOG_ARTICLES (sin enlaces rotos).
+ */
+const CATEGORY_FALLBACK_ARTICLES: Record<string, string[]> = {
+  productos: [
+    'como-elegir-tu-primer-etf-espana-2026',
+    'fondos-indexados-vs-etfs-espana',
+    'mejores-etfs-espana-2026',
+  ],
+  fiscalidad: [
+    'fiscalidad-etfs-espana-guia-completa',
+    'como-declarar-etfs-hacienda',
+    'plan-de-pensiones-vs-fondo-indexado',
+  ],
+  metricas: [
+    'como-elegir-tu-primer-etf-espana-2026',
+    'solapamiento-etfs-error-silencioso',
+    'mejores-etfs-espana-2026',
+  ],
+  estrategias: [
+    'bogleheads-espana-guia-completa',
+    'cartera-boglehead-3-fondos-espana',
+    'dca-vs-lump-sum-aportar-mensual',
+  ],
+  plataformas: [
+    'degiro-vs-trade-republic-vs-myinvestor-2026',
+    'myinvestor-opinion-2026',
+    'roboadvisors-espana-merecen-comision',
+  ],
+  conceptos: [
+    'bogleheads-espana-guia-completa',
+    'interes-compuesto-inversion',
+    'que-es-el-msci-world',
+  ],
+}
+
 // ---------------------------------------------------------------------------
 // Static params + metadata
 // ---------------------------------------------------------------------------
@@ -63,10 +101,15 @@ export default async function GlossaryTermPage({
   const term = getTermBySlug(slug)
   if (!term) notFound()
 
-  // Resolver artículos relacionados que realmente existen
-  const relatedArticles = (term.relatedArticles ?? [])
+  // Artículos relacionados: curados si existen; si no, respaldo por categoría
+  const relatedArticleSlugs =
+    term.relatedArticles && term.relatedArticles.length > 0
+      ? term.relatedArticles
+      : CATEGORY_FALLBACK_ARTICLES[term.category] ?? []
+  const relatedArticles = relatedArticleSlugs
     .map((s) => BLOG_ARTICLES.find((a) => a.slug === s))
     .filter((a): a is NonNullable<typeof a> => Boolean(a))
+    .slice(0, 3)
 
   // Otros términos de la misma categoría
   const otherTermsInCategory = GLOSSARY_TERMS.filter(
