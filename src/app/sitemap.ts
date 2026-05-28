@@ -26,6 +26,7 @@ import { getAllPortfolioPairs, portfolioPairToSlug } from '@/data/portfolio-pair
 import { FIRE_AGES } from '@/data/fire-ages'
 import { YEAR_EVENTS, HISTORICAL_YEAR_TICKERS, getReturn } from '@/data/historical-years'
 import { HISPANO_MARKETS } from '@/data/hispano-markets'
+import { INDEX_FUNDS } from '@/data/index-funds'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -62,6 +63,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/en/taxation',                  priority: 0.7, freq: 'monthly' },
     { path: '/en/brokers',                   priority: 0.7, freq: 'monthly' },
     { path: '/mercado',                      priority: 0.8, freq: 'monthly' },
+    { path: '/fondo',                        priority: 0.8, freq: 'monthly' },
     { path: '/calculadora',                  priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/interes-compuesto',priority: 0.8, freq: 'monthly' },
     { path: '/calculadora/fire-monte-carlo', priority: 0.8, freq: 'monthly' },
@@ -290,6 +292,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }))
 
+  // Index fund individual pages
+  const fondoRoutes = INDEX_FUNDS.map((f) => ({
+    url: `${BASE_URL}/fondo/${f.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.75,
+  }))
+
   // Historical year × ticker pages
   const historicoRoutes: typeof staticRoutes = []
   for (const event of YEAR_EVENTS) {
@@ -346,5 +356,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...fireRoutes,
     ...historicoRoutes,
     ...mercadoRoutes,
+    ...fondoRoutes,
   ]
 }
