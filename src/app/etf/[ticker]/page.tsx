@@ -11,6 +11,8 @@ import { computeFiscalGrade, GRADE_STYLES } from '@/lib/fiscal'
 import { formatPct } from '@/lib/utils'
 import { generateEtfDescription, generateEtfFaqs } from '@/lib/etf-faqs'
 import { ETF_PAIRS, pairToSlug } from '@/data/etf-pairs'
+import { BLOG_ARTICLES } from '@/data/blog-articles'
+import { getRelatedArticleSlugs } from '@/data/etf-related-articles'
 import type { EtfMetadata } from '@/types/etf'
 
 const BASE_URL = 'https://boglehub.com'
@@ -217,6 +219,12 @@ export default async function EtfPage({ params }: { params: Promise<{ ticker: st
   const etfDescription = generateEtfDescription(etf)
   const etfFaqs = generateEtfFaqs(etf)
 
+  // Artículos del blog relacionados (internal linking ficha -> contenido editorial)
+  const relatedArticles = getRelatedArticleSlugs(etf)
+    .map((slug) => BLOG_ARTICLES.find((a) => a.slug === slug))
+    .filter(Boolean)
+    .slice(0, 4) as typeof BLOG_ARTICLES
+
   return (
     <>
       <JsonLd
@@ -379,6 +387,30 @@ export default async function EtfPage({ params }: { params: Promise<{ ticker: st
                   </Link>
                 ))}
               </div>
+            </Card>
+          )}
+
+          {/* Artículos relacionados — internal linking ficha -> blog */}
+          {relatedArticles.length > 0 && (
+            <Card className="mb-6">
+              <CardTitle className="mb-3">Para profundizar sobre {etf.ticker}</CardTitle>
+              <ul className="space-y-2">
+                {relatedArticles.map((article) => (
+                  <li key={article.slug}>
+                    <Link
+                      href={`/blog/${article.slug}`}
+                      className="group flex flex-col gap-0.5 rounded-lg border border-border bg-surface-2 p-3 hover:border-border-strong transition-colors"
+                    >
+                      <span className="text-sm font-medium text-fg group-hover:text-brand-400 transition-colors">
+                        {article.title}
+                      </span>
+                      <span className="text-xs text-fg-subtle line-clamp-1">
+                        {article.excerpt}
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </Card>
           )}
 
