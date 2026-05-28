@@ -708,6 +708,94 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     example:
       'Un ETF de bonos eurozona con YTM del 3,2% indica que, mantenido durante la duración media del fondo, debería rentar aproximadamente 3,2% anual antes de TER. Es una proyección razonable pero no garantizada — los cambios de tipos pueden afectar.',
   },
+  {
+    slug: 'traspaso',
+    term: 'Traspaso de fondos',
+    category: 'fiscalidad',
+    shortDefinition:
+      'Un traspaso es mover dinero de un fondo de inversión a otro sin pasar por Hacienda: la ganancia acumulada no tributa hasta el reembolso final. Es la gran ventaja fiscal de los fondos frente a los ETFs en España.',
+    longDefinition:
+      'En España, los fondos de inversión (y los planes de pensiones) permiten traspasar el capital de un fondo a otro sin realizar la ganancia patrimonial: el dinero pasa íntegro de un producto a otro y la tributación se difiere hasta el reembolso definitivo. Esto permite cambiar de estrategia, gestora o nivel de riesgo a lo largo de los años sin que cada cambio genere una factura fiscal, dejando que el interés compuesto trabaje sobre el total.\n\nLa diferencia clave con los ETFs es precisamente esta: los ETFs **no** disfrutan del régimen de traspasos en España. Vender un ETF para comprar otro realiza la ganancia o pérdida y tributa ese año en la base del ahorro (19%-28%). Por eso muchos inversores que valoran la flexibilidad fiscal a largo plazo construyen el núcleo de su cartera con fondos indexados en lugar de ETFs.\n\nEl traspaso lo gestiona la comercializadora y es automático para los fondos que cumplen los requisitos legales (entre ellos, superar los 500 partícipes): tú solo ordenas el traspaso y el dinero llega al fondo de destino sin tocar tu cuenta ni tu declaración.',
+    example:
+      'Tienes 50.000€ en un fondo con 10.000€ de ganancia acumulada y quieres cambiar a otro fondo más barato. Si fuera un ETF, vender realizaría esos 10.000€ y pagarías unos 1.980€ de IRPF. Con un fondo, traspasas los 50.000€ completos al nuevo fondo y no pagas nada hasta que un día reembolses de verdad.',
+    relatedArticles: [
+      'fondos-indexados-vs-etfs-espana',
+      'fiscalidad-etfs-espana-guia-completa',
+      'plan-de-pensiones-vs-fondo-indexado',
+    ],
+    relatedLinks: [
+      { label: 'Fondos indexados en España', href: '/fondo' },
+      { label: 'Calculadora de IRPF al vender', href: '/calculadora/irpf-venta-fondos' },
+    ],
+    faq: [
+      {
+        q: '¿Se puede traspasar un ETF sin tributar como un fondo?',
+        a: 'No. El régimen de traspasos solo aplica a fondos de inversión y planes de pensiones. Vender un ETF para comprar otro siempre realiza la ganancia o pérdida y tributa ese año en la base del ahorro del IRPF.',
+      },
+      {
+        q: '¿Cuesta algo traspasar entre fondos?',
+        a: 'Fiscalmente no: la ganancia no tributa en el traspaso. Operativamente, las comercializadoras de fondos indexados como MyInvestor no cobran comisión por traspaso. El impuesto solo llega cuando reembolsas definitivamente a tu cuenta.',
+      },
+    ],
+  },
+  {
+    slug: 'tasa-retirada-segura',
+    term: 'Tasa de retirada segura',
+    category: 'estrategias',
+    shortDefinition:
+      'Es el porcentaje de tu cartera que puedes retirar cada año en la jubilación sin agotarla. La referencia clásica es la regla del 4%, que equivale a acumular unas 25 veces tu gasto anual.',
+    longDefinition:
+      'La tasa de retirada segura (Safe Withdrawal Rate, SWR) responde a la pregunta central del movimiento FIRE: cuánto puedo gastar cada año sin quedarme sin dinero. La cifra más conocida es el 4%, popularizada por el Trinity Study (1998), que analizó carteras mixtas de acciones y bonos en horizontes de 30 años de jubilación.\n\nLa regla del 4% se aplica así: el primer año retiras el 4% de tu cartera y los años siguientes ajustas esa cantidad por la inflación, independientemente de cómo se comporte el mercado. Como 4% equivale a 1/25, el objetivo de capital para ser financieramente independiente es aproximadamente 25 veces tu gasto anual.\n\nEs una guía, no una garantía. La tasa segura real depende del horizonte (más de 30 años exige ser más conservador, en torno a 3,25%-3,5%), de la secuencia de rentabilidades de los primeros años (el riesgo de secuencia) y de tu flexibilidad para recortar gasto en mercados bajistas. Por eso conviene simular el plan con escenarios variables en lugar de fiarse de una sola cifra.',
+    example:
+      'Si gastas 24.000€ al año, la regla del 4% sugiere un objetivo de 600.000€ (24.000 × 25). Con esa cartera retirarías 24.000€ el primer año y los irías ajustando por inflación cada año siguiente.',
+    relatedArticles: [
+      'fire-espana-cuanto-necesitas',
+      'cuanto-invertir-al-mes-jubilarse-millonario',
+      'etfs-dividendos-vivir-rentas-espana',
+    ],
+    relatedLinks: [
+      { label: 'Calculadora FIRE con Monte Carlo', href: '/calculadora/fire-monte-carlo' },
+      { label: 'Calculadora de interés compuesto', href: '/calculadora/interes-compuesto' },
+    ],
+    faq: [
+      {
+        q: '¿La regla del 4% funciona en España?',
+        a: 'Es una referencia útil, pero nació con datos de EE.UU. y un horizonte de 30 años. Para jubilaciones más largas (FIRE temprano) muchos usan tasas más conservadoras (3,25%-3,5%) y conviene contar con la pensión pública y con flexibilidad de gasto. Simula tu caso con escenarios variables antes de fiarte de una sola cifra.',
+      },
+      {
+        q: '¿Cómo se relaciona la tasa de retirada con el número FIRE?',
+        a: 'Son las dos caras de lo mismo: una tasa del 4% implica acumular 25 veces tu gasto anual; una del 3,33%, 30 veces. Cuanto más baja es la tasa segura que eliges, más capital necesitas pero menor es el riesgo de agotar la cartera.',
+      },
+    ],
+  },
+  {
+    slug: 'ganancia-patrimonial',
+    term: 'Ganancia patrimonial',
+    category: 'fiscalidad',
+    shortDefinition:
+      'Es el beneficio que obtienes al vender un activo (ETF, fondo, acción) por más de lo que pagaste. En España tributa en la base del ahorro del IRPF, con tipos del 19% al 28% según el importe.',
+    longDefinition:
+      'La ganancia patrimonial es la diferencia positiva entre el precio de venta de un activo y su precio de adquisición (incluidas las comisiones). Cuando la diferencia es negativa se llama pérdida patrimonial. En la venta de ETFs, fondos, acciones u oro, esa ganancia o pérdida se integra en la base imponible del ahorro del IRPF.\n\nLa escala del ahorro en 2026 es progresiva: 19% hasta 6.000€, 21% de 6.000€ a 50.000€, 23% de 50.000€ a 200.000€, 27% de 200.000€ a 300.000€ y 28% por encima de 300.000€. Solo tributa la ganancia, no el total reembolsado, y cada tramo grava únicamente la parte que cae dentro de él.\n\nUn punto clave de optimización: las pérdidas patrimoniales se compensan con las ganancias del mismo ejercicio y, si el saldo es negativo, se arrastra a los cuatro años siguientes. Esto permite estrategias como aflorar pérdidas para reducir la factura fiscal de un año con muchas plusvalías.',
+    example:
+      'Compraste participaciones de un ETF por 8.000€ y las vendes por 11.000€: tu ganancia patrimonial es de 3.000€ y tributa al 19% (570€). Si además ese año tuviste 1.000€ de pérdidas en otro fondo, solo tributarías por 2.000€.',
+    relatedArticles: [
+      'fiscalidad-etfs-espana-guia-completa',
+      'como-declarar-etfs-hacienda',
+    ],
+    relatedLinks: [
+      { label: 'Calculadora de IRPF al vender fondos y ETF', href: '/calculadora/irpf-venta-fondos' },
+    ],
+    faq: [
+      {
+        q: '¿Cuándo se genera una ganancia patrimonial?',
+        a: 'En el momento de la venta o reembolso del activo, no antes. Mientras mantienes un ETF de acumulación sin vender, no hay ganancia patrimonial que declarar aunque su valor haya subido.',
+      },
+      {
+        q: '¿Se pueden compensar las pérdidas con las ganancias?',
+        a: 'Sí. Las pérdidas patrimoniales se compensan con ganancias patrimoniales del mismo año; si queda saldo negativo, se arrastra a los cuatro ejercicios siguientes. También hay compensación parcial con rendimientos del capital mobiliario dentro de los límites legales.',
+      },
+    ],
+  },
 ]
 
 /** Devuelve un término por su slug, o undefined si no existe */
