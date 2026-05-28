@@ -2670,6 +2670,8 @@ Spoiler: no hay un broker "mejor" para todos. Hay uno que encaja con tu volumen 
 | ETFs disponibles | +2.000 | +5.000 | Selección popular |
 | Interfaz | Mobile-first, sencilla | Web completa, técnica | Web bancaria |
 
+Esta tabla compara funciones, pero el coste real depende de cuánto y con qué frecuencia inviertes. El [comparador de brókers de BogleHub](/calculadora/comparar-brokers) calcula en euros lo que pagarías al año en cada uno según tu patrón de inversión.
+
 ---
 
 ## Trade Republic: el broker sin fricciones
@@ -4075,7 +4077,7 @@ Una característica interesante: el dinero remunerado está en una cuenta corrie
 - 0€ de comisión de apertura/aportación
 - 0€ de comisión de traspaso
 
-Para ETFs, la comisión de MyInvestor es más alta que Trade Republic (0€) y más alta que DEGIRO en órdenes grandes. Para fondos indexados, es la mejor del mercado.
+Para ETFs, la comisión de MyInvestor es más alta que Trade Republic (0€) y más alta que DEGIRO en órdenes grandes. Para fondos indexados, es la mejor del mercado. Para ver el coste anual exacto en euros frente a otros brokers según tu volumen y frecuencia de compra, usa el [comparador de brókers de BogleHub](/calculadora/comparar-brokers).
 
 ---
 
@@ -4255,7 +4257,7 @@ El order flow puede generar spreads ligeramente mayores que en compra directa en
 **Si quieres fondos indexados o todo en una entidad española**: MyInvestor.
 **La cartera óptima**: Trade Republic para ETFs + MyInvestor para fondos.
 
-Para profundizar en la comparativa, lee el [análisis completo de DEGIRO vs Trade Republic vs MyInvestor](/blog/degiro-vs-trade-republic-vs-myinvestor-2026).
+La tabla compara comisiones, pero lo que pagas de verdad depende de tu volumen y frecuencia de compra: el [comparador de brókers de BogleHub](/calculadora/comparar-brokers) lo calcula en euros al año para cada uno. Y para profundizar en la comparativa, lee el [análisis completo de DEGIRO vs Trade Republic vs MyInvestor](/blog/degiro-vs-trade-republic-vs-myinvestor-2026).
 
 ---
 
