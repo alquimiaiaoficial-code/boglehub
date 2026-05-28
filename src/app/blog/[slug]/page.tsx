@@ -37,6 +37,7 @@ export async function generateMetadata({
     title: article.title,
     description: article.excerpt,
     keywords: article.keywords,
+    alternates: { canonical: `/blog/${article.slug}` },
     openGraph: {
       title: `${article.title} | BogleHub`,
       description: article.excerpt,

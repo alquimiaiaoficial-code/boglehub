@@ -130,6 +130,7 @@ export async function generateMetadata({
   return {
     title,
     description,
+    alternates: { canonical: `/etf/${etf.ticker.toLowerCase()}` },
     openGraph: {
       title: `${title} | BogleHub`,
       description,

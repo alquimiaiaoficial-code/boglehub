@@ -12,6 +12,7 @@ import { ArrowRight, BarChart3, Globe2, PiggyBank, Sparkles, ShieldCheck, FileTe
 export const metadata: Metadata = {
   title: 'BogleHub — Análisis de cartera para inversores indexados',
   description: 'Analiza tu cartera de ETFs con IA. Asignación, diversificación, costes y FIRE. Gratis para Bogleheads hispanos.',
+  alternates: { canonical: '/' },
   openGraph: {
     images: ['/api/og?title=BogleHub&subtitle=An%C3%A1lisis%20de%20cartera%20con%20IA'],
   },

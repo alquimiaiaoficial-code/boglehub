@@ -1,10 +1,14 @@
 import type { Metadata } from 'next'
+import { JsonLd } from '@/components/JsonLd'
 import { EtfComparator } from './EtfComparator'
+
+const BASE_URL = 'https://boglehub.com'
 
 export const metadata: Metadata = {
   title: 'Comparar ETFs España 2026',
   description:
     'Compara dos ETFs UCITS en detalle: TER, clase de activo, divisa, solapamiento y asignación geográfica. Elige el ETF que mejor se adapte a tu cartera indexada.',
+  alternates: { canonical: '/comparar' },
   openGraph: {
     title: 'Comparar ETFs España 2026 | BogleHub',
     description: 'Compara TER, regiones, sectores y solapamiento entre dos ETFs UCITS.',
@@ -15,6 +19,15 @@ export const metadata: Metadata = {
 export default function CompararPage() {
   return (
     <>
+      <JsonLd
+        schema={{
+          type: 'BreadcrumbList',
+          items: [
+            { name: 'Inicio', url: BASE_URL },
+            { name: 'Comparar ETFs', url: `${BASE_URL}/comparar` },
+          ],
+        }}
+      />
       {/* Contenido estático indexable por Googlebot */}
       <div className="mx-auto max-w-5xl px-4 sm:px-6 pt-8 pb-4">
         <header className="mb-6">

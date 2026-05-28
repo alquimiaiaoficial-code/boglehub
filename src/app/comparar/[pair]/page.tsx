@@ -90,6 +90,7 @@ export async function generateMetadata({
   return {
     title,
     description,
+    alternates: { canonical: `/comparar/${pair}` },
     openGraph: {
       title: `${title} | BogleHub`,
       description,

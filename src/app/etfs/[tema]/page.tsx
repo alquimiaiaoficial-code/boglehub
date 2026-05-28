@@ -78,6 +78,7 @@ export async function generateMetadata({
   return {
     title: theme.metaTitle,
     description: theme.metaDescription,
+    alternates: { canonical: `/etfs/${tema}` },
     openGraph: {
       title: theme.metaTitle,
       description: theme.metaDescription,

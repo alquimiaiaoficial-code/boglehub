@@ -47,8 +47,9 @@ export async function generateMetadata({
   const ogImage = `/api/og/scorecard?score=${score}&ter=${ter.toFixed(2)}&etfs=${etfs}`
 
   return {
-    title: `Mi nota Boglehead: ${score}/100 | BogleHub`,
+    title: `Mi nota Boglehead: ${score}/100`,
     description: `Cartera analizada con BogleHub — TER ${ter.toFixed(2)}%, ${etfs} clases de activo. Analiza la tuya gratis, sin registro.`,
+    alternates: { canonical: '/score' },
     openGraph: {
       title: `Mi nota Boglehead: ${score}/100`,
       description: 'Analizada gratis en BogleHub.',
