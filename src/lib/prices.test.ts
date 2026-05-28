@@ -9,10 +9,11 @@ vi.mock('yahoo-finance2', () => {
   return { default: MockYahooFinance }
 })
 
-import { fetchPrices } from './prices'
+import { fetchPrices, resetPriceCache } from './prices'
 
 beforeEach(() => {
   mockQuote.mockReset()
+  resetPriceCache()
 })
 
 describe('fetchPrices', () => {

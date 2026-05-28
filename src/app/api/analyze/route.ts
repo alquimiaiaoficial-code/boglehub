@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
     const tickers = [...new Set(body.positions.map(p => p.ticker.toUpperCase()))]
     const pricesResult = await fetchPrices(tickers)
     if (!pricesResult.ok) {
-      return NextResponse.json({ success: false, error: 'No se pudieron obtener precios actualizados' }, { status: 502 })
+      return NextResponse.json({ success: false, error: 'Servicio de precios temporalmente no disponible. Inténtalo de nuevo en unos minutos.' }, { status: 503 })
     }
 
     const allocation = calculateAllocation(body.positions, pricesResult.value)
