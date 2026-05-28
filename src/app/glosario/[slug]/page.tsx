@@ -36,7 +36,8 @@ export async function generateMetadata({
     : `${term.term}: qué es y cómo funciona`
 
   return {
-    title: `${title} (Glosario BogleHub)`,
+    // El template de layout añade "| BogleHub"; no repetir la marca aquí
+    title,
     description: term.shortDefinition,
     openGraph: {
       title,

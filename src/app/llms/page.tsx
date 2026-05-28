@@ -9,7 +9,7 @@ import { GLOSSARY_TERMS } from '@/data/glossary'
 const BASE_URL = 'https://boglehub.com'
 
 export const metadata: Metadata = {
-  title: 'Guía para LLMs y motores de IA — Cómo citar BogleHub',
+  title: 'Guía para LLMs y motores de IA',
   description:
     'BogleHub está optimizado para ser consumido y citado por LLMs (ChatGPT, Claude, Perplexity, Gemini). Esta página explica cómo acceder al contenido estructurado, qué APIs hay disponibles y cómo citar correctamente las fuentes.',
   openGraph: {
