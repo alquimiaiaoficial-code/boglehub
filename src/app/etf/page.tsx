@@ -10,11 +10,12 @@ import { formatPct } from '@/lib/utils'
 const BASE_URL = 'https://boglehub.com'
 
 export const metadata: Metadata = {
-  title: 'Catálogo de ETFs UCITS para inversores españoles 2026 | BogleHub',
+  title: 'Catálogo de ETFs UCITS en España (2026)',
   description:
     'Catálogo completo de ETFs UCITS disponibles en España: renta variable global, S&P 500, MSCI World, emergentes, renta fija y materias primas. TER, domicilio fiscal y eficiencia para residentes en España.',
+  alternates: { canonical: '/etf' },
   openGraph: {
-    title: 'Catálogo de ETFs UCITS para inversores españoles 2026 | BogleHub',
+    title: 'Catálogo de ETFs UCITS en España (2026) | BogleHub',
     description:
       'Catálogo completo de ETFs UCITS disponibles en España con TER, grado fiscal y distribución geográfica. Datos para inversores indexados residentes en España.',
     locale: 'es_ES',

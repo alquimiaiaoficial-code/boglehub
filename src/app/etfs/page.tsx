@@ -11,13 +11,14 @@ import type { EtfMetadata } from '@/types/etf'
 const BASE_URL = 'https://boglehub.com'
 
 export const metadata: Metadata = {
-  title: 'ETFs por categoría para inversores españoles 2026 | BogleHub',
+  title: 'ETFs UCITS por categoría en España (2026)',
   description:
-    'Explora los mejores ETFs UCITS disponibles en España organizados por categoría: MSCI World, S&P 500, acumulación, emergentes, renta fija y más.',
+    'Explora los ETFs UCITS disponibles en España organizados por categoría: MSCI World, S&P 500, acumulación, emergentes, renta fija y más. TER y grado fiscal.',
+  alternates: { canonical: '/etfs' },
   openGraph: {
-    title: 'ETFs por categoría para inversores españoles 2026 | BogleHub',
+    title: 'ETFs UCITS por categoría en España (2026) | BogleHub',
     description:
-      'Explora los mejores ETFs UCITS disponibles en España organizados por categoría: MSCI World, S&P 500, acumulación, emergentes, renta fija y más.',
+      'Explora los ETFs UCITS disponibles en España organizados por categoría: MSCI World, S&P 500, acumulación, emergentes, renta fija y más.',
     locale: 'es_ES',
   },
 }

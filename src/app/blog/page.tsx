@@ -9,13 +9,14 @@ import {
   BLOG_CATEGORIES,
   getArticleCategory,
 } from '@/data/blog-categories'
+import { GLOSSARY_TERMS } from '@/data/glossary'
 
 const BASE_URL = 'https://boglehub.com'
 
 export const metadata: Metadata = {
   title: 'Blog de inversión indexada: ETFs, FIRE y fiscalidad en España',
   description:
-    'Guías prácticas sobre inversión indexada, ETFs UCITS, fiscalidad en España y FIRE. 32 artículos para inversores Boglehead organizados por categoría.',
+    `Guías prácticas sobre inversión indexada, ETFs UCITS, fiscalidad en España y FIRE. ${BLOG_ARTICLES.length} artículos para inversores Boglehead organizados por categoría.`,
   openGraph: {
     title: 'Blog de inversión indexada | BogleHub',
     description:
@@ -191,8 +192,8 @@ export default function BlogIndexPage() {
             </h2>
             <p className="text-sm text-fg-muted leading-relaxed mb-4 max-w-2xl mx-auto">
               La guía paso a paso te lleva en 6 pasos de cero a tener tu primera cartera. El
-              glosario explica los 48 términos imprescindibles. Y las calculadoras te ayudan a
-              planificar el plan que mejor encaja contigo.
+              glosario explica los {GLOSSARY_TERMS.length} términos imprescindibles. Y las
+              calculadoras te ayudan a planificar el plan que mejor encaja contigo.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               <Link
