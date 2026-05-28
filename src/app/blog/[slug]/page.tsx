@@ -20,6 +20,11 @@ import {
 
 const BASE_URL = 'https://boglehub.com'
 
+// Artículos con versión en inglés: hreflang recíproco con las páginas /en/*
+const BLOG_EN_ALTERNATES: Record<string, string> = {
+  'fiscalidad-etfs-espana-guia-completa': '/en/taxation',
+}
+
 export function generateStaticParams() {
   return BLOG_ARTICLES.map((article) => ({ slug: article.slug }))
 }
@@ -39,7 +44,15 @@ export async function generateMetadata({
     title: BLOG_META_TITLES[slug] ?? article.title,
     description: article.excerpt,
     keywords: article.keywords,
-    alternates: { canonical: `/blog/${article.slug}` },
+    alternates: {
+      canonical: `/blog/${article.slug}`,
+      ...(BLOG_EN_ALTERNATES[slug] && {
+        languages: {
+          'es-ES': `/blog/${article.slug}`,
+          'en-US': BLOG_EN_ALTERNATES[slug],
+        },
+      }),
+    },
     openGraph: {
       title: `${article.title} | BogleHub`,
       description: article.excerpt,

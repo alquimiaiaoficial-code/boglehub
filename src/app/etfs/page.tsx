@@ -14,7 +14,10 @@ export const metadata: Metadata = {
   title: 'ETFs UCITS por categoría en España (2026)',
   description:
     'Explora los ETFs UCITS disponibles en España organizados por categoría: MSCI World, S&P 500, acumulación, emergentes, renta fija y más. TER y grado fiscal.',
-  alternates: { canonical: '/etfs' },
+  alternates: {
+    canonical: '/etfs',
+    languages: { 'es-ES': '/etfs', 'en-US': '/en/etf-guide' },
+  },
   openGraph: {
     title: 'ETFs UCITS por categoría en España (2026) | BogleHub',
     description:

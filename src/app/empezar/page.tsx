@@ -44,7 +44,10 @@ export const metadata: Metadata = {
       '/api/og?title=C%C3%B3mo%20empezar%20a%20invertir&subtitle=Gu%C3%ADa%20paso%20a%20paso%20Bogleheads%20Espa%C3%B1a',
     ],
   },
-  alternates: { canonical: '/empezar' },
+  alternates: {
+    canonical: '/empezar',
+    languages: { 'es-ES': '/empezar', 'en-US': '/en/start' },
+  },
 }
 
 export default function EmpezarPage() {

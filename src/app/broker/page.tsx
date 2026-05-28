@@ -11,7 +11,10 @@ const BASE_URL = 'https://boglehub.com'
 export const metadata: Metadata = {
   title: 'Mejores brokers para invertir en ETFs desde España (2026)',
   description: `Listado y comparativa de los ${BROKERS.length} mejores brokers para invertir en ETFs UCITS desde España en 2026: Trade Republic, DEGIRO, MyInvestor, XTB, Interactive Brokers, Renta 4, Openbank, ING, eToro, Scalable Capital. Comisiones, regulación y para quién es ideal cada uno.`,
-  alternates: { canonical: '/broker' },
+  alternates: {
+    canonical: '/broker',
+    languages: { 'es-ES': '/broker', 'en-US': '/en/brokers' },
+  },
 }
 
 export default function BrokerIndexPage() {
