@@ -100,6 +100,20 @@ export default function CalculadoraHubPage() {
           ],
         }}
       />
+      <JsonLd
+        schema={{
+          type: 'ItemList',
+          name: 'Calculadoras de inversión de BogleHub',
+          description:
+            'Calculadoras gratis para inversores en España: interés compuesto, FIRE, costes de roboadvisor e IRPF al vender fondos y ETF.',
+          url: `${BASE_URL}/calculadora`,
+          items: CALCULATORS.map((calc) => ({
+            name: calc.name,
+            url: `${BASE_URL}/calculadora/${calc.slug}`,
+            description: calc.pitch,
+          })),
+        }}
+      />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 pt-10 pb-8">

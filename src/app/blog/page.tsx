@@ -75,6 +75,17 @@ export default function BlogIndexPage() {
           })),
         }}
       />
+      <JsonLd
+        schema={{
+          type: 'ItemList',
+          name: 'Artículos del blog de BogleHub',
+          url: `${BASE_URL}/blog`,
+          items: sorted.map((a) => ({
+            name: a.title,
+            url: `${BASE_URL}/blog/${a.slug}`,
+          })),
+        }}
+      />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 py-12">

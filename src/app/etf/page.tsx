@@ -92,6 +92,17 @@ export default function EtfIndexPage() {
           url: `${BASE_URL}/etf`,
         }}
       />
+      <JsonLd
+        schema={{
+          type: 'ItemList',
+          name: 'Catálogo de ETFs UCITS para inversores españoles',
+          url: `${BASE_URL}/etf`,
+          items: allEtfs.map((etf) => ({
+            name: `${etf.ticker} · ${etf.name}`,
+            url: `${BASE_URL}/etf/${etf.ticker.toLowerCase()}`,
+          })),
+        }}
+      />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 py-10">

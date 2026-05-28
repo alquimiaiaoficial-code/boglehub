@@ -167,6 +167,18 @@ interface CollectionPageSchema {
   hasPart?: { name: string; url: string }[]
 }
 
+interface ItemListSchema {
+  type: 'ItemList'
+  /** Optional list name (e.g. "Calculadoras de inversión") */
+  name?: string
+  /** Optional description of the list */
+  description?: string
+  /** Canonical URL of the page that hosts the list */
+  url?: string
+  /** Ordered items. Position is derived from array order. */
+  items: { name: string; url: string; description?: string }[]
+}
+
 type Schema =
   | OrganizationSchema
   | WebSiteSchema
@@ -183,6 +195,7 @@ type Schema =
   | DatasetSchema
   | FinancialProductSchema
   | CollectionPageSchema
+  | ItemListSchema
 
 // ─── Component ─────────────────────────────────────────────────────────────
 
@@ -492,6 +505,24 @@ export function JsonLd({ schema }: { schema: Schema }) {
           value: schema.isin,
         },
       }),
+    }
+  } else if (schema.type === 'ItemList') {
+    data = {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      ...(schema.name && { name: schema.name }),
+      ...(schema.description && { description: schema.description }),
+      ...(schema.url && { url: schema.url }),
+      inLanguage: 'es-ES',
+      numberOfItems: schema.items.length,
+      itemListOrder: 'https://schema.org/ItemListOrderAscending',
+      itemListElement: schema.items.map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: item.name,
+        url: item.url,
+        ...(item.description && { description: item.description }),
+      })),
     }
   } else {
     // CollectionPage
