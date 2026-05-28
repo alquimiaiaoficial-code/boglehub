@@ -796,6 +796,64 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       },
     ],
   },
+  {
+    slug: 'duracion',
+    term: 'Duración',
+    category: 'metricas',
+    shortDefinition:
+      'La duración mide la sensibilidad del precio de un bono (o de un ETF de renta fija) a los cambios en los tipos de interés. Cuanto mayor es la duración, más sube o baja el precio cuando los tipos se mueven.',
+    longDefinition:
+      'La duración se expresa en años y aproxima cuánto varía el precio de un bono ante un cambio de un punto porcentual en los tipos de interés. La regla práctica: una duración de 7 implica que, si los tipos suben un 1%, el precio cae aproximadamente un 7%; y si bajan un 1%, sube alrededor de un 7%. Es la principal medida del riesgo de tipos de un activo de renta fija.\n\nEn los ETFs de renta fija, la ficha del fondo publica la duración media de la cartera. Un ETF de bonos a corto plazo (duración 1-3 años) apenas se mueve cuando cambian los tipos, mientras que uno de bonos a largo plazo (duración 8-15 años) puede tener oscilaciones fuertes. La caída de muchos ETFs de bonos en 2022 se explica precisamente por la combinación de duraciones altas y una subida rápida de tipos.\n\nElegir la duración es elegir cuánto riesgo de tipos quieres: más duración suele venir con algo más de rentabilidad esperada (TIR), pero también con más volatilidad.',
+    example:
+      'Un ETF de bonos con duración media de 6,5 años: si el BCE sube los tipos un 1%, cabe esperar una caída de precio cercana al 6,5%. Si los baja un 1%, una subida similar. Por eso, para perfiles conservadores o a corto plazo, suelen preferirse duraciones bajas.',
+    relatedArticles: [
+      'mejores-etfs-renta-fija-2026',
+      'riesgo-divisa-etf-hedged-espana',
+      'cartera-boglehead-3-fondos-espana',
+    ],
+    relatedLinks: [
+      { label: 'Mejores ETFs de renta fija', href: '/etfs/renta-fija' },
+    ],
+    faq: [
+      {
+        q: '¿Una duración alta es buena o mala?',
+        a: 'Ni una cosa ni otra: depende de tu horizonte y tolerancia al riesgo. Una duración alta amplifica las ganancias si los tipos bajan, pero también las pérdidas si suben. Para estabilidad y horizonte corto, duraciones bajas; para apostar por bajadas de tipos a largo plazo, duraciones altas.',
+      },
+      {
+        q: '¿Dónde veo la duración de un ETF de bonos?',
+        a: 'En la ficha oficial del ETF en la web de la gestora o en JustETF, normalmente como "duración media" o "modified duration" de la cartera. Es uno de los datos clave a comparar entre ETFs de renta fija.',
+      },
+    ],
+  },
+  {
+    slug: 'rentabilidad-anualizada',
+    term: 'Rentabilidad anualizada',
+    category: 'metricas',
+    shortDefinition:
+      'La rentabilidad anualizada (o CAGR) es la tasa de crecimiento constante por año que llevaría tu inversión desde su valor inicial hasta el final del periodo. Permite comparar inversiones de distinta duración en igualdad de condiciones.',
+    longDefinition:
+      'La rentabilidad anualizada, conocida en inglés como CAGR (Compound Annual Growth Rate), responde a la pregunta: si mi inversión hubiera crecido al mismo ritmo cada año, ¿cuál habría sido ese ritmo? Se calcula como (valor final / valor inicial) elevado a (1 / número de años) menos 1.\n\nEs más honesta que la media simple de los rendimientos anuales, porque tiene en cuenta el efecto del interés compuesto y no se deja engañar por la volatilidad. Por ejemplo, un año +50% seguido de otro −50% no deja tu dinero igual: lo deja en −25% (la media simple diría 0%). La rentabilidad anualizada refleja ese resultado real.\n\nPara comparar fondos o ETFs, fíjate siempre en la rentabilidad anualizada del mismo periodo y, a ser posible, en términos reales (descontando la inflación). Recuerda que las rentabilidades pasadas no garantizan las futuras: la cifra anualizada describe el pasado, no predice el porvenir.',
+    example:
+      'Si inviertes 10.000€ y siete años después tienes 16.000€, tu rentabilidad total es del 60%, pero la anualizada es de aproximadamente 6,9% ((16.000/10.000)^(1/7) − 1). Esa es la cifra comparable con otras inversiones.',
+    relatedArticles: [
+      'interes-compuesto-inversion',
+      'mejores-etfs-espana-2026',
+      'fire-espana-cuanto-necesitas',
+    ],
+    relatedLinks: [
+      { label: 'Calculadora de interés compuesto', href: '/calculadora/interes-compuesto' },
+    ],
+    faq: [
+      {
+        q: '¿Qué diferencia hay entre rentabilidad media y anualizada?',
+        a: 'La media simple suma los rendimientos anuales y los divide entre el número de años, ignorando el efecto compuesto. La anualizada (CAGR) parte del valor inicial y final reales, así que refleja lo que de verdad creció tu dinero. Con volatilidad, la anualizada siempre es menor o igual que la media simple.',
+      },
+      {
+        q: '¿La rentabilidad anualizada incluye la inflación?',
+        a: 'Por defecto no: la cifra habitual es nominal. Para saber cuánto poder adquisitivo has ganado de verdad, resta la inflación del periodo y obtendrás la rentabilidad real anualizada, que es la que importa a largo plazo.',
+      },
+    ],
+  },
 ]
 
 /** Devuelve un término por su slug, o undefined si no existe */
