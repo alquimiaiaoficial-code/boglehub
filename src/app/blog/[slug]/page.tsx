@@ -12,6 +12,7 @@ import { ArticleKeyFacts } from '@/components/ArticleKeyFacts'
 import { NewsletterSignup } from '@/components/NewsletterSignup'
 import { BLOG_ARTICLES } from '@/data/blog-articles'
 import { RELATED_ARTICLES } from '@/data/related-articles'
+import { BLOG_META_TITLES } from '@/data/blog-meta-titles'
 import {
   BLOG_CATEGORIES,
   getArticleCategory,
@@ -34,7 +35,8 @@ export async function generateMetadata({
     return { title: 'Artículo no encontrado' }
   }
   return {
-    title: article.title,
+    // metaTitle SEO corto cuando el título editorial es muy largo (si no, el título)
+    title: BLOG_META_TITLES[slug] ?? article.title,
     description: article.excerpt,
     keywords: article.keywords,
     alternates: { canonical: `/blog/${article.slug}` },
