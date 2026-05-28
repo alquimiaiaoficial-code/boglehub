@@ -5,6 +5,7 @@ import { calculateAllocation } from '@/lib/analysis'
 import { projectFire } from '@/lib/fire'
 import { fetchPrices } from '@/lib/prices'
 import { generateAiNarrative } from '@/lib/ai'
+import { rateLimit } from '@/lib/rate-limit'
 
 const BodySchema = z.object({
   positions: z.array(PositionSchema).min(1).max(50),
@@ -13,6 +14,9 @@ const BodySchema = z.object({
 })
 
 export async function POST(req: NextRequest) {
+  const limited = rateLimit(req, 'analyze', 5)
+  if (limited) return limited
+
   try {
     const body = BodySchema.parse(await req.json())
 

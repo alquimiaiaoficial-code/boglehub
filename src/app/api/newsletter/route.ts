@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
 import { welcomeEmail } from '@/lib/welcome-email'
+import { rateLimit } from '@/lib/rate-limit'
 
 const BodySchema = z.object({
   email: z.string().email(),
@@ -20,6 +21,9 @@ const RESEND_API = 'https://api.resend.com'
  * deben estar las tres variables de entorno.
  */
 export async function POST(req: NextRequest) {
+  const limited = rateLimit(req, 'newsletter', 5)
+  if (limited) return limited
+
   let email: string
   try {
     const body = BodySchema.parse(await req.json())

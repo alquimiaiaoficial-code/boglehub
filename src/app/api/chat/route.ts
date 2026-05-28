@@ -1,6 +1,7 @@
 import { NextRequest } from 'next/server'
 import Groq from 'groq-sdk'
 import { z } from 'zod'
+import { rateLimit } from '@/lib/rate-limit'
 
 const MODEL = 'llama-3.3-70b-versatile'
 
@@ -38,6 +39,9 @@ FORMATO:
 export const runtime = 'nodejs'
 
 export async function POST(req: NextRequest) {
+  const limited = rateLimit(req, 'chat', 20)
+  if (limited) return limited
+
   try {
     const apiKey = process.env.GROQ_API_KEY
     if (!apiKey) {

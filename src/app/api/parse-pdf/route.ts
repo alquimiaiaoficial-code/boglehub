@@ -1,9 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { parsePdf } from '@/lib/pdf-parser'
+import { rateLimit } from '@/lib/rate-limit'
 
 const MAX_SIZE = 5 * 1024 * 1024
 
 export async function POST(req: NextRequest) {
+  const limited = rateLimit(req, 'parse-pdf', 10)
+  if (limited) return limited
+
   try {
     const formData = await req.formData()
     const file = formData.get('file')
