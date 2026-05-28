@@ -84,7 +84,7 @@ export const ETF_THEMES: EtfTheme[] = [
   {
     slug: 'todo-mundo',
     h1: 'ETFs All-World UCITS: diversificación global en un solo fondo (2026)',
-    metaTitle: 'ETFs All-World UCITS para España 2026: VWCE, ISAC y alternativas | BogleHub',
+    metaTitle: 'ETFs All-World UCITS para España 2026 | BogleHub',
     metaDescription:
       'Comparativa de ETFs globales (All-World) disponibles en España: VWCE, VWRP, ISAC, WEBN. Acumulación, TER y fiscalidad para inversores españoles.',
     intro:
@@ -132,7 +132,7 @@ export const ETF_THEMES: EtfTheme[] = [
   {
     slug: 'distribucion',
     h1: 'ETFs de distribución UCITS en España: cuándo tienen sentido (2026)',
-    metaTitle: 'ETFs de distribución (reparto) UCITS en España 2026 | BogleHub',
+    metaTitle: 'ETFs de distribución UCITS en España 2026 | BogleHub',
     metaDescription:
       'Comparativa de ETFs de distribución disponibles en España. Cuándo elegirlos, cómo tributan los dividendos y cuáles son los mejores para inversores en fase de retiro.',
     intro:
@@ -236,7 +236,7 @@ export const ETF_THEMES: EtfTheme[] = [
   {
     slug: 'materias-primas',
     h1: 'ETFs de materias primas y oro UCITS en España (2026)',
-    metaTitle: 'ETFs materias primas y oro para España 2026: SGLN, IGLN, 4GLD | BogleHub',
+    metaTitle: 'ETFs de materias primas y oro para España 2026 | BogleHub',
     metaDescription:
       'Comparativa de ETFs y ETPs de materias primas y oro disponibles en España en 2026. Qué papel juegan en una cartera indexada y cómo tributan para residentes españoles.',
     intro:
@@ -262,7 +262,7 @@ export const ETF_THEMES: EtfTheme[] = [
   {
     slug: 'nasdaq-100',
     h1: 'Los mejores ETFs Nasdaq 100 UCITS disponibles en España (2026)',
-    metaTitle: 'Mejores ETFs Nasdaq 100 para España 2026: EQQQ, SXRV, CNDX | BogleHub',
+    metaTitle: 'Mejores ETFs Nasdaq 100 para España 2026 | BogleHub',
     metaDescription:
       'Comparativa de ETFs Nasdaq 100 UCITS para inversores españoles: EQQQ, SXRV, CNDX. TER, fiscalidad, acumulación vs distribución y por qué el Nasdaq concentra en tecnología.',
     intro:
@@ -320,7 +320,7 @@ export const ETF_THEMES: EtfTheme[] = [
   {
     slug: 'oro',
     h1: 'Los mejores ETC de oro físico UCITS para inversores en España (2026)',
-    metaTitle: 'Mejores ETC de oro físico para España 2026: SGLN, IGLN, 4GLD | BogleHub',
+    metaTitle: 'Mejores ETC de oro físico para España 2026 | BogleHub',
     metaDescription:
       'Comparativa de ETC de oro físico UCITS para inversores españoles: SGLN, IGLN, 4GLD. TER, custodia, fiscalidad y cuándo tiene sentido añadir oro a tu cartera indexada.',
     intro:
@@ -350,7 +350,7 @@ export const ETF_THEMES: EtfTheme[] = [
   {
     slug: 'factor-calidad-momentum',
     h1: 'ETFs factor calidad y momentum UCITS para España (2026)',
-    metaTitle: 'Mejores ETFs factor calidad y momentum para España 2026 | BogleHub',
+    metaTitle: 'Mejores ETFs factor calidad y momentum 2026 | BogleHub',
     metaDescription:
       'Comparativa de ETFs de factor calidad y momentum disponibles en España: IWQU, IWMO, XDEQ, XDWL. Cómo funcionan los factor ETFs y cuándo añadirlos a una cartera Boglehead.',
     intro:

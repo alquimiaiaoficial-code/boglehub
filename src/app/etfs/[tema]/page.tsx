@@ -76,7 +76,8 @@ export async function generateMetadata({
   if (!theme) return { title: 'Categoría no encontrada' }
 
   return {
-    title: theme.metaTitle,
+    // metaTitle ya incluye "| BogleHub"; absolute evita el doble sufijo del template
+    title: { absolute: theme.metaTitle },
     description: theme.metaDescription,
     alternates: { canonical: `/etfs/${tema}` },
     openGraph: {
