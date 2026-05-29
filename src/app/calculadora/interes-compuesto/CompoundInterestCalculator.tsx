@@ -16,6 +16,7 @@ import { Footer } from '@/components/Footer'
 import { Card, CardTitle } from '@/components/ui/Card'
 import { Input } from '@/components/ui/Input'
 import { formatEUR } from '@/lib/utils'
+import { useFireOnce } from '@/lib/analytics'
 
 interface YearRow {
   year: number
@@ -72,6 +73,8 @@ export function CompoundInterestCalculator() {
     'Balance total': r.balance,
   }))
 
+  const markUsed = useFireOnce('calculator_used', { calculator: 'interes-compuesto' })
+
   return (
     <>
       <Header />
@@ -89,7 +92,7 @@ export function CompoundInterestCalculator() {
           {/* Inputs */}
           <Card className="mb-6">
             <CardTitle className="mb-4">Parámetros</CardTitle>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4" onChange={markUsed}>
               <div>
                 <label className="block text-xs text-fg-muted mb-1">Capital inicial (€)</label>
                 <Input

@@ -14,6 +14,7 @@ import { Card, CardTitle } from '@/components/ui/Card'
 import { Input } from '@/components/ui/Input'
 import { Analysis } from '@/types/analysis'
 import { Sparkles, AlertTriangle } from 'lucide-react'
+import { trackEvent } from '@/lib/analytics'
 
 export function AnalyzerClient() {
   const {
@@ -44,6 +45,7 @@ export function AnalyzerClient() {
       const data = await res.json()
       if (!data.success) throw new Error(data.error)
       setAnalysis(data.data)
+      trackEvent('analysis_completed', { positions: positions.length })
       if (data.data?.allocation?.totalValueEUR != null) {
         saveSnapshot(data.data.allocation.totalValueEUR)
       }

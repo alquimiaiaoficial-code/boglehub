@@ -5,6 +5,7 @@ import { Card, CardTitle } from '@/components/ui/Card'
 import { Input } from '@/components/ui/Input'
 import { formatEUR, formatPct } from '@/lib/utils'
 import { computeMarginalSavingsTax, type BracketShare } from '@/lib/fiscal'
+import { useFireOnce } from '@/lib/analytics'
 
 /** Color por tipo marginal, de menor a mayor carga fiscal. */
 const BRACKET_COLOR: Record<string, string> = {
@@ -51,8 +52,10 @@ export function IrpfCalculator() {
     }
   }, [valorCompra, valorVenta, otrasGanancias, perdidas])
 
+  const markUsed = useFireOnce('calculator_used', { calculator: 'irpf-venta-fondos' })
+
   return (
-    <div className="mx-auto max-w-5xl px-4 sm:px-6">
+    <div className="mx-auto max-w-5xl px-4 sm:px-6" onChange={markUsed}>
       {/* Parámetros */}
       <Card className="mb-6">
         <CardTitle className="mb-4">Datos de tu venta</CardTitle>

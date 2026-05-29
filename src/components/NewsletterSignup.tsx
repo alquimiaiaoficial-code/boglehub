@@ -4,6 +4,7 @@ import { useState, FormEvent } from 'react'
 import { Button } from '@/components/ui/Button'
 import { Input } from '@/components/ui/Input'
 import { Mail, Check } from 'lucide-react'
+import { trackEvent } from '@/lib/analytics'
 
 export function NewsletterSignup({ variant = 'card' }: { variant?: 'card' | 'inline' }) {
   const [email, setEmail] = useState('')
@@ -23,6 +24,7 @@ export function NewsletterSignup({ variant = 'card' }: { variant?: 'card' | 'inl
       if (data.success) {
         setStatus('success')
         setEmail('')
+        trackEvent('email_captured', { variant })
       } else {
         setStatus('error')
       }

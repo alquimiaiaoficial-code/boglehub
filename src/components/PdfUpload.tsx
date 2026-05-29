@@ -6,6 +6,7 @@ import { usePortfolio } from '@/lib/store'
 import { Card } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { ParseResult } from '@/lib/pdf-parser/types'
+import { trackEvent } from '@/lib/analytics'
 
 export function PdfUpload() {
   const inputRef = useRef<HTMLInputElement>(null)
@@ -24,6 +25,10 @@ export function PdfUpload() {
       const json = await res.json()
       if (!json.success) throw new Error(json.error)
       setResult(json.data)
+      trackEvent('pdf_uploaded', {
+        broker: json.data?.broker ?? 'desconocido',
+        positions: json.data?.positions?.length ?? 0,
+      })
     } catch (e) {
       setError(e instanceof Error ? e.message : 'Error al procesar')
     } finally { setLoading(false) }

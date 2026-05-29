@@ -5,6 +5,7 @@ import { Card, CardTitle } from '@/components/ui/Card'
 import { Input } from '@/components/ui/Input'
 import { cn, formatEUR } from '@/lib/utils'
 import { BROKERS, rankBrokers, type InstrumentType } from '@/lib/brokers'
+import { trackEvent, useFireOnce } from '@/lib/analytics'
 
 export function BrokerComparator() {
   const [initialCapital, setInitialCapital] = useState(10000)
@@ -31,8 +32,10 @@ export function BrokerComparator() {
   const spread =
     cheapest && mostExpensive ? mostExpensive.totalCost - cheapest.totalCost : 0
 
+  const markUsed = useFireOnce('calculator_used', { calculator: 'comparar-brokers' })
+
   return (
-    <div className="mx-auto max-w-5xl px-4 sm:px-6">
+    <div className="mx-auto max-w-5xl px-4 sm:px-6" onChange={markUsed}>
       {/* Parámetros */}
       <Card className="mb-6">
         <CardTitle className="mb-4">Tu patrón de inversión</CardTitle>
@@ -249,10 +252,22 @@ export function BrokerComparator() {
                 ))}
               </ul>
             </div>
-            <p className="mt-auto pt-3 text-xs text-fg-muted border-t border-border">
-              <span className="text-fg-subtle">Ideal para: </span>
-              {broker.bestFor}
-            </p>
+            <div className="mt-auto pt-3 border-t border-border">
+              <p className="text-xs text-fg-muted">
+                <span className="text-fg-subtle">Ideal para: </span>
+                {broker.bestFor}
+              </p>
+              <a
+                href={broker.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => trackEvent('broker_link_clicked', { broker: broker.id })}
+                className="mt-2 inline-flex items-center gap-1 text-xs font-medium text-brand-400 hover:text-brand-300 transition-colors"
+              >
+                Visitar web de {broker.name}
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
           </Card>
         ))}
       </div>

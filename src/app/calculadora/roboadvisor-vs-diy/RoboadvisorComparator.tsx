@@ -14,6 +14,7 @@ import {
 import { Card, CardTitle } from '@/components/ui/Card'
 import { Input } from '@/components/ui/Input'
 import { cn, formatEUR } from '@/lib/utils'
+import { useFireOnce } from '@/lib/analytics'
 
 interface RoboPreset {
   id: string
@@ -109,8 +110,10 @@ export function RoboadvisorComparator() {
     setRoboCost(preset.cost)
   }
 
+  const markUsed = useFireOnce('calculator_used', { calculator: 'roboadvisor-vs-diy' })
+
   return (
-    <div className="mx-auto max-w-5xl px-4 sm:px-6">
+    <div className="mx-auto max-w-5xl px-4 sm:px-6" onChange={markUsed}>
       {/* Selección de roboadvisor */}
       <Card className="mb-6">
         <CardTitle className="mb-1">¿Con qué roboadvisor te comparas?</CardTitle>

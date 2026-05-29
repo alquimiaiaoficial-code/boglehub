@@ -7,6 +7,7 @@ import { Send, Trash2, Sparkles, User } from 'lucide-react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { cn } from '@/lib/utils'
+import { trackEvent } from '@/lib/analytics'
 
 export function Chat() {
   const { messages, addMessage, appendToLast, clear } = useChat()
@@ -28,6 +29,7 @@ export function Chat() {
     setError(null)
     setInput('')
     addMessage({ role: 'user', content: trimmed })
+    trackEvent('chat_used')
 
     // Add placeholder assistant message that we'll stream into
     addMessage({ role: 'assistant', content: '' })

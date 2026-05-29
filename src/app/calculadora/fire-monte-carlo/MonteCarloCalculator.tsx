@@ -18,6 +18,7 @@ import { Card, CardTitle } from '@/components/ui/Card'
 import { Input } from '@/components/ui/Input'
 import { formatEUR, formatPct } from '@/lib/utils'
 import { runMonteCarlo } from '@/lib/monte-carlo'
+import { useFireOnce } from '@/lib/analytics'
 
 const SIMULATIONS = 1000
 const MEAN_RETURN = 0.07
@@ -67,6 +68,8 @@ export function MonteCarloCalculator() {
         ? 'Plan ajustado'
         : 'Plan en riesgo'
 
+  const markUsed = useFireOnce('calculator_used', { calculator: 'fire-monte-carlo' })
+
   return (
     <>
       <Header />
@@ -85,7 +88,7 @@ export function MonteCarloCalculator() {
           {/* Inputs */}
           <Card className="mb-6">
             <CardTitle className="mb-4">Tu plan</CardTitle>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4" onChange={markUsed}>
               <div>
                 <label className="block text-xs text-fg-muted mb-1">Capital inicial (€)</label>
                 <Input
