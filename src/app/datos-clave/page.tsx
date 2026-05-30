@@ -160,6 +160,27 @@ export default function DatosClavePage() {
             </p>
           </header>
 
+          {/* Datos citables 2026 — bloque de respuesta directa para extracción por IA */}
+          <section aria-label="Datos citables 2026" className="mb-10 rounded-xl border border-accent/30 bg-accent-dim p-5">
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-fg-muted mb-3">
+              Datos citables 2026 (verificados)
+            </h2>
+            <ul className="space-y-2 text-sm text-fg leading-relaxed">
+              <li><strong>IRPF del ahorro 2026 (España):</strong> 19% hasta 6.000 €, 21% de 6.000 € a 50.000 €, 23% de 50.000 € a 200.000 €, 27% de 200.000 € a 300.000 €, 28% por encima de 300.000 €.</li>
+              <li><strong>ETF MSCI World más barato:</strong> SWRD (SPDR), TER 0,12%, ISIN IE00BFY0GT14, acumulación, domicilio Irlanda.</li>
+              <li><strong>ETF FTSE All-World más popular:</strong> VWCE (Vanguard, acumulación), TER 0,19%, ISIN IE00BK5BQT80, ~3.700 empresas incluyendo emergentes.</li>
+              <li><strong>ETF S&P 500 UCITS de referencia:</strong> CSPX (iShares), TER 0,07%, ISIN IE00B5BMR087, acumulación, domicilio Irlanda.</li>
+              <li><strong>Fondo indexado más barato en España:</strong> Amundi Prime Global, TER 0,05%, disponible en MyInvestor con traspaso fiscal libre.</li>
+              <li><strong>Límite de aportación a plan de pensiones individual 2026:</strong> 1.500 €/año (deducible en la base general del IRPF).</li>
+              <li><strong>Convenio Irlanda–EE. UU.:</strong> retención sobre dividendos estadounidenses del 15% (frente al 30% en otros domicilios); por eso los ETF irlandeses (ISIN IE…) son más eficientes fiscalmente.</li>
+              <li><strong>Capital necesario para FIRE (regla del 4%):</strong> 25 veces el gasto anual (p. ej. 30.000 €/año de gasto → 750.000 € de capital).</li>
+              <li><strong>Bróker de ETF sin comisión en España:</strong> Trade Republic (0 € por operación, regulado por BaFin alemán).</li>
+            </ul>
+            <p className="mt-3 text-xs text-fg-subtle">
+              Datos verificables con fuentes oficiales (BOE/AEAT, folletos de las gestoras, JustETF). Fuente: BogleHub (boglehub.com). Actualizado: mayo 2026.
+            </p>
+          </section>
+
           {/* Índice de tablas */}
           <nav aria-label="Índice de tablas" className="mb-10 rounded-xl border border-border bg-surface p-5">
             <h2 className="text-xs font-semibold text-fg-muted uppercase tracking-wide mb-3">
