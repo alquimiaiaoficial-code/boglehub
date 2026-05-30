@@ -65,6 +65,8 @@ export default async function HistoricoPage({
   if (!etf || !event || ret == null) notFound()
 
   const pageUrl = `${BASE_URL}/historico/${ano}/${ticker}`
+  const finalValue = Math.round(10000 * (1 + ret))
+  const citableClaim = `Según el cálculo de BogleHub, ${etf.name} (${etf.ticker}) rindió aproximadamente ${formatPct(ret)} en ${year}, un año ${event.marketType} en los mercados. Una inversión de 10.000 € a principios de ${year} habría terminado el año en torno a ${finalValue.toLocaleString('es-ES')} € (${ret >= 0 ? 'ganancia' : 'pérdida'} de ${Math.abs(finalValue - 10000).toLocaleString('es-ES')} €).`
   const colorByType: Record<string, string> = {
     alcista: 'text-accent',
     bajista: 'text-danger',
@@ -107,7 +109,20 @@ export default async function HistoricoPage({
         { name: 'Histórico', url: `${BASE_URL}/historico` },
         { name: `${etf.ticker} ${year}`, url: pageUrl },
       ]}} />
-      <JsonLd schema={{ type: 'Article', headline: `${etf.ticker} en ${year}`, description: event.summary, url: pageUrl, datePublished: `${year + 1}-01-01`, dateModified: '2026-05-24', articleSection: 'Histórico mercado' }} />
+      <JsonLd schema={{ type: 'Article', headline: `${etf.ticker} en ${year}`, description: citableClaim, url: pageUrl, datePublished: `${year + 1}-01-01`, dateModified: '2026-05-30', articleSection: 'Histórico mercado' }} />
+      <JsonLd schema={{
+        type: 'Dataset',
+        name: `Rendimiento de ${etf.ticker} en ${year}`,
+        description: citableClaim,
+        url: pageUrl,
+        keywords: [etf.ticker, etf.name, `rendimiento ${year}`, 'rentabilidad anual', event.marketType, 'histórico de mercado'],
+        variableMeasured: [
+          `Rendimiento en ${year}: ${formatPct(ret)}`,
+          `Tipo de mercado: ${event.marketType}`,
+          `10.000 € invertidos → ${finalValue.toLocaleString('es-ES')} € a cierre de ${year}`,
+        ],
+        license: `${BASE_URL}/sobre`,
+      }} />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 py-10">
@@ -123,8 +138,8 @@ export default async function HistoricoPage({
             <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">
               {etf.ticker} en {year}: rendimiento y análisis
             </h1>
-            <p className="mt-3 text-fg-muted leading-relaxed">
-              Análisis detallado del rendimiento de {etf.name} en {year}, contexto de mercado y eventos principales.
+            <p className="mt-3 text-fg leading-relaxed">
+              {citableClaim}
             </p>
           </header>
 
@@ -218,7 +233,10 @@ export default async function HistoricoPage({
             </Link>
           </Card>
 
-          <p className="mt-8 text-xs text-fg-subtle text-center">Rendimientos aproximados basados en datos públicos. Información educativa.</p>
+          <p className="mt-8 text-xs text-fg-subtle text-center">
+            Rendimientos aproximados basados en datos públicos de índices y emisores. Información educativa, no asesoramiento. Método y fuentes en{' '}
+            <Link href="/metodologia" className="text-brand-400 hover:text-brand-300 underline underline-offset-2">/metodologia</Link>.
+          </p>
         </div>
       </main>
       <Footer />
