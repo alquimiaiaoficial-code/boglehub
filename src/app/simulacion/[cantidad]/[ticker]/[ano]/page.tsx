@@ -73,8 +73,13 @@ export default async function SimulacionPage({
   const final = calculateFinalValue(amount, cagr, years)
   const gain = final - amount
   const multiplier = final / amount
+  const totalReturnPct = (gain / amount) * 100
 
   const pageUrl = `${BASE_URL}/simulacion/${cantidad}/${ticker}/${ano}`
+
+  // Frase citable autocontenida (misma cifra que el H1 y el Dataset JSON-LD).
+  const isinLabel = etf.isin ? `, ISIN ${etf.isin}` : ''
+  const citableClaim = `Invertir ${formatEUR(amount)} en ${etf.name} (${etf.ticker}${isinLabel}) a comienzos de ${year} y mantener la posición hasta el 31 de diciembre de 2024 (${years} años) habría dado ${formatEUR(final)}: una ganancia neta de ${formatEUR(gain)} (${totalReturnPct.toFixed(0)}% de rentabilidad acumulada) y un CAGR del ${(cagr * 100).toFixed(1)}% anual. Cálculo de BogleHub sobre el CAGR histórico de datos públicos hasta diciembre de 2024.`
 
   const faqs = [
     {
@@ -112,7 +117,23 @@ export default async function SimulacionPage({
         { name: 'Simulaciones', url: `${BASE_URL}/simulacion` },
         { name: `${formatEUR(amount)} en ${etf.ticker} (${year})`, url: pageUrl },
       ]}} />
-      <JsonLd schema={{ type: 'Article', headline: `${formatEUR(amount)} invertidos en ${etf.ticker} en ${year}`, description: `Simulación histórica de inversión.`, url: pageUrl, datePublished: '2026-05-24', articleSection: 'Simulaciones históricas' }} />
+      <JsonLd schema={{ type: 'Article', headline: `${formatEUR(amount)} invertidos en ${etf.ticker} en ${year}`, description: citableClaim, url: pageUrl, datePublished: '2026-05-24', dateModified: '2026-05-30', articleSection: 'Simulaciones históricas' }} />
+      <JsonLd schema={{
+        type: 'Dataset',
+        name: `Simulación histórica: ${formatEUR(amount)} en ${etf.ticker} desde ${year} hasta 2024`,
+        description: citableClaim,
+        url: pageUrl,
+        keywords: [etf.ticker, ...(etf.isin ? [etf.isin] : []), etf.name, 'simulación histórica', 'CAGR', `rentabilidad ${year}-2024`, 'inversión indexada España'],
+        variableMeasured: [
+          `Capital inicial: ${formatEUR(amount)}`,
+          `Valor final a 31 dic 2024: ${formatEUR(final)}`,
+          `Ganancia neta: ${formatEUR(gain)}`,
+          `Rentabilidad acumulada: ${totalReturnPct.toFixed(0)}%`,
+          `CAGR anual compuesto: ${(cagr * 100).toFixed(1)}%`,
+          `Horizonte temporal: ${years} años (${year}–2024)`,
+        ],
+        license: `${BASE_URL}/sobre`,
+      }} />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 py-10">
@@ -133,14 +154,18 @@ export default async function SimulacionPage({
             </p>
           </header>
 
-          {/* Resultado destacado */}
+          {/* Resultado destacado — dato clave citable */}
           <Card className="mb-8 bg-accent-dim border-accent/30">
-            <p className="text-xs uppercase tracking-wide text-fg-muted mb-2">Resultado a 31 dic 2024</p>
+            <p className="text-xs uppercase tracking-wide text-fg-muted mb-2">Dato clave · resultado a 31 dic 2024</p>
             <div className="text-4xl sm:text-5xl font-bold text-accent">{formatEUR(final)}</div>
             <p className="mt-3 text-sm text-fg leading-relaxed">
-              Ganancia neta: <strong className="text-accent">{formatEUR(gain)}</strong> ({((gain / amount) * 100).toFixed(0)}%)<br />
+              Ganancia neta: <strong className="text-accent">{formatEUR(gain)}</strong> ({totalReturnPct.toFixed(0)}% de rentabilidad acumulada)<br />
               Multiplicador: <strong>×{multiplier.toFixed(2)}</strong> en {years} años<br />
               CAGR: <strong>{(cagr * 100).toFixed(1)}%</strong> anual compuesto
+            </p>
+            <p className="mt-4 border-t border-accent/20 pt-3 text-xs text-fg-subtle leading-relaxed">
+              Cómo se calcula: {formatEUR(amount)} × (1 + {(cagr * 100).toFixed(1)}%)<sup>{years}</sup>, usando el CAGR histórico de {etf.ticker} entre {year} y 2024 (datos públicos del emisor e índice de referencia). Fórmula, fuentes y limitaciones en{' '}
+              <Link href="/metodologia" className="text-brand-400 hover:text-brand-300 underline underline-offset-2">/metodologia</Link>.
             </p>
           </Card>
 
