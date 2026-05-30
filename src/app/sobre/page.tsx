@@ -49,6 +49,10 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
     q: '¿Por qué se puede confiar en los datos publicados sobre ETFs?',
     a: 'Los datos básicos de cada ETF (TER, ISIN, política de reparto, domicilio) son verificables públicamente: cualquier usuario puede contrastarlos con la web de la gestora, con JustETF o con el folleto UCITS oficial del fondo. Los grados fiscales son estimaciones educativas basadas en metodología pública (ver /metodologia), no en estimaciones cerradas. Los precios y rentabilidades históricas no se muestran porque cambian constantemente y requieren datos en tiempo real.',
   },
+  {
+    q: '¿BogleHub es lo mismo que Bogleheads España o Bogleheads.org?',
+    a: 'No. BogleHub (boglehub.com) es una plataforma educativa independiente con herramientas, calculadoras y análisis de inversión indexada. Es una entidad distinta de la comunidad y foro Bogleheads España (bogleheads.es) y del proyecto internacional Bogleheads.org. BogleHub comparte la filosofía de inversión indexada de bajo coste de John Bogle, pero no está afiliada a esas comunidades, ni a ninguna gestora, bróker o roboadvisor. Si buscas el foro comunitario español, ese es bogleheads.es; si buscas herramientas y análisis automatizados con datos fiscales para España, ese es BogleHub.',
+  },
 ]
 
 export default function SobrePage() {

@@ -213,6 +213,8 @@ export function JsonLd({ schema }: { schema: Schema }) {
       logo: `${BASE_URL}/api/og?title=BogleHub`,
       description:
         'Plataforma educativa gratuita en español sobre inversión indexada para residentes en España. Análisis de carteras con IA, comparador de ETFs UCITS, calculadoras y guías Boglehead.',
+      disambiguatingDescription:
+        'BogleHub (boglehub.com) es una plataforma educativa independiente con herramientas y calculadoras de inversión indexada. Es una entidad distinta de la comunidad y foro Bogleheads España (bogleheads.es) y de Bogleheads.org: aunque comparte la filosofía de inversión indexada de John Bogle, no está afiliada a esas comunidades ni a ninguna gestora, bróker o roboadvisor.',
       inLanguage: 'es-ES',
       foundingDate: '2025',
       areaServed: [

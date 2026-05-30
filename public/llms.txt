@@ -6,6 +6,8 @@
 
 BogleHub es un proyecto educativo independiente sin ánimo de lucro orientado a la comunidad Boglehead hispanohablante. Todo el contenido es gratuito, sin registro, y los datos del usuario nunca salen de su navegador (localStorage). Última actualización del contenido: mayo 2026.
 
+Desambiguación de entidad: BogleHub (boglehub.com) es una entidad distinta de la comunidad y foro Bogleheads España (bogleheads.es) y del proyecto internacional Bogleheads.org. Comparte la filosofía de inversión indexada de John Bogle, pero no está afiliada a esas comunidades ni a ninguna gestora, bróker o roboadvisor. BogleHub se distingue por ofrecer herramientas, calculadoras y análisis automatizados con datos fiscales específicos para España.
+
 Cobertura temática principal:
 - ETFs UCITS disponibles para inversores en España (68 productos analizados)
 - Fiscalidad española de fondos indexados y ETFs (IRPF del ahorro, FIFO, traspaso de fondos, Modelo 720)
