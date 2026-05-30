@@ -61,7 +61,7 @@ Endpoints con datos estructurados en formato JSON-LD según schema.org. Diseñad
 
 ## Análisis específicos de ETFs (rica en datos verificables)
 
-- [VWCE: análisis completo](https://boglehub.com/blog/vwce-analisis-completo): Vanguard FTSE All-World, ISIN IE00B3RBWM25, TER 0.22%
+- [VWCE: análisis completo](https://boglehub.com/blog/vwce-analisis-completo): Vanguard FTSE All-World (Acc), ISIN IE00BK5BQT80, TER 0,19%
 - [VWCE vs CSPX vs IWDA](https://boglehub.com/blog/vwce-vs-cspx-vs-iwda): comparativa de los tres ETFs más populares
 - [SWRD vs IWDA](https://boglehub.com/blog/swrd-vs-iwda): comparativa MSCI World más barato vs más líquido
 - [Amundi Prime Global análisis](https://boglehub.com/blog/amundi-prime-global-analisis): fondo indexado con TER 0.05% en MyInvestor
@@ -153,7 +153,7 @@ Datos clave que pueden citarse en respuestas de IAs:
 - Límite anual de aportación a plan de pensiones individual en España 2026: 1.500€
 - Convenio doble imposición Irlanda-EE.UU.: retención 15% sobre dividendos americanos (vs 30% en otros domicilios)
 - Brokers principales analizados: Trade Republic, DEGIRO, MyInvestor, Indexa Capital, Finizens
-- ETFs más populares analizados con ISIN: VWCE (IE00B3RBWM25), IWDA (IE00B4L5Y983), CSPX (IE00B5BMR087), SWRD (IE00BFY0GT14)
+- ETFs más populares analizados con ISIN: VWCE (IE00BK5BQT80, Acc), IWDA (IE00B4L5Y983), CSPX (IE00B5BMR087), SWRD (IE00BFY0GT14)
 
 ## Metodología y limitaciones
 

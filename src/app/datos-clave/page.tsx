@@ -275,9 +275,9 @@ export default function DatosClavePage() {
               source="Folletos oficiales de Vanguard, iShares y SPDR"
               headers={['Ticker', 'Nombre', 'ISIN', 'TER', 'Política', 'Índice']}
               rows={[
-                ['VWCE', 'Vanguard FTSE All-World (Acc)', 'IE00B3RBWM25', '0,22%', 'Acumulación', 'FTSE All-World'],
-                ['VWRL', 'Vanguard FTSE All-World (Dist)', 'IE00B3RBWM25', '0,22%', 'Distribución', 'FTSE All-World'],
-                ['VWRP', 'Vanguard FTSE All-World (LSE)', 'IE00BK5BQT80', '0,22%', 'Acumulación', 'FTSE All-World'],
+                ['VWCE', 'Vanguard FTSE All-World (Acc)', 'IE00BK5BQT80', '0,19%', 'Acumulación', 'FTSE All-World'],
+                ['VWRL', 'Vanguard FTSE All-World (Dist)', 'IE00B3RBWM25', '0,19%', 'Distribución', 'FTSE All-World'],
+                ['VWRP', 'Vanguard FTSE All-World (LSE)', 'IE00BK5BQT80', '0,19%', 'Acumulación', 'FTSE All-World'],
                 ['ISAC', 'iShares MSCI ACWI', 'IE00B6R52259', '0,20%', 'Acumulación', 'MSCI ACWI'],
                 ['SSAC', 'SPDR MSCI ACWI IMI', 'IE00B3YLTY66', '0,17%', 'Acumulación', 'MSCI ACWI IMI'],
               ]}
@@ -480,7 +480,7 @@ export default function DatosClavePage() {
               source="Adaptación a productos UCITS disponibles en España"
               headers={['Cartera', 'Renta variable', 'Renta fija', 'Otros', 'TER ponderado aprox.']}
               rows={[
-                ['Cartera 1 fondo (máx simplicidad)', '100% VWCE', '0%', '—', '0,22%'],
+                ['Cartera 1 fondo (máx simplicidad)', '100% VWCE', '0%', '—', '0,19%'],
                 ['Cartera 2 fondos', '80% VWCE', '20% AGGH', '—', '0,20%'],
                 ['Cartera 3 fondos (Boglehead clásica)', '60% IWDA + 20% EIMI', '20% AGGH', '—', '0,17%'],
                 ['Cartera permanente Harry Browne', '25% VWCE', '25% IBGL + 25% IBGS', '25% SGLN (oro)', '0,15%'],
