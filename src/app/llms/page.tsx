@@ -5,6 +5,7 @@ import { Footer } from '@/components/Footer'
 import { JsonLd } from '@/components/JsonLd'
 import { BLOG_ARTICLES } from '@/data/blog-articles'
 import { GLOSSARY_TERMS } from '@/data/glossary'
+import { ETF_PAIRS } from '@/data/etf-pairs'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -130,7 +131,7 @@ export default function LlmsGuidePage() {
                   <tr>
                     <td className="px-4 py-2.5 font-mono text-brand-400"><a href="/sitemap.xml" className="hover:underline">/sitemap.xml</a></td>
                     <td className="px-4 py-2.5 text-fg-muted">XML</td>
-                    <td className="px-4 py-2.5 text-fg-muted">262 URLs</td>
+                    <td className="px-4 py-2.5 text-fg-muted">1500+ URLs</td>
                   </tr>
                 </tbody>
               </table>
@@ -165,7 +166,7 @@ export default function LlmsGuidePage() {
               <li className="rounded-xl border border-border bg-surface p-4">
                 <code className="font-mono text-brand-400">GET /api/articles</code>
                 <p className="text-fg-muted mt-1.5">
-                  ItemList de 35 Article con headline, description, dates, articleSection,
+                  ItemList de {BLOG_ARTICLES.length} Article con headline, description, dates, articleSection,
                   keywords, FAQ count, author/publisher entities.
                 </p>
               </li>
@@ -205,7 +206,7 @@ export default function LlmsGuidePage() {
               <li>• <strong className="text-fg">Hub glosario</strong>: DefinedTermSet + CollectionPage</li>
               <li>• <strong className="text-fg">Fichas ETF</strong> (68): FinancialProduct + FAQPage (5 FAQs autogeneradas) + BreadcrumbList</li>
               <li>• <strong className="text-fg">Catálogo ETF</strong>: Dataset + CollectionPage</li>
-              <li>• <strong className="text-fg">Comparativas</strong> (50): FAQPage (5 FAQs dinámicas) + BreadcrumbList</li>
+              <li>• <strong className="text-fg">Comparativas</strong> ({ETF_PAIRS.length}): FAQPage (5 FAQs dinámicas) + BreadcrumbList</li>
               <li>• <strong className="text-fg">Calculadoras</strong> (4): SoftwareApplication + FAQPage + BreadcrumbList</li>
               <li>• <strong className="text-fg">Guía /empezar</strong>: HowTo (6 pasos) + FAQPage + BreadcrumbList</li>
               <li>• <strong className="text-fg">/faq, /datos-clave</strong>: FAQPage + Speakable + Article</li>
@@ -218,7 +219,7 @@ export default function LlmsGuidePage() {
               4. Permisos explícitos en robots.txt
             </h2>
             <p className="text-fg-muted leading-relaxed mb-3">
-              BogleHub permite explícitamente a 16 crawlers de IAs principales en{' '}
+              BogleHub permite explícitamente a 22 crawlers de IAs principales en{' '}
               <a
                 href="/robots.txt"
                 className="text-brand-400 hover:text-brand-300 underline underline-offset-2"
@@ -241,9 +242,15 @@ export default function LlmsGuidePage() {
                 <span>Bytespider</span>
                 <span>cohere-ai</span>
                 <span>CCBot</span>
+                <span>Diffbot</span>
+                <span>FacebookBot</span>
                 <span>Meta-ExternalAgent</span>
                 <span>DuckAssistBot</span>
                 <span>PetalBot</span>
+                <span>YouBot</span>
+                <span>AmazonBot</span>
+                <span>omgili</span>
+                <span>omgilibot</span>
               </div>
             </div>
           </section>

@@ -8,22 +8,6 @@ import { GLOSSARY_TERMS } from '@/data/glossary'
 
 const BASE_URL = 'https://boglehub.com'
 
-export const metadata: Metadata = {
-  title: 'Preguntas frecuentes sobre inversión indexada en España (2026)',
-  description:
-    'Respuestas claras a las 50 preguntas más buscadas sobre inversión indexada, ETFs UCITS, fiscalidad española, planes de pensiones, roboadvisors, brokers, FIRE y carteras Boglehead. Actualizado mayo 2026.',
-  openGraph: {
-    title: 'Preguntas frecuentes sobre inversión indexada en España | BogleHub',
-    description:
-      'Respuestas directas a las 50 preguntas más frecuentes sobre ETFs, fiscalidad, brokers, roboadvisors y estrategias indexadas en España.',
-    locale: 'es_ES',
-    images: [
-      '/api/og?title=Preguntas%20frecuentes&subtitle=Inversi%C3%B3n%20indexada%20en%20Espa%C3%B1a',
-    ],
-  },
-  alternates: { canonical: '/faq' },
-}
-
 interface FaqCategory {
   slug: string
   label: string
@@ -197,9 +181,26 @@ const FAQ_CATEGORIES: FaqCategory[] = [
   },
 ]
 
+const ALL_QUESTIONS = FAQ_CATEGORIES.flatMap((cat) => cat.questions)
+const QUESTION_COUNT = ALL_QUESTIONS.length
+
+export const metadata: Metadata = {
+  title: 'Preguntas frecuentes sobre inversión indexada en España (2026)',
+  description: `Respuestas claras a las ${QUESTION_COUNT} preguntas más frecuentes sobre inversión indexada, ETFs UCITS, fiscalidad española, planes de pensiones, roboadvisors, brokers, FIRE y carteras Boglehead. Actualizado mayo 2026.`,
+  openGraph: {
+    title: 'Preguntas frecuentes sobre inversión indexada en España | BogleHub',
+    description: `Respuestas directas a las ${QUESTION_COUNT} preguntas más frecuentes sobre ETFs, fiscalidad, brokers, roboadvisors y estrategias indexadas en España.`,
+    locale: 'es_ES',
+    images: [
+      '/api/og?title=Preguntas%20frecuentes&subtitle=Inversi%C3%B3n%20indexada%20en%20Espa%C3%B1a',
+    ],
+  },
+  alternates: { canonical: '/faq' },
+}
+
 export default function FaqPage() {
   // Aplanamos todas las preguntas para el FAQPage schema (Google permite 200+)
-  const allQuestions = FAQ_CATEGORIES.flatMap((cat) => cat.questions)
+  const allQuestions = ALL_QUESTIONS
 
   return (
     <>
