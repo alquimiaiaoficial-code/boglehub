@@ -56,6 +56,9 @@ export default async function VsBrokerPage({ params }: { params: Promise<{ pair:
 
   const pageUrl = `${BASE_URL}/vs-broker/${pair}`
 
+  // Veredicto citable, factual y equilibrado (sin "mejor" universal — YMYL).
+  const verdict = `Según BogleHub, la diferencia clave entre ${brokerA.name} y ${brokerB.name} está en comisiones y producto: ${brokerA.name} cobra ${brokerA.etfCommission} por ETF y ${brokerA.supportsFunds ? 'también ofrece fondos indexados con traspaso fiscal libre' : 'solo ofrece ETFs'}; ${brokerB.name} cobra ${brokerB.etfCommission} y ${brokerB.supportsFunds ? 'también ofrece fondos indexados con traspaso fiscal libre' : 'solo ofrece ETFs'}. ${brokerA.name} está regulado por ${brokerA.regulator} (${brokerA.regulatorCountry}); ${brokerB.name}, por ${brokerB.regulator} (${brokerB.regulatorCountry}). No hay un "mejor" universal: depende de tu patrón de inversión (importe y frecuencia de aportación y si quieres fondos además de ETFs).`
+
   const faqs = [
     {
       q: `¿${brokerA.name} o ${brokerB.name}: cuál es más barato?`,
@@ -107,9 +110,10 @@ export default async function VsBrokerPage({ params }: { params: Promise<{ pair:
         schema={{
           type: 'Article',
           headline: `${brokerA.name} vs ${brokerB.name}: comparativa 2026`,
-          description: `Análisis comparativo entre ${brokerA.name} y ${brokerB.name} para inversores indexados en España.`,
+          description: verdict,
           url: pageUrl,
           datePublished: '2026-05-24',
+          dateModified: '2026-05-30',
           articleSection: 'Comparativas de brokers',
         }}
       />
@@ -128,10 +132,8 @@ export default async function VsBrokerPage({ params }: { params: Promise<{ pair:
             <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">
               {brokerA.name} vs {brokerB.name} (2026)
             </h1>
-            <p className="mt-3 text-fg-muted leading-relaxed">
-              Comparativa completa entre {brokerA.name} y {brokerB.name} para inversores indexados
-              en España: comisiones, regulación, productos, ventajas y para qué perfil de
-              inversor encaja mejor cada uno.
+            <p className="mt-3 text-fg leading-relaxed">
+              {verdict}
             </p>
           </header>
 
