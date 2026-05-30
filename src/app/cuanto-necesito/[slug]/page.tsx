@@ -49,6 +49,8 @@ export default async function CuantoNecesitoPage({ params }: { params: Promise<{
   const RATE = 0.07
   const horizons = [10, 15, 20, 25, 30, 35, 40]
 
+  const citableClaim = `Según el cálculo de BogleHub, para alcanzar ${o.label} (${formatEUR(o.targetAmount)}) invirtiendo de forma indexada hay que aportar aproximadamente ${formatEUR(monthlyToReach(o.targetAmount, 20, RATE))} al mes durante 20 años, ${formatEUR(monthlyToReach(o.targetAmount, 30, RATE))} al mes en 30 años o ${formatEUR(monthlyToReach(o.targetAmount, 40, RATE))} al mes en 40 años, asumiendo una rentabilidad anual del 7% (histórica del MSCI World). Cuanto antes empieces, menor es la cuota mensual.`
+
   const faqs = [
     {
       q: `¿Cuánto necesito invertir al mes para llegar a ${o.label}?`,
@@ -85,10 +87,26 @@ export default async function CuantoNecesitoPage({ params }: { params: Promise<{
         schema={{
           type: 'Article',
           headline: `Cuánto necesito invertir al mes para llegar a ${o.label}`,
-          description: o.description,
+          description: citableClaim,
           url: pageUrl,
           datePublished: '2026-05-24',
+          dateModified: '2026-05-30',
           articleSection: 'Objetivos patrimoniales',
+        }}
+      />
+      <JsonLd
+        schema={{
+          type: 'Dataset',
+          name: `Aportación mensual para alcanzar ${o.label}`,
+          description: citableClaim,
+          url: pageUrl,
+          keywords: [o.label, 'aportación mensual', 'interés compuesto', 'objetivo patrimonial', 'inversión indexada España', 'FIRE'],
+          variableMeasured: [
+            `Objetivo: ${formatEUR(o.targetAmount)} (${o.label})`,
+            `Rentabilidad anual asumida: 7%`,
+            ...horizons.map((h) => `${h} años → ${formatEUR(monthlyToReach(o.targetAmount, h, RATE))}/mes`),
+          ],
+          license: `${BASE_URL}/sobre`,
         }}
       />
       <Header />
@@ -106,7 +124,8 @@ export default async function CuantoNecesitoPage({ params }: { params: Promise<{
             <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">
               Cuánto invertir al mes para llegar a {o.label}
             </h1>
-            <p className="mt-3 text-fg-muted leading-relaxed">{o.description}</p>
+            <p className="mt-3 text-fg leading-relaxed">{citableClaim}</p>
+            <p className="mt-2 text-sm text-fg-muted leading-relaxed">{o.description}</p>
           </header>
 
           <Card className="mb-8">
@@ -140,7 +159,9 @@ export default async function CuantoNecesitoPage({ params }: { params: Promise<{
             </div>
             <p className="mt-3 text-xs text-fg-subtle">
               Cálculo: rentabilidad constante del 7% anual sobre aportaciones mensuales
-              capitalizadas. La realidad varía año a año con volatilidad del mercado.
+              capitalizadas. La realidad varía año a año con volatilidad del mercado. Método y
+              supuestos en{' '}
+              <Link href="/metodologia" className="text-brand-400 hover:text-brand-300 underline underline-offset-2">/metodologia</Link>.
             </p>
           </Card>
 
