@@ -52,6 +52,9 @@ export default async function PlanPage({ params }: { params: Promise<{ edad: str
   const totalAportado = monthlyNeeded * 12 * age.yearsToRetirement
   const compoundGain = obj.targetAmount - totalAportado
 
+  // Frase citable autocontenida (misma cifra que el H1 y el Dataset JSON-LD).
+  const citableClaim = `Para alcanzar ${obj.label} (${formatEUR(obj.targetAmount)}) a los 65 años partiendo de los ${age.age} años (${age.yearsToRetirement} años de horizonte) hay que aportar aproximadamente ${formatEUR(monthlyNeeded)} al mes, asumiendo una rentabilidad anual del 7% (histórica del MSCI World). Total aportado: ${formatEUR(totalAportado)}; el interés compuesto añade ${formatEUR(compoundGain)}. Cálculo de BogleHub (proyección educativa, no garantizada).`
+
   // Tabla de alternativas con menos años
   const horizons = [10, 15, 20, 25, 30, age.yearsToRetirement]
     .filter((v, i, a) => a.indexOf(v) === i && v <= age.yearsToRetirement)
@@ -88,7 +91,24 @@ export default async function PlanPage({ params }: { params: Promise<{ edad: str
     <>
       <JsonLd schema={{ type: 'FAQPage', questions: faqs }} />
       <JsonLd schema={{ type: 'BreadcrumbList', items: [{ name: 'Inicio', url: BASE_URL }, { name: 'Plan', url: `${BASE_URL}/plan` }, { name: `${age.age}a → ${obj.label}`, url: pageUrl }] }} />
-      <JsonLd schema={{ type: 'Article', headline: `Plan inversión con ${age.age} años para ${obj.label}`, description: `Plan personalizado para llegar a ${obj.label} a los 65 desde los ${age.age} años.`, url: pageUrl, datePublished: '2026-05-24', articleSection: 'Plan personalizado' }} />
+      <JsonLd schema={{ type: 'Article', headline: `Plan inversión con ${age.age} años para ${obj.label}`, description: citableClaim, url: pageUrl, datePublished: '2026-05-24', dateModified: '2026-05-30', articleSection: 'Plan personalizado' }} />
+      <JsonLd schema={{
+        type: 'Dataset',
+        name: `Plan de inversión: ${formatEUR(obj.targetAmount)} a los 65 desde los ${age.age} años`,
+        description: citableClaim,
+        url: pageUrl,
+        keywords: [obj.label, `${age.age} años`, 'aportación mensual', 'interés compuesto', 'plan de inversión', 'FIRE España'],
+        variableMeasured: [
+          `Objetivo: ${formatEUR(obj.targetAmount)} (${obj.label})`,
+          `Edad inicial: ${age.age} años`,
+          `Horizonte: ${age.yearsToRetirement} años`,
+          `Rentabilidad anual asumida: 7%`,
+          `Aportación mensual necesaria: ${formatEUR(monthlyNeeded)}`,
+          `Total aportado: ${formatEUR(totalAportado)}`,
+          `Ganancia por interés compuesto: ${formatEUR(compoundGain)}`,
+        ],
+        license: `${BASE_URL}/sobre`,
+      }} />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 py-10">
@@ -115,6 +135,11 @@ export default async function PlanPage({ params }: { params: Promise<{ edad: str
               <strong className="text-accent">{formatEUR(monthlyNeeded)}/mes</strong> durante{' '}
               <strong className="text-accent">{age.yearsToRetirement} años</strong> con una cartera{' '}
               <strong>{age.recommendedPortfolio}</strong>.
+            </p>
+            <p className="mt-4 border-t border-accent/20 pt-3 text-xs text-fg-subtle leading-relaxed">
+              Cómo se calcula: aportación periódica necesaria para alcanzar el capital objetivo con interés compuesto al 7% anual durante {age.yearsToRetirement} años. Método y supuestos en{' '}
+              <Link href="/metodologia" className="text-brand-400 hover:text-brand-300 underline underline-offset-2">/metodologia</Link>; ajústalo a tu caso en la{' '}
+              <Link href="/calculadora/interes-compuesto" className="text-brand-400 hover:text-brand-300 underline underline-offset-2">calculadora de interés compuesto</Link>.
             </p>
           </Card>
 
