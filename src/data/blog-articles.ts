@@ -29,7 +29,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     faq: [
       {
         q: '¿Cuál es el mejor ETF para empezar a invertir en España?',
-        a: 'Para un primer inversor en España, VWCE (Vanguard FTSE All-World Acc) es la opción más recomendada: domiciliado en Irlanda (fiscalmente eficiente), acumulación, TER 0,22% y diversificación global en un solo fondo. Si prefieres mayor exposición a EE.UU., IWDA o SWRD son alternativas de MSCI World igualmente válidas.',
+        a: 'Para un primer inversor en España, VWCE (Vanguard FTSE All-World Acc) es la opción más recomendada: domiciliado en Irlanda (fiscalmente eficiente), acumulación, TER 0,19% y diversificación global en un solo fondo. Si prefieres mayor exposición a EE.UU., IWDA o SWRD son alternativas de MSCI World igualmente válidas.',
       },
       {
         q: '¿Qué domicilio debe tener un ETF para ser eficiente fiscalmente en España?',
@@ -37,7 +37,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       },
       {
         q: '¿Qué TER máximo debería aceptar en un ETF indexado?',
-        a: 'Para ETFs de renta variable global (MSCI World, S&P 500, All-World), un TER por encima del 0,30% anual es difícilmente justificable en 2026, cuando existen alternativas desde 0,03% (SPXS) hasta 0,22% (VWCE). Para renta fija o emergentes, un TER hasta 0,25% es razonable.',
+        a: 'Para ETFs de renta variable global (MSCI World, S&P 500, All-World), un TER por encima del 0,30% anual es difícilmente justificable en 2026, cuando existen alternativas desde 0,03% (SPXS) hasta 0,19% (VWCE). Para renta fija o emergentes, un TER hasta 0,25% es razonable.',
       },
       {
         q: '¿Es mejor un ETF de acumulación o de distribución para empezar?',
@@ -97,7 +97,7 @@ El domicilio del ETF determina la retención en origen sobre dividendos. La dife
 - **ETFs domiciliados en Irlanda** (UCITS IE): El convenio fiscal Irlanda–EE. UU. reduce la retención sobre dividendos de acciones estadounidenses del 30 % al 15 %. Para un ETF global donde el 60–65 % son empresas americanas, esto es significativo.
 - **ETFs domiciliados en Luxemburgo** (UCITS LU): Retención en origen del 30 % sobre dividendos de acciones americanas. Fiscalmente menos eficiente.
 
-**Conclusión práctica**: cuando exista la opción, elige ETFs domiciliados en Irlanda. El ISIN de los ETFs irlandeses empieza por "IE". Por ejemplo, el VWCE (Vanguard FTSE All-World) tiene ISIN IE00B3RBWM25.
+**Conclusión práctica**: cuando exista la opción, elige ETFs domiciliados en Irlanda. El ISIN de los ETFs irlandeses empieza por "IE". Por ejemplo, el VWCE (Vanguard FTSE All-World) tiene ISIN IE00BK5BQT80.
 
 ### 3. Método de replicación
 
@@ -152,15 +152,15 @@ El neobanco español del grupo Andbank es el único que ofrece tanto ETFs como f
 
 | Dato | Valor |
 |------|-------|
-| ISIN | IE00B3RBWM25 |
+| ISIN | IE00BK5BQT80 |
 | Ticker | VWCE |
-| TER | 0,22 % |
+| TER | 0,19 % |
 | Holdings | ~3 600 |
 | Índice | FTSE All-World |
 | Domicilio | Irlanda |
 | Distribución | Acumulación |
 
-**Por qué es el favorito para empezar**: el VWCE incluye tanto países desarrollados como emergentes en una sola posición. Con un TER de 0,22 % y más de 3 600 empresas de 50 países, es la definición de diversificación global. Si solo puedes tener un ETF en tu vida, este es el candidato.
+**Por qué es el favorito para empezar**: el VWCE incluye tanto países desarrollados como emergentes en una sola posición. Con un TER de 0,19 % y más de 3 600 empresas de 50 países, es la definición de diversificación global. Si solo puedes tener un ETF en tu vida, este es el candidato.
 
 La exposición aproximada es: 60 % EE. UU., 15 % Europa desarrollada, 12 % Asia-Pacífico, 12 % mercados emergentes. El peso de EE. UU. refleja la capitalización real de mercado global.
 
@@ -178,7 +178,7 @@ La exposición aproximada es: 60 % EE. UU., 15 % Europa desarrollada, 12 % Asia-
 | Domicilio | Irlanda |
 | Distribución | Acumulación |
 
-**Por qué es una gran alternativa**: el IWDA sigue el MSCI World, que cubre solo países desarrollados (~23 países). No incluye mercados emergentes. TER ligeramente inferior al VWCE (0,20 % vs 0,22 %). Es ideal si prefieres limitarte a mercados más maduros o si ya tienes exposición a emergentes por otro vehículo.
+**Por qué es una gran alternativa**: el IWDA sigue el MSCI World, que cubre solo países desarrollados (~23 países). No incluye mercados emergentes. TER prácticamente idéntico al del VWCE (0,20 % vs 0,19 % tras la rebaja del VWCE a 0,19 % en 2025). Es ideal si prefieres limitarte a mercados más maduros o si ya tienes exposición a emergentes por otro vehículo.
 
 Nota: muchos inversores combinan IWDA + EMIM (iShares Core MSCI Emerging Markets, TER 0,18 %) para replicar el VWCE con mayor control de pesos.
 
@@ -257,7 +257,7 @@ Ya tienes los criterios, los brokers y los ETFs. El siguiente paso lógico es co
       },
       {
         q: '¿Por qué CSPX tiene un TER más bajo que VWCE?',
-        a: 'El TER refleja el coste de gestionar el fondo. CSPX cubre solo 500 empresas americanas (simple de replicar), mientras que VWCE cubre más de 4.000 empresas en 50 países (más complejo). VWCE cobra 0,22% frente al 0,07% de CSPX. La diferencia de coste real anual sobre 10.000€ es de apenas 15€ — significativa a largo plazo pero no determinante si VWCE es la opción que mejor encaja en tu estrategia.',
+        a: 'El TER refleja el coste de gestionar el fondo. CSPX cubre solo 500 empresas americanas (simple de replicar), mientras que VWCE cubre más de 4.000 empresas en 50 países (más complejo). VWCE cobra 0,19% frente al 0,07% de CSPX. La diferencia de coste real anual sobre 10.000€ es de apenas 12€ — significativa a largo plazo pero no determinante si VWCE es la opción que mejor encaja en tu estrategia.',
       },
       {
         q: '¿Puedo combinar VWCE y CSPX en la misma cartera?',
@@ -277,7 +277,7 @@ Esta guía desgrana cada ETF en detalle y te da un marco claro para elegir segú
 | | VWCE | CSPX | IWDA |
 |---|---|---|---|
 | Índice | FTSE All-World | S&P 500 | MSCI World |
-| TER | 0,22 % | 0,07 % | 0,20 % |
+| TER | 0,19 % | 0,07 % | 0,20 % |
 | Holdings | ~3 600 | 503 | ~1 400 |
 | Emergentes | Sí (12 %) | No | No |
 | Domicilio | Irlanda | Irlanda | Irlanda |
@@ -297,9 +297,9 @@ Las diferencias son de **universo de inversión** y **coste**, no de estructura 
 ### Ficha técnica
 
 - **Nombre completo**: Vanguard FTSE All-World UCITS ETF (USD) Accumulating
-- **ISIN**: IE00B3RBWM25
+- **ISIN**: IE00BK5BQT80
 - **Ticker**: VWCE (Xetra), VWRP (LSE en GBP)
-- **TER**: 0,22 %
+- **TER**: 0,19 %
 - **Índice replicado**: FTSE All-World
 - **Método de replicación**: Física por muestreo
 - **Gestora**: Vanguard
@@ -334,9 +334,9 @@ El VWCE incluye acciones de China, India, Brasil, Taiwán, Corea del Sur y otros
 
 El VWCE te da ambas caras automáticamente, ponderadas por capitalización. No tienes que decidir: el mercado elige los pesos.
 
-### TER: el único punto débil
+### TER: 0,19 %, competitivo tras la rebaja de 2025
 
-El TER del 0,22 % es el más alto de los tres comparados. En una cartera de 100 000 € durante 30 años, ese 0,02 % adicional respecto al IWDA supone aproximadamente 2 000 € de diferencia acumulada (asumiendo 7 % de retorno anual). Significativo pero no decisivo.
+El TER del 0,19 % (Vanguard lo rebajó desde el 0,22 % en 2025) es competitivo: más caro que el del CSPX (0,07 %, que solo cubre el S&P 500) pero ligeramente por debajo del IWDA (0,20 %). Frente al CSPX, esa diferencia de 0,12 % sobre una cartera de 100 000 € durante 30 años supone aproximadamente 12 000 € acumulados (asumiendo 7 % de retorno anual). Significativo pero no decisivo: a cambio, el VWCE incluye los mercados emergentes que el CSPX y el IWDA no cubren.
 
 ---
 
@@ -360,7 +360,7 @@ El S&P 500 es 100 % EE. UU. Las 503 mayores empresas por capitalización cotizad
 
 ### TER: la gran ventaja
 
-El 0,07 % del CSPX es el TER más bajo que encontrarás en un ETF de esta categoría. Comparado con el VWCE (0,22 %), en 30 años sobre 100 000 € esa diferencia de 0,15 % supone aproximadamente 15 000 € adicionales en cartera (con un retorno del 7 % anual).
+El 0,07 % del CSPX es el TER más bajo que encontrarás en un ETF de esta categoría. Comparado con el VWCE (0,19 %), en 30 años sobre 100 000 € esa diferencia de 0,12 % supone aproximadamente 12 000 € adicionales en cartera (con un retorno del 7 % anual).
 
 ### El riesgo de concentración
 
@@ -413,7 +413,7 @@ La contraparte: si India o Indonesia se convierten en las grandes economías del
 
 ### El combo IWDA + EMIM
 
-Una estrategia popular entre inversores avanzados es [construir el equivalente al VWCE manualmente](/blog/solapamiento-etfs-error-silencioso): 88 % IWDA + 12 % EMIM (iShares Core MSCI Emerging Markets, ISIN IE00BKM4GZ66, TER 0,18 %). El resultado es exposición similar al FTSE All-World con TER ponderado de ~0,20 % (vs 0,22 % del VWCE). La ventaja: control preciso del peso a emergentes.
+Una estrategia popular entre inversores avanzados es [construir el equivalente al VWCE manualmente](/blog/solapamiento-etfs-error-silencioso): 88 % IWDA + 12 % EMIM (iShares Core MSCI Emerging Markets, ISIN IE00BKM4GZ66, TER 0,18 %). El resultado es exposición similar al FTSE All-World con TER ponderado de ~0,20 % (frente al 0,19 % del VWCE, prácticamente igual). La ventaja no es el coste sino el control preciso del peso a emergentes.
 
 ---
 
@@ -421,7 +421,7 @@ Una estrategia popular entre inversores avanzados es [construir el equivalente a
 
 | Criterio | VWCE | CSPX | IWDA |
 |----------|------|------|------|
-| TER | 0,22 % | 0,07 % | 0,20 % |
+| TER | 0,19 % | 0,07 % | 0,20 % |
 | Número de holdings | ~3 600 | ~503 | ~1 400 |
 | Geografía | Global total | Solo EE. UU. | Mundo desarrollado |
 | Emergentes incluidos | Sí | No | No |
@@ -465,10 +465,10 @@ Asumamos: inversión inicial de 10 000 €, aportación mensual de 300 €, hori
 | ETF | Patrimonio estimado a 25 años | Coste total del TER |
 |-----|-------------------------------|---------------------|
 | CSPX (0,07 %) | ~278 000 € | ~5 600 € |
+| VWCE (0,19 %) | ~272 000 € | ~15 200 € |
 | IWDA (0,20 %) | ~272 000 € | ~16 000 € |
-| VWCE (0,22 %) | ~271 000 € | ~17 600 € |
 
-La diferencia entre CSPX y VWCE es ~7 000 € a 25 años. Relevante, pero no dramática. Lo que más importa es **empezar**, **mantener el plan** y **no vender en los crashes**.
+La diferencia entre CSPX y VWCE es ~6 000 € a 25 años. Relevante, pero no dramática. Lo que más importa es **empezar**, **mantener el plan** y **no vender en los crashes**.
 
 ---
 
@@ -1067,7 +1067,7 @@ En términos conductuales, esto es lo opuesto al comportamiento natural del inve
 
 | ETF | TER | Índice | Uso en cartera |
 |-----|-----|--------|----------------|
-| VWCE | 0,22 % | FTSE All-World | Renta variable global total |
+| VWCE | 0,19 % | FTSE All-World | Renta variable global total |
 | IWDA | 0,20 % | MSCI World | Renta variable desarrollada |
 | EMIM | 0,18 % | MSCI EM IMI | Mercados emergentes |
 | IMEU | 0,12 % | MSCI Europe | Europa desarrollada |
@@ -2249,7 +2249,7 @@ Empezar con poco no es empezar en desventaja. Es, simplemente, empezar. Y empeza
     faq: [
       {
         q: '¿Cuál es el mejor ETF para un inversor español en 2026?',
-        a: 'No existe un único "mejor" ETF universal, pero para simplificar: VWCE (Vanguard FTSE All-World, acumulación, IE, TER 0,22%) es la opción todo-en-uno más recomendada por su diversificación global, domicilio irlandés y acumulación. Para quienes prefieren solo EE.UU., CSPX o SPXS son las opciones más eficientes en TER.',
+        a: 'No existe un único "mejor" ETF universal, pero para simplificar: VWCE (Vanguard FTSE All-World, acumulación, IE, TER 0,19%) es la opción todo-en-uno más recomendada por su diversificación global, domicilio irlandés y acumulación. Para quienes prefieren solo EE.UU., CSPX o SPXS son las opciones más eficientes en TER.',
       },
       {
         q: '¿Qué criterios son más importantes para elegir un ETF en España?',
@@ -2270,11 +2270,11 @@ No existe un único "mejor ETF". Existe el mejor ETF para tu objetivo, tu horizo
 
 ## Los 10 ETFs más recomendados para España en 2026
 
-### 1. VWCE — Vanguard FTSE All-World Acc (IE00B3RBWM25)
+### 1. VWCE — Vanguard FTSE All-World Acc (IE00BK5BQT80)
 
 | Dato | Valor |
 |------|-------|
-| TER | 0,22 % |
+| TER | 0,19 % |
 | AUM | ~60.000 M€ |
 | Holdings | ~3.600 empresas |
 | Índice | FTSE All-World |
@@ -2296,7 +2296,7 @@ No existe un único "mejor ETF". Existe el mejor ETF para tu objetivo, tu horizo
 | Índice | MSCI World |
 | Grado fiscal (España) | A |
 
-**Para quién**: quien prefiere limitarse a mercados desarrollados (23 países) sin la volatilidad adicional de emergentes. Es el ETF de mayor AUM de Europa. Ligeramente más barato que VWCE. Si quieres añadir emergentes manualmente, combínalo con [EMIM](/etf/emim).
+**Para quién**: quien prefiere limitarse a mercados desarrollados (23 países) sin la volatilidad adicional de emergentes. Es el ETF de mayor AUM de Europa, con un TER (0,20%) muy similar al del VWCE (0,19% tras la rebaja de 2025). Si quieres añadir emergentes manualmente, combínalo con [EMIM](/etf/emim).
 
 ---
 
@@ -2352,7 +2352,7 @@ No existe un único "mejor ETF". Existe el mejor ETF para tu objetivo, tu horizo
 | Índice | MSCI EM IMI |
 | Grado fiscal (España) | A |
 
-**Para quién**: el complemento de IWDA o SWRD para quien quiere replicar el FTSE All-World manualmente. La combinación 88 % IWDA + 12 % EMIM replica el universo del VWCE con un TER ponderado de ~0,20 % (frente al 0,22 % del VWCE). Más complejo pero ligeramente más barato.
+**Para quién**: el complemento de IWDA o SWRD para quien quiere replicar el FTSE All-World manualmente. La combinación 88 % IWDA + 12 % EMIM replica el universo del VWCE con un TER ponderado de ~0,20 % (frente al 0,19 % del VWCE). Más complejo y sin ahorro de coste relevante; su ventaja es el control del peso a emergentes, no el precio.
 
 ---
 
@@ -2414,7 +2414,7 @@ No existe un único "mejor ETF". Existe el mejor ETF para tu objetivo, tu horizo
 
 | Ticker | Índice | TER | Perfil |
 |--------|--------|-----|--------|
-| VWCE | FTSE All-World | 0,22 % | Todo-en-uno global |
+| VWCE | FTSE All-World | 0,19 % | Todo-en-uno global |
 | IWDA | MSCI World | 0,20 % | Desarrollados sin emergentes |
 | CSPX | S&P 500 | 0,07 % | Solo EE.UU., máximo ahorro en TER |
 | SWRD | MSCI World | 0,12 % | MSCI World más barato que IWDA |
@@ -2506,7 +2506,7 @@ La cartera de 3 fondos es el punto óptimo entre simplicidad y control.
 |-----|-----|--------|
 | [IWDA](/etf/iwda) | 0,20 % | MSCI World (23 países desarrollados) |
 | [SWRD](/etf/swrd) | 0,12 % | MSCI World (alternativa más barata) |
-| [VWCE](/etf/vwce) | 0,22 % | FTSE All-World (incluye emergentes) |
+| [VWCE](/etf/vwce) | 0,19 % | FTSE All-World (incluye emergentes) |
 
 Si usas VWCE aquí, el fondo 2 (emergentes) ya está incluido — tendrías una cartera de 2 fondos, no 3.
 
@@ -2928,15 +2928,15 @@ Si tienes la disciplina para construir y mantener una cartera de fondos indexado
     faq: [
       {
         q: '¿Qué es el VWCE y qué índice replica?',
-        a: 'VWCE es el ticker del Vanguard FTSE All-World UCITS ETF (Accumulating), un ETF domiciliado en Irlanda (ISIN IE00B3RBWM25) que replica el índice FTSE All-World. Este índice incluye más de 3.700 empresas de mercados desarrollados y emergentes de todo el mundo, cubriendo aproximadamente el 90-95% de la capitalización bursátil global. Es el ETF de referencia para inversores españoles que buscan máxima diversificación en un solo producto.',
+        a: 'VWCE es el ticker del Vanguard FTSE All-World UCITS ETF (Accumulating), un ETF domiciliado en Irlanda (ISIN IE00BK5BQT80) que replica el índice FTSE All-World. Este índice incluye más de 3.700 empresas de mercados desarrollados y emergentes de todo el mundo, cubriendo aproximadamente el 90-95% de la capitalización bursátil global. Es el ETF de referencia para inversores españoles que buscan máxima diversificación en un solo producto.',
       },
       {
         q: '¿Cuál es el TER del VWCE?',
-        a: 'El TER del VWCE es del 0,22% anual. Es algo más caro que sus alternativas de MSCI World (IWDA: 0,20%, SWRD: 0,12%) pero incluye emergentes dentro del mismo fondo, lo que elimina la necesidad de un segundo ETF. Si consideramos una cartera MSCI World + Emergentes por separado con pesos equivalentes, el TER combinado suele ser similar o ligeramente inferior al del VWCE.',
+        a: 'El TER del VWCE es del 0,19% anual (Vanguard lo rebajó desde el 0,22% en 2025). Es muy competitivo: queda por debajo del IWDA (0,20%) aunque por encima del SWRD (0,12%, que solo cubre MSCI World), e incluye emergentes dentro del mismo fondo, lo que elimina la necesidad de un segundo ETF. Si consideramos una cartera MSCI World + Emergentes por separado con pesos equivalentes, el TER combinado suele ser similar al del VWCE.',
       },
       {
         q: '¿VWCE o IWDA? ¿Cuál es mejor para un inversor en España?',
-        a: 'VWCE incluye emergentes (~12%) y IWDA solo tiene mercados desarrollados. Si quieres exposición global sin gestionar dos ETFs, VWCE es más sencillo. Si quieres control sobre la proporción de emergentes o prefieres el TER más bajo de IWDA, la combinación IWDA + EIMI (emergentes por separado) tiene más flexibilidad. Para la mayoría de inversores que empiezan, VWCE es la opción más simple y suficiente.',
+        a: 'VWCE incluye emergentes (~12%) y IWDA solo tiene mercados desarrollados. Si quieres exposición global sin gestionar dos ETFs, VWCE es más sencillo. Si quieres control sobre la proporción de emergentes, la combinación IWDA + EIMI (emergentes por separado) tiene más flexibilidad. Para la mayoría de inversores que empiezan, VWCE es la opción más simple y suficiente.',
       },
       {
         q: '¿Es VWCE fiscalmente eficiente para inversores en España?',
@@ -2944,7 +2944,7 @@ Si tienes la disciplina para construir y mantener una cartera de fondos indexado
       },
       {
         q: '¿Cuál es la diferencia entre VWCE y VWRA?',
-        a: 'VWCE y VWRA replican exactamente el mismo índice (FTSE All-World) con la misma política de acumulación. La diferencia es la bolsa donde cotizan y la divisa de cotización: VWCE cotiza en Xetra (EUR), Euronext Ámsterdam (EUR) y otras bolsas europeas; VWRA cotiza principalmente en la Bolsa de Londres (USD). Para un inversor español que usa un broker europeo como Trade Republic o DEGIRO, VWCE es el ticker correcto. El ISIN es el mismo: IE00B3RBWM25.',
+        a: 'VWCE y VWRA replican exactamente el mismo índice (FTSE All-World) con la misma política de acumulación. La diferencia es la bolsa donde cotizan y la divisa de cotización: VWCE cotiza en Xetra (EUR), Euronext Ámsterdam (EUR) y otras bolsas europeas; VWRA cotiza principalmente en la Bolsa de Londres (USD). Para un inversor español que usa un broker europeo como Trade Republic o DEGIRO, VWCE es el ticker correcto. El ISIN es el mismo: IE00BK5BQT80.',
       },
     ],
     content: `# VWCE: análisis completo del ETF All-World de Vanguard para España (2026)
@@ -2961,11 +2961,11 @@ Este análisis cubre todo lo que necesitas saber: qué hay dentro, cuánto cuest
 |---|---|
 | Nombre completo | Vanguard FTSE All-World UCITS ETF (Acc) |
 | Ticker más común | VWCE (Xetra), VWRA (LSE) |
-| ISIN | IE00B3RBWM25 |
+| ISIN | IE00BK5BQT80 |
 | Domicilio | Irlanda |
 | Gestora | Vanguard |
 | Índice replicado | FTSE All-World |
-| TER | 0,22% anual |
+| TER | 0,19% anual |
 | Política de dividendos | Acumulación |
 | Replicación | Física por muestreo |
 | Nº de valores aproximado | ~3.700 empresas |
@@ -3004,7 +3004,7 @@ La alternativa a VWCE para obtener cobertura similar sería combinar un ETF de M
 
 **2. Domicilio en Irlanda: máxima eficiencia fiscal**
 
-El ISIN IE00B3RBWM25 confirma que el fondo está domiciliado en Irlanda. Esto tiene consecuencias fiscales concretas para inversores españoles:
+El ISIN IE00BK5BQT80 confirma que el fondo está domiciliado en Irlanda. Esto tiene consecuencias fiscales concretas para inversores españoles:
 
 - El convenio Irlanda–EE.UU. reduce la retención sobre dividendos americanos del 30% al 15%
 - Como el ~63% del fondo son empresas americanas, esto supone un ahorro real en la "fuga fiscal" de dividendos
@@ -3024,7 +3024,7 @@ Esta es la comparativa que más se repite en los foros de inversión españoles:
 |---|---|---|
 | Índice | FTSE All-World | MSCI World |
 | Emergentes incluidos | ✓ (~12%) | ✗ |
-| TER | 0,22% | 0,20% |
+| TER | 0,19% | 0,20% |
 | Domicilio | Irlanda | Irlanda |
 | Acumulación | ✓ | ✓ |
 | Patrimonio gestionado | >15.000 M USD | >75.000 M USD |
@@ -3033,7 +3033,7 @@ La diferencia clave: IWDA solo incluye países desarrollados (no emergentes). Pa
 
 **Cuándo elegir VWCE**: quieres simplicidad máxima, un solo ETF que lo cubra todo, y no quieres decidir cuánto poner en emergentes.
 
-**Cuándo elegir IWDA**: quieres más control sobre el peso de emergentes, o buscas el TER más bajo, o ya tienes exposición a emergentes por otro lado.
+**Cuándo elegir IWDA**: quieres más control sobre el peso de emergentes (añadiéndolos por separado), o ya tienes exposición a emergentes por otro lado.
 
 Para la mayoría de inversores que empiezan: **VWCE es la respuesta más sencilla y correcta**.
 
@@ -3045,7 +3045,7 @@ SWRD (SPDR MSCI World UCITS ETF) tiene un TER de 0,12%, el más barato entre los
 
 0,88 × 0,12% + 0,12 × 0,18% ≈ 0,128%
 
-Frente al 0,22% del VWCE. El ahorro es de ~0,09% anual: sobre 100.000€, son ~90€ al año.
+Frente al 0,19% del VWCE. El ahorro es de ~0,06% anual: sobre 100.000€, son ~60€ al año.
 
 A largo plazo eso importa, pero la complejidad añadida (dos ETFs, dos órdenes, rebalanceo manual de la proporción) puede no merecer la pena para carteras pequeñas o inversores que empiezan. Con carteras grandes (>100.000–200.000€), la combinación SWRD+EIMI es más eficiente en costes.
 
@@ -3077,7 +3077,7 @@ Si usas Trade Republic o DEGIRO y buscas la solución más simple para largo pla
 ## Fuentes y lecturas complementarias
 
 - [Vanguard — Ficha técnica VWCE](https://www.vanguard.co.uk/professional/en/etf/equity/9505/ftse-all-world-ucits-etf-usd-accumulating) — Datos oficiales, composición y metodología del fondo.
-- [JustETF — VWCE](https://www.justetf.com/es/etf-profile.html?isin=IE00B3RBWM25) — Histórico de precios, patrimonio gestionado y datos de distribución.
+- [JustETF — VWCE](https://www.justetf.com/es/etf-profile.html?isin=IE00BK5BQT80) — Histórico de precios, patrimonio gestionado y datos de distribución.
 - [Comparador VWCE vs CSPX vs IWDA — BogleHub](/blog/vwce-vs-cspx-vs-iwda) — Comparativa detallada de los tres ETFs más populares en España.
 `,
   },
@@ -4719,8 +4719,8 @@ Esta versión funciona excelentemente para inversores americanos. Para un invers
 ### Componente 1: Renta variable (25%)
 
 **Opción A — VWCE** (Vanguard FTSE All-World UCITS ETF Acc)
-- ISIN: IE00B3RBWM25
-- TER: 0,22%
+- ISIN: IE00BK5BQT80
+- TER: 0,19%
 - Diversificación máxima global, incluye emergentes
 - Acumulación
 
@@ -5510,8 +5510,8 @@ Diferencia clave: el sector financiero pesa algo más en ACWI por el peso de ban
 
 | Ticker | Nombre | TER | Política |
 |---|---|---|---|
-| VWCE | Vanguard FTSE All-World | 0,22% | Acumulación |
-| VWRL | Vanguard FTSE All-World | 0,22% | Distribución |
+| VWCE | Vanguard FTSE All-World | 0,19% | Acumulación |
+| VWRL | Vanguard FTSE All-World | 0,19% | Distribución |
 
 VWCE es funcionalmente equivalente a ISAC: cubre desarrollados + emergentes en un solo ETF. La diferencia es solo de metodología del índice (FTSE vs MSCI). Para más detalles sobre VWCE, lee el [análisis completo del ETF](/blog/vwce-analisis-completo).
 
@@ -5555,7 +5555,7 @@ A muy largo plazo (>30 años), MSCI ACWI ha rendido similar al MSCI World, con m
 
 **Con MSCI ACWI o FTSE All-World (un solo ETF):**
 - 100% ISAC, SSAC o VWCE
-- Resultado: exposición global automática, menos decisiones, TER 0,17-0,22%
+- Resultado: exposición global automática, menos decisiones, TER 0,17-0,20%
 
 Para la mayoría de inversores que empiezan, **la segunda opción (ACWI o All-World) es más sencilla y suficiente**. La diferencia de TER es marginal en términos absolutos.
 
