@@ -102,8 +102,8 @@ export default async function PlanPage({ params }: { params: Promise<{ edad: str
             <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">
               Plan inversión a los {age.age} años para llegar a {obj.label}
             </h1>
-            <p className="mt-3 text-fg-muted leading-relaxed">
-              Plan paso a paso para alcanzar {obj.label} a los 65 años empezando con {age.age}: aportación mensual necesaria, cartera recomendada y broker para implementarlo. Cálculos a rentabilidad anual del 7%.
+            <p className="mt-4 text-fg leading-relaxed">
+              Según el cálculo de BogleHub, para alcanzar {obj.label} ({formatEUR(obj.targetAmount)}) a los 65 años partiendo de los {age.age} años hay que aportar aproximadamente {formatEUR(monthlyNeeded)} al mes durante {age.yearsToRetirement} años, asumiendo una rentabilidad anual del 7% (histórica del MSCI World). Total aportado: {formatEUR(totalAportado)}; el interés compuesto añade {formatEUR(compoundGain)} extra hasta el objetivo.
             </p>
           </header>
 

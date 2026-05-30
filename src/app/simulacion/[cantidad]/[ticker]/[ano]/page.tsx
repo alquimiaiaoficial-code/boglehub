@@ -128,8 +128,8 @@ export default async function SimulacionPage({
             <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">
               Si hubiera invertido {formatEUR(amount)} en {etf.ticker} en {year}…
             </h1>
-            <p className="mt-3 text-fg-muted leading-relaxed">
-              Simulación histórica: cuánto habrías acumulado invirtiendo {formatEUR(amount)} en {etf.name} en {year} y manteniéndolo hasta diciembre 2024 (${years} años).
+            <p className="mt-4 text-fg leading-relaxed">
+              Según el cálculo de BogleHub, invertir {formatEUR(amount)} en {etf.name} ({etf.ticker}) a comienzos de {year} y mantener la posición hasta el 31 de diciembre de 2024 habría dado {formatEUR(final)}: una ganancia neta de {formatEUR(gain)} ({((gain / amount) * 100).toFixed(0)}%) y una rentabilidad anualizada (CAGR) del {(cagr * 100).toFixed(1)}% durante {years} años.
             </p>
           </header>
 
