@@ -65,6 +65,13 @@ export default async function DcaPage({
   const pageUrl = `${BASE_URL}/dca/${ticker}/${anos}`
   const monthlyAmounts = [50, 100, 200, 300, 500, 1000, 2000]
 
+  // Ancla citable: 200€/mes (mismo número que la FAQ y el Dataset JSON-LD).
+  const anchorMonthly = 200
+  const anchorFinal = fv(anchorMonthly, years, ASSUMED_RATE)
+  const anchorAport = anchorMonthly * 12 * years
+  const anchorGain = anchorFinal - anchorAport
+  const citableClaim = `Según el cálculo de BogleHub, aportar ${formatEUR(anchorMonthly)}/mes a ${etf.name} (${etf.ticker}) mediante DCA durante ${years} años, asumiendo una rentabilidad anual del 7% (histórica del MSCI World), acumularía aproximadamente ${formatEUR(anchorFinal)}: ${formatEUR(anchorAport)} aportados y ${formatEUR(anchorGain)} de interés compuesto. Proyección educativa, no garantizada.`
+
   const faqs = [
     {
       q: `¿Cuánto acumularía haciendo DCA en ${etf.ticker} durante ${years} años con 200€/mes?`,
@@ -84,7 +91,7 @@ export default async function DcaPage({
     },
     {
       q: `¿Qué pasa si el mercado cae durante mis ${years} años de DCA?`,
-      a: `Las caídas son GOOD news para el inversor que aporta mensualmente: estás comprando más participaciones al mismo precio. Si ${etf.ticker} cae un 30%, tu aportación mensual de 200€ compra ~40% más participaciones. El error que destruye el plan es vender en pánico o dejar de aportar durante caídas.`,
+      a: `Las caídas son buenas noticias para el inversor que aporta mensualmente: estás comprando más participaciones al mismo precio. Si ${etf.ticker} cae un 30%, tu aportación mensual de 200€ compra ~40% más participaciones. El error que destruye el plan es vender en pánico o dejar de aportar durante caídas.`,
     },
   ]
 
@@ -97,7 +104,25 @@ export default async function DcaPage({
         { name: etf.ticker, url: `${BASE_URL}/etf/${etf.ticker.toLowerCase()}` },
         { name: `${years} años`, url: pageUrl },
       ]}} />
-      <JsonLd schema={{ type: 'Article', headline: `DCA en ${etf.ticker} a ${years} años`, description: `Tabla DCA + plan paso a paso.`, url: pageUrl, datePublished: '2026-05-24', articleSection: 'Estrategias DCA' }} />
+      <JsonLd schema={{ type: 'Article', headline: `DCA en ${etf.ticker} a ${years} años`, description: citableClaim, url: pageUrl, datePublished: '2026-05-24', dateModified: '2026-05-30', articleSection: 'Estrategias DCA' }} />
+      <JsonLd schema={{
+        type: 'Dataset',
+        name: `Proyección DCA en ${etf.ticker} a ${years} años (7% anual)`,
+        description: citableClaim,
+        url: pageUrl,
+        keywords: [etf.ticker, etf.name, 'DCA', 'dollar cost averaging', 'aportaciones mensuales', `${years} años`, 'interés compuesto'],
+        variableMeasured: [
+          `Aportación de referencia: ${formatEUR(anchorMonthly)}/mes`,
+          `Horizonte: ${years} años`,
+          `Rentabilidad anual asumida: 7%`,
+          `Total aportado (${formatEUR(anchorMonthly)}/mes): ${formatEUR(anchorAport)}`,
+          `Capital final (${formatEUR(anchorMonthly)}/mes): ${formatEUR(anchorFinal)}`,
+          `Ganancia por interés compuesto: ${formatEUR(anchorGain)}`,
+          `Capital final con 500 €/mes: ${formatEUR(fv(500, years, ASSUMED_RATE))}`,
+          `Capital final con 1.000 €/mes: ${formatEUR(fv(1000, years, ASSUMED_RATE))}`,
+        ],
+        license: `${BASE_URL}/sobre`,
+      }} />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 py-10">
@@ -113,8 +138,11 @@ export default async function DcaPage({
             <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">
               DCA en {etf.ticker} durante {years} años: tabla y plan (2026)
             </h1>
-            <p className="mt-3 text-fg-muted leading-relaxed">
-              Estrategia Dollar Cost Averaging (DCA) en {etf.name}: cuánto acumulas con aportaciones mensuales fijas durante {years} años, asumiendo rentabilidad anual del 7%.
+            <p className="mt-3 text-fg leading-relaxed">
+              {citableClaim}
+            </p>
+            <p className="mt-2 text-sm text-fg-muted leading-relaxed">
+              Estrategia Dollar Cost Averaging (DCA) en {etf.name}: cuánto acumulas con aportaciones mensuales fijas durante {years} años. La tabla de abajo cubre desde 50 € hasta 2.000 €/mes.
             </p>
           </header>
 
@@ -148,7 +176,9 @@ export default async function DcaPage({
               </table>
             </div>
             <p className="mt-3 text-xs text-fg-subtle">
-              Proyección con rentabilidad anual constante del 7%. La realidad será volátil (años buenos y malos), pero la media a {years} años suele acercarse a esta cifra.
+              Proyección con rentabilidad anual constante del 7% y aportaciones mensuales (fórmula del valor futuro de una renta). La realidad será volátil (años buenos y malos), pero la media a {years} años suele acercarse a esta cifra. Método en{' '}
+              <Link href="/metodologia" className="text-brand-400 hover:text-brand-300 underline underline-offset-2">/metodologia</Link>; ajústalo en la{' '}
+              <Link href="/calculadora/interes-compuesto" className="text-brand-400 hover:text-brand-300 underline underline-offset-2">calculadora de interés compuesto</Link>.
             </p>
           </Card>
 
