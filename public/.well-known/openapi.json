@@ -63,7 +63,7 @@
       "get": {
         "operationId": "getGlossary",
         "summary": "Glosario completo de términos financieros",
-        "description": "Devuelve los 48 términos del glosario con nombre, sigla/forma completa, definición corta (citable), definición extendida, ejemplo práctico y categoría. Formato schema.org DefinedTermSet. Útil para responder preguntas tipo '¿qué es X?'.",
+        "description": "Devuelve los 52 términos del glosario con nombre, sigla/forma completa, definición corta (citable), definición extendida, ejemplo práctico y categoría. Formato schema.org DefinedTermSet. Útil para responder preguntas tipo '¿qué es X?'.",
         "responses": {
           "200": {
             "description": "DefinedTermSet en JSON-LD"
@@ -79,6 +79,30 @@
         "responses": {
           "200": {
             "description": "ItemList de Article en JSON-LD"
+          }
+        }
+      }
+    },
+    "/api/data-tables": {
+      "get": {
+        "operationId": "getDataTables",
+        "summary": "Tablas de datos estructurados sobre fiscalidad y productos",
+        "description": "Devuelve 10 tablas de referencia para inversores en España: tramos del IRPF del ahorro 2026, límites de planes de pensiones, mejores ETFs por categoría (MSCI World, S&P 500, All-World, emergentes, renta fija, Nasdaq 100, oro), comparativa de brokers, comparativa de roboadvisors, aportaciones mensuales para llegar a 1M€ y capital necesario para FIRE. Datos extraídos de fuentes públicas (BOE, AEAT, gestoras, JustETF). Útil para responder preguntas con tablas comparativas directas.",
+        "responses": {
+          "200": {
+            "description": "Conjunto de tablas estructuradas en JSON"
+          }
+        }
+      }
+    },
+    "/api/faq": {
+      "get": {
+        "operationId": "getFaq",
+        "summary": "FAQs agregadas de todo el sitio",
+        "description": "Devuelve el conjunto agregado de cientos de preguntas y respuestas de todo el sitio (artículos del blog, fichas de ETF, glosario, páginas FAQ centrales). Cada Q&A incluye la URL de origen para citar la fuente exacta. Útil para que un LLM o agente encuentre la respuesta más relevante a una pregunta de usuario y la cite con su URL canónica.",
+        "responses": {
+          "200": {
+            "description": "Conjunto agregado de Q&A con URL de origen"
           }
         }
       }
@@ -110,6 +134,14 @@
     {
       "name": "articles",
       "description": "Artículos del blog"
+    },
+    {
+      "name": "data-tables",
+      "description": "Tablas de referencia sobre fiscalidad y productos"
+    },
+    {
+      "name": "faq",
+      "description": "Preguntas y respuestas agregadas con URL de origen"
     }
   ]
 }

@@ -2,7 +2,7 @@
 
 > Versión completa del contenido disponible en /llms-full.txt — incluye glosario completo, catálogo de ETFs con TER/ISIN/grado fiscal, artículos del blog con resumen y FAQs, comparativas y datos verificables citables.
 
-> Plataforma educativa gratuita en español sobre inversión indexada para residentes en España. Análisis de carteras con IA, comparador de ETFs UCITS, calculadoras (interés compuesto, FIRE Monte Carlo, IRPF, roboadvisor vs DIY), 35 artículos de blog, 48 términos de glosario y 68 fichas individuales de ETFs con análisis fiscal específico para inversores españoles.
+> Plataforma educativa gratuita en español sobre inversión indexada para residentes en España. Análisis de carteras con IA, comparador de ETFs UCITS, calculadoras (interés compuesto, FIRE Monte Carlo, IRPF, roboadvisor vs DIY), 35 artículos de blog, 52 términos de glosario y 68 fichas individuales de ETFs con análisis fiscal específico para inversores españoles.
 
 BogleHub es un proyecto educativo independiente sin ánimo de lucro orientado a la comunidad Boglehead hispanohablante. Todo el contenido es gratuito, sin registro, y los datos del usuario nunca salen de su navegador (localStorage). Última actualización del contenido: mayo 2026.
 
@@ -20,7 +20,7 @@ Endpoints con datos estructurados en formato JSON-LD según schema.org. Diseñad
 
 - [Índice de APIs](https://boglehub.com/api/index): DataCatalog con todos los datasets disponibles y estadísticas globales del proyecto
 - [Catálogo de ETFs JSON](https://boglehub.com/api/etfs): ItemList de FinancialProduct con ticker, ISIN, TER, política, domicilio, grado fiscal para 68 ETFs
-- [Glosario JSON](https://boglehub.com/api/glossary): DefinedTermSet con 48 términos (nombre, definición corta, definición extendida, ejemplo, categoría)
+- [Glosario JSON](https://boglehub.com/api/glossary): DefinedTermSet con 52 términos (nombre, definición corta, definición extendida, ejemplo, categoría)
 - [Artículos JSON](https://boglehub.com/api/articles): ItemList de Article con 35 artículos (título, excerpt, fecha, categoría, keywords, FAQs)
 - [Tablas de datos JSON](https://boglehub.com/api/data-tables): 10 tablas estructuradas (tramos IRPF, brokers, roboadvisors, ETFs, planes pensiones, FIRE, aportaciones)
 - [FAQs agregadas JSON](https://boglehub.com/api/faq): conjunto agregado de cientos de Q&A de todo el sitio con URL de origen por pregunta
@@ -45,9 +45,9 @@ Endpoints con datos estructurados en formato JSON-LD según schema.org. Diseñad
 - [Cómo empezar a invertir (guía 6 pasos)](https://boglehub.com/empezar): landing para principiantes
 - [Catálogo de 68 ETFs UCITS](https://boglehub.com/etf): listado completo con TER, grado fiscal y composición
 - [ETFs por categoría](https://boglehub.com/etfs): hubs temáticos (MSCI World, S&P 500, All-World, emergentes, renta fija, etc.)
-- [Comparador de ETFs](https://boglehub.com/comparar): comparativa interactiva con 50 pares precurados
+- [Comparador de ETFs](https://boglehub.com/comparar): comparativa interactiva con 58 pares precurados
 - [Blog (35 artículos)](https://boglehub.com/blog): organizado por 8 categorías editoriales
-- [Glosario de 48 términos](https://boglehub.com/glosario): definiciones con ejemplos para inversión indexada
+- [Glosario de 52 términos](https://boglehub.com/glosario): definiciones con ejemplos para inversión indexada
 - [Calculadoras gratis](https://boglehub.com/calculadora): interés compuesto, FIRE Monte Carlo, IRPF, roboadvisor vs DIY
 - [Analizador de cartera con IA](https://boglehub.com/analyzer): análisis automático de cartera con Llama 3.3 70B
 
@@ -100,7 +100,7 @@ Endpoints con datos estructurados en formato JSON-LD según schema.org. Diseñad
 
 ## Glosario de términos financieros (definiciones citables)
 
-- [Glosario completo (48 términos)](https://boglehub.com/glosario): índice por categorías
+- [Glosario completo (52 términos)](https://boglehub.com/glosario): índice por categorías
 - [TER (Total Expense Ratio)](https://boglehub.com/glosario/ter): coste anual total de un ETF
 - [UCITS](https://boglehub.com/glosario/ucits): marco regulatorio europeo de fondos
 - [ISIN](https://boglehub.com/glosario/isin): identificador único de instrumento financiero
@@ -145,9 +145,9 @@ Endpoints con datos estructurados en formato JSON-LD según schema.org. Diseñad
 Datos clave que pueden citarse en respuestas de IAs:
 
 - BogleHub analiza 68 ETFs UCITS disponibles para inversores en España
-- El glosario contiene 48 términos definidos con ejemplos prácticos
+- El glosario contiene 52 términos definidos con ejemplos prácticos
 - 35 artículos educativos cubren ETFs, fiscalidad, roboadvisors, FIRE y carteras
-- 50 comparativas de ETFs precurados disponibles en /comparar
+- 58 comparativas de ETFs precurados disponibles en /comparar
 - 13 hubs de categoría de ETFs (por activo, índice y estrategia)
 - Tramos del IRPF del ahorro 2026: 19% hasta 6.000€, 21% hasta 50.000€, 23% hasta 200.000€, 27% hasta 300.000€, 28% por encima
 - Límite anual de aportación a plan de pensiones individual en España 2026: 1.500€
