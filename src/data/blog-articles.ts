@@ -1676,6 +1676,8 @@ Promediar una suma grande es razonable cuando:
 
 En ese caso, promedia — pero hazlo rápido y con fecha de fin. Repartir en 3 a 6 meses es razonable. Estirarlo dos años es, en la práctica, market timing disfrazado.
 
+**¿Dónde aparcar el dinero que aún no has invertido?** Mientras promedias, el efectivo que espera su turno no tiene por qué estar a 0% en la cuenta corriente. Un [fondo monetario](/glosario/fondo-monetario) o las [Letras del Tesoro](/glosario/letras-del-tesoro) rinden el tipo de interés a corto plazo del BCE con riesgo muy bajo. El fondo monetario tiene además la ventaja del traspaso fiscal libre: cuando toque invertir, lo mueves a tu fondo indexado sin tributar.
+
 ---
 
 ## Lo que nunca es buena idea: esperar
