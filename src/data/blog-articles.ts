@@ -6434,4 +6434,163 @@ Para ver el coste real de cada broker con tus datos concretos, usa el [comparado
 - [Trade Republic opinión 2026 — BogleHub](/blog/trade-republic-opinion-2026) — El principal competidor de Scalable para el inversor indexado en España.
 `,
   },
+  {
+    slug: 'mejor-broker-etfs-espana-2026',
+    title: 'Mejor broker para ETFs en España 2026: comparativa honesta',
+    excerpt:
+      'Trade Republic, DEGIRO, MyInvestor, ING e Interactive Brokers comparados para ETFs: comisiones reales, seguridad y cuál elegir según tu perfil inversor.',
+    publishedAt: '2026-05-30',
+    readingMinutes: 11,
+    keywords: ['mejor broker ETF España', 'mejor broker para ETFs', 'broker ETF España 2026', 'comparativa brokers ETF', 'qué broker elegir ETF'],
+    faq: [
+      {
+        q: '¿Cuál es el mejor broker para invertir en ETFs en España en 2026?',
+        a: 'No hay un único "mejor" para todos. Para aportaciones periódicas pequeñas y automatizadas, Trade Republic (0€ por operación, planes de ahorro desde 1€) es la opción más sencilla. Para combinar ETFs con fondos indexados de traspaso fiscal, MyInvestor. Para carteras grandes o acceso a muchos mercados, DEGIRO o Interactive Brokers. ING solo compensa si ya eres cliente, porque su broker es caro (9-22€ por orden).',
+      },
+      {
+        q: '¿Qué broker tiene las comisiones más bajas para ETFs?',
+        a: 'En comisión pura de compraventa, Trade Republic (0€ por operación) es el más barato para cualquier importe, seguido de DEGIRO (0,50€ + 0,004%, mínimo 0,90€) y MyInvestor (0,20€ + 0,03%). Interactive Brokers es muy competitivo en volúmenes altos. ING es el más caro con diferencia (9-22€ por orden). Pero el coste real incluye también cambio de divisa y, en algunos casos, custodia.',
+      },
+      {
+        q: '¿Es seguro invertir en ETFs a través de estos brokers?',
+        a: 'Sí, todos están regulados en la UE. Trade Republic (BaFin alemán) y MyInvestor e ING (CNMV/Banco de España) cubren hasta 100.000€ de depósitos por el fondo de garantía correspondiente. DEGIRO e Interactive Brokers cubren 20.000€ por el fondo de garantía de inversiones de su país. En todos los casos, tus ETFs se custodian como patrimonio separado del broker.',
+      },
+      {
+        q: '¿Puedo comprar fondos indexados además de ETFs en estos brokers?',
+        a: 'Solo algunos. MyInvestor, Interactive Brokers e ING permiten fondos indexados además de ETFs. Trade Republic y DEGIRO solo ofrecen ETFs. La diferencia es relevante porque los fondos indexados disfrutan del traspaso fiscal libre en España (cambiar de fondo sin tributar), una ventaja que los ETFs no tienen.',
+      },
+      {
+        q: '¿Qué broker es mejor para un principiante que empieza con poco dinero?',
+        a: 'Trade Republic es la opción más recomendada para empezar: 0€ por operación, planes de ahorro automáticos desde 1€/mes, app muy sencilla y cuenta remunerada. MyInvestor es la alternativa si quieres empezar con fondos indexados desde 1€ y aprovechar el traspaso fiscal. Ambos están regulados con cobertura de 100.000€.',
+      },
+    ],
+    content: `# Mejor broker para ETFs en España 2026: comparativa honesta
+
+Elegir broker es la segunda decisión más importante después de elegir tus ETFs, y la que más fricción y comisiones te ahorra (o te cuesta) durante décadas. Esta comparativa analiza los cinco brokers más usados por inversores indexados en España en 2026 — Trade Republic, DEGIRO, MyInvestor, ING e Interactive Brokers — sin afiliación ni comisiones por recomendarte ninguno.
+
+La conclusión por adelantado: no existe un "mejor broker" universal. Existe el mejor broker para tu volumen de inversión, tu frecuencia de aportación y según si quieres combinar ETFs con fondos indexados. Vamos a verlo.
+
+---
+
+## Comparativa rápida
+
+| | Trade Republic | DEGIRO | MyInvestor | ING | Interactive Brokers |
+|---|---|---|---|---|---|
+| Comisión ETF | **0 €** | 0,50 € + 0,004 % (mín. 0,90 €) | 0,20 € + 0,03 % | 9-22 € | Variable, muy baja |
+| Planes de ahorro automáticos | ✓ (desde 1 €) | ✗ | Solo en fondos | ✗ | ✗ |
+| Fondos indexados | ✗ | ✗ | ✓ (traspaso fiscal) | ✓ | ✓ |
+| Cuenta remunerada | ✓ (~2-2,5 %) | ✗ | ✓ (~2 %) | ✓ | Sobre saldo no invertido |
+| Regulación | BaFin (Alemania) | AFM (Países Bajos) | CNMV (España) | CNMV (España) | CBI (Irlanda) |
+| Garantía de inversión | 100.000 € | 20.000 € | 100.000 € | 100.000 € | 20.000 € |
+| Mercados | Europa + EE.UU. | 50+ bolsas | Principalmente Europa | Limitados | 150 mercados |
+| Interfaz | Mobile, muy simple | Web técnica | Web bancaria | Web bancaria | Profesional, compleja |
+
+---
+
+## El coste real: no solo la comisión de compra
+
+La comisión por operación es lo primero que mira todo el mundo, pero el coste total de usar un broker incluye más factores:
+
+- **Comisión de compraventa**: lo que pagas cada vez que compras o vendes un ETF.
+- **Cambio de divisa**: si compras un ETF en dólares o libras con euros, el broker aplica un margen en la conversión. Algunos lo incluyen en el spread sin que lo veas.
+- **Comisión de custodia**: cuota por mantener los valores. La mayoría de brokers digitales no la cobran, pero conviene verificarlo.
+- **Comisiones de cobro de dividendos**: algunos brokers cobran por procesar los dividendos de ETFs de distribución.
+
+Para un inversor indexado que compra ETFs en euros domiciliados en Irlanda (lo habitual y recomendable), el cambio de divisa se minimiza eligiendo la cotización en euros (Xetra) en lugar de en dólares (LSE). Sobre esto profundizamos en la [guía para elegir tu primer ETF](/blog/como-elegir-tu-primer-etf-espana-2026).
+
+---
+
+## Trade Republic: el más sencillo y barato para empezar
+
+**Comisión**: 0 € por operación, sin asteriscos. Gana dinero por order flow y por la cuenta remunerada.
+
+**Lo mejor**: planes de ahorro automáticos desde 1 €/mes en más de 2.000 ETFs, app diseñada para no equivocarse, cuenta remunerada al ~2-2,5 % sin condiciones. Regulado por el BaFin alemán con cobertura de 100.000 € en depósitos.
+
+**Lo peor**: solo ETFs (no fondos indexados con traspaso fiscal), mercados limitados a Europa y EE.UU., sin órdenes avanzadas.
+
+**Ideal para**: quien empieza, aporta cantidades pequeñas-medianas de forma regular y quiere automatizar al máximo. Es el broker que más recomendamos para un primer inversor indexado. Análisis completo en la [opinión de Trade Republic 2026](/blog/trade-republic-opinion-2026).
+
+---
+
+## DEGIRO: acceso a más mercados para el inversor exigente
+
+**Comisión**: 0,50 € + 0,004 % por operación en bolsas principales (mínimo 0,90 €). Lista mensual rotatoria de ETFs sin comisión de compra.
+
+**Lo mejor**: acceso a más de 50 bolsas mundiales, tipos de órdenes avanzadas, comisiones que para órdenes grandes son irrelevantes en términos relativos.
+
+**Lo peor**: cobertura de garantía de 20.000 € (inferior a la de los bancos), sin planes de ahorro automáticos, sin cuenta remunerada, y la cuenta básica permite préstamo de valores (para evitarlo, abre cuenta Custody).
+
+**Ideal para**: carteras grandes (>100.000 €), acceso a mercados específicos o tipos de órdenes técnicas. Detalle en la [opinión de DEGIRO 2026](/blog/degiro-opinion-2026).
+
+---
+
+## MyInvestor: el único que combina ETFs y fondos indexados
+
+**Comisión**: 0,20 € + 0,03 % del importe por orden de ETF. Para órdenes pequeñas (<667 €), la comisión mínima de 0,20 € es muy competitiva.
+
+**Lo mejor**: el único de los cinco que ofrece fondos indexados de Vanguard, Amundi y Fidelity con **traspaso fiscal libre** (cambiar de fondo sin tributar, la gran ventaja fiscal en España). Regulado por la CNMV con cobertura de 100.000 €. Aportaciones desde 1 €.
+
+**Lo peor**: comisión de ETF algo superior a Trade Republic, sin planes de ahorro automáticos en ETFs (sí en fondos), selección de ETFs más limitada.
+
+**Ideal para**: quien quiere combinar ETFs con fondos indexados y aprovechar el traspaso fiscal, o prefiere un banco regulado en España. Más en la [opinión de MyInvestor 2026](/blog/myinvestor-opinion-2026).
+
+---
+
+## Interactive Brokers: potencia para el inversor avanzado
+
+**Comisión**: variable, muy competitiva en volumen. Plataformas IBKR Lite (comisiones fijas) o IBKR Pro (escalonadas).
+
+**Lo mejor**: acceso a más de 150 mercados en 33 países y 27 divisas. Permite ETFs, fondos, acciones, futuros, opciones y divisas. Es uno de los brokers más antiguos (1978) y respetados, regulado en Europa por el Central Bank of Ireland.
+
+**Lo peor**: interfaz técnica y con curva de aprendizaje, cobertura de garantía de inversiones de 20.000 €, y no es banco (no hay garantía de depósito sobre el efectivo más allá de la de inversiones).
+
+**Ideal para**: inversores con cartera grande, perfil avanzado o necesidad de acceso global a mercados. Excesivo para quien solo quiere comprar 1-2 ETFs al mes.
+
+---
+
+## ING: cómodo solo si ya eres cliente
+
+**Comisión**: 9-22 € por orden a través del Naranja Broker. Es, con diferencia, el más caro de los cinco.
+
+**Lo mejor**: la comodidad de tenerlo todo en el mismo banco si ya usas la Cuenta Sin Nómina de ING. Regulado por el Banco de España y la CNMV con cobertura de 100.000 €. Permite también fondos indexados.
+
+**Lo peor**: el coste por operación es prohibitivo para aportaciones pequeñas regulares. Una aportación mensual de 200 € con una comisión de 10 € supone un 5 % de coste de entrada — inaceptable frente a los 0 € de Trade Republic.
+
+**Ideal para**: clientes de ING que valoran la comodidad bancaria por encima del coste y hacen aportaciones grandes y poco frecuentes. Para el inversor indexado sensible al coste, hay opciones mucho mejores.
+
+---
+
+## El ganador según tu perfil
+
+**Si empiezas con poco y quieres automatizar**: **Trade Republic**. Sin discusión: 0 €, planes de ahorro desde 1 €, app sencilla.
+
+**Si quieres fondos indexados con traspaso fiscal**: **MyInvestor**. El único que combina ambos vehículos con la ventaja fiscal española.
+
+**Si tu cartera es grande o necesitas muchos mercados**: **DEGIRO** o **Interactive Brokers**, según si priorizas sencillez relativa (DEGIRO) o potencia y alcance global (IBKR).
+
+**Si ya eres cliente de ING y aportas grandes sumas esporádicas**: **ING** puede ser cómodo, aunque casi siempre saldrás ganando con otro broker.
+
+**La cartera óptima para muchos inversores**: Trade Republic para los ETFs con DCA automático + MyInvestor para los fondos indexados con traspaso fiscal. Dos brokers, lo mejor de cada uno.
+
+---
+
+## Cómo decidir en 3 preguntas
+
+1. **¿Vas a aportar poco y a menudo?** → Trade Republic (0 € y automático).
+2. **¿Quieres fondos indexados con traspaso fiscal?** → MyInvestor.
+3. **¿Tienes una cartera grande o necesitas mercados internacionales?** → DEGIRO o Interactive Brokers.
+
+Una vez tengas tu cartera montada en el broker que elijas, puedes [analizarla gratis con la herramienta de BogleHub](/analyzer): te dice tu asignación real por región y sector, el TER ponderado que pagas y si tienes solapamiento entre ETFs. Sin registro y sin que tus datos salgan de tu navegador.
+
+ETFs habituales para empezar en cualquiera de estos brokers: [VWCE](/etf/vwce) (global All-World), [IWDA](/etf/iwda) (MSCI World), [CSPX](/etf/cspx) (S&P 500), [SWRD](/etf/swrd) (MSCI World barato) y [AGGH](/etf/aggh) (renta fija global) para la parte conservadora.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [DEGIRO vs Trade Republic vs MyInvestor — BogleHub](/blog/degiro-vs-trade-republic-vs-myinvestor-2026) — Comparativa en profundidad de los tres brokers más populares.
+- [Comparador de brókers — BogleHub](/calculadora/comparar-brokers) — Calcula el coste anual exacto en euros de cada broker según tu patrón de inversión.
+- [Cómo elegir tu primer ETF en España — BogleHub](/blog/como-elegir-tu-primer-etf-espana-2026) — Guía de los criterios que importan antes de elegir broker.
+`,
+  },
 ]

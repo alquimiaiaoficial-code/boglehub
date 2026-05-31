@@ -114,6 +114,7 @@ export const ARTICLE_CATEGORY: Record<string, BlogCategory> = {
   'degiro-opinion-2026': 'roboadvisors-brokers',
   'xtb-opinion-2026': 'roboadvisors-brokers',
   'scalable-capital-opinion-2026': 'roboadvisors-brokers',
+  'mejor-broker-etfs-espana-2026': 'roboadvisors-brokers',
 
   // Estrategias
   'interes-compuesto-inversion': 'estrategias',
