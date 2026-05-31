@@ -236,6 +236,7 @@ Ya tienes los criterios, los brokers y los ETFs. El siguiente paso lógico es co
 - [JustETF — Buscador de ETFs UCITS para Europa](https://www.justetf.com/es/) — Compara TER, domicilio y tracking difference de cualquier ETF disponible en bolsas europeas.
 - [Vanguard — Página oficial VWCE (IE00BK5BQT80)](https://www.vanguard.co.uk/professional/product/etf/equity/9679/ftse-all-world-ucits-etf-usd-accumulating) — Folleto, costes y composición oficiales del Vanguard FTSE All-World.
 - [iShares — Página oficial IWDA](https://www.ishares.com/uk/individual/en/products/251882/ISHARES-MSCI-WORLD-UCITS-ETF) — Datos oficiales del iShares Core MSCI World.
+- [Cómo invertir en el S&P 500 desde España — BogleHub](/blog/como-invertir-sp500-espana) — Guía centrada solo en el S&P 500 (CSPX): ETFs, fondos y por qué no puedes comprar el SPY americano.
 `,
   },
   {
