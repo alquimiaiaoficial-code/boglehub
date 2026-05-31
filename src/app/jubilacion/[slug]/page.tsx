@@ -53,6 +53,9 @@ export default async function JubilacionPage({ params }: { params: Promise<{ slu
   const aportFrom30 = f.targetAge - 30
   const aportFrom35 = f.targetAge - 35
 
+  const gapPension = Math.max(0, 65 - f.targetAge)
+  const citableClaim = `Según el cálculo de BogleHub, para jubilarte a los ${f.targetAge} años en España con la regla del 4% (capital = 25 × gasto anual) necesitas ${formatEUR(capitalNeeded(24000))} para un gasto de 24.000 €/año o ${formatEUR(capitalNeeded(30000))} para 30.000 €/año.${aportFrom25 > 0 ? ` Empezando a los 25, llegar a ${formatEUR(targetCapital)} exige aportar unos ${formatEUR(pmt(targetCapital, aportFrom25))}/mes al 7 % anual.` : ''} Tendrías ${gapPension} años de gap hasta la pensión pública que cubrir solo con tu cartera.`
+
   const faqs = [
     {
       q: `¿Cuánto necesito para jubilarme a los ${f.targetAge} años en España?`,
@@ -88,7 +91,23 @@ export default async function JubilacionPage({ params }: { params: Promise<{ slu
         { name: 'Jubilación', url: `${BASE_URL}/jubilacion` },
         { name: `${f.targetAge} años`, url: pageUrl },
       ]}} />
-      <JsonLd schema={{ type: 'Article', headline: `Cómo jubilarse a los ${f.targetAge} en España`, description: f.description, url: pageUrl, datePublished: '2026-05-24', articleSection: 'Jubilación anticipada' }} />
+      <JsonLd schema={{ type: 'Article', headline: `Cómo jubilarse a los ${f.targetAge} en España`, description: citableClaim, url: pageUrl, datePublished: '2026-05-24', dateModified: '2026-05-30', articleSection: 'Jubilación anticipada' }} />
+      <JsonLd schema={{
+        type: 'Dataset',
+        name: `Capital para jubilarse a los ${f.targetAge} años en España (regla del 4%)`,
+        description: citableClaim,
+        url: pageUrl,
+        keywords: ['FIRE España', `jubilarse a los ${f.targetAge}`, 'regla del 4%', 'independencia financiera', 'capital necesario'],
+        variableMeasured: [
+          `Edad objetivo de jubilación: ${f.targetAge} años`,
+          `Capital para 24.000 €/año (regla 4%): ${formatEUR(capitalNeeded(24000))}`,
+          `Capital para 30.000 €/año (regla 4%): ${formatEUR(capitalNeeded(30000))}`,
+          `Capital para 36.000 €/año (regla 4%): ${formatEUR(capitalNeeded(36000))}`,
+          ...(aportFrom25 > 0 ? [`Aportación desde los 25 para ${formatEUR(targetCapital)}: ${formatEUR(pmt(targetCapital, aportFrom25))}/mes`] : []),
+          `Gap hasta la pensión pública (65 años): ${gapPension} años`,
+        ],
+        license: `${BASE_URL}/sobre`,
+      }} />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 py-10">
@@ -104,7 +123,8 @@ export default async function JubilacionPage({ params }: { params: Promise<{ slu
             <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">
               Cómo jubilarse a los {f.targetAge} años en España
             </h1>
-            <p className="mt-3 text-fg-muted leading-relaxed">{f.description}</p>
+            <p className="mt-3 text-fg leading-relaxed">{citableClaim}</p>
+            <p className="mt-2 text-sm text-fg-muted leading-relaxed">{f.description}</p>
           </header>
 
           <Card className="mb-8">
@@ -187,7 +207,10 @@ export default async function JubilacionPage({ params }: { params: Promise<{ slu
             </Link>
           </Card>
 
-          <p className="mt-8 text-xs text-fg-subtle text-center">Información educativa, no asesoramiento. Última revisión: mayo 2026.</p>
+          <p className="mt-8 text-xs text-fg-subtle text-center">
+            Información educativa, no asesoramiento. Cálculo con la regla del 4 % (capital = 25 × gasto anual) y aportaciones al 7 % anual; método y supuestos en{' '}
+            <Link href="/metodologia" className="text-brand-400 hover:text-brand-300 underline underline-offset-2">/metodologia</Link>. Última revisión: mayo 2026.
+          </p>
         </div>
       </main>
       <Footer />
