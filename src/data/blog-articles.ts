@@ -2593,7 +2593,7 @@ No existe un único "mejor ETF". Existe el mejor ETF para tu objetivo, tu horizo
 | Índice | NASDAQ-100 |
 | Grado fiscal (España) | A |
 
-**Para quién**: inversor con convicción en tecnología y tolerancia alta a la volatilidad. No es una alternativa al MSCI World — es una posición de alta concentración. Si no entiendes por qué quieres el NASDAQ-100 en lugar de un índice global, no lo compres. TER más alto y concentración sectorial en tecnología (~50 %).
+**Para quién**: inversor con convicción en tecnología y tolerancia alta a la volatilidad. No es una alternativa al MSCI World — es una posición de alta concentración. Si no entiendes por qué quieres el NASDAQ-100 en lugar de un índice global, no lo compres. TER más alto y concentración sectorial en tecnología (~50 %). Comparamos EQQQ con sus alternativas (SXRV, CNDX) en la guía de [mejores ETFs Nasdaq 100 para España](/blog/mejores-etfs-nasdaq-100-espana).
 
 ---
 
@@ -2606,7 +2606,7 @@ No existe un único "mejor ETF". Existe el mejor ETF para tu objetivo, tu horizo
 | Activo subyacente | Oro físico |
 | Grado fiscal (España) | A |
 
-**Para quién**: cobertura frente a escenarios de alta inflación o crisis del sistema financiero. No es un ETF en sentido estricto (es un ETC respaldado por oro físico), pero funciona de forma similar. Una asignación del 5-10 % en carteras de inversores conservadores con horizonte largo. La filosofía Boglehead clásica no lo incluye, pero hay inversores que lo usan como cobertura.
+**Para quién**: cobertura frente a escenarios de alta inflación o crisis del sistema financiero. No es un ETF en sentido estricto (es un ETC respaldado por oro físico), pero funciona de forma similar. Una asignación del 5-10 % en carteras de inversores conservadores con horizonte largo. La filosofía Boglehead clásica no lo incluye, pero hay inversores que lo usan como cobertura. Si te planteas el oro, compara las opciones (ETC físico vs mineras) en [oro físico vs ETC vs ETF de mineras](/blog/oro-etf-fisico-vs-mineria-espana).
 
 ---
 
