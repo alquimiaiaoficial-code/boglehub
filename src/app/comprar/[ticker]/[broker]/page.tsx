@@ -68,6 +68,8 @@ export default async function ComprarPage({
   const pageUrl = `${BASE_URL}/comprar/${ticker}/${broker}`
   const otherBrokers = BROKERS.filter((b) => b.slug !== broker && COVERED_BROKER_SLUGS.includes(b.slug)).slice(0, 4)
 
+  const lead = `Según BogleHub, comprar ${etf.ticker} (${etf.name}, ISIN ${etf.isin}) en ${brokerData.name} cuesta ${brokerData.etfCommission} por operación; el ETF tiene un TER del ${formatPct(etf.ter / 100, 2)} anual y grado fiscal ${fiscal.grade} para residentes en España. Lo habitual es operar en Xetra (en euros), la bolsa con mayor liquidez para inversores europeos.`
+
   const faqs = [
     {
       q: `¿Cuánto cuesta comprar ${etf.ticker} en ${brokerData.name}?`,
@@ -141,7 +143,8 @@ export default async function ComprarPage({
             <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">
               Cómo comprar {etf.ticker} en {brokerData.name} (2026)
             </h1>
-            <p className="mt-3 text-fg-muted leading-relaxed">
+            <p className="mt-3 text-fg leading-relaxed">{lead}</p>
+            <p className="mt-2 text-sm text-fg-muted leading-relaxed">
               Guía paso a paso para comprar el ETF {etf.name} en {brokerData.name}: comisiones,
               pasos operativos, fiscalidad para residentes en España y alternativas. Información
               actualizada a 2026.
