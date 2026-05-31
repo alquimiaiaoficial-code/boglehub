@@ -882,6 +882,95 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       },
     ],
   },
+  {
+    slug: 'dividendo',
+    term: 'Dividendo',
+    category: 'productos',
+    shortDefinition:
+      'Un dividendo es el reparto periódico de beneficios que hace una empresa a sus accionistas. En los ETFs, los dividendos pueden distribuirse al inversor (distribución) o reinvertirse automáticamente dentro del fondo (acumulación).',
+    longDefinition:
+      'Cuando una empresa obtiene beneficios, puede repartirlos entre sus accionistas en forma de dividendos (pago en efectivo) o retenerlos para reinvertirlos en el negocio. Los dividendos se expresan como un importe por acción (por ejemplo, 0,50€ por acción) y se pagan con la frecuencia establecida por cada empresa: trimestral (habitual en empresas americanas), semestral o anual.\n\nEn los ETFs, el tratamiento de los dividendos depende de la clase del fondo:\n- **ETFs de distribución**: el ETF paga periódicamente los dividendos recibidos de las empresas de la cartera. El inversor recibe dinero en cuenta y tributa ese año como rendimiento del capital mobiliario (19-28%).\n- **ETFs de acumulación**: el ETF reinvierte automáticamente los dividendos comprando más participaciones del propio fondo. El inversor no recibe dinero ni tributa hasta que vende. El efecto del interés compuesto es mayor a largo plazo.\n\nEl rendimiento por dividendo (dividend yield) es el porcentaje que representan los dividendos anuales sobre el precio de la acción o del ETF. Un yield del 3% en un ETF global significa que distribuye aproximadamente un 3% de su valor en dividendos al año.',
+    example:
+      'Tienes 10.000€ en un ETF de distribución con un yield del 2%. Recibirás aproximadamente 200€ en dividendos al año, sujetos al 19% de IRPF (38€). Con un ETF de acumulación equivalente, esos 200€ se reinvertirían automáticamente sin tributar, generando más participaciones y mayor efecto compuesto.',
+    relatedArticles: [
+      'etfs-dividendos-vivir-rentas-espana',
+      'fiscalidad-etfs-espana-guia-completa',
+    ],
+    relatedLinks: [
+      { label: 'ETFs de distribución', href: '/etfs/distribucion' },
+      { label: 'ETFs de acumulación', href: '/etfs/acumulacion' },
+    ],
+    faq: [
+      {
+        q: '¿Es mejor un ETF que paga dividendos o uno de acumulación?',
+        a: 'Para inversores en fase de acumulación que no necesitan ingresos periódicos, la acumulación suele ser más eficiente: los dividendos se reinvierten sin pasar por Hacienda. Si estás en fase de retiro y quieres rentas periódicas sin vender participaciones, la distribución puede simplificar la gestión.',
+      },
+      {
+        q: '¿Cómo tributan los dividendos de ETFs en España?',
+        a: 'Los dividendos de ETFs tributan como rendimientos del capital mobiliario en la base del ahorro del IRPF: 19% hasta 6.000€, 21% de 6.000€ a 50.000€, 23% de 50.000€ a 200.000€, 27% de 200.000€ a 300.000€ y 28% por encima de 300.000€. El broker retiene automáticamente un 19% a cuenta.',
+      },
+    ],
+  },
+  {
+    slug: 'gestion-pasiva',
+    term: 'Gestión pasiva',
+    category: 'estrategias',
+    shortDefinition:
+      'La gestión pasiva consiste en replicar un índice de mercado en lugar de intentar superarlo. Fondos indexados y ETFs son sus principales vehículos: mínima intervención, bajos costes y sin intentar "batir al mercado".',
+    longDefinition:
+      'La gestión pasiva parte de la evidencia empírica: la mayoría de gestores activos no supera consistentemente al mercado después de comisiones y durante periodos largos. En lugar de contratar analistas para elegir acciones ganadoras, un fondo pasivo simplemente replica la composición de un índice (MSCI World, S&P 500, FTSE All-World) comprando las mismas empresas en las mismas proporciones.\n\nEl resultado: el inversor obtiene exactamente la rentabilidad del mercado menos un TER muy bajo (0,05%-0,30%), frente al 1-2% anual de los fondos activos. A 20-30 años, esa diferencia de coste acumulada puede suponer decenas de miles de euros.\n\n**Gestión activa vs pasiva**: la gestión activa contrata gestores que intentan superar al índice mediante selección de acciones y timing de mercado. Los datos de Standard & Poor\'s SPIVA muestran que en periodos de 10-15 años, más del 85% de los fondos activos en Europa no superan a su índice de referencia después de comisiones. La gestión pasiva no promete rentabilidades superiores, pero sí evitar que las comisiones erosionen tu rentabilidad.',
+    example:
+      'Un inversor con 50.000€ en un fondo activo con TER del 1,5% paga 750€ al año en comisiones. Con un fondo indexado con TER del 0,10%, pagaría 50€. A 30 años con interés compuesto del 7%, esa diferencia representa aproximadamente 90.000€ en tu cartera final.',
+    relatedArticles: [
+      'bogleheads-espana-guia-completa',
+      'fondos-indexados-vs-etfs-espana',
+      'roboadvisors-espana-merecen-comision',
+    ],
+    relatedLinks: [
+      { label: 'Analizador de cartera con IA', href: '/analyzer' },
+      { label: 'Catálogo de ETFs UCITS', href: '/etf' },
+    ],
+    faq: [
+      {
+        q: '¿La gestión pasiva siempre bate a la activa?',
+        a: 'No siempre en el corto plazo: hay gestores activos que superan al mercado en periodos concretos. Pero los datos SPIVA muestran que en periodos de 10-15 años, más del 85% de los fondos activos en Europa no supera a su índice de referencia. La probabilidad de elegir uno de los pocos que sí lo hacen de forma consistente, antes de saberlo, es muy baja.',
+      },
+      {
+        q: '¿Es la gestión pasiva adecuada para todos los inversores?',
+        a: 'Para la gran mayoría de inversores particulares a largo plazo, sí. Requiere disciplina para no vender en momentos de pánico y aceptar que tendrás exactamente la rentabilidad del mercado, ni más ni menos. Si no puedes soportar ver tu cartera caer un 30% sin hacer nada, necesitas una asignación más conservadora, no un gestor activo.',
+      },
+    ],
+  },
+  {
+    slug: 'capitalizacion-bursatil',
+    term: 'Capitalización bursátil',
+    category: 'metricas',
+    shortDefinition:
+      'La capitalización bursátil es el valor total en bolsa de una empresa: precio de la acción multiplicado por el número de acciones en circulación. Los índices como el MSCI World ponderan cada empresa según su capitalización.',
+    longDefinition:
+      'La capitalización bursátil (market cap) se calcula multiplicando el precio actual de cada acción por el número total de acciones en circulación. Si Apple tiene 15.000 millones de acciones a 180€ cada una, su capitalización es 2,7 billones de euros. Es la medida más usada para clasificar el tamaño de una empresa: large cap (grandes), mid cap (medianas), small cap (pequeñas).\n\nLos índices más populares — MSCI World, S&P 500, FTSE All-World — ponderan a cada empresa según su capitalización. Esto significa que si Apple pesa el 5% del S&P 500, invertir 10.000€ en un ETF S&P 500 equivale a poner 500€ en Apple. Si el precio de Apple sube un 10%, el índice (y por tanto tu ETF) sube un 0,5%.\n\nEsta ponderación por capitalización tiene una consecuencia importante: cuando una empresa sube mucho, pesa más en el índice; cuando baja, pesa menos. El índice se "autoajusta" al mercado sin que nadie tenga que decidir cuánto dedicar a cada empresa. Es el fundamento de la filosofía de inversión pasiva.',
+    example:
+      'En el MSCI World, EE.UU. pesa ~71% porque las empresas americanas son las de mayor capitalización bursátil mundial. Si prefieres una distribución más igualitaria por países (equal weight), no reflejaría el mercado real y requeriría rebalanceos frecuentes.',
+    relatedArticles: [
+      'que-es-el-msci-world',
+      'vwce-analisis-completo',
+      'msci-world-vs-msci-acwi-diferencias',
+    ],
+    relatedLinks: [
+      { label: 'Catálogo de ETFs UCITS', href: '/etf' },
+      { label: 'ETFs MSCI World', href: '/etfs/msci-world' },
+    ],
+    faq: [
+      {
+        q: '¿Por qué los índices pesan tanto en EE.UU.?',
+        a: 'Porque las empresas americanas tienen la mayor capitalización bursátil del mundo. Apple, Microsoft, Nvidia, Amazon y Google juntas valen más que toda la bolsa europea combinada. La ponderación por capitalización refleja ese hecho; no es un sesgo artificial sino la distribución real del mercado global.',
+      },
+      {
+        q: '¿Qué diferencia hay entre large cap, mid cap y small cap?',
+        a: 'Son clasificaciones por tamaño de empresa. Aunque no hay una cifra universal, se suele considerar large cap a empresas con más de 10.000 millones de dólares de capitalización, mid cap entre 2.000 y 10.000 millones, y small cap por debajo de 2.000 millones. Los índices MSCI World y S&P 500 cubren large y mid cap; para small cap necesitas ETFs específicos como WSML o IUSN.',
+      },
+    ],
+  },
 ]
 
 /** Devuelve un término por su slug, o undefined si no existe */
