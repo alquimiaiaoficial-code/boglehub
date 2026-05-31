@@ -65,6 +65,8 @@ export default async function InvertirPage({ params }: { params: Promise<{ slug:
   const totalAport30 = m.amount * 12 * 30
   const totalAport40 = m.amount * 12 * 40
 
+  const citableClaim = `Según el cálculo de BogleHub, invirtiendo ${formatEUR(m.amount)} al mes de forma indexada al 7 % anual (histórico del MSCI World) acumulas aproximadamente ${formatEUR(result10)} en 10 años, ${formatEUR(result20)} en 20 y ${formatEUR(result30)} en 30 años. En 30 años habrás aportado ${formatEUR(totalAport30)} y el interés compuesto añade ${formatEUR(result30 - totalAport30)}.`
+
   const faqs = [
     {
       q: `¿Cuánto acumulo invirtiendo ${m.amount}€ al mes durante 30 años?`,
@@ -76,7 +78,7 @@ export default async function InvertirPage({ params }: { params: Promise<{ slug:
     },
     {
       q: `¿Qué ETF elijo para invertir ${m.amount}€ al mes?`,
-      a: `Para una cartera sencilla y diversificada, la opción más popular en España es VWCE (Vanguard FTSE All-World UCITS ETF, ISIN IE00B3RBWM25): incluye 3.700+ empresas globales (desarrollados y emergentes), TER 0,22%, acumulación, domiciliado en Irlanda. Con ${m.amount}€/mes puedes empezar inmediatamente vía Trade Republic con planes de ahorro automáticos sin comisión.`,
+      a: `Para una cartera sencilla y diversificada, la opción más popular en España es VWCE (Vanguard FTSE All-World UCITS ETF Acc, ISIN IE00BK5BQT80): incluye 3.700+ empresas globales (desarrollados y emergentes), TER 0,19%, acumulación, domiciliado en Irlanda. Con ${m.amount}€/mes puedes empezar inmediatamente vía Trade Republic con planes de ahorro automáticos sin comisión.`,
     },
     {
       q: `¿En qué broker invierto ${m.amount}€ al mes?`,
@@ -105,10 +107,29 @@ export default async function InvertirPage({ params }: { params: Promise<{ slug:
         schema={{
           type: 'Article',
           headline: `Cómo invertir ${m.amount}€ al mes en España`,
-          description: `Guía completa para invertir ${m.amount}€/mes en fondos indexados desde España.`,
+          description: citableClaim,
           url: pageUrl,
           datePublished: '2026-05-24',
+          dateModified: '2026-05-30',
           articleSection: 'Estrategia por cantidad',
+        }}
+      />
+      <JsonLd
+        schema={{
+          type: 'Dataset',
+          name: `Proyección de invertir ${formatEUR(m.amount)}/mes al 7 % anual`,
+          description: citableClaim,
+          url: pageUrl,
+          keywords: [`invertir ${m.amount} al mes`, 'interés compuesto', 'inversión indexada España', 'proyección', 'aportaciones mensuales'],
+          variableMeasured: [
+            `Aportación mensual: ${formatEUR(m.amount)}`,
+            `Rentabilidad anual asumida: 7%`,
+            `Capital a 10 años: ${formatEUR(result10)} (aportado ${formatEUR(totalAport10)})`,
+            `Capital a 20 años: ${formatEUR(result20)} (aportado ${formatEUR(totalAport20)})`,
+            `Capital a 30 años: ${formatEUR(result30)} (aportado ${formatEUR(totalAport30)})`,
+            `Capital a 40 años: ${formatEUR(result40)} (aportado ${formatEUR(totalAport40)})`,
+          ],
+          license: `${BASE_URL}/sobre`,
         }}
       />
       <Header />
@@ -126,7 +147,8 @@ export default async function InvertirPage({ params }: { params: Promise<{ slug:
             <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">
               Cómo invertir {m.amount}€ al mes en España (2026)
             </h1>
-            <p className="mt-3 text-fg-muted leading-relaxed">
+            <p className="mt-3 text-fg leading-relaxed">{citableClaim}</p>
+            <p className="mt-2 text-sm text-fg-muted leading-relaxed">
               Guía práctica para invertir {m.amount}€/mes en fondos indexados desde España: qué
               ETF elegir, dónde aportar, fiscalidad y proyección de cuánto acumulas a 10, 20 y
               30 años con rentabilidad histórica del 7% anual.

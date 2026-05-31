@@ -77,6 +77,25 @@ export default async function AhorrarPage({
   const totalAportado = m.amount * 12 * years
   const compoundGain = o.targetAmount - totalAportado
 
+  const citableClaim = isAchievable
+    ? `Según el cálculo de BogleHub, invirtiendo ${formatEUR(m.amount)} al mes de forma indexada al 7 % anual (histórico del MSCI World) alcanzas ${o.label} (${formatEUR(o.targetAmount)}) en aproximadamente ${years} años: habrás aportado ${formatEUR(totalAportado)} y el interés compuesto añade ${formatEUR(compoundGain)}.`
+    : `Según el cálculo de BogleHub, invirtiendo ${formatEUR(m.amount)} al mes al 7 % anual, alcanzar ${o.label} (${formatEUR(o.targetAmount)}) llevaría más de 60 años, fuera de un horizonte realista; habría que aumentar la aportación (con ${formatEUR(m.amount * 2)}/mes el tiempo se reduce aproximadamente a la mitad) o reducir el objetivo.`
+  const datasetVars = isAchievable
+    ? [
+        `Aportación mensual: ${formatEUR(m.amount)}`,
+        `Objetivo: ${formatEUR(o.targetAmount)} (${o.label})`,
+        `Rentabilidad anual asumida: 7%`,
+        `Años para alcanzarlo: ${years}`,
+        `Total aportado: ${formatEUR(totalAportado)}`,
+        `Ganancia por interés compuesto: ${formatEUR(compoundGain)}`,
+      ]
+    : [
+        `Aportación mensual: ${formatEUR(m.amount)}`,
+        `Objetivo: ${formatEUR(o.targetAmount)} (${o.label})`,
+        `Rentabilidad anual asumida: 7%`,
+        `Años para alcanzarlo: más de 60 (fuera de horizonte realista)`,
+      ]
+
   // Tabla con escenarios de rentabilidad
   const scenarios = [
     { rate: 0.05, label: 'Conservador (5%)' },
@@ -122,7 +141,16 @@ export default async function AhorrarPage({
         { name: `${m.amount}€/mes`, url: `${BASE_URL}/invertir/${cantidad}` },
         { name: o.label, url: pageUrl },
       ]}} />
-      <JsonLd schema={{ type: 'Article', headline: `Ahorrar ${m.amount}€ al mes para llegar a ${o.label}`, description: `Plan personalizado.`, url: pageUrl, datePublished: '2026-05-24', articleSection: 'Plan personalizado' }} />
+      <JsonLd schema={{ type: 'Article', headline: `Ahorrar ${m.amount}€ al mes para llegar a ${o.label}`, description: citableClaim, url: pageUrl, datePublished: '2026-05-24', dateModified: '2026-05-30', articleSection: 'Plan personalizado' }} />
+      <JsonLd schema={{
+        type: 'Dataset',
+        name: `Años para alcanzar ${o.label} ahorrando ${formatEUR(m.amount)}/mes`,
+        description: citableClaim,
+        url: pageUrl,
+        keywords: [`ahorrar ${m.amount} al mes`, o.label, 'interés compuesto', 'años para objetivo', 'inversión indexada España'],
+        variableMeasured: datasetVars,
+        license: `${BASE_URL}/sobre`,
+      }} />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 py-10">
@@ -138,7 +166,8 @@ export default async function AhorrarPage({
             <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">
               Ahorrar {m.amount}€ al mes para llegar a {o.label}
             </h1>
-            <p className="mt-3 text-fg-muted leading-relaxed">
+            <p className="mt-3 text-fg leading-relaxed">{citableClaim}</p>
+            <p className="mt-2 text-sm text-fg-muted leading-relaxed">
               Plan paso a paso: cuánto tiempo necesitas, qué cartera usar y cómo automatizar el plan. Cálculos a rentabilidad anual del 7% (histórica del MSCI World).
             </p>
           </header>
@@ -250,7 +279,10 @@ export default async function AhorrarPage({
             </Link>
           </Card>
 
-          <p className="mt-8 text-xs text-fg-subtle text-center">Información educativa, no asesoramiento. Última revisión: mayo 2026.</p>
+          <p className="mt-8 text-xs text-fg-subtle text-center">
+            Información educativa, no asesoramiento. Cálculo de interés compuesto sobre aportaciones mensuales al 7 % anual; método en{' '}
+            <Link href="/metodologia" className="text-brand-400 hover:text-brand-300 underline underline-offset-2">/metodologia</Link>. Última revisión: mayo 2026.
+          </p>
         </div>
       </main>
       <Footer />
