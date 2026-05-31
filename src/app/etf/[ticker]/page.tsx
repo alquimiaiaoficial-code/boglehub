@@ -199,6 +199,15 @@ export default async function EtfPage({ params }: { params: Promise<{ ticker: st
   const fiscal = computeFiscalGrade(etf.isin, etf.accumulating)
   const fiscalStyle = GRADE_STYLES[fiscal.grade]
 
+  // Tipo de producto preciso: los ETC de materias primas (oro) no son ETF UCITS.
+  const productType =
+    etf.assetClass === 'COMMODITY'
+      ? 'producto cotizado (ETC) de materias primas'
+      : `ETF UCITS de ${(ASSET_CLASS_LABEL[etf.assetClass] ?? etf.assetClass).toLowerCase()}`
+  // Frase citable autocontenida (respuesta-primero). El TER se lee de los datos,
+  // así que se mantiene correcto sin duplicar cifras.
+  const citableLead = `Según BogleHub, ${etf.ticker} (${etf.name}${etf.isin ? `, ISIN ${etf.isin}` : ''}) es un ${productType} con un TER del ${formatPct(etf.ter / 100, 2)} anual, de ${etf.accumulating ? 'acumulación' : 'distribución'}, domiciliado en ${fiscal.domicileLabel} (eficiencia fiscal ${fiscal.grade} para un inversor residente en España).`
+
   const similar: EtfMetadata[] = getAllEtfs()
     .filter((e) => e.assetClass === etf.assetClass && e.ticker !== etf.ticker)
     .slice(0, 3)
@@ -281,7 +290,8 @@ export default async function EtfPage({ params }: { params: Promise<{ ticker: st
             {etf.isin && (
               <p className="mt-1 text-sm text-fg-subtle font-mono">ISIN: {etf.isin}</p>
             )}
-            <p className="mt-4 text-fg-muted leading-relaxed">{etfDescription}</p>
+            <p className="mt-4 text-fg leading-relaxed">{citableLead}</p>
+            <p className="mt-3 text-fg-muted leading-relaxed">{etfDescription}</p>
           </header>
 
           {/* Key stats */}
