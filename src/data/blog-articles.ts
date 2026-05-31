@@ -1299,6 +1299,25 @@ Menos posiciones, bien elegidas, baten a cinco ETFs que en el fondo son el mismo
     publishedAt: '2026-05-15',
     readingMinutes: 10,
     keywords: ['fondos indexados o ETF', 'fondo indexado vs ETF', 'traspaso fondos indexados'],
+    updatedAt: '2026-05-30',
+    faq: [
+      {
+        q: '¿Qué es mejor en España, un fondo indexado o un ETF?',
+        a: 'Ambos replican índices con costes bajos y dan resultados casi idénticos antes de fiscalidad. La diferencia decisiva en España es el traspaso: los fondos indexados permiten mover dinero de un fondo a otro sin tributar, los ETFs no. Para quien prevé rebalancear o cambiar de fondo, el fondo indexado suele ser el vehículo principal; el ETF encaja si tu broker o tu índice preferido solo está disponible como ETF.',
+      },
+      {
+        q: '¿Se pueden traspasar fondos indexados sin pagar impuestos en España?',
+        a: 'Sí. La legislación española permite traspasar tu dinero de un fondo de inversión a otro sin tributar: vendes el fondo A y compras el B, y la plusvalía acumulada no pasa por Hacienda en ese momento. El IRPF se difiere hasta que reembolsas definitivamente. Los ETFs no tienen este régimen: cada venta con ganancia tributa, aunque sea para comprar otro ETF acto seguido.',
+      },
+      {
+        q: '¿Dónde puedo comprar fondos indexados en España?',
+        a: 'Necesitas una plataforma que los comercialice. MyInvestor es la opción más conocida, con acceso a fondos indexados de Vanguard, Amundi y Fidelity desde 1 €. Brokers como DEGIRO o Trade Republic trabajan sobre todo con ETFs y no ofrecen fondos indexados. Los ETFs, en cambio, se compran en casi cualquier broker con acceso a bolsa europea.',
+      },
+      {
+        q: '¿Cuál es más barato, el fondo indexado o el ETF?',
+        a: 'Hoy la diferencia de coste es marginal. Durante años los fondos indexados eran algo más caros, pero los de Vanguard y Amundi tienen ahora TER muy competitivos, comparables a los de muchos ETFs. El coste ya no decanta la balanza: compara el TER del producto concreto, pero la decisión real se juega en el traspaso fiscal y en la comodidad de compra.',
+      },
+    ],
     content: `# Fondos indexados o ETFs: la comparación definitiva para España
 
 Si has decidido invertir de forma indexada, ya has tomado la decisión que más importa. Lo demás son detalles. Pero hay un detalle que en España no es menor: elegir entre un fondo indexado y un ETF. Los dos replican índices, los dos son baratos, los dos son válidos dentro de la filosofía Boglehead. La diferencia está en la fiscalidad, en cómo se compran y en dónde.
@@ -1548,6 +1567,25 @@ Sobre una cartera mantenida 30 años, la diferencia entre pagar un 1,5 % y un 0,
     publishedAt: '2026-05-16',
     readingMinutes: 9,
     keywords: ['DCA o lump sum', 'dollar cost averaging', 'invertir de golpe o poco a poco'],
+    updatedAt: '2026-05-30',
+    faq: [
+      {
+        q: '¿Es mejor invertir de golpe o poco a poco (DCA)?',
+        a: 'Si ya tienes la suma disponible, invertir de golpe (lump sum) bate a promediar (DCA) aproximadamente dos de cada tres veces, porque los mercados suben más años de los que bajan (~70-75 % de los años en positivo). Promediar no es malo: cuesta algo de rentabilidad esperada a cambio de reducir el peor escenario y el arrepentimiento si el mercado cae justo después de entrar.',
+      },
+      {
+        q: '¿Por qué gana invertir de golpe frente a promediar?',
+        a: 'Porque el mercado sube más de lo que baja y el tiempo dentro del mercado construye el patrimonio. Cada mes que una parte de tu dinero está en efectivo esperando su turno tiene coste de oportunidad: no compone. Y esperar un "mejor momento" casi nunca funciona, porque solo se conoce a posteriori.',
+      },
+      {
+        q: '¿Aportar mi ahorro mensual cada mes es hacer DCA?',
+        a: 'No. DCA significa repartir en el tiempo una suma que ya tienes entera. Si inviertes tu ahorro de 300 €/mes según lo generas, no tienes dinero parado esperando: estás invirtiendo de golpe cada mes con lo que tienes, y eso es exactamente lo óptimo. La duda DCA vs lump sum solo aplica cuando te llega una cantidad grande de una vez.',
+      },
+      {
+        q: '¿Cuándo conviene promediar (DCA) una suma grande?',
+        a: 'Cuando el riesgo emocional es alto. Promediar es un seguro emocional: pagas una pequeña prima (algo de rentabilidad esperada) a cambio de reducir el golpe si el mercado cae justo después de invertir y de evitar vender en pánico. Si meterías 60.000 € de golpe y una caída del 25 % te haría abandonar el plan, promediar en unos meses es razonable.',
+      },
+    ],
     content: `# Aportar cada mes o invertir de golpe: qué dice la evidencia
 
 Te ha llegado dinero de una vez: una herencia, un finiquito, la venta de un coche, unos ahorros que tenías parados. Y aparece la duda: ¿lo invierto todo ahora o lo voy metiendo poco a poco para "promediar"?
@@ -1961,6 +1999,25 @@ Rebalancear bien es aburrido, rápido y poco frecuente. Así debe ser.
     publishedAt: '2026-05-18',
     readingMinutes: 10,
     keywords: ['plan de pensiones vs fondo indexado', 'plan de pensiones merece la pena', 'plan de pensiones o fondo indexado'],
+    updatedAt: '2026-05-30',
+    faq: [
+      {
+        q: '¿Qué conviene más en España, un plan de pensiones o un fondo indexado?',
+        a: 'Depende de tu situación. El plan de pensiones desgrava a la entrada (reduces tu base general por lo aportado) pero tributa al rescate como rendimiento del trabajo y es ilíquido hasta la jubilación. El fondo indexado no desgrava, pero es líquido, sin límite de aportación y sus plusvalías tributan en la base del ahorro (19-28 %). Para la mayoría, el fondo indexado es el vehículo principal y el plan de pensiones —si acaso— un complemento, siempre que sea indexado y de bajo coste.',
+      },
+      {
+        q: '¿Cómo tributa el rescate de un plan de pensiones?',
+        a: 'Todo lo que rescatas (lo aportado y lo ganado) tributa como rendimiento del trabajo en la base general del IRPF, junto a tu sueldo o pensión, a tu tipo marginal de ese momento. No tributa en la base del ahorro como los fondos y ETFs. Si rescatas mucho de golpe, te empujas a tramos altos: mal planificado, el rescate puede comerse buena parte de la desgravación inicial.',
+      },
+      {
+        q: '¿Cuánto se puede aportar a un plan de pensiones individual en España?',
+        a: 'El límite es 1.500 € al año en planes individuales (los planes de empleo de la empresa permiten sumar más). Es un límite pequeño para construir la independencia financiera: da para un complemento, no para el plato principal.',
+      },
+      {
+        q: '¿Merece la pena un plan de pensiones?',
+        a: 'Solo si es indexado y de bajo coste. Un plan de banco con comisión del 1,5 % anual o más rara vez compensa: compuesto durante décadas, destruye buena parte del beneficio fiscal, por mucho que desgrave. La ventaja real del plan es el diferimiento fiscal (inviertes antes de impuestos), pero es un impuesto aplazado, no perdonado: lo pagas al rescatar.',
+      },
+    ],
     content: `# Plan de pensiones o fondo indexado: qué te conviene en España
 
 El plan de pensiones se vende, desde hace décadas, como EL producto para la jubilación. Tu banco te lo ofrece cada diciembre, con la promesa de desgravar en la declaración. Y desgravar suena bien. Pero la pregunta no es si desgrava: es si, sumando todo, te conviene a ti frente a la alternativa de un fondo indexado o un ETF.
