@@ -3252,9 +3252,9 @@ A largo plazo eso importa, pero la complejidad añadida (dos ETFs, dos órdenes,
 | Broker | Comisión por orden |
 |---|---|
 | Trade Republic | 0 € (planes de ahorro automáticos desde 1 €/mes) |
-| DEGIRO | 0,50 € + 0,004% (mín. 0,90 €) |
+| [DEGIRO](/blog/degiro-opinion-2026) | 0,50 € + 0,004% (mín. 0,90 €) |
 | MyInvestor | 0,20 € + 0,03% |
-| XTB | 0 € hasta 100.000 €/mes en ETFs |
+| [XTB](/blog/xtb-opinion-2026) | 0 € hasta 100.000 €/mes en ETFs |
 
 Para aportaciones mensuales pequeñas, Trade Republic es la opción más eficiente. Para órdenes más grandes y control técnico, DEGIRO. El VWCE no está disponible en MyInvestor como ETF, pero sí su equivalente en fondo indexado (Vanguard Global Stock Index, que replica MSCI World, no FTSE All-World — índice diferente).
 
@@ -5396,9 +5396,9 @@ Para el rebalanceo: si el Nasdaq supera mucho al resto y pasa del 15% al 25% de 
 | Broker | Comisión por orden |
 |---|---|
 | Trade Republic | 0€ (planes ahorro automáticos disponibles) |
-| DEGIRO | 0,50€ + 0,004% |
+| [DEGIRO](/blog/degiro-opinion-2026) | 0,50€ + 0,004% |
 | MyInvestor | 0,20€ + 0,03% |
-| XTB | 0€ hasta 100.000€/mes |
+| [XTB](/blog/xtb-opinion-2026) | 0€ hasta 100.000€/mes |
 
 Para aportaciones recurrentes pequeñas: Trade Republic. Para órdenes grandes: cualquiera, la comisión es marginal frente al TER anual.
 
