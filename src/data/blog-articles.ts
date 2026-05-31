@@ -5778,4 +5778,190 @@ Si prefieres MSCI World por su TER ligeramente inferior, combínalo con un ETF d
 - [Análisis VWCE — BogleHub](/blog/vwce-analisis-completo) — El ETF FTSE All-World más popular para inversores españoles, alternativa a MSCI ACWI.
 `,
   },
+  {
+    slug: 'como-hacer-traspaso-fondos-espana',
+    title: 'Cómo hacer un traspaso de fondos en España (paso a paso)',
+    excerpt:
+      'El traspaso entre fondos de inversión permite cambiar de estrategia, gestora o nivel de riesgo sin pagar impuestos. Guía paso a paso: qué es, cómo se hace, cuánto tarda y qué fondos lo permiten.',
+    publishedAt: '2026-05-30',
+    readingMinutes: 9,
+    keywords: ['traspaso fondos inversión España', 'traspasar fondo sin tributar', 'traspaso fondos indexados', 'régimen diferimiento fiscal fondos', 'cómo traspasar fondos MyInvestor'],
+    faq: [
+      {
+        q: '¿Se puede traspasar un fondo de inversión sin pagar impuestos en España?',
+        a: 'Sí. Los fondos de inversión registrados en España con más de 500 partícipes disfrutan del régimen de diferimiento fiscal: al hacer un traspaso, el dinero pasa íntegro al fondo de destino y no tributas hasta el reembolso definitivo. Esta ventaja NO existe para los ETFs ni para fondos extranjeros no acogidos al régimen.',
+      },
+      {
+        q: '¿Cuánto tarda un traspaso de fondos?',
+        a: 'El plazo legal máximo es de 8 días hábiles desde que la gestora de destino acepta el traspaso. En la práctica, los traspasos entre fondos de las principales plataformas españolas (MyInvestor, Renta 4, Selfbank) suelen completarse en 3-5 días hábiles. Durante el traspaso tu dinero no está invertido en ningún fondo.',
+      },
+      {
+        q: '¿Pueden traspasar fondos los ETFs?',
+        a: 'No. Los ETFs no tienen régimen de traspaso fiscal libre en España. Vender un ETF para comprar otro siempre genera una ganancia o pérdida patrimonial que tributa ese año en la base del ahorro (19-28%). Esta es la principal diferencia fiscal entre ETFs y fondos de inversión indexados.',
+      },
+      {
+        q: '¿Qué pasa con las pérdidas acumuladas en el fondo origen al hacer un traspaso?',
+        a: 'En un traspaso, ni las ganancias ni las pérdidas acumuladas se realizan: el coste fiscal se "traslada" al fondo de destino. Cuando finalmente reembolses, la base de cálculo para el IRPF será el precio al que compraste las participaciones del fondo origen original, no el precio del fondo destino. El historial fiscal viaja contigo.',
+      },
+      {
+        q: '¿Se puede traspasar desde un fondo con pérdidas a otro para "resetear" el coste?',
+        a: 'No, el traspaso no realiza la pérdida: el precio de adquisición original se mantiene. Para materializar una pérdida fiscal hay que hacer un reembolso real (venta), no un traspaso. Ojo con la regla de los dos meses: si reembolsas con pérdida y recompras el mismo fondo en ese plazo, Hacienda anula la pérdida.',
+      },
+    ],
+    content: `# Cómo hacer un traspaso de fondos en España (paso a paso)
+
+El traspaso entre fondos de inversión es una de las ventajas fiscales más importantes disponibles para el inversor particular en España, y una de las más desconocidas. Permite cambiar de fondo, de estrategia o de gestora sin que la ganancia acumulada tribute ese año. El IRPF se difiere hasta que hagas el reembolso definitivo.
+
+Esta guía explica qué es exactamente un traspaso, cómo funciona el régimen fiscal, cómo se ejecuta en las principales plataformas y qué errores evitar.
+
+---
+
+## Qué es un traspaso de fondos y por qué existe
+
+Cuando vendes un ETF para comprar otro, Hacienda considera que has realizado una ganancia patrimonial y debes declararla en el IRPF del año de la venta. Con los fondos de inversión tradicionales, el legislador español estableció un régimen diferente: puedes mover el dinero de un fondo a otro sin que el cambio genere un evento fiscal.
+
+El mecanismo legal es el **diferimiento fiscal por traspaso** (artículo 94 de la Ley del IRPF). Las condiciones:
+
+- El fondo origen debe estar registrado en la CNMV o pertenecer a un Estado Miembro de la UE con presencia en España.
+- Tanto el fondo origen como el de destino deben tener **más de 500 partícipes** (excluye fondos muy pequeños).
+- El traspaso es entre el mismo tipo de vehículo: fondo a fondo. No aplica a ETFs, ni a acciones, ni a planes de pensiones (estos últimos tienen su propio régimen separado).
+
+**Qué ocurre fiscalmente**: el precio de coste del fondo origen se "hereda" en el fondo destino. Cuando un día reembolses de verdad, la ganancia calculada será precio de venta menos precio de compra original, independientemente de cuántos traspasos hayas hecho entre medias.
+
+---
+
+## Cuánto tarda un traspaso
+
+El plazo máximo legal es **8 días hábiles** contados desde que la sociedad gestora del fondo destino tramita la solicitud. En la práctica:
+
+| Tipo de traspaso | Plazo habitual |
+|---|---|
+| Entre fondos de la misma gestora | 1-3 días hábiles |
+| Entre fondos de distintas gestoras (misma plataforma) | 3-5 días hábiles |
+| Entre plataformas distintas | 5-8 días hábiles |
+
+**Importante**: durante el traspaso el dinero no está invertido. Si el mercado sube durante esos días, no participas. Si baja, tampoco. Para carteras grandes, considera hacer el traspaso en varias veces para no depender de un único día de precios.
+
+---
+
+## Cómo hacer el traspaso en las principales plataformas
+
+### MyInvestor (la más usada para fondos indexados)
+
+1. Accede a tu cuenta → sección **Fondos de inversión**
+2. Selecciona el fondo origen → **Traspasar**
+3. Elige si traspasas el importe total o parcial
+4. Busca el fondo destino por ISIN o nombre
+5. Confirma la operación
+
+MyInvestor no cobra comisión de traspaso en ninguno de sus fondos. El proceso es 100% online y el estado del traspaso es visible en tiempo real.
+
+### Renta 4
+
+1. Área privada → Cartera → fondo origen → **Traspaso externo/interno**
+2. Introduce ISIN del fondo destino
+3. Especifica importe (total o parcial)
+4. Confirma con coordenadas o SMS
+
+### Selfbank / OpenBank
+
+Proceso similar: desde la ficha del fondo, opción "Traspasar a otro fondo". Si el fondo destino no está comercializado en la plataforma, la plataforma lo gestiona igualmente si el fondo está registrado en CNMV.
+
+---
+
+## Traspasos entre plataformas distintas
+
+Puedes traspasar un fondo que tienes en una plataforma (por ejemplo, Renta 4) a otra (por ejemplo, MyInvestor). El proceso lo inicia **siempre la plataforma de destino**:
+
+1. Da de alta en la plataforma destino con los datos del fondo que quieres recibir
+2. La plataforma destino contacta a la plataforma origen para solicitar el traspaso
+3. La plataforma origen tiene 3 días hábiles para tramitarlo
+4. El dinero llega al fondo destino sin que tú hagas nada más
+
+**Comisión de traspaso**: algunas plataformas cobran comisión por traspasos salientes (normalmente 0-0,5% del importe). MyInvestor no cobra; otras plataformas más antiguas a veces sí. Compruébalo antes de iniciar el traspaso.
+
+---
+
+## El precio de adquisición "viaja" contigo
+
+Este es el punto más importante y más confuso del régimen de traspasos.
+
+Ejemplo: compraste participaciones de un fondo A por **10.000€** en 2019. Hoy valen **18.000€** (ganancia latente de 8.000€). Haces un traspaso al fondo B.
+
+**Qué ocurre**: el fondo B se "activa" en tu cartera con un coste fiscal de **10.000€**, no de 18.000€. Cuando vendas el fondo B en el futuro, la ganancia que declararás será (precio de venta - 10.000€).
+
+Esto significa que el traspaso **no resetea el reloj fiscal**. No puedes hacer un traspaso para "borrar" plusvalías latentes y empezar de cero. Las plusvalías se difieren, no desaparecen.
+
+**Ventaja real**: las plusvalías no tributan mientras no vendas. Ese dinero que "le deberías a Hacienda" sigue generando rentabilidad dentro del fondo. A 20-30 años, el impacto compuesto es significativo.
+
+---
+
+## Traspaso parcial o total: cuándo elegir cada uno
+
+**Traspaso total**: mueves toda la posición del fondo origen al destino. Recomendable cuando quieres cerrar completamente una posición y abrirla en otro fondo.
+
+**Traspaso parcial**: mueves solo una parte (por importe o por número de participaciones). Útil para:
+- Rebalancear la cartera sin vender (traspasar excedente del fondo más rentable al que ha quedado rezagado)
+- Cambiar gradualmente de fondo para reducir el riesgo de coincidir con un mal día de mercado
+
+Con el criterio FIFO, si haces traspasos parciales de un fondo que compraste en varias fechas distintas, Hacienda asumirá que traspasas las participaciones más antiguas primero.
+
+---
+
+## Qué fondos permiten el traspaso (y cuáles no)
+
+**Sí permiten traspaso fiscal libre**:
+- Fondos de inversión españoles registrados en CNMV con más de 500 partícipes
+- Fondos domiciliados en la UE comercializados en España con más de 500 partícipes
+- Fondos de Vanguard, iShares, Amundi, Fidelity disponibles en MyInvestor o Renta 4
+- El Amundi Prime Global y equivalentes indexados disponibles en plataformas españolas
+
+**NO permiten traspaso fiscal libre**:
+- ETFs (aunque coticen en bolsas europeas y sean UCITS)
+- Fondos con menos de 500 partícipes
+- Acciones o derivados de ningún tipo
+- Planes de pensiones (tienen su propio régimen, no de traspaso sino de "movilización")
+
+---
+
+## Cómo afecta el traspaso a la declaración de la renta
+
+Un traspaso **no genera ninguna obligación fiscal en el año en que se hace**. No tienes que declararlo en el IRPF de ese año. Solo debes declarar cuando hagas un reembolso real con ganancia o pérdida.
+
+Algunos brokers incluyen los traspasos en el informe fiscal anual a título informativo, pero esas operaciones tienen importación fiscal cero. El dato relevante para cuando vendas es el precio de coste original, que tu plataforma debe mantener actualizado a lo largo de todos los traspasos.
+
+---
+
+## Errores frecuentes
+
+**1. Confundir traspaso con reembolso + suscripción**. Si en lugar de hacer un traspaso haces "reembolso del fondo A + suscripción al fondo B", la ganancia tributa ese año. El traspaso debe tramitarse como operación vinculada, no como dos operaciones separadas.
+
+**2. Olvidar el plazo de los 8 días hábiles**. Si necesitas el dinero en una fecha concreta, calcula con margen. Los traspasos entre plataformas distintas pueden tardar hasta 8 días hábiles.
+
+**3. Asumir que todos los fondos lo permiten**. Si el fondo origen tiene menos de 500 partícipes, el régimen no aplica. Algunos fondos pequeños o temáticos no cumplen este requisito.
+
+**4. Traspasar a un ETF**. No es posible "traspasar" desde un fondo a un ETF con diferimiento fiscal. Para pasar de fondos a ETFs siempre hay que hacer reembolso (con tributación) y luego compra del ETF.
+
+---
+
+## El traspaso en una estrategia Boglehead
+
+Para un inversor que construye una cartera de fondos indexados a largo plazo, el régimen de traspasos es una herramienta de gestión de cartera sin coste fiscal:
+
+- **Rebalanceo sin tributar**: cuando la renta variable sobrepasa tu asignación objetivo, traspasas parte al fondo de renta fija sin tributar por la plusvalía.
+- **Cambio de estrategia sin coste**: si decides pasar de un fondo MSCI World a un All-World (que incluye emergentes), lo haces con traspaso sin consecuencias fiscales.
+- **Consolidación de carteras**: si tienes fondos en varias plataformas, puedes consolidarlos en una sola plataforma con traspasos entre plataformas.
+
+La comparación con los ETFs en términos de flexibilidad fiscal es clara: para una cartera de fondos indexados que vayas a mantener y rebalancear durante décadas, el régimen de traspasos puede valer varios miles de euros en impuestos diferidos. La calculadora de [interés compuesto](/calculadora/interes-compuesto) te puede ayudar a cuantificar el impacto de diferir impuestos sobre la rentabilidad total.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [AEAT — Art. 94 LIRPF: traspaso de fondos](https://www.agenciatributaria.es) — Base legal del régimen de diferimiento fiscal para fondos de inversión en España.
+- [CNMV — Registro de fondos](https://www.cnmv.es) — Comprueba si un fondo está registrado en España y puede beneficiarse del régimen de traspaso.
+- [Fondos indexados vs ETFs en España — BogleHub](/blog/fondos-indexados-vs-etfs-espana) — Comparativa completa entre fondos y ETFs, incluyendo el impacto fiscal del régimen de traspasos.
+- [Glosario: traspaso de fondos — BogleHub](/glosario/traspaso) — Definición y ejemplo numérico del régimen de diferimiento fiscal.
+`,
+  },
 ]

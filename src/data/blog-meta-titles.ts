@@ -37,4 +37,5 @@ export const BLOG_META_TITLES: Record<string, string> = {
   'plan-pensiones-indexado-espana-2026': 'Plan de pensiones indexado en España (2026)',
   'mejores-etfs-renta-fija-2026': 'Mejores ETFs de renta fija para España (2026)',
   'etfs-dividendos-vivir-rentas-espana': 'ETFs de dividendos: vivir de rentas (2026)',
+  'como-hacer-traspaso-fondos-espana': 'Cómo hacer un traspaso de fondos (guía 2026)',
 }

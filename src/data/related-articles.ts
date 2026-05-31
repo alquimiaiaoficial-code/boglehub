@@ -228,4 +228,10 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'vwce-vs-cspx-vs-iwda',
     'que-es-el-msci-world',
   ],
+  'como-hacer-traspaso-fondos-espana': [
+    'fondos-indexados-vs-etfs-espana',
+    'fiscalidad-etfs-espana-guia-completa',
+    'como-declarar-etfs-hacienda',
+    'plan-de-pensiones-vs-fondo-indexado',
+  ],
 }
