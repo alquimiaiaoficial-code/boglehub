@@ -6809,7 +6809,7 @@ Para quien quiere concentrar en el mercado estadounidense.
 | **Amundi Prime USA** | Solactive GBS United States | **0,05 %** | LU2050633988 |
 | Vanguard U.S. 500 Stock Index | S&P 500 | 0,10 % | IE0032126645 |
 
-El **Amundi Prime USA** replica el mercado estadounidense por solo un 0,05%. El Vanguard U.S. 500 sigue el S&P 500 clásico con un 0,10%. Ficha del [Vanguard U.S. 500 Stock Index](/fondo/vanguard-us-500-stock-index-fund).
+El **Amundi Prime USA** replica el mercado estadounidense por solo un 0,05%. El Vanguard U.S. 500 sigue el S&P 500 clásico con un 0,10%. Ficha del [Vanguard U.S. 500 Stock Index](/fondo/vanguard-us-500-stock).
 
 ---
 
