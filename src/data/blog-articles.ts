@@ -1954,6 +1954,25 @@ El mercado va a caer. Tu plan ya lo sabe. Tú también, ahora.
     publishedAt: '2026-05-18',
     readingMinutes: 8,
     keywords: ['rebalancear cartera', 'rebalanceo ETF', 'cómo rebalancear cartera indexada'],
+    updatedAt: '2026-05-30',
+    faq: [
+      {
+        q: '¿Qué es rebalancear una cartera indexada?',
+        a: 'Rebalancear es devolver tu cartera a sus pesos objetivo. Si decidiste 80 % renta variable / 20 % renta fija y un año alcista te ha llevado a 87/13, rebalancear significa volver al 80/20 reduciendo lo que pesa de más y reforzando lo que pesa de menos. Corrige la deriva que el mercado provoca solo, sin que toques nada.',
+      },
+      {
+        q: '¿Cada cuánto hay que rebalancear la cartera?',
+        a: 'Para la mayoría, una vez al año por calendario es más que suficiente. La alternativa es rebalancear por bandas (solo cuando un activo se desvía más de un umbral, p. ej. 5 puntos porcentuales), algo más eficiente pero exige vigilar la cartera. El error grave no es elegir mal el método, sino no rebalancear nunca.',
+      },
+      {
+        q: '¿Cómo rebalancear sin pagar IRPF de más en España?',
+        a: 'Dos formas: (1) si sigues aportando, dirige tus nuevas aportaciones al activo que pesa de menos en lugar de vender el que pesa de más —rebalanceas sin vender, sin coste fiscal ni comisiones—; es la opción por defecto en fase de acumulación. (2) Si inviertes mediante fondos indexados, el traspaso entre fondos no tributa. Rebalancear vendiendo un ETF con plusvalía sí tributa ese año, aunque el dinero se quede en la cartera.',
+      },
+      {
+        q: '¿Por qué es importante rebalancear?',
+        a: 'Por dos razones. Control del riesgo (la principal): si dejas correr la deriva, tras unos años alcistas tendrás mucho más riesgo del que decidiste, justo antes de la siguiente caída. Y disciplina de comprar barato: rebalancear te obliga de forma mecánica a recortar lo que ha subido y reforzar lo que ha bajado, lo contrario de lo que pide el instinto.',
+      },
+    ],
     content: `# Cómo y cuándo rebalancear tu cartera indexada
 
 Defines tu cartera: 80 % renta variable, 20 % renta fija. Pasa un año bueno de bolsa y, sin que hayas tocado nada, te encuentras con un 87 / 13. Tu cartera ha cambiado de perfil de riesgo sola. Rebalancear es la operación que la devuelve a donde tú decidiste que debía estar.
@@ -2193,6 +2212,25 @@ El dinero con el que pienses vivir un retiro anticipado tiene que estar en vehí
     publishedAt: '2026-05-18',
     readingMinutes: 8,
     keywords: ['qué es el MSCI World', 'índice MSCI World', 'MSCI World ETF'],
+    updatedAt: '2026-05-30',
+    faq: [
+      {
+        q: '¿Qué es el MSCI World?',
+        a: 'El MSCI World es un índice elaborado por MSCI que reúne las empresas grandes y medianas de los países desarrollados: alrededor de 1.400 empresas de 23 países, cubriendo en torno al 85 % de la capitalización bursátil de cada uno de esos mercados. Comprando un ETF que lo replica posees en una sola operación un trocito de unas 1.400 de las mayores empresas del mundo desarrollado.',
+      },
+      {
+        q: '¿Qué países incluye el MSCI World y cuáles no?',
+        a: 'Incluye 23 mercados desarrollados (Estados Unidos, Japón, Reino Unido, Canadá, Francia, Alemania, Suiza, Australia, Países Bajos, España, Italia y otros). No incluye mercados emergentes: nada de China, India, Brasil, Taiwán o Corea del Sur (para eso está el índice MSCI Emerging Markets). Pese a llamarse "World", es el mundo desarrollado, no el mundo entero.',
+      },
+      {
+        q: '¿En qué se diferencia el MSCI World del FTSE All-World y del S&P 500?',
+        a: 'El MSCI World cubre solo países desarrollados (~1.400 empresas, sin emergentes). El FTSE All-World (el de VWCE) añade los mercados emergentes, así que es más global. El S&P 500 es solo Estados Unidos (las 500 mayores empresas americanas). De más a menos diversificación geográfica: All-World > MSCI World > S&P 500.',
+      },
+      {
+        q: '¿Qué ETFs replican el MSCI World para un inversor español?',
+        a: 'Los más usados en España son IWDA (iShares Core MSCI World) y SWRD (SPDR MSCI World), ambos de acumulación y domiciliados en Irlanda. SWRD es el más barato (TER 0,12 %); IWDA es más caro (0,20 %) pero el más líquido. Para exposición global con emergentes incluidos en un solo ETF, muchos inversores eligen en cambio VWCE (FTSE All-World).',
+      },
+    ],
     content: `# Qué es el MSCI World y por qué tanta gente invierte en él
 
 Si has empezado a informarte sobre inversión indexada, te habrás topado con tres letras y una palabra por todas partes: MSCI World. Está detrás de algunos de los ETFs más populares de Europa y es, para muchísimos inversores, el único índice que necesitan conocer.
@@ -2296,6 +2334,25 @@ Si esas dos cosas te encajan, el MSCI World cumple de sobra como núcleo de una 
     publishedAt: '2026-05-18',
     readingMinutes: 8,
     keywords: ['empezar a invertir poco dinero', 'invertir 50 euros al mes', 'cómo empezar a invertir'],
+    updatedAt: '2026-05-30',
+    faq: [
+      {
+        q: '¿Cuánto dinero necesito para empezar a invertir?',
+        a: 'No necesitas un capital grande: puedes empezar con 50 € o 100 € al mes. De hecho, en MyInvestor (fondos indexados) o en planes de ahorro de Trade Republic se puede aportar desde 1 €. Lo que importa no es la cantidad inicial, sino empezar y ser constante. "Empezaré cuando tenga más dinero" suele ser la excusa más cara.',
+      },
+      {
+        q: '¿Merece la pena invertir solo 50 € al mes?',
+        a: 'Sí. Aportar 50 €/mes a un 7 % anual de media se convierte, aproximadamente, en ~8.700 € a 10 años, ~26.000 € a 20, ~61.000 € a 30 y más de 131.000 € a 40 años. De esos 131.000 €, solo 24.000 € salen de tu bolsillo; el resto (más de 100.000 €) lo pone el interés compuesto.',
+      },
+      {
+        q: '¿Qué importa más al empezar a invertir, la cantidad o el hábito?',
+        a: 'El hábito. Al principio el rendimiento en términos absolutos es casi irrelevante (un 10 % sobre 600 € son 60 €). Lo que de verdad construyes los primeros meses es la rutina de apartar una cantidad cada mes, automatizarla y no tocarla. Esa disciplina es el activo más valioso al principio, más que el dinero en sí.',
+      },
+      {
+        q: '¿Cuánto cuesta esperar para empezar a invertir?',
+        a: 'Mucho, porque cada año que retrasas el comienzo pierdes una de las duplicaciones finales, que es la más grande. Quien invierte 50 €/mes desde los 20 años llega a los 60 con bastante más del doble que quien invierte lo mismo desde los 30: misma aportación y rentabilidad, solo diez años de diferencia. Empezar tarde con más casi nunca alcanza a empezar pronto con poco.',
+      },
+    ],
     content: `# Cómo empezar a invertir con poco dinero (50 € al mes)
 
 "Empezaré a invertir cuando tenga más dinero." Es una de las frases que más caro le sale a la gente, y casi siempre es una excusa disfrazada de prudencia. La verdad incómoda es que, para empezar a invertir bien, no necesitas un capital grande. Necesitas empezar.
