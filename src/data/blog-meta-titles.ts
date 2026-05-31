@@ -42,4 +42,5 @@ export const BLOG_META_TITLES: Record<string, string> = {
   'xtb-opinion-2026': 'XTB: opinión y análisis para inversores (2026)',
   'scalable-capital-opinion-2026': 'Scalable Capital: opinión completa (2026)',
   'mejor-broker-etfs-espana-2026': 'Mejor broker para ETFs en España (2026)',
+  'modelo-d6-etf-espana': 'Modelo D6 y ETFs: ¿hay que presentarlo? (2026)',
 }

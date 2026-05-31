@@ -103,6 +103,7 @@ export const ARTICLE_CATEGORY: Record<string, BlogCategory> = {
   'plan-pensiones-indexado-espana-2026': 'fiscalidad',
   'plan-de-pensiones-vs-fondo-indexado': 'fiscalidad',
   'como-hacer-traspaso-fondos-espana': 'fiscalidad',
+  'modelo-d6-etf-espana': 'fiscalidad',
 
   // Roboadvisors y brokers
   'indexa-capital-opinion-2026': 'roboadvisors-brokers',

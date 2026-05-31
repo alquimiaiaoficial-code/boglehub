@@ -6612,4 +6612,120 @@ ETFs habituales para empezar en cualquiera de estos brokers: [VWCE](/etf/vwce) (
 - [Cómo elegir tu primer ETF en España — BogleHub](/blog/como-elegir-tu-primer-etf-espana-2026) — Guía de los criterios que importan antes de elegir broker.
 `,
   },
+  {
+    slug: 'modelo-d6-etf-espana',
+    title: 'Modelo D6 y ETFs: ¿tienes que presentarlo en 2026?',
+    excerpt:
+      '¿Tienes que presentar el modelo D6 por tus ETFs? Ya no: la reforma de 2021-2024 lo suprimió para particulares. Qué cambió y cómo se declaran de verdad.',
+    publishedAt: '2026-05-30',
+    readingMinutes: 8,
+    keywords: ['modelo D6 ETF', 'modelo D6 2026', 'declarar ETF extranjero', 'modelo D6 obligatorio particulares', 'modelo D6 broker extranjero'],
+    faq: [
+      {
+        q: '¿Tengo que presentar el modelo D6 si invierto en ETFs?',
+        a: 'En la práctica, no. Tras la reforma de 2021-2024 (Orden ICT/1408/2021, Real Decreto 571/2023 y Orden ECM/57/2024), la obligación de declarar inversiones exteriores solo aplica a participaciones significativas (igual o superior al 10% del capital o los derechos de voto de una empresa). Un inversor particular con ETFs diversificados nunca alcanza ese umbral, así que no tiene que presentar el D6 ni los nuevos modelos de inversión directa.',
+      },
+      {
+        q: '¿El modelo D6 es lo mismo que declarar los ETFs en el IRPF?',
+        a: 'No, son cosas completamente distintas. El D6 era una declaración de inversiones españolas en el exterior, gestionada por el Registro de Inversiones Exteriores del Ministerio de Economía, no por la Agencia Tributaria. La tributación de tus ETFs (ganancias al vender y dividendos) va por el IRPF, en la declaración de la renta. Son dos administraciones y dos trámites diferentes.',
+      },
+      {
+        q: '¿Sigue existiendo el modelo D6 en 2026?',
+        a: 'El esquema clásico del D6 fue derogado por la Orden ECM/57/2024 e integrado en un conjunto de modelos nuevos (D-1A, D-1B, D-2A, D-2B, D-4, DP-1, DP-2) que cubren la inversión directa significativa. Para el inversor de cartera minorista (ETFs, acciones sueltas sin control de la empresa) ya no hay obligación de declaración ante el Registro de Inversiones Exteriores.',
+      },
+      {
+        q: 'Entonces, ¿qué tengo que declarar por mis ETFs?',
+        a: 'Dos cosas, ambas ante la Agencia Tributaria (no el Registro de Inversiones Exteriores): (1) en el IRPF, las ganancias o pérdidas patrimoniales cuando vendes y los dividendos si tienes ETFs de distribución; (2) el modelo 720, declaración informativa de bienes en el extranjero, solo si el conjunto de tus valores fuera de España supera los 50.000€. El modelo 720 es informativo y no implica pagar impuestos.',
+      },
+      {
+        q: '¿Cambia algo si uso un broker extranjero como DEGIRO o Trade Republic?',
+        a: 'Para el modelo D6, no: la supresión de la obligación para inversiones de cartera aplica con independencia del broker. Para el modelo 720, sí puede importar: si tus ETFs custodiados fuera de España superan los 50.000€, tendrías que presentarlo. Trade Republic (Alemania) y DEGIRO (Países Bajos) custodian en el extranjero; verifica con tu situación concreta y, si hay dudas, consulta con un asesor fiscal.',
+      },
+    ],
+    content: `# Modelo D6 y ETFs: ¿tienes que presentarlo en 2026?
+
+Si has buscado información sobre cómo declarar tus ETFs, es probable que te hayas topado con el "modelo D6" y con artículos antiguos que dan a entender que cualquiera con un broker extranjero tiene que presentarlo. La buena noticia: **para el inversor particular con ETFs, el modelo D6 ya no es una obligación en 2026.** La reforma de 2021-2024 lo suprimió para la cartera minorista.
+
+Esta guía aclara qué era el D6, qué cambió y, sobre todo, qué tienes que declarar de verdad por tus ETFs (que no tiene nada que ver con el D6).
+
+> **Respuesta rápida**: un inversor particular con una cartera diversificada de ETFs **no** tiene que presentar el modelo D6 ni los nuevos modelos de inversión exterior. Esa obligación solo aplica a participaciones iguales o superiores al 10% del capital de una empresa, algo imposible con un ETF. Lo que sí declaras es el IRPF (al vender o cobrar dividendos) y, si tienes más de 50.000€ en el extranjero, el modelo 720.
+
+---
+
+## Qué es (o era) el modelo D6 — y qué NO es
+
+El modelo D6 era la **declaración de titulares de inversiones españolas en el exterior en valores negociables**. Lo gestionaba el **Registro de Inversiones Exteriores del Ministerio de Economía, Comercio y Empresa** — un organismo que no tiene nada que ver con la Agencia Tributaria.
+
+Aquí está la confusión más extendida: **el D6 no es un impuesto ni forma parte del IRPF.** Era una declaración estadística/administrativa de inversiones en el exterior, no un trámite de la declaración de la renta. Muchos inversores mezclaban ambos conceptos y acababan pensando que "declarar ETFs" significaba presentar el D6. No es así.
+
+Los ETFs, las acciones y los fondos cuentan como valores negociables a efectos de esta normativa. Por eso, durante años circuló la idea de que cualquiera con valores en una entidad depositaria extranjera (un broker como DEGIRO o Trade Republic) debía presentar el D6. Esa interpretación era discutible incluso entonces, y hoy ha quedado superada.
+
+---
+
+## Qué cambió: la reforma de 2021-2024
+
+Tres normas sucesivas desmontaron la obligación del D6 para el inversor minorista:
+
+1. **Orden ICT/1408/2021, de 14 de diciembre.** Limitó la obligación de declarar a las **participaciones significativas**: en general, a partir del 10% del capital o de los derechos de voto de la empresa extranjera.
+
+2. **Real Decreto 571/2023, de 4 de julio**, sobre inversiones exteriores. Reordenó el marco general de las declaraciones de inversión.
+
+3. **Orden ECM/57/2024, de 29 de enero** (BOE-A-2024-1774). Estableció los procedimientos actuales, **derogó el esquema clásico del D6** y lo integró en un conjunto de modelos nuevos (D-1A, D-1B, D-2A, D-2B, D-4, DP-1, DP-2) pensados para la **inversión directa significativa**, no para la cartera diversificada de un particular.
+
+El resultado práctico: la obligación de declaración ante el Registro de Inversiones Exteriores quedó reservada a quien mantiene una participación relevante en una empresa concreta (control o influencia significativa, normalmente ≥10%). **Un ETF diversificado reparte tu dinero entre cientos o miles de empresas; tu participación en cualquiera de ellas es minúscula.** Por tanto, nunca activas esa obligación.
+
+---
+
+## Entonces, ¿qué tengo que declarar de verdad por mis ETFs?
+
+Lo relevante para el inversor de ETFs son dos trámites, ambos ante la **Agencia Tributaria** (no ante el Registro de Inversiones Exteriores):
+
+### 1. El IRPF (declaración de la renta)
+
+Es donde tributan tus ETFs de verdad:
+
+- **Ganancias o pérdidas patrimoniales**: cuando **vendes** un ETF con beneficio, la ganancia tributa en la base del ahorro del IRPF (19% hasta 6.000€, 21% de 6.000€ a 50.000€, 23% de 50.000€ a 200.000€, 27% de 200.000€ a 300.000€ y 28% por encima). Si no vendes, no hay nada que declarar.
+- **Dividendos**: si tienes ETFs de **distribución**, los dividendos tributan cada año como rendimientos del capital mobiliario, con los mismos tipos. Los ETFs de **acumulación** no generan evento fiscal hasta que vendes.
+
+El paso a paso completo está en la guía [Cómo declarar ETFs en la declaración de la renta](/blog/como-declarar-etfs-hacienda). Y puedes estimar cuánto pagarás antes de vender con la [calculadora de IRPF de BogleHub](/calculadora/irpf-venta-fondos).
+
+### 2. El modelo 720 (solo si superas 50.000€ en el extranjero)
+
+El **modelo 720** es una declaración **informativa** de bienes y derechos situados en el extranjero. Solo estás obligado a presentarlo si el conjunto de tus valores fuera de España (por ejemplo, ETFs custodiados en un broker como Trade Republic o DEGIRO) supera los **50.000€** en alguna de las categorías. Es informativo: presentarlo no implica pagar impuestos, solo comunicar la tenencia.
+
+Ojo: este umbral sí depende de dónde estén custodiados tus valores. Un broker español como MyInvestor no computa para el 720; uno extranjero, sí.
+
+---
+
+## ¿Hay algún caso en que un inversor particular sí declare inversión exterior?
+
+Sí, pero son situaciones que no se dan con ETFs:
+
+- Si **compras directamente más del 10%** del capital de una empresa extranjera no cotizada (inversión directa, no cartera).
+- Si participas en la **constitución o adquisición** de una sociedad extranjera con influencia en su gestión.
+
+Comprar participaciones de un ETF —que es un fondo que invierte en muchas empresas— nunca te convierte en titular del 10% de ninguna de ellas. Por eso el inversor indexado queda fuera de esta obligación.
+
+---
+
+## Resumen para el inversor de ETFs
+
+- **Modelo D6**: ya **no** lo presentas. Suprimido para la cartera minorista por la reforma de 2021-2024.
+- **IRPF**: declaras ganancias al vender y dividendos si los cobras. Es tu trámite fiscal real.
+- **Modelo 720**: solo si tienes más de 50.000€ en valores custodiados en el extranjero. Informativo.
+- **Regla práctica**: invertir en ETFs diversificados no te genera ninguna obligación ante el Registro de Inversiones Exteriores. Tu única gestión fiscal habitual es el IRPF.
+
+Las obligaciones de declaración pueden cambiar y tu caso puede tener particularidades (residencia fiscal, importes elevados, normativa foral del País Vasco y Navarra). Esta guía es educativa y no sustituye el asesoramiento de un profesional. Ante la duda, consulta con un asesor fiscal.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [BOE — Orden ECM/57/2024, de 29 de enero (procedimientos de inversiones exteriores)](https://www.boe.es/buscar/doc.php?id=BOE-A-2024-1774) — Norma que deroga el esquema D6 e introduce los nuevos modelos de inversión directa.
+- [Ministerio de Economía, Comercio y Empresa — Declaraciones de inversiones exteriores](https://comercio.gob.es/es-es/inversiones_exteriores/declaraciones_inversion) — Información oficial sobre qué inversiones hay que declarar y cómo.
+- [Cómo declarar ETFs en la declaración de la renta — BogleHub](/blog/como-declarar-etfs-hacienda) — El trámite fiscal que sí afecta a tus ETFs, paso a paso.
+- [Fiscalidad de ETFs en España: guía completa — BogleHub](/blog/fiscalidad-etfs-espana-guia-completa) — Tributación de ganancias, dividendos, domicilio fiscal y modelo 720.
+- [Glosario: modelo 720 — BogleHub](/glosario/modelo-720) — Qué es la declaración informativa de bienes en el extranjero.
+`,
+  },
 ]

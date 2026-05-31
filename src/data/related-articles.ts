@@ -258,4 +258,10 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'myinvestor-opinion-2026',
     'como-elegir-tu-primer-etf-espana-2026',
   ],
+  'modelo-d6-etf-espana': [
+    'como-declarar-etfs-hacienda',
+    'fiscalidad-etfs-espana-guia-completa',
+    'como-hacer-traspaso-fondos-espana',
+    'fondos-indexados-vs-etfs-espana',
+  ],
 }
