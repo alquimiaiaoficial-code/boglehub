@@ -9,6 +9,13 @@ import { ROBOADVISORS, getRoboadvisorBySlug } from '@/data/roboadvisors'
 
 const BASE_URL = 'https://boglehub.com'
 
+/** Mapa roboadvisor slug → artículo de análisis completo en el blog */
+const ROBOADVISOR_REVIEW_ARTICLES: Record<string, { slug: string; label: string }> = {
+  'indexa-capital':            { slug: 'indexa-capital-opinion-2026',   label: 'Indexa Capital: análisis completo 2026' },
+  'finizens':                  { slug: 'finizens-vs-indexa-capital-2026', label: 'Finizens vs Indexa Capital: comparativa 2026' },
+  'myinvestor-roboadvisor':    { slug: 'roboadvisors-espana-merecen-comision', label: '¿Merecen lo que cobran los roboadvisors?' },
+}
+
 export function generateStaticParams() {
   return ROBOADVISORS.map((r) => ({ slug: r.slug }))
 }
@@ -199,6 +206,22 @@ export default async function RoboadvisorPage({
                 ))}
               </div>
             </section>
+          )}
+
+          {/* Enlace al análisis completo en el blog si existe */}
+          {ROBOADVISOR_REVIEW_ARTICLES[slug] && (
+            <div className="mb-6 rounded-xl border border-brand-500/30 bg-brand-500/5 p-5">
+              <p className="text-sm font-semibold text-fg mb-1">Análisis completo en el blog</p>
+              <p className="text-xs text-fg-muted mb-3">
+                Guía detallada con análisis de comisiones, rentabilidad histórica y para quién tiene sentido {r.name}.
+              </p>
+              <Link
+                href={`/blog/${ROBOADVISOR_REVIEW_ARTICLES[slug].slug}`}
+                className="inline-flex items-center rounded-lg bg-brand-600 px-4 py-2 text-sm font-medium text-white hover:bg-brand-500 transition-colors"
+              >
+                {ROBOADVISOR_REVIEW_ARTICLES[slug].label} →
+              </Link>
+            </div>
           )}
 
           <Card className="text-center">
