@@ -9,6 +9,17 @@ import { BROKERS, getBrokerBySlug } from '@/data/brokers'
 
 const BASE_URL = 'https://boglehub.com'
 
+/**
+ * Mapa de bróker slug → slug del artículo de análisis completo.
+ * Los brókers que tienen su propia review en el blog aparecen con enlace directo.
+ */
+const BROKER_REVIEW_ARTICLES: Record<string, { slug: string; label: string }> = {
+  'trade-republic': { slug: 'trade-republic-opinion-2026', label: 'Trade Republic: análisis completo 2026' },
+  'myinvestor':     { slug: 'myinvestor-opinion-2026',     label: 'MyInvestor: análisis completo 2026' },
+  'degiro':         { slug: 'degiro-opinion-2026',          label: 'DEGIRO: análisis completo 2026' },
+  'xtb':            { slug: 'xtb-opinion-2026',             label: 'XTB: análisis completo 2026' },
+}
+
 export function generateStaticParams() {
   return BROKERS.map((b) => ({ slug: b.slug }))
 }
@@ -218,6 +229,24 @@ export default async function BrokerPage({
               ))}
             </div>
           </section>
+
+          {/* Enlace al artículo de análisis completo si existe */}
+          {BROKER_REVIEW_ARTICLES[slug] && (
+            <div className="mb-6 rounded-xl border border-brand-500/30 bg-brand-500/5 p-5">
+              <p className="text-sm font-semibold text-fg mb-1">
+                Análisis completo en el blog
+              </p>
+              <p className="text-xs text-fg-muted mb-3">
+                Guía detallada de comisiones, seguridad, plataforma y para quién tiene sentido {broker.name}.
+              </p>
+              <Link
+                href={`/blog/${BROKER_REVIEW_ARTICLES[slug].slug}`}
+                className="inline-flex items-center rounded-lg bg-brand-600 px-4 py-2 text-sm font-medium text-white hover:bg-brand-500 transition-colors"
+              >
+                {BROKER_REVIEW_ARTICLES[slug].label} →
+              </Link>
+            </div>
+          )}
 
           {/* CTA */}
           <Card className="text-center">
