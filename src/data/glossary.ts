@@ -1270,6 +1270,66 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       },
     ],
   },
+  {
+    slug: 'correlacion',
+    term: 'Correlación',
+    category: 'metricas',
+    shortDefinition:
+      'La correlación mide cómo se mueven dos activos entre sí: si suben y bajan a la vez (correlación alta) o de forma independiente o contraria (correlación baja o negativa). Es la base de la diversificación.',
+    longDefinition:
+      'La correlación es una medida estadística entre -1 y +1 que indica cómo se relacionan los movimientos de dos activos. Una correlación de +1 significa que se mueven exactamente igual; de -1, que se mueven justo al contrario; y de 0, que son independientes.\n\nEs el concepto que da sentido a la diversificación. Combinar activos poco o negativamente correlacionados reduce la volatilidad de la cartera sin sacrificar necesariamente rentabilidad, porque cuando uno baja, el otro tiende a aguantar o subir. El ejemplo clásico es la renta variable y los bonos de gobierno de calidad: en muchas crisis bursátiles, los bonos han subido mientras las acciones caían, amortiguando el golpe.\n\nDos advertencias prácticas: (1) las correlaciones no son fijas — pueden cambiar, y en crisis severas muchos activos caen a la vez (la correlación se dispara justo cuando más necesitarías diversificación); (2) diversificar entre activos muy correlacionados (por ejemplo, un ETF del S&P 500 y otro del Nasdaq 100) aporta poco, porque se mueven casi igual. La verdadera diversificación viene de combinar clases de activos distintas, no de acumular productos parecidos.',
+    example:
+      'Un ETF de renta variable global y un ETF de bonos de gobierno de la eurozona tienen correlación baja o negativa en muchos periodos: cuando las bolsas caen con fuerza, los bonos de calidad suelen subir, suavizando la caída de la cartera. En cambio, un ETF del S&P 500 y uno del Nasdaq 100 tienen correlación altísima: diversificas poco combinándolos.',
+    relatedArticles: [
+      'cartera-boglehead-3-fondos-espana',
+      'mejores-etfs-renta-fija-2026',
+      'solapamiento-etfs-error-silencioso',
+    ],
+    relatedLinks: [
+      { label: 'Glosario: diversificación', href: '/glosario/diversificacion' },
+      { label: 'Glosario: asset allocation', href: '/glosario/asset-allocation' },
+    ],
+    faq: [
+      {
+        q: '¿Por qué importa la correlación en una cartera?',
+        a: 'Porque combinar activos poco correlacionados reduce la volatilidad de la cartera: cuando uno baja, el otro tiende a aguantar. Esa es la esencia de la diversificación. Acumular activos muy correlacionados (como varios ETFs de tecnología estadounidense) no diversifica de verdad, porque se mueven casi igual. La diversificación útil viene de mezclar clases de activos distintas.',
+      },
+      {
+        q: '¿La diversificación falla en las crisis?',
+        a: 'En crisis severas, muchas clases de activos de riesgo (acciones de distintas regiones, bonos corporativos, materias primas) tienden a caer a la vez: la correlación se dispara justo cuando más necesitarías protección. Los activos que mejor han descorrelacionado en crisis han sido los bonos de gobierno de máxima calidad y, en algunos casos, el oro. Aun así, ninguna diversificación elimina por completo el riesgo de mercado.',
+      },
+    ],
+  },
+  {
+    slug: 'coste-oportunidad',
+    term: 'Coste de oportunidad',
+    category: 'conceptos',
+    shortDefinition:
+      'El coste de oportunidad es lo que dejas de ganar por elegir una opción en lugar de otra. En inversión, tener dinero parado en efectivo tiene el coste de oportunidad de la rentabilidad que habría dado invertido.',
+    longDefinition:
+      'El coste de oportunidad es uno de los conceptos más útiles para tomar decisiones financieras: cada euro que destinas a una cosa es un euro que no puedes destinar a otra, y el "coste" de tu elección es el beneficio de la mejor alternativa que descartas.\n\nEn inversión aparece constantemente:\n- **Dinero en efectivo sin invertir**: si tienes 20.000€ parados en una cuenta al 0% mientras "esperas el momento", el coste de oportunidad es la rentabilidad que esos 20.000€ habrían generado invertidos. Como el mercado sube más años de los que baja, esperar suele tener un coste de oportunidad alto.\n- **Amortizar hipoteca vs invertir**: el coste de oportunidad de amortizar es la rentabilidad que habrías obtenido invirtiendo ese dinero; el de invertir es el interés que te ahorrarías amortizando. Se comparan ambos.\n- **Elegir un fondo caro**: el coste de oportunidad de pagar un 1,5% extra de comisiones es todo lo que ese dinero habría compuesto a lo largo de décadas.\n\nPensar en términos de coste de oportunidad ayuda a no fijarse solo en lo que una decisión te da, sino también en lo que te quita respecto a la mejor alternativa. Es la razón por la que "no hacer nada" con el dinero rara vez es gratis.',
+    example:
+      'Mantener 10.000€ en una cuenta al 0% durante 10 años, cuando una cartera indexada diversificada podría haber rentado de media en torno al 7% anual, tiene un coste de oportunidad de aproximadamente 9.700€ (lo que habrían crecido esos 10.000€ con interés compuesto). El dinero "seguro" parado no es gratis: renuncia a esa rentabilidad.',
+    relatedArticles: [
+      'dca-vs-lump-sum-aportar-mensual',
+      'interes-compuesto-inversion',
+      'como-empezar-a-invertir-poco-dinero',
+    ],
+    relatedLinks: [
+      { label: 'Calculadora de interés compuesto', href: '/calculadora/interes-compuesto' },
+      { label: 'Glosario: inflación', href: '/glosario/inflacion' },
+    ],
+    faq: [
+      {
+        q: '¿Tener el dinero en efectivo tiene coste de oportunidad?',
+        a: 'Sí. El dinero parado en una cuenta sin remunerar (o por debajo de la inflación) tiene un doble coste: el coste de oportunidad de la rentabilidad que habría dado invertido, y la pérdida de poder adquisitivo por la inflación. Esto no significa invertirlo todo: el fondo de emergencia debe estar líquido y estable. Pero el dinero que no vas a necesitar a corto plazo tiene un coste real por estar parado.',
+      },
+      {
+        q: '¿Cómo uso el coste de oportunidad para decidir entre amortizar hipoteca o invertir?',
+        a: 'Compara las dos alternativas: amortizar te "ahorra" el tipo de interés de tu hipoteca; invertir te puede dar la rentabilidad esperada de tu cartera. Si tu hipoteca está a un tipo bajo y esperas que tu cartera rente más a largo plazo, invertir tiene menor coste de oportunidad. Si tu hipoteca tiene un tipo alto, amortizar puede ganar. Influyen también el plazo, tu tolerancia al riesgo y la tranquilidad psicológica de deber menos.',
+      },
+    ],
+  },
 ]
 
 /** Devuelve un término por su slug, o undefined si no existe */
