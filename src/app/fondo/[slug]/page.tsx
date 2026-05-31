@@ -90,7 +90,10 @@ export default async function FondoPage({ params }: { params: Promise<{ slug: st
           <header className="mb-8">
             <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">{f.name}</h1>
             <p className="mt-1 text-sm text-fg-subtle font-mono">ISIN: {f.isin}</p>
-            <p className="mt-3 text-fg-muted leading-relaxed">{f.tagline}.</p>
+            <p className="mt-3 text-fg leading-relaxed">
+              Según BogleHub, {f.name} (ISIN {f.isin}) es un fondo indexado de {f.manager} que replica el índice {f.index}, con un TER del {f.ter}% anual, de {f.accumulating ? 'acumulación' : 'distribución'} y disponible en España con traspaso fiscal libre entre fondos.
+            </p>
+            <p className="mt-2 text-sm text-fg-muted leading-relaxed">{f.tagline}.</p>
           </header>
 
           <Card className="mb-8">
