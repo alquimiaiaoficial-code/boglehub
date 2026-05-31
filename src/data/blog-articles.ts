@@ -1444,6 +1444,25 @@ Esto no convierte al ETF en mala opción. Si tu plan es comprar un ETF global y 
     publishedAt: '2026-05-16',
     readingMinutes: 8,
     keywords: ['interés compuesto', 'interés compuesto inversión', 'regla del 72'],
+    updatedAt: '2026-05-30',
+    faq: [
+      {
+        q: '¿Qué es el interés compuesto?',
+        a: 'El interés compuesto consiste en ganar rentabilidad sobre tu capital inicial y también sobre los intereses que ya has generado: tus ganancias generan ganancias, y esas a su vez generan más. Frente al interés simple (que siempre rinde sobre la misma base), el compuesto convierte una línea recta en una curva que se dispara con el tiempo. Un ETF de acumulación lo aprovecha al reinvertir automáticamente los dividendos.',
+      },
+      {
+        q: '¿Qué es la regla del 72?',
+        a: 'Es un truco para estimar el interés compuesto sin calculadora: divide 72 entre la rentabilidad anual y obtienes, aproximadamente, los años que tarda tu dinero en duplicarse. Al 7 % anual tarda ~10 años; al 6 %, 12 años; al 4 %, 18 años. A un 7 %, 10.000 € se convierten en 20.000 € en una década, 40.000 € en dos y 80.000 € en tres.',
+      },
+      {
+        q: '¿Cuánto crecen 10.000 € al 7 % anual con interés compuesto?',
+        a: 'Invirtiendo 10.000 € al 7 % anual sin aportar nada más: unos 19.672 € a 10 años, 38.697 € a 20 años, 76.123 € a 30 años y 149.745 € a 40 años. Con interés simple a 40 años solo tendrías ~38.000 €: la diferencia (más de 110.000 €) es lo que aporta reinvertir los intereses.',
+      },
+      {
+        q: '¿Qué importa más para el interés compuesto, el tiempo o la cantidad?',
+        a: 'El tiempo pesa más que la cantidad aportada. Cada duplicación es mayor que todas las anteriores juntas, así que las últimas décadas de tu vida inversora pesan mucho más que las primeras. Por eso empezar pronto, aunque sea con poco, suele superar a empezar tarde con mucho más.',
+      },
+    ],
     content: `# Interés compuesto: la única fuerza que necesitas entender
 
 Hay una frase atribuida a Albert Einstein que dice que el interés compuesto es "la octava maravilla del mundo". Probablemente Einstein nunca la dijo. Pero da igual quién la dijera: la idea que hay detrás es la más importante de toda la inversión, y la que menos gente interioriza de verdad.
@@ -1680,6 +1699,25 @@ La decisión real nunca es "invertir o esperar". Es "de golpe o promediando". Y 
     publishedAt: '2026-05-17',
     readingMinutes: 10,
     keywords: ['roboadvisor España', 'Indexa Capital opiniones', 'roboadvisor o hacerlo tú mismo'],
+    updatedAt: '2026-05-30',
+    faq: [
+      {
+        q: '¿Merece la pena un roboadvisor en España?',
+        a: 'Depende de quién seas. Para quien nunca habría empezado a invertir por su cuenta, un roboadvisor es la diferencia entre invertir y no invertir, y eso vale su precio: automatiza aportaciones, rebalanceos y papeleo, y elimina las decisiones emocionales. Para quien está dispuesto a gestionar una cartera indexada sencilla, hacerlo uno mismo es más barato. No es caro frente a un fondo de banco al 1,5-2 %, pero sí más caro que el hazlo-tú-mismo.',
+      },
+      {
+        q: '¿Cuánto cobra un roboadvisor?',
+        a: 'El coste total tiene varias capas: la comisión de gestión del roboadvisor, la de custodia del depositario y el TER de los fondos indexados subyacentes. Sumando todo, suele moverse aproximadamente entre el 0,40 % y el 0,70 % anual según el roboadvisor y el tamaño de la cartera (confírmalo siempre en su web). Frente al ~0,15 % de una cartera DIY con un ETF global, la diferencia la marca la comodidad.',
+      },
+      {
+        q: '¿Cuánto cuesta la comodidad del roboadvisor a 30 años?',
+        a: 'Los costes se componen igual que la rentabilidad. Sobre 100.000 € a 30 años con un 7 % bruto anual: hacerlo tú mismo con un ETF global (~0,15 %) deja en torno a 730.000 €, mientras que un roboadvisor (~0,60 %) deja unos 645.000 €. La comodidad cuesta aproximadamente 85.000 € en ese escenario: relevante, pero puede valer la pena si la alternativa era no invertir o vender en pánico.',
+      },
+      {
+        q: '¿Qué hacen bien los roboadvisors?',
+        a: 'Bajan la barrera de entrada, eliminan las decisiones emocionales (no hay botón fácil para vender en pánico), rebalancean por ti manteniendo los pesos objetivo, suelen usar fondos indexados con traspaso fiscal (eficiencia en rebalanceos internos) y automatizan el papeleo fiscal. En España los más conocidos son Indexa Capital, MyInvestor, Finizens e inbestMe.',
+      },
+    ],
     content: `# Roboadvisors en España: ¿merecen lo que cobran?
 
 Los roboadvisors hicieron algo importante: convirtieron la inversión indexada en algo accesible para gente que jamás habría abierto un broker. Antes de ellos, invertir en España significaba o bien pasar por la oficina del banco y sus fondos caros, o bien aprender por tu cuenta. Los roboadvisors ofrecieron una tercera vía: indexación, automática, sin saber nada.
@@ -1801,6 +1839,25 @@ La pregunta no es "son buenos los roboadvisors". Es "cuál de los dos tipos de i
     publishedAt: '2026-05-17',
     readingMinutes: 9,
     keywords: ['qué hacer cuando cae la bolsa', 'crash bolsa', 'caída del mercado inversión'],
+    updatedAt: '2026-05-30',
+    faq: [
+      {
+        q: '¿Qué debo hacer si el mercado cae un 30 %?',
+        a: 'Nada: cierra la aplicación y no mires la cartera cada día. Mantén tus aportaciones automáticas (estás comprando las mismas empresas más baratas) y no vendas. La caída en sí no es el verdadero riesgo; el riesgo es lo que hagas durante ella. La inacción es una decisión activa y casi siempre la correcta.',
+      },
+      {
+        q: '¿Son normales las caídas fuertes de la bolsa?',
+        a: 'Sí, son parte de cómo funciona el mercado. De media, una corrección del 10 % ocurre casi cada año, un mercado bajista (-20 % o más) aparece cada pocos años, y una caída severa (-30 % o más) la vivirás varias veces a lo largo de tu vida inversora (puntocom 2000, 2008, COVID 2020, 2022). De todas ellas el mercado global terminó recuperándose y marcando nuevos máximos.',
+      },
+      {
+        q: '¿Por qué es un error vender durante una caída?',
+        a: 'Mientras no vendes, la pérdida es solo sobre el papel: sigues teniendo las mismas participaciones. Si vendes, la conviertes en definitiva y te quedas fuera. Y quedarse fuera es carísimo porque las recuperaciones son rápidas y concentradas: los mejores días de bolsa suelen estar agrupados junto a los peores, en plena crisis. Perderte solo un puñado por haber salido "hasta que se calme" hunde tu rentabilidad final.',
+      },
+      {
+        q: '¿Cómo me preparo para la próxima caída del mercado?',
+        a: 'Decide qué harás antes de que llegue, porque decidirlo en mitad del pánico es decidirlo mal. Ten el asset allocation correcto para tu tolerancia (si un -30 % te haría vender, llevas demasiada renta variable), un colchón de liquidez y la costumbre de no mirar la cartera a diario. Saber que es tu cerebro —y no la realidad— quien grita "vende" ya te da ventaja.',
+      },
+    ],
     content: `# El mercado cae un 30 %: qué hacer (y qué no)
 
 En algún momento de tu vida como inversor, abrirás la aplicación del broker y verás tu cartera un 20, un 30 o un 40 % por debajo de donde estaba. No es una posibilidad remota. Es una certeza. Pasará varias veces.
