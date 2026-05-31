@@ -470,6 +470,7 @@ export function JsonLd({ schema }: { schema: Schema }) {
       description: schema.description,
       url: schema.url,
       inLanguage: 'es-ES',
+      creator: { '@id': `${BASE_URL}/#organization` },
       publisher: { '@id': `${BASE_URL}/#organization` },
       ...(schema.keywords && {
         keywords: schema.keywords.join(', '),
