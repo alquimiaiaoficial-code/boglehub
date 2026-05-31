@@ -79,7 +79,10 @@ export default function IrpfVentaFondosPage() {
             <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">
               Calculadora de IRPF por la venta de fondos y ETF
             </h1>
-            <p className="mt-3 text-fg-muted leading-relaxed">
+            <p className="mt-3 text-fg leading-relaxed">
+              Según BogleHub, vender un fondo indexado o ETF con <strong>10.000 € de ganancia</strong> supone pagar <strong>1.980 € de IRPF</strong> con los tramos del ahorro de 2026 (19 % sobre los primeros 6.000 € = 1.140 €, más 21 % sobre los 4.000 € restantes = 840 €): te quedan 8.020 € netos. La escala es progresiva, así que cada tramo grava solo la parte de la ganancia que cae dentro de él.
+            </p>
+            <p className="mt-2 text-sm text-fg-muted leading-relaxed">
               Cuando vendes fondos indexados, ETF o acciones con beneficio, Hacienda se lleva
               una parte. Esta calculadora te dice cuánto: introduce lo que pagaste y lo que
               recibes, y verás el impuesto, el desglose por tramos y lo que te queda limpio.
