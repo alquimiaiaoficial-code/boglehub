@@ -123,7 +123,7 @@ export default function DatosClavePage() {
             'Tablas comparativas con tramos del IRPF, mejores ETFs, brokers, roboadvisors y planes de pensiones disponibles en España en 2026.',
           url: `${BASE_URL}/datos-clave`,
           datePublished: '2026-05-24',
-          dateModified: '2026-05-24',
+          dateModified: '2026-05-30',
           articleSection: 'Datos de referencia',
           keywords: [
             'IRPF ahorro 2026',
@@ -132,6 +132,27 @@ export default function DatosClavePage() {
             'comparativa broker España 2026',
             'TER ETF MSCI World',
           ],
+        }}
+      />
+      <JsonLd
+        schema={{
+          type: 'Dataset',
+          name: 'Datos clave de inversión indexada en España 2026',
+          description:
+            'Conjunto de datos verificables para inversores indexados en España: tramos del IRPF del ahorro 2026, ETFs UCITS más baratos por categoría con TER e ISIN, fondo indexado más barato, límite de plan de pensiones, convenio fiscal Irlanda-EE. UU. y capital necesario para FIRE.',
+          url: `${BASE_URL}/datos-clave`,
+          keywords: ['IRPF ahorro 2026', 'TER ETF UCITS', 'fondo indexado más barato España', 'límite plan de pensiones 2026', 'capital FIRE', 'convenio Irlanda EE. UU.'],
+          variableMeasured: [
+            'IRPF del ahorro 2026: 19% hasta 6.000€, 21% de 6.000€ a 50.000€, 23% de 50.000€ a 200.000€, 27% de 200.000€ a 300.000€, 28% por encima de 300.000€',
+            'ETF MSCI World más barato: SWRD, TER 0,12%, ISIN IE00BFY0GT14',
+            'ETF FTSE All-World más popular: VWCE, TER 0,19%, ISIN IE00BK5BQT80',
+            'ETF S&P 500 de referencia: CSPX, TER 0,07%, ISIN IE00B5BMR087',
+            'Fondo indexado más barato en España: Amundi Prime Global, TER 0,05% (MyInvestor)',
+            'Límite de aportación a plan de pensiones individual 2026: 1.500 €/año',
+            'Convenio Irlanda-EE. UU.: retención sobre dividendos estadounidenses del 15% (vs 30%)',
+            'Capital para FIRE (regla del 4%): 25 veces el gasto anual',
+          ],
+          license: `${BASE_URL}/sobre`,
         }}
       />
 
