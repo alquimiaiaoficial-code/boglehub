@@ -38,4 +38,5 @@ export const BLOG_META_TITLES: Record<string, string> = {
   'mejores-etfs-renta-fija-2026': 'Mejores ETFs de renta fija para España (2026)',
   'etfs-dividendos-vivir-rentas-espana': 'ETFs de dividendos: vivir de rentas (2026)',
   'como-hacer-traspaso-fondos-espana': 'Cómo hacer un traspaso de fondos (guía 2026)',
+  'degiro-opinion-2026': 'DEGIRO: opinión y análisis completo (2026)',
 }

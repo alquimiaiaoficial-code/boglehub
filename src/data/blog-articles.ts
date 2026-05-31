@@ -2769,6 +2769,7 @@ Dentro del 80-90 % de renta variable, la división entre desarrollados y emergen
 - 0,50-2 € por orden en bolsas principales. Acceso a más de 50 bolsas.
 - Lista mensual de ETFs sin comisión (rota).
 - Ideal para: importes más grandes donde la comisión fija importa menos.
+- Lee el [análisis completo de DEGIRO 2026](/blog/degiro-opinion-2026) para ver la diferencia entre cuenta básica y Custody.
 
 ### MyInvestor
 - Permite mezclar ETFs con fondos indexados Vanguard/Amundi (ventaja si quieres el traspaso fiscal).
@@ -5965,6 +5966,173 @@ La comparación con los ETFs en términos de flexibilidad fiscal es clara: para 
 - [CNMV — Registro de fondos](https://www.cnmv.es) — Comprueba si un fondo está registrado en España y puede beneficiarse del régimen de traspaso.
 - [Fondos indexados vs ETFs en España — BogleHub](/blog/fondos-indexados-vs-etfs-espana) — Comparativa completa entre fondos y ETFs, incluyendo el impacto fiscal del régimen de traspasos.
 - [Glosario: traspaso de fondos — BogleHub](/glosario/traspaso) — Definición y ejemplo numérico del régimen de diferimiento fiscal.
+`,
+  },
+  {
+    slug: 'degiro-opinion-2026',
+    title: 'DEGIRO: opinión y análisis completo 2026',
+    excerpt:
+      'Análisis honesto de DEGIRO en 2026: comisiones reales, acceso a 50+ bolsas, cuenta Custody vs básica, seguridad y para qué tipo de inversor tiene más sentido este broker holandés.',
+    publishedAt: '2026-05-30',
+    readingMinutes: 9,
+    keywords: ['DEGIRO opinión', 'DEGIRO seguridad', 'DEGIRO comisiones 2026', 'DEGIRO ETFs España', 'DEGIRO vs Trade Republic'],
+    faq: [
+      {
+        q: '¿Es seguro DEGIRO para invertir en España?',
+        a: 'Sí. DEGIRO está regulado por la AFM holandesa y desde 2021 es subsidiaria de flatexDEGIRO Bank AG, supervisado por el BaFin alemán. Los activos se custodian separados del balance del broker. El Fondo de Garantía de Inversiones holandés (IFD) cubre hasta 20.000€ en caso de insolvencia del broker. Para máxima segregación, elige la cuenta Custody en lugar de la cuenta básica.',
+      },
+      {
+        q: '¿Qué comisiones cobra DEGIRO por comprar ETFs en España?',
+        a: 'La comisión estándar en bolsas europeas (Euronext, Xetra) es 0,50€ + 0,004% del importe, con un mínimo de 0,90€. Para ETFs de la lista gratuita mensual, DEGIRO permite una operación al mes sin comisión de compra (con restricciones). Por encima de importes de unos 12.500€ por orden, la comisión variable supera a la de otros brokers, así que para órdenes grandes conviene calcular primero.',
+      },
+      {
+        q: '¿Cuál es la diferencia entre la cuenta básica y la Custody en DEGIRO?',
+        a: 'En la cuenta básica, DEGIRO puede prestar tus valores a terceros a cambio de una pequeña compensación (préstamo de valores). En la cuenta Custody, los valores están en cuentas segregadas y no se prestan. La cuenta Custody tiene comisiones algo más altas pero para inversores indexados a largo plazo la diferencia es marginal. Si te preocupa la segregación de activos, elige Custody.',
+      },
+      {
+        q: '¿DEGIRO tiene cuenta remunerada?',
+        a: 'No. DEGIRO no remunera el saldo en euros en cuenta. Si tienes liquidez esperando ser invertida, considera moverla a una cuenta corriente remunerada (Trade Republic, MyInvestor) mientras decides qué comprar.',
+      },
+      {
+        q: '¿Para quién es mejor DEGIRO que Trade Republic?',
+        a: 'DEGIRO tiene ventaja cuando: necesitas acceso a mercados que Trade Republic no cubre (bolsas asiáticas, mercados emergentes locales), quieres tipos de órdenes avanzadas (stop-loss, órdenes límite complejas), o tu cartera supera los 100.000€ y quieres más control. Para la mayoría de inversores Boglehead con aportaciones mensuales regulares, Trade Republic (0€ y planes de ahorro automáticos) es más cómodo.',
+      },
+    ],
+    content: `# DEGIRO: opinión y análisis completo 2026
+
+DEGIRO fue el broker que rompió las comisiones altas en Europa. Cuando llegó en 2008 desde Países Bajos, comprar acciones o ETFs en España costaba 10-25€ por operación en los bancos tradicionales. DEGIRO ofreció 0,50€. Cambió el mercado.
+
+Hoy, con Trade Republic en 0€ y XTB también sin comisión hasta cierto umbral, DEGIRO ya no es el más barato para todos los perfiles. Pero sigue siendo el mejor en algo concreto: acceso a mercados internacionales y a activos específicos no disponibles en brokers más sencillos. Esta guía explica qué hace bien, dónde se queda corto y para quién sigue siendo la mejor opción.
+
+---
+
+## Quién es DEGIRO
+
+DEGIRO fue fundado en 2008 en Ámsterdam por ex-empleados del banco holandés Binck. En 2021, fue adquirido por flatexDEGIRO Bank AG, un banco alemán regulado por el BaFin y el Deutsche Bundesbank. Esta integración convirtió a DEGIRO en parte de un banco real, añadiendo una capa de robustez regulatoria adicional a la supervisión original de la AFM (Autoriteit Financiële Markten, el regulador de mercados holandés).
+
+**La propuesta de valor de DEGIRO es distinta a la de Trade Republic**:
+
+- Trade Republic es para el inversor que quiere simplicidad: un solo broker, DCA automático, sin complicaciones.
+- DEGIRO es para quien necesita amplitud: más mercados, más instrumentos, más tipos de órdenes.
+
+---
+
+## Comisiones: lo que pagas de verdad
+
+**Compra y venta de ETFs (bolsas europeas principales)**:
+- 0,50€ + 0,004% del importe
+- Mínimo 0,90€ por operación
+
+Para una orden de 500€, pagas 0,52€. Para 5.000€, pagas 0,70€. Para 50.000€, pagas 2,50€.
+
+**Comparación directa con competidores**:
+
+| Importe de orden | DEGIRO | Trade Republic | MyInvestor |
+|---|---|---|---|
+| 100€ | 0,90€ | 0€ | 0,23€ |
+| 500€ | 0,52€ | 0€ | 0,35€ |
+| 2.000€ | 0,58€ | 0€ | 1,00€ |
+| 10.000€ | 0,90€ | 0€ | 3,20€ |
+
+Trade Republic gana en comisiones puras para cualquier importe. ¿Por qué alguien elegiría DEGIRO? Por lo que ofrece que Trade Republic no tiene.
+
+**ETFs con 0€ de comisión**: DEGIRO mantiene una lista mensual de ETFs por los que no cobra comisión de compra (una operación gratuita al mes por ETF). La lista cambia cada mes y tiene restricciones, así que no te fíes de ella como fuente principal de ahorro. Verifica siempre en la web oficial antes de operar.
+
+---
+
+## Los 50+ bolsas: la gran ventaja
+
+DEGIRO conecta a 50+ bolsas mundiales. La lista incluye:
+
+- Euronext (Ámsterdam, Bruselas, París, Lisboa)
+- Xetra (Alemania)
+- LSE (Londres)
+- NYSE y NASDAQ (EE.UU.)
+- Tokyo Stock Exchange (Japón)
+- Hong Kong Exchange
+- Australian Securities Exchange
+- Bolsas de Singapur, Corea, India y muchas más
+
+Para el inversor indexado con una cartera de VWCE y AGGH, esto es irrelevante: esos ETFs están en Euronext y Xetra. Pero si quieres acceder a ETFs concretos no disponibles en Trade Republic, DEGIRO abre puertas.
+
+---
+
+## Seguridad: cuenta básica vs cuenta Custody
+
+Este es el punto que más debate genera sobre DEGIRO y merece explicación clara.
+
+**Cuenta básica**: DEGIRO puede prestar tus valores a terceros (préstamo de valores). A cambio, recibes una pequeña compensación. El riesgo teórico: si el prestatario quiebra, podría haber demora en devolver tus activos. En la práctica, DEGIRO cubre este riesgo con colateral, pero introduce una capa de complejidad que muchos inversores prefieren evitar.
+
+**Cuenta Custody**: los valores están en cuentas segregadas y NO se prestan. Es el equivalente a "tus activos son exactamente tuyos, sin préstamos terceros". Las comisiones de custodia son algo más altas, pero para carteras a largo plazo la diferencia es pequeña.
+
+**Recomendación**: si abres DEGIRO, elige Custody. La diferencia de coste es marginal para el inversor indexado a largo plazo, y la segregación es más limpia.
+
+**¿Es seguro DEGIRO?** Sí. La combinación de regulación AFM (Países Bajos) + BaFin (Alemania, vía flatexDEGIRO Bank AG) + segregación de activos + Fondo de Garantía de Inversiones holandés (20.000€) crea una protección sólida. La cobertura de 20.000€ es inferior a la de Trade Republic (100.000€ vía ESIF) o MyInvestor (100.000€ vía FGD), pero para la mayoría de inversores particulares con carteras en fase de construcción, el riesgo práctico es muy bajo.
+
+---
+
+## Sin planes de ahorro automáticos
+
+Esta es la limitación más importante para el inversor Boglehead que quiere automatizar el DCA mensual. **DEGIRO no tiene planes de ahorro automáticos**: no puedes programar una compra mensual de VWCE el día 1 de cada mes. Cada compra requiere que entres manualmente, pongas la orden y la ejecutes.
+
+Para quien lleva una cartera grande con aportaciones esporádicas, esto es irrelevante. Para quien quiere aportar 200€ al mes sin pensar, Trade Republic es claramente superior en este aspecto.
+
+---
+
+## Sin cuenta remunerada
+
+DEGIRO no remunera el saldo en euros en cuenta corriente. Si tienes 5.000€ en liquidez esperando invertir, no genera nada en DEGIRO. Trade Republic remunera al ~2-2,5% TAE sin condiciones; MyInvestor al 2% TAE el primer año.
+
+---
+
+## Tipos de órdenes avanzadas
+
+Para el inversor técnico, DEGIRO ofrece:
+- Órdenes límite (comprar/vender a un precio máximo/mínimo)
+- Órdenes stop (se activan al alcanzar un precio)
+- Órdenes stop-limit
+- Órdenes GTC (Good Till Cancelled)
+- Órdenes IOC (Immediate or Cancel)
+
+Trade Republic solo permite órdenes de mercado y stop básicas. Para quien gestiona una cartera compleja con varios activos, DEGIRO es más profesional.
+
+---
+
+## Para quién es DEGIRO la mejor opción
+
+**Elige DEGIRO si:**
+- Tu cartera supera los 100.000€ y quieres diversificación de broker (no tenerlo todo en Trade Republic)
+- Necesitas acceso a ETFs o acciones de mercados no disponibles en Trade Republic (Japón, Corea, ETFs nicho)
+- Quieres tipos de órdenes avanzadas (stop-loss, órdenes límite para entradas específicas)
+- Ya tienes una cartera grande y las comisiones fijas de 0,90€ te importan menos
+
+**No elijas DEGIRO si:**
+- Quieres aportaciones automáticas mensuales sin intervención
+- Empiezas con menos de 200€/mes (la comisión de 0,90€ es más cara relativamente)
+- Quieres fondos indexados con traspaso fiscal (DEGIRO no los ofrece)
+- Buscas la cuenta remunerada más alta del mercado
+
+---
+
+## DEGIRO en una estrategia Boglehead combinada
+
+Muchos inversores españoles con carteras ya consolidadas optan por dividir entre dos brokers:
+
+- **Trade Republic**: para las aportaciones mensuales automáticas de DCA (0€, automático, simple)
+- **DEGIRO**: para operaciones puntuales en activos específicos o cuando quieren diversificar el riesgo de contrapartida
+
+El truco es que DEGIRO, al cobrar 0,90€ mínimo, solo merece la pena para órdenes de más de 1.000€ (donde la comisión relativa cae por debajo del 0,1%). Para aportaciones pequeñas, Trade Republic gana sin discusión.
+
+Para una comparativa numérica detallada del coste anual de cada broker según tu patrón de inversión, usa el [comparador de brókers de BogleHub](/calculadora/comparar-brokers).
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [DEGIRO — Tarifas oficiales 2026](https://www.degiro.es/tarifas) — Verifica las comisiones actuales antes de operar, pueden cambiar.
+- [AFM — Registro de entidades](https://www.afm.nl) — Verifica el registro de DEGIRO como empresa de inversión supervisada en Países Bajos.
+- [BaFin — Registro de flatexDEGIRO Bank AG](https://www.bafin.de) — Supervisión bancaria de la matriz de DEGIRO.
+- [DEGIRO vs Trade Republic vs MyInvestor — BogleHub](/blog/degiro-vs-trade-republic-vs-myinvestor-2026) — Comparativa detallada de los tres brokers más usados por inversores indexados en España.
 `,
   },
 ]
