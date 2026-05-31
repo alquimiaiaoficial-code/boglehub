@@ -270,4 +270,10 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'como-hacer-traspaso-fondos-espana',
     'cartera-boglehead-3-fondos-espana',
   ],
+  'como-invertir-sp500-espana': [
+    'vwce-vs-cspx-vs-iwda',
+    'mejores-etfs-espana-2026',
+    'como-elegir-tu-primer-etf-espana-2026',
+    'mejores-fondos-indexados-espana-2026',
+  ],
 }

@@ -6885,4 +6885,136 @@ Una vez tengas tu cartera, puedes [analizarla gratis](/analyzer) para ver tu div
 - [MyInvestor — Fondos indexados](https://myinvestor.es) — Plataforma con la mayor selección de fondos indexados de bajo coste en España (verifica TER y condiciones actuales).
 `,
   },
+  {
+    slug: 'como-invertir-sp500-espana',
+    title: 'Cómo invertir en el S&P 500 desde España (2026)',
+    excerpt:
+      'Cómo invertir en el S&P 500 desde España: por qué no puedes comprar el SPY americano, los mejores ETFs y fondos UCITS y dónde comprarlos.',
+    publishedAt: '2026-05-31',
+    readingMinutes: 9,
+    keywords: ['cómo invertir en el S&P 500 desde España', 'invertir S&P 500 España', 'ETF S&P 500 España', 'mejor fondo S&P 500', 'comprar S&P 500'],
+    faq: [
+      {
+        q: '¿Cómo se invierte en el S&P 500 desde España?',
+        a: 'A través de un ETF o un fondo indexado UCITS que replique el índice S&P 500, domiciliado en Irlanda para máxima eficiencia fiscal. No puedes comprar el SPY americano (la normativa europea MiFID II lo impide al inversor particular), pero sí sus equivalentes UCITS: ETFs como CSPX, VUAA o SPXS, o fondos como el Amundi Prime USA y el Vanguard U.S. 500. Se compran en un broker (Trade Republic, DEGIRO) o, en el caso de los fondos, en MyInvestor.',
+      },
+      {
+        q: '¿Por qué no puedo comprar el ETF SPY o VOO americano desde España?',
+        a: 'Porque la normativa europea (MiFID II) exige que los productos comercializados al inversor particular tengan un documento de datos fundamentales (KID) en formato europeo, y los ETFs americanos como SPY o VOO no lo tienen. La solución son los ETFs UCITS, que replican exactamente el mismo índice S&P 500 y están diseñados para el inversor europeo, con la ventaja añadida del domicilio en Irlanda.',
+      },
+      {
+        q: '¿Cuál es el ETF de S&P 500 más barato disponible en España?',
+        a: 'Por TER, el SPDR S&P 500 (SPXS) es el más barato con un 0,03% anual. Otros muy populares y eficientes son el iShares Core S&P 500 (CSPX) y el Vanguard S&P 500 (VUAA en acumulación, VUSA en distribución), ambos con un TER del 0,07%. Todos están domiciliados en Irlanda. La diferencia entre 0,03% y 0,07% es mínima en euros; pesa más elegir bien acumulación vs distribución y el broker.',
+      },
+      {
+        q: '¿Mejor un ETF o un fondo indexado para el S&P 500?',
+        a: 'Depende de si valoras el traspaso fiscal. Los fondos indexados como el Amundi Prime USA (TER 0,05%) o el Vanguard U.S. 500 (0,10%) permiten traspasar a otro fondo sin tributar, ventaja exclusiva de los fondos en España. Los ETFs (CSPX, VUAA) suelen tener costes de compra menores en algunos brokers pero no tienen traspaso fiscal. Para una cartera que vas a rebalancear, el fondo; para comprar y mantener sin tocar, el ETF también vale.',
+      },
+      {
+        q: '¿Es buena idea invertir solo en el S&P 500?',
+        a: 'El S&P 500 concentra el 100% en grandes empresas de EE.UU. Ha tenido una rentabilidad histórica excelente, pero es una apuesta por un solo país. La filosofía Boglehead más ortodoxa prefiere un índice global (MSCI World o FTSE All-World) que diversifica entre países desarrollados y, opcionalmente, emergentes. El S&P 500 es una opción válida si entiendes y aceptas esa concentración geográfica; si prefieres diversificar, un fondo global cubre EE.UU. y el resto del mundo.',
+      },
+    ],
+    content: `# Cómo invertir en el S&P 500 desde España (2026)
+
+El S&P 500 es el índice más seguido del mundo: las 500 mayores empresas cotizadas de Estados Unidos, desde Apple y Microsoft hasta Coca-Cola o JP Morgan. Invertir en él desde España es sencillo, pero hay un par de cosas que conviene saber antes — sobre todo por qué no puedes comprar el famoso "SPY" americano y cuál es la mejor alternativa. Esta guía te lo explica paso a paso, con las opciones concretas disponibles en 2026.
+
+Los TER e ISIN de esta guía son los publicados por las gestoras; verifícalos en la ficha oficial antes de invertir, ya que pueden cambiar.
+
+> **En resumen**: inviertes en el S&P 500 a través de un ETF o fondo indexado UCITS domiciliado en Irlanda. Los ETFs más eficientes son SPXS (TER 0,03%), CSPX y VUAA (0,07%). Como fondo indexado, el Amundi Prime USA (0,05%) o el Vanguard U.S. 500 (0,10%), con la ventaja del traspaso fiscal. Los compras en un broker (Trade Republic, DEGIRO) o, los fondos, en MyInvestor.
+
+---
+
+## Qué es el S&P 500
+
+El S&P 500 agrupa las 500 mayores empresas cotizadas de Estados Unidos por capitalización bursátil. Cubre aproximadamente el 80% del valor del mercado estadounidense e incluye gigantes tecnológicos (Apple, Microsoft, Nvidia, Alphabet, Amazon, Meta), pero también consumo, salud, finanzas e industria. Es el termómetro de la bolsa estadounidense y uno de los índices con mejor historial a largo plazo.
+
+Su característica —y su riesgo— es la concentración: el 100% en un solo país, y con un peso muy alto de unas pocas megaempresas tecnológicas. Lo abordamos al final de la guía.
+
+---
+
+## Por qué no puedes comprar el SPY o el VOO americano
+
+Si has leído sobre el S&P 500 en webs estadounidenses, habrás visto los ETFs SPY (de State Street) o VOO (de Vanguard). **Desde España no puedes comprarlos** como inversor particular.
+
+El motivo es la normativa europea MiFID II: exige que los productos vendidos al inversor minorista europeo tengan un documento de datos fundamentales (KID) en formato europeo. Los ETFs domiciliados en EE.UU. no lo tienen, así que los brokers europeos no te dejan comprarlos.
+
+La solución no es un problema: los **ETFs UCITS**. Replican exactamente el mismo índice S&P 500, están diseñados para el inversor europeo y, además, los domiciliados en Irlanda son más eficientes fiscalmente (el convenio Irlanda-EE.UU. reduce la retención sobre dividendos del 30% al 15%).
+
+---
+
+## Los mejores ETFs de S&P 500 para España
+
+Todos replican el mismo índice S&P 500 y están domiciliados en Irlanda (grado fiscal óptimo). La diferencia está en el TER y en si son de acumulación o distribución.
+
+| ETF | Gestora | TER | Reparto | ISIN |
+|---|---|---|---|---|
+| **SPXS** | SPDR | **0,03 %** | Acumulación | IE00B6YX5C33 |
+| **CSPX** | iShares | 0,07 % | Acumulación | IE00B5BMR087 |
+| **VUAA** | Vanguard | 0,07 % | Acumulación | IE00BFMXXD54 |
+| VUSA | Vanguard | 0,07 % | Distribución | IE00B3XXRP09 |
+| IUSA | iShares | 0,07 % | Distribución | IE0031442068 |
+
+El **SPXS** de SPDR es el más barato (0,03%). El **CSPX** de iShares es el más popular y con mayor patrimonio. **VUAA** (acumulación) y **VUSA** (distribución) son las versiones de Vanguard. La diferencia de TER entre 0,03% y 0,07% es de céntimos al año por cada 1.000€; pesa más elegir bien entre acumulación y distribución. Puedes comparar dos cualquiera en el [comparador de ETFs](/comparar) o ver la [categoría completa de ETFs S&P 500](/etfs/sp500).
+
+---
+
+## Los fondos indexados de S&P 500 (con traspaso fiscal)
+
+Si prefieres un fondo indexado en lugar de un ETF —para aprovechar el traspaso fiscal libre—, tienes dos opciones excelentes:
+
+| Fondo | Gestora | TER | ISIN |
+|---|---|---|---|
+| **Amundi Prime USA** | Amundi | **0,05 %** | LU2050633988 |
+| Vanguard U.S. 500 Stock Index | Vanguard | 0,10 % | IE0032126645 |
+
+El **Amundi Prime USA** replica el mercado estadounidense por un 0,05%, disponible en MyInvestor desde 1€. El **Vanguard U.S. 500** sigue el S&P 500 clásico. Sus fichas: [Amundi Prime USA](/fondo/amundi-prime-usa) y [Vanguard U.S. 500 Stock](/fondo/vanguard-us-500-stock). Ambos en la [guía de mejores fondos indexados](/blog/mejores-fondos-indexados-espana-2026).
+
+---
+
+## ETF o fondo: cuál elegir para el S&P 500
+
+- **Fondo indexado** (Amundi Prime USA, Vanguard U.S. 500): permite **traspaso fiscal libre** —cambiar a otro fondo sin tributar—, aportaciones desde 1€ y compra a valor liquidativo. Ideal si vas a rebalancear o prevés cambiar de estrategia.
+- **ETF** (SPXS, CSPX, VUAA): comisiones de compra muy bajas en brokers como Trade Republic (0€), precio en tiempo real, y planes de ahorro automáticos. Ideal para comprar y mantener.
+
+La diferencia de coste anual es mínima; la decisión real es la del [traspaso fiscal](/blog/como-hacer-traspaso-fondos-espana) frente a la comodidad del ETF. Lo desarrollamos en [fondos indexados o ETFs](/blog/fondos-indexados-vs-etfs-espana).
+
+---
+
+## Acumulación o distribución
+
+- **Acumulación** (SPXS, CSPX, VUAA, Amundi Prime USA): reinvierte los dividendos dentro del fondo, sin que tributes por ellos hasta que vendas. Más eficiente en la fase de ahorro.
+- **Distribución** (VUSA, IUSA): te paga los dividendos en cuenta, que tributan cada año. Útil si quieres rentas periódicas.
+
+Para la mayoría de inversores en fase de acumulación, la versión de acumulación es la opción más eficiente fiscalmente.
+
+---
+
+## Dónde comprarlo
+
+- **ETFs** (CSPX, VUAA, SPXS): cualquier broker con acceso a bolsa europea. Trade Republic (0€ y planes de ahorro), DEGIRO, MyInvestor. Compara opciones en [mejor broker para ETFs en España](/blog/mejor-broker-etfs-espana-2026).
+- **Fondos** (Amundi Prime USA, Vanguard U.S. 500): MyInvestor es la plataforma más usada, con traspaso fiscal y aportaciones desde 1€.
+
+---
+
+## ¿Solo S&P 500 o mejor un índice global?
+
+Aquí va la parte honesta. El S&P 500 ha tenido un historial excelente, pero invertir solo en él es **concentrar el 100% de tu renta variable en un país** (EE.UU.) y, dentro de él, con un peso enorme de media docena de tecnológicas.
+
+La filosofía Boglehead más ortodoxa prefiere un **índice global** (MSCI World o FTSE All-World), que incluye EE.UU. en su peso natural (~65-70%) más el resto de países desarrollados y, opcionalmente, emergentes. Así no apuestas por un solo país: replicas el mercado mundial.
+
+¿Significa que el S&P 500 es mala idea? No. Es una opción válida si **entiendes y aceptas** esa concentración geográfica. Pero si dudas, un fondo global te da exposición a EE.UU. y al resto del mundo en un solo producto, con la misma simplicidad. Lo comparamos en [VWCE vs CSPX vs IWDA](/blog/vwce-vs-cspx-vs-iwda) y en [MSCI World vs MSCI ACWI](/blog/msci-world-vs-msci-acwi-diferencias).
+
+Una vez decidas, puedes [analizar tu cartera gratis](/analyzer) para ver tu exposición real por región y comprobar que encaja con lo que quieres.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Categoría: ETFs S&P 500 — BogleHub](/etfs/sp500) — Listado completo de ETFs S&P 500 disponibles en España con TER y grado fiscal.
+- [VWCE vs CSPX vs IWDA — BogleHub](/blog/vwce-vs-cspx-vs-iwda) — Comparativa entre el S&P 500 y los índices globales.
+- [Mejores fondos indexados en España — BogleHub](/blog/mejores-fondos-indexados-espana-2026) — Incluye las opciones de fondos para el S&P 500.
+- [Cómo elegir tu primer ETF en España — BogleHub](/blog/como-elegir-tu-primer-etf-espana-2026) — Los criterios que importan: domicilio, TER, acumulación.
+`,
+  },
 ]
