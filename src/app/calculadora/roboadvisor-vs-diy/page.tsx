@@ -70,6 +70,44 @@ export default function RoboadvisorVsDiyPage() {
           applicationCategory: 'FinanceApplication',
         }}
       />
+      <JsonLd
+        schema={{
+          type: 'HowTo',
+          name: 'Cómo comparar el coste de un roboadvisor frente a una cartera DIY',
+          description:
+            'Calcula en euros cuánto te cuesta delegar a Indexa o Finizens vs gestionar tú tu propia cartera de fondos indexados.',
+          url: `${BASE_URL}/calculadora/roboadvisor-vs-diy`,
+          totalTime: 'PT3M',
+          estimatedCost: { currency: 'EUR', value: 0 },
+          steps: [
+            {
+              name: 'Introduce tu capital inicial',
+              text: 'Escribe cuánto dinero tienes ya invertido o vas a invertir de inicio.',
+              url: `${BASE_URL}/calculadora/roboadvisor-vs-diy`,
+            },
+            {
+              name: 'Indica tu aportación mensual',
+              text: 'Cuánto añades a tu cartera cada mes.',
+              url: `${BASE_URL}/calculadora/roboadvisor-vs-diy`,
+            },
+            {
+              name: 'Introduce la comisión del roboadvisor',
+              text: 'La comisión total anual del roboadvisor (gestión + custodia + fondo). Indexa Capital cobra ~0,45%, Finizens ~0,40% en 2026.',
+              url: `${BASE_URL}/calculadora/roboadvisor-vs-diy`,
+            },
+            {
+              name: 'Introduce el coste de la cartera DIY',
+              text: 'El TER ponderado de tu propia cartera de fondos o ETFs. Una cartera de dos fondos (MSCI World + renta fija) puede costar 0,10-0,15% al año.',
+              url: `${BASE_URL}/calculadora/roboadvisor-vs-diy`,
+            },
+            {
+              name: 'Compara la diferencia acumulada',
+              text: 'La calculadora muestra la diferencia en euros a 10, 20 y 30 años. Esa diferencia es lo que vale (o no) delegar la gestión.',
+              url: `${BASE_URL}/calculadora/roboadvisor-vs-diy`,
+            },
+          ],
+        }}
+      />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 pt-10 pb-8">

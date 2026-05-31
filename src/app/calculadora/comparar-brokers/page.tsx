@@ -63,6 +63,39 @@ export default function CompararBrokersPage() {
           ],
         }}
       />
+      <JsonLd
+        schema={{
+          type: 'HowTo',
+          name: 'Cómo comparar el coste anual de los brókers de ETFs en España',
+          description:
+            'Calcula cuánto te cuesta al año Trade Republic, DEGIRO, MyInvestor, IBKR, Scalable o XTB según tu patrón de inversión.',
+          url: `${BASE_URL}/calculadora/comparar-brokers`,
+          totalTime: 'PT3M',
+          estimatedCost: { currency: 'EUR', value: 0 },
+          steps: [
+            {
+              name: 'Indica cuánto inviertes al mes',
+              text: 'Escribe el importe habitual de cada orden de compra de ETFs. Esto determina el impacto de las comisiones fijas.',
+              url: `${BASE_URL}/calculadora/comparar-brokers`,
+            },
+            {
+              name: 'Indica la frecuencia de tus operaciones',
+              text: 'Cuántas órdenes de compra haces al mes. Más frecuencia = más comisiones para los brókers que cobran por operación.',
+              url: `${BASE_URL}/calculadora/comparar-brokers`,
+            },
+            {
+              name: 'Introduce el valor de tu cartera',
+              text: 'El total ya invertido. Algunos brókers cobran comisión de custodia anual sobre el patrimonio.',
+              url: `${BASE_URL}/calculadora/comparar-brokers`,
+            },
+            {
+              name: 'Compara el coste anual en euros',
+              text: 'La calculadora muestra el coste total al año de cada bróker: comisiones de compra, custodia y cambio de divisa. Elige el más barato para tu patrón real.',
+              url: `${BASE_URL}/calculadora/comparar-brokers`,
+            },
+          ],
+        }}
+      />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 pt-10 pb-8">
