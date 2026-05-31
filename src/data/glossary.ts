@@ -1149,6 +1149,67 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       },
     ],
   },
+  {
+    slug: 'dividend-yield',
+    term: 'Dividend yield',
+    fullForm: 'Dividend yield (rendimiento por dividendo)',
+    category: 'metricas',
+    shortDefinition:
+      'El dividend yield es el porcentaje que representan los dividendos anuales sobre el precio de una acción o un ETF. Mide cuánta renta genera la inversión por dividendos, sin contar la revalorización del precio.',
+    longDefinition:
+      'El dividend yield (rendimiento por dividendo) se calcula dividiendo los dividendos pagados en un año entre el precio actual de la acción o del ETF, expresado en porcentaje. Si un ETF cotiza a 100€ y reparte 3€ de dividendos al año, su dividend yield es del 3%.\n\nEs una métrica clave para inversores que buscan rentas periódicas (estrategia de dividendos, fase FIRE de retirada). Un ETF de renta variable global tiene un yield típico del 1,5-2,5%; los ETFs específicos de dividendos altos pueden llegar al 3-5%, y los REITs o sectores como utilities suelen ofrecer yields superiores.\n\nDos avisos importantes: (1) un yield muy alto no siempre es bueno — puede reflejar que el precio ha caído mucho (la empresa está en problemas) más que un dividendo generoso; (2) el yield solo mide la renta por dividendos, no la rentabilidad total. Un ETF de acumulación con yield "0%" reinvierte sus dividendos internamente y puede tener una rentabilidad total mayor que uno de distribución con yield alto. Lo que importa a largo plazo es la rentabilidad total (precio + dividendos), no solo el yield.',
+    example:
+      'Un ETF de dividendos como el VHYL con un dividend yield del 3,5% sobre una inversión de 50.000€ generaría unos 1.750€ brutos al año en dividendos. En España, esos dividendos tributan en la base del ahorro del IRPF (19% el primer tramo), así que netos serían algo menos.',
+    relatedArticles: [
+      'etfs-dividendos-vivir-rentas-espana',
+      'fiscalidad-etfs-espana-guia-completa',
+    ],
+    relatedLinks: [
+      { label: 'Glosario: dividendo', href: '/glosario/dividendo' },
+      { label: 'ETFs de distribución', href: '/etfs/distribucion' },
+    ],
+    faq: [
+      {
+        q: '¿Un dividend yield alto es mejor?',
+        a: 'No necesariamente. Un yield muy alto a veces refleja que el precio de la acción ha caído (señal de problemas), no un dividendo especialmente generoso. Además, el yield solo mide la renta por dividendos, no la rentabilidad total. Para acumular patrimonio a largo plazo, un ETF de acumulación suele ser más eficiente que perseguir yields altos.',
+      },
+      {
+        q: '¿Qué dividend yield tiene un ETF global típico?',
+        a: 'Un ETF de renta variable global (MSCI World, FTSE All-World) suele tener un dividend yield de entre el 1,5% y el 2,5% anual. Los ETFs específicos de dividendos altos pueden alcanzar el 3-5%, a costa de menos diversificación o sesgos sectoriales. Recuerda que en los ETFs de acumulación no recibes esos dividendos: se reinvierten dentro del fondo.',
+      },
+    ],
+  },
+  {
+    slug: 'benchmark',
+    term: 'Benchmark',
+    fullForm: 'Benchmark (índice de referencia)',
+    category: 'metricas',
+    shortDefinition:
+      'Un benchmark es el índice de referencia con el que se compara la rentabilidad de un fondo o una cartera. Sirve para saber si una inversión lo ha hecho mejor o peor que su mercado.',
+    longDefinition:
+      'Un benchmark (índice de referencia) es la vara de medir de cualquier inversión. Es un índice de mercado representativo — el MSCI World, el S&P 500, el FTSE All-World, un índice de bonos — que se usa para juzgar si un fondo o una cartera ha tenido un buen o mal comportamiento en relación con su mercado.\n\nPara la inversión indexada, el benchmark es el centro de la filosofía: un fondo indexado no intenta superar a su benchmark, sino replicarlo lo más fielmente posible al menor coste. Por eso la métrica clave de un fondo indexado no es cuánto sube, sino su tracking difference (cuánto se desvía de su índice). Un buen fondo indexado replica su benchmark casi exactamente menos un TER mínimo.\n\nPara la gestión activa, en cambio, el benchmark es el rival a batir: un fondo activo de renta variable europea se compara con un índice europeo, y su gestor cobra por intentar superarlo. Los datos (informes SPIVA) muestran que la mayoría de fondos activos no supera a su benchmark de forma consistente después de comisiones. Elegir bien el benchmark adecuado es importante: comparar un fondo de small caps con el S&P 500 no tiene sentido; cada estrategia tiene su índice de referencia apropiado.',
+    example:
+      'Si tu cartera de renta variable global sube un 8% en un año y su benchmark (el MSCI ACWI) sube un 9%, has quedado un punto por debajo del mercado. Para un inversor indexado, ese 1% de diferencia debería ser solo el TER y pequeñas desviaciones; si es mayor, conviene revisar qué fondo tienes.',
+    relatedArticles: [
+      'que-es-el-msci-world',
+      'bogleheads-espana-guia-completa',
+      'mejores-etfs-espana-2026',
+    ],
+    relatedLinks: [
+      { label: 'Glosario: tracking difference', href: '/glosario/tracking-difference' },
+      { label: 'Glosario: gestión pasiva', href: '/glosario/gestion-pasiva' },
+    ],
+    faq: [
+      {
+        q: '¿Qué benchmark debo usar para mi cartera?',
+        a: 'Depende de su composición. Para una cartera de renta variable global, el benchmark natural es un índice global como el MSCI ACWI o el FTSE All-World. Si tu cartera es 100% S&P 500, compárala con el S&P 500. Lo importante es comparar con un índice que refleje el mismo tipo de activos y regiones que tienes, no con uno arbitrario.',
+      },
+      {
+        q: '¿Por qué un fondo indexado no intenta superar a su benchmark?',
+        a: 'Porque la filosofía indexada parte de que batir al mercado de forma consistente es muy difícil y caro. En vez de intentarlo, el fondo indexado replica el benchmark al menor coste posible, garantizando la rentabilidad del mercado menos un TER mínimo. La evidencia muestra que esto supera a la mayoría de fondos activos a largo plazo.',
+      },
+    ],
+  },
 ]
 
 /** Devuelve un término por su slug, o undefined si no existe */
