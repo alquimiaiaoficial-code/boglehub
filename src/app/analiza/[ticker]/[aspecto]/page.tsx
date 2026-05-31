@@ -118,7 +118,7 @@ export default async function AnalizaPage({
     faqs = [
       {
         q: `¿Hay alternativas más baratas a ${etf.ticker}?`,
-        a: `Depende de su categoría. Para MSCI World, SWRD tiene TER 0,12% (vs 0,20% de IWDA, 0,22% de VWCE). Para S&P 500, SPXS tiene TER 0,03% (vs 0,07% de CSPX). Compara siempre TER y tracking difference real, no solo el TER nominal.`,
+        a: `Depende de su categoría. Para MSCI World, SWRD tiene TER 0,12% (vs 0,20% de IWDA, 0,19% de VWCE). Para S&P 500, SPXS tiene TER 0,03% (vs 0,07% de CSPX). Compara siempre TER y tracking difference real, no solo el TER nominal.`,
       },
       {
         q: `¿Vale la pena cambiar de ${etf.ticker} a una alternativa más barata?`,

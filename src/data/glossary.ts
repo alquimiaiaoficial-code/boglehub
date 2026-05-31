@@ -103,7 +103,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     longDefinition:
       'El ISIN (International Securities Identification Number) es un identificador único de 12 caracteres alfanuméricos asignado a cada instrumento financiero del mundo. Empieza con un código de país de dos letras (IE para Irlanda, LU para Luxemburgo, US para Estados Unidos), seguido de 9 caracteres del identificador nacional y termina con un dígito de control.\n\nPara un inversor en ETFs, el ISIN es la forma más fiable de identificar exactamente qué fondo estás comprando. El mismo ETF puede tener distintos tickers según la bolsa en la que cotice (por ejemplo CSPX en LSE y SXR8 en Xetra), pero siempre tiene el mismo ISIN. Verificar el ISIN evita confundir dos productos similares pero distintos.',
     example:
-      'El ETF Vanguard FTSE All-World Acc tiene ISIN IE00B3RBWM25. La "IE" inicial indica que está domiciliado en Irlanda. Este mismo ETF cotiza como VWCE en Xetra, VWRA en LSE y VWRP en otras bolsas — todos comparten el ISIN.',
+      'El ETF Vanguard FTSE All-World Acc tiene ISIN IE00BK5BQT80. La "IE" inicial indica que está domiciliado en Irlanda. Este mismo ETF cotiza como VWCE en Xetra, VWRA en LSE y VWRP en otras bolsas — todos comparten el ISIN.',
     faq: [
       {
         q: '¿Por qué el ISIN empieza con dos letras?',
@@ -266,7 +266,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     longDefinition:
       'El domicilio fiscal de un ETF es un dato crucial pero muchas veces ignorado por inversores principiantes. Determina qué convenios fiscales aplica el fondo al cobrar dividendos de las empresas en cartera. Para inversores españoles, los dos domicilios más relevantes son:\n\n- **Irlanda (ISIN empieza por IE)**: el más eficiente. Aprovecha el convenio fiscal Irlanda-EE.UU. que reduce la retención sobre dividendos americanos del 30% al 15%.\n- **Luxemburgo (ISIN empieza por LU)**: menos eficiente para dividendos americanos. Retención del 30% en origen.\n\nPara una cartera donde el 60-65% son empresas americanas (caso típico de MSCI World o FTSE All-World), elegir un ETF irlandés en lugar de luxemburgués puede ahorrar 0,15-0,25% anual en retenciones, lo que se acumula significativamente a largo plazo.',
     example:
-      'VWCE (ISIN IE00B3RBWM25) está domiciliado en Irlanda. iShares MSCI World (CWLD, ISIN LU0392494562) está en Luxemburgo. Para el inversor español, VWCE es fiscalmente más eficiente a pesar de su TER ligeramente superior.',
+      'VWCE (ISIN IE00BK5BQT80) está domiciliado en Irlanda. iShares MSCI World (CWLD, ISIN LU0392494562) está en Luxemburgo. Para el inversor español, VWCE es fiscalmente más eficiente gracias a su domicilio irlandés.',
     relatedArticles: ['como-elegir-tu-primer-etf-espana-2026', 'fiscalidad-etfs-espana-guia-completa'],
   },
   {

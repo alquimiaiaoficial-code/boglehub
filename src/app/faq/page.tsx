@@ -75,7 +75,7 @@ const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: '¿Por qué los ETFs domiciliados en Irlanda son más eficientes fiscalmente?',
-        a: 'Los ETFs domiciliados en Irlanda (ISIN empieza por IE) aprovechan el convenio fiscal Irlanda-EE.UU. que reduce la retención sobre dividendos americanos del 30% al 15%. Como el ~63% del MSCI World son empresas americanas, este ahorro tiene impacto real en la rentabilidad neta. Por eso ETFs como VWCE (IE00B3RBWM25), IWDA (IE00B4L5Y983) o CSPX (IE00B5BMR087) son más eficientes que sus equivalentes domiciliados en Luxemburgo.',
+        a: 'Los ETFs domiciliados en Irlanda (ISIN empieza por IE) aprovechan el convenio fiscal Irlanda-EE.UU. que reduce la retención sobre dividendos americanos del 30% al 15%. Como el ~63% del MSCI World son empresas americanas, este ahorro tiene impacto real en la rentabilidad neta. Por eso ETFs como VWCE (IE00BK5BQT80), IWDA (IE00B4L5Y983) o CSPX (IE00B5BMR087) son más eficientes que sus equivalentes domiciliados en Luxemburgo.',
       },
     ],
   },
@@ -85,11 +85,11 @@ const FAQ_CATEGORIES: FaqCategory[] = [
     questions: [
       {
         q: '¿Qué es el ETF VWCE y por qué es tan popular?',
-        a: 'VWCE es el ticker del Vanguard FTSE All-World UCITS ETF (Acc), ISIN IE00B3RBWM25. Replica el índice FTSE All-World con más de 3.700 empresas de mercados desarrollados y emergentes. TER 0,22%, domiciliado en Irlanda, política de acumulación. Es el ETF de referencia para inversores españoles porque ofrece diversificación global máxima en un solo producto con eficiencia fiscal.',
+        a: 'VWCE es el ticker del Vanguard FTSE All-World UCITS ETF (Acc), ISIN IE00BK5BQT80. Replica el índice FTSE All-World con más de 3.700 empresas de mercados desarrollados y emergentes. TER 0,19%, domiciliado en Irlanda, política de acumulación. Es el ETF de referencia para inversores españoles porque ofrece diversificación global máxima en un solo producto con eficiencia fiscal.',
       },
       {
         q: '¿Cuál es la diferencia entre VWCE y IWDA?',
-        a: 'VWCE (Vanguard FTSE All-World, TER 0,22%) incluye mercados emergentes (~12%) en un solo ETF. IWDA (iShares Core MSCI World, TER 0,20%) solo cubre 23 países desarrollados, sin emergentes. Para tener exposición global con IWDA necesitas combinarlo con un ETF de emergentes como EIMI en proporción ~88/12. VWCE hace eso automáticamente.',
+        a: 'VWCE (Vanguard FTSE All-World, TER 0,19%) incluye mercados emergentes (~12%) en un solo ETF. IWDA (iShares Core MSCI World, TER 0,20%) solo cubre 23 países desarrollados, sin emergentes. Para tener exposición global con IWDA necesitas combinarlo con un ETF de emergentes como EIMI en proporción ~88/12. VWCE hace eso automáticamente.',
       },
       {
         q: '¿Cuál es el ETF MSCI World más barato disponible en España?',

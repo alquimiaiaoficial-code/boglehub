@@ -23,7 +23,7 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
   {
     q: 'What ETF should I buy as a beginner?',
-    a: 'For most beginners, VWCE (Vanguard FTSE All-World UCITS ETF Acc, ISIN IE00B3RBWM25) is the simplest choice. It includes 3,700+ companies globally (developed + emerging markets), TER 0.22%, accumulation policy, domiciled in Ireland for tax efficiency. Available in Trade Republic with automatic savings plans from €1/month.',
+    a: 'For most beginners, VWCE (Vanguard FTSE All-World UCITS ETF Acc, ISIN IE00BK5BQT80) is the simplest choice. It includes 3,700+ companies globally (developed + emerging markets), TER 0.19%, accumulation policy, domiciled in Ireland for tax efficiency. Available in Trade Republic with automatic savings plans from €1/month.',
   },
 ]
 
@@ -92,7 +92,7 @@ export default function EnStartPage() {
             <ol className="space-y-3 text-sm text-fg-muted">
               <li className="flex gap-3"><span className="text-accent">1.</span><span><strong className="text-fg">Build emergency fund:</strong> 3-6 months of expenses in a remunerated account before investing.</span></li>
               <li className="flex gap-3"><span className="text-accent">2.</span><span><strong className="text-fg">Choose broker:</strong> Trade Republic (€0/trade, German bank, BaFin-regulated) for beginners. MyInvestor (Spanish bank, CNMV-regulated) if you want index funds with tax-free transfers.</span></li>
-              <li className="flex gap-3"><span className="text-accent">3.</span><span><strong className="text-fg">Pick portfolio:</strong> 80% VWCE (global stocks, ISIN IE00B3RBWM25, TER 0.22%) + 20% AGGH (global bonds EUR-hedged, ISIN IE00BDBRDM35, TER 0.10%).</span></li>
+              <li className="flex gap-3"><span className="text-accent">3.</span><span><strong className="text-fg">Pick portfolio:</strong> 80% VWCE (global stocks, ISIN IE00BK5BQT80, TER 0.19%) + 20% AGGH (global bonds EUR-hedged, ISIN IE00BDBRDM35, TER 0.10%).</span></li>
               <li className="flex gap-3"><span className="text-accent">4.</span><span><strong className="text-fg">Automate contributions:</strong> Configure monthly savings plan in Trade Republic. Set and forget.</span></li>
               <li className="flex gap-3"><span className="text-accent">5.</span><span><strong className="text-fg">Don't touch:</strong> Markets will fall 20-40% multiple times in your investing life. Don't sell. The cost of selling in panic is higher than any TER.</span></li>
               <li className="flex gap-3"><span className="text-accent">6.</span><span><strong className="text-fg">File Modelo 720 if applicable:</strong> If holdings abroad exceed €50,000 by Dec 31, file between Jan-Mar of next year.</span></li>

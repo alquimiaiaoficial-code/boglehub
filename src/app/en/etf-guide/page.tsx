@@ -40,7 +40,7 @@ export default function EtfGuideEn() {
               <table className="w-full text-sm">
                 <thead><tr className="border-b border-border text-left text-xs uppercase text-fg-muted"><th className="pb-2">Category</th><th className="pb-2">Ticker</th><th className="pb-2">ISIN</th><th className="pb-2 text-right">TER</th></tr></thead>
                 <tbody>
-                  <tr><td className="py-2 text-fg-muted">Global (with EM)</td><td className="py-2 font-mono text-fg">VWCE</td><td className="py-2 font-mono text-fg-muted text-xs">IE00B3RBWM25</td><td className="py-2 text-right text-fg">0.22%</td></tr>
+                  <tr><td className="py-2 text-fg-muted">Global (with EM)</td><td className="py-2 font-mono text-fg">VWCE</td><td className="py-2 font-mono text-fg-muted text-xs">IE00BK5BQT80</td><td className="py-2 text-right text-fg">0.19%</td></tr>
                   <tr><td className="py-2 text-fg-muted">MSCI World</td><td className="py-2 font-mono text-fg">IWDA</td><td className="py-2 font-mono text-fg-muted text-xs">IE00B4L5Y983</td><td className="py-2 text-right text-fg">0.20%</td></tr>
                   <tr><td className="py-2 text-fg-muted">MSCI World (cheapest)</td><td className="py-2 font-mono text-fg">SWRD</td><td className="py-2 font-mono text-fg-muted text-xs">IE00BFY0GT14</td><td className="py-2 text-right text-fg">0.12%</td></tr>
                   <tr><td className="py-2 text-fg-muted">S&P 500</td><td className="py-2 font-mono text-fg">CSPX</td><td className="py-2 font-mono text-fg-muted text-xs">IE00B5BMR087</td><td className="py-2 text-right text-fg">0.07%</td></tr>

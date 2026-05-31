@@ -55,7 +55,7 @@ export const GESTORAS: Gestora[] = [
       },
       {
         q: '¿Cuál es el ETF más popular de Vanguard en España?',
-        a: 'VWCE (Vanguard FTSE All-World UCITS ETF Acc, ISIN IE00B3RBWM25) es el ETF más popular entre inversores indexados españoles. Incluye más de 3.700 empresas de mercados desarrollados y emergentes en un solo producto, con TER 0,22% y política de acumulación. Disponible en Trade Republic, DEGIRO y la mayoría de brokers europeos.',
+        a: 'VWCE (Vanguard FTSE All-World UCITS ETF Acc, ISIN IE00BK5BQT80) es el ETF más popular entre inversores indexados españoles. Incluye más de 3.700 empresas de mercados desarrollados y emergentes en un solo producto, con TER 0,19% y política de acumulación. Disponible en Trade Republic, DEGIRO y la mayoría de brokers europeos.',
       },
       {
         q: '¿Vanguard tiene fondos indexados disponibles en España?',

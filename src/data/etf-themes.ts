@@ -97,7 +97,7 @@ export const ETF_THEMES: EtfTheme[] = [
       },
       {
         q: '¿Cuál es la diferencia entre VWCE e ISAC?',
-        a: 'VWCE sigue el índice FTSE All-World (más de 4.000 posiciones) e ISAC sigue el MSCI ACWI IMI (aproximadamente 9.000 posiciones). En la práctica ambos ofrecen diversificación global muy similar y los resultados históricos son prácticamente idénticos. ISAC de iShares tiene un TER ligeramente superior (0,20% vs 0,22% de VWCE).',
+        a: 'VWCE sigue el índice FTSE All-World (más de 4.000 posiciones) e ISAC sigue el MSCI ACWI IMI (aproximadamente 9.000 posiciones). En la práctica ambos ofrecen diversificación global muy similar y los resultados históricos son prácticamente idénticos. ISAC de iShares tiene un TER ligeramente superior (0,20% vs 0,19% de VWCE).',
       },
       {
         q: '¿Un ETF All-World es suficiente para toda la cartera de renta variable?',
