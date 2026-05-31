@@ -1378,7 +1378,7 @@ Para automatizar el ahorro mensual con cantidades redondas, los fondos indexados
 
 ## Diferencia 4: dónde se compran
 
-**Fondos indexados**: necesitas una plataforma que los comercialice. En España, MyInvestor es la opción más conocida, con acceso a fondos indexados de Vanguard, Amundi, Fidelity y otros. Brokers como DEGIRO no ofrecen fondos indexados.
+**Fondos indexados**: necesitas una plataforma que los comercialice. En España, MyInvestor es la opción más conocida, con acceso a fondos indexados de Vanguard, Amundi, Fidelity y otros. Brokers como DEGIRO no ofrecen fondos indexados. Si te decantas por fondos, mira la guía de los [mejores fondos indexados en España por categoría](/blog/mejores-fondos-indexados-espana-2026), con TER e ISIN de cada uno.
 
 **ETFs**: los compras en casi cualquier broker con acceso a bolsa europea: Trade Republic, DEGIRO, Interactive Brokers, MyInvestor. Son universales.
 
@@ -3428,6 +3428,8 @@ La cartera más sencilla que puedes construir con Amundi Prime Global:
 - **10-20% Amundi Index MSCI Emerging Markets** (emergentes, TER 0,20%)
 
 El resultado es una cartera global similar al FTSE All-World del VWCE, con traspaso fiscal libre, desde 1 € de aportación mínima y un coste total ponderado inferior al 0,10% anual. Para muchos inversores en España, esto es la cartera óptima.
+
+Si quieres comparar el Amundi Prime Global con el resto de opciones, mira la guía de los [mejores fondos indexados en España por categoría](/blog/mejores-fondos-indexados-espana-2026).
 
 ---
 
