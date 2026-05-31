@@ -1210,6 +1210,66 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       },
     ],
   },
+  {
+    slug: 'mercado-bajista',
+    term: 'Mercado bajista',
+    fullForm: 'Mercado bajista (bear market)',
+    category: 'conceptos',
+    shortDefinition:
+      'Un mercado bajista (bear market) es una caída sostenida de las bolsas, habitualmente del 20% o más desde su máximo reciente. Su opuesto es el mercado alcista (bull market), de subidas prolongadas.',
+    longDefinition:
+      'Se considera mercado bajista (bear market) cuando un índice bursátil cae un 20% o más desde su máximo reciente y la caída se prolonga en el tiempo. El término opuesto es el mercado alcista (bull market), un periodo sostenido de subidas. Son parte normal del ciclo: históricamente, las bolsas globales han tenido un mercado bajista cada pocos años, y siempre se han recuperado superando máximos anteriores, aunque nadie sabe cuándo.\n\nPara el inversor indexado a largo plazo, el mercado bajista es la prueba psicológica más dura y, a la vez, la oportunidad que construye la rentabilidad futura. Las aportaciones que haces durante una caída compran participaciones más baratas, que se revalorizan cuando el mercado se recupera. El error clásico no es sufrir un mercado bajista, sino vender en pánico durante uno y perderse la recuperación.\n\nLa estrategia Boglehead frente a un mercado bajista es deliberadamente aburrida: seguir aportando según el plan, no mirar la cartera todos los días y no intentar adivinar el suelo. El riesgo real de una caída no es la caída en sí, sino la decisión emocional de abandonar el plan en el peor momento.',
+    example:
+      'En 2022, el MSCI World cayó más de un 20% en euros: fue un mercado bajista. Quien siguió aportando mensualmente compró a precios bajos durante meses; quien vendió en el mínimo realizó la pérdida y se perdió la recuperación posterior. La diferencia entre ambos no fue la cartera, sino el comportamiento.',
+    relatedArticles: [
+      'que-hacer-cuando-el-mercado-cae',
+      'dca-vs-lump-sum-aportar-mensual',
+      'bogleheads-espana-guia-completa',
+    ],
+    relatedLinks: [
+      { label: 'Glosario: volatilidad', href: '/glosario/volatilidad' },
+      { label: 'Glosario: drawdown', href: '/glosario/drawdown' },
+    ],
+    faq: [
+      {
+        q: '¿Qué hago con mi cartera indexada en un mercado bajista?',
+        a: 'La respuesta Boglehead es: seguir el plan. Si estás en fase de acumulación, sigue aportando (compras más barato); no vendas en pánico, porque realizarías la pérdida y te perderías la recuperación. Si la caída te quita el sueño, probablemente tu asignación a renta variable es demasiado alta para tu tolerancia al riesgo: ajústala cuando el mercado se recupere, no en el mínimo.',
+      },
+      {
+        q: '¿Cuánto dura un mercado bajista?',
+        a: 'Varía mucho: algunos duran pocos meses y otros más de un año. Históricamente, los mercados bajistas han sido más cortos que los alcistas, y las bolsas globales siempre han acabado superando sus máximos anteriores, aunque nadie puede predecir cuándo. Por eso la estrategia indexada se basa en el tiempo dentro del mercado, no en intentar adivinar el momento.',
+      },
+    ],
+  },
+  {
+    slug: 'liquidez',
+    term: 'Liquidez',
+    category: 'conceptos',
+    shortDefinition:
+      'La liquidez es la facilidad con la que un activo se puede convertir en dinero sin perder valor. Un ETF muy negociado es muy líquido; un inmueble o un fondo poco común, mucho menos.',
+    longDefinition:
+      'La liquidez mide lo fácil y rápido que es vender un activo y recibir su dinero a un precio justo. El efectivo es el activo más líquido por definición. Las acciones y ETFs de grandes índices (S&P 500, MSCI World) son muy líquidos: hay tantos compradores y vendedores que puedes vender al instante con un spread mínimo. En el otro extremo, un inmueble puede tardar meses en venderse y un ETF muy nicho puede tener poca negociación y spreads amplios.\n\nLa liquidez tiene dos implicaciones prácticas para el inversor indexado:\n1. **Coste de entrada y salida**: un ETF poco líquido tiene mayor spread (diferencia entre precio de compra y venta), lo que encarece cada operación. Por eso conviene elegir ETFs grandes y muy negociados como los que replican índices globales.\n2. **Fondo de emergencia**: la parte de tu dinero que puedas necesitar pronto debe estar en activos líquidos y estables (cuenta remunerada, fondo monetario), no en renta variable, que es líquida pero volátil — puedes venderla rápido, pero quizá en pérdidas si el mercado ha caído.\n\nNo hay que confundir liquidez con estabilidad: un ETF de bolsa es muy líquido (se vende al instante) pero volátil (su precio sube y baja). El efectivo es líquido y estable; las acciones, líquidas pero no estables.',
+    example:
+      'VWCE o IWDA son ETFs con altísima liquidez: mueven millones al día, así que puedes comprar o vender al instante con un spread de céntimos. Un ETF temático muy pequeño puede tener tan poca negociación que vender una posición grande mueva el precio en tu contra.',
+    relatedArticles: [
+      'como-elegir-tu-primer-etf-espana-2026',
+      'fire-espana-cuanto-necesitas',
+    ],
+    relatedLinks: [
+      { label: 'Glosario: spread', href: '/glosario/spread' },
+      { label: 'Glosario: fondo monetario', href: '/glosario/fondo-monetario' },
+    ],
+    faq: [
+      {
+        q: '¿Por qué importa la liquidez al elegir un ETF?',
+        a: 'Porque un ETF con poca liquidez tiene un spread más amplio (mayor diferencia entre el precio al que compras y al que vendes), lo que encarece cada operación. Los ETFs que replican índices globales grandes (MSCI World, S&P 500, FTSE All-World) tienen muchísima liquidez y spreads mínimos, así que para el inversor indexado son la opción más eficiente también por este motivo.',
+      },
+      {
+        q: '¿La renta variable es líquida?',
+        a: 'Sí, pero líquida no es lo mismo que estable. Un ETF de bolsa lo vendes al instante (es líquido), pero su precio es volátil: puede que tengas que venderlo en pérdidas si el mercado ha caído. Por eso el dinero que puedas necesitar a corto plazo conviene tenerlo en activos líquidos Y estables (cuenta remunerada, fondo monetario), no en renta variable.',
+      },
+    ],
+  },
 ]
 
 /** Devuelve un término por su slug, o undefined si no existe */
