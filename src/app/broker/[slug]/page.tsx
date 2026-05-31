@@ -86,7 +86,7 @@ export default async function BrokerPage({
           description: broker.description,
           url: pageUrl,
           datePublished: '2026-05-24',
-          dateModified: '2026-05-24',
+          dateModified: '2026-05-30',
           articleSection: 'Análisis de brokers',
           keywords: [broker.name, `${broker.name} opinión`, `${broker.name} comisiones`, `${broker.name} España`, 'broker España'],
         }}

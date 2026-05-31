@@ -81,7 +81,7 @@ export default async function RoboadvisorPage({
           description: r.description,
           url: pageUrl,
           datePublished: '2026-05-24',
-          dateModified: '2026-05-24',
+          dateModified: '2026-05-30',
           articleSection: 'Análisis de roboadvisors',
           keywords: [r.name, `${r.name} opinión`, `${r.name} comisiones`, 'roboadvisor España'],
         }}
