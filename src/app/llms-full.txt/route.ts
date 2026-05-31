@@ -25,12 +25,12 @@ const BASE_URL = 'https://boglehub.com'
  *
  * Estructura:
  *   1. Header: descripción del sitio y autoridad
- *   2. Glosario completo (48 términos con definiciones)
- *   3. Catálogo de ETFs (68 con datos clave: ISIN, TER, fiscal)
- *   4. Hubs de categoría (13 con descripción)
- *   5. Artículos del blog (35 con excerpt + top FAQ)
- *   6. Comparativas ETF (50 con par y URL)
- *   7. Calculadoras (4 con descripción)
+ *   2. Glosario completo (con definiciones)
+ *   3. Catálogo de ETFs (con datos clave: ISIN, TER, fiscal)
+ *   4. Hubs de categoría (con descripción)
+ *   5. Artículos del blog (con excerpt + top FAQ)
+ *   6. Comparativas ETF (con par y URL)
+ *   7. Calculadoras (con descripción)
  *   8. Datos verificables (cifras citables agrupadas)
  *   9. Methodology
  *
