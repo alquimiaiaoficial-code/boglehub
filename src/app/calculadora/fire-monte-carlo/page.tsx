@@ -70,6 +70,44 @@ export default function MonteCarloPage() {
           applicationCategory: 'FinanceApplication',
         }}
       />
+      <JsonLd
+        schema={{
+          type: 'HowTo',
+          name: 'Cómo calcular cuándo puedes jubilarte con simulación Monte Carlo',
+          description:
+            'Calcula la probabilidad de alcanzar la independencia financiera con la calculadora FIRE de BogleHub: simula 1.000 escenarios de mercado y obtén tu tasa de éxito.',
+          url: `${BASE_URL}/calculadora/fire-monte-carlo`,
+          totalTime: 'PT5M',
+          estimatedCost: { currency: 'EUR', value: 0 },
+          steps: [
+            {
+              name: 'Introduce tu cartera actual',
+              text: 'Escribe el valor actual de tu cartera de inversión en euros. Es el punto de partida de la simulación.',
+              url: `${BASE_URL}/calculadora/fire-monte-carlo`,
+            },
+            {
+              name: 'Indica tu aportación mensual',
+              text: 'Cuánto añades a tu cartera cada mes. La calculadora proyecta la fase de acumulación hasta alcanzar tu objetivo.',
+              url: `${BASE_URL}/calculadora/fire-monte-carlo`,
+            },
+            {
+              name: 'Define tu gasto anual en la jubilación',
+              text: 'Cuánto necesitas gastar al año para vivir sin trabajar. La regla del 4% sugiere que tu cartera objetivo es 25 veces ese importe.',
+              url: `${BASE_URL}/calculadora/fire-monte-carlo`,
+            },
+            {
+              name: 'Ajusta los parámetros de mercado',
+              text: 'La calculadora usa por defecto 7% de rentabilidad esperada y 15% de desviación típica (volatilidad histórica del MSCI World). Puedes ajustarlos.',
+              url: `${BASE_URL}/calculadora/fire-monte-carlo`,
+            },
+            {
+              name: 'Interpreta la tasa de éxito',
+              text: 'El resultado muestra el porcentaje de los 1.000 escenarios en que tu cartera sobrevive hasta el final. Una tasa de éxito del 90-95% suele considerarse robusta.',
+              url: `${BASE_URL}/calculadora/fire-monte-carlo`,
+            },
+          ],
+        }}
+      />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 pt-8 pb-2">

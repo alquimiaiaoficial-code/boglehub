@@ -72,6 +72,39 @@ export default function IrpfVentaFondosPage() {
           applicationCategory: 'FinanceApplication',
         }}
       />
+      <JsonLd
+        schema={{
+          type: 'HowTo',
+          name: 'Cómo calcular el IRPF al vender fondos o ETFs en España',
+          description:
+            'Calcula cuánto pagarás a Hacienda antes de vender tus fondos indexados o ETFs con la calculadora de IRPF de BogleHub, con los tramos del ahorro 2026.',
+          url: `${BASE_URL}/calculadora/irpf-venta-fondos`,
+          totalTime: 'PT2M',
+          estimatedCost: { currency: 'EUR', value: 0 },
+          steps: [
+            {
+              name: 'Introduce el precio de venta',
+              text: 'Escribe el importe total que recibirás al vender tus participaciones (número de participaciones × precio actual).',
+              url: `${BASE_URL}/calculadora/irpf-venta-fondos`,
+            },
+            {
+              name: 'Introduce el precio de compra original',
+              text: 'El coste de adquisición total: lo que pagaste en su día por las participaciones que vas a vender, incluyendo comisiones. Con el criterio FIFO se usan las compras más antiguas primero.',
+              url: `${BASE_URL}/calculadora/irpf-venta-fondos`,
+            },
+            {
+              name: 'Añade pérdidas compensables si las tienes',
+              text: 'Si tienes pérdidas patrimoniales de otros activos en el mismo año, puedes compensarlas para reducir la base imponible. Introduce el importe de esas pérdidas.',
+              url: `${BASE_URL}/calculadora/irpf-venta-fondos`,
+            },
+            {
+              name: 'Lee el desglose por tramos',
+              text: 'La calculadora muestra la ganancia neta, qué parte cae en cada tramo del IRPF del ahorro (19%, 21%, 23%, 27%, 28%) y el total a pagar.',
+              url: `${BASE_URL}/calculadora/irpf-venta-fondos`,
+            },
+          ],
+        }}
+      />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 pt-10 pb-8">

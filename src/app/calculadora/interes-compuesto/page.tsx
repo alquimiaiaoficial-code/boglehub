@@ -70,6 +70,44 @@ export default function CompoundInterestPage() {
           applicationCategory: 'FinanceApplication',
         }}
       />
+      <JsonLd
+        schema={{
+          type: 'HowTo',
+          name: 'Cómo calcular el interés compuesto de tu inversión',
+          description:
+            'Calcula cuánto puede crecer tu inversión con aportaciones mensuales y rentabilidad anual usando la calculadora gratuita de BogleHub.',
+          url: `${BASE_URL}/calculadora/interes-compuesto`,
+          totalTime: 'PT3M',
+          estimatedCost: { currency: 'EUR', value: 0 },
+          steps: [
+            {
+              name: 'Introduce tu capital inicial',
+              text: 'Escribe cuánto dinero tienes ya ahorrado para invertir. Si empiezas desde cero, introduce 0.',
+              url: `${BASE_URL}/calculadora/interes-compuesto`,
+            },
+            {
+              name: 'Introduce tu aportación mensual',
+              text: 'Añade cuánto puedes aportar cada mes. Incluso 50-100€ al mes marcan una gran diferencia a largo plazo gracias al interés compuesto.',
+              url: `${BASE_URL}/calculadora/interes-compuesto`,
+            },
+            {
+              name: 'Elige la rentabilidad anual esperada',
+              text: 'Para renta variable global (MSCI World, S&P 500), la rentabilidad histórica ha sido del 7-10% nominal. Usa 5% para el escenario conservador, 7% para el moderado.',
+              url: `${BASE_URL}/calculadora/interes-compuesto`,
+            },
+            {
+              name: 'Indica el horizonte temporal',
+              text: 'Cuántos años quieres proyectar la inversión. Cuanto más largo sea el horizonte, mayor es el efecto del interés compuesto.',
+              url: `${BASE_URL}/calculadora/interes-compuesto`,
+            },
+            {
+              name: 'Lee el resultado año a año',
+              text: 'La calculadora muestra la proyección año a año: capital aportado, intereses acumulados y cartera total. El área sombreada es la rentabilidad generada por el interés compuesto.',
+              url: `${BASE_URL}/calculadora/interes-compuesto`,
+            },
+          ],
+        }}
+      />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 pt-8 pb-2">
