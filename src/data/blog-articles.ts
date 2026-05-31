@@ -695,6 +695,7 @@ Al ser entidad española, **retiene a cuenta** el 19 % sobre dividendos abonados
 - [AEAT — IRPF: Rendimientos del capital mobiliario](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2023.html) — Manual oficial de la Agencia Tributaria sobre tributación de dividendos e inversiones.
 - [JustETF — Comparativa domicilio fiscal de ETFs](https://www.justetf.com/es/) — Filtra por país de domicilio (Irlanda, Luxemburgo) para evaluar la eficiencia fiscal de cada ETF.
 - [MSCI — Metodología de índices y withholding tax](https://www.msci.com/real-time-index-data-search) — Datos oficiales sobre composición de índices MSCI World y ACWI.
+- [Cómo hacer un traspaso de fondos en España — BogleHub](/blog/como-hacer-traspaso-fondos-espana) — Guía paso a paso para ejecutar traspasos entre fondos sin tributar.
 `,
   },
   {
@@ -1427,6 +1428,8 @@ Para mucha gente, la respuesta más cómoda es: **fondos indexados como vehícul
 Circula la idea de que "antes los ETFs sí permitían traspaso y lo perdieron". La realidad práctica para el inversor de a pie es más simple: hoy, los ETFs no se benefician del régimen de traspaso entre instituciones de inversión colectiva del que sí gozan los fondos. No lo des por hecho ni planifiques tu cartera asumiendo lo contrario.
 
 Esto no convierte al ETF en mala opción. Si tu plan es comprar un ETF global y mantenerlo 30 años sin tocarlo, nunca activarás un traspaso y la diferencia es irrelevante. El traspaso solo importa si prevés moverte. Conócete a ti mismo y elige en consecuencia.
+
+Si te decides por los fondos, la guía [Cómo hacer un traspaso de fondos en España](/blog/como-hacer-traspaso-fondos-espana) explica paso a paso cómo se ejecuta en cada plataforma, cuánto tarda y los errores más comunes.
 
 ---
 
