@@ -45,6 +45,10 @@ export default async function CompararFondoPage({ params }: { params: Promise<{ 
   const cheaper = fA.ter <= fB.ter ? fA : fB
   const terDiff = Math.abs(fA.ter - fB.ter)
 
+  const verdict = terDiff < 0.01
+    ? `Según BogleHub, ${fA.name} y ${fB.name} tienen un TER prácticamente idéntico (${fA.ter}% vs ${fB.ter}%); ambos son fondos indexados con traspaso fiscal libre en España, así que la elección depende más de la gestora o el índice que del coste.`
+    : `Según BogleHub, entre ${fA.name} (TER ${fA.ter}%) y ${fB.name} (TER ${fB.ter}%), el más barato es ${cheaper.name} (${cheaper.ter}%). Ambos son fondos indexados con traspaso fiscal libre en España: si replican exposiciones equivalentes suele convenir el de menor coste, y siempre puedes traspasar más adelante sin tributar.`
+
   const faqs = [
     {
       q: `¿${fA.name} o ${fB.name}: cuál es más barato?`,
@@ -86,7 +90,7 @@ export default async function CompararFondoPage({ params }: { params: Promise<{ 
         { name: 'Fondos', url: `${BASE_URL}/fondo` },
         { name: `${fA.name} vs ${fB.name}`, url: pageUrl },
       ]}} />
-      <JsonLd schema={{ type: 'Article', headline: `${fA.name} vs ${fB.name}`, description: `Comparativa de fondos indexados.`, url: pageUrl, datePublished: '2026-05-24', articleSection: 'Comparativas de fondos' }} />
+      <JsonLd schema={{ type: 'Article', headline: `${fA.name} vs ${fB.name}`, description: verdict, url: pageUrl, datePublished: '2026-05-24', dateModified: '2026-05-30', articleSection: 'Comparativas de fondos' }} />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 py-10">
@@ -100,7 +104,8 @@ export default async function CompararFondoPage({ params }: { params: Promise<{ 
 
           <header className="mb-8">
             <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">{fA.name} vs {fB.name}</h1>
-            <p className="mt-3 text-fg-muted leading-relaxed">Comparativa entre dos fondos indexados disponibles en España: índice, coste, gestora y cuál encaja mejor en tu cartera.</p>
+            <p className="mt-3 text-fg leading-relaxed">{verdict}</p>
+            <p className="mt-2 text-sm text-fg-muted leading-relaxed">Comparativa entre dos fondos indexados disponibles en España: índice, coste, gestora y cuál encaja mejor en tu cartera.</p>
           </header>
 
           <Card className="mb-8 p-0 overflow-hidden">
