@@ -92,6 +92,20 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     example:
       'CSPX (iShares Core S&P 500 UCITS ETF) es un ETF UCITS domiciliado en Irlanda. SPY (SPDR S&P 500 ETF Trust) es el equivalente americano, no UCITS y no comprable directamente por inversores particulares en España.',
     relatedArticles: ['como-elegir-tu-primer-etf-espana-2026'],
+    faq: [
+      {
+        q: '¿Qué significa que un ETF sea UCITS?',
+        a: 'Significa que cumple la directiva europea UCITS, que regula los fondos y ETFs vendidos al inversor particular con reglas estrictas de diversificación (ningún activo pesa más del 10% del fondo), liquidez, gestión de riesgos y transparencia. Un ETF UCITS puede venderse en cualquier país de la UE con un nivel de protección uniforme.',
+      },
+      {
+        q: '¿Por qué no puedo comprar ETFs americanos como VTI o SPY desde España?',
+        a: 'Porque no son UCITS. La normativa europea MiFID II impide a los inversores particulares europeos comprar ETFs que no cumplan UCITS ni publiquen el documento de datos fundamentales en formato europeo. Por eso se usan equivalentes UCITS domiciliados en Irlanda o Luxemburgo (por ejemplo CSPX en lugar de SPY).',
+      },
+      {
+        q: '¿Los ETFs UCITS son más seguros?',
+        a: 'Ofrecen un marco de protección regulatoria uniforme y estricto (diversificación, liquidez, depositario independiente, transparencia), por lo que para el inversor particular europeo son la opción habitual y recomendada. No eliminan el riesgo de mercado —el valor puede subir o bajar—, pero sí estandarizan las garantías del vehículo.',
+      },
+    ],
   },
   {
     slug: 'isin',
@@ -596,6 +610,20 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     example:
       'Si en diciembre de 2025 tienes 60.000€ en ETFs en DEGIRO, debes presentar el Modelo 720 entre enero y marzo de 2026. Si los siguientes años el valor sube significativamente (más de 20.000€), debes volver a presentarlo.',
     relatedArticles: ['fiscalidad-etfs-espana-guia-completa'],
+    faq: [
+      {
+        q: '¿Cuándo hay que presentar el Modelo 720?',
+        a: 'Cuando eres residente fiscal en España y tienes en el extranjero más de 50.000€ en alguna de estas categorías: cuentas bancarias, valores/fondos/ETFs/acciones, o inmuebles. Se presenta entre enero y marzo del año siguiente. Por ejemplo, con 60.000€ en ETFs en DEGIRO a 31 de diciembre, lo presentas en el primer trimestre del año siguiente.',
+      },
+      {
+        q: '¿El Modelo 720 hace que pague más impuestos?',
+        a: 'No. Es una declaración informativa, no tributaria: solo informa a Hacienda de tus bienes en el extranjero, no genera ningún impuesto por sí misma. Las ganancias de tus ETFs tributan aparte, en el IRPF del ahorro, y solo cuando las vendes.',
+      },
+      {
+        q: '¿Hay que volver a presentar el Modelo 720 todos los años?',
+        a: 'Solo si el valor de algún grupo de bienes sube más de 20.000€ respecto a la última declaración, o si dejas de ser titular de algo ya declarado. Si nada cambia significativamente, no hay que repetirlo cada año. Las sanciones desproporcionadas fueron anuladas por el Tribunal Constitucional en 2022, pero la obligación de declarar persiste.',
+      },
+    ],
   },
   {
     slug: 'convenio-doble-imposicion',
