@@ -189,7 +189,7 @@ export default function SobrePage() {
                 <p className="text-xs text-fg-muted">Comparativas curadas</p>
               </Card>
               <Card>
-                <div className="text-2xl font-bold text-accent">4</div>
+                <div className="text-2xl font-bold text-accent">5</div>
                 <p className="text-xs text-fg-muted">Calculadoras gratuitas</p>
               </Card>
             </div>

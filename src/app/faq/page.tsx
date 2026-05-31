@@ -175,7 +175,7 @@ const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: '¿Qué calculadoras gratuitas ofrece BogleHub?',
-        a: 'BogleHub ofrece 4 calculadoras gratuitas: (1) Interés compuesto con aportaciones mensuales y proyección año a año, (2) FIRE con simulación Monte Carlo de 1.000 escenarios, (3) Roboadvisor vs cartera DIY que compara costes a 10/20/30 años, (4) IRPF venta de fondos y ETFs con tramos del ahorro 2026 y compensación de pérdidas. Todas en /calculadora.',
+        a: 'BogleHub ofrece 5 calculadoras gratuitas: (1) Interés compuesto con aportaciones mensuales y proyección año a año, (2) FIRE con simulación Monte Carlo de 1.000 escenarios, (3) Roboadvisor vs cartera DIY que compara costes a 10/20/30 años, (4) IRPF venta de fondos y ETFs con tramos del ahorro 2026 y compensación de pérdidas, (5) Comparador de brókers: coste anual en euros de Trade Republic, DEGIRO, MyInvestor, IBKR, Scalable y XTB. Todas en /calculadora.',
       },
     ],
   },

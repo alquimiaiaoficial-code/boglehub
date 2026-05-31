@@ -300,6 +300,7 @@ export function JsonLd({ schema }: { schema: Schema }) {
         'Calculadora FIRE con simulación Monte Carlo',
         'Calculadora de IRPF para venta de fondos',
         'Comparador de costes roboadvisor vs DIY',
+        'Comparador de brókers: coste anual en euros',
         'Catálogo de ETFs con grado fiscal para residentes en España',
         'Detección automática de cartera desde PDF de broker',
       ],

@@ -74,11 +74,11 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
 export const metadata: Metadata = {
   title: 'Calculadoras de inversión gratis 2026',
   description:
-    'Calculadoras gratis para inversores en España: interés compuesto, FIRE Monte Carlo, coste real de roboadvisors e IRPF al vender fondos y ETF. Sin registro.',
+    'Cinco calculadoras gratis para inversores en España: interés compuesto, FIRE Monte Carlo, roboadvisor vs DIY, IRPF al vender y comparador de brókers. Sin registro.',
   openGraph: {
     title: 'Calculadoras de inversión gratis 2026 | BogleHub',
     description:
-      'Cuatro herramientas gratis para tomar decisiones con números: interés compuesto, FIRE, coste de roboadvisors e IRPF al vender.',
+      'Cinco herramientas gratis para tomar decisiones con números: interés compuesto, FIRE, roboadvisor vs DIY, IRPF al vender y comparador de brókers.',
     locale: 'es_ES',
     images: [
       '/api/og?title=Calculadoras%20de%20inversi%C3%B3n&subtitle=Gratis%2C%20en%20espa%C3%B1ol%2C%20sin%20registro',
@@ -122,10 +122,10 @@ export default function CalculadoraHubPage() {
               Calculadoras de inversión para inversores en España
             </h1>
             <p className="mt-3 text-fg-muted leading-relaxed">
-              Cuatro herramientas gratis para tomar decisiones con números concretos en lugar
+              Cinco herramientas gratis para tomar decisiones con números concretos en lugar
               de con opiniones. Cuánto crece tu cartera, cuándo puedes retirarte, lo que
-              cuesta un roboadvisor y lo que paga Hacienda al vender. Sin registro y sin que
-              tus datos salgan de tu navegador.
+              cuesta un roboadvisor, lo que paga Hacienda al vender y cuánto cobra cada bróker
+              al año. Sin registro y sin que tus datos salgan de tu navegador.
             </p>
           </header>
         </div>
@@ -162,7 +162,7 @@ export default function CalculadoraHubPage() {
               Cómo están pensadas
             </h2>
             <p className="text-fg-muted leading-relaxed">
-              Las cuatro calculadoras están hechas para inversores particulares en España que
+              Las cinco calculadoras están hechas para inversores particulares en España que
               invierten a largo plazo en fondos indexados, ETF o a través de roboadvisors. Las
               cifras y supuestos están adaptados al contexto y a la fiscalidad española: la
               escala del ahorro del IRPF para 2026, el régimen de traspasos entre fondos, los
