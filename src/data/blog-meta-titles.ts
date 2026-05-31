@@ -24,4 +24,17 @@ export const BLOG_META_TITLES: Record<string, string> = {
   'cartera-boglehead-3-fondos-espana': 'Cartera Boglehead de 3 fondos para España (2026)',
   'mejores-etfs-espana-2026': 'Mejores ETFs para invertir en España (2026)',
   'mejores-etfs-nasdaq-100-espana': 'Mejores ETFs Nasdaq 100 para España (2026)',
+  // Segunda tanda — artículos sin metaTitle hasta ahora
+  'fiscalidad-etfs-espana-guia-completa': 'Fiscalidad de ETFs en España: guía completa',
+  'fire-espana-cuanto-necesitas': 'FIRE en España: cuánto necesitas de verdad',
+  'solapamiento-etfs-error-silencioso': 'Solapamiento de ETFs: el error silencioso',
+  'fondos-indexados-vs-etfs-espana': 'Fondos indexados vs ETFs en España (2026)',
+  'interes-compuesto-inversion': 'Interés compuesto: la única fuerza que importa',
+  'dca-vs-lump-sum-aportar-mensual': 'DCA vs lump sum: qué dice la evidencia (2026)',
+  'plan-de-pensiones-vs-fondo-indexado': 'Plan de pensiones vs fondo indexado (2026)',
+  'que-es-el-msci-world': 'Qué es el MSCI World y por qué invertir en él',
+  'como-empezar-a-invertir-poco-dinero': 'Cómo empezar a invertir con poco dinero',
+  'plan-pensiones-indexado-espana-2026': 'Plan de pensiones indexado en España (2026)',
+  'mejores-etfs-renta-fija-2026': 'Mejores ETFs de renta fija para España (2026)',
+  'etfs-dividendos-vivir-rentas-espana': 'ETFs de dividendos: vivir de rentas (2026)',
 }
