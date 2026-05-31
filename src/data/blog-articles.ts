@@ -2826,7 +2826,8 @@ Para esta cartera de 3 fondos, si operas en MyInvestor y tu horizonte es >10 añ
     excerpt:
       'Comparativa honesta de los tres brokers más usados por inversores indexados en España en 2026: comisiones reales, ETFs disponibles, seguridad y para qué perfil encaja cada uno.',
     publishedAt: '2026-05-21',
-    readingMinutes: 11,
+    updatedAt: '2026-05-30',
+    readingMinutes: 12,
     keywords: ['mejor broker ETF España 2026', 'DEGIRO vs Trade Republic', 'MyInvestor opiniones', 'broker inversión indexada España'],
     faq: [
       {
@@ -2941,15 +2942,33 @@ Para carteras superiores a 20.000 €, la diferencia de cobertura entre DEGIRO y
 
 ---
 
-## La recomendación práctica
+## El coste real: más allá de la comisión de compra
 
-**Si empiezas con menos de 500 €/mes y quieres automatizar**: Trade Republic. Sin dudarlo.
+La comisión por operación es lo más visible, pero el coste total de usar un broker para ETFs tiene cuatro componentes, y solo uno aparece en la portada del anuncio:
 
-**Si ya tienes una cartera consolidada (>100.000 €) y quieres máximo control**: DEGIRO o diversifica entre Trade Republic + DEGIRO.
+**1. Comisión de compraventa.** Trade Republic cobra 0 €; MyInvestor 0,20 € + 0,03 %; DEGIRO 0,50 € + 0,004 % (mínimo 0,90 €). Para una aportación mensual de 200 €, eso es 0 €, unos 0,26 € y 0,90 € respectivamente.
 
-**Si quieres mezclar ETFs con fondos indexados y aprovechar el traspaso fiscal**: MyInvestor para los fondos, Trade Republic o DEGIRO para los ETFs.
+**2. El TER del ETF — y aquí está la clave: no depende del broker.** El TER (coste anual del fondo) lo cobra la gestora del ETF, no el broker. Un VWCE tiene un TER del 0,22 % lo compres donde lo compres. Por tanto, el TER no debe influir en qué broker eliges: es idéntico en los tres. Lo que cambia de un broker a otro es todo lo demás.
 
-**Si tu cartera ya es de ETFs en Trade Republic y funciona**: no cambies de broker por cambiar. Los costes de fricción de mover una cartera rara vez compensan las diferencias en comisiones.
+**3. Conversión de divisa.** Si compras un ETF que cotiza en dólares o libras (por ejemplo, en la Bolsa de Londres), el broker convierte tus euros aplicando un margen que muchas veces no se ve. Se evita comprando la línea de cotización en euros del mismo ETF en Xetra (Frankfurt) o BME. MyInvestor opera en euros; en Trade Republic y DEGIRO conviene elegir la cotización en euros para no pagar conversión.
+
+**4. Custodia y conectividad.** Ninguno de los tres cobra comisión de custodia sobre ETFs. DEGIRO aplica una pequeña comisión de conectividad anual por cada bolsa extranjera en la que operas, que se evita concentrando las compras en una sola bolsa. Verifica las tarifas vigentes antes de operar.
+
+**El resumen del coste real**: para un inversor que compra ETFs en euros (Xetra) con aportaciones mensuales, Trade Republic sale gratis de principio a fin; MyInvestor cuesta unos céntimos por orden pero añade el traspaso fiscal de sus fondos; DEGIRO es muy barato pero exige cuidar la bolsa de cotización para no pagar ni conexión ni divisa. La diferencia entre ellos en comisiones puras es pequeña; la diferencia que de verdad importa a largo plazo es si quieres fondos indexados con traspaso fiscal (solo MyInvestor) o solo ETFs.
+
+---
+
+## El ganador por perfil
+
+**Principiante** — empiezas, aportas poco y a menudo, quieres simplicidad: **Trade Republic**. 0 €, planes de ahorro automáticos desde 1 € y una app a prueba de errores. Si prefieres arrancar con fondos indexados en vez de ETFs, MyInvestor desde 1 €.
+
+**Avanzado** — cartera consolidada, quieres control, varios mercados o tipos de órdenes: **DEGIRO**, o diversifica entre Trade Republic (ETFs core) y DEGIRO (acceso y control). El coste por orden es irrelevante en importes grandes; lo que pesa es el acceso y la flexibilidad.
+
+**FIRE / largo plazo con optimización fiscal** — rebalanceas, cambias de estrategia y piensas en décadas: **MyInvestor**. El traspaso fiscal libre entre fondos indexados te permite rebalancear y cambiar de fondo sin tributar, algo imposible con ETFs. En la fase de retirada, combinar fondos (con traspaso) y algún ETF de distribución es una estrategia habitual. Lee cómo funciona en la [guía de traspaso de fondos](/blog/como-hacer-traspaso-fondos-espana).
+
+**Si ya tienes cartera de ETFs en Trade Republic y funciona**: no cambies de broker por cambiar. Los costes de fricción de mover una cartera rara vez compensan las diferencias en comisiones.
+
+Para ver el coste anual exacto de cada broker según tu patrón real de inversión, usa el [comparador de brókers de BogleHub](/calculadora/comparar-brokers). Y si quieres una comparativa más amplia que incluya ING e Interactive Brokers, lee [mejor broker para ETFs en España 2026](/blog/mejor-broker-etfs-espana-2026).
 
 ---
 
