@@ -6734,4 +6734,153 @@ Las obligaciones de declaración pueden cambiar y tu caso puede tener particular
 - [Glosario: modelo 720 — BogleHub](/glosario/modelo-720) — Qué es la declaración informativa de bienes en el extranjero.
 `,
   },
+  {
+    slug: 'mejores-fondos-indexados-espana-2026',
+    title: 'Mejores fondos indexados en España 2026: la lista por categoría',
+    excerpt:
+      'Mejores fondos indexados en España por categoría: global, S&P 500, emergentes y bonos. TER, ISIN y la ventaja del traspaso fiscal sin tributar.',
+    publishedAt: '2026-05-31',
+    readingMinutes: 10,
+    keywords: ['mejores fondos indexados España', 'mejores fondos indexados 2026', 'fondos indexados MyInvestor', 'fondo indexado MSCI World', 'Amundi Prime Global'],
+    faq: [
+      {
+        q: '¿Cuáles son los mejores fondos indexados disponibles en España en 2026?',
+        a: 'Por coste, los más eficientes por categoría son: para renta variable global, el Amundi Prime Global (TER 0,05%); para S&P 500, el Amundi Prime USA (0,05%) o el Vanguard U.S. 500 Stock Index (0,10%); para emergentes, el Amundi Index MSCI Emerging Markets (0,20%); para renta fija global, el Vanguard Global Bond Index EUR Hedged (0,15%). Todos disponibles en MyInvestor desde 1€ con traspaso fiscal libre.',
+      },
+      {
+        q: '¿Por qué elegir fondos indexados en lugar de ETFs en España?',
+        a: 'La razón principal es el traspaso fiscal: los fondos de inversión permiten mover dinero de un fondo a otro sin tributar, mientras que vender un ETF para comprar otro realiza la ganancia y tributa ese año. Para quien prevé rebalancear o cambiar de estrategia a lo largo de los años, los fondos indexados son fiscalmente más eficientes. Además, permiten aportaciones automáticas desde 1€ y compra a valor liquidativo sin spread.',
+      },
+      {
+        q: '¿Dónde se compran los fondos indexados en España?',
+        a: 'La plataforma más popular para fondos indexados de bajo coste en España es MyInvestor, que ofrece la gama de Vanguard, Amundi y Fidelity sin comisión de compra ni custodia y con traspaso libre. Otras opciones son Renta 4, Selfbank/Singular Bank y algunos roboadvisors que usan estos fondos por dentro. Los brokers de solo ETFs como Trade Republic o DEGIRO no ofrecen fondos indexados.',
+      },
+      {
+        q: '¿Qué TER es razonable para un fondo indexado global?',
+        a: 'En 2026, un fondo indexado global de bajo coste debería tener un TER por debajo del 0,20% anual. El más barato disponible en España es el Amundi Prime Global con un 0,05%. Por encima del 0,30% para un índice global estándar es difícil de justificar habiendo alternativas tan baratas. Recuerda que el TER se descuenta automáticamente del valor liquidativo cada día.',
+      },
+      {
+        q: '¿Un solo fondo indexado global es suficiente para mi cartera?',
+        a: 'Para la parte de renta variable, sí: un fondo indexado global como el Amundi Prime Global o el Vanguard Global Stock cubre los mercados desarrollados mundiales en un solo producto. Si quieres añadir emergentes y renta fija, una cartera de 2-3 fondos (global + emergentes + bonos) es la versión clásica Boglehead. La ventaja es que puedes rebalancear entre ellos con traspaso fiscal, sin tributar.',
+      },
+    ],
+    content: `# Mejores fondos indexados en España 2026: la lista por categoría
+
+Los fondos indexados son, para muchos inversores españoles, la mejor forma de construir una cartera a largo plazo — incluso por delante de los ETFs. La razón no es el coste (hoy es similar), sino el **traspaso fiscal**: puedes mover dinero de un fondo a otro sin tributar, algo que los ETFs no permiten. Esta guía recoge los mejores fondos indexados disponibles en España en 2026, organizados por categoría, con su TER e ISIN.
+
+Todos los datos de TER e ISIN de esta guía son los publicados por las gestoras; verifícalos siempre en la ficha oficial antes de invertir, ya que pueden cambiar.
+
+> **En resumen**: para renta variable global, el Amundi Prime Global (TER 0,05%) es el más barato. Para S&P 500, el Amundi Prime USA (0,05%). Para emergentes, el Amundi Index MSCI Emerging Markets (0,20%). Para renta fija global, el Vanguard Global Bond EUR Hedged (0,15%). Casi todos disponibles en MyInvestor desde 1€ con traspaso fiscal libre.
+
+---
+
+## Por qué fondos indexados (y no ETFs) en España
+
+La diferencia decisiva entre un fondo indexado y un ETF en España no es el coste ni la rentabilidad —que son prácticamente idénticos para el mismo índice—, sino la fiscalidad:
+
+- **Traspaso fiscal libre**: puedes mover dinero entre fondos sin tributar. Rebalanceas, cambias de gestora o de estrategia sin que Hacienda toque tu ganancia hasta que reembolses de verdad. Con ETFs, cada venta realiza la plusvalía y tributa ese año.
+- **Aportaciones desde 1€**: la mayoría permite aportaciones automáticas de cualquier importe.
+- **Compra a valor liquidativo**: sin spread de mercado ni precio en tiempo real que vigilar.
+
+La contrapartida: los fondos indexados se compran en plataformas concretas (sobre todo MyInvestor), no en cualquier broker. Si quieres entender la decisión a fondo, lee [fondos indexados o ETFs: la comparación definitiva](/blog/fondos-indexados-vs-etfs-espana).
+
+---
+
+## Renta variable global (mercados desarrollados)
+
+La base de casi cualquier cartera. Replican el MSCI World o un índice equivalente de grandes y medianas empresas de países desarrollados.
+
+| Fondo | Índice | TER | ISIN |
+|---|---|---|---|
+| **Amundi Prime Global** | Solactive GBS Global Markets | **0,05 %** | LU1931974692 |
+| Fidelity MSCI World Index | MSCI World | 0,12 % | IE00BYX5MX67 |
+| Vanguard Global Stock Index | MSCI World | 0,18 % | IE00B03HCZ61 |
+
+El **Amundi Prime Global** es el fondo indexado global más barato disponible al inversor particular en España. Su índice (Solactive GBS) es funcionalmente equivalente al MSCI World. Lo analizamos en detalle en [Amundi Prime Global: análisis completo](/blog/amundi-prime-global-analisis) y tiene su [ficha técnica aquí](/fondo/amundi-prime-global).
+
+---
+
+## S&P 500 y EE.UU.
+
+Para quien quiere concentrar en el mercado estadounidense.
+
+| Fondo | Índice | TER | ISIN |
+|---|---|---|---|
+| **Amundi Prime USA** | Solactive GBS United States | **0,05 %** | LU2050633988 |
+| Vanguard U.S. 500 Stock Index | S&P 500 | 0,10 % | IE0032126645 |
+
+El **Amundi Prime USA** replica el mercado estadounidense por solo un 0,05%. El Vanguard U.S. 500 sigue el S&P 500 clásico con un 0,10%. Ficha del [Vanguard U.S. 500 Stock Index](/fondo/vanguard-us-500-stock-index-fund).
+
+---
+
+## Mercados emergentes
+
+El complemento habitual del fondo global para cubrir China, India, Taiwán, Brasil y otros emergentes.
+
+| Fondo | Índice | TER | ISIN |
+|---|---|---|---|
+| **Amundi Index MSCI Emerging Markets** | MSCI Emerging Markets | **0,20 %** | LU0996177134 |
+| Fidelity Emerging Markets Index | MSCI Emerging Markets | 0,20 % | IE00BYX5L514 |
+| Vanguard Emerging Markets Stock Index | MSCI Emerging Markets | 0,23 % | IE0031786142 |
+
+Los tres replican el mismo índice MSCI Emerging Markets. En una cartera Boglehead de 3 fondos, los emergentes suelen ocupar entre el 10% y el 20% de la renta variable.
+
+---
+
+## Renta fija
+
+El contrapeso de la renta variable: estabilidad y menor volatilidad.
+
+| Fondo | Índice | TER | ISIN |
+|---|---|---|---|
+| **Vanguard Global Bond Index EUR Hedged** | Bloomberg Global Aggregate (EUR Hedged) | 0,15 % | IE00B18GC888 |
+| Amundi Index Eurozone Government Bond | Bonos gobierno eurozona | 0,15 % | LU1437015735 |
+
+El **Vanguard Global Bond EUR Hedged** es la opción global para la parte conservadora, con cobertura de divisa a euros (recomendable en renta fija). El de Amundi se centra en deuda pública de la eurozona. Para entender por qué la cobertura de divisa importa en bonos pero no en acciones, lee [riesgo divisa en ETFs](/blog/riesgo-divisa-etf-hedged-espana).
+
+---
+
+## Otras regiones: eurozona y Japón
+
+Para quien quiera sobreponderar regiones concretas.
+
+| Fondo | Índice | TER | ISIN |
+|---|---|---|---|
+| Vanguard Eurozone Stock Index | MSCI EMU | 0,16 % | IE0007987690 |
+| **Amundi Prime Japan** | Solactive GBS Japan | **0,05 %** | LU2089238385 |
+
+---
+
+## Cómo elegir tus fondos indexados
+
+1. **Empieza por la base global.** Para la mayoría, un solo fondo global de bajo coste (Amundi Prime Global o Vanguard Global Stock) cubre la renta variable de mercados desarrollados.
+2. **Añade emergentes si quieres exposición completa al mundo** (10-20% de la renta variable).
+3. **Añade renta fija según tu perfil de riesgo** (desde 0% para horizontes muy largos hasta 40-60% cerca de la jubilación).
+4. **Fíjate en el TER, no en rentabilidades pasadas.** Para el mismo índice, el fondo más barato gana a largo plazo: el coste es lo único que conoces con certeza.
+
+La gran ventaja: como todos permiten traspaso fiscal, puedes empezar simple (un fondo global) e ir añadiendo o rebalanceando con el tiempo sin coste fiscal. Cómo se hace, paso a paso, en la [guía de traspaso de fondos](/blog/como-hacer-traspaso-fondos-espana).
+
+---
+
+## La cartera mínima de fondos indexados
+
+La versión más sencilla de una cartera Boglehead con fondos:
+
+- **80 % Amundi Prime Global** (renta variable global, TER 0,05%)
+- **20 % Vanguard Global Bond EUR Hedged** (renta fija global, TER 0,15%)
+
+TER ponderado: aproximadamente 0,07% anual. Difícil de batir en coste. Para una versión de tres fondos, añade un fondo de emergentes (por ejemplo, 70% global / 10% emergentes / 20% bonos). Más sobre carteras en la [cartera Boglehead de 3 fondos](/blog/cartera-boglehead-3-fondos-espana).
+
+Una vez tengas tu cartera, puedes [analizarla gratis](/analyzer) para ver tu diversificación real, el TER ponderado y posibles solapamientos. Sin registro y con los datos solo en tu navegador.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Catálogo de fondos indexados — BogleHub](/fondo) — Fichas individuales con TER, ISIN, índice y plataformas de cada fondo.
+- [Fondos indexados o ETFs en España — BogleHub](/blog/fondos-indexados-vs-etfs-espana) — La comparación completa para decidir el vehículo.
+- [Cómo hacer un traspaso de fondos — BogleHub](/blog/como-hacer-traspaso-fondos-espana) — La ventaja fiscal clave de los fondos, paso a paso.
+- [MyInvestor — Fondos indexados](https://myinvestor.es) — Plataforma con la mayor selección de fondos indexados de bajo coste en España (verifica TER y condiciones actuales).
+`,
+  },
 ]

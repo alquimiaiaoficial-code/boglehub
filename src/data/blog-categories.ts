@@ -93,6 +93,7 @@ export const ARTICLE_CATEGORY: Record<string, BlogCategory> = {
   'solapamiento-etfs-error-silencioso': 'etfs-especificos',
 
   // Carteras y asignación
+  'mejores-fondos-indexados-espana-2026': 'etfs-especificos',
   'cartera-boglehead-3-fondos-espana': 'carteras',
   'cartera-permanente-harry-browne-espana': 'carteras',
   'como-rebalancear-cartera-indexada': 'carteras',

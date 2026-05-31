@@ -264,4 +264,10 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'como-hacer-traspaso-fondos-espana',
     'fondos-indexados-vs-etfs-espana',
   ],
+  'mejores-fondos-indexados-espana-2026': [
+    'fondos-indexados-vs-etfs-espana',
+    'amundi-prime-global-analisis',
+    'como-hacer-traspaso-fondos-espana',
+    'cartera-boglehead-3-fondos-espana',
+  ],
 }

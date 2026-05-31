@@ -43,4 +43,5 @@ export const BLOG_META_TITLES: Record<string, string> = {
   'scalable-capital-opinion-2026': 'Scalable Capital: opinión completa (2026)',
   'mejor-broker-etfs-espana-2026': 'Mejor broker para ETFs en España (2026)',
   'modelo-d6-etf-espana': 'Modelo D6 y ETFs: ¿hay que presentarlo? (2026)',
+  'mejores-fondos-indexados-espana-2026': 'Mejores fondos indexados en España (2026)',
 }
