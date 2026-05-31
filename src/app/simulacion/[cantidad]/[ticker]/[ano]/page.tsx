@@ -47,7 +47,7 @@ export async function generateMetadata({
   const final = calculateFinalValue(amount, cagr, years)
 
   return {
-    title: `Si hubiera invertido ${formatEUR(amount)} en ${etf.ticker} en ${year}: ${formatEUR(final)} en 2024`,
+    title: `${formatEUR(amount)} en ${etf.ticker} desde ${year}: ${formatEUR(final)} hoy`,
     description: `Análisis histórico: invertir ${formatEUR(amount)} en ${etf.name} (${etf.ticker}) en ${year} habría dado ${formatEUR(final)} a finales de 2024 (CAGR ${(cagr * 100).toFixed(1)}% anual).`,
     openGraph: {
       locale: 'es_ES',
