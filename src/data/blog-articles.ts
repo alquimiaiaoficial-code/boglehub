@@ -6300,4 +6300,136 @@ Para comparar XTB con los otros brokers populares según tu patrón real de inve
 - [DEGIRO vs Trade Republic vs MyInvestor — BogleHub](/blog/degiro-vs-trade-republic-vs-myinvestor-2026) — Comparativa completa de los tres brokers más usados por inversores indexados.
 `,
   },
+  {
+    slug: 'scalable-capital-opinion-2026',
+    title: 'Scalable Capital: opinión y análisis para inversores en España (2026)',
+    excerpt:
+      'Scalable Capital ofrece 0€ en ETFs con plan Prime (suscripción mensual), cuenta remunerada de hasta el 4% TAE y regulación BaFin alemán. Análisis de cuándo compensa el plan de pago frente a Trade Republic o DEGIRO.',
+    publishedAt: '2026-05-30',
+    readingMinutes: 7,
+    keywords: ['Scalable Capital opinión', 'Scalable Capital España', 'Scalable Capital Prime', 'Scalable Capital ETFs 2026', 'Scalable Capital vs Trade Republic'],
+    faq: [
+      {
+        q: '¿Vale la pena el plan Prime de Scalable Capital?',
+        a: 'Depende del volumen de operaciones y del saldo en cuenta. Si haces varias operaciones al mes y tienes más de 10.000-20.000€ en cuenta remunerada al 4%, el ahorro en comisiones y los intereses pueden compensar la suscripción mensual (~4,99€). Para una única aportación mensual de unos cientos de euros, Trade Republic sin suscripción es más sencillo y barato.',
+      },
+      {
+        q: '¿Es seguro Scalable Capital?',
+        a: 'Sí. Scalable Capital es un neobanco alemán con licencia bancaria completa, regulado por el BaFin (el regulador alemán de mercados financieros). Los depósitos en euros hasta 100.000€ están cubiertos por el Fondo de Garantía de Depósitos alemán. Las inversiones (ETFs, acciones) están custodiadas como patrimonio separado del broker hasta 20.000€ adicionales por el Fondo de Garantía de Inversiones alemán.',
+      },
+      {
+        q: '¿Cuánto rinde la cuenta remunerada de Scalable Capital?',
+        a: 'Con el plan Prime, Scalable Capital ofrecía hasta el 4% TAE en 2026, una de las tasas más altas del mercado europeo. Sin plan Prime, la tasa es inferior. Las condiciones varían con la política del BCE; verifica la tasa vigente en la web oficial antes de abrir cuenta.',
+      },
+      {
+        q: '¿Scalable Capital tiene planes de ahorro automáticos?',
+        a: 'Sí, Scalable Capital tiene planes de inversión periódicos (Sparplan) en ETFs disponibles en España. Con el plan Prime, los planes de ahorro no tienen comisión adicional. Sin Prime, puede haber comisión de 0,99€ por ejecución del plan.',
+      },
+      {
+        q: '¿Scalable Capital vs Trade Republic: cuál elegir?',
+        a: 'Trade Republic: más simple, 0€ sin suscripción, ideal para aportación mensual única pequeña. Scalable Capital Prime: tiene sentido si combinas operaciones frecuentes (más de 5 al mes) con saldo alto en cuenta remunerada (>15.000€). Ambos son seguros, alemanes y regulados por BaFin.',
+      },
+    ],
+    content: `# Scalable Capital: opinión y análisis para inversores en España (2026)
+
+Scalable Capital es quizás el broker europeo menos conocido entre los inversores indexados españoles, pero merece atención: es el único con un modelo de suscripción mensual que puede hacer que las comisiones por ETFs desaparezcan por completo, y ofrece una de las cuentas remuneradas más altas del mercado. Fundado en Múnich en 2014, tiene licencia bancaria alemana completa y está disponible en España.
+
+---
+
+## Quién es Scalable Capital
+
+Scalable Capital nació como roboadvisor antes de evolucionar a broker. Hoy ofrece ambos servicios. La empresa está regulada por el BaFin (Bundesanstalt für Finanzdienstleistungsaufsicht), el regulador financiero alemán, y tiene licencia bancaria completa — igual que Trade Republic. Está disponible en Alemania, Austria, Francia, Italia, España y otros países de la UE.
+
+Su diferencia más notable frente a Trade Republic o DEGIRO es el modelo de precios: en lugar de cobrar por operación, ofrece **planes de suscripción mensual** que dan acceso a operaciones ilimitadas.
+
+---
+
+## El modelo de suscripción: plan gratuito vs plan Prime
+
+**Plan gratuito (Free)**:
+- Compra y venta de ETFs: **0,99€ por operación**
+- Cuenta remunerada: tipo más bajo
+- Planes de ahorro en ETFs: 0,99€ por ejecución
+
+**Plan Prime** (~4,99€/mes, verificar precio vigente en web):
+- Compra y venta de ETFs: **0€** (ilimitadas)
+- Cuenta remunerada: hasta el 4% TAE
+- Planes de ahorro en ETFs: 0€
+
+### ¿Cuándo compensa el plan Prime?
+
+El break-even del plan Prime depende de cuántas operaciones hagas y cuánto tengas en cuenta remunerada.
+
+**Por operaciones**: si haces más de 5 compras al mes, el plan Prime ya ahorra dinero: 5 × 0,99€ = 4,95€ de comisiones frente a 4,99€ de suscripción.
+
+**Por cuenta remunerada**: si tienes 15.000€ en cuenta al 4% TAE frente al 2% de Trade Republic, la diferencia de intereses es 300€/año (25€/mes) — muy por encima del coste de la suscripción. Para saldos grandes, el Prime se amortiza solo.
+
+**Conclusión práctica**:
+
+| Perfil | Veredicto |
+|---|---|
+| Aportación mensual única pequeña (<500€) | Trade Republic más sencillo |
+| 5+ operaciones al mes | Prime puede compensar |
+| >15.000€ en cuenta remunerada | Prime compensa por intereses |
+| Aportación mensual + saldo alto | Prime claramente ganador |
+
+---
+
+## Cuenta remunerada: la más alta del mercado
+
+Con el plan Prime, Scalable Capital ofrece hasta el **4% TAE** sobre el saldo en cuenta en euros (tipo variable, ligado a la política del BCE). Esta tasa supera a Trade Republic (~2-2,5%) y a MyInvestor (~2% TAE el primer año con condiciones).
+
+La cuenta remunerada de Scalable Capital no tiene límite de saldo remunerado, lo que la hace especialmente interesante para inversores con liquidez alta entre operaciones.
+
+Verificar siempre la tasa vigente en la web oficial — cambia con las decisiones del BCE.
+
+---
+
+## Planes de ahorro automáticos
+
+Scalable Capital tiene **Sparplans** (planes de ahorro periódicos) disponibles en España sobre más de 2.500 ETFs. Con el plan Prime, la ejecución de estos planes no tiene comisión adicional. Sin Prime, cada ejecución cuesta 0,99€.
+
+Para el inversor indexado que quiere DCA mensual automático con plan Prime, Scalable Capital es una alternativa sólida a Trade Republic.
+
+---
+
+## Seguridad
+
+**Regulación**: BaFin alemán — mismo regulador que Trade Republic, uno de los más exigentes de Europa.
+
+**Licencia bancaria completa**: Scalable Capital obtuvo licencia bancaria en 2021. Los depósitos están cubiertos por el Fondo de Garantía de Depósitos alemán hasta **100.000€** (igual que Trade Republic, más que DEGIRO con 20.000€ y mejor que la media).
+
+**Inversiones**: custodiadas como patrimonio separado del banco, cubierto por el Fondo de Garantía de Inversiones hasta 20.000€ adicionales.
+
+---
+
+## Limitaciones
+
+**Sin fondos indexados**: igual que Trade Republic y DEGIRO, Scalable Capital solo ofrece ETFs. No puedes comprar fondos con [traspaso fiscal libre entre fondos](/blog/como-hacer-traspaso-fondos-espana) como en MyInvestor.
+
+**El coste del plan Prime hay que ganarlo**: si no operas con frecuencia ni tienes saldo alto, el plan Free con 0,99€ por operación no es competitivo con Trade Republic (0€ siempre).
+
+**Menos conocido en España**: la comunidad Boglehead española habla más de Trade Republic, MyInvestor y DEGIRO. El soporte y la documentación en español son más limitados.
+
+---
+
+## Scalable Capital vs Trade Republic: la decisión práctica
+
+Si tienes que elegir entre los dos brokers alemanes regulados por BaFin:
+
+- **Trade Republic**: elige si quieres simplicidad máxima, operaciones siempre a 0€ sin suscripción y cuenta remunerada sin condiciones. Ideal para aportaciones pequeñas y periódicas sin más.
+- **Scalable Prime**: elige si haces varias operaciones al mes, tienes saldo considerable en cuenta remunerada o quieres la tasa de interés más alta del mercado.
+
+Para ver el coste real de cada broker con tus datos concretos, usa el [comparador de brókers de BogleHub](/calculadora/comparar-brokers).
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Scalable Capital — Web oficial España](https://es.scalable.capital) — Planes, comisiones y tasa vigente de la cuenta remunerada.
+- [BaFin — Registro de entidades reguladas](https://www.bafin.de) — Verifica el registro de Scalable Capital como entidad supervisada en Alemania.
+- [DEGIRO opinión 2026 — BogleHub](/blog/degiro-opinion-2026) — Análisis del broker técnico con mayor acceso a mercados.
+- [Trade Republic opinión 2026 — BogleHub](/blog/trade-republic-opinion-2026) — El principal competidor de Scalable para el inversor indexado en España.
+`,
+  },
 ]

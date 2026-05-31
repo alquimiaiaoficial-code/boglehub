@@ -18,6 +18,7 @@ const BROKER_REVIEW_ARTICLES: Record<string, { slug: string; label: string }> = 
   'myinvestor':     { slug: 'myinvestor-opinion-2026',     label: 'MyInvestor: análisis completo 2026' },
   'degiro':         { slug: 'degiro-opinion-2026',          label: 'DEGIRO: análisis completo 2026' },
   'xtb':            { slug: 'xtb-opinion-2026',             label: 'XTB: análisis completo 2026' },
+  'scalable-capital': { slug: 'scalable-capital-opinion-2026', label: 'Scalable Capital: análisis completo 2026' },
 }
 
 export function generateStaticParams() {
