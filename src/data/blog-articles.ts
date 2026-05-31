@@ -6135,4 +6135,169 @@ Para una comparativa numérica detallada del coste anual de cada broker según t
 - [DEGIRO vs Trade Republic vs MyInvestor — BogleHub](/blog/degiro-vs-trade-republic-vs-myinvestor-2026) — Comparativa detallada de los tres brokers más usados por inversores indexados en España.
 `,
   },
+  {
+    slug: 'xtb-opinion-2026',
+    title: 'XTB: opinión y análisis completo para inversores en España (2026)',
+    excerpt:
+      'XTB cobra 0€ en ETFs hasta 100.000€/mes, está regulado por la CNMV y ofrece una de las cuentas remuneradas más altas del mercado español. Análisis honesto de comisiones, seguridad, plataforma y para quién tiene sentido.',
+    publishedAt: '2026-05-30',
+    readingMinutes: 8,
+    keywords: ['XTB opinión', 'XTB seguridad', 'XTB ETFs España 2026', 'XTB cuenta remunerada', 'XTB vs Trade Republic'],
+    faq: [
+      {
+        q: '¿Es seguro XTB para invertir en España?',
+        a: 'Sí. XTB tiene sucursal regulada por la CNMV en España, cotiza en la Bolsa de Varsovia (empresa pública) y los activos de clientes están segregados del balance del broker. El Fondo de Garantía de Inversiones polaco cubre hasta 20.000€. La supervisión directa de la CNMV es una ventaja importante para inversores que prefieren regulador español.',
+      },
+      {
+        q: '¿XTB cobra comisión por comprar ETFs?',
+        a: '0€ hasta 100.000€ de volumen mensual en ETFs. Por encima de ese umbral, cobra 0,2% del importe con un mínimo de 10€ por operación. Para el inversor particular que aporta mensualmente unos cientos o pocos miles de euros, XTB equivale en la práctica a 0€ de comisión.',
+      },
+      {
+        q: '¿Cuál es la cuenta remunerada de XTB en 2026?',
+        a: 'La cuenta remunerada de XTB en euros suele estar en torno al 3% TAE en 2026, una de las más altas del mercado europeo de brokers. Las condiciones específicas (saldo máximo, requisitos) cambian periódicamente; verifica siempre las condiciones actuales en la web oficial antes de abrir cuenta.',
+      },
+      {
+        q: '¿XTB ofrece planes de ahorro automáticos como Trade Republic?',
+        a: 'Sí. XTB tiene planes de inversión automáticos (denominados "planes de inversión") desde 15€ al mes. Permiten programar compras periódicas en ETFs. La automatización es similar a Trade Republic, aunque la plataforma es algo más técnica.',
+      },
+      {
+        q: '¿Para quién es mejor XTB que Trade Republic?',
+        a: 'XTB puede tener ventaja cuando: quieres regulación directa de la CNMV española, buscas la cuenta remunerada más alta del mercado, ya usas o necesitas CFDs o forex y quieres tenerlo todo en una plataforma, o prefieres una plataforma más completa (xStation) con más herramientas de análisis. Para inversión indexada pura con aportaciones pequeñas, Trade Republic es más sencillo.',
+      },
+    ],
+    content: `# XTB: opinión y análisis completo para inversores en España (2026)
+
+XTB es uno de los brokers con mayor crecimiento en España en los últimos años. Fundado en Polonia en 2002, cotiza en la Bolsa de Varsovia (empresa pública, con obligación de transparencia financiera) y tiene sucursal directamente supervisada por la CNMV en España. Su propuesta para el inversor indexado: 0€ de comisión en ETFs hasta 100.000€ de volumen mensual y una de las cuentas remuneradas más altas del mercado europeo.
+
+---
+
+## Quién es XTB
+
+XTB S.A. tiene su sede en Varsovia, cotiza en la Bolsa de Varsovia desde 2016 y está regulado por la Comisión de Valores Mobiliarios de Polonia (KNF). En España, la sucursal XTB S.A. sucursal en España está supervisada directamente por la **CNMV**, lo que significa que el regulador español tiene jurisdicción directa sobre la operativa en España.
+
+Esto es diferente a DEGIRO (regulación holandesa) o Trade Republic (regulación alemana). Para inversores que prefieren tener a la CNMV como regulador de referencia, XTB es una de las pocas opciones con 0€ en ETFs.
+
+XTB ofrece acceso a:
+- ETFs (más de 350 ETFs UCITS disponibles)
+- Acciones de más de 3.000 empresas
+- CFDs sobre índices, materias primas, forex y criptomonedas
+- Cuenta de inversión tradicional
+
+**Importante**: los CFDs son productos de alto riesgo, sin nada que ver con la inversión indexada. Este análisis se centra en el uso de XTB para ETFs e inversión a largo plazo.
+
+---
+
+## Comisiones para ETFs
+
+**0€ hasta 100.000€ de volumen mensual.**
+
+Esta es la propuesta principal: si tus compras de ETFs en un mes no superan los 100.000€, no pagas comisión de compra. Para el inversor particular que aporta 200, 500 o 2.000€ al mes, esto equivale en la práctica a 0€ todo el año.
+
+Por encima de 100.000€ de volumen mensual, la comisión es del 0,2% del importe (mínimo 10€ por operación).
+
+**Comparación práctica:**
+
+| Importe de orden | XTB | Trade Republic | DEGIRO |
+|---|---|---|---|
+| 200€ | 0€ | 0€ | 0,90€ |
+| 1.000€ | 0€ | 0€ | 0,54€ |
+| 5.000€ | 0€ | 0€ | 0,70€ |
+| 50.000€ | 0€ | 0€ | 2,50€ |
+
+Para la mayoría de inversores particulares, XTB y Trade Republic empatan en comisiones a 0€.
+
+---
+
+## La cuenta remunerada: una de las más altas del mercado
+
+En 2026, XTB ofrece una cuenta de ahorro en euros con **~3% TAE**, sin condiciones de nómina ni domiciliación. Las condiciones específicas cambian con la política del BCE, así que verifica siempre la tasa vigente en la web oficial antes de tomar decisiones.
+
+Esta tasa supera generalmente a la de Trade Republic (~2-2,5% TAE) y a la de MyInvestor (~2% TAE el primer año con condiciones). Para quien tiene liquidez que no quiere invertir aún, esta diferencia puede ser relevante.
+
+---
+
+## Planes de inversión automáticos
+
+XTB tiene **planes de inversión periódicos** desde 15€ al mes en ETFs. Puedes programar compras automáticas con la frecuencia que elijas, similar a los planes de ahorro de Trade Republic.
+
+La automatización cubre la mayoría de ETFs UCITS disponibles en la plataforma. Para el inversor Boglehead que quiere implementar DCA mensual sin intervenir, XTB permite hacerlo.
+
+---
+
+## La plataforma xStation
+
+XTB usa xStation como plataforma propia, disponible en web y en app. Es más completa que la app de Trade Republic (que es deliberadamente simple), con:
+- Pantallas personalizables
+- Indicadores técnicos (más relevantes para traders que para inversores indexados)
+- Noticias financieras integradas
+- Calendario económico
+
+Para el inversor indexado puro que busca simplicidad, xStation tiene más funciones de las que necesita. Para quien combina ETFs con otros productos (acciones directas, análisis), es más versátil.
+
+---
+
+## Seguridad
+
+**Regulación**: sucursal española supervisada por CNMV. La empresa matriz XTB S.A. está regulada por KNF en Polonia.
+
+**Cotización bursátil**: XTB cotiza en la Bolsa de Varsovia, lo que implica obligaciones de transparencia y auditoría propias de una empresa pública.
+
+**Segregación de activos**: los activos de clientes están separados del balance de XTB. En caso de insolvencia del broker, los activos no forman parte de la masa concursal.
+
+**Fondo de Garantía**: el Fondo de Garantía de Inversiones polaco cubre hasta 20.000€ por cliente (mismo nivel que DEGIRO, inferior a Trade Republic con 100.000€ y MyInvestor con 100.000€).
+
+---
+
+## XTB vs Trade Republic: cómo elegir
+
+| Característica | XTB | Trade Republic |
+|---|---|---|
+| Comisión ETFs | 0€ (hasta 100k€/mes) | 0€ (sin límite) |
+| Planes de ahorro automáticos | ✓ (desde 15€) | ✓ (desde 1€) |
+| Cuenta remunerada | ~3% TAE | ~2-2,5% TAE |
+| Regulador en España | CNMV (directo) | BaFin Alemania |
+| Fondo de garantía | 20.000€ (KNF Polonia) | 100.000€ (ESIF EU) |
+| Fondos indexados | ✗ | ✗ |
+| Plataforma | xStation (más completa) | App simple (más fácil) |
+| Acceso a mercados | Amplio (acciones, ETFs, CFDs) | ETFs y acciones europeas/US |
+
+**Elige XTB si:**
+- La regulación directa de CNMV en España es importante para ti
+- Quieres la cuenta remunerada más alta del mercado
+- Ya usas o te interesan CFDs/forex y quieres una sola plataforma
+- Prefieres una plataforma con más herramientas de análisis
+
+**Elige Trade Republic si:**
+- Quieres la máxima simplicidad y la app más intuitiva
+- Priorizas la mayor cobertura del fondo de garantía (100.000€)
+- Quieres planes de ahorro desde 1€ (XTB requiere mínimo 15€)
+
+---
+
+## Limitaciones de XTB para el inversor indexado
+
+**No ofrece fondos indexados**: igual que Trade Republic, XTB solo tiene ETFs. Si quieres aprovechar el [traspaso fiscal entre fondos](/blog/como-hacer-traspaso-fondos-espana), necesitas MyInvestor.
+
+**La plataforma puede ser confusa para principiantes**: los CFDs y los derivados aparecen en la misma interfaz que los ETFs. Es fácil confundirse y comprar el CFD de un índice en lugar del ETF equivalente. Asegúrate de comprar siempre en la sección ETFs, no CFDs.
+
+**El límite de 100.000€/mes**: para la mayoría de inversores es irrelevante. Pero si inviertes grandes sumas esporádicas (herencia, bonus), las operaciones que superen ese umbral mensual ya tienen comisión.
+
+---
+
+## Conclusión práctica
+
+XTB es una opción sólida para el inversor indexado en España, especialmente si valoras la supervisión directa de la CNMV, la cuenta remunerada alta o la plataforma más completa. La propuesta de 0€ en ETFs hasta 100.000€/mes y los planes de inversión automáticos cubren las necesidades del inversor Boglehead de largo plazo.
+
+Para comparar XTB con los otros brokers populares según tu patrón real de inversión, usa el [comparador de brókers de BogleHub](/calculadora/comparar-brokers).
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [XTB — Web oficial para España](https://www.xtb.com/es) — Comisiones actualizadas, plataforma y condiciones de la cuenta remunerada.
+- [CNMV — Registro de XTB en España](https://www.cnmv.es) — Verifica el registro de la sucursal española de XTB como empresa de servicios de inversión supervisada por la CNMV.
+- [DEGIRO opinión 2026 — BogleHub](/blog/degiro-opinion-2026) — Análisis de DEGIRO, el broker técnico con acceso a 50+ bolsas y su diferencia con XTB.
+- [DEGIRO vs Trade Republic vs MyInvestor — BogleHub](/blog/degiro-vs-trade-republic-vs-myinvestor-2026) — Comparativa completa de los tres brokers más usados por inversores indexados.
+`,
+  },
 ]
