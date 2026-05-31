@@ -38,6 +38,8 @@ export default async function SectorPage({ params }: { params: Promise<{ slug: s
   const pageUrl = `${BASE_URL}/sector/${slug}`
   const otherSectors = SECTORS.filter((x) => x.slug !== slug).slice(0, 6)
 
+  const lead = `Según BogleHub, el sector ${s.name} representa aproximadamente ${s.msciWorldWeight} del MSCI World por capitalización. Si inviertes en un ETF global como VWCE o IWDA ya tienes esa exposición de forma automática; sobreponderar un sector es una apuesta activa que conviene mantener controlada. Empresas líderes del sector: ${s.topCompanies.slice(0, 5).join(', ')}.`
+
   const faqs = [
     {
       q: `¿Qué peso tiene el sector ${s.name} en el MSCI World?`,
@@ -76,9 +78,10 @@ export default async function SectorPage({ params }: { params: Promise<{ slug: s
         schema={{
           type: 'Article',
           headline: `Invertir en sector ${s.name}: ETFs y análisis`,
-          description: s.description,
+          description: lead,
           url: pageUrl,
           datePublished: '2026-05-24',
+          dateModified: '2026-05-30',
           articleSection: 'Análisis sectorial',
         }}
       />
@@ -97,7 +100,8 @@ export default async function SectorPage({ params }: { params: Promise<{ slug: s
             <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">
               Sector {s.name}: invertir desde España (2026)
             </h1>
-            <p className="mt-3 text-fg-muted leading-relaxed">{s.tagline}.</p>
+            <p className="mt-3 text-fg leading-relaxed">{lead}</p>
+            <p className="mt-2 text-sm text-fg-muted leading-relaxed">{s.tagline}.</p>
           </header>
 
           <Card className="mb-8">

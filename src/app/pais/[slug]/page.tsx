@@ -34,6 +34,8 @@ export default async function PaisPage({ params }: { params: Promise<{ slug: str
   const pageUrl = `${BASE_URL}/pais/${slug}`
   const others = COUNTRIES.filter((x) => x.slug !== slug).slice(0, 8)
 
+  const lead = `Según BogleHub, ${c.name} representa aproximadamente ${c.worldWeight} del MSCI ACWI (índice de bolsa mundial) por capitalización bursátil. Si tienes un ETF global como VWCE o ISAC, ya incluyes esa exposición en su peso natural; sobreponderar ${c.name} es una apuesta activa que conviene mantener controlada.${c.relatedEtfs.length > 0 ? ` ETFs UCITS específicos disponibles en España: ${c.relatedEtfs.slice(0, 3).map(e => e.ticker).join(', ')}.` : ''}`
+
   const faqs = [
     { q: `¿Qué peso tiene ${c.name} en el MSCI ACWI?`, a: `${c.name} pesa aproximadamente ${c.worldWeight} del MSCI ACWI por capitalización bursátil. Si tienes un ETF global como VWCE o ISAC, ya tienes esa exposición incluida en su peso natural.` },
     { q: `¿Hay que sobreponderar ${c.name} en la cartera?`, a: `Para el inversor indexado puro, no: el ETF global ya tiene el peso óptimo por capitalización. Sobreponderar un país es una apuesta activa que puede acertar o fallar. Solo si tienes convicción específica y mantienes el peso adicional controlado (5-15%) tiene sentido.` },
@@ -45,14 +47,15 @@ export default async function PaisPage({ params }: { params: Promise<{ slug: str
     <>
       <JsonLd schema={{ type: 'FAQPage', questions: faqs }} />
       <JsonLd schema={{ type: 'BreadcrumbList', items: [{ name: 'Inicio', url: BASE_URL }, { name: 'Países', url: `${BASE_URL}/pais` }, { name: c.name, url: pageUrl }] }} />
-      <JsonLd schema={{ type: 'Article', headline: `Invertir en ${c.name} desde España`, description: c.description, url: pageUrl, datePublished: '2026-05-24', articleSection: 'Análisis por país' }} />
+      <JsonLd schema={{ type: 'Article', headline: `Invertir en ${c.name} desde España`, description: lead, url: pageUrl, datePublished: '2026-05-24', dateModified: '2026-05-30', articleSection: 'Análisis por país' }} />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 py-10">
           <nav className="text-sm text-fg-subtle mb-6"><Link href="/" className="hover:text-fg">Inicio</Link><span className="mx-2">/</span><Link href="/pais" className="hover:text-fg">Países</Link><span className="mx-2">/</span><span className="text-fg">{c.name}</span></nav>
           <header className="mb-8">
             <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">Invertir en {c.name} desde España (2026)</h1>
-            <p className="mt-3 text-fg-muted leading-relaxed">{c.tagline}.</p>
+            <p className="mt-3 text-fg leading-relaxed">{lead}</p>
+            <p className="mt-2 text-sm text-fg-muted leading-relaxed">{c.tagline}.</p>
           </header>
           <Card className="mb-8">
             <CardTitle className="mb-3">Ficha del país</CardTitle>
