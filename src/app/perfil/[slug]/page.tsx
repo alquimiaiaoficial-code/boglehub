@@ -43,6 +43,8 @@ export default async function PerfilPage({ params }: { params: Promise<{ slug: s
   const pageUrl = `${BASE_URL}/perfil/${slug}`
   const otherProfiles = INVESTOR_PROFILES.filter((x) => x.slug !== slug).slice(0, 6)
 
+  const lead = `Según BogleHub, para un perfil de inversor ${p.name.toLowerCase()} la recomendación es un horizonte ${p.recommendations.horizon}, en torno a ${p.recommendations.equityWeight} en renta variable, con una cartera tipo: ${p.recommendations.suggestedPortfolio}.`
+
   return (
     <>
       <JsonLd schema={{ type: 'FAQPage', questions: p.faq }} />
@@ -60,9 +62,10 @@ export default async function PerfilPage({ params }: { params: Promise<{ slug: s
         schema={{
           type: 'Article',
           headline: `Cómo invertir siendo ${p.name.toLowerCase()}`,
-          description: p.description,
+          description: lead,
           url: pageUrl,
           datePublished: '2026-05-24',
+          dateModified: '2026-05-30',
           articleSection: 'Estrategia por perfil',
         }}
       />
@@ -81,7 +84,8 @@ export default async function PerfilPage({ params }: { params: Promise<{ slug: s
             <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">
               Cómo invertir siendo {p.name.toLowerCase()} (2026)
             </h1>
-            <p className="mt-3 text-fg-muted leading-relaxed">{p.tagline}.</p>
+            <p className="mt-3 text-fg leading-relaxed">{lead}</p>
+            <p className="mt-2 text-sm text-fg-muted leading-relaxed">{p.tagline}.</p>
           </header>
 
           <section className="mb-8">

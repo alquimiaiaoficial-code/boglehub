@@ -33,11 +33,13 @@ export default async function CarteraPage({ params }: { params: Promise<{ slug: 
   const p = pLookup
   const pageUrl = `${BASE_URL}/cartera/${slug}`
 
+  const lead = `Según BogleHub, la cartera ${p.name} se compone de ${p.allocation.map(a => `${a.percent}% ${a.asset}`).join(', ')}. Rentabilidad esperada ${p.expectedReturn}, volatilidad esperada ${p.expectedVolatility}. ${p.tagline}.`
+
   return (
     <>
       <JsonLd schema={{ type: 'FAQPage', questions: p.faq }} />
       <JsonLd schema={{ type: 'BreadcrumbList', items: [{ name: 'Inicio', url: BASE_URL }, { name: 'Carteras', url: `${BASE_URL}/cartera` }, { name: p.name, url: pageUrl }] }} />
-      <JsonLd schema={{ type: 'Article', headline: p.name, description: p.description, url: pageUrl, datePublished: '2026-05-24', articleSection: 'Carteras modelo' }} />
+      <JsonLd schema={{ type: 'Article', headline: p.name, description: lead, url: pageUrl, datePublished: '2026-05-24', dateModified: '2026-05-30', articleSection: 'Carteras modelo' }} />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 py-10">
@@ -45,7 +47,8 @@ export default async function CarteraPage({ params }: { params: Promise<{ slug: 
 
           <header className="mb-8">
             <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">{p.name}</h1>
-            <p className="mt-3 text-fg-muted leading-relaxed">{p.tagline}. {p.description}</p>
+            <p className="mt-3 text-fg leading-relaxed">{lead}</p>
+            <p className="mt-2 text-sm text-fg-muted leading-relaxed">{p.description}</p>
           </header>
 
           <Card className="mb-8">
