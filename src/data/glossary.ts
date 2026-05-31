@@ -1031,6 +1031,65 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       },
     ],
   },
+  {
+    slug: 'reit',
+    term: 'REIT',
+    fullForm: 'REIT (Real Estate Investment Trust)',
+    category: 'productos',
+    shortDefinition:
+      'Un REIT es una empresa cotizada que posee y gestiona inmuebles que generan rentas (oficinas, centros comerciales, viviendas, logística). Permite invertir en inmobiliario a través de bolsa, sin comprar propiedades directamente.',
+    longDefinition:
+      'Un REIT (Real Estate Investment Trust) es una sociedad cotizada en bolsa cuyo negocio es poseer, gestionar o financiar inmuebles que producen ingresos por alquiler. En España, la figura equivalente es la SOCIMI (Sociedad Cotizada de Inversión en el Mercado Inmobiliario). Los REITs están obligados por ley a distribuir la mayor parte de sus beneficios como dividendos, lo que los convierte en una fuente de rentas relativamente alta.\n\nPara el inversor indexado, la forma más sencilla de tener exposición a REITs es a través de un ETF de REITs (como los que replican el índice FTSE EPRA Nareit), que diversifica entre cientos de sociedades inmobiliarias globales en un solo producto. Esto da exposición al sector inmobiliario sin el capital, la iliquidez ni la gestión que exige comprar un piso para alquilar.\n\n**¿Hace falta un REIT en una cartera Boglehead?** No necesariamente. Los índices globales como el MSCI World o el FTSE All-World ya incluyen REITs en su proporción de mercado (alrededor del 3%). Sobreponderar inmobiliario con un ETF específico de REITs es una apuesta sectorial activa, no una necesidad de diversificación.',
+    example:
+      'Un ETF de REITs globales puede tener un dividend yield del 3-4% anual, superior al de un ETF de renta variable general (~2%). A cambio, el sector inmobiliario es más sensible a los tipos de interés: cuando los tipos suben, los REITs suelen caer porque su deuda se encarece y sus dividendos compiten con los bonos.',
+    relatedArticles: [
+      'etfs-dividendos-vivir-rentas-espana',
+      'cartera-boglehead-3-fondos-espana',
+    ],
+    relatedLinks: [
+      { label: 'ETFs de dividendos y distribución', href: '/etfs/distribucion' },
+      { label: 'Catálogo de ETFs UCITS', href: '/etf' },
+    ],
+    faq: [
+      {
+        q: '¿Cómo tributan los dividendos de un ETF de REITs en España?',
+        a: 'Igual que cualquier dividendo de ETF: como rendimiento del capital mobiliario en la base del ahorro del IRPF (19% hasta 6.000€, 21% de 6.000€ a 50.000€, etc.). Si el ETF es de acumulación, no hay tributación hasta la venta. Si es de distribución, tributas cada año por los dividendos recibidos.',
+      },
+      {
+        q: '¿Es mejor invertir en un REIT o comprar un piso para alquilar?',
+        a: 'Son cosas distintas. Un ETF de REITs ofrece diversificación entre cientos de inmuebles globales, liquidez total (vendes cuando quieras) y cero gestión, pero menos control. Comprar un piso da control directo y posible apalancamiento con hipoteca, pero concentra todo el riesgo en un activo, exige gestión activa y tiene altos costes de entrada y salida. Para diversificar, el ETF de REITs es más eficiente.',
+      },
+    ],
+  },
+  {
+    slug: 'prima-riesgo',
+    term: 'Prima de riesgo',
+    category: 'conceptos',
+    shortDefinition:
+      'La prima de riesgo es la rentabilidad adicional que un inversor exige por asumir un activo más arriesgado frente a uno seguro. En bolsa, es el extra que se espera de las acciones sobre los bonos del Estado.',
+    longDefinition:
+      'La prima de riesgo (risk premium) es el concepto que explica por qué las acciones rinden más que los bonos a largo plazo: los inversores no asumirían la mayor volatilidad de la renta variable sin esperar a cambio una rentabilidad superior. Esa diferencia esperada es la prima de riesgo de las acciones (equity risk premium), históricamente situada en torno al 4-6% anual sobre los bonos del Estado.\n\nEl término tiene dos usos habituales:\n1. **Prima de riesgo de las acciones**: el exceso de rentabilidad esperado de la bolsa sobre el activo libre de riesgo. Es la razón fundamental por la que invertir en renta variable a largo plazo tiene sentido.\n2. **Prima de riesgo país**: en el contexto de deuda soberana, el diferencial entre el bono de un país y el bono alemán (el "bund", considerado el más seguro de la eurozona). La prima de riesgo española es el sobreprecio que paga España frente a Alemania por financiarse.\n\nPara el inversor indexado, la idea clave es que la prima de riesgo no está garantizada: es una expectativa basada en datos históricos. Hay periodos largos (una década o más) en que las acciones no superan a los bonos. Por eso el horizonte temporal largo es esencial: cuanto más tiempo, mayor probabilidad de capturar la prima de riesgo.',
+    example:
+      'Si los bonos del Estado alemán rinden un 2,5% y esperas que la bolsa global rinda un 7%, la prima de riesgo de las acciones que estás asumiendo es de aproximadamente 4,5 puntos porcentuales. Ese 4,5% es tu compensación esperada por aguantar la volatilidad de la renta variable.',
+    relatedArticles: [
+      'que-hacer-cuando-el-mercado-cae',
+      'bogleheads-espana-guia-completa',
+      'mejores-etfs-renta-fija-2026',
+    ],
+    relatedLinks: [
+      { label: 'Calculadora FIRE con Monte Carlo', href: '/calculadora/fire-monte-carlo' },
+    ],
+    faq: [
+      {
+        q: '¿La prima de riesgo de las acciones está garantizada?',
+        a: 'No. Es una expectativa basada en datos históricos de más de un siglo, pero no una garantía. Hay periodos de 10-15 años en que las acciones no superan a los bonos. Por eso la inversión en renta variable requiere horizontes largos: cuanto más tiempo mantienes la inversión, mayor es la probabilidad histórica de capturar la prima de riesgo.',
+      },
+      {
+        q: '¿Qué es la prima de riesgo de un país como España?',
+        a: 'Es el diferencial de tipos de interés entre el bono a 10 años de España y el bono alemán (bund), considerado el más seguro de la eurozona. Si el bono español rinde 3,3% y el alemán 2,5%, la prima de riesgo española es de 80 puntos básicos (0,8%). Refleja cuánto más caro le resulta a España financiarse por su mayor percepción de riesgo.',
+      },
+    ],
+  },
 ]
 
 /** Devuelve un término por su slug, o undefined si no existe */
