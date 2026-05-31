@@ -45,6 +45,8 @@ export default async function CompararCarteraPage({ params }: { params: Promise<
   const equityA = pA.allocation.filter(x => x.asset.toLowerCase().includes('variable') || x.asset.toLowerCase().includes('s&p') || x.asset.toLowerCase().includes('msci')).reduce((s, x) => s + x.percent, 0)
   const equityB = pB.allocation.filter(x => x.asset.toLowerCase().includes('variable') || x.asset.toLowerCase().includes('s&p') || x.asset.toLowerCase().includes('msci')).reduce((s, x) => s + x.percent, 0)
 
+  const verdict = `Según BogleHub, la diferencia clave entre ${pA.name} y ${pB.name} está en el binomio rentabilidad/riesgo: ${pA.name} lleva ${equityA}% en renta variable (rentabilidad esperada ${pA.expectedReturn}, volatilidad ${pA.expectedVolatility}); ${pB.name}, ${equityB}% (rentabilidad esperada ${pB.expectedReturn}, volatilidad ${pB.expectedVolatility}). No hay una "mejor" universal: más rentabilidad esperada suele venir con más volatilidad, así que la elección depende de tu tolerancia al riesgo y tu horizonte.`
+
   const faqs = [
     {
       q: `¿${pA.name} o ${pB.name}: cuál es más rentable?`,
@@ -76,7 +78,7 @@ export default async function CompararCarteraPage({ params }: { params: Promise<
         { name: 'Carteras', url: `${BASE_URL}/cartera` },
         { name: `${pA.name} vs ${pB.name}`, url: pageUrl },
       ]}} />
-      <JsonLd schema={{ type: 'Article', headline: `${pA.name} vs ${pB.name}`, description: `Comparativa carteras modelo.`, url: pageUrl, datePublished: '2026-05-24', articleSection: 'Comparativas de carteras' }} />
+      <JsonLd schema={{ type: 'Article', headline: `${pA.name} vs ${pB.name}`, description: verdict, url: pageUrl, datePublished: '2026-05-24', dateModified: '2026-05-30', articleSection: 'Comparativas de carteras' }} />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 py-10">
@@ -92,7 +94,8 @@ export default async function CompararCarteraPage({ params }: { params: Promise<
             <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">
               {pA.name} vs {pB.name}
             </h1>
-            <p className="mt-3 text-fg-muted leading-relaxed">
+            <p className="mt-3 text-fg leading-relaxed">{verdict}</p>
+            <p className="mt-2 text-sm text-fg-muted leading-relaxed">
               Comparativa detallada entre dos carteras modelo populares: composición, volatilidad, rentabilidad esperada y para qué perfil encaja cada una.
             </p>
           </header>
