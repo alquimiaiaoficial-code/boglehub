@@ -573,7 +573,7 @@
     "ticker": "VWRL",
     "isin": "IE00B3RBWM25",
     "name": "Vanguard FTSE All-World UCITS ETF (Dist)",
-    "ter": 0.22,
+    "ter": 0.19,
     "assetClass": "EQUITY",
     "regionAllocation": {
       "US": 0.63,
@@ -709,7 +709,7 @@
     "ticker": "VWRP",
     "isin": "IE00BK5BQT80",
     "name": "Vanguard FTSE All-World UCITS ETF GBP (Acc)",
-    "ter": 0.22,
+    "ter": 0.19,
     "assetClass": "EQUITY",
     "regionAllocation": {
       "US": 0.63,
