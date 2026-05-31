@@ -142,7 +142,7 @@ export const MODEL_PORTFOLIOS: ModelPortfolio[] = [
     allocation: [
       { asset: 'Renta variable global (FTSE All-World)', percent: 100, suggestedTicker: 'VWCE' },
     ],
-    weightedTer: '0,22%',
+    weightedTer: '0,19%',
     idealFor: ['Inversor 20-35 años', 'Horizonte >25 años', 'Probada tolerancia a caídas del 50%'],
     avoidWhen: ['Cualquiera que aún no haya vivido una crisis sin vender'],
     expectedVolatility: '15-20% anual',

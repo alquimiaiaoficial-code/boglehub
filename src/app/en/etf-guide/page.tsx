@@ -10,7 +10,7 @@ const BASE_URL = 'https://boglehub.com'
 const FAQ = [
   { q: 'Why can\'t I buy VTI or VOO in Spain?', a: 'US-domiciled ETFs (VTI, VOO, SPY) are blocked for European retail investors under MiFID II PRIIPs regulation. Issuers do not provide KID (Key Information Document) in EU languages. Solution: use UCITS equivalents — CSPX, VUAA or SPXS replicate the S&P 500; VWCE replicates FTSE All-World; IWDA replicates MSCI World.' },
   { q: 'What is the best UCITS ETF for the S&P 500?', a: 'CSPX (iShares Core S&P 500, ISIN IE00B5BMR087, TER 0.07%) and VUAA (Vanguard S&P 500 Acc, ISIN IE00BFMXXD54, TER 0.07%) are the most popular and tied for the lowest TER. SPXS (SPDR S&P 500, TER 0.03%) is the cheapest. All are Irish-domiciled (15% US dividend withholding instead of 30%).' },
-  { q: 'VWCE or IWDA for a global portfolio?', a: 'VWCE (FTSE All-World, TER 0.22%) includes emerging markets (~12%) in one ETF. IWDA (MSCI World, TER 0.20%) covers only developed markets — you would need to add EIMI (~12%) for full global exposure. VWCE is simpler; IWDA + EIMI gives more control over emerging market weight.' },
+  { q: 'VWCE or IWDA for a global portfolio?', a: 'VWCE (FTSE All-World, TER 0.19%) includes emerging markets (~12%) in one ETF. IWDA (MSCI World, TER 0.20%) covers only developed markets — you would need to add EIMI (~12%) for full global exposure. VWCE is simpler; IWDA + EIMI gives more control over emerging market weight.' },
   { q: 'Why does Irish domicile matter?', a: 'Ireland has a tax treaty with the US reducing dividend withholding from 30% to 15%. Since ~63% of MSCI World is US-listed companies, this saves about 0.2% annually on dividend yield. Look for ISINs starting with IE.' },
 ]
 

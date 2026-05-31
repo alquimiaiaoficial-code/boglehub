@@ -60,7 +60,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     longDefinition:
       'Un ETF (Exchange Traded Fund) es un instrumento de inversión que combina características de los fondos de inversión tradicionales (gestión colectiva, diversificación) y de las acciones (cotización en bolsa, liquidez intradía). La gran mayoría de ETFs replican un índice — como el MSCI World, el S&P 500 o el FTSE All-World — y son la herramienta favorita de los inversores indexados (Bogleheads) por su bajo coste, transparencia y eficiencia fiscal.\n\nA diferencia de los fondos de inversión tradicionales en España, los ETFs **no permiten traspaso fiscal libre**: cada venta realiza ganancias o pérdidas que tributan ese año. Esta diferencia es clave a la hora de elegir entre ETF y fondo indexado.',
     example:
-      'VWCE (Vanguard FTSE All-World) es un ETF que invierte en más de 3.700 empresas globales. Si compras 100 participaciones a 100€, posees una fracción microscópica de cada una de esas empresas, con un coste anual de gestión del 0,22% (TER).',
+      'VWCE (Vanguard FTSE All-World) es un ETF que invierte en más de 3.700 empresas globales. Si compras 100 participaciones a 100€, posees una fracción microscópica de cada una de esas empresas, con un coste anual de gestión del 0,19% (TER).',
     relatedArticles: [
       'fondos-indexados-vs-etfs-espana',
       'como-elegir-tu-primer-etf-espana-2026',
