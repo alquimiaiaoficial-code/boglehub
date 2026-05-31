@@ -102,6 +102,7 @@ export const ARTICLE_CATEGORY: Record<string, BlogCategory> = {
   'como-declarar-etfs-hacienda': 'fiscalidad',
   'plan-pensiones-indexado-espana-2026': 'fiscalidad',
   'plan-de-pensiones-vs-fondo-indexado': 'fiscalidad',
+  'como-hacer-traspaso-fondos-espana': 'fiscalidad',
 
   // Roboadvisors y brokers
   'indexa-capital-opinion-2026': 'roboadvisors-brokers',
@@ -110,6 +111,9 @@ export const ARTICLE_CATEGORY: Record<string, BlogCategory> = {
   'myinvestor-opinion-2026': 'roboadvisors-brokers',
   'trade-republic-opinion-2026': 'roboadvisors-brokers',
   'degiro-vs-trade-republic-vs-myinvestor-2026': 'roboadvisors-brokers',
+  'degiro-opinion-2026': 'roboadvisors-brokers',
+  'xtb-opinion-2026': 'roboadvisors-brokers',
+  'scalable-capital-opinion-2026': 'roboadvisors-brokers',
 
   // Estrategias
   'interes-compuesto-inversion': 'estrategias',
