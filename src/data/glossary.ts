@@ -971,6 +971,66 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       },
     ],
   },
+  {
+    slug: 'inflacion',
+    term: 'Inflación',
+    category: 'conceptos',
+    shortDefinition:
+      'La inflación es el aumento generalizado del nivel de precios a lo largo del tiempo. Erosiona el poder adquisitivo del dinero y es uno de los principales argumentos para invertir en lugar de mantener el ahorro en cuenta corriente.',
+    longDefinition:
+      'La inflación mide cuánto sube el nivel general de precios en un periodo. Si la inflación es del 3% anual, lo que hoy cuesta 100€ costará 103€ dentro de un año. El poder adquisitivo del dinero en efectivo se reduce en esa proporción: 100€ guardados en un cajón valen 97€ de hoy al cabo de un año.\n\nEn la planificación financiera, la inflación tiene tres implicaciones clave:\n1. **El ahorro sin invertir pierde valor**: una cuenta corriente al 0-1% con inflación al 3% implica una rentabilidad real negativa.\n2. **Las proyecciones FIRE y de jubilación deben estar en términos reales**: lo que hoy cuesta 30.000€ al año costará más en el futuro. Las calculadoras serias distinguen entre rentabilidad nominal y rentabilidad real (nominal menos inflación).\n3. **Los activos reales como la renta variable tienden a preservar el poder adquisitivo a largo plazo**: las empresas ajustan sus precios con la inflación y, en períodos suficientemente largos, sus acciones han superado a la inflación de forma sistemática.\n\nLa inflación en España la mide el INE mediante el IPC (Índice de Precios al Consumo). El BCE tiene como objetivo una inflación cercana al 2% en la eurozona a medio plazo.',
+    example:
+      'Si tienes 100.000€ en cuenta corriente al 0% durante 10 años con una inflación media del 2,5%, al final tendrás los mismos 100.000€ nominales pero su poder adquisitivo real habrá caído a unos 78.000€. Una cartera de fondos indexados que rente un 7% nominal daría una rentabilidad real de ~4,5% y multiplicaría tu patrimonio real en ese periodo.',
+    relatedArticles: [
+      'interes-compuesto-inversion',
+      'fire-espana-cuanto-necesitas',
+      'bogleheads-espana-guia-completa',
+    ],
+    relatedLinks: [
+      { label: 'Calculadora de interés compuesto', href: '/calculadora/interes-compuesto' },
+      { label: 'Calculadora FIRE con Monte Carlo', href: '/calculadora/fire-monte-carlo' },
+    ],
+    faq: [
+      {
+        q: '¿Cómo afecta la inflación a los ETFs?',
+        a: 'La inflación erosiona el poder adquisitivo de todos los activos nominales (efectivo, bonos a tipo fijo). Las acciones, al representar participaciones en empresas reales que pueden subir precios, tienden a proteger el poder adquisitivo a largo plazo. Por eso, una cartera diversificada de renta variable global como el MSCI World ha superado históricamente a la inflación en periodos de 10+ años.',
+      },
+      {
+        q: '¿Debo incluir la inflación en mis proyecciones de inversión?',
+        a: 'Sí, especialmente para planificación FIRE o de jubilación. Para ser prudente, trabaja en términos reales: si esperas un 7% nominal y 2,5% de inflación, usa 4,5% como rentabilidad real en tus cálculos. La calculadora de interés compuesto de BogleHub te permite introducir la rentabilidad que quieras; si introduces la real, el resultado estará en euros de hoy.',
+      },
+    ],
+  },
+  {
+    slug: 'gestion-activa',
+    term: 'Gestión activa',
+    category: 'estrategias',
+    shortDefinition:
+      'La gestión activa consiste en que un gestor profesional selecciona activos intentando superar a un índice de referencia (benchmark). En contraposición a la gestión pasiva (indexada), implica mayor coste y, según los datos, peores resultados a largo plazo para la mayoría de fondos.',
+    longDefinition:
+      'Un fondo de gestión activa emplea analistas y gestores que seleccionan activos, hacen rotaciones de cartera y ajustan posiciones intentando superar la rentabilidad de su benchmark. Este proceso tiene un coste: las comisiones de gestión activa en España oscilan entre el 1% y el 2,5% anual, frente al 0,05%-0,30% de los fondos indexados.\n\nEl problema de la gestión activa es estadístico: Standard & Poor\'s publica anualmente el informe SPIVA que mide qué porcentaje de fondos activos supera a su índice. Los datos son consistentes: en periodos de 10-15 años, entre el 80% y el 95% de los fondos activos europeos no supera al índice de referencia después de comisiones.\n\nEsto no significa que la gestión activa sea siempre inferior. Existen gestores que superan al mercado consistentemente durante décadas (Warren Buffett es el más conocido). El problema es identificarlos de antemano y que la minoría que lo logra no compensa estadísticamente para quien tiene que elegir entre cientos de fondos.\n\n**La trampa de la comisión**: un fondo que bate al índice un 1% pero cobra un 2% extra tiene rendimiento neto negativo frente a indexarse. La gestión activa parte con una desventaja estructural igual a la diferencia de comisiones.',
+    example:
+      'Un fondo activo de renta variable española cobra 1,8% de comisión y su índice de referencia (IBEX 35) sube un 8%. Para que el fondo sea mejor que indexarse al IBEX con un ETF al 0,20%, el gestor necesita generar al menos un 1,6% de alfa (rendimiento adicional) cada año. Según SPIVA, la mayoría no lo consigue de forma consistente.',
+    relatedArticles: [
+      'bogleheads-espana-guia-completa',
+      'fondos-indexados-vs-etfs-espana',
+      'roboadvisors-espana-merecen-comision',
+    ],
+    relatedLinks: [
+      { label: 'Glosario: gestión pasiva', href: '/glosario/gestion-pasiva' },
+      { label: 'Catálogo de ETFs UCITS', href: '/etf' },
+    ],
+    faq: [
+      {
+        q: '¿Por qué los fondos de mi banco son de gestión activa?',
+        a: 'Porque la gestión activa es más rentable para el banco que para el cliente. Un fondo con comisión del 1,8% da al banco mucho más ingreso que un fondo indexado al 0,20%. Los bancos tienen un claro incentivo económico para comercializar sus fondos activos propios, aunque la evidencia muestre que la mayoría de ellos no supera al mercado.',
+      },
+      {
+        q: '¿Hay casos en que la gestión activa tenga sentido?',
+        a: 'En mercados poco eficientes (small caps emergentes, bonos high yield poco líquidos) hay más oportunidades de generar alfa. También para carteras con objetivos muy específicos (renta fija a plazo definido, estrategias de cobertura). Para el inversor particular a largo plazo con una cartera estándar de renta variable global, la gestión pasiva tiene ventaja estructural por coste.',
+      },
+    ],
+  },
 ]
 
 /** Devuelve un término por su slug, o undefined si no existe */
