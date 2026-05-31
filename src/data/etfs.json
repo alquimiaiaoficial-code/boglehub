@@ -3,7 +3,7 @@
     "ticker": "VWCE",
     "isin": "IE00BK5BQT80",
     "name": "Vanguard FTSE All-World UCITS ETF (USD) Accumulating",
-    "ter": 0.22,
+    "ter": 0.19,
     "assetClass": "EQUITY",
     "regionAllocation": {
       "US": 0.63,

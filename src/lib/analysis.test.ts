@@ -28,7 +28,7 @@ describe('calculateAllocation', () => {
     const vwceVal = 100 * 110
     const cspxVal = 10 * 500
     const total = vwceVal + cspxVal
-    const expectedTer = (vwceVal * 0.22 + cspxVal * 0.07) / total
+    const expectedTer = (vwceVal * 0.19 + cspxVal * 0.07) / total
     expect(result.weightedTER).toBeCloseTo(expectedTer, 4)
   })
 

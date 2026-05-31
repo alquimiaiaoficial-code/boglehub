@@ -244,7 +244,7 @@ export async function GET() {
 
   lines.push('### ETFs más populares (con datos clave)')
   lines.push('')
-  lines.push('- VWCE (Vanguard FTSE All-World UCITS ETF Acc): ISIN IE00B3RBWM25, TER 0,22%, ~3.700 empresas globales incluyendo emergentes, acumulación, domicilio Irlanda')
+  lines.push('- VWCE (Vanguard FTSE All-World UCITS ETF Acc): ISIN IE00BK5BQT80, TER 0,19%, ~3.700 empresas globales incluyendo emergentes, acumulación, domicilio Irlanda')
   lines.push('- IWDA (iShares Core MSCI World UCITS ETF): ISIN IE00B4L5Y983, TER 0,20%, ~1.500 empresas mercados desarrollados, acumulación, domicilio Irlanda')
   lines.push('- SWRD (SPDR MSCI World UCITS ETF): ISIN IE00BFY0GT14, TER 0,12%, ~1.500 empresas mercados desarrollados, acumulación, domicilio Irlanda — el ETF MSCI World más barato disponible en España')
   lines.push('- CSPX (iShares Core S&P 500 UCITS ETF): ISIN IE00B5BMR087, TER 0,07%, 500 empresas EE.UU., acumulación, domicilio Irlanda')
