@@ -604,6 +604,8 @@ No. MyInvestor es una entidad española regulada por el Banco de España. Los ac
 
 **Conclusión práctica**: si usas Trade Republic o DEGIRO y tu cartera supera 50 000 €, consulta con un asesor fiscal la obligación del 720. No es algo para improvisar.
 
+**¿Y el modelo D6?** Mucha gente confunde el 720 con el modelo D6 (declaración de inversiones en el exterior). Son trámites distintos, y el D6 ya **no obliga al inversor particular con ETFs** tras la reforma de 2021-2024. Lo aclaramos en detalle en [Modelo D6 y ETFs: ¿tienes que presentarlo en 2026?](/blog/modelo-d6-etf-espana).
+
 ---
 
 ## ETFs UCITS vs no-UCITS: diferencia fiscal clave
@@ -3633,6 +3635,8 @@ Esta guía cubre el proceso completo para la declaración de la renta del ejerci
 - Has traspasado fondos de inversión entre sí (no aplica a ETFs — los ETFs no tienen régimen de traspaso)
 - Tienes ETFs con pérdidas que no has vendido
 
+Y un mito que conviene despejar: el **modelo D6** (declaración de inversiones en el exterior) ya **no obliga al inversor particular con ETFs** tras la reforma de 2021-2024. Lo explicamos en [Modelo D6 y ETFs: ¿tienes que presentarlo en 2026?](/blog/modelo-d6-etf-espana).
+
 ---
 
 ## Paso 1: Calcular la ganancia o pérdida patrimonial
@@ -4473,6 +4477,8 @@ El order flow puede generar spreads ligeramente mayores que en compra directa en
 **Si quieres acceso a más mercados**: DEGIRO.
 **Si quieres fondos indexados o todo en una entidad española**: MyInvestor.
 **La cartera óptima**: Trade Republic para ETFs + MyInvestor para fondos.
+
+Si tu prioridad es la cuenta remunerada más alta, también merece la pena mirar [Scalable Capital](/blog/scalable-capital-opinion-2026): otro banco alemán regulado por BaFin que con su plan Prime ofrece hasta el 4% TAE y operaciones ilimitadas a 0€.
 
 La tabla compara comisiones, pero lo que pagas de verdad depende de tu volumen y frecuencia de compra: el [comparador de brókers de BogleHub](/calculadora/comparar-brokers) lo calcula en euros al año para cada uno. Y para profundizar en la comparativa, lee el [análisis completo de DEGIRO vs Trade Republic vs MyInvestor](/blog/degiro-vs-trade-republic-vs-myinvestor-2026).
 
