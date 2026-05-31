@@ -1090,6 +1090,65 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       },
     ],
   },
+  {
+    slug: 'fondo-monetario',
+    term: 'Fondo monetario',
+    category: 'productos',
+    shortDefinition:
+      'Un fondo monetario invierte en deuda a muy corto plazo (letras del Tesoro, depósitos, papel comercial) y es una alternativa de bajo riesgo a la cuenta corriente para aparcar liquidez con una rentabilidad ligada a los tipos del BCE.',
+    longDefinition:
+      'Un fondo monetario (money market fund) invierte en activos de deuda de muy corto plazo y alta calidad crediticia: letras del Tesoro, depósitos bancarios, repos y papel comercial con vencimientos de días o pocos meses. Su objetivo no es batir al mercado sino preservar el capital y ofrecer una rentabilidad cercana al tipo de interés a corto plazo del BCE, con volatilidad mínima.\n\nPara el inversor en España, los fondos monetarios cobraron protagonismo con la subida de tipos de 2023-2024: cuando el BCE subió los tipos, estos fondos pasaron a rentar en torno al 3% anual con riesgo muy bajo. Tienen dos ventajas sobre una cuenta remunerada: rinden el tipo de mercado sin condiciones de nómina ni límites de saldo, y al ser fondos de inversión disfrutan del **traspaso fiscal libre** — puedes mover el dinero a un fondo de renta variable sin tributar cuando decidas invertir.\n\n**Cuándo usar un fondo monetario**: para liquidez que quieres tener disponible a corto plazo (fondo de emergencia, dinero esperando ser invertido, ahorro para un objetivo cercano). No es un sustituto de la renta variable a largo plazo: su rentabilidad real (descontada la inflación) es cercana a cero en el largo plazo.',
+    example:
+      'Con los tipos del BCE al 3%, un fondo monetario en euros puede rentar alrededor del 2,7-2,9% anual con riesgo muy bajo. Si tienes 20.000€ esperando para invertir en bolsa pero quieres entrar de forma escalonada, un fondo monetario te da ~550€/año mientras decides, y puedes traspasarlo a tu fondo indexado sin tributar.',
+    relatedArticles: [
+      'dca-vs-lump-sum-aportar-mensual',
+      'mejores-etfs-renta-fija-2026',
+      'como-hacer-traspaso-fondos-espana',
+    ],
+    relatedLinks: [
+      { label: 'Glosario: traspaso de fondos', href: '/glosario/traspaso' },
+      { label: 'Glosario: renta fija', href: '/glosario/renta-fija' },
+    ],
+    faq: [
+      {
+        q: '¿Es seguro un fondo monetario?',
+        a: 'Es de los productos de inversión de menor riesgo, pero no está garantizado como un depósito. Invierte en deuda a muy corto plazo de alta calidad, por lo que su volatilidad es mínima y las pérdidas son muy improbables en condiciones normales. No está cubierto por el Fondo de Garantía de Depósitos (no es un depósito), sino que su seguridad viene de la calidad y diversificación de los activos subyacentes.',
+      },
+      {
+        q: '¿Fondo monetario o cuenta remunerada?',
+        a: 'El fondo monetario rinde el tipo de mercado sin condiciones de nómina ni límite de saldo, y permite traspaso fiscal libre a otros fondos. La cuenta remunerada está cubierta por el Fondo de Garantía de Depósitos (hasta 100.000€) y suele dar disponibilidad inmediata. Para liquidez grande sin condiciones, el fondo monetario; para máxima seguridad y disponibilidad, la cuenta remunerada.',
+      },
+    ],
+  },
+  {
+    slug: 'letras-del-tesoro',
+    term: 'Letras del Tesoro',
+    category: 'productos',
+    shortDefinition:
+      'Las Letras del Tesoro son deuda pública española a corto plazo (3 a 12 meses) emitida por el Estado. Son uno de los activos de menor riesgo disponibles y ganaron mucha popularidad con la subida de tipos de 2023-2024.',
+    longDefinition:
+      'Las Letras del Tesoro son títulos de deuda pública emitidos por el Tesoro Público español con vencimientos a 3, 6, 9 y 12 meses. Se emiten al descuento: compras la letra por debajo de su valor nominal y al vencimiento recibes el nominal completo; la diferencia es tu rentabilidad. Están respaldadas por el Estado español, lo que las convierte en uno de los activos de menor riesgo disponibles para el inversor particular.\n\nEntre 2023 y 2024, con la subida de tipos del BCE, las Letras del Tesoro pasaron de rentar casi nada a ofrecer rentabilidades en torno al 3% anual, lo que provocó colas en el Banco de España de pequeños ahorradores comprándolas directamente. Se pueden adquirir en las subastas del Tesoro (a través de su web o del Banco de España) o en el mercado secundario a través de un broker.\n\n**Diferencia clave con los fondos monetarios o ETFs de renta fija a corto plazo**: comprar Letras directamente significa mantenerlas hasta vencimiento y gestionar tú la reinversión. Un fondo monetario o un ETF de letras hace esa gestión por ti de forma diversificada y con liquidez diaria, a cambio de un pequeño TER. Para importes pequeños y comodidad, el fondo suele ser más práctico; para importes grandes y mantener hasta vencimiento, la compra directa evita comisiones.',
+    example:
+      'Una Letra del Tesoro a 12 meses con rentabilidad del 2,8% comprada por 9.728€ te devuelve 10.000€ al cabo de un año. La diferencia (272€) es tu rendimiento, que tributa como rendimiento del capital mobiliario en la base del ahorro del IRPF.',
+    relatedArticles: [
+      'mejores-etfs-renta-fija-2026',
+      'que-hacer-cuando-el-mercado-cae',
+    ],
+    relatedLinks: [
+      { label: 'Glosario: fondo monetario', href: '/glosario/fondo-monetario' },
+      { label: 'Glosario: renta fija', href: '/glosario/renta-fija' },
+    ],
+    faq: [
+      {
+        q: '¿Cómo se compran Letras del Tesoro en España?',
+        a: 'Hay dos vías: (1) directamente en las subastas del Tesoro Público a través de su web con certificado digital, o presencialmente en el Banco de España; (2) en el mercado secundario a través de un broker. La compra directa en el Tesoro no tiene comisiones. Para importes pequeños y gestión automática de la reinversión, un fondo monetario o un ETF de letras puede ser más cómodo.',
+      },
+      {
+        q: '¿Cómo tributan las Letras del Tesoro?',
+        a: 'El rendimiento de las Letras del Tesoro (diferencia entre precio de compra y valor de reembolso) tributa como rendimiento del capital mobiliario en la base del ahorro del IRPF: 19% hasta 6.000€, 21% de 6.000€ a 50.000€, y tramos superiores. A diferencia de los fondos, las Letras no permiten traspaso fiscal: cada vencimiento realiza el rendimiento y tributa.',
+      },
+    ],
+  },
 ]
 
 /** Devuelve un término por su slug, o undefined si no existe */
