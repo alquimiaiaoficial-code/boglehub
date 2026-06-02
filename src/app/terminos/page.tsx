@@ -3,6 +3,7 @@ import { Footer } from '@/components/Footer'
 
 export const metadata = {
   title: 'Términos de uso',
+  description: 'Términos y condiciones de uso de BogleHub: alcance del servicio educativo, ausencia de asesoramiento financiero, propiedad intelectual y limitación de responsabilidad.',
   robots: { index: true, follow: false },
   alternates: { canonical: '/terminos' },
 }

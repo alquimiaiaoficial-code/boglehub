@@ -3,6 +3,7 @@ import { Footer } from '@/components/Footer'
 
 export const metadata = {
   title: 'Aviso Legal',
+  description: 'Aviso legal de BogleHub: titularidad del sitio, condiciones de uso, propiedad intelectual y naturaleza educativa del contenido sobre inversión indexada.',
   robots: { index: true, follow: false },
   alternates: { canonical: '/aviso-legal' },
   openGraph: {

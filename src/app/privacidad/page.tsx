@@ -3,6 +3,7 @@ import { Footer } from '@/components/Footer'
 
 export const metadata = {
   title: 'Política de Privacidad',
+  description: 'Política de privacidad de BogleHub: qué datos se tratan, privacidad por diseño (tu cartera vive en tu navegador), newsletter y cumplimiento del RGPD.',
   robots: { index: true, follow: false },
   alternates: { canonical: '/privacidad' },
   openGraph: {
