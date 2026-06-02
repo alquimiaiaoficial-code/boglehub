@@ -1330,6 +1330,66 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       },
     ],
   },
+  {
+    slug: 'horizonte-temporal',
+    term: 'Horizonte temporal',
+    category: 'estrategias',
+    shortDefinition:
+      'El horizonte temporal es el tiempo que prevés mantener una inversión antes de necesitar el dinero. Es el factor que más debe condicionar cuánto riesgo (renta variable) puedes asumir.',
+    longDefinition:
+      'El horizonte temporal de una inversión es el plazo que va desde hoy hasta el momento en que necesitarás disponer del dinero. Es, junto con la tolerancia psicológica al riesgo, el factor que más debe determinar la composición de tu cartera, porque cambia por completo cuánto riesgo es razonable asumir.\n\nLa lógica: la renta variable es volátil a corto plazo pero, históricamente, sus probabilidades de dar rentabilidad positiva aumentan cuanto mayor es el periodo. En horizontes de 1-3 años, una cartera de acciones puede estar en pérdidas; en horizontes de 15-20 años o más, la probabilidad histórica de pérdida real se reduce drásticamente. Por eso:\n- **Horizonte corto (0-3 años)**: dinero que vas a necesitar pronto no debería estar en bolsa. Cuenta remunerada, fondo monetario o renta fija a corto plazo.\n- **Horizonte medio (3-10 años)**: mezcla de renta variable y renta fija según tu tolerancia.\n- **Horizonte largo (10+ años)**: la renta variable global tiene todo el sentido; el tiempo es tu mayor aliado para capturar la prima de riesgo y el interés compuesto.\n\nUn error común es invertir en bolsa dinero con horizonte corto (la entrada de un piso el año que viene) y verse forzado a vender en pérdidas si el mercado cae. El horizonte manda sobre el riesgo, no al revés.',
+    example:
+      'Si ahorras para la jubilación a 30 años, tu horizonte es largo y una cartera mayoritariamente de renta variable global es razonable. Si ahorras para la entrada de una casa a 2 años, ese dinero no debería estar en bolsa: una caída del 30% justo antes de comprar arruinaría el plan.',
+    relatedArticles: [
+      'fire-espana-cuanto-necesitas',
+      'bogleheads-espana-guia-completa',
+      'que-hacer-cuando-el-mercado-cae',
+    ],
+    relatedLinks: [
+      { label: 'Glosario: asset allocation', href: '/glosario/asset-allocation' },
+      { label: 'Glosario: perfil de riesgo', href: '/glosario/perfil-riesgo' },
+    ],
+    faq: [
+      {
+        q: '¿Cuánto tiempo necesito para invertir en bolsa con seguridad?',
+        a: 'No hay un número mágico, pero históricamente los horizontes de 15-20 años o más reducen mucho la probabilidad de pérdida real en una cartera de renta variable global diversificada. Cuanto más corto es el horizonte, más conservadora debería ser la cartera. Para dinero que vas a necesitar en menos de 3 años, la bolsa no es el lugar adecuado.',
+      },
+      {
+        q: '¿El horizonte temporal cambia con la edad?',
+        a: 'Sí. A medida que te acercas al objetivo (jubilación, compra), tu horizonte se acorta y suele convenir reducir gradualmente el peso de la renta variable para proteger lo acumulado. Esta transición planificada se llama glide path. Pero ojo: si tu jubilación dura décadas, parte de tu dinero sigue teniendo horizonte largo incluso ya jubilado.',
+      },
+    ],
+  },
+  {
+    slug: 'perfil-riesgo',
+    term: 'Perfil de riesgo',
+    category: 'estrategias',
+    shortDefinition:
+      'El perfil de riesgo es la combinación de tu capacidad y tu tolerancia para asumir pérdidas. Determina qué proporción de renta variable y renta fija encaja contigo.',
+    longDefinition:
+      'El perfil de riesgo de un inversor resume cuánto riesgo es adecuado para él, y se compone de dos cosas distintas que conviene no confundir:\n\n1. **Capacidad de asumir riesgo** (objetiva): depende de tu horizonte temporal, tu estabilidad de ingresos, tu fondo de emergencia y tu patrimonio. Alguien joven con ingresos estables y horizonte de 30 años tiene alta capacidad de riesgo, le guste o no.\n2. **Tolerancia al riesgo** (psicológica): cuánta volatilidad puedes soportar sin perder el sueño ni vender en pánico. Es subjetiva y solo la conoces de verdad cuando vives una caída fuerte.\n\nTu perfil real es el menor de los dos: de nada sirve tener capacidad para asumir riesgo si una caída del 30% te haría vender en el peor momento. El perfil de riesgo se traduce en la asignación de activos: un perfil agresivo puede ir 90-100% en renta variable; uno conservador, 30-40%; uno moderado, en torno al 60/40.\n\nLos roboadvisors te asignan un perfil mediante un cuestionario y construyen la cartera en consecuencia. Si inviertes por tu cuenta, definir tu perfil con honestidad —especialmente la parte psicológica— es uno de los pasos más importantes, porque la mejor cartera es la que eres capaz de mantener en una crisis.',
+    example:
+      'Dos personas de 35 años pueden tener perfiles de riesgo distintos: una con ingresos estables y nervios de acero puede ir 90% renta variable; otra que entraría en pánico con una caída del 20% necesita una cartera más equilibrada (por ejemplo 60/40), aunque su capacidad objetiva sea alta. La cartera que puedes mantener gana a la "óptima" que abandonarías.',
+    relatedArticles: [
+      'bogleheads-espana-guia-completa',
+      'cartera-boglehead-3-fondos-espana',
+      'que-hacer-cuando-el-mercado-cae',
+    ],
+    relatedLinks: [
+      { label: 'Perfiles de inversor', href: '/perfil' },
+      { label: 'Glosario: asset allocation', href: '/glosario/asset-allocation' },
+    ],
+    faq: [
+      {
+        q: '¿Cómo sé cuál es mi perfil de riesgo?',
+        a: 'Combina tu capacidad objetiva (horizonte, estabilidad de ingresos, fondo de emergencia) con tu tolerancia psicológica (cuánta caída soportas sin vender). Una buena prueba: imagina que tu cartera cae un 30% en unos meses. Si seguirías el plan tranquilo, tu tolerancia es alta; si venderías, necesitas una cartera más conservadora. Tu perfil real es el menor de los dos factores.',
+      },
+      {
+        q: '¿Mi perfil de riesgo debe cambiar con el tiempo?',
+        a: 'Suele hacerlo. A medida que se acorta tu horizonte (te acercas a la jubilación o a tu objetivo), conviene reducir gradualmente el riesgo para proteger lo acumulado. También puede cambiar tu tolerancia con la experiencia: muchos inversores descubren su verdadera tolerancia solo tras vivir su primer mercado bajista.',
+      },
+    ],
+  },
 ]
 
 /** Devuelve un término por su slug, o undefined si no existe */
