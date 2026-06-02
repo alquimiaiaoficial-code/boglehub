@@ -4,6 +4,7 @@ import { Footer } from '@/components/Footer'
 export const metadata = {
   title: 'Política de Privacidad',
   robots: { index: true, follow: false },
+  alternates: { canonical: '/privacidad' },
   openGraph: {
     images: [`/api/og?title=${encodeURIComponent('Política de Privacidad')}&subtitle=${encodeURIComponent('BogleHub')}`],
   },

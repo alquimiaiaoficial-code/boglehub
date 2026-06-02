@@ -4,6 +4,7 @@ import { Footer } from '@/components/Footer'
 export const metadata = {
   title: 'Aviso Legal',
   robots: { index: true, follow: false },
+  alternates: { canonical: '/aviso-legal' },
   openGraph: {
     images: [`/api/og?title=${encodeURIComponent('Aviso Legal')}&subtitle=${encodeURIComponent('BogleHub')}`],
   },

@@ -4,6 +4,7 @@ import { Footer } from '@/components/Footer'
 export const metadata = {
   title: 'Términos de uso',
   robots: { index: true, follow: false },
+  alternates: { canonical: '/terminos' },
 }
 
 export default function TerminosPage() {
