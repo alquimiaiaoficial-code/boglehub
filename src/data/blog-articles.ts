@@ -7018,4 +7018,122 @@ Una vez decidas, puedes [analizar tu cartera gratis](/analyzer) para ver tu expo
 - [Cómo elegir tu primer ETF en España — BogleHub](/blog/como-elegir-tu-primer-etf-espana-2026) — Los criterios que importan: domicilio, TER, acumulación.
 `,
   },
+  {
+    slug: 'como-invertir-msci-world-espana',
+    title: 'Cómo invertir en el MSCI World desde España (2026)',
+    excerpt:
+      'Cómo invertir en el MSCI World desde España: los mejores ETFs (IWDA, SWRD) y fondos indexados UCITS, dónde comprarlos y si conviene añadir emergentes.',
+    publishedAt: '2026-05-31',
+    readingMinutes: 9,
+    keywords: ['cómo invertir en el MSCI World desde España', 'invertir MSCI World España', 'ETF MSCI World', 'mejor fondo MSCI World', 'IWDA vs SWRD'],
+    faq: [
+      {
+        q: '¿Cómo se invierte en el MSCI World desde España?',
+        a: 'A través de un ETF o un fondo indexado UCITS que replique el índice MSCI World, domiciliado en Irlanda para máxima eficiencia fiscal. Los ETFs más populares son IWDA (iShares, TER 0,20%) y SWRD (SPDR, 0,12%); como fondos indexados, el Vanguard Global Stock (0,18%), el Fidelity MSCI World (0,12%) o el Amundi Prime Global (0,05%, índice equivalente). Los ETFs se compran en cualquier broker (Trade Republic, DEGIRO) y los fondos en MyInvestor.',
+      },
+      {
+        q: '¿Cuál es el mejor ETF de MSCI World para inversores en España?',
+        a: 'No hay un único "mejor". Los más usados son IWDA (iShares Core MSCI World, TER 0,20%, el más popular y con mayor patrimonio) y SWRD (SPDR MSCI World, TER 0,12%, más barato). MWRD (Amundi, 0,12%) es otra opción económica. Todos son de acumulación y están domiciliados en Irlanda (grado fiscal A). La diferencia de TER es de céntimos al año; elige según disponibilidad y comisiones en tu broker.',
+      },
+      {
+        q: '¿IWDA o SWRD: cuál elijo?',
+        a: 'Ambos replican el MSCI World, son de acumulación y están domiciliados en Irlanda. La diferencia principal es el TER: SWRD (0,12%) es más barato que IWDA (0,20%). IWDA tiene mayor patrimonio y liquidez, lo que se traduce en spreads ligeramente más ajustados. Para la mayoría de inversores la diferencia es mínima; SWRD gana en coste puro, IWDA en liquidez y trayectoria.',
+      },
+      {
+        q: '¿El MSCI World incluye mercados emergentes?',
+        a: 'No. El MSCI World cubre solo 23 países desarrollados (EE.UU., Japón, Reino Unido, Europa, Canadá, Australia...), sin emergentes como China, India o Brasil. Si quieres incluirlos, puedes añadir un ETF de emergentes (EIMI, VFEM) en un 10-20%, o usar directamente un ETF All-World como VWCE, que ya incorpora emergentes en su proporción natural.',
+      },
+      {
+        q: '¿Mejor un ETF o un fondo indexado para el MSCI World?',
+        a: 'Depende de si valoras el traspaso fiscal. Los fondos indexados (Vanguard Global Stock, Fidelity MSCI World, Amundi Prime Global) permiten traspasar a otro fondo sin tributar, ventaja exclusiva de los fondos en España. Los ETFs (IWDA, SWRD) suelen tener comisiones de compra más bajas en algunos brokers y planes de ahorro automáticos. Para rebalancear sin coste fiscal, el fondo; para comprar y mantener, el ETF también vale.',
+      },
+    ],
+    content: `# Cómo invertir en el MSCI World desde España (2026)
+
+El MSCI World es el índice de referencia del inversor indexado en España: más de 1.400 empresas grandes y medianas de 23 países desarrollados, en un solo producto. Es, para mucha gente, la base de toda la cartera. Esta guía explica cómo invertir en él paso a paso, con las mejores opciones concretas —ETFs y fondos— disponibles en 2026.
+
+Los TER e ISIN de esta guía son los publicados por las gestoras; verifícalos en la ficha oficial antes de invertir, ya que pueden cambiar.
+
+> **En resumen**: inviertes en el MSCI World con un ETF o fondo indexado UCITS domiciliado en Irlanda. Los ETFs más usados son IWDA (TER 0,20%) y SWRD (0,12%). Como fondo indexado, el Vanguard Global Stock (0,18%), el Fidelity MSCI World (0,12%) o el Amundi Prime Global (0,05%, índice equivalente). Los ETFs en cualquier broker; los fondos, en MyInvestor con traspaso fiscal.
+
+---
+
+## Qué es el MSCI World y por qué es la base por defecto
+
+El MSCI World agrupa más de 1.400 empresas grandes y medianas de 23 países desarrollados, cubriendo alrededor del 85% de la capitalización bursátil de esos mercados. EE.UU. pesa en torno al 70%, seguido de Japón, Reino Unido y el resto de Europa.
+
+Su atractivo para el inversor indexado es la diversificación en un solo producto: en lugar de apostar por un país (como el S&P 500, 100% EE.UU.), replicas la economía desarrollada mundial. Por eso es la posición central de la mayoría de carteras Boglehead españolas. Si quieres entender el índice a fondo, lee [qué es el MSCI World](/blog/que-es-el-msci-world).
+
+Su única "carencia": no incluye mercados emergentes. Lo abordamos al final.
+
+---
+
+## Los mejores ETFs de MSCI World para España
+
+Todos replican el MSCI World, son de acumulación y están domiciliados en Irlanda (grado fiscal óptimo). La diferencia está en el TER y el método de réplica.
+
+| ETF | Gestora | TER | Réplica | ISIN |
+|---|---|---|---|---|
+| **SWRD** | SPDR | **0,12 %** | Física | IE00BFY0GT14 |
+| **MWRD** | Amundi | 0,12 % | Física | IE00BK1PV551 |
+| XDWD | Xtrackers | 0,19 % | Sintética (swap) | IE00BJ0KDQ92 |
+| **IWDA** | iShares | 0,20 % | Física | IE00B4L5Y983 |
+
+El **SWRD** de SPDR y el **MWRD** de Amundi son los más baratos (0,12%). El **IWDA** de iShares es el más popular y con mayor patrimonio, lo que le da máxima liquidez. XDWD usa réplica sintética (swap), que puede mejorar el tracking pero añade una capa de riesgo de contraparte; los demás son de réplica física. Puedes comparar dos cualquiera en el [comparador de ETFs](/comparar) o ver la [categoría completa de ETFs MSCI World](/etfs/msci-world).
+
+---
+
+## Los fondos indexados de MSCI World (con traspaso fiscal)
+
+Si prefieres un fondo indexado —para aprovechar el traspaso fiscal libre—, tienes tres opciones excelentes:
+
+| Fondo | Gestora | TER | ISIN |
+|---|---|---|---|
+| **Amundi Prime Global** | Amundi | **0,05 %** | LU1931974692 |
+| **Fidelity MSCI World Index** | Fidelity | 0,12 % | IE00BYX5MX67 |
+| Vanguard Global Stock Index | Vanguard | 0,18 % | IE00B03HCZ61 |
+
+El **Amundi Prime Global** es el más barato (0,05%); replica el índice Solactive GBS, funcionalmente equivalente al MSCI World. El **Fidelity MSCI World** y el **Vanguard Global Stock** replican el MSCI World clásico. Fichas: [Amundi Prime Global](/fondo/amundi-prime-global), [Fidelity MSCI World](/fondo/fidelity-msci-world) y [Vanguard Global Stock](/fondo/vanguard-global-stock). Más en la [guía de mejores fondos indexados](/blog/mejores-fondos-indexados-espana-2026).
+
+---
+
+## ETF o fondo: cuál elegir para el MSCI World
+
+- **Fondo indexado** (Amundi Prime Global, Fidelity, Vanguard): permite **traspaso fiscal libre** —cambiar a otro fondo sin tributar—, aportaciones desde 1€ y compra a valor liquidativo. Ideal si vas a rebalancear o prevés cambiar de estrategia.
+- **ETF** (SWRD, IWDA): comisiones de compra muy bajas en brokers como Trade Republic (0€), precio en tiempo real y planes de ahorro automáticos. Ideal para comprar y mantener.
+
+La diferencia de coste anual es mínima; la decisión real es la del [traspaso fiscal](/blog/como-hacer-traspaso-fondos-espana) frente a la comodidad del ETF. Lo desarrollamos en [fondos indexados o ETFs](/blog/fondos-indexados-vs-etfs-espana).
+
+---
+
+## ¿MSCI World o All-World (con emergentes)?
+
+Aquí va el matiz importante. El MSCI World cubre solo países desarrollados. Hay dos formas de completar la foto global:
+
+- **MSCI World + un ETF de emergentes** (EIMI, VFEM) en un 10-20%: control total sobre la proporción, pero requiere rebalancear dos posiciones.
+- **Un ETF All-World** como VWCE (FTSE All-World) o ISAC (MSCI ACWI): incluye desarrollados y emergentes en su proporción natural (~88/12) en un solo producto. Más simple.
+
+Ninguna es "mejor" en abstracto: el MSCI World a secas es perfectamente válido (los emergentes son solo ~12% del mercado global y su aportación histórica es discutible), y el All-World es la opción más completa y cómoda. Lo comparamos en [MSCI World vs MSCI ACWI](/blog/msci-world-vs-msci-acwi-diferencias) y en [VWCE vs CSPX vs IWDA](/blog/vwce-vs-cspx-vs-iwda).
+
+Si lo que buscas es exposición solo a EE.UU., mira la guía paralela: [cómo invertir en el S&P 500 desde España](/blog/como-invertir-sp500-espana).
+
+---
+
+## Dónde comprarlo
+
+- **ETFs** (SWRD, IWDA): cualquier broker con acceso a bolsa europea. Trade Republic (0€ y planes de ahorro), DEGIRO, MyInvestor. Compara opciones en [mejor broker para ETFs en España](/blog/mejor-broker-etfs-espana-2026).
+- **Fondos** (Amundi Prime Global, Fidelity, Vanguard): MyInvestor es la plataforma más usada, con traspaso fiscal y aportaciones desde 1€.
+
+Una vez montada tu cartera, puedes [analizarla gratis](/analyzer) para ver tu exposición real por región y comprobar que encaja con lo que quieres. Sin registro y con los datos solo en tu navegador.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Qué es el MSCI World — BogleHub](/blog/que-es-el-msci-world) — El índice explicado a fondo: composición, países y por qué es tan popular.
+- [Categoría: ETFs MSCI World — BogleHub](/etfs/msci-world) — Listado completo con TER y grado fiscal.
+- [Mejores fondos indexados en España — BogleHub](/blog/mejores-fondos-indexados-espana-2026) — Incluye las opciones de fondos para el MSCI World.
+- [Cómo invertir en el S&P 500 desde España — BogleHub](/blog/como-invertir-sp500-espana) — La guía paralela para quien prefiere concentrarse en EE.UU.
+`,
+  },
 ]

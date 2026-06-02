@@ -45,4 +45,5 @@ export const BLOG_META_TITLES: Record<string, string> = {
   'modelo-d6-etf-espana': 'Modelo D6 y ETFs: ¿hay que presentarlo? (2026)',
   'mejores-fondos-indexados-espana-2026': 'Mejores fondos indexados en España (2026)',
   'como-invertir-sp500-espana': 'Cómo invertir en el S&P 500 desde España',
+  'como-invertir-msci-world-espana': 'Cómo invertir en el MSCI World desde España',
 }

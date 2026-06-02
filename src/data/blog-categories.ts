@@ -95,6 +95,7 @@ export const ARTICLE_CATEGORY: Record<string, BlogCategory> = {
   // Carteras y asignación
   'mejores-fondos-indexados-espana-2026': 'etfs-especificos',
   'como-invertir-sp500-espana': 'etfs-especificos',
+  'como-invertir-msci-world-espana': 'etfs-especificos',
   'cartera-boglehead-3-fondos-espana': 'carteras',
   'cartera-permanente-harry-browne-espana': 'carteras',
   'como-rebalancear-cartera-indexada': 'carteras',

@@ -276,4 +276,10 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'como-elegir-tu-primer-etf-espana-2026',
     'mejores-fondos-indexados-espana-2026',
   ],
+  'como-invertir-msci-world-espana': [
+    'que-es-el-msci-world',
+    'msci-world-vs-msci-acwi-diferencias',
+    'swrd-vs-iwda',
+    'como-invertir-sp500-espana',
+  ],
 }
