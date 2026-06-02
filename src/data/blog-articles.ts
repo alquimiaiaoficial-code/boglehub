@@ -2986,6 +2986,7 @@ Para ver el coste anual exacto de cada broker según tu patrón real de inversi�
 - [DEGIRO — Tarifas oficiales 2026](https://www.degiro.es/tarifas) — Verifica las comisiones actuales antes de abrir cuenta.
 - [Trade Republic — Información sobre la cuenta de inversión](https://traderepublic.com/es-es) — Condiciones actualizadas y ETFs disponibles en la plataforma.
 - [Banco de España — Registro de Entidades](https://www.bde.es/bde/es/secciones/servicios/Particulares_y_e/Registros_de_En/) — Comprueba que el broker está registrado y supervisado en España.
+- [Cómo invertir en el MSCI World desde España — BogleHub](/blog/como-invertir-msci-world-espana) — Guía práctica: los mejores ETFs y fondos para replicar este índice y dónde comprarlos.
 `,
   },
   {
