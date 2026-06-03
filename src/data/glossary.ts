@@ -1390,6 +1390,96 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       },
     ],
   },
+  {
+    slug: 'indice-bursatil',
+    term: 'Índice bursátil',
+    category: 'conceptos',
+    shortDefinition:
+      'Un índice bursátil mide la evolución de un conjunto de empresas cotizadas y sirve de referencia del mercado. El IBEX 35, el S&P 500 o el MSCI World son índices que los fondos indexados replican.',
+    longDefinition:
+      'Un índice bursátil es un indicador que agrupa un conjunto de valores cotizados (acciones, bonos) y mide su evolución conjunta a lo largo del tiempo. Funciona como el "termómetro" de un mercado: cuando se dice que "la bolsa subió un 1%", normalmente se refiere a que subió su índice de referencia.\n\nCada índice tiene una metodología que define qué incluye y con qué peso. Los más relevantes para el inversor indexado:\n- **IBEX 35**: las 35 mayores empresas españolas.\n- **S&P 500**: las 500 mayores de EE.UU.\n- **MSCI World**: ~1.400 empresas de 23 países desarrollados.\n- **FTSE All-World / MSCI ACWI**: desarrollados + emergentes, el mercado global.\n\nLa mayoría de índices ponderan a cada empresa según su capitalización bursátil: las más grandes pesan más. Esto hace que el índice se autoajuste al mercado sin intervención.\n\nLos índices no se pueden comprar directamente: son cálculos. Para "invertir en un índice" usas un fondo indexado o un ETF que lo replica comprando las mismas empresas en las mismas proporciones. Esa es la esencia de la inversión indexada: en vez de elegir acciones, replicas un índice entero al menor coste.',
+    example:
+      'No puedes "comprar el MSCI World" directamente, pero sí un ETF como IWDA o un fondo como el Amundi Prime Global que lo replican. Si el índice sube un 8% en el año, tu fondo subirá aproximadamente ese 8% menos un TER mínimo.',
+    relatedArticles: [
+      'que-es-el-msci-world',
+      'bogleheads-espana-guia-completa',
+      'como-elegir-tu-primer-etf-espana-2026',
+    ],
+    relatedLinks: [
+      { label: 'Glosario: capitalización bursátil', href: '/glosario/capitalizacion-bursatil' },
+      { label: 'Glosario: benchmark', href: '/glosario/benchmark' },
+    ],
+    faq: [
+      {
+        q: '¿Se puede comprar un índice directamente?',
+        a: 'No. Un índice es un cálculo, no un producto. Para invertir en él compras un fondo indexado o un ETF que lo replica adquiriendo las mismas empresas en las mismas proporciones. Por eso a estos productos se les llama "indexados": siguen un índice.',
+      },
+      {
+        q: '¿Qué índice debería replicar como inversor indexado?',
+        a: 'Para la mayoría, un índice global como el MSCI World (desarrollados) o el FTSE All-World / MSCI ACWI (desarrollados + emergentes) es la base más diversificada. El S&P 500 concentra en EE.UU. y el IBEX 35 solo en España (poco diversificado). Cuanto más amplio el índice, más diversificada tu cartera.',
+      },
+    ],
+  },
+  {
+    slug: 'valor-liquidativo',
+    term: 'Valor liquidativo',
+    fullForm: 'Valor liquidativo (NAV)',
+    category: 'metricas',
+    shortDefinition:
+      'El valor liquidativo (NAV) es el precio de una participación de un fondo de inversión, calculado dividiendo el patrimonio total del fondo entre el número de participaciones. Se actualiza una vez al día.',
+    longDefinition:
+      'El valor liquidativo (en inglés NAV, Net Asset Value) es el precio de una participación de un fondo de inversión. Se calcula dividiendo el valor total de los activos del fondo (menos comisiones y gastos) entre el número de participaciones en circulación. Es el precio al que compras y vendes participaciones del fondo.\n\nA diferencia de un ETF —que cotiza en bolsa con precio en tiempo real durante toda la sesión—, el valor liquidativo de un fondo de inversión tradicional se calcula **una vez al día**, tras el cierre de los mercados. Por eso, cuando das una orden de compra o reembolso de un fondo, se ejecuta al valor liquidativo del cierre de ese día (o del siguiente, según la hora de corte de la gestora), no a un precio instantáneo.\n\nEsto tiene una ventaja para el inversor a largo plazo: no hay spread de mercado ni precio que vigilar, y no puedes hacer "trading" intradía (lo que es bueno, porque evita decisiones impulsivas). El valor liquidativo refleja simplemente cuánto valen los activos del fondo ese día.',
+    example:
+      'Si un fondo indexado tiene un patrimonio de 100 millones de euros y 1 millón de participaciones, su valor liquidativo es de 100€ por participación. Si aportas 1.000€, recibes 10 participaciones al valor liquidativo del cierre del día en que se procesa tu orden.',
+    relatedArticles: [
+      'fondos-indexados-vs-etfs-espana',
+      'como-hacer-traspaso-fondos-espana',
+    ],
+    relatedLinks: [
+      { label: 'Glosario: NAV', href: '/glosario/nav' },
+      { label: 'Fondos indexados en España', href: '/fondo' },
+    ],
+    faq: [
+      {
+        q: '¿A qué precio compro un fondo de inversión?',
+        a: 'Al valor liquidativo del día en que se procesa tu orden, que se calcula una vez tras el cierre de los mercados. No hay precio en tiempo real como en un ETF: si das la orden por la mañana, se ejecuta al valor liquidativo del cierre de ese día o del siguiente, según la hora de corte de la gestora.',
+      },
+      {
+        q: '¿Es lo mismo el valor liquidativo que el precio de un ETF?',
+        a: 'Conceptualmente miden lo mismo (el valor de los activos por participación), pero el ETF cotiza en bolsa con precio en tiempo real durante toda la sesión, mientras que el valor liquidativo de un fondo se fija una vez al día. El precio de mercado de un ETF puede desviarse ligeramente de su valor liquidativo real; en un fondo no hay esa diferencia.',
+      },
+    ],
+  },
+  {
+    slug: 'apalancamiento',
+    term: 'Apalancamiento',
+    category: 'conceptos',
+    shortDefinition:
+      'El apalancamiento es invertir con dinero prestado o con productos que multiplican la exposición (ETFs apalancados x2, x3). Amplifica tanto las ganancias como las pérdidas y NO es adecuado para el inversor indexado a largo plazo.',
+    longDefinition:
+      'El apalancamiento consiste en aumentar la exposición al mercado por encima del capital que tienes, ya sea pidiendo dinero prestado para invertir o usando productos diseñados para multiplicar los movimientos del mercado (ETFs apalancados x2 o x3, CFDs, derivados).\n\nLa idea es tentadora: si el mercado sube un 10% y vas apalancado x2, ganas un 20%. El problema es que funciona igual a la baja: si cae un 10%, pierdes un 20%. Y aquí está la trampa que muchos no ven: los **ETFs apalancados se reajustan a diario**, lo que provoca el "decaimiento por volatilidad" (volatility decay). En mercados laterales o volátiles, un ETF x2 puede perder valor aunque el índice subyacente acabe plano. Por eso están pensados para operativa de muy corto plazo (días), no para mantener.\n\n**Para el inversor indexado a largo plazo, el apalancamiento es un error.** La filosofía Boglehead se basa en capturar la rentabilidad del mercado de forma diversificada y barata, manteniendo la inversión durante décadas. El apalancamiento añade un riesgo de ruina (puedes perder más de lo que esperabas, o todo) que no compensa. Si ves ETFs con "2x", "3x", "Leveraged", "Daily" o "Short" en el nombre, no son para una cartera de largo plazo.',
+    example:
+      'Un ETF apalancado x3 sobre el Nasdaq parece atractivo en un año alcista, pero en 2022 muchos de estos productos perdieron más del 70% por la combinación de caída + decaimiento por volatilidad, mientras el índice subyacente cayó mucho menos. La asimetría juega en tu contra a largo plazo.',
+    relatedArticles: [
+      'que-hacer-cuando-el-mercado-cae',
+      'bogleheads-espana-guia-completa',
+      'mejores-etfs-espana-2026',
+    ],
+    relatedLinks: [
+      { label: 'Glosario: volatilidad', href: '/glosario/volatilidad' },
+      { label: 'Glosario: gestión pasiva', href: '/glosario/gestion-pasiva' },
+    ],
+    faq: [
+      {
+        q: '¿Son buena idea los ETFs apalancados para el largo plazo?',
+        a: 'No. Los ETFs apalancados (x2, x3) se reajustan a diario y sufren decaimiento por volatilidad: en mercados laterales o volátiles pueden perder valor aunque el índice acabe plano. Están diseñados para operativa de días, no para mantener. Para una cartera indexada a largo plazo son un error que añade riesgo de ruina.',
+      },
+      {
+        q: '¿Cómo reconozco un producto apalancado?',
+        a: 'Busca en el nombre del ETF palabras como "2x", "3x", "Leveraged", "Daily", "Ultra" o "Short". También lo son los CFDs y muchos derivados. Si un producto promete multiplicar los movimientos del mercado, está apalancado y no es adecuado para una cartera Boglehead de largo plazo.',
+      },
+    ],
+  },
 ]
 
 /** Devuelve un término por su slug, o undefined si no existe */
