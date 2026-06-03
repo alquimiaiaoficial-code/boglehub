@@ -4696,6 +4696,7 @@ En la fase de retirada, los dividendos del 20-30% en VHYL cubren parte de las ne
 - [Vanguard — VHYL](https://www.vanguard.co.uk/) — Ficha técnica del ETF de dividendos más popular para inversores españoles.
 - [JustETF — Filtro de ETFs de dividendos](https://www.justetf.com/es/) — Comparador con dividend yield, frecuencia y domicilio.
 - [Calculadora FIRE Monte Carlo — BogleHub](/calculadora/fire-monte-carlo) — Simula la probabilidad de que tu cartera de dividendos aguante toda la jubilación.
+- [Categoría: ETFs de distribución — BogleHub](/etfs/distribucion) — Todos los ETFs UCITS de reparto disponibles en España, con TER y grado fiscal.
 `,
   },
   {
@@ -5441,6 +5442,7 @@ Para aportaciones recurrentes pequeñas: Trade Republic. Para órdenes grandes: 
 - [Invesco — Ficha técnica EQQQ](https://www.invesco.com/uk/en/etf/EQQQ.html) — Datos oficiales, composición y rentabilidad histórica del ETF.
 - [Nasdaq — Composición Nasdaq 100](https://www.nasdaq.com/market-activity/quotes/nasdaq-ndx-index) — Lista completa de empresas y pesos actuales.
 - [Mejores ETFs S&P 500 — BogleHub](/etfs/sp500) — Alternativas de exposición americana con menor TER y diversificación más amplia.
+- [Categoría: ETFs Nasdaq 100 — BogleHub](/etfs/nasdaq-100) — El catálogo completo de ETFs Nasdaq 100 UCITS disponibles en España, con TER y grado fiscal.
 `,
   },
   {
@@ -5633,6 +5635,7 @@ Para profundizar en cómo integrar oro en una cartera con filosofía robust, lee
 - [iShares — Ficha SGLN](https://www.ishares.com/es/inversores-particulares/es/productos/258728/) — Información oficial sobre el ETC de oro más popular, custodia y auditorías.
 - [World Gold Council](https://www.gold.org/) — Datos oficiales sobre el mercado del oro a nivel mundial, oferta y demanda.
 - [Categoría ETFs de oro — BogleHub](/etfs/oro) — Comparativa de los principales ETC de oro físico disponibles para inversores en España.
+- [Categoría: ETFs de materias primas — BogleHub](/etfs/materias-primas) — Oro, materias primas amplias y otros ETC para diversificar tu cartera.
 `,
   },
   {
