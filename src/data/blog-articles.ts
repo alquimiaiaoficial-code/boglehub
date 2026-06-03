@@ -483,7 +483,7 @@ La diferencia entre CSPX y VWCE es ~6 000 € a 25 años. Relevante, pero no dra
     slug: 'fiscalidad-etfs-espana-guia-completa',
     title: 'Fiscalidad de ETFs en España: la guía que tu broker no te da',
     excerpt:
-      'Guía completa sobre fiscalidad de ETFs en España: IRPF, modelo 720/721, ETFs de acumulación vs distribución, domicilio fiscal y casos prácticos con Trade Republic, DEGIRO y MyInvestor.',
+      'Guía completa de fiscalidad de ETFs en España: IRPF, modelo 720, acumulación vs distribución, domicilio fiscal y casos prácticos con Trade Republic y DEGIRO.',
     publishedAt: '2026-05-12',
     readingMinutes: 15,
     keywords: ['fiscalidad ETF España', 'declarar ETFs IRPF', 'impuestos ETFs'],
@@ -705,7 +705,7 @@ Al ser entidad española, **retiene a cuenta** el 19 % sobre dividendos abonados
     slug: 'fire-espana-cuanto-necesitas',
     title: 'FIRE en España: cuánto necesitas realmente y cómo llegar',
     excerpt:
-      'Guía completa sobre FIRE en España: la regla del 4 %, por qué usar el 3,5 % en España, coste de vida real en Madrid, Bilbao y pueblo, y planes a 15, 20 y 25 años con cifras concretas.',
+      'Guía de FIRE en España: la regla del 4%, por qué usar el 3,5% aquí, coste de vida real en varias ciudades y planes a 15, 20 y 25 años con cifras concretas.',
     publishedAt: '2026-05-13',
     readingMinutes: 14,
     keywords: ['FIRE España', 'libertad financiera España', 'jubilarte joven'],
@@ -922,7 +922,7 @@ Con una retirada de 28 000 €/año en base del ahorro y bien planificada, el IR
     slug: 'bogleheads-espana-guia-completa',
     title: 'Bogleheads España: la guía completa para empezar',
     excerpt:
-      'Todo sobre la filosofía Boglehead adaptada a España: los principios de John Bogle, la cartera de tres fondos, ETFs compatibles y los primeros pasos concretos para empezar esta semana.',
+      'La filosofía Boglehead adaptada a España: los principios de John Bogle, la cartera de tres fondos, ETFs compatibles y los primeros pasos para empezar ya.',
     publishedAt: '2026-05-14',
     readingMinutes: 12,
     keywords: ['bogleheads España', 'inversión pasiva España', 'cartera bogle'],
@@ -1703,7 +1703,7 @@ La decisión real nunca es "invertir o esperar". Es "de golpe o promediando". Y 
     slug: 'roboadvisors-espana-merecen-comision',
     title: 'Roboadvisors en España: ¿merecen lo que cobran?',
     excerpt:
-      'Roboadvisors en España como Indexa, Finizens o las carteras de MyInvestor: qué hacen bien, cuánto cuestan de verdad en 30 años y cómo saber si te compensan frente a hacerlo tú mismo.',
+      'Roboadvisors en España como Indexa o Finizens: qué hacen bien, cuánto cuestan de verdad a 30 años y cómo saber si te compensan frente a hacerlo tú mismo.',
     publishedAt: '2026-05-17',
     readingMinutes: 10,
     keywords: ['roboadvisor España', 'Indexa Capital opiniones', 'roboadvisor o hacerlo tú mismo'],
@@ -5642,7 +5642,7 @@ Para profundizar en cómo integrar oro en una cartera con filosofía robust, lee
     slug: 'msci-world-vs-msci-acwi-diferencias',
     title: 'MSCI World vs MSCI ACWI: diferencias clave para tu cartera indexada (2026)',
     excerpt:
-      'Comparativa entre MSCI World (solo desarrollados) y MSCI ACWI (con emergentes). Diferencias en composición, rentabilidad histórica, riesgo y qué índice replicar según tu estrategia.',
+      'MSCI World (solo desarrollados) vs MSCI ACWI (con emergentes): diferencias en composición, rentabilidad, riesgo y qué índice replicar según tu estrategia.',
     publishedAt: '2026-05-24',
     readingMinutes: 8,
     keywords: ['MSCI World vs MSCI ACWI', 'MSCI ACWI análisis', 'diferencia ACWI All-World', 'mejor índice global', 'incluir emergentes cartera'],
@@ -5821,7 +5821,7 @@ Si prefieres MSCI World por su TER ligeramente inferior, combínalo con un ETF d
     slug: 'como-hacer-traspaso-fondos-espana',
     title: 'Cómo hacer un traspaso de fondos en España (paso a paso)',
     excerpt:
-      'El traspaso entre fondos de inversión permite cambiar de estrategia, gestora o nivel de riesgo sin pagar impuestos. Guía paso a paso: qué es, cómo se hace, cuánto tarda y qué fondos lo permiten.',
+      'El traspaso entre fondos permite cambiar de estrategia o gestora sin pagar impuestos. Guía paso a paso: qué es, cómo se hace, cuánto tarda y qué fondos lo permiten.',
     publishedAt: '2026-05-30',
     readingMinutes: 9,
     keywords: ['traspaso fondos inversión España', 'traspasar fondo sin tributar', 'traspaso fondos indexados', 'régimen diferimiento fiscal fondos', 'cómo traspasar fondos MyInvestor'],
