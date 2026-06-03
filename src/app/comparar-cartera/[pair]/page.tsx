@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ pair: str
 
   return {
     title: `${pA.name} vs ${pB.name}: comparativa de carteras (2026)`,
-    description: `Comparativa detallada entre ${pA.name} y ${pB.name}: composición, volatilidad esperada, rentabilidad esperada, TER y para qué inversor encaja mejor cada una.`,
+    description: `${pA.name} vs ${pB.name}: composición, riesgo, rentabilidad esperada y para qué inversor encaja cada una.`,
     openGraph: { locale: 'es_ES', images: [`/api/og?title=${encodeURIComponent(`${pA.name} vs ${pB.name}`)}&subtitle=${encodeURIComponent('Comparativa%20de%20carteras')}`] },
     alternates: { canonical: `/comparar-cartera/${pair}` },
   }

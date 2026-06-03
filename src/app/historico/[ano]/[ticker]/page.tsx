@@ -46,7 +46,7 @@ export async function generateMetadata({
 
   return {
     title: `${etf.ticker} en ${year}: rendimiento ${formatPct(ret)} y qué pasó`,
-    description: `${etf.name} (${etf.ticker}) rindió ${formatPct(ret)} en ${year}. Análisis del año: ${event.summary.substring(0, 150)}...`,
+    description: `${etf.ticker} rindió ${formatPct(ret)} en ${year}: ${event.summary.substring(0, 115)}...`,
     openGraph: { locale: 'es_ES', images: [`/api/og?title=${encodeURIComponent(`${etf.ticker} en ${year}`)}&subtitle=${encodeURIComponent(formatPct(ret))}`] },
     alternates: { canonical: `/historico/${ano}/${ticker}` },
   }
