@@ -11,7 +11,7 @@ const BASE_URL = 'https://boglehub.com'
 export const metadata: Metadata = {
   title: 'Datos clave de inversión indexada en España 2026 (tablas comparativas)',
   description:
-    'Tablas comparativas de referencia para inversión indexada en España 2026: tramos del IRPF del ahorro, mejores ETFs UCITS por categoría, roboadvisors, brokers, planes de pensiones indexados y convenios fiscales. Datos verificables actualizados.',
+    'Tablas de referencia para invertir de forma indexada en España 2026: tramos del IRPF, mejores ETFs, roboadvisors, brokers y planes de pensiones. Datos verificables.',
   openGraph: {
     title: 'Datos clave de inversión indexada en España 2026 | BogleHub',
     description:

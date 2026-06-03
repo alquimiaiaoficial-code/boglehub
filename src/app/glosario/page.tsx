@@ -10,7 +10,7 @@ const BASE_URL = 'https://boglehub.com'
 export const metadata: Metadata = {
   title: 'Glosario de inversión indexada y ETFs para España (2026)',
   description:
-    'Glosario completo de términos financieros para inversores indexados en España: TER, UCITS, ISIN, FIFO, IRPF del ahorro, FIRE, DCA, rebalanceo y mucho más. Definiciones claras con ejemplos prácticos.',
+    'Glosario de inversión indexada para España: TER, UCITS, ISIN, IRPF del ahorro, FIRE, DCA, traspaso y mucho más. Definiciones claras con ejemplos prácticos.',
   openGraph: {
     title: 'Glosario de inversión indexada y ETFs para España | BogleHub',
     description:

@@ -14,7 +14,7 @@ const BASE_URL = 'https://boglehub.com'
 export const metadata: Metadata = {
   title: 'Sobre BogleHub: misión, metodología y por qué confiar',
   description:
-    'BogleHub es una plataforma educativa gratuita en español sobre inversión indexada para residentes en España. Conoce la misión, la metodología de análisis, las fuentes de datos y por qué la información es de confianza.',
+    'BogleHub es una plataforma educativa gratuita en español sobre inversión indexada para España. Misión, metodología, fuentes de datos y por qué confiar.',
   openGraph: {
     title: 'Sobre BogleHub | Misión, metodología y confianza',
     description:

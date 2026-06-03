@@ -9,7 +9,7 @@ const BASE_URL = 'https://boglehub.com'
 export const metadata: Metadata = {
   title: 'Metodología BogleHub: cómo calculamos cada métrica (2026)',
   description:
-    'Cómo calcula BogleHub cada métrica: valor de cartera en EUR, TER ponderado, asignación de activos, grados fiscales para España, proyección FIRE y simulación Monte Carlo. Fórmulas exactas, fuentes de datos, total transparencia.',
+    'Cómo calcula BogleHub cada métrica: valor de cartera, TER ponderado, asignación, grados fiscales, FIRE y Monte Carlo. Fórmulas exactas y fuentes, total transparencia.',
   openGraph: {
     title: 'Metodología | BogleHub',
     description:

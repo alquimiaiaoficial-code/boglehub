@@ -186,7 +186,7 @@ const QUESTION_COUNT = ALL_QUESTIONS.length
 
 export const metadata: Metadata = {
   title: 'Preguntas frecuentes sobre inversión indexada en España (2026)',
-  description: `Respuestas claras a las ${QUESTION_COUNT} preguntas más frecuentes sobre inversión indexada, ETFs UCITS, fiscalidad española, planes de pensiones, roboadvisors, brokers, FIRE y carteras Boglehead. Actualizado mayo 2026.`,
+  description: `Respuestas claras a las ${QUESTION_COUNT} preguntas más frecuentes sobre inversión indexada, ETFs, fiscalidad española, FIRE, brokers y carteras Boglehead.`,
   openGraph: {
     title: 'Preguntas frecuentes sobre inversión indexada en España | BogleHub',
     description: `Respuestas directas a las ${QUESTION_COUNT} preguntas más frecuentes sobre ETFs, fiscalidad, brokers, roboadvisors y estrategias indexadas en España.`,
