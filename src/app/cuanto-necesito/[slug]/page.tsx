@@ -30,7 +30,7 @@ export async function generateMetadata({
 
   return {
     title: `Invertir al mes para ${o.label}: cuánto necesito (2026)`,
-    description: `Tabla con la aportación mensual necesaria para alcanzar ${o.label} en 10, 15, 20, 25, 30 y 40 años con rentabilidad histórica del 7% anual. Estrategia indexada en España.`,
+    description: `Cuánto invertir al mes para alcanzar ${o.label}: aportación necesaria a 10, 15, 20, 25 y 30 años con rentabilidad del 7%. Estrategia indexada en España.`,
     openGraph: {
       locale: 'es_ES',
       images: [`/api/og?title=${encodeURIComponent(`${o.label}`)}&subtitle=${encodeURIComponent('Cu%C3%A1nto%20invertir%20al%20mes')}`],

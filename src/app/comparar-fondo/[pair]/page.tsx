@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ pair: str
 
   return {
     title: `${fA.name} vs ${fB.name}: comparativa de fondos (2026)`,
-    description: `Comparativa entre ${fA.name} (TER ${fA.ter}%) y ${fB.name} (TER ${fB.ter}%): índice, coste, gestora y cuál elegir para tu cartera indexada en España.`,
+    description: `${fA.name} vs ${fB.name}: índice, coste (TER), gestora y cuál elegir para tu cartera indexada en España.`,
     openGraph: { locale: 'es_ES', images: [`/api/og?title=${encodeURIComponent(`${fA.manager} vs ${fB.manager}`)}&subtitle=${encodeURIComponent('Comparativa%20fondos%20indexados')}`] },
     alternates: { canonical: `/comparar-fondo/${pair}` },
   }

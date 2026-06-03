@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!s) return { title: 'No encontrado' }
   return {
     title: `Invertir en sector ${s.name}: ETFs y análisis (2026)`,
-    description: `${s.tagline}. Análisis del sector ${s.name}: peso en MSCI World (${s.msciWorldWeight}), ETFs UCITS disponibles, empresas líderes y pros/contras para inversor en España.`,
+    description: `Cómo invertir en el sector ${s.name} desde España: peso en el MSCI World, ETFs UCITS disponibles, empresas líderes y pros y contras.`,
     openGraph: {
       locale: 'es_ES',
       images: [`/api/og?title=${encodeURIComponent(s.name)}&subtitle=${encodeURIComponent('Sector%20bolsa')}`],

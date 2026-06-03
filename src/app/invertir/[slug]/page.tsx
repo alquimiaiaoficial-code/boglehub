@@ -30,7 +30,7 @@ export async function generateMetadata({
 
   return {
     title: `Cómo invertir ${m.amount}€ al mes en España (guía 2026)`,
-    description: `Guía práctica para invertir ${m.amount}€/mes en fondos indexados desde España: dónde aportar, qué ETF elegir, fiscalidad y cuánto acumulas en 10, 20 y 30 años con rentabilidad histórica del 7% anual.`,
+    description: `Cómo invertir ${m.amount}€ al mes en fondos indexados desde España: dónde aportar, qué ETF elegir y cuánto acumulas en 10, 20 y 30 años al 7% anual.`,
     openGraph: {
       locale: 'es_ES',
       images: [`/api/og?title=${encodeURIComponent(`Invertir ${m.amount}€/mes`)}&subtitle=${encodeURIComponent('Estrategia indexada en Espa%C3%B1a')}`],

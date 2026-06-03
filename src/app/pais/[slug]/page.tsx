@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!c) return { title: 'No encontrado' }
   return {
     title: `Invertir en ${c.name} desde España: ETFs y guía (2026)`,
-    description: `${c.tagline}. Análisis de ${c.name}: peso global (${c.worldWeight}), ETFs UCITS disponibles, convenio fiscal y consideraciones para inversor en España.`,
+    description: `Cómo invertir en ${c.name} desde España: peso en los índices globales, ETFs UCITS disponibles, convenio fiscal y qué tener en cuenta.`,
     openGraph: { locale: 'es_ES', images: [`/api/og?title=${encodeURIComponent(c.name)}&subtitle=${encodeURIComponent('Invertir%20desde%20Espa%C3%B1a')}`] },
     alternates: { canonical: `/pais/${slug}` },
   }
