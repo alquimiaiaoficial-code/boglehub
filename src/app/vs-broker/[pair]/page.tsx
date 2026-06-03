@@ -30,7 +30,7 @@ export async function generateMetadata({
   if (!brokerA || !brokerB) return { title: 'Broker no encontrado' }
 
   const title = `${brokerA.name} vs ${brokerB.name}: comparativa 2026`
-  const description = `Comparativa completa entre ${brokerA.name} y ${brokerB.name}: comisiones (${brokerA.etfCommission} vs ${brokerB.etfCommission}), regulación, ventajas y para qué inversor es mejor cada uno.`
+  const description = `${brokerA.name} vs ${brokerB.name} para invertir en ETFs: comisiones, regulación, ventajas y para qué inversor encaja mejor cada uno.`
 
   return {
     title,

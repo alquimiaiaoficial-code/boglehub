@@ -48,7 +48,7 @@ export async function generateMetadata({
 
   return {
     title: `${formatEUR(amount)} en ${etf.ticker} desde ${year}: ${formatEUR(final)} hoy`,
-    description: `Análisis histórico: invertir ${formatEUR(amount)} en ${etf.name} (${etf.ticker}) en ${year} habría dado ${formatEUR(final)} a finales de 2024 (CAGR ${(cagr * 100).toFixed(1)}% anual).`,
+    description: `Si hubieras invertido ${formatEUR(amount)} en ${etf.ticker} en ${year}, hoy tendrías ${formatEUR(final)} (CAGR ${(cagr * 100).toFixed(1)}% anual). Análisis histórico real.`,
     openGraph: {
       locale: 'es_ES',
       images: [`/api/og?title=${encodeURIComponent(`${formatEUR(amount)} en ${etf.ticker}`)}&subtitle=${encodeURIComponent(`Desde ${year}`)}`],
