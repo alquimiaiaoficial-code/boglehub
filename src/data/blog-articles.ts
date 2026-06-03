@@ -1154,7 +1154,7 @@ Eso es todo el Boglehead.
     slug: 'solapamiento-etfs-error-silencioso',
     title: 'Solapamiento de ETFs: el error silencioso que infla tu cartera',
     excerpt:
-      'Tener cinco ETFs no significa estar diversificado. Qué es el solapamiento entre ETFs, por qué juntar VWCE y CSPX concentra tu cartera sin que lo notes y cómo corregirlo sin disparar la factura fiscal.',
+      'Tener cinco ETFs no es estar diversificado. Qué es el solapamiento, por qué juntar VWCE y CSPX concentra tu cartera y cómo corregirlo sin coste fiscal.',
     publishedAt: '2026-05-15',
     readingMinutes: 9,
     keywords: ['solapamiento ETFs', 'VWCE y CSPX juntos', 'diversificar cartera ETF'],
@@ -2338,7 +2338,7 @@ Si esas dos cosas te encajan, el MSCI World cumple de sobra como núcleo de una 
     slug: 'como-empezar-a-invertir-poco-dinero',
     title: 'Cómo empezar a invertir con poco dinero (50 € al mes)',
     excerpt:
-      'No necesitas un capital grande para empezar a invertir. Cómo empezar con 50 € al mes, por qué la constancia importa más que la cantidad y los pasos concretos para tu primera aportación.',
+      'No necesitas mucho capital para empezar a invertir. Cómo hacerlo con 50 € al mes, por qué la constancia gana a la cantidad y los pasos para tu primera aportación.',
     publishedAt: '2026-05-18',
     readingMinutes: 8,
     keywords: ['empezar a invertir poco dinero', 'invertir 50 euros al mes', 'cómo empezar a invertir'],
@@ -4045,7 +4045,7 @@ Esta estrategia combinada es lo que recomienda la mayoría de planificadores fin
     slug: 'mejores-etfs-renta-fija-2026',
     title: 'Mejores ETFs de renta fija para inversores en España (2026)',
     excerpt:
-      'Análisis de los mejores ETFs de renta fija UCITS disponibles en España en 2026: bonos globales, eurozona, corporativos y high yield. TER, cobertura EUR y para qué cartera encaja cada uno.',
+      'Los mejores ETFs de renta fija UCITS para España en 2026: bonos globales, eurozona, corporativos y high yield. TER, cobertura EUR y cuál encaja en tu cartera.',
     publishedAt: '2026-05-24',
     readingMinutes: 10,
     keywords: ['mejores ETF renta fija España 2026', 'ETF bonos España', 'AGGH análisis', 'ETF renta fija EUR hedged', 'ETF deuda soberana eurozona'],
@@ -5449,7 +5449,7 @@ Para aportaciones recurrentes pequeñas: Trade Republic. Para órdenes grandes: 
     slug: 'oro-etf-fisico-vs-mineria-espana',
     title: 'Oro físico vs ETC de oro vs ETF de mineras: cuál elegir en España (2026)',
     excerpt:
-      'Análisis de las tres formas de invertir en oro desde España: oro físico (monedas/lingotes), ETC de oro físico (SGLN, IGLN) y ETF de mineras de oro. Fiscalidad, costes y para qué cartera encaja cada uno.',
+      'Las tres formas de invertir en oro desde España: oro físico, ETC de oro (SGLN, IGLN) y ETF de mineras. Fiscalidad, costes y cuál encaja en tu cartera.',
     publishedAt: '2026-05-24',
     readingMinutes: 9,
     keywords: ['oro ETC España', 'SGLN análisis', 'invertir en oro España', 'ETF oro vs físico', 'oro mineria vs ETC'],
@@ -6174,7 +6174,7 @@ Para una comparativa numérica detallada del coste anual de cada broker según t
     slug: 'xtb-opinion-2026',
     title: 'XTB: opinión y análisis completo para inversores en España (2026)',
     excerpt:
-      'XTB cobra 0€ en ETFs hasta 100.000€/mes, está regulado por la CNMV y ofrece una de las cuentas remuneradas más altas del mercado español. Análisis honesto de comisiones, seguridad, plataforma y para quién tiene sentido.',
+      'XTB cobra 0€ en ETFs hasta 100.000€/mes, regulado por la CNMV y con una cuenta remunerada de las más altas. Comisiones, seguridad y para quién encaja.',
     publishedAt: '2026-05-30',
     readingMinutes: 8,
     keywords: ['XTB opinión', 'XTB seguridad', 'XTB ETFs España 2026', 'XTB cuenta remunerada', 'XTB vs Trade Republic'],
@@ -6339,7 +6339,7 @@ Para comparar XTB con los otros brokers populares según tu patrón real de inve
     slug: 'scalable-capital-opinion-2026',
     title: 'Scalable Capital: opinión y análisis para inversores en España (2026)',
     excerpt:
-      'Scalable Capital ofrece 0€ en ETFs con plan Prime (suscripción mensual), cuenta remunerada de hasta el 4% TAE y regulación BaFin alemán. Análisis de cuándo compensa el plan de pago frente a Trade Republic o DEGIRO.',
+      'Scalable Capital ofrece 0€ en ETFs con el plan Prime, cuenta remunerada hasta el 4% TAE y regulación BaFin. Cuándo compensa frente a Trade Republic o DEGIRO.',
     publishedAt: '2026-05-30',
     readingMinutes: 7,
     keywords: ['Scalable Capital opinión', 'Scalable Capital España', 'Scalable Capital Prime', 'Scalable Capital ETFs 2026', 'Scalable Capital vs Trade Republic'],
