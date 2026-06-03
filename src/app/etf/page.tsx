@@ -12,7 +12,7 @@ const BASE_URL = 'https://boglehub.com'
 export const metadata: Metadata = {
   title: 'Catálogo de ETFs UCITS en España (2026)',
   description:
-    'Catálogo completo de ETFs UCITS disponibles en España: renta variable global, S&P 500, MSCI World, emergentes, renta fija y materias primas. TER, domicilio fiscal y eficiencia para residentes en España.',
+    'Catálogo completo de ETFs UCITS para España: MSCI World, S&P 500, emergentes, renta fija y más. Compara TER, domicilio fiscal y grado de eficiencia fiscal.',
   alternates: { canonical: '/etf' },
   openGraph: {
     title: 'Catálogo de ETFs UCITS en España (2026) | BogleHub',
