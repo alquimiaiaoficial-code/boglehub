@@ -10,7 +10,7 @@ const BASE_URL = 'https://boglehub.com'
 
 export const metadata: Metadata = {
   title: 'Mejores roboadvisors en España (2026): comparativa completa',
-  description: `Análisis individual de los ${ROBOADVISORS.length} roboadvisors más usados en España: Indexa Capital, Finizens, MyInvestor, inbestMe, Openbank. Comisiones, mínimos de apertura, perfiles de riesgo y para qué inversor es ideal cada uno.`,
+  description: `Análisis de los ${ROBOADVISORS.length} roboadvisors más usados en España: Indexa, Finizens, MyInvestor, inbestMe y Openbank. Comisiones, mínimos y para quién es cada uno.`,
   alternates: { canonical: '/roboadvisor' },
 }
 

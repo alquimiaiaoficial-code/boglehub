@@ -10,7 +10,7 @@ const BASE_URL = 'https://boglehub.com'
 
 export const metadata: Metadata = {
   title: 'Mejores fondos indexados disponibles en España (2026)',
-  description: `Análisis de ${INDEX_FUNDS.length} fondos indexados disponibles en España (Amundi Prime Global, Vanguard Global Stock, Fidelity MSCI World y más). TER, ISIN, traspaso fiscal libre y dónde comprarlos.`,
+  description: `Los ${INDEX_FUNDS.length} mejores fondos indexados para España: Amundi Prime Global, Vanguard Global Stock, Fidelity MSCI World y más. TER, ISIN y traspaso fiscal libre.`,
   alternates: { canonical: '/fondo' },
 }
 

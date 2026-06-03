@@ -10,7 +10,7 @@ const BASE_URL = 'https://boglehub.com'
 
 export const metadata: Metadata = {
   title: 'Cómo invertir según tu perfil: guía por edad y situación 2026',
-  description: `Estrategias de inversión indexada adaptadas a ${INVESTOR_PROFILES.length} perfiles concretos: jóvenes, 30-50 años, cerca de jubilación, autónomos, expatriados, herederos, FIRE, padres. Cartera, broker y aportación recomendadas para cada caso.`,
+  description: `Estrategias de inversión indexada para ${INVESTOR_PROFILES.length} perfiles: jóvenes, cerca de la jubilación, autónomos, expatriados, FIRE y más. Cartera y broker para cada uno.`,
   alternates: { canonical: '/perfil' },
 }
 

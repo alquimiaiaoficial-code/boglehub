@@ -10,7 +10,7 @@ const BASE_URL = 'https://boglehub.com'
 
 export const metadata: Metadata = {
   title: 'Carteras modelo de inversión indexada (2026)',
-  description: `Análisis de ${MODEL_PORTFOLIOS.length} carteras modelo populares: Boglehead 3 fondos, Cartera Permanente Harry Browne, All-Weather Ray Dalio, 60/40, 80/20, FIRE y más. Composición, ETFs y para qué perfil es cada una.`,
+  description: `${MODEL_PORTFOLIOS.length} carteras modelo: Boglehead 3 fondos, Permanente de Harry Browne, All-Weather, 60/40, FIRE y más. Composición, ETFs y para qué perfil es cada una.`,
   alternates: { canonical: '/cartera' },
 }
 

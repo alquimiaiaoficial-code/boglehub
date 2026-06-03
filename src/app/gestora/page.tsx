@@ -10,7 +10,7 @@ const BASE_URL = 'https://boglehub.com'
 
 export const metadata: Metadata = {
   title: 'Gestoras de ETFs y fondos indexados disponibles en España (2026)',
-  description: `Análisis de las ${GESTORAS.length} principales gestoras de ETFs y fondos indexados con productos disponibles para inversores en España: Vanguard, iShares (BlackRock), SPDR, Amundi, Invesco, Xtrackers, Fidelity y más.`,
+  description: `Las ${GESTORAS.length} principales gestoras de ETFs y fondos indexados para España: Vanguard, iShares, SPDR, Amundi, Invesco, Xtrackers y Fidelity.`,
   alternates: { canonical: '/gestora' },
 }
 
