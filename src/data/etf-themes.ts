@@ -86,7 +86,7 @@ export const ETF_THEMES: EtfTheme[] = [
     h1: 'ETFs All-World UCITS: diversificación global en un solo fondo (2026)',
     metaTitle: 'ETFs All-World UCITS para España 2026 | BogleHub',
     metaDescription:
-      'Comparativa de ETFs globales (All-World) disponibles en España: VWCE, VWRP, ISAC, WEBN. Acumulación, TER y fiscalidad para inversores españoles.',
+      'Los mejores ETFs All-World (globales) para España: VWCE, VWRP, ISAC y más. Diversificación mundial en un solo fondo, acumulación y cuál elegir.',
     intro:
       'Los ETFs "All-World" o "total world" replican índices que cubren tanto mercados desarrollados como emergentes en un único fondo. Siguen índices como el FTSE All-World o el MSCI ACWI IMI, que juntan más de 3.000 empresas de 50 países. Para un inversor español que quiere la cartera más sencilla posible, un único ETF All-World de acumulación domiciliado en Irlanda como VWCE ofrece diversificación global total con un solo producto.',
     listH2: 'ETFs All-World y globales disponibles en España',
@@ -110,7 +110,7 @@ export const ETF_THEMES: EtfTheme[] = [
     h1: 'ETFs de acumulación UCITS: ventaja fiscal para inversores en España (2026)',
     metaTitle: 'ETFs de acumulación UCITS en España 2026 | BogleHub',
     metaDescription:
-      'Los mejores ETFs de acumulación UCITS para España: reinvierten los dividendos sin tributar hasta que vendes. Por qué ganan a los de distribución en la fase de ahorro.',
+      'Los mejores ETFs de acumulación UCITS para España: reinvierten los dividendos sin tributar hasta que vendes. Por qué ganan en la fase de ahorro.',
     intro:
       'Un ETF de acumulación reinvierte automáticamente los dividendos generados por las empresas de la cartera dentro del propio fondo, sin distribuirlos al inversor. Para residentes en España en fase de construcción de patrimonio, esto supone una ventaja fiscal significativa: los dividendos no tributan al recibirlos (19%-28% en IRPF), por lo que el dinero sigue generando rendimiento gracias al interés compuesto. La tributación se difiere hasta el momento de la venta del ETF. Esta lista incluye ETFs de acumulación de todas las clases de activos disponibles para inversores españoles.',
     listH2: 'ETFs de acumulación disponibles en España (todas las clases de activo)',
@@ -134,7 +134,7 @@ export const ETF_THEMES: EtfTheme[] = [
     h1: 'ETFs de distribución UCITS en España: cuándo tienen sentido (2026)',
     metaTitle: 'ETFs de distribución UCITS en España 2026 | BogleHub',
     metaDescription:
-      'Comparativa de ETFs de distribución disponibles en España. Cuándo elegirlos, cómo tributan los dividendos y cuáles son los mejores para inversores en fase de retiro.',
+      'Los mejores ETFs de distribución UCITS para España: reparten dividendos periódicos. Cuándo elegirlos, cómo tributan y cuáles convienen en la fase de retiro.',
     intro:
       'Un ETF de distribución paga periódicamente los dividendos generados por las empresas de la cartera. Mientras que para inversores en fase de acumulación esto supone una menor eficiencia fiscal (se tributa por los dividendos recibidos al 19%-28%), para quienes ya están retirados o en fase FIRE pueden ser una fuente de ingresos pasivos sin necesidad de vender participaciones. En España, los dividendos de ETFs tributan como rendimientos del capital mobiliario.',
     listH2: 'ETFs de distribución disponibles en España (todas las clases de activo)',
@@ -158,7 +158,7 @@ export const ETF_THEMES: EtfTheme[] = [
     h1: 'ETFs de mercados emergentes UCITS para España (2026)',
     metaTitle: 'Mejores ETFs mercados emergentes para España 2026 | BogleHub',
     metaDescription:
-      'Comparativa de ETFs de emergentes disponibles en España: EIMI, VFEM, EMIM, IS3N... TER, cobertura y cómo integrarlos en tu cartera indexada Boglehead.',
+      'Los mejores ETFs de mercados emergentes para España: EIMI, VFEM, EMIM y más. TER, qué cubren y cuánto peso darles en tu cartera indexada.',
     intro:
       'Los mercados emergentes (China, India, Brasil, Taiwán, Corea del Sur y otros) representan cerca del 12% de la capitalización bursátil global según el índice FTSE All-World y ofrecen diversificación con respecto a los mercados desarrollados. En una cartera Boglehead de dos o tres fondos suelen ocupar entre el 10% y el 20% de la renta variable. Los ETFs de emergentes UCITS disponibles en España siguen mayoritariamente el índice MSCI Emerging Markets IMI o el FTSE Emerging Markets, con China como principal componente (25-30% del índice).',
     listH2: 'ETFs de mercados emergentes disponibles en España',
@@ -186,7 +186,7 @@ export const ETF_THEMES: EtfTheme[] = [
     h1: 'ETFs de bolsa europea UCITS para inversores españoles (2026)',
     metaTitle: 'Mejores ETFs bolsa europea para España 2026 | BogleHub',
     metaDescription:
-      'Comparativa de ETFs europeos UCITS disponibles en España: VEUR, IMEU, SMEA, MEUD y más. TER, cobertura y cuándo sobreponderar Europa en tu cartera indexada.',
+      'Los mejores ETFs de bolsa europea para España: VEUR, IMEU, SMEA y más. TER, qué incluyen y cuándo tiene sentido sobreponderar Europa en tu cartera.',
     intro:
       'Los ETFs de renta variable europea replican índices como el MSCI Europe o el FTSE Developed Europe, que incluyen desde las grandes empresas del IBEX 35 y el DAX hasta líderes farmacéuticos suizos e industriales franceses. Para un inversor español, estos ETFs añaden diversificación sectorial (mayor peso en industriales, materiales y consumo que en tecnología) y pueden cotizar en euros, reduciendo el riesgo de divisa frente a ETFs denominados en dólares. Normalmente se usan como complemento de una cartera global para sobreponderar Europa.',
     listH2: 'ETFs de bolsa europea disponibles en España',
@@ -238,7 +238,7 @@ export const ETF_THEMES: EtfTheme[] = [
     h1: 'ETFs de materias primas y oro UCITS en España (2026)',
     metaTitle: 'ETFs de materias primas y oro para España 2026 | BogleHub',
     metaDescription:
-      'Comparativa de ETFs y ETPs de materias primas y oro disponibles en España en 2026. Qué papel juegan en una cartera indexada y cómo tributan para residentes españoles.',
+      'Los mejores ETFs y ETC de materias primas y oro para España: SGLN, IGLN y más. Qué papel juegan como diversificador y cómo tributan en España.',
     intro:
       'Los ETFs y ETPs de materias primas son activos alternativos que algunos inversores añaden a sus carteras como cobertura frente a la inflación y como diversificador descorrelacionado de la renta variable y la renta fija. El oro es el más popular: con alta volatilidad pero correlación históricamente negativa con acciones en momentos de crisis. Los ETPs de oro respaldados físicamente (ETC) replican el precio del lingote de oro y están disponibles en las principales bolsas europeas.',
     listH2: 'ETPs de oro y materias primas disponibles en España',
@@ -264,7 +264,7 @@ export const ETF_THEMES: EtfTheme[] = [
     h1: 'Los mejores ETFs Nasdaq 100 UCITS disponibles en España (2026)',
     metaTitle: 'Mejores ETFs Nasdaq 100 para España 2026 | BogleHub',
     metaDescription:
-      'Comparativa de ETFs Nasdaq 100 UCITS para inversores españoles: EQQQ, SXRV, CNDX. TER, fiscalidad, acumulación vs distribución y por qué el Nasdaq concentra en tecnología.',
+      'Los mejores ETFs Nasdaq 100 UCITS para España: EQQQ, SXRV, CNDX. TER, concentración tecnológica y cuándo tiene sentido frente al S&P 500.',
     intro:
       'El Nasdaq 100 agrupa las 100 mayores empresas no financieras cotizadas en el Nasdaq estadounidense, con un peso muy elevado del sector tecnológico (~50%). Es el índice más popular entre inversores particulares que quieren concentrar exposición en gigantes como Apple, Microsoft, Nvidia, Google, Meta o Amazon. Los ETFs UCITS Nasdaq 100 disponibles en España son una alternativa al S&P 500 con mayor concentración tecnológica, mayor volatilidad histórica y mayor rentabilidad esperada — y también mayor riesgo de concentración sectorial.',
     listH2: 'ETFs Nasdaq 100 disponibles en España',
@@ -294,7 +294,7 @@ export const ETF_THEMES: EtfTheme[] = [
     h1: 'ETFs de pequeñas empresas (small caps) UCITS para España (2026)',
     metaTitle: 'Mejores ETFs small caps UCITS para España 2026 | BogleHub',
     metaDescription:
-      'Comparativa de ETFs small caps disponibles en España: WSML, IUSN, ZPRS, ZPRV. Por qué las pequeñas empresas pueden añadir rentabilidad y diversificación a tu cartera Boglehead.',
+      'Los mejores ETFs de small caps (pequeñas empresas) para España: WSML, IUSN, ZPRV y más. La prima de tamaño, TER y cuánto peso darles en tu cartera.',
     intro:
       'Los ETFs de pequeñas empresas (small caps) replican índices de compañías de menor capitalización bursátil, históricamente asociados a una prima de rentabilidad sobre las grandes empresas (el llamado size factor). En una cartera Boglehead, un peso del 5-15% en small caps puede aportar diversificación y rentabilidad esperada algo superior, con mayor volatilidad. Los ETFs UCITS disponibles en España cubren small caps globales (WSML, IUSN) y específicas de EE.UU. (ZPRV).',
     listH2: 'ETFs small caps disponibles en España',
@@ -322,7 +322,7 @@ export const ETF_THEMES: EtfTheme[] = [
     h1: 'Los mejores ETC de oro físico UCITS para inversores en España (2026)',
     metaTitle: 'Mejores ETC de oro físico para España 2026 | BogleHub',
     metaDescription:
-      'Comparativa de ETC de oro físico UCITS para inversores españoles: SGLN, IGLN, 4GLD. TER, custodia, fiscalidad y cuándo tiene sentido añadir oro a tu cartera indexada.',
+      'Los mejores ETC de oro físico para España: SGLN, IGLN, 4GLD, con TER desde 0,12%. Custodia, fiscalidad y cuándo añadir oro como cobertura a tu cartera.',
     intro:
       'Los ETC (Exchange Traded Commodities) de oro físico están respaldados por lingotes de oro custodiados en bóvedas seguras (principalmente Londres y Zúrich). Replican el precio del oro spot con baja fricción y son la forma más eficiente de tener exposición al oro sin comprar lingotes físicos. Para un inversor en España, el oro puede actuar como cobertura frente a la inflación, diversificador descorrelacionado de acciones y bonos, y componente clave de carteras como la cartera permanente de Harry Browne. Su rentabilidad histórica a largo plazo ha sido inferior a la renta variable pero con comportamiento diferenciador en crisis.',
     listH2: 'ETC de oro físico disponibles en España',
@@ -352,7 +352,7 @@ export const ETF_THEMES: EtfTheme[] = [
     h1: 'ETFs factor calidad y momentum UCITS para España (2026)',
     metaTitle: 'Mejores ETFs factor calidad y momentum 2026 | BogleHub',
     metaDescription:
-      'Comparativa de ETFs de factor calidad y momentum disponibles en España: IWQU, IWMO, XDEQ, XDWL. Cómo funcionan los factor ETFs y cuándo añadirlos a una cartera Boglehead.',
+      'Los mejores ETFs de factor calidad y momentum para España: IWQU, IWMO, XDEQ y más. Cómo funcionan los factor ETFs y cuándo añadirlos a tu cartera.',
     intro:
       'Los ETFs de factor (smart beta) seleccionan empresas según métricas específicas en lugar de capitalización bursátil. Los factores más estudiados académicamente son: calidad (empresas con balance sólido), momentum (empresas en tendencia alcista), valor (empresas baratas según ratios) y baja volatilidad. Para inversores Boglehead más sofisticados, una pequeña asignación (5-15%) a factor ETFs puede añadir diversificación de fuentes de rentabilidad sin abandonar la filosofía indexada. Esta sección cubre ETFs de calidad y momentum disponibles en España.',
     listH2: 'ETFs factor calidad y momentum disponibles en España',
