@@ -28,7 +28,7 @@ export const ETF_THEMES: EtfTheme[] = [
     h1: 'Los mejores ETFs MSCI World UCITS para inversores españoles (2026)',
     metaTitle: 'Mejores ETFs MSCI World para España 2026 | BogleHub',
     metaDescription:
-      'Comparativa de ETFs MSCI World disponibles en España: IWDA, SWRD, XDWD, MWRD y más. TER, domicilio fiscal, acumulación y eficiencia para residentes españoles.',
+      'Los mejores ETFs MSCI World UCITS para España: IWDA, SWRD, MWRD y más, con TER desde 0,12%. Acumulación, domicilio fiscal y cuál elegir para tu cartera.',
     intro:
       'El índice MSCI World engloba más de 1.400 empresas de 23 países desarrollados, cubriendo el 85% de la capitalización bursátil entre economías avanzadas. Para un inversor residente en España, un ETF MSCI World domiciliado en Irlanda y de clase acumulación es habitualmente el punto de partida de la cartera indexada: evita retenciones en origen innecesarias y difiere la tributación hasta la venta. Los ETFs de esta lista replican el mismo índice o uno equivalente (FTSE Developed World), con diferencias mínimas de TER y variantes de factor (calidad, momento, valor mínima volatilidad).',
     listH2: 'ETFs MSCI World y mercados desarrollados disponibles en España',
@@ -58,7 +58,7 @@ export const ETF_THEMES: EtfTheme[] = [
     h1: 'Los mejores ETFs S&P 500 UCITS disponibles en España (2026)',
     metaTitle: 'Mejores ETFs S&P 500 para España 2026 | BogleHub',
     metaDescription:
-      'Comparativa de ETFs S&P 500 UCITS para inversores españoles: CSPX, SXR8, VUAA, VUSA, SPXS... Cuál elegir según tu broker, TER y fiscalidad.',
+      'Los mejores ETFs S&P 500 UCITS para España: CSPX, VUAA, SPXS y más, con TER desde 0,03%. Acumulación vs distribución y cuál elegir según tu broker.',
     intro:
       'El S&P 500 agrupa las 500 mayores empresas cotizadas de Estados Unidos y es el índice bursátil más seguido del mundo. Invertir en él mediante un ETF UCITS ofrece acceso a gigantes como Apple, Microsoft o Nvidia junto con empresas de consumo, salud e industria. Para inversores españoles, la clave está en elegir un ETF domiciliado en Irlanda (grado fiscal A) y de clase acumulación para maximizar el efecto del interés compuesto. La diferencia entre tickers como CSPX y SXR8 es mínima: replican el mismo fondo, simplemente cotizan en bolsas distintas.',
     listH2: 'ETFs S&P 500 disponibles en España',
@@ -110,7 +110,7 @@ export const ETF_THEMES: EtfTheme[] = [
     h1: 'ETFs de acumulación UCITS: ventaja fiscal para inversores en España (2026)',
     metaTitle: 'ETFs de acumulación UCITS en España 2026 | BogleHub',
     metaDescription:
-      'Guía completa de ETFs de acumulación disponibles en España. Qué son, cómo tributan y por qué son más eficientes que los de distribución para inversores en fase de ahorro.',
+      'Los mejores ETFs de acumulación UCITS para España: reinvierten los dividendos sin tributar hasta que vendes. Por qué ganan a los de distribución en la fase de ahorro.',
     intro:
       'Un ETF de acumulación reinvierte automáticamente los dividendos generados por las empresas de la cartera dentro del propio fondo, sin distribuirlos al inversor. Para residentes en España en fase de construcción de patrimonio, esto supone una ventaja fiscal significativa: los dividendos no tributan al recibirlos (19%-28% en IRPF), por lo que el dinero sigue generando rendimiento gracias al interés compuesto. La tributación se difiere hasta el momento de la venta del ETF. Esta lista incluye ETFs de acumulación de todas las clases de activos disponibles para inversores españoles.',
     listH2: 'ETFs de acumulación disponibles en España (todas las clases de activo)',
@@ -210,7 +210,7 @@ export const ETF_THEMES: EtfTheme[] = [
     h1: 'ETFs de renta fija UCITS para carteras indexadas en España (2026)',
     metaTitle: 'Mejores ETFs de bonos UCITS para España 2026 | BogleHub',
     metaDescription:
-      'Comparativa de ETFs de renta fija disponibles en España: AGGH, VGEA, VETY, EUNA y más. Para carteras conservadoras y Boglehead, con análisis de duración y riesgo.',
+      'Los mejores ETFs de renta fija UCITS para España: AGGH, VGEA, EUNA y más. Duración, cobertura de divisa y cómo elegir la parte conservadora de tu cartera.',
     intro:
       'La renta fija es el contrapeso a la renta variable en una cartera Boglehead: aporta estabilidad, reduce la volatilidad global y actúa como amortiguador en mercados bajistas. Los ETFs de bonos UCITS disponibles en España cubren desde bonos gubernamentales de la eurozona hasta deuda corporativa global con cobertura en euros. La proporción de bonos depende del perfil de riesgo: desde el 10-20% para inversores jóvenes hasta el 40-60% para quienes se aproximan a la jubilación.',
     listH2: 'ETFs de renta fija disponibles en España',
