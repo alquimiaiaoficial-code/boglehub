@@ -114,7 +114,7 @@ Para un inversor Boglehead que empieza, **replicación física** (total o por mu
 - **ETFs de acumulación (Acc)**: reinvierten automáticamente los dividendos. No hay evento fiscal hasta que vendas. Ideales para crecimiento a largo plazo.
 - **ETFs de distribución (Dist)**: reparten dividendos periódicamente. Cada pago tributa como rendimiento del capital mobiliario en tu IRPF del año.
 
-**Recomendación**: para un inversor largo-placista en España, los ETFs de **acumulación** son más eficientes fiscalmente. Solo considera distribución si necesitas flujo de caja (por ejemplo, en la fase de retiro).
+**Recomendación**: para un inversor largo-placista en España, los ETFs de **acumulación** son más eficientes fiscalmente. Solo considera distribución si necesitas flujo de caja (por ejemplo, en la fase de retiro). Puedes ver todos los [ETFs de acumulación disponibles en España](/etfs/acumulacion) y compararlos por TER y grado fiscal.
 
 ---
 
@@ -4203,6 +4203,7 @@ Esa lógica es matemáticamente correcta pero psicológicamente peligrosa: la pr
 
 ## Fuentes y lecturas complementarias
 
+- [Categoría: ETFs de renta fija — BogleHub](/etfs/renta-fija) — El catálogo completo de ETFs de renta fija UCITS disponibles en España, con TER y grado fiscal.
 - [iShares — Ficha técnica AGGH](https://www.ishares.com/es/inversores-particulares/es/productos/291768/ishares-core-global-aggregate-bond-ucits-etf) — Composición, rentabilidad y datos de TER actualizados.
 - [Vanguard — VGEA](https://www.vanguard.co.uk/) — Alternativa a AGGH con datos de cartera y duración.
 - [JustETF — Comparador de ETFs de renta fija](https://www.justetf.com/es/find-etf.html) — Filtra por tipo, TER y cobertura para encontrar el ETF que encaje con tu cartera.
