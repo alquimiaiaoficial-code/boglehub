@@ -73,13 +73,21 @@ export async function generateMetadata({
     ? `${term.fullForm}: definición y ejemplos`
     : `${term.term}: qué es y cómo funciona`
 
+  // La definición rápida puede pasar de los ~160 chars óptimos para el meta;
+  // se trunca en el último espacio (sin partir palabras) solo para la meta tag.
+  // El texto completo se sigue mostrando como "Definición rápida" en la página.
+  const metaDescription =
+    term.shortDefinition.length > 160
+      ? term.shortDefinition.slice(0, 157).replace(/\s+\S*$/, '') + '…'
+      : term.shortDefinition
+
   return {
     // El template de layout añade "| BogleHub"; no repetir la marca aquí
     title,
-    description: term.shortDefinition,
+    description: metaDescription,
     openGraph: {
       title,
-      description: term.shortDefinition,
+      description: metaDescription,
       locale: 'es_ES',
       images: [
         `/api/og?title=${encodeURIComponent(term.term)}&subtitle=${encodeURIComponent('Glosario')}`,
