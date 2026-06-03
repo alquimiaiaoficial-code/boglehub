@@ -39,7 +39,7 @@ export async function generateMetadata({
   if (!etf || !brokerData) return { title: 'Combinación no encontrada' }
 
   const title = `Cómo comprar ${etf.ticker} en ${brokerData.name} (guía paso a paso 2026)`
-  const description = `Guía completa para comprar ${etf.name} (${etf.ticker}, ISIN ${etf.isin}) en ${brokerData.name}: comisiones (${brokerData.etfCommission}), pasos para la operación, fiscalidad para residentes en España y alternativas.`
+  const description = `Cómo comprar ${etf.ticker} en ${brokerData.name} desde España: comisiones (${brokerData.etfCommission}), pasos de la operación, fiscalidad y alternativas.`
 
   return {
     title,

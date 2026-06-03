@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: { params: Promise<{ edad: str
   if (!age || !obj) return { title: 'No encontrado' }
   return {
     title: `Plan inversión con ${age.age} años para llegar a ${obj.label} (2026)`,
-    description: `Plan personalizado para invertir desde los ${age.age} años hasta los 65 con objetivo ${obj.label}. Aportación mensual necesaria, cartera recomendada (${age.recommendedPortfolio}) y broker para implementarlo.`,
+    description: `Cuánto invertir al mes desde los ${age.age} años para llegar a ${obj.label}: aportación necesaria con rentabilidad del 7%, cartera recomendada y broker.`,
     openGraph: { locale: 'es_ES', images: [`/api/og?title=${encodeURIComponent(`${age.age} años → ${obj.label}`)}&subtitle=${encodeURIComponent('Plan%20personalizado')}`] },
     alternates: { canonical: `/plan/${edad}/${objetivo}` },
   }

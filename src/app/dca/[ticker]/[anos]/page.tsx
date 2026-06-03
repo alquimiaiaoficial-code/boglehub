@@ -46,7 +46,7 @@ export async function generateMetadata({
 
   return {
     title: `DCA en ${etf.ticker} a ${years} años: tabla y plan paso a paso (2026)`,
-    description: `Estrategia DCA (Dollar Cost Averaging) en ${etf.name} (${etf.ticker}) a ${years} años: proyección con aportaciones mensuales desde 50€ hasta 2000€, cómo automatizar y broker recomendado.`,
+    description: `DCA en ${etf.ticker} a ${years} años desde España: proyección de aportaciones mensuales (de 50€ a 2000€), cómo automatizarlo y el mejor broker.`,
     openGraph: { locale: 'es_ES', images: [`/api/og?title=${encodeURIComponent(`DCA ${etf.ticker} (${years}a)`)}&subtitle=${encodeURIComponent('Aportaciones%20mensuales')}`] },
     alternates: { canonical: `/dca/${ticker}/${anos}` },
   }
