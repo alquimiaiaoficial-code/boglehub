@@ -19,6 +19,151 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'mejor-roboadvisor-espana-2026',
+    title: 'Mejor roboadvisor en España 2026: comparativa honesta',
+    excerpt:
+      'Comparativa de los 5 roboadvisors top de España (Indexa, Finizens, MyInvestor, inbestMe, Openbank): comisiones, mínimos y cuál elegir según tu perfil.',
+    publishedAt: '2026-06-04',
+    readingMinutes: 9,
+    keywords: ['mejor roboadvisor España', 'roboadvisor 2026', 'Indexa vs Finizens vs MyInvestor', 'comparativa roboadvisors', 'qué roboadvisor elegir'],
+    faq: [
+      {
+        q: '¿Cuál es el mejor roboadvisor de España en 2026?',
+        a: 'No hay uno mejor para todos. MyInvestor es el más barato y con el mínimo más bajo (150€); Indexa Capital, el más establecido y con más patrimonio; Finizens destaca por su mínimo bajo y el oro en cartera; inbestMe, por las carteras ESG y los 11 perfiles; y Openbank es el más caro y difícil de justificar salvo por comodidad si ya eres cliente. Elige según tu capital inicial, si quieres ESG y, sobre todo, el coste total.',
+      },
+      {
+        q: '¿Cuánto cuesta un roboadvisor en España?',
+        a: 'El coste total (comisión de gestión + custodia + TER de los fondos) va de ~0,30% (MyInvestor) a ~0,90% (Openbank) anual. Indexa ronda el 0,40-0,50%, Finizens el 0,32-0,42% e inbestMe el 0,41-0,69%. Sobre 50.000€, la diferencia entre el más barato y el más caro son unos 300€ al año. Mira siempre el coste total, no solo la comisión de gestión.',
+      },
+      {
+        q: '¿Indexa o Finizens, cuál es mejor?',
+        a: 'Indexa tiene más perfiles (10 vs 5), más patrimonio gestionado y el historial más largo; Finizens tiene un mínimo de apertura más bajo (1.000€ vs 3.000€) e incluye oro en sus carteras conservadoras. Las comisiones son similares. Para la mayoría son intercambiables: elige por el mínimo que puedes aportar, si te interesa el oro y la interfaz que prefieras.',
+      },
+      {
+        q: '¿Merece la pena un roboadvisor o es mejor hacerlo uno mismo?',
+        a: 'Un roboadvisor cobra 0,30-0,90% por automatizar lo que tú puedes hacer por ~0,10% con una cartera indexada de 2-3 fondos. La diferencia no es el coste (gana el DIY), sino la disciplina: el roboadvisor te quita el botón de vender en pánico y rebalancea por ti. Si sabes que no vas a tocar tu cartera en las caídas, el DIY es más barato; si no, esa comisión puede ahorrarte un error mucho mayor.',
+      },
+      {
+        q: '¿Es seguro invertir con un roboadvisor?',
+        a: 'Sí. Los principales roboadvisors españoles están regulados por la CNMV, y tu dinero no está en el roboadvisor sino en fondos a tu nombre custodiados en un banco depositario, separados del patrimonio de la empresa. Si el roboadvisor quebrara, tus fondos siguen siendo tuyos y están cubiertos por el Fondo de Garantía de Inversiones hasta 100.000€.',
+      },
+    ],
+    content: `# Mejor roboadvisor en España 2026: comparativa honesta
+
+Un roboadvisor invierte por ti en una cartera diversificada de fondos indexados, la rebalancea automáticamente y te quita el papeleo, a cambio de una comisión anual. Para mucha gente sin tiempo o disciplina para gestionar su cartera, es la mejor decisión que pueden tomar. Pero no todos cobran lo mismo ni sirven para lo mismo. Esta comparativa analiza los cinco roboadvisors más usados en España en 2026 —Indexa Capital, Finizens, MyInvestor, inbestMe y Openbank— sin afiliación ni comisiones por recomendarte ninguno.
+
+La conclusión por adelantado: no hay un "mejor roboadvisor" universal. El más barato y con menor mínimo es MyInvestor; el más establecido, Indexa; el de carteras ESG, inbestMe; y el más caro y difícil de justificar, el de Openbank. Vamos a verlo.
+
+---
+
+## Comparativa rápida
+
+| | Indexa | Finizens | MyInvestor | inbestMe | Openbank |
+|---|---|---|---|---|---|
+| Coste total anual | 0,40-0,50% | 0,32-0,42% | **0,30-0,40%** | 0,41-0,69% | 0,70-0,90% |
+| Mínimo de apertura | 3.000€ | 1.000€ | **150€** | 1.000€ | 500€ |
+| Perfiles de riesgo | 10 | 5 | 5 | **11** | 4 |
+| Fondos | Vanguard, iShares, Amundi | iShares, Vanguard, Amundi | Vanguard, Amundi, Fidelity | Vanguard, iShares, SPDR | Santander AM |
+| Plan de pensiones | Sí | Sí | Sí | Sí | No |
+| Regulador (CNMV) | ESI 257 | 286 | 226 (Andbank) | 294 | 0086 |
+
+---
+
+## El coste real de un roboadvisor
+
+La comisión de un roboadvisor tiene tres capas que conviene entender:
+
+1. **Comisión de gestión** del roboadvisor (lo que cobra por gestionarte la cartera): suele ir del 0,10% al 0,53%.
+2. **Custodia** del banco depositario donde están tus fondos: en torno al 0,10-0,15%.
+3. **TER de los fondos** indexados subyacentes (su coste interno): ~0,07-0,22%.
+
+Sumadas dan el **coste total anual**, que es el número que de verdad importa: va desde ~0,30% (MyInvestor) hasta ~0,90% (Openbank). Sobre una cartera de 50.000€, esa diferencia son entre 150€ y 450€ al año, todos los años. En inversión indexada, el coste es lo que mejor predice tu resultado relativo a largo plazo.
+
+Para comparar el coste de delegar frente a hacerlo tú mismo, el [comparador de roboadvisor vs DIY](/calculadora/roboadvisor-vs-diy) lo calcula con tus cifras.
+
+---
+
+## Indexa Capital: el líder establecido
+
+**Coste total**: 0,40-0,50%. **Mínimo**: 3.000€. **Perfiles**: 10.
+
+El roboadvisor con más patrimonio gestionado de España (+2.000 millones €), fundado en 2015 y registrado en CNMV (ESI nº 257). Invierte en fondos de Vanguard, iShares y Amundi, con 10 niveles de perfil —la mayor granularidad junto a inbestMe— y el historial auditado más largo del mercado español. Es la opción "por defecto" segura: ni la más barata ni la de menor mínimo, pero la más probada. Detalle en la [opinión de Indexa Capital 2026](/blog/indexa-capital-opinion-2026).
+
+---
+
+## Finizens: mínimo bajo y un toque de oro
+
+**Coste total**: 0,32-0,42%. **Mínimo**: 1.000€. **Perfiles**: 5.
+
+Agencia de valores registrada en CNMV (nº 286), con respaldo del grupo Global Savings Group. Su rasgo diferencial: incluye un porcentaje de **oro físico** (vía ETC) en las carteras conservadoras como diversificador, algo poco común. Mínimo de apertura más bajo que Indexa (1.000€) y comisiones ligeramente inferiores. Buen encaje si empiezas con menos de 3.000€ o te gusta el oro como amortiguador. La comparativa directa está en [Finizens vs Indexa Capital](/blog/finizens-vs-indexa-capital-2026).
+
+---
+
+## MyInvestor: el más barato y accesible
+
+**Coste total**: 0,30-0,40%. **Mínimo**: 150€. **Perfiles**: 5.
+
+El roboadvisor del neobanco MyInvestor (grupo Andbank, CNMV) tiene el **mínimo de apertura más bajo de España (150€)** y de los costes totales más bajos. Invierte en fondos institucionales de Vanguard, Amundi y Fidelity. Es la puerta de entrada ideal para quien empieza con poco capital o quiere probar el modelo sin comprometer mucho. Si ya usas MyInvestor como bróker, unificar tiene sentido; su ficha completa está en la [opinión de MyInvestor 2026](/blog/myinvestor-opinion-2026).
+
+---
+
+## inbestMe: carteras ESG y máxima granularidad
+
+**Coste total**: 0,41-0,69%. **Mínimo**: 1.000€. **Perfiles**: 11.
+
+Agencia de valores (CNMV nº 294) que ofrece la mayor granularidad de perfiles (**11**) y carteras **temáticas** poco habituales: ESG (sostenibilidad), dividendos y crecimiento. Es algo más cara que Indexa o Finizens, y ese sobrecoste es el precio de la especialización. Tiene sentido si la inversión socialmente responsable es una prioridad para ti o quieres un ajuste muy fino del riesgo; si no, hay opciones más baratas.
+
+---
+
+## Openbank: el más caro, difícil de justificar
+
+**Coste total**: 0,70-0,90%. **Mínimo**: 500€. **Perfiles**: 4.
+
+El roboadvisor del banco online de Santander invierte en **fondos propios de Santander Asset Management**, con TER más alto que la gama institucional Vanguard/Amundi/iShares. Eso, sumado a la comisión del banco, da un coste total de los más altos del mercado (0,70-0,90%) y sin plan de pensiones. Para un cliente de Openbank/Santander que valora la unificación puede resultar cómodo, pero para quien mira el coste —que debería ser la prioridad— hay opciones notablemente mejores.
+
+---
+
+## El ganador según tu perfil
+
+- **Empiezas con poco capital**: **MyInvestor** (150€ de mínimo, coste más bajo).
+- **Quieres el roboadvisor más establecido y con más historial**: **Indexa Capital**.
+- **Te gusta el oro como diversificador o empiezas con 1.000-3.000€**: **Finizens**.
+- **La inversión ESG/sostenible es tu prioridad**: **inbestMe**.
+- **Eres cliente de Openbank/Santander y priorizas comodidad sobre coste**: **Openbank** (asumiendo que pagas más).
+
+---
+
+## ¿Roboadvisor o hazlo tú mismo (DIY)?
+
+Un roboadvisor cobra del 0,30% al 0,90% por hacer algo que tú puedes hacer por ~0,10% con una [cartera Boglehead de 3 fondos](/blog/cartera-boglehead-3-fondos-espana): comprar fondos indexados globales y rebalancear una o dos veces al año. La pregunta clave no es "cuál es más barato" (lo es el DIY), sino **si vas a ser disciplinado**.
+
+El roboadvisor te compra automatización y, sobre todo, te quita el botón de "vender en pánico" en una caída. Para mucha gente, ese 0,30-0,40% extra es el mejor dinero que gastan, porque les evita el error que de verdad arruina rentabilidades: el comportamiento. Si tienes la disciplina para no tocar tu cartera en las crisis, el DIY te ahorra ese coste. Lo analizamos a fondo en [¿los roboadvisors merecen su comisión?](/blog/roboadvisors-espana-merecen-comision).
+
+---
+
+## Seguridad: ¿es seguro un roboadvisor?
+
+Los cinco están **regulados por la CNMV** y tu dinero no está en el roboadvisor, sino en fondos a tu nombre custodiados en un banco depositario, separados del patrimonio de la empresa. Si el roboadvisor quebrara, tus fondos seguirían siendo tuyos, y además están cubiertos por el Fondo de Garantía de Inversiones hasta 100.000€. Es el mismo principio de [segregación de activos que protege a cualquier bróker](/blog/que-pasa-si-quiebra-tu-broker).
+
+---
+
+## Conclusión práctica
+
+Para la mayoría que quiere delegar, **MyInvestor** (por coste y mínimo) e **Indexa Capital** (por historial) son las dos opciones de referencia en 2026; **Finizens** es una gran alternativa con mínimo bajo, e **inbestMe** brilla si quieres ESG. **Openbank** solo se justifica por comodidad si ya eres cliente. Y si tienes disciplina, recuerda que una cartera indexada DIY es siempre más barata. Decidas lo que decidas, el factor que más controlas es el coste: elige con el **coste total** —no la comisión de gestión aislada— delante.
+
+Calcula tu caso con el [comparador de roboadvisor vs DIY](/calculadora/roboadvisor-vs-diy) y revisa la [oferta completa de roboadvisors](/roboadvisor).
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [CNMV — Registro de empresas de servicios de inversión](https://www.cnmv.es) — Verifica el registro de cada roboadvisor (Indexa 257, Finizens 286, inbestMe 294).
+- [Indexa Capital opinión 2026 — BogleHub](/blog/indexa-capital-opinion-2026) — Análisis del líder del mercado.
+- [Finizens vs Indexa Capital — BogleHub](/blog/finizens-vs-indexa-capital-2026) — Comparativa directa de los dos referentes.
+- [¿Los roboadvisors merecen su comisión? — BogleHub](/blog/roboadvisors-espana-merecen-comision) — Cuándo compensa delegar frente al DIY.
+`,
+  },
+  {
     slug: 'que-pasa-si-quiebra-tu-broker',
     title: '¿Qué pasa si quiebra tu bróker? Garantías y seguridad en España (2026)',
     excerpt:

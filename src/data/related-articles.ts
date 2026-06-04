@@ -69,7 +69,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
   'roboadvisors-espana-merecen-comision': [
     'indexa-capital-opinion-2026',
     'finizens-vs-indexa-capital-2026',
-    'fondos-indexados-vs-etfs-espana',
+    'mejor-roboadvisor-espana-2026',
     'plan-pensiones-indexado-espana-2026',
   ],
   'que-hacer-cuando-el-mercado-cae': [
@@ -127,8 +127,8 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
   'indexa-capital-opinion-2026': [
     'finizens-vs-indexa-capital-2026',
     'roboadvisors-espana-merecen-comision',
+    'mejor-roboadvisor-espana-2026',
     'plan-pensiones-indexado-espana-2026',
-    'fondos-indexados-vs-etfs-espana',
   ],
   'vwce-analisis-completo': [
     'vwce-vs-cspx-vs-iwda',
@@ -145,8 +145,8 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
   'finizens-vs-indexa-capital-2026': [
     'indexa-capital-opinion-2026',
     'roboadvisors-espana-merecen-comision',
+    'mejor-roboadvisor-espana-2026',
     'plan-pensiones-indexado-espana-2026',
-    'fondos-indexados-vs-etfs-espana',
   ],
   'como-declarar-etfs-hacienda': [
     'fiscalidad-etfs-espana-guia-completa',
@@ -317,5 +317,11 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'trade-republic-opinion-2026',
     'interactive-brokers-opinion-2026',
     'como-elegir-tu-primer-etf-espana-2026',
+  ],
+  'mejor-roboadvisor-espana-2026': [
+    'indexa-capital-opinion-2026',
+    'finizens-vs-indexa-capital-2026',
+    'roboadvisors-espana-merecen-comision',
+    'myinvestor-opinion-2026',
   ],
 }
