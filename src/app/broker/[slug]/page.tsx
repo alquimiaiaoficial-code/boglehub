@@ -21,6 +21,7 @@ const BROKER_REVIEW_ARTICLES: Record<string, { slug: string; label: string }> = 
   'scalable-capital': { slug: 'scalable-capital-opinion-2026', label: 'Scalable Capital: análisis completo 2026' },
   'interactive-brokers': { slug: 'interactive-brokers-opinion-2026', label: 'Interactive Brokers: análisis completo 2026' },
   'ing': { slug: 'ing-opinion-2026', label: 'ING (Naranja Broker): análisis completo 2026' },
+  'renta-4': { slug: 'renta-4-opinion-2026', label: 'Renta 4 Banco: análisis completo 2026' },
 }
 
 export function generateStaticParams() {

@@ -176,7 +176,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'amundi-prime-global-analisis',
     'degiro-vs-trade-republic-vs-myinvestor-2026',
     'fondos-indexados-vs-etfs-espana',
-    'plan-pensiones-indexado-espana-2026',
+    'renta-4-opinion-2026',
   ],
   'trade-republic-opinion-2026': [
     'degiro-vs-trade-republic-vs-myinvestor-2026',
@@ -293,5 +293,11 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'degiro-vs-trade-republic-vs-myinvestor-2026',
     'trade-republic-opinion-2026',
     'myinvestor-opinion-2026',
+  ],
+  'renta-4-opinion-2026': [
+    'myinvestor-opinion-2026',
+    'mejor-broker-etfs-espana-2026',
+    'mejores-fondos-indexados-espana-2026',
+    'como-elegir-tu-primer-etf-espana-2026',
   ],
 }

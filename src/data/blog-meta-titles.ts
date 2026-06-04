@@ -44,6 +44,7 @@ export const BLOG_META_TITLES: Record<string, string> = {
   'mejor-broker-etfs-espana-2026': 'Mejor broker para ETFs en España (2026)',
   'interactive-brokers-opinion-2026': 'Interactive Brokers (IBKR): opinión (2026)',
   'ing-opinion-2026': 'ING (Naranja Broker): opinión 2026',
+  'renta-4-opinion-2026': 'Renta 4 Banco: opinión y análisis (2026)',
   'modelo-d6-etf-espana': 'Modelo D6 y ETFs: ¿hay que presentarlo? (2026)',
   'mejores-fondos-indexados-espana-2026': 'Mejores fondos indexados en España (2026)',
   'como-invertir-sp500-espana': 'Cómo invertir en el S&P 500 desde España',

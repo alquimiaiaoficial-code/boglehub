@@ -19,6 +19,117 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'renta-4-opinion-2026',
+    title: 'Renta 4 Banco: opinión y análisis para invertir en ETFs (2026)',
+    excerpt:
+      'Renta 4 es un banco de inversión español veterano con oficinas, pero sus comisiones de ETF y custodia lo hacen caro frente a MyInvestor. Para quién encaja.',
+    publishedAt: '2026-06-04',
+    readingMinutes: 8,
+    keywords: ['Renta 4 opinión', 'Renta 4 Banco ETFs', 'Renta 4 comisiones', 'Renta 4 custodia', 'invertir Renta 4 2026'],
+    faq: [
+      {
+        q: '¿Renta 4 es una buena opción para invertir en ETFs en 2026?',
+        a: 'Para la mayoría de inversores indexados particulares, opciones como MyInvestor son bastante más económicas con productos equivalentes. Renta 4 tiene sentido si valoras el servicio en oficina o ya eres cliente histórico. Sus comisiones de ~7-10€ por orden de ETF, más la custodia anual, hacen que para aportaciones pequeñas el coste sea significativo.',
+      },
+      {
+        q: '¿Renta 4 cobra comisión de custodia?',
+        a: 'Sí. Renta 4 aplica una comisión de custodia anual sobre los valores, un coste recurrente que la mayoría de brokers digitales (Trade Republic, MyInvestor, DEGIRO) no cobran. Junto con la comisión por operación, es el principal motivo por el que resulta caro para el inversor indexado. Consulta las tarifas vigentes en su web, porque varían según el saldo y el tipo de cuenta.',
+      },
+      {
+        q: '¿Ofrece Renta 4 los mismos fondos indexados baratos que MyInvestor?',
+        a: 'Renta 4 dispone de fondos indexados, pero su acceso a las clases más baratas de Vanguard, Amundi o iShares es más limitado que el de MyInvestor, especializado en ofrecer el TER más bajo. Para una cartera indexada de bajo coste con traspaso fiscal, MyInvestor suele ser mejor opción.',
+      },
+      {
+        q: '¿Es seguro Renta 4?',
+        a: 'Sí. Renta 4 es un banco español fundado en 1986, regulado por la CNMV y el Banco de España, con cobertura del Fondo de Garantía de Depósitos y del Fondo de Garantía de Inversiones hasta 100.000€. Tus valores se custodian separados del balance del banco. Su solidez es alta; su desventaja es el coste, no la seguridad.',
+      },
+      {
+        q: '¿Merece la pena Renta 4 frente a MyInvestor?',
+        a: 'En coste, MyInvestor gana con claridad: 0,20€ + 0,03% por ETF y sin custodia, frente a los ~7-10€ por orden más custodia de Renta 4, con un catálogo de fondos indexados baratos más amplio. Renta 4 compensa si valoras el servicio en oficina, el asesoramiento personal o ya eres cliente y prefieres no cambiar.',
+      },
+    ],
+    content: `# Renta 4 Banco: opinión y análisis para invertir en ETFs (2026)
+
+Renta 4 es uno de los nombres más veteranos de la inversión en España: un banco especializado, con oficinas físicas y décadas de historia, que durante mucho tiempo fue la opción natural para quien quería tener fondos, ETFs y planes de pensiones bajo el mismo techo y con trato personal. La pregunta en 2026, con brokers digitales a 0€, es si ese servicio sigue compensando su coste. Este análisis, sin afiliación, lo aclara.
+
+La conclusión por adelantado: Renta 4 es un banco solvente y completo, pero caro para el inversor indexado. Tiene sentido si valoras el servicio en oficina o ya eres cliente; si solo buscas comprar ETFs o fondos indexados al menor coste, hay opciones bastante más baratas.
+
+---
+
+## Quién es Renta 4
+
+Renta 4 Banco es una entidad española fundada en **1986**, regulada por la **CNMV** y el **Banco de España**, y miembro del mercado bursátil español. A diferencia de los neobrokers, es un banco de inversión de pleno derecho: ofrece cuenta de valores, fondos, planes de pensiones, ETFs, renta fija y asesoramiento, con red de oficinas y gestores. Su cobertura es la máxima: **Fondo de Garantía de Depósitos y de Inversiones hasta 100.000€**.
+
+Esa amplitud y ese trato personal son su propuesta de valor. El coste es la contrapartida.
+
+---
+
+## Comisiones: el punto débil para el inversor indexado
+
+Renta 4 cobra del orden de **7-10€ por orden de ETF**, además de **comisiones de custodia** y otras posibles según el producto. Frente a la generación digital, la diferencia es notable:
+
+| Bróker | Comisión por orden de ETF | Custodia |
+|---|---|---|
+| Trade Republic | 0€ | No |
+| MyInvestor | 0,20€ + 0,03% | No |
+| DEGIRO | 0,50€ + 0,004% (mín. 0,90€) | No (cuenta Custody) |
+| **Renta 4** | **~7-10€** | **Sí (anual)** |
+
+Hay dos costes que conviene mirar con lupa en Renta 4: la **comisión por operación** y, sobre todo, la **comisión de custodia anual** sobre los valores, que la mayoría de brokers digitales no cobran. Para un inversor indexado que aporta poco y a menudo, esa combinación encarece mucho la entrada y el mantenimiento.
+
+---
+
+## El coste real para el ahorrador mensual
+
+Sobre una aportación de 200€, una comisión de 7-10€ supone un **3,5%-5% solo por entrar**, a lo que se suma la custodia recurrente. En inversión indexada, donde el coste es el factor que mejor predice el resultado a largo plazo, ese peaje continuado es difícil de justificar cuando existen alternativas a 0€ o céntimos.
+
+Renta 4 se diluye mejor en patrimonios altos y operativa poco frecuente, donde la comisión fija pesa poco en términos relativos y el servicio personalizado aporta valor.
+
+---
+
+## ¿Y los fondos indexados?
+
+Renta 4 ofrece una selección de fondos indexados, con la ventaja del **traspaso fiscal libre** que comparten todos los fondos en España. El matiz es el catálogo: el acceso a las clases más baratas de Vanguard, Amundi o iShares es **más limitado** que en [MyInvestor](/blog/myinvestor-opinion-2026), que se ha especializado precisamente en ofrecer los fondos indexados con el TER más bajo del mercado. Para construir una cartera indexada barata con traspaso, MyInvestor sigue siendo la referencia; la [guía de mejores fondos indexados](/blog/mejores-fondos-indexados-espana-2026) detalla las opciones.
+
+---
+
+## Seguridad
+
+En solidez, Renta 4 está al máximo nivel: banco español regulado por CNMV y Banco de España, con casi cuatro décadas de historia y cobertura de 100.000€ por los fondos de garantía de depósitos e inversiones. Como en el resto de casos, sus valores se custodian segregados de su balance. La seguridad no es el problema de Renta 4; el coste, sí.
+
+---
+
+## Para quién tiene sentido Renta 4 (y para quién no)
+
+**Tiene sentido si:**
+- Valoras el servicio en oficina y el trato con un gestor de carne y hueso.
+- Tienes un patrimonio alto y operas poco, de modo que las comisiones fijas se diluyen.
+- Ya eres cliente histórico y prefieres no fragmentar tus inversiones.
+
+**No tiene sentido si:**
+- Aportas cantidades pequeñas o medianas de forma regular.
+- Buscas el coste mínimo en ETFs o el TER más bajo en fondos indexados.
+- No necesitas oficinas ni asesoramiento y te basta una app.
+
+---
+
+## Conclusión práctica
+
+Renta 4 es un banco de inversión serio y completo, con la ventaja del trato personal y la tranquilidad de una entidad veterana. Pero para el inversor indexado que prioriza el coste —que debería ser casi todos—, sus comisiones de operación y custodia lo dejan por detrás de las opciones digitales. Si valoras el servicio y puedes asumir el coste, es una opción legítima; si no, [MyInvestor](/blog/myinvestor-opinion-2026) ofrece productos equivalentes mucho más baratos.
+
+Para comparar Renta 4 con el resto según tu patrón real de aportación, usa el [comparador de brókers de BogleHub](/calculadora/comparar-brokers) o lee la [comparativa del mejor broker para ETFs](/blog/mejor-broker-etfs-espana-2026).
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Renta 4 Banco — Web oficial](https://www.r4.com) — Tarifas de corretaje, comisiones de custodia y catálogo de fondos.
+- [MyInvestor opinión 2026 — BogleHub](/blog/myinvestor-opinion-2026) — La alternativa española barata para ETFs y fondos indexados con traspaso fiscal.
+- [Mejores fondos indexados en España 2026 — BogleHub](/blog/mejores-fondos-indexados-espana-2026) — Los fondos con el TER más bajo y dónde contratarlos.
+- [Cómo elegir tu primer ETF en España — BogleHub](/blog/como-elegir-tu-primer-etf-espana-2026) — Guía para empezar con buen pie.
+`,
+  },
+  {
     slug: 'ing-opinion-2026',
     title: 'ING y el Naranja Broker: opinión para invertir en ETFs (2026)',
     excerpt:
