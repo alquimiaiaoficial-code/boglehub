@@ -237,7 +237,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
   'degiro-opinion-2026': [
     'degiro-vs-trade-republic-vs-myinvestor-2026',
     'trade-republic-opinion-2026',
-    'myinvestor-opinion-2026',
+    'interactive-brokers-opinion-2026',
     'como-elegir-tu-primer-etf-espana-2026',
   ],
   'xtb-opinion-2026': [
@@ -256,7 +256,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'degiro-vs-trade-republic-vs-myinvestor-2026',
     'trade-republic-opinion-2026',
     'myinvestor-opinion-2026',
-    'como-elegir-tu-primer-etf-espana-2026',
+    'interactive-brokers-opinion-2026',
   ],
   'modelo-d6-etf-espana': [
     'como-declarar-etfs-hacienda',
@@ -281,5 +281,11 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'msci-world-vs-msci-acwi-diferencias',
     'swrd-vs-iwda',
     'como-invertir-sp500-espana',
+  ],
+  'interactive-brokers-opinion-2026': [
+    'mejor-broker-etfs-espana-2026',
+    'degiro-opinion-2026',
+    'degiro-vs-trade-republic-vs-myinvestor-2026',
+    'como-elegir-tu-primer-etf-espana-2026',
   ],
 }

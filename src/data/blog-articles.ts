@@ -19,6 +19,159 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'interactive-brokers-opinion-2026',
+    title: 'Interactive Brokers (IBKR): opinión y análisis completo en España (2026)',
+    excerpt:
+      'Interactive Brokers (IBKR): comisiones mínimas y acceso a 150 mercados, pero interfaz técnica y fiscalidad por tu cuenta. Para quién encaja en España.',
+    publishedAt: '2026-06-04',
+    readingMinutes: 9,
+    keywords: ['Interactive Brokers opinión', 'IBKR España', 'Interactive Brokers comisiones', 'IBKR ETFs 2026', 'Interactive Brokers fiscalidad España'],
+    faq: [
+      {
+        q: '¿Es Interactive Brokers seguro para invertir desde España?',
+        a: 'Sí. La sucursal europea, Interactive Brokers Ireland Limited, está regulada por el Central Bank of Ireland, y tus valores se custodian segregados del balance del broker. El Investor Compensation Scheme irlandés cubre hasta 20.000€ si el broker quiebra (no las pérdidas de mercado). Eso sí: IBKR no es un banco, así que no hay garantía de depósitos de 100.000€ sobre el efectivo, solo la de inversiones.',
+      },
+      {
+        q: '¿Tengo que presentar el modelo 720 o el modelo D6 por mi cuenta de IBKR?',
+        a: 'El modelo 720 (bienes en el extranjero) hay que presentarlo si el conjunto de tus valores y cuentas fuera de España supera los 50.000€, y IBKR cuenta como entidad extranjera. El modelo D6, en cambio, dejó de ser exigible para la cartera minorista tras la Orden ECM/57/2024: la mayoría de inversores particulares ya no lo presentan. En todo caso, plusvalías y dividendos tributan en el IRPF igual que con un broker español, pero la declaración recae enteramente en ti.',
+      },
+      {
+        q: '¿IBKR Lite o IBKR Pro?',
+        a: 'IBKR Lite ofrece 0€ de comisión en acciones de EE.UU. pero opera con order flow (vende las órdenes a creadores de mercado). IBKR Pro cobra comisiones escalonadas muy bajas y no hace order flow. Para el inversor europeo que compra ETFs UCITS, las diferencias prácticas son menores; ambos son válidos.',
+      },
+      {
+        q: '¿Tiene Interactive Brokers cuenta remunerada en euros?',
+        a: 'Sí. IBKR remunera el saldo en euros no invertido por encima de cierto umbral (en torno a 1.000-10.000€) con una tasa cercana al tipo de depósito del BCE menos un pequeño margen. Es competitiva, pero las condiciones son específicas y cambian con la política monetaria: verifica siempre la tasa vigente en la web oficial.',
+      },
+      {
+        q: '¿Para quién merece la pena IBKR frente a Trade Republic?',
+        a: 'IBKR tiene ventaja cuando tienes una cartera grande, necesitas acceso a muchos mercados o divisas, o quieres conversión de divisa barata al comprar en dólares. Para empezar con aportaciones pequeñas y automatizadas, Trade Republic es más sencillo, igual de barato (0€) y suficiente. La interfaz de IBKR es técnica y tiene curva de aprendizaje.',
+      },
+    ],
+    content: `# Interactive Brokers (IBKR): opinión y análisis completo en España (2026)
+
+Interactive Brokers es el broker que casi todos los inversores avanzados acaban mirando tarde o temprano: comisiones de las más bajas del mundo, acceso a 150 mercados y la solidez de una empresa fundada en 1978. Pero también es el broker con la interfaz más técnica y el que más responsabilidad fiscal deja en tus manos. Este análisis explica, sin afiliación ni comisiones por recomendarte nada, cuándo IBKR tiene sentido para un inversor indexado en España y cuándo es más herramienta de la que necesitas.
+
+La conclusión por adelantado: IBKR brilla en carteras grandes y perfiles que valoran el coste mínimo y el alcance global. Para quien empieza con aportaciones pequeñas y automatizadas, hay opciones más sencillas e igual de baratas.
+
+---
+
+## Quién es Interactive Brokers
+
+Interactive Brokers (IBKR) es uno de los brokers más antiguos y respetados del mundo. Fundado en 1978 en Estados Unidos, cotiza en bolsa (Nasdaq) y da servicio tanto a instituciones como a particulares. Para los residentes en España, lo relevante es su sucursal europea: **Interactive Brokers Ireland Limited**, regulada por el **Central Bank of Ireland (CBI)**.
+
+Su escala es difícil de igualar: acceso a más de **150 mercados en 33 países y 27 divisas**, con ETFs, fondos, acciones, bonos, futuros, opciones y divisas en una sola cuenta. Para el inversor indexado esto es, en realidad, más de lo que necesita; pero explica por qué IBKR es la herramienta de referencia para carteras grandes o internacionales.
+
+---
+
+## Comisiones para ETFs
+
+La propuesta de IBKR no es el "0€ comercial" de Trade Republic o XTB, sino un coste **variable muy bajo que se vuelve casi insignificante en volumen**. IBKR ofrece dos esquemas:
+
+- **IBKR Lite**: comisiones fijas y 0€ en acciones de EE.UU. A cambio, opera con order flow (vende las órdenes a creadores de mercado).
+- **IBKR Pro**: comisiones escalonadas muy bajas (un porcentaje pequeño del importe con un mínimo reducido por operación) y sin order flow.
+
+Para ETFs europeos UCITS, la comisión escalonada de IBKR Pro es muy competitiva, sobre todo a partir de órdenes de unos pocos miles de euros. En importes pequeños, el mínimo por operación pesa más en términos relativos: ahí un broker de 0€ puro como Trade Republic sale mejor para aportaciones de 100-200€.
+
+Donde IBKR marca diferencia es en el **cambio de divisa**. Si compras ETFs cotizados en dólares o libras, su conversión es de las más baratas del mercado (un margen mínimo sobre el tipo interbancario), frente a los márgenes opacos que aplican muchos brokers. Para carteras grandes con exposición en varias divisas, ese detalle ahorra más que la propia comisión de compra.
+
+**Nota**: las comisiones exactas cambian con el tiempo y el plan elegido. Verifica siempre las tarifas vigentes en la web oficial antes de operar.
+
+---
+
+## IBKR Lite vs IBKR Pro: cuál elegir
+
+Para un inversor indexado europeo que compra ETFs UCITS de acumulación, las diferencias prácticas entre Lite y Pro son menores. La distinción de fondo es el **order flow**: IBKR Lite financia su 0€ vendiendo el flujo de órdenes, mientras que IBKR Pro cobra una comisión transparente y ejecuta buscando el mejor precio. Si te incomoda el order flow o quieres la ejecución más limpia, Pro es la opción coherente; si priorizas el coste fijo y operas donde Lite es gratis, Lite cumple.
+
+---
+
+## Fiscalidad en España: lo que cambia con un broker extranjero
+
+Esta es la parte que más confusión genera y donde IBKR exige más de ti. Un broker español (MyInvestor, Renta 4) practica retenciones y reporta a Hacienda; un broker extranjero como IBKR **no lo hace por ti**. Las consecuencias prácticas:
+
+- **Plusvalías y dividendos tributan igual** que con cualquier broker: en la base del ahorro del IRPF (tramos del 19% al 28% en 2026). Lo que cambia no es el impuesto, sino quién rellena la declaración: tú.
+- **Modelo 720**: si el conjunto de tus cuentas y valores en el extranjero supera los **50.000€**, debes declararlo. Tu cartera en IBKR cuenta como bienes en el extranjero. Tras la sentencia europea que tumbó el régimen sancionador desproporcionado, las multas se han suavizado, pero **la obligación de informar sigue vigente**.
+- **Modelo D6**: durante años se creyó obligatorio para inversiones en el extranjero. Desde la **Orden ECM/57/2024 dejó de ser exigible para la cartera minorista**: la inmensa mayoría de inversores particulares ya no tienen que presentarlo. Lo explicamos en [¿hay que presentar el modelo D6 por tus ETFs?](/blog/modelo-d6-etf-espana).
+
+Ninguna de estas obligaciones es insalvable —miles de inversores españoles usan IBKR sin incidencias—, pero conviene asumirlas con los ojos abiertos. Si la idea de autoliquidar plusvalías y vigilar el 720 te agota, un broker o banco español te quita ese trabajo. Para el detalle de cómo declarar tus ETFs, consulta la [guía de fiscalidad de ETFs en España](/blog/fiscalidad-etfs-espana-guia-completa).
+
+---
+
+## Seguridad y regulación
+
+**Regulación**: la sucursal europea Interactive Brokers Ireland Limited está supervisada por el Central Bank of Ireland. La matriz estadounidense es una entidad cotizada en Nasdaq, con las obligaciones de transparencia y auditoría que eso conlleva.
+
+**Segregación de activos**: tus valores se mantienen separados del patrimonio del broker. En caso de insolvencia de IBKR, no forman parte de la masa concursal.
+
+**Garantía de inversión**: el Investor Compensation Scheme irlandés cubre hasta **20.000€** por cliente. Es el mismo nivel que DEGIRO y la mitad que el de un banco español (que llega a 100.000€). Importante: esta garantía cubre el fallo del broker, no las pérdidas de mercado de tus inversiones.
+
+**No es un banco**: IBKR no ofrece garantía de depósitos de 100.000€ sobre el efectivo. El dinero no invertido se gestiona como saldo de broker, no como depósito bancario.
+
+---
+
+## La cuenta remunerada
+
+IBKR remunera el **saldo en euros no invertido** por encima de cierto umbral (en torno a 1.000-10.000€, según condiciones) a una tasa cercana al tipo de depósito del BCE menos un pequeño margen. Es competitiva, especialmente para saldos altos, aunque no es el reclamo comercial de su negocio. Como toda remuneración ligada a tipos, fluctúa con la política del BCE: verifica la tasa vigente antes de contar con ella.
+
+---
+
+## ¿Permite fondos indexados con traspaso fiscal?
+
+Conviene ser preciso aquí, porque es una fuente habitual de malentendidos. IBKR da acceso a **fondos de inversión** de múltiples gestoras internacionales. Lo que **no** ofrece es el régimen español de **traspaso fiscal libre** entre fondos —cambiar de fondo sin tributar la plusvalía—, que es una ventaja ligada a la comercialización en España.
+
+Si tu estrategia se apoya en traspasar entre fondos indexados sin pasar por Hacienda (una de las grandes ventajas fiscales del inversor español), IBKR no es la herramienta: para eso necesitas un comercializador español como **MyInvestor**. Lo vemos en la [opinión de MyInvestor 2026](/blog/myinvestor-opinion-2026) y en la [guía del traspaso de fondos](/blog/como-hacer-traspaso-fondos-espana). IBKR es un broker de ETFs y valores, no un supermercado de fondos con traspaso.
+
+---
+
+## Para quién tiene sentido IBKR (y para quién no)
+
+**Ideal para:**
+- Carteras grandes (a partir de varias decenas de miles de euros), donde la comisión escalonada y el cambio de divisa barato pesan de verdad.
+- Inversores que necesitan acceso a muchos mercados internacionales o varias divisas.
+- Perfiles avanzados o semiprofesionales que quieren ETFs, acciones, futuros, opciones o divisas en una sola cuenta.
+
+**No ideal si:**
+- Empiezas con aportaciones pequeñas (100-300€/mes): la interfaz es técnica y un broker de 0€ puro es más simple y barato para ese caso.
+- Solo quieres comprar 1 o 2 ETFs al mes y automatizar: es matar moscas a cañonazos.
+- No quieres encargarte tú de toda la declaración fiscal.
+
+---
+
+## IBKR frente a Trade Republic y DEGIRO
+
+| Característica | Interactive Brokers | Trade Republic | DEGIRO |
+|---|---|---|---|
+| Comisión ETFs | Variable, muy baja en volumen | 0€ | 0,50€ + 0,004% (mín. 0,90€) |
+| Cambio de divisa | De los más baratos | Estándar | Con margen |
+| Planes de ahorro automáticos | No (operativa manual) | Sí (desde 1€) | No |
+| Cuenta remunerada | Sobre saldo no invertido | ~2-2,5% TAE | No |
+| Regulador | CBI (Irlanda) | BaFin (Alemania) | AFM (Países Bajos) |
+| Garantía de inversión | 20.000€ | 100.000€ (depósitos) | 20.000€ |
+| Mercados | 150 mercados | Europa + EE.UU. | 50+ bolsas |
+| Interfaz | Profesional, compleja | Móvil, muy simple | Web técnica |
+
+Frente a **Trade Republic**, IBKR gana en alcance y en coste a gran escala, pero pierde en sencillez y automatización. Frente a **DEGIRO**, ambos apuntan al inversor exigente: DEGIRO es algo más accesible; IBKR, más potente y global. Si dudas entre los dos, el [análisis de DEGIRO 2026](/blog/degiro-opinion-2026) ayuda a decidir.
+
+---
+
+## Conclusión práctica
+
+Interactive Brokers es, objetivamente, uno de los mejores brokers del mundo por coste y alcance. Pero "el mejor del mundo" no significa "el mejor para ti": su interfaz técnica y la carga fiscal que deja en tus manos lo hacen poco recomendable como primer broker para quien empieza con poco. Donde IBKR no tiene rival es en carteras grandes, exposición multidivisa y perfiles que saben lo que hacen.
+
+Si tu caso es ese, IBKR te dará el coste más bajo durante décadas. Si estás empezando, probablemente te convenga más [Trade Republic](/blog/trade-republic-opinion-2026) para los ETFs o [MyInvestor](/blog/myinvestor-opinion-2026) para combinarlos con fondos indexados, y dejar IBKR para cuando tu cartera y tu soltura lo justifiquen. Para comparar las cinco opciones según tu patrón real, usa el [comparador de brókers de BogleHub](/calculadora/comparar-brokers) o lee la [comparativa del mejor broker para ETFs](/blog/mejor-broker-etfs-espana-2026).
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Interactive Brokers — Web oficial](https://www.interactivebrokers.com) — Tarifas vigentes, planes Lite/Pro y condiciones de la cuenta remunerada.
+- [Central Bank of Ireland](https://www.centralbank.ie) — Regulador de Interactive Brokers Ireland Limited; verifica el registro de la entidad.
+- [Mejor broker para ETFs en España 2026 — BogleHub](/blog/mejor-broker-etfs-espana-2026) — Comparativa de los cinco brokers más usados por inversores indexados.
+- [DEGIRO opinión 2026 — BogleHub](/blog/degiro-opinion-2026) — El otro broker para carteras grandes, con acceso a 50+ bolsas.
+- [¿Hay que presentar el modelo D6 por tus ETFs? — BogleHub](/blog/modelo-d6-etf-espana) — Qué cambió con la Orden ECM/57/2024.
+`,
+  },
+  {
     slug: 'como-elegir-tu-primer-etf-espana-2026',
     title: 'Cómo elegir tu primer ETF en España: guía 2026',
     excerpt:
@@ -6577,7 +6730,7 @@ Para un inversor indexado que compra ETFs en euros domiciliados en Irlanda (lo h
 
 **Lo peor**: interfaz técnica y con curva de aprendizaje, cobertura de garantía de inversiones de 20.000 €, y no es banco (no hay garantía de depósito sobre el efectivo más allá de la de inversiones).
 
-**Ideal para**: inversores con cartera grande, perfil avanzado o necesidad de acceso global a mercados. Excesivo para quien solo quiere comprar 1-2 ETFs al mes.
+**Ideal para**: inversores con cartera grande, perfil avanzado o necesidad de acceso global a mercados. Excesivo para quien solo quiere comprar 1-2 ETFs al mes. Análisis completo en la [opinión de Interactive Brokers 2026](/blog/interactive-brokers-opinion-2026).
 
 ---
 
