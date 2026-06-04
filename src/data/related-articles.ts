@@ -288,4 +288,10 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'degiro-vs-trade-republic-vs-myinvestor-2026',
     'como-elegir-tu-primer-etf-espana-2026',
   ],
+  'ing-opinion-2026': [
+    'mejor-broker-etfs-espana-2026',
+    'degiro-vs-trade-republic-vs-myinvestor-2026',
+    'trade-republic-opinion-2026',
+    'myinvestor-opinion-2026',
+  ],
 }

@@ -19,6 +19,140 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'ing-opinion-2026',
+    title: 'ING y el Naranja Broker: opinión para invertir en ETFs (2026)',
+    excerpt:
+      'ING tiene la mejor cuenta sin comisiones, pero su Naranja Broker es de los más caros (9-22€ por orden). Cuándo compensa y cuándo invertir desde otro bróker.',
+    publishedAt: '2026-06-04',
+    readingMinutes: 8,
+    keywords: ['ING opinión', 'Naranja Broker ING', 'ING ETFs', 'ING broker comisiones', 'invertir con ING 2026'],
+    faq: [
+      {
+        q: '¿ING es una buena opción para invertir en ETFs en 2026?',
+        a: 'Para el inversor indexado puro, las comisiones del Naranja Broker (~9-22€ por orden) son altas frente a brokers especializados como Trade Republic (0€), MyInvestor o DEGIRO. La Cuenta Sin Nómina de ING es excelente, pero para invertir de forma regular compensa operar en otra entidad. Puedes mantener la nómina en ING y el broker fuera sin ninguna penalización.',
+      },
+      {
+        q: '¿Cuánto cobra el Naranja Broker de ING por comprar ETFs?',
+        a: 'Aproximadamente 9-22€ por orden de compra o venta, según el importe y el mercado. Es de las comisiones más altas entre las opciones habituales en España. Sobre una aportación de 200€, una comisión de 10€ supone un 5% de coste solo por entrar; por eso el Naranja Broker solo se diluye en órdenes grandes y poco frecuentes. Verifica las tarifas vigentes en la web oficial de ING.',
+      },
+      {
+        q: '¿Merece la pena tener la nómina en ING y el broker en otra entidad?',
+        a: 'Sí, es una estrategia habitual y sin penalización. Aprovechas la Cuenta Sin Nómina sin comisiones de ING para el día a día y compras tus ETFs en un broker barato (Trade Republic, MyInvestor o DEGIRO). No hay ninguna obligación de invertir en el mismo banco donde tienes la cuenta.',
+      },
+      {
+        q: '¿Los Fondos Naranja de ING son una buena forma de invertir indexado?',
+        a: 'Son fondos indexados con la ventaja del traspaso fiscal libre, pero su TER es más alto que el de los fondos indexados más baratos (Vanguard, Amundi, iShares) que comercializa MyInvestor. En inversión indexada el coste es determinante a largo plazo, así que para fondos con traspaso y TER mínimo hay opciones mejores que los Fondos Naranja.',
+      },
+      {
+        q: '¿Es seguro invertir con ING en España?',
+        a: 'Sí. ING está regulado por el Banco de España y la CNMV. El efectivo está cubierto por el Fondo de Garantía de Depósitos hasta 100.000€ y los valores por el Fondo de Garantía de Inversiones (FOGAIN) hasta 100.000€. La solidez regulatoria de ING es máxima; su punto débil es el coste de invertir, no la seguridad.',
+      },
+    ],
+    content: `# ING y el Naranja Broker: opinión para invertir en ETFs (2026)
+
+ING es, probablemente, el banco online con mejor reputación de España: la Cuenta Sin Nómina sin comisiones convenció a millones de personas de que la banca podía ser gratis y sencilla. Pero cuando esos mismos clientes deciden invertir en ETFs a través del Naranja Broker, se topan con una realidad incómoda: es uno de los brokers más caros del mercado. Este análisis, sin afiliación, separa lo que ING hace muy bien (la cuenta) de lo que hace caro (invertir), para que sepas exactamente cómo usarlo.
+
+La conclusión por adelantado: ING es un banco excelente para tu día a día y una opción cara para invertir de forma regular. La buena noticia es que no tienes que elegir: puedes quedarte con la cuenta de ING y comprar tus ETFs en otro sitio.
+
+---
+
+## Quién es ING en España
+
+ING Bank N.V., Sucursal en España, opera desde 1999 y está supervisado por el **Banco de España** y la **CNMV**. Es un banco de pleno derecho —no un broker ni un neobanco— con cobertura del **Fondo de Garantía de Depósitos español hasta 100.000€**. Su producto estrella es la Cuenta Sin Nómina, una cuenta corriente sin comisiones de mantenimiento ni condiciones de domiciliación.
+
+Para invertir, ING ofrece el **Naranja Broker** (acciones y ETFs) y sus propios **Fondos Naranja** (fondos indexados de gestión propia). La calidad del banco es indiscutible; la cuestión es si su oferta de inversión es competitiva. En coste, no lo es.
+
+---
+
+## La Cuenta Sin Nómina: lo mejor de ING
+
+Aquí ING brilla. La Cuenta Sin Nómina no cobra comisiones de administración ni mantenimiento, no exige domiciliar nómina y viene con tarjetas sin coste. Para la operativa diaria —cobrar, pagar, domiciliar recibos— es de las mejores cuentas de España, y de vez en cuando ING lanza remuneraciones promocionales para nuevos clientes (verifica las condiciones vigentes, porque cambian).
+
+Si ya eres cliente de ING por la cuenta, tiene todo el sentido seguir usándola. El problema aparece solo cuando intentas invertir desde ahí.
+
+---
+
+## El Naranja Broker: cómodo, pero caro
+
+El Naranja Broker cobra aproximadamente **9-22€ por orden** de compra o venta de ETFs, según el importe y el mercado. Comparado con la generación de brokers digitales, la diferencia es enorme:
+
+| Bróker | Comisión por orden de ETF |
+|---|---|
+| Trade Republic | 0€ |
+| MyInvestor | 0,20€ + 0,03% |
+| DEGIRO | 0,50€ + 0,004% (mín. 0,90€) |
+| **ING (Naranja Broker)** | **~9-22€** |
+
+No es un matiz: es la diferencia entre pagar 0€ y pagar el equivalente a una comida por cada compra. Y, como verás abajo, sobre aportaciones pequeñas ese coste se come una parte enorme de tu inversión.
+
+---
+
+## El coste real de una comisión alta
+
+El problema de una comisión fija alta es que destroza las aportaciones pequeñas y regulares, que son precisamente la base de la inversión indexada sana (el famoso DCA).
+
+Si aportas **200€ al mes** y pagas **10€ de comisión** por cada compra, estás perdiendo un **5% de cada aportación solo en entrar** —antes de que el mercado se mueva—. En Trade Republic o MyInvestor ese mismo movimiento cuesta 0€ o céntimos. A lo largo de los años, ese 5% recurrente es una sangría que el interés compuesto convierte en miles de euros.
+
+La comisión de ING solo se diluye en órdenes grandes y poco frecuentes: si inviertes 10.000€ de golpe, 15€ es un 0,15%, asumible. Por eso el Naranja Broker tiene sentido únicamente para quien aporta sumas grandes muy de vez en cuando, no para el ahorrador mensual.
+
+---
+
+## ¿Y los Fondos Naranja?
+
+ING comercializa sus propios fondos indexados, los **Fondos Naranja**, que replican índices como el IBEX 35, el Euro Stoxx 50, el S&P 500 o un índice mundial. Tienen dos ventajas reales: se contratan sin comisión de suscripción y, al ser fondos, disfrutan del **traspaso fiscal libre** (puedes cambiar de fondo sin tributar la plusvalía).
+
+El pero es el coste: el TER de los Fondos Naranja es **más alto que el de los fondos indexados más baratos** disponibles en España (los de Vanguard, Amundi o iShares que comercializa MyInvestor). En inversión indexada, donde el coste es el factor que mejor predice el resultado a largo plazo, esa diferencia importa. Si quieres fondos indexados con traspaso fiscal y el TER más bajo posible, [MyInvestor](/blog/myinvestor-opinion-2026) sigue siendo la referencia; la [guía del traspaso de fondos](/blog/como-hacer-traspaso-fondos-espana) explica cómo mover tu dinero sin coste fiscal.
+
+---
+
+## Seguridad
+
+ING es un banco regulado por el Banco de España y la CNMV. El efectivo está cubierto por el **Fondo de Garantía de Depósitos hasta 100.000€**, y los valores por el **Fondo de Garantía de Inversiones (FOGAIN) hasta 100.000€**. En solidez y respaldo regulatorio, ING está al máximo nivel: el problema de su oferta de inversión es el coste, no la seguridad.
+
+---
+
+## Para quién tiene sentido ING (y para quién no)
+
+**Tiene sentido si:**
+- Ya eres cliente de ING y valoras tenerlo todo en el mismo banco.
+- Inviertes sumas grandes y muy poco frecuentes, donde la comisión fija se diluye.
+- Priorizas la comodidad y la marca por encima de optimizar cada euro de coste.
+
+**No tiene sentido si:**
+- Aportas cantidades pequeñas o medianas de forma regular (la comisión te penaliza muchísimo).
+- Buscas el coste mínimo en ETFs o en fondos indexados.
+- Quieres automatizar aportaciones periódicas (ING no tiene planes de ahorro a 0€).
+
+---
+
+## La estrategia inteligente: nómina en ING, inversión fuera
+
+No tienes que renunciar a ING. La jugada que mejor combina lo bueno de cada entidad es sencilla:
+
+- **Tu cuenta del día a día en ING**: cuenta sin comisiones, tarjetas, recibos.
+- **Tus inversiones en un bróker especializado**: [Trade Republic](/blog/trade-republic-opinion-2026) para ETFs a 0€ con planes de ahorro automáticos, o [MyInvestor](/blog/myinvestor-opinion-2026) si quieres combinar ETFs con fondos indexados de traspaso fiscal.
+
+Mantener la nómina en un banco y la inversión en otro es perfectamente normal y no tiene ninguna penalización. Es, de hecho, lo que hacen muchos inversores indexados que valoran la cuenta de ING pero no quieren pagar sus comisiones de broker.
+
+---
+
+## Conclusión práctica
+
+ING es un gran banco con una oferta de inversión cara. Su Cuenta Sin Nómina merece la pena por sí sola, pero el Naranja Broker y los Fondos Naranja son difíciles de justificar para un inversor indexado sensible al coste cuando existen alternativas a 0€ o casi. Úsalo como banco, no como broker.
+
+Para comparar ING con el resto de opciones según tu patrón real de aportación, usa el [comparador de brókers de BogleHub](/calculadora/comparar-brokers) o lee la [comparativa del mejor broker para ETFs en España](/blog/mejor-broker-etfs-espana-2026).
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [ING España — Web oficial](https://www.ing.es) — Condiciones de la Cuenta Sin Nómina, tarifas del Naranja Broker y Fondos Naranja.
+- [Mejor broker para ETFs en España 2026 — BogleHub](/blog/mejor-broker-etfs-espana-2026) — Comparativa de los cinco brokers más usados por inversores indexados, ING incluido.
+- [MyInvestor opinión 2026 — BogleHub](/blog/myinvestor-opinion-2026) — La alternativa española para combinar ETFs y fondos indexados con traspaso fiscal.
+- [Cómo elegir tu primer ETF en España — BogleHub](/blog/como-elegir-tu-primer-etf-espana-2026) — Guía para empezar con buen pie si ING no te encaja.
+`,
+  },
+  {
     slug: 'interactive-brokers-opinion-2026',
     title: 'Interactive Brokers (IBKR): opinión y análisis completo en España (2026)',
     excerpt:
@@ -6742,7 +6876,7 @@ Para un inversor indexado que compra ETFs en euros domiciliados en Irlanda (lo h
 
 **Lo peor**: el coste por operación es prohibitivo para aportaciones pequeñas regulares. Una aportación mensual de 200 € con una comisión de 10 € supone un 5 % de coste de entrada — inaceptable frente a los 0 € de Trade Republic.
 
-**Ideal para**: clientes de ING que valoran la comodidad bancaria por encima del coste y hacen aportaciones grandes y poco frecuentes. Para el inversor indexado sensible al coste, hay opciones mucho mejores.
+**Ideal para**: clientes de ING que valoran la comodidad bancaria por encima del coste y hacen aportaciones grandes y poco frecuentes. Para el inversor indexado sensible al coste, hay opciones mucho mejores. Análisis completo en la [opinión de ING 2026](/blog/ing-opinion-2026).
 
 ---
 
