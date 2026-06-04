@@ -306,4 +306,10 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'trade-republic-opinion-2026',
     'finizens-vs-indexa-capital-2026',
   ],
+  'etoro-opinion-2026': [
+    'trade-republic-opinion-2026',
+    'mejor-broker-etfs-espana-2026',
+    'como-elegir-tu-primer-etf-espana-2026',
+    'fondos-indexados-vs-etfs-espana',
+  ],
 }

@@ -23,6 +23,7 @@ const BROKER_REVIEW_ARTICLES: Record<string, { slug: string; label: string }> = 
   'ing': { slug: 'ing-opinion-2026', label: 'ING (Naranja Broker): análisis completo 2026' },
   'renta-4': { slug: 'renta-4-opinion-2026', label: 'Renta 4 Banco: análisis completo 2026' },
   'openbank': { slug: 'openbank-opinion-2026', label: 'Openbank: análisis completo 2026' },
+  'etoro': { slug: 'etoro-opinion-2026', label: 'eToro: análisis completo 2026' },
 }
 
 export function generateStaticParams() {

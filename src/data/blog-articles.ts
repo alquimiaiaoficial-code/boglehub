@@ -19,6 +19,129 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'etoro-opinion-2026',
+    title: 'eToro: opinión y análisis para invertir en España (2026)',
+    excerpt:
+      'eToro destaca en copy trading y cripto, pero para inversión indexada su modelo (spread, retiradas, cuenta en dólares) es poco eficiente. Alternativas mejores.',
+    publishedAt: '2026-06-04',
+    readingMinutes: 8,
+    keywords: ['eToro opinión', 'eToro España', 'eToro ETFs', 'eToro comisiones', 'eToro copy trading'],
+    faq: [
+      {
+        q: '¿eToro es una buena opción para invertir en ETFs indexados?',
+        a: 'Para una cartera indexada de comprar y mantener, los brokers europeos puros (Trade Republic, DEGIRO, MyInvestor) son más eficientes. El modelo de eToro —spread más amplio, comisión de retirada, cuenta en dólares y comisión de inactividad— penaliza al inversor de largo plazo. eToro tiene sentido sobre todo si buscas copy trading o criptomonedas, no inversión indexada pasiva.',
+      },
+      {
+        q: '¿eToro cobra comisiones de verdad?',
+        a: 'eToro anuncia 0€ de comisión en acciones y ETFs, pero monetiza vía spread (diferencia compra-venta más amplia), comisión fija por retirar dinero, conversión de divisa (las cuentas operan en dólares) y comisión de inactividad. No es "gratis": son costes menos visibles que una comisión por operación. Verifica las condiciones vigentes en su web.',
+      },
+      {
+        q: '¿Es seguro eToro en España?',
+        a: 'eToro (Europe) está regulado por la CySEC de Chipre, con cobertura del fondo de garantía de inversiones de 20.000€, un nivel similar a DEGIRO o IBKR e inferior a los 100.000€ de un banco español. No está supervisado por la CNMV. Es una plataforma solvente con millones de usuarios, pero su perfil regulatorio y su orientación al trading la alejan del inversor indexado conservador.',
+      },
+      {
+        q: '¿Qué es el copy trading de eToro y sustituye a una cartera indexada?',
+        a: 'El copy trading permite replicar automáticamente las operaciones de otros usuarios. Es el sello de eToro, pero no sustituye a una cartera indexada: la rentabilidad pasada no garantiza la futura, copias la rotación y los costes de quien sigas, y renuncias a la diversificación y el bajo coste de un fondo indexado global. Puede ser didáctico con una parte pequeña del capital, no como estrategia principal.',
+      },
+      {
+        q: '¿eToro o Trade Republic para invertir en ETFs?',
+        a: 'Para inversión indexada, Trade Republic es claramente preferible: 0€ reales por operación, cuenta en euros, planes de ahorro automáticos y regulación alemana. eToro solo compensa si quieres específicamente copy trading o criptomonedas. Para una cartera de ETFs de largo plazo, el modelo de eToro añade costes que Trade Republic no tiene.',
+      },
+    ],
+    content: `# eToro: opinión y análisis para invertir en España (2026)
+
+eToro es uno de los nombres más conocidos —y más anunciados— del mundo de la inversión, sobre todo por haber popularizado el copy trading y por su apuesta por las criptomonedas. Esa fama hace que muchos inversores que empiezan se planteen usarlo para comprar ETFs. Este análisis, sin afiliación, explica por qué para la inversión indexada a largo plazo eToro rara vez es la mejor opción, y para qué perfil sí puede tener sentido.
+
+La conclusión por adelantado: eToro es una plataforma válida si lo que buscas específicamente es copy trading o criptomonedas, pero su modelo de costes (spread, comisión de retirada, cuenta en dólares) penaliza al inversor indexado de comprar y mantener. Para una cartera Boglehead hay opciones europeas más eficientes.
+
+---
+
+## Quién es eToro
+
+eToro es un broker fundado en 2007, con sede europea en Chipre y regulado por la **CySEC** (el supervisor chipriota). Su seña de identidad es el **copy trading**: copiar automáticamente las operaciones de otros usuarios. Ofrece acciones, ETFs, criptomonedas y CFDs, y cuenta con cobertura del fondo de garantía de inversiones chipriota de **20.000€**.
+
+A diferencia de un broker europeo "puro" orientado al inversor de largo plazo, eToro está diseñado en torno al trading social y a una experiencia muy gamificada. Eso condiciona tanto su modelo de costes como su encaje para una estrategia indexada.
+
+---
+
+## El modelo de costes: "0€" con asteriscos
+
+eToro anuncia **0€ de comisión** en la compra de acciones y ETFs. La letra pequeña importa, porque monetiza por otras vías:
+
+- **Spread**: la diferencia entre el precio de compra y de venta suele ser más amplia que en un broker tradicional. Es un coste que no aparece como "comisión" pero lo pagas igual.
+- **Comisión de retirada**: eToro cobra una comisión fija cada vez que retiras dinero a tu cuenta bancaria.
+- **Cambio de divisa**: las cuentas de eToro operan en **dólares**. Si ingresas y retiras en euros, hay conversión de divisa con su correspondiente coste.
+- **Comisión de inactividad**: si dejas de operar durante un tiempo, eToro aplica una cuota mensual.
+
+Para un inversor indexado que compra y mantiene durante décadas, esta estructura es justo lo contrario de lo que conviene: el spread y la conversión de divisa erosionan cada aportación, y las comisiones de retirada e inactividad castigan precisamente la pasividad que define la buena inversión indexada.
+
+---
+
+## Copy trading: por qué no sustituye a una cartera indexada
+
+El copy trading es el gran reclamo de eToro: eliges a un inversor con buen historial y replicas sus operaciones automáticamente. Suena atractivo, pero choca con la evidencia que sostiene la inversión indexada:
+
+- La rentabilidad pasada no predice la futura; un "popular investor" con buen año puede tener uno malo al siguiente.
+- Copiar a alguien que opera activamente implica asumir su rotación, sus costes y sus errores.
+- La diversificación y el bajo coste de un fondo indexado global son, para la mayoría, una apuesta más sólida que seguir a un trader concreto.
+
+El copy trading puede ser entretenido o didáctico con una parte pequeña del capital, pero no es un sustituto de una cartera diversificada de bajo coste. Si quieres entender por qué el coste y la disciplina importan tanto, el artículo sobre [interés compuesto](/blog/interes-compuesto-inversion) lo deja claro.
+
+---
+
+## Fiscalidad: un broker extranjero, como IBKR
+
+eToro es un broker extranjero, así que **no te practica retenciones ni te lo da hecho** de cara a Hacienda. Tú declaras las plusvalías y dividendos en el IRPF (base del ahorro), y si el conjunto de tu patrimonio fuera de España supera los 50.000€, te corresponde el **modelo 720**. Si además operas con criptomonedas, tienen sus propias obligaciones informativas. Es una carga asumible, pero conviene conocerla; la [guía de fiscalidad de ETFs](/blog/fiscalidad-etfs-espana-guia-completa) la detalla.
+
+---
+
+## Seguridad
+
+eToro (Europe) está regulado por la CySEC chipriota, con cobertura del fondo de garantía de inversiones de **20.000€**. Es un nivel equivalente al de DEGIRO o IBKR, e inferior a los 100.000€ de un banco español. No es un regulador español, lo que para algunos inversores es un punto en contra frente a opciones supervisadas por la CNMV. La plataforma es solvente y cuenta con millones de usuarios, pero su perfil regulatorio y su orientación al trading la alejan del inversor indexado conservador.
+
+---
+
+## Para quién tiene sentido eToro (y para quién no)
+
+**Puede tener sentido si:**
+- Te interesa específicamente el copy trading como experiencia.
+- Quieres mezclar inversión con criptomonedas en una sola plataforma.
+
+**No tiene sentido si:**
+- Buscas una cartera indexada de ETFs de comprar y mantener al menor coste.
+- Te molesta el spread, la comisión de retirada o tener la cuenta en dólares.
+- Prefieres un broker regulado en la UE orientado al largo plazo y, mejor aún, en euros.
+
+---
+
+## La alternativa para el inversor indexado
+
+Si has llegado a eToro buscando una forma sencilla de invertir en ETFs a largo plazo, casi seguro te conviene más un broker europeo orientado a eso:
+
+- [Trade Republic](/blog/trade-republic-opinion-2026): 0€ reales por operación, cuenta en euros, planes de ahorro automáticos desde 1€ y regulación alemana.
+- Para combinar ETFs con fondos indexados de traspaso fiscal, MyInvestor; para acceso a muchos mercados, DEGIRO.
+
+La [comparativa del mejor broker para ETFs en España](/blog/mejor-broker-etfs-espana-2026) los pone uno al lado del otro.
+
+---
+
+## Conclusión práctica
+
+eToro es una buena plataforma para lo que fue diseñada —copy trading y criptomonedas—, pero no para construir una cartera indexada eficiente. El spread, las comisiones de retirada e inactividad y la cuenta en dólares juegan en contra del inversor de comprar y mantener. Si tu objetivo es invertir en ETFs indexados a largo plazo desde España, empieza por un broker europeo a 0€ y en euros, y deja eToro para la curiosidad concreta del copy trading o las cripto, con dinero que puedas permitirte arriesgar.
+
+Para comparar todas las opciones según tu patrón real, usa el [comparador de brókers de BogleHub](/calculadora/comparar-brokers).
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [eToro — Web oficial](https://www.etoro.com/es) — Estructura de comisiones, spread, retiradas y condiciones de la cuenta.
+- [Mejor broker para ETFs en España 2026 — BogleHub](/blog/mejor-broker-etfs-espana-2026) — Las opciones europeas más eficientes para inversión indexada.
+- [Trade Republic opinión 2026 — BogleHub](/blog/trade-republic-opinion-2026) — La alternativa a 0€ en euros para ETFs de largo plazo.
+- [Cómo elegir tu primer ETF en España — BogleHub](/blog/como-elegir-tu-primer-etf-espana-2026) — Guía para empezar con buen pie.
+`,
+  },
+  {
     slug: 'openbank-opinion-2026',
     title: 'Openbank: opinión y análisis para invertir en ETFs (2026)',
     excerpt:

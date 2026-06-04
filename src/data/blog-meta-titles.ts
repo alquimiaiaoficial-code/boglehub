@@ -46,6 +46,7 @@ export const BLOG_META_TITLES: Record<string, string> = {
   'ing-opinion-2026': 'ING (Naranja Broker): opinión 2026',
   'renta-4-opinion-2026': 'Renta 4 Banco: opinión y análisis (2026)',
   'openbank-opinion-2026': 'Openbank: opinión para invertir (2026)',
+  'etoro-opinion-2026': 'eToro: opinión para invertir indexado (2026)',
   'modelo-d6-etf-espana': 'Modelo D6 y ETFs: ¿hay que presentarlo? (2026)',
   'mejores-fondos-indexados-espana-2026': 'Mejores fondos indexados en España (2026)',
   'como-invertir-sp500-espana': 'Cómo invertir en el S&P 500 desde España',
