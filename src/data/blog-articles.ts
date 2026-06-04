@@ -19,6 +19,115 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'openbank-opinion-2026',
+    title: 'Openbank: opinión y análisis para invertir en ETFs (2026)',
+    excerpt:
+      'Openbank, el banco online del Santander, tiene buena cuenta pero su broker (~8€/orden) y su roboadvisor son caros para invertir indexado. Para quién encaja.',
+    publishedAt: '2026-06-04',
+    readingMinutes: 8,
+    keywords: ['Openbank opinión', 'Openbank invertir ETFs', 'Openbank broker comisiones', 'Openbank roboadvisor', 'invertir Openbank 2026'],
+    faq: [
+      {
+        q: '¿Openbank es una buena opción para invertir en ETFs en 2026?',
+        a: 'Comparado con Trade Republic (0€) o MyInvestor (0,20€ + 0,03%), las comisiones de Openbank por orden de ETF (~8€) son notablemente más altas. Para el inversor que prioriza el coste, hay mejores opciones. Openbank tiene sentido si ya eres cliente del Santander u Openbank y valoras la unificación y el respaldo de un banco grande.',
+      },
+      {
+        q: '¿Cuánto cobra Openbank por comprar ETFs?',
+        a: 'Alrededor de 8€ por orden de compra o venta de ETFs. Es más barato que la banca tradicional, pero mucho más caro que los brokers digitales especializados. Sobre una aportación de 200€, 8€ son un 4% de coste solo por entrar. Verifica las tarifas vigentes en la web oficial, porque pueden variar.',
+      },
+      {
+        q: '¿El roboadvisor de Openbank merece la pena?',
+        a: 'El roboadvisor de Openbank es cómodo, pero su comisión total suele ser más alta que la de roboadvisors especializados como Indexa Capital o Finizens. Si quieres delegar la gestión en un roboadvisor, compara costes: a largo plazo, una comisión más baja se traduce en una diferencia notable de rentabilidad.',
+      },
+      {
+        q: '¿Es seguro invertir con Openbank?',
+        a: 'Sí. Openbank es el banco online del grupo Santander, regulado por el Banco de España y la CNMV, con cobertura del Fondo de Garantía de Depósitos y del Fondo de Garantía de Inversiones hasta 100.000€. Su solidez es máxima; su desventaja para invertir es el coste, no la seguridad.',
+      },
+      {
+        q: '¿Mejor Openbank o Trade Republic para invertir en ETFs?',
+        a: 'En coste, Trade Republic gana con claridad: 0€ por operación y planes de ahorro automáticos desde 1€, frente a los ~8€ por orden de Openbank. Openbank solo compensa si valoras tener la inversión en el mismo banco que tu cuenta o ya eres cliente del Santander. Puedes mantener la cuenta en Openbank y el broker en Trade Republic sin problema.',
+      },
+    ],
+    content: `# Openbank: opinión y análisis para invertir en ETFs (2026)
+
+Openbank es el banco 100% online del grupo Santander y uno de los más usados de España. Como cuenta del día a día es cómodo y solvente; la duda llega cuando lo usas para invertir en ETFs o fondos, porque sus comisiones quedan lejos de la nueva generación de brokers digitales. Este análisis, sin afiliación, explica qué hace bien Openbank y por qué, para invertir indexado, probablemente te convenga otra herramienta.
+
+La conclusión por adelantado: Openbank es un buen banco con el respaldo del Santander, pero una opción cara para invertir. Si ya eres cliente y valoras la unificación, puede compensar; si priorizas el coste, hay alternativas mucho más baratas.
+
+---
+
+## Quién es Openbank
+
+Openbank es el banco online del **grupo Santander**, operativo desde 1995 y regulado por el **Banco de España** y la **CNMV**. Ofrece cuenta corriente sin comisiones, tarjetas, y una plataforma de inversión con acciones, ETFs, fondos y un roboadvisor propio. Como entidad del mayor banco español, cuenta con la cobertura del **Fondo de Garantía de Depósitos e Inversiones hasta 100.000€** y un respaldo difícil de igualar en solidez.
+
+Su propuesta es la de un banco grande y completo en formato digital. Para invertir indexado, el coste es donde flojea.
+
+---
+
+## El broker de Openbank: comisiones
+
+Openbank cobra alrededor de **8€ por orden** de compra o venta de ETFs. Es más barato que la banca tradicional, pero mucho más caro que los brokers especializados:
+
+| Bróker | Comisión por orden de ETF |
+|---|---|
+| Trade Republic | 0€ |
+| MyInvestor | 0,20€ + 0,03% |
+| DEGIRO | 0,50€ + 0,004% (mín. 0,90€) |
+| **Openbank** | **~8€** |
+
+Como con cualquier comisión fija alta, el daño se concentra en las aportaciones pequeñas y regulares: 8€ sobre 200€ es un **4% de coste solo por entrar**, frente a los 0€ de Trade Republic. Para el inversor que hace DCA mensual, esa diferencia se acumula y el interés compuesto la amplifica con los años.
+
+---
+
+## El roboadvisor de Openbank
+
+Openbank tiene un **roboadvisor** (carteras gestionadas de fondos indexados) que automatiza la inversión por ti. Es una opción cómoda, pero su comisión total es **más alta que la de los roboadvisors especializados** como Indexa Capital o Finizens, que llevan años optimizando precisamente ese coste. Si lo que buscas es delegar la gestión en un roboadvisor, conviene comparar: el [análisis de Finizens vs Indexa](/blog/finizens-vs-indexa-capital-2026) y la pregunta de fondo de [si los roboadvisors merecen su comisión](/blog/roboadvisors-espana-merecen-comision) ayudan a decidir.
+
+---
+
+## Seguridad
+
+En solidez, Openbank juega en primera división: es el banco online del Santander, el mayor grupo bancario de España, regulado por el Banco de España y la CNMV, con cobertura de 100.000€ por los fondos de garantía de depósitos e inversiones. La seguridad no es una preocupación con Openbank; el coste de invertir, sí.
+
+---
+
+## Para quién tiene sentido Openbank (y para quién no)
+
+**Tiene sentido si:**
+- Ya eres cliente de Openbank o del Santander y quieres tenerlo todo unificado.
+- Valoras el respaldo de un banco grande por encima de optimizar el coste.
+- Buscas una cuenta online sólida para el día a día (donde sí destaca).
+
+**No tiene sentido si:**
+- Aportas cantidades pequeñas o medianas de forma regular a ETFs.
+- Quieres el coste mínimo por operación o el roboadvisor más barato.
+- Te basta con una app especializada y no necesitas un banco completo.
+
+---
+
+## La jugada inteligente: banco en Openbank, inversión fuera
+
+Igual que con otros bancos, no hace falta renunciar a Openbank para invertir bien. Puedes mantener la cuenta de Openbank para tu operativa diaria y comprar tus ETFs en un broker barato: [Trade Republic](/blog/trade-republic-opinion-2026) a 0€ con planes de ahorro automáticos, o [MyInvestor](/blog/myinvestor-opinion-2026) si quieres combinar ETFs con fondos indexados de traspaso fiscal. Tener el banco en un sitio y la inversión en otro es habitual y no penaliza.
+
+---
+
+## Conclusión práctica
+
+Openbank es un banco online sólido y respaldado por el Santander, pero su broker (~8€ por orden) y su roboadvisor quedan caros para el inversor indexado frente a las alternativas especializadas. Úsalo como banco si te gusta; para invertir, casi siempre saldrás ganando con un broker a 0€ o un roboadvisor más barato.
+
+Para comparar Openbank con el resto según tu patrón real de aportación, usa el [comparador de brókers de BogleHub](/calculadora/comparar-brokers) o lee la [comparativa del mejor broker para ETFs](/blog/mejor-broker-etfs-espana-2026).
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Openbank — Web oficial](https://www.openbank.es) — Condiciones de la cuenta, tarifas del broker y del roboadvisor.
+- [Mejor broker para ETFs en España 2026 — BogleHub](/blog/mejor-broker-etfs-espana-2026) — Comparativa de los brokers más usados por inversores indexados.
+- [Finizens vs Indexa Capital — BogleHub](/blog/finizens-vs-indexa-capital-2026) — Los dos roboadvisors de referencia, más baratos que el de Openbank.
+- [MyInvestor opinión 2026 — BogleHub](/blog/myinvestor-opinion-2026) — La alternativa española barata para ETFs y fondos indexados.
+`,
+  },
+  {
     slug: 'renta-4-opinion-2026',
     title: 'Renta 4 Banco: opinión y análisis para invertir en ETFs (2026)',
     excerpt:
