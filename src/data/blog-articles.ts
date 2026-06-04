@@ -19,6 +19,136 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'que-pasa-si-quiebra-tu-broker',
+    title: '¿Qué pasa si quiebra tu bróker? Garantías y seguridad en España (2026)',
+    excerpt:
+      'Si quiebra tu bróker, tus ETFs siguen siendo tuyos por la segregación de activos. Qué cubren los fondos de garantía y cómo protegen a los 10 brókers top.',
+    publishedAt: '2026-06-04',
+    readingMinutes: 10,
+    keywords: ['qué pasa si quiebra mi broker', 'seguridad brokers España', 'garantía de inversión FOGAIN', 'segregación de activos broker', 'es seguro invertir ETFs'],
+    faq: [
+      {
+        q: '¿Qué pasa con mis ETFs si quiebra el bróker?',
+        a: 'Tus ETFs y fondos están segregados del patrimonio del bróker: son tu propiedad, no un activo de la empresa. Si el bróker quiebra, no entran en su concurso de acreedores; se te devuelven o se traspasan a otra entidad. La segregación de activos es la protección principal y, en la práctica, casi total para tus inversiones.',
+      },
+      {
+        q: '¿Qué cubre el Fondo de Garantía de Inversiones (FOGAIN)?',
+        a: 'Cubre el caso excepcional en que tus valores no puedan devolverte por fraude o fallo operativo del bróker, no las pérdidas de mercado. En España (FOGAIN) llega hasta 100.000€; en la mayoría de la UE (Alemania, Países Bajos, Irlanda, Polonia, Chipre), hasta 20.000€. Como la segregación ya protege tus valores, este fondo es un backstop para casos raros.',
+      },
+      {
+        q: '¿Es menos seguro un bróker con garantía de 20.000€ que uno de 100.000€?',
+        a: 'No tanto como parece. La garantía de inversión solo entra si falla la segregación (fraude o error grave), algo muy improbable en un bróker regulado y solvente. Tus valores están protegidos por la segregación, que no tiene límite. La garantía de 100.000€ de los brókers-banco españoles es un plus de tranquilidad, pero no significa que el resto deje "desprotegido" lo que supere 20.000€.',
+      },
+      {
+        q: '¿Está protegido mi efectivo sin invertir en el bróker?',
+        a: 'Depende de si el bróker es un banco. Si lo es (MyInvestor, ING, Renta 4, Openbank, Trade Republic), tu efectivo como depósito está cubierto por el Fondo de Garantía de Depósitos hasta 100.000€. Los brókers que no son bancos (DEGIRO, IBKR, eToro) no ofrecen esa garantía sobre el efectivo directamente, aunque suelen depositarlo en bancos asociados. Para inversión a largo plazo, lo normal es tener poco efectivo parado.',
+      },
+      {
+        q: '¿Qué pasa si quiebra la gestora del ETF, como Vanguard o iShares?',
+        a: 'También estás protegido. Un ETF es un fondo con patrimonio propio, separado del de la gestora. Si la gestora desapareciera, los activos del ETF seguirían siendo de los partícipes y se liquidarían o traspasarían a otra gestora. No son dinero que la gestora pueda usar para pagar sus deudas.',
+      },
+    ],
+    content: `# ¿Qué pasa si quiebra tu bróker? Garantías y seguridad en España (2026)
+
+Es la pregunta que frena a más gente antes de dar el paso: "¿y si el bróker donde tengo mis ETFs quiebra?". La buena noticia es que el dinero invertido en ETFs y fondos está mucho mejor protegido de lo que la mayoría cree, gracias a un mecanismo que casi nadie explica bien: la segregación de activos. Este artículo aclara, sin tecnicismos, qué pasa exactamente si tu bróker desaparece, qué cubren (y qué no) los fondos de garantía, y cómo están protegidos los 10 brókers más usados en España.
+
+La conclusión por adelantado: tus ETFs y fondos son tuyos, no del bróker. Si el bróker quiebra, no forman parte de su concurso de acreedores: se te devuelven o se traspasan a otra entidad. Los fondos de garantía solo entran en el caso raro de fraude u error operativo.
+
+---
+
+## La clave que casi nadie explica: la segregación de activos
+
+Cuando compras un ETF a través de un bróker regulado, ese ETF queda registrado como **tuyo**, custodiado de forma **separada** del balance del bróker. Legalmente no es un activo de la empresa: es tu propiedad, que el bróker solo administra.
+
+Esto significa que, si el bróker quiebra, **tus valores no entran en la masa concursal**. No se usan para pagar a los acreedores del bróker. Lo que ocurre en la práctica es que tus posiciones se **traspasan a otra entidad** o se ponen a tu disposición para que las muevas. Es el mismo principio por el que, si quiebra el banco donde tienes un fondo de inversión, el fondo sigue siendo tuyo.
+
+La segregación es la **protección principal y casi total** para tus inversiones. Los fondos de garantía que vienen a continuación son una red de seguridad para los casos excepcionales en que la segregación falla (fraude, errores graves de registro).
+
+---
+
+## Los tres niveles de protección (y qué cubre cada uno)
+
+Conviene no mezclarlos, porque protegen cosas distintas:
+
+### 1. Segregación de activos (tus ETFs y fondos)
+
+Tus valores están separados del patrimonio del bróker. Protección casi total, independiente de cualquier fondo de garantía. Aplica a todos los brókers regulados de este artículo.
+
+### 2. Fondo de Garantía de Inversiones (el backstop de los valores)
+
+Cubre el caso excepcional en que tus valores **no puedan devolverte** por fraude o fallo operativo. El límite depende del país que regula al bróker:
+- **España (FOGAIN): hasta 100.000€.**
+- **Mayoría de la UE (Alemania, Países Bajos, Irlanda, Polonia, Chipre): hasta 20.000€.**
+
+### 3. Fondo de Garantía de Depósitos (solo el efectivo en un banco)
+
+Cubre el **dinero en efectivo** que tengas como depósito en un **banco**, hasta **100.000€**. Solo aplica si el bróker es un banco y tu efectivo está como depósito bancario. Los neobrókers y brókers extranjeros que no son bancos no tienen esta cobertura sobre el efectivo (aunque suelen depositar el efectivo de clientes en bancos asociados que sí la tienen).
+
+**Idea clave:** para tus **ETFs y fondos**, lo que te protege es la **segregación** (casi total). El fondo de garantía de inversiones (20.000€ o 100.000€) solo entra en el caso raro de fraude. El fondo de garantía de **depósitos** (100.000€) solo afecta a tu **efectivo** sin invertir, y solo si el bróker es un banco.
+
+---
+
+## Cómo están protegidos los 10 brókers más usados en España
+
+| Bróker | Regulador | Garantía de inversión | ¿Banco? (efectivo) |
+|---|---|---|---|
+| Trade Republic | BaFin (Alemania) | Segregación + esquema alemán | Sí — hasta 100.000€ |
+| MyInvestor | CNMV / Banco de España | Segregación + FOGAIN 100.000€ | Sí — hasta 100.000€ |
+| DEGIRO | AFM (Países Bajos) | Segregación + 20.000€ | No es banco |
+| XTB | KNF (Polonia) + sucursal CNMV | Segregación + 20.000€ | No es banco |
+| Scalable Capital | BaFin (Alemania) | Segregación + 20.000€ | Efectivo hasta 100.000€ (banco asociado) |
+| Interactive Brokers | Central Bank of Ireland | Segregación + 20.000€ (ICS) | No es banco |
+| ING | Banco de España / CNMV | Segregación + FOGAIN 100.000€ | Sí — hasta 100.000€ |
+| Renta 4 | CNMV / Banco de España | Segregación + FOGAIN 100.000€ | Sí — hasta 100.000€ |
+| Openbank (Santander) | Banco de España / CNMV | Segregación + FOGAIN 100.000€ | Sí — hasta 100.000€ |
+| eToro | CySEC (Chipre) | Segregación + 20.000€ (ICF) | No es banco |
+
+Cada uno tiene su análisis detallado: [Trade Republic](/blog/trade-republic-opinion-2026), [MyInvestor](/blog/myinvestor-opinion-2026), [DEGIRO](/blog/degiro-opinion-2026), [XTB](/blog/xtb-opinion-2026), [Scalable Capital](/blog/scalable-capital-opinion-2026), [Interactive Brokers](/blog/interactive-brokers-opinion-2026), [ING](/blog/ing-opinion-2026), [Renta 4](/blog/renta-4-opinion-2026), [Openbank](/blog/openbank-opinion-2026) y [eToro](/blog/etoro-opinion-2026).
+
+---
+
+## ¿Importa que la garantía sea de 20.000€ y no de 100.000€?
+
+Mucho menos de lo que parece, por una razón: la garantía de inversión solo entra en juego si la **segregación falla** (fraude o error grave). Para un bróker regulado y solvente, ese escenario es muy improbable. Tus 200.000€ en ETFs en un bróker con garantía de 20.000€ no están "cubiertos solo hasta 20.000€" en el día a día: están protegidos por la segregación, que no tiene límite. Los 20.000€ son el colchón para el caso patológico.
+
+Dicho esto, si te da tranquilidad, la garantía de 100.000€ de los brókers-banco españoles (MyInvestor, ING, Renta 4, Openbank) es un plus, y repartir un patrimonio muy grande entre dos brókers reduce aún más el riesgo de cola.
+
+---
+
+## Señales de un bróker seguro
+
+Antes de confiar tu dinero a un bróker, comprueba:
+- **Regulación**: que esté supervisado por un regulador serio (CNMV, BaFin, AFM, CBI, etc.). Puedes verificar el registro en la web del regulador.
+- **Segregación de activos**: que conste explícitamente que los valores de clientes se custodian separados.
+- **Antigüedad y tamaño**: un historial largo y una base amplia de clientes reducen el riesgo.
+- **Transparencia**: condiciones, comisiones y custodios claros.
+
+Todos los brókers de la tabla cumplen estos requisitos. La diferencia entre ellos está en el **coste** y las **funciones**, no en la seguridad de fondo: para elegir por esos criterios, la [comparativa del mejor broker para ETFs](/blog/mejor-broker-etfs-espana-2026) y el [comparador de brókers](/calculadora/comparar-brokers) te ayudan.
+
+---
+
+## ¿Y si quiebra la gestora del ETF (Vanguard, iShares, Amundi)?
+
+Es otra capa, y también está protegida. Un ETF es un fondo con personalidad jurídica propia: su patrimonio (las acciones y bonos que replica) está separado del de la gestora. Si Vanguard o iShares desaparecieran, los activos del ETF seguirían siendo de los partícipes y se liquidarían o traspasarían. No es dinero que la gestora pueda usar para pagar sus deudas.
+
+---
+
+## Conclusión práctica
+
+El miedo a "perderlo todo si quiebra el bróker" se basa en un malentendido: tus ETFs y fondos son tuyos por la segregación de activos, no del bróker, y no entran en su concurso. Los fondos de garantía (20.000€ o 100.000€) son un backstop para el caso raro de fraude, y el de depósitos (100.000€) solo afecta a tu efectivo si el bróker es un banco. Elige un bróker regulado y solvente —todos los de este artículo lo son— y decide por coste y funciones, no por un miedo que la estructura legal ya resuelve.
+
+Para empezar con buen pie, la [guía para elegir tu primer ETF](/blog/como-elegir-tu-primer-etf-espana-2026) y la [comparativa de brókers](/blog/mejor-broker-etfs-espana-2026) son el siguiente paso.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [FOGAIN — Fondo de Garantía de Inversiones (España)](https://www.fogain.es) — Qué cubre y hasta qué importe el fondo de garantía de inversiones español.
+- [Mejor broker para ETFs en España 2026 — BogleHub](/blog/mejor-broker-etfs-espana-2026) — Comparativa por coste y funciones de los brokers más usados.
+- [Cómo elegir tu primer ETF en España — BogleHub](/blog/como-elegir-tu-primer-etf-espana-2026) — Criterios para empezar, incluido dónde comprar.
+`,
+  },
+  {
     slug: 'etoro-opinion-2026',
     title: 'eToro: opinión y análisis para invertir en España (2026)',
     excerpt:

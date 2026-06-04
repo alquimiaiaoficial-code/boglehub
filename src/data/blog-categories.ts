@@ -135,6 +135,14 @@ export const ARTICLE_CATEGORY: Record<string, BlogCategory> = {
   'mejores-etfs-nasdaq-100-espana': 'etfs-especificos',
   'oro-etf-fisico-vs-mineria-espana': 'etfs-especificos',
   'msci-world-vs-msci-acwi-diferencias': 'etfs-especificos',
+
+  // Reviews de bróker + pilar de seguridad (sesión 2026-06-04)
+  'interactive-brokers-opinion-2026': 'roboadvisors-brokers',
+  'ing-opinion-2026': 'roboadvisors-brokers',
+  'renta-4-opinion-2026': 'roboadvisors-brokers',
+  'openbank-opinion-2026': 'roboadvisors-brokers',
+  'etoro-opinion-2026': 'roboadvisors-brokers',
+  'que-pasa-si-quiebra-tu-broker': 'roboadvisors-brokers',
 }
 
 /**
