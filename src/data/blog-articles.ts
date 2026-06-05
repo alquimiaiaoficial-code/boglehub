@@ -19,6 +19,114 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'proteger-ahorros-inflacion',
+    title: 'Cómo proteger tus ahorros de la inflación (2026)',
+    excerpt:
+      'La inflación erosiona el dinero parado en el banco. Qué activos protegen tu poder adquisitivo a largo plazo (bolsa, inmobiliario, bonos ligados) y cuáles no.',
+    publishedAt: '2026-06-04',
+    readingMinutes: 8,
+    keywords: ['proteger ahorros inflación', 'inflación ahorros', 'cómo combatir la inflación', 'invertir contra la inflación', 'activos refugio inflación'],
+    faq: [
+      {
+        q: '¿Cómo afecta la inflación a mis ahorros?',
+        a: 'La inflación reduce el poder adquisitivo de tu dinero: si los precios suben un 3% al año, lo que hoy compras con 100€ costará 103€ el año que viene. El dinero parado en una cuenta al 0% mantiene su cifra pero pierde valor real: con una inflación media del 2-3%, pierde alrededor de la mitad de su poder de compra en unas tres décadas.',
+      },
+      {
+        q: '¿Qué inversión protege mejor de la inflación?',
+        a: 'A largo plazo, la renta variable global (bolsa) ha sido históricamente el mejor escudo: las empresas suben precios y sus beneficios crecen con la inflación. El inmobiliario ofrece protección parcial, los bonos ligados a la inflación están diseñados para no perder poder adquisitivo, y el oro es una cobertura tradicional pero volátil. Ninguna es perfecta ni garantizada, pero la bolsa diversificada destaca a largo plazo.',
+      },
+      {
+        q: '¿El dinero en el banco pierde valor con la inflación?',
+        a: 'En términos reales, sí, siempre que la rentabilidad que te dé el banco sea inferior a la inflación. La cifra no baja (protege el valor nominal), pero compra menos cada año. No por ello es inútil: el efectivo y los depósitos son el sitio correcto para el fondo de emergencia y el dinero a corto plazo, donde prima la liquidez y la seguridad sobre ganarle a la inflación.',
+      },
+      {
+        q: '¿Es el oro una buena protección contra la inflación?',
+        a: 'El oro se considera históricamente un refugio frente a la inflación y la incertidumbre, pero es volátil y no genera rentas ni dividendos. Puede tener sentido como un complemento pequeño de una cartera diversificada, no como su núcleo. Para la mayoría, la renta variable global protege mejor el poder adquisitivo a largo plazo.',
+      },
+      {
+        q: '¿Dónde guardo el dinero que necesito pronto si la inflación lo erosiona?',
+        a: 'En una cuenta remunerada, un fondo monetario o Letras del Tesoro. Para el dinero a corto plazo y el fondo de emergencia, aceptas perder algo frente a la inflación a cambio de tenerlo disponible y seguro. El error es dejar ahí también el dinero a largo plazo: ese debe estar invertido para crecer por encima de la inflación.',
+      },
+    ],
+    content: `# Cómo proteger tus ahorros de la inflación (2026)
+
+La inflación es el impuesto silencioso sobre el dinero parado: no ves cómo te quita poder adquisitivo, pero lo hace cada año. Un dinero que no crece al menos al ritmo de la inflación vale cada vez menos, aunque la cifra en tu cuenta no cambie. Esta guía explica, sin alarmismo, qué hace la inflación a tus ahorros, qué activos han protegido históricamente el poder adquisitivo y cuáles no, y cómo organizar tu dinero en consecuencia.
+
+La conclusión por adelantado: el dinero que necesitas a corto plazo (tu colchón) acepta perder algo frente a la inflación a cambio de seguridad y liquidez; el dinero a largo plazo debe estar invertido, porque es la única forma de que tu patrimonio crezca por encima de la inflación.
+
+---
+
+## Qué te hace la inflación (y por qué "el banco" no es tan seguro)
+
+La [inflación](/glosario/inflacion) mide cuánto suben los precios. Si la inflación es del 3% anual, lo que hoy cuesta 100€ costará 103€ el año que viene: tu dinero compra menos. Mantener todo en una cuenta corriente al 0% se siente seguro porque la cifra no baja, pero **garantiza perder poder adquisitivo**: con una inflación media del 2-3%, el dinero parado pierde alrededor de la mitad de su valor real en unas tres décadas.
+
+Es la gran paradoja del ahorrador conservador: por evitar el riesgo de la bolsa, asume la certeza de empobrecerse poco a poco. Protegerse de la inflación no es opcional para quien piensa a largo plazo.
+
+---
+
+## Los activos que históricamente han batido a la inflación
+
+Ninguna protección es perfecta ni garantizada, pero la historia da pistas claras, de mayor a menor potencia a largo plazo:
+
+### Renta variable (bolsa): el mejor escudo a largo plazo
+
+Las acciones representan empresas, y las empresas **suben sus precios** cuando suben los costes: sus beneficios crecen en términos nominales con la inflación. Por eso, a largo plazo, la [renta variable global](/blog/que-es-el-msci-world) ha sido históricamente el activo que mejor ha superado a la inflación, con diferencia. Un fondo indexado mundial es la forma más sencilla y diversificada de tener este escudo.
+
+### Inmobiliario: protección parcial
+
+Los alquileres y el precio de la vivienda tienden a subir con la inflación, lo que convierte al inmobiliario en una cobertura parcial. Tiene sus inconvenientes (concentración, iliquidez, gestión), que vimos en [pisos vs fondos indexados](/blog/pisos-vs-fondos-indexados-espana), pero como activo real ofrece cierta protección.
+
+### Bonos ligados a la inflación
+
+Existen bonos cuyo principal e intereses se ajustan al IPC (los "linkers"). Están diseñados específicamente para no perder poder adquisitivo. Forman parte de la renta fija más defensiva; algunos [ETFs de renta fija](/blog/mejores-etfs-renta-fija-2026) los incluyen.
+
+### Oro y materias primas: cobertura tradicional pero volátil
+
+El [oro](/blog/oro-etf-fisico-vs-mineria-espana) se considera históricamente un refugio frente a la inflación y la incertidumbre, pero es volátil y no genera rentas. Como mucho, un complemento pequeño de la cartera, no su núcleo.
+
+---
+
+## Lo que NO protege (y para qué sirve igualmente)
+
+El **efectivo, los depósitos y los [fondos monetarios](/glosario/fondo-monetario)** protegen el valor *nominal* de tu dinero, pero solo le ganan a la inflación si su rentabilidad supera a los precios, algo que no siempre ocurre (cuando los tipos están por debajo de la inflación, pierdes en términos reales).
+
+Eso no los hace inútiles: son el lugar correcto para el dinero que necesitas a corto plazo y para tu [fondo de emergencia](/blog/fondo-de-emergencia-cuanto-necesitas), donde la liquidez y la seguridad importan más que ganarle a la inflación. El error es tener ahí también el dinero a largo plazo.
+
+---
+
+## Cómo organizar tu dinero frente a la inflación
+
+Una forma sencilla de pensarlo, por horizontes:
+
+- **Corto plazo (0-2 años) y emergencias**: cuenta remunerada, fondo monetario o Letras. Aceptas perder algo frente a la inflación a cambio de liquidez y seguridad.
+- **Medio-largo plazo (5+ años)**: invertido en una cartera diversificada con peso en renta variable global. Es el dinero que tiene que crecer por encima de la inflación, y el tiempo le da margen para hacerlo.
+
+La clave es no confundir los cubos: el colchón no se invierte en bolsa, y los ahorros a largo plazo no se dejan parados perdiendo valor.
+
+---
+
+## El papel del interés compuesto
+
+Ganarle a la inflación no va de un pelotazo, sino de la diferencia sostenida entre la rentabilidad de tus inversiones y la subida de los precios, año tras año. Esa diferencia, capitalizada durante décadas por el [interés compuesto](/blog/interes-compuesto-inversion), es lo que hace que tu patrimonio crezca en términos reales y no solo en la cifra de la cuenta.
+
+---
+
+## Conclusión práctica
+
+La inflación convierte "no hacer nada" con tu dinero en una decisión que cuesta dinero. Mantén en efectivo o equivalentes solo lo que necesitas a corto plazo y tu fondo de emergencia, e invierte el resto a largo plazo en una cartera diversificada con peso en renta variable global, el activo que mejor ha batido a la inflación históricamente. No se trata de predecir la inflación, sino de no quedarte quieto mientras te quita valor.
+
+Si quieres ver cómo empezar a poner el dinero a largo plazo a trabajar, la [guía para elegir tu primer ETF](/blog/como-elegir-tu-primer-etf-espana-2026) es el siguiente paso.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Qué es el MSCI World — BogleHub](/blog/que-es-el-msci-world) — El índice global de renta variable, el mejor escudo histórico frente a la inflación.
+- [Fondo de emergencia: cuánto necesitas — BogleHub](/blog/fondo-de-emergencia-cuanto-necesitas) — Qué parte de tu dinero sí debe estar líquido aunque pierda algo con la inflación.
+- [Pisos vs fondos indexados — BogleHub](/blog/pisos-vs-fondos-indexados-espana) — El inmobiliario como cobertura parcial frente a la inflación.
+`,
+  },
+  {
     slug: 'fondos-indexados-vs-gestion-activa',
     title: 'Fondos indexados vs gestión activa: por qué es tan difícil batir al mercado (2026)',
     excerpt:

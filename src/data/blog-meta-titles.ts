@@ -55,6 +55,7 @@ export const BLOG_META_TITLES: Record<string, string> = {
   'pisos-vs-fondos-indexados-espana': 'Pisos vs fondos indexados: ¿ladrillo o bolsa?',
   'es-buen-momento-para-invertir': '¿Es buen momento para invertir? (2026)',
   'fondos-indexados-vs-gestion-activa': 'Indexado vs gestión activa: ¿quién gana? (2026)',
+  'proteger-ahorros-inflacion': 'Proteger tus ahorros de la inflación (2026)',
   'modelo-d6-etf-espana': 'Modelo D6 y ETFs: ¿hay que presentarlo? (2026)',
   'mejores-fondos-indexados-espana-2026': 'Mejores fondos indexados en España (2026)',
   'como-invertir-sp500-espana': 'Cómo invertir en el S&P 500 desde España',

@@ -105,7 +105,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
   'fondo-de-emergencia-cuanto-necesitas': [
     'como-empezar-a-invertir-poco-dinero',
     'interes-compuesto-inversion',
-    'que-hacer-cuando-el-mercado-cae',
+    'proteger-ahorros-inflacion',
     'dca-vs-lump-sum-aportar-mensual',
   ],
   'invertir-para-hijos-espana': [
@@ -118,7 +118,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'cartera-boglehead-3-fondos-espana',
     'mejores-fondos-indexados-espana-2026',
     'que-es-el-msci-world',
-    'interes-compuesto-inversion',
+    'proteger-ahorros-inflacion',
   ],
   'es-buen-momento-para-invertir': [
     'dca-vs-lump-sum-aportar-mensual',
@@ -131,6 +131,12 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'cartera-boglehead-3-fondos-espana',
     'mejores-fondos-indexados-espana-2026',
     'que-es-el-msci-world',
+  ],
+  'proteger-ahorros-inflacion': [
+    'que-es-el-msci-world',
+    'fondo-de-emergencia-cuanto-necesitas',
+    'pisos-vs-fondos-indexados-espana',
+    'interes-compuesto-inversion',
   ],
   'mejores-etfs-espana-2026': [
     'vwce-analisis-completo',

@@ -126,6 +126,7 @@ export const ARTICLE_CATEGORY: Record<string, BlogCategory> = {
   'dca-vs-lump-sum-aportar-mensual': 'estrategias',
   'pisos-vs-fondos-indexados-espana': 'estrategias',
   'fondos-indexados-vs-gestion-activa': 'estrategias',
+  'proteger-ahorros-inflacion': 'estrategias',
 
   // Psicología y crisis
   'que-hacer-cuando-el-mercado-cae': 'psicologia-mercado',
