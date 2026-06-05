@@ -19,6 +19,105 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'errores-comunes-al-invertir',
+    title: 'Los errores más comunes al invertir (y cómo evitarlos) (2026)',
+    excerpt:
+      'Los errores que más dinero cuestan al inversor particular —timing, pánico, comisiones, modas— y cómo evitarlos con una estrategia indexada y disciplinada.',
+    publishedAt: '2026-06-04',
+    readingMinutes: 10,
+    keywords: ['errores al invertir', 'errores inversores principiantes', 'errores comunes inversión', 'qué no hacer al invertir', 'errores en bolsa'],
+    faq: [
+      {
+        q: '¿Cuáles son los errores más comunes al invertir?',
+        a: 'Los más caros para el inversor particular son: intentar adivinar el momento del mercado, vender en pánico en las caídas, pagar comisiones altas, no diversificar, perseguir lo que más ha subido, invertir dinero que necesitas pronto, dejarse llevar por modas, no empezar nunca, mirar la cartera a diario y olvidar la fiscalidad. Casi todos nacen de dejar que la emoción decida.',
+      },
+      {
+        q: '¿Por qué es tan importante no vender cuando el mercado cae?',
+        a: 'Porque vender en una caída convierte una pérdida temporal en permanente y, además, te deja fuera para el rebote, que suele llegar cuando menos se espera. Históricamente, el mercado se ha recuperado de todas las caídas y ha seguido subiendo. Tener un plan y un fondo de emergencia es lo que te permite aguantar sin vender.',
+      },
+      {
+        q: '¿Cómo evito dejarme llevar por las emociones al invertir?',
+        a: 'Con sistema en lugar de impulso: define un plan sencillo (qué reparto y qué fondos), automatiza las aportaciones para no decidir cada mes, usa una estrategia indexada que diversifica y abarata por defecto, y no mires la cartera a diario. Cuanto menos dependa tu resultado de tus decisiones puntuales, mejor.',
+      },
+      {
+        q: '¿Es un error invertir si no sé mucho de bolsa?',
+        a: 'No. El error mayor es no empezar por esperar a "saberlo todo". La inversión indexada está pensada precisamente para no necesitar ser un experto: compras todo el mercado, barato y diversificado, y automatizas. Puedes empezar con poco e ir aprendiendo sobre la marcha.',
+      },
+      {
+        q: '¿Cuál es el error que más dinero cuesta a largo plazo?',
+        a: 'No hay uno solo, pero los dos que más pesan son el comportamiento (intentar cronometrar el mercado y vender en pánico, que te deja fuera de las mejores subidas) y las comisiones altas capitalizadas durante décadas. Por eso una estrategia indexada barata, mantenida con disciplina, bate en la práctica a la mayoría.',
+      },
+    ],
+    content: `# Los errores más comunes al invertir (y cómo evitarlos) (2026)
+
+Invertir bien no consiste tanto en hacer cosas brillantes como en **evitar los errores grandes**. La mayoría de los malos resultados del inversor particular no vienen de elegir el fondo equivocado, sino de un puñado de errores de comportamiento que se repiten una y otra vez. La buena noticia: son conocidos, predecibles y evitables. Esta es la lista de los que más dinero cuestan, y cómo esquivarlos.
+
+La conclusión por adelantado: casi todos los errores se reducen a dejar que las emociones (miedo y codicia) tomen las decisiones que deberían tomar un plan y la disciplina. Una estrategia indexada sencilla existe, en buena parte, para protegerte de ti mismo.
+
+---
+
+## 1. Intentar adivinar el momento del mercado
+
+Esperar a "que baje" para entrar o intentar salir antes de una caída es el error que más rentabilidad cuesta, porque las mejores subidas suelen estar pegadas a las peores caídas. Nadie cronometra el mercado de forma fiable. La solución es **empezar y mantenerse**: lo vemos en [¿es buen momento para invertir?](/blog/es-buen-momento-para-invertir).
+
+## 2. Vender en pánico cuando el mercado cae
+
+Las caídas son parte del trato, no una anomalía. Vender cuando todo está en rojo convierte una pérdida temporal en permanente y, además, te deja fuera para el rebote. Tener un plan y un fondo de emergencia es lo que te permite aguantar; cómo gestionarlo, en [qué hacer cuando el mercado cae](/blog/que-hacer-cuando-el-mercado-cae).
+
+## 3. Pagar comisiones altas
+
+Un 2% de comisión anual de un fondo de gestión activa parece poco, pero capitalizado durante décadas se come una porción enorme de tu patrimonio, y la mayoría de esos fondos ni siquiera baten al índice ([gestión activa vs indexada](/blog/fondos-indexados-vs-gestion-activa)). Lo mismo con brókers caros: elige bien, como en la [comparativa de brókers](/blog/mejor-broker-etfs-espana-2026). El coste es lo único que controlas con certeza.
+
+## 4. No diversificar (o creer que diversificas y no)
+
+Concentrar todo en unas pocas acciones, un sector o un país es asumir un riesgo que el mercado no te paga. Un fondo indexado global lo resuelve de un plumazo ([qué es el MSCI World](/blog/que-es-el-msci-world)). Ojo también con la **falsa diversificación**: tener tres fondos que invierten en lo mismo no diversifica nada ([solapamiento de ETFs](/blog/solapamiento-etfs-error-silencioso)).
+
+## 5. Perseguir lo que más ha subido
+
+Comprar el fondo, la acción o el activo que lideró el último año es uno de los reflejos más caros: la rentabilidad pasada no predice la futura, y a menudo compras caro justo antes de que revierta. La inversión indexada renuncia a adivinar al ganador y se queda con todo el mercado.
+
+## 6. Invertir dinero que vas a necesitar pronto
+
+La bolsa es para el largo plazo. Meter en ella el dinero del próximo año —o no tener [fondo de emergencia](/blog/fondo-de-emergencia-cuanto-necesitas)— te aboca a vender en mal momento ante cualquier imprevisto. Primero el colchón, luego invertir.
+
+## 7. Dejarte llevar por modas y "chollos"
+
+Criptomonedas en su pico, acciones meme, el "sector del futuro", el cuñado que duplicó su dinero… El FOMO (miedo a perderse algo) ha arruinado a más inversores que cualquier crisis. Si una inversión promete mucho y la entiende poca gente, probablemente no es para ti. La riqueza indexada es aburrida y lenta, y esa es su virtud.
+
+## 8. No empezar nunca
+
+El error más silencioso y más caro: posponerlo. Cada año sin invertir es un año que el [interés compuesto](/blog/interes-compuesto-inversion) no trabaja para ti, y esos primeros años son los que más pesan. No hace falta saberlo todo para empezar con poco.
+
+## 9. Mirar la cartera todos los días (y sobreoperar)
+
+Revisar obsesivamente y tocar la cartera ante cada noticia genera ansiedad, malas decisiones y costes. La inversión indexada es de "comprar y mantener": una revisión y un rebalanceo un par de veces al año bastan. Cuanto menos la tocas, mejor suele irte.
+
+## 10. Olvidar la fiscalidad
+
+No es lo más emocionante, pero declarar mal o ignorar ventajas como el traspaso de fondos te cuesta dinero real. Un repaso a la [fiscalidad de ETFs y fondos](/blog/fiscalidad-etfs-espana-guia-completa) evita sustos y optimiza lo que de verdad te llevas.
+
+---
+
+## El patrón detrás de todos
+
+Si te fijas, casi todos estos errores tienen la misma raíz: **dejar que la emoción decida**. El miedo te hace vender abajo y no empezar; la codicia te hace perseguir modas y concentrar. La inversión indexada funciona no porque sea más lista, sino porque **sistematiza las buenas decisiones y te quita las malas de las manos**: diversificas por defecto, pagas poco, no eliges acciones y automatizas las aportaciones. Es una estrategia diseñada, en buena parte, para protegerte de tu propio cerebro.
+
+---
+
+## Conclusión práctica
+
+No necesitas acertar el próximo gran valor ni adivinar la próxima crisis para invertir bien. Necesitas **evitar los errores grandes**: no cronometrar, no vender en pánico, no pagar de más, diversificar, no perseguir modas, tener tu colchón, empezar pronto y dejar la cartera tranquila. Una [cartera indexada al estilo Boglehead](/blog/bogleheads-espana-guia-completa), barata y diversificada, mantenida con disciplina, hace casi todo eso por ti. El resto es paciencia.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [¿Es buen momento para invertir? — BogleHub](/blog/es-buen-momento-para-invertir) — Por qué intentar cronometrar el mercado es el primer gran error.
+- [Qué hacer cuando el mercado cae — BogleHub](/blog/que-hacer-cuando-el-mercado-cae) — Cómo no vender en pánico.
+- [Bogleheads España: guía completa — BogleHub](/blog/bogleheads-espana-guia-completa) — La estrategia que sistematiza las buenas decisiones.
+`,
+  },
+  {
     slug: 'renta-variable-vs-renta-fija-cartera',
     title: 'Renta variable vs renta fija: cómo repartir tu cartera (2026)',
     excerpt:

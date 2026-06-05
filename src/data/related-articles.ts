@@ -76,7 +76,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'dca-vs-lump-sum-aportar-mensual',
     'es-buen-momento-para-invertir',
     'fondo-de-emergencia-cuanto-necesitas',
-    'bogleheads-espana-guia-completa',
+    'errores-comunes-al-invertir',
   ],
   'como-rebalancear-cartera-indexada': [
     'cartera-boglehead-3-fondos-espana',
@@ -124,7 +124,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'dca-vs-lump-sum-aportar-mensual',
     'interes-compuesto-inversion',
     'que-hacer-cuando-el-mercado-cae',
-    'como-empezar-a-invertir-poco-dinero',
+    'errores-comunes-al-invertir',
   ],
   'fondos-indexados-vs-gestion-activa': [
     'bogleheads-espana-guia-completa',
@@ -143,6 +143,12 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'como-rebalancear-cartera-indexada',
     'mejores-etfs-renta-fija-2026',
     'que-hacer-cuando-el-mercado-cae',
+  ],
+  'errores-comunes-al-invertir': [
+    'es-buen-momento-para-invertir',
+    'que-hacer-cuando-el-mercado-cae',
+    'fondos-indexados-vs-gestion-activa',
+    'bogleheads-espana-guia-completa',
   ],
   'mejores-etfs-espana-2026': [
     'vwce-analisis-completo',
