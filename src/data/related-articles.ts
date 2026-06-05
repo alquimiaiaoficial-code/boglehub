@@ -16,7 +16,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'vwce-vs-cspx-vs-iwda',
     'vwce-analisis-completo',
     'fiscalidad-etfs-espana-guia-completa',
-    'mejores-etfs-espana-2026',
+    'acumulacion-vs-distribucion-etf',
   ],
   'vwce-vs-cspx-vs-iwda': [
     'vwce-analisis-completo',
@@ -162,6 +162,12 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'que-pasa-si-quiebra-tu-broker',
     'como-empezar-a-invertir-poco-dinero',
   ],
+  'acumulacion-vs-distribucion-etf': [
+    'como-elegir-tu-primer-etf-espana-2026',
+    'fiscalidad-etfs-espana-guia-completa',
+    'etfs-dividendos-vivir-rentas-espana',
+    'interes-compuesto-inversion',
+  ],
   'mejores-etfs-espana-2026': [
     'vwce-analisis-completo',
     'swrd-vs-iwda',
@@ -247,7 +253,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
   'etfs-dividendos-vivir-rentas-espana': [
     'fire-espana-cuanto-necesitas',
     'cuanto-invertir-al-mes-jubilarse-millonario',
-    'fiscalidad-etfs-espana-guia-completa',
+    'acumulacion-vs-distribucion-etf',
     'vwce-analisis-completo',
   ],
   'swrd-vs-iwda': [

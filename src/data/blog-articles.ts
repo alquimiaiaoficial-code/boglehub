@@ -19,6 +19,105 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'acumulacion-vs-distribucion-etf',
+    title: 'ETF de acumulación o distribución: qué elegir según tu fiscalidad (2026)',
+    excerpt:
+      'Acumulación o distribución: en fase de ahorro, los ETFs de acumulación difieren el impuesto y son más eficientes en España. Cuándo elegir cada uno.',
+    publishedAt: '2026-06-04',
+    readingMinutes: 8,
+    keywords: ['acumulación vs distribución', 'ETF acumulación o distribución', 'ETF distribución dividendos', 'fiscalidad acumulación distribución', 'VWCE vs VWRL'],
+    faq: [
+      {
+        q: '¿Qué es mejor, un ETF de acumulación o de distribución?',
+        a: 'En la fase de ahorro, para la mayoría de inversores en España la acumulación es más eficiente: reinvierte los dividendos dentro del fondo y difiere el impuesto hasta que vendes, dejando que todo capitalice. La distribución tiene sentido cuando quieres o necesitas cobrar rentas, típicamente en la fase de retiro.',
+      },
+      {
+        q: '¿Por qué la acumulación es más eficiente fiscalmente en España?',
+        a: 'Porque la reinversión de dividendos dentro de un ETF de acumulación no es un hecho fiscal para ti: no tributas nada por esos dividendos hasta que vendes, así que el 100% sigue trabajando. En un ETF de distribución, cada dividendo tributa en el IRPF del ahorro el año que lo cobras, aunque lo reinviertas tú mismo, y solo reinviertes lo que queda tras impuestos.',
+      },
+      {
+        q: '¿Cómo tributan los dividendos de un ETF de distribución?',
+        a: 'Cada dividendo que cobras se integra en la base del ahorro del IRPF y tributa a los tramos del 19% al 28% (2026) en el año en que lo recibes, lo reinviertas o no. Por eso, en fase de acumulación, la distribución es algo menos eficiente que la acumulación, que difiere ese impuesto.',
+      },
+      {
+        q: '¿Cuándo tiene sentido elegir un ETF de distribución?',
+        a: 'Sobre todo en la fase de retiro o FIRE, cuando vives total o parcialmente de tu cartera y prefieres cobrar dividendos sin tener que vender participaciones. También por preferencia psicológica de ver entrar un flujo. Aun así, vender un pequeño porcentaje de un ETF de acumulación cumple la misma función y suele ser igual o más eficiente fiscalmente.',
+      },
+      {
+        q: '¿Cómo sé si un ETF es de acumulación o de distribución?',
+        a: 'Suele indicarse en el nombre con "Acc" (acumulación) o "Dist" (distribución), y cada clase tiene un ISIN distinto aunque repliquen el mismo índice. Por ejemplo, el FTSE All-World tiene VWCE (acumulación) y VWRL (distribución). Comprueba siempre que compras la clase que quieres antes de ordenar.',
+      },
+    ],
+    content: `# ETF de acumulación o distribución: qué elegir según tu fiscalidad (2026)
+
+Cuando eliges un ETF o fondo indexado, te encuentras casi siempre con dos versiones del mismo producto: una de **acumulación** y otra de **distribución**. Replican el mismo índice y tienen un coste parecido, pero se comportan de forma muy distinta con tus dividendos y, sobre todo, con tu factura fiscal. Para un inversor en España, elegir bien entre las dos puede suponer una diferencia real a largo plazo. Esta guía lo aclara.
+
+La conclusión por adelantado: si estás en fase de ahorro (acumulando para el futuro), la versión de **acumulación** suele ser más eficiente fiscalmente en España, porque **difiere el impuesto** y deja que todo capitalice sin pasar por Hacienda cada año. La de distribución cobra sentido cuando quieres o necesitas cobrar rentas.
+
+---
+
+## Qué significa cada una
+
+- **Acumulación (Acc)**: los dividendos que pagan las empresas del índice se **reinvierten automáticamente dentro del fondo**. No recibes dinero; tu participación va valiendo más. Es como una bola de nieve que no paras de empujar.
+- **Distribución (Dist)**: el fondo te **paga los dividendos en efectivo** a tu cuenta, periódicamente. Recibes un flujo de dinero que puedes gastar o reinvertir tú mismo.
+
+Es la misma estrategia indexada y el mismo índice por debajo; cambia solo qué se hace con los dividendos. Por ejemplo, el FTSE All-World tiene una clase de acumulación (VWCE) y otra de distribución (VWRL).
+
+---
+
+## La diferencia que de verdad importa en España: la fiscalidad
+
+Aquí está el quid de la cuestión para un inversor español:
+
+- En un ETF de **acumulación**, la reinversión de dividendos dentro del fondo **no es un hecho fiscal para ti**: no tributas nada por esos dividendos hasta que vendas. El impuesto queda **diferido**, y mientras tanto el 100% de los dividendos sigue trabajando y capitalizando.
+- En un ETF de **distribución**, cada dividendo que cobras **tributa en el IRPF del ahorro** (tramos del 19% al 28% en 2026) en el año en que lo recibes, **aunque lo reinviertas tú manualmente**. Es decir, pasas por Hacienda cada año y solo reinviertes lo que queda después de impuestos.
+
+Para quien está acumulando a largo plazo, ese diferimiento es una ventaja clara: el [interés compuesto](/blog/interes-compuesto-inversion) trabaja sobre el total, no sobre lo que sobra tras tributar. A lo largo de décadas, la diferencia se nota.
+
+---
+
+## Entonces, ¿siempre acumulación?
+
+En la **fase de acumulación**, para la mayoría de inversores indexados en España, sí: la versión de acumulación es la opción por defecto más eficiente.
+
+Pero la distribución tiene su momento:
+- **Fase de retiro o FIRE**: cuando vives (total o parcialmente) de tu cartera, cobrar dividendos te da un flujo de caja sin tener que vender participaciones, lo que para algunos es más cómodo psicológicamente. Lo vemos en [ETFs de dividendos para vivir de rentas](/blog/etfs-dividendos-vivir-rentas-espana).
+- **Preferencia personal por el flujo**: a algunos inversores les motiva ver entrar dividendos, aunque fiscalmente sea algo menos eficiente.
+
+Aun así, conviene saber que **vender un pequeño porcentaje de un ETF de acumulación** cumple la misma función que cobrar un dividendo, y a menudo es igual o más eficiente fiscalmente (solo tributa la parte de ganancia de lo que vendes, no todo). Cobrar rentas no obliga a usar distribución.
+
+---
+
+## Un matiz importante: ETFs vs fondos indexados
+
+Esta decisión aplica sobre todo a **ETFs**, donde eliges la clase Acc o Dist al comprar. En los **fondos indexados** tradicionales, la inmensa mayoría son de acumulación y, además, disfrutan del [traspaso fiscal libre](/blog/como-hacer-traspaso-fondos-espana) en España (cambiar de fondo sin tributar), una ventaja que refuerza aún más el diferimiento fiscal. Si tu prioridad es la eficiencia fiscal en la fase de ahorro, los fondos indexados de acumulación son difíciles de batir.
+
+---
+
+## Cómo identificar cada versión
+
+- En el **nombre** del ETF suele aparecer "**Acc**" (Accumulating) o "**Dist**" (Distributing).
+- A veces se indica como "Acumulación"/"Distribución" o con sufijos como "Acc"/"Dis".
+- El **ISIN** es distinto para cada clase, aunque el índice subyacente sea el mismo (cuidado con confundirlas: comprueba siempre que compras la clase que quieres).
+
+Más sobre cómo elegir bien tu ETF, en la [guía para elegir tu primer ETF](/blog/como-elegir-tu-primer-etf-espana-2026), y sobre la fiscalidad completa, en la [guía de fiscalidad de ETFs](/blog/fiscalidad-etfs-espana-guia-completa).
+
+---
+
+## Conclusión práctica
+
+Si estás construyendo patrimonio a largo plazo, elige **acumulación**: difiere el impuesto, reinvierte el 100% de los dividendos y deja que el interés compuesto trabaje sin fugas anuales a Hacienda. Reserva la **distribución** para cuando quieras o necesites cobrar rentas, sabiendo que vender un poco de un ETF de acumulación logra lo mismo con frecuencia de forma más eficiente. Y si te decides por fondos indexados de acumulación, sumas además el traspaso fiscal: la combinación más eficiente para la fase de ahorro en España.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Cómo elegir tu primer ETF en España — BogleHub](/blog/como-elegir-tu-primer-etf-espana-2026) — Todos los criterios para elegir, incluido acumulación vs distribución.
+- [Fiscalidad de ETFs en España — BogleHub](/blog/fiscalidad-etfs-espana-guia-completa) — Cómo tributan dividendos y plusvalías en detalle.
+- [ETFs de dividendos para vivir de rentas — BogleHub](/blog/etfs-dividendos-vivir-rentas-espana) — Cuándo tiene sentido la distribución.
+`,
+  },
+  {
     slug: 'donde-aparcar-dinero-corto-plazo',
     title: 'Dónde aparcar el dinero a corto plazo: cuenta remunerada, fondo monetario o Letras (2026)',
     excerpt:

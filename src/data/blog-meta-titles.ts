@@ -60,6 +60,7 @@ export const BLOG_META_TITLES: Record<string, string> = {
   'errores-comunes-al-invertir': 'Errores comunes al invertir y cómo evitarlos',
   'regla-del-4-por-ciento': 'La regla del 4% y tu número FIRE (2026)',
   'donde-aparcar-dinero-corto-plazo': 'Dónde aparcar tu dinero a corto plazo (2026)',
+  'acumulacion-vs-distribucion-etf': 'ETF de acumulación o distribución (2026)',
   'modelo-d6-etf-espana': 'Modelo D6 y ETFs: ¿hay que presentarlo? (2026)',
   'mejores-fondos-indexados-espana-2026': 'Mejores fondos indexados en España (2026)',
   'como-invertir-sp500-espana': 'Cómo invertir en el S&P 500 desde España',

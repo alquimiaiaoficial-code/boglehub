@@ -92,6 +92,7 @@ export const ARTICLE_CATEGORY: Record<string, BlogCategory> = {
   'fondos-indexados-vs-etfs-espana': 'etfs-especificos',
   'riesgo-divisa-etf-hedged-espana': 'etfs-especificos',
   'solapamiento-etfs-error-silencioso': 'etfs-especificos',
+  'acumulacion-vs-distribucion-etf': 'etfs-especificos',
 
   // Carteras y asignación
   'mejores-fondos-indexados-espana-2026': 'etfs-especificos',
