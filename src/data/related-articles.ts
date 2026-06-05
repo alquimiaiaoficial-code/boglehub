@@ -38,7 +38,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
   ],
   'bogleheads-espana-guia-completa': [
     'cartera-boglehead-3-fondos-espana',
-    'como-elegir-tu-primer-etf-espana-2026',
+    'fondos-indexados-vs-gestion-activa',
     'pisos-vs-fondos-indexados-espana',
     'fire-espana-cuanto-necesitas',
   ],
@@ -50,7 +50,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
   ],
   'fondos-indexados-vs-etfs-espana': [
     'amundi-prime-global-analisis',
-    'myinvestor-opinion-2026',
+    'fondos-indexados-vs-gestion-activa',
     'fiscalidad-etfs-espana-guia-completa',
     'como-elegir-tu-primer-etf-espana-2026',
   ],
@@ -125,6 +125,12 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'interes-compuesto-inversion',
     'que-hacer-cuando-el-mercado-cae',
     'como-empezar-a-invertir-poco-dinero',
+  ],
+  'fondos-indexados-vs-gestion-activa': [
+    'bogleheads-espana-guia-completa',
+    'cartera-boglehead-3-fondos-espana',
+    'mejores-fondos-indexados-espana-2026',
+    'que-es-el-msci-world',
   ],
   'mejores-etfs-espana-2026': [
     'vwce-analisis-completo',

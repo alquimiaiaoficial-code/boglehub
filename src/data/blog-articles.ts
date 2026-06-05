@@ -19,6 +19,114 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'fondos-indexados-vs-gestion-activa',
+    title: 'Fondos indexados vs gestión activa: por qué es tan difícil batir al mercado (2026)',
+    excerpt:
+      'Por qué la mayoría de fondos de gestión activa no baten a su índice a largo plazo, qué dice la evidencia y por qué el inversor particular gana indexándose.',
+    publishedAt: '2026-06-04',
+    readingMinutes: 10,
+    keywords: ['gestión activa vs pasiva', 'fondos indexados vs gestión activa', 'batir al mercado', 'gestión pasiva', 'merece la pena gestión activa'],
+    faq: [
+      {
+        q: '¿Qué es mejor, un fondo indexado o uno de gestión activa?',
+        a: 'Para el núcleo de la cartera de un inversor particular (renta variable global, grandes mercados), la evidencia favorece claramente a los fondos indexados: la mayoría de los fondos de gestión activa no baten a su índice a 10-15 años tras comisiones. La gestión activa puede aportar algo en nichos muy ineficientes, pero no es donde está la cartera de la mayoría.',
+      },
+      {
+        q: '¿Por qué la mayoría de los fondos de gestión activa no baten al mercado?',
+        a: 'Por tres motivos: el coste (un fondo activo al 2% parte con una desventaja anual frente a un indexado al 0,2%), la aritmética (antes de costes, los inversores activos como grupo obtienen la rentabilidad del mercado, así que después de costes obtienen menos) y la eficiencia de los grandes mercados, donde la información ya está en el precio.',
+      },
+      {
+        q: '¿Es imposible batir al mercado?',
+        a: 'No es imposible, pero es muy difícil y poco persistente: cada año hay fondos que ganan, pero rara vez repiten, e identificarlos por adelantado es casi imposible. Además, el sesgo de supervivencia (los fondos malos se cierran) hace que la gestión activa parezca mejor de lo que es. Apostar por encontrar al ganador suele salir peor que el simple índice.',
+      },
+      {
+        q: '¿Cuánto más caro es un fondo de gestión activa?',
+        a: 'Un fondo activo suele cobrar entre el 1,5% y el 2,5% anual, frente al 0,05%-0,30% de un fondo indexado. Esa diferencia, aplicada cada año durante décadas, se traduce por el interés compuesto en una merma enorme de tu patrimonio final, incluso si el gestor iguala al mercado antes de comisiones.',
+      },
+      {
+        q: '¿Qué son los informes SPIVA?',
+        a: 'SPIVA (S&P Indices Versus Active) son estudios que S&P Dow Jones publica desde hace décadas comparando los fondos de gestión activa con sus índices de referencia en distintos mercados. Su conclusión es consistente: a 10-15 años, entre el 80% y el 95% de los fondos activos se quedan por detrás de su índice tras comisiones.',
+      },
+    ],
+    content: `# Fondos indexados vs gestión activa: por qué es tan difícil batir al mercado (2026)
+
+Toda la filosofía de la inversión indexada se apoya en una idea incómoda para la industria financiera: **la inmensa mayoría de los gestores profesionales no consiguen batir al mercado a largo plazo**, y los pocos que lo logran son casi imposibles de identificar por adelantado. No es una opinión: es lo que muestran los datos desde hace décadas. Este artículo explica la diferencia entre [gestión activa](/glosario/gestion-activa) y [gestión pasiva](/glosario/gestion-pasiva), qué dice la evidencia y por qué, para el inversor particular, indexarse es la apuesta más sensata.
+
+La conclusión por adelantado: ganar al mercado de forma consistente es extraordinariamente difícil, sobre todo después de comisiones. En lugar de buscar al gestor o la acción ganadora, el inversor indexado se queda con la rentabilidad del mercado entero al mínimo coste, y eso basta para superar a la mayoría.
+
+---
+
+## Qué es la gestión activa y qué es la pasiva
+
+- **Gestión activa**: un gestor (o un algoritmo) intenta **batir al mercado** seleccionando qué acciones comprar y vender y cuándo, apostando a que su criterio superará a la media. Cobra por ese intento: comisiones típicas del 1,5% al 2,5% anual.
+- **Gestión pasiva (indexada)**: el fondo simplemente **replica un índice** (el MSCI World, el S&P 500…), comprando todas sus empresas en su proporción. No intenta acertar: se conforma con la rentabilidad del mercado, al mínimo coste (0,05%-0,30%).
+
+La diferencia parece sutil, pero a largo plazo es enorme, por dos motivos: el coste y la aritmética.
+
+---
+
+## La evidencia: la mayoría de la gestión activa pierde
+
+No hace falta creer a nadie: hay datos. Los informes **SPIVA** de S&P Dow Jones, que llevan décadas midiéndolo en todos los mercados, muestran de forma consistente que, **a 10-15 años, la gran mayoría de los fondos de gestión activa no baten a su índice de referencia** tras comisiones. Según el mercado y el periodo, hablamos de que entre el 80% y el 95% de los fondos activos se quedan por detrás.
+
+Y no son siempre los mismos los que ganan: el gestor estrella de esta década rara vez repite en la siguiente. La rentabilidad pasada de un fondo activo no predice la futura, lo que hace que "elegir el fondo que batirá al mercado" sea, en la práctica, una lotería.
+
+---
+
+## Por qué es tan difícil batir al mercado
+
+### 1. El coste
+
+Un fondo activo que cobra un 2% parte cada año con una desventaja del 2% frente a un indexado que cobra un 0,2%. Para empatar, el gestor tiene que batir al mercado en casi 2 puntos **solo para cubrir su comisión**, y eso, año tras año, es muy difícil. El [interés compuesto](/blog/interes-compuesto-inversion) que tanto te beneficia en la rentabilidad juega en tu contra con las comisiones.
+
+### 2. La aritmética de la gestión activa
+
+Hay una lógica implacable, formulada por el Nobel William Sharpe: **antes de costes, el conjunto de los inversores activos obtiene exactamente la rentabilidad del mercado** (porque entre todos SON una gran parte del mercado). Por tanto, **después de costes, en promedio obtienen menos que el mercado**. No es que los gestores sean malos: es que, como grupo, no pueden batirse a sí mismos, y encima pagan más por intentarlo.
+
+### 3. La eficiencia del mercado
+
+En mercados muy seguidos (grandes empresas de EE.UU. o Europa), miles de profesionales analizan cada compañía a la vez. Encontrar de forma sistemática una "ganga" que todos los demás han pasado por alto es rarísimo. La información ya está en el precio.
+
+---
+
+## "¿Y los que sí ganan?"
+
+Existen, claro. Cada año hay fondos activos que baten a su índice, y a veces lo hacen varios años seguidos. El problema es doble:
+- **Identificarlos por adelantado** es casi imposible: solo sabes quién ganó *después*, y para entonces el patrón suele romperse.
+- **El sesgo de supervivencia** engaña: los fondos que lo hacen muy mal se cierran o fusionan y desaparecen de las estadísticas, así que la foto de "los fondos que existen hoy" exagera lo bien que lo hace la gestión activa.
+
+Apostar a encontrar al ganador es asumir un riesgo extra para, lo más probable, acabar por detrás del simple índice.
+
+---
+
+## ¿Tiene sentido alguna vez la gestión activa?
+
+Para ser justos: la gestión activa puede aportar algo en **nichos muy ineficientes** (ciertos mercados pequeños, deuda muy específica) o para inversores institucionales con recursos y acceso que tú no tienes. Pero para el **núcleo de la cartera de un inversor particular** —renta variable global, grandes mercados—, la evidencia es abrumadora a favor de indexarse. No necesitas ganar al mercado para tener éxito; te basta con no perder contra él por culpa de las comisiones.
+
+---
+
+## Qué hacer con esto
+
+La conclusión práctica del inversor indexado es liberadora: **deja de buscar al gestor o la acción ganadora** y quédate con todo el mercado, barato y diversificado. Es lo que propone la filosofía [Boglehead](/blog/bogleheads-espana-guia-completa) y lo que materializan una [cartera de 3 fondos](/blog/cartera-boglehead-3-fondos-espana) o los [mejores fondos indexados](/blog/mejores-fondos-indexados-espana-2026). Renuncias a la fantasía de batir al mercado a cambio de algo mucho más valioso: superar, casi con seguridad, a la mayoría de quienes lo intentan.
+
+---
+
+## Conclusión práctica
+
+Batir al mercado de forma consistente es tan difícil que la mayoría de los profesionales que cobran por intentarlo no lo consiguen. El inversor particular que lo asume y se indexa no se conforma con menos: se queda con la rentabilidad del mercado al mínimo coste, que históricamente ha bastado para superar al 80-95% de la gestión activa a largo plazo. No es resignación; es jugar con las probabilidades a favor.
+
+Para entender el índice que vas a "comprar entero", empieza por [qué es el MSCI World](/blog/que-es-el-msci-world).
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Bogleheads España: guía completa — BogleHub](/blog/bogleheads-espana-guia-completa) — La filosofía detrás de la inversión indexada.
+- [Cartera Boglehead de 3 fondos — BogleHub](/blog/cartera-boglehead-3-fondos-espana) — Cómo materializar la gestión pasiva en una cartera sencilla.
+- [Qué es el MSCI World — BogleHub](/blog/que-es-el-msci-world) — El índice global que replican los fondos indexados.
+`,
+  },
+  {
     slug: 'es-buen-momento-para-invertir',
     title: '¿Es buen momento para invertir en bolsa? (2026)',
     excerpt:
