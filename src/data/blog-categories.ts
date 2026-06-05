@@ -79,6 +79,7 @@ export const ARTICLE_CATEGORY: Record<string, BlogCategory> = {
   'como-empezar-a-invertir-poco-dinero': 'empezar',
   'bogleheads-espana-guia-completa': 'empezar',
   'que-es-el-msci-world': 'empezar',
+  'fondo-de-emergencia-cuanto-necesitas': 'empezar',
 
   // Análisis de ETFs y fondos
   'vwce-vs-cspx-vs-iwda': 'etfs-especificos',

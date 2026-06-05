@@ -75,7 +75,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
   'que-hacer-cuando-el-mercado-cae': [
     'dca-vs-lump-sum-aportar-mensual',
     'como-rebalancear-cartera-indexada',
-    'cartera-permanente-harry-browne-espana',
+    'fondo-de-emergencia-cuanto-necesitas',
     'bogleheads-espana-guia-completa',
   ],
   'como-rebalancear-cartera-indexada': [
@@ -97,10 +97,16 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'como-elegir-tu-primer-etf-espana-2026',
   ],
   'como-empezar-a-invertir-poco-dinero': [
-    'trade-republic-opinion-2026',
+    'fondo-de-emergencia-cuanto-necesitas',
     'como-elegir-tu-primer-etf-espana-2026',
     'dca-vs-lump-sum-aportar-mensual',
     'interes-compuesto-inversion',
+  ],
+  'fondo-de-emergencia-cuanto-necesitas': [
+    'como-empezar-a-invertir-poco-dinero',
+    'interes-compuesto-inversion',
+    'que-hacer-cuando-el-mercado-cae',
+    'dca-vs-lump-sum-aportar-mensual',
   ],
   'mejores-etfs-espana-2026': [
     'vwce-analisis-completo',

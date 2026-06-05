@@ -19,6 +19,128 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'fondo-de-emergencia-cuanto-necesitas',
+    title: 'Fondo de emergencia: cuánto necesitas antes de invertir (2026)',
+    excerpt:
+      'Cuánto necesitas en tu fondo de emergencia (3-6 meses de gastos), dónde guardarlo y por qué es el cimiento que debes tener antes de invertir en bolsa.',
+    publishedAt: '2026-06-04',
+    readingMinutes: 8,
+    keywords: ['fondo de emergencia', 'cuánto ahorrar para emergencias', 'colchón de seguridad', 'dónde guardar fondo de emergencia', 'fondo de emergencia antes de invertir'],
+    faq: [
+      {
+        q: '¿Cuánto dinero debe tener un fondo de emergencia?',
+        a: 'La referencia estándar es entre 3 y 6 meses de tus gastos esenciales (no de tus ingresos). Con empleo estable y dos ingresos en casa, 3 meses pueden bastar; si eres autónomo o tu sector es inestable, conviene 6-12 meses. Ejemplo: si tus gastos esenciales son 1.500€ al mes, tu objetivo está entre 4.500€ y 9.000€.',
+      },
+      {
+        q: '¿Dónde conviene guardar el fondo de emergencia en 2026?',
+        a: 'En un sitio líquido y seguro, no en bolsa: una cuenta remunerada o de ahorro (acceso inmediato, cubierta por el Fondo de Garantía de Depósitos hasta 100.000€), un fondo monetario (rentabilidad cercana al tipo del BCE con liquidez en 1-2 días) o Letras del Tesoro para la parte que no necesitas de inmediato. Combinar cuenta + fondo monetario suele ser lo más práctico.',
+      },
+      {
+        q: '¿El fondo de emergencia debería estar invertido en bolsa para que rinda?',
+        a: 'No. El fondo de emergencia es un seguro, no una inversión. Si está en renta variable, puede caer un 30-40% justo cuando lo necesitas, que suele ser en plena crisis. Su trabajo es estar disponible al instante y sin haber perdido valor, aunque rente poco. La rentabilidad la buscas con el dinero que inviertes a largo plazo, no con el colchón.',
+      },
+      {
+        q: '¿Hay que tener el fondo de emergencia antes de empezar a invertir?',
+        a: 'Sí, es el orden recomendado: primero quitarte la deuda cara, luego construir el fondo de emergencia y, solo después, invertir el resto. Invertir sin colchón te obliga a vender tus ETFs con pérdidas si surge un imprevisto, y te quita la tranquilidad para aguantar las caídas sin vender en pánico.',
+      },
+      {
+        q: '¿Mejor un fondo monetario o una cuenta remunerada para el colchón?',
+        a: 'Ambos son válidos y se complementan. La cuenta remunerada da liquidez inmediata y la garantía de depósitos hasta 100.000€; el fondo monetario suele rendir algo más (cercano al tipo del BCE), con liquidez en 1-2 días y la ventaja del traspaso fiscal entre fondos. Una opción habitual es tener una parte en cuenta para lo inmediato y otra en fondo monetario o Letras.',
+      },
+    ],
+    content: `# Fondo de emergencia: cuánto necesitas antes de invertir (2026)
+
+Antes de comprar tu primer ETF, hay un paso que casi todos los buenos inversores dan primero y que muchos principiantes se saltan: construir un fondo de emergencia. Es el colchón que evita que tengas que vender tus inversiones en el peor momento —una caída de mercado que coincide con quedarte sin trabajo o una avería cara— y el que te da la tranquilidad para invertir a largo plazo sin tocar el dinero. Esta guía explica cuánto necesitas, dónde guardarlo y por qué es el cimiento de toda estrategia indexada sensata.
+
+La conclusión por adelantado: ten entre 3 y 6 meses de tus gastos esenciales en un sitio seguro y líquido (no invertido en bolsa) antes de empezar a invertir en serio. Ese colchón no es una inversión: es un seguro.
+
+---
+
+## Qué es un fondo de emergencia (y qué no)
+
+Un fondo de emergencia es una cantidad de dinero **líquida y segura** que cubre gastos imprevistos o una pérdida temporal de ingresos: quedarte sin empleo, una reparación importante, un gasto médico. Su función no es crecer, sino **estar disponible al instante y sin riesgo de haber perdido valor** justo cuando lo necesitas.
+
+No es un fondo de emergencia:
+- El dinero invertido en bolsa (ETFs, fondos de renta variable): puede caer un 30-40% justo cuando lo necesites.
+- El crédito de una tarjeta o un préstamo: eso es deuda, no un colchón.
+- El dinero "mental" que crees que podrías reunir: si no está apartado, no cuenta.
+
+---
+
+## Cuánto necesitas: la regla de los 3-6 meses
+
+La referencia estándar es **entre 3 y 6 meses de tus gastos esenciales** (no de tus ingresos). Gastos esenciales = vivienda, comida, suministros, transporte, seguros y mínimos de deudas. Lo prescindible (ocio, viajes) no cuenta para este cálculo.
+
+Dónde situarte dentro de ese rango depende de tu estabilidad:
+
+| Tu situación | Colchón recomendado |
+|---|---|
+| Empleo estable, dos ingresos en casa | 3 meses |
+| Empleo medio, un solo ingreso | 4-5 meses |
+| Autónomo, ingresos variables o sector inestable | 6-12 meses |
+
+**Ejemplo**: si tus gastos esenciales son 1.500€ al mes y tienes un empleo estable, tu fondo de emergencia objetivo es de unos 4.500-9.000€.
+
+---
+
+## Dónde guardarlo: líquido y seguro, pero que no se lo coma la inflación
+
+El fondo de emergencia no debe estar en bolsa, pero tampoco tiene por qué estar en una cuenta al 0%. Opciones razonables en 2026, de más a menos líquidas:
+
+- **Cuenta remunerada o cuenta de ahorro**: acceso inmediato y capital garantizado (cubierto por el Fondo de Garantía de Depósitos hasta 100.000€). Lo más simple.
+- **Fondo monetario**: un [fondo monetario](/glosario/fondo-monetario) invierte en deuda a muy corto plazo y ofrece una rentabilidad cercana al tipo del BCE con muy bajo riesgo y liquidez en 1-2 días. Como es un fondo, en España puedes traspasarlo sin tributar.
+- **Letras del Tesoro**: las [Letras del Tesoro](/glosario/letras-del-tesoro) a 3-12 meses son deuda pública española de bajo riesgo, útiles para la parte del colchón que no necesitas de forma inmediata.
+
+La idea es combinar **liquidez total** (una parte en cuenta) con algo de **rentabilidad sin riesgo** (fondo monetario o letras) para que la [inflación](/glosario/inflacion) no erosione el colchón. Lo que no debe hacer el fondo de emergencia es exponerse a la renta variable.
+
+---
+
+## Por qué el fondo de emergencia es lo primero (antes de invertir)
+
+Invertir sin colchón es construir sobre arena. El motivo es doble:
+
+1. **Te obliga a vender en el peor momento.** Las emergencias no avisan, y a menudo coinciden con las crisis (te despiden cuando la economía va mal, justo cuando tu cartera está en rojo). Sin colchón, tendrías que vender tus ETFs con pérdidas para cubrir el imprevisto, convirtiendo una caída temporal en una pérdida permanente.
+
+2. **Te da la cabeza fría para no vender en pánico.** Saber que tienes varios meses de gastos cubiertos es lo que te permite ignorar una caída del mercado y mantener el rumbo. El colchón protege tu cartera de tu peor enemigo: tus propias decisiones bajo estrés.
+
+Por eso el orden sano es: **(1) fuera la deuda cara → (2) fondo de emergencia → (3) invertir el resto.** Sobre cómo dar el tercer paso, la guía de [cómo empezar a invertir con poco dinero](/blog/como-empezar-a-invertir-poco-dinero) es el siguiente nivel.
+
+---
+
+## Errores comunes con el fondo de emergencia
+
+- **Tenerlo invertido en bolsa "para que rente".** El primer susto te arruina el plan. Liquidez y seguridad por encima de rentabilidad.
+- **Que sea demasiado grande.** Más de 6-12 meses de gastos parados es coste de oportunidad: ese dinero extra rinde más invertido a largo plazo. El [coste de oportunidad](/glosario/coste-oportunidad) también cuenta.
+- **No reponerlo.** Si usas el colchón, tu siguiente prioridad es reconstruirlo antes de volver a invertir con fuerza.
+- **Confundirlo con el ahorro para objetivos.** El dinero para la entrada de un piso a dos años no es fondo de emergencia ni va en bolsa: es otra hucha distinta.
+
+---
+
+## Cómo construirlo desde cero
+
+1. **Calcula tus gastos esenciales mensuales** y multiplícalos por los meses objetivo (3-6).
+2. **Automatiza una transferencia** mensual a una cuenta separada el día que cobras, hasta llegar a la cifra.
+3. **Apártalo en una cuenta distinta** de la operativa, para no gastarlo sin querer.
+4. **Cuando lo completes**, redirige esa aportación automática a tu inversión: el mismo hábito que llenó el colchón ahora llena tu cartera.
+
+---
+
+## Conclusión práctica
+
+El fondo de emergencia es la parte menos emocionante y más importante de tu plan financiero: el cimiento que hace posible invertir a largo plazo sin que un imprevisto lo eche todo a perder. Ten 3-6 meses de gastos esenciales en una cuenta remunerada, un fondo monetario o letras, repónlo si lo usas, y solo entonces invierte el resto con tranquilidad. No es glamuroso, pero es lo que separa a quien aguanta una crisis de quien vende en el peor momento.
+
+Con el colchón hecho, el siguiente paso es [empezar a invertir](/blog/como-empezar-a-invertir-poco-dinero) y entender la fuerza del [interés compuesto](/blog/interes-compuesto-inversion) a largo plazo.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Cómo empezar a invertir con poco dinero — BogleHub](/blog/como-empezar-a-invertir-poco-dinero) — El paso siguiente, una vez tienes el colchón.
+- [Interés compuesto: la única fuerza que importa — BogleHub](/blog/interes-compuesto-inversion) — Por qué empezar pronto a invertir el dinero que no es colchón.
+- [Qué hacer cuando el mercado cae — BogleHub](/blog/que-hacer-cuando-el-mercado-cae) — Cómo el fondo de emergencia te ayuda a no vender en pánico.
+`,
+  },
+  {
     slug: 'inbestme-opinion-2026',
     title: 'inbestMe: opinión y análisis del roboadvisor ESG (2026)',
     excerpt:
