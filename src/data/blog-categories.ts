@@ -131,6 +131,7 @@ export const ARTICLE_CATEGORY: Record<string, BlogCategory> = {
   // Planificación y FIRE
   'fire-espana-cuanto-necesitas': 'planificacion-fire',
   'cuanto-invertir-al-mes-jubilarse-millonario': 'planificacion-fire',
+  'invertir-para-hijos-espana': 'planificacion-fire',
 
   // Nuevos (sesión 2026-05-24, batch 3)
   'mejores-etfs-nasdaq-100-espana': 'etfs-especificos',

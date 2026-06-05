@@ -33,7 +33,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
   'fire-espana-cuanto-necesitas': [
     'cuanto-invertir-al-mes-jubilarse-millonario',
     'interes-compuesto-inversion',
-    'etfs-dividendos-vivir-rentas-espana',
+    'invertir-para-hijos-espana',
     'que-hacer-cuando-el-mercado-cae',
   ],
   'bogleheads-espana-guia-completa': [
@@ -57,7 +57,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
   'interes-compuesto-inversion': [
     'cuanto-invertir-al-mes-jubilarse-millonario',
     'fire-espana-cuanto-necesitas',
-    'dca-vs-lump-sum-aportar-mensual',
+    'invertir-para-hijos-espana',
     'como-empezar-a-invertir-poco-dinero',
   ],
   'dca-vs-lump-sum-aportar-mensual': [
@@ -107,6 +107,12 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'interes-compuesto-inversion',
     'que-hacer-cuando-el-mercado-cae',
     'dca-vs-lump-sum-aportar-mensual',
+  ],
+  'invertir-para-hijos-espana': [
+    'interes-compuesto-inversion',
+    'mejores-fondos-indexados-espana-2026',
+    'como-hacer-traspaso-fondos-espana',
+    'cartera-boglehead-3-fondos-espana',
   ],
   'mejores-etfs-espana-2026': [
     'vwce-analisis-completo',

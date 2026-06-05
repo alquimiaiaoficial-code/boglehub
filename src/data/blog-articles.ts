@@ -19,6 +19,119 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'invertir-para-hijos-espana',
+    title: 'Invertir para tus hijos en España: cómo empezar (2026)',
+    excerpt:
+      'Cómo invertir para un hijo en España: a su nombre o al tuyo, fondos o ETFs, y cómo el interés compuesto en 18 años hace el trabajo. Empezar pronto es la clave.',
+    publishedAt: '2026-06-04',
+    readingMinutes: 9,
+    keywords: ['invertir para hijos', 'invertir para un niño España', 'fondo indexado para hijos', 'ahorrar para los hijos', 'cuenta de valores menores'],
+    faq: [
+      {
+        q: '¿Cuál es la mejor forma de invertir para un hijo en España?',
+        a: 'Lo que más importa no es el producto, sino empezar pronto, mantener el coste bajo y automatizar las aportaciones: el largo horizonte hace que el interés compuesto haga casi todo el trabajo. Puedes invertir a nombre del menor (más eficiente fiscalmente, pero pasa a su control a los 18) o a tu nombre reservándolo para él (más control y simplicidad). En ambos casos, fondos o ETFs indexados globales de bajo coste.',
+      },
+      {
+        q: '¿Es mejor invertir a nombre del niño o a mi nombre?',
+        a: 'A nombre del menor, las ganancias tributan en su IRPF (donde suele tener poca renta) y el dinero es suyo, pero a los 18 pasa a su control total y aportar cantidades altas puede ser una donación. A tu nombre mantienes el control y la flexibilidad, y no hay donación hasta que se lo entregas, aunque fiscalmente es tu dinero. Para muchas familias, la segunda opción es más práctica.',
+      },
+      {
+        q: '¿Qué pasa cuando mi hijo cumple 18 años si invertí a su nombre?',
+        a: 'Si la inversión está a nombre del menor, al cumplir 18 años el dinero es legalmente suyo y pasa a tener control total sobre él, decidas tú lo que decidas. Es la principal contrapartida de invertir a su nombre. Si quieres conservar el control sobre cuándo y cómo se le entrega, suele ser mejor invertir a tu nombre y dárselo cuando lo consideres.',
+      },
+      {
+        q: '¿Fondos indexados o ETFs para invertir para un hijo?',
+        a: 'Para este objetivo, los fondos indexados tienen una ventaja: el traspaso fiscal libre te permite reducir el riesgo según se acerca la meta (por ejemplo, los 18 años) sin tributar en cada cambio. Los ETFs indexados globales son igual de válidos y baratos, pero vender para rebalancear sí tributa. Si vas a ajustar el riesgo con el tiempo, los fondos son más cómodos.',
+      },
+      {
+        q: '¿Hay que pagar impuestos por invertir para un hijo?',
+        a: 'Las ganancias tributan en el IRPF de quien sea titular de la inversión (el menor o tú). Además, entregar dinero al niño puede considerarse una donación, sujeta al Impuesto de Sucesiones y Donaciones, cuyo tratamiento varía mucho según la comunidad autónoma. Antes de poner cantidades importantes a nombre del menor, conviene consultar el caso con un asesor fiscal.',
+      },
+    ],
+    content: `# Invertir para tus hijos en España: cómo empezar (2026)
+
+El mejor regalo financiero que puedes hacerle a un hijo no es una hucha, sino tiempo: si inviertes para él desde que nace, el interés compuesto tiene casi dos décadas para trabajar antes de que cumpla 18. Esta guía explica, sin tecnicismos, las dos formas de hacerlo en España, sus ventajas e inconvenientes, qué vehículos usar y cómo evitar los errores más comunes. No es asesoramiento fiscal: la parte de donaciones varía mucho por comunidad autónoma y conviene consultarla con un profesional.
+
+La conclusión por adelantado: lo que más mueve la aguja no es el producto que elijas, sino empezar pronto, mantener el coste bajo y automatizar las aportaciones. El tiempo hace casi todo el trabajo.
+
+---
+
+## El verdadero superpoder: el tiempo
+
+Invertir para un hijo es el caso de manual del [interés compuesto](/blog/interes-compuesto-inversion), porque el horizonte es larguísimo. Una aportación modesta y constante durante 18 años, a la rentabilidad histórica de la renta variable global, se convierte en una cantidad que sorprende. No porque aportes mucho, sino porque el dinero tiene tiempo de generar rendimientos sobre rendimientos.
+
+Por eso la decisión más importante no es "qué fondo", sino **empezar cuanto antes**: cada año de retraso es un año menos de capitalización, y los primeros años son los que más pesan al final.
+
+---
+
+## Las dos formas de invertir para un hijo
+
+### Opción A: a nombre del menor
+
+Abres una cuenta de valores o de fondos **a nombre del niño** (necesita su propio NIF; la gestionan los padres o tutores como representantes legales). Algunos brókers y bancos españoles lo permiten (por ejemplo, MyInvestor).
+
+- **Ventaja**: el dinero es legalmente del menor desde el principio, y sus ganancias tributan en **su** IRPF, donde normalmente tiene poca o ninguna otra renta (a menudo por debajo del mínimo que obliga a declarar, si las cantidades son modestas).
+- **Inconveniente**: al cumplir **18 años**, el dinero es suyo y pasa a tener control total, decidas tú lo que decidas. Además, aportar cantidades relevantes a su nombre puede considerarse una **donación**, con implicaciones en el Impuesto de Sucesiones y Donaciones que **varían mucho según la comunidad autónoma**.
+
+### Opción B: a tu nombre, reservado para el hijo
+
+Inviertes en **tu propia cuenta**, reservando mentalmente ese dinero para el niño, y se lo das cuando lo decidas (a los 18, para la universidad, para la entrada de un piso…).
+
+- **Ventaja**: mantienes el **control y la flexibilidad** totales. No hay donación hasta que efectivamente entregas el dinero, y decides el cuándo y el cómo. Es la opción más simple administrativamente.
+- **Inconveniente**: fiscalmente es tu dinero (tributas tú por las ganancias), y cuando se lo entregues podría haber donación. Forma parte de tu patrimonio a efectos de herencia.
+
+No hay una opción "correcta": la A optimiza algo de fiscalidad y simbolismo a cambio de perder control a los 18; la B prioriza control y simplicidad. Para muchas familias, la B es más práctica.
+
+---
+
+## Qué vehículos usar
+
+Los mismos principios Boglehead que para tu propia cartera, aprovechando el largo plazo:
+
+- **Fondos indexados globales**: la opción más cómoda para este objetivo, porque en España permiten el [traspaso fiscal libre](/blog/como-hacer-traspaso-fondos-espana): puedes ir **reduciendo el riesgo** según se acerca la meta (de un peso alto en renta variable a una mezcla más conservadora cuando falten pocos años) **sin tributar** en cada cambio. Para empezar, la [guía de mejores fondos indexados](/blog/mejores-fondos-indexados-espana-2026) y la [cartera Boglehead de 3 fondos](/blog/cartera-boglehead-3-fondos-espana) sirven igual.
+- **ETFs indexados globales** (VWCE, IWDA y similares): igual de válidos y baratos, con la diferencia de que vender para rebalancear sí tributa. Cómo elegirlos, en la [guía del primer ETF](/blog/como-elegir-tu-primer-etf-espana-2026).
+
+Sea cual sea el vehículo, lo que importa es lo de siempre: **diversificación global, coste bajo y constancia**.
+
+---
+
+## La estrategia de riesgo según la edad
+
+Como el dinero se va a usar en una fecha relativamente concreta (por ejemplo, los 18 años), conviene **bajar el riesgo a medida que se acerca**, como un plan de jubilación en miniatura:
+
+- **0-10 años del niño**: horizonte muy largo; puedes ir con un peso alto en renta variable global.
+- **11-15 años**: empieza a introducir algo de renta fija para amortiguar.
+- **16-18 años**: reduce la exposición a bolsa de forma notable; no quieres una caída del 30% el año antes de necesitar el dinero.
+
+Si usas fondos indexados, esos ajustes los haces con traspasos **sin coste fiscal**. Es la principal ventaja práctica del fondo sobre el ETF para este objetivo.
+
+---
+
+## Errores comunes
+
+- **Esperar a "tener más" para empezar.** El tiempo vale más que el importe: 50€/mes desde el nacimiento baten a 200€/mes empezando a los 10.
+- **Pagar comisiones altas "porque es para los niños".** Los seguros de ahorro y planes para menores de los bancos suelen tener costes elevados y rentabilidades pobres. Un fondo indexado barato casi siempre gana.
+- **Asumir demasiado riesgo el último tramo.** Una cosa es 100% bolsa con 3 años de edad; otra, con 17.
+- **No contar con la fiscalidad de la donación.** Antes de poner mucho dinero a nombre del menor, infórmate de cómo tributa la donación en tu comunidad autónoma.
+
+---
+
+## Conclusión práctica
+
+Invertir para un hijo es una de las decisiones con mejor relación esfuerzo/resultado que existen, porque el tiempo juega a tu favor como en ningún otro caso. Decide si lo haces a su nombre (más eficiente fiscalmente, pierdes control a los 18) o al tuyo (más control y simplicidad), usa fondos o ETFs indexados globales de bajo coste, baja el riesgo según se acerque la meta y, sobre todo, **empieza pronto y automatiza**. Para la parte de donaciones, que cambia según dónde vivas, consulta con un asesor fiscal.
+
+El primer paso, si aún no lo has dado para ti, es entender [cómo empezar a invertir](/blog/como-empezar-a-invertir-poco-dinero) y la fuerza del [interés compuesto](/blog/interes-compuesto-inversion).
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Interés compuesto: la única fuerza que importa — BogleHub](/blog/interes-compuesto-inversion) — Por qué el tiempo es el factor decisivo al invertir para un hijo.
+- [Mejores fondos indexados en España 2026 — BogleHub](/blog/mejores-fondos-indexados-espana-2026) — Fondos baratos con traspaso fiscal, ideales para este objetivo.
+- [Cómo hacer un traspaso de fondos — BogleHub](/blog/como-hacer-traspaso-fondos-espana) — Cómo bajar el riesgo según se acerca la meta sin tributar.
+`,
+  },
+  {
     slug: 'fondo-de-emergencia-cuanto-necesitas',
     title: 'Fondo de emergencia: cuánto necesitas antes de invertir (2026)',
     excerpt:
