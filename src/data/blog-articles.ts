@@ -19,6 +19,123 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'renta-variable-vs-renta-fija-cartera',
+    title: 'Renta variable vs renta fija: cómo repartir tu cartera (2026)',
+    excerpt:
+      'Cuánto poner en bolsa y cuánto en renta fija es la decisión que más marca tu riesgo y rentabilidad. Cómo elegir tu reparto según horizonte y perfil.',
+    publishedAt: '2026-06-04',
+    readingMinutes: 9,
+    keywords: ['renta variable vs renta fija', 'asignación de activos', 'cuánto en renta fija', 'reparto cartera por edad', 'porcentaje bolsa cartera'],
+    faq: [
+      {
+        q: '¿Cuánto debería poner en renta variable y cuánto en renta fija?',
+        a: 'Depende de tres cosas: tu horizonte (cuanto más largo, más bolsa), tu tolerancia a las caídas y tu necesidad de asumir riesgo. Como punto de partida, la regla "110 menos tu edad = % en renta variable" orienta (a los 30, ~80% bolsa; a los 60, ~50%), pero ajústala a tu caso: la mejor cartera es la que eres capaz de mantener en una crisis.',
+      },
+      {
+        q: '¿Qué es la asignación de activos y por qué importa tanto?',
+        a: 'Es el reparto de tu cartera entre renta variable y renta fija (y otros activos). Diversos estudios muestran que esa decisión explica la mayor parte de la variabilidad de los resultados a largo plazo: importa mucho más tener un 80% o un 40% en bolsa que elegir entre el MSCI World o el FTSE All-World dentro de esa bolsa. Por eso conviene dedicar la energía a decidir bien el cuánto.',
+      },
+      {
+        q: '¿Para qué sirve la renta fija si renta menos que la bolsa?',
+        a: 'No está para ganar más, sino para reducir la volatilidad de la cartera, darte aguante psicológico para no vender en pánico en las caídas y servir de munición para rebalancear (vender renta fija, que aguanta, y comprar bolsa barata). Estabiliza el conjunto y te ayuda a mantenerte invertido, que es la mitad de la batalla.',
+      },
+      {
+        q: '¿Qué porcentaje en bolsa me corresponde según mi edad?',
+        a: 'La regla orientativa "110 menos tu edad" da una referencia: ~80% en bolsa a los 30, ~65% a los 45 y ~50% a los 60, con el resto en renta fija. Es solo un punto de partida: si tu tolerancia al riesgo es baja o vas a necesitar el dinero pronto, conviene más renta fija; si tienes mucho aguante y horizonte, puedes llevar más bolsa.',
+      },
+      {
+        q: '¿Cada cuánto debo rebalancear mi cartera?',
+        a: 'Una o dos veces al año, o cuando tu reparto se desvíe notablemente del objetivo (por ejemplo, más de 5 puntos). Rebalancear mantiene tu nivel de riesgo bajo control y te obliga a vender lo que ha subido y comprar lo que ha bajado, de forma sistemática y sin emociones.',
+      },
+    ],
+    content: `# Renta variable vs renta fija: cómo repartir tu cartera (2026)
+
+Una vez decides invertir de forma indexada, la pregunta más importante no es "qué fondo concreto compro", sino **cuánto pongo en bolsa y cuánto en algo más estable**. Ese reparto entre [renta variable](/glosario/renta-variable) y [renta fija](/glosario/renta-fija) —lo que se llama asignación de activos— es la decisión que más determina el riesgo y la rentabilidad de tu cartera a lo largo del tiempo, por encima de qué ETF o fondo elijas dentro de cada categoría. Esta guía te ayuda a decidir tu reparto.
+
+La conclusión por adelantado: cuanto más largo es tu horizonte y más aguante tienes a las caídas, más peso puede tener la renta variable. La renta fija no está para ganar más, sino para que puedas dormir y no vender en el peor momento.
+
+---
+
+## Los dos ladrillos de cualquier cartera
+
+- **Renta variable (bolsa)**: acciones de empresas. Históricamente, el activo de mayor rentabilidad a largo plazo, a cambio de **volatilidad**: puede caer un 30-50% en una crisis y tardar años en recuperarse. Es el motor de crecimiento de tu cartera.
+- **Renta fija (bonos)**: prestas dinero a estados o empresas a cambio de intereses. Menos rentable de media, pero **más estable**: amortigua las caídas de la bolsa y reduce la volatilidad del conjunto. Es el lastre que estabiliza el barco.
+
+Una cartera indexada bien hecha combina ambos en la proporción que encaja contigo.
+
+---
+
+## Por qué el reparto importa más que el fondo concreto
+
+Numerosos estudios sobre carteras coinciden en que la **asignación de activos** explica la mayor parte de la variabilidad de los resultados a largo plazo: si tienes un 80% en bolsa o un 40% cambia tu experiencia muchísimo más que si dentro de esa bolsa elegiste el MSCI World o el FTSE All-World. Por eso conviene dedicar la energía a decidir bien el **cuánto**, y no obsesionarse con el **cuál**.
+
+---
+
+## Cómo decidir tu reparto: tres preguntas
+
+### 1. ¿Cuál es tu horizonte?
+
+Cuanto más lejos esté el momento de usar el dinero, más peso puede tener la renta variable, porque tienes tiempo para recuperarte de las caídas. Para horizontes muy largos (20+ años), un peso alto en bolsa tiene sentido; si vas a necesitar el dinero en pocos años, conviene mucha más renta fija o liquidez. Es la idea del [horizonte temporal](/glosario/horizonte-temporal).
+
+### 2. ¿Cuánto aguantas una caída?
+
+De poco sirve un 100% en bolsa si vas a vender presa del pánico en la primera crisis. Sé honesto sobre tu [perfil de riesgo](/glosario/perfil-riesgo): si una caída del 40% te haría abandonar, una parte en renta fija que suavice el golpe te ayudará a mantener el rumbo. La mejor cartera no es la más rentable sobre el papel, sino la que eres capaz de sostener.
+
+### 3. ¿Necesitas asumir ese riesgo?
+
+Si ya tienes capital de sobra para tus objetivos, puedes permitirte menos riesgo. Si vas justo, quizá necesites más bolsa para llegar, asumiendo su volatilidad. Capacidad y necesidad de riesgo también cuentan.
+
+---
+
+## Reglas de andar por casa (úsalas como punto de partida)
+
+La regla clásica decía "**110 menos tu edad = % en renta variable**" (antes se usaba 100, pero con vidas más largas se ha ido subiendo a 110 o 120). Ejemplos orientativos:
+
+| Edad | RV (regla 110 − edad) | Renta fija |
+|---|---|---|
+| 30 años | ~80% | ~20% |
+| 45 años | ~65% | ~35% |
+| 60 años | ~50% | ~50% |
+
+Son solo un punto de partida, no un dogma: un inversor de 30 años con poca tolerancia puede querer más renta fija, y uno de 60 con mucho patrimonio y aguante, menos. Ajusta la regla a tus tres respuestas anteriores.
+
+---
+
+## El papel real de la renta fija
+
+Mucha gente, viendo que la bolsa renta más, se pregunta para qué quiere renta fija. La respuesta no es la rentabilidad, sino:
+- **Reducir la volatilidad**: una cartera 60/40 cae bastante menos que una 100% bolsa en una crisis.
+- **Darte aguante psicológico**: amortiguar las caídas es lo que evita que vendas en el peor momento (ver [qué hacer cuando el mercado cae](/blog/que-hacer-cuando-el-mercado-cae)).
+- **Munición para rebalancear**: cuando la bolsa cae, vendes algo de renta fija (que ha aguantado) para comprar bolsa barata, manteniendo tu reparto.
+
+En la fase de acumulación de un inversor joven, un peso pequeño de renta fija (o incluso ninguno, si tienes mucho aguante) es defendible; según te acercas a la meta, ganar estabilidad cobra importancia.
+
+---
+
+## Mantener el reparto: rebalanceo
+
+Tu reparto se desajusta solo: si la bolsa sube mucho, tu 80/20 se convierte en 88/12 y asumes más riesgo del que decidiste. **Rebalancear** —volver a tu proporción objetivo una o dos veces al año— mantiene tu nivel de riesgo bajo control y, de paso, te obliga a vender caro y comprar barato. Lo vemos en [cómo rebalancear tu cartera](/blog/como-rebalancear-cartera-indexada).
+
+Para la parte de renta fija, los [mejores ETFs de renta fija](/blog/mejores-etfs-renta-fija-2026) o un fondo indexado de bonos globales cubren la función sin complicaciones.
+
+---
+
+## Conclusión práctica
+
+Decide primero **cuánto** quieres en bolsa y cuánto en renta fija, en función de tu horizonte, tu aguante y tu necesidad de riesgo; luego elige fondos indexados baratos y diversificados para cada parte y rebalancea una o dos veces al año. Una cartera sencilla tipo 80/20 o 60/40, mantenida con disciplina, supera a la mayoría de estrategias más complicadas. La renta fija no te hará rico, pero puede ser lo que te mantenga invertido cuando llegue la tormenta, y mantenerse invertido es la mitad de la batalla.
+
+Para ver cómo encaja todo en una cartera concreta, la [cartera Boglehead de 3 fondos](/blog/cartera-boglehead-3-fondos-espana) es el mejor ejemplo.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Cartera Boglehead de 3 fondos para España — BogleHub](/blog/cartera-boglehead-3-fondos-espana) — Un reparto sencillo de renta variable y fija en la práctica.
+- [Cómo rebalancear tu cartera indexada — BogleHub](/blog/como-rebalancear-cartera-indexada) — Cómo mantener tu reparto objetivo a lo largo del tiempo.
+- [Mejores ETFs de renta fija para España — BogleHub](/blog/mejores-etfs-renta-fija-2026) — Opciones para la parte estable de la cartera.
+`,
+  },
+  {
     slug: 'proteger-ahorros-inflacion',
     title: 'Cómo proteger tus ahorros de la inflación (2026)',
     excerpt:

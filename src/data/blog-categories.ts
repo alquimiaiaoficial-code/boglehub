@@ -100,6 +100,7 @@ export const ARTICLE_CATEGORY: Record<string, BlogCategory> = {
   'cartera-boglehead-3-fondos-espana': 'carteras',
   'cartera-permanente-harry-browne-espana': 'carteras',
   'como-rebalancear-cartera-indexada': 'carteras',
+  'renta-variable-vs-renta-fija-cartera': 'carteras',
 
   // Fiscalidad
   'fiscalidad-etfs-espana-guia-completa': 'fiscalidad',

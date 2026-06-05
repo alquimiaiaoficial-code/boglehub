@@ -80,7 +80,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
   ],
   'como-rebalancear-cartera-indexada': [
     'cartera-boglehead-3-fondos-espana',
-    'solapamiento-etfs-error-silencioso',
+    'renta-variable-vs-renta-fija-cartera',
     'cartera-permanente-harry-browne-espana',
     'que-hacer-cuando-el-mercado-cae',
   ],
@@ -138,6 +138,12 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'pisos-vs-fondos-indexados-espana',
     'interes-compuesto-inversion',
   ],
+  'renta-variable-vs-renta-fija-cartera': [
+    'cartera-boglehead-3-fondos-espana',
+    'como-rebalancear-cartera-indexada',
+    'mejores-etfs-renta-fija-2026',
+    'que-hacer-cuando-el-mercado-cae',
+  ],
   'mejores-etfs-espana-2026': [
     'vwce-analisis-completo',
     'swrd-vs-iwda',
@@ -146,7 +152,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
   ],
   'cartera-boglehead-3-fondos-espana': [
     'bogleheads-espana-guia-completa',
-    'mejores-etfs-renta-fija-2026',
+    'renta-variable-vs-renta-fija-cartera',
     'como-rebalancear-cartera-indexada',
     'cartera-permanente-harry-browne-espana',
   ],
