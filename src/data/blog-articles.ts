@@ -19,6 +19,106 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'msci-world-vs-sp500',
+    title: 'MSCI World o S&P 500: ¿diversificar o concentrarse en EE.UU.? (2026)',
+    excerpt:
+      'MSCI World o S&P 500: ¿te diversificas globalmente o concentras en EE.UU.? Argumentos de cada lado, el sesgo de recencia y qué elige el inversor Boglehead.',
+    publishedAt: '2026-06-04',
+    readingMinutes: 9,
+    keywords: ['MSCI World vs S&P 500', 'MSCI World o S&P 500', 'invertir solo S&P 500', 'diversificar o concentrar EE.UU.', 'qué índice elegir'],
+    faq: [
+      {
+        q: '¿Qué es mejor, el MSCI World o el S&P 500?',
+        a: 'El MSCI World está más diversificado (23 países desarrollados) y es la opción de menor arrepentimiento para la mayoría; el S&P 500 (100% EE.UU.) ha rentado históricamente muy bien, pero es una apuesta concentrada en un solo país. Ninguna es errónea: la diferencia es cuánto confías en que EE.UU. seguirá liderando. Como el MSCI World ya es ~70% EE.UU., la elección real es 100% EE.UU. frente a 70% EE.UU. + 30% resto.',
+      },
+      {
+        q: '¿Es buena idea invertir solo en el S&P 500?',
+        a: 'Es defendible —es un gran índice y ha funcionado—, pero debes asumir conscientemente que es una concentración del 100% en Estados Unidos. El riesgo no es que EE.UU. sea mal mercado, sino apostarlo todo a un solo país. Si lo eliges, que sea por convicción razonada, no porque haya sido el ganador de la última década.',
+      },
+      {
+        q: '¿El MSCI World ya incluye Estados Unidos?',
+        a: 'Sí, y mucho: por capitalización, EE.UU. pesa en torno al 70% del MSCI World. Por eso elegir entre MSCI World y S&P 500 no es "EE.UU. sí o no", sino 100% EE.UU. (S&P 500) frente a un 70% EE.UU. más un 30% de otros países desarrollados (MSCI World).',
+      },
+      {
+        q: '¿Por qué no concentrarse en EE.UU. si ha sido el mejor mercado?',
+        a: 'Porque proyectar el pasado reciente hacia el futuro (el sesgo de recencia) es un error clásico. El líder bursátil cambia con el tiempo: en los años 80, Japón llegó a ser la mayor bolsa del mundo y luego vinieron décadas perdidas. Diversificar globalmente te protege de que un solo país, por bueno que haya sido, deje de liderar.',
+      },
+      {
+        q: '¿MSCI World o All-World, cuál es más diversificado?',
+        a: 'El All-World (FTSE All-World o MSCI ACWI) es más diversificado porque añade los mercados emergentes (China, India, etc.), que el MSCI World deja fuera. Suponen alrededor de un 10% adicional. Para quien quiere "todo el mercado global" en un solo fondo, el All-World es la opción más completa.',
+      },
+    ],
+    content: `# MSCI World o S&P 500: ¿diversificar o concentrarse en EE.UU.? (2026)
+
+Es, quizá, el debate más recurrente entre inversores indexados que empiezan: ¿me basta con el **S&P 500** (las 500 mayores empresas de EE.UU.) o mejor el **MSCI World** (empresas de todos los países desarrollados)? Detrás de la elección de índice hay una pregunta de fondo: ¿concentro mi apuesta en Estados Unidos o me diversifico por el mundo? Esta guía expone los argumentos de cada lado, sin vender ninguno, para que decidas con criterio.
+
+La conclusión por adelantado: el MSCI World (o el aún más amplio All-World) es la opción más diversificada y de menor arrepentimiento para la mayoría; el S&P 500 ha funcionado muy bien históricamente, pero es una apuesta concentrada en un solo país. Ninguna es "errónea"; la diferencia es cuánto confías en que EE.UU. seguirá liderando.
+
+---
+
+## Qué es cada índice
+
+- **S&P 500**: las ~500 mayores empresas cotizadas de **Estados Unidos**. Concentra a las grandes tecnológicas y muchas de las empresas más conocidas del mundo. Es 100% EE.UU.
+- **MSCI World**: unas 1.500 empresas grandes y medianas de **23 países desarrollados** (EE.UU., Europa, Japón, etc.). Está diversificado por países… aunque, por capitalización, **EE.UU. pesa en torno al 70%**. Más sobre él, en [qué es el MSCI World](/blog/que-es-el-msci-world).
+
+Un matiz clave que mucha gente no ve: el MSCI World **no es "lo contrario" del S&P 500**. Como EE.UU. es el ~70% del MSCI World, la elección real es entre **100% EE.UU.** (S&P 500) y **~70% EE.UU. + 30% resto de desarrollados** (MSCI World).
+
+---
+
+## Argumentos a favor del S&P 500
+
+- **Ha sido el mercado ganador** de las últimas décadas: rentabilidades históricas excelentes.
+- Reúne a **las empresas más grandes e innovadoras** del mundo, muchas con ingresos globales (aunque coticen en EE.UU.).
+- **Simplicidad** y, a veces, un TER ligeramente menor.
+- EE.UU. es, con diferencia, el mayor mercado mundial, así que "apostar por EE.UU." no es una apuesta de nicho.
+
+## Argumentos a favor del MSCI World (diversificación global)
+
+- **Diversificación por países**: no dependes de que un solo país siga liderando.
+- **El líder cambia con el tiempo**: en los años 80, Japón llegó a ser la mayor bolsa del mundo… y vinieron décadas perdidas. Quien estaba 100% concentrado lo sufrió. Nadie garantiza que EE.UU. lidere para siempre.
+- **Se reajusta solo**: si otro país gana peso en la economía mundial, el índice global lo recoge automáticamente; tú no tienes que adivinar nada.
+- **Menos arrepentimiento**: si EE.UU. se estanca, el resto del mundo amortigua; si EE.UU. sigue liderando, igualmente te beneficias de ese ~70%.
+
+---
+
+## El sesgo que conviene vigilar: la recencia
+
+La razón nº1 por la que mucha gente elige hoy "solo S&P 500" es que **EE.UU. lo ha hecho muy bien en los últimos años**. Pero proyectar el pasado reciente hacia el futuro es uno de los errores clásicos del inversor (la **recencia**). Que un mercado haya ganado la última década no garantiza que gane la siguiente; a veces es justo lo contrario. Elegir índice por su rentabilidad pasada reciente es una forma sutil de perseguir resultados, algo que [rara vez sale bien](/blog/errores-comunes-al-invertir).
+
+---
+
+## ¿Y si quiero aún más diversificación? El All-World
+
+El MSCI World deja fuera los **mercados emergentes** (China, India, etc.). Si quieres "el mundo entero", el **FTSE All-World** o el **MSCI ACWI** añaden esos emergentes (~10% adicional). Es la opción más diversificada de todas y la preferida de muchos Bogleheads por su simplicidad: un solo fondo con todo el mercado global. Las diferencias entre World y ACWI las vemos en [MSCI World vs MSCI ACWI](/blog/msci-world-vs-msci-acwi-diferencias).
+
+---
+
+## Entonces, ¿cuál elijo?
+
+- **Si valoras la máxima diversificación y el menor arrepentimiento** (la postura Boglehead más ortodoxa): MSCI World o, mejor aún, un All-World. Te despreocupas de qué país liderará.
+- **Si tienes convicción en EE.UU. y entiendes que es una apuesta concentrada**: el S&P 500 es defendible y ha funcionado, pero asume conscientemente esa concentración.
+- **Una postura intermedia común**: núcleo global (World/All-World) y, si quieres, una pequeña sobreponderación de EE.UU.; no al revés.
+
+Lo que **no** es buena idea es saltar de uno a otro según quién haya ganado el último año. Elige una política y mantenla. Para ver los ETFs concretos de cada índice, la comparativa [VWCE vs CSPX vs IWDA](/blog/vwce-vs-cspx-vs-iwda) los pone cara a cara.
+
+---
+
+## Conclusión práctica
+
+No hay una respuesta universalmente correcta, pero sí una más prudente para la mayoría: **diversificar globalmente** (MSCI World o All-World) evita el riesgo de concentrar todo tu patrimonio en un solo país, por bueno que haya sido. El S&P 500 no es un error —es un gran índice—, pero elegirlo debe ser una decisión consciente de concentración, no el reflejo de que "EE.UU. siempre gana". Decidas lo que decidas, hazlo por convicción razonada y no por la rentabilidad del último año, y luego mantén el rumbo.
+
+Para entender mejor el índice global, sigue por [qué es el MSCI World](/blog/que-es-el-msci-world); para el caso de invertir en EE.UU., [cómo invertir en el S&P 500 desde España](/blog/como-invertir-sp500-espana).
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Qué es el MSCI World — BogleHub](/blog/que-es-el-msci-world) — El índice global de países desarrollados, al detalle.
+- [Cómo invertir en el S&P 500 desde España — BogleHub](/blog/como-invertir-sp500-espana) — Si te decantas por la concentración en EE.UU.
+- [VWCE vs CSPX vs IWDA — BogleHub](/blog/vwce-vs-cspx-vs-iwda) — Los ETFs concretos de All-World, S&P 500 y MSCI World comparados.
+`,
+  },
+  {
     slug: 'vanguard-vs-ishares-vs-amundi',
     title: 'Vanguard vs iShares vs Amundi: qué gestora de fondos indexados elegir (2026)',
     excerpt:

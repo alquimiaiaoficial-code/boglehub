@@ -94,7 +94,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'vwce-analisis-completo',
     'swrd-vs-iwda',
     'vwce-vs-cspx-vs-iwda',
-    'como-elegir-tu-primer-etf-espana-2026',
+    'msci-world-vs-sp500',
   ],
   'como-empezar-a-invertir-poco-dinero': [
     'fondo-de-emergencia-cuanto-necesitas',
@@ -179,6 +179,12 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'swrd-vs-iwda',
     'como-elegir-tu-primer-etf-espana-2026',
     'mejores-etfs-espana-2026',
+  ],
+  'msci-world-vs-sp500': [
+    'que-es-el-msci-world',
+    'como-invertir-sp500-espana',
+    'vwce-vs-cspx-vs-iwda',
+    'msci-world-vs-msci-acwi-diferencias',
   ],
   'mejores-etfs-espana-2026': [
     'vwce-analisis-completo',
@@ -352,7 +358,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'vwce-vs-cspx-vs-iwda',
     'mejores-etfs-espana-2026',
     'como-elegir-tu-primer-etf-espana-2026',
-    'mejores-fondos-indexados-espana-2026',
+    'msci-world-vs-sp500',
   ],
   'como-invertir-msci-world-espana': [
     'que-es-el-msci-world',
