@@ -73,7 +73,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'plan-pensiones-indexado-espana-2026',
   ],
   'que-hacer-cuando-el-mercado-cae': [
-    'dca-vs-lump-sum-aportar-mensual',
+    'volatilidad-riesgo-inversion',
     'es-buen-momento-para-invertir',
     'fondo-de-emergencia-cuanto-necesitas',
     'errores-comunes-al-invertir',
@@ -148,7 +148,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'es-buen-momento-para-invertir',
     'que-hacer-cuando-el-mercado-cae',
     'fondos-indexados-vs-gestion-activa',
-    'bogleheads-espana-guia-completa',
+    'volatilidad-riesgo-inversion',
   ],
   'regla-del-4-por-ciento': [
     'fire-espana-cuanto-necesitas',
@@ -185,6 +185,12 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'como-invertir-sp500-espana',
     'vwce-vs-cspx-vs-iwda',
     'msci-world-vs-msci-acwi-diferencias',
+  ],
+  'volatilidad-riesgo-inversion': [
+    'que-hacer-cuando-el-mercado-cae',
+    'errores-comunes-al-invertir',
+    'renta-variable-vs-renta-fija-cartera',
+    'es-buen-momento-para-invertir',
   ],
   'mejores-etfs-espana-2026': [
     'vwce-analisis-completo',

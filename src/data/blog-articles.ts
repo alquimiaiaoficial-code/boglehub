@@ -19,6 +19,105 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'volatilidad-riesgo-inversion',
+    title: 'Volatilidad y riesgo: por qué las caídas no son el verdadero peligro (2026)',
+    excerpt:
+      'Volatilidad no es lo mismo que riesgo. Por qué las caídas temporales no son el verdadero peligro, y cuál es el riesgo que de verdad debe preocuparte al invertir.',
+    publishedAt: '2026-06-04',
+    readingMinutes: 8,
+    keywords: ['volatilidad vs riesgo', 'qué es el riesgo al invertir', 'volatilidad inversión', 'riesgo de perder dinero bolsa', 'caídas de la bolsa'],
+    faq: [
+      {
+        q: '¿Es lo mismo la volatilidad que el riesgo?',
+        a: 'No. La volatilidad es cuánto sube y baja el precio de tu inversión; el riesgo, para un inversor a largo plazo, es la probabilidad de una pérdida permanente de capital o de no alcanzar tus objetivos. Una caída temporal es volatilidad, no pérdida: solo se convierte en pérdida real si vendes en el mínimo.',
+      },
+      {
+        q: '¿Las caídas de la bolsa son una pérdida de dinero?',
+        a: 'Solo si vendes. Mientras mantienes, una caída es una pérdida "sobre el papel", no realizada. Históricamente, un índice global diversificado se ha recuperado de todas sus caídas y ha seguido subiendo, así que para quien aguanta el largo plazo las bajadas han sido baches temporales, no pérdidas definitivas.',
+      },
+      {
+        q: '¿Cuál es el verdadero riesgo al invertir a largo plazo?',
+        a: 'No la volatilidad en sí, sino tres cosas: tu comportamiento (vender en pánico, que convierte una caída en pérdida real), la concentración (apostar por una acción o un solo país que puede hundirse) y no invertir (dejar el dinero en efectivo perdiendo poder adquisitivo por la inflación). Esos son los riesgos que de verdad te pueden costar dinero.',
+      },
+      {
+        q: '¿Puede un fondo indexado global irse a cero?',
+        a: 'En la práctica, no: para que un índice mundial valiera cero tendría que desaparecer la economía global entera. Una acción individual sí puede quebrar y valer cero, pero un índice diversificado se renueva solo (si una empresa cae, otra ocupa su lugar). Por eso diversificar elimina casi por completo el riesgo de pérdida permanente, dejando solo la volatilidad, que es asumible.',
+      },
+      {
+        q: '¿Cómo reduzco el riesgo sin renunciar a la rentabilidad?',
+        a: 'Estructurando la inversión para soportar la volatilidad: invierte en bolsa solo el dinero a largo plazo, ten un fondo de emergencia para no vender en las caídas, diversifica globalmente, elige una proporción de renta fija que puedas mantener sin vender, e ignora el ruido diario. La volatilidad es el precio de la rentabilidad; el objetivo es soportarla, no eliminarla.',
+      },
+    ],
+    content: `# Volatilidad y riesgo: por qué las caídas no son el verdadero peligro (2026)
+
+"La bolsa es muy arriesgada." Es la frase que mantiene a millones de personas con su dinero perdiendo valor en el banco. Pero esconde una confusión importante: mezcla **volatilidad** (que los precios suban y bajen) con **riesgo** (la posibilidad de perder tu dinero de verdad). No son lo mismo, y entender la diferencia es lo que separa a quien aprovecha la bolsa de quien le tiene miedo. Esta guía aclara qué es de verdad el riesgo al invertir.
+
+La conclusión por adelantado: para un inversor a largo plazo y diversificado, las caídas temporales no son el verdadero peligro —solo se convierten en pérdida si vendes—. Los riesgos que de verdad importan son otros: vender en pánico, concentrar, y el silencioso de no invertir y dejar que la inflación te empobrezca.
+
+---
+
+## Volatilidad no es lo mismo que riesgo
+
+- **Volatilidad**: cuánto oscila el precio de tu inversión arriba y abajo. La bolsa es [volátil](/glosario/volatilidad): un año sube un 25%, otro cae un 20%. Es su naturaleza.
+- **Riesgo** (para un inversor a largo plazo): la probabilidad de una **pérdida permanente** de tu capital o de no alcanzar tus objetivos.
+
+La clave es esta: **una caída temporal no es una pérdida**. Solo se convierte en pérdida real si **vendes** en el mínimo. Si mantienes, una caída es un bache en el camino, no el final del viaje. Históricamente, un índice global diversificado se ha recuperado de **todas** sus caídas y ha seguido subiendo; el [drawdown](/glosario/drawdown) (la caída desde máximos) siempre ha sido temporal para quien aguantó.
+
+---
+
+## El verdadero riesgo nº1: tu propio comportamiento
+
+La mayor fuente de pérdidas permanentes no es el mercado: eres tú vendiendo cuando todo está en rojo. La volatilidad solo te hace daño si reaccionas a ella. Quien convierte una caída del 30% en una pérdida real es quien vende en el peor momento; quien mantiene, ve cómo el papel vuelve a verde. Por eso el mayor "gestor de riesgo" de tu cartera es tu temperamento, no tus fondos. Lo desarrollamos en [qué hacer cuando el mercado cae](/blog/que-hacer-cuando-el-mercado-cae) y en los [errores comunes al invertir](/blog/errores-comunes-al-invertir).
+
+---
+
+## El riesgo que sí es de verdad: concentrar
+
+Aquí está la diferencia crucial. Una **acción individual** sí puede tener riesgo de pérdida permanente: una empresa puede quebrar y valer cero, y no volver nunca. Un **índice global diversificado**, en cambio, **no puede irse a cero** sin que desaparezca la economía mundial entera: si una empresa cae, otra ocupa su lugar.
+
+Por eso concentrar tu dinero en una acción, un sector o un solo país es asumir un riesgo real que el mercado no te compensa, mientras que diversificar globalmente convierte la volatilidad (asumible) en tu principal "riesgo", eliminando casi por completo el de pérdida permanente. Es la lógica detrás de [indexarse](/blog/fondos-indexados-vs-gestion-activa).
+
+---
+
+## El riesgo silencioso: no invertir
+
+Quien evita la bolsa "por seguridad" y deja todo en efectivo no elimina el riesgo: lo **cambia por otro peor y garantizado**, el de que la [inflación](/blog/proteger-ahorros-inflacion) le coma el poder adquisitivo año tras año. La volatilidad de la bolsa al menos viene acompañada de rentabilidad a largo plazo; la "tranquilidad" del dinero parado solo garantiza empobrecerse despacio. No asumir riesgo de mercado es, en sí mismo, un riesgo.
+
+---
+
+## La volatilidad es el precio de la rentabilidad
+
+Conviene verlo así: la mayor rentabilidad histórica de la renta variable **no es gratis**; el precio que pagas por ella es soportar la volatilidad por el camino. Si pudieras tener la rentabilidad sin los sustos, todo el mundo lo haría y esa rentabilidad desaparecería. La volatilidad no es un fallo del sistema: es **la razón** por la que la bolsa paga más que un depósito. Aceptarla con un horizonte largo es lo que te da derecho a su recompensa.
+
+---
+
+## Cómo convivir con la volatilidad
+
+No se trata de eliminarla (imposible sin renunciar a la rentabilidad), sino de **estructurar tu inversión para soportarla**:
+- **Horizonte largo**: solo inviertes en bolsa el dinero que no necesitas en años.
+- **Fondo de emergencia**: para no tener que vender en una caída.
+- **Diversificación global**: para que la volatilidad no sea riesgo de quiebra.
+- **Una [asignación de activos](/blog/renta-variable-vs-renta-fija-cartera) que aguantes**: si un 100% bolsa te haría vender, añade renta fija hasta un nivel que puedas sostener.
+- **Ignorar el ruido**: no mires la cartera cada día; la volatilidad diaria es irrelevante para tu objetivo a 20 años.
+
+---
+
+## Conclusión práctica
+
+La pregunta correcta no es "¿cómo evito que mi inversión baje?" —no puedes, y querer hacerlo te lleva al riesgo peor de no invertir—, sino "¿tengo el horizonte y el temperamento para soportar las bajadas a cambio de la recompensa?". Si diversificas globalmente, mantienes a largo plazo y no vendes en pánico, la volatilidad deja de ser tu enemiga y pasa a ser, simplemente, el peaje que pagas por una rentabilidad que el dinero parado nunca te dará. El verdadero riesgo no es que la bolsa caiga; es que tú vendas, concentres o no empieces.
+
+Para gestionar bien las caídas cuando lleguen, sigue por [qué hacer cuando el mercado cae](/blog/que-hacer-cuando-el-mercado-cae).
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Qué hacer cuando el mercado cae — BogleHub](/blog/que-hacer-cuando-el-mercado-cae) — Cómo no convertir la volatilidad en pérdida permanente.
+- [Renta variable vs renta fija — BogleHub](/blog/renta-variable-vs-renta-fija-cartera) — Ajustar la volatilidad de tu cartera a lo que puedes soportar.
+- [Cómo proteger tus ahorros de la inflación — BogleHub](/blog/proteger-ahorros-inflacion) — El riesgo silencioso de no invertir.
+`,
+  },
+  {
     slug: 'msci-world-vs-sp500',
     title: 'MSCI World o S&P 500: ¿diversificar o concentrarse en EE.UU.? (2026)',
     excerpt:

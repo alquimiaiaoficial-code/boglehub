@@ -138,6 +138,7 @@ export const ARTICLE_CATEGORY: Record<string, BlogCategory> = {
   'que-hacer-cuando-el-mercado-cae': 'psicologia-mercado',
   'es-buen-momento-para-invertir': 'psicologia-mercado',
   'errores-comunes-al-invertir': 'psicologia-mercado',
+  'volatilidad-riesgo-inversion': 'psicologia-mercado',
 
   // Planificación y FIRE
   'fire-espana-cuanto-necesitas': 'planificacion-fire',
