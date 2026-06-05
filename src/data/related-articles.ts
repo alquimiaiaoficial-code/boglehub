@@ -62,7 +62,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
   ],
   'dca-vs-lump-sum-aportar-mensual': [
     'interes-compuesto-inversion',
-    'trade-republic-opinion-2026',
+    'es-buen-momento-para-invertir',
     'como-empezar-a-invertir-poco-dinero',
     'que-hacer-cuando-el-mercado-cae',
   ],
@@ -74,7 +74,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
   ],
   'que-hacer-cuando-el-mercado-cae': [
     'dca-vs-lump-sum-aportar-mensual',
-    'como-rebalancear-cartera-indexada',
+    'es-buen-momento-para-invertir',
     'fondo-de-emergencia-cuanto-necesitas',
     'bogleheads-espana-guia-completa',
   ],
@@ -119,6 +119,12 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'mejores-fondos-indexados-espana-2026',
     'que-es-el-msci-world',
     'interes-compuesto-inversion',
+  ],
+  'es-buen-momento-para-invertir': [
+    'dca-vs-lump-sum-aportar-mensual',
+    'interes-compuesto-inversion',
+    'que-hacer-cuando-el-mercado-cae',
+    'como-empezar-a-invertir-poco-dinero',
   ],
   'mejores-etfs-espana-2026': [
     'vwce-analisis-completo',

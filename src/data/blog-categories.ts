@@ -128,6 +128,7 @@ export const ARTICLE_CATEGORY: Record<string, BlogCategory> = {
 
   // Psicología y crisis
   'que-hacer-cuando-el-mercado-cae': 'psicologia-mercado',
+  'es-buen-momento-para-invertir': 'psicologia-mercado',
 
   // Planificación y FIRE
   'fire-espana-cuanto-necesitas': 'planificacion-fire',

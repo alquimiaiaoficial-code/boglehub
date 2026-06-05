@@ -19,6 +19,114 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'es-buen-momento-para-invertir',
+    title: '¿Es buen momento para invertir en bolsa? (2026)',
+    excerpt:
+      'La pregunta que paraliza a todo inversor: nadie acierta el timing del mercado y esperar suele costar más que entrar. Qué hacer en su lugar.',
+    publishedAt: '2026-06-04',
+    readingMinutes: 9,
+    keywords: ['es buen momento para invertir', 'market timing', 'cuándo invertir en bolsa', 'invertir en máximos', 'time in the market'],
+    faq: [
+      {
+        q: '¿Es buen momento para invertir en bolsa en 2026?',
+        a: 'No existe un momento perfecto, pero para casi cualquiera con un horizonte largo, el dinero que no necesita a corto plazo y su fondo de emergencia hecho, la respuesta general es sí, hoy, con una cartera indexada barata y diversificada. El coste de esperar al momento ideal suele ser mayor que el de entrar ahora.',
+      },
+      {
+        q: '¿Debería esperar a que la bolsa baje para invertir?',
+        a: 'Intentar cronometrar el mercado de forma fiable no lo consigue casi nadie, ni los profesionales. Esperar a una caída tiene dos riesgos: que no llegue en mucho tiempo (mientras el mercado sube sin ti) y que, cuando llegue, sea desde un nivel más alto que el de hoy. Lo que más construye patrimonio es el tiempo que tu dinero pasa invertido, no acertar el momento de entrada.',
+      },
+      {
+        q: '¿Es mala idea invertir cuando la bolsa está en máximos?',
+        a: 'No. En un mercado que sube a largo plazo, los máximos históricos son lo normal, no la excepción: la bolsa pasa buena parte del tiempo cerca de máximos. Históricamente, invertir en máximos ha seguido siendo rentable a largo plazo, porque detrás de cada máximo ha venido, antes o después, otro mayor.',
+      },
+      {
+        q: '¿Qué pasa si invierto justo antes de una caída?',
+        a: 'Con un horizonte largo y sin vender en pánico, importa mucho menos de lo que parece: el mercado se ha recuperado de todas las caídas históricas y ha seguido subiendo. Si inviertes una cantidad grande de golpe y te angustia el riesgo de entrar antes de una caída, repartirla en aportaciones a lo largo de unos meses (DCA) es un punto medio razonable.',
+      },
+      {
+        q: '¿Qué significa "time in the market beats timing the market"?',
+        a: 'Es el principio de que el tiempo que tu dinero pasa invertido importa más que intentar adivinar los mejores momentos para entrar y salir. Como las mayores subidas suelen ocurrir muy cerca de las caídas, salirse para "esperar" arriesga perderse el rebote. Empezar pronto y mantener con disciplina bate, en la práctica, a tratar de cronometrar el mercado.',
+      },
+    ],
+    content: `# ¿Es buen momento para invertir en bolsa? (2026)
+
+Es, probablemente, la pregunta que más dinero ha hecho perder a los inversores: no por invertir en el momento equivocado, sino por **no invertir nunca** esperando el momento perfecto. Si has aplazado empezar porque "la bolsa está muy alta", "puede venir una corrección" o "mejor espero a que baje", este artículo es para ti. La respuesta corta: el mejor momento para invertir fue hace años; el segundo mejor es hoy, con cabeza.
+
+La conclusión por adelantado: nadie predice de forma fiable los movimientos del mercado a corto plazo, ni siquiera los profesionales. Lo que de verdad construye patrimonio no es acertar el momento, sino el **tiempo que tu dinero pasa invertido**.
+
+---
+
+## Por qué el "market timing" no funciona
+
+Acertar cuándo entrar y salir del mercado exige acertar **dos veces**: cuándo vender antes de la caída y cuándo volver a comprar antes de la subida. Hacerlo una vez es suerte; hacerlo de forma consistente, durante décadas, no lo logra prácticamente nadie, y desde luego no de manera predecible.
+
+El problema es que las grandes subidas y las grandes caídas están **muy juntas en el tiempo**. Los mejores días de bolsa suelen ocurrir en mitad de las crisis, a pocos días de los peores. Si te sales para "esperar a que pase la tormenta", el riesgo real no es seguir dentro: es **perderte el rebote**. Diversos estudios muestran que perderse solo un puñado de los mejores días del mercado a lo largo de los años reduce drásticamente la rentabilidad final.
+
+---
+
+## "La bolsa está en máximos": por qué no es razón para esperar
+
+Es la objeción más común, y se basa en una intuición equivocada. En un mercado que sube a largo plazo, **los máximos históricos son lo normal**, no la excepción: la bolsa pasa una buena parte del tiempo en o cerca de máximos, precisamente porque tiende a subir con los años.
+
+Esperar a una caída para entrar tiene dos problemas: puede que la caída no llegue en mucho tiempo (mientras el mercado sigue subiendo sin ti), y aunque llegue, puede hacerlo desde un nivel más alto que el de hoy. "Comprar en máximos" suena mal, pero históricamente ha seguido siendo rentable a largo plazo, porque detrás de cada máximo ha venido, antes o después, otro mayor.
+
+---
+
+## Lo que de verdad importa: tiempo en el mercado
+
+La frase lo resume: **"time in the market beats timing the market"** (el tiempo dentro del mercado bate a intentar cronometrarlo). Cuanto antes empiezas y más tiempo mantienes, más trabaja a tu favor el [interés compuesto](/blog/interes-compuesto-inversion), que es la verdadera fuerza detrás de los resultados a largo plazo.
+
+Un inversor mediocre que empieza pronto y no toca su cartera suele acabar mejor que uno brillante que entra y sale tratando de adivinar el mercado. La paciencia, no la puntería, es la ventaja del inversor particular.
+
+---
+
+## Entonces, ¿qué hago con mi dinero hoy?
+
+Depende de tu situación, no del nivel del mercado:
+
+1. **¿Tienes fondo de emergencia y sin deuda cara?** Si no, eso va primero (ver [fondo de emergencia](/blog/fondo-de-emergencia-cuanto-necesitas)). El dinero que vas a invertir debe ser dinero que no necesitas a corto plazo.
+
+2. **¿Es una aportación mensual de tu ahorro?** Invierte sin pensar en el momento: aportar de forma periódica (DCA) promedia el precio y te quita la decisión de encima. Es el modo por defecto del inversor indexado.
+
+3. **¿Es una cantidad grande de golpe (una herencia, un bonus) y te angustia?** Estadísticamente, invertirla toda de una vez ha rendido más de media; pero si el miedo a entrar justo antes de una caída te paralizaría, repartirla en aportaciones a lo largo de unos meses es un punto medio razonable. Lo vemos en [DCA vs lump sum](/blog/dca-vs-lump-sum-aportar-mensual).
+
+En los tres casos, la decisión es **empezar**, no adivinar.
+
+---
+
+## El único "timing" que sí controlas
+
+No puedes controlar lo que hará el mercado, pero sí estas tres cosas, que son las que de verdad determinan tu resultado:
+- **Cuándo empiezas** (cuanto antes, mejor).
+- **Cuánto tiempo te mantienes** (cuanto más, mejor).
+- **Cuánto pagas en comisiones** (cuanto menos, mejor).
+
+Esos tres factores están bajo tu control y pesan mucho más que acertar si el mes que viene la bolsa sube o baja. Una [cartera indexada diversificada y barata](/blog/cartera-boglehead-3-fondos-espana), mantenida con disciplina, convierte el "¿es buen momento?" en una pregunta irrelevante.
+
+---
+
+## Y cuando llegue la próxima caída (que llegará)
+
+Habrá caídas. Es una certeza, no un riesgo: forman parte del trato. La diferencia entre quien gana y quien pierde no es evitarlas —es imposible—, sino **no vender en pánico** cuando ocurren. Tener tu horizonte claro y tu fondo de emergencia hecho es lo que te permite aguantar. Sobre cómo gestionarlas, [qué hacer cuando el mercado cae](/blog/que-hacer-cuando-el-mercado-cae).
+
+---
+
+## Conclusión práctica
+
+¿Es buen momento para invertir? Para casi cualquiera con un horizonte largo, el dinero que no necesita a corto plazo y su colchón hecho, la respuesta es sí, hoy, con una cartera indexada barata y diversificada, y sin volver a mirar si "está alta o baja". El momento perfecto no existe, pero el coste de esperarlo es muy real. Empieza, automatiza y deja que el tiempo —tu mayor aliado— haga el trabajo.
+
+Si aún no has dado el primer paso, la guía de [cómo empezar a invertir con poco dinero](/blog/como-empezar-a-invertir-poco-dinero) te lleva de la mano.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [DCA vs lump sum: qué dice la evidencia — BogleHub](/blog/dca-vs-lump-sum-aportar-mensual) — Cómo desplegar el dinero según tu situación.
+- [Interés compuesto: la única fuerza que importa — BogleHub](/blog/interes-compuesto-inversion) — Por qué el tiempo dentro del mercado es decisivo.
+- [Qué hacer cuando el mercado cae — BogleHub](/blog/que-hacer-cuando-el-mercado-cae) — Cómo no vender en pánico en la próxima corrección.
+`,
+  },
+  {
     slug: 'pisos-vs-fondos-indexados-espana',
     title: 'Pisos vs fondos indexados: ¿ladrillo o bolsa? (2026)',
     excerpt:
