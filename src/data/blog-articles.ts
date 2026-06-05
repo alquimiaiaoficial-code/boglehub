@@ -19,6 +19,117 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'donde-aparcar-dinero-corto-plazo',
+    title: 'Dónde aparcar el dinero a corto plazo: cuenta remunerada, fondo monetario o Letras (2026)',
+    excerpt:
+      'El dinero que usarás pronto no va en bolsa, pero tampoco al 0%. Cuenta remunerada, fondo monetario y Letras del Tesoro comparados por liquidez y rentabilidad.',
+    publishedAt: '2026-06-04',
+    readingMinutes: 8,
+    keywords: ['dónde aparcar el dinero', 'cuenta remunerada vs fondo monetario', 'dónde meter dinero a corto plazo', 'fondo monetario o Letras', 'dinero que no quiero invertir'],
+    faq: [
+      {
+        q: '¿Dónde meto el dinero que voy a necesitar pronto?',
+        a: 'No en bolsa: el dinero a corto plazo (fondo de emergencia, objetivos a 1-3 años) debe estar seguro y disponible. Las tres opciones razonables son una cuenta remunerada (liquidez inmediata), un fondo monetario (algo más de rentabilidad con bajísimo riesgo) y las Letras del Tesoro (para una fecha concreta). Muchos combinan cuenta + fondo monetario.',
+      },
+      {
+        q: '¿Qué es mejor, una cuenta remunerada o un fondo monetario?',
+        a: 'La cuenta remunerada da liquidez inmediata y la garantía de depósitos hasta 100.000€, ideal para el fondo de emergencia. El fondo monetario suele rendir algo más (cercano al tipo del BCE), con liquidez en 1-2 días y la ventaja del traspaso fiscal, pero no es un depósito garantizado. Combinar ambos cubre la mayoría de necesidades.',
+      },
+      {
+        q: '¿Es seguro un fondo monetario?',
+        a: 'El riesgo es muy bajo: invierte en deuda de muy corto plazo y alta calidad. No es un depósito, así que no tiene la garantía de 100.000€ del Fondo de Garantía de Depósitos, pero la probabilidad de pérdida es mínima. Es una opción muy usada para aparcar dinero con algo de rentabilidad y liquidez rápida.',
+      },
+      {
+        q: '¿Cuándo conviene comprar Letras del Tesoro?',
+        a: 'Cuando tienes dinero con una fecha concreta a meses vista (por ejemplo, lo necesitas en 9 meses): compras Letras a ese plazo y fijas la rentabilidad si las mantienes a vencimiento, con el respaldo del Estado. Para dinero que puedes necesitar en cualquier momento, una cuenta o un fondo monetario dan más flexibilidad.',
+      },
+      {
+        q: '¿Cómo tributan los intereses de la cuenta, el fondo monetario y las Letras?',
+        a: 'Los tres tributan en la base del ahorro del IRPF (tramos del 19% al 28% en 2026). La diferencia es que el fondo monetario, al ser un fondo, permite el traspaso fiscal: puedes moverlo a otro fondo sin tributar y solo pagas cuando reembolsas a tu cuenta, lo que difiere el impuesto.',
+      },
+    ],
+    content: `# Dónde aparcar el dinero a corto plazo: cuenta remunerada, fondo monetario o Letras (2026)
+
+No todo tu dinero debe estar en bolsa. El fondo de emergencia, el ahorro para un objetivo a uno o dos años o el dinero que aún no has decidido invertir necesitan un sitio donde **no pierdan valor ni dependan de los vaivenes del mercado**, pero tampoco se queden dormidos al 0% en la cuenta corriente. Esta guía compara las tres opciones razonables para ese dinero a corto plazo en 2026 —cuenta remunerada, fondo monetario y Letras del Tesoro— y te ayuda a elegir.
+
+La conclusión por adelantado: para liquidez total y simplicidad, una cuenta remunerada; para sacarle algo más con muy bajo riesgo y ventaja fiscal, un fondo monetario; para una fecha concreta a meses vista, Letras del Tesoro. Muchos combinan los tres.
+
+---
+
+## Qué dinero es "de corto plazo"
+
+Hablamos del dinero que vas a necesitar pronto o que no puede permitirse una caída:
+- Tu [fondo de emergencia](/blog/fondo-de-emergencia-cuanto-necesitas).
+- El ahorro para un objetivo a 1-3 años (un coche, una boda, la entrada de un piso a corto plazo).
+- Dinero que tendrás invertido pero que aún no has desplegado.
+
+Para todo esto, la prioridad es **seguridad y liquidez**, no rentabilidad. Y eso descarta la bolsa, pero no te obliga a aceptar el 0%.
+
+---
+
+## Las tres opciones
+
+### Cuenta remunerada (o de ahorro)
+
+Una cuenta que paga intereses por tu saldo. Ventajas: **liquidez inmediata**, capital garantizado y cubierto por el [Fondo de Garantía de Depósitos hasta 100.000€](/blog/que-pasa-si-quiebra-tu-broker), y simplicidad total. Inconvenientes: el tipo lo fija el banco y puede ser promocional o cambiar; los intereses tributan en el IRPF del ahorro. Es la opción por defecto para el fondo de emergencia.
+
+### Fondo monetario
+
+Un [fondo monetario](/glosario/fondo-monetario) invierte en deuda de muy corto plazo (letras, depósitos) y ofrece una rentabilidad **cercana al tipo de interés del BCE**, con muy bajo riesgo. Ventajas: suele rendir algo más que muchas cuentas, liquidez en 1-2 días hábiles y, por ser un fondo, disfruta del **traspaso fiscal** (puedes moverlo a otro fondo sin tributar, y solo pagas al reembolsar a tu cuenta). Inconvenientes: no es un depósito (no tiene garantía de 100.000€, aunque el riesgo es muy bajo por la calidad de los activos) y su rentabilidad baja si bajan los tipos.
+
+### Letras del Tesoro
+
+Las [Letras del Tesoro](/glosario/letras-del-tesoro) son deuda pública española a 3, 6, 9 o 12 meses. Ventajas: respaldadas por el Estado, rentabilidad conocida de antemano si las mantienes a vencimiento, riesgo muy bajo. Inconvenientes: te comprometes a un plazo (aunque hay mercado secundario), la compra es algo menos inmediata (vía Banco de España o tu bróker) y los rendimientos tributan en el IRPF del ahorro. Útiles para dinero con una **fecha concreta**.
+
+---
+
+## Comparativa rápida
+
+| | Cuenta remunerada | Fondo monetario | Letras del Tesoro |
+|---|---|---|---|
+| Liquidez | Inmediata | 1-2 días | A vencimiento (o secundario) |
+| Riesgo | Muy bajo | Muy bajo | Muy bajo |
+| Rentabilidad | Variable (banco) | ~tipo BCE | Conocida a vencimiento |
+| Garantía | FGD 100.000€ | Sin FGD (activos de calidad) | Estado español |
+| Fiscalidad | IRPF ahorro | IRPF ahorro (con traspaso) | IRPF ahorro |
+| Mejor para | Fondo de emergencia | Aparcar con algo de rentabilidad | Objetivo con fecha |
+
+---
+
+## Cómo elegir según tu caso
+
+- **Fondo de emergencia**: prioriza la liquidez. Una cuenta remunerada, o una combinación de cuenta (para lo inmediato) + fondo monetario (para el resto), es lo más práctico.
+- **Objetivo con fecha concreta (p. ej., dinero que necesitas en 9 meses)**: unas Letras del Tesoro a ese plazo te fijan la rentabilidad y casan con la fecha.
+- **Dinero que invertirás pronto pero aún no**: un fondo monetario lo rentabiliza mientras decides, con liquidez rápida y sin tributar hasta que lo muevas fuera de fondos.
+
+No tienes que elegir solo uno: combinar cuenta + fondo monetario cubre la mayoría de necesidades.
+
+---
+
+## Lo que este dinero NO debe hacer
+
+- **No debe estar en bolsa ni en fondos de renta variable**: una caída justo cuando lo necesitas arruinaría su función.
+- **No debe quedarse al 0% en la cuenta corriente**: con la [inflación](/blog/proteger-ahorros-inflacion) comiéndose el poder adquisitivo, dejarlo dormido es una pérdida segura.
+- **No debe confundirse con tu inversión a largo plazo**: esto es para preservar, no para crecer. El crecimiento lo busca el dinero a largo plazo, invertido y diversificado.
+
+---
+
+## Conclusión práctica
+
+Para el dinero a corto plazo, la jerarquía es sencilla: cuenta remunerada para la liquidez del día a día y el fondo de emergencia, fondo monetario para sacarle algo más con bajísimo riesgo y ventaja fiscal, y Letras del Tesoro cuando tienes una fecha concreta. Lo importante es que ese dinero esté seguro y disponible, sin regalarle a la inflación lo que podrías conservar con cualquiera de estas tres opciones. Y, sobre todo, no confundir este "cubo" con el de largo plazo, que es el que debe estar invertido.
+
+Si aún no tienes claro cuánto reservar aquí, empieza por la [guía del fondo de emergencia](/blog/fondo-de-emergencia-cuanto-necesitas).
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Fondo de emergencia: cuánto necesitas — BogleHub](/blog/fondo-de-emergencia-cuanto-necesitas) — Cuánto dinero reservar para imprevistos antes de invertir.
+- [Cómo proteger tus ahorros de la inflación — BogleHub](/blog/proteger-ahorros-inflacion) — Por qué el dinero parado al 0% pierde valor.
+- [Qué pasa si quiebra tu bróker — BogleHub](/blog/que-pasa-si-quiebra-tu-broker) — Las garantías que protegen tu dinero y tus inversiones.
+`,
+  },
+  {
     slug: 'regla-del-4-por-ciento',
     title: 'La regla del 4% y tu número FIRE: cuánto necesitas para vivir de tus inversiones (2026)',
     excerpt:

@@ -104,7 +104,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
   ],
   'fondo-de-emergencia-cuanto-necesitas': [
     'como-empezar-a-invertir-poco-dinero',
-    'interes-compuesto-inversion',
+    'donde-aparcar-dinero-corto-plazo',
     'proteger-ahorros-inflacion',
     'dca-vs-lump-sum-aportar-mensual',
   ],
@@ -136,7 +136,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'que-es-el-msci-world',
     'fondo-de-emergencia-cuanto-necesitas',
     'pisos-vs-fondos-indexados-espana',
-    'interes-compuesto-inversion',
+    'donde-aparcar-dinero-corto-plazo',
   ],
   'renta-variable-vs-renta-fija-cartera': [
     'cartera-boglehead-3-fondos-espana',
@@ -155,6 +155,12 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'cuanto-invertir-al-mes-jubilarse-millonario',
     'interes-compuesto-inversion',
     'renta-variable-vs-renta-fija-cartera',
+  ],
+  'donde-aparcar-dinero-corto-plazo': [
+    'fondo-de-emergencia-cuanto-necesitas',
+    'proteger-ahorros-inflacion',
+    'que-pasa-si-quiebra-tu-broker',
+    'como-empezar-a-invertir-poco-dinero',
   ],
   'mejores-etfs-espana-2026': [
     'vwce-analisis-completo',
