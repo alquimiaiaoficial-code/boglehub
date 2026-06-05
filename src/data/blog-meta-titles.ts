@@ -49,6 +49,7 @@ export const BLOG_META_TITLES: Record<string, string> = {
   'etoro-opinion-2026': 'eToro: opinión para invertir indexado (2026)',
   'que-pasa-si-quiebra-tu-broker': 'Qué pasa si quiebra tu bróker (2026)',
   'mejor-roboadvisor-espana-2026': 'Mejor roboadvisor en España (2026)',
+  'inbestme-opinion-2026': 'inbestMe: opinión y análisis (2026)',
   'modelo-d6-etf-espana': 'Modelo D6 y ETFs: ¿hay que presentarlo? (2026)',
   'mejores-fondos-indexados-espana-2026': 'Mejores fondos indexados en España (2026)',
   'como-invertir-sp500-espana': 'Cómo invertir en el S&P 500 desde España',

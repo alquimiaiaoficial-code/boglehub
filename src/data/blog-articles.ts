@@ -19,6 +19,130 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'inbestme-opinion-2026',
+    title: 'inbestMe: opinión y análisis del roboadvisor ESG (2026)',
+    excerpt:
+      'inbestMe es el roboadvisor de las carteras ESG y los 11 perfiles de riesgo, a cambio de comisiones algo más altas que Indexa. Para quién encaja en 2026.',
+    publishedAt: '2026-06-04',
+    readingMinutes: 7,
+    keywords: ['inbestMe opinión', 'inbestMe roboadvisor', 'inbestMe ESG', 'inbestMe comisiones', 'inbestMe vs Indexa'],
+    faq: [
+      {
+        q: '¿Vale la pena inbestMe frente a Indexa Capital?',
+        a: 'Depende de tus prioridades. inbestMe ofrece carteras ESG (100% sostenibles) y 11 perfiles de riesgo, algo que Indexa no tiene por defecto, a cambio de un coste algo mayor (0,1-0,2 puntos más). Si la inversión socialmente responsable o la granularidad fina te importan, inbestMe encaja; si solo miras el coste, Indexa es más económico.',
+      },
+      {
+        q: '¿Qué son las carteras ESG de inbestMe?',
+        a: 'Son carteras construidas con fondos que aplican criterios ambientales, sociales y de gobernanza (ESG), es decir, inversión socialmente responsable. inbestMe es de los pocos roboadvisors españoles que las ofrece de serie. Ten en cuenta que el ESG es una decisión de valores, no una garantía de mayor rentabilidad.',
+      },
+      {
+        q: '¿Cuánto cuesta inbestMe?',
+        a: 'El coste total de inbestMe es de 0,41-0,69% anual (gestión + custodia + TER de los fondos), algo por encima de Indexa (0,40-0,50%), Finizens (0,32-0,42%) y MyInvestor (0,30-0,40%). Esa diferencia es el precio de la especialización temática y la granularidad de perfiles.',
+      },
+      {
+        q: '¿Es seguro inbestMe?',
+        a: 'Sí. inbestMe es una agencia de valores registrada en la CNMV (nº 294). Tu dinero no está en inbestMe, sino en fondos a tu nombre custodiados en un banco depositario, separados de su patrimonio. Si quebrara, tu cartera seguiría siendo tuya y está cubierta por el Fondo de Garantía de Inversiones hasta 100.000€.',
+      },
+      {
+        q: '¿Cuál es el mínimo de apertura de inbestMe?',
+        a: 'El mínimo de inbestMe es de 1.000€, el mismo que Finizens. Es más bajo que Indexa Capital (3.000€) pero más alto que MyInvestor Roboadvisor (150€). Si empiezas con muy poco capital, MyInvestor es más accesible.',
+      },
+    ],
+    content: `# inbestMe: opinión y análisis del roboadvisor ESG (2026)
+
+Entre los roboadvisors españoles, inbestMe ocupa un nicho claro: es el de las carteras temáticas —sobre todo ESG (inversión sostenible)— y el de mayor granularidad de perfiles de riesgo. No es el más barato ni el más grande, pero para un perfil concreto de inversor es la opción que mejor encaja. Este análisis, sin afiliación, explica qué ofrece inbestMe, cuánto cuesta y para quién tiene sentido frente a alternativas como Indexa o MyInvestor.
+
+La conclusión por adelantado: inbestMe brilla si la inversión socialmente responsable es importante para ti o quieres un ajuste muy fino del riesgo. Si solo buscas el coste mínimo, Indexa o MyInvestor son más baratos.
+
+---
+
+## Quién es inbestMe
+
+inbestMe es una **agencia de valores registrada en la CNMV (nº 294)**, fundada en 2017. Gestiona alrededor de 150 millones de euros e invierte en fondos indexados y ETFs de Vanguard, iShares y SPDR. Como el resto de roboadvisors serios, automatiza la construcción de la cartera, el rebalanceo y las aportaciones, y ofrece también plan de pensiones indexado.
+
+Lo que lo distingue no es el tamaño —es más pequeño que Indexa o Finizens— sino su **especialización**: carteras temáticas y una granularidad de perfiles que ningún competidor iguala.
+
+---
+
+## Comisiones: el coste de la especialización
+
+El coste total de inbestMe se sitúa en **0,41-0,69% anual** (gestión + custodia + TER de los fondos), algo por encima de los referentes más baratos:
+
+| Roboadvisor | Coste total anual | Mínimo |
+|---|---|---|
+| MyInvestor | 0,30-0,40% | 150€ |
+| Finizens | 0,32-0,42% | 1.000€ |
+| Indexa Capital | 0,40-0,50% | 3.000€ |
+| **inbestMe** | **0,41-0,69%** | **1.000€** |
+
+La diferencia frente a Indexa (en torno a 0,1-0,2 puntos) es el precio de la especialización temática. Sobre 30.000€, hablamos de unas decenas de euros al año: si valoras las carteras ESG o la granularidad, suele compensar; si no, ese sobrecoste no aporta nada.
+
+---
+
+## Las carteras temáticas: ESG, dividendos y crecimiento
+
+El gran diferencial de inbestMe son sus carteras temáticas, poco comunes entre roboadvisors:
+- **ESG / sostenibles**: carteras construidas con fondos que aplican criterios ambientales, sociales y de gobernanza. Es la propuesta estrella y la razón principal por la que muchos eligen inbestMe.
+- **Dividendos**: orientadas a generar rentas.
+- **Crecimiento**: mayor peso en renta variable de crecimiento.
+
+Indexa y MyInvestor, por defecto, no ofrecen carteras ESG. Si la inversión socialmente responsable es un criterio que para ti no es negociable, inbestMe es de las pocas formas de delegar la gestión manteniéndolo.
+
+**Matiz honesto**: el ESG es una decisión personal de valores, no una garantía de mayor rentabilidad. Hay estudios en ambos sentidos. inbestMe te permite invertir alineado con tus principios; no te promete batir al mercado por ello.
+
+---
+
+## 11 perfiles de riesgo: la máxima granularidad
+
+inbestMe ofrece **11 perfiles de riesgo**, más que ningún otro roboadvisor español (Indexa tiene 10; Finizens y MyInvestor, 5). En la práctica, la diferencia entre 10 y 11 niveles es pequeña, pero para quien quiere afinar al máximo la proporción entre renta variable y renta fija, inbestMe da ese control extra.
+
+---
+
+## Seguridad
+
+inbestMe está **regulado por la CNMV como agencia de valores (nº 294)**. Tu dinero no está en inbestMe: los fondos se custodian a tu nombre en un banco depositario, separados del patrimonio de la empresa. Si inbestMe quebrara, tu cartera seguiría siendo tuya, y además está cubierta por el Fondo de Garantía de Inversiones hasta 100.000€. Es el mismo mecanismo de [segregación de activos](/blog/que-pasa-si-quiebra-tu-broker) que protege a cualquier roboadvisor o bróker regulado.
+
+---
+
+## Para quién tiene sentido inbestMe (y para quién no)
+
+**Tiene sentido si:**
+- La inversión ESG / socialmente responsable es una prioridad para ti.
+- Quieres carteras temáticas (dividendos, crecimiento) gestionadas automáticamente.
+- Valoras la máxima granularidad de perfiles de riesgo.
+
+**No tiene sentido si:**
+- Tu prioridad es el coste mínimo (Indexa o MyInvestor son más baratos).
+- Empiezas con menos de 1.000€ (MyInvestor permite desde 150€).
+- Te da igual el ESG y solo quieres una cartera indexada global estándar.
+
+---
+
+## inbestMe vs Indexa: cómo elegir
+
+Es la comparación más habitual, porque ambos son entidades reguladas con propuesta similar. La regla práctica:
+- **Si quieres ESG o granularidad fina** → inbestMe.
+- **Si quieres el menor coste y el mayor historial** → [Indexa Capital](/blog/indexa-capital-opinion-2026).
+
+Para verlos junto al resto de opciones, la [comparativa del mejor roboadvisor en España](/blog/mejor-roboadvisor-espana-2026) los pone uno al lado del otro, y el [comparador de roboadvisor vs DIY](/calculadora/roboadvisor-vs-diy) calcula si te compensa delegar.
+
+---
+
+## Conclusión práctica
+
+inbestMe no compite por ser el más barato, y no pasa nada: compite por ser el roboadvisor de quien quiere invertir de forma sostenible o con un control fino del riesgo, y en ese nicho es de los mejores. Si el ESG no es tu criterio y solo miras el coste, Indexa o MyInvestor te saldrán más a cuenta. Pero si quieres delegar la gestión sin renunciar a tus valores, inbestMe es una de las pocas opciones serias y reguladas para hacerlo en España.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [inbestMe — Web oficial](https://www.inbestme.com) — Carteras, perfiles, comisiones y condiciones actualizadas.
+- [Mejor roboadvisor en España 2026 — BogleHub](/blog/mejor-roboadvisor-espana-2026) — Comparativa de los cinco roboadvisors más usados.
+- [Indexa Capital opinión 2026 — BogleHub](/blog/indexa-capital-opinion-2026) — La alternativa más barata y con más historial.
+- [¿Los roboadvisors merecen su comisión? — BogleHub](/blog/roboadvisors-espana-merecen-comision) — Cuándo compensa delegar frente al DIY.
+`,
+  },
+  {
     slug: 'mejor-roboadvisor-espana-2026',
     title: 'Mejor roboadvisor en España 2026: comparativa honesta',
     excerpt:

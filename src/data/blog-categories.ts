@@ -144,6 +144,7 @@ export const ARTICLE_CATEGORY: Record<string, BlogCategory> = {
   'etoro-opinion-2026': 'roboadvisors-brokers',
   'que-pasa-si-quiebra-tu-broker': 'roboadvisors-brokers',
   'mejor-roboadvisor-espana-2026': 'roboadvisors-brokers',
+  'inbestme-opinion-2026': 'roboadvisors-brokers',
 }
 
 /**

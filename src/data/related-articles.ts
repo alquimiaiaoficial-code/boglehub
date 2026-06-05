@@ -322,6 +322,12 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'indexa-capital-opinion-2026',
     'finizens-vs-indexa-capital-2026',
     'roboadvisors-espana-merecen-comision',
-    'myinvestor-opinion-2026',
+    'inbestme-opinion-2026',
+  ],
+  'inbestme-opinion-2026': [
+    'mejor-roboadvisor-espana-2026',
+    'indexa-capital-opinion-2026',
+    'finizens-vs-indexa-capital-2026',
+    'roboadvisors-espana-merecen-comision',
   ],
 }
