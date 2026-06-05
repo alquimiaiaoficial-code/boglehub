@@ -105,6 +105,7 @@ export const ARTICLE_CATEGORY: Record<string, BlogCategory> = {
   'cartera-permanente-harry-browne-espana': 'carteras',
   'como-rebalancear-cartera-indexada': 'carteras',
   'renta-variable-vs-renta-fija-cartera': 'carteras',
+  'diversificacion-inversion': 'carteras',
 
   // Fiscalidad
   'fiscalidad-etfs-espana-guia-completa': 'fiscalidad',

@@ -19,6 +19,107 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'diversificacion-inversion',
+    title: 'Diversificación: el único "almuerzo gratis" de la inversión (2026)',
+    excerpt:
+      'La diversificación reduce el riesgo sin reducir la rentabilidad esperada: el único "almuerzo gratis" de la inversión. Qué es, por qué funciona y cómo lograrla.',
+    publishedAt: '2026-06-04',
+    readingMinutes: 8,
+    keywords: ['diversificación inversión', 'qué es diversificar', 'no poner todos los huevos en la misma cesta', 'diversificar cartera', 'almuerzo gratis inversión'],
+    faq: [
+      {
+        q: '¿Qué es la diversificación en inversión?',
+        a: 'Es repartir tu dinero entre muchos activos distintos —empresas, sectores, países, clases de activo— en lugar de concentrarlo en unos pocos. Cuanto más diversificada está tu cartera, menos depende tu resultado de que una sola empresa, sector o país salga bien, lo que reduce el riesgo de que un fracaso concreto te arruine.',
+      },
+      {
+        q: '¿Por qué se dice que la diversificación es el único "almuerzo gratis" de la inversión?',
+        a: 'Porque hace algo poco común en finanzas: reduce el riesgo de la cartera sin reducir su rentabilidad esperada. Normalmente, menos riesgo implica menos rentabilidad; la diversificación rebaja los vaivenes (combinando activos que no se mueven a la vez) manteniendo el crecimiento del conjunto del mercado. De ahí lo de "gratis".',
+      },
+      {
+        q: '¿Cómo diversifico mi cartera de forma sencilla?',
+        a: 'La forma más fácil es un fondo indexado global: con una sola compra tienes miles de empresas de decenas de países en su proporción de mercado. Si además añades algo de renta fija, diversificas también por clase de activo. Para la mayoría, un fondo mundial (o un par) más renta fija es toda la diversificación necesaria.',
+      },
+      {
+        q: '¿Tener muchos fondos es diversificar?',
+        a: 'No necesariamente. Si tus fondos invierten en lo mismo, no diversificas: un MSCI World, un S&P 500 y un Nasdaq 100 a la vez están dominados por las mismas grandes tecnológicas estadounidenses, así que triplicas la misma apuesta. Diversificar de verdad es tener cosas distintas, no muchas copias de lo mismo (el error del solapamiento).',
+      },
+      {
+        q: '¿La diversificación me protege de las crisis de mercado?',
+        a: 'Elimina el riesgo específico (que una empresa, sector o país concreto se hunda), que puede ser una pérdida permanente. No elimina del todo el riesgo de mercado: en una crisis global casi todo cae a la vez. Pero para una cartera diversificada esa caída es temporal y recuperable, mientras que la quiebra de una sola empresa en la que lo concentraste todo, no.',
+      },
+    ],
+    content: `# Diversificación: el único "almuerzo gratis" de la inversión (2026)
+
+Hay una frase famosa en finanzas: la diversificación es "el único almuerzo gratis" que existe en la inversión. La razón es que hace algo casi mágico: **reduce el riesgo de tu cartera sin reducir su rentabilidad esperada**. En un mundo donde casi todo es un trade-off (más rentabilidad = más riesgo), eso es rarísimo y valiosísimo. Esta guía explica qué es la diversificación, por qué funciona y cómo conseguirla sin complicarte.
+
+La conclusión por adelantado: no pongas todos los huevos en la misma cesta. Repartir tu dinero entre miles de empresas de muchos países —algo que un solo fondo indexado global hace por ti— elimina el riesgo de que el fracaso de una empresa, un sector o un país arruine tu patrimonio.
+
+---
+
+## Qué es diversificar
+
+[Diversificar](/glosario/diversificacion) es repartir tu inversión entre muchos activos distintos en lugar de concentrarla en unos pocos. Puedes diversificar en varios niveles:
+- **Por empresas**: tener miles de acciones en lugar de tres o cuatro.
+- **Por sectores**: tecnología, salud, banca, energía, consumo…
+- **Por geografía**: EE.UU., Europa, Asia, emergentes…
+- **Por clase de activo**: renta variable, renta fija, etc.
+
+Cuantos más y más variados, menos depende tu resultado de que **una sola cosa** salga bien.
+
+---
+
+## Por qué funciona: lo que sube y lo que baja no coincide
+
+La clave está en la [correlación](/glosario/correlacion): los distintos activos **no se mueven todos a la vez**. Cuando una empresa o un sector lo hace mal, otro lo hace bien y compensa. Al combinar activos que no están perfectamente sincronizados, los altibajos individuales se suavizan entre sí y la cartera en conjunto oscila menos que sus piezas por separado.
+
+Lo notable es que esa reducción de los vaivenes **no te cuesta rentabilidad esperada**: sigues capturando el crecimiento del conjunto del mercado, pero con menos sobresaltos por el camino. Por eso se le llama el "almuerzo gratis".
+
+---
+
+## El riesgo que elimina (y el que no)
+
+La diversificación elimina el **riesgo específico**: el de que una empresa concreta quiebre, un sector se hunda o un país se estanque. Si tienes miles de empresas y una vale cero, apenas lo notas; si tenías solo esa, lo pierdes todo. Es la diferencia entre una mala noticia y una catástrofe.
+
+Lo que la diversificación **no** elimina del todo es el **riesgo de mercado**: en una crisis global, casi todo cae a la vez durante un tiempo. Pero ese riesgo es **temporal y recuperable** para una cartera diversificada (lo vimos en [volatilidad y riesgo](/blog/volatilidad-riesgo-inversion)), mientras que la quiebra de una empresa concreta puede ser permanente. Diversificar convierte el riesgo "que te arruina" en riesgo "que aguantas".
+
+---
+
+## La forma más fácil de diversificar: un fondo indexado global
+
+Aquí está la belleza de la inversión indexada: **un solo fondo indexado mundial te diversifica al instante** entre miles de empresas de decenas de países, en su proporción de mercado. No tienes que elegir acciones ni países: lo compras todo de golpe, barato. Es la razón por la que [indexarse](/blog/fondos-indexados-vs-gestion-activa) es tan eficaz, y por la que un producto como el [MSCI World o un All-World](/blog/que-es-el-msci-world) resuelve la diversificación de la parte de renta variable de un plumazo.
+
+Si además añades algo de renta fija, diversificas también por clase de activo; cómo repartir, en [renta variable vs renta fija](/blog/renta-variable-vs-renta-fija-cartera).
+
+---
+
+## Cuidado con la falsa diversificación
+
+Tener "muchos fondos" no es diversificar si todos invierten en lo mismo. Comprar un MSCI World, un S&P 500 y un Nasdaq 100 a la vez **no te diversifica**: los tres están dominados por las mismas grandes tecnológicas estadounidenses, así que estás triplicando la misma apuesta. Es el error del [solapamiento de ETFs](/blog/solapamiento-etfs-error-silencioso): parece diversificación, pero es concentración disfrazada. Diversificar bien es tener cosas **distintas**, no muchas copias de lo mismo.
+
+---
+
+## No te pases: la sobrediversificación
+
+En el otro extremo, no hace falta coleccionar veinte fondos. A partir de cierto punto, añadir productos no diversifica más y solo complica la gestión y los costes. Para la inmensa mayoría, **un fondo global (o un par de ellos) más, si acaso, renta fija**, ya es toda la diversificación que necesitas. La sencillez es una virtud, no una carencia.
+
+---
+
+## Conclusión práctica
+
+La diversificación es lo más parecido a una comida gratis que ofrece la inversión: menos riesgo a cambio de la misma rentabilidad esperada. No la consigues comprando muchos productos parecidos, sino teniendo activos **distintos** —idealmente, todo el mercado mundial— en una cartera sencilla. Un fondo indexado global hace casi todo el trabajo; añadir renta fija ajusta el resto. Reparte los huevos en cestas de verdad distintas, mantén la sencillez y habrás eliminado el único riesgo que de verdad puede arruinarte: el de concentrar.
+
+Para entender por qué esa diversificación hace que las caídas no sean el verdadero peligro, sigue por [volatilidad y riesgo](/blog/volatilidad-riesgo-inversion).
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Qué es el MSCI World — BogleHub](/blog/que-es-el-msci-world) — Diversificación global instantánea en un solo índice.
+- [Solapamiento de ETFs — BogleHub](/blog/solapamiento-etfs-error-silencioso) — Cómo evitar la falsa diversificación.
+- [Volatilidad y riesgo — BogleHub](/blog/volatilidad-riesgo-inversion) — Qué riesgo elimina diversificar y cuál no.
+`,
+  },
+  {
     slug: 'volatilidad-riesgo-inversion',
     title: 'Volatilidad y riesgo: por qué las caídas no son el verdadero peligro (2026)',
     excerpt:

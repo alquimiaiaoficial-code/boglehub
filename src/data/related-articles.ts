@@ -46,7 +46,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'vwce-analisis-completo',
     'vwce-vs-cspx-vs-iwda',
     'como-rebalancear-cartera-indexada',
-    'mejores-etfs-espana-2026',
+    'diversificacion-inversion',
   ],
   'fondos-indexados-vs-etfs-espana': [
     'amundi-prime-global-analisis',
@@ -190,7 +190,13 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'que-hacer-cuando-el-mercado-cae',
     'errores-comunes-al-invertir',
     'renta-variable-vs-renta-fija-cartera',
-    'es-buen-momento-para-invertir',
+    'diversificacion-inversion',
+  ],
+  'diversificacion-inversion': [
+    'que-es-el-msci-world',
+    'solapamiento-etfs-error-silencioso',
+    'volatilidad-riesgo-inversion',
+    'renta-variable-vs-renta-fija-cartera',
   ],
   'mejores-etfs-espana-2026': [
     'vwce-analisis-completo',
