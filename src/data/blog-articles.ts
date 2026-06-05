@@ -19,6 +19,109 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'regla-del-4-por-ciento',
+    title: 'La regla del 4% y tu número FIRE: cuánto necesitas para vivir de tus inversiones (2026)',
+    excerpt:
+      'La regla del 4% estima cuánto necesitas invertido para vivir de tus rentas: tus gastos anuales × 25. Cómo funciona, sus límites y cómo aplicarla en España.',
+    publishedAt: '2026-06-04',
+    readingMinutes: 9,
+    keywords: ['regla del 4%', 'cuánto necesito para vivir de rentas', 'número FIRE', 'tasa de retirada segura', 'independencia financiera'],
+    faq: [
+      {
+        q: '¿Qué es la regla del 4%?',
+        a: 'Es una referencia que surge del Trinity Study: retirar el 4% del valor inicial de tu cartera el primer año, e ir ajustando esa cantidad por la inflación cada año, tuvo históricamente una probabilidad muy alta de no agotar el dinero en 30 años, con una cartera diversificada con peso en renta variable. Es la base para calcular cuánto necesitas para vivir de tus inversiones.',
+      },
+      {
+        q: '¿Cuánto dinero necesito para vivir de mis inversiones?',
+        a: 'Como referencia, unas 25 veces tus gastos anuales (la inversa del 4%). Si gastas 20.000€ al año, tu número es 500.000€; si gastas 30.000€, 750.000€. Cuanto menos necesitas para vivir, antes llegas, por lo que reducir gastos baja directamente tu objetivo.',
+      },
+      {
+        q: '¿Es fiable la regla del 4% para jubilarse joven?',
+        a: 'La regla se calculó para un horizonte de 30 años. Para una jubilación anticipada que puede durar 40-50 años, muchos usan una tasa más conservadora del 3% al 3,5% (es decir, 28-33 veces tus gastos). Además, una caída fuerte en los primeros años de retirada hace más daño (riesgo de secuencia), así que la flexibilidad para gastar menos en años malos es clave.',
+      },
+      {
+        q: '¿Cómo afectan los impuestos a la regla del 4% en España?',
+        a: 'Al vender participaciones para vivir, las plusvalías tributan en el IRPF del ahorro (tramos del 19% al 28% en 2026). Eso significa que tu 4% bruto no es lo que te llevas neto: conviene planificar la fiscalidad y, si acaso, ser algo más conservador con la tasa de retirada para compensar.',
+      },
+      {
+        q: '¿La regla del 4% garantiza que no me quede sin dinero?',
+        a: 'No. Es una probabilidad histórica alta, no una certeza: se basa en datos pasados (sobre todo de EE.UU.) y el futuro puede diferir. Usar una tasa algo más conservadora, mantener flexibilidad de gasto y una cartera diversificada mejora mucho las probabilidades, pero ninguna regla elimina del todo la incertidumbre.',
+      },
+    ],
+    content: `# La regla del 4% y tu número FIRE: cuánto necesitas para vivir de tus inversiones (2026)
+
+¿Cuánto dinero necesito tener invertido para no depender de un sueldo? La pregunta que define el movimiento de la independencia financiera tiene una respuesta sorprendentemente simple, aunque con matices importantes: la **regla del 4%**. Este artículo explica de dónde sale, cómo calcular tu "número", qué límites tiene y cómo aplicarla con cabeza, especialmente desde España.
+
+La conclusión por adelantado: como referencia, necesitas invertido **unas 25 veces tus gastos anuales**. Es un punto de partida potente para planificar, no una garantía matemática: hay que ajustarlo a tu horizonte, tus impuestos y tu flexibilidad.
+
+---
+
+## Qué dice la regla del 4%
+
+La regla del 4% nace del **Trinity Study** y trabajos posteriores, que analizaron cuánto podía retirar un jubilado de su cartera cada año sin agotarla a lo largo de 30 años. La conclusión: retirar el **4% del valor inicial** de la cartera el primer año, e ir **ajustando esa cantidad por la inflación** cada año siguiente, tuvo históricamente una probabilidad muy alta de no agotar el dinero en 30 años, con una cartera diversificada (en torno a 50-75% en renta variable).
+
+Dicho de otro modo: si tu cartera renta a largo plazo por encima de lo que retiras más la inflación, puede durar muchísimo tiempo. La [tasa de retirada segura](/glosario/tasa-retirada-segura) es el concepto que hay detrás.
+
+---
+
+## Tu número: gastos anuales × 25
+
+La parte práctica es una simple inversión del 4%: si puedes retirar el 4%, necesitas **25 veces tus gastos anuales** (porque 1 ÷ 0,04 = 25). Calcula primero cuánto gastas al año y multiplícalo por 25:
+
+| Gasto anual | Número FIRE (×25) |
+|---|---|
+| 15.000€ | 375.000€ |
+| 20.000€ | 500.000€ |
+| 30.000€ | 750.000€ |
+| 40.000€ | 1.000.000€ |
+
+La consecuencia es reveladora: **cuanto menos necesitas para vivir, antes eres libre**. Reducir tus gastos no solo te deja ahorrar más, sino que baja directamente tu número objetivo. Por eso en la independencia financiera la tasa de ahorro importa más que el sueldo.
+
+---
+
+## Cómo se llega a ese número
+
+No se llega de golpe, sino con aportaciones constantes durante años, dejando que el [interés compuesto](/blog/interes-compuesto-inversion) acelere el camino: al principio aportas casi todo tú, pero llega un punto en que los rendimientos de la cartera aportan más que tú. Cuánto tardas depende sobre todo de tu tasa de ahorro; lo desarrollamos en [FIRE en España: cuánto necesitas](/blog/fire-espana-cuanto-necesitas) y en [cuánto invertir al mes para llegar al millón](/blog/cuanto-invertir-al-mes-jubilarse-millonario).
+
+---
+
+## Los límites de la regla (léelos antes de fiarte)
+
+La regla del 4% es una guía excelente para fijar un objetivo, pero conviene conocer sus matices:
+
+- **Es un estudio a 30 años.** Para una jubilación anticipada que puede durar 40-50 años, muchos usan una tasa más conservadora (**3% a 3,5%**, es decir, ×28 a ×33), porque el horizonte es más largo.
+- **El orden de las rentabilidades importa** (riesgo de secuencia): una gran caída en los primeros años de retirada hace más daño que la misma caída más tarde. Tener flexibilidad para gastar menos en los años malos ayuda mucho.
+- **No es una garantía.** Se basa en datos históricos (sobre todo de EE.UU.); el futuro puede diferir. Es una probabilidad alta, no una certeza.
+- **Los impuestos cuentan.** En España, al vender participaciones para vivir, las plusvalías tributan en el IRPF del ahorro. Tu 4% bruto no es lo que te llevas neto: planifícalo.
+
+---
+
+## Cómo aplicarla con cabeza desde España
+
+- **Calcula tu número con tus gastos reales**, no con una cifra redonda. Revisa tu gasto anual de verdad.
+- **Sé algo conservador con el horizonte**: si buscas independencia joven, plantéate el 3,5% en vez del 4%.
+- **Mantén flexibilidad**: poder recortar gasto en años de caída es el mejor seguro de que la cartera aguante.
+- **Ten en cuenta la fiscalidad y un colchón**: parte en liquidez para no vender en mínimos, y cuenta con que Hacienda se lleva su parte de las plusvalías.
+- **Cartera diversificada**: la regla asume un peso relevante en renta variable; cómo repartir, en [renta variable vs renta fija](/blog/renta-variable-vs-renta-fija-cartera).
+
+---
+
+## Conclusión práctica
+
+La regla del 4% convierte una pregunta abrumadora —"¿cuánto necesito para ser libre?"— en una cuenta sencilla: tus gastos anuales por 25. Úsala para ponerte un objetivo claro y motivador, pero aplícala con prudencia: los horizontes largos piden tasas algo menores, los impuestos reducen lo que te llevas y la flexibilidad es tu red de seguridad. No es una fórmula mágica, pero es el mejor mapa que existe para orientar el camino hacia vivir de tus inversiones.
+
+Para profundizar en cuánto necesitas según tu caso, sigue por [FIRE en España: cuánto necesitas de verdad](/blog/fire-espana-cuanto-necesitas).
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [FIRE en España: cuánto necesitas — BogleHub](/blog/fire-espana-cuanto-necesitas) — El cálculo completo de la independencia financiera adaptado a España.
+- [Cuánto invertir al mes para llegar al millón — BogleHub](/blog/cuanto-invertir-al-mes-jubilarse-millonario) — Cómo se construye el número con aportaciones constantes.
+- [Renta variable vs renta fija — BogleHub](/blog/renta-variable-vs-renta-fija-cartera) — El reparto de cartera que asume la regla del 4%.
+`,
+  },
+  {
     slug: 'errores-comunes-al-invertir',
     title: 'Los errores más comunes al invertir (y cómo evitarlos) (2026)',
     excerpt:

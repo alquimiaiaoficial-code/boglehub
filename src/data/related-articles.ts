@@ -33,8 +33,8 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
   'fire-espana-cuanto-necesitas': [
     'cuanto-invertir-al-mes-jubilarse-millonario',
     'interes-compuesto-inversion',
+    'regla-del-4-por-ciento',
     'invertir-para-hijos-espana',
-    'que-hacer-cuando-el-mercado-cae',
   ],
   'bogleheads-espana-guia-completa': [
     'cartera-boglehead-3-fondos-espana',
@@ -150,6 +150,12 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'fondos-indexados-vs-gestion-activa',
     'bogleheads-espana-guia-completa',
   ],
+  'regla-del-4-por-ciento': [
+    'fire-espana-cuanto-necesitas',
+    'cuanto-invertir-al-mes-jubilarse-millonario',
+    'interes-compuesto-inversion',
+    'renta-variable-vs-renta-fija-cartera',
+  ],
   'mejores-etfs-espana-2026': [
     'vwce-analisis-completo',
     'swrd-vs-iwda',
@@ -253,7 +259,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
   'cuanto-invertir-al-mes-jubilarse-millonario': [
     'interes-compuesto-inversion',
     'fire-espana-cuanto-necesitas',
-    'dca-vs-lump-sum-aportar-mensual',
+    'regla-del-4-por-ciento',
     'como-empezar-a-invertir-poco-dinero',
   ],
 
