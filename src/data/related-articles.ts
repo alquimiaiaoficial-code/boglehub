@@ -174,6 +174,12 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'dca-vs-lump-sum-aportar-mensual',
     'acumulacion-vs-distribucion-etf',
   ],
+  'vanguard-vs-ishares-vs-amundi': [
+    'mejores-fondos-indexados-espana-2026',
+    'swrd-vs-iwda',
+    'como-elegir-tu-primer-etf-espana-2026',
+    'mejores-etfs-espana-2026',
+  ],
   'mejores-etfs-espana-2026': [
     'vwce-analisis-completo',
     'swrd-vs-iwda',
@@ -266,7 +272,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'vwce-analisis-completo',
     'vwce-vs-cspx-vs-iwda',
     'que-es-el-msci-world',
-    'mejores-etfs-espana-2026',
+    'vanguard-vs-ishares-vs-amundi',
   ],
   'cartera-permanente-harry-browne-espana': [
     'cartera-boglehead-3-fondos-espana',
@@ -339,7 +345,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
   'mejores-fondos-indexados-espana-2026': [
     'fondos-indexados-vs-etfs-espana',
     'pisos-vs-fondos-indexados-espana',
-    'como-hacer-traspaso-fondos-espana',
+    'vanguard-vs-ishares-vs-amundi',
     'cartera-boglehead-3-fondos-espana',
   ],
   'como-invertir-sp500-espana': [

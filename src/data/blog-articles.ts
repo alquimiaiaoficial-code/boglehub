@@ -19,6 +19,109 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'vanguard-vs-ishares-vs-amundi',
+    title: 'Vanguard vs iShares vs Amundi: qué gestora de fondos indexados elegir (2026)',
+    excerpt:
+      'Vanguard, iShares, Amundi, SPDR: qué gestora de fondos y ETFs indexados elegir. Sus fortalezas, por qué el índice importa más que la marca y cómo decidir.',
+    publishedAt: '2026-06-04',
+    readingMinutes: 8,
+    keywords: ['Vanguard vs iShares', 'mejor gestora fondos indexados', 'iShares vs Amundi', 'qué gestora de ETF elegir', 'Vanguard iShares Amundi SPDR'],
+    faq: [
+      {
+        q: '¿Qué gestora de fondos indexados es mejor: Vanguard, iShares o Amundi?',
+        a: 'Ninguna es "la mejor" en abstracto: depende del producto concreto. Vanguard destaca por su estructura de propiedad alineada con el inversor y su producto global; iShares (BlackRock) por la amplitud de gama y la liquidez; Amundi y SPDR suelen ser de los más baratos en varios índices. Elige el fondo por su índice, su TER y su domicilio (Irlanda), no por la marca.',
+      },
+      {
+        q: '¿Importa la gestora o solo el índice que replica?',
+        a: 'El índice, el TER (coste) y el domicilio importan más que la marca de la gestora. Dos fondos de gestoras distintas que replican el mismo índice (por ejemplo, el MSCI World) te dan en la práctica casi lo mismo; la diferencia la marcan el coste y la eficiencia fiscal, no el logo.',
+      },
+      {
+        q: '¿Por qué Vanguard es especial entre las gestoras?',
+        a: 'Por su estructura: Vanguard es propiedad de sus propios fondos y, por tanto, de sus inversores, sin accionistas externos que exijan beneficios. Fue fundada por John Bogle, el padre de la inversión indexada para el particular. Esa alineación de incentivos ha empujado los costes a la baja durante décadas.',
+      },
+      {
+        q: '¿Conviene diversificar la cartera entre varias gestoras?',
+        a: 'No es necesario por seguridad: tus participaciones están segregadas y son tuyas, no de la gestora, así que el riesgo de perderlas si la gestora quiebra es muy bajo. Repartir entre dos proveedores es una decisión de tranquilidad psicológica más que de necesidad. Con una sola gestora solvente y un buen fondo global estás perfectamente.',
+      },
+      {
+        q: '¿Cuál es la gestora más barata de fondos indexados?',
+        a: 'Amundi y SPDR suelen aparecer entre las más baratas por TER en varios índices populares (MSCI World, All-World), pero conviene comparar caso a caso para tu índice concreto, porque la más barata varía según el producto. A igualdad de índice y domicilio, el TER más bajo es el que más te conviene a largo plazo.',
+      },
+    ],
+    content: `# Vanguard vs iShares vs Amundi: qué gestora de fondos indexados elegir (2026)
+
+Cuando empiezas a comparar fondos indexados y ETFs, los mismos nombres se repiten: Vanguard, iShares, Amundi, SPDR… Son las **gestoras** que fabrican estos productos, y cada una tiene su carácter. ¿Importa cuál elijas? Menos de lo que crees, pero no da igual. Esta guía explica las fortalezas de cada una y, sobre todo, en qué fijarte de verdad para decidir.
+
+La conclusión por adelantado: para un fondo indexado, lo que más importa no es la marca de la gestora, sino el **índice que replica, su TER (coste), el domicilio (Irlanda) y la calidad de réplica**. Dicho eso, cada gestora tiene puntos fuertes que pueden inclinar la balanza.
+
+---
+
+## Las cuatro grandes (y alguna más)
+
+### Vanguard
+
+La gestora que **popularizó la inversión indexada para el particular** (de la mano de John Bogle, el "padre" de los Bogleheads). Su rasgo único es la **estructura de propiedad**: Vanguard es propiedad de sus propios fondos y, por tanto, de sus inversores, sin accionistas externos que exijan beneficios. Eso alinea sus incentivos con los tuyos y ha empujado los costes a la baja durante décadas. Producto estrella para el inversor global: el FTSE All-World ([VWCE](/blog/que-es-el-msci-world) en su versión de acumulación).
+
+### iShares (BlackRock)
+
+El **mayor proveedor de ETFs del mundo**, parte de BlackRock. Su fortaleza es la **amplitud de gama y la liquidez**: tiene un ETF para casi cualquier índice, y sus fondos suelen ser muy grandes y líquidos. Su serie **Core** está pensada para el inversor de largo plazo con costes bajos (IWDA/SWDA para el MSCI World, EIMI para emergentes).
+
+### Amundi
+
+La **mayor gestora de Europa** (absorbió a Lyxor), de origen francés. Su baza suele ser el **coste**: en varios índices ofrece de los TER más bajos del mercado (su gama Prime, por ejemplo). Para quien optimiza el coste al máximo, Amundi aparece a menudo en lo más barato. Su [Amundi Prime Global](/blog/amundi-prime-global-analisis) es un ejemplo.
+
+### SPDR (State Street)
+
+La gestora que **creó el primer ETF de la historia**. Tiene algunas opciones de bajo coste para el inversor europeo, como el **SWRD** (MSCI World), uno de los más baratos de su categoría, que comparamos en [SWRD vs IWDA](/blog/swrd-vs-iwda).
+
+(Hay más: **Xtrackers** de DWS, **Fidelity** con sus fondos índice, **Invesco**… todas pueden ofrecer buenos productos.)
+
+---
+
+## Lo que de verdad importa (más que la marca)
+
+Antes de elegir por gestora, mira el **producto concreto**:
+
+1. **El índice que replica**: que sea el que quieres (MSCI World, FTSE All-World, S&P 500…). Dos gestoras distintas que replican el mismo índice te dan, en la práctica, casi lo mismo.
+2. **El TER (coste)**: a igualdad de índice, el más barato gana a largo plazo. Aquí Amundi y SPDR suelen ser competitivos, pero compara caso a caso.
+3. **El domicilio**: prioriza **Irlanda** (ISIN que empieza por IE) por su eficiencia fiscal en dividendos. Lo explicamos en [cómo elegir tu primer ETF](/blog/como-elegir-tu-primer-etf-espana-2026).
+4. **La réplica y el tamaño**: la réplica física y un patrimonio amplio suelen dar menos sorpresas de seguimiento.
+
+Una gestora "buena" con un producto caro o mal domiciliado es peor opción que otra "menos famosa" con el fondo adecuado.
+
+---
+
+## ¿Conviene diversificar entre gestoras?
+
+El riesgo de que una gestora grande y regulada "quiebre" y te haga perder tu inversión es **muy bajo**: tus participaciones están segregadas y son tuyas, no de la gestora (lo vimos en [qué pasa si quiebra tu bróker](/blog/que-pasa-si-quiebra-tu-broker), y aplica igual a las gestoras). Aun así, a algunos inversores les da tranquilidad **repartir** su cartera entre dos proveedores (por ejemplo, MSCI World de iShares + emergentes de Amundi). Es una decisión de comodidad psicológica más que de necesidad: con una sola gestora solvente y un buen fondo global, estás perfectamente.
+
+---
+
+## Entonces, ¿cuál elijo?
+
+- Si valoras la **filosofía alineada con el inversor** y un producto global todo-en-uno: **Vanguard** (FTSE All-World).
+- Si quieres la **gama más amplia y máxima liquidez**: **iShares** (serie Core).
+- Si optimizas el **coste** al milímetro: mira **Amundi** y **SPDR** en tu índice concreto.
+- En todos los casos: elige el fondo por índice + TER + domicilio Irlanda, no por la marca de la portada.
+
+Para ver productos concretos recomendados, la [guía de mejores fondos indexados](/blog/mejores-fondos-indexados-espana-2026) y la de [mejores ETFs](/blog/mejores-etfs-espana-2026) bajan al detalle.
+
+---
+
+## Conclusión práctica
+
+Vanguard, iShares, Amundi y SPDR son todas gestoras solventes y buenas opciones; ninguna te va a arruinar por elegirla. La diferencia real entre tus fondos no la marca su logo, sino el índice que replican, lo que cobran y dónde están domiciliados. Elige el **producto** adecuado —global, barato, irlandés y de réplica sólida— y la gestora vendrá dada. Y si te hace ilusión la coherencia, Vanguard tiene el guiño histórico de ser la casa que Bogle impulsó para que ganara el inversor, no la gestora.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Mejores fondos indexados en España 2026 — BogleHub](/blog/mejores-fondos-indexados-espana-2026) — Productos concretos de cada gestora, con TER e ISIN.
+- [SWRD vs IWDA — BogleHub](/blog/swrd-vs-iwda) — SPDR frente a iShares en el MSCI World.
+- [Cómo elegir tu primer ETF en España — BogleHub](/blog/como-elegir-tu-primer-etf-espana-2026) — Los criterios que importan más que la marca.
+`,
+  },
+  {
     slug: 'como-comprar-tu-primer-etf-paso-a-paso',
     title: 'Cómo comprar tu primer ETF paso a paso (2026)',
     excerpt:

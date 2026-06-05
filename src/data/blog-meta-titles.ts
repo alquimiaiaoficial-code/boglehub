@@ -62,6 +62,7 @@ export const BLOG_META_TITLES: Record<string, string> = {
   'donde-aparcar-dinero-corto-plazo': 'Dónde aparcar tu dinero a corto plazo (2026)',
   'acumulacion-vs-distribucion-etf': 'ETF de acumulación o distribución (2026)',
   'como-comprar-tu-primer-etf-paso-a-paso': 'Comprar tu primer ETF paso a paso (2026)',
+  'vanguard-vs-ishares-vs-amundi': 'Vanguard vs iShares vs Amundi (2026)',
   'modelo-d6-etf-espana': 'Modelo D6 y ETFs: ¿hay que presentarlo? (2026)',
   'mejores-fondos-indexados-espana-2026': 'Mejores fondos indexados en España (2026)',
   'como-invertir-sp500-espana': 'Cómo invertir en el S&P 500 desde España',
