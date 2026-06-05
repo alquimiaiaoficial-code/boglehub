@@ -80,6 +80,7 @@ export const ARTICLE_CATEGORY: Record<string, BlogCategory> = {
   'bogleheads-espana-guia-completa': 'empezar',
   'que-es-el-msci-world': 'empezar',
   'fondo-de-emergencia-cuanto-necesitas': 'empezar',
+  'como-comprar-tu-primer-etf-paso-a-paso': 'empezar',
 
   // Análisis de ETFs y fondos
   'vwce-vs-cspx-vs-iwda': 'etfs-especificos',

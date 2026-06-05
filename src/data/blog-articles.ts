@@ -19,6 +19,128 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'como-comprar-tu-primer-etf-paso-a-paso',
+    title: 'Cómo comprar tu primer ETF paso a paso (2026)',
+    excerpt:
+      'Guía práctica para comprar tu primer ETF: abrir bróker, buscar por ISIN, elegir la cotización en euros, tipo de orden y qué pasa después de comprar.',
+    publishedAt: '2026-06-04',
+    readingMinutes: 8,
+    keywords: ['cómo comprar un ETF', 'comprar primer ETF', 'cómo comprar ETF paso a paso', 'comprar ETF Trade Republic', 'orden de compra ETF'],
+    faq: [
+      {
+        q: '¿Cómo compro mi primer ETF paso a paso?',
+        a: 'Abre cuenta en un bróker y verifica tu identidad, ingresa dinero por transferencia, busca el ETF por su ISIN, elige la cotización en euros (normalmente en Xetra), lanza una orden a mercado en horario de bolsa y confirma tras revisar ISIN, divisa, importe y comisión. La operación liquida en dos días hábiles y el ETF aparece en tu cartera.',
+      },
+      {
+        q: '¿Por qué conviene buscar el ETF por ISIN y no por el ticker?',
+        a: 'Porque el mismo ETF puede tener tickers distintos según el mercado donde cotiza, mientras que el ISIN es un identificador único y universal. Buscar por ISIN te asegura que compras exactamente el fondo y la clase que quieres, sin confundirlo con un producto parecido.',
+      },
+      {
+        q: '¿En qué bolsa y divisa debo comprar un ETF desde España?',
+        a: 'Para un inversor en euros, conviene elegir la cotización en euros, habitualmente en Xetra (la bolsa alemana), en lugar de la versión en dólares o libras. Así evitas un coste de cambio de divisa innecesario en cada compra. Comprueba siempre que la divisa de la cotización seleccionada es EUR.',
+      },
+      {
+        q: '¿Orden a mercado o limitada para comprar un ETF?',
+        a: 'Para un ETF global muy líquido y comprando en horario de mercado, una orden a mercado (se ejecuta al instante al mejor precio) es simple y suficiente. La orden limitada, en la que fijas el precio máximo a pagar, da más control y es útil para ETFs menos líquidos o si quieres precisión. Evita operar fuera de horario, cuando los spreads son peores.',
+      },
+      {
+        q: '¿Qué pasa después de comprar un ETF?',
+        a: 'La compra liquida normalmente en dos días hábiles (T+2), aunque verás el ETF en tu cartera enseguida. A partir de ahí, lo importante es aportar de forma periódica (DCA) y mantener a largo plazo sin dejarte llevar por el ruido del mercado. Si tu bróker permite planes de ahorro automáticos, configurarlos te quita la decisión de encima.',
+      },
+    ],
+    content: `# Cómo comprar tu primer ETF paso a paso (2026)
+
+Ya has decidido invertir de forma indexada y has elegido tu ETF. Llega el momento que más intimida al principiante: **pulsar el botón de comprar** sin meter la pata. La buena noticia es que es más sencillo de lo que parece. Esta guía te lleva por todo el proceso, paso a paso, para que tu primera compra salga bien y sin sustos.
+
+La conclusión por adelantado: abrir cuenta, ingresar dinero, buscar el ETF por su ISIN, elegir la cotización en euros, lanzar una orden y confirmar. Con la primera vez hecha, las siguientes son rutina.
+
+---
+
+## Antes de empezar: dos requisitos
+
+1. **Ten tu [fondo de emergencia](/blog/fondo-de-emergencia-cuanto-necesitas) y sin deuda cara.** El dinero que vas a invertir debe ser dinero que no necesitas a corto plazo.
+2. **Ten claro QUÉ vas a comprar.** Esta guía es sobre el "cómo"; sobre el "cuál", consulta [cómo elegir tu primer ETF](/blog/como-elegir-tu-primer-etf-espana-2026). Apunta el **ISIN** del ETF elegido (es su identificador único y universal).
+
+---
+
+## Paso 1: Abre cuenta en un bróker
+
+Elige un bróker adecuado (la [comparativa de brókers](/blog/mejor-broker-etfs-espana-2026) te ayuda; para empezar, [Trade Republic](/blog/trade-republic-opinion-2026) es de los más sencillos). El registro implica un proceso de verificación de identidad (KYC): DNI y, a veces, un selfie o videollamada. Es estándar y obligatorio por ley.
+
+---
+
+## Paso 2: Ingresa dinero
+
+Transfiere desde tu banco el importe que vas a invertir a tu cuenta del bróker. Suele tardar de unas horas a un par de días hábiles la primera vez. Algunos brókers permiten también domiciliar aportaciones periódicas.
+
+---
+
+## Paso 3: Busca el ETF por su ISIN
+
+En el buscador del bróker, introduce el **ISIN** (por ejemplo, el de VWCE es IE00BK5BQT80) en lugar del ticker. ¿Por qué el ISIN y no el ticker? Porque el **mismo ETF puede tener tickers distintos según el mercado** donde cotiza, mientras que el ISIN es único. Buscar por ISIN te asegura que compras exactamente el fondo que quieres, y no una clase o un producto parecido.
+
+---
+
+## Paso 4: Elige la cotización correcta (la de euros)
+
+Un mismo ETF suele cotizar en varias bolsas y divisas. Para un inversor en euros, conviene elegir la cotización en **euros** (habitualmente en **Xetra**, la bolsa alemana) en lugar de la de dólares o libras. Así evitas un coste de **cambio de divisa** innecesario en cada compra. Comprueba que la divisa de la cotización que seleccionas es EUR.
+
+---
+
+## Paso 5: Lanza la orden (mercado o limitada)
+
+Al comprar verás dos tipos de orden principales:
+- **A mercado (market)**: se ejecuta al instante al mejor precio disponible. Simple y suficiente para ETFs líquidos como los globales, si compras en horario de mercado.
+- **Limitada (limit)**: fijas el precio máximo que aceptas pagar; se ejecuta solo si el mercado llega a ese precio. Da más control, útil para ETFs menos líquidos o si quieres precisión.
+
+Para tu primera compra de un ETF global muy líquido, una orden a mercado dentro del horario de la bolsa (aproximadamente 9:00–17:30 en Xetra) es perfectamente válida. Evita operar fuera de horario, cuando los [spreads](/glosario/spread) (la diferencia entre el precio de compra y de venta) suelen ser peores.
+
+---
+
+## Paso 6: Revisa y confirma
+
+Antes de confirmar, comprueba:
+- Que el **ISIN** y el nombre son los correctos.
+- Que la **divisa** es la que querías (EUR).
+- El **importe** o número de participaciones.
+- La **comisión** y el total que vas a pagar.
+
+Si todo cuadra, confirma. ¡Enhorabuena, ya eres inversor!
+
+---
+
+## Paso 7: Qué pasa después
+
+- La operación **liquida** normalmente en dos días hábiles (T+2), pero verás el ETF en tu cartera enseguida.
+- A partir de aquí, lo importante es **aportar de forma periódica** (la estrategia [DCA](/blog/dca-vs-lump-sum-aportar-mensual)) y **no tocar**. Si tu bróker permite planes de ahorro automáticos, configúralos y olvídate.
+- No mires la cotización cada día. La inversión indexada es de largo plazo: comprar y mantener.
+
+---
+
+## Consejos para tu primera vez
+
+- **Empieza con un importe pequeño** la primera vez para coger confianza con la interfaz; cuando domines el proceso, sube a tu aportación habitual.
+- **Acumulación o distribución**: asegúrate de comprar la clase que quieres (lo normal en fase de ahorro es [acumulación](/blog/acumulacion-vs-distribucion-etf)).
+- **Guarda el justificante** de la operación; te vendrá bien para la declaración de la renta.
+
+---
+
+## Conclusión práctica
+
+Comprar tu primer ETF se reduce a: abrir bróker, ingresar dinero, buscar por ISIN, elegir la cotización en euros, lanzar una orden a mercado en horario y confirmar tras revisar. La primera vez impone; la segunda ya es rutina. Lo difícil de invertir no es el botón de comprar, sino mantener el rumbo después: aporta periódicamente, no te dejes llevar por el ruido y deja que el tiempo trabaje.
+
+Si aún dudas de qué comprar, vuelve a [cómo elegir tu primer ETF](/blog/como-elegir-tu-primer-etf-espana-2026); si dudas de dónde, a la [comparativa de brókers](/blog/mejor-broker-etfs-espana-2026).
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Cómo elegir tu primer ETF en España — BogleHub](/blog/como-elegir-tu-primer-etf-espana-2026) — Qué comprar antes de aprender a comprarlo.
+- [Mejor broker para ETFs en España — BogleHub](/blog/mejor-broker-etfs-espana-2026) — Dónde abrir cuenta para tu primera compra.
+- [DCA vs lump sum — BogleHub](/blog/dca-vs-lump-sum-aportar-mensual) — Cómo seguir aportando después de la primera compra.
+`,
+  },
+  {
     slug: 'acumulacion-vs-distribucion-etf',
     title: 'ETF de acumulación o distribución: qué elegir según tu fiscalidad (2026)',
     excerpt:

@@ -14,7 +14,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
   // ---------------------------------------------------------------------------
   'como-elegir-tu-primer-etf-espana-2026': [
     'vwce-vs-cspx-vs-iwda',
-    'vwce-analisis-completo',
+    'como-comprar-tu-primer-etf-paso-a-paso',
     'fiscalidad-etfs-espana-guia-completa',
     'acumulacion-vs-distribucion-etf',
   ],
@@ -99,7 +99,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
   'como-empezar-a-invertir-poco-dinero': [
     'fondo-de-emergencia-cuanto-necesitas',
     'como-elegir-tu-primer-etf-espana-2026',
-    'dca-vs-lump-sum-aportar-mensual',
+    'como-comprar-tu-primer-etf-paso-a-paso',
     'interes-compuesto-inversion',
   ],
   'fondo-de-emergencia-cuanto-necesitas': [
@@ -167,6 +167,12 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'fiscalidad-etfs-espana-guia-completa',
     'etfs-dividendos-vivir-rentas-espana',
     'interes-compuesto-inversion',
+  ],
+  'como-comprar-tu-primer-etf-paso-a-paso': [
+    'como-elegir-tu-primer-etf-espana-2026',
+    'mejor-broker-etfs-espana-2026',
+    'dca-vs-lump-sum-aportar-mensual',
+    'acumulacion-vs-distribucion-etf',
   ],
   'mejores-etfs-espana-2026': [
     'vwce-analisis-completo',
