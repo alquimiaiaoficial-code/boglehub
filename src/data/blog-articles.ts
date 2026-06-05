@@ -19,6 +19,114 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'pisos-vs-fondos-indexados-espana',
+    title: 'Pisos vs fondos indexados: ¿ladrillo o bolsa? (2026)',
+    excerpt:
+      'Ladrillo o bolsa: comparamos invertir en pisos frente a fondos indexados en rentabilidad, riesgo, liquidez, costes y esfuerzo. Cuándo gana cada uno.',
+    publishedAt: '2026-06-04',
+    readingMinutes: 10,
+    keywords: ['pisos vs fondos indexados', 'ladrillo o bolsa', 'invertir en pisos o en bolsa', 'inversión inmobiliaria vs fondos', 'comprar piso para alquilar o invertir'],
+    faq: [
+      {
+        q: '¿Es mejor invertir en pisos o en fondos indexados?',
+        a: 'Depende de qué valores. Como inversión pura, los fondos indexados ganan en diversificación, liquidez, coste y esfuerzo: compras miles de empresas globales y vendes en días por céntimos. El inmobiliario tiene a su favor el apalancamiento de la hipoteca y ser un activo tangible, a cambio de concentración, iliquidez y gestión. Para muchos inversores, la combinación (vivienda habitual + fondos para el ahorro) es lo más sensato.',
+      },
+      {
+        q: '¿Qué da más rentabilidad, un piso o la bolsa?',
+        a: 'Históricamente, la renta variable global ha rentado en torno a un 7-10% anual nominal reinvirtiendo dividendos. El inmobiliario combina una revalorización modesta tras inflación (muy dependiente de la zona) con un alquiler del 3-5% bruto, menos en neto. La gran ventaja del ladrillo es el apalancamiento: la hipoteca amplifica la rentabilidad sobre el capital aportado, y también las pérdidas. Rentabilidades pasadas no garantizan futuras.',
+      },
+      {
+        q: '¿Es verdad que el ladrillo nunca baja?',
+        a: 'No. Entre 2008 y 2014 el precio de la vivienda en España cayó más de un 30% de media, y muchas zonas tardaron más de una década en recuperarse. El inmobiliario puede ser una buena inversión, pero es un activo de riesgo que también sufre caídas prolongadas, igual que la bolsa.',
+      },
+      {
+        q: '¿Comprar mi vivienda habitual es una buena inversión?',
+        a: 'La vivienda habitual es a la vez consumo (un lugar donde vivir, que sustituye al alquiler) e inversión. Tiene sentido para mucha gente, pero no conviene confundirla con una inversión optimizada: su rentabilidad real depende del precio al que compres y de cuánto tiempo te quedes. La regla sana es no sobre-endeudarte y no dar por hecho que se revalorizará.',
+      },
+      {
+        q: '¿Puedo invertir en inmobiliario sin comprar un piso?',
+        a: 'Sí. A través de REITs o SOCIMIs (sociedades cotizadas que invierten en inmuebles) o ETFs inmobiliarios obtienes exposición al sector con la liquidez y diversificación de un fondo, y sin gestionar inquilinos. Es una forma de tener "ladrillo" en una cartera indexada sin sus inconvenientes operativos.',
+      },
+    ],
+    content: `# Pisos vs fondos indexados: ¿ladrillo o bolsa? (2026)
+
+En España, "invertir" ha sido sinónimo de "comprar un piso" durante generaciones. El ladrillo se percibe como seguro, tangible y rentable; la bolsa, como un casino. La realidad es más matizada: cada uno tiene ventajas reales, y la respuesta a "qué es mejor" depende de qué valoras y de tu situación. Esta comparativa, sin dogmas, enfrenta la inversión inmobiliaria con los fondos indexados en las dimensiones que de verdad importan.
+
+La conclusión por adelantado: como inversión pura, los fondos indexados ganan en diversificación, liquidez, coste y esfuerzo; el inmobiliario tiene a su favor el apalancamiento (la hipoteca) y la tangibilidad. No es necesariamente una elección excluyente.
+
+---
+
+## El mito del "el ladrillo nunca baja"
+
+La idea de que la vivienda siempre sube es, sencillamente, falsa. Entre 2008 y 2014, el precio de la vivienda en España cayó más de un 30% de media, y muchas zonas tardaron más de una década en recuperar niveles previos. El inmobiliario puede ser una buena inversión, pero **no está libre de riesgo ni de caídas prolongadas**, igual que la bolsa.
+
+Conviene partir de ahí: ambos son activos de riesgo. La pregunta no es "cuál no baja", sino cuál encaja mejor con tus objetivos.
+
+---
+
+## Rentabilidad: ¿qué ha dado más?
+
+A muy largo plazo, la **renta variable global** ha ofrecido históricamente en torno a un **7-10% anual nominal** (antes de inflación), reinvirtiendo dividendos. El **inmobiliario** combina dos fuentes: la **revalorización del precio** (históricamente modesta tras descontar la inflación, muy dependiente de la zona) y el **alquiler** (rentabilidad bruta típica del 3-5%, bastante menos en neto tras gastos, impuestos y periodos sin inquilino).
+
+El gran matiz a favor del inmobiliario es el **apalancamiento**: si compras un piso de 200.000€ con 40.000€ de entrada y una hipoteca, una subida del 10% del precio equivale a un 50% sobre tu capital aportado. La hipoteca amplifica la rentabilidad… y también las pérdidas si el precio cae. Es la principal ventaja estructural del ladrillo, y la razón por la que mucha gente construye patrimonio con él.
+
+Rentabilidades pasadas no garantizan futuras en ninguno de los dos casos.
+
+---
+
+## Las cinco diferencias que deciden
+
+### Diversificación
+Un [fondo indexado global](/blog/que-es-el-msci-world) te hace propietario de miles de empresas en decenas de países con una sola compra. Un piso es **un activo, en una ciudad, en un país**: máxima concentración. Si tu inquilino no paga o el barrio se degrada, lo sufre el 100% de esa inversión. La [diversificación](/glosario/diversificacion) es la mayor ventaja estructural de los fondos.
+
+### Liquidez
+Vender participaciones de un fondo lleva **días** y cuesta céntimos. Vender un piso lleva **meses**, con comisiones de agencia, impuestos y notaría, y no puedes vender "media habitación" si necesitas solo una parte. La [liquidez](/glosario/liquidez) del fondo es incomparable.
+
+### Costes y fricción
+Un fondo indexado cuesta un 0,10-0,20% anual y poco más. Un piso arrastra **impuesto de compra (ITP o IVA, en torno al 10%)**, notaría, registro, IBI, comunidad, seguros, mantenimiento, posibles derramas y, si lo gestionas, tu tiempo o una comisión de gestión. La fricción del inmobiliario es mucho mayor.
+
+### Esfuerzo
+El fondo indexado es **pasivo**: lo compras y te olvidas. El piso de alquiler es un **trabajo a tiempo parcial**: buscar inquilinos, reparaciones, impagos, papeleo. Para algunos es llevadero o incluso disfrutable; para otros, una carga.
+
+### Fiscalidad
+Las rentas del alquiler tributan en el IRPF (con reducciones en algunos casos de alquiler de vivienda habitual del inquilino). En los fondos, las ganancias **difieren** su tributación hasta que vendes, y en España puedes [traspasar entre fondos sin tributar](/blog/como-hacer-traspaso-fondos-espana), algo que el ladrillo no permite.
+
+---
+
+## ¿Y la vivienda habitual?
+
+Comprar la casa en la que vives es un caso aparte: no es solo una inversión, es **un lugar donde vivir** y un sustituto del alquiler. Tiene sentido emocional y práctico para mucha gente. Pero conviene no confundirla con una inversión optimizada: es a la vez consumo e inversión, y su rentabilidad real depende mucho del precio al que compres y de cuánto tiempo te quedes. La regla sana es no sobre-endeudarse por ella y no contar con que se revalorizará sí o sí.
+
+---
+
+## Entonces, ¿cuál elijo?
+
+Depende de qué valores:
+
+**Elige fondos indexados si** priorizas la diversificación, la liquidez, el bajo coste y no querer gestionar nada. Para la mayoría de inversores particulares que quieren rentabilizar sus ahorros sin complicarse, es la opción más eficiente: empieza por la [cartera Boglehead de 3 fondos](/blog/cartera-boglehead-3-fondos-espana) o los [mejores fondos indexados](/blog/mejores-fondos-indexados-espana-2026).
+
+**Considera el inmobiliario si** quieres aprovechar el apalancamiento de la hipoteca, te gusta el activo tangible y no te importa gestionarlo (o pagar por ello). Funciona especialmente para quien puede dedicarle tiempo y dispone de capital para la entrada sin descapitalizarse.
+
+**Y para muchos, la respuesta es "los dos"**: la vivienda habitual como techo, y los fondos indexados como inversión líquida y diversificada del ahorro. No tienes que elegir un bando.
+
+---
+
+## Conclusión práctica
+
+El debate "ladrillo o bolsa" suele plantearse como una guerra de identidad, pero es una decisión técnica. Como inversión pura, los fondos indexados son más diversificados, líquidos, baratos y cómodos; el inmobiliario aporta apalancamiento y tangibilidad a cambio de concentración, iliquidez y trabajo. Si solo buscas rentabilizar tus ahorros con el mínimo esfuerzo y sin riesgo concentrado, los fondos indexados son, para la mayoría, el mejor punto de partida. Y si te atrae el inmobiliario, que sea por sus ventajas reales (el apalancamiento), no por el mito de que "nunca baja".
+
+Para entender por qué el bajo coste y la diversificación pesan tanto a largo plazo, el [interés compuesto](/blog/interes-compuesto-inversion) y la comparativa [fondos indexados vs ETFs](/blog/fondos-indexados-vs-etfs-espana) son buenos siguientes pasos.
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Cartera Boglehead de 3 fondos para España — BogleHub](/blog/cartera-boglehead-3-fondos-espana) — Una cartera indexada diversificada como alternativa al ladrillo.
+- [Mejores fondos indexados en España 2026 — BogleHub](/blog/mejores-fondos-indexados-espana-2026) — Por dónde empezar si eliges la vía de los fondos.
+- [Qué es el MSCI World — BogleHub](/blog/que-es-el-msci-world) — El índice global que te hace propietario de miles de empresas.
+`,
+  },
+  {
     slug: 'invertir-para-hijos-espana',
     title: 'Invertir para tus hijos en España: cómo empezar (2026)',
     excerpt:

@@ -124,6 +124,7 @@ export const ARTICLE_CATEGORY: Record<string, BlogCategory> = {
   // Estrategias
   'interes-compuesto-inversion': 'estrategias',
   'dca-vs-lump-sum-aportar-mensual': 'estrategias',
+  'pisos-vs-fondos-indexados-espana': 'estrategias',
 
   // Psicología y crisis
   'que-hacer-cuando-el-mercado-cae': 'psicologia-mercado',

@@ -39,7 +39,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
   'bogleheads-espana-guia-completa': [
     'cartera-boglehead-3-fondos-espana',
     'como-elegir-tu-primer-etf-espana-2026',
-    'cartera-permanente-harry-browne-espana',
+    'pisos-vs-fondos-indexados-espana',
     'fire-espana-cuanto-necesitas',
   ],
   'solapamiento-etfs-error-silencioso': [
@@ -113,6 +113,12 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'mejores-fondos-indexados-espana-2026',
     'como-hacer-traspaso-fondos-espana',
     'cartera-boglehead-3-fondos-espana',
+  ],
+  'pisos-vs-fondos-indexados-espana': [
+    'cartera-boglehead-3-fondos-espana',
+    'mejores-fondos-indexados-espana-2026',
+    'que-es-el-msci-world',
+    'interes-compuesto-inversion',
   ],
   'mejores-etfs-espana-2026': [
     'vwce-analisis-completo',
@@ -278,7 +284,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
   ],
   'mejores-fondos-indexados-espana-2026': [
     'fondos-indexados-vs-etfs-espana',
-    'amundi-prime-global-analisis',
+    'pisos-vs-fondos-indexados-espana',
     'como-hacer-traspaso-fondos-espana',
     'cartera-boglehead-3-fondos-espana',
   ],
