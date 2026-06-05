@@ -238,6 +238,11 @@ export default function HomePage() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/blog/fondo-de-emergencia-cuanto-necesitas" className="text-brand-400 hover:text-brand-300 hover:underline">
+                    → Fondo de emergencia antes de invertir
+                  </Link>
+                </li>
+                <li>
                   <Link href="/glosario" className="text-brand-400 hover:text-brand-300 hover:underline">
                     → Glosario de términos
                   </Link>
@@ -271,6 +276,11 @@ export default function HomePage() {
                 <li>
                   <Link href="/blog/cartera-boglehead-3-fondos-espana" className="text-brand-400 hover:text-brand-300 hover:underline">
                     → Cartera Boglehead de 3 fondos
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog/renta-variable-vs-renta-fija-cartera" className="text-brand-400 hover:text-brand-300 hover:underline">
+                    → Renta variable vs renta fija
                   </Link>
                 </li>
                 <li>
@@ -317,6 +327,11 @@ export default function HomePage() {
                 <li>
                   <Link href="/blog/plan-pensiones-indexado-espana-2026" className="text-brand-400 hover:text-brand-300 hover:underline">
                     → Plan de pensiones indexado
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog/que-pasa-si-quiebra-tu-broker" className="text-brand-400 hover:text-brand-300 hover:underline">
+                    → ¿Qué pasa si quiebra tu bróker?
                   </Link>
                 </li>
                 <li>
