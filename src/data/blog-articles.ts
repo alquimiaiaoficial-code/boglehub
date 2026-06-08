@@ -19,6 +19,111 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'reits-como-invertir-inmobiliario',
+    title: 'REITs: cómo invertir en inmobiliario cotizado desde España (2026)',
+    excerpt:
+      'Qué son los REITs y SOCIMIs, cómo invertir en inmobiliario cotizado desde España con ETFs, su fiscalidad y qué papel tienen en una cartera indexada.',
+    publishedAt: '2026-06-05',
+    readingMinutes: 8,
+    keywords: ['REITs', 'reits españa', 'cómo invertir en REITs', 'etf inmobiliario', 'SOCIMI'],
+    faq: [
+      {
+        q: '¿Qué es un REIT?',
+        a: 'Un REIT (Real Estate Investment Trust) es una empresa cotizada que posee y gestiona inmuebles en alquiler (oficinas, logística, centros comerciales, vivienda) y que, por ley, reparte la mayor parte de sus beneficios a los accionistas en forma de dividendos. Cotiza en bolsa como cualquier acción. En España, la figura equivalente es la SOCIMI (Merlin, Colonial, etc.).',
+      },
+      {
+        q: '¿Cómo invierto en REITs desde España?',
+        a: 'La forma más sencilla y diversificada es un ETF inmobiliario (REIT ETF) UCITS domiciliado en Irlanda, que te da cientos de REITs globales en una sola compra. También puedes comprar SOCIMIs individuales (más concentrado y arriesgado) o fondos indexados del sector inmobiliario. Elige, como en cualquier ETF, el domicilio en Irlanda y la clase de acumulación o distribución según tu objetivo.',
+      },
+      {
+        q: '¿Cómo tributan los REITs en España?',
+        a: 'Los REITs reparten muchos dividendos, y en España los dividendos tributan en la base del ahorro del IRPF (tramos del 19% al 28% en 2026) el año en que los cobras, aunque los reinviertas. Por eso, en fase de acumulación, un ETF inmobiliario de acumulación (que reinvierte los dividendos dentro del fondo) es más eficiente, al diferir ese impuesto.',
+      },
+      {
+        q: '¿Merece la pena tener REITs si ya tengo un fondo MSCI World?',
+        a: 'Tu fondo indexado global ya incluye empresas inmobiliarias cotizadas (en torno a un 2-3% del índice), así que no estás "sin" inmobiliario. Además, los REITs cotizan en bolsa y caen en las crisis bursátiles, por lo que no son tan descorrelacionados como parece. Una posición específica en REITs es un complemento opcional para sobreponderar el sector, no una pieza imprescindible.',
+      },
+      {
+        q: '¿Es mejor invertir en REITs o comprar un piso?',
+        a: 'Depende de qué busques. Los REITs ofrecen liquidez (vendes en segundos), diversificación (cientos de inmuebles), nada de gestión y entrada con poco dinero; el piso aporta el apalancamiento de la hipoteca y un activo tangible, a cambio de iliquidez, concentración y trabajo. Para exposición inmobiliaria líquida y diversificada, los REITs son la vía más sencilla.',
+      },
+    ],
+    content: `# REITs: cómo invertir en inmobiliario cotizado desde España (2026)
+
+¿Y si pudieras ser "casero" sin comprar un piso, sin hipoteca, sin inquilinos y pudiendo vender en un clic? Eso es, en esencia, lo que ofrecen los **REITs**: invertir en inmobiliario a través de la bolsa. Para el inversor indexado español, son la forma más líquida y diversificada de tener exposición al ladrillo. Esta guía explica qué son, cómo invertir en ellos desde España, su fiscalidad y qué papel —opcional— tienen en una cartera.
+
+La conclusión por adelantado: un REIT es una empresa cotizada que invierte en inmuebles y reparte la mayoría de sus beneficios como dividendos. Puedes invertir en ellos con un ETF inmobiliario global, igual que en cualquier otro índice. Eso sí: tu fondo indexado mundial ya incluye algo de inmobiliario, así que una posición específica en REITs es un complemento opcional, no una obligación.
+
+---
+
+## Qué es un REIT (y qué es una SOCIMI)
+
+Un **REIT** (Real Estate Investment Trust) es una empresa que **posee y gestiona inmuebles que generan rentas** —oficinas, centros comerciales, logística, vivienda en alquiler— y cotiza en bolsa como cualquier acción. Su característica clave es que, por ley, **reparte la mayor parte de sus beneficios a los accionistas en forma de dividendos**, lo que las convierte en una fuente de rentas relativamente alta.
+
+En España, la figura equivalente es la **SOCIMI** (Sociedad Anónima Cotizada de Inversión Inmobiliaria); las más conocidas son Merlin Properties o Inmobiliaria Colonial. A nivel global, hay miles de REITs en EE.UU., Europa y Asia.
+
+---
+
+## REITs frente a comprar un piso
+
+Frente a la inversión inmobiliaria directa (que vimos en [pisos vs fondos indexados](/blog/pisos-vs-fondos-indexados-espana)), los REITs tienen ventajas claras:
+- **Liquidez**: compras y vendes en segundos, no en meses.
+- **Diversificación**: con un solo ETF tienes cientos de inmuebles de muchos países y tipos, no un piso en una calle.
+- **Sin gestión**: nada de inquilinos, derramas ni papeleo.
+- **Importe bajo**: entras con lo que quieras, sin entrada ni hipoteca.
+
+A cambio, renuncias al **apalancamiento** de la hipoteca (la gran baza del piso) y asumes que, al cotizar en bolsa, su precio es **volátil** a corto plazo.
+
+---
+
+## Cómo invertir en REITs desde España
+
+La forma más sencilla y diversificada es un **ETF inmobiliario** (REIT ETF) **UCITS** domiciliado en Irlanda, igual que cualquier otro ETF para el inversor español. Los hay que replican índices de inmobiliario de **mercados desarrollados** o **globales**, dándote cientos de REITs en una sola compra. Puedes ver opciones concretas en la [categoría de ETFs inmobiliarios y REITs de BogleHub](/sector/inmobiliario-reits).
+
+Alternativas:
+- **SOCIMIs individuales** (Merlin, Colonial…): comprar acciones concretas; más concentrado y arriesgado que un ETF diversificado.
+- **Fondos indexados inmobiliarios**: algunos comercializadores ofrecen fondos del sector con traspaso fiscal.
+
+Como con cualquier ETF, elige bien el domicilio (Irlanda) y la clase de [acumulación o distribución](/blog/acumulacion-vs-distribucion-etf) según tu objetivo.
+
+---
+
+## Fiscalidad de los REITs en España
+
+Aquí hay un matiz importante: los REITs **reparten muchos dividendos**, y en España los **dividendos tributan en el IRPF del ahorro** (tramos del 19% al 28% en 2026) el año en que los cobras. Eso significa que un REIT o un ETF inmobiliario de **distribución** genera un peaje fiscal anual, aunque reinviertas.
+
+Si inviertes en REITs en fase de acumulación, un **ETF inmobiliario de acumulación** (que reinvierte los dividendos dentro del fondo) difiere ese impuesto y es más eficiente, por la misma lógica que cualquier otro [ETF de acumulación](/blog/acumulacion-vs-distribucion-etf). El detalle fiscal general lo tienes en la [guía de fiscalidad de ETFs](/blog/fiscalidad-etfs-espana-guia-completa).
+
+---
+
+## ¿Necesito REITs en mi cartera? (la respuesta honesta)
+
+Aquí conviene no dejarse llevar por la novedad. Dos verdades incómodas:
+
+1. **Tu fondo indexado global ya incluye inmobiliario.** Un [MSCI World o un All-World](/blog/que-es-el-msci-world) ya contiene las grandes empresas inmobiliarias cotizadas (en torno a un 2-3% del índice). No estás "sin" inmobiliario aunque solo tengas un fondo mundial.
+
+2. **Los REITs no son tan "descorrelacionados" como parece.** Al cotizar en bolsa, se comportan en parte como acciones y caen en las crisis bursátiles, no solo cuando baja el ladrillo. No son el refugio anticrisis que algunos imaginan.
+
+Por eso, una posición específica en REITs es un **complemento opcional** para quien quiera **sobreponderar** el inmobiliario por encima de lo que ya tiene en su índice, no una pieza imprescindible. Si decides añadirlos, basta un porcentaje pequeño. No es un error añadirlos, pero tampoco hace falta para tener una cartera diversificada; más sobre por qué la [diversificación](/blog/diversificacion-inversion) no requiere coleccionar productos.
+
+---
+
+## Conclusión práctica
+
+Los REITs son una forma excelente de tener inmobiliario en tu cartera **sin las ataduras de comprar un piso**: líquidos, diversificados y accesibles con un ETF. Si te atrae el ladrillo pero no quieres gestionarlo, un ETF inmobiliario global UCITS es la vía sensata. Eso sí, recuerda dos cosas: tu fondo mundial ya lleva algo de inmobiliario, y los REITs reparten dividendos que tributan cada año, así que en fase de ahorro la versión de acumulación es más eficiente. Como complemento opcional, bien; como obsesión, innecesario.
+
+Para situar los REITs frente a comprar vivienda, vuelve a [pisos vs fondos indexados](/blog/pisos-vs-fondos-indexados-espana).
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [ETFs inmobiliarios y REITs — BogleHub](/sector/inmobiliario-reits) — Opciones concretas de ETFs del sector inmobiliario.
+- [Pisos vs fondos indexados — BogleHub](/blog/pisos-vs-fondos-indexados-espana) — Inmobiliario directo frente a inversión indexada.
+- [ETF de acumulación o distribución — BogleHub](/blog/acumulacion-vs-distribucion-etf) — Por qué la acumulación es más eficiente con los dividendos de los REITs.
+`,
+  },
+  {
     slug: 'diversificacion-inversion',
     title: 'Diversificación: el único "almuerzo gratis" de la inversión (2026)',
     excerpt:
@@ -299,7 +404,7 @@ El MSCI World deja fuera los **mercados emergentes** (China, India, etc.). Si qu
 - **Si tienes convicción en EE.UU. y entiendes que es una apuesta concentrada**: el S&P 500 es defendible y ha funcionado, pero asume conscientemente esa concentración.
 - **Una postura intermedia común**: núcleo global (World/All-World) y, si quieres, una pequeña sobreponderación de EE.UU.; no al revés.
 
-Lo que **no** es buena idea es saltar de uno a otro según quién haya ganado el último año. Elige una política y mantenla. Para ver los ETFs concretos de cada índice, la comparativa [VWCE vs CSPX vs IWDA](/blog/vwce-vs-cspx-vs-iwda) los pone cara a cara.
+Lo que **no** es buena idea es saltar de uno a otro según quién haya ganado el último año. Elige una política y mantenla. Para ver los ETFs concretos de cada índice, tienes el [catálogo de ETFs del S&P 500](/etfs/sp500) y el de [ETFs del MSCI World](/etfs/msci-world), y la comparativa [VWCE vs CSPX vs IWDA](/blog/vwce-vs-cspx-vs-iwda) que los pone cara a cara.
 
 ---
 
@@ -603,7 +708,7 @@ Para quien está acumulando a largo plazo, ese diferimiento es una ventaja clara
 
 ## Entonces, ¿siempre acumulación?
 
-En la **fase de acumulación**, para la mayoría de inversores indexados en España, sí: la versión de acumulación es la opción por defecto más eficiente.
+En la **fase de acumulación**, para la mayoría de inversores indexados en España, sí: la versión de acumulación es la opción por defecto más eficiente. Puedes ver opciones concretas en el [catálogo de ETFs de acumulación](/etfs/acumulacion).
 
 Pero la distribución tiene su momento:
 - **Fase de retiro o FIRE**: cuando vives (total o parcialmente) de tu cartera, cobrar dividendos te da un flujo de caja sin tener que vender participaciones, lo que para algunos es más cómodo psicológicamente. Lo vemos en [ETFs de dividendos para vivir de rentas](/blog/etfs-dividendos-vivir-rentas-espana).

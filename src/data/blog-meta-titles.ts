@@ -64,6 +64,7 @@ export const BLOG_META_TITLES: Record<string, string> = {
   'como-comprar-tu-primer-etf-paso-a-paso': 'Comprar tu primer ETF paso a paso (2026)',
   'vanguard-vs-ishares-vs-amundi': 'Vanguard vs iShares vs Amundi (2026)',
   'msci-world-vs-sp500': 'MSCI World o S&P 500: ¿cuál elegir? (2026)',
+  'reits-como-invertir-inmobiliario': 'REITs: invertir en inmobiliario cotizado (2026)',
   'volatilidad-riesgo-inversion': 'Volatilidad y riesgo al invertir (2026)',
   'diversificacion-inversion': 'Diversificación: el almuerzo gratis (2026)',
   'modelo-d6-etf-espana': 'Modelo D6 y ETFs: ¿hay que presentarlo? (2026)',

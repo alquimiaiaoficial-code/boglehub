@@ -115,7 +115,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'cartera-boglehead-3-fondos-espana',
   ],
   'pisos-vs-fondos-indexados-espana': [
-    'cartera-boglehead-3-fondos-espana',
+    'reits-como-invertir-inmobiliario',
     'mejores-fondos-indexados-espana-2026',
     'que-es-el-msci-world',
     'proteger-ahorros-inflacion',
@@ -166,7 +166,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'como-elegir-tu-primer-etf-espana-2026',
     'fiscalidad-etfs-espana-guia-completa',
     'etfs-dividendos-vivir-rentas-espana',
-    'interes-compuesto-inversion',
+    'reits-como-invertir-inmobiliario',
   ],
   'como-comprar-tu-primer-etf-paso-a-paso': [
     'como-elegir-tu-primer-etf-espana-2026',
@@ -185,6 +185,12 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'como-invertir-sp500-espana',
     'vwce-vs-cspx-vs-iwda',
     'msci-world-vs-msci-acwi-diferencias',
+  ],
+  'reits-como-invertir-inmobiliario': [
+    'pisos-vs-fondos-indexados-espana',
+    'que-es-el-msci-world',
+    'acumulacion-vs-distribucion-etf',
+    'diversificacion-inversion',
   ],
   'volatilidad-riesgo-inversion': [
     'que-hacer-cuando-el-mercado-cae',
