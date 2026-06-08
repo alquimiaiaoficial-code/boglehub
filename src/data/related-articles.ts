@@ -183,13 +183,19 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
   'msci-world-vs-sp500': [
     'que-es-el-msci-world',
     'como-invertir-sp500-espana',
-    'vwce-vs-cspx-vs-iwda',
+    'invertir-mercados-emergentes',
     'msci-world-vs-msci-acwi-diferencias',
   ],
   'reits-como-invertir-inmobiliario': [
     'pisos-vs-fondos-indexados-espana',
     'que-es-el-msci-world',
     'acumulacion-vs-distribucion-etf',
+    'diversificacion-inversion',
+  ],
+  'invertir-mercados-emergentes': [
+    'msci-world-vs-msci-acwi-diferencias',
+    'msci-world-vs-sp500',
+    'que-es-el-msci-world',
     'diversificacion-inversion',
   ],
   'volatilidad-riesgo-inversion': [
@@ -326,7 +332,7 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
   ],
   'msci-world-vs-msci-acwi-diferencias': [
     'vwce-analisis-completo',
-    'swrd-vs-iwda',
+    'invertir-mercados-emergentes',
     'vwce-vs-cspx-vs-iwda',
     'que-es-el-msci-world',
   ],

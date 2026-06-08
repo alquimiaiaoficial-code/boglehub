@@ -19,6 +19,108 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'invertir-mercados-emergentes',
+    title: 'Mercados emergentes: ¿merece la pena invertir? (2026)',
+    excerpt:
+      'Mercados emergentes (China, India, Brasil…): cómo invertir con ETFs UCITS, sus riesgos y si necesitas una posición específica o tu fondo global ya los incluye.',
+    publishedAt: '2026-06-05',
+    readingMinutes: 9,
+    keywords: ['invertir mercados emergentes', 'etf mercados emergentes', 'EIMI', 'fondos indexados emergentes', 'mercados emergentes merece la pena'],
+    faq: [
+      {
+        q: '¿Qué son los mercados emergentes?',
+        a: 'Son países con economías en desarrollo y mercados bursátiles menos maduros que los desarrollados: China, India, Taiwán, Corea del Sur, Brasil, México, Arabia Saudí, etc. El índice de referencia es el MSCI Emerging Markets, y en conjunto pesan alrededor del 10% de la bolsa mundial. Ofrecen mayor potencial de crecimiento a cambio de más riesgo y volatilidad.',
+      },
+      {
+        q: '¿Mi fondo indexado ya incluye mercados emergentes?',
+        a: 'Depende del índice. Si tienes un FTSE All-World o un MSCI ACWI (como el VWCE), ya incluyes emergentes (~10%) de forma automática. Si tienes un MSCI World (solo países desarrollados) o un S&P 500 (solo EE.UU.), no tienes nada de emergentes. La decisión sobre emergentes es, en realidad, qué índice eliges como núcleo.',
+      },
+      {
+        q: '¿Cómo invierto en mercados emergentes desde España?',
+        a: 'Con un ETF de mercados emergentes UCITS domiciliado en Irlanda, como el EIMI (iShares Core MSCI EM IMI) o alternativas de Amundi y otras gestoras. Si combinas un MSCI World con un ETF de emergentes, el peso habitual para replicar el mundo es en torno a 88% desarrollados / 12% emergentes. La alternativa más simple es un fondo All-World, que ya lo hace por ti.',
+      },
+      {
+        q: '¿Merece la pena sobreponderar los mercados emergentes?',
+        a: 'Para la mayoría, no. Tener su peso de mercado (~10%) vía un fondo All-World es lo razonable. Sobreponderarlos (20-30%) es una apuesta activa de convicción que asume más volatilidad y puede rendir por debajo durante años: el mayor crecimiento económico no se traduce automáticamente en mayor rentabilidad bursátil. La opción de menor arrepentimiento es tener el mundo en su proporción.',
+      },
+      {
+        q: '¿Es un problema la concentración en China dentro de los emergentes?',
+        a: 'China es una parte muy grande del índice de emergentes, lo que para algunos inversores supone un riesgo geopolítico y de gobernanza. Si quieres evitarlo, existen ETFs de mercados emergentes "ex-China" que excluyen el país. Es una decisión personal: ni incluir ni excluir China es objetivamente "correcto".',
+      },
+    ],
+    content: `# Mercados emergentes: ¿merece la pena invertir? (2026)
+
+China, India, Brasil, Taiwán, Corea… los mercados emergentes representan economías de rápido crecimiento que, juntas, suponen alrededor del 10% del valor de la bolsa mundial. Para el inversor indexado surge la duda: ¿debo tener una posición específica en emergentes, o ya los tengo sin saberlo? Esta guía explica qué son, cómo invertir en ellos desde España, sus riesgos y si de verdad los necesitas.
+
+La conclusión por adelantado: si inviertes en un fondo "All-World" (mundo entero), **ya tienes mercados emergentes** (en torno a un 10%). Si tu fondo es un MSCI World (solo desarrollados), tienes **cero** emergentes y puedes añadirlos con un ETF específico. Una sobreponderación grande de emergentes es opcional y arriesgada; para la mayoría, la exposición de un índice global basta.
+
+---
+
+## Qué son los mercados emergentes
+
+Son países con economías en desarrollo y mercados bursátiles menos maduros que los "desarrollados": **China, India, Taiwán, Corea del Sur, Brasil, Arabia Saudí, México, Sudáfrica**, entre otros. El índice de referencia es el **MSCI Emerging Markets** (o el FTSE Emerging). En conjunto pesan **~10% de la bolsa global**, aunque su peso en la economía mundial es mayor.
+
+La promesa: **mayor potencial de crecimiento** (poblaciones jóvenes, economías en expansión). El precio: **mayor riesgo y volatilidad**.
+
+---
+
+## ¿Ya tienes emergentes? Depende de tu fondo
+
+Esta es la clave que más confunde:
+- Si tu fondo es un **MSCI World** o un **S&P 500**, **no tienes emergentes**: el World es solo países desarrollados y el S&P 500 es solo EE.UU.
+- Si tu fondo es un **FTSE All-World** o un **MSCI ACWI** (como el VWCE), **ya incluyes emergentes** (~10%), reajustados automáticamente. Lo vimos en [MSCI World vs MSCI ACWI](/blog/msci-world-vs-msci-acwi-diferencias) y en [MSCI World vs S&P 500](/blog/msci-world-vs-sp500).
+
+Por eso, la decisión sobre emergentes es en realidad una decisión sobre **qué índice eliges como núcleo**:
+- **Opción simple**: un solo fondo All-World → emergentes incluidos, sin que tengas que hacer nada.
+- **Opción modular**: un MSCI World + un ETF de emergentes aparte, ajustando tú el peso.
+
+---
+
+## Cómo invertir en emergentes desde España
+
+Si optas por la vía modular, lo haces con un **ETF de mercados emergentes** UCITS domiciliado en Irlanda. El más popular es el **EIMI** (iShares Core MSCI EM IMI), que incluye también pequeñas compañías; hay alternativas de Amundi y otras gestoras (ver [qué gestora elegir](/blog/vanguard-vs-ishares-vs-amundi)).
+
+Si combinas World + emergentes, el reparto habitual para replicar el mundo es en torno a **88% desarrollados / 12% emergentes** (su peso por capitalización), reajustándolo al [rebalancear](/blog/como-rebalancear-cartera-indexada). Aun así, recuerda: un All-World hace esto solo.
+
+---
+
+## Los riesgos que debes conocer
+
+Los emergentes no son un "almuerzo gratis" de rentabilidad:
+- **Mayor volatilidad**: caídas más fuertes y prolongadas que los desarrollados.
+- **Riesgo político y de gobernanza**: cambios regulatorios, menor protección al inversor, divisas inestables.
+- **Concentración en China**: China es una parte muy grande del índice, lo que para algunos inversores es un riesgo geopolítico; existen ETFs de **emergentes "ex-China"** para quien quiera evitarlo.
+- **Décadas por debajo**: los emergentes han pasado largos periodos rindiendo peor que EE.UU. El mayor crecimiento económico no se traduce automáticamente en mayor rentabilidad bursátil.
+
+---
+
+## ¿Merece la pena sobreponderarlos?
+
+La tentación de "cargar" emergentes buscando ese crecimiento extra es comprensible, pero arriesgada: es una apuesta activa que va contra la idea de quedarte con el mercado global en su proporción. Para la mayoría:
+- **Tener su peso de mercado (~10%)** vía un All-World es lo razonable y suficiente.
+- **Sobreponderarlos** (20%, 30%…) es una apuesta de convicción que asume más volatilidad y puede salir mal durante años; no es la opción "por defecto" prudente.
+- **Excluirlos del todo** (solo MSCI World) también es defendible, a cambio de renunciar a ese 10% del mundo.
+
+Como con la [diversificación](/blog/diversificacion-inversion) en general, la opción de menor arrepentimiento es tener el mundo entero en su proporción y no intentar adivinar qué región liderará.
+
+---
+
+## Conclusión práctica
+
+Los mercados emergentes son una pieza legítima de una cartera global, pero no una mina de oro garantizada: aportan diversificación y potencial de crecimiento a cambio de más riesgo. La forma más sencilla de tenerlos es no complicarte: un fondo **All-World** ya los incluye en su justa medida. Si prefieres controlarlos, añade un ETF como EIMI a tu MSCI World y mantén un peso razonable (~10-12%), sin sobreponderar por moda. Y si decides dejarlos fuera, que sea una decisión consciente, no un olvido.
+
+Para decidir tu índice núcleo, vuelve a [MSCI World vs S&P 500](/blog/msci-world-vs-sp500) y a [qué es el MSCI World](/blog/que-es-el-msci-world).
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [MSCI World vs MSCI ACWI — BogleHub](/blog/msci-world-vs-msci-acwi-diferencias) — Si tu índice incluye o no emergentes.
+- [MSCI World o S&P 500 — BogleHub](/blog/msci-world-vs-sp500) — La decisión del índice núcleo de tu cartera.
+- [Diversificación — BogleHub](/blog/diversificacion-inversion) — Por qué tener el mundo entero en su proporción.
+`,
+  },
+  {
     slug: 'reits-como-invertir-inmobiliario',
     title: 'REITs: cómo invertir en inmobiliario cotizado desde España (2026)',
     excerpt:

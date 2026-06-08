@@ -97,6 +97,7 @@ export const ARTICLE_CATEGORY: Record<string, BlogCategory> = {
   'vanguard-vs-ishares-vs-amundi': 'etfs-especificos',
   'msci-world-vs-sp500': 'etfs-especificos',
   'reits-como-invertir-inmobiliario': 'etfs-especificos',
+  'invertir-mercados-emergentes': 'etfs-especificos',
 
   // Carteras y asignación
   'mejores-fondos-indexados-espana-2026': 'etfs-especificos',
