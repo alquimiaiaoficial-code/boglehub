@@ -6,6 +6,7 @@ import { Input } from '@/components/ui/Input'
 import { cn, formatEUR } from '@/lib/utils'
 import { BROKERS, rankBrokers, type InstrumentType } from '@/lib/brokers'
 import { trackEvent, useFireOnce } from '@/lib/analytics'
+import { getBrokerLink, AFFILIATE_LABEL } from '@/lib/monetization'
 
 export function BrokerComparator() {
   const [initialCapital, setInitialCapital] = useState(10000)
@@ -257,16 +258,29 @@ export function BrokerComparator() {
                 <span className="text-fg-subtle">Ideal para: </span>
                 {broker.bestFor}
               </p>
-              <a
-                href={broker.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => trackEvent('broker_link_clicked', { broker: broker.id })}
-                className="mt-2 inline-flex items-center gap-1 text-xs font-medium text-brand-400 hover:text-brand-300 transition-colors"
-              >
-                Visitar web de {broker.name}
-                <span aria-hidden="true">→</span>
-              </a>
+              {(() => {
+                const link = getBrokerLink(broker.id, broker.url)
+                return (
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel={link.rel}
+                    onClick={() =>
+                      trackEvent('broker_link_clicked', {
+                        broker: broker.id,
+                        affiliate: link.isAffiliate,
+                      })
+                    }
+                    className="mt-2 inline-flex items-center gap-1 text-xs font-medium text-brand-400 hover:text-brand-300 transition-colors"
+                  >
+                    Visitar web de {broker.name}
+                    <span aria-hidden="true">→</span>
+                    {link.isAffiliate && (
+                      <span className="ml-1 text-[10px] text-fg-subtle">({AFFILIATE_LABEL})</span>
+                    )}
+                  </a>
+                )
+              })()}
             </div>
           </Card>
         ))}

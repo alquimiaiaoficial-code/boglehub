@@ -45,3 +45,8 @@ COWORK-X.md
 
 # graphify code index (local, se regenera por máquina)
 /graphify-out/
+
+# tooling local de agentes (no es código del producto)
+/.agents/
+skills-lock.json
+PROMPT-COWORK-*.md
