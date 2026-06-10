@@ -29,8 +29,17 @@ export function welcomeEmail(): EmailContent {
 <p style="margin:0 0 16px 0;font-size:15px;line-height:1.65;color:#3f3f46;">
 Gracias por suscribirte. Cada dos semanas te llega un correo con análisis de ETFs, fiscalidad para inversores en España y novedades de la herramienta. Nada de spam, y te das de baja con un clic cuando quieras.
 </p>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;margin:0 0 20px 0;">
+<tr><td style="padding:16px 18px;">
+<p style="margin:0 0 6px 0;font-size:13px;font-weight:700;color:#059669;letter-spacing:0.02em;">TU REGALO DE BIENVENIDA</p>
+<p style="margin:0 0 12px 0;font-size:15px;line-height:1.55;color:#3f3f46;">
+<b>Tu primera cartera indexada en España, paso a paso</b> (PDF). De cero a tu primera aportación automática: cartera, bróker, fiscalidad 2026 y checklist final.
+</p>
+<a href="${BASE_URL}/guia-primera-cartera-indexada.pdf" style="display:inline-block;background:#059669;color:#ffffff;font-size:14px;font-weight:600;text-decoration:none;padding:10px 18px;border-radius:8px;">Descargar la guía (PDF)</a>
+</td></tr>
+</table>
 <p style="margin:0 0 18px 0;font-size:15px;line-height:1.65;color:#3f3f46;">
-Mientras tanto, tres cosas por las que empezar:
+Y tres cosas más por las que empezar:
 </p>
 </td></tr>
 <tr><td style="padding:0 32px;">
@@ -69,7 +78,11 @@ Recibes este correo porque te suscribiste en boglehub.com. Información educativ
 
 Gracias por suscribirte. Cada dos semanas te llega un correo con análisis de ETFs, fiscalidad para inversores en España y novedades de la herramienta. Nada de spam, y te das de baja con un clic cuando quieras.
 
-Mientras tanto, tres cosas por las que empezar:
+TU REGALO DE BIENVENIDA
+"Tu primera cartera indexada en España, paso a paso" (PDF): de cero a tu primera aportación automática, con fiscalidad 2026 y checklist final.
+Descárgala aquí: ${BASE_URL}/guia-primera-cartera-indexada.pdf
+
+Y tres cosas más por las que empezar:
 
 1. Cómo elegir tu primer ETF — la guía para empezar de cero, sin tecnicismos:
    ${BASE_URL}/blog/como-elegir-tu-primer-etf-espana-2026

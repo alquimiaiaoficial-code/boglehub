@@ -453,8 +453,9 @@ export default async function EtfPage({ params }: { params: Promise<{ ticker: st
               ¿Te ha sido útil esta ficha?
             </h2>
             <p className="mt-1 text-sm text-fg-muted">
-              Análisis quincenal de ETFs, fiscalidad y novedades de BogleHub. Sin spam, te
-              das de baja con un clic.
+              Suscríbete y te llevas gratis la guía en PDF «Tu primera cartera indexada en
+              España, paso a paso», más el análisis quincenal de ETFs y fiscalidad. Sin
+              spam, te das de baja con un clic.
             </p>
             <div className="mt-4">
               <NewsletterSignup variant="inline" />

@@ -64,7 +64,11 @@ export function NewsletterSignup({ variant = 'card' }: { variant?: 'card' | 'inl
         <h3 className="font-semibold text-fg">Newsletter quincenal</h3>
       </div>
       <p className="text-sm text-fg-muted mb-4">
-        Análisis de ETFs, noticias del mercado y novedades de BogleHub. Sin spam. Cancelas con un click.
+        Suscríbete y te llevas gratis la guía en PDF{' '}
+        <span className="text-fg font-medium">
+          «Tu primera cartera indexada en España, paso a paso»
+        </span>
+        , más el análisis quincenal de ETFs y fiscalidad. Sin spam. Cancelas con un click.
       </p>
       <form onSubmit={handleSubmit} className="space-y-2">
         <Input
