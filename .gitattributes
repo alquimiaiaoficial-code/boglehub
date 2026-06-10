@@ -1,0 +1,9 @@
+# Nunca aplicar conversión de fin de línea a binarios
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.webp binary
+*.woff binary
+*.woff2 binary
