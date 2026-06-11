@@ -252,9 +252,10 @@ export function JsonLd({ schema }: { schema: Schema }) {
         ],
       },
       sameAs: [
-        // Añadir perfiles sociales cuando existan, por ejemplo:
-        // 'https://twitter.com/boglehub',
-        // 'https://github.com/boglehub',
+        // Solo perfiles REALES y operativos (señal de entidad para Knowledge
+        // Graph e IAs). Pendientes de añadir cuando existan/se confirme el
+        // handle: X (lo lleva la sesión de distribución), GitHub.
+        'https://www.youtube.com/@BogleHub',
       ],
     }
   } else if (schema.type === 'WebSite') {
