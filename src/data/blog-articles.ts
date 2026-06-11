@@ -3736,7 +3736,7 @@ Trade Republic opera como custodio alemán. Emite un informe fiscal anual que pu
 **Lo que debes hacer tú**:
 1. Descargar el informe de operaciones del año
 2. Calcular manualmente tus ganancias/pérdidas con precio de compra y venta
-3. Introducirlo en Renta Web (modelo D-6 para dividendos y ganancias)
+3. Introducirlo en Renta Web: las ventas como **ganancias y pérdidas patrimoniales** y los dividendos como **rendimientos del capital mobiliario** (ambos en la base del ahorro)
 
 **Retención en origen**: Trade Republic no retiene IRPF español automáticamente. Serás tú quien declare en la renta anual. Esto significa que no hay retención "preventiva" — necesitas reservar tú el dinero para Hacienda cuando vendas con ganancias.
 
@@ -5911,7 +5911,7 @@ Para esta cartera de 3 fondos, si operas en MyInvestor y tu horizonte es >10 añ
     excerpt:
       'Comparativa honesta de los tres brokers más usados por inversores indexados en España en 2026: comisiones reales, ETFs disponibles, seguridad y para qué perfil encaja cada uno.',
     publishedAt: '2026-05-21',
-    updatedAt: '2026-05-30',
+    updatedAt: '2026-06-12',
     readingMinutes: 12,
     keywords: ['mejor broker ETF España 2026', 'DEGIRO vs Trade Republic', 'MyInvestor opiniones', 'broker inversión indexada España'],
     faq: [
@@ -6033,7 +6033,7 @@ La comisión por operación es lo más visible, pero el coste total de usar un b
 
 **1. Comisión de compraventa.** Trade Republic cobra 0 €; MyInvestor 0,20 € + 0,03 %; DEGIRO 0,50 € + 0,004 % (mínimo 0,90 €). Para una aportación mensual de 200 €, eso es 0 €, unos 0,26 € y 0,90 € respectivamente.
 
-**2. El TER del ETF — y aquí está la clave: no depende del broker.** El TER (coste anual del fondo) lo cobra la gestora del ETF, no el broker. Un VWCE tiene un TER del 0,22 % lo compres donde lo compres. Por tanto, el TER no debe influir en qué broker eliges: es idéntico en los tres. Lo que cambia de un broker a otro es todo lo demás.
+**2. El TER del ETF — y aquí está la clave: no depende del broker.** El TER (coste anual del fondo) lo cobra la gestora del ETF, no el broker. Un VWCE tiene un TER del 0,19 % lo compres donde lo compres. Por tanto, el TER no debe influir en qué broker eliges: es idéntico en los tres. Lo que cambia de un broker a otro es todo lo demás.
 
 **3. Conversión de divisa.** Si compras un ETF que cotiza en dólares o libras (por ejemplo, en la Bolsa de Londres), el broker convierte tus euros aplicando un margen que muchas veces no se ve. Se evita comprando la línea de cotización en euros del mismo ETF en Xetra (Frankfurt) o BME. MyInvestor opera en euros; en Trade Republic y DEGIRO conviene elegir la cotización en euros para no pagar conversión.
 
@@ -6677,6 +6677,7 @@ Para cuantificar exactamente el coste de un roboadvisor frente a gestionar tu pr
     excerpt:
       'Guía paso a paso para declarar la venta de ETFs en el IRPF 2026: cómo calcular la ganancia, el criterio FIFO, la retención a cuenta y cómo compensar pérdidas.',
     publishedAt: '2026-05-24',
+    updatedAt: '2026-06-12',
     readingMinutes: 11,
     keywords: ['declarar ETFs renta España', 'ETFs IRPF 2026', 'como tributar ETFs España', 'ganancia patrimonial ETF IRPF', 'declaración renta ETFs'],
     faq: [
