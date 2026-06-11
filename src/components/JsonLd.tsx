@@ -56,7 +56,9 @@ interface WebApplicationSchema {
 
 interface FAQSchema {
   type: 'FAQPage'
-  questions: { q: string; a: string }[]
+  // url opcional por pregunta: ancla profunda (/pagina#slug) para citabilidad
+  // granular — cada Question se emite con @id/url propios.
+  questions: { q: string; a: string; url?: string }[]
 }
 
 interface QAPageSchema {
@@ -313,6 +315,7 @@ export function JsonLd({ schema }: { schema: Schema }) {
       inLanguage: 'es-ES',
       mainEntity: schema.questions.map(item => ({
         '@type': 'Question',
+        ...(item.url ? { '@id': item.url, url: item.url } : {}),
         name: item.q,
         acceptedAnswer: { '@type': 'Answer', text: item.a },
       })),

@@ -184,6 +184,17 @@ const FAQ_CATEGORIES: FaqCategory[] = [
 const ALL_QUESTIONS = FAQ_CATEGORIES.flatMap((cat) => cat.questions)
 const QUESTION_COUNT = ALL_QUESTIONS.length
 
+/** Slug estable por pregunta para anclas profundas (/faq#slug) citables por IA. */
+function questionSlug(q: string): string {
+  return q
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 80)
+}
+
 export const metadata: Metadata = {
   title: 'Preguntas frecuentes sobre inversión indexada en España (2026)',
   description: `Respuestas claras a las ${QUESTION_COUNT} preguntas más frecuentes sobre inversión indexada, ETFs, fiscalidad española, FIRE, brokers y carteras Boglehead.`,
@@ -204,7 +215,16 @@ export default function FaqPage() {
 
   return (
     <>
-      <JsonLd schema={{ type: 'FAQPage', questions: allQuestions }} />
+      <JsonLd
+        schema={{
+          type: 'FAQPage',
+          questions: allQuestions.map(({ q, a }) => ({
+            q,
+            a,
+            url: `${BASE_URL}/faq#${questionSlug(q)}`,
+          })),
+        }}
+      />
       <JsonLd
         schema={{
           type: 'BreadcrumbList',
@@ -273,12 +293,28 @@ export default function FaqPage() {
                 {cat.label}
               </h2>
               <div className="space-y-4">
-                {cat.questions.map(({ q, a }) => (
-                  <article key={q} className="rounded-xl border border-border bg-surface p-5">
-                    <h3 className="text-base font-semibold text-fg mb-2 leading-snug">{q}</h3>
-                    <p className="text-sm text-fg-muted leading-relaxed">{a}</p>
-                  </article>
-                ))}
+                {cat.questions.map(({ q, a }) => {
+                  const slug = questionSlug(q)
+                  return (
+                    <article
+                      key={q}
+                      id={slug}
+                      className="scroll-mt-24 rounded-xl border border-border bg-surface p-5"
+                    >
+                      <h3 className="text-base font-semibold text-fg mb-2 leading-snug">
+                        {q}{' '}
+                        <a
+                          href={`#${slug}`}
+                          aria-label={`Enlace directo a: ${q}`}
+                          className="text-fg-subtle hover:text-brand-400 font-normal no-underline"
+                        >
+                          #
+                        </a>
+                      </h3>
+                      <p className="text-sm text-fg-muted leading-relaxed">{a}</p>
+                    </article>
+                  )
+                })}
               </div>
             </section>
           ))}
