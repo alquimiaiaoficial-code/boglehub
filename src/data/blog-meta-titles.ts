@@ -66,6 +66,7 @@ export const BLOG_META_TITLES: Record<string, string> = {
   'msci-world-vs-sp500': 'MSCI World o S&P 500: ¿cuál elegir? (2026)',
   'reits-como-invertir-inmobiliario': 'REITs: invertir en inmobiliario cotizado (2026)',
   'invertir-mercados-emergentes': 'Mercados emergentes: ¿merece la pena? (2026)',
+  'finizens-opinion-2026': 'Finizens: opinión y análisis completo (2026)',
   'volatilidad-riesgo-inversion': 'Volatilidad y riesgo al invertir (2026)',
   'diversificacion-inversion': 'Diversificación: el almuerzo gratis (2026)',
   'modelo-d6-etf-espana': 'Modelo D6 y ETFs: ¿hay que presentarlo? (2026)',

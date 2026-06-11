@@ -12,7 +12,7 @@ const BASE_URL = 'https://boglehub.com'
 /** Mapa roboadvisor slug → artículo de análisis completo en el blog */
 const ROBOADVISOR_REVIEW_ARTICLES: Record<string, { slug: string; label: string }> = {
   'indexa-capital':            { slug: 'indexa-capital-opinion-2026',   label: 'Indexa Capital: análisis completo 2026' },
-  'finizens':                  { slug: 'finizens-vs-indexa-capital-2026', label: 'Finizens vs Indexa Capital: comparativa 2026' },
+  'finizens':                  { slug: 'finizens-opinion-2026', label: 'Finizens: análisis completo 2026' },
   'myinvestor-roboadvisor':    { slug: 'roboadvisors-espana-merecen-comision', label: '¿Merecen lo que cobran los roboadvisors?' },
   'inbestme':                  { slug: 'inbestme-opinion-2026', label: 'inbestMe: análisis completo 2026' },
   'openbank-roboadvisor':      { slug: 'mejor-roboadvisor-espana-2026', label: 'Mejor roboadvisor en España: comparativa 2026' },

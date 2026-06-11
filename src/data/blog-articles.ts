@@ -19,6 +19,129 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'finizens-opinion-2026',
+    title: 'Finizens: opinión y análisis completo del roboadvisor (2026)',
+    excerpt:
+      'Finizens: roboadvisor regulado por CNMV con mínimo de 1.000€, comisiones de las más bajas y oro en sus carteras. Análisis honesto: para quién encaja.',
+    publishedAt: '2026-06-05',
+    readingMinutes: 8,
+    keywords: ['Finizens opinión', 'Finizens roboadvisor', 'Finizens comisiones', 'Finizens seguridad', 'Finizens o Indexa'],
+    faq: [
+      {
+        q: '¿Es seguro Finizens?',
+        a: 'Sí. Finizens es una agencia de valores registrada en la CNMV (nº 286), con respaldo del grupo Global Savings Group. Tu dinero no está en Finizens: se invierte en fondos a tu nombre custodiados en entidades bancarias separadas. Si Finizens quebrara, tu cartera seguiría siendo tuya, y está cubierta por el Fondo de Garantía de Inversiones hasta 100.000€.',
+      },
+      {
+        q: '¿Cuánto cobra Finizens?',
+        a: 'El coste total ronda el 0,32-0,42% anual (gestión + custodia + TER de los fondos), de los más bajos del mercado español: la comisión de gestión parte del 0,12% hasta 10.000€ y baja hasta el 0,099% por encima de 100.000€. Está por debajo de Indexa (0,40-0,50%) y de inbestMe (0,41-0,69%), y cerca de MyInvestor (0,30-0,40%).',
+      },
+      {
+        q: '¿Por qué Finizens incluye oro en sus carteras?',
+        a: 'Finizens añade un porcentaje pequeño de oro físico (vía ETC) en sus carteras más conservadoras como diversificador: históricamente el oro tiende a comportarse distinto que la bolsa, amortiguando caídas. Es una decisión de diseño que lo distingue de Indexa o MyInvestor, que no incluyen materias primas. Ni mejor ni peor: distinta filosofía de diversificación.',
+      },
+      {
+        q: '¿Cuál es el mínimo para empezar en Finizens?',
+        a: 'El mínimo de apertura es de 1.000€, claramente más accesible que los 3.000€ de Indexa Capital, aunque por encima de los 150€ de MyInvestor. Para quien empieza con poco capital pero quiere un roboadvisor especializado, es un punto medio razonable. También ofrece plan de pensiones indexado.',
+      },
+      {
+        q: '¿Finizens o Indexa Capital?',
+        a: 'Son los dos referentes y para la mayoría resultan intercambiables. Finizens gana en mínimo de apertura (1.000€ vs 3.000€), comisiones algo más bajas y el oro como diversificador; Indexa, en granularidad (10 perfiles vs 5), patrimonio gestionado y antigüedad del historial. Elige por el mínimo que puedes aportar y por si te convence el oro en cartera.',
+      },
+    ],
+    content: `# Finizens: opinión y análisis completo del roboadvisor (2026)
+
+Finizens es, junto a Indexa Capital, uno de los dos grandes nombres de la gestión indexada automatizada en España. Su propuesta tiene tres señas claras: comisiones de las más bajas del mercado, un mínimo de entrada accesible (1.000€) y una decisión de diseño que no verás en sus competidores: **oro físico** en las carteras como diversificador. Este análisis, sin afiliación ni comisiones por recomendarte nada, explica cómo funciona, cuánto cuesta de verdad y para quién encaja.
+
+La conclusión por adelantado: Finizens es una opción sólida y barata para delegar tu inversión indexada, especialmente si empiezas con 1.000-3.000€ (donde Indexa aún no te deja entrar) o si te convence el oro como amortiguador. Sus 5 perfiles son menos granulares que los 10 de Indexa, pero para la mayoría es suficiente.
+
+---
+
+## Quién es Finizens
+
+Finizens es una **agencia de valores registrada en la CNMV (nº 286)**, fundada en 2016 y con el respaldo del grupo Global Savings Group. Gestiona en torno a **400 millones de euros** en carteras de fondos indexados de **iShares, Vanguard y Amundi**, con metodología pasiva: define tu perfil, invierte en una cartera global diversificada y rebalancea automáticamente. Ofrece también **plan de pensiones indexado**.
+
+Es el segundo roboadvisor "puro" por tamaño en España, tras Indexa Capital, y lleva casi una década de historial.
+
+---
+
+## Comisiones: de las más bajas del mercado
+
+El coste total de Finizens —gestión + custodia + TER de los fondos— ronda el **0,32-0,42% anual**. La comisión de gestión parte del **0,12%** hasta 10.000€ y **baja por tramos hasta el 0,099%** por encima de 100.000€, un detalle que premia al patrimonio que crece.
+
+| Roboadvisor | Coste total anual | Mínimo |
+|---|---|---|
+| MyInvestor | 0,30-0,40% | 150€ |
+| **Finizens** | **0,32-0,42%** | **1.000€** |
+| Indexa Capital | 0,40-0,50% | 3.000€ |
+| inbestMe | 0,41-0,69% | 1.000€ |
+| Openbank | 0,70-0,90% | 500€ |
+
+En coste, Finizens está en el grupo de cabeza: por debajo de Indexa y de inbestMe, y muy cerca de MyInvestor. A largo plazo, esa décima menos cada año suma; es la lógica del [interés compuesto](/blog/interes-compuesto-inversion) aplicada a las comisiones.
+
+---
+
+## El rasgo diferencial: oro en cartera
+
+Finizens incluye un porcentaje pequeño de **oro físico (vía ETC)** en sus carteras, sobre todo en las conservadoras, como **diversificador descorrelacionado**: históricamente, el oro tiende a comportarse distinto que la renta variable, y puede amortiguar parte de las caídas bursátiles.
+
+¿Es mejor o peor que no llevarlo? Ninguna de las dos cosas: es una **filosofía de diversificación distinta** a la de Indexa o MyInvestor, que no incluyen materias primas. Si te convence el argumento del oro como amortiguador (el mismo de la [cartera permanente](/blog/cartera-permanente-harry-browne-espana), en versión suave), Finizens lo trae de serie; si prefieres una cartera 100% acciones-bonos, sus competidores encajan más.
+
+---
+
+## Perfiles y funcionamiento
+
+Finizens ofrece **5 carteras** numeradas del 1 (más conservadora) al 5 (más agresiva), frente a los 10 perfiles de Indexa o los 11 de inbestMe. Menos granularidad, sí, aunque en la práctica la diferencia entre 5 y 10 escalones es menos relevante de lo que parece: lo importante es acertar la zona de riesgo, no el decimal.
+
+El resto es el estándar de un buen roboadvisor: test de perfil, aportaciones automáticas, **rebalanceo automático** cuando la cartera se desvía, y reinversión. Tú solo aportas; ellos mantienen el rumbo.
+
+---
+
+## Seguridad
+
+- **Regulación**: agencia de valores supervisada por la **CNMV (nº 286)**.
+- **Custodia segregada**: tu dinero está en fondos **a tu nombre**, custodiados en entidades bancarias separadas del balance de Finizens. Si Finizens quebrara, tu cartera sigue siendo tuya.
+- **Garantía**: cobertura del Fondo de Garantía de Inversiones hasta **100.000€**, además de la protección estructural de la segregación (la misma lógica que explicamos en [qué pasa si quiebra tu bróker](/blog/que-pasa-si-quiebra-tu-broker)).
+
+En solidez regulatoria, Finizens está al nivel de los grandes del sector.
+
+---
+
+## Para quién tiene sentido Finizens (y para quién no)
+
+**Tiene sentido si:**
+- Quieres delegar la gestión y empiezas con **1.000-3.000€** (Indexa exige 3.000€).
+- Buscas comisiones de las más bajas sin renunciar a un roboadvisor especializado.
+- Te convence el **oro como diversificador** en la parte conservadora.
+- Quieres también un plan de pensiones indexado.
+
+**No tiene sentido si:**
+- Empiezas con menos de 1.000€ (MyInvestor permite desde 150€).
+- Quieres la máxima granularidad de perfiles (Indexa: 10; inbestMe: 11).
+- Prefieres gestionarlo tú mismo: una [cartera Boglehead de 3 fondos](/blog/cartera-boglehead-3-fondos-espana) cuesta ~0,10% y no es difícil.
+
+---
+
+## Finizens vs Indexa: el clásico
+
+Es la comparación inevitable, y la respuesta corta es que **para la mayoría son intercambiables**: ambos regulados, baratos, pasivos y solventes. Finizens gana en mínimo (1.000€ vs 3.000€), coste y el oro; Indexa, en granularidad (10 perfiles), patrimonio gestionado (+2.000M€) e historial auditado más largo. El desempate fino lo tienes en la comparativa [Finizens vs Indexa Capital](/blog/finizens-vs-indexa-capital-2026), y el panorama completo del sector en [el mejor roboadvisor de España 2026](/blog/mejor-roboadvisor-espana-2026).
+
+---
+
+## Conclusión práctica
+
+Finizens es uno de los roboadvisors más recomendables de España: barato, regulado, con un mínimo accesible y una propuesta de diversificación con personalidad propia (el oro). Si quieres delegar tu inversión indexada y los 3.000€ de Indexa te quedan lejos —o simplemente te convence su filosofía—, es una elección difícil de criticar. Y si dudas entre delegar o hacerlo tú mismo, calcula primero cuánto te cuesta cada camino con el [comparador de roboadvisor vs DIY](/calculadora/roboadvisor-vs-diy).
+
+---
+
+## Fuentes y lecturas complementarias
+
+- [Finizens — Web oficial](https://finizens.com) — Comisiones, carteras y condiciones actualizadas.
+- [CNMV — Registro de agencias de valores](https://www.cnmv.es) — Verifica el registro de Finizens (nº 286).
+- [Finizens vs Indexa Capital — BogleHub](/blog/finizens-vs-indexa-capital-2026) — La comparativa directa entre los dos referentes.
+- [Mejor roboadvisor en España 2026 — BogleHub](/blog/mejor-roboadvisor-espana-2026) — Los cinco roboadvisors comparados.
+`,
+  },
+  {
     slug: 'invertir-mercados-emergentes',
     title: 'Mercados emergentes: ¿merece la pena invertir? (2026)',
     excerpt:
@@ -2147,7 +2270,7 @@ El roboadvisor con más patrimonio gestionado de España (+2.000 millones €), 
 
 **Coste total**: 0,32-0,42%. **Mínimo**: 1.000€. **Perfiles**: 5.
 
-Agencia de valores registrada en CNMV (nº 286), con respaldo del grupo Global Savings Group. Su rasgo diferencial: incluye un porcentaje de **oro físico** (vía ETC) en las carteras conservadoras como diversificador, algo poco común. Mínimo de apertura más bajo que Indexa (1.000€) y comisiones ligeramente inferiores. Buen encaje si empiezas con menos de 3.000€ o te gusta el oro como amortiguador. La comparativa directa está en [Finizens vs Indexa Capital](/blog/finizens-vs-indexa-capital-2026).
+Agencia de valores registrada en CNMV (nº 286), con respaldo del grupo Global Savings Group. Su rasgo diferencial: incluye un porcentaje de **oro físico** (vía ETC) en las carteras conservadoras como diversificador, algo poco común. Mínimo de apertura más bajo que Indexa (1.000€) y comisiones ligeramente inferiores. Buen encaje si empiezas con menos de 3.000€ o te gusta el oro como amortiguador. Análisis completo en la [opinión de Finizens 2026](/blog/finizens-opinion-2026), y la comparativa directa en [Finizens vs Indexa Capital](/blog/finizens-vs-indexa-capital-2026).
 
 ---
 

@@ -251,10 +251,10 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'mejores-etfs-espana-2026',
   ],
   'finizens-vs-indexa-capital-2026': [
+    'finizens-opinion-2026',
     'indexa-capital-opinion-2026',
     'roboadvisors-espana-merecen-comision',
     'mejor-roboadvisor-espana-2026',
-    'plan-pensiones-indexado-espana-2026',
   ],
   'como-declarar-etfs-hacienda': [
     'fiscalidad-etfs-espana-guia-completa',
@@ -428,14 +428,20 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
   ],
   'mejor-roboadvisor-espana-2026': [
     'indexa-capital-opinion-2026',
-    'finizens-vs-indexa-capital-2026',
+    'finizens-opinion-2026',
     'roboadvisors-espana-merecen-comision',
     'inbestme-opinion-2026',
   ],
   'inbestme-opinion-2026': [
     'mejor-roboadvisor-espana-2026',
     'indexa-capital-opinion-2026',
+    'finizens-opinion-2026',
+    'roboadvisors-espana-merecen-comision',
+  ],
+  'finizens-opinion-2026': [
     'finizens-vs-indexa-capital-2026',
+    'mejor-roboadvisor-espana-2026',
+    'indexa-capital-opinion-2026',
     'roboadvisors-espana-merecen-comision',
   ],
 }
