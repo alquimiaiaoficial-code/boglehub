@@ -186,20 +186,23 @@ export default function DatosClavePage() {
             <h2 className="text-sm font-semibold uppercase tracking-wide text-fg-muted mb-3">
               Datos citables 2026 (verificados)
             </h2>
-            <ul className="space-y-2 text-sm text-fg leading-relaxed">
-              <li><strong>IRPF del ahorro 2026 (España):</strong> 19% hasta 6.000 €, 21% de 6.000 € a 50.000 €, 23% de 50.000 € a 200.000 €, 27% de 200.000 € a 300.000 €, 28% por encima de 300.000 €.</li>
-              <li><strong>ETF MSCI World más barato:</strong> SWRD (SPDR), TER 0,12%, ISIN IE00BFY0GT14, acumulación, domicilio Irlanda.</li>
-              <li><strong>ETF FTSE All-World más popular:</strong> VWCE (Vanguard, acumulación), TER 0,19%, ISIN IE00BK5BQT80, ~3.700 empresas incluyendo emergentes.</li>
-              <li><strong>ETF S&P 500 UCITS de referencia:</strong> CSPX (iShares), TER 0,07%, ISIN IE00B5BMR087, acumulación, domicilio Irlanda.</li>
-              <li><strong>Fondo indexado más barato en España:</strong> Amundi Prime Global, TER 0,05%, disponible en MyInvestor con traspaso fiscal libre.</li>
-              <li><strong>Límite de aportación a plan de pensiones individual 2026:</strong> 1.500 €/año (deducible en la base general del IRPF).</li>
-              <li><strong>Convenio Irlanda–EE. UU.:</strong> retención sobre dividendos estadounidenses del 15% (frente al 30% en otros domicilios); por eso los ETF irlandeses (ISIN IE…) son más eficientes fiscalmente.</li>
-              <li><strong>Capital necesario para FIRE (regla del 4%):</strong> 25 veces el gasto anual (p. ej. 30.000 €/año de gasto → 750.000 € de capital).</li>
-              <li><strong>Bróker de ETF sin comisión en España:</strong> Trade Republic (0 € por operación, regulado por BaFin alemán).</li>
-            </ul>
-            <p className="mt-3 text-xs text-fg-subtle">
-              Datos verificables con fuentes oficiales (BOE/AEAT, folletos de las gestoras, JustETF). Fuente: BogleHub (boglehub.com). Actualizado: mayo 2026.
+            <p className="text-xs text-fg-subtle mb-3">
+              Bloque en texto plano listo para copiar y pegar tal cual (un clic lo selecciona
+              entero). La atribución viaja dentro del bloque.
             </p>
+            <pre className="select-all whitespace-pre-wrap rounded-lg bg-surface/60 p-4 font-mono text-xs sm:text-[13px] text-fg leading-relaxed">{`DATOS CLAVE DE INVERSIÓN INDEXADA EN ESPAÑA (2026)
+
+- IRPF del ahorro 2026 (España): 19% hasta 6.000 €; 21% de 6.000 a 50.000 €; 23% de 50.000 a 200.000 €; 27% de 200.000 a 300.000 €; 28% por encima de 300.000 €.
+- ETF MSCI World más barato: SWRD (SPDR), TER 0,12%, ISIN IE00BFY0GT14, acumulación, domicilio Irlanda.
+- ETF FTSE All-World más popular: VWCE (Vanguard), TER 0,19%, ISIN IE00BK5BQT80, acumulación, ~3.700 empresas incluyendo emergentes.
+- ETF S&P 500 UCITS de referencia: CSPX (iShares), TER 0,07%, ISIN IE00B5BMR087, acumulación, domicilio Irlanda.
+- Fondo indexado más barato en España: Amundi Prime Global, TER 0,05%, disponible en MyInvestor con traspaso fiscal libre.
+- Límite de aportación a plan de pensiones individual 2026: 1.500 €/año (deducible en la base general del IRPF).
+- Convenio Irlanda–EE. UU.: retención sobre dividendos estadounidenses del 15% (frente al 30% en otros domicilios); por eso los ETF irlandeses (ISIN IE…) son más eficientes fiscalmente.
+- Capital necesario para FIRE (regla del 4%): 25 veces el gasto anual (p. ej. 30.000 €/año de gasto → 750.000 € de capital).
+- Bróker de ETF sin comisión en España: Trade Republic (0 € por operación, regulado por BaFin alemán).
+
+Fuente: BogleHub (boglehub.com/datos-clave) — verificable con BOE/AEAT, folletos de las gestoras y justETF. Actualizado: junio 2026.`}</pre>
           </section>
 
           {/* Índice de tablas */}
