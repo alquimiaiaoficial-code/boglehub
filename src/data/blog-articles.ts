@@ -201,7 +201,7 @@ Por eso, la decisión sobre emergentes es en realidad una decisión sobre **qué
 
 ## Cómo invertir en emergentes desde España
 
-Si optas por la vía modular, lo haces con un **ETF de mercados emergentes** UCITS domiciliado en Irlanda. El más popular es el **EIMI** (iShares Core MSCI EM IMI), que incluye también pequeñas compañías; hay alternativas de Amundi y otras gestoras (ver [qué gestora elegir](/blog/vanguard-vs-ishares-vs-amundi)).
+Si optas por la vía modular, lo haces con un **ETF de mercados emergentes** UCITS domiciliado en Irlanda. El más popular es el **EIMI** (iShares Core MSCI EM IMI), que incluye también pequeñas compañías; hay alternativas de Amundi y otras gestoras (ver [qué gestora elegir](/blog/vanguard-vs-ishares-vs-amundi)). Lo compras desde cualquier bróker de ETFs; la [comparativa de brókers](/blog/mejor-broker-etfs-espana-2026) te ayuda a elegir el más barato.
 
 Si combinas World + emergentes, el reparto habitual para replicar el mundo es en torno a **88% desarrollados / 12% emergentes** (su peso por capitalización), reajustándolo al [rebalancear](/blog/como-rebalancear-cartera-indexada). Aun así, recuerda: un All-World hace esto solo.
 
@@ -416,7 +416,7 @@ Lo que la diversificación **no** elimina del todo es el **riesgo de mercado**: 
 
 ## La forma más fácil de diversificar: un fondo indexado global
 
-Aquí está la belleza de la inversión indexada: **un solo fondo indexado mundial te diversifica al instante** entre miles de empresas de decenas de países, en su proporción de mercado. No tienes que elegir acciones ni países: lo compras todo de golpe, barato. Es la razón por la que [indexarse](/blog/fondos-indexados-vs-gestion-activa) es tan eficaz, y por la que un producto como el [MSCI World o un All-World](/blog/que-es-el-msci-world) resuelve la diversificación de la parte de renta variable de un plumazo.
+Aquí está la belleza de la inversión indexada: **un solo fondo indexado mundial te diversifica al instante** entre miles de empresas de decenas de países, en su proporción de mercado. No tienes que elegir acciones ni países: lo compras todo de golpe, barato. Es la razón por la que [indexarse](/blog/fondos-indexados-vs-gestion-activa) es tan eficaz, y por la que un producto como el [MSCI World o un All-World](/blog/que-es-el-msci-world) resuelve la diversificación de la parte de renta variable de un plumazo. Cualquier [bróker de ETFs](/blog/mejor-broker-etfs-espana-2026) te da acceso a estos fondos, varios desde 0€ de comisión.
 
 Si además añades algo de renta fija, diversificas también por clase de activo; cómo repartir, en [renta variable vs renta fija](/blog/renta-variable-vs-renta-fija-cartera).
 
@@ -531,6 +531,8 @@ No se trata de eliminarla (imposible sin renunciar a la rentabilidad), sino de *
 - **Una [asignación de activos](/blog/renta-variable-vs-renta-fija-cartera) que aguantes**: si un 100% bolsa te haría vender, añade renta fija hasta un nivel que puedas sostener.
 - **Ignorar el ruido**: no mires la cartera cada día; la volatilidad diaria es irrelevante para tu objetivo a 20 años.
 
+Y si sabes que tu temperamento te jugará malas pasadas en las caídas, delegar en un [roboadvisor](/blog/mejor-roboadvisor-espana-2026) pone la disciplina en piloto automático.
+
 ---
 
 ## Conclusión práctica
@@ -629,7 +631,7 @@ El MSCI World deja fuera los **mercados emergentes** (China, India, etc.). Si qu
 - **Si tienes convicción en EE.UU. y entiendes que es una apuesta concentrada**: el S&P 500 es defendible y ha funcionado, pero asume conscientemente esa concentración.
 - **Una postura intermedia común**: núcleo global (World/All-World) y, si quieres, una pequeña sobreponderación de EE.UU.; no al revés.
 
-Lo que **no** es buena idea es saltar de uno a otro según quién haya ganado el último año. Elige una política y mantenla. Para ver los ETFs concretos de cada índice, tienes el [catálogo de ETFs del S&P 500](/etfs/sp500) y el de [ETFs del MSCI World](/etfs/msci-world), y la comparativa [VWCE vs CSPX vs IWDA](/blog/vwce-vs-cspx-vs-iwda) que los pone cara a cara.
+Lo que **no** es buena idea es saltar de uno a otro según quién haya ganado el último año. Elige una política y mantenla. Para ver los ETFs concretos de cada índice, tienes el [catálogo de ETFs del S&P 500](/etfs/sp500) y el de [ETFs del MSCI World](/etfs/msci-world), y la comparativa [VWCE vs CSPX vs IWDA](/blog/vwce-vs-cspx-vs-iwda) que los pone cara a cara. Y para decidir dónde comprarlos al menor coste, el [comparador de brókers](/calculadora/comparar-brokers).
 
 ---
 
@@ -1025,7 +1027,7 @@ Para todo esto, la prioridad es **seguridad y liquidez**, no rentabilidad. Y eso
 
 ### Cuenta remunerada (o de ahorro)
 
-Una cuenta que paga intereses por tu saldo. Ventajas: **liquidez inmediata**, capital garantizado y cubierto por el [Fondo de Garantía de Depósitos hasta 100.000€](/blog/que-pasa-si-quiebra-tu-broker), y simplicidad total. Inconvenientes: el tipo lo fija el banco y puede ser promocional o cambiar; los intereses tributan en el IRPF del ahorro. Es la opción por defecto para el fondo de emergencia.
+Una cuenta que paga intereses por tu saldo. Ventajas: **liquidez inmediata**, capital garantizado y cubierto por el [Fondo de Garantía de Depósitos hasta 100.000€](/blog/que-pasa-si-quiebra-tu-broker), y simplicidad total. Inconvenientes: el tipo lo fija el banco y puede ser promocional o cambiar; los intereses tributan en el IRPF del ahorro. Es la opción por defecto para el fondo de emergencia. Brókers como [Trade Republic](/blog/trade-republic-opinion-2026) (~2-2,5% TAE) o [XTB](/blog/xtb-opinion-2026) (~3% TAE) la incluyen sin condiciones.
 
 ### Fondo monetario
 
@@ -1389,7 +1391,7 @@ Para la parte de renta fija, los [mejores ETFs de renta fija](/blog/mejores-etfs
 
 ## Conclusión práctica
 
-Decide primero **cuánto** quieres en bolsa y cuánto en renta fija, en función de tu horizonte, tu aguante y tu necesidad de riesgo; luego elige fondos indexados baratos y diversificados para cada parte y rebalancea una o dos veces al año. Una cartera sencilla tipo 80/20 o 60/40, mantenida con disciplina, supera a la mayoría de estrategias más complicadas. La renta fija no te hará rico, pero puede ser lo que te mantenga invertido cuando llegue la tormenta, y mantenerse invertido es la mitad de la batalla.
+Decide primero **cuánto** quieres en bolsa y cuánto en renta fija, en función de tu horizonte, tu aguante y tu necesidad de riesgo; luego elige fondos indexados baratos y diversificados para cada parte y rebalancea una o dos veces al año. Una cartera sencilla tipo 80/20 o 60/40, mantenida con disciplina, supera a la mayoría de estrategias más complicadas. Y si prefieres delegar el reparto y el rebalanceo, un [roboadvisor](/blog/mejor-roboadvisor-espana-2026) lo automatiza por una comisión razonable. La renta fija no te hará rico, pero puede ser lo que te mantenga invertido cuando llegue la tormenta, y mantenerse invertido es la mitad de la batalla.
 
 Para ver cómo encaja todo en una cartera concreta, la [cartera Boglehead de 3 fondos](/blog/cartera-boglehead-3-fondos-espana) es el mejor ejemplo.
 
@@ -1686,7 +1688,7 @@ Depende de tu situación, no del nivel del mercado:
 
 1. **¿Tienes fondo de emergencia y sin deuda cara?** Si no, eso va primero (ver [fondo de emergencia](/blog/fondo-de-emergencia-cuanto-necesitas)). El dinero que vas a invertir debe ser dinero que no necesitas a corto plazo.
 
-2. **¿Es una aportación mensual de tu ahorro?** Invierte sin pensar en el momento: aportar de forma periódica (DCA) promedia el precio y te quita la decisión de encima. Es el modo por defecto del inversor indexado.
+2. **¿Es una aportación mensual de tu ahorro?** Invierte sin pensar en el momento: aportar de forma periódica (DCA) promedia el precio y te quita la decisión de encima. Es el modo por defecto del inversor indexado. Los planes de ahorro automáticos de brókers como [Trade Republic](/blog/trade-republic-opinion-2026) lo hacen por ti desde 1€ al mes.
 
 3. **¿Es una cantidad grande de golpe (una herencia, un bonus) y te angustia?** Estadísticamente, invertirla toda de una vez ha rendido más de media; pero si el miedo a entrar justo antes de una caída te paralizaría, repartirla en aportaciones a lo largo de unos meses es un punto medio razonable. Lo vemos en [DCA vs lump sum](/blog/dca-vs-lump-sum-aportar-mensual).
 
@@ -1811,7 +1813,7 @@ Comprar la casa en la que vives es un caso aparte: no es solo una inversión, es
 
 Depende de qué valores:
 
-**Elige fondos indexados si** priorizas la diversificación, la liquidez, el bajo coste y no querer gestionar nada. Para la mayoría de inversores particulares que quieren rentabilizar sus ahorros sin complicarse, es la opción más eficiente: empieza por la [cartera Boglehead de 3 fondos](/blog/cartera-boglehead-3-fondos-espana) o los [mejores fondos indexados](/blog/mejores-fondos-indexados-espana-2026).
+**Elige fondos indexados si** priorizas la diversificación, la liquidez, el bajo coste y no querer gestionar nada. Para la mayoría de inversores particulares que quieren rentabilizar sus ahorros sin complicarse, es la opción más eficiente: empieza por la [cartera Boglehead de 3 fondos](/blog/cartera-boglehead-3-fondos-espana) o los [mejores fondos indexados](/blog/mejores-fondos-indexados-espana-2026), y elige dónde comprarlos con el [comparador de brókers](/calculadora/comparar-brokers).
 
 **Considera el inmobiliario si** quieres aprovechar el apalancamiento de la hipoteca, te gusta el activo tangible y no te importa gestionarlo (o pagar por ello). Funciona especialmente para quien puede dedicarle tiempo y dispone de capital para la entrada sin descapitalizarse.
 
@@ -1884,7 +1886,7 @@ Por eso la decisión más importante no es "qué fondo", sino **empezar cuanto a
 
 ### Opción A: a nombre del menor
 
-Abres una cuenta de valores o de fondos **a nombre del niño** (necesita su propio NIF; la gestionan los padres o tutores como representantes legales). Algunos brókers y bancos españoles lo permiten (por ejemplo, MyInvestor).
+Abres una cuenta de valores o de fondos **a nombre del niño** (necesita su propio NIF; la gestionan los padres o tutores como representantes legales). Algunos brókers y bancos españoles lo permiten (por ejemplo, [MyInvestor](/blog/myinvestor-opinion-2026)).
 
 - **Ventaja**: el dinero es legalmente del menor desde el principio, y sus ganancias tributan en **su** IRPF, donde normalmente tiene poca o ninguna otra renta (a menudo por debajo del mínimo que obliga a declarar, si las cantidades son modestas).
 - **Inconveniente**: al cumplir **18 años**, el dinero es suyo y pasa a tener control total, decidas tú lo que decidas. Además, aportar cantidades relevantes a su nombre puede considerarse una **donación**, con implicaciones en el Impuesto de Sucesiones y Donaciones que **varían mucho según la comunidad autónoma**.
