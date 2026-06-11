@@ -9555,6 +9555,7 @@ Para ver el coste real de cada broker con tus datos concretos, usa el [comparado
     excerpt:
       'Trade Republic, DEGIRO, MyInvestor, ING e Interactive Brokers comparados para ETFs: comisiones reales, seguridad y cuál elegir según tu perfil inversor.',
     publishedAt: '2026-05-30',
+    updatedAt: '2026-06-05',
     readingMinutes: 11,
     keywords: ['mejor broker ETF España', 'mejor broker para ETFs', 'broker ETF España 2026', 'comparativa brokers ETF', 'qué broker elegir ETF'],
     faq: [
@@ -9672,6 +9673,20 @@ Para un inversor indexado que compra ETFs en euros domiciliados en Irlanda (lo h
 **Lo peor**: el coste por operación es prohibitivo para aportaciones pequeñas regulares. Una aportación mensual de 200 € con una comisión de 10 € supone un 5 % de coste de entrada — inaceptable frente a los 0 € de Trade Republic.
 
 **Ideal para**: clientes de ING que valoran la comodidad bancaria por encima del coste y hacen aportaciones grandes y poco frecuentes. Para el inversor indexado sensible al coste, hay opciones mucho mejores. Análisis completo en la [opinión de ING 2026](/blog/ing-opinion-2026).
+
+---
+
+## Otros brókers que quizá estés considerando
+
+Fuera de los cinco grandes, hay otros nombres habituales en España. Cada uno tiene su análisis completo:
+
+- **[XTB](/blog/xtb-opinion-2026)**: 0€ en ETFs hasta 100.000€/mes y cuenta remunerada ~3% TAE, con sucursal supervisada por la CNMV. Alternativa seria a Trade Republic.
+- **[Scalable Capital](/blog/scalable-capital-opinion-2026)**: modelo de suscripción (plan Prime) con operaciones ilimitadas; interesante para quien opera mucho cada mes.
+- **[Renta 4](/blog/renta-4-opinion-2026)**: banco de inversión español veterano, con oficinas y servicio personal; caro para el indexado (~7-10€/orden + custodia).
+- **[Openbank](/blog/openbank-opinion-2026)**: el banco online del Santander; ~8€ por orden, mejor banco que bróker.
+- **[eToro](/blog/etoro-opinion-2026)**: conocido por el copy trading y las cripto; poco eficiente para la indexación pura de largo plazo.
+
+Y si la seguridad te frena con cualquiera de ellos, en [¿qué pasa si quiebra tu bróker?](/blog/que-pasa-si-quiebra-tu-broker) repasamos las garantías de los 10, una a una.
 
 ---
 

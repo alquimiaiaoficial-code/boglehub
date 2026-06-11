@@ -281,15 +281,15 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'mejores-etfs-espana-2026',
   ],
   'myinvestor-opinion-2026': [
+    'mejor-broker-etfs-espana-2026',
     'amundi-prime-global-analisis',
     'degiro-vs-trade-republic-vs-myinvestor-2026',
-    'fondos-indexados-vs-etfs-espana',
     'renta-4-opinion-2026',
   ],
   'trade-republic-opinion-2026': [
-    'degiro-vs-trade-republic-vs-myinvestor-2026',
+    'mejor-broker-etfs-espana-2026',
     'myinvestor-opinion-2026',
-    'dca-vs-lump-sum-aportar-mensual',
+    'degiro-vs-trade-republic-vs-myinvestor-2026',
     'como-elegir-tu-primer-etf-espana-2026',
   ],
   'etfs-dividendos-vivir-rentas-espana': [
@@ -349,13 +349,13 @@ export const RELATED_ARTICLES: Record<string, string[]> = {
     'que-pasa-si-quiebra-tu-broker',
   ],
   'xtb-opinion-2026': [
-    'degiro-vs-trade-republic-vs-myinvestor-2026',
+    'mejor-broker-etfs-espana-2026',
     'trade-republic-opinion-2026',
     'degiro-opinion-2026',
     'como-elegir-tu-primer-etf-espana-2026',
   ],
   'scalable-capital-opinion-2026': [
-    'degiro-vs-trade-republic-vs-myinvestor-2026',
+    'mejor-broker-etfs-espana-2026',
     'trade-republic-opinion-2026',
     'degiro-opinion-2026',
     'xtb-opinion-2026',
