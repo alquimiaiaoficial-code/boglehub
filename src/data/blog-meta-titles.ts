@@ -23,7 +23,7 @@ export const BLOG_META_TITLES: Record<string, string> = {
   'como-declarar-etfs-hacienda': 'Cómo declarar ETFs en la renta en España (2026)',
   'cartera-boglehead-3-fondos-espana': 'Cartera Boglehead de 3 fondos para España (2026)',
   'mejores-etfs-espana-2026': 'Mejores ETFs para invertir en España (2026)',
-  'mejores-etfs-nasdaq-100-espana': 'Mejores ETFs Nasdaq 100 para España (2026)',
+  'mejores-etfs-nasdaq-100-espana': 'Mejores ETFs Nasdaq 100: CNDX, EQQQ, SXRV (2026)',
   // Segunda tanda — artículos sin metaTitle hasta ahora
   'fiscalidad-etfs-espana-guia-completa': 'Fiscalidad de ETFs en España: guía completa',
   'fire-espana-cuanto-necesitas': 'FIRE en España: cuánto necesitas de verdad',

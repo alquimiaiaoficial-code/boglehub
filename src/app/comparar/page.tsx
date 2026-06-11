@@ -5,12 +5,12 @@ import { EtfComparator } from './EtfComparator'
 const BASE_URL = 'https://boglehub.com'
 
 export const metadata: Metadata = {
-  title: 'Comparar ETFs España 2026',
+  title: 'Comparador de ETFs UCITS gratis (2026)',
   description:
-    'Compara dos ETFs UCITS en detalle: TER, clase de activo, divisa, solapamiento y asignación geográfica. Elige el ETF que mejor se adapte a tu cartera indexada.',
+    'Comparador gratuito de ETFs UCITS: enfrenta dos ETFs y compara TER, solapamiento, regiones, divisa y fiscalidad antes de elegir. Sin registro.',
   alternates: { canonical: '/comparar' },
   openGraph: {
-    title: 'Comparar ETFs España 2026 | BogleHub',
+    title: 'Comparador de ETFs UCITS gratis (2026) | BogleHub',
     description: 'Compara TER, regiones, sectores y solapamiento entre dos ETFs UCITS.',
     locale: 'es_ES',
   },

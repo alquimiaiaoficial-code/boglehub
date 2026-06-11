@@ -14,7 +14,7 @@ import { GLOSSARY_TERMS } from '@/data/glossary'
 const BASE_URL = 'https://boglehub.com'
 
 export const metadata: Metadata = {
-  title: 'Blog de inversión indexada: ETFs, FIRE y fiscalidad en España',
+  title: 'Blog de inversión indexada: ETFs y FIRE',
   description:
     `Guías prácticas sobre inversión indexada, ETFs UCITS, fiscalidad en España y FIRE. ${BLOG_ARTICLES.length} artículos para inversores Boglehead organizados por categoría.`,
   openGraph: {

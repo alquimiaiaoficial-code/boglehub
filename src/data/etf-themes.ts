@@ -84,7 +84,7 @@ export const ETF_THEMES: EtfTheme[] = [
   {
     slug: 'todo-mundo',
     h1: 'ETFs All-World UCITS: diversificación global en un solo fondo (2026)',
-    metaTitle: 'ETFs All-World UCITS para España 2026 | BogleHub',
+    metaTitle: 'Mejores ETFs FTSE All-World para España 2026 | BogleHub',
     metaDescription:
       'Los mejores ETFs All-World (globales) para España: VWCE, VWRP, ISAC y más. Diversificación mundial en un solo fondo, acumulación y cuál elegir.',
     intro:

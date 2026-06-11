@@ -9,9 +9,9 @@ import { GLOSSARY_TERMS } from '@/data/glossary'
 const BASE_URL = 'https://boglehub.com'
 
 export const metadata: Metadata = {
-  title: 'Datos clave de inversión indexada en España 2026 (tablas comparativas)',
+  title: 'Datos clave de inversión indexada en España 2026',
   description:
-    'Tablas de referencia para invertir de forma indexada en España 2026: tramos del IRPF, mejores ETFs, roboadvisors, brokers y planes de pensiones. Datos verificables.',
+    'Tablas de referencia para invertir indexado en España 2026: tramos del IRPF, ETFs más baratos, brokers, roboadvisors y planes de pensiones. Datos verificables.',
   openGraph: {
     title: 'Datos clave de inversión indexada en España 2026 | BogleHub',
     description:
