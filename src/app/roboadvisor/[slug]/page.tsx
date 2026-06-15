@@ -34,7 +34,8 @@ export async function generateMetadata({
   if (!r) return { title: 'Roboadvisor no encontrado' }
 
   const title = `${r.name}: opinión, comisiones y análisis 2026`
-  const description = `${r.tagline}. Análisis de ${r.name}: comisión total ${r.totalCost}, mínimo apertura ${r.minimumOpening}, ${r.numProfiles} perfiles de riesgo. Regulado por ${r.regulator}${r.regulatorId ? ` (nº ${r.regulatorId})` : ''}.`
+  // El nombre va en el title; no lo repetimos para no truncar la description en SERP.
+  const description = `${r.tagline}. Comisión total ${r.totalCost}, mínimo ${r.minimumOpening}, ${r.numProfiles} perfiles de riesgo. Regulado por ${r.regulator}.`
 
   return {
     title,

@@ -42,7 +42,8 @@ export async function generateMetadata({
   if (!broker) return { title: 'Broker no encontrado' }
 
   const title = `${broker.name}: opinión, comisiones y guía completa 2026`
-  const description = `${broker.tagline}. Análisis completo de ${broker.name}: comisiones (${broker.etfCommission}), seguridad, regulación ${broker.regulator}, para quién es ideal y comparativa con otros brokers para invertir en ETFs desde España.`
+  // El nombre va en el title; no lo repetimos para no truncar la description en SERP.
+  const description = `${broker.tagline}. Comisiones ${broker.etfCommission}, regulación ${broker.regulator}. Opinión, seguridad y para quién es ideal.`
 
   return {
     title,
