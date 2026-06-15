@@ -20,7 +20,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!f) return { title: 'Fondo no encontrado' }
 
   const title = `${f.name}: análisis del fondo indexado (ISIN ${f.isin}) 2026`
-  const description = `${f.tagline}. Análisis de ${f.name}: TER ${f.ter}%, índice ${f.index}, traspaso fiscal libre, dónde comprarlo en España y comparativa con su ETF equivalente.`
+  // El nombre completo ya va en el title; no lo repetimos aquí para no truncar
+  // la description en SERP (mismo criterio que las fichas de ETF).
+  const description = `${f.tagline}. TER ${f.ter}%, índice ${f.index}, con traspaso fiscal libre. Dónde comprarlo en España y comparativa con su ETF equivalente.`
 
   return {
     title,
