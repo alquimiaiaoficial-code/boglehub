@@ -77,6 +77,42 @@ const TERM_VARIANTS: Array<{ pattern: string; slug: string }> = [
   { pattern: 'distribución', slug: 'acumulacion-vs-distribucion' },
   { pattern: 'renta variable', slug: 'renta-variable' },
   { pattern: 'renta fija', slug: 'renta-fija' },
+  // --- Nuevos términos de glosario (61→72) + huecos previos (alpha-beta, spread) ---
+  { pattern: 'traspaso', slug: 'traspaso' },
+  { pattern: 'tasa de retirada segura', slug: 'tasa-retirada-segura' },
+  { pattern: 'regla del 4', slug: 'tasa-retirada-segura' }, // sin '%' a propósito: \b casa con "4%" y "4 %"
+  { pattern: 'ganancias patrimoniales', slug: 'ganancia-patrimonial' },
+  { pattern: 'ganancia patrimonial', slug: 'ganancia-patrimonial' },
+  { pattern: 'rentabilidad anualizada', slug: 'rentabilidad-anualizada' },
+  { pattern: 'CAGR', slug: 'rentabilidad-anualizada' },
+  { pattern: 'duración', slug: 'duracion' }, // genérico: solo enlaza 1ª ocurrencia/doc
+  { pattern: 'dividendos', slug: 'dividendo' },
+  { pattern: 'dividendo', slug: 'dividendo' },
+  { pattern: 'dividend yield', slug: 'dividend-yield' },
+  { pattern: 'rentabilidad por dividendo', slug: 'dividend-yield' },
+  { pattern: 'gestión pasiva', slug: 'gestion-pasiva' },
+  { pattern: 'gestión activa', slug: 'gestion-activa' },
+  { pattern: 'capitalización bursátil', slug: 'capitalizacion-bursatil' },
+  { pattern: 'inflación', slug: 'inflacion' }, // genérico
+  { pattern: 'REITs', slug: 'reit' },
+  { pattern: 'REIT', slug: 'reit' },
+  { pattern: 'prima de riesgo', slug: 'prima-riesgo' },
+  { pattern: 'fondos monetarios', slug: 'fondo-monetario' },
+  { pattern: 'fondo monetario', slug: 'fondo-monetario' },
+  { pattern: 'Letras del Tesoro', slug: 'letras-del-tesoro' },
+  { pattern: 'letras del Tesoro', slug: 'letras-del-tesoro' },
+  { pattern: 'benchmark', slug: 'benchmark' },
+  { pattern: 'mercado bajista', slug: 'mercado-bajista' },
+  { pattern: 'liquidez', slug: 'liquidez' }, // genérico
+  { pattern: 'correlación', slug: 'correlacion' },
+  { pattern: 'coste de oportunidad', slug: 'coste-oportunidad' },
+  { pattern: 'horizonte temporal', slug: 'horizonte-temporal' },
+  { pattern: 'horizonte de inversión', slug: 'horizonte-temporal' },
+  { pattern: 'perfil de riesgo', slug: 'perfil-riesgo' },
+  { pattern: 'valor liquidativo', slug: 'valor-liquidativo' },
+  { pattern: 'apalancamiento', slug: 'apalancamiento' },
+  { pattern: 'bid-ask', slug: 'spread' },
+  { pattern: 'Alpha y Beta', slug: 'alpha-beta' },
 ]
 
 // Verify all referenced slugs exist in the glossary at module load time
