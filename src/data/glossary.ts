@@ -644,6 +644,16 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     relatedLinks: [
       { label: 'Calculadora de interés compuesto', href: '/calculadora/interes-compuesto' },
     ],
+    faq: [
+      {
+        q: '¿Cuánto crece una inversión con interés compuesto a 30 años?',
+        a: 'A un 7% anual, una inversión inicial de 10.000€ se convierte en unos 76.000€ en 30 años. Con interés simple serían solo 31.000€: los 45.000€ de diferencia son exclusivamente el efecto de los intereses generando más intereses.',
+      },
+      {
+        q: '¿Por qué el tiempo es tan importante para el interés compuesto?',
+        a: 'Porque el crecimiento es exponencial, no lineal: cada año los rendimientos se suman al capital y al siguiente generan a su vez nuevos rendimientos. Cuanto antes empiezas a invertir, más años tiene tu dinero para componerse, y los últimos años son los que más aportan.',
+      },
+    ],
   },
   {
     slug: 'msci-world',
@@ -657,6 +667,20 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       'ETFs MSCI World disponibles en España: IWDA (TER 0,20%), SWRD (TER 0,12%), MWRD (TER 0,12%), XDWD (TER 0,19%). Todos son irlandeses, de acumulación y replican el mismo índice.',
     relatedArticles: ['que-es-el-msci-world'],
     relatedLinks: [{ label: 'Mejores ETFs MSCI World', href: '/etfs/msci-world' }],
+    faq: [
+      {
+        q: '¿Qué empresas incluye el MSCI World?',
+        a: 'Unas 1.500 empresas grandes y medianas de 23 países desarrollados (EE.UU., Japón, Reino Unido, Suiza, Francia, Alemania…), ponderadas por capitalización. EE.UU. pesa alrededor del 70%. No incluye mercados emergentes: para eso están el MSCI ACWI o el FTSE All-World.',
+      },
+      {
+        q: '¿Cuál es el mejor ETF de MSCI World en España?',
+        a: 'Los más usados son SWRD y MWRD (TER 0,12%), XDWD (0,19%) e IWDA (0,20%). Todos son irlandeses, de acumulación y replican el mismo índice, así que la diferencia principal es el coste y la liquidez.',
+      },
+      {
+        q: '¿El MSCI World está demasiado concentrado en EE.UU.?',
+        a: 'EE.UU. pesa cerca del 70% por su gran capitalización bursátil, lo que es una crítica habitual. Quien quiera más diversificación geográfica puede usar un FTSE All-World (que añade emergentes) o complementar con un ETF de emergentes aparte.',
+      },
+    ],
   },
   {
     slug: 'sp500',
@@ -669,6 +693,20 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     example:
       'ETFs S&P 500 disponibles en España: CSPX/SXR8 (iShares, TER 0,07%, mismo fondo en dos bolsas), VUAA/VUSA (Vanguard, TER 0,07%, acc/dist), SPXS (SPDR, TER 0,03% — el más barato).',
     relatedLinks: [{ label: 'Mejores ETFs S&P 500', href: '/etfs/sp500' }],
+    faq: [
+      {
+        q: '¿Qué es el S&P 500?',
+        a: 'Es el índice de las 500 mayores empresas cotizadas en EE.UU. (en el NYSE o el Nasdaq), ponderado por capitalización. Es el benchmark de referencia del mercado americano. Sus 10 mayores empresas suelen pesar entre el 30% y el 35% del índice.',
+      },
+      {
+        q: '¿Cuál es el ETF de S&P 500 más barato en España?',
+        a: 'SPXS (SPDR) tiene el TER más bajo, del 0,03%. CSPX/SXR8 (iShares) y VUAA/VUSA (Vanguard) tienen un TER del 0,07%. Todos son UCITS irlandeses comprables desde España.',
+      },
+      {
+        q: '¿Es mejor el S&P 500 o el MSCI World?',
+        a: 'El S&P 500 es solo EE.UU.; el MSCI World diversifica en 23 países desarrollados (aunque EE.UU. ya pesa ~70% en él). El S&P 500 ha rendido más en la última década, pero concentra todo en un país; el MSCI World reduce ese riesgo a cambio de algo menos de exposición a las grandes tecnológicas americanas.',
+      },
+    ],
   },
   {
     slug: 'renta-variable',
@@ -678,6 +716,16 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       'Renta variable es el conjunto de activos cuya rentabilidad no está garantizada y depende del comportamiento del mercado. El ejemplo clásico son las acciones y los ETFs de acciones.',
     longDefinition:
       'La renta variable engloba todos los activos cuya rentabilidad fluctúa según las condiciones del mercado, sin garantía de rendimiento mínimo. Las acciones (y por extensión los ETFs y fondos que invierten en ellas) son el ejemplo paradigmático. La rentabilidad histórica de la renta variable global a largo plazo ha sido del 7-10% anual nominal, con volatilidad del 15-20% anual.\n\nLa renta variable es el motor de rentabilidad de cualquier cartera a largo plazo. La contrapartida es su volatilidad: caídas del 30-50% son históricamente posibles y han ocurrido varias veces (2000-2002, 2008, 2020 brevemente, 2022). El inversor que necesita el dinero en menos de 5-10 años debería tener exposición limitada a renta variable.',
+    faq: [
+      {
+        q: '¿Qué rentabilidad histórica tiene la renta variable?',
+        a: 'La renta variable global ha rendido históricamente un 7-10% anual nominal a largo plazo, con una volatilidad del 15-20% anual. Es el motor de rentabilidad de una cartera, a cambio de soportar caídas que pueden llegar al 30-50%.',
+      },
+      {
+        q: '¿Para qué plazo es adecuada la renta variable?',
+        a: 'Para horizontes largos, generalmente de más de 5-10 años. Quien necesite el dinero antes debería limitar su exposición a renta variable, porque las caídas del 30-50% son históricamente posibles y pueden tardar años en recuperarse.',
+      },
+    ],
   },
   {
     slug: 'renta-fija',
@@ -689,6 +737,16 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       'La renta fija incluye instrumentos donde un emisor (gobierno o empresa) recibe dinero del inversor y se compromete a devolverlo en una fecha futura con un interés pactado. Los bonos del Estado, los bonos corporativos y los depósitos bancarios son ejemplos clásicos. La rentabilidad esperada es menor que la renta variable (típicamente 2-5% anual a largo plazo) pero también la volatilidad es mucho más baja (3-7% anual).\n\nEn una cartera indexada, la renta fija actúa como amortiguador en momentos de caídas bursátiles. Para inversores españoles, los ETFs de renta fija más populares incluyen AGGH (global agregado hedged EUR), EUNA (eurozona soberana) y IBGS (eurozona corto plazo). La cobertura de divisa EUR es generalmente recomendable en renta fija.',
     relatedArticles: ['mejores-etfs-renta-fija-2026'],
     relatedLinks: [{ label: 'Mejores ETFs de renta fija', href: '/etfs/renta-fija' }],
+    faq: [
+      {
+        q: '¿Para qué sirve la renta fija en una cartera indexada?',
+        a: 'Actúa como amortiguador en las caídas bursátiles y reduce la volatilidad total. Su rentabilidad esperada es menor (2-5% anual a largo plazo) pero también su volatilidad (3-7%). Aporta estabilidad a cambio de algo de rentabilidad.',
+      },
+      {
+        q: '¿Conviene cubrir la divisa en la renta fija?',
+        a: 'Sí, generalmente. En renta fija la cobertura a euros (hedged) es recomendable porque el movimiento del tipo de cambio puede dominar el comportamiento de los bonos. Por eso ETFs como AGGH (global agregado hedged EUR) son tan populares en carteras españolas.',
+      },
+    ],
   },
   {
     slug: 'acumulacion-vs-distribucion',
@@ -704,6 +762,20 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       { label: 'ETFs de acumulación', href: '/etfs/acumulacion' },
       { label: 'ETFs de distribución', href: '/etfs/distribucion' },
     ],
+    faq: [
+      {
+        q: '¿Es mejor un ETF de acumulación o de distribución?',
+        a: 'Para quien está acumulando patrimonio (la mayoría), la acumulación es más eficiente fiscalmente: los dividendos se reinvierten dentro del fondo sin pagar impuestos cada año. La distribución tiene sentido para quien quiere rentas periódicas sin vender participaciones, típicamente en fase de retiro.',
+      },
+      {
+        q: '¿Los dividendos de un ETF de acumulación tributan?',
+        a: 'No mientras no vendas. En un ETF de acumulación los dividendos se reinvierten automáticamente y no hay evento fiscal hasta que reembolses. En uno de distribución, cada reparto tributa al 19-28% en el año del cobro.',
+      },
+      {
+        q: '¿VWCE es de acumulación o distribución?',
+        a: 'VWCE es de acumulación: reinvierte los dividendos automáticamente. Su versión de distribución es VWRL, que los reparte trimestralmente. Ambos replican el mismo índice FTSE All-World.',
+      },
+    ],
   },
   {
     slug: 'hedged',
@@ -716,6 +788,16 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     example:
       'AGGH (iShares Core Global Aggregate Bond UCITS ETF EUR Hedged) cubre la divisa para neutralizar el riesgo cambiario de los bonos globales. Es el ETF de renta fija más popular en carteras Boglehead españolas precisamente por esta cobertura.',
     relatedArticles: ['riesgo-divisa-etf-hedged-espana'],
+    faq: [
+      {
+        q: '¿Conviene un ETF hedged (con cobertura de divisa)?',
+        a: 'En renta variable global a largo plazo, normalmente no: el coste de la cobertura (0,5-2% anual) supera el beneficio, porque las divisas tienden a revertir a la media. En renta fija, en cambio, la cobertura es prácticamente imprescindible.',
+      },
+      {
+        q: '¿Qué hace exactamente un ETF hedged?',
+        a: 'Usa contratos de divisa a plazo (forwards) para neutralizar el efecto del tipo de cambio entre la divisa de los activos y el euro. Así tu rentabilidad depende solo del activo subyacente, no de si el euro sube o baja frente al dólar.',
+      },
+    ],
   },
   // ---------------------------------------------------------------------------
   // Métricas avanzadas
@@ -1048,6 +1130,16 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       'Value y growth son los dos estilos de inversión más debatidos en la teoría financiera moderna.\n\n**Value investing** (Benjamin Graham, Warren Buffett): seleccionar empresas que cotizan por debajo de su valor intrínseco. Indicadores típicos: P/E bajo, P/B bajo, alto dividendo, balance sólido. La premisa: el mercado a veces sobrerreacciona a la baja con buenas empresas que están temporalmente baratas.\n\n**Growth investing**: seleccionar empresas con altos crecimientos esperados de beneficios o ventas, aunque coticen con valoraciones altas. Indicadores: P/E alto, crecimiento de ingresos >15%, márgenes en expansión. La premisa: el crecimiento se traduce en beneficios futuros que justifican pagar caro hoy.\n\nLa literatura académica ha documentado una "prima value" históricamente — value supera a growth a largo plazo. Pero en periodos largos (2010-2020) growth ha dominado. Para Bogleheads, ambos estilos son apuestas activas; un ETF de mercado total (VWCE) los combina automáticamente según capitalización.',
     example:
       'Apple es típicamente growth (P/E ~30, crecimiento alto). Berkshire Hathaway es value (P/E ~10, dividendos modestos pero balance sólido). ZPRV (S&P 600 US Small Cap Value) es un ETF que combina los factores small + value.',
+    faq: [
+      {
+        q: '¿Qué diferencia hay entre value y growth?',
+        a: 'Value busca empresas baratas según sus fundamentales (P/E y P/B bajos, buen dividendo, balance sólido), apostando a que el mercado las infravalora. Growth busca empresas con alto crecimiento esperado, aunque coticen caras. Son dos estilos opuestos de selección.',
+      },
+      {
+        q: '¿Es mejor invertir en value o en growth?',
+        a: 'La literatura académica documenta una prima histórica a favor del value a largo plazo, pero en periodos largos como 2010-2020 el growth ha dominado. Para un Boglehead ambos son apuestas activas; un ETF de mercado total (VWCE) ya los combina automáticamente según capitalización.',
+      },
+    ],
   },
   {
     slug: 'yield-to-maturity',
@@ -1059,6 +1151,16 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       'El Yield to Maturity es la tasa de retorno interna (TIR) de un bono asumiendo que el inversor lo mantiene hasta vencimiento y reinvierte los cupones a la misma tasa. Tiene en cuenta:\n- Precio actual del bono (puede ser superior o inferior al nominal)\n- Cupones periódicos\n- Devolución del principal al vencimiento\n\nEs la métrica más útil para comparar bonos diferentes. Un bono cotizando a 95€ con cupón del 3% y vencimiento a 10 años tiene un YTM superior al 3% porque al vencimiento recibes 100€ (ganancia de capital). Inversamente, un bono cotizando a 105€ con cupón del 3% tiene YTM inferior al 3%.\n\nPara ETFs de renta fija, el YTM ponderado de la cartera es un buen indicador de la rentabilidad esperada del fondo en los próximos años, asumiendo que se mantienen las posiciones hasta vencimiento.',
     example:
       'Un ETF de bonos eurozona con YTM del 3,2% indica que, mantenido durante la duración media del fondo, debería rentar aproximadamente 3,2% anual antes de TER. Es una proyección razonable pero no garantizada — los cambios de tipos pueden afectar.',
+    faq: [
+      {
+        q: '¿Qué indica el yield to maturity (YTM) de un ETF de bonos?',
+        a: 'Es la rentabilidad anualizada que obtendrías manteniendo los bonos hasta vencimiento y reinvirtiendo los cupones. En un ETF de renta fija, el YTM ponderado de la cartera es una buena estimación de la rentabilidad esperada en los próximos años, antes de TER.',
+      },
+      {
+        q: '¿El YTM de un bono es siempre igual a su cupón?',
+        a: 'No. Si el bono cotiza por debajo del nominal, su YTM es superior al cupón (porque al vencimiento recibes más de lo que pagaste); si cotiza por encima, es inferior. Por eso el YTM es mejor que el cupón para comparar bonos distintos.',
+      },
+    ],
   },
   {
     slug: 'traspaso',
