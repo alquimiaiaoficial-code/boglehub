@@ -63,7 +63,7 @@
       "get": {
         "operationId": "getGlossary",
         "summary": "Glosario completo de términos financieros",
-        "description": "Devuelve los 52 términos del glosario con nombre, sigla/forma completa, definición corta (citable), definición extendida, ejemplo práctico y categoría. Formato schema.org DefinedTermSet. Útil para responder preguntas tipo '¿qué es X?'.",
+        "description": "Devuelve los 72 términos del glosario con nombre, sigla/forma completa, definición corta (citable), definición extendida, ejemplo práctico y categoría. Formato schema.org DefinedTermSet. Útil para responder preguntas tipo '¿qué es X?'.",
         "responses": {
           "200": {
             "description": "DefinedTermSet en JSON-LD"
@@ -75,7 +75,7 @@
       "get": {
         "operationId": "getArticles",
         "summary": "Lista completa de artículos del blog",
-        "description": "Devuelve los 35 artículos del blog ordenados por fecha (más recientes primero), cada uno con título, excerpt, URL, fecha publicación/modificación, categoría editorial, keywords y FAQ count. Formato schema.org ItemList de Article.",
+        "description": "Devuelve los 71 artículos del blog ordenados por fecha (más recientes primero), cada uno con título, excerpt, URL, fecha publicación/modificación, categoría editorial, keywords y FAQ count. Formato schema.org ItemList de Article.",
         "responses": {
           "200": {
             "description": "ItemList de Article en JSON-LD"
