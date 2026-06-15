@@ -128,7 +128,9 @@ export async function generateMetadata({
   }
   const fiscal = computeFiscalGrade(etf.isin, etf.accumulating)
   const title = `${etf.name} (${etf.ticker})`
-  const description = `Análisis de ${etf.name}: TER ${formatPct(etf.ter / 100, 2)}, ${ASSET_CLASS_LABEL[etf.assetClass] ?? etf.assetClass}, domicilio ${fiscal.domicileLabel} (eficiencia fiscal ${fiscal.grade}), distribución geográfica y sectorial. Datos para inversores indexados.`
+  // Meta description ≤ ~155 chars: usar el ticker (no el nombre completo, que
+  // dispara el truncado en SERP). El nombre completo va en el title.
+  const description = `Análisis del ETF ${etf.ticker}: TER ${formatPct(etf.ter / 100, 2)}, ${ASSET_CLASS_LABEL[etf.assetClass] ?? etf.assetClass}, domicilio ${fiscal.domicileLabel} (eficiencia fiscal ${fiscal.grade}). Desglose por región y sector para inversores indexados.`
   return {
     title,
     description,
