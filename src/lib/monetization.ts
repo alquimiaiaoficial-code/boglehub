@@ -20,13 +20,35 @@ const MONETIZATION_ENABLED =
   process.env.NEXT_PUBLIC_MONETIZATION_ENABLED === 'true'
 
 /**
- * URLs de afiliado por id de bróker (ids de src/lib/brokers.ts).
+ * Algunos brókers conviven con dos identificadores en el código: el catálogo de
+ * fichas (`src/data/brokers.ts`, usado por `/broker/[slug]`, `/vs-broker` y el
+ * componente `BrokerCTA`) los identifica por SLUG; el comparador
+ * (`src/lib/brokers.ts`) usa un `id` abreviado. Para que un único mapa de
+ * afiliado sirva a TODOS los puntos de salida sin duplicar entradas,
+ * normalizamos cualquier id de entrada al slug canónico antes de buscar.
+ *
+ * Solo difieren estos dos; el resto (myinvestor, trade-republic, degiro, xtb)
+ * coinciden en ambos esquemas.
+ */
+const BROKER_ID_ALIASES: Record<string, string> = {
+  ibkr: 'interactive-brokers',
+  scalable: 'scalable-capital',
+}
+
+/** Devuelve el slug canónico de un bróker (resuelve alias del comparador). */
+export function canonicalBrokerId(id: string): string {
+  return BROKER_ID_ALIASES[id] ?? id
+}
+
+/**
+ * URLs de afiliado por SLUG canónico de bróker (los de src/data/brokers.ts).
  * Vacío hasta el día de la activación. Solo brókers que recomendaríamos gratis.
  */
 const AFFILIATE_URLS: Record<string, string> = {
   // myinvestor: '',
-  // traderepublic: '',
+  // 'trade-republic': '',
   // degiro: '',
+  // 'interactive-brokers': '',
 }
 
 export interface OutboundBrokerLink {
@@ -48,7 +70,9 @@ export function resolveBrokerLink(
   enabled: boolean,
   affiliateUrls: Record<string, string>,
 ): OutboundBrokerLink {
-  const affiliateUrl = enabled ? affiliateUrls[brokerId] : undefined
+  const affiliateUrl = enabled
+    ? affiliateUrls[canonicalBrokerId(brokerId)]
+    : undefined
   if (affiliateUrl) {
     return { url: affiliateUrl, isAffiliate: true, rel: 'sponsored noopener noreferrer' }
   }
