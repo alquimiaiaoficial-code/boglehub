@@ -303,7 +303,7 @@ A cambio, renuncias al **apalancamiento** de la hipoteca (la gran baza del piso)
 
 ## Cómo invertir en REITs desde España
 
-La forma más sencilla y diversificada es un **ETF inmobiliario** (REIT ETF) **UCITS** domiciliado en Irlanda, igual que cualquier otro ETF para el inversor español. Los hay que replican índices de inmobiliario de **mercados desarrollados** o **globales**, dándote cientos de REITs en una sola compra. Puedes ver opciones concretas en la [categoría de ETFs inmobiliarios y REITs de BogleHub](/sector/inmobiliario-reits).
+La forma más sencilla y diversificada es un **ETF inmobiliario** (REIT ETF) **UCITS** domiciliado en Irlanda, igual que cualquier otro ETF para el inversor español. Los hay que replican índices de inmobiliario de **mercados desarrollados** o **globales**, dándote cientos de REITs en una sola compra. Puedes ver opciones concretas en la [categoría de ETFs inmobiliarios y REITs de BogleHub](/sector/inmobiliario-reits), y comprarlos en cualquier [bróker de ETFs](/blog/mejor-broker-etfs-espana-2026).
 
 Alternativas:
 - **SOCIMIs individuales** (Merlin, Colonial…): comprar acciones concretas; más concentrado y arriesgado que un ETF diversificado.
@@ -1027,7 +1027,7 @@ Para todo esto, la prioridad es **seguridad y liquidez**, no rentabilidad. Y eso
 
 ### Cuenta remunerada (o de ahorro)
 
-Una cuenta que paga intereses por tu saldo. Ventajas: **liquidez inmediata**, capital garantizado y cubierto por el [Fondo de Garantía de Depósitos hasta 100.000€](/blog/que-pasa-si-quiebra-tu-broker), y simplicidad total. Inconvenientes: el tipo lo fija el banco y puede ser promocional o cambiar; los intereses tributan en el IRPF del ahorro. Es la opción por defecto para el fondo de emergencia. Brókers como [Trade Republic](/blog/trade-republic-opinion-2026) (~2-2,5% TAE) o [XTB](/blog/xtb-opinion-2026) (~3% TAE) la incluyen sin condiciones.
+Una cuenta que paga intereses por tu saldo. Ventajas: **liquidez inmediata**, capital garantizado y cubierto por el [Fondo de Garantía de Depósitos hasta 100.000€](/blog/que-pasa-si-quiebra-tu-broker), y simplicidad total. Inconvenientes: el tipo lo fija el banco y puede ser promocional o cambiar; los intereses tributan en el IRPF del ahorro. Es la opción por defecto para el fondo de emergencia. Brókers como [Trade Republic](/blog/trade-republic-opinion-2026) o [XTB](/blog/xtb-opinion-2026) ofrecen cuenta remunerada sin condiciones. Brókers como [Trade Republic](/blog/trade-republic-opinion-2026) (~2-2,5% TAE) o [XTB](/blog/xtb-opinion-2026) (~3% TAE) la incluyen sin condiciones.
 
 ### Fondo monetario
 
