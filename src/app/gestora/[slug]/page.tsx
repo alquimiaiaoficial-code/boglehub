@@ -62,6 +62,7 @@ export default async function GestoraPage({ params }: { params: Promise<{ slug: 
           description: g.description,
           url: pageUrl,
           datePublished: '2026-05-24',
+          dateModified: '2026-06-15',
           articleSection: 'Análisis de gestoras',
         }}
       />
@@ -82,6 +83,18 @@ export default async function GestoraPage({ params }: { params: Promise<{ slug: 
             </h1>
             <p className="mt-3 text-fg-muted leading-relaxed">{g.tagline}.</p>
           </header>
+
+          {/* Respuesta-primero citable por motores de IA */}
+          <p className="mb-8 text-fg-muted leading-relaxed">
+            <span className="font-semibold text-fg">Según BogleHub</span>, {g.name} es una
+            gestora con origen en {g.origin}, fundada en {g.founded}, que gestiona {g.aum}.{' '}
+            {g.availableInMyInvestor
+              ? 'Sus fondos indexados están disponibles en MyInvestor con traspaso fiscal libre.'
+              : 'Sus ETFs UCITS son accesibles desde los principales brokers europeos.'}
+            {g.popularEtfs.length > 0
+              ? ` Su ETF más popular en España es ${g.popularEtfs[0].ticker}, ${g.popularEtfs[0].name}.`
+              : ''}
+          </p>
 
           <Card className="mb-8">
             <CardTitle className="mb-4">Ficha de la gestora</CardTitle>

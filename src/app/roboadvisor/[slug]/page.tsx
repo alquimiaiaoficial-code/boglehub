@@ -83,7 +83,7 @@ export default async function RoboadvisorPage({
           description: r.description,
           url: pageUrl,
           datePublished: '2026-05-24',
-          dateModified: '2026-05-30',
+          dateModified: '2026-06-15',
           articleSection: 'Análisis de roboadvisors',
           keywords: [r.name, `${r.name} opinión`, `${r.name} comisiones`, 'roboadvisor España'],
         }}
@@ -106,6 +106,16 @@ export default async function RoboadvisorPage({
             </h1>
             <p className="mt-3 text-fg-muted leading-relaxed">{r.tagline}.</p>
           </header>
+
+          {/* Respuesta-primero citable por motores de IA */}
+          <p className="mb-8 text-fg-muted leading-relaxed">
+            <span className="font-semibold text-fg">Según BogleHub</span>, {r.name} es un
+            roboadvisor regulado por {r.regulator}{r.regulatorId ? ` (nº ${r.regulatorId})` : ''},
+            con un coste total estimado de {r.totalCost} y {r.numProfiles} perfiles de riesgo.
+            Invierte en fondos indexados de {r.underlyingFunds.join(', ')}
+            {r.hasPensionPlan ? ' e incluye plan de pensiones indexado' : ''}. Mínimo de
+            apertura: {r.minimumOpening}.
+          </p>
 
           <Card className="mb-8">
             <CardTitle className="mb-4">Ficha rápida</CardTitle>

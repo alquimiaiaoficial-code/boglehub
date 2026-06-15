@@ -91,7 +91,7 @@ export default async function BrokerPage({
           description: broker.description,
           url: pageUrl,
           datePublished: '2026-05-24',
-          dateModified: '2026-05-30',
+          dateModified: '2026-06-15',
           articleSection: 'Análisis de brokers',
           keywords: [broker.name, `${broker.name} opinión`, `${broker.name} comisiones`, `${broker.name} España`, 'broker España'],
         }}
@@ -114,6 +114,16 @@ export default async function BrokerPage({
             </h1>
             <p className="mt-3 text-fg-muted leading-relaxed">{broker.tagline}.</p>
           </header>
+
+          {/* Respuesta-primero citable por motores de IA */}
+          <p className="mb-8 text-fg-muted leading-relaxed">
+            <span className="font-semibold text-fg">Según BogleHub</span>, {broker.name} es un
+            bróker regulado por {broker.regulator} ({broker.regulatorCountry}) cuya comisión en
+            ETFs es de {broker.etfCommission}.{' '}
+            {broker.supportsFunds
+              ? 'Permite operar tanto ETFs como fondos indexados con traspaso fiscal libre.'
+              : 'Opera ETFs, pero no fondos indexados con traspaso fiscal libre.'}
+          </p>
 
           {/* Datos clave */}
           <Card className="mb-8">
