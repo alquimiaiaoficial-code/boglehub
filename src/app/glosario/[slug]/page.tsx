@@ -13,6 +13,17 @@ import { BLOG_ARTICLES } from '@/data/blog-articles'
 
 const BASE_URL = 'https://boglehub.com'
 
+/** Slug estable por pregunta para anclas profundas (/glosario/term#pregunta) citables por IA. */
+function questionSlug(q: string): string {
+  return q
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 80)
+}
+
 /**
  * Artículos de respaldo por categoría del glosario. Para los términos que aún
  * no tienen `relatedArticles` curados, garantizan internal linking glosario ->
@@ -152,7 +163,11 @@ export default async function GlossaryTermPage({
         <JsonLd
           schema={{
             type: 'FAQPage',
-            questions: term.faq.map(({ q, a }) => ({ q, a })),
+            questions: term.faq.map(({ q, a }) => ({
+              q,
+              a,
+              url: `${pageUrl}#${questionSlug(q)}`,
+            })),
           }}
         />
       )}
@@ -256,20 +271,33 @@ export default async function GlossaryTermPage({
             <section className="mb-10">
               <h2 className="text-xl font-bold text-fg mb-4">Preguntas frecuentes</h2>
               <div className="space-y-3">
-                {term.faq.map(({ q, a }) => (
-                  <details
-                    key={q}
-                    className="group rounded-xl border border-border bg-surface px-5 py-4"
-                  >
-                    <summary className="flex items-center justify-between gap-3 font-medium text-fg list-none cursor-pointer select-none">
-                      {q}
-                      <span className="shrink-0 text-fg-muted transition-transform group-open:rotate-180">
-                        ▾
-                      </span>
-                    </summary>
-                    <p className="mt-3 text-sm text-fg-muted leading-relaxed">{a}</p>
-                  </details>
-                ))}
+                {term.faq.map(({ q, a }) => {
+                  const qSlug = questionSlug(q)
+                  return (
+                    <details
+                      key={q}
+                      id={qSlug}
+                      className="group scroll-mt-24 rounded-xl border border-border bg-surface px-5 py-4"
+                    >
+                      <summary className="flex items-center justify-between gap-3 font-medium text-fg list-none cursor-pointer select-none">
+                        <span>
+                          {q}{' '}
+                          <a
+                            href={`#${qSlug}`}
+                            aria-label={`Enlace directo a: ${q}`}
+                            className="font-normal text-fg-subtle no-underline hover:text-brand-400"
+                          >
+                            #
+                          </a>
+                        </span>
+                        <span className="shrink-0 text-fg-muted transition-transform group-open:rotate-180">
+                          ▾
+                        </span>
+                      </summary>
+                      <p className="mt-3 text-sm text-fg-muted leading-relaxed">{a}</p>
+                    </details>
+                  )
+                })}
               </div>
             </section>
           )}
