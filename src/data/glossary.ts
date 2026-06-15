@@ -220,6 +220,16 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       'El tracking error es una métrica que cuantifica la calidad de replicación de un fondo indexado o ETF. Se expresa como la desviación típica de la diferencia entre la rentabilidad del fondo y la rentabilidad del índice subyacente. Un tracking error de 0,5% significa que el ETF se desvía típicamente medio punto del índice año tras año, en una dirección u otra.\n\nUn concepto relacionado pero distinto es el **tracking difference**: la diferencia acumulada entre el retorno del ETF y el retorno del índice. Si el TER de un ETF es 0,20%, idealmente su tracking difference es −0,20% (el ETF rinde 0,20 puntos menos que el índice por las comisiones). Los ETFs muy eficientes pueden tener tracking difference cercano a 0 o incluso ligeramente positivo gracias al préstamo de valores.',
     example:
       'IWDA (iShares Core MSCI World) tiene un tracking difference cercano a 0 a pesar de su TER del 0,20%, gracias a la optimización del préstamo de valores y a una gestión muy eficiente.',
+    faq: [
+      {
+        q: '¿Qué diferencia hay entre tracking error y tracking difference?',
+        a: 'El tracking error mide cuánto oscila la diferencia entre el ETF y su índice año a año (su desviación típica), es decir la consistencia de la replicación. El tracking difference mide la diferencia acumulada de rentabilidad, es decir el coste real. Uno habla de variabilidad y el otro de resultado.',
+      },
+      {
+        q: '¿Un tracking error bajo es bueno?',
+        a: 'Sí: indica que el ETF replica su índice de forma precisa y consistente, sin desviarse mucho en ningún sentido. Es señal de una gestión eficiente del fondo.',
+      },
+    ],
   },
   {
     slug: 'nav',
@@ -230,6 +240,16 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       'El NAV es el valor liquidativo de una participación de un fondo o ETF: el patrimonio total del fondo dividido entre el número de participaciones.',
     longDefinition:
       'El NAV (Net Asset Value) o valor liquidativo es el precio real de una participación de un fondo, calculado dividiendo el patrimonio total del fondo entre el número total de participaciones en circulación. Para los fondos de inversión tradicionales, el NAV se calcula una vez al día tras el cierre de los mercados y es el precio al que compras y vendes.\n\nPara los ETFs, el NAV se calcula también al cierre, pero durante el día de negociación los ETFs cotizan a precios de mercado que pueden estar ligeramente por encima (prima) o por debajo (descuento) del NAV teórico. Los mercados de creación y reembolso de participaciones por parte de los participantes autorizados (Authorized Participants) suelen mantener el precio de mercado muy cerca del NAV, especialmente en ETFs con alto volumen de negociación.',
+    faq: [
+      {
+        q: '¿Qué es el NAV o valor liquidativo?',
+        a: 'Es el precio real de una participación: el patrimonio total del fondo dividido entre el número de participaciones. En los fondos tradicionales se calcula una vez al día tras el cierre y es el precio al que compras y vendes.',
+      },
+      {
+        q: '¿Por qué el precio de un ETF puede diferir de su NAV?',
+        a: 'Porque durante la sesión los ETFs cotizan a precio de mercado, que puede tener una pequeña prima o descuento sobre el NAV teórico. Los participantes autorizados mantienen ese precio muy cerca del NAV, sobre todo en ETFs de alto volumen.',
+      },
+    ],
   },
   {
     slug: 'aum',
@@ -242,6 +262,16 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       'AUM (Assets Under Management) es el patrimonio total que gestiona una entidad financiera o un producto específico. Para un fondo o ETF, el AUM se expresa habitualmente en millones o miles de millones de dólares o euros.\n\nUn AUM alto suele indicar un fondo establecido, con buena liquidez y menor riesgo de cierre por baja rentabilidad para la gestora. Por debajo de 100 millones de dólares, un ETF puede tener riesgo de ser liquidado por la gestora. Por encima de 1.000 millones, suele considerarse un producto consolidado con presencia segura en el mercado.',
     example:
       'IWDA (iShares Core MSCI World) tiene un AUM superior a 75.000 millones de USD, lo que lo convierte en uno de los ETFs UCITS más grandes del mundo. VWCE supera los 15.000 millones de USD.',
+    faq: [
+      {
+        q: '¿Qué significa el AUM de un ETF?',
+        a: 'AUM (Assets Under Management) es el patrimonio total que gestiona el fondo. Un AUM alto suele indicar un ETF consolidado, con buena liquidez y menor riesgo de cierre por parte de la gestora.',
+      },
+      {
+        q: '¿A partir de qué AUM es seguro un ETF?',
+        a: 'Por debajo de unos 100 millones de dólares hay cierto riesgo de que la gestora lo liquide por baja rentabilidad. Por encima de 1.000 millones se considera consolidado. IWDA supera los 75.000 millones y VWCE los 15.000 millones.',
+      },
+    ],
   },
   {
     slug: 'volatilidad',
@@ -256,6 +286,16 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     relatedLinks: [
       { label: 'Calculadora FIRE Monte Carlo', href: '/calculadora/fire-monte-carlo' },
     ],
+    faq: [
+      {
+        q: '¿Qué volatilidad tiene la renta variable global?',
+        a: 'La renta variable global (MSCI World) tiene una volatilidad histórica anual de aproximadamente 15-20%. La renta fija de calidad ronda el 3-7% y el oro el 15-18%. Es la métrica más usada para aproximar el riesgo a corto plazo.',
+      },
+      {
+        q: '¿Volatilidad es lo mismo que riesgo?',
+        a: 'No exactamente. La volatilidad mide cuánto fluctúa el precio y se usa como aproximación del riesgo, sobre todo a corto plazo. Para un inversor a largo plazo, el riesgo real es más bien la probabilidad de no alcanzar sus objetivos, no las oscilaciones del camino.',
+      },
+    ],
   },
   {
     slug: 'drawdown',
@@ -267,6 +307,16 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       'El drawdown máximo de una cartera es la mayor caída porcentual que ha sufrido desde un máximo histórico hasta un mínimo posterior antes de recuperarse. Es una métrica clave para evaluar el riesgo real que puede soportar un inversor desde el punto de vista psicológico.\n\nUna cartera 100% renta variable global (MSCI World) ha tenido drawdowns máximos históricos de aproximadamente 50-55% (2008, 2020 brevemente). Una cartera 60/40 raramente supera el 30% de drawdown. Conocer el drawdown máximo realista de tu cartera es esencial para no abandonarla en el peor momento.',
     example:
       'En la crisis financiera de 2008, el S&P 500 sufrió un drawdown máximo del 56% desde el pico de octubre 2007 hasta el mínimo de marzo 2009. Tardó 5 años en recuperar el nivel previo.',
+    faq: [
+      {
+        q: '¿Qué drawdown máximo puede tener una cartera de acciones?',
+        a: 'Una cartera 100% renta variable global ha sufrido drawdowns máximos históricos de aproximadamente 50-55% (2008, brevemente en 2020). Una cartera 60/40 raramente supera el 30%. Conocer este dato ayuda a no abandonar el plan en el peor momento.',
+      },
+      {
+        q: '¿Cuánto tarda en recuperarse una cartera tras un gran drawdown?',
+        a: 'Depende de la crisis. Tras la caída del 56% del S&P 500 en 2008, tardó unos 5 años en recuperar el nivel previo. Por eso la renta variable se recomienda solo para horizontes largos.',
+      },
+    ],
   },
   // ---------------------------------------------------------------------------
   // Fiscalidad
@@ -680,6 +730,16 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       'El Sharpe ratio es una métrica diseñada por William Sharpe (Premio Nobel de Economía en 1990) para evaluar si la rentabilidad de un activo justifica el riesgo asumido. Se calcula como la rentabilidad del activo menos el activo libre de riesgo (típicamente bonos del Tesoro), dividida entre la desviación típica de los retornos del activo.\n\nUn Sharpe ratio superior a 1 se considera bueno; superior a 2, excelente; por debajo de 0, el activo ha perdido frente al activo libre de riesgo. Para comparar carteras es muy útil: una cartera con rentabilidad del 12% y volatilidad del 20% tiene peor Sharpe que otra con rentabilidad del 8% y volatilidad del 10%, aunque la primera "gane más" en términos brutos.',
     example:
       'Cartera A: rentabilidad 10%, volatilidad 15%. Cartera B: rentabilidad 7%, volatilidad 7%. Con activo libre de riesgo del 2%: Sharpe A = (10-2)/15 = 0,53. Sharpe B = (7-2)/7 = 0,71. La cartera B tiene mejor rentabilidad ajustada al riesgo a pesar de menos rentabilidad bruta.',
+    faq: [
+      {
+        q: '¿Qué Sharpe ratio se considera bueno?',
+        a: 'Un Sharpe ratio superior a 1 se considera bueno y superior a 2, excelente. Por debajo de 0, el activo ha rendido peor que el activo libre de riesgo. Mide la rentabilidad extra obtenida por cada unidad de volatilidad asumida.',
+      },
+      {
+        q: '¿Para qué sirve comparar el Sharpe de dos carteras?',
+        a: 'Para saber cuál ofrece mejor rentabilidad ajustada al riesgo, no solo en bruto. Una cartera que gana 10% con volatilidad 15% puede tener peor Sharpe que otra que gana 7% con volatilidad 7%: esta última es más eficiente.',
+      },
+    ],
   },
   {
     slug: 'tracking-difference',
@@ -691,6 +751,16 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       'El tracking difference (TD) es la métrica más precisa para evaluar la eficiencia real de un ETF indexado. Si el TER de un ETF es 0,20% pero el TD acumulado es −0,10%, significa que en realidad el ETF solo "cuesta" 0,10% al año porque la gestora compensa parte del TER con préstamo de valores, optimización de retención de dividendos en origen y otras eficiencias operativas.\n\nUn TD positivo significa que el ETF ha rendido por encima del índice (raro pero posible). Un TD negativo y similar al TER indica gestión normal. Un TD mucho más negativo que el TER apunta a problemas de replicación. Para comparar ETFs del mismo índice, el TD es más informativo que el TER.',
     example:
       'IWDA (iShares MSCI World, TER 0,20%) ha tenido un tracking difference cercano a 0 en los últimos años gracias al préstamo de valores. SWRD (SPDR MSCI World, TER 0,12%) tiene TD ligeramente negativo. La diferencia real entre ambos puede ser inferior a la sugerida por el TER aislado.',
+    faq: [
+      {
+        q: '¿Por qué el tracking difference es más útil que el TER?',
+        a: 'Porque refleja el coste real de la replicación. Un ETF con TER del 0,20% puede tener un tracking difference de solo -0,10% si la gestora compensa parte del coste con préstamo de valores y optimización de dividendos. Para comparar ETFs del mismo índice, el tracking difference es más informativo.',
+      },
+      {
+        q: '¿Es posible un tracking difference positivo?',
+        a: 'Sí, aunque es raro: significa que el ETF ha rendido por encima de su índice, normalmente gracias al préstamo de valores. Un tracking difference mucho más negativo que el TER, en cambio, apunta a problemas de replicación.',
+      },
+    ],
   },
   {
     slug: 'alpha-beta',
@@ -702,6 +772,16 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       'Beta y alpha son métricas del Capital Asset Pricing Model (CAPM). **Beta** mide la sensibilidad de un activo a los movimientos del mercado: beta de 1,2 significa que cuando el mercado sube 10%, el activo tiende a subir 12% (y viceversa). Una beta de 0,8 indica menor sensibilidad. La beta media del mercado es 1 por definición.\n\n**Alpha** es la rentabilidad obtenida por encima de la que correspondería al riesgo asumido. Un alpha positivo indica gestión exitosa (rentabilidad superior al mercado ajustada por riesgo). Para los Bogleheads, el debate es claro: la mayoría de gestores activos no consigue alpha positivo neto de comisiones a largo plazo, por lo que la indexación pasiva (alpha = 0 por definición) acaba ganando.',
     example:
       'Las acciones tecnológicas tienden a tener beta superior a 1 (más volátiles que el mercado). Los bonos gubernamentales tienen beta cercana a 0 (poco correlacionados con renta variable). Un fondo activo con alpha de +2% neto durante 10 años sería extraordinario; la mayoría de fondos tienen alpha entre -1% y -2%.',
+    faq: [
+      {
+        q: '¿Qué significan alpha y beta en una inversión?',
+        a: 'Beta mide cuánto se mueve un activo respecto al mercado: una beta de 1,2 implica que si el mercado sube un 10% el activo tiende a subir un 12%. Alpha es la rentabilidad obtenida por encima de la que correspondería al riesgo asumido; un alpha positivo indica gestión que bate al mercado ajustado por riesgo.',
+      },
+      {
+        q: '¿Por qué los Bogleheads desconfían del alpha de la gestión activa?',
+        a: 'Porque la mayoría de gestores activos no consigue un alpha positivo neto de comisiones a largo plazo. La indexación pasiva asume un alpha de cero por definición y, aun así, acaba superando a la mayoría de la gestión activa tras costes.',
+      },
+    ],
   },
   {
     slug: 'spread',
@@ -713,6 +793,16 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       'El bid-ask spread es un coste implícito en cada operación de bolsa que no aparece en las comisiones del broker pero sí en el resultado final. Si un ETF tiene bid 100,00€ y ask 100,10€, comprar y vender inmediatamente te cuesta 0,10€ por participación (0,1%), aparte de las comisiones.\n\nLos ETFs muy líquidos (IWDA, VWCE, CSPX) tienen spreads muy estrechos (1-3 centésimas porcentuales). ETFs poco líquidos o operados en horarios de baja actividad pueden tener spreads de 0,2-0,5% o más. Para órdenes grandes, el spread puede ser más costoso que la comisión del broker. Operar en horario de máxima liquidez (cuando la bolsa principal del fondo está abierta) reduce el spread.',
     example:
       'Si compras CSPX en Xetra a las 11:00 (mercado europeo abierto), el spread típico es 0,02-0,05%. Si lo intentas comprar a las 22:00 (mercado cerrado, solo mercados secundarios), el spread puede ser 0,2-0,5% o más.',
+    faq: [
+      {
+        q: '¿Qué es el spread bid-ask de un ETF?',
+        a: 'Es la diferencia entre el precio de compra (ask) y el de venta (bid) en cada momento. Es un coste implícito que no aparece en las comisiones del broker: si el bid es 100,00€ y el ask 100,10€, comprar y vender al instante cuesta un 0,1% adicional.',
+      },
+      {
+        q: '¿Cómo reducir el coste del spread al comprar un ETF?',
+        a: 'Operando ETFs muy líquidos (IWDA, VWCE, CSPX), que tienen spreads de 1-3 centésimas porcentuales, y haciéndolo en horario de máxima liquidez, cuando la bolsa principal del fondo está abierta. Fuera de ese horario el spread puede dispararse al 0,2-0,5%.',
+      },
+    ],
   },
   // ---------------------------------------------------------------------------
   // Productos y conceptos de mercado
