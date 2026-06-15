@@ -535,6 +535,20 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     relatedLinks: [
       { label: 'Calculadora FIRE Monte Carlo', href: '/calculadora/fire-monte-carlo' },
     ],
+    faq: [
+      {
+        q: '¿Cuánto dinero necesito para ser financieramente independiente (FIRE)?',
+        a: 'La regla del 4% sugiere acumular unas 25 veces tu gasto anual: si gastas 30.000€/año, necesitas 750.000€ invertidos. En España la pensión pública reduce mucho esa cifra, porque solo necesitas que la cartera cubra los años hasta cobrarla.',
+      },
+      {
+        q: '¿Cómo afecta la pensión pública española al número FIRE?',
+        a: 'La reduce drásticamente. Si gastas 25.000€/año y esperas 15.000€/año de pensión a los 65, solo necesitas una cartera de unos 250.000€ para cubrir el tramo desde la jubilación anticipada hasta los 65, retirando un 4% anual.',
+      },
+      {
+        q: '¿Qué es la regla del 4%?',
+        a: 'Es el atajo del movimiento FIRE: puedes retirar un 4% de tu cartera el primer año y ajustarlo por inflación después, con baja probabilidad de agotarla en 30 años. Equivale a necesitar 25 veces tu gasto anual.',
+      },
+    ],
   },
   {
     slug: 'asset-allocation',
@@ -607,6 +621,16 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       'trade-republic-opinion-2026',
       'myinvestor-opinion-2026',
     ],
+    faq: [
+      {
+        q: '¿Cuál es el mejor broker para invertir en ETFs desde España?',
+        a: 'Depende de tu perfil: Trade Republic (alemán, 0€ por orden y planes de ahorro automáticos), DEGIRO (holandés, 0,50€ + 0,004% por orden) y MyInvestor (español, el único con fondos indexados Vanguard/Amundi y traspaso fiscal libre) son los más usados en 2026.',
+      },
+      {
+        q: '¿Qué diferencia hay entre un broker y un banco para invertir?',
+        a: 'Un broker es la entidad regulada que te da acceso a comprar y vender activos en los mercados. Algunos populares en España son bancos (Trade Republic, MyInvestor) y otros brokers puros (DEGIRO). Lo importante es su regulación, sus comisiones y su oferta de productos.',
+      },
+    ],
   },
   {
     slug: 'roboadvisor',
@@ -625,6 +649,16 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     relatedLinks: [
       { label: 'Comparador roboadvisor vs DIY', href: '/calculadora/roboadvisor-vs-diy' },
+    ],
+    faq: [
+      {
+        q: '¿Merece la pena un roboadvisor o gestionar la cartera yo mismo?',
+        a: 'Un roboadvisor cobra un 0,40-0,60% anual extra sobre el TER de los fondos, lo que lo hace más caro que una cartera DIY (~0,15%) pero mucho más barato que un fondo de gestión activa bancario (~1,5%). Compensa si valoras la automatización total y evitar errores emocionales.',
+      },
+      {
+        q: '¿Cómo funciona un roboadvisor?',
+        a: 'Completas un cuestionario de perfil de riesgo, el algoritmo te asigna una cartera de fondos indexados (de la más conservadora a la más arriesgada) y la plataforma ejecuta las compras, rebalancea y reinvierte por ti. Indexa Capital, el más usado en España, gestiona más de 2.000 millones de euros.',
+      },
     ],
   },
   // ---------------------------------------------------------------------------
@@ -1080,6 +1114,20 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       'El glide path es una técnica de planificación financiera personal que ajusta el asset allocation a lo largo del tiempo según se acerca el objetivo (jubilación, hipoteca, hijo en universidad). La idea: cuando falta mucho tiempo, puedes tolerar alta volatilidad porque tienes tiempo de recuperarte de caídas. Cuando se acerca el momento, prefieres estabilidad sobre rentabilidad esperada.\n\nUna regla clásica es "100 menos tu edad" en renta variable: a los 30, 70% acciones; a los 60, 40% acciones. Las versiones modernas usan "120 menos tu edad" porque la esperanza de vida ha aumentado: a los 30, 90% acciones; a los 60, 60% acciones.\n\nEl glide path defiende contra el **riesgo de secuencia de retornos**: una caída del 40% justo cuando empiezas a vivir de la cartera puede destruir el plan. Reducir progresivamente la exposición a renta variable los 5-10 años antes de necesitarla mitiga este riesgo.',
     example:
       'Un inversor de 40 años con cartera 80/20. A los 50 baja a 70/30. A los 55 a 60/40. A los 60 a 50/50. A los 65 a 40/60. El glide path se ejecuta gradualmente (rebalanceando hacia más renta fija con las aportaciones nuevas) en lugar de en saltos bruscos.',
+    faq: [
+      {
+        q: '¿Qué es un glide path y para qué sirve?',
+        a: 'Es la estrategia de ir reduciendo el peso de renta variable y aumentar la renta fija a medida que te acercas a la jubilación. Sirve para reducir la volatilidad justo cuando más importa y protegerte del riesgo de secuencia de retornos.',
+      },
+      {
+        q: '¿Qué porcentaje de acciones debo tener según mi edad?',
+        a: 'Una regla clásica es "100 menos tu edad" en renta variable (a los 30, 70% acciones; a los 60, 40%). Las versiones modernas usan "120 menos tu edad" por la mayor esperanza de vida: a los 30, 90%; a los 60, 60%.',
+      },
+      {
+        q: '¿Qué es el riesgo de secuencia de retornos?',
+        a: 'Es el peligro de sufrir una caída fuerte del mercado justo cuando empiezas a vivir de la cartera: vender en pérdidas en los primeros años puede destruir el plan. El glide path lo mitiga reduciendo la renta variable los 5-10 años antes de necesitar el dinero.',
+      },
+    ],
   },
   {
     slug: 'home-bias',
@@ -1091,6 +1139,16 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       'El home bias ("sesgo doméstico") es la tendencia de los inversores a sobreponderar empresas de su propio país más allá de lo que su peso en la economía global justificaría. Un inversor español indexado al MSCI World tiene un 1-2% de exposición a España (proporcional al peso real de la economía española). Pero muchos inversores españoles sobreponderan España al 10-15% comprando ETFs del IBEX 35 o acciones individuales.\n\nLos argumentos a favor del home bias: divisa propia, mejor conocimiento del entorno empresarial, menor riesgo cambiario. Los argumentos en contra: concentración geográfica, ignorar que muchas multinacionales españolas (Telefónica, Santander, Iberdrola) ya tienen exposición internacional, perder diversificación real.\n\nLa filosofía Boglehead pura recomienda no aplicar home bias: replicar el mercado global tal como es, según capitalización. Pero un home bias moderado del 5-10% suele considerarse aceptable si reduce la ansiedad y ayuda a mantener el plan a largo plazo.',
     example:
       'Si tu cartera es 60% VWCE + 20% IBEX 35 ETF + 20% renta fija, tienes un home bias significativo: España pasa de pesar ~1% global a ~21% en tu cartera. Esto es una apuesta activa que puede acertar o no, pero rompe con la indexación pura.',
+    faq: [
+      {
+        q: '¿Qué es el home bias o sesgo doméstico?',
+        a: 'Es la tendencia a sobreponderar empresas del propio país más allá de su peso real en la economía global. Un inversor español indexado al MSCI World tiene un 1-2% en España, pero muchos lo elevan al 10-15% comprando IBEX 35 o acciones nacionales.',
+      },
+      {
+        q: '¿Es malo tener home bias?',
+        a: 'Reduce la diversificación y es una apuesta activa que puede acertar o no. La filosofía Boglehead pura recomienda replicar el mercado global según capitalización, aunque un home bias moderado del 5-10% suele considerarse aceptable si ayuda a mantener el plan a largo plazo.',
+      },
+    ],
   },
   // ---------------------------------------------------------------------------
   // Plataformas y servicios
@@ -1105,6 +1163,16 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       'Cuando compras un ETF, no recibes papelitos físicos: los valores quedan registrados electrónicamente en una entidad custodia. Esta entidad mantiene los valores en cuentas segregadas del banco/broker — son tu propiedad, no del broker. Esta segregación es fundamental: en caso de quiebra del broker, tus valores siguen siendo tuyos y no forman parte de la masa concursal.\n\nLos brokers cobran (o no) por la custodia. Trade Republic: 0€ de custodia. DEGIRO: 0€ en la cuenta básica, comisión menor en la Custody account. MyInvestor: 0€ tanto en ETFs como en fondos. Los bancos tradicionales en España cobran a menudo comisiones de custodia del 0,2-0,5% anual, lo que es competitivamente inaceptable en 2026.\n\nVerifica siempre que el broker ofrece custodia segregada de tus valores. En caso de duda, mira si el broker está adherido a un fondo de garantía de inversiones (el español cubre 100.000€, el holandés 20.000€, el alemán 100.000€).',
     example:
       'Si tienes 50.000€ en VWCE en Trade Republic, esos VWCE son tu propiedad legal, custodiados por Citibank (custodio de Trade Republic). Si Trade Republic quebrara, tus VWCE seguirían siendo tuyos y los podrías transferir a otro broker.',
+    faq: [
+      {
+        q: '¿Qué pasa con mis ETFs si quiebra el broker?',
+        a: 'Tus valores están en cuentas segregadas: son tu propiedad, no del broker, y no forman parte de su masa concursal. Si el broker quiebra, puedes transferir tus ETFs a otro. Además, los fondos de garantía cubren 100.000€ en España y Alemania, y 20.000€ en Países Bajos, ante fraude o fallos operativos.',
+      },
+      {
+        q: '¿Cobran comisión de custodia los brokers en España?',
+        a: 'Los brokers modernos no: Trade Republic, DEGIRO (cuenta básica) y MyInvestor tienen 0€ de custodia. Los bancos tradicionales sí cobran a menudo un 0,2-0,5% anual, lo que en 2026 es difícilmente justificable.',
+      },
+    ],
   },
   {
     slug: 'comision-gestion',
@@ -1116,6 +1184,16 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       'La comisión de gestión es el ingreso principal de las gestoras (Vanguard, BlackRock, Amundi, Fidelity) y la principal diferencia entre fondos baratos y caros. Se aplica como porcentaje anual sobre el patrimonio del fondo y se descuenta automáticamente del valor liquidativo, día a día.\n\nPara fondos de gestión activa, la comisión de gestión típica en España es 1,2-2% anual. Para fondos indexados, varía entre 0,05% (Amundi Prime Global) y 0,30% (algunos fondos especializados). La diferencia acumulada durante 30 años puede transformar tu cartera final entre el doble y la mitad.\n\nAdemás de la comisión de gestión, los fondos pueden tener: **comisión de éxito** (porcentaje sobre la rentabilidad obtenida), **comisión de suscripción** (al entrar), **comisión de reembolso** (al salir), **comisión de custodia** (al banco depositario). El conjunto se refleja en el TER.',
     example:
       'Un fondo activo del banco con comisión de gestión 1,75% + comisión éxito 9% sobre beneficio anual. Frente a Amundi Prime Global con comisión gestión 0,05% sin comisión éxito. Sobre 100.000€ a 30 años, la diferencia acumulada supera los 200.000€.',
+    faq: [
+      {
+        q: '¿Qué comisión de gestión es razonable en un fondo?',
+        a: 'En fondos indexados, entre el 0,05% (Amundi Prime Global) y el 0,30%. Los fondos de gestión activa cobran típicamente 1,2-2% anual en España. La diferencia acumulada en 30 años puede transformar tu cartera final entre el doble y la mitad.',
+      },
+      {
+        q: '¿La comisión de gestión es lo mismo que el TER?',
+        a: 'No: la comisión de gestión es el componente principal del TER, pero el TER incluye además custodia, auditoría y otros gastos operativos. Algunos fondos añaden también comisión de éxito, suscripción o reembolso, que encarecen el coste total.',
+      },
+    ],
   },
   // ---------------------------------------------------------------------------
   // Conceptos adicionales
