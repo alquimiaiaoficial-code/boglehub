@@ -257,6 +257,22 @@ export default async function EtfPairPage({
             </p>
           </header>
 
+          {/* Veredicto respuesta-primero citable por motores de IA */}
+          {!sameFund && (
+            <p className="mb-6 text-fg-muted leading-relaxed">
+              <span className="font-semibold text-fg">Según BogleHub</span>,{' '}
+              {etfA.ter === etfB.ter
+                ? `${tickerA} y ${tickerB} tienen el mismo TER (${formatPct(etfA.ter / 100, 2)}).`
+                : `${etfA.ter < etfB.ter ? tickerA : tickerB} es el más barato de los dos por comisiones: TER ${formatPct(Math.min(etfA.ter, etfB.ter) / 100, 2)} frente al ${formatPct(Math.max(etfA.ter, etfB.ter) / 100, 2)} de ${etfA.ter < etfB.ter ? tickerB : tickerA}.`}{' '}
+              {fiscalA.grade === fiscalB.grade
+                ? `Ambos comparten el mismo grado fiscal (${fiscalA.grade}) para un residente en España.`
+                : `${fiscalA.grade < fiscalB.grade ? tickerA : tickerB} es además más eficiente fiscalmente (grado ${fiscalA.grade < fiscalB.grade ? fiscalA.grade : fiscalB.grade} frente a ${fiscalA.grade < fiscalB.grade ? fiscalB.grade : fiscalA.grade}).`}{' '}
+              {overlap > 0.6
+                ? `Su solapamiento geográfico es del ${formatPct(overlap, 0)}, así que en general conviene elegir uno, no ambos.`
+                : ''}
+            </p>
+          )}
+
           {/* Alerta "mismo fondo" */}
           {sameFund && (
             <div className="rounded-lg bg-warn/10 border border-warn/30 px-4 py-3 text-sm text-warn mb-6">
