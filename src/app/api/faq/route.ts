@@ -19,9 +19,9 @@ interface FaqItem {
  * API pública: agregado de TODAS las FAQs del sitio en un único endpoint JSON.
  *
  * Combina FAQs de:
- *  - Cada artículo del blog (35 artículos × hasta 5 FAQs)
- *  - Cada término del glosario (48 términos × FAQs opcionales)
- *  - Cada ficha individual de ETF (68 ETFs × 5 FAQs autogeneradas)
+ *  - Cada artículo del blog (hasta 5 FAQs por artículo)
+ *  - Cada término del glosario (FAQs opcionales)
+ *  - Cada ficha individual de ETF (5 FAQs autogeneradas por ETF)
  *
  * Formato: FAQPage agregado. Cada Question incluye isPartOf con la URL
  * de la página origen para que un LLM pueda navegar al contexto completo.

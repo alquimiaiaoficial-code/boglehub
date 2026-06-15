@@ -45,6 +45,16 @@ export function Footer() {
               <li><Link href="/datos-clave" className="hover:text-fg transition-colors">Datos clave 2026</Link></li>
               <li><Link href="/sobre" className="hover:text-fg transition-colors">Sobre BogleHub</Link></li>
               <li><Link href="/metodologia" className="hover:text-fg transition-colors">Metodología</Link></li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@BogleHub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-fg transition-colors"
+                >
+                  Canal de YouTube
+                </a>
+              </li>
             </ul>
           </div>
           <div>
