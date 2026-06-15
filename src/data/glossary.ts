@@ -371,6 +371,20 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       'bogleheads-espana-guia-completa',
       'cartera-boglehead-3-fondos-espana',
     ],
+    faq: [
+      {
+        q: '¿En qué consiste la filosofía Boglehead?',
+        a: 'En tres pilares: invertir en fondos indexados de bajo coste que repliquen mercados amplios, diversificar globalmente entre renta variable y renta fija, y mantener la disciplina a largo plazo sin intentar predecir el mercado ni reaccionar a las caídas. Toma su nombre de John Bogle, fundador de Vanguard.',
+      },
+      {
+        q: '¿Por qué un Boglehead no intenta batir al mercado?',
+        a: 'Porque décadas de evidencia muestran que la gestión activa, de media, no supera al mercado después de comisiones. Para el inversor particular lo más rentable es replicar el mercado al menor coste posible en lugar de seleccionar valores o cronometrar entradas.',
+      },
+      {
+        q: '¿Cómo es una cartera Boglehead sencilla para un inversor español?',
+        a: 'Un ejemplo típico es 80% en renta variable global (VWCE) y 20% en renta fija global cubierta a euros (AGGH), con un coste anual total en torno al 0,15% y sin más operaciones que el rebalanceo anual.',
+      },
+    ],
   },
   {
     slug: 'dca',
@@ -387,6 +401,20 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     relatedLinks: [
       { label: 'Calculadora de interés compuesto', href: '/calculadora/interes-compuesto' },
     ],
+    faq: [
+      {
+        q: '¿Qué es mejor, DCA o invertir todo de golpe (lump sum)?',
+        a: 'Matemáticamente, invertir todo de golpe (lump sum) supera al DCA en unos 2 de cada 3 periodos históricos, porque el mercado tiende a subir más que a bajar. El DCA tiene sentido cuando inviertes el ahorro mensual de la nómina (no tienes el dinero hoy) o cuando reduce tu ansiedad y te ayuda a no vender en pánico.',
+      },
+      {
+        q: '¿Cómo funciona el DCA en la práctica?',
+        a: 'Inviertes una cantidad fija de forma periódica (por ejemplo 1.000€ al mes) en lugar de una sola vez. Cuando el mercado cae compras más participaciones y cuando sube compras menos, de modo que tu precio de entrada es la media de los precios de cada aportación.',
+      },
+      {
+        q: '¿El DCA elimina el riesgo de pérdidas?',
+        a: 'No. Suaviza el efecto de la volatilidad sobre el precio medio de entrada, pero no protege frente a caídas prolongadas del mercado. Es una estrategia de disciplina y gestión emocional, no una garantía de rentabilidad.',
+      },
+    ],
   },
   {
     slug: 'rebalanceo',
@@ -399,6 +427,20 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     example:
       'Cartera objetivo: 80% VWCE + 20% AGGH. Después de un año, VWCE pesa el 86% y AGGH el 14%. El rebalanceo vende un 6% de VWCE (vende caro) y compra un 6% de AGGH (compra barato) para volver al 80/20.',
     relatedArticles: ['como-rebalancear-cartera-indexada'],
+    faq: [
+      {
+        q: '¿Cada cuánto hay que rebalancear la cartera?',
+        a: 'Las dos estrategias habituales son por calendario (una o dos veces al año) o por umbral (cuando un activo se desvía más de un 5-10% de su peso objetivo). Lo importante es hacerlo de forma sistemática y sin emoción, no improvisar según el momento de mercado.',
+      },
+      {
+        q: '¿El rebalanceo mejora la rentabilidad?',
+        a: 'Su efecto principal es controlar el riesgo: mantiene el perfil de la cartera en su objetivo. Además, al obligar a vender lo que ha subido y comprar lo que ha bajado, históricamente aporta entre un 0,2% y un 0,8% anual frente a no rebalancear.',
+      },
+      {
+        q: '¿Cómo se rebalancea sin pagar impuestos?',
+        a: 'La forma más eficiente es rebalancear con las aportaciones nuevas, comprando el activo infraponderado en lugar de vender. Si usas fondos indexados, el traspaso entre fondos no tributa en España; vender ETFs para rebalancear sí realiza ganancias y tributa.',
+      },
+    ],
   },
   {
     slug: 'fire',
@@ -430,6 +472,20 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       'cartera-boglehead-3-fondos-espana',
       'cartera-permanente-harry-browne-espana',
     ],
+    faq: [
+      {
+        q: '¿Qué es más importante, el asset allocation o elegir buenos fondos?',
+        a: 'El asset allocation. La distribución entre clases de activo (renta variable, renta fija, oro…) explica aproximadamente el 90% de la variabilidad de la rentabilidad a largo plazo, mucho más que la selección de productos concretos dentro de cada clase.',
+      },
+      {
+        q: '¿Qué asset allocation me conviene según mi edad?',
+        a: 'Cuanto más largo es tu horizonte, más renta variable puedes asumir. Perfiles habituales: 100/0 para inversores jóvenes con horizonte muy largo, 80/20 como estándar moderado y 60/40 como clásico equilibrado. Lo razonable es reducir renta variable a medida que se acerca el momento de necesitar el dinero.',
+      },
+      {
+        q: '¿Qué es la cartera permanente?',
+        a: 'Es un asset allocation 25/25/25/25 entre renta variable, bonos de largo plazo, oro y liquidez, diseñado por Harry Browne para ser robusto en cualquier escenario económico. Prioriza la estabilidad sobre la rentabilidad máxima.',
+      },
+    ],
   },
   {
     slug: 'diversificacion',
@@ -442,6 +498,20 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     example:
       'En lugar de comprar 10 acciones del IBEX 35 con 50.000€, comprar un ETF VWCE da exposición a más de 3.700 empresas globales con el mismo capital. El riesgo de que una empresa concreta quiebre es prácticamente irrelevante.',
     relatedArticles: ['solapamiento-etfs-error-silencioso'],
+    faq: [
+      {
+        q: '¿Por qué es importante diversificar?',
+        a: 'Porque combinar activos cuyas rentabilidades no están perfectamente correlacionadas reduce el riesgo total de la cartera sin reducir proporcionalmente la rentabilidad esperada. Es uno de los pocos "almuerzos gratis" de la inversión, formulado por Harry Markowitz en 1952.',
+      },
+      {
+        q: '¿Cómo se diversifica con un solo ETF?',
+        a: 'Un ETF amplio ya diversifica por ti: un MSCI World da exposición a unas 1.500 empresas de 23 países, y un FTSE All-World (VWCE) supera las 3.700 añadiendo emergentes. Con una sola posición evitas el riesgo de concentrarte en pocas empresas.',
+      },
+      {
+        q: '¿Tener muchos ETFs distintos diversifica más?',
+        a: 'No necesariamente. Varios ETFs globales suelen solaparse en las mismas grandes empresas, así que apilar fondos no añade diversificación real y sí complejidad. Lo que importa es la exposición subyacente (regiones, sectores, clases de activo), no el número de productos.',
+      },
+    ],
   },
   // ---------------------------------------------------------------------------
   // Plataformas y servicios
@@ -747,6 +817,16 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     example:
       'Si recibes 24.000€ y los inviertes en VWCE hoy (lump sum), tienes el 100% del dinero trabajando desde el día 1. Si en cambio divides en 12 cuotas mensuales de 2.000€, durante el primer mes solo 2.000€ están invertidos; el dinero restante está en cuenta corriente sin generar rentabilidad de mercado.',
     relatedArticles: ['dca-vs-lump-sum-aportar-mensual'],
+    faq: [
+      {
+        q: '¿Es mejor invertir una herencia de golpe o poco a poco?',
+        a: 'Estadísticamente, invertir de golpe (lump sum) supera al reparto en cuotas (DCA) en torno al 66-75% de los periodos históricos, porque cuanto antes está el dinero invertido más tiempo crece. El reparto reduce la varianza del resultado pero también la rentabilidad esperada.',
+      },
+      {
+        q: '¿Cuándo tiene sentido elegir DCA en lugar de lump sum?',
+        a: 'Cuando invertir todo de golpe te generaría tanta ansiedad que venderías en pánico ante la primera caída. En ese caso, repartir la inversión en 12-24 meses es matemáticamente inferior pero puede ayudarte a mantener el plan.',
+      },
+    ],
   },
   {
     slug: 'glide-path',
