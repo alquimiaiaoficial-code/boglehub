@@ -121,7 +121,9 @@ export default async function BrokerPage({
             bróker regulado por {broker.regulator} ({broker.regulatorCountry}) cuya comisión en
             ETFs es de {broker.etfCommission}.{' '}
             {broker.supportsFunds
-              ? 'Permite operar tanto ETFs como fondos indexados con traspaso fiscal libre.'
+              ? broker.supportsFundTransfers
+                ? 'Permite operar tanto ETFs como fondos indexados con traspaso fiscal libre.'
+                : 'Permite operar ETFs y fondos indexados, aunque sin el traspaso fiscal libre del régimen español (reservado a las comercializadoras en España).'
               : 'Opera ETFs, pero no fondos indexados con traspaso fiscal libre.'}
           </p>
 
@@ -135,7 +137,7 @@ export default async function BrokerPage({
               </div>
               <div>
                 <dt className="text-xs uppercase tracking-wide text-fg-muted">Fondos indexados</dt>
-                <dd className="text-fg font-medium">{broker.supportsFunds ? 'Sí (con traspaso fiscal libre)' : 'No (solo ETFs)'}</dd>
+                <dd className="text-fg font-medium">{broker.supportsFunds ? (broker.supportsFundTransfers ? 'Sí (con traspaso fiscal libre)' : 'Sí (sin traspaso fiscal libre)') : 'No (solo ETFs)'}</dd>
               </div>
               {broker.remuneratedAccount && (
                 <div>

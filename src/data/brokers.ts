@@ -23,6 +23,13 @@ export interface Broker {
   etfCommission: string
   /** Soporta fondos indexados */
   supportsFunds: boolean
+  /**
+   * Soporta el régimen español de traspaso fiscal libre entre fondos.
+   * Solo lo ofrecen las entidades que comercializan fondos en España; un
+   * bróker extranjero puede dar acceso a fondos (`supportsFunds: true`) sin
+   * acogerse a este régimen. Si no se indica, se asume `false`.
+   */
+  supportsFundTransfers?: boolean
   /** Cuenta remunerada */
   remuneratedAccount?: string
   /** Mínimo de apertura */
@@ -153,6 +160,7 @@ export const BROKERS: Broker[] = [
     founded: 2017,
     etfCommission: '0,20€ + 0,03% del importe',
     supportsFunds: true,
+    supportsFundTransfers: true,
     remuneratedAccount: '2% TAE primer año (con condiciones), 1% después',
     minimumOpening: '1€ en fondos',
     tagline: 'El único banco español con Vanguard, Amundi y traspaso fiscal libre',
@@ -286,6 +294,7 @@ export const BROKERS: Broker[] = [
     founded: 1986,
     etfCommission: '~7-10€ + comisiones varias',
     supportsFunds: true,
+    supportsFundTransfers: true,
     minimumOpening: 'Sin mínimo',
     tagline: 'Broker tradicional español, fondos indexados con comisiones más altas',
     description:
@@ -322,6 +331,7 @@ export const BROKERS: Broker[] = [
     founded: 1995,
     etfCommission: '~8€ por orden',
     supportsFunds: true,
+    supportsFundTransfers: true,
     minimumOpening: 'Sin mínimo',
     tagline: 'Banco online del Santander con plataforma de inversión',
     description:
@@ -352,6 +362,7 @@ export const BROKERS: Broker[] = [
     founded: 1999,
     etfCommission: '~9-22€ por orden',
     supportsFunds: true,
+    supportsFundTransfers: true,
     minimumOpening: 'Sin mínimo',
     tagline: 'Naranja Broker de ING: cuenta sin comisiones pero broker caro',
     description:

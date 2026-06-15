@@ -208,7 +208,7 @@ export const BROKERS: Broker[] = [
     cons: [
       'Plataforma compleja, pensada para profesionales.',
       'Registro y verificación KYC más exigentes.',
-      'La declaración fiscal en España requiere reporting cuidadoso (modelo D-6, etc.).',
+      'La declaración fiscal recae en el inversor: autoliquidación de plusvalías en el IRPF y modelo 720 si el patrimonio en el extranjero supera 50.000€.',
     ],
     bestFor:
       'Inversor con cartera mediana o grande que valora costes mínimos y acceso global, y no le importa una interfaz menos amigable.',

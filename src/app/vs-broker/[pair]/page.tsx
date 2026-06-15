@@ -5,7 +5,7 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
-import { getBrokerBySlug } from '@/data/brokers'
+import { getBrokerBySlug, type Broker } from '@/data/brokers'
 import { BROKER_PAIRS, brokerPairToSlug, slugToBrokerPair } from '@/data/broker-pairs'
 
 const BASE_URL = 'https://boglehub.com'
@@ -56,8 +56,23 @@ export default async function VsBrokerPage({ params }: { params: Promise<{ pair:
 
   const pageUrl = `${BASE_URL}/vs-broker/${pair}`
 
+  // Cláusula de producto precisa: distingue "ofrece fondos" de "ofrece el régimen
+  // español de traspaso fiscal libre" (un bróker extranjero puede lo 1º sin lo 2º).
+  const fundsClause = (b: Broker) =>
+    b.supportsFunds
+      ? b.supportsFundTransfers
+        ? 'también ofrece fondos indexados con traspaso fiscal libre'
+        : 'también ofrece fondos indexados, aunque sin traspaso fiscal libre'
+      : 'solo ofrece ETFs'
+  const fundsSentence = (b: Broker) =>
+    b.supportsFunds
+      ? b.supportsFundTransfers
+        ? 'Sí, ofrece fondos indexados con traspaso fiscal libre entre fondos.'
+        : 'Sí, da acceso a fondos indexados, pero sin el traspaso fiscal libre del régimen español.'
+      : 'No, solo ofrece ETFs.'
+
   // Veredicto citable, factual y equilibrado (sin "mejor" universal — YMYL).
-  const verdict = `Según BogleHub, la diferencia clave entre ${brokerA.name} y ${brokerB.name} está en comisiones y producto: ${brokerA.name} cobra ${brokerA.etfCommission} por ETF y ${brokerA.supportsFunds ? 'también ofrece fondos indexados con traspaso fiscal libre' : 'solo ofrece ETFs'}; ${brokerB.name} cobra ${brokerB.etfCommission} y ${brokerB.supportsFunds ? 'también ofrece fondos indexados con traspaso fiscal libre' : 'solo ofrece ETFs'}. ${brokerA.name} está regulado por ${brokerA.regulator} (${brokerA.regulatorCountry}); ${brokerB.name}, por ${brokerB.regulator} (${brokerB.regulatorCountry}). No hay un "mejor" universal: depende de tu patrón de inversión (importe y frecuencia de aportación y si quieres fondos además de ETFs).`
+  const verdict = `Según BogleHub, la diferencia clave entre ${brokerA.name} y ${brokerB.name} está en comisiones y producto: ${brokerA.name} cobra ${brokerA.etfCommission} por ETF y ${fundsClause(brokerA)}; ${brokerB.name} cobra ${brokerB.etfCommission} y ${fundsClause(brokerB)}. ${brokerA.name} está regulado por ${brokerA.regulator} (${brokerA.regulatorCountry}); ${brokerB.name}, por ${brokerB.regulator} (${brokerB.regulatorCountry}). No hay un "mejor" universal: depende de tu patrón de inversión (importe y frecuencia de aportación y si quieres fondos además de ETFs).`
 
   const faqs = [
     {
@@ -74,17 +89,18 @@ export default async function VsBrokerPage({ params }: { params: Promise<{ pair:
     },
     {
       q: `¿${brokerA.name} o ${brokerB.name}: cuál es mejor para empezar?`,
-      a: `Para inversores que empiezan con aportaciones pequeñas regulares: ${brokerA.etfCommission === '0€ por operación' ? brokerA.name : brokerB.etfCommission === '0€ por operación' ? brokerB.name : 'el que tenga comisión más baja'} suele ser más eficiente. Para quien quiera fondos indexados con traspaso fiscal libre: solo ${brokerA.supportsFunds ? brokerA.name : brokerB.supportsFunds ? brokerB.name : 'opciones limitadas en ambos'} los ofrece.`,
+      a: `Para inversores que empiezan con aportaciones pequeñas regulares: ${brokerA.etfCommission === '0€ por operación' ? brokerA.name : brokerB.etfCommission === '0€ por operación' ? brokerB.name : 'el que tenga comisión más baja'} suele ser más eficiente. Para quien quiera fondos indexados con traspaso fiscal libre: ${brokerA.supportsFundTransfers && brokerB.supportsFundTransfers ? 'ambos lo ofrecen' : brokerA.supportsFundTransfers ? `solo ${brokerA.name} lo ofrece` : brokerB.supportsFundTransfers ? `solo ${brokerB.name} lo ofrece` : 'ninguno de los dos lo ofrece (son brókers de ETFs)'}.`,
     },
     {
       q: `¿${brokerA.name} ofrece fondos indexados como ${brokerB.name}?`,
-      a: `${brokerA.name}: ${brokerA.supportsFunds ? 'Sí, ofrece fondos indexados (Vanguard, Amundi, Fidelity) con traspaso fiscal libre entre fondos.' : 'No, solo ofrece ETFs.'} ${brokerB.name}: ${brokerB.supportsFunds ? 'Sí, ofrece fondos indexados con traspaso fiscal libre.' : 'No, solo ofrece ETFs.'}`,
+      a: `${brokerA.name}: ${fundsSentence(brokerA)} ${brokerB.name}: ${fundsSentence(brokerB)}`,
     },
   ]
 
   const rows: [string, string, string][] = [
     ['Comisión por ETF', brokerA.etfCommission, brokerB.etfCommission],
     ['Fondos indexados', brokerA.supportsFunds ? 'Sí' : 'No', brokerB.supportsFunds ? 'Sí' : 'No'],
+    ['Traspaso fiscal libre', brokerA.supportsFundTransfers ? 'Sí' : 'No', brokerB.supportsFundTransfers ? 'Sí' : 'No'],
     ['Cuenta remunerada', brokerA.remuneratedAccount ?? 'No', brokerB.remuneratedAccount ?? 'No'],
     ['Mínimo apertura', brokerA.minimumOpening ?? 'Sin mínimo', brokerB.minimumOpening ?? 'Sin mínimo'],
     ['Regulador', `${brokerA.regulator} (${brokerA.regulatorCountry})`, `${brokerB.regulator} (${brokerB.regulatorCountry})`],
