@@ -176,7 +176,7 @@ export default function DatosClavePage() {
               Tablas comparativas de referencia con los datos esenciales para un inversor
               indexado en España en 2026: tramos del IRPF del ahorro, mejores ETFs UCITS por
               categoría con TER e ISIN, comparativa de roboadvisors y brokers, límites del plan
-              de pensiones y convenios fiscales. Información actualizada a mayo 2026, verificable
+              de pensiones y convenios fiscales. Información actualizada a junio 2026, verificable
               en fuentes oficiales.
             </p>
           </header>
