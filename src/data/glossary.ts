@@ -137,6 +137,20 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     example:
       'SGLN (iShares Physical Gold ETC) es un ETC respaldado por oro físico custodiado en Londres. Comprar una participación equivale a poseer una fracción de un lingote real.',
     relatedLinks: [{ label: 'Mejores ETC de oro físico para España', href: '/etfs/oro' }],
+    faq: [
+      {
+        q: '¿En qué se diferencia un ETC de un ETF?',
+        a: 'Un ETC replica el precio de una materia prima (oro, plata, petróleo) y legalmente es una nota de deuda respaldada por el subyacente, mientras que un ETF es un fondo que replica un índice de acciones o bonos. Para el inversor particular el comportamiento es prácticamente idéntico: ambos cotizan en bolsa y se compran igual.',
+      },
+      {
+        q: '¿El oro en un ETC está respaldado por oro físico?',
+        a: 'En los ETC de oro físico (como SGLN, IGLN o 4GLD) sí: están respaldados al 100% por lingotes custodiados en bóvedas auditadas, así que comprar una participación equivale a poseer una fracción de un lingote real. Otros ETC siguen materias primas mediante derivados.',
+      },
+      {
+        q: '¿Cómo tributan los ETC en España?',
+        a: 'Igual que un ETF: las ganancias y pérdidas patrimoniales se declaran en la base del ahorro del IRPF (del 19% al 28% en 2026) cuando vendes, no antes.',
+      },
+    ],
   },
   {
     slug: 'fondo-indexado',
@@ -151,6 +165,20 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     relatedArticles: [
       'amundi-prime-global-analisis',
       'fondos-indexados-vs-etfs-espana',
+    ],
+    faq: [
+      {
+        q: '¿Qué diferencia a un fondo indexado de un ETF en España?',
+        a: 'La ventaja fiscal del traspaso: puedes mover dinero entre fondos indexados sin tributar, difiriendo el IRPF hasta el reembolso final. Con ETFs, cada venta para cambiar de producto realiza la ganancia y tributa ese año. Por lo demás, ambos replican índices a bajo coste.',
+      },
+      {
+        q: '¿Cuál es el fondo indexado más barato para empezar en España?',
+        a: 'El Amundi Prime Global tiene un TER del 0,05% y está disponible en MyInvestor desde 1€. Replica el índice Solactive Global Markets, equivalente al MSCI World, y permite traspaso fiscal libre a otro fondo indexado.',
+      },
+      {
+        q: '¿Un fondo indexado intenta batir al mercado?',
+        a: 'No. Su objetivo es replicar la composición y rentabilidad de un índice al menor coste posible, no superarlo. Por eso sus comisiones son mucho menores que las de un fondo de gestión activa.',
+      },
     ],
   },
   // ---------------------------------------------------------------------------
@@ -699,6 +727,20 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       'Hay tres formas de replicación en un ETF:\n\n- **Replicación física total**: el ETF compra literalmente todas las acciones del índice en sus proporciones exactas. Máxima transparencia, sin riesgo de contraparte. Ejemplo: IWDA.\n- **Replicación física por muestreo (optimizada)**: el ETF compra una muestra representativa del índice (suficiente para replicar el comportamiento sin tener que mantener miles de posiciones pequeñas). Útil para índices con muchos valores ilíquidos. Mayoría de ETFs.\n- **Replicación sintética (swap)**: el ETF firma un contrato con un banco (típicamente la propia gestora o un banco asociado) por el cual el banco le paga el rendimiento del índice a cambio de una comisión. Sin acciones físicas en la cartera del ETF. Mayor eficiencia fiscal en algunos casos, pero introduce riesgo de contraparte (que el banco quiebre).\n\nPara la mayoría de inversores indexados, la replicación física (total o por muestreo) es la opción preferida por transparencia.',
     example:
       'IWDA replica físicamente comprando ~1.500 acciones. Algunos ETFs de Xtrackers (XACT) usan replicación sintética. Ambos tienen TER similar pero estructura de riesgo distinta.',
+    faq: [
+      {
+        q: '¿Qué es mejor, un ETF de replicación física o sintética?',
+        a: 'Para la mayoría de inversores indexados, la replicación física (total o por muestreo) es preferible por transparencia y porque no tiene riesgo de contraparte. La sintética usa un swap con un banco y puede ser más eficiente en algunos casos, pero introduce el riesgo de que la contraparte quiebre.',
+      },
+      {
+        q: '¿Cómo sé si un ETF es físico o sintético?',
+        a: 'Lo indica la ficha oficial del ETF (KID o folleto) como método de replicación: física, física optimizada por muestreo, o sintética/swap. ETFs como IWDA son físicos; algunos de Xtrackers usan replicación sintética.',
+      },
+      {
+        q: '¿La replicación sintética es peligrosa?',
+        a: 'No necesariamente: está regulada bajo UCITS, que limita la exposición a una sola contraparte. Pero añade un riesgo que la física no tiene (el del banco del swap), por lo que muchos Bogleheads prefieren ETFs físicos por simplicidad.',
+      },
+    ],
   },
   {
     slug: 'investment-grade',
@@ -710,6 +752,20 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       'Las agencias de calificación crediticia (Moody\'s, S&P, Fitch) clasifican los bonos según el riesgo de impago del emisor. La línea divisoria está entre BBB- (último escalón investment grade) y BB+ (primer high yield).\n\n**Investment grade**: bonos de empresas o gobiernos solventes. Tasa histórica de impago muy baja (<0,5% anual). Rendimientos modestos (3-5% en condiciones normales). Apropiados para la parte conservadora de una cartera. Ejemplos: bonos del Tesoro Alemán (AAA), bonos de Microsoft (AAA), bonos de Telefónica (BBB).\n\n**High yield (bonos basura)**: bonos de empresas en dificultades o de emisores con balance frágil. Tasa de impago histórica del 2-5% anual. Rendimientos altos (6-10%+) para compensar el riesgo. Mayor correlación con renta variable, lo que reduce su utilidad como diversificador.',
     example:
       'Los bonos del Tesoro español tienen rating A. Los bonos de Banco Santander, rating A-. Bonos de empresas en restructuración (como Boeing en 2024 o Casino en Francia) pueden tener rating B o CCC, considerados high yield.',
+    faq: [
+      {
+        q: '¿Qué diferencia hay entre bonos investment grade y high yield?',
+        a: 'Los investment grade tienen rating alto (de AAA a BBB-), riesgo de impago muy bajo (menos del 0,5% anual) y rendimientos modestos (3-5%). Los high yield o "bonos basura" (BB+ y por debajo) tienen más riesgo de impago (2-5% anual) y rendimientos altos (6-10%) para compensarlo.',
+      },
+      {
+        q: '¿Por qué los bonos high yield diversifican menos una cartera?',
+        a: 'Porque tienen mayor correlación con la renta variable: tienden a caer a la vez que las bolsas en los momentos de estrés, justo cuando querrías que la renta fija amortiguara. Por eso, como diversificador, suelen preferirse los bonos investment grade.',
+      },
+      {
+        q: '¿Dónde está la línea entre investment grade y high yield?',
+        a: 'Entre BBB- (último escalón investment grade) y BB+ (primer escalón high yield), según las agencias de calificación crediticia como S&P o Fitch.',
+      },
+    ],
   },
   {
     slug: 'esg-sri',
@@ -721,6 +777,20 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       'La inversión ESG se ha convertido en una tendencia importante en los últimos años. Los criterios son:\n- **E (Environmental)**: huella de carbono, gestión de residuos, eficiencia energética\n- **S (Social)**: relaciones laborales, diversidad, derechos humanos en la cadena de suministro\n- **G (Governance)**: estructura corporativa, transparencia, ética en la gestión\n\nLos ETFs ESG/SRI aplican estos criterios de dos formas: **exclusión** (eliminan sectores como armas, tabaco, combustibles fósiles) o **best-in-class** (seleccionan dentro de cada sector las empresas con mejores ratings ESG). La rentabilidad histórica de ETFs ESG ha sido similar o ligeramente superior a sus índices estándar, aunque con sesgo hacia ciertos sectores.',
     example:
       'iShares MSCI World SRI UCITS ETF (IUSE, TER 0,20%) replica el MSCI World excluyendo empresas de armas, tabaco, combustibles fósiles y otras polémicas. Su rendimiento histórico ha sido muy similar al MSCI World tradicional.',
+    faq: [
+      {
+        q: '¿Qué significa que un ETF sea ESG o SRI?',
+        a: 'Que aplica criterios extra-financieros ambientales (E), sociales (S) y de gobernanza (G) al seleccionar empresas, ya sea excluyendo sectores polémicos (armas, tabaco, combustibles fósiles) o eligiendo dentro de cada sector las empresas mejor calificadas (best-in-class).',
+      },
+      {
+        q: '¿Los ETFs ESG rinden menos que los tradicionales?',
+        a: 'Históricamente su rentabilidad ha sido similar o ligeramente superior a la de sus índices estándar, aunque con un sesgo hacia ciertos sectores. Por ejemplo, el iShares MSCI World SRI (IUSE) ha tenido un comportamiento muy parecido al MSCI World tradicional.',
+      },
+      {
+        q: '¿Cómo excluye un ETF SRI a las empresas polémicas?',
+        a: 'Mediante filtros de exclusión (deja fuera sectores como armamento, tabaco o combustibles fósiles) y, a menudo, un enfoque best-in-class que se queda con las empresas de mejor rating ESG dentro de cada sector.',
+      },
+    ],
   },
   // ---------------------------------------------------------------------------
   // Fiscalidad española
