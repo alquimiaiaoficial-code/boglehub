@@ -257,6 +257,20 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     relatedLinks: [
       { label: 'Calculadora IRPF venta de fondos y ETFs', href: '/calculadora/irpf-venta-fondos' },
     ],
+    faq: [
+      {
+        q: '¿Cuánto se paga de IRPF al vender fondos o ETFs en España en 2026?',
+        a: 'Se aplica la escala del ahorro: 19% hasta 6.000€, 21% de 6.000€ a 50.000€, 23% de 50.000€ a 200.000€, 27% de 200.000€ a 300.000€ y 28% por encima. Por una ganancia de 10.000€ pagarías 1.980€ (1.140€ al 19% sobre los primeros 6.000€ y 840€ al 21% sobre los 4.000€ restantes).',
+      },
+      {
+        q: '¿La escala del IRPF del ahorro es progresiva por tramos?',
+        a: 'Sí. Cada tramo grava solo la parte de la ganancia que cae en él, no toda la ganancia al tipo más alto. Por eso una ganancia de 10.000€ no tributa al 21% entero (2.100€), sino 1.980€.',
+      },
+      {
+        q: '¿Los dividendos tributan igual que las ganancias por vender?',
+        a: 'Sí. Dividendos, intereses y ganancias patrimoniales por venta de fondos, ETFs o acciones se integran todos en la base imponible del ahorro y siguen la misma escala (del 19% al 28% en 2026).',
+      },
+    ],
   },
   {
     slug: 'fifo',
@@ -270,6 +284,20 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     example:
       'Compraste 50 acciones de VWCE en 2023 a 80€ y 50 más en 2024 a 100€. Vendes 50 en 2025 a 120€. FIFO considera que vendiste las de 2023: ganancia = (50×120) − (50×80) = 2.000€. Si se aplicara LIFO sería solo 1.000€.',
     relatedArticles: ['como-declarar-etfs-hacienda'],
+    faq: [
+      {
+        q: '¿Qué participaciones se consideran vendidas primero en una venta parcial?',
+        a: 'Las más antiguas. Hacienda obliga a aplicar el criterio FIFO (First In, First Out): se venden primero las participaciones que compraste antes, y su precio de adquisición es el que se usa para calcular la ganancia o pérdida.',
+      },
+      {
+        q: '¿Puedo elegir vender las participaciones más caras para pagar menos impuestos?',
+        a: 'No. En España FIFO es obligatorio para fondos, ETFs y acciones: no se permite elegir lotes ni aplicar LIFO o precio medio. Siempre salen primero las más antiguas.',
+      },
+      {
+        q: '¿Cómo afecta FIFO a una estrategia DCA a largo plazo?',
+        a: 'Si tus primeras aportaciones fueron a precios más bajos (lo habitual en un mercado alcista), la ganancia calculada en una venta parcial será mayor, porque FIFO usa esos precios de compra antiguos. Conviene tenerlo en cuenta al planificar ventas.',
+      },
+    ],
   },
   {
     slug: 'domicilio-fiscal',
@@ -282,6 +310,20 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     example:
       'VWCE (ISIN IE00BK5BQT80) está domiciliado en Irlanda. iShares MSCI World (CWLD, ISIN LU0392494562) está en Luxemburgo. Para el inversor español, VWCE es fiscalmente más eficiente gracias a su domicilio irlandés.',
     relatedArticles: ['como-elegir-tu-primer-etf-espana-2026', 'fiscalidad-etfs-espana-guia-completa'],
+    faq: [
+      {
+        q: '¿Por qué un ETF domiciliado en Irlanda es más eficiente que uno en Luxemburgo?',
+        a: 'Porque Irlanda tiene un convenio fiscal con EE.UU. que reduce la retención sobre dividendos americanos del 30% al 15%. Un ETF luxemburgués soporta el 30%, así que el irlandés pierde menos por el camino y su patrimonio crece más.',
+      },
+      {
+        q: '¿Cómo sé dónde está domiciliado un ETF?',
+        a: 'Por las dos primeras letras del ISIN: IE indica Irlanda y LU indica Luxemburgo. Por ejemplo, VWCE (IE00BK5BQT80) está domiciliado en Irlanda.',
+      },
+      {
+        q: '¿Cuánto se ahorra eligiendo el domicilio fiscal adecuado?',
+        a: 'En una cartera con un 60-65% de empresas estadounidenses (lo típico de un MSCI World o un FTSE All-World), un ETF irlandés frente a uno luxemburgués puede ahorrar entre un 0,15% y un 0,25% anual en retenciones, que se acumula con los años.',
+      },
+    ],
   },
   {
     slug: 'plan-pensiones',
@@ -296,6 +338,20 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     relatedArticles: [
       'plan-pensiones-indexado-espana-2026',
       'plan-de-pensiones-vs-fondo-indexado',
+    ],
+    faq: [
+      {
+        q: '¿Cuánto se puede aportar a un plan de pensiones individual en 2026?',
+        a: 'El límite es 1.500€ anuales, reducido desde los 8.000€ que se permitían antes de 2021. Esa cantidad se resta directamente de la base imponible general del IRPF.',
+      },
+      {
+        q: '¿Cuánto se ahorra en impuestos aportando a un plan de pensiones?',
+        a: 'Depende de tu tipo marginal (entre el 19% y el 47%). Si tu marginal es del 37% y aportas 1.500€, tu factura fiscal baja 555€ ese año, así que el coste real de la aportación es 945€.',
+      },
+      {
+        q: '¿Cómo tributa el plan de pensiones cuando se rescata?',
+        a: 'Todo el dinero rescatado —aportaciones más ganancias— tributa como rendimiento del trabajo, no como renta del ahorro. Rescatarlo de golpe puede disparar tu tipo marginal; lo eficiente es repartir el rescate en varios años.',
+      },
     ],
   },
   // ---------------------------------------------------------------------------
@@ -636,6 +692,20 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     example:
       'VWCE (irlandés) recibe dividendos de Apple con retención USA del 15% (convenio IE-USA). Un ETF equivalente domiciliado en Luxemburgo recibiría los mismos dividendos con retención del 30%. Sobre un yield del 2% del fondo, la diferencia es de aproximadamente 0,3% anual.',
     relatedArticles: ['fiscalidad-etfs-espana-guia-completa'],
+    faq: [
+      {
+        q: '¿Qué convenio de doble imposición es más relevante para el inversor en ETFs?',
+        a: 'El convenio Irlanda-EE.UU., que reduce la retención sobre dividendos estadounidenses del 30% al 15%. Por eso un ETF irlandés como VWCE es más eficiente que su equivalente luxemburgués.',
+      },
+      {
+        q: '¿Cómo recupero las retenciones extranjeras sobre dividendos en la declaración?',
+        a: 'Los dividendos que cobras directamente como persona física con retención en el extranjero se corrigen mediante la deducción por doble imposición internacional en la declaración de la renta. Dentro de un ETF, esa optimización la hace el propio fondo según su domicilio.',
+      },
+      {
+        q: '¿Cuánto mejora la rentabilidad el convenio en un ETF irlandés?',
+        a: 'Sobre un yield del 2% del fondo, la diferencia entre el 15% y el 30% de retención equivale a alrededor de un 0,3% anual a favor del ETF irlandés.',
+      },
+    ],
   },
   {
     slug: 'regla-dos-meses',
@@ -648,6 +718,20 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     example:
       'Vendes 100 participaciones de VWCE con pérdida de 1.500€. Tres semanas después recompras 100 participaciones de VWCE. La AEAT rechaza la pérdida fiscal — no podrás usarla para compensar ganancias. Si en lugar de recomprar VWCE compras IWDA, la pérdida es aceptable.',
     relatedArticles: ['como-declarar-etfs-hacienda'],
+    faq: [
+      {
+        q: '¿Puedo vender un ETF con pérdidas y recomprarlo para ahorrar impuestos?',
+        a: 'No si recompras el mismo ETF (u otro equivalente) dentro de los dos meses anteriores o posteriores a la venta: la regla de los dos meses impide computar esa pérdida. Es el mecanismo anti-lavado fiscal español, equivalente al wash sale americano.',
+      },
+      {
+        q: '¿Cómo aprovechar una pérdida fiscal sin incumplir la regla de los dos meses?',
+        a: 'Vendiendo el ETF en pérdidas y comprando otro de índice distinto pero exposición similar (por ejemplo, vender VWCE y comprar IWDA). Al no ser técnicamente el mismo valor, la AEAT acepta la pérdida.',
+      },
+      {
+        q: '¿Cuánto dura la ventana de la regla de los dos meses en ETFs?',
+        a: 'Dos meses antes y dos meses después de la venta, porque los ETFs son valores cotizados en mercados secundarios. Si recompras dentro de esa ventana, la pérdida queda bloqueada hasta que vendas definitivamente la nueva posición.',
+      },
+    ],
   },
   // ---------------------------------------------------------------------------
   // Estrategias adicionales
