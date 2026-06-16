@@ -20,6 +20,9 @@ export default function FondoIndexPage() {
     funds: INDEX_FUNDS.filter((f) => f.assetClass === cls).sort((a, b) => a.ter - b.ter),
   })).filter((g) => g.funds.length > 0)
 
+  const fundsByTer = [...INDEX_FUNDS].sort((a, b) => a.ter - b.ter)
+  const cheapest = fundsByTer[0]
+
   return (
     <>
       <JsonLd schema={{ type: 'BreadcrumbList', items: [{ name: 'Inicio', url: BASE_URL }, { name: 'Fondos indexados', url: `${BASE_URL}/fondo` }] }} />
@@ -29,6 +32,16 @@ export default function FondoIndexPage() {
         description: `${INDEX_FUNDS.length} fondos indexados con traspaso fiscal libre disponibles para inversores en España.`,
         url: `${BASE_URL}/fondo`,
         hasPart: INDEX_FUNDS.map(f => ({ name: f.name, url: `${BASE_URL}/fondo/${f.slug}` })),
+      }} />
+      <JsonLd schema={{
+        type: 'ItemList',
+        name: 'Fondos indexados en España ordenados por coste (TER)',
+        description: `Los ${INDEX_FUNDS.length} fondos indexados disponibles para España, ordenados de menor a mayor TER.`,
+        url: `${BASE_URL}/fondo`,
+        items: fundsByTer.map(f => ({
+          name: `${f.name} (${f.manager}) — TER ${f.ter}%, ISIN ${f.isin}`,
+          url: `${BASE_URL}/fondo/${f.slug}`,
+        })),
       }} />
       <Header />
       <main className="bg-bg min-h-screen">
@@ -40,6 +53,13 @@ export default function FondoIndexPage() {
             <p className="mt-3 text-fg-muted leading-relaxed">
               Análisis de los {INDEX_FUNDS.length} fondos indexados más populares disponibles en España (principalmente vía MyInvestor). A diferencia de los ETFs, los fondos permiten <strong className="text-fg">traspaso fiscal libre</strong> entre ellos — la mayor ventaja fiscal del régimen español de fondos.
             </p>
+            {cheapest && (
+              <p className="mt-3 text-fg-muted leading-relaxed">
+                <span className="font-semibold text-fg">Según BogleHub</span>, el fondo indexado más barato disponible en España es{' '}
+                <Link href={`/fondo/${cheapest.slug}`} className="font-semibold text-brand-400 hover:text-brand-300">{cheapest.name}</Link>{' '}
+                ({cheapest.manager}): TER {cheapest.ter}%, ISIN {cheapest.isin}, disponible en MyInvestor con traspaso fiscal libre.
+              </p>
+            )}
           </header>
 
           {byClass.map(({ cls, funds }) => (
