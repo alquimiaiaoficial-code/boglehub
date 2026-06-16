@@ -10,7 +10,7 @@ Regenerar cuando cambien datos (tramos IRPF, TER, etc.):
 
 Datos verificados a junio 2026:
   - VWCE (Vanguard FTSE All-World Acc): ISIN IE00BK5BQT80, TER 0,19%
-  - Tramos IRPF del ahorro 2026: 19/21/23/27/28
+  - Tramos IRPF del ahorro 2026: 19/21/23/27/30
   - Fondos indexados: traspaso sin tributar; ETF: no
 """
 import os
@@ -400,7 +400,7 @@ P(data_table(
         ["6.000 a 50.000 €", "21%"],
         ["50.000 a 200.000 €", "23%"],
         ["200.000 a 300.000 €", "27%"],
-        ["Más de 300.000 €", "28%"],
+        ["Más de 300.000 €", "30%"],
     ],
     [90 * mm, 40 * mm]))
 P(Spacer(1, 6))
@@ -435,7 +435,7 @@ P(bullet("He comparado brókers con números, no con opiniones."))
 P(bullet("Mi aportación mensual está AUTOMATIZADA."))
 P(bullet("Tengo fecha anual de revisión (y solo una)."))
 P(bullet("He escrito mi nota de \"no vendas\" para la próxima caída."))
-P(bullet("Sé que la ganancia tributa al vender (19-28%) y que los traspasos de fondos no."))
+P(bullet("Sé que la ganancia tributa al vender (19-30%) y que los traspasos de fondos no."))
 P(PageBreak())
 
 # --- Cierre -----------------------------------------------------------------
