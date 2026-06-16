@@ -77,13 +77,13 @@ export default async function AnalizaPage({
       {
         heading: `Política de reparto de ${etf.ticker}`,
         paragraphs: [
-          `${etf.ticker} es un ETF de ${etf.accumulating ? 'acumulación' : 'distribución'}. ${etf.accumulating ? 'Los dividendos se reinvierten automáticamente dentro del fondo, sin generar evento fiscal para el inversor hasta que venda participaciones.' : 'Los dividendos se reparten periódicamente al partícipe, tributando como rendimientos del capital mobiliario en el IRPF del ahorro (19-28% según importe) en el año en que se cobran.'}`,
+          `${etf.ticker} es un ETF de ${etf.accumulating ? 'acumulación' : 'distribución'}. ${etf.accumulating ? 'Los dividendos se reinvierten automáticamente dentro del fondo, sin generar evento fiscal para el inversor hasta que venda participaciones.' : 'Los dividendos se reparten periódicamente al partícipe, tributando como rendimientos del capital mobiliario en el IRPF del ahorro (19-30% según importe) en el año en que se cobran.'}`,
         ],
       },
       {
         heading: `Tributación al vender ${etf.ticker} en España`,
         paragraphs: [
-          `La ganancia o pérdida al vender ${etf.ticker} tributa en la base del ahorro del IRPF con escala progresiva: 19% hasta 6.000€, 21% hasta 50.000€, 23% hasta 200.000€, 27% hasta 300.000€ y 28% por encima.`,
+          `La ganancia o pérdida al vender ${etf.ticker} tributa en la base del ahorro del IRPF con escala progresiva: 19% hasta 6.000€, 21% hasta 50.000€, 23% hasta 200.000€, 27% hasta 300.000€ y 30% por encima.`,
           `Se aplica el criterio FIFO (First In, First Out) si has comprado ${etf.ticker} en varias fechas: Hacienda considera vendidas primero las participaciones más antiguas.`,
         ],
       },
@@ -97,7 +97,7 @@ export default async function AnalizaPage({
         q: `¿Tributan los dividendos de ${etf.ticker}?`,
         a: etf.accumulating
           ? `${etf.ticker} es un ETF de acumulación: los dividendos NO se reparten al inversor, se reinvierten dentro del fondo. Por tanto NO tributan hasta que vendas participaciones.`
-          : `${etf.ticker} es un ETF de distribución: los dividendos se reparten periódicamente y tributan como rendimientos del capital mobiliario en el IRPF del ahorro (19-28% según importe).`,
+          : `${etf.ticker} es un ETF de distribución: los dividendos se reparten periódicamente y tributan como rendimientos del capital mobiliario en el IRPF del ahorro (19-30% según importe).`,
       },
     ]
   } else if (aspecto === 'alternativas') {
