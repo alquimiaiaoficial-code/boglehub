@@ -114,7 +114,7 @@ export default function EnStartPage() {
                   <tr><td className="py-2 text-fg-muted">€6,000 - €50,000</td><td className="py-2 text-right text-fg">21%</td></tr>
                   <tr><td className="py-2 text-fg-muted">€50,000 - €200,000</td><td className="py-2 text-right text-fg">23%</td></tr>
                   <tr><td className="py-2 text-fg-muted">€200,000 - €300,000</td><td className="py-2 text-right text-fg">27%</td></tr>
-                  <tr><td className="py-2 text-fg-muted">Above €300,000</td><td className="py-2 text-right text-fg">28%</td></tr>
+                  <tr><td className="py-2 text-fg-muted">Above €300,000</td><td className="py-2 text-right text-fg">30%</td></tr>
                 </tbody>
               </table>
             </div>

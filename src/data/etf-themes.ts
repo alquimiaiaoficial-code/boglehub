@@ -112,7 +112,7 @@ export const ETF_THEMES: EtfTheme[] = [
     metaDescription:
       'Los mejores ETFs de acumulación UCITS para España: reinvierten los dividendos sin tributar hasta que vendes. Por qué ganan en la fase de ahorro.',
     intro:
-      'Un ETF de acumulación reinvierte automáticamente los dividendos generados por las empresas de la cartera dentro del propio fondo, sin distribuirlos al inversor. Para residentes en España en fase de construcción de patrimonio, esto supone una ventaja fiscal significativa: los dividendos no tributan al recibirlos (19%-28% en IRPF), por lo que el dinero sigue generando rendimiento gracias al interés compuesto. La tributación se difiere hasta el momento de la venta del ETF. Esta lista incluye ETFs de acumulación de todas las clases de activos disponibles para inversores españoles.',
+      'Un ETF de acumulación reinvierte automáticamente los dividendos generados por las empresas de la cartera dentro del propio fondo, sin distribuirlos al inversor. Para residentes en España en fase de construcción de patrimonio, esto supone una ventaja fiscal significativa: los dividendos no tributan al recibirlos (19%-30% en IRPF), por lo que el dinero sigue generando rendimiento gracias al interés compuesto. La tributación se difiere hasta el momento de la venta del ETF. Esta lista incluye ETFs de acumulación de todas las clases de activos disponibles para inversores españoles.',
     listH2: 'ETFs de acumulación disponibles en España (todas las clases de activo)',
     faq: [
       {
@@ -136,12 +136,12 @@ export const ETF_THEMES: EtfTheme[] = [
     metaDescription:
       'Los mejores ETFs de distribución UCITS para España: reparten dividendos periódicos. Cuándo elegirlos, cómo tributan y cuáles convienen en la fase de retiro.',
     intro:
-      'Un ETF de distribución paga periódicamente los dividendos generados por las empresas de la cartera. Mientras que para inversores en fase de acumulación esto supone una menor eficiencia fiscal (se tributa por los dividendos recibidos al 19%-28%), para quienes ya están retirados o en fase FIRE pueden ser una fuente de ingresos pasivos sin necesidad de vender participaciones. En España, los dividendos de ETFs tributan como rendimientos del capital mobiliario.',
+      'Un ETF de distribución paga periódicamente los dividendos generados por las empresas de la cartera. Mientras que para inversores en fase de acumulación esto supone una menor eficiencia fiscal (se tributa por los dividendos recibidos al 19%-30%), para quienes ya están retirados o en fase FIRE pueden ser una fuente de ingresos pasivos sin necesidad de vender participaciones. En España, los dividendos de ETFs tributan como rendimientos del capital mobiliario.',
     listH2: 'ETFs de distribución disponibles en España (todas las clases de activo)',
     faq: [
       {
         q: '¿Cómo tributan los dividendos de ETFs en España?',
-        a: 'Los dividendos tributan como rendimientos del capital mobiliario en la base del ahorro: 19% hasta 6.000€, 21% entre 6.000€ y 50.000€, 23% entre 50.000€ y 200.000€, 27% entre 200.000€ y 300.000€ y 28% por encima de 300.000€. Además, si el ETF aplica retención en origen (por ejemplo, ETFs domiciliados en Luxemburgo), puedes recuperarla mediante la deducción por doble imposición internacional en la declaración de la renta.',
+        a: 'Los dividendos tributan como rendimientos del capital mobiliario en la base del ahorro: 19% hasta 6.000€, 21% entre 6.000€ y 50.000€, 23% entre 50.000€ y 200.000€, 27% entre 200.000€ y 300.000€ y 30% por encima de 300.000€. Además, si el ETF aplica retención en origen (por ejemplo, ETFs domiciliados en Luxemburgo), puedes recuperarla mediante la deducción por doble imposición internacional en la declaración de la renta.',
       },
       {
         q: '¿Es posible vivir de los dividendos de ETFs en España?',
@@ -249,7 +249,7 @@ export const ETF_THEMES: EtfTheme[] = [
       },
       {
         q: '¿Cómo tributan los ETPs de oro en España?',
-        a: 'Tributan igual que cualquier ETF: la ganancia o pérdida al vender se declara como ganancia o pérdida patrimonial en el IRPF (tipo entre 19% y 28%). No hay un tratamiento fiscal especial por ser materias primas. La base imponible es la diferencia entre el precio de venta y el precio de compra.',
+        a: 'Tributan igual que cualquier ETF: la ganancia o pérdida al vender se declara como ganancia o pérdida patrimonial en el IRPF (tipo entre 19% y 30%). No hay un tratamiento fiscal especial por ser materias primas. La base imponible es la diferencia entre el precio de venta y el precio de compra.',
       },
       {
         q: '¿Qué diferencia hay entre un ETC de oro y un ETF de mineras de oro?',
@@ -333,7 +333,7 @@ export const ETF_THEMES: EtfTheme[] = [
       },
       {
         q: '¿Cómo tributa la venta de un ETC de oro en España?',
-        a: 'Igual que cualquier ETF: la ganancia o pérdida al vender se declara como ganancia o pérdida patrimonial en el IRPF, en la base del ahorro con tipos del 19% al 28% según el importe. No hay tratamiento fiscal especial por ser materias primas. Las plusvalías pueden compensarse con minusvalías de otros activos del mismo año.',
+        a: 'Igual que cualquier ETF: la ganancia o pérdida al vender se declara como ganancia o pérdida patrimonial en el IRPF, en la base del ahorro con tipos del 19% al 30% según el importe. No hay tratamiento fiscal especial por ser materias primas. Las plusvalías pueden compensarse con minusvalías de otros activos del mismo año.',
       },
       {
         q: '¿Cuánto oro debería tener en mi cartera?',

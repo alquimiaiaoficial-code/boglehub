@@ -148,7 +148,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       },
       {
         q: '¿Cómo tributan los ETC en España?',
-        a: 'Igual que un ETF: las ganancias y pérdidas patrimoniales se declaran en la base del ahorro del IRPF (del 19% al 28% en 2026) cuando vendes, no antes.',
+        a: 'Igual que un ETF: las ganancias y pérdidas patrimoniales se declaran en la base del ahorro del IRPF (del 19% al 30% en 2026) cuando vendes, no antes.',
       },
     ],
   },
@@ -328,7 +328,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     shortDefinition:
       'El IRPF del ahorro es la base imponible que grava las rentas del capital mobiliario (dividendos, intereses) y las ganancias patrimoniales (venta de fondos, ETFs, acciones) en España.',
     longDefinition:
-      'En España, las ganancias y pérdidas patrimoniales derivadas de la transmisión de fondos, ETFs o acciones, junto con los dividendos e intereses, se integran en la **base imponible del ahorro** del IRPF. A diferencia de la base general (que grava el salario), la base del ahorro tiene una escala progresiva con tipos más bajos.\n\nEscala del IRPF del ahorro en 2026: 19% hasta 6.000€, 21% entre 6.000€ y 50.000€, 23% entre 50.000€ y 200.000€, 27% entre 200.000€ y 300.000€, 28% por encima de 300.000€. Es una escala progresiva: cada tramo grava solo la parte de la ganancia que cae en él.',
+      'En España, las ganancias y pérdidas patrimoniales derivadas de la transmisión de fondos, ETFs o acciones, junto con los dividendos e intereses, se integran en la **base imponible del ahorro** del IRPF. A diferencia de la base general (que grava el salario), la base del ahorro tiene una escala progresiva con tipos más bajos.\n\nEscala del IRPF del ahorro en 2026: 19% hasta 6.000€, 21% entre 6.000€ y 50.000€, 23% entre 50.000€ y 200.000€, 27% entre 200.000€ y 300.000€, 30% por encima de 300.000€. Es una escala progresiva: cada tramo grava solo la parte de la ganancia que cae en él.',
     example:
       'Si vendes ETFs con una ganancia de 10.000€ en 2026, pagas el 19% sobre los primeros 6.000€ (1.140€) y el 21% sobre los 4.000€ restantes (840€). Total: 1.980€, no 10.000 × 21% = 2.100€.',
     relatedArticles: ['como-declarar-etfs-hacienda', 'fiscalidad-etfs-espana-guia-completa'],
@@ -338,7 +338,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     faq: [
       {
         q: '¿Cuánto se paga de IRPF al vender fondos o ETFs en España en 2026?',
-        a: 'Se aplica la escala del ahorro: 19% hasta 6.000€, 21% de 6.000€ a 50.000€, 23% de 50.000€ a 200.000€, 27% de 200.000€ a 300.000€ y 28% por encima. Por una ganancia de 10.000€ pagarías 1.980€ (1.140€ al 19% sobre los primeros 6.000€ y 840€ al 21% sobre los 4.000€ restantes).',
+        a: 'Se aplica la escala del ahorro: 19% hasta 6.000€, 21% de 6.000€ a 50.000€, 23% de 50.000€ a 200.000€, 27% de 200.000€ a 300.000€ y 30% por encima. Por una ganancia de 10.000€ pagarías 1.980€ (1.140€ al 19% sobre los primeros 6.000€ y 840€ al 21% sobre los 4.000€ restantes).',
       },
       {
         q: '¿La escala del IRPF del ahorro es progresiva por tramos?',
@@ -346,7 +346,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       },
       {
         q: '¿Los dividendos tributan igual que las ganancias por vender?',
-        a: 'Sí. Dividendos, intereses y ganancias patrimoniales por venta de fondos, ETFs o acciones se integran todos en la base imponible del ahorro y siguen la misma escala (del 19% al 28% en 2026).',
+        a: 'Sí. Dividendos, intereses y ganancias patrimoniales por venta de fondos, ETFs o acciones se integran todos en la base imponible del ahorro y siguen la misma escala (del 19% al 30% en 2026).',
       },
     ],
   },
@@ -789,7 +789,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     shortDefinition:
       'Acumulación y distribución son las dos políticas de dividendos de un ETF. En acumulación, los dividendos se reinvierten dentro del fondo. En distribución, se reparten periódicamente al inversor.',
     longDefinition:
-      'Un ETF puede tener dos políticas con los dividendos que generan las empresas en cartera:\n\n- **Acumulación (Acc)**: el ETF reinvierte automáticamente los dividendos comprando más participaciones del propio fondo. No hay evento fiscal para el inversor hasta que vende. El precio del ETF crece más rápido que el de su versión distribución equivalente.\n- **Distribución (Dist)**: el ETF reparte los dividendos periódicamente (trimestral, semestral o anualmente). El inversor recibe dinero en su cuenta y tributa al 19-28% como rendimientos del capital mobiliario en el año del cobro.\n\nPara inversores en fase de acumulación de patrimonio (la mayoría), los ETFs de acumulación son más eficientes fiscalmente: el dinero sigue creciendo dentro del fondo sin pagar impuestos cada año. Para inversores en fase de retiro que quieren rentas periódicas sin vender participaciones, la distribución tiene sentido operativo.',
+      'Un ETF puede tener dos políticas con los dividendos que generan las empresas en cartera:\n\n- **Acumulación (Acc)**: el ETF reinvierte automáticamente los dividendos comprando más participaciones del propio fondo. No hay evento fiscal para el inversor hasta que vende. El precio del ETF crece más rápido que el de su versión distribución equivalente.\n- **Distribución (Dist)**: el ETF reparte los dividendos periódicamente (trimestral, semestral o anualmente). El inversor recibe dinero en su cuenta y tributa al 19-30% como rendimientos del capital mobiliario en el año del cobro.\n\nPara inversores en fase de acumulación de patrimonio (la mayoría), los ETFs de acumulación son más eficientes fiscalmente: el dinero sigue creciendo dentro del fondo sin pagar impuestos cada año. Para inversores en fase de retiro que quieren rentas periódicas sin vender participaciones, la distribución tiene sentido operativo.',
     example:
       'VWCE (acumulación) y VWRL (distribución) replican el mismo índice FTSE All-World. VWCE reinvierte los dividendos automáticamente; VWRL los reparte trimestralmente. A largo plazo, la diferencia fiscal es significativa para el inversor español en fase de ahorro.',
     relatedLinks: [
@@ -803,7 +803,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       },
       {
         q: '¿Los dividendos de un ETF de acumulación tributan?',
-        a: 'No mientras no vendas. En un ETF de acumulación los dividendos se reinvierten automáticamente y no hay evento fiscal hasta que reembolses. En uno de distribución, cada reparto tributa al 19-28% en el año del cobro.',
+        a: 'No mientras no vendas. En un ETF de acumulación los dividendos se reinvierten automáticamente y no hay evento fiscal hasta que reembolses. En uno de distribución, cada reparto tributa al 19-30% en el año del cobro.',
       },
       {
         q: '¿VWCE es de acumulación o distribución?',
@@ -1247,7 +1247,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     shortDefinition:
       'Un traspaso es mover dinero de un fondo de inversión a otro sin pasar por Hacienda: la ganancia acumulada no tributa hasta el reembolso final. Es la gran ventaja fiscal de los fondos frente a los ETFs en España.',
     longDefinition:
-      'En España, los fondos de inversión (y los planes de pensiones) permiten traspasar el capital de un fondo a otro sin realizar la ganancia patrimonial: el dinero pasa íntegro de un producto a otro y la tributación se difiere hasta el reembolso definitivo. Esto permite cambiar de estrategia, gestora o nivel de riesgo a lo largo de los años sin que cada cambio genere una factura fiscal, dejando que el interés compuesto trabaje sobre el total.\n\nLa diferencia clave con los ETFs es precisamente esta: los ETFs **no** disfrutan del régimen de traspasos en España. Vender un ETF para comprar otro realiza la ganancia o pérdida y tributa ese año en la base del ahorro (19%-28%). Por eso muchos inversores que valoran la flexibilidad fiscal a largo plazo construyen el núcleo de su cartera con fondos indexados en lugar de ETFs.\n\nEl traspaso lo gestiona la comercializadora y es automático para los fondos que cumplen los requisitos legales (entre ellos, superar los 500 partícipes): tú solo ordenas el traspaso y el dinero llega al fondo de destino sin tocar tu cuenta ni tu declaración.',
+      'En España, los fondos de inversión (y los planes de pensiones) permiten traspasar el capital de un fondo a otro sin realizar la ganancia patrimonial: el dinero pasa íntegro de un producto a otro y la tributación se difiere hasta el reembolso definitivo. Esto permite cambiar de estrategia, gestora o nivel de riesgo a lo largo de los años sin que cada cambio genere una factura fiscal, dejando que el interés compuesto trabaje sobre el total.\n\nLa diferencia clave con los ETFs es precisamente esta: los ETFs **no** disfrutan del régimen de traspasos en España. Vender un ETF para comprar otro realiza la ganancia o pérdida y tributa ese año en la base del ahorro (19%-30%). Por eso muchos inversores que valoran la flexibilidad fiscal a largo plazo construyen el núcleo de su cartera con fondos indexados en lugar de ETFs.\n\nEl traspaso lo gestiona la comercializadora y es automático para los fondos que cumplen los requisitos legales (entre ellos, superar los 500 partícipes): tú solo ordenas el traspaso y el dinero llega al fondo de destino sin tocar tu cuenta ni tu declaración.',
     example:
       'Tienes 50.000€ en un fondo con 10.000€ de ganancia acumulada y quieres cambiar a otro fondo más barato. Si fuera un ETF, vender realizaría esos 10.000€ y pagarías unos 1.980€ de IRPF. Con un fondo, traspasas los 50.000€ completos al nuevo fondo y no pagas nada hasta que un día reembolses de verdad.',
     relatedArticles: [
@@ -1305,9 +1305,9 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     term: 'Ganancia patrimonial',
     category: 'fiscalidad',
     shortDefinition:
-      'Es el beneficio que obtienes al vender un activo (ETF, fondo, acción) por más de lo que pagaste. En España tributa en la base del ahorro del IRPF, con tipos del 19% al 28% según el importe.',
+      'Es el beneficio que obtienes al vender un activo (ETF, fondo, acción) por más de lo que pagaste. En España tributa en la base del ahorro del IRPF, con tipos del 19% al 30% según el importe.',
     longDefinition:
-      'La ganancia patrimonial es la diferencia positiva entre el precio de venta de un activo y su precio de adquisición (incluidas las comisiones). Cuando la diferencia es negativa se llama pérdida patrimonial. En la venta de ETFs, fondos, acciones u oro, esa ganancia o pérdida se integra en la base imponible del ahorro del IRPF.\n\nLa escala del ahorro en 2026 es progresiva: 19% hasta 6.000€, 21% de 6.000€ a 50.000€, 23% de 50.000€ a 200.000€, 27% de 200.000€ a 300.000€ y 28% por encima de 300.000€. Solo tributa la ganancia, no el total reembolsado, y cada tramo grava únicamente la parte que cae dentro de él.\n\nUn punto clave de optimización: las pérdidas patrimoniales se compensan con las ganancias del mismo ejercicio y, si el saldo es negativo, se arrastra a los cuatro años siguientes. Esto permite estrategias como aflorar pérdidas para reducir la factura fiscal de un año con muchas plusvalías.',
+      'La ganancia patrimonial es la diferencia positiva entre el precio de venta de un activo y su precio de adquisición (incluidas las comisiones). Cuando la diferencia es negativa se llama pérdida patrimonial. En la venta de ETFs, fondos, acciones u oro, esa ganancia o pérdida se integra en la base imponible del ahorro del IRPF.\n\nLa escala del ahorro en 2026 es progresiva: 19% hasta 6.000€, 21% de 6.000€ a 50.000€, 23% de 50.000€ a 200.000€, 27% de 200.000€ a 300.000€ y 30% por encima de 300.000€. Solo tributa la ganancia, no el total reembolsado, y cada tramo grava únicamente la parte que cae dentro de él.\n\nUn punto clave de optimización: las pérdidas patrimoniales se compensan con las ganancias del mismo ejercicio y, si el saldo es negativo, se arrastra a los cuatro años siguientes. Esto permite estrategias como aflorar pérdidas para reducir la factura fiscal de un año con muchas plusvalías.',
     example:
       'Compraste participaciones de un ETF por 8.000€ y las vendes por 11.000€: tu ganancia patrimonial es de 3.000€ y tributa al 19% (570€). Si además ese año tuviste 1.000€ de pérdidas en otro fondo, solo tributarías por 2.000€.',
     relatedArticles: [
@@ -1393,7 +1393,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     shortDefinition:
       'Un dividendo es el reparto periódico de beneficios que hace una empresa a sus accionistas. En los ETFs, los dividendos pueden distribuirse al inversor (distribución) o reinvertirse automáticamente dentro del fondo (acumulación).',
     longDefinition:
-      'Cuando una empresa obtiene beneficios, puede repartirlos entre sus accionistas en forma de dividendos (pago en efectivo) o retenerlos para reinvertirlos en el negocio. Los dividendos se expresan como un importe por acción (por ejemplo, 0,50€ por acción) y se pagan con la frecuencia establecida por cada empresa: trimestral (habitual en empresas americanas), semestral o anual.\n\nEn los ETFs, el tratamiento de los dividendos depende de la clase del fondo:\n- **ETFs de distribución**: el ETF paga periódicamente los dividendos recibidos de las empresas de la cartera. El inversor recibe dinero en cuenta y tributa ese año como rendimiento del capital mobiliario (19-28%).\n- **ETFs de acumulación**: el ETF reinvierte automáticamente los dividendos comprando más participaciones del propio fondo. El inversor no recibe dinero ni tributa hasta que vende. El efecto del interés compuesto es mayor a largo plazo.\n\nEl rendimiento por dividendo (dividend yield) es el porcentaje que representan los dividendos anuales sobre el precio de la acción o del ETF. Un yield del 3% en un ETF global significa que distribuye aproximadamente un 3% de su valor en dividendos al año.',
+      'Cuando una empresa obtiene beneficios, puede repartirlos entre sus accionistas en forma de dividendos (pago en efectivo) o retenerlos para reinvertirlos en el negocio. Los dividendos se expresan como un importe por acción (por ejemplo, 0,50€ por acción) y se pagan con la frecuencia establecida por cada empresa: trimestral (habitual en empresas americanas), semestral o anual.\n\nEn los ETFs, el tratamiento de los dividendos depende de la clase del fondo:\n- **ETFs de distribución**: el ETF paga periódicamente los dividendos recibidos de las empresas de la cartera. El inversor recibe dinero en cuenta y tributa ese año como rendimiento del capital mobiliario (19-30%).\n- **ETFs de acumulación**: el ETF reinvierte automáticamente los dividendos comprando más participaciones del propio fondo. El inversor no recibe dinero ni tributa hasta que vende. El efecto del interés compuesto es mayor a largo plazo.\n\nEl rendimiento por dividendo (dividend yield) es el porcentaje que representan los dividendos anuales sobre el precio de la acción o del ETF. Un yield del 3% en un ETF global significa que distribuye aproximadamente un 3% de su valor en dividendos al año.',
     example:
       'Tienes 10.000€ en un ETF de distribución con un yield del 2%. Recibirás aproximadamente 200€ en dividendos al año, sujetos al 19% de IRPF (38€). Con un ETF de acumulación equivalente, esos 200€ se reinvertirían automáticamente sin tributar, generando más participaciones y mayor efecto compuesto.',
     relatedArticles: [
@@ -1411,7 +1411,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       },
       {
         q: '¿Cómo tributan los dividendos de ETFs en España?',
-        a: 'Los dividendos de ETFs tributan como rendimientos del capital mobiliario en la base del ahorro del IRPF: 19% hasta 6.000€, 21% de 6.000€ a 50.000€, 23% de 50.000€ a 200.000€, 27% de 200.000€ a 300.000€ y 28% por encima de 300.000€. El broker retiene automáticamente un 19% a cuenta.',
+        a: 'Los dividendos de ETFs tributan como rendimientos del capital mobiliario en la base del ahorro del IRPF: 19% hasta 6.000€, 21% de 6.000€ a 50.000€, 23% de 50.000€ a 200.000€, 27% de 200.000€ a 300.000€ y 30% por encima de 300.000€. El broker retiene automáticamente un 19% a cuenta.',
       },
     ],
   },

@@ -262,7 +262,7 @@ Para decidir tu índice núcleo, vuelve a [MSCI World vs S&P 500](/blog/msci-wor
       },
       {
         q: '¿Cómo tributan los REITs en España?',
-        a: 'Los REITs reparten muchos dividendos, y en España los dividendos tributan en la base del ahorro del IRPF (tramos del 19% al 28% en 2026) el año en que los cobras, aunque los reinviertas. Por eso, en fase de acumulación, un ETF inmobiliario de acumulación (que reinvierte los dividendos dentro del fondo) es más eficiente, al diferir ese impuesto.',
+        a: 'Los REITs reparten muchos dividendos, y en España los dividendos tributan en la base del ahorro del IRPF (tramos del 19% al 30% en 2026) el año en que los cobras, aunque los reinviertas. Por eso, en fase de acumulación, un ETF inmobiliario de acumulación (que reinvierte los dividendos dentro del fondo) es más eficiente, al diferir ese impuesto.',
       },
       {
         q: '¿Merece la pena tener REITs si ya tengo un fondo MSCI World?',
@@ -315,7 +315,7 @@ Como con cualquier ETF, elige bien el domicilio (Irlanda) y la clase de [acumula
 
 ## Fiscalidad de los REITs en España
 
-Aquí hay un matiz importante: los REITs **reparten muchos dividendos**, y en España los **dividendos tributan en el IRPF del ahorro** (tramos del 19% al 28% en 2026) el año en que los cobras. Eso significa que un REIT o un ETF inmobiliario de **distribución** genera un peaje fiscal anual, aunque reinviertas.
+Aquí hay un matiz importante: los REITs **reparten muchos dividendos**, y en España los **dividendos tributan en el IRPF del ahorro** (tramos del 19% al 30% en 2026) el año en que los cobras. Eso significa que un REIT o un ETF inmobiliario de **distribución** genera un peaje fiscal anual, aunque reinviertas.
 
 Si inviertes en REITs en fase de acumulación, un **ETF inmobiliario de acumulación** (que reinvierte los dividendos dentro del fondo) difiere ese impuesto y es más eficiente, por la misma lógica que cualquier otro [ETF de acumulación](/blog/acumulacion-vs-distribucion-etf). El detalle fiscal general lo tienes en la [guía de fiscalidad de ETFs](/blog/fiscalidad-etfs-espana-guia-completa).
 
@@ -894,7 +894,7 @@ Si aún dudas de qué comprar, vuelve a [cómo elegir tu primer ETF](/blog/como-
       },
       {
         q: '¿Cómo tributan los dividendos de un ETF de distribución?',
-        a: 'Cada dividendo que cobras se integra en la base del ahorro del IRPF y tributa a los tramos del 19% al 28% (2026) en el año en que lo recibes, lo reinviertas o no. Por eso, en fase de acumulación, la distribución es algo menos eficiente que la acumulación, que difiere ese impuesto.',
+        a: 'Cada dividendo que cobras se integra en la base del ahorro del IRPF y tributa a los tramos del 19% al 30% (2026) en el año en que lo recibes, lo reinviertas o no. Por eso, en fase de acumulación, la distribución es algo menos eficiente que la acumulación, que difiere ese impuesto.',
       },
       {
         q: '¿Cuándo tiene sentido elegir un ETF de distribución?',
@@ -927,7 +927,7 @@ Es la misma estrategia indexada y el mismo índice por debajo; cambia solo qué 
 Aquí está el quid de la cuestión para un inversor español:
 
 - En un ETF de **acumulación**, la reinversión de dividendos dentro del fondo **no es un hecho fiscal para ti**: no tributas nada por esos dividendos hasta que vendas. El impuesto queda **diferido**, y mientras tanto el 100% de los dividendos sigue trabajando y capitalizando.
-- En un ETF de **distribución**, cada dividendo que cobras **tributa en el IRPF del ahorro** (tramos del 19% al 28% en 2026) en el año en que lo recibes, **aunque lo reinviertas tú manualmente**. Es decir, pasas por Hacienda cada año y solo reinviertes lo que queda después de impuestos.
+- En un ETF de **distribución**, cada dividendo que cobras **tributa en el IRPF del ahorro** (tramos del 19% al 30% en 2026) en el año en que lo recibes, **aunque lo reinviertas tú manualmente**. Es decir, pasas por Hacienda cada año y solo reinviertes lo que queda después de impuestos.
 
 Para quien está acumulando a largo plazo, ese diferimiento es una ventaja clara: el [interés compuesto](/blog/interes-compuesto-inversion) trabaja sobre el total, no sobre lo que sobra tras tributar. A lo largo de décadas, la diferencia se nota.
 
@@ -1001,7 +1001,7 @@ Si estás construyendo patrimonio a largo plazo, elige **acumulación**: difiere
       },
       {
         q: '¿Cómo tributan los intereses de la cuenta, el fondo monetario y las Letras?',
-        a: 'Los tres tributan en la base del ahorro del IRPF (tramos del 19% al 28% en 2026). La diferencia es que el fondo monetario, al ser un fondo, permite el traspaso fiscal: puedes moverlo a otro fondo sin tributar y solo pagas cuando reembolsas a tu cuenta, lo que difiere el impuesto.',
+        a: 'Los tres tributan en la base del ahorro del IRPF (tramos del 19% al 30% en 2026). La diferencia es que el fondo monetario, al ser un fondo, permite el traspaso fiscal: puedes moverlo a otro fondo sin tributar y solo pagas cuando reembolsas a tu cuenta, lo que difiere el impuesto.',
       },
     ],
     content: `# Dónde aparcar el dinero a corto plazo: cuenta remunerada, fondo monetario o Letras (2026)
@@ -1108,7 +1108,7 @@ Si aún no tienes claro cuánto reservar aquí, empieza por la [guía del fondo 
       },
       {
         q: '¿Cómo afectan los impuestos a la regla del 4% en España?',
-        a: 'Al vender participaciones para vivir, las plusvalías tributan en el IRPF del ahorro (tramos del 19% al 28% en 2026). Eso significa que tu 4% bruto no es lo que te llevas neto: conviene planificar la fiscalidad y, si acaso, ser algo más conservador con la tasa de retirada para compensar.',
+        a: 'Al vender participaciones para vivir, las plusvalías tributan en el IRPF del ahorro (tramos del 19% al 30% en 2026). Eso significa que tu 4% bruto no es lo que te llevas neto: conviene planificar la fiscalidad y, si acaso, ser algo más conservador con la tasa de retirada para compensar.',
       },
       {
         q: '¿La regla del 4% garantiza que no me quede sin dinero?',
@@ -3018,7 +3018,7 @@ Para un inversor indexado europeo que compra ETFs UCITS de acumulación, las dif
 
 Esta es la parte que más confusión genera y donde IBKR exige más de ti. Un broker español (MyInvestor, Renta 4) practica retenciones y reporta a Hacienda; un broker extranjero como IBKR **no lo hace por ti**. Las consecuencias prácticas:
 
-- **Plusvalías y dividendos tributan igual** que con cualquier broker: en la base del ahorro del IRPF (tramos del 19% al 28% en 2026). Lo que cambia no es el impuesto, sino quién rellena la declaración: tú.
+- **Plusvalías y dividendos tributan igual** que con cualquier broker: en la base del ahorro del IRPF (tramos del 19% al 30% en 2026). Lo que cambia no es el impuesto, sino quién rellena la declaración: tú.
 - **Modelo 720**: si el conjunto de tus cuentas y valores en el extranjero supera los **50.000€**, debes declararlo. Tu cartera en IBKR cuenta como bienes en el extranjero. Tras la sentencia europea que tumbó el régimen sancionador desproporcionado, las multas se han suavizado, pero **la obligación de informar sigue vigente**.
 - **Modelo D6**: durante años se creyó obligatorio para inversiones en el extranjero. Desde la **Orden ECM/57/2024 dejó de ser exigible para la cartera minorista**: la inmensa mayoría de inversores particulares ya no tienen que presentarlo. Lo explicamos en [¿hay que presentar el modelo D6 por tus ETFs?](/blog/modelo-d6-etf-espana).
 
@@ -3572,7 +3572,7 @@ La diferencia entre CSPX y VWCE es ~6 000 € a 25 años. Relevante, pero no dra
     faq: [
       {
         q: '¿Cómo tributan los ETFs en España en el IRPF?',
-        a: 'Los ETFs tributan como fondos de inversión en cuanto a ganancia/pérdida patrimonial: cuando vendes, la diferencia entre precio de venta y coste de compra tributa entre el 19% y el 28% según el importe. Los dividendos de ETFs de distribución tributan como rendimientos del capital mobiliario (mismos tipos). A diferencia de los fondos de inversión, los ETFs no permiten traspasos sin tributar.',
+        a: 'Los ETFs tributan como fondos de inversión en cuanto a ganancia/pérdida patrimonial: cuando vendes, la diferencia entre precio de venta y coste de compra tributa entre el 19% y el 30% según el importe. Los dividendos de ETFs de distribución tributan como rendimientos del capital mobiliario (mismos tipos). A diferencia de los fondos de inversión, los ETFs no permiten traspasos sin tributar.',
       },
       {
         q: '¿Tengo que declarar ETFs en España aunque no los haya vendido?',
@@ -3584,7 +3584,7 @@ La diferencia entre CSPX y VWCE es ~6 000 € a 25 años. Relevante, pero no dra
       },
       {
         q: '¿Los ETFs de acumulación son más eficientes fiscalmente que los de distribución?',
-        a: 'Para inversores en fase de ahorro: sí. Los ETFs de acumulación reinvierten los dividendos internamente sin que tributen en tu declaración. En un ETF de distribución, esos dividendos tributan cada año como rendimientos del capital mobiliario (19%-28%), reduciendo el capital disponible para el interés compuesto.',
+        a: 'Para inversores en fase de ahorro: sí. Los ETFs de acumulación reinvierten los dividendos internamente sin que tributen en tu declaración. En un ETF de distribución, esos dividendos tributan cada año como rendimientos del capital mobiliario (19%-30%), reduciendo el capital disponible para el interés compuesto.',
       },
     ],
     content: `# Fiscalidad de ETFs en España: la guía que tu broker no te da
@@ -3612,7 +3612,7 @@ Escala de la base del ahorro 2026:
 | 6 001 – 50 000 € | 21 % |
 | 50 001 – 200 000 € | 23 % |
 | 200 001 – 300 000 € | 27 % |
-| > 300 000 € | 28 % |
+| > 300 000 € | 30 % |
 
 Sobre 700 € de dividendo: 700 × 19 % = 133 € de impuestos ese año.
 
@@ -3644,7 +3644,7 @@ Se aplica la escala progresiva del ahorro del IRPF:
 | 6 001 – 50 000 € | 21 % |
 | 50 001 – 200 000 € | 23 % |
 | 200 001 – 300 000 € | 27 % |
-| > 300 000 € | 28 % |
+| > 300 000 € | 30 % |
 
 **Ejemplo**: vendes participaciones por 20 000 € que compraste por 12 000 €. Ganancia = 8 000 €.
 - Primeros 6 000 €: 6 000 × 19 % = 1 140 €
@@ -5169,7 +5169,7 @@ Rebalancear bien es aburrido, rápido y poco frecuente. Así debe ser.
     faq: [
       {
         q: '¿Qué conviene más en España, un plan de pensiones o un fondo indexado?',
-        a: 'Depende de tu situación. El plan de pensiones desgrava a la entrada (reduces tu base general por lo aportado) pero tributa al rescate como rendimiento del trabajo y es ilíquido hasta la jubilación. El fondo indexado no desgrava, pero es líquido, sin límite de aportación y sus plusvalías tributan en la base del ahorro (19-28 %). Para la mayoría, el fondo indexado es el vehículo principal y el plan de pensiones —si acaso— un complemento, siempre que sea indexado y de bajo coste.',
+        a: 'Depende de tu situación. El plan de pensiones desgrava a la entrada (reduces tu base general por lo aportado) pero tributa al rescate como rendimiento del trabajo y es ilíquido hasta la jubilación. El fondo indexado no desgrava, pero es líquido, sin límite de aportación y sus plusvalías tributan en la base del ahorro (19-30 %). Para la mayoría, el fondo indexado es el vehículo principal y el plan de pensiones —si acaso— un complemento, siempre que sea indexado y de bajo coste.',
       },
       {
         q: '¿Cómo tributa el rescate de un plan de pensiones?',
@@ -5216,7 +5216,7 @@ Ese dinero extra trabajando desde el principio es una ventaja real. El truco est
 
 **1. El límite de 1 500 € al año es minúsculo.** No puedes construir tu independencia financiera solo con un plan de pensiones individual. Da para un complemento, no para el plato principal.
 
-**2. Tributa a la salida como rendimiento del trabajo.** Esta es la más importante y la peor entendida. Las plusvalías de un fondo indexado o un ETF tributan en la base del ahorro (del 19 % al 28 %). El rescate de un plan de pensiones tributa en la base general, junto a tu sueldo o tu pensión, a tipos marginales que pueden ser bastante más altos. Y si rescatas mucho de golpe, tú mismo te empujas a los tramos altos. Mal planificado, el rescate puede comerse buena parte de la desgravación que tanto te vendieron.
+**2. Tributa a la salida como rendimiento del trabajo.** Esta es la más importante y la peor entendida. Las plusvalías de un fondo indexado o un ETF tributan en la base del ahorro (del 19 % al 30 %). El rescate de un plan de pensiones tributa en la base general, junto a tu sueldo o tu pensión, a tipos marginales que pueden ser bastante más altos. Y si rescatas mucho de golpe, tú mismo te empujas a los tramos altos. Mal planificado, el rescate puede comerse buena parte de la desgravación que tanto te vendieron.
 
 **3. No puedes tocarlo.** El fondo indexado es líquido: si lo necesitas, lo vendes. El plan de pensiones está bloqueado hasta la jubilación. Para quien busca libertad financiera antes de la edad legal de jubilación, esto lo descarta como vehículo principal.
 
@@ -5238,7 +5238,7 @@ Frente al plan de pensiones, un fondo indexado o un ETF global ofrece:
 
 - **Sin límite de aportación.** Inviertes lo que quieras y puedas.
 - **Liquidez total.** El dinero es tuyo y disponible cuando lo necesites.
-- **Las ganancias tributan en la base del ahorro** (19-28 %), normalmente más favorable que la base general.
+- **Las ganancias tributan en la base del ahorro** (19-30 %), normalmente más favorable que la base general.
 - Si usas fondos indexados, **traspaso entre fondos sin tributar**.
 
 ¿Qué pierdes? La desgravación a la entrada. No es poco — pero hay que ponerlo en la balanza con todo lo demás.
@@ -5252,7 +5252,7 @@ Frente al plan de pensiones, un fondo indexado o un ETF global ofrece:
 | Desgrava al aportar | Sí (base general) | No |
 | Límite de aportación | 1 500 €/año (individual) | Sin límite |
 | Liquidez | Bloqueado hasta la jubilación | Total |
-| Fiscalidad al recuperar | Base general (trabajo) | Base del ahorro (19-28 %) |
+| Fiscalidad al recuperar | Base general (trabajo) | Base del ahorro (19-30 %) |
 | Útil para FIRE antes de los 60 | No | Sí |
 | Riesgo de comisiones altas | Alto (elige indexado) | Bajo |
 
@@ -6689,7 +6689,7 @@ Para cuantificar exactamente el coste de un roboadvisor frente a gestionar tu pr
       },
       {
         q: '¿Cuánto se paga de IRPF por vender un ETF con beneficio?',
-        a: 'La ganancia tributa en la base del ahorro del IRPF con la escala progresiva 2026: 19% para los primeros 6.000€ de ganancia, 21% de 6.000€ a 50.000€, 23% de 50.000€ a 200.000€, 27% de 200.000€ a 300.000€ y 28% por encima de 300.000€. La mayoría de inversores particulares se quedan en el tramo del 19% o del 21%. Solo tributas por la ganancia (diferencia entre precio de venta y precio de compra), no por el total del dinero recibido.',
+        a: 'La ganancia tributa en la base del ahorro del IRPF con la escala progresiva 2026: 19% para los primeros 6.000€ de ganancia, 21% de 6.000€ a 50.000€, 23% de 50.000€ a 200.000€, 27% de 200.000€ a 300.000€ y 30% por encima de 300.000€. La mayoría de inversores particulares se quedan en el tramo del 19% o del 21%. Solo tributas por la ganancia (diferencia entre precio de venta y precio de compra), no por el total del dinero recibido.',
       },
       {
         q: '¿Qué es el criterio FIFO y cómo me afecta?',
@@ -6791,7 +6791,7 @@ La ganancia patrimonial tributa en la base del ahorro con esta escala progresiva
 | 6.000€ – 50.000€ | 21% |
 | 50.000€ – 200.000€ | 23% |
 | 200.000€ – 300.000€ | 27% |
-| Más de 300.000€ | 28% |
+| Más de 300.000€ | 30% |
 
 El impuesto es progresivo: si ganas 10.000€, pagas el 19% de los primeros 6.000€ (1.140€) y el 21% de los 4.000€ restantes (840€). Total: 1.980€, no 10.000 × 21% = 2.100€.
 
@@ -6814,7 +6814,7 @@ Si el saldo es negativo (más pérdidas que ganancias), puedes arrastrarlo a los
 
 ## ETFs de distribución: los dividendos sí tributan cada año
 
-Si tienes ETFs que reparten dividendos (distribución), cada pago tributa como rendimiento del capital mobiliario al 19-28% según importe. No importa que no hayas vendido ninguna participación.
+Si tienes ETFs que reparten dividendos (distribución), cada pago tributa como rendimiento del capital mobiliario al 19-30% según importe. No importa que no hayas vendido ninguna participación.
 
 Los brokers con sede en España aplican una **retención a cuenta del 19%** en el momento del cobro. Esa retención se resta del impuesto final a pagar en la declaración. Si la retención fue suficiente, puede que te devuelvan parte.
 
@@ -6995,7 +6995,7 @@ Para comparar ETFs con y sin cobertura divisa disponibles en España, usa el [co
       },
       {
         q: '¿Es mejor un plan de pensiones o un fondo indexado para la jubilación?',
-        a: 'Depende de tu situación fiscal actual y futura. Si pagas IRPF al 37% o más actualmente y esperas tributar al 19-24% en la jubilación, el plan de pensiones es muy ventajoso por la deducción inmediata. Si pagas al 19-24% actualmente y esperas tributar igual o más en la jubilación, el fondo indexado es generalmente mejor: tributa al tipo del ahorro (19-28%) y no como rendimiento del trabajo. La combinación inteligente es usar el plan hasta el límite de 1.500€/año y el resto en fondos indexados.',
+        a: 'Depende de tu situación fiscal actual y futura. Si pagas IRPF al 37% o más actualmente y esperas tributar al 19-24% en la jubilación, el plan de pensiones es muy ventajoso por la deducción inmediata. Si pagas al 19-24% actualmente y esperas tributar igual o más en la jubilación, el fondo indexado es generalmente mejor: tributa al tipo del ahorro (19-30%) y no como rendimiento del trabajo. La combinación inteligente es usar el plan hasta el límite de 1.500€/año y el resto en fondos indexados.',
       },
       {
         q: '¿Cuándo puedo rescatar un plan de pensiones?',
@@ -7618,7 +7618,7 @@ No es ideal si:
       },
       {
         q: '¿Tributan más los ETFs de distribución que los de acumulación en España?',
-        a: 'Sí, en la fase de acumulación. Los dividendos repartidos tributan inmediatamente como rendimientos del capital mobiliario (19-28% según importe). Un ETF de acumulación reinvierte esos dividendos sin generar evento fiscal, difiriendo el impuesto hasta la venta. Para un inversor en fase de crecimiento del patrimonio, la acumulación es más eficiente. Para un inversor que quiere vivir de las rentas, la distribución es funcionalmente necesaria.',
+        a: 'Sí, en la fase de acumulación. Los dividendos repartidos tributan inmediatamente como rendimientos del capital mobiliario (19-30% según importe). Un ETF de acumulación reinvierte esos dividendos sin generar evento fiscal, difiriendo el impuesto hasta la venta. Para un inversor en fase de crecimiento del patrimonio, la acumulación es más eficiente. Para un inversor que quiere vivir de las rentas, la distribución es funcionalmente necesaria.',
       },
       {
         q: '¿Es mejor invertir en ETFs de alto dividendo o de dividendos crecientes?',
@@ -7715,7 +7715,7 @@ Los dividendos de ETFs UCITS tributan como **rendimientos del capital mobiliario
 | 6.000-50.000€ | 21% |
 | 50.000-200.000€ | 23% |
 | 200.000-300.000€ | 27% |
-| Más de 300.000€ | 28% |
+| Más de 300.000€ | 30% |
 
 **El cobro funciona así**:
 1. La empresa paga dividendo
@@ -8547,7 +8547,7 @@ Para aportaciones recurrentes pequeñas: Trade Republic. Para órdenes grandes: 
       },
       {
         q: '¿Cómo tributa la venta de oro en España?',
-        a: 'Depende del formato. Los ETC de oro (SGLN, IGLN, 4GLD) tributan igual que cualquier ETF: la ganancia patrimonial se declara en la base del ahorro del IRPF (19-28%). El oro físico también tributa como ganancia patrimonial al venderlo, sumando todas las ventas del año por encima de los 1.000€. Los ETFs de mineras también tributan como ganancias patrimoniales. En todos los casos, no hay régimen especial por ser oro.',
+        a: 'Depende del formato. Los ETC de oro (SGLN, IGLN, 4GLD) tributan igual que cualquier ETF: la ganancia patrimonial se declara en la base del ahorro del IRPF (19-30%). El oro físico también tributa como ganancia patrimonial al venderlo, sumando todas las ventas del año por encima de los 1.000€. Los ETFs de mineras también tributan como ganancias patrimoniales. En todos los casos, no hay régimen especial por ser oro.',
       },
       {
         q: '¿Es mejor invertir en oro físico o en ETC de oro?',
@@ -8701,7 +8701,7 @@ Independientemente del formato (físico, ETC, mineras), las ganancias por venta 
 | 6.000-50.000€ | 21% |
 | 50.000-200.000€ | 23% |
 | 200.000-300.000€ | 27% |
-| Más de 300.000€ | 28% |
+| Más de 300.000€ | 30% |
 
 No hay tratamiento fiscal especial por ser oro. Las pérdidas pueden compensar ganancias del mismo año.
 
@@ -8923,7 +8923,7 @@ Si prefieres MSCI World por su TER ligeramente inferior, combínalo con un ETF d
       },
       {
         q: '¿Pueden traspasar fondos los ETFs?',
-        a: 'No. Los ETFs no tienen régimen de traspaso fiscal libre en España. Vender un ETF para comprar otro siempre genera una ganancia o pérdida patrimonial que tributa ese año en la base del ahorro (19-28%). Esta es la principal diferencia fiscal entre ETFs y fondos de inversión indexados.',
+        a: 'No. Los ETFs no tienen régimen de traspaso fiscal libre en España. Vender un ETF para comprar otro siempre genera una ganancia o pérdida patrimonial que tributa ese año en la base del ahorro (19-30%). Esta es la principal diferencia fiscal entre ETFs y fondos de inversión indexados.',
       },
       {
         q: '¿Qué pasa con las pérdidas acumuladas en el fondo origen al hacer un traspaso?',
@@ -9800,7 +9800,7 @@ Lo relevante para el inversor de ETFs son dos trámites, ambos ante la **Agencia
 
 Es donde tributan tus ETFs de verdad:
 
-- **Ganancias o pérdidas patrimoniales**: cuando **vendes** un ETF con beneficio, la ganancia tributa en la base del ahorro del IRPF (19% hasta 6.000€, 21% de 6.000€ a 50.000€, 23% de 50.000€ a 200.000€, 27% de 200.000€ a 300.000€ y 28% por encima). Si no vendes, no hay nada que declarar.
+- **Ganancias o pérdidas patrimoniales**: cuando **vendes** un ETF con beneficio, la ganancia tributa en la base del ahorro del IRPF (19% hasta 6.000€, 21% de 6.000€ a 50.000€, 23% de 50.000€ a 200.000€, 27% de 200.000€ a 300.000€ y 30% por encima). Si no vendes, no hay nada que declarar.
 - **Dividendos**: si tienes ETFs de **distribución**, los dividendos tributan cada año como rendimientos del capital mobiliario, con los mismos tipos. Los ETFs de **acumulación** no generan evento fiscal hasta que vendes.
 
 El paso a paso completo está en la guía [Cómo declarar ETFs en la declaración de la renta](/blog/como-declarar-etfs-hacienda). Y puedes estimar cuánto pagarás antes de vender con la [calculadora de IRPF de BogleHub](/calculadora/irpf-venta-fondos).
