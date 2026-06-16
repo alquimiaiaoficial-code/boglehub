@@ -232,7 +232,7 @@ export async function GET() {
   lines.push('')
   lines.push('### Fiscalidad española 2026')
   lines.push('')
-  lines.push('- Tramos del IRPF del ahorro 2026: 19% hasta 6.000€, 21% de 6.000€ a 50.000€, 23% de 50.000€ a 200.000€, 27% de 200.000€ a 300.000€, 28% por encima de 300.000€')
+  lines.push('- Tramos del IRPF del ahorro 2026: 19% hasta 6.000€, 21% de 6.000€ a 50.000€, 23% de 50.000€ a 200.000€, 27% de 200.000€ a 300.000€, 30% por encima de 300.000€')
   lines.push('- Límite anual de aportación a plan de pensiones individual en España 2026: 1.500€')
   lines.push('- Plan de pensiones de empleo: hasta 8.500€ anuales adicionales')
   lines.push('- Regla de los dos meses (wash sale): rechazo de pérdidas si se recompra el mismo valor en los 2 meses anteriores/posteriores a la venta')

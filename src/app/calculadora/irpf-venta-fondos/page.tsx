@@ -12,7 +12,7 @@ const BASE_URL = 'https://boglehub.com'
 const FAQ_ITEMS: { q: string; a: string }[] = [
   {
     q: '¿Cuánto se paga a Hacienda por vender fondos indexados o ETF?',
-    a: 'Tributas solo por la ganancia, que es la diferencia entre el valor de venta y el de compra, no por todo el dinero que recibes. Esa ganancia entra en la base del ahorro del IRPF, con una escala progresiva que en 2026 va del 19% para los primeros 6.000 € hasta el 28% a partir de 300.000 €. La mayoría de las ventas de un inversor particular se quedan en el primer o segundo tramo, 19% y 21%.',
+    a: 'Tributas solo por la ganancia, que es la diferencia entre el valor de venta y el de compra, no por todo el dinero que recibes. Esa ganancia entra en la base del ahorro del IRPF, con una escala progresiva que en 2026 va del 19% para los primeros 6.000 € hasta el 30% a partir de 300.000 €. La mayoría de las ventas de un inversor particular se quedan en el primer o segundo tramo, 19% y 21%.',
   },
   {
     q: '¿Cuándo se paga este impuesto?',
@@ -99,7 +99,7 @@ export default function IrpfVentaFondosPage() {
             },
             {
               name: 'Lee el desglose por tramos',
-              text: 'La calculadora muestra la ganancia neta, qué parte cae en cada tramo del IRPF del ahorro (19%, 21%, 23%, 27%, 28%) y el total a pagar.',
+              text: 'La calculadora muestra la ganancia neta, qué parte cae en cada tramo del IRPF del ahorro (19%, 21%, 23%, 27%, 30%) y el total a pagar.',
               url: `${BASE_URL}/calculadora/irpf-venta-fondos`,
             },
           ],

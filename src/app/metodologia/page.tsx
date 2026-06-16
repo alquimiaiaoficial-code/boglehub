@@ -181,7 +181,7 @@ export default function MetodologiaPage() {
                 </li>
                 <li>
                   <strong>Distribución</strong>: en algunas combinaciones puede bajar un escalón
-                  porque los dividendos tributan cada año (19-28% del IRPF del ahorro).
+                  porque los dividendos tributan cada año (19-30% del IRPF del ahorro).
                 </li>
               </ul>
             </li>
@@ -310,7 +310,7 @@ export default function MetodologiaPage() {
             <li><strong>21%</strong> entre 6.000€ y 50.000€</li>
             <li><strong>23%</strong> entre 50.000€ y 200.000€</li>
             <li><strong>27%</strong> entre 200.000€ y 300.000€</li>
-            <li><strong>28%</strong> por encima de 300.000€</li>
+            <li><strong>30%</strong> por encima de 300.000€</li>
           </ul>
           <p>
             Escala progresiva: cada tramo grava solo la porción de ganancia dentro del tramo,

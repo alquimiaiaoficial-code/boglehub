@@ -146,7 +146,7 @@ export const IRPF_SAVINGS_BRACKETS: IrpfBracket[] = [
   { from: 6_000, to: 50_000, rate: 0.21 },
   { from: 50_000, to: 200_000, rate: 0.23 },
   { from: 200_000, to: 300_000, rate: 0.27 },
-  { from: 300_000, to: null, rate: 0.28 },
+  { from: 300_000, to: null, rate: 0.30 },
 ]
 
 export interface BracketShare {

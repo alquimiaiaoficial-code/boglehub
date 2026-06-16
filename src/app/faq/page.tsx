@@ -51,7 +51,7 @@ const FAQ_CATEGORIES: FaqCategory[] = [
     questions: [
       {
         q: '¿Cuáles son los tramos del IRPF del ahorro en España en 2026?',
-        a: 'En 2026, las ganancias por venta de fondos, ETFs y acciones tributan en la base del ahorro con esta escala progresiva: 19% hasta 6.000€, 21% entre 6.000€ y 50.000€, 23% entre 50.000€ y 200.000€, 27% entre 200.000€ y 300.000€, 28% por encima de 300.000€. La escala es progresiva: cada tramo grava solo la porción de ganancia que cae dentro de él.',
+        a: 'En 2026, las ganancias por venta de fondos, ETFs y acciones tributan en la base del ahorro con esta escala progresiva: 19% hasta 6.000€, 21% entre 6.000€ y 50.000€, 23% entre 50.000€ y 200.000€, 27% entre 200.000€ y 300.000€, 30% por encima de 300.000€. La escala es progresiva: cada tramo grava solo la porción de ganancia que cae dentro de él.',
       },
       {
         q: '¿Tributan los ETFs de acumulación si no los vendo?',

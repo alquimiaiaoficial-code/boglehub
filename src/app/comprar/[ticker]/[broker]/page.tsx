@@ -81,7 +81,7 @@ export default async function ComprarPage({
     },
     {
       q: `¿Es ${etf.ticker} comprado en ${brokerData.name} fiscalmente eficiente para España?`,
-      a: `Sí. ${etf.ticker} tiene grado fiscal ${fiscal.grade} para residentes en España (${fiscal.domicileLabel}, ${etf.accumulating ? 'acumulación' : 'distribución'}). ${fiscal.reason} Recuerda que las ganancias por venta tributan en el IRPF del ahorro (19-28%) y que ${brokerData.name} ${brokerData.regulatorCountry === 'España' ? 'aplica retención fiscal automáticamente' : 'no aplica retención española — debes declararlo tú directamente en la renta'}.`,
+      a: `Sí. ${etf.ticker} tiene grado fiscal ${fiscal.grade} para residentes en España (${fiscal.domicileLabel}, ${etf.accumulating ? 'acumulación' : 'distribución'}). ${fiscal.reason} Recuerda que las ganancias por venta tributan en el IRPF del ahorro (19-30%) y que ${brokerData.name} ${brokerData.regulatorCountry === 'España' ? 'aplica retención fiscal automáticamente' : 'no aplica retención española — debes declararlo tú directamente en la renta'}.`,
     },
     {
       q: `¿Cuál es el mínimo para invertir en ${etf.ticker} desde ${brokerData.name}?`,

@@ -95,7 +95,7 @@ export const BROKERS: Broker[] = [
       },
       {
         q: '¿Tributan los ETFs comprados en Trade Republic en España?',
-        a: 'Sí, igual que en cualquier broker. Al vender un ETF con beneficio, la ganancia tributa en el IRPF del ahorro (19-28% según importe). Trade Republic NO ofrece traspaso fiscal libre porque solo tiene ETFs (los ETFs no tienen ese régimen en España). Para traspaso libre necesitas fondos de inversión, disponibles en MyInvestor.',
+        a: 'Sí, igual que en cualquier broker. Al vender un ETF con beneficio, la ganancia tributa en el IRPF del ahorro (19-30% según importe). Trade Republic NO ofrece traspaso fiscal libre porque solo tiene ETFs (los ETFs no tienen ese régimen en España). Para traspaso libre necesitas fondos de inversión, disponibles en MyInvestor.',
       },
       {
         q: '¿Cuál es la rentabilidad real de la cuenta remunerada de Trade Republic?',

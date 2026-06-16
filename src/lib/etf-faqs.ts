@@ -96,7 +96,7 @@ export function generateEtfFaqs(etf: EtfMetadata): EtfFaq[] {
   const policyTitle = etf.accumulating ? 'de acumulación' : 'de distribución'
   const policyExplanation = etf.accumulating
     ? `Esto significa que reinvierte automáticamente los dividendos generados por las empresas en cartera, sin pagar al inversor. Para residentes en España, esta política es generalmente más eficiente fiscalmente en fase de acumulación porque difiere el IRPF hasta el momento de la venta.`
-    : `Esto significa que reparte periódicamente los dividendos generados por las empresas en cartera al inversor. Los dividendos tributan al cobrarse como rendimientos del capital mobiliario en el IRPF español (19-28% según importe). Es la opción natural para inversores en fase de retiro que quieren cobrar rentas sin vender participaciones.`
+    : `Esto significa que reparte periódicamente los dividendos generados por las empresas en cartera al inversor. Los dividendos tributan al cobrarse como rendimientos del capital mobiliario en el IRPF español (19-30% según importe). Es la opción natural para inversores en fase de retiro que quieren cobrar rentas sin vender participaciones.`
   faqs.push({
     q: `¿${etf.ticker} es de acumulación o de distribución?`,
     a: `${etf.ticker} es un ETF ${policyTitle}. ${policyExplanation}`,
@@ -105,7 +105,7 @@ export function generateEtfFaqs(etf: EtfMetadata): EtfFaq[] {
   // FAQ 4: Eficiencia fiscal para España
   faqs.push({
     q: `¿Es ${etf.ticker} fiscalmente eficiente para inversores en España?`,
-    a: `${etf.ticker} tiene un grado fiscal estimado ${fiscal.grade} para residentes en España. Está domiciliado en ${fiscal.domicileLabel}. ${fiscal.reason} Recuerda que las ganancias por venta tributan en la base del ahorro del IRPF (19-28% según importe) y que el grado fiscal es orientativo: verifica siempre los datos del folleto del fondo.`,
+    a: `${etf.ticker} tiene un grado fiscal estimado ${fiscal.grade} para residentes en España. Está domiciliado en ${fiscal.domicileLabel}. ${fiscal.reason} Recuerda que las ganancias por venta tributan en la base del ahorro del IRPF (19-30% según importe) y que el grado fiscal es orientativo: verifica siempre los datos del folleto del fondo.`,
   })
 
   // FAQ 5: Dónde comprar (genérica pero contextualizada)

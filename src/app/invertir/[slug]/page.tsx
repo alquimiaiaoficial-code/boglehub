@@ -86,7 +86,7 @@ export default async function InvertirPage({ params }: { params: Promise<{ slug:
     },
     {
       q: `¿Cómo tributa lo que gano invirtiendo ${m.amount}€ al mes?`,
-      a: `Mientras mantengas los ETFs sin venderlos, no tributas (los ETFs de acumulación reinvierten los dividendos sin generar evento fiscal). Solo al vender pagas IRPF del ahorro sobre la ganancia: 19% hasta 6.000€, 21% hasta 50.000€, 23% hasta 200.000€, 27% hasta 300.000€, 28% por encima. Los fondos indexados además permiten traspaso libre entre ellos sin tributar.`,
+      a: `Mientras mantengas los ETFs sin venderlos, no tributas (los ETFs de acumulación reinvierten los dividendos sin generar evento fiscal). Solo al vender pagas IRPF del ahorro sobre la ganancia: 19% hasta 6.000€, 21% hasta 50.000€, 23% hasta 200.000€, 27% hasta 300.000€, 30% por encima. Los fondos indexados además permiten traspaso libre entre ellos sin tributar.`,
     },
   ]
 

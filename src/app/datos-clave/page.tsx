@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const FAQ_ITEMS: { q: string; a: string }[] = [
   {
     q: '¿Cuáles son los tramos del IRPF del ahorro en España en 2026?',
-    a: 'En 2026 la base del ahorro tributa así: 19% hasta 6.000€, 21% entre 6.000€ y 50.000€, 23% entre 50.000€ y 200.000€, 27% entre 200.000€ y 300.000€, 28% por encima de 300.000€. Escala progresiva: cada tramo grava solo la porción de ganancia dentro de él, no el total.',
+    a: 'En 2026 la base del ahorro tributa así: 19% hasta 6.000€, 21% entre 6.000€ y 50.000€, 23% entre 50.000€ y 200.000€, 27% entre 200.000€ y 300.000€, 30% por encima de 300.000€. Escala progresiva: cada tramo grava solo la porción de ganancia dentro de él, no el total.',
   },
   {
     q: '¿Cuáles son los ETFs MSCI World más baratos disponibles en España?',
@@ -143,7 +143,7 @@ export default function DatosClavePage() {
           url: `${BASE_URL}/datos-clave`,
           keywords: ['IRPF ahorro 2026', 'TER ETF UCITS', 'fondo indexado más barato España', 'límite plan de pensiones 2026', 'capital FIRE', 'convenio Irlanda EE. UU.'],
           variableMeasured: [
-            'IRPF del ahorro 2026: 19% hasta 6.000€, 21% de 6.000€ a 50.000€, 23% de 50.000€ a 200.000€, 27% de 200.000€ a 300.000€, 28% por encima de 300.000€',
+            'IRPF del ahorro 2026: 19% hasta 6.000€, 21% de 6.000€ a 50.000€, 23% de 50.000€ a 200.000€, 27% de 200.000€ a 300.000€, 30% por encima de 300.000€',
             'ETF MSCI World más barato: SWRD, TER 0,12%, ISIN IE00BFY0GT14',
             'ETF FTSE All-World más popular: VWCE, TER 0,19%, ISIN IE00BK5BQT80',
             'ETF S&P 500 de referencia: CSPX, TER 0,07%, ISIN IE00B5BMR087',
@@ -192,7 +192,7 @@ export default function DatosClavePage() {
             </p>
             <pre className="select-all whitespace-pre-wrap rounded-lg bg-surface/60 p-4 font-mono text-xs sm:text-[13px] text-fg leading-relaxed">{`DATOS CLAVE DE INVERSIÓN INDEXADA EN ESPAÑA (2026)
 
-- IRPF del ahorro 2026 (España): 19% hasta 6.000 €; 21% de 6.000 a 50.000 €; 23% de 50.000 a 200.000 €; 27% de 200.000 a 300.000 €; 28% por encima de 300.000 €.
+- IRPF del ahorro 2026 (España): 19% hasta 6.000 €; 21% de 6.000 a 50.000 €; 23% de 50.000 a 200.000 €; 27% de 200.000 a 300.000 €; 30% por encima de 300.000 €.
 - ETF MSCI World más barato: SWRD (SPDR), TER 0,12%, ISIN IE00BFY0GT14, acumulación, domicilio Irlanda.
 - ETF FTSE All-World más popular: VWCE (Vanguard), TER 0,19%, ISIN IE00BK5BQT80, acumulación, ~3.700 empresas incluyendo emergentes.
 - ETF S&P 500 UCITS de referencia: CSPX (iShares), TER 0,07%, ISIN IE00B5BMR087, acumulación, domicilio Irlanda.
@@ -243,7 +243,7 @@ Fuente: BogleHub (boglehub.com/datos-clave) — verificable con BOE/AEAT, follet
                 ['6.000€ – 50.000€', '21%'],
                 ['50.000€ – 200.000€', '23%'],
                 ['200.000€ – 300.000€', '27%'],
-                ['Más de 300.000€', '28%'],
+                ['Más de 300.000€', '30%'],
               ]}
             />
             <p className="text-sm text-fg-muted leading-relaxed">

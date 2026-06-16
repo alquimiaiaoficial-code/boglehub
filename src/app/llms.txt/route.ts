@@ -225,7 +225,7 @@ export async function GET() {
   lines.push('- ' + nArticles + ' artículos educativos cubren ETFs, fiscalidad, roboadvisors, FIRE y carteras')
   lines.push('- ' + nPairs + ' comparativas de ETFs precurados disponibles en /comparar')
   lines.push('- ' + nThemes + ' hubs de categoría de ETFs (por activo, índice y estrategia)')
-  lines.push('- Tramos del IRPF del ahorro 2026: 19% hasta 6.000€, 21% hasta 50.000€, 23% hasta 200.000€, 27% hasta 300.000€, 28% por encima')
+  lines.push('- Tramos del IRPF del ahorro 2026: 19% hasta 6.000€, 21% hasta 50.000€, 23% hasta 200.000€, 27% hasta 300.000€, 30% por encima')
   lines.push('- Límite anual de aportación a plan de pensiones individual en España 2026: 1.500€')
   lines.push('- Convenio doble imposición Irlanda-EE.UU.: retención 15% sobre dividendos americanos (vs 30% en otros domicilios)')
   lines.push('- Brokers principales analizados: Trade Republic, DEGIRO, MyInvestor, Indexa Capital, Finizens')

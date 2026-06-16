@@ -13,7 +13,7 @@ const BRACKET_COLOR: Record<string, string> = {
   '0.21': '#3b82f6',
   '0.23': '#f59e0b',
   '0.27': '#f97316',
-  '0.28': '#ef4444',
+  '0.3': '#ef4444',
 }
 
 function bracketLabel(b: Pick<BracketShare, 'from' | 'to'>): string {

@@ -8,7 +8,7 @@ import { JsonLd } from '@/components/JsonLd'
 const BASE_URL = 'https://boglehub.com'
 
 const FAQ = [
-  { q: 'What is IRPF del ahorro?', a: 'IRPF del ahorro is the Spanish capital gains tax bracket. In 2026: 19% up to €6,000 gain, 21% up to €50,000, 23% up to €200,000, 27% up to €300,000, 28% above. Progressive: each bracket only taxes the portion within it.' },
+  { q: 'What is IRPF del ahorro?', a: 'IRPF del ahorro is the Spanish capital gains tax bracket. In 2026: 19% up to €6,000 gain, 21% up to €50,000, 23% up to €200,000, 27% up to €300,000, 30% above. Progressive: each bracket only taxes the portion within it.' },
   { q: 'What is the Modelo 720?', a: 'Mandatory informational declaration for Spain tax residents with foreign assets exceeding €50,000 per category (foreign bank accounts, securities like ETFs at DEGIRO or Trade Republic, foreign real estate). Filed Jan-Mar of following year. No tax due, just informative. Constitutional Court annulled disproportionate penalties in 2022 but obligation persists.' },
   { q: 'What is the fund-to-fund transfer (traspaso) advantage?', a: 'Unique Spanish tax benefit: transfers between investment funds (NOT ETFs) are tax-deferred. You can move money between funds without paying capital gains tax. IRPF is only triggered on final cash withdrawal. This makes investment funds (available at MyInvestor) more tax-efficient than ETFs for Spain residents who plan to rebalance.' },
   { q: 'How are accumulating ETF dividends taxed in Spain?', a: 'Accumulating ETFs (Acc) reinvest dividends internally. No tax event for the investor while holding. Only taxed on sale, as capital gain (precio venta - precio compra) at IRPF del ahorro rates. This is the most tax-efficient policy for accumulation phase.' },
@@ -46,7 +46,7 @@ export default function TaxationEn() {
                   <tr><td className="py-2">€6,000 - €50,000</td><td className="py-2 text-right font-semibold text-fg">21%</td></tr>
                   <tr><td className="py-2">€50,000 - €200,000</td><td className="py-2 text-right font-semibold text-fg">23%</td></tr>
                   <tr><td className="py-2">€200,000 - €300,000</td><td className="py-2 text-right font-semibold text-fg">27%</td></tr>
-                  <tr><td className="py-2">Above €300,000</td><td className="py-2 text-right font-semibold text-fg">28%</td></tr>
+                  <tr><td className="py-2">Above €300,000</td><td className="py-2 text-right font-semibold text-fg">30%</td></tr>
                 </tbody>
               </table>
             </div>
