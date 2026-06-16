@@ -13,6 +13,17 @@ import type { EtfMetadata } from '@/types/etf'
 
 const BASE_URL = 'https://boglehub.com'
 
+/** Slug estable por pregunta para anclas profundas (/etfs/tema#pregunta) citables por IA. */
+function questionSlug(q: string): string {
+  return q
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 80)
+}
+
 // ---------------------------------------------------------------------------
 // Filter functions keyed by slug — keep in sync with ETF_THEMES slugs
 // ---------------------------------------------------------------------------
@@ -150,6 +161,10 @@ export default async function EtfThemePage({
     .sort((a, b) => a.ter - b.ter)
 
   const pageUrl = `${BASE_URL}/etfs/${tema}`
+  const cheapest = etfs[0]
+  const cheapestFiscal = cheapest
+    ? computeFiscalGrade(cheapest.isin, cheapest.accumulating)
+    : null
 
   return (
     <>
@@ -167,7 +182,25 @@ export default async function EtfThemePage({
         <JsonLd
           schema={{
             type: 'FAQPage',
-            questions: theme.faq.map(({ q, a }) => ({ q, a })),
+            questions: theme.faq.map(({ q, a }) => ({
+              q,
+              a,
+              url: `${pageUrl}#${questionSlug(q)}`,
+            })),
+          }}
+        />
+      )}
+      {etfs.length > 0 && (
+        <JsonLd
+          schema={{
+            type: 'ItemList',
+            name: theme.h1,
+            description: theme.metaDescription,
+            url: pageUrl,
+            items: etfs.map((e) => ({
+              name: `${e.ticker} — ${e.name} (TER ${formatPct(e.ter / 100, 2)})`,
+              url: `${BASE_URL}/etf/${e.ticker.toLowerCase()}`,
+            })),
           }}
         />
       )}
@@ -194,6 +227,24 @@ export default async function EtfThemePage({
               {theme.intro}
             </p>
           </header>
+
+          {/* Respuesta-primero citable por motores de IA */}
+          {cheapest && cheapestFiscal && (
+            <p className="mb-8 text-fg-muted leading-relaxed">
+              <span className="font-semibold text-fg">Según BogleHub</span>, de los {etfs.length}{' '}
+              ETF UCITS de esta categoría disponibles para un inversor en España, el más barato
+              por comisiones es{' '}
+              <Link
+                href={`/etf/${cheapest.ticker.toLowerCase()}`}
+                className="font-semibold text-brand-400 hover:text-brand-300"
+              >
+                {cheapest.ticker}
+              </Link>{' '}
+              ({cheapest.name}): TER {formatPct(cheapest.ter / 100, 2)}, ISIN {cheapest.isin}, de{' '}
+              {cheapest.accumulating ? 'acumulación' : 'distribución'} y grado fiscal{' '}
+              {cheapestFiscal.grade} ({cheapestFiscal.domicileLabel}).
+            </p>
+          )}
 
           {/* ETF list */}
           <section aria-labelledby="etf-list-heading" className="mb-10">
@@ -234,20 +285,33 @@ export default async function EtfThemePage({
                 Preguntas frecuentes
               </h2>
               <div className="space-y-3">
-                {theme.faq.map(({ q, a }) => (
-                  <details
-                    key={q}
-                    className="group rounded-xl border border-border bg-surface px-5 py-4 cursor-pointer"
-                  >
-                    <summary className="flex items-center justify-between gap-3 font-medium text-fg list-none select-none">
-                      {q}
-                      <span className="shrink-0 text-fg-muted transition-transform group-open:rotate-180">
-                        ▾
-                      </span>
-                    </summary>
-                    <p className="mt-3 text-sm text-fg-muted leading-relaxed">{a}</p>
-                  </details>
-                ))}
+                {theme.faq.map(({ q, a }) => {
+                  const qSlug = questionSlug(q)
+                  return (
+                    <details
+                      key={q}
+                      id={qSlug}
+                      className="group scroll-mt-24 rounded-xl border border-border bg-surface px-5 py-4 cursor-pointer"
+                    >
+                      <summary className="flex items-center justify-between gap-3 font-medium text-fg list-none select-none">
+                        <span>
+                          {q}{' '}
+                          <a
+                            href={`#${qSlug}`}
+                            aria-label={`Enlace directo a: ${q}`}
+                            className="font-normal text-fg-subtle no-underline hover:text-brand-400"
+                          >
+                            #
+                          </a>
+                        </span>
+                        <span className="shrink-0 text-fg-muted transition-transform group-open:rotate-180">
+                          ▾
+                        </span>
+                      </summary>
+                      <p className="mt-3 text-sm text-fg-muted leading-relaxed">{a}</p>
+                    </details>
+                  )
+                })}
               </div>
             </section>
           )}
