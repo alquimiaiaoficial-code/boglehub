@@ -1385,7 +1385,7 @@ En la fase de acumulación de un inversor joven, un peso pequeño de renta fija 
 
 Tu reparto se desajusta solo: si la bolsa sube mucho, tu 80/20 se convierte en 88/12 y asumes más riesgo del que decidiste. **Rebalancear** —volver a tu proporción objetivo una o dos veces al año— mantiene tu nivel de riesgo bajo control y, de paso, te obliga a vender caro y comprar barato. Lo vemos en [cómo rebalancear tu cartera](/blog/como-rebalancear-cartera-indexada).
 
-Para la parte de renta fija, los [mejores ETFs de renta fija](/blog/mejores-etfs-renta-fija-2026) o un fondo indexado de bonos globales cubren la función sin complicaciones.
+Para la parte de renta fija, los [mejores ETFs de renta fija](/blog/mejores-etfs-renta-fija-2026) o un [fondo indexado de bonos globales](/fondo/vanguard-global-bond-eur-hedged) cubren la función sin complicaciones.
 
 ---
 
@@ -5391,7 +5391,7 @@ Ninguno es "el correcto". Son tres niveles distintos de amplitud. Lo comparamos 
 
 ## Qué ETFs replican el MSCI World
 
-Para un inversor español, el MSCI World se compra a través de ETFs UCITS domiciliados en Europa. El más conocido es el IWDA (iShares Core MSCI World), uno de los ETFs más grandes de Europa, con un TER del 0,20 %. Existen alternativas equivalentes de otras gestoras.
+Para un inversor español, el MSCI World se compra a través de ETFs UCITS domiciliados en Europa. El más conocido es el IWDA (iShares Core MSCI World), uno de los ETFs más grandes de Europa, con un TER del 0,20 %. Existen alternativas equivalentes de otras gestoras (SWRD, XDWD…); puedes verlas todas, con TER y grado fiscal, en el [catálogo de ETFs MSCI World para España](/etfs/msci-world).
 
 Una estrategia habitual entre inversores que quieren cubrir también los emergentes es combinar un ETF de MSCI World con uno de MSCI Emerging Markets, en una proporción aproximada de 88/12, reconstruyendo así algo parecido al FTSE All-World con control de pesos.
 
@@ -5714,7 +5714,7 @@ No existe un único "mejor ETF". Existe el mejor ETF para tu objetivo, tu horizo
 1. **Si empiezas y quieres simplicidad máxima**: VWCE. Un ETF, todo el mundo, done.
 2. **Si quieres reducir el TER 0,02 %**: IWDA (pero añade EMIM si quieres emergentes).
 3. **Si solo quieres EE.UU. y el TER más bajo posible**: CSPX o SXR8 en Xetra.
-4. **Si buscas renta fija para tu cartera**: AGGH como complemento al ETF de renta variable.
+4. **Si buscas renta fija para tu cartera**: AGGH como complemento al ETF de renta variable, o su [equivalente en fondo indexado](/fondo/vanguard-global-bond-eur-hedged) si prefieres el traspaso fiscal libre.
 5. **Si necesitas ingresos regulares**: VHYL, asumiendo la menor eficiencia fiscal.
 
 Antes de decidir, analiza cómo encaja cada ETF en tu cartera completa. El [analizador de BogleHub](/analyzer) te muestra la asignación real, el TER ponderado y el solapamiento entre posiciones.
@@ -5887,6 +5887,8 @@ Si la desviación es grande y no hay suficiente aportación para corregirla, sol
 Si usas MyInvestor, tienes acceso a los mismos índices en formato fondo indexado (Vanguard Global Stock, Amundi Prime Global, etc.). La ventaja: el traspaso entre fondos no tributa en España. La desventaja: sin comisión, sin horario de mercado, sin precio en tiempo real.
 
 Para esta cartera de 3 fondos, si operas en MyInvestor y tu horizonte es >10 años, los fondos indexados pueden tener ventaja fiscal sobre los ETFs. [Lee el artículo completo sobre fondos vs ETFs](/blog/fondos-indexados-vs-etfs-espana).
+
+Y si quieres ir más allá de esta selección, puedes explorar todos los ETFs UCITS organizados por categoría (S&P 500, MSCI World, renta fija, dividendos, sectores…) en el [catálogo de ETFs por categoría](/etfs).
 
 ---
 
@@ -7190,6 +7192,8 @@ No tener nada de renta fija no es ni mejor ni peor: es una decisión de riesgo. 
 El ETF de renta fija más popular entre Bogleheads españoles. Replica el índice Bloomberg Global Aggregate Bond, que incluye más de 7.000 bonos de gobiernos y empresas de grado de inversión de todo el mundo. La cobertura EUR es esencial.
 
 **Para qué cartera**: la elección por defecto para la parte de renta fija de cualquier cartera Boglehead estándar. Diversificación máxima, coste mínimo, cobertura adecuada.
+
+**Versión fondo**: si prefieres un fondo indexado en lugar de un ETF (por el traspaso fiscal libre), el equivalente es el [Vanguard Global Bond Index EUR Hedged](/fondo/vanguard-global-bond-eur-hedged): misma exposición de renta fija global cubierta a euros, en formato fondo.
 
 ### 2. EUNA — iShares Core Euro Government Bond UCITS ETF
 
