@@ -24,7 +24,18 @@ export function NewsletterSignup({ variant = 'card' }: { variant?: 'card' | 'inl
       if (data.success) {
         setStatus('success')
         setEmail('')
-        trackEvent('email_captured', { variant })
+        // Atribución de origen: de qué plataforma/vídeo vino el suscriptor.
+        // Los enlaces "link in bio" llevan ?utm_source=tiktok&utm_campaign=...
+        const params =
+          typeof window !== 'undefined'
+            ? new URLSearchParams(window.location.search)
+            : new URLSearchParams()
+        trackEvent('email_captured', {
+          variant,
+          source: params.get('utm_source') ?? 'direct',
+          campaign: params.get('utm_campaign') ?? '',
+          content: params.get('utm_content') ?? '',
+        })
       } else {
         setStatus('error')
       }
