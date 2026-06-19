@@ -253,9 +253,11 @@ export function JsonLd({ schema }: { schema: Schema }) {
       },
       sameAs: [
         // Solo perfiles REALES y operativos (señal de entidad para Knowledge
-        // Graph e IAs). Pendientes de añadir cuando existan/se confirme el
-        // handle: X (lo lleva la sesión de distribución), GitHub.
+        // Graph e IAs). Handles confirmados por el fundador (2026-06-19).
         'https://www.youtube.com/@BogleHub',
+        'https://x.com/boglehub',
+        'https://www.tiktok.com/@boglehub',
+        'https://www.instagram.com/boglehub',
       ],
     }
   } else if (schema.type === 'WebSite') {

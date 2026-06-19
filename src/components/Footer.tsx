@@ -55,6 +55,26 @@ export function Footer() {
                   Canal de YouTube
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://www.tiktok.com/@boglehub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-fg transition-colors"
+                >
+                  TikTok
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/boglehub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-fg transition-colors"
+                >
+                  Instagram
+                </a>
+              </li>
             </ul>
           </div>
           <div>
