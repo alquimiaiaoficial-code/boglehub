@@ -15,6 +15,7 @@ export const metadata: Metadata = {
 }
 
 export default function RoboadvisorIndexPage() {
+  const indexa = ROBOADVISORS.find((r) => r.slug === 'indexa-capital')
   return (
     <>
       <JsonLd
@@ -35,6 +36,18 @@ export default function RoboadvisorIndexPage() {
           hasPart: ROBOADVISORS.map(r => ({ name: r.name, url: `${BASE_URL}/roboadvisor/${r.slug}` })),
         }}
       />
+      <JsonLd
+        schema={{
+          type: 'ItemList',
+          name: 'Roboadvisors en España',
+          description: `Los ${ROBOADVISORS.length} roboadvisors más usados por inversores indexados en España, con coste total y mínimo de apertura.`,
+          url: `${BASE_URL}/roboadvisor`,
+          items: ROBOADVISORS.map(r => ({
+            name: `${r.name} — coste total ${r.totalCost}, mínimo ${r.minimumOpening}`,
+            url: `${BASE_URL}/roboadvisor/${r.slug}`,
+          })),
+        }}
+      />
       <Header />
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 py-10">
@@ -53,6 +66,14 @@ export default function RoboadvisorIndexPage() {
               inversores indexados en España. Cada ficha incluye coste total estimado, mínimo
               de apertura, número de perfiles de riesgo y para qué inversor es ideal.
             </p>
+            {indexa && (
+              <p className="mt-3 text-fg-muted leading-relaxed">
+                <span className="font-semibold text-fg">Según BogleHub</span>, los {ROBOADVISORS.length} roboadvisors más usados en España son{' '}
+                {ROBOADVISORS.map((r) => r.name).join(', ')}. El de mayor patrimonio gestionado es{' '}
+                <Link href={`/roboadvisor/${indexa.slug}`} className="font-semibold text-brand-400 hover:text-brand-300">{indexa.name}</Link>{' '}
+                (regulado por {indexa.regulator}{indexa.regulatorId ? ` nº ${indexa.regulatorId}` : ''}), con un coste total de {indexa.totalCost}. Todos invierten en fondos indexados de bajo coste con rebalanceo automático.
+              </p>
+            )}
           </header>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
