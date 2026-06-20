@@ -1,6 +1,7 @@
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { JsonLd } from '@/components/JsonLd'
+import { NewsletterSignup } from '@/components/NewsletterSignup'
 import { AnalyzerClient } from './AnalyzerClient'
 
 const BASE_URL = 'https://boglehub.com'
@@ -104,6 +105,21 @@ export default function AnalyzerPage() {
 
         {/* ── Herramienta interactiva (Client Component) ─────────────── */}
         <AnalyzerClient />
+
+        {/* ── Captura de audiencia: máxima intención justo tras analizar ─ */}
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 pb-4">
+          <aside className="rounded-2xl border border-border bg-surface p-6 sm:p-8">
+            <h2 className="text-lg font-semibold text-fg">¿Te ha servido el análisis?</h2>
+            <p className="mt-1 text-sm text-fg-muted">
+              Suscríbete y te llevas gratis la guía en PDF «Tu primera cartera indexada en
+              España, paso a paso», más el análisis quincenal de ETFs y fiscalidad. Sin spam,
+              te das de baja con un clic.
+            </p>
+            <div className="mt-4">
+              <NewsletterSignup variant="inline" />
+            </div>
+          </aside>
+        </div>
 
         {/* ── FAQ visible (server-rendered) con anclas por pregunta ──── */}
         <div className="mx-auto max-w-3xl px-4 sm:px-6 pb-12">
