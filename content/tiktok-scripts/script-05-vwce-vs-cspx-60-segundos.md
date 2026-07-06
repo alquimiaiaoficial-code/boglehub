@@ -10,7 +10,7 @@
 ## Desarrollo
 
 **[Seg 3-15] — Visual: tabla comparativa lado a lado**
-**Voiceover:** "VWCE: todo el mundo, 9.000 empresas, TER 0,22%. CSPX: solo S&P 500 americano, 500 empresas, TER 0,07%. CSPX es tres veces más barato."
+**Voiceover:** "VWCE: todo el mundo, 9.000 empresas, TER 0,19%. CSPX: solo S&P 500 americano, 500 empresas, TER 0,07%. CSPX es casi tres veces más barato."
 
 **[Seg 15-27] — Visual: gráfico de rentabilidad histórica de ambos índices a 20 años**
 **Voiceover:** "Rentabilidad histórica a 20 años: CSPX ha ganado más. El S&P 500 americano ha sido el índice más rentable del planeta en las últimas décadas. Los datos no mienten."

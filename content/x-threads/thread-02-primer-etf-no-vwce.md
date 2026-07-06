@@ -30,7 +30,7 @@ Más sencillo que parece. Y cuando entiendas qué tienes, ya decides si quieres 
 Otro problema real: muchos abren cuenta en DEGIRO, compran VWCE, y no saben que:
 — Pagan 0,50€ + 0,03% por operación
 — Hay fondos de la "Core Selection" a 0€
-— VWCE tiene TER 0,22% — hay alternativas más baratas
+— VWCE tiene TER 0,19% — hay alternativas más baratas
 
 Detalles que importan con aportaciones pequeñas.
 

@@ -7,7 +7,7 @@ VWCE o CSPX. Parece una pregunta de frikis. Pero la respuesta correcta puede sup
 VWCE = mundo entero (aprox. 9.000 empresas, 60% EEUU, 40% resto)
 CSPX = solo S&P 500 (500 empresas americanas)
 
-TER: VWCE 0,22% vs CSPX 0,07%. CSPX es tres veces más barato en costes.
+TER: VWCE 0,19% vs CSPX 0,07%. CSPX es casi tres veces más barato en costes.
 
 **Tweet 3:**
 Rentabilidad histórica a 30 años:

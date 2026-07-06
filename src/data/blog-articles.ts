@@ -201,7 +201,7 @@ Por eso, la decisión sobre emergentes es en realidad una decisión sobre **qué
 
 ## Cómo invertir en emergentes desde España
 
-Si optas por la vía modular, lo haces con un **ETF de mercados emergentes** UCITS domiciliado en Irlanda. El más popular es el **EIMI** (iShares Core MSCI EM IMI), que incluye también pequeñas compañías; hay alternativas de Amundi y otras gestoras (ver [qué gestora elegir](/blog/vanguard-vs-ishares-vs-amundi)). Lo compras desde cualquier bróker de ETFs; la [comparativa de brókers](/blog/mejor-broker-etfs-espana-2026) te ayuda a elegir el más barato.
+Si optas por la vía modular, lo haces con un **ETF de mercados emergentes** UCITS domiciliado en Irlanda. El más popular es el **EIMI** (iShares Core MSCI EM IMI), que incluye también pequeñas compañías; hay alternativas de Amundi y otras gestoras (ver [qué gestora elegir](/blog/vanguard-vs-ishares-vs-amundi)). Lo compras desde cualquier bróker de ETFs; la [comparativa de brókers](/blog/mejor-broker-etfs-espana-2026) te ayuda a elegir el más barato. Y si prefieres el formato fondo indexado (con traspaso fiscal libre entre fondos), la misma exposición existe como fondo: el [Fidelity Emerging Markets Index](/fondo/fidelity-emerging-markets-index) o el [Amundi Index MSCI Emerging Markets](/fondo/amundi-index-msci-emerging-markets), ambos con TER 0,20 %; tienes su [comparativa cara a cara](/comparar-fondo/amundi-index-msci-emerging-markets-vs-fidelity-emerging-markets-index).
 
 Si combinas World + emergentes, el reparto habitual para replicar el mundo es en torno a **88% desarrollados / 12% emergentes** (su peso por capitalización), reajustándolo al [rebalancear](/blog/como-rebalancear-cartera-indexada). Aun así, recuerda: un All-World hace esto solo.
 
@@ -9933,7 +9933,7 @@ El complemento habitual del fondo global para cubrir China, India, Taiwán, Bras
 | Fidelity Emerging Markets Index | MSCI Emerging Markets | 0,20 % | IE00BYX5L514 |
 | Vanguard Emerging Markets Stock Index | MSCI Emerging Markets | 0,23 % | IE0031786142 |
 
-Los tres replican el mismo índice MSCI Emerging Markets. En una cartera Boglehead de 3 fondos, los emergentes suelen ocupar entre el 10% y el 20% de la renta variable.
+Los tres replican el mismo índice MSCI Emerging Markets. En una cartera Boglehead de 3 fondos, los emergentes suelen ocupar entre el 10% y el 20% de la renta variable. Fichas: [Amundi Index MSCI Emerging Markets](/fondo/amundi-index-msci-emerging-markets), [Fidelity Emerging Markets Index](/fondo/fidelity-emerging-markets-index) y [Vanguard Emerging Markets Stock](/fondo/vanguard-emerging-markets-stock). ¿Dudas entre los dos de 0,20 %? Mira la [comparativa Amundi vs Fidelity](/comparar-fondo/amundi-index-msci-emerging-markets-vs-fidelity-emerging-markets-index).
 
 ---
 
@@ -9946,7 +9946,7 @@ El contrapeso de la renta variable: estabilidad y menor volatilidad.
 | **Vanguard Global Bond Index EUR Hedged** | Bloomberg Global Aggregate (EUR Hedged) | 0,15 % | IE00B18GC888 |
 | Amundi Index Eurozone Government Bond | Bonos gobierno eurozona | 0,15 % | LU1437015735 |
 
-El **Vanguard Global Bond EUR Hedged** es la opción global para la parte conservadora, con cobertura de divisa a euros (recomendable en renta fija). El de Amundi se centra en deuda pública de la eurozona. Para entender por qué la cobertura de divisa importa en bonos pero no en acciones, lee [riesgo divisa en ETFs](/blog/riesgo-divisa-etf-hedged-espana).
+El **Vanguard Global Bond EUR Hedged** es la opción global para la parte conservadora, con cobertura de divisa a euros (recomendable en renta fija). El de Amundi se centra en deuda pública de la eurozona. Fichas: [Vanguard Global Bond Index EUR Hedged](/fondo/vanguard-global-bond-eur-hedged) y [Amundi Index Eurozone Government Bond](/fondo/amundi-index-eurozone-government-bond). Para entender por qué la cobertura de divisa importa en bonos pero no en acciones, lee [riesgo divisa en ETFs](/blog/riesgo-divisa-etf-hedged-espana).
 
 ---
 

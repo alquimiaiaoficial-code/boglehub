@@ -9,6 +9,7 @@ import { getAllEtfs } from '@/lib/etf-database'
 import { computeFiscalGrade, GRADE_STYLES } from '@/lib/fiscal'
 import { formatPct } from '@/lib/utils'
 import { ETF_THEMES, getThemeBySlug } from '@/data/etf-themes'
+import { getIndexFundBySlug, type IndexFund } from '@/data/index-funds'
 import type { EtfMetadata } from '@/types/etf'
 
 const BASE_URL = 'https://boglehub.com'
@@ -48,6 +49,17 @@ const NASDAQ_100_TICKERS = new Set(['EQQQ', 'SXRV', 'CNDX'])
 const SMALL_CAPS_TICKERS = new Set(['WSML', 'IUSN', 'ZPRS', 'ZPRV'])
 const GOLD_TICKERS = new Set(['SGLN', 'IGLN', '4GLD'])
 const QUALITY_MOMENTUM_TICKERS = new Set(['IWQU', 'IWMO', 'XDEQ', 'XDWL'])
+
+// Fondos indexados con la misma exposición que el tema (traspaso fiscal libre).
+// Keyed by slug — keep in sync with ETF_THEMES e INDEX_FUNDS.
+const THEME_FUND_EQUIVALENTS: Record<string, string[]> = {
+  'msci-world': ['fidelity-msci-world', 'amundi-prime-global', 'vanguard-global-stock'],
+  'sp500': ['vanguard-us-500-stock', 'amundi-prime-usa'],
+  'todo-mundo': ['vanguard-global-stock'],
+  'emergentes': ['fidelity-emerging-markets-index', 'amundi-index-msci-emerging-markets', 'vanguard-emerging-markets-stock'],
+  'renta-fija': ['vanguard-global-bond-eur-hedged', 'amundi-index-eurozone-government-bond'],
+  'europa': ['vanguard-eurozone-stock'],
+}
 
 const THEME_FILTERS: Record<string, (etf: EtfMetadata) => boolean> = {
   'msci-world': MSCI_WORLD_FILTER,
@@ -160,6 +172,10 @@ export default async function EtfThemePage({
     .filter(filterFn)
     .sort((a, b) => a.ter - b.ter)
 
+  const fundEquivalents = (THEME_FUND_EQUIVALENTS[tema] ?? [])
+    .map((s) => getIndexFundBySlug(s))
+    .filter((f): f is IndexFund => Boolean(f))
+
   const pageUrl = `${BASE_URL}/etfs/${tema}`
   const cheapest = etfs[0]
   const cheapestFiscal = cheapest
@@ -270,6 +286,28 @@ export default async function EtfThemePage({
               </div>
             )}
           </section>
+
+          {/* Equivalentes en fondo indexado (traspaso fiscal libre) */}
+          {fundEquivalents.length > 0 && (
+            <Card className="mb-8">
+              <CardTitle className="mb-2">La misma exposición en fondo indexado (con traspaso sin tributar)</CardTitle>
+              <p className="text-sm text-fg-muted leading-relaxed mb-3">
+                Si prefieres fondo indexado en lugar de ETF, esta categoría también existe en formato
+                fondo: misma exposición, pero con traspaso fiscal libre entre fondos en España
+                (puedes rebalancear o cambiar de fondo sin tributar hasta el reembolso final).
+              </p>
+              <ul className="space-y-2">
+                {fundEquivalents.map((f) => (
+                  <li key={f.slug} className="flex flex-wrap items-baseline gap-x-2">
+                    <Link href={`/fondo/${f.slug}`} className="text-sm font-medium text-brand-400 hover:text-brand-300">
+                      {f.name} →
+                    </Link>
+                    <span className="text-xs text-fg-muted">TER {f.ter}% · {f.index}</span>
+                  </li>
+                ))}
+              </ul>
+            </Card>
+          )}
 
           {/* Nota aclaratoria */}
           {theme.note && (

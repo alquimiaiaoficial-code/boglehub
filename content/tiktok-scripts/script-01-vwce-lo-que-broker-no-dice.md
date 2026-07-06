@@ -13,7 +13,7 @@
 **Voiceover:** "VWCE es el ETF favorito de los inversores pasivos españoles. Pero hay 3 cosas que nadie te explica antes de comprarlo."
 
 **[Seg 10-22] — Visual: tabla con columna 'Lo que ves' vs 'Lo que hay dentro'**
-**Voiceover:** "Primero: el TER de 0,22% no es el único coste. Hay costes de transacción internos del fondo, spreads y la comisión de tu broker al comprar. El coste real puede ser hasta 0,35% en total."
+**Voiceover:** "Primero: el TER de 0,19% no es el único coste. Hay costes de transacción internos del fondo, spreads y la comisión de tu broker al comprar. El coste real puede ser hasta 0,30% en total."
 
 **[Seg 22-35] — Visual: gráfico de ponderación geográfica del MSCI ACWI IMI**
 **Voiceover:** "Segundo: VWCE no es 'diversificación global'. Es 60% Estados Unidos. Si crees que tienes el mundo entero, en realidad tienes mucho EEUU con un poco de todo lo demás."

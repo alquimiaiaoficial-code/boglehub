@@ -16,7 +16,7 @@ Vanguard no cotiza en bolsa, no tiene accionistas externos y fue fundada por alg
 4. Vanguard no tiene sede en España, y sus ETFs europeos están domiciliados en Irlanda. Por eso cuando compras VWCE o VUSA, tributas bajo el convenio de doble imposición entre Irlanda y EEUU (retención reducida al 15% vs 30% para particulares directos).
 
 **Tweet 6:**
-5. El TER de 0,22% de VWCE financia literalmente el análisis y seguimiento de 9.000 empresas en 50 países. Por 2,2€ al año por cada 1.000€ invertidos. Ningún analista humano puede hacer eso mejor, ni por 10 veces el precio.
+5. El TER de 0,19% de VWCE financia literalmente el análisis y seguimiento de 9.000 empresas en 50 países. Por 1,9€ al año por cada 1.000€ invertidos. Ningún analista humano puede hacer eso mejor, ni por 10 veces el precio.
 
 **Tweet 7:**
 6. Vanguard tiene una política de no publicitar activamente sus productos. Casi no hacen marketing. Su filosofía: si el producto es bueno, los inversores lo encontrarán. Es la antítesis del modelo de comisiones de la banca tradicional española.

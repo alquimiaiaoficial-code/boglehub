@@ -42,6 +42,7 @@ next-env.d.ts
 
 # cowork brief (interno — fuera del repo)
 COWORK-X.md
+content/x-reports/
 
 # graphify code index (local, se regenera por máquina)
 /graphify-out/

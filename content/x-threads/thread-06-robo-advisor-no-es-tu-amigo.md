@@ -32,7 +32,7 @@ El argumento que siempre usan los defensores: "pero Indexa bate a la mayoría de
 **Tweet 7:**
 La alternativa concreta a Indexa para un inversor con experiencia básica:
 — MyInvestor: Amundi MSCI World (0,18% TER) + Amundi MSCI EM (0,20% TER)
-— O DEGIRO: VWCE (0,22% TER) + AGGH (0,10% TER)
+— O DEGIRO: VWCE (0,19% TER) + AGGH (0,10% TER)
 — Rebalanceo manual 1 vez al año: 30 minutos
 
 Coste total vs Indexa: -0,3% anual. Sobre 200.000€ en 20 años: ~70.000€ extra.
