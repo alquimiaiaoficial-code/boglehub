@@ -38,6 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '',                              priority: 1.0, freq: 'weekly'  },
     { path: '/empezar',                      priority: 0.9, freq: 'monthly' },
     { path: '/analyzer',                     priority: 0.9, freq: 'weekly'  },
+    { path: '/guia',                         priority: 0.9, freq: 'monthly' },
     { path: '/etf',                            priority: 0.8, freq: 'monthly' },
     { path: '/comparar',                     priority: 0.9, freq: 'weekly'  },
     { path: '/chat',                         priority: 0.9, freq: 'weekly'  },
