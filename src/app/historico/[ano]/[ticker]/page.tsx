@@ -13,6 +13,7 @@ import {
   getReturn,
 } from '@/data/historical-years'
 
+import { robotsFor } from '@/lib/seo-index-policy'
 const BASE_URL = 'https://boglehub.com'
 
 function formatPct(n: number): string {
@@ -49,6 +50,7 @@ export async function generateMetadata({
     description: `${etf.ticker} rindió ${formatPct(ret)} en ${year}: ${event.summary.substring(0, 115)}...`,
     openGraph: { locale: 'es_ES', images: [`/api/og?title=${encodeURIComponent(`${etf.ticker} en ${year}`)}&subtitle=${encodeURIComponent(formatPct(ret))}`] },
     alternates: { canonical: `/historico/${ano}/${ticker}` },
+    robots: robotsFor(`/historico/${ano}/${ticker}`),
   }
 }
 

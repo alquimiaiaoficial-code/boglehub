@@ -15,6 +15,7 @@ import {
   getAllHistoricalCombos,
 } from '@/data/historical-returns'
 
+import { robotsFor } from '@/lib/seo-index-policy'
 const BASE_URL = 'https://boglehub.com'
 const REFERENCE_YEAR = 2024
 
@@ -54,6 +55,7 @@ export async function generateMetadata({
       images: [`/api/og?title=${encodeURIComponent(`${formatEUR(amount)} en ${etf.ticker}`)}&subtitle=${encodeURIComponent(`Desde ${year}`)}`],
     },
     alternates: { canonical: `/simulacion/${cantidad}/${ticker}/${ano}` },
+    robots: robotsFor(`/simulacion/${cantidad}/${ticker}/${ano}`),
   }
 }
 

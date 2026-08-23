@@ -10,6 +10,7 @@ import { getBrokerBySlug, BROKERS } from '@/data/brokers'
 import { computeFiscalGrade } from '@/lib/fiscal'
 import { formatPct } from '@/lib/utils'
 import { POPULAR_ETF_TICKERS, COVERED_BROKER_SLUGS, getAvailability } from '@/data/etf-broker-availability'
+import { robotsFor } from '@/lib/seo-index-policy'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -51,6 +52,7 @@ export async function generateMetadata({
       images: [`/api/og?title=${encodeURIComponent(`${etf.ticker} en ${brokerData.name}`)}&subtitle=${encodeURIComponent('Gu%C3%ADa%20paso%20a%20paso')}`],
     },
     alternates: { canonical: `/comprar/${ticker}/${broker}` },
+    robots: robotsFor(`/comprar/${ticker}/${broker}`),
   }
 }
 

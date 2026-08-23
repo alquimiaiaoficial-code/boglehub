@@ -7,6 +7,7 @@ import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
 import { getPortfolioBySlug } from '@/data/model-portfolios'
 import { getAllPortfolioPairs, portfolioPairToSlug, slugToPortfolioPair } from '@/data/portfolio-pairs'
+import { robotsFor } from '@/lib/seo-index-policy'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -29,6 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ pair: str
     description: `${pA.name} vs ${pB.name}: composición, riesgo, rentabilidad esperada y para qué inversor encaja cada una.`,
     openGraph: { locale: 'es_ES', images: [`/api/og?title=${encodeURIComponent(`${pA.name} vs ${pB.name}`)}&subtitle=${encodeURIComponent('Comparativa%20de%20carteras')}`] },
     alternates: { canonical: `/comparar-cartera/${pair}` },
+    robots: robotsFor(`/comparar-cartera/${pair}`),
   }
 }
 

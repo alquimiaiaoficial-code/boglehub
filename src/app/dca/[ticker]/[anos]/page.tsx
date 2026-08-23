@@ -7,6 +7,7 @@ import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
 import { getEtfByTicker } from '@/lib/etf-database'
 import { POPULAR_ETF_TICKERS } from '@/data/etf-broker-availability'
+import { robotsFor } from '@/lib/seo-index-policy'
 
 const BASE_URL = 'https://boglehub.com'
 const HORIZONS = [5, 10, 15, 20, 25, 30]
@@ -49,6 +50,7 @@ export async function generateMetadata({
     description: `DCA en ${etf.ticker} a ${years} años desde España: proyección de aportaciones mensuales (de 50€ a 2000€), cómo automatizarlo y el mejor broker.`,
     openGraph: { locale: 'es_ES', images: [`/api/og?title=${encodeURIComponent(`DCA ${etf.ticker} (${years}a)`)}&subtitle=${encodeURIComponent('Aportaciones%20mensuales')}`] },
     alternates: { canonical: `/dca/${ticker}/${anos}` },
+    robots: robotsFor(`/dca/${ticker}/${anos}`),
   }
 }
 

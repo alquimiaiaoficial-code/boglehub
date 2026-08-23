@@ -7,6 +7,7 @@ import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
 import { MONTHLY_AMOUNTS, getMonthlyAmountBySlug } from '@/data/monthly-amounts'
 import { OBJECTIVES, getObjectiveBySlug } from '@/data/objectives'
+import { robotsFor } from '@/lib/seo-index-policy'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -55,6 +56,7 @@ export async function generateMetadata({
       images: [`/api/og?title=${encodeURIComponent(`${m.amount}€/mes -> ${o.label}`)}&subtitle=${encodeURIComponent(`${years} años`)}`],
     },
     alternates: { canonical: `/ahorrar/${cantidad}/para/${objetivo}` },
+    robots: robotsFor(`/ahorrar/${cantidad}/para/${objetivo}`),
   }
 }
 

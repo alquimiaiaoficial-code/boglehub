@@ -28,6 +28,7 @@ import { YEAR_EVENTS, HISTORICAL_YEAR_TICKERS, getReturn } from '@/data/historic
 import { HISPANO_MARKETS } from '@/data/hispano-markets'
 import { INDEX_FUNDS } from '@/data/index-funds'
 import { FUND_PAIRS, fundPairToSlug } from '@/data/fund-pairs'
+import { shouldIndex } from '@/lib/seo-index-policy'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -338,7 +339,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  return [
+  const allRoutes = [
     ...staticRoutes,
     ...etfRoutes,
     ...blogRoutes,
@@ -369,4 +370,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...fondoRoutes,
     ...fundPairRoutes,
   ]
+
+  // Solo se envían las URLs que la política de indexación considera indexables.
+  // El resto emite noindex en su propio generateMetadata: anunciarlas aquí sería
+  // una señal contradictoria para Google.
+  return allRoutes.filter((route) =>
+    shouldIndex(route.url.replace(BASE_URL, '') || '/')
+  )
 }

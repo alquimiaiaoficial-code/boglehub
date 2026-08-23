@@ -11,6 +11,7 @@ import { formatPct } from '@/lib/utils'
 import { POPULAR_ETF_TICKERS } from '@/data/etf-broker-availability'
 import { ETF_ASPECTS, getAspectBySlug } from '@/data/etf-aspects'
 import { BROKERS } from '@/data/brokers'
+import { robotsFor } from '@/lib/seo-index-policy'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -44,6 +45,7 @@ export async function generateMetadata({
       images: [`/api/og?title=${encodeURIComponent(`${etf.ticker} - ${aspect.label}`)}&subtitle=${encodeURIComponent('An%C3%A1lisis%20detallado')}`],
     },
     alternates: { canonical: `/analiza/${ticker}/${aspecto}` },
+    robots: robotsFor(`/analiza/${ticker}/${aspecto}`),
   }
 }
 

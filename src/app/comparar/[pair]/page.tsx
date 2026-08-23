@@ -10,6 +10,7 @@ import { computeFiscalGrade, GRADE_STYLES } from '@/lib/fiscal'
 import { formatPct } from '@/lib/utils'
 import { ETF_PAIRS, slugToPair, pairToSlug, getAllPossiblePairs } from '@/data/etf-pairs'
 import type { EtfMetadata, Region } from '@/types/etf'
+import { robotsFor } from '@/lib/seo-index-policy'
 
 const BASE_URL = 'https://boglehub.com'
 const CURRENT_YEAR = 2026
@@ -91,6 +92,7 @@ export async function generateMetadata({
     title,
     description,
     alternates: { canonical: `/comparar/${pair}` },
+    robots: robotsFor(`/comparar/${pair}`),
     openGraph: {
       title: `${title} | BogleHub`,
       description,

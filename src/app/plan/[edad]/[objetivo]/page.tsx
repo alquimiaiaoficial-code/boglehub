@@ -7,6 +7,7 @@ import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
 import { AGES, getAgeBySlug } from '@/data/ages'
 import { OBJECTIVES, getObjectiveBySlug, monthlyToReach } from '@/data/objectives'
+import { robotsFor } from '@/lib/seo-index-policy'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -35,6 +36,7 @@ export async function generateMetadata({ params }: { params: Promise<{ edad: str
     description: `Cuánto invertir al mes desde los ${age.age} años para llegar a ${obj.label}: aportación necesaria con rentabilidad del 7%, cartera recomendada y broker.`,
     openGraph: { locale: 'es_ES', images: [`/api/og?title=${encodeURIComponent(`${age.age} años → ${obj.label}`)}&subtitle=${encodeURIComponent('Plan%20personalizado')}`] },
     alternates: { canonical: `/plan/${edad}/${objetivo}` },
+    robots: robotsFor(`/plan/${edad}/${objetivo}`),
   }
 }
 
