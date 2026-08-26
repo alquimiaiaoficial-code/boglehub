@@ -39,4 +39,27 @@ describe('coherencia entre el artículo de solapamiento y el dataset', () => {
       `el artículo debe citar ~${Math.round(mitadYMitad)} % para el 50/50; cita ${citadas.join(', ')}`
     ).toBe(true)
   })
+
+  it('las cifras del top 10 no se contradicen entre el FAQ y la tabla', () => {
+    // Estas vienen de fuentes externas (fichas de los fondos), así que el test no
+    // puede validarlas contra el dataset. Lo que sí evita es que el artículo se
+    // contradiga consigo mismo, que es el fallo que un lector detecta al instante.
+    const articulo = BLOG_ARTICLES.find((a) => a.slug === 'solapamiento-etfs-error-silencioso')
+    const texto = JSON.stringify(articulo)
+
+    const menciones = [...texto.matchAll(/10 mayores posiciones[^~]*~(\d{2}) ?%[^~]*~(\d{2}) ?%/g)]
+    expect(menciones.length, 'el artículo debe citar el peso del top 10').toBeGreaterThan(0)
+
+    const pares = menciones.map((m) => `${m[1]}-${m[2]}`)
+    expect(new Set(pares).size, `cifras del top 10 inconsistentes: ${pares.join(' vs ')}`).toBe(1)
+  })
+
+  it('ya no se cita el peso de "las 10 mayores tecnológicas"', () => {
+    // Se retiró a propósito: depende de qué se considere tecnológica (¿Amazon?
+    // ¿Tesla?), un criterio que el artículo no declaraba, así que el mismo dato
+    // podía defenderse como 18 % o como 21 %. El top 10 de posiciones es la
+    // métrica equivalente que publican las fichas y que nadie discute.
+    const articulo = BLOG_ARTICLES.find((a) => a.slug === 'solapamiento-etfs-error-silencioso')
+    expect(JSON.stringify(articulo)).not.toContain('mayores tecnológicas')
+  })
 })

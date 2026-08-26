@@ -4248,7 +4248,7 @@ Eso es todo el Boglehead.
       },
       {
         q: '¿Se solapan VWCE y CSPX?',
-        a: 'Sí, mucho. CSPX (el S&P 500) está prácticamente contenido dentro de VWCE (FTSE All-World), porque las mayores posiciones estadounidenses de VWCE son las mismas que encabezan el S&P 500. Juntar 50 % VWCE + 50 % CSPX eleva tu exposición a EE. UU. de ~63 % a ~82 % y el peso de las 10 mayores tecnológicas de ~18 % a ~26 %. No diversificas: concentras en grandes tecnológicas estadounidenses.',
+        a: 'Sí, mucho. CSPX (el S&P 500) está prácticamente contenido dentro de VWCE (FTSE All-World), porque las mayores posiciones estadounidenses de VWCE son las mismas que encabezan el S&P 500. Juntar 50 % VWCE + 50 % CSPX eleva tu exposición a EE. UU. de ~63 % a ~82 % y el peso de tus 10 mayores posiciones de ~25 % a ~31 %. No diversificas: concentras en grandes tecnológicas estadounidenses.',
       },
       {
         q: '¿Por qué es un problema el solapamiento entre ETFs?',
@@ -4293,7 +4293,9 @@ Cuando alguien compra VWCE y CSPX a partes iguales pensando que así "diversific
 |---------|-----------|------------------------|
 | Exposición a EE. UU. | ~63 % | ~82 % |
 | Exposición a emergentes | ~12 % | ~6 % |
-| Peso de las 10 mayores tecnológicas | ~18 % | ~26 % |
+| Peso de las 10 mayores posiciones | ~25 % | ~31 % |
+
+*Exposición por región según los datos que usa el analizador. El peso del top 10 sale de las fichas de los fondos a mediados de 2026: ~24,6 % en el FTSE All-World y en torno al 37 % en el S&P 500 —una cifra que se mueve, según fuente y fecha, entre el 37 % y el 39 %—. El ~31 % de la mezcla asume que ambas listas de diez coinciden casi por completo, como ocurre salvo excepciones como TSMC, presente solo en el fondo global.*
 
 No has diversificado nada. Has hecho una apuesta concentrada por las grandes tecnológicas estadounidenses — solo que sin decidirlo de forma consciente. Si tu intención era precisamente sobreponderar EE. UU., perfecto: pero entonces que sea una decisión, no un accidente.
 
