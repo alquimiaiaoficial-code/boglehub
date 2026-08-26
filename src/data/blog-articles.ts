@@ -4248,7 +4248,7 @@ Eso es todo el Boglehead.
       },
       {
         q: '¿Se solapan VWCE y CSPX?',
-        a: 'Sí, mucho. CSPX (el S&P 500) está prácticamente contenido dentro de VWCE (FTSE All-World), porque las mayores posiciones estadounidenses de VWCE son las mismas que encabezan el S&P 500. Juntar 50 % VWCE + 50 % CSPX eleva tu exposición a EE. UU. de ~61 % a ~80 % y el peso de las 10 mayores tecnológicas de ~18 % a ~26 %. No diversificas: concentras en grandes tecnológicas estadounidenses.',
+        a: 'Sí, mucho. CSPX (el S&P 500) está prácticamente contenido dentro de VWCE (FTSE All-World), porque las mayores posiciones estadounidenses de VWCE son las mismas que encabezan el S&P 500. Juntar 50 % VWCE + 50 % CSPX eleva tu exposición a EE. UU. de ~63 % a ~82 % y el peso de las 10 mayores tecnológicas de ~18 % a ~26 %. No diversificas: concentras en grandes tecnológicas estadounidenses.',
       },
       {
         q: '¿Por qué es un problema el solapamiento entre ETFs?',
@@ -4261,7 +4261,7 @@ Eso es todo el Boglehead.
     ],
     content: `# Solapamiento de ETFs: el error silencioso que infla tu cartera
 
-**El solapamiento entre ETFs ocurre cuando dos o más ETFs de tu cartera contienen por debajo las mismas empresas, de modo que tu exposición real a ellas es mucho mayor de la que crees.** Importa porque crea una concentración que no has elegido —en unas pocas megaempresas, un sector y una divisa— y destruye la diversificación que dabas por hecha. El caso más común en España es juntar VWCE y CSPX, que eleva tu peso en EE. UU. de ~61 % a ~80 % sin que lo decidas.
+**El solapamiento entre ETFs ocurre cuando dos o más ETFs de tu cartera contienen por debajo las mismas empresas, de modo que tu exposición real a ellas es mucho mayor de la que crees.** Importa porque crea una concentración que no has elegido —en unas pocas megaempresas, un sector y una divisa— y destruye la diversificación que dabas por hecha. El caso más común en España es juntar VWCE y CSPX, que eleva tu peso en EE. UU. de ~63 % a ~82 % sin que lo decidas.
 
 Pregunta a un inversor novato si su cartera está diversificada y te dirá que sí: "tengo cinco ETFs distintos". Pero el número de ETFs no mide la diversificación. Mide cuántas posiciones tienes que vigilar. Y muchas veces, tener cinco ETFs significa estar menos diversificado de lo que crees, no más.
 
@@ -4291,7 +4291,7 @@ Cuando alguien compra VWCE y CSPX a partes iguales pensando que así "diversific
 
 | Métrica | Solo VWCE | 50 % VWCE + 50 % CSPX |
 |---------|-----------|------------------------|
-| Exposición a EE. UU. | ~61 % | ~80 % |
+| Exposición a EE. UU. | ~63 % | ~82 % |
 | Exposición a emergentes | ~12 % | ~6 % |
 | Peso de las 10 mayores tecnológicas | ~18 % | ~26 % |
 
