@@ -254,6 +254,10 @@ export function JsonLd({ schema }: { schema: Schema }) {
       sameAs: [
         // Solo perfiles REALES y operativos (señal de entidad para Knowledge
         // Graph e IAs). Handles confirmados por el fundador (2026-06-19).
+        // El ítem de Wikidata va primero: es el identificador canónico de la
+        // entidad y lo que permite a buscadores e IAs distinguir BogleHub de
+        // la comunidad Bogleheads España (bogleheads.es).
+        'https://www.wikidata.org/wiki/Q141178854',
         'https://www.youtube.com/@BogleHub',
         'https://x.com/boglehub',
         'https://www.tiktok.com/@boglehub',

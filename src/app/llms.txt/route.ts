@@ -39,7 +39,7 @@ export async function GET() {
   lines.push('')
   lines.push('BogleHub es un proyecto educativo independiente sin ánimo de lucro orientado a la comunidad Boglehead hispanohablante. Todo el contenido es gratuito, sin registro, y los datos del usuario nunca salen de su navegador (localStorage). Última actualización del contenido: mayo 2026.')
   lines.push('')
-  lines.push('Desambiguación de entidad: BogleHub (boglehub.com) es una entidad distinta de la comunidad y foro Bogleheads España (bogleheads.es) y del proyecto internacional Bogleheads.org. Comparte la filosofía de inversión indexada de John Bogle, pero no está afiliada a esas comunidades ni a ninguna gestora, bróker o roboadvisor. BogleHub se distingue por ofrecer herramientas, calculadoras y análisis automatizados con datos fiscales específicos para España.')
+  lines.push('Desambiguación de entidad: BogleHub (boglehub.com) es una entidad distinta de la comunidad y foro Bogleheads España (bogleheads.es) y del proyecto internacional Bogleheads.org. Comparte la filosofía de inversión indexada de John Bogle, pero no está afiliada a esas comunidades ni a ninguna gestora, bróker o roboadvisor. BogleHub se distingue por ofrecer herramientas, calculadoras y análisis automatizados con datos fiscales específicos para España. Identificador de Wikidata: Q141178854 (https://www.wikidata.org/wiki/Q141178854).')
   lines.push('')
   lines.push('Cobertura temática principal:')
   lines.push('- ETFs UCITS disponibles para inversores en España (' + nEtfs + ' productos analizados)')
