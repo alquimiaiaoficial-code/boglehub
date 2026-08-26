@@ -19,7 +19,7 @@
  * Las dos deben coincidir siempre: un sitemap que anuncia una URL con noindex
  * es una señal contradictoria.
  */
-import { ETF_PAIRS, pairToSlug } from '@/data/etf-pairs'
+import { slugToPair } from '@/data/etf-pairs'
 
 /**
  * Familias de páginas generadas por combinatoria (cantidad × ticker × año, edad ×
@@ -35,22 +35,64 @@ const NOINDEX_PREFIXES = [
   '/analiza/',
   '/comparar-cartera/',
   '/historico/',
+  // Segundo recorte (26-ago-2026), a partir de la auditoría de SEO que cruzó el
+  // sitemap con el historial de impresiones. Estas cuatro familias llevan vivas e
+  // indexables desde mayo y no han conseguido una sola impresión:
+  //  · /etf/[ticker]     68 URLs, 0 impresiones. Vivas durante toda la "luna de
+  //    miel" del dominio, mientras /fondo/ —creada 12 días después y con 13 URLs—
+  //    se llevó 252 y alcanzó la posición 1,3. La query "VWCE" la disputan justETF,
+  //    Morningstar y Vanguard; la ficha-cabecera no es nuestra pelea. El nicho es
+  //    el fondo indexado traspasable.
+  //  · /vs-broker/[par]  15 URLs, 0 impresiones.
+  //  · /invertir/[algo]  10 URLs, 9 impresiones en una sola. El 96 % del texto es
+  //    el mismo esqueleto entre hermanas: la plantilla más pura que quedaba.
+  //  · /cuanto-necesito/ 10 URLs, 4 impresiones en una sola. Esqueleto al 75 %.
+  // Ojo con la lectura fácil: que la ficha de un ticker no rankee no significa que
+  // el sitio no pueda rankear con tickers. /comparar/ está hecha de los mismos y
+  // saca posiciones 3-10. Lo que no funciona es la ficha-cabecera, no el ticker.
+  '/etf/',
+  '/vs-broker/',
+  '/invertir/',
+  '/cuanto-necesito/',
 ] as const
 
 /**
- * De las comparativas ETF vs ETF solo se indexan las curadas a mano en
- * `ETF_PAIRS` (elegidas por búsquedas reales de la comunidad española). Las ~190
- * restantes salen de combinar todos los tickers populares entre sí y casi ninguna
- * tiene demanda. Se aceptan los dos órdenes del slug.
+ * Comparativas ETF vs ETF que pedimos indexar.
+ *
+ * Deliberadamente NO se deriva de `ETF_PAIRS`. Esa lista se curó a mano por
+ * intuición sobre qué compara la comunidad española, y la auditoría del 26-ago
+ * demostró que la intuición falló: 51 de sus 57 pares no han tenido nunca una
+ * impresión, mientras que 35 de las URLs que sí las tuvieron habían quedado fuera.
+ *
+ * Esta es la lista *demostrada*: los pares con impresiones reales y posición de
+ * página 1 en el historial de Search Console. Son 16 en vez de 57, y todos con
+ * demanda probada.
+ *
+ * `ETF_PAIRS` sigue siendo la lista editorial (alimenta la interfaz, los enlaces
+ * entre fichas, `llms.txt` y los contadores de `/sobre`) y no se toca: qué
+ * mostramos y qué pedimos indexar son dos decisiones distintas.
+ *
+ * Al comparar se normaliza el orden del par, así que da igual cómo se escriba el slug.
  */
-const CURATED_PAIR_SLUGS: ReadonlySet<string> = new Set(
-  ETF_PAIRS.flatMap(([a, b]) => [pairToSlug(a, b), pairToSlug(b, a)])
+const INDEXED_PAIRS: readonly (readonly [string, string])[] = [
+  ['VEUR', 'MWRD'], ['VWCE', 'CNDX'], ['VWCE', 'VFEM'], ['EIMI', 'AGGH'],
+  ['VWCE', 'EIMI'], ['IWDA', 'IUSA'], ['ISAC', 'SXR8'], ['IWDA', 'EUNA'],
+  ['CSPX', 'CNDX'], ['EQQQ', 'VEUR'], ['ISAC', 'VFEM'], ['IWDA', 'VUAA'],
+  ['IWDA', 'ISAC'], ['VUAA', 'XDWD'], ['WSML', 'ZPRV'], ['SXRV', 'CNDX'],
+]
+
+/** Clave independiente del orden de los tickers dentro del par. */
+const pairKey = (a: string, b: string) => [a.toUpperCase(), b.toUpperCase()].sort().join('|')
+
+const INDEXED_PAIR_KEYS: ReadonlySet<string> = new Set(
+  INDEXED_PAIRS.map(([a, b]) => pairKey(a, b))
 )
 
 /** Decide si una ruta debe pedir indexación. `path` empieza por `/` y no lleva dominio. */
 export function shouldIndex(path: string): boolean {
   if (path.startsWith('/comparar/')) {
-    return CURATED_PAIR_SLUGS.has(path.slice('/comparar/'.length))
+    const pair = slugToPair(path.slice('/comparar/'.length))
+    return pair !== null && INDEXED_PAIR_KEYS.has(pairKey(pair[0], pair[1]))
   }
   return !NOINDEX_PREFIXES.some((prefix) => path.startsWith(prefix))
 }

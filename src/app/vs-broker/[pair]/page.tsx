@@ -8,6 +8,7 @@ import { JsonLd } from '@/components/JsonLd'
 import { getBrokerBySlug, type Broker } from '@/data/brokers'
 import { BROKER_PAIRS, brokerPairToSlug, slugToBrokerPair } from '@/data/broker-pairs'
 
+import { robotsFor } from '@/lib/seo-index-policy'
 const BASE_URL = 'https://boglehub.com'
 
 export function generateStaticParams() {
@@ -42,6 +43,7 @@ export async function generateMetadata({
       images: [`/api/og?title=${encodeURIComponent(`${brokerA.name} vs ${brokerB.name}`)}&subtitle=${encodeURIComponent('Comparativa%20brokers')}`],
     },
     alternates: { canonical: `/vs-broker/${pair}` },
+    robots: robotsFor(`/vs-broker/${pair}`),
   }
 }
 

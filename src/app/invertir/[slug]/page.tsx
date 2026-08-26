@@ -7,6 +7,7 @@ import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
 import { MONTHLY_AMOUNTS, getMonthlyAmountBySlug } from '@/data/monthly-amounts'
 
+import { robotsFor } from '@/lib/seo-index-policy'
 const BASE_URL = 'https://boglehub.com'
 
 function formatEUR(n: number): string {
@@ -36,6 +37,7 @@ export async function generateMetadata({
       images: [`/api/og?title=${encodeURIComponent(`Invertir ${m.amount}€/mes`)}&subtitle=${encodeURIComponent('Estrategia indexada en Espa%C3%B1a')}`],
     },
     alternates: { canonical: `/invertir/${slug}` },
+    robots: robotsFor(`/invertir/${slug}`),
   }
 }
 

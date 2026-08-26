@@ -7,6 +7,7 @@ import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
 import { OBJECTIVES, getObjectiveBySlug, monthlyToReach } from '@/data/objectives'
 
+import { robotsFor } from '@/lib/seo-index-policy'
 const BASE_URL = 'https://boglehub.com'
 
 function formatEUR(n: number): string {
@@ -36,6 +37,7 @@ export async function generateMetadata({
       images: [`/api/og?title=${encodeURIComponent(`${o.label}`)}&subtitle=${encodeURIComponent('Cu%C3%A1nto%20invertir%20al%20mes')}`],
     },
     alternates: { canonical: `/cuanto-necesito/${slug}` },
+    robots: robotsFor(`/cuanto-necesito/${slug}`),
   }
 }
 

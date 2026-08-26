@@ -15,6 +15,7 @@ import { BLOG_ARTICLES } from '@/data/blog-articles'
 import { getRelatedArticleSlugs } from '@/data/etf-related-articles'
 import type { EtfMetadata } from '@/types/etf'
 
+import { robotsFor } from '@/lib/seo-index-policy'
 const BASE_URL = 'https://boglehub.com'
 
 // ---------------------------------------------------------------------------
@@ -135,6 +136,7 @@ export async function generateMetadata({
     title,
     description,
     alternates: { canonical: `/etf/${etf.ticker.toLowerCase()}` },
+    robots: robotsFor(`/etf/${etf.ticker.toLowerCase()}`),
     openGraph: {
       title: `${title} | BogleHub`,
       description,
