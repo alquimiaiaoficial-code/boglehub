@@ -5,6 +5,8 @@ import { rateLimit } from '@/lib/rate-limit'
 
 const BodySchema = z.object({
   email: z.string().email(),
+  /** Origen del alta, tomado de los UTM de la URL. Opcional: las altas directas no lo llevan. */
+  source: z.string().max(60).optional(),
 })
 
 const RESEND_API = 'https://api.resend.com'
@@ -25,9 +27,14 @@ export async function POST(req: NextRequest) {
   if (limited) return limited
 
   let email: string
+  let source: string | undefined
   try {
     const body = BodySchema.parse(await req.json())
     email = body.email.trim().toLowerCase()
+    // Solo caracteres de UTM razonables; si llega basura, se descarta la atribución
+    // en vez de rechazar el alta. Perder el origen es mucho menos malo que perder al
+    // suscriptor.
+    source = body.source?.trim().toLowerCase().replace(/[^a-z0-9_-]/g, '').slice(0, 40) || undefined
   } catch {
     return NextResponse.json(
       { success: false, error: 'Email no válido' },
@@ -58,7 +65,22 @@ export async function POST(req: NextRequest) {
       const res = await fetch(`${RESEND_API}/audiences/${audienceId}/contacts`, {
         method: 'POST',
         headers,
-        body: JSON.stringify({ email, unsubscribed: false }),
+        body: JSON.stringify({
+          email,
+          unsubscribed: false,
+          // Atribución duradera del origen. El evento `email_captured` de Vercel
+          // Analytics ya lo registra, pero ese panel no es consultable por API y no
+          // deja rastro que se pueda cruzar después con la lista de contactos: en
+          // agosto de 2026 hubo que deducir de dónde venían los suscriptores por
+          // coincidencia de fechas. Resend no admite metadatos libres en un contacto,
+          // así que se aprovecha `last_name`, que este proyecto no usa para nada
+          // (`welcomeEmail()` no personaliza con el nombre).
+          //
+          // El prefijo `utm:` es deliberado: si algún día se personaliza un correo
+          // con el nombre, un "Hola utm:youtube" salta a la vista en la primera
+          // prueba en lugar de colarse a producción.
+          ...(source ? { last_name: `utm:${source}` } : {}),
+        }),
       })
       if (!res.ok) {
         const detail = await res.text()

@@ -6,6 +6,7 @@ import { JsonLd } from '@/components/JsonLd'
 import { IRPF_SAVINGS_BRACKETS } from '@/lib/fiscal'
 import { formatEUR, formatPct } from '@/lib/utils'
 import { IrpfCalculator } from './IrpfCalculator'
+import { NewsletterSignup } from '@/components/NewsletterSignup'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -278,6 +279,23 @@ export default function IrpfVentaFondosPage() {
                 Comparador roboadvisor vs DIY
               </Link>
             </div>
+          </section>
+
+          {/* Captura de email. Esta página es la de mayor intención fiscal del sitio y
+              es a donde apuntará el vídeo largo de fiscalidad, así que la oferta continúa
+              la pregunta que ha traído al visitante en vez de cambiarla por una guía
+              genérica de primera cartera. */}
+          <section className="rounded-xl border border-border bg-surface-2 p-6">
+            <h2 className="text-lg font-bold text-fg mb-2">
+              Te aviso cuando cambien los tramos
+            </h2>
+            <p className="text-sm text-fg-muted leading-relaxed mb-4">
+              La escala del ahorro se ha tocado dos veces en los últimos años: el tramo alto
+              pasó del 28 % al 30 % en 2025 y muchas webs tardaron meses en actualizarlo. Si
+              te dejas el correo, te escribo cuando cambie algo que afecte a cuánto pagas por
+              vender, no antes. Sin ruido y te puedes borrar de un clic.
+            </p>
+            <NewsletterSignup variant="inline" />
           </section>
 
           <p className="text-xs text-fg-subtle leading-relaxed border-t border-border pt-6">

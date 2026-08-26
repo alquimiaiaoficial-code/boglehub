@@ -14,25 +14,30 @@ export function NewsletterSignup({ variant = 'card' }: { variant?: 'card' | 'inl
     e.preventDefault()
     if (status === 'loading') return
     setStatus('loading')
+    // Atribución de origen: de qué plataforma/vídeo vino el suscriptor. Los enlaces
+    // "link in bio" llevan ?utm_source=tiktok&utm_campaign=...
+    // Se lee ANTES de enviar para poder mandarlo también al servidor: el evento de
+    // analítica se queda en un panel que no se puede consultar por API, así que el
+    // origen se guarda además junto al contacto.
+    const params =
+      typeof window !== 'undefined'
+        ? new URLSearchParams(window.location.search)
+        : new URLSearchParams()
+    const source = params.get('utm_source') ?? 'direct'
+
     try {
       const res = await fetch('/api/newsletter', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, source }),
       })
       const data = await res.json()
       if (data.success) {
         setStatus('success')
         setEmail('')
-        // Atribución de origen: de qué plataforma/vídeo vino el suscriptor.
-        // Los enlaces "link in bio" llevan ?utm_source=tiktok&utm_campaign=...
-        const params =
-          typeof window !== 'undefined'
-            ? new URLSearchParams(window.location.search)
-            : new URLSearchParams()
         trackEvent('email_captured', {
           variant,
-          source: params.get('utm_source') ?? 'direct',
+          source,
           campaign: params.get('utm_campaign') ?? '',
           content: params.get('utm_content') ?? '',
         })
