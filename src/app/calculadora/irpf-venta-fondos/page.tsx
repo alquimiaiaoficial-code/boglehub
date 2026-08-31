@@ -234,6 +234,26 @@ export default function IrpfVentaFondosPage() {
               estar disponible cuando vendas de forma definitiva lo que recompraste, sin volver
               a comprarlo dentro del plazo.
             </p>
+            {/* Resumen escaneable del alcance de la regla. Replica la escena "¿A quién
+                aplica?" del vídeo largo del canal, para que quien llegue desde ahí
+                reconozca el contenido de inmediato en vez de tener que releerlo en prosa. */}
+            <div className="mt-4 rounded-xl border border-border bg-surface-2 p-5">
+              <h3 className="text-base font-semibold text-fg mb-3">A quién aplica el plazo</h3>
+              <ul className="space-y-2 text-sm text-fg-muted">
+                {[
+                  ['Acciones', '2 meses'],
+                  ['ETF', '2 meses'],
+                  ['Fondos indexados', '2 meses'],
+                  ['Valores que no cotizan', '1 año'],
+                ].map(([activo, plazo]) => (
+                  <li key={activo} className="flex items-center justify-between gap-4 border-b border-border/60 pb-2 last:border-0 last:pb-0">
+                    <span>{activo}</span>
+                    <span className="font-semibold text-fg tabular-nums">{plazo}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
             <p className="mt-3 text-fg-muted leading-relaxed">
               En la práctica, a quien invierte en fondos indexados esto le afecta menos de lo
               que parece: mover dinero entre fondos se hace normalmente por traspaso, y un
