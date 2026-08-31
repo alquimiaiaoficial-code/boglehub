@@ -102,6 +102,36 @@ export default function MetodologiaPage() {
             cuestionarlos. El código de cálculo es abierto en la base del proyecto.
           </p>
 
+          <h2>Cómo se produce este contenido (y qué papel juega la IA)</h2>
+          <p>
+            Una página de metodología que detalla de dónde salen los datos y calla cómo se
+            escriben los textos está incompleta, así que aquí va.
+          </p>
+          <p>
+            <strong>Los artículos, las fichas y las explicaciones de este sitio se redactan
+            con ayuda de modelos de lenguaje</strong>, y después se revisan y se publican bajo
+            responsabilidad editorial humana. Los datos que aparecen en ellos no salen del
+            modelo: se verifican contra las fuentes oficiales que se enumeran más abajo —el
+            BOE, la Agencia Tributaria, los documentos KID de cada gestora—, porque un modelo
+            de lenguaje puede afirmar con total seguridad algo que es falso.
+          </p>
+          <p>
+            Además, hay dos sitios donde el contenido lo genera la IA <em>en el momento</em> y
+            así se indica junto al propio texto: la narrativa del analizador y el chat.
+          </p>
+          <p>
+            <strong>Los errores se corrigen y se dejan a la vista.</strong> Dos ejemplos
+            reales, para que esto no sea una declaración de intenciones: el tramo alto del IRPF
+            del ahorro estuvo publicado como 28 % cuando había pasado al 30 % en 2025, y la
+            regla de los dos meses estaba redactada como si no afectara a los fondos indexados,
+            cuando sí les afecta. Los dos se detectaron verificando contra fuente y se
+            corrigieron en todo el sitio.
+          </p>
+          <p>
+            Si encuentras un dato que no cuadre, escribe a la dirección del aviso legal. Un
+            error señalado vale más que un elogio.
+          </p>
+
           <h2>Fuentes de datos (qué publica BogleHub y de dónde sale)</h2>
 
           <h3>Datos básicos de ETFs (TER, ISIN, política, divisa)</h3>
