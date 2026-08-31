@@ -25,7 +25,7 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
   {
     q: '¿Puedo restar las pérdidas de las ganancias?',
-    a: 'Sí. Las pérdidas patrimoniales compensan las ganancias del mismo año. Si después de compensar aún te queda saldo negativo, puedes arrastrarlo a los 4 ejercicios siguientes. Ten en cuenta la regla de los dos meses: si vendes con pérdidas y recompras el mismo valor cotizado dentro de los dos meses, no podrás computar esa pérdida.',
+    a: 'Sí. Las pérdidas patrimoniales compensan las ganancias del mismo año. Si después de compensar aún te queda saldo negativo, puedes arrastrarlo a los 4 ejercicios siguientes. Ten en cuenta la regla de los dos meses: si vendes con pérdidas y vuelves a comprar el mismo valor dentro de los dos meses anteriores o posteriores, esa pérdida no la puedes computar todavía. Aplica también a los fondos indexados, no solo a las acciones y los ETF. La pérdida no se esfuma: queda aplazada hasta que vendas de forma definitiva lo recomprado.',
   },
   {
     q: '¿Esta calculadora sirve para hacer la declaración de la renta?',
@@ -221,9 +221,25 @@ export default function IrpfVentaFondosPage() {
             </p>
             <p className="mt-3 text-fg-muted leading-relaxed">
               Hay un límite importante. La regla de los dos meses impide computar una pérdida
-              si recompras el mismo valor cotizado, como un ETF o una acción, dentro de los
-              dos meses anteriores o posteriores a la venta. Está pensada para evitar ventas
-              meramente fiscales.
+              si vuelves a comprar el mismo valor dentro de los dos meses anteriores o
+              posteriores a la venta. Está pensada para evitar ventas hechas solo para
+              generar una pérdida fiscal.
+            </p>
+            <p className="mt-3 text-fg-muted leading-relaxed">
+              Dos matices que suelen pasarse por alto. El primero: <strong className="text-fg">la
+              regla no afecta solo a acciones y ETF, también a los fondos indexados</strong>.
+              Hacienda considera que las participaciones de un fondo son valores admitidos a
+              cotización, así que el plazo de dos meses les aplica igual. El segundo:{' '}
+              <strong className="text-fg">la pérdida no se pierde, se aplaza</strong>. Vuelve a
+              estar disponible cuando vendas de forma definitiva lo que recompraste, sin volver
+              a comprarlo dentro del plazo.
+            </p>
+            <p className="mt-3 text-fg-muted leading-relaxed">
+              En la práctica, a quien invierte en fondos indexados esto le afecta menos de lo
+              que parece: mover dinero entre fondos se hace normalmente por traspaso, y un
+              traspaso no realiza la pérdida, así que la regla ni entra en juego. El caso en el
+              que sí muerde es si reembolsas con pérdida y vuelves a suscribir el mismo fondo
+              poco después.
             </p>
           </section>
 
