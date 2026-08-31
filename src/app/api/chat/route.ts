@@ -3,8 +3,8 @@ import Groq from 'groq-sdk'
 import { z } from 'zod'
 import { rateLimit } from '@/lib/rate-limit'
 
-const MODEL = 'llama-3.3-70b-versatile'
 
+import { GROQ_MODEL } from '@/lib/groq-model'
 const MessageSchema = z.object({
   role: z.enum(['user', 'assistant', 'system']),
   content: z.string().min(1).max(8000),
@@ -57,7 +57,7 @@ export async function POST(req: NextRequest) {
     ]
 
     const stream = await groq.chat.completions.create({
-      model: MODEL,
+      model: GROQ_MODEL,
       messages,
       temperature: 0.7,
       max_tokens: 2000,

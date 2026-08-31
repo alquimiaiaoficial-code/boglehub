@@ -1,8 +1,8 @@
 import Groq from 'groq-sdk'
 import { AllocationBreakdown, FireProjection, Result } from '@/types/analysis'
 
-const MODEL = 'llama-3.3-70b-versatile'
 
+import { GROQ_MODEL } from './groq-model'
 function getGroqClient() {
   return new Groq({ apiKey: process.env.GROQ_API_KEY })
 }
@@ -32,7 +32,7 @@ export async function generateAiNarrative(input: AnalyzeInput): Promise<Result<s
   try {
     const payload = JSON.stringify(input, null, 2)
     const completion = await getGroqClient().chat.completions.create({
-      model: MODEL,
+      model: GROQ_MODEL,
       messages: [
         { role: 'system', content: SYSTEM_PROMPT },
         {
