@@ -58,8 +58,14 @@ export function AnalysisResults({ analysis }: { analysis: Analysis }) {
       {tab === 'sector' && <SectorBar breakdown={analysis.allocation} />}
 
       {tab === 'ai' && (
-        <div className="prose prose-sm prose-invert max-w-none prose-headings:text-fg prose-strong:text-fg">
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{analysis.aiNarrative}</ReactMarkdown>
+        <div>
+          <p className="mb-3 rounded-lg border border-border bg-surface-2 px-3 py-2 text-xs text-fg-muted">
+            Texto generado por una inteligencia artificial a partir de los datos que has
+            introducido. Puede contener errores: contrástalo antes de tomar ninguna decisión.
+          </p>
+          <div className="prose prose-sm prose-invert max-w-none prose-headings:text-fg prose-strong:text-fg">
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{analysis.aiNarrative}</ReactMarkdown>
+          </div>
         </div>
       )}
 
@@ -68,6 +74,10 @@ export function AnalysisResults({ analysis }: { analysis: Analysis }) {
           <strong>Proyección FIRE:</strong> con {formatEUR(analysis.fire.monthlyContribution)}/mes y un 7 % de rentabilidad,
           alcanzas {formatEUR(analysis.fire.targetAmount)} en{' '}
           {analysis.fire.yearsToFire === Infinity ? 'más de 50 años' : `${analysis.fire.yearsToFire} años`}.
+          <span className="mt-2 block text-xs opacity-80">
+            Es un supuesto fijo del 7 % anual, no una previsión: la rentabilidad real es
+            desconocida y puede ser negativa.
+          </span>
         </div>
       )}
 

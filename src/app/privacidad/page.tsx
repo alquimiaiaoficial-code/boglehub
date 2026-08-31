@@ -18,7 +18,7 @@ export default function PrivacidadPage() {
       <main className="bg-bg min-h-screen">
         <article className="mx-auto max-w-3xl px-4 sm:px-6 py-16 prose prose-invert prose-zinc">
           <h1>Política de Privacidad</h1>
-          <p className="text-fg-muted">Última actualización: mayo de 2026</p>
+          <p className="text-fg-muted">Última actualización: agosto de 2026</p>
 
           <h2>1. Responsable del tratamiento</h2>
           <p>El responsable del tratamiento de los datos es el titular de BogleHub (proyecto educativo personal).</p>
@@ -54,7 +54,33 @@ export default function PrivacidadPage() {
             <li><strong>Vercel Inc.</strong> (alojamiento) — servidores en EU</li>
             <li><strong>Groq Inc.</strong> (modelo de IA Llama 3.3) — procesa el contenido del análisis</li>
             <li><strong>Yahoo Finance</strong> (precios de mercado) — solo recibe tickers, no datos personales</li>
+            <li><strong>Resend</strong> — almacena la lista de la newsletter y envía los correos</li>
           </ul>
+
+          <p>
+            Groq y Resend están establecidos en <strong>Estados Unidos</strong>, así que usar
+            el chat, el analizador o suscribirte a la newsletter implica una transferencia
+            internacional de datos. Se ampara en las garantías que ofrecen esos proveedores
+            (cláusulas contractuales tipo de la Comisión Europea o marcos de adecuación
+            equivalentes). Si no quieres que tus datos salgan de la UE, no uses esas
+            funciones: el resto del sitio se puede consultar sin ellas.
+          </p>
+
+          <h2>6 bis. Newsletter</h2>
+          <p>
+            Si te suscribes, se guardan <strong>tu dirección de correo</strong> y el{' '}
+            <strong>origen desde el que llegaste</strong> (el parámetro <code>utm_source</code>{' '}
+            de la URL, por ejemplo <code>youtube</code> o <code>direct</code>). Ese segundo dato
+            sirve únicamente para saber qué canales funcionan y no se usa para perfilarte ni se
+            cede a nadie.
+          </p>
+          <p>
+            La base legal es tu consentimiento, que prestas al enviar el formulario. Los datos
+            se conservan mientras sigas suscrito y{' '}
+            <strong>puedes darte de baja con un clic</strong> desde el enlace que aparece al pie
+            de cada correo; al hacerlo se elimina tu contacto. También puedes pedir la baja
+            escribiendo a la dirección de contacto de más abajo.
+          </p>
 
           <h2>7. Tus derechos (RGPD)</h2>
           <p>Puedes ejercer en cualquier momento tus derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición. Al no almacenar datos en servidor, la mayoría de derechos se ejercen directamente desde tu navegador (borrando el <code>localStorage</code>).</p>

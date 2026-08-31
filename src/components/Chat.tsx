@@ -84,7 +84,9 @@ export function Chat() {
           </div>
           <div>
             <h2 className="text-sm font-semibold text-fg">Chat IA</h2>
-            <p className="text-xs text-fg-subtle">Pregunta lo que quieras · Llama 3.3 70B</p>
+            <p className="text-xs text-fg-subtle">
+              Estás hablando con una inteligencia artificial, no con una persona
+            </p>
           </div>
         </div>
         {messages.length > 0 && (
@@ -145,7 +147,9 @@ export function Chat() {
             </Button>
           </div>
           <p className="mt-2 text-xs text-fg-subtle text-center">
-            Enter para enviar · Shift+Enter para nueva línea · Información educativa, no asesoramiento
+            Enter para enviar · Shift+Enter para nueva línea. Las respuestas las genera un
+            modelo de IA (Llama 3.3 70B) y pueden contener errores: contrástalas antes de
+            usarlas. Información educativa, nunca asesoramiento de inversión.
           </p>
         </form>
       </div>
