@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { JsonLd } from '@/components/JsonLd'
-import { IRPF_SAVINGS_BRACKETS } from '@/lib/fiscal'
+import { IRPF_SAVINGS_BRACKETS, FISCAL_ULTIMA_REVISION, FISCAL_EJERCICIO } from '@/lib/fiscal'
 import { formatEUR, formatPct } from '@/lib/utils'
 import { IrpfCalculator } from './IrpfCalculator'
 import { NewsletterSignup } from '@/components/NewsletterSignup'
@@ -316,6 +316,23 @@ export default function IrpfVentaFondosPage() {
               </Link>
             </div>
           </section>
+
+          {/* La normativa fiscal caduca, así que la página dice de cuándo son sus
+              datos. La fecha sale de `fiscal.ts`, junto a los propios tramos, para
+              que actualizar la escala y actualizar la fecha sean el mismo gesto. */}
+          <p className="rounded-lg border border-border bg-surface-2 px-4 py-3 text-sm text-fg-muted">
+            Escala del ahorro correspondiente al ejercicio <strong>{FISCAL_EJERCICIO}</strong>.
+            Datos revisados por última vez el{' '}
+            <time dateTime={FISCAL_ULTIMA_REVISION}>
+              {new Date(FISCAL_ULTIMA_REVISION).toLocaleDateString('es-ES', {
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric',
+              })}
+            </time>{' '}
+            contra fuentes oficiales. La normativa cambia: comprueba la fecha antes de
+            fiarte de cualquier página fiscal, incluida esta.
+          </p>
 
           {/* Captura de email. Esta página es la de mayor intención fiscal del sitio y
               es a donde apuntará el vídeo largo de fiscalidad, así que la oferta continúa

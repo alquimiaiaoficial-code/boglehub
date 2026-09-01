@@ -127,6 +127,23 @@ export const GRADE_STYLES: Record<FiscalGrade, { color: string; bg: string }> = 
 
 // ─── IRPF: base imponible del ahorro ─────────────────────────────────────────
 //
+/**
+ * Fecha de la última revisión de los datos fiscales de este módulo.
+ *
+ * Vive aquí, junto a los tramos, y no en las páginas que los muestran: quien
+ * actualice la escala tiene la fecha delante y no puede olvidarla en otro
+ * fichero. Las páginas fiscales la muestran al lector.
+ *
+ * Es requisito práctico y también normativo: el régimen de recomendaciones de
+ * inversión (MAR) pide fechar el contenido, y en fiscalidad importa de verdad
+ * porque la escala cambia. El tramo alto pasó del 28 % al 30 % en 2025 y este
+ * sitio sirvió el dato viejo durante meses sin que nada delatara su antigüedad.
+ */
+export const FISCAL_ULTIMA_REVISION = '2026-08-31'
+
+/** Ejercicio fiscal al que corresponden los tramos de abajo. */
+export const FISCAL_EJERCICIO = 2026
+
 // Tramos estatales vigentes en 2026, aplicables a ganancias patrimoniales
 // (venta de fondos, ETF y acciones), dividendos e intereses. Escala progresiva:
 // cada tramo grava solo la parte de la base que cae dentro de él.
