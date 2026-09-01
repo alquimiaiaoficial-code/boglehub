@@ -54,7 +54,14 @@ export async function POST(req: NextRequest) {
     })
 
     const aiResult = await generateAiNarrative({ allocation, fire, positions: positionSummary })
-    const aiNarrative = aiResult.ok ? aiResult.value : 'No se pudo generar el análisis IA en este momento.'
+    // Si la IA falla, el análisis numérico se entrega igual: reparto por región y
+    // sector, solapamiento, TER ponderado y proyección se calculan sin modelo. Es lo
+    // que salvó la herramienta cuando Groq retiró el modelo en agosto de 2026: el
+    // chat quedó inservible, pero el analizador siguió dando lo esencial.
+    if (!aiResult.ok) console.error('[analyze] la narrativa de IA falló:', aiResult.error)
+    const aiNarrative = aiResult.ok
+      ? aiResult.value
+      : 'El comentario generado por IA no está disponible ahora mismo. El resto del análisis —reparto por región y sector, solapamiento, TER ponderado y proyección— está calculado con tus datos y es correcto.'
 
     return NextResponse.json({
       success: true,
@@ -66,7 +73,15 @@ export async function POST(req: NextRequest) {
       },
     })
   } catch (err) {
-    const message = err instanceof Error ? err.message : 'Unknown error'
-    return NextResponse.json({ success: false, error: message }, { status: 400 })
+    // El detalle va al registro del servidor; al usuario se le da algo accionable.
+    console.error('[analyze] fallo al analizar la cartera:', err)
+    return NextResponse.json(
+      {
+        success: false,
+        error:
+          'No he podido analizar esa cartera. Revisa que los tickers y las cantidades sean correctos y vuelve a intentarlo.',
+      },
+      { status: 400 }
+    )
   }
 }

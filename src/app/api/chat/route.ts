@@ -45,7 +45,7 @@ export async function POST(req: NextRequest) {
   try {
     const apiKey = process.env.GROQ_API_KEY
     if (!apiKey) {
-      return new Response('Error de configuración del servidor', { status: 500 })
+      return new Response('El chat no está disponible ahora mismo. El resto del sitio funciona con normalidad.', { status: 503 })
     }
 
     const body = BodySchema.parse(await req.json())
@@ -88,7 +88,22 @@ export async function POST(req: NextRequest) {
       },
     })
   } catch (err) {
-    const message = err instanceof Error ? err.message : 'Error desconocido'
-    return new Response(message, { status: 400 })
+    // El detalle técnico se registra en el servidor, no se devuelve al usuario.
+    //
+    // Antes se enviaba `err.message` tal cual y, cuando Groq retiró el modelo en
+    // agosto de 2026, la pantalla del chat mostró durante quince días el JSON
+    // crudo del proveedor con el nombre del modelo dentro. Para quien entraba,
+    // eso no era un aviso: era un sitio roto.
+    console.error('[chat] fallo al llamar al modelo:', err)
+
+    const detalle = err instanceof Error ? err.message : String(err)
+    const esModeloRetirado =
+      detalle.includes('model_not_found') || detalle.includes('does not exist')
+
+    const mensaje = esModeloRetirado
+      ? 'El chat no está disponible ahora mismo por un problema de configuración que ya conocemos. Mientras tanto puedes usar el analizador y las calculadoras, que funcionan sin IA.'
+      : 'No he podido responder ahora mismo. Vuelve a intentarlo en unos segundos; si sigue fallando, el resto del sitio funciona con normalidad.'
+
+    return new Response(mensaje, { status: esModeloRetirado ? 503 : 502 })
   }
 }
