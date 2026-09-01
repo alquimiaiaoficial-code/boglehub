@@ -52,17 +52,6 @@ export const metadata: Metadata = {
 export default function IrpfVentaFondosPage() {
   return (
     <>
-      <JsonLd
-        schema={{
-          type: 'VideoObject',
-          name: 'Cuánto se queda Hacienda cuando vendes tus fondos y ETFs (España 2026)',
-          description:
-            'Cómo tributan las ganancias al vender fondos indexados y ETF en España: tramos del ahorro, ejemplo con 10.000 € de ganancia, traspaso entre fondos, criterio FIFO y regla de los dos meses.',
-          youtubeId: 'nNfsLtN5NAQ',
-          uploadDate: '2026-09-01T18:00:00Z',
-          duration: 'PT6M43S',
-        }}
-      />
       <JsonLd schema={{ type: 'FAQPage', questions: FAQ_ITEMS }} />
       <JsonLd
         schema={{
@@ -325,30 +314,6 @@ export default function IrpfVentaFondosPage() {
               >
                 Comparador roboadvisor vs DIY
               </Link>
-            </div>
-          </section>
-
-          {/* Vídeo del canal que explica lo mismo que esta página, en el mismo orden.
-              Se incrusta con `youtube-nocookie` y `loading="lazy"`: no carga nada de
-              YouTube hasta que el usuario baja hasta aquí, así que no penaliza el
-              rendimiento ni introduce seguimiento de terceros en la carga inicial —
-              que es lo que hoy permite al sitio no tener banner de cookies. */}
-          <section className="rounded-xl border border-border bg-surface-2 p-5">
-            <h2 className="text-lg font-bold text-fg mb-2">Explicado en vídeo (6 min)</h2>
-            <p className="text-sm text-fg-muted leading-relaxed mb-4">
-              El mismo recorrido que esta página —tramos, el ejemplo de los 10.000 €, el
-              traspaso entre fondos, FIFO y la regla de los dos meses— contado en seis
-              minutos. Voz y gráficos generados con IA.
-            </p>
-            <div className="relative w-full overflow-hidden rounded-lg" style={{ paddingTop: '56.25%' }}>
-              <iframe
-                className="absolute inset-0 h-full w-full"
-                src="https://www.youtube-nocookie.com/embed/nNfsLtN5NAQ"
-                title="Cuánto se queda Hacienda cuando vendes tus fondos y ETFs (España 2026)"
-                loading="lazy"
-                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
             </div>
           </section>
 
