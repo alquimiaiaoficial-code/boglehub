@@ -136,6 +136,18 @@ interface SoftwareAppSchema {
   aggregateRating?: { ratingValue: number; ratingCount: number }
 }
 
+interface VideoObjectSchema {
+  type: 'VideoObject'
+  name: string
+  description: string
+  /** ID de YouTube (11 caracteres). De ahí se derivan la URL, la miniatura y el embed. */
+  youtubeId: string
+  /** ISO 8601, p. ej. '2026-09-01T18:00:00Z' */
+  uploadDate: string
+  /** ISO 8601 de duración, p. ej. 'PT6M43S' */
+  duration: string
+}
+
 interface DatasetSchema {
   type: 'Dataset'
   name: string
@@ -194,6 +206,7 @@ type Schema =
   | DefinedTermSchema
   | DefinedTermSetSchema
   | SoftwareAppSchema
+  | VideoObjectSchema
   | DatasetSchema
   | FinancialProductSchema
   | CollectionPageSchema
@@ -314,6 +327,25 @@ export function JsonLd({ schema }: { schema: Schema }) {
         'Detección automática de cartera desde PDF de broker',
       ],
       publisher: { '@id': `${BASE_URL}/#organization` },
+    }
+  } else if (schema.type === 'VideoObject') {
+    // Los datos derivados del ID en vez de pasarse sueltos: así no puede quedar
+    // una miniatura apuntando a un vídeo y una URL apuntando a otro.
+    data = {
+      '@context': 'https://schema.org',
+      '@type': 'VideoObject',
+      name: schema.name,
+      description: schema.description,
+      thumbnailUrl: [`https://i.ytimg.com/vi/${schema.youtubeId}/maxresdefault.jpg`],
+      uploadDate: schema.uploadDate,
+      duration: schema.duration,
+      contentUrl: `https://www.youtube.com/watch?v=${schema.youtubeId}`,
+      embedUrl: `https://www.youtube.com/embed/${schema.youtubeId}`,
+      publisher: {
+        '@type': 'Organization',
+        name: 'BogleHub',
+        url: 'https://boglehub.com',
+      },
     }
   } else if (schema.type === 'FAQPage') {
     data = {
