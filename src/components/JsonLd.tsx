@@ -341,11 +341,12 @@ export function JsonLd({ schema }: { schema: Schema }) {
       duration: schema.duration,
       contentUrl: `https://www.youtube.com/watch?v=${schema.youtubeId}`,
       embedUrl: `https://www.youtube.com/embed/${schema.youtubeId}`,
-      publisher: {
-        '@type': 'Organization',
-        name: 'BogleHub',
-        url: 'https://boglehub.com',
-      },
+      inLanguage: 'es-ES',
+      // Referencia al Organization canónico por @id, igual que el resto de
+      // schemas. Un Organization anónimo sería, para el grafo, una entidad
+      // DISTINTA que casualmente se llama igual: fragmentaría la señal de
+      // entidad que consolidan el sameAs y el ítem de Wikidata.
+      publisher: PUBLISHER,
     }
   } else if (schema.type === 'FAQPage') {
     data = {
