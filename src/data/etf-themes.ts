@@ -28,7 +28,7 @@ export const ETF_THEMES: EtfTheme[] = [
     h1: 'Los mejores ETFs MSCI World UCITS para inversores españoles (2026)',
     metaTitle: 'Mejores ETFs MSCI World para España 2026 | BogleHub',
     metaDescription:
-      'Los mejores ETFs MSCI World UCITS para España: IWDA, SWRD, MWRD y más, con TER desde 0,12%. Acumulación, domicilio fiscal y cuál elegir para tu cartera.',
+      'Los mejores ETFs MSCI World UCITS para España: IWDA, SWRD, MWRD y más, con TER desde 0,12%. Acumulación, domicilio fiscal y en qué se diferencian entre sí.',
     intro:
       'El índice MSCI World engloba más de 1.400 empresas de 23 países desarrollados, cubriendo el 85% de la capitalización bursátil entre economías avanzadas. Para un inversor residente en España, un ETF MSCI World domiciliado en Irlanda y de clase acumulación es habitualmente el punto de partida de la cartera indexada: evita retenciones en origen innecesarias y difiere la tributación hasta la venta. Los ETFs de esta lista replican el mismo índice o uno equivalente (FTSE Developed World), con diferencias mínimas de TER y variantes de factor (calidad, momento, valor mínima volatilidad).',
     listH2: 'ETFs MSCI World y mercados desarrollados disponibles en España',
@@ -58,7 +58,7 @@ export const ETF_THEMES: EtfTheme[] = [
     h1: 'Los mejores ETFs S&P 500 UCITS disponibles en España (2026)',
     metaTitle: 'Mejores ETFs S&P 500 para España 2026 | BogleHub',
     metaDescription:
-      'Los mejores ETFs S&P 500 UCITS para España: CSPX, VUAA, SPXS y más, con TER desde 0,03%. Acumulación vs distribución y cuál elegir según tu broker.',
+      'Los mejores ETFs S&P 500 UCITS para España: CSPX, VUAA, SPXS y más, con TER desde 0,03%. Acumulación frente a distribución y disponibilidad por bróker.',
     intro:
       'El S&P 500 agrupa las 500 mayores empresas cotizadas de Estados Unidos y es el índice bursátil más seguido del mundo. Invertir en él mediante un ETF UCITS ofrece acceso a gigantes como Apple, Microsoft o Nvidia junto con empresas de consumo, salud e industria. Para inversores españoles, la clave está en elegir un ETF domiciliado en Irlanda (grado fiscal A) y de clase acumulación para maximizar el efecto del interés compuesto. La diferencia entre tickers como CSPX y SXR8 es mínima: replican el mismo fondo, simplemente cotizan en bolsas distintas.',
     listH2: 'ETFs S&P 500 disponibles en España',
@@ -86,7 +86,7 @@ export const ETF_THEMES: EtfTheme[] = [
     h1: 'ETFs All-World UCITS: diversificación global en un solo fondo (2026)',
     metaTitle: 'Mejores ETFs FTSE All-World para España 2026 | BogleHub',
     metaDescription:
-      'Los mejores ETFs All-World (globales) para España: VWCE, VWRP, ISAC y más. Diversificación mundial en un solo fondo, acumulación y cuál elegir.',
+      'Los mejores ETFs All-World (globales) para España: VWCE, VWRP, ISAC y más. Diversificación mundial en un solo fondo, acumulación y en qué se diferencian.',
     intro:
       'Los ETFs "All-World" o "total world" replican índices que cubren tanto mercados desarrollados como emergentes en un único fondo. Siguen índices como el FTSE All-World o el MSCI ACWI IMI, que juntan más de 3.000 empresas de 50 países. Para un inversor español que quiere la cartera más sencilla posible, un único ETF All-World de acumulación domiciliado en Irlanda como VWCE ofrece diversificación global total con un solo producto.',
     listH2: 'ETFs All-World y globales disponibles en España',
@@ -134,7 +134,7 @@ export const ETF_THEMES: EtfTheme[] = [
     h1: 'ETFs de distribución UCITS en España: cuándo tienen sentido (2026)',
     metaTitle: 'ETFs de distribución UCITS en España 2026 | BogleHub',
     metaDescription:
-      'Los mejores ETFs de distribución UCITS para España: reparten dividendos periódicos. Cuándo elegirlos, cómo tributan y cuáles convienen en la fase de retiro.',
+      'Los mejores ETFs de distribución UCITS para España: reparten dividendos periódicos. Cómo tributan y qué papel suelen jugar en la fase de retiro.',
     intro:
       'Un ETF de distribución paga periódicamente los dividendos generados por las empresas de la cartera. Mientras que para inversores en fase de acumulación esto supone una menor eficiencia fiscal (se tributa por los dividendos recibidos al 19%-30%), para quienes ya están retirados o en fase FIRE pueden ser una fuente de ingresos pasivos sin necesidad de vender participaciones. En España, los dividendos de ETFs tributan como rendimientos del capital mobiliario.',
     listH2: 'ETFs de distribución disponibles en España (todas las clases de activo)',
