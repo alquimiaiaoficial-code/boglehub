@@ -3336,7 +3336,7 @@ Ya tienes los criterios, los brokers y los ETFs. El siguiente paso lógico es co
       },
       {
         q: '¿Cuánto solapamiento hay entre VWCE, CSPX e IWDA?',
-        a: 'CSPX e IWDA tienen un solapamiento muy alto (~85-90%) ya que ambos incluyen las mismas empresas americanas de gran capitalización. VWCE incluye todo lo de IWDA más los mercados emergentes, por lo que el solapamiento entre VWCE e IWDA es también alto (~75-80%). Si tienes tanto CSPX como IWDA en cartera, estás duplicando exposición sin añadir diversificación real.',
+        a: 'Sí, y más de lo que parece. Midiendo la exposición geográfica que comparten, que es un buen indicio de estar comprando dos veces lo mismo: CSPX e IWDA comparten en torno al 71 %, porque el S&P 500 cabe entero dentro del bloque estadounidense del MSCI World. Y VWCE e IWDA llegan al 88 %, ya que el All-World es el World más emergentes. Ojo al orden, que es contraintuitivo: el solapamiento mayor no es el del S&P 500 con el World, sino el de los dos fondos globales entre sí. Si llevas CSPX e IWDA a la vez, estás concentrando en grandes empresas estadounidenses más de lo que crees.',
       },
       {
         q: '¿Por qué CSPX tiene un TER más bajo que VWCE?',
@@ -4283,7 +4283,7 @@ La pregunta correcta no es "cuántos ETFs tengo" sino "a cuántas empresas disti
 
 Es, con diferencia, el solapamiento más común en las carteras de los inversores indexados españoles. Y casi siempre es involuntario.
 
-VWCE (Vanguard FTSE All-World) tiene en torno al 60-62 % invertido en Estados Unidos. Dentro de ese bloque americano, sus mayores posiciones son exactamente las mismas megaempresas que forman la cabeza del S&P 500: Apple, Microsoft, Nvidia, Amazon, Alphabet, Meta.
+VWCE (Vanguard FTSE All-World) tiene en torno al 63 % invertido en Estados Unidos. Dentro de ese bloque americano, sus mayores posiciones son exactamente las mismas megaempresas que forman la cabeza del S&P 500: Apple, Microsoft, Nvidia, Amazon, Alphabet, Meta.
 
 CSPX es el S&P 500. Es decir: prácticamente todo CSPX ya está contenido dentro de VWCE.
 

@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { getEtfByTicker } from './etf-database'
+import { computeOverlaps } from './overlap'
 import { BLOG_ARTICLES } from '@/data/blog-articles'
 
 /**
@@ -61,5 +62,38 @@ describe('coherencia entre el artículo de solapamiento y el dataset', () => {
     // métrica equivalente que publican las fichas y que nadie discute.
     const articulo = BLOG_ARTICLES.find((a) => a.slug === 'solapamiento-etfs-error-silencioso')
     expect(JSON.stringify(articulo)).not.toContain('mayores tecnológicas')
+  })
+
+  it('los solapamientos citados en el blog coinciden con computeOverlaps', () => {
+    // Un artículo llegó a afirmar que CSPX·IWDA se solapaba ~85-90 % y VWCE·IWDA
+    // ~75-80 %: las dos cifras equivocadas y, peor, en el orden inverso al real.
+    // Quien leyera el artículo y luego usara el analizador recibía respuestas
+    // contradictorias del mismo sitio. Este test ata las cifras al cálculo.
+    const pares: [string, string, number][] = [
+      ['cspx', 'iwda', 71],
+      ['vwce', 'iwda', 88],
+      ['vwce', 'cspx', 63],
+    ]
+    const texto = JSON.stringify(BLOG_ARTICLES)
+
+    for (const [a, b, esperado] of pares) {
+      const pos = (ticker: string) => ({
+        id: ticker,
+        ticker,
+        shares: 1,
+        avgPrice: 100,
+        currency: 'EUR' as const,
+        addedAt: '2026-01-01',
+      })
+      const posiciones = computeOverlaps([pos(a), pos(b)])
+      const real = Math.round((posiciones[0]?.overlapPct ?? 0) * 100)
+      expect(real, `${a}·${b} calculado`).toBe(esperado)
+    }
+
+    // Y que el blog no contradiga: si menciona un solapamiento de esos pares,
+    // debe usar la cifra del cálculo.
+    if (texto.includes('CSPX e IWDA')) {
+      expect(texto, 'el blog cita CSPX·IWDA con una cifra que no es la calculada').toContain('71 %')
+    }
   })
 })
