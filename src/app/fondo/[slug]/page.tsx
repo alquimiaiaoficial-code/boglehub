@@ -7,6 +7,7 @@ import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
 import { INDEX_FUNDS, getIndexFundBySlug } from '@/data/index-funds'
 
+import { DescargoFiscal } from '@/components/DescargoFiscal'
 const BASE_URL = 'https://boglehub.com'
 
 export function generateStaticParams() {
@@ -168,6 +169,7 @@ export default async function FondoPage({ params }: { params: Promise<{ slug: st
           <p className="mt-8 text-xs text-fg-subtle text-center">Información educativa, no asesoramiento. TER y datos orientativos; verifica en MyInvestor o folleto del fondo. Última revisión: mayo 2026.</p>
         </div>
       </main>
+      <DescargoFiscal variant="fiscal" />
       <Footer />
     </>
   )

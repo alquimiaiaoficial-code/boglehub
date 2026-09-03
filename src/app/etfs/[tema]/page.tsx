@@ -12,6 +12,7 @@ import { ETF_THEMES, getThemeBySlug } from '@/data/etf-themes'
 import { getIndexFundBySlug, type IndexFund } from '@/data/index-funds'
 import type { EtfMetadata } from '@/types/etf'
 
+import { DescargoFiscal } from '@/components/DescargoFiscal'
 const BASE_URL = 'https://boglehub.com'
 
 /** Slug estable por pregunta para anclas profundas (/etfs/tema#pregunta) citables por IA. */
@@ -407,6 +408,7 @@ export default async function EtfThemePage({
           </p>
         </div>
       </main>
+      <DescargoFiscal variant="fiscal" />
       <Footer />
     </>
   )

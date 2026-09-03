@@ -7,6 +7,7 @@ import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
 import { FIRE_AGES, getFireAgeBySlug } from '@/data/fire-ages'
 
+import { DescargoFiscal } from '@/components/DescargoFiscal'
 const BASE_URL = 'https://boglehub.com'
 
 function formatEUR(n: number): string {
@@ -213,6 +214,7 @@ export default async function JubilacionPage({ params }: { params: Promise<{ slu
           </p>
         </div>
       </main>
+      <DescargoFiscal variant="general" />
       <Footer />
     </>
   )

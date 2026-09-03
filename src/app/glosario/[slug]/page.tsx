@@ -11,6 +11,7 @@ import {
 } from '@/data/glossary'
 import { BLOG_ARTICLES } from '@/data/blog-articles'
 
+import { DescargoFiscal } from '@/components/DescargoFiscal'
 const BASE_URL = 'https://boglehub.com'
 
 /** Slug estable por pregunta para anclas profundas (/glosario/term#pregunta) citables por IA. */
@@ -329,6 +330,7 @@ export default async function GlossaryTermPage({
           </p>
         </div>
       </main>
+      <DescargoFiscal variant="fiscal" />
       <Footer />
     </>
   )

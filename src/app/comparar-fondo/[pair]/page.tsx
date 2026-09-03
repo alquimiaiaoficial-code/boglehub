@@ -8,6 +8,7 @@ import { JsonLd } from '@/components/JsonLd'
 import { getIndexFundBySlug } from '@/data/index-funds'
 import { FUND_PAIRS, fundPairToSlug, slugToFundPair } from '@/data/fund-pairs'
 
+import { DescargoFiscal } from '@/components/DescargoFiscal'
 const BASE_URL = 'https://boglehub.com'
 
 export function generateStaticParams() {
@@ -161,6 +162,7 @@ export default async function CompararFondoPage({ params }: { params: Promise<{ 
           <p className="mt-8 text-xs text-fg-subtle text-center">Información educativa, no asesoramiento. Última revisión: mayo 2026.</p>
         </div>
       </main>
+      <DescargoFiscal variant="fiscal" />
       <Footer />
     </>
   )

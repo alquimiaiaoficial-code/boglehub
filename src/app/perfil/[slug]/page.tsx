@@ -7,6 +7,7 @@ import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
 import { INVESTOR_PROFILES, getProfileBySlug } from '@/data/investor-profiles'
 
+import { DescargoFiscal } from '@/components/DescargoFiscal'
 const BASE_URL = 'https://boglehub.com'
 
 export function generateStaticParams() {
@@ -180,6 +181,7 @@ export default async function PerfilPage({ params }: { params: Promise<{ slug: s
           </p>
         </div>
       </main>
+      <DescargoFiscal variant="general" />
       <Footer />
     </>
   )

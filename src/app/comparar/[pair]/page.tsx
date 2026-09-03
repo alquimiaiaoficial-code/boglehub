@@ -12,6 +12,7 @@ import { ETF_PAIRS, slugToPair, pairToSlug, getAllPossiblePairs } from '@/data/e
 import type { EtfMetadata, Region } from '@/types/etf'
 import { robotsFor } from '@/lib/seo-index-policy'
 
+import { DescargoFiscal } from '@/components/DescargoFiscal'
 const BASE_URL = 'https://boglehub.com'
 const CURRENT_YEAR = 2026
 
@@ -499,6 +500,7 @@ export default async function EtfPairPage({
           </p>
         </div>
       </main>
+      <DescargoFiscal variant="fiscal" />
       <Footer />
     </>
   )

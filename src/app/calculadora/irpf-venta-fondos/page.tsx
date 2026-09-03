@@ -10,6 +10,17 @@ import { NewsletterSignup } from '@/components/NewsletterSignup'
 
 const BASE_URL = 'https://boglehub.com'
 
+/** Slug estable por pregunta para anclas profundas (#pregunta) citables por IA. */
+function questionSlug(q: string): string {
+  return q
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 80)
+}
+
 const FAQ_ITEMS: { q: string; a: string }[] = [
   {
     q: '¿Cuánto se paga a Hacienda por vender fondos indexados o ETF?',
@@ -63,7 +74,16 @@ export default function IrpfVentaFondosPage() {
           duration: 'PT6M43S',
         }}
       />
-      <JsonLd schema={{ type: 'FAQPage', questions: FAQ_ITEMS }} />
+      <JsonLd
+        schema={{
+          type: 'FAQPage',
+          questions: FAQ_ITEMS.map(({ q, a }) => ({
+            q,
+            a,
+            url: `${BASE_URL}/calculadora/irpf-venta-fondos#${questionSlug(q)}`,
+          })),
+        }}
+      />
       <JsonLd
         schema={{
           type: 'BreadcrumbList',
@@ -293,12 +313,24 @@ export default function IrpfVentaFondosPage() {
               Preguntas frecuentes
             </h2>
             <div className="space-y-5">
-              {FAQ_ITEMS.map((item) => (
-                <div key={item.q}>
-                  <h3 className="text-base font-semibold text-fg mb-1.5">{item.q}</h3>
-                  <p className="text-sm text-fg-muted leading-relaxed">{item.a}</p>
-                </div>
-              ))}
+              {FAQ_ITEMS.map((item) => {
+                const qSlug = questionSlug(item.q)
+                return (
+                  <div key={item.q} id={qSlug} className="scroll-mt-24">
+                    <h3 className="text-base font-semibold text-fg mb-1.5">
+                      {item.q}{' '}
+                      <a
+                        href={`#${qSlug}`}
+                        aria-label={`Enlace directo a: ${item.q}`}
+                        className="font-normal text-fg-subtle no-underline hover:text-brand-400"
+                      >
+                        #
+                      </a>
+                    </h3>
+                    <p className="text-sm text-fg-muted leading-relaxed">{item.a}</p>
+                  </div>
+                )
+              })}
             </div>
           </section>
 

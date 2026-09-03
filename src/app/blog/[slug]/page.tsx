@@ -18,6 +18,7 @@ import {
   getArticleCategory,
 } from '@/data/blog-categories'
 
+import { DescargoFiscal } from '@/components/DescargoFiscal'
 const BASE_URL = 'https://boglehub.com'
 
 // Artículos con versión en inglés: hreflang recíproco con las páginas /en/*
@@ -235,6 +236,7 @@ export default async function BlogArticlePage({
           </div>
         </article>
       </main>
+      <DescargoFiscal variant="fiscal" />
       <Footer />
     </>
   )
