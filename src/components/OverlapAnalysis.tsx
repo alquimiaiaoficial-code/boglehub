@@ -19,19 +19,32 @@ export function OverlapAnalysis() {
     <Card>
       <div className="flex items-center gap-2">
         <Layers className="h-5 w-5 text-brand-400" />
-        <CardTitle>Solapamiento entre tus ETFs</CardTitle>
+        <CardTitle>Solapamiento geográfico entre tus ETFs</CardTitle>
       </div>
+      {/* El nombre lleva "geográfico" a propósito, y la explicación va delante del número.
+          Antes el título decía solo "Solapamiento" y el matiz quedaba en el subtítulo: José
+          Antonio Rodríguez (Guía Fondos Indexados) avisó de que así el porcentaje se puede
+          leer como "empresas realmente repetidas", que es algo que esta herramienta NO mide.
+          Su consejo, literal: nombrarlo solapamiento geográfico y explicar brevemente qué
+          mide el porcentaje. */}
       <p className="mt-2 text-sm text-fg-muted">
-        Cuánta exposición geográfica comparten tus ETFs. Un solapamiento alto significa que
-        probablemente estás comprando lo mismo dos veces — pagando dos comisiones por una sola
-        diversificación.
+        Este porcentaje mide <strong className="text-fg">cuánta exposición por región
+        comparten dos ETF</strong>, no cuántas empresas concretas se repiten entre ellos: para
+        eso harían falta datos de participaciones que esta herramienta no usa.
+      </p>
+      <p className="mt-2 text-sm text-fg-muted">
+        Aun así es buen indicio de estar comprando lo mismo dos veces —y pagando dos
+        comisiones por una sola diversificación—, sobre todo en el caso típico de sumar un
+        fondo global y un S&amp;P 500.
       </p>
 
       {highOverlap.length > 0 && (
         <div className="mt-4 rounded-lg bg-warn/10 border border-warn/30 px-4 py-3 text-sm text-warn">
           Detectamos {highOverlap.length}{' '}
-          {highOverlap.length === 1 ? 'par de ETFs muy solapados' : 'pares de ETFs muy solapados'}.
-          Plantéate si necesitas ambos o si uno solo cubre esa exposición.
+          {highOverlap.length === 1
+            ? 'par de ETF con exposición geográfica muy parecida'
+            : 'pares de ETF con exposición geográfica muy parecida'}.
+          Merece la pena mirar si uno solo ya cubre esa exposición.
         </div>
       )}
 
