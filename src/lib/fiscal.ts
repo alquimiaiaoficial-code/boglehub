@@ -139,7 +139,7 @@ export const GRADE_STYLES: Record<FiscalGrade, { color: string; bg: string }> = 
  * porque la escala cambia. El tramo alto pasó del 28 % al 30 % en 2025 y este
  * sitio sirvió el dato viejo durante meses sin que nada delatara su antigüedad.
  */
-export const FISCAL_ULTIMA_REVISION = '2026-08-31'
+export const FISCAL_ULTIMA_REVISION = '2026-09-03'
 
 /** Ejercicio fiscal al que corresponden los tramos de abajo. */
 export const FISCAL_EJERCICIO = 2026

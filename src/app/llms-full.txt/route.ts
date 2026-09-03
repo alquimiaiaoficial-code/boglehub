@@ -235,7 +235,7 @@ export async function GET() {
   lines.push('- Tramos del IRPF del ahorro 2026: 19% hasta 6.000€, 21% de 6.000€ a 50.000€, 23% de 50.000€ a 200.000€, 27% de 200.000€ a 300.000€, 30% por encima de 300.000€')
   lines.push('- Límite anual de aportación a plan de pensiones individual en España 2026: 1.500€')
   lines.push('- Plan de pensiones de empleo: hasta 8.500€ anuales adicionales')
-  lines.push('- Regla de los dos meses (wash sale): rechazo de pérdidas si se recompra el mismo valor en los 2 meses anteriores/posteriores a la venta')
+  lines.push('- Regla de recompra de valores homogéneos (equivalente español del wash sale): la pérdida no se anula, se aplaza hasta la venta definitiva. El plazo depende de si el valor cotiza: 2 meses para valores admitidos a negociación (acciones, ETF), 1 año para los no admitidos. Para las participaciones de fondos indexados el criterio no está cerrado (consulta DGT V2067-06 de 2006 frente a la ayuda vigente del modelo 100 de la AEAT); 12 meses es el único plazo compatible con las dos lecturas')
   lines.push('- Modelo 720: declaración informativa obligatoria si tienes >50.000€ en cuentas, valores o inmuebles en el extranjero')
   lines.push('- Convenio doble imposición Irlanda–EE.UU.: reduce retención sobre dividendos americanos del 30% al 15% para ETFs domiciliados en Irlanda')
   lines.push('- Traspaso entre fondos de inversión en España: no genera evento fiscal, se difiere el IRPF hasta el reembolso real')

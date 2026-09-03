@@ -188,9 +188,10 @@ export function IrpfCalculator() {
             <strong className="text-brand-400">{formatEUR(Math.abs(r.ganancia))}</strong>, así
             que no pagas IRPF por ella. Esa minusvalía puede compensar ganancias de fondos,
             ETF o acciones de este mismo año; lo que no uses se arrastra a los 4 ejercicios
-            siguientes. Cuidado con la regla de los dos meses: si recompras el mismo ETF o
-            acción dentro de los dos meses anteriores o posteriores a la venta, Hacienda no
-            te deja computar la pérdida.
+            siguientes. Cuidado con la regla de recompra: si vuelves a comprar el mismo valor
+            cerca de la venta, Hacienda no te deja computar la pérdida todavía. Son dos meses
+            en acciones y ETF y un año en lo que no cotiza; en fondos indexados el criterio no
+            está cerrado, así que doce meses es lo único compatible con las dos lecturas.
           </p>
         ) : r.totalmenteCompensada ? (
           <p className="text-sm text-fg leading-relaxed">

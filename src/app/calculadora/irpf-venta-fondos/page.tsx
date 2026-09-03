@@ -36,7 +36,7 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
   {
     q: '¿Puedo restar las pérdidas de las ganancias?',
-    a: 'Sí. Las pérdidas patrimoniales compensan las ganancias del mismo año. Si después de compensar aún te queda saldo negativo, puedes arrastrarlo a los 4 ejercicios siguientes. Ten en cuenta la regla de los dos meses: si vendes con pérdidas y vuelves a comprar el mismo valor dentro de los dos meses anteriores o posteriores, esa pérdida no la puedes computar todavía. Aplica también a los fondos indexados, no solo a las acciones y los ETF. La pérdida no se esfuma: queda aplazada hasta que vendas de forma definitiva lo recomprado.',
+    a: 'Sí. Las pérdidas patrimoniales compensan las ganancias del mismo año. Si después de compensar aún te queda saldo negativo, puedes arrastrarlo a los 4 ejercicios siguientes. Ten en cuenta la regla de recompra de valores homogéneos: si vendes con pérdidas y vuelves a comprar el mismo valor, esa pérdida no la puedes computar todavía. El plazo depende de si el producto cotiza: dos meses para los valores admitidos a negociación, como acciones y ETF, y un año para los no admitidos. Dónde encajan los fondos indexados es una cuestión no cerrada, y doce meses es el único plazo compatible con las dos lecturas. La pérdida no se esfuma: queda aplazada hasta que vendas de forma definitiva lo recomprado.',
   },
   {
     q: '¿Esta calculadora sirve para hacer la declaración de la renta?',
@@ -251,30 +251,38 @@ export default function IrpfVentaFondosPage() {
               pendientes: rebajan la ganancia que acaba tributando.
             </p>
             <p className="mt-3 text-fg-muted leading-relaxed">
-              Hay un límite importante. La regla de los dos meses impide computar una pérdida
-              si vuelves a comprar el mismo valor dentro de los dos meses anteriores o
-              posteriores a la venta. Está pensada para evitar ventas hechas solo para
-              generar una pérdida fiscal.
+              Hay un límite importante, conocido como la regla de los dos meses. Impide
+              computar una pérdida si vuelves a comprar el mismo valor cerca de la venta, y
+              está pensada para evitar ventas hechas solo para generar una pérdida fiscal. El
+              nombre se queda corto, porque el plazo no siempre es de dos meses.
             </p>
             <p className="mt-3 text-fg-muted leading-relaxed">
-              Dos matices que suelen pasarse por alto. El primero: <strong className="text-fg">la
-              regla no afecta solo a acciones y ETF, también a los fondos indexados</strong>.
-              Hacienda considera que las participaciones de un fondo son valores admitidos a
-              cotización, así que el plazo de dos meses les aplica igual. El segundo:{' '}
+              Dos matices que suelen pasarse por alto. El primero: <strong className="text-fg">el
+              plazo no es siempre de dos meses, depende de si el producto cotiza</strong>. La ley
+              distingue entre valores admitidos a negociación, con dos meses, y valores no
+              admitidos, con un año. Dónde encajan las participaciones de un fondo indexado no
+              está cerrado: una consulta de la Dirección General de Tributos de octubre de 2006
+              las trató como valores admitidos, pero es anterior a la ley del IRPF vigente, y la
+              ayuda del modelo 100 de la Agencia Tributaria remite hoy las participaciones de
+              fondos no admitidas a negociación al supuesto del año. Doce meses es el único plazo
+              compatible con las dos lecturas. El segundo:{' '}
               <strong className="text-fg">la pérdida no se pierde, se aplaza</strong>. Vuelve a
               estar disponible cuando vendas de forma definitiva lo que recompraste, sin volver
               a comprarlo dentro del plazo.
             </p>
-            {/* Resumen escaneable del alcance de la regla. Replica la escena "¿A quién
-                aplica?" del vídeo largo del canal, para que quien llegue desde ahí
-                reconozca el contenido de inmediato en vez de tener que releerlo en prosa. */}
+            {/* Resumen escaneable del alcance de la regla.
+                Nació replicando la escena "¿A quién aplica?" del vídeo largo, que dice
+                "fondos indexados: 2 meses". Esa cifra ya no se sostiene: la ayuda del
+                modelo 100 de la AEAT manda los fondos no cotizados al plazo de un año.
+                Tabla y vídeo discrepan a propósito y manda la página; el vídeo lleva nota
+                de corrección. No volver a alinearlos "por coherencia". */}
             <div className="mt-4 rounded-xl border border-border bg-surface-2 p-5">
               <h3 className="text-base font-semibold text-fg mb-3">A quién aplica el plazo</h3>
               <ul className="space-y-2 text-sm text-fg-muted">
                 {[
-                  ['Acciones', '2 meses'],
+                  ['Acciones cotizadas', '2 meses'],
                   ['ETF', '2 meses'],
-                  ['Fondos indexados', '2 meses'],
+                  ['Fondos indexados', '2 meses o 1 año *'],
                   ['Valores que no cotizan', '1 año'],
                 ].map(([activo, plazo]) => (
                   <li key={activo} className="flex items-center justify-between gap-4 border-b border-border/60 pb-2 last:border-0 last:pb-0">
@@ -283,6 +291,10 @@ export default function IrpfVentaFondosPage() {
                   </li>
                 ))}
               </ul>
+              <p className="mt-3 text-xs text-fg-muted leading-relaxed">
+                * Criterio no cerrado, explicado arriba. Contar doce meses es lo único
+                compatible con las dos interpretaciones.
+              </p>
             </div>
 
             <p className="mt-3 text-fg-muted leading-relaxed">

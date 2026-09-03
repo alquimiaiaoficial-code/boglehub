@@ -123,9 +123,10 @@ export default function MetodologiaPage() {
             <strong>Los errores se corrigen y se dejan a la vista.</strong> Dos ejemplos
             reales, para que esto no sea una declaración de intenciones: el tramo alto del IRPF
             del ahorro estuvo publicado como 28 % cuando había pasado al 30 % en 2025, y la
-            regla de los dos meses estaba redactada como si no afectara a los fondos indexados,
-            cuando sí les afecta. Los dos se detectaron verificando contra fuente y se
-            corrigieron en todo el sitio.
+            regla de recompra de pérdidas se publicó primero como si no afectara a los fondos
+            indexados y después con un plazo de dos meses que tampoco se sostenía. Hoy la página
+            explica que el criterio no está cerrado y cuál es el plazo prudente. Los dos errores
+            se detectaron verificando contra fuente y se corrigieron en todo el sitio.
           </p>
           <p>
             Si encuentras un dato que no cuadre, escribe a la dirección del aviso legal. Un

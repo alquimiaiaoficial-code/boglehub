@@ -8933,7 +8933,7 @@ Si prefieres MSCI World por su TER ligeramente inferior, combínalo con un ETF d
       },
       {
         q: '¿Se puede traspasar desde un fondo con pérdidas a otro para "resetear" el coste?',
-        a: 'No, el traspaso no realiza la pérdida: el precio de adquisición original se mantiene. Para materializar una pérdida fiscal hay que hacer un reembolso real (venta), no un traspaso. Ojo con la regla de los dos meses: si reembolsas con pérdida y recompras el mismo fondo en ese plazo, Hacienda anula la pérdida.',
+        a: 'No, el traspaso no realiza la pérdida: el precio de adquisición original se mantiene. Para materializar una pérdida fiscal hay que hacer un reembolso real (venta), no un traspaso. Ojo con la regla de recompra de valores homogéneos: si reembolsas con pérdida y vuelves a comprar el mismo fondo, Hacienda no anula la pérdida pero la aplaza. El plazo de dos meses es el de los valores cotizados; para los fondos no admitidos a negociación la referencia es de un año.',
       },
     ],
     content: `# Cómo hacer un traspaso de fondos en España (paso a paso)
