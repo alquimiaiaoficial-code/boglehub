@@ -336,7 +336,15 @@ export function JsonLd({ schema }: { schema: Schema }) {
       '@type': 'VideoObject',
       name: schema.name,
       description: schema.description,
-      thumbnailUrl: [`https://i.ytimg.com/vi/${schema.youtubeId}/maxresdefault.jpg`],
+      // Dos resoluciones a propósito. `maxresdefault` solo existe si el original
+      // tenía resolución suficiente; para un vídeo que no la tenga, YouTube devuelve
+      // un marcador gris y estaríamos declarando una miniatura rota en datos
+      // estructurados — el patrón que más caro sale, porque lo comprueba una máquina.
+      // `hqdefault` lo genera YouTube siempre, así que sirve de respaldo.
+      thumbnailUrl: [
+        `https://i.ytimg.com/vi/${schema.youtubeId}/maxresdefault.jpg`,
+        `https://i.ytimg.com/vi/${schema.youtubeId}/hqdefault.jpg`,
+      ],
       uploadDate: schema.uploadDate,
       duration: schema.duration,
       contentUrl: `https://www.youtube.com/watch?v=${schema.youtubeId}`,
