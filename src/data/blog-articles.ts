@@ -677,7 +677,7 @@ Para entender mejor el índice global, sigue por [qué es el MSCI World](/blog/q
       },
       {
         q: '¿Cuál es la gestora más barata de fondos indexados?',
-        a: 'Amundi y SPDR suelen aparecer entre las más baratas por TER en varios índices populares (MSCI World, All-World), pero conviene comparar caso a caso para tu índice concreto, porque la más barata varía según el producto. A igualdad de índice y domicilio, el TER más bajo es el que más te conviene a largo plazo.',
+        a: 'Amundi y SPDR suelen aparecer entre las más baratas por TER en varios índices populares (MSCI World, All-World), pero conviene comparar caso a caso para tu índice concreto, porque la más barata varía según el producto. A igualdad de índice y domicilio, un TER más bajo deja más rentabilidad en la cartera a largo plazo, porque es un coste que se descuenta cada año.',
       },
     ],
     content: `# Vanguard vs iShares vs Amundi: qué gestora de fondos indexados elegir (2026)
@@ -2568,10 +2568,10 @@ eToro (Europe) está regulado por la CySEC chipriota, con cobertura del fondo de
 
 ## La alternativa para el inversor indexado
 
-Si has llegado a eToro buscando una forma sencilla de invertir en ETFs a largo plazo, casi seguro te conviene más un broker europeo orientado a eso:
+Si has llegado a eToro buscando invertir en ETFs a largo plazo, conviene saber en qué se diferencian de él los brókeres europeos orientados a ese uso:
 
 - [Trade Republic](/blog/trade-republic-opinion-2026): 0€ reales por operación, cuenta en euros, planes de ahorro automáticos desde 1€ y regulación alemana.
-- Para combinar ETFs con fondos indexados de traspaso fiscal, MyInvestor; para acceso a muchos mercados, DEGIRO.
+- MyInvestor combina ETFs con fondos indexados traspasables sin tributar; DEGIRO da acceso a más mercados. Cada uno cubre una necesidad distinta.
 
 La [comparativa del mejor broker para ETFs en España](/blog/mejor-broker-etfs-espana-2026) los pone uno al lado del otro.
 
@@ -5161,7 +5161,7 @@ Rebalancear bien es aburrido, rápido y poco frecuente. Así debe ser.
   },
   {
     slug: 'plan-de-pensiones-vs-fondo-indexado',
-    title: 'Plan de pensiones o fondo indexado: qué te conviene en España',
+    title: 'Plan de pensiones o fondo indexado: en qué se diferencian en España',
     excerpt:
       'Plan de pensiones o fondo indexado: la desgravación frente a la liquidez. Cómo tributan, las tres trampas del plan de pensiones y a quién le conviene cada uno en España.',
     publishedAt: '2026-05-18',
@@ -5186,9 +5186,9 @@ Rebalancear bien es aburrido, rápido y poco frecuente. Así debe ser.
         a: 'Solo si es indexado y de bajo coste. Un plan de banco con comisión del 1,5 % anual o más rara vez compensa: compuesto durante décadas, destruye buena parte del beneficio fiscal, por mucho que desgrave. La ventaja real del plan es el diferimiento fiscal (inviertes antes de impuestos), pero es un impuesto aplazado, no perdonado: lo pagas al rescatar.',
       },
     ],
-    content: `# Plan de pensiones o fondo indexado: qué te conviene en España
+    content: `# Plan de pensiones o fondo indexado: en qué se diferencian en España
 
-El plan de pensiones se vende, desde hace décadas, como EL producto para la jubilación. Tu banco te lo ofrece cada diciembre, con la promesa de desgravar en la declaración. Y desgravar suena bien. Pero la pregunta no es si desgrava: es si, sumando todo, te conviene a ti frente a la alternativa de un fondo indexado o un ETF.
+El plan de pensiones se vende, desde hace décadas, como EL producto para la jubilación. Tu banco te lo ofrece cada diciembre, con la promesa de desgravar en la declaración. Y desgravar suena bien. Pero la pregunta no es si desgrava: es qué queda cuando se suma todo —la desgravación de hoy, la tributación al rescatar y la liquidez— frente a un fondo indexado o un ETF.
 
 La respuesta no es un sí ni un no. Depende de tu situación. Esta guía te da el marco para decidir.
 
