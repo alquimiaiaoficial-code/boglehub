@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 export default function TaxationEn() {
   return (
     <>
-      <JsonLd schema={{ type: 'FAQPage', questions: FAQ }} />
+      <JsonLd schema={{ type: 'FAQPage', questions: FAQ, inLanguage: 'en' }} />
       <JsonLd schema={{ type: 'BreadcrumbList', items: [{ name: 'Home', url: BASE_URL }, { name: 'English', url: `${BASE_URL}/en` }, { name: 'Taxation', url: `${BASE_URL}/en/taxation` }] }} />
       <Header />
       <main className="bg-bg min-h-screen">

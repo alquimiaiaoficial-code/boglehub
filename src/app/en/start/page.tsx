@@ -49,7 +49,7 @@ export const metadata: Metadata = {
 export default function EnStartPage() {
   return (
     <>
-      <JsonLd schema={{ type: 'FAQPage', questions: FAQ_ITEMS }} />
+      <JsonLd schema={{ type: 'FAQPage', questions: FAQ_ITEMS, inLanguage: 'en' }} />
       <JsonLd schema={{ type: 'BreadcrumbList', items: [{ name: 'Home', url: BASE_URL }, { name: 'English', url: `${BASE_URL}/en` }, { name: 'Start investing', url: `${BASE_URL}/en/start` }] }} />
       <JsonLd schema={{ type: 'Article', headline: 'How to start investing in Spain (English guide)', description: 'Step-by-step English guide for index investing as a Spain resident.', url: `${BASE_URL}/en/start`, datePublished: '2026-05-24', articleSection: 'English guides' }} />
       <Header />

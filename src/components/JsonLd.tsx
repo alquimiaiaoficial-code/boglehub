@@ -56,6 +56,12 @@ interface WebApplicationSchema {
 
 interface FAQSchema {
   type: 'FAQPage'
+  /**
+   * Idioma del contenido. Por defecto 'es-ES'. Las páginas de /en deben pasar 'en'
+   * o el schema afirma que un texto en inglés está en español, que es una
+   * afirmación falsa en el canal más verificable que tenemos.
+   */
+  inLanguage?: string
   // url opcional por pregunta: ancla profunda (/pagina#slug) para citabilidad
   // granular — cada Question se emite con @id/url propios.
   questions: { q: string; a: string; url?: string }[]
@@ -360,7 +366,7 @@ export function JsonLd({ schema }: { schema: Schema }) {
     data = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      inLanguage: 'es-ES',
+      inLanguage: schema.inLanguage ?? 'es-ES',
       mainEntity: schema.questions.map(item => ({
         '@type': 'Question',
         ...(item.url ? { '@id': item.url, url: item.url } : {}),
