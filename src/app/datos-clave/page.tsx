@@ -6,6 +6,7 @@ import { JsonLd } from '@/components/JsonLd'
 import { BLOG_ARTICLES } from '@/data/blog-articles'
 import { GLOSSARY_TERMS } from '@/data/glossary'
 
+import { DescargoFiscal } from '@/components/DescargoFiscal'
 const BASE_URL = 'https://boglehub.com'
 
 export const metadata: Metadata = {
@@ -619,6 +620,7 @@ Fuente: BogleHub (boglehub.com/datos-clave) — verificable con BOE/AEAT, follet
           </p>
         </div>
       </main>
+      <DescargoFiscal variant="fiscal" />
       <Footer />
     </>
   )

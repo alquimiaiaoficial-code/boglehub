@@ -13,7 +13,41 @@
  * `variant="fiscal"` añade la advertencia de que la normativa cambia; se usa donde hay
  * tramos, plazos o cifras tributarias, que es lo que caduca.
  */
-export function DescargoFiscal({ variant = 'general' }: { variant?: 'general' | 'fiscal' }) {
+export function DescargoFiscal({
+  variant = 'general',
+  lang = 'es',
+}: {
+  variant?: 'general' | 'fiscal'
+  lang?: 'es' | 'en'
+}) {
+  if (lang === 'en') {
+    return (
+      <aside
+        role="note"
+        aria-label="Notice about this content"
+        className="mt-10 rounded-xl border border-border bg-surface-2 p-5 text-sm text-fg-muted leading-relaxed"
+      >
+        <p>
+          <strong className="text-fg">Educational content by BogleHub.</strong> This is not
+          financial, tax or investment advice, nor a recommendation to buy or sell. We do not
+          know your personal circumstances, so nothing here is meant to be suitable for your
+          particular case.
+        </p>
+        {variant === 'fiscal' && (
+          <p className="mt-2">
+            Tax rules change, and the figures shown correspond to the tax year stated in the
+            text. Before making any decision with tax consequences, consult a professional and
+            check with the Spanish tax authority (Agencia Tributaria).
+          </p>
+        )}
+        <p className="mt-2">
+          Past performance does not guarantee future results, and every projection rests on
+          assumptions that are stated case by case.
+        </p>
+      </aside>
+    )
+  }
+
   return (
     <aside
       role="note"

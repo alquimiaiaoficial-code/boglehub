@@ -4,6 +4,7 @@ import { JsonLd } from '@/components/JsonLd'
 import { NewsletterSignup } from '@/components/NewsletterSignup'
 import { AnalyzerClient } from './AnalyzerClient'
 
+import { DescargoFiscal } from '@/components/DescargoFiscal'
 const BASE_URL = 'https://boglehub.com'
 const PAGE_URL = `${BASE_URL}/analyzer`
 
@@ -159,6 +160,7 @@ export default function AnalyzerPage() {
           </section>
         </div>
       </main>
+      <DescargoFiscal variant="fiscal" />
       <Footer />
     </>
   )

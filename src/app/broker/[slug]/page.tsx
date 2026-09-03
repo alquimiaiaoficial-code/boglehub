@@ -7,6 +7,7 @@ import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
 import { BROKERS, getBrokerBySlug } from '@/data/brokers'
 
+import { DescargoFiscal } from '@/components/DescargoFiscal'
 const BASE_URL = 'https://boglehub.com'
 
 /**
@@ -295,6 +296,7 @@ export default async function BrokerPage({
           </p>
         </div>
       </main>
+      <DescargoFiscal variant="general" />
       <Footer />
     </>
   )

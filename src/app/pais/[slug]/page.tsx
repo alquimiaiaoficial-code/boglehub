@@ -7,6 +7,7 @@ import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
 import { COUNTRIES, getCountryBySlug } from '@/data/countries'
 
+import { DescargoFiscal } from '@/components/DescargoFiscal'
 const BASE_URL = 'https://boglehub.com'
 
 export function generateStaticParams() {
@@ -114,6 +115,7 @@ export default async function PaisPage({ params }: { params: Promise<{ slug: str
           <p className="mt-8 text-xs text-fg-subtle text-center">Información educativa, no asesoramiento. Última revisión: mayo 2026.</p>
         </div>
       </main>
+      <DescargoFiscal variant="general" />
       <Footer />
     </>
   )

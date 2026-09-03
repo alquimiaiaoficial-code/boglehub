@@ -5,6 +5,7 @@ import { Footer } from '@/components/Footer'
 import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
 
+import { DescargoFiscal } from '@/components/DescargoFiscal'
 const BASE_URL = 'https://boglehub.com'
 
 const FAQ = [
@@ -71,6 +72,7 @@ export default function TaxationEn() {
           </Card>
         </div>
       </main>
+      <DescargoFiscal variant="fiscal" lang="en" />
       <Footer />
     </>
   )

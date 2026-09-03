@@ -4,6 +4,7 @@ import { Logo } from '@/components/Logo'
 import { NewsletterSignup } from '@/components/NewsletterSignup'
 import { Check } from 'lucide-react'
 
+import { DescargoFiscal } from '@/components/DescargoFiscal'
 const BASE_URL = 'https://boglehub.com'
 
 export const metadata: Metadata = {
@@ -99,6 +100,7 @@ export default function GuiaLandingPage() {
             baja con un clic.
           </p>
         </section>
+        <DescargoFiscal variant="general" />
       </main>
 
       <footer className="mx-auto w-full max-w-2xl px-4 sm:px-6 py-8 border-t border-border">

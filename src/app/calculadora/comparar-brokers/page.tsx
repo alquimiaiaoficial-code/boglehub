@@ -5,6 +5,7 @@ import { Footer } from '@/components/Footer'
 import { JsonLd } from '@/components/JsonLd'
 import { BrokerComparator } from './BrokerComparator'
 
+import { DescargoFiscal } from '@/components/DescargoFiscal'
 const BASE_URL = 'https://boglehub.com'
 
 const FAQ_ITEMS: { q: string; a: string }[] = [
@@ -258,6 +259,7 @@ export default function CompararBrokersPage() {
           </p>
         </div>
       </main>
+      <DescargoFiscal variant="general" />
       <Footer />
     </>
   )
