@@ -69,9 +69,35 @@ describe('regla de recompra de valores homogéneos', () => {
 
     // Es la definición canónica: a ella llegan los autoenlaces desde todo el blog,
     // así que un lector puede aterrizar aquí sin pasar por la calculadora.
-    const texto = `${termino!.shortDefinition}\n${termino!.longDefinition}`
-    expect(texto, 'el glosario no menciona el plazo de un año').toContain('un año')
-    expect(texto, 'el glosario no menciona a los fondos no cotizados').toMatch(/fondos? de inversión no cotizados|fondo indexado/)
+    expect(termino!.longDefinition, 'el glosario no menciona el plazo de un año').toContain('un año')
+    expect(
+      termino!.longDefinition,
+      'el glosario no menciona a los fondos no cotizados'
+    ).toMatch(/fondos? de inversión no cotizados|fondo indexado/)
+  })
+
+  it('la definición CORTA del glosario también lleva el matiz, no solo la larga', () => {
+    // Esta comprobación va aparte por un fallo real de este mismo test.
+    //
+    // La primera versión concatenaba `shortDefinition` y `longDefinition` y buscaba
+    // el matiz en la suma. Pasaba en verde con la corta diciendo solo "dos meses",
+    // porque la larga ya lo tenía. Lo cazó GEO, no el test.
+    //
+    // Y la corta es justamente el campo que más se lee de los dos:
+    //  - es la meta description de /glosario/regla-dos-meses,
+    //  - es la `description` del schema DefinedTerm,
+    //  - y es la línea "**Definición**" que `llms-full.txt` entrega a los asistentes
+    //    (`src/app/llms-full.txt/route.ts`, que sirve `term.shortDefinition`).
+    //
+    // O sea: el dato incompleto estaba en el canal más citado y el corregido en el
+    // menos leído. Verificar la suma de dos campos no vale cuando cada uno viaja solo.
+    const termino = GLOSSARY_TERMS.find((t) => t.slug === 'regla-dos-meses')
+    const corta = termino!.shortDefinition
+
+    expect(corta, 'la definición corta se queda en los dos meses').toMatch(/doce|12 meses|un año/)
+    expect(corta, 'la definición corta no dice a qué producto aplica cada plazo').toMatch(
+      /no cotiza|fondo/
+    )
   })
 
   it('llms-full.txt entrega los dos plazos a los asistentes que lo ingieren', () => {
