@@ -385,7 +385,7 @@ export default function MetodologiaPage() {
             <li>
               <strong>Correcciones de la comunidad</strong>: las correcciones reportadas por
               usuarios se aplican lo antes posible. Contacto:{' '}
-              <a href="mailto:hola@boglehub.com">hola@boglehub.com</a>.
+              <a href="mailto:boglehub@gmail.com">boglehub@gmail.com</a>.
             </li>
           </ul>
 
@@ -420,7 +420,7 @@ export default function MetodologiaPage() {
           <h2>Contacto y correcciones</h2>
           <p>
             Si detectas un error o crees que algo se puede mejorar, escríbenos a{' '}
-            <a href="mailto:hola@boglehub.com">hola@boglehub.com</a>. Agradecemos todas las
+            <a href="mailto:boglehub@gmail.com">boglehub@gmail.com</a>. Agradecemos todas las
             correcciones — el proyecto vive de la comunidad.
           </p>
         </article>

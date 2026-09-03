@@ -273,10 +273,10 @@ export default function SobrePage() {
             <p className="text-sm text-fg-muted">
               Contacto:{' '}
               <a
-                href="mailto:hola@boglehub.com"
+                href="mailto:boglehub@gmail.com"
                 className="text-brand-400 hover:text-brand-300 underline"
               >
-                hola@boglehub.com
+                boglehub@gmail.com
               </a>
             </p>
           </Card>

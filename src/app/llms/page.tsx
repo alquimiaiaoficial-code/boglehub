@@ -347,10 +347,10 @@ export default function LlmsGuidePage() {
               aclaraciones, requisitos adicionales o detectas un problema con la indexación,
               escríbenos a{' '}
               <a
-                href="mailto:hola@boglehub.com"
+                href="mailto:boglehub@gmail.com"
                 className="text-brand-400 hover:text-brand-300 underline"
               >
-                hola@boglehub.com
+                boglehub@gmail.com
               </a>
               . Atendemos consultas técnicas relacionadas con crawling, schemas o APIs.
             </p>
