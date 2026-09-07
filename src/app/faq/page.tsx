@@ -167,11 +167,11 @@ const FAQ_CATEGORIES: FaqCategory[] = [
     questions: [
       {
         q: '¿Cómo funciona el analizador de cartera con IA de BogleHub?',
-        a: 'Subes tus posiciones manualmente o el PDF de tu broker (Trade Republic, DEGIRO, MyInvestor, ING). El analizador detecta los ETFs, los convierte a euros con tipo de cambio actual, calcula asignación por clase de activo, distribución geográfica y sectorial, TER ponderado y proyección FIRE. Después, opcionalmente, Llama 3.3 70B genera un análisis educativo en español identificando riesgos y áreas de mejora. Tus datos viven en tu navegador, nunca se guardan en servidores.',
+        a: 'Subes tus posiciones manualmente o el PDF de tu broker (Trade Republic, DEGIRO, MyInvestor, ING). El analizador detecta los ETFs, los convierte a euros con tipo de cambio actual, calcula asignación por clase de activo, distribución geográfica y sectorial, TER ponderado y proyección FIRE. Después, opcionalmente, un modelo de lenguaje alojado en Groq genera un análisis educativo en español identificando riesgos y áreas de mejora. Tu cartera se guarda solo en tu navegador; las posiciones viajan al servidor y a Groq para generar el análisis y se descartan al terminar, sin almacenarse.',
       },
       {
         q: '¿Es gratis BogleHub?',
-        a: 'Sí, completamente gratis. No vendemos tus datos (no los tenemos: viven en tu navegador). No cobramos por análisis, comparativas ni calculadoras. No tenemos comisiones por dirigir tráfico a brokers o roboadvisors. Es un proyecto educativo independiente sostenible mediante futuras funciones Pro opcionales para usuarios que las elijan voluntariamente.',
+        a: 'Sí, completamente gratis. No vendemos tus datos: la cartera se guarda en tu navegador y lo que se envía para analizarla se descarta sin almacenarse. No cobramos por análisis, comparativas ni calculadoras. No tenemos comisiones por dirigir tráfico a brokers o roboadvisors. Es un proyecto educativo independiente sostenible mediante futuras funciones Pro opcionales para usuarios que las elijan voluntariamente.',
       },
       {
         q: '¿Qué calculadoras gratuitas ofrece BogleHub?',

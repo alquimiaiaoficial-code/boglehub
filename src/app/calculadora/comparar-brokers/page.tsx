@@ -232,7 +232,7 @@ export default function CompararBrokersPage() {
             <p className="text-sm text-fg-muted leading-relaxed mb-4">
               Cambiar de bróker no arregla una cartera mal diversificada o cargada de
               comisiones. El analizador revisa lo que ya tienes y te dice si está bien
-              montada y dónde mejorar. Gratis, sin registro, los datos no salen del navegador.
+              montada y dónde mejorar. Gratis, sin registro, con la cartera guardada solo en tu navegador.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link

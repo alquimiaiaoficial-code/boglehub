@@ -57,7 +57,7 @@ Y tres cosas más por las que empezar:
 </td></tr>
 <tr><td style="padding:20px 32px 0 32px;">
 <p style="margin:0 0 16px 0;font-size:15px;line-height:1.65;color:#3f3f46;">
-El analizador revisa tu cartera y te dice si está bien diversificada, qué comisiones pagas y dónde se solapan tus fondos. Tus datos nunca salen de tu navegador.
+El analizador revisa tu cartera y te dice si está bien diversificada, qué comisiones pagas y dónde se solapan tus fondos. Tu cartera se guarda solo en tu navegador, y las posiciones que se envían para analizarla se descartan sin almacenarse.
 </p>
 <p style="margin:0 0 24px 0;font-size:15px;line-height:1.65;color:#3f3f46;">
 ¿Una duda sobre tu cartera? Responde a este correo y la leo.

@@ -148,7 +148,7 @@ export function Chat() {
           </div>
           <p className="mt-2 text-xs text-fg-subtle text-center">
             Enter para enviar · Shift+Enter para nueva línea. Las respuestas las genera un
-            modelo de IA (Llama 3.3 70B) y pueden contener errores: contrástalas antes de
+            modelo de lenguaje y pueden contener errores: contrástalas antes de
             usarlas. Información educativa, nunca asesoramiento de inversión.
           </p>
         </form>

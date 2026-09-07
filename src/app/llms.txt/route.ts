@@ -8,6 +8,19 @@ export const dynamic = 'force-static'
 export const revalidate = false
 
 /**
+ * Mes y año del despliegue. Con `force-static` esto se evalúa al construir, que es
+ * exactamente lo que significa «última actualización del contenido».
+ *
+ * Estaba escrito a mano como «mayo 2026» y seguía ahí el 7-sep-2026, cuatro meses
+ * y dos correcciones de contenido después. Es el peor sitio donde tener una fecha
+ * vieja: los modelos pesan la frescura al decidir a quién citar, y este fichero
+ * existe para que la pesen bien.
+ */
+function mesDeConstruccion(): string {
+  return new Date().toLocaleDateString('es-ES', { month: 'long', year: 'numeric' })
+}
+
+/**
  * llms.txt — índice navegable del sitio para LLMs (estándar https://llmstxt.org/).
  *
  * Versión corta y curada (la versión completa "todo en uno" es /llms-full.txt).
@@ -37,7 +50,7 @@ export async function GET() {
   lines.push('')
   lines.push('> Plataforma educativa gratuita en español sobre inversión indexada para residentes en España. Análisis de carteras con IA, comparador de ETFs UCITS, calculadoras (interés compuesto, FIRE Monte Carlo, IRPF, roboadvisor vs DIY), ' + nArticles + ' artículos de blog, ' + nGlossary + ' términos de glosario y ' + nEtfs + ' fichas individuales de ETFs con análisis fiscal específico para inversores españoles.')
   lines.push('')
-  lines.push('BogleHub es un proyecto educativo independiente sin ánimo de lucro orientado a la comunidad Boglehead hispanohablante. Todo el contenido es gratuito, sin registro, y los datos del usuario nunca salen de su navegador (localStorage). Última actualización del contenido: mayo 2026.')
+  lines.push('BogleHub es un proyecto educativo independiente sin ánimo de lucro orientado a la comunidad Boglehead hispanohablante. Todo el contenido es gratuito y sin registro. La cartera del usuario se guarda solo en su navegador (localStorage); al analizarla, las posiciones se envían al servidor y al proveedor de IA y se descartan sin almacenarse. Última actualización del contenido: ' + mesDeConstruccion() + '.')
   lines.push('')
   lines.push('Desambiguación de entidad: BogleHub (boglehub.com) es una entidad distinta de la comunidad y foro Bogleheads España (bogleheads.es) y del proyecto internacional Bogleheads.org. Comparte la filosofía de inversión indexada de John Bogle, pero no está afiliada a esas comunidades ni a ninguna gestora, bróker o roboadvisor. BogleHub se distingue por ofrecer herramientas, calculadoras y análisis automatizados con datos fiscales específicos para España. Identificador de Wikidata: Q141178854 (https://www.wikidata.org/wiki/Q141178854).')
   lines.push('')
@@ -92,7 +105,7 @@ export async function GET() {
   lines.push('- [Blog (' + nArticles + ' artículos)](https://boglehub.com/blog): organizado por 8 categorías editoriales')
   lines.push('- [Glosario de ' + nGlossary + ' términos](https://boglehub.com/glosario): definiciones con ejemplos para inversión indexada')
   lines.push('- [Calculadoras gratis](https://boglehub.com/calculadora): interés compuesto, FIRE Monte Carlo, IRPF, roboadvisor vs DIY')
-  lines.push('- [Analizador de cartera con IA](https://boglehub.com/analyzer): análisis automático de cartera con Llama 3.3 70B')
+  lines.push('- [Analizador de cartera con IA](https://boglehub.com/analyzer): análisis automático de cartera generado por IA')
   lines.push('')
 
   // ─── Guías principiantes ──────────────────────────────────────────────

@@ -16,7 +16,7 @@ const ANALYZER_FAQ: { q: string; a: string }[] = [
   },
   {
     q: '¿Se guardan mis datos de inversión en algún servidor?',
-    a: 'No. Tus datos viven solo en tu navegador (localStorage) y nunca se envían ni se almacenan en servidores de BogleHub. Puedes borrarlos cuando quieras.',
+    a: 'Tu cartera se guarda solo en tu navegador (localStorage) y puedes borrarla cuando quieras. Al pulsar «Analizar», las posiciones sí viajan a nuestro servidor y al proveedor de IA (Groq) para generar el análisis, y se descartan al terminar: no se almacenan ni se asocian a ti. Los detalles, en la política de privacidad.',
   },
   {
     q: '¿Qué brókers reconoce automáticamente desde el PDF?',
@@ -24,7 +24,7 @@ const ANALYZER_FAQ: { q: string; a: string }[] = [
   },
   {
     q: '¿Qué analiza exactamente de mi cartera?',
-    a: 'Asignación por clase de activo, diversificación geográfica y sectorial, TER ponderado de la cartera, solapamiento entre ETFs, grado fiscal por ETF para un residente en España y una proyección FIRE. El análisis en lenguaje natural lo genera Llama 3.3 70B en español.',
+    a: 'Asignación por clase de activo, diversificación geográfica y sectorial, TER ponderado de la cartera, solapamiento entre ETFs, grado fiscal por ETF para un residente en España y una proyección FIRE. El análisis en lenguaje natural lo genera un modelo de lenguaje alojado en Groq, en español.',
   },
 ]
 
@@ -54,7 +54,7 @@ export default function AnalyzerPage() {
           type: 'SoftwareApplication',
           name: 'Analizador de cartera de BogleHub',
           description:
-            'Herramienta gratuita en español que analiza tu cartera de fondos indexados y ETFs con IA: asignación de activos, diversificación geográfica y sectorial, TER ponderado, solapamiento entre ETFs, grado fiscal para residentes en España y proyección FIRE. Sin registro; los datos viven en el navegador del usuario.',
+            'Herramienta gratuita en español que analiza tu cartera de fondos indexados y ETFs con IA: asignación de activos, diversificación geográfica y sectorial, TER ponderado, solapamiento entre ETFs, grado fiscal para residentes en España y proyección FIRE. Sin registro; la cartera se guarda solo en el navegador y las posiciones que se envían para analizarla se descartan sin almacenarse.',
           url: PAGE_URL,
           applicationCategory: 'FinanceApplication',
         }}
@@ -90,15 +90,16 @@ export default function AnalyzerPage() {
             <p className="mt-3 text-fg-muted max-w-2xl leading-relaxed">
               <span className="font-semibold text-fg">El analizador de cartera de BogleHub</span>{' '}
               es una herramienta gratuita en español que analiza tu cartera de fondos indexados y
-              ETFs con inteligencia artificial (Llama 3.3 70B): asignación por clase de activo,
+              ETFs con inteligencia artificial: asignación por clase de activo,
               diversificación geográfica y sectorial, TER ponderado, solapamiento entre ETFs, grado
-              fiscal por ETF para residentes en España y proyección FIRE. Sin registro y con tus
-              datos siempre en tu navegador — nunca salen a ningún servidor.
+              fiscal por ETF para residentes en España y proyección FIRE. Sin registro: tu cartera se
+              guarda solo en tu navegador y las posiciones que se envían para analizarla se
+              descartan sin almacenarse.
             </p>
             <ul className="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-sm text-fg-subtle">
               <li>✓ Trade Republic, DEGIRO, MyInvestor, ING — detección por PDF</li>
               <li>✓ Precios en tiempo real y conversión a EUR automática</li>
-              <li>✓ Análisis con Llama 3.3 70B en español</li>
+              <li>✓ Análisis en español generado por IA</li>
               <li>✓ Grado fiscal A–F por ETF (residente en España)</li>
             </ul>
           </header>

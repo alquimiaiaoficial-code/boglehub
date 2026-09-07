@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { JsonLd } from '@/components/JsonLd'
+import { GROQ_MODEL } from '@/lib/groq-model'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -41,7 +42,7 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
   {
     q: '¿El análisis con IA es independiente?',
-    a: 'Sí. El analizador de cartera usa el modelo Llama 3.3 70B Versatile a través de Groq, ejecutado contra un system prompt diseñado para ser estrictamente educativo (sin recomendaciones de compra/venta). El modelo solo recibe datos agregados de la cartera (asignación, regiones, sectores, TER ponderado), nunca información personal identificable. El prompt completo está disponible en el código fuente para auditoría.',
+    a: `Sí. El analizador usa ${GROQ_MODEL} a través de Groq, contra un system prompt estrictamente educativo (sin recomendaciones de compra/venta). El modelo recibe tu cartera posición a posición —cada ETF con su valor en euros y su peso— más el reparto por región y sector, el TER ponderado y, si la rellenas, la proyección FIRE con tu aportación mensual y tu objetivo. No recibe nombre, correo ni ningún dato que te identifique. El prompt completo está en el código fuente para auditoría.`,
   },
 ]
 
@@ -351,9 +352,10 @@ export default function MetodologiaPage() {
 
           <h2>10. Análisis con IA</h2>
           <p>
-            Cuando pulsas &quot;Analizar con IA&quot;, enviamos un resumen estructurado de tu
-            cartera (asignación, regiones, sectores, TER) al modelo{' '}
-            <strong>Llama 3.3 70B Versatile</strong> de Groq, con un system prompt en español
+            Cuando pulsas &quot;Analizar con IA&quot;, enviamos tu cartera posición a posición
+            —cada ETF con su valor en euros y su peso—, el reparto por región y sector, el TER
+            ponderado y, si la rellenas, la proyección FIRE, al modelo{' '}
+            <strong>{GROQ_MODEL}</strong> de Groq, con un system prompt en español
             que le instruye a:
           </p>
           <ul>
@@ -363,8 +365,10 @@ export default function MetodologiaPage() {
             <li>Sugerir áreas de mejora de forma genérica y educativa.</li>
           </ul>
           <p>
-            El modelo solo recibe datos agregados de cartera, nunca información personal
-            identificable.
+            El modelo recibe tu cartera posición a posición, no un resumen: cada ETF con su
+            valor en euros y su peso. No recibe nombre, correo ni ningún dato que te
+            identifique. Nosotros no la almacenamos; lo que Groq haga con ella se rige por
+            sus propias condiciones, no por las nuestras.
           </p>
 
           <h2>Proceso editorial</h2>

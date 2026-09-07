@@ -523,7 +523,7 @@ export default function EmpezarPage() {
               <p className="text-sm text-fg-muted leading-relaxed mb-3">
                 Una vez tengas cartera (o si ya la tienes), pásala por el analizador para ver TER
                 ponderado, solapamiento entre fondos, distribución real y proyección FIRE. Gratis,
-                sin registro, los datos viven en tu navegador.
+                sin registro, la cartera se guarda en tu navegador.
               </p>
               <Link
                 href="/analyzer"

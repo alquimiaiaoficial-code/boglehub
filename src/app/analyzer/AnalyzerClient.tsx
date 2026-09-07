@@ -61,7 +61,7 @@ export function AnalyzerClient() {
       <div className="rounded-lg bg-warn/10 border border-warn/30 px-4 py-2 text-sm text-warn mb-6 flex items-center gap-2">
         <AlertTriangle className="h-4 w-4 flex-shrink-0" />
         <span>
-          Información educativa, no asesoramiento financiero. Tus datos viven en tu navegador.
+          Información educativa, no asesoramiento financiero. Tu cartera se guarda solo en tu navegador; lo que se envía para analizarla no se almacena.
         </span>
       </div>
 

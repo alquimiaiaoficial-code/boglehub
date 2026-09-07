@@ -322,7 +322,7 @@ export function JsonLd({ schema }: { schema: Schema }) {
         'Análisis de cartera de fondos indexados con IA en español. Gratis, sin registro, datos en el navegador del usuario.',
       inLanguage: 'es-ES',
       featureList: [
-        'Análisis automático de cartera con IA (Llama 3.3 70B)',
+        'Análisis automático de cartera con IA',
         'Comparador de 68 ETFs UCITS',
         'Calculadora de interés compuesto',
         'Calculadora FIRE con simulación Monte Carlo',

@@ -56,7 +56,7 @@ export async function GET() {
   lines.push('## Resumen del proyecto')
   lines.push('')
   lines.push(
-    'BogleHub es un proyecto educativo independiente sin ánimo de lucro orientado a la comunidad Boglehead hispanohablante. Todo el contenido es gratuito, sin registro, y los datos del usuario nunca salen de su navegador (localStorage).',
+    'BogleHub es un proyecto educativo independiente sin ánimo de lucro orientado a la comunidad Boglehead hispanohablante. Todo el contenido es gratuito y sin registro. La cartera del usuario se guarda solo en su navegador (localStorage); al analizarla, las posiciones se envían al servidor y al proveedor de IA y se descartan sin almacenarse.',
   )
   lines.push('')
   lines.push('### Garantías de independencia')

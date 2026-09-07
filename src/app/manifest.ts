@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: 'BogleHub — Análisis de carteras indexadas',
     short_name: 'BogleHub',
     description:
-      'Analiza tu cartera de fondos indexados y ETFs con IA. Gratis, en español, sin registro. Tus datos viven en tu navegador.',
+      'Analiza tu cartera de fondos indexados y ETFs con IA. Gratis, en español, sin registro. Tu cartera se guarda en tu navegador.',
     start_url: '/',
     scope: '/',
     display: 'standalone',

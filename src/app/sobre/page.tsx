@@ -229,7 +229,7 @@ export default function SobrePage() {
               </li>
               <li>
                 <strong className="text-fg">Análisis con IA:</strong> el analizador de carteras
-                usa Llama 3.3 70B Versatile a través de Groq. Los prompts y la metodología están
+                usa un modelo de lenguaje alojado en Groq. Los prompts y la metodología están
                 diseñados para ser educativos, no recomendatorios.
               </li>
             </ul>

@@ -4,6 +4,7 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Button } from '@/components/ui/Button'
 import { JsonLd } from '@/components/JsonLd'
+import { GROQ_MODEL } from '@/lib/groq-model'
 import { NewsletterSignup } from '@/components/NewsletterSignup'
 import { GlobeHero } from '@/components/globe/GlobeHero'
 import { Reveal } from '@/components/Reveal'
@@ -22,10 +23,10 @@ export const metadata: Metadata = {
 }
 
 const FAQ_QUESTIONS = [
-  { q: '¿Es de verdad gratis? ¿Cuál es el truco?', a: 'Sí, totalmente gratis. No vendemos tus datos (no los tenemos — viven en tu navegador). Es un proyecto educativo personal hecho para la comunidad de inversores indexados hispanos. En el futuro habrá funciones Pro opcionales, pero el análisis básico será siempre gratuito.' },
+  { q: '¿Es de verdad gratis? ¿Cuál es el truco?', a: 'Sí, totalmente gratis. No vendemos tus datos: tu cartera se guarda en tu navegador y las posiciones que se envían para analizarla se descartan sin almacenarse. Es un proyecto educativo personal hecho para la comunidad de inversores indexados hispanos. En el futuro habrá funciones Pro opcionales, pero el análisis básico será siempre gratuito.' },
   { q: '¿Esto es asesoramiento financiero?', a: 'No. Es información educativa. BogleHub no recomienda comprar o vender activos específicos. Es una herramienta para que entiendas tu cartera, no para sustituir a un asesor regulado.' },
   { q: '¿Qué brokers están soportados?', a: 'Manualmente puedes introducir cualquier ETF UCITS. Con detección automática por PDF: Trade Republic, DEGIRO, MyInvestor, ING. Más brokers se añaden a demanda.' },
-  { q: '¿Qué modelo de IA usáis?', a: 'Llama 3.3 70B Versatile a través de Groq. Es uno de los modelos open-weight más potentes del mundo, en infraestructura ultrarrápida. Coste para nosotros: ~14.400 análisis/día gratis.' },
+  { q: '¿Qué modelo de IA usáis?', a: `${GROQ_MODEL}, servido por Groq. El nombre se lee del código, así que esta respuesta no envejece: el modelo anterior fue retirado en agosto de 2026 y estuvimos quince días diciendo que usábamos uno que ya no existía.` },
   { q: '¿Mis datos son privados?', a: 'Sí. Tus posiciones se guardan en localStorage de tu navegador, no en nuestros servidores. Solo viajan al servidor durante el análisis y se descartan inmediatamente.' },
 ]
 
@@ -67,7 +68,7 @@ export default function HomePage() {
                 <Button variant="secondary" size="lg">Cómo funciona</Button>
               </Link>
             </div>
-            <p className="mt-4 text-sm text-fg-subtle">Sin registro · Tus datos viven en tu navegador</p>
+            <p className="mt-4 text-sm text-fg-subtle">Sin registro · Tu cartera se guarda en tu navegador</p>
             <p className="mt-2 text-sm text-fg-subtle">
               O <Link href="/chat" className="text-brand-400 hover:text-brand-300 underline-offset-4 hover:underline">prueba el chat IA</Link> para hacer preguntas libres sobre inversión.
             </p>
@@ -101,7 +102,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { num: '01', title: 'Introduce tu cartera', desc: 'Sube el PDF de tu broker (Trade Republic, DEGIRO, MyInvestor) o escribe posiciones manualmente. Funciona con cualquier ETF UCITS.' },
-              { num: '02', title: 'La IA analiza', desc: 'Llama 3.3 70B examina tu asignación, diversificación geográfica, sectorial, divisas y costes. Compara con benchmarks Boglehead.' },
+              { num: '02', title: 'La IA analiza', desc: 'El modelo examina tu asignación, diversificación geográfica, sectorial, divisas y costes. Compara con benchmarks Boglehead.' },
               { num: '03', title: 'Recibe insights', desc: 'Gráficos interactivos, métricas clave, narrativa educativa en español y proyección FIRE personalizada. Todo en una pantalla.' },
             ].map((step) => (
               <div key={step.num} className="rounded-2xl border border-border bg-surface p-6 transition-all hover:-translate-y-1 hover:border-border-strong">
@@ -126,8 +127,8 @@ export default function HomePage() {
                 { icon: BarChart3, title: 'Asignación detallada', desc: 'Renta variable vs fija, geografía, sectores, divisas. Visualizado para entender de un vistazo.' },
                 { icon: Globe2, title: 'Conversión EUR automática', desc: 'Tickers en USD, GBp o EUR — todos convertidos a euros con tipo de cambio en tiempo real.' },
                 { icon: PiggyBank, title: 'Calculadora FIRE', desc: 'Introduce aporte mensual y objetivo. Te decimos cuándo alcanzas la libertad financiera.' },
-                { icon: Sparkles, title: 'Análisis IA en español', desc: 'Llama 3.3 70B genera un análisis educativo personalizado: riesgos, áreas de mejora, comparativas.' },
-                { icon: ShieldCheck, title: 'Privado por diseño', desc: 'Tus posiciones viven en tu navegador, nunca en nuestros servidores. GDPR-friendly.' },
+                { icon: Sparkles, title: 'Análisis IA en español', desc: 'Un modelo de lenguaje alojado en Groq genera un análisis educativo: riesgos, áreas de mejora, comparativas.' },
+                { icon: ShieldCheck, title: 'Privado por diseño', desc: 'Tu cartera se guarda solo en tu navegador. Para analizarla, las posiciones viajan al servidor y se descartan: no se almacenan.' },
                 { icon: FileText, title: 'Multi-broker', desc: 'Trade Republic, DEGIRO, MyInvestor, ING. Sube el PDF y detectamos las posiciones automáticamente.' },
               ].map(({ icon: Icon, title, desc }) => (
                 <div key={title} className="rounded-2xl border border-border bg-surface p-6 transition-all hover:-translate-y-1 hover:border-border-strong">
@@ -165,7 +166,7 @@ export default function HomePage() {
                   ['Tu eliges los ETFs', 'sí', 'no', 'sí'],
                   ['Análisis con IA', 'sí', 'no', 'no'],
                   ['Tiempo para empezar', '30 seg', '1 día', 'horas'],
-                  ['Datos en tu navegador', 'sí', 'no', 'sí'],
+                  ['Cartera guardada solo en tu navegador', 'sí', 'no', 'sí'],
                   ['Multi-broker', 'sí', 'no', 'manual'],
                 ].map((row, i) => (
                   <tr key={i} className="border-t border-border">
@@ -420,10 +421,10 @@ export default function HomePage() {
             </div>
             <div className="space-y-3">
               {[
-                { q: '¿Es de verdad gratis? ¿Cuál es el truco?', a: 'Sí, totalmente gratis. No vendemos tus datos (no los tenemos — viven en tu navegador). Es un proyecto educativo personal hecho para la comunidad de inversores indexados hispanos. En el futuro habrá funciones Pro opcionales, pero el análisis básico será siempre gratuito.' },
+                { q: '¿Es de verdad gratis? ¿Cuál es el truco?', a: 'Sí, totalmente gratis. No vendemos tus datos: tu cartera se guarda en tu navegador y las posiciones que se envían para analizarla se descartan sin almacenarse. Es un proyecto educativo personal hecho para la comunidad de inversores indexados hispanos. En el futuro habrá funciones Pro opcionales, pero el análisis básico será siempre gratuito.' },
                 { q: '¿Esto es asesoramiento financiero?', a: 'No. Es información educativa. BogleHub no recomienda comprar o vender activos específicos. Es una herramienta para que entiendas tu cartera, no para sustituir a un asesor regulado.' },
                 { q: '¿Qué brokers están soportados?', a: 'Manualmente puedes introducir cualquier ETF UCITS. Con detección automática por PDF: Trade Republic, DEGIRO, MyInvestor, ING. Más brokers se añaden a demanda.' },
-                { q: '¿Qué modelo de IA usáis?', a: 'Llama 3.3 70B Versatile a través de Groq. Es uno de los modelos open-weight más potentes del mundo, en infraestructura ultrarrápida. Coste para nosotros: ~14.400 análisis/día gratis.' },
+                { q: '¿Qué modelo de IA usáis?', a: `${GROQ_MODEL}, servido por Groq. El nombre se lee del código, así que esta respuesta no envejece: el modelo anterior fue retirado en agosto de 2026 y estuvimos quince días diciendo que usábamos uno que ya no existía.` },
                 { q: '¿Mis datos son privados?', a: 'Sí. Tus posiciones se guardan en localStorage de tu navegador, no en nuestros servidores. Solo viajan al servidor durante el análisis y se descartan inmediatamente.' },
               ].map((item, i) => (
                 <details key={i} className="group rounded-xl border border-border bg-surface p-5">

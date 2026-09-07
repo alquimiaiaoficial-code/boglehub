@@ -52,7 +52,7 @@ export default function PrivacidadPage() {
           <p>Los datos son procesados por los siguientes encargados:</p>
           <ul>
             <li><strong>Vercel Inc.</strong> (alojamiento) — servidores en EU</li>
-            <li><strong>Groq Inc.</strong> (modelo de IA Llama 3.3) — procesa el contenido del análisis</li>
+            <li><strong>Groq Inc.</strong> (modelo de lenguaje) — procesa el contenido del análisis</li>
             <li><strong>Yahoo Finance</strong> (precios de mercado) — solo recibe tickers, no datos personales</li>
             <li><strong>Resend</strong> — almacena la lista de la newsletter y envía los correos</li>
           </ul>
