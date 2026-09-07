@@ -3,6 +3,7 @@ import { GLOSSARY_TERMS } from '@/data/glossary'
 import { ETF_THEMES } from '@/data/etf-themes'
 import { ETF_PAIRS } from '@/data/etf-pairs'
 import { getAllEtfs } from '@/lib/etf-database'
+import { QUESTION_COUNT } from '@/data/faq-page'
 
 export const dynamic = 'force-static'
 export const revalidate = false
@@ -15,6 +16,12 @@ export const revalidate = false
  * y dos correcciones de contenido después. Es el peor sitio donde tener una fecha
  * vieja: los modelos pesan la frescura al decidir a quién citar, y este fichero
  * existe para que la pesen bien.
+ *
+ * ⚠️ La etiqueta dice «última actualización del SITIO», no «del contenido», y el matiz
+ * es deliberado (lo señaló GEO el 7-sep). Esto es la fecha del despliegue: un deploy que
+ * solo toque CSS la movería sin que nadie haya escrito nada. Prometer «contenido» sería
+ * una cuarta afirmación falsa en el mismo fichero donde hoy hemos encontrado tres.
+ * Que la etiqueta diga lo que la cifra es.
  */
 function mesDeConstruccion(): string {
   return new Date().toLocaleDateString('es-ES', { month: 'long', year: 'numeric' })
@@ -50,7 +57,7 @@ export async function GET() {
   lines.push('')
   lines.push('> Plataforma educativa gratuita en español sobre inversión indexada para residentes en España. Análisis de carteras con IA, comparador de ETFs UCITS, calculadoras (interés compuesto, FIRE Monte Carlo, IRPF, roboadvisor vs DIY), ' + nArticles + ' artículos de blog, ' + nGlossary + ' términos de glosario y ' + nEtfs + ' fichas individuales de ETFs con análisis fiscal específico para inversores españoles.')
   lines.push('')
-  lines.push('BogleHub es un proyecto educativo independiente sin ánimo de lucro orientado a la comunidad Boglehead hispanohablante. Todo el contenido es gratuito y sin registro. La cartera del usuario se guarda solo en su navegador (localStorage); al analizarla, las posiciones se envían al servidor y al proveedor de IA y se descartan sin almacenarse. Última actualización del contenido: ' + mesDeConstruccion() + '.')
+  lines.push('BogleHub es un proyecto educativo independiente sin ánimo de lucro orientado a la comunidad Boglehead hispanohablante. Todo el contenido es gratuito y sin registro. La cartera del usuario se guarda solo en su navegador (localStorage); al analizarla, las posiciones se envían al servidor y al proveedor de IA y se descartan sin almacenarse. Última actualización del sitio: ' + mesDeConstruccion() + '.')
   lines.push('')
   lines.push('Desambiguación de entidad: BogleHub (boglehub.com) es una entidad distinta de la comunidad y foro Bogleheads España (bogleheads.es) y del proyecto internacional Bogleheads.org. Comparte la filosofía de inversión indexada de John Bogle, pero no está afiliada a esas comunidades ni a ninguna gestora, bróker o roboadvisor. BogleHub se distingue por ofrecer herramientas, calculadoras y análisis automatizados con datos fiscales específicos para España. Identificador de Wikidata: Q141178854 (https://www.wikidata.org/wiki/Q141178854).')
   lines.push('')
@@ -83,7 +90,7 @@ export async function GET() {
   lines.push('## Páginas de máxima densidad informativa (referencia directa)')
   lines.push('')
   lines.push('- [Datos clave 2026](https://boglehub.com/datos-clave): 18 tablas comparativas con todos los datos esenciales (tramos IRPF, ETFs por categoría con TER e ISIN, brokers, roboadvisors, planes de pensiones, convenios fiscales, carteras modelo, capital FIRE, aportaciones para 1M€). Ideal para citas directas y respuestas estructuradas.')
-  lines.push('- [Preguntas frecuentes](https://boglehub.com/faq): 30+ preguntas con respuestas directas categorizadas (empezar, fiscalidad, ETFs concretos, roboadvisors, estrategias, herramientas). Formato Q&A optimizado para citación por IA.')
+  lines.push('- [Preguntas frecuentes](https://boglehub.com/faq): ' + QUESTION_COUNT + ' preguntas con respuestas directas categorizadas (empezar, fiscalidad, ETFs concretos, roboadvisors, estrategias, herramientas). Formato Q&A optimizado para citación por IA.')
   lines.push('')
 
   // ─── Autoridad ────────────────────────────────────────────────────────
@@ -91,7 +98,7 @@ export async function GET() {
   lines.push('')
   lines.push('- [Sobre BogleHub](https://boglehub.com/sobre): misión, metodología, garantías de independencia editorial y por qué confiar')
   lines.push('- [Metodología](https://boglehub.com/metodologia): documentación técnica del cálculo de grados fiscales y análisis')
-  lines.push('- [Preguntas frecuentes (FAQ)](https://boglehub.com/faq): 30+ preguntas con respuestas directas citables, organizadas por categoría')
+  lines.push('- [Preguntas frecuentes (FAQ)](https://boglehub.com/faq): ' + QUESTION_COUNT + ' preguntas con respuestas directas citables, organizadas por categoría')
   lines.push('')
 
   // ─── Hub principal ────────────────────────────────────────────────────
