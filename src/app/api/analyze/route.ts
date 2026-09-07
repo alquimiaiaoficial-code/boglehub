@@ -53,7 +53,14 @@ export async function POST(req: NextRequest) {
       }
     })
 
-    const aiResult = await generateAiNarrative({ allocation, fire, positions: positionSummary })
+    // A la IA se le manda SOLO el resultado de la proyección, nunca la aportación mensual
+    // ni el objetivo del usuario: son circunstancias personales y el modelo no las necesita.
+    // La proyección completa sí se devuelve al navegador más abajo, que es quien la enseña.
+    const aiResult = await generateAiNarrative({
+      allocation,
+      fire: fire ? { yearsToFire: fire.yearsToFire } : undefined,
+      positions: positionSummary,
+    })
     // Si la IA falla, el análisis numérico se entrega igual: reparto por región y
     // sector, solapamiento, TER ponderado y proyección se calculan sin modelo. Es lo
     // que salvó la herramienta cuando Groq retiró el modelo en agosto de 2026: el

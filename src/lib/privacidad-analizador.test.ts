@@ -79,11 +79,17 @@ describe('lo que el sitio afirma sobre dónde van los datos de la cartera', () =
    * Ampliación del 7-sep-2026, misma tarde. Lo encontró GEO tirando del hallazgo de
    * Verificación sobre `CUMPLIMIENTO-LEGAL.md` §1.
    *
-   * La corrección de esta mañana decía «las POSICIONES viajan al servidor». No era falsa:
+   * La corrección de esa mañana decía «las POSICIONES viajan al servidor». No era falsa:
    * era **incompleta**. `src/lib/fire.ts` devuelve `{ ...input, yearsToFire }` en sus tres
-   * salidas —no resume la entrada, la devuelve entera— y `ai.ts:33` hace
-   * `JSON.stringify(input)`. Así que si el usuario rellena la proyección, a Groq viajan
-   * también **valor total de la cartera, aportación mensual y objetivo de patrimonio**.
+   * salidas —no resume la entrada, la devuelve entera— y `ai.ts` hacía
+   * `JSON.stringify(input)` del objeto completo. Así que a Groq viajaban también
+   * **aportación mensual y objetivo de patrimonio**.
+   *
+   * ⚠️ **Actualizado el 8-sep-2026: eso ya NO ocurre.** El fundador aprobó recortar el
+   * payload y el endpoint pasa ahora solo `{ yearsToFire }`. Esos datos siguen llegando a
+   * nuestro servidor —hacen falta para el cálculo— pero **no salen hacia el proveedor de
+   * IA**. Quien vigila esa frontera es `ai-payload.test.ts`; este test solo comprueba que
+   * los textos siguen nombrando esos datos y diciendo hasta dónde llegan.
    *
    * Y lo peor: estos mismos tests **consagraban la redacción incompleta como la correcta**.
    * Un verificador puede nacer describiendo de menos, no solo caducar.
@@ -99,11 +105,12 @@ describe('lo que el sitio afirma sobre dónde van los datos de la cartera', () =
     }
   })
 
-  it('si projectFire deja de devolver la entrada entera, hay que revisar esos textos', () => {
-    // Test invertido: el día que la proyección deje de echar `{ ...input }` al modelo,
-    // este test cae y obliga a releer lo que prometemos. Protege en las dos direcciones.
-    const fire = readFileSync('src/lib/fire.ts', 'utf8')
-    expect(fire).toMatch(/\.\.\.input/)
+  it('si cambia la forma del payload de IA, hay que revisar estos textos', () => {
+    // Test invertido. Ojo al matiz, corregido el 8-sep: `projectFire` SIGUE devolviendo
+    // `{ ...input }`, pero eso ya no llega al modelo — el endpoint recorta a `yearsToFire`.
+    // Lo que se vigila aquí es que `ai.ts` siga serializando su entrada entera, porque
+    // ese es el mecanismo por el que cualquier campo que se añada al tipo saldría hacia
+    // fuera sin que nadie lo decidiera. Fue exactamente así como se coló la aportación.
     const ai = readFileSync('src/lib/ai.ts', 'utf8')
     expect(ai).toContain('JSON.stringify(input')
   })
@@ -117,7 +124,11 @@ describe('lo que el sitio afirma sobre dónde van los datos de la cartera', () =
     // El riesgo que este test cubre sigue siendo el mismo: que alguien lo «simplifique»
     // para que cuadre con un eslogan.
     const politica = readFileSync('src/app/privacidad/page.tsx', 'utf8')
-    expect(politica).toMatch(/viajan al servidor/)
+    // Aserción por INTENCIÓN, no por redacción literal: el texto se reescribió el 8-sep
+    // («al servidor» → «a nuestro servidor») y este test cayó por una preposición, no por
+    // un problema real. Un test pegado a la prosa exacta convierte cada mejora de redacción
+    // en un fallo, y empuja a tocar el texto publicado para que el test pase.
+    expect(politica).toMatch(/viajan a (nuestro )?servidor/)
     expect(politica).toMatch(/Groq/)
     expect(politica).toMatch(/Estados Unidos/)
   })

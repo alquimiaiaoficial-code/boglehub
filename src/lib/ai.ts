@@ -1,5 +1,5 @@
 import Groq from 'groq-sdk'
-import { AllocationBreakdown, FireProjection, Result } from '@/types/analysis'
+import { AllocationBreakdown, Result } from '@/types/analysis'
 
 
 import { GROQ_MODEL } from './groq-model'
@@ -25,9 +25,26 @@ REGLAS NO NEGOCIABLES:
 - NUNCA propongas una cartera concreta, ni por pesos ni por productos.
 - Máximo 400 palabras, formato Markdown con headings claros.`
 
+/**
+ * Lo que sale hacia el proveedor de IA. Deliberadamente MÁS ESTRECHO que lo que recibe
+ * el endpoint.
+ *
+ * Hasta el 8-sep-2026 aquí entraba la `FireProjection` completa, y como `projectFire`
+ * devuelve `{ ...input, yearsToFire }` —no resume la entrada, la devuelve entera— a Groq
+ * viajaban la **aportación mensual** y el **objetivo de patrimonio** del usuario. Eso son
+ * circunstancias personales (capacidad de ahorro y horizonte), y `CUMPLIMIENTO-LEGAL.md`
+ * §1 se defendía precisamente diciendo que la herramienta no las conocía.
+ *
+ * El modelo no las necesita para comentar una cartera: le basta el resultado derivado.
+ * La proyección se sigue calculando en el servidor y se sigue mostrando entera al usuario.
+ *
+ * ⚠️ Si alguien vuelve a ensanchar este tipo, hay que revisar §1 y los textos de privacidad
+ * el mismo día. Hay tests que lo vigilan (`ai-payload.test.ts`).
+ */
 interface AnalyzeInput {
   allocation: AllocationBreakdown
-  fire?: FireProjection
+  /** Solo el resultado derivado. NUNCA la aportación mensual ni el objetivo. */
+  fire?: { yearsToFire: number }
   positions: Array<{ ticker: string; valueEUR: number; weight: number }>
 }
 

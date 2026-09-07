@@ -16,7 +16,7 @@ const ANALYZER_FAQ: { q: string; a: string }[] = [
   },
   {
     q: '¿Se guardan mis datos de inversión en algún servidor?',
-    a: 'Tu cartera se guarda solo en tu navegador (localStorage) y puedes borrarla cuando quieras. Al pulsar «Analizar», las posiciones sí viajan a nuestro servidor y al proveedor de IA (Groq) para generar el análisis. Y si rellenas la proyección de independencia financiera, viajan también el valor total de tu cartera, tu aportación mensual y tu objetivo. Todo se descarta al terminar: no se almacena ni se asocia a ti. Los detalles, en la política de privacidad.',
+    a: 'Tu cartera se guarda solo en tu navegador (localStorage) y puedes borrarla cuando quieras. Al pulsar «Analizar», las posiciones sí viajan a nuestro servidor y al proveedor de IA (Groq) para generar el comentario. Si rellenas la proyección de independencia financiera, tu aportación mensual y tu objetivo llegan solo a nuestro servidor, que hace el cálculo: a Groq no se le envían, solo el número de años resultante. Todo se descarta al terminar: no se almacena ni se asocia a ti. Los detalles, en la política de privacidad.',
   },
   {
     q: '¿Qué brókers reconoce automáticamente desde el PDF?',
@@ -93,9 +93,9 @@ export default function AnalyzerPage() {
               ETFs con inteligencia artificial: asignación por clase de activo,
               diversificación geográfica y sectorial, TER ponderado, solapamiento entre ETFs, grado
               fiscal por ETF para residentes en España y proyección FIRE. Sin registro: tu cartera se
-              guarda solo en tu navegador. Lo que se envía para analizarla —las posiciones y,
-              si rellenas la proyección, tu aportación mensual y tu objetivo— se descarta sin
-              almacenarse.
+              guarda solo en tu navegador. Las posiciones se envían al servidor y al proveedor
+              de IA para analizarlas; tu aportación mensual y tu objetivo, si los rellenas, no
+              salen de nuestro servidor. Nada se almacena.
             </p>
             <ul className="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-sm text-fg-subtle">
               <li>✓ Trade Republic, DEGIRO, MyInvestor, ING — detección por PDF</li>
