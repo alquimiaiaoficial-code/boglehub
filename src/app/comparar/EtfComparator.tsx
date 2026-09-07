@@ -127,10 +127,12 @@ export function EtfComparator() {
         <div className="mx-auto max-w-5xl px-4 sm:px-6 py-10">
           <header className="mb-8">
             <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">
-              Comparar ETFs
+              Comparar ETFs UCITS en España
             </h1>
-            <p className="mt-2 text-fg-muted">
-              Elige dos ETFs para ver sus diferencias en detalle: costes, geografía y solapamiento.
+            <p className="mt-2 text-fg-muted max-w-2xl">
+              Compara dos ETFs lado a lado: TER, domicilio fiscal, clase de activo, divisa,
+              asignación geográfica y sectorial, solapamiento y eficiencia fiscal para el
+              inversor residente en España. Sin registro.
             </p>
           </header>
 

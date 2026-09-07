@@ -28,20 +28,11 @@ export default function CompararPage() {
           ],
         }}
       />
-      {/* Contenido estático indexable por Googlebot */}
-      <div className="mx-auto max-w-5xl px-4 sm:px-6 pt-8 pb-4">
-        <header className="mb-6">
-          <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">
-            Comparar ETFs UCITS en España
-          </h1>
-          <p className="mt-2 text-fg-muted max-w-2xl">
-            Compara dos ETFs lado a lado: TER, domicilio fiscal, clase de activo, divisa,
-            asignación geográfica y sectorial, solapamiento y eficiencia fiscal para el
-            inversor residente en España. Gratis, sin registro.
-          </p>
-        </header>
-      </div>
-      {/* Herramienta interactiva */}
+      {/* El H1 y el texto indexable viven dentro de EtfComparator, DEBAJO de <Header/>.
+          Antes estaban aquí, delante del componente, y eso empujaba la cabecera del sitio
+          ~200 px hacia abajo: en /comparar el menú aparecía a media página y en el resto
+          del sitio arriba del todo. Lo cazó un usuario externo el 7-sep-2026 mirando la
+          web con el fundador delante. De paso había DOS <h1> en la misma página. */}
       <EtfComparator />
     </>
   )

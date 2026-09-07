@@ -60,7 +60,7 @@ export default function HomePage() {
             <div className="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
               <Link href="/analyzer">
                 <Button variant="accent" size="lg">
-                  Empezar gratis
+                  Analizar mi cartera
                   <ArrowRight className="h-4 w-4" />
                 </Button>
               </Link>
@@ -464,7 +464,7 @@ export default function HomePage() {
             <p className="mt-4 text-lg text-fg-muted">Sin registro. En 30 segundos.</p>
             <Link href="/analyzer" className="mt-8 inline-block">
               <Button variant="accent" size="lg">
-                Empezar gratis
+                Analizar mi cartera
                 <ArrowRight className="h-4 w-4" />
               </Button>
             </Link>

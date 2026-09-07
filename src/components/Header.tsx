@@ -17,7 +17,7 @@ export function Header() {
           <Link href="/blog" className="hover:text-fg transition-colors">Blog</Link>
         </nav>
         <Link href="/analyzer">
-          <Button size="sm" variant="accent">Empezar gratis</Button>
+          <Button size="sm" variant="accent">Analizar mi cartera</Button>
         </Link>
       </div>
     </header>
