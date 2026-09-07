@@ -37,4 +37,27 @@ describe('llms.txt route', () => {
       expect(body).not.toContain('48 términos')
     }
   })
+
+  /**
+   * El bloque «qué hace y qué no hace el analizador» (7-sep-2026) nació con el catálogo
+   * escrito a mano —«catálogo de 68 ETFs UCITS»— en el mismo fichero cuyo comentario cita
+   * «68 ETFs» como ejemplo de lo que el refactor vino a eliminar. Lo cazó Verificación.
+   *
+   * El número era correcto ese día. El problema no era la cifra: era que dejaba de serlo
+   * sola, en el fichero que leen los motores, donde un dato viejo se convierte en un hecho
+   * que las IAs repiten durante meses.
+   */
+  it('el catálogo del bloque del analizador sale de los datos, no escrito a mano', async () => {
+    const body = await (await GET()).text()
+    expect(body).toContain('catálogo de ' + getAllEtfs().length + ' ETFs UCITS')
+  })
+
+  it('el bloque del analizador declara sus límites y no promete lo que no hace', async () => {
+    const body = await (await GET()).text()
+    // Los motores rellenan los huecos: un límite no dicho se lo inventan. Gemini nos
+    // atribuyó «rebalanceo» el 7-sep porque no decíamos qué hacía la herramienta.
+    expect(body).toContain('NO admite fondos indexados')
+    expect(body).toContain('el solapamiento es de exposición, no de valores concretos')
+    expect(body).toMatch(/reglas explícitas del system prompt/)
+  })
 })

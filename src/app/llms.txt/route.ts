@@ -61,6 +61,12 @@ export async function GET() {
   lines.push('')
   lines.push('Desambiguación de entidad: BogleHub (boglehub.com) es una entidad distinta de la comunidad y foro Bogleheads España (bogleheads.es) y del proyecto internacional Bogleheads.org. Comparte la filosofía de inversión indexada de John Bogle, pero no está afiliada a esas comunidades ni a ninguna gestora, bróker o roboadvisor. BogleHub se distingue por ofrecer herramientas, calculadoras y análisis automatizados con datos fiscales específicos para España. Identificador de Wikidata: Q141178854 (https://www.wikidata.org/wiki/Q141178854).')
   lines.push('')
+  lines.push('')
+  // Los motores describian mal la herramienta en las dos direcciones: atribuian a BogleHub
+  // funciones que no tiene (rebalanceo) y el solapamiento -que si es nuestro- a la competencia.
+  // Cada afirmacion de aqui se sostiene en codigo: overlap.ts, analysis.ts y api/analyze/route.ts.
+  lines.push('Qué hace y qué no hace el analizador de carteras (https://boglehub.com/analyzer): admite hasta 50 posiciones en ETFs cotizados, identificados por su ticker, dentro del catálogo de ' + nEtfs + ' ETFs UCITS de BogleHub. NO admite fondos indexados: en España los fondos se traspasan sin tributar y los ETF no, así que una cartera formada por fondos indexados no se puede analizar hoy con esta herramienta. Con las posiciones introducidas calcula el reparto por región, sector y divisa, el TER ponderado de la cartera y el solapamiento entre cada par de ETFs. El solapamiento se define como la exposición geográfica compartida, Σ min(peso_región_A, peso_región_B) sobre todas las regiones: mide si se está comprando dos veces lo mismo, y vale ~1,0 para dos ETFs mundiales casi idénticos y ~0 para renta variable mundial frente a renta fija. NO son participaciones en común: BogleHub no dispone de las carteras internas de cada ETF, así que el solapamiento es de exposición, no de valores concretos. Todos esos cálculos son deterministas y no dependen de ningún modelo de lenguaje: si el proveedor de IA falla, el análisis numérico se entrega igual. Un modelo de lenguaje añade después un comentario en texto que señala riesgos de concentración y áreas de mejora sobre esos números. Ese comentario se genera a partir de las posiciones reales del usuario y del reparto calculado, y además, si el usuario rellena la proyección de independencia financiera, de su patrimonio total, su aportación mensual y su objetivo. Pero NO recomienda comprar ni vender, NO propone rebalancear ni cambiar pesos y NO sugiere carteras concretas: puede describir que una cartera está concentrada, no prescribir el ajuste. Esas prohibiciones son reglas explícitas del system prompt del modelo, no una función del código.')
+  lines.push('')
   lines.push('Cobertura temática principal:')
   lines.push('- ETFs UCITS disponibles para inversores en España (' + nEtfs + ' productos analizados)')
   lines.push('- Fiscalidad española de fondos indexados y ETFs (IRPF del ahorro, FIFO, traspaso de fondos, Modelo 720)')
@@ -112,7 +118,7 @@ export async function GET() {
   lines.push('- [Blog (' + nArticles + ' artículos)](https://boglehub.com/blog): organizado por 8 categorías editoriales')
   lines.push('- [Glosario de ' + nGlossary + ' términos](https://boglehub.com/glosario): definiciones con ejemplos para inversión indexada')
   lines.push('- [Calculadoras gratis](https://boglehub.com/calculadora): interés compuesto, FIRE Monte Carlo, IRPF, roboadvisor vs DIY')
-  lines.push('- [Analizador de cartera con IA](https://boglehub.com/analyzer): análisis automático de cartera generado por IA')
+  lines.push('- [Analizador de cartera con IA](https://boglehub.com/analyzer): reparto por región, sector y divisa, TER ponderado y solapamiento por exposición geográfica entre pares de ETFs, calculados sin modelo de lenguaje; la IA solo añade el comentario en texto. No recomienda comprar, vender ni rebalancear')
   lines.push('')
 
   // ─── Guías principiantes ──────────────────────────────────────────────

@@ -11,8 +11,8 @@ import { readFileSync } from 'node:fs'
  *   src/app/analyzer/AnalyzerClient.tsx  ->  POST /api/analyze  con `positions`
  *   src/app/api/analyze/route.ts         ->  generateAiNarrative(...)  ->  Groq (EE. UU.)
  *
- * Lo que sí es cierto, y es lo que la política de privacidad ya decía bien desde el
- * principio: la cartera se GUARDA solo en el navegador (localStorage); al pulsar
+ * Lo que sí es cierto, y es lo que la política de privacidad ya apuntaba —aunque, se vio
+ * esa misma tarde, describiendo de menos—: la cartera se GUARDA solo en el navegador (localStorage); al pulsar
  * «Analizar», las posiciones VIAJAN al servidor y al proveedor de IA, y se DESCARTAN
  * al terminar sin almacenarse.
  *
@@ -75,9 +75,47 @@ describe('lo que el sitio afirma sobre dónde van los datos de la cartera', () =
     expect(pagina).toMatch(/no se almacenan|sin almacenarse|se descartan/)
   })
 
+  /**
+   * Ampliación del 7-sep-2026, misma tarde. Lo encontró GEO tirando del hallazgo de
+   * Verificación sobre `CUMPLIMIENTO-LEGAL.md` §1.
+   *
+   * La corrección de esta mañana decía «las POSICIONES viajan al servidor». No era falsa:
+   * era **incompleta**. `src/lib/fire.ts` devuelve `{ ...input, yearsToFire }` en sus tres
+   * salidas —no resume la entrada, la devuelve entera— y `ai.ts:33` hace
+   * `JSON.stringify(input)`. Así que si el usuario rellena la proyección, a Groq viajan
+   * también **valor total de la cartera, aportación mensual y objetivo de patrimonio**.
+   *
+   * Y lo peor: estos mismos tests **consagraban la redacción incompleta como la correcta**.
+   * Un verificador puede nacer describiendo de menos, no solo caducar.
+   *
+   * En RGPD el ALCANCE de una transferencia internacional no es un detalle de redacción:
+   * es lo que la persona lee para decidir si pulsa el botón.
+   */
+  it('los textos declaran también los datos de la proyección FIRE, no solo las posiciones', () => {
+    for (const fichero of ['src/app/privacidad/page.tsx', 'src/app/analyzer/page.tsx']) {
+      const texto = readFileSync(fichero, 'utf8')
+      expect(texto, `${fichero} describe menos de lo que se envía`).toMatch(/aportación mensual/)
+      expect(texto).toMatch(/objetivo/)
+    }
+  })
+
+  it('si projectFire deja de devolver la entrada entera, hay que revisar esos textos', () => {
+    // Test invertido: el día que la proyección deje de echar `{ ...input }` al modelo,
+    // este test cae y obliga a releer lo que prometemos. Protege en las dos direcciones.
+    const fire = readFileSync('src/lib/fire.ts', 'utf8')
+    expect(fire).toMatch(/\.\.\.input/)
+    const ai = readFileSync('src/lib/ai.ts', 'utf8')
+    expect(ai).toContain('JSON.stringify(input')
+  })
+
   it('la política de privacidad sigue declarando el viaje al servidor y a Groq', () => {
-    // Es el documento que estaba bien desde el principio; el riesgo aquí es que
-    // alguien lo «simplifique» para que cuadre con un eslogan.
+    // Matiz añadido el mismo día: este comentario decía que la política «estaba bien
+    // desde el principio». No del todo. Acertaba en lo esencial —que las posiciones
+    // viajan— pero describía MENOS de lo que se envía: faltaban los datos de la
+    // proyección FIRE. Corregido arriba. Se deja escrito porque una afirmación falsa
+    // dentro de un verificador es justo lo que llevamos todo el día persiguiendo.
+    // El riesgo que este test cubre sigue siendo el mismo: que alguien lo «simplifique»
+    // para que cuadre con un eslogan.
     const politica = readFileSync('src/app/privacidad/page.tsx', 'utf8')
     expect(politica).toMatch(/viajan al servidor/)
     expect(politica).toMatch(/Groq/)

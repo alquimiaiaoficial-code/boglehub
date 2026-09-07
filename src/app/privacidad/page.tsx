@@ -28,7 +28,7 @@ export default function PrivacidadPage() {
           <p>BogleHub está diseñado para minimizar al máximo la recogida de datos personales:</p>
           <ul>
             <li><strong>Datos de tu cartera (ETFs, participaciones, precios):</strong> se almacenan exclusivamente en el <code>localStorage</code> de tu navegador. <strong>Nunca se guardan en nuestros servidores.</strong></li>
-            <li><strong>Datos técnicos durante el análisis:</strong> al pulsar &quot;Analizar&quot;, tus posiciones viajan al servidor para procesar la respuesta IA. Una vez generada la respuesta, se descartan inmediatamente.</li>
+            <li><strong>Datos técnicos durante el análisis:</strong> al pulsar &quot;Analizar&quot;, tus posiciones viajan al servidor y de ahí al proveedor de IA. Si además rellenas la proyección de independencia financiera, viajan también <strong>el valor total de tu cartera, tu aportación mensual y tu objetivo de patrimonio</strong>. Una vez generada la respuesta, se descartan inmediatamente y no se asocian a ti.</li>
             <li><strong>Datos de navegación anónimos:</strong> Vercel registra direcciones IP, navegador y rendimiento por seguridad y operación del servicio. No se asocian a tu cartera.</li>
           </ul>
 
