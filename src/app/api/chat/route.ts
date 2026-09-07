@@ -5,6 +5,7 @@ import { rateLimit } from '@/lib/rate-limit'
 
 
 import { GROQ_MODEL } from '@/lib/groq-model'
+import { clasificarFalloDeIa } from '@/lib/fallo-ia'
 const MessageSchema = z.object({
   role: z.enum(['user', 'assistant', 'system']),
   content: z.string().min(1).max(8000),
@@ -97,13 +98,20 @@ export async function POST(req: NextRequest) {
     console.error('[chat] fallo al llamar al modelo:', err)
 
     const detalle = err instanceof Error ? err.message : String(err)
-    const esModeloRetirado =
-      detalle.includes('model_not_found') || detalle.includes('does not exist')
+    // Clasificación de la causa, añadida el 8-sep-2026 tras una caída que costó
+    // media hora de diagnóstico a ciegas: el chat devolvía 502 genérico y desde fuera
+    // era imposible distinguir «clave rechazada» de «sin cuota» o «Groq caído». El
+    // usuario ve el mismo mensaje amable en todos los casos; lo que cambia es el
+    // registro del servidor y el código de estado, que son para nosotros.
+    const causa = clasificarFalloDeIa(detalle)
+    console.error('[chat] causa clasificada:', causa)
 
-    const mensaje = esModeloRetirado
+    const mensaje = causa === 'modelo-retirado' || causa === 'credenciales'
       ? 'El chat no está disponible ahora mismo por un problema de configuración que ya conocemos. Mientras tanto puedes usar el analizador y las calculadoras, que funcionan sin IA.'
       : 'No he podido responder ahora mismo. Vuelve a intentarlo en unos segundos; si sigue fallando, el resto del sitio funciona con normalidad.'
 
-    return new Response(mensaje, { status: esModeloRetirado ? 503 : 502 })
+    // 503 = problema nuestro y conocido; 502 = el proveedor falló de forma inesperada.
+    const estado = causa === 'transitorio' ? 502 : 503
+    return new Response(mensaje, { status: estado })
   }
 }

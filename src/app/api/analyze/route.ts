@@ -5,6 +5,7 @@ import { calculateAllocation } from '@/lib/analysis'
 import { projectFire } from '@/lib/fire'
 import { fetchPrices } from '@/lib/prices'
 import { generateAiNarrative } from '@/lib/ai'
+import { clasificarFalloDeIa } from '@/lib/fallo-ia'
 import { rateLimit } from '@/lib/rate-limit'
 
 const BodySchema = z.object({
@@ -65,7 +66,12 @@ export async function POST(req: NextRequest) {
     // sector, solapamiento, TER ponderado y proyección se calculan sin modelo. Es lo
     // que salvó la herramienta cuando Groq retiró el modelo en agosto de 2026: el
     // chat quedó inservible, pero el analizador siguió dando lo esencial.
-    if (!aiResult.ok) console.error('[analyze] la narrativa de IA falló:', aiResult.error)
+    if (!aiResult.ok) {
+      // Se clasifica igual que en el chat: sin esto, una caída del proveedor y una clave
+      // revocada dejan exactamente el mismo rastro, y son problemas distintos.
+      const causa = clasificarFalloDeIa(String(aiResult.error?.message ?? aiResult.error))
+      console.error('[analyze] la narrativa de IA falló. Causa:', causa, '|', aiResult.error)
+    }
     const aiNarrative = aiResult.ok
       ? aiResult.value
       : 'El comentario generado por IA no está disponible ahora mismo. El resto del análisis —reparto por región y sector, solapamiento, TER ponderado y proyección— está calculado con tus datos y es correcto.'
