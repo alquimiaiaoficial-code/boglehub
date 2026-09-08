@@ -18,6 +18,26 @@ const LINK_HEADER = [
 ].join(', ')
 
 const nextConfig: NextConfig = {
+  /**
+   * Sin source maps en producción.
+   *
+   * Añadido el 8-sep-2026, cuando Vercel avisó de que el plan gratuito estaba al 100 % de
+   * sus 10 GB de almacenamiento de despliegues. Al medir el build salieron **430 ficheros
+   * .map ocupando 49 MB** de los ~356 MB de cada despliegue: source maps del servidor, que
+   * solo sirven para depurar y que en producción no lee nadie.
+   *
+   * El fundador es menor y no puede contratar el plan Pro, así que reducir no es una
+   * preferencia: es la única salida disponible.
+   *
+   * Documentado en `node_modules/next/dist/docs/01-app/02-guides/memory-usage.md`.
+   * Si algún día hace falta depurar un error de servidor en producción, se vuelven a
+   * activar temporalmente y se desactivan después.
+   */
+  productionBrowserSourceMaps: false,
+  experimental: {
+    serverSourceMaps: false,
+  },
+
   async redirects() {
     return [
       {
