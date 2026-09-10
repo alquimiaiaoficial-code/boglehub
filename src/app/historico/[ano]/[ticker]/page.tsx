@@ -13,13 +13,17 @@ import {
   getReturn,
 } from '@/data/historical-years'
 
-import { robotsFor } from '@/lib/seo-index-policy'
+import { robotsFor, soloIndexables } from '@/lib/seo-index-policy'
 const BASE_URL = 'https://boglehub.com'
 
 function formatPct(n: number): string {
   return `${n >= 0 ? '+' : ''}${(n * 100).toFixed(1)}%`
 }
 
+/**
+ * Bajo demanda: solo se pre-generan las que pedimos indexar (ver `soloIndexables`).
+ * Las demás se renderizan la primera vez que se visitan y quedan cacheadas.
+ */
 export function generateStaticParams() {
   const params: { ano: string; ticker: string }[] = []
   for (const event of YEAR_EVENTS) {
@@ -29,9 +33,12 @@ export function generateStaticParams() {
       }
     }
   }
-  return params
+  return soloIndexables(params, ({ ano, ticker }) => `/historico/${ano}/${ticker}`)
 }
-export const dynamicParams = false
+// `true` (el valor por defecto, explícito aquí a propósito): las rutas que
+// `generateStaticParams` no devuelve se renderizan bajo demanda en vez de dar 404.
+// Las URL que no existen en el catálogo siguen dando 404 por el `notFound()` de abajo.
+export const dynamicParams = true
 
 export async function generateMetadata({
   params,

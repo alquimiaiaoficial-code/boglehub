@@ -10,10 +10,14 @@ import { getBrokerBySlug, BROKERS } from '@/data/brokers'
 import { computeFiscalGrade } from '@/lib/fiscal'
 import { formatPct } from '@/lib/utils'
 import { POPULAR_ETF_TICKERS, COVERED_BROKER_SLUGS, getAvailability } from '@/data/etf-broker-availability'
-import { robotsFor } from '@/lib/seo-index-policy'
+import { robotsFor, soloIndexables } from '@/lib/seo-index-policy'
 
 const BASE_URL = 'https://boglehub.com'
 
+/**
+ * Bajo demanda: solo se pre-generan las que pedimos indexar (ver `soloIndexables`).
+ * Las demás se renderizan la primera vez que se visitan y quedan cacheadas.
+ */
 export function generateStaticParams() {
   const params: { ticker: string; broker: string }[] = []
   for (const ticker of POPULAR_ETF_TICKERS) {
@@ -24,10 +28,13 @@ export function generateStaticParams() {
       }
     }
   }
-  return params
+  return soloIndexables(params, ({ ticker, broker }) => `/comprar/${ticker}/${broker}`)
 }
 
-export const dynamicParams = false
+// `true` (el valor por defecto, explícito aquí a propósito): las rutas que
+// `generateStaticParams` no devuelve se renderizan bajo demanda en vez de dar 404.
+// Las URL que no existen en el catálogo siguen dando 404 por el `notFound()` de abajo.
+export const dynamicParams = true
 
 export async function generateMetadata({
   params,

@@ -15,7 +15,7 @@ import { BLOG_ARTICLES } from '@/data/blog-articles'
 import { getRelatedArticleSlugs } from '@/data/etf-related-articles'
 import type { EtfMetadata } from '@/types/etf'
 
-import { robotsFor } from '@/lib/seo-index-policy'
+import { robotsFor, soloIndexables } from '@/lib/seo-index-policy'
 const BASE_URL = 'https://boglehub.com'
 
 // ---------------------------------------------------------------------------
@@ -113,9 +113,21 @@ const SECTOR_LABEL: Record<string, string> = {
   DIVERSIFIED: 'Diversificado',
 }
 
+/**
+ * Bajo demanda: solo se pre-generan las que pedimos indexar (ver `soloIndexables`).
+ * Las demás se renderizan la primera vez que se visitan y quedan cacheadas.
+ */
 export function generateStaticParams() {
-  return getAllEtfs().map((etf) => ({ ticker: etf.ticker.toLowerCase() }))
+  return soloIndexables(
+    getAllEtfs().map((etf) => ({ ticker: etf.ticker.toLowerCase() })),
+    ({ ticker }) => `/etf/${ticker}`,
+  )
 }
+
+// `true` (el valor por defecto, explícito aquí a propósito): las rutas que
+// `generateStaticParams` no devuelve se renderizan bajo demanda en vez de dar 404.
+// Las URL que no existen en el catálogo siguen dando 404 por el `notFound()` de abajo.
+export const dynamicParams = true
 
 export async function generateMetadata({
   params,

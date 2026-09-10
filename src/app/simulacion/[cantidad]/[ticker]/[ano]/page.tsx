@@ -15,7 +15,7 @@ import {
   getAllHistoricalCombos,
 } from '@/data/historical-returns'
 
-import { robotsFor } from '@/lib/seo-index-policy'
+import { robotsFor, soloIndexables } from '@/lib/seo-index-policy'
 const BASE_URL = 'https://boglehub.com'
 const REFERENCE_YEAR = 2024
 
@@ -23,14 +23,24 @@ function formatEUR(n: number): string {
   return new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }).format(n)
 }
 
+/**
+ * Bajo demanda: solo se pre-generan las que pedimos indexar (ver `soloIndexables`).
+ * Las demás se renderizan la primera vez que se visitan y quedan cacheadas.
+ */
 export function generateStaticParams() {
-  return getAllHistoricalCombos().map(({ amount, ticker, year }) => ({
-    cantidad: amount.toString(),
-    ticker: ticker.toLowerCase(),
-    ano: year.toString(),
-  }))
+  return soloIndexables(
+    getAllHistoricalCombos().map(({ amount, ticker, year }) => ({
+      cantidad: amount.toString(),
+      ticker: ticker.toLowerCase(),
+      ano: year.toString(),
+    })),
+    ({ cantidad, ticker, ano }) => `/simulacion/${cantidad}/${ticker}/${ano}`,
+  )
 }
-export const dynamicParams = false
+// `true` (el valor por defecto, explícito aquí a propósito): las rutas que
+// `generateStaticParams` no devuelve se renderizan bajo demanda en vez de dar 404.
+// Las URL que no existen en el catálogo siguen dando 404 por el `notFound()` de abajo.
+export const dynamicParams = true
 
 export async function generateMetadata({
   params,

@@ -7,7 +7,7 @@ import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
 import { AGES, getAgeBySlug } from '@/data/ages'
 import { OBJECTIVES, getObjectiveBySlug, monthlyToReach } from '@/data/objectives'
-import { robotsFor } from '@/lib/seo-index-policy'
+import { robotsFor, soloIndexables } from '@/lib/seo-index-policy'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -15,6 +15,10 @@ function formatEUR(n: number): string {
   return new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }).format(n)
 }
 
+/**
+ * Bajo demanda: solo se pre-generan las que pedimos indexar (ver `soloIndexables`).
+ * Las demás se renderizan la primera vez que se visitan y quedan cacheadas.
+ */
 export function generateStaticParams() {
   const params: { edad: string; objetivo: string }[] = []
   for (const age of AGES) {
@@ -22,9 +26,12 @@ export function generateStaticParams() {
       params.push({ edad: age.slug, objetivo: obj.slug })
     }
   }
-  return params
+  return soloIndexables(params, ({ edad, objetivo }) => `/plan/${edad}/${objetivo}`)
 }
-export const dynamicParams = false
+// `true` (el valor por defecto, explícito aquí a propósito): las rutas que
+// `generateStaticParams` no devuelve se renderizan bajo demanda en vez de dar 404.
+// Las URL que no existen en el catálogo siguen dando 404 por el `notFound()` de abajo.
+export const dynamicParams = true
 
 export async function generateMetadata({ params }: { params: Promise<{ edad: string; objetivo: string }> }): Promise<Metadata> {
   const { edad, objetivo } = await params

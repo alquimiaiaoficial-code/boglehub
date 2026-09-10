@@ -13,11 +13,17 @@
  * útiles para quien llega a ellas y siguen repartiendo enlaces internos, pero
  * dejan de competir por el presupuesto de rastreo.
  *
- * Esta política es la ÚNICA fuente de verdad. La aplican dos sitios:
+ * Esta política es la ÚNICA fuente de verdad. La aplican TRES sitios:
  *   1. `src/app/sitemap.ts` — filtra las URLs que se envían.
  *   2. El `generateMetadata` de cada ruta afectada — emite la meta robots.
- * Las dos deben coincidir siempre: un sitemap que anuncia una URL con noindex
- * es una señal contradictoria.
+ *   3. El `generateStaticParams` de cada ruta afectada — decide qué se pre-genera
+ *      en el build y qué se renderiza bajo demanda (ver `soloIndexables`).
+ * Los tres deben coincidir siempre: un sitemap que anuncia una URL con noindex
+ * es una señal contradictoria, y pre-generar 1.089 páginas que pedimos NO indexar
+ * es pagar el coste sin la contrapartida.
+ *
+ * ⚠️ Este comentario dice "TRES" desde el 10-sep-2026. Si algún día lo aplica un
+ * cuarto sitio, se actualiza aquí. Un comentario que enumera lugares caduca solo.
  */
 import { slugToPair } from '@/data/etf-pairs'
 
@@ -110,4 +116,33 @@ export const NOINDEX_METADATA = {
 /** Bloque `robots` listo para insertar en un `generateMetadata`, o nada si la ruta se indexa. */
 export function robotsFor(path: string) {
   return shouldIndex(path) ? undefined : NOINDEX_METADATA
+}
+
+/**
+ * Filtra los params de un `generateStaticParams` dejando SOLO los que pedimos indexar.
+ * Los demás no se pre-generan: se renderizan la primera vez que alguien los visita y
+ * quedan cacheados (ISR). Requiere `dynamicParams = true`, que es el valor por defecto.
+ *
+ * Por qué existe (10-sep-2026). El recorte de agosto marcó 1.089 páginas como
+ * `noindex, follow`, pero el build las seguía generando TODAS: ~1.089 ficheros HTML por
+ * despliegue de páginas que le pedimos a Google que no indexe. Eso costó el 100 % de la
+ * cuota de almacenamiento de Vercel —y el fundador es menor, no puede contratar el plan
+ * de pago—, así que reducir el build no era una optimización sino la única salida.
+ *
+ * Se descartó la alternativa de devolverlas 404. La razón la dio SEO y es de método, no de
+ * SEO: entre el 20 y el 27-sep se mide el efecto del recorte, y meter 1.089 URLs a 404 en
+ * esa misma ventana haría imposible separar qué causó qué. Bajo demanda las páginas siguen
+ * devolviendo 200 con la misma meta robots, así que la única variable que cambia es dónde
+ * se renderizan. El borrado de verdad —con 410, no 404— se decide después del 20-sep.
+ *
+ * Ojo al matiz que hace esto seguro: `shouldIndex` es la MISMA función que filtra el
+ * sitemap y emite el `robots`. Si mañana una familia vuelve al índice, vuelve a
+ * pre-generarse sola, sin tocar trece ficheros ni acordarse de ninguno.
+ *
+ * @param params  Lo que el `generateStaticParams` iba a devolver.
+ * @param ruta    Cómo se construye la URL de un param. Debe coincidir EXACTAMENTE con el
+ *                `canonical` de esa página, o el filtro decidirá sobre una ruta que no existe.
+ */
+export function soloIndexables<P>(params: readonly P[], ruta: (param: P) => string): P[] {
+  return params.filter((param) => shouldIndex(ruta(param)))
 }

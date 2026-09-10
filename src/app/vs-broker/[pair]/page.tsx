@@ -8,14 +8,24 @@ import { JsonLd } from '@/components/JsonLd'
 import { getBrokerBySlug, type Broker } from '@/data/brokers'
 import { BROKER_PAIRS, brokerPairToSlug, slugToBrokerPair } from '@/data/broker-pairs'
 
-import { robotsFor } from '@/lib/seo-index-policy'
+import { robotsFor, soloIndexables } from '@/lib/seo-index-policy'
 const BASE_URL = 'https://boglehub.com'
 
+/**
+ * Bajo demanda: solo se pre-generan las que pedimos indexar (ver `soloIndexables`).
+ * Las demás se renderizan la primera vez que se visitan y quedan cacheadas.
+ */
 export function generateStaticParams() {
-  return BROKER_PAIRS.map(([a, b]) => ({ pair: brokerPairToSlug(a, b) }))
+  return soloIndexables(
+    BROKER_PAIRS.map(([a, b]) => ({ pair: brokerPairToSlug(a, b) })),
+    ({ pair }) => `/vs-broker/${pair}`,
+  )
 }
 
-export const dynamicParams = false
+// `true` (el valor por defecto, explícito aquí a propósito): las rutas que
+// `generateStaticParams` no devuelve se renderizan bajo demanda en vez de dar 404.
+// Las URL que no existen en el catálogo siguen dando 404 por el `notFound()` de abajo.
+export const dynamicParams = true
 
 export async function generateMetadata({
   params,

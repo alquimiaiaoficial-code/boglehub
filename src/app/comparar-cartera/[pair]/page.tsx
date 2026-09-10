@@ -7,14 +7,24 @@ import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
 import { getPortfolioBySlug } from '@/data/model-portfolios'
 import { getAllPortfolioPairs, portfolioPairToSlug, slugToPortfolioPair } from '@/data/portfolio-pairs'
-import { robotsFor } from '@/lib/seo-index-policy'
+import { robotsFor, soloIndexables } from '@/lib/seo-index-policy'
 
 const BASE_URL = 'https://boglehub.com'
 
+/**
+ * Bajo demanda: solo se pre-generan las que pedimos indexar (ver `soloIndexables`).
+ * Las demás se renderizan la primera vez que se visitan y quedan cacheadas.
+ */
 export function generateStaticParams() {
-  return getAllPortfolioPairs().map(([a, b]) => ({ pair: portfolioPairToSlug(a, b) }))
+  return soloIndexables(
+    getAllPortfolioPairs().map(([a, b]) => ({ pair: portfolioPairToSlug(a, b) })),
+    ({ pair }) => `/comparar-cartera/${pair}`,
+  )
 }
-export const dynamicParams = false
+// `true` (el valor por defecto, explícito aquí a propósito): las rutas que
+// `generateStaticParams` no devuelve se renderizan bajo demanda en vez de dar 404.
+// Las URL que no existen en el catálogo siguen dando 404 por el `notFound()` de abajo.
+export const dynamicParams = true
 
 export async function generateMetadata({ params }: { params: Promise<{ pair: string }> }): Promise<Metadata> {
   const { pair } = await params

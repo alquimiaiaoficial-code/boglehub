@@ -10,7 +10,7 @@ import { computeFiscalGrade, GRADE_STYLES } from '@/lib/fiscal'
 import { formatPct } from '@/lib/utils'
 import { ETF_PAIRS, slugToPair, pairToSlug, getAllPossiblePairs } from '@/data/etf-pairs'
 import type { EtfMetadata, Region } from '@/types/etf'
-import { robotsFor } from '@/lib/seo-index-policy'
+import { robotsFor, soloIndexables } from '@/lib/seo-index-policy'
 
 import { DescargoFiscal } from '@/components/DescargoFiscal'
 const BASE_URL = 'https://boglehub.com'
@@ -18,12 +18,23 @@ const CURRENT_YEAR = 2026
 
 // ─── Static params ────────────────────────────────────────────────────────────
 
+/**
+ * Bajo demanda: solo se pre-generan las que pedimos indexar (ver `soloIndexables`).
+ * Las demás se renderizan la primera vez que se visitan y quedan cacheadas.
+ */
 export function generateStaticParams() {
-  return getAllPossiblePairs().map(([a, b]) => ({ pair: pairToSlug(a, b) }))
+  return soloIndexables(
+    getAllPossiblePairs().map(([a, b]) => ({ pair: pairToSlug(a, b) })),
+    ({ pair }) => `/comparar/${pair}`,
+  )
 }
 
-// No generar páginas para pares no curados
-export const dynamicParams = false
+// Antes decía «No generar páginas para pares no curados», y desde el 10-sep-2026 eso es
+// falso: los 211 pares no curados SÍ se sirven, solo que se renderizan al visitarlos.
+// `true` (el valor por defecto, explícito aquí a propósito): las rutas que
+// `generateStaticParams` no devuelve se renderizan bajo demanda en vez de dar 404.
+// Las URL que no existen en el catálogo siguen dando 404 por el `notFound()` de abajo.
+export const dynamicParams = true
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
