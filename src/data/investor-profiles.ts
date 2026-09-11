@@ -246,7 +246,7 @@ export const INVESTOR_PROFILES: InvestorProfile[] = [
     faq: [
       {
         q: '¿Invierto 100.000€ de herencia todos de golpe o poco a poco?',
-        a: 'Matemáticamente, invertir todo de golpe (lump sum) supera al DCA en 2/3 de los periodos históricos porque el mercado tiende a subir. Pero si invertir todo de golpe te genera ansiedad o vas a vender en pánico ante la primera caída, el DCA en 12-24 meses es preferible aunque sea matemáticamente inferior. La peor cartera es la que abandonas a medio camino.',
+        a: 'Matemáticamente, invertir todo de golpe (lump sum) supera al DCA en 2/3 de los periodos históricos porque el mercado tiende a subir. Pero si invertir todo de golpe te genera ansiedad o vas a vender en pánico ante la primera caída, el DCA en 12-24 meses reduce ese riesgo de conducta, aunque sea matemáticamente inferior. La peor cartera es la que abandonas a medio camino.',
       },
     ],
   },

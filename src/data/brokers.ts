@@ -381,7 +381,7 @@ export const BROKERS: Broker[] = [
     faq: [
       {
         q: '¿ING es bueno para invertir en ETFs en 2026?',
-        a: 'Para el inversor indexado puro, las comisiones de ING son altas comparadas con brokers especializados. La cuenta corriente sin comisiones de ING es atractiva, pero para invertir es preferible operar en Trade Republic, MyInvestor o DEGIRO. Puedes tener nómina en ING y broker en otra entidad.',
+        a: 'Para el inversor indexado puro, las comisiones de ING son altas comparadas con brokers especializados. La cuenta corriente sin comisiones de ING es atractiva, pero para invertir, las comisiones de Trade Republic, MyInvestor o DEGIRO son sensiblemente más bajas. Puedes tener nómina en ING y broker en otra entidad.',
       },
     ],
   },

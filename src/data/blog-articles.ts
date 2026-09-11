@@ -6176,7 +6176,7 @@ Los datos históricos no predicen rentabilidades futuras, pero sí confirman que
 
 ## Para quién tiene sentido Indexa Capital
 
-Indexa es la opción correcta si:
+Indexa encaja con este perfil:
 
 - **No tienes tiempo o interés** en gestionar tu propia cartera pero quieres invertir mejor que con un banco tradicional
 - **Valoras la automatización**: el rebalanceo y las aportaciones periódicas funcionan solas, sin que dependan de tu fuerza de voluntad
@@ -7406,7 +7406,7 @@ Si ya tienes cuenta en MyInvestor por otros motivos y quieres delegar la gestió
 
 ## Para quién tiene sentido MyInvestor
 
-MyInvestor es la opción correcta si:
+MyInvestor encaja con este perfil:
 
 - **Quieres una cartera de fondos indexados** con traspaso fiscal libre
 - **Valoras tener todo en una sola plataforma**: cuenta, fondos, ETFs, pensiones, hipoteca
@@ -8458,7 +8458,7 @@ Funcionalmente equivalente a SXRV (mismo ISIN), pero cotiza en la Bolsa de Londr
 | Caída max histórica | ~80% (2000-2002) | ~50% (2008) |
 | Mejor periodo reciente | 2010-2020 (gran ciclo tech) | Más estable |
 
-**Para la mayoría de inversores indexados**, el S&P 500 es preferible como exposición americana principal por:
+**En la mayoría de carteras indexadas**, la exposición americana principal se cubre con el S&P 500 antes que con el Nasdaq 100, por:
 1. Mayor diversificación (500 vs 100 empresas)
 2. TER muy inferior (0,07% vs 0,30%)
 3. Menor concentración sectorial
@@ -8742,7 +8742,7 @@ Para profundizar en cómo integrar oro en una cartera con filosofía robust, lee
       },
       {
         q: '¿Es mejor MSCI World o MSCI ACWI para una cartera indexada?',
-        a: 'Para diversificación máxima global en un solo ETF, MSCI ACWI (o su equivalente FTSE All-World) es preferible: refleja el mercado real sin excluir economías importantes como China o India. Para quien quiera mayor control sobre el peso de emergentes o prefiera TER más bajo, combinar MSCI World + un ETF de emergentes por separado puede ser igual de bueno con mayor flexibilidad. Para la mayoría de inversores que empiezan, ACWI o All-World es la opción más sencilla.',
+        a: 'Para diversificación máxima global en un solo ETF, MSCI ACWI (o su equivalente FTSE All-World) refleja el mercado real sin excluir economías importantes como China o India. Para quien quiera mayor control sobre el peso de emergentes o prefiera TER más bajo, combinar MSCI World + un ETF de emergentes por separado puede ser igual de bueno con mayor flexibilidad. Para la mayoría de inversores que empiezan, ACWI o All-World es la opción más sencilla.',
       },
       {
         q: '¿Qué peso tienen los emergentes en MSCI ACWI?',

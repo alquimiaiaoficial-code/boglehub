@@ -60,7 +60,7 @@ export const ETF_THEMES: EtfTheme[] = [
     metaDescription:
       'Los mejores ETFs S&P 500 UCITS para España: CSPX, VUAA, SPXS y más, con TER desde 0,03%. Acumulación frente a distribución y disponibilidad por bróker.',
     intro:
-      'El S&P 500 agrupa las 500 mayores empresas cotizadas de Estados Unidos y es el índice bursátil más seguido del mundo. Invertir en él mediante un ETF UCITS ofrece acceso a gigantes como Apple, Microsoft o Nvidia junto con empresas de consumo, salud e industria. Para inversores españoles, la clave está en elegir un ETF domiciliado en Irlanda (grado fiscal A) y de clase acumulación para maximizar el efecto del interés compuesto. La diferencia entre tickers como CSPX y SXR8 es mínima: replican el mismo fondo, simplemente cotizan en bolsas distintas.',
+      'El S&P 500 agrupa las 500 mayores empresas cotizadas de Estados Unidos y es el índice bursátil más seguido del mundo. Invertir en él mediante un ETF UCITS ofrece acceso a gigantes como Apple, Microsoft o Nvidia junto con empresas de consumo, salud e industria. Para inversores españoles, el domicilio importa: un ETF domiciliado en Irlanda tiene grado fiscal A, y la clase de acumulación reinvierte los dividendos en vez de repartirlos. La diferencia entre tickers como CSPX y SXR8 es mínima: replican el mismo fondo, simplemente cotizan en bolsas distintas.',
     listH2: 'ETFs S&P 500 disponibles en España',
     faq: [
       {
@@ -69,7 +69,7 @@ export const ETF_THEMES: EtfTheme[] = [
       },
       {
         q: '¿Es mejor un ETF S&P 500 o un ETF MSCI World?',
-        a: 'Un ETF S&P 500 concentra el 100% en EE.UU., mientras que MSCI World diversifica entre 23 países desarrollados (aunque EE.UU. supone ~71%). A largo plazo el S&P 500 ha superado al MSCI World en muchos periodos, pero con mayor concentración geográfica. Si quieres simplicidad y convicción en el mercado americano, el S&P 500 es sólido. Si prefieres diversificación global, el MSCI World o un All-World es preferible.',
+        a: 'Un ETF S&P 500 concentra el 100% en EE.UU., mientras que MSCI World diversifica entre 23 países desarrollados (aunque EE.UU. supone ~71%). A largo plazo el S&P 500 ha superado al MSCI World en muchos periodos, pero con mayor concentración geográfica. Si quieres simplicidad y convicción en el mercado americano, el S&P 500 es sólido. Si lo que se busca es diversificación global, el MSCI World o un All-World cubre más mercados.',
       },
       {
         q: '¿Por qué hay ETFs S&P 500 con TER diferente que tienen el mismo rendimiento?',
@@ -158,7 +158,7 @@ export const ETF_THEMES: EtfTheme[] = [
     h1: 'ETFs de mercados emergentes UCITS para España (2026)',
     metaTitle: 'Mejores ETFs mercados emergentes para España 2026 | BogleHub',
     metaDescription:
-      'Los mejores ETFs de mercados emergentes para España: EIMI, VFEM, EMIM y más. TER, qué cubren y cuánto peso darles en tu cartera indexada.',
+      'Los mejores ETFs de mercados emergentes para España: EIMI, VFEM, EMIM y más. TER, qué cubren y qué peso suelen tener en una cartera indexada.',
     intro:
       'Los mercados emergentes (China, India, Brasil, Taiwán, Corea del Sur y otros) representan cerca del 12% de la capitalización bursátil global según el índice FTSE All-World y ofrecen diversificación con respecto a los mercados desarrollados. En una cartera Boglehead de dos o tres fondos suelen ocupar entre el 10% y el 20% de la renta variable. Los ETFs de emergentes UCITS disponibles en España siguen mayoritariamente el índice MSCI Emerging Markets IMI o el FTSE Emerging Markets, con China como principal componente (25-30% del índice).',
     listH2: 'ETFs de mercados emergentes disponibles en España',
@@ -294,7 +294,7 @@ export const ETF_THEMES: EtfTheme[] = [
     h1: 'ETFs de pequeñas empresas (small caps) UCITS para España (2026)',
     metaTitle: 'Mejores ETFs small caps UCITS para España 2026 | BogleHub',
     metaDescription:
-      'Los mejores ETFs de small caps (pequeñas empresas) para España: WSML, IUSN, ZPRV y más. La prima de tamaño, TER y cuánto peso darles en tu cartera.',
+      'Los mejores ETFs de small caps (pequeñas empresas) para España: WSML, IUSN, ZPRV y más. La prima de tamaño, TER y qué peso suelen tener en una cartera indexada.',
     intro:
       'Los ETFs de pequeñas empresas (small caps) replican índices de compañías de menor capitalización bursátil, históricamente asociados a una prima de rentabilidad sobre las grandes empresas (el llamado size factor). En una cartera Boglehead, un peso del 5-15% en small caps puede aportar diversificación y rentabilidad esperada algo superior, con mayor volatilidad. Los ETFs UCITS disponibles en España cubren small caps globales (WSML, IUSN) y específicas de EE.UU. (ZPRV).',
     listH2: 'ETFs small caps disponibles en España',

@@ -936,7 +936,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     faq: [
       {
         q: '¿Qué es mejor, un ETF de replicación física o sintética?',
-        a: 'Para la mayoría de inversores indexados, la replicación física (total o por muestreo) es preferible por transparencia y porque no tiene riesgo de contraparte. La sintética usa un swap con un banco y puede ser más eficiente en algunos casos, pero introduce el riesgo de que la contraparte quiebre.',
+        a: 'La replicación física (total o por muestreo) es más transparente y no tiene riesgo de contraparte. La sintética usa un swap con un banco y puede ser más eficiente en algunos casos, pero introduce el riesgo de que la contraparte quiebre.',
       },
       {
         q: '¿Cómo sé si un ETF es físico o sintético?',

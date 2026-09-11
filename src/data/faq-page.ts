@@ -33,7 +33,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: '¿Qué broker es mejor para empezar a invertir en España en 2026?',
-        a: 'Para la mayoría de inversores que empiezan, Trade Republic es la opción más sencilla: 0€ por operación, planes de ahorro automáticos desde 1€, app móvil clara, cuenta remunerada al 2-2,5%. Si quieres combinar ETFs con fondos indexados con traspaso fiscal libre, MyInvestor es la única opción que ofrece ambos. DEGIRO es preferible para órdenes muy grandes o acceso a más bolsas internacionales.',
+        a: 'Para la mayoría de inversores que empiezan, Trade Republic es la opción más sencilla: 0€ por operación, planes de ahorro automáticos desde 1€, app móvil clara, cuenta remunerada al 2-2,5%. Si quieres combinar ETFs con fondos indexados con traspaso fiscal libre, MyInvestor es la única opción que ofrece ambos. DEGIRO da acceso a más bolsas internacionales y su estructura de comisiones escala mejor en órdenes muy grandes.',
       },
       {
         q: '¿Qué es la filosofía Boglehead?',
