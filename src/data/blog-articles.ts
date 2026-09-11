@@ -5711,13 +5711,13 @@ No existe un único "mejor ETF". Existe el mejor ETF para tu objetivo, tu horizo
 
 ---
 
-## ¿Cómo elegir?
+## Qué resuelve cada uno
 
-1. **Si empiezas y quieres simplicidad máxima**: VWCE. Un ETF, todo el mundo, done.
-2. **Si quieres reducir el TER 0,02 %**: IWDA (pero añade EMIM si quieres emergentes).
-3. **Si solo quieres EE.UU. y el TER más bajo posible**: CSPX o SXR8 en Xetra.
-4. **Si buscas renta fija para tu cartera**: AGGH como complemento al ETF de renta variable, o su [equivalente en fondo indexado](/fondo/vanguard-global-bond-eur-hedged) si prefieres el traspaso fiscal libre.
-5. **Si necesitas ingresos regulares**: VHYL, asumiendo la menor eficiencia fiscal.
+1. **Simplicidad máxima**: VWCE. Un solo ETF, todo el mundo dentro.
+2. **TER 0,02 % más bajo, a cambio de añadir los emergentes aparte**: IWDA, con EMIM como complemento.
+3. **Solo EE. UU., con el TER más bajo**: CSPX o SXR8 en Xetra. Replican el mismo fondo; cambia la bolsa.
+4. **Renta fija**: AGGH, o su [equivalente en fondo indexado](/fondo/vanguard-global-bond-eur-hedged), que sí admite traspaso sin tributar.
+5. **Ingresos regulares en efectivo**: VHYL, a cambio de menor eficiencia fiscal.
 
 Antes de decidir, analiza cómo encaja cada ETF en tu cartera completa. El [analizador de BogleHub](/analyzer) te muestra la asignación real, el TER ponderado y el solapamiento entre posiciones.
 

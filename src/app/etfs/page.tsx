@@ -112,7 +112,7 @@ export default function EtfsIndexPage() {
             <p className="mt-3 text-fg-muted leading-relaxed max-w-2xl">
               Explora los {allEtfs.length} ETFs de nuestra base de datos organizados por tipo de
               activo, índice de referencia y política de dividendos. Cada categoría incluye
-              comparativa de TER, domicilio fiscal y recomendaciones para inversores residentes en
+              comparativa de TER, domicilio fiscal y tratamiento fiscal para residentes en
               España.
             </p>
           </header>
