@@ -27,6 +27,39 @@ export function AnalysisResults({ analysis }: { analysis: Analysis }) {
   return (
     <Card>
       <CardTitle>Análisis de tu cartera</CardTitle>
+
+      {/*
+        Avisos de posiciones que no han entrado en el análisis.
+        Añadido el 11-sep-2026. `route.ts` llevaba produciendo estos `warnings` desde
+        siempre, el tipo los declaraba y el cliente los guardaba en estado... y no se
+        pintaban en ningún sitio. O sea que a quien mezclaba ETFs del catálogo con fondos
+        indexados se le enseñaba un reparto que suma 100 % **sin decirle que ese 100 %
+        describe solo una parte de su cartera**.
+        No era una dilución de porcentajes —la posición sin precio queda fuera del total y
+        el resto suma bien— y por eso no lo cazó ninguna revisión de números: el dato era
+        correcto y lo que faltaba era el contexto que lo hace legible.
+        Va ARRIBA y no al pie a propósito: un aviso que explica que faltan posiciones no
+        sirve después de que alguien haya leído los porcentajes.
+      */}
+      {analysis.warnings?.length > 0 && (
+        <div
+          role="status"
+          className="mt-3 rounded-lg border border-warn/40 bg-warn/10 p-4 text-sm text-fg"
+        >
+          <p className="font-medium">Este análisis no incluye toda tu cartera</p>
+          <ul className="mt-2 list-disc pl-5 space-y-1 text-fg-muted">
+            {analysis.warnings.map((w) => (
+              <li key={w}>{w}</li>
+            ))}
+          </ul>
+          <p className="mt-2 text-fg-muted">
+            Los porcentajes de abajo se calculan solo con las posiciones que sí hemos podido
+            valorar. El analizador lee un catálogo de ETFs por ticker; los fondos indexados
+            todavía no los lee.
+          </p>
+        </div>
+      )}
+
       <div className="mt-2 mb-6 flex gap-2 border-b border-border">
         {tabs.map((t) => (
           <button

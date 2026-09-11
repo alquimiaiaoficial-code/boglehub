@@ -34,6 +34,36 @@ import { getEtfByTicker } from './etf-database'
 describe('qué responde el analizador cuando no conoce los tickers', () => {
   const route = readFileSync('src/app/api/analyze/route.ts', 'utf8')
 
+  /**
+   * Ampliación del 11-sep, misma noche. El 422 de arriba estaba **detrás de la validación
+   * que rechaza la entrada real**: `ticker` admitía 10 caracteres y un ISIN tiene 12, así
+   * que quien buscaba un fondo por ISIN recibía un 400 genérico y no llegaba a ver nunca el
+   * mensaje que le explicaba justo eso. Lo vio Verificación.
+   *
+   * Es la misma lección de esa mañana aplicada al propio arreglo: **tocar el sistema vivo no
+   * verifica nada si no sabes por dónde pasa lo que tocas.** Yo había probado el camino que
+   * ya funcionaba.
+   */
+  it('un ISIN de 12 caracteres llega al catálogo en vez de morir en la validación', () => {
+    const schema = readFileSync('src/types/portfolio.ts', 'utf8')
+    const m = schema.match(/ticker:\s*z\.string\(\)\.min\(1\)\.max\((\d+)\)/)
+    expect(m, 'no encuentro la cota de ticker en PositionSchema').not.toBeNull()
+    expect(
+      Number(m![1]),
+      'un ISIN son 12 caracteres: con menos, el 422 explicativo es inalcanzable para quien busca fondos',
+    ).toBeGreaterThanOrEqual(12)
+  })
+
+  it('los avisos de posiciones fuera del análisis se pintan en la interfaz', () => {
+    // `warnings` se producía, se tipaba y se guardaba en estado desde siempre, y no se
+    // renderizaba en ningún sitio: el usuario veía un reparto sumando 100 % sin saber que
+    // describía solo una parte de su cartera. Un dato correcto sin el contexto que lo hace
+    // legible es lo mismo que un dato falso para quien lo lee.
+    const ui = readFileSync('src/components/AnalysisResults.tsx', 'utf8')
+    expect(ui).toMatch(/analysis\.warnings/)
+    expect(ui).toMatch(/no incluye toda tu cartera/)
+  })
+
   it('distingue «no conozco esos tickers» de «los proveedores están caídos»', () => {
     expect(route, 'sin esta comprobación, un catálogo que no cubre se reporta como avería nuestra').toMatch(
       /algunoConocido/,
