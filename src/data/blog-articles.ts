@@ -8759,7 +8759,7 @@ Para profundizar en cómo integrar oro en una cartera con filosofía robust, lee
     ],
     content: `# MSCI World vs MSCI ACWI: diferencias clave para tu cartera indexada (2026)
 
-Si estás eligiendo un ETF "global" para tu cartera indexada, te habrás topado con dos índices que se mencionan constantemente: MSCI World y MSCI ACWI. Suenan parecidos, pero la diferencia es importante: incluyen o no incluyen los mercados emergentes, y eso afecta directamente a la diversificación de tu cartera.
+Si estás eligiendo un ETF "global" para una cartera indexada, te habrás topado con dos índices que se mencionan constantemente: MSCI World y MSCI ACWI. Suenan parecidos, pero la diferencia es importante: incluyen o no incluyen los mercados emergentes, y eso afecta directamente a la diversificación de la cartera.
 
 Esta guía explica las diferencias, cuándo elegir cada uno y los ETFs disponibles para inversores en España.
 
