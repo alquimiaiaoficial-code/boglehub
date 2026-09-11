@@ -143,7 +143,7 @@ export const GESTORAS: Gestora[] = [
     faq: [
       {
         q: '¿Qué es el Amundi Prime Global y por qué destaca?',
-        a: 'El Amundi Prime Global (ISIN LU1931974692) es un fondo indexado con TER 0,05%, el más bajo disponible al inversor particular en España. Replica el índice Solactive GBS Global Markets (equivalente al MSCI World). Solo disponible en MyInvestor desde 1€ con traspaso fiscal libre. Es la opción más eficiente en coste para la exposición global a mercados desarrollados.',
+        a: 'El Amundi Prime Global (ISIN LU1931974692) es un fondo indexado con TER 0,05%, el más bajo disponible al inversor particular en España. Replica el índice Solactive GBS Global Markets (equivalente al MSCI World). Solo disponible en MyInvestor desde 1€ con traspaso fiscal libre. Es la más barata en coste para la exposición global a mercados desarrollados.',
       },
       {
         q: '¿Qué pasó con Lyxor después de la fusión con Amundi?',
@@ -196,7 +196,7 @@ export const GESTORAS: Gestora[] = [
     faq: [
       {
         q: '¿Por qué elegir Xtrackers sobre iShares o Vanguard?',
-        a: 'Para la mayoría de inversores, iShares y Vanguard son opciones más populares y líquidas. Xtrackers tiene productos competitivos en algunos nichos: el 4GLD cotiza directamente en euros (útil para evitar conversión), y algunos productos europeos tienen TER más bajo. Para cartera estándar, iShares/Vanguard son más establecidos.',
+        a: 'Para la mayoría de inversores, iShares y Vanguard son las gestoras con más patrimonio y volumen de negociación. Xtrackers tiene productos competitivos en algunos nichos: el 4GLD cotiza directamente en euros (útil para evitar conversión), y algunos productos europeos tienen TER más bajo. Para cartera estándar, iShares/Vanguard son más establecidos.',
       },
     ],
   },

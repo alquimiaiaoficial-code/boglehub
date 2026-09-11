@@ -149,7 +149,7 @@ export const MODEL_PORTFOLIOS: ModelPortfolio[] = [
     expectedReturn: '7-10% anual nominal',
     origin: 'Variantes de Boglehead simplificadas',
     faq: [
-      { q: '¿Es seguro 100% renta variable?', a: 'Es la opción más volátil a corto plazo pero matemáticamente la más rentable a largo plazo (30+ años). El riesgo real es psicológico: vender en una caída del 50% destruye décadas de acumulación.' },
+      { q: '¿Es seguro 100% renta variable?', a: 'Es la cartera más volátil a corto plazo pero matemáticamente la más rentable a largo plazo (30+ años). El riesgo real es psicológico: vender en una caída del 50% destruye décadas de acumulación.' },
     ],
   },
   {

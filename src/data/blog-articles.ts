@@ -577,14 +577,14 @@ Para gestionar bien las caídas cuando lleguen, sigue por [qué hacer cuando el 
       },
       {
         q: '¿MSCI World o All-World, cuál es más diversificado?',
-        a: 'El All-World (FTSE All-World o MSCI ACWI) es más diversificado porque añade los mercados emergentes (China, India, etc.), que el MSCI World deja fuera. Suponen alrededor de un 10% adicional. Para quien quiere "todo el mercado global" en un solo fondo, el All-World es la opción más completa.',
+        a: 'El All-World (FTSE All-World o MSCI ACWI) es más diversificado porque añade los mercados emergentes (China, India, etc.), que el MSCI World deja fuera. Suponen alrededor de un 10% adicional. El All-World cubre "todo el mercado global" en un solo fondo; el MSCI World deja fuera ese ~10 %.',
       },
     ],
     content: `# MSCI World o S&P 500: ¿diversificar o concentrarse en EE.UU.? (2026)
 
 Es, quizá, el debate más recurrente entre inversores indexados que empiezan: ¿me basta con el **S&P 500** (las 500 mayores empresas de EE.UU.) o mejor el **MSCI World** (empresas de todos los países desarrollados)? Detrás de la elección de índice hay una pregunta de fondo: ¿concentro mi apuesta en Estados Unidos o me diversifico por el mundo? Esta guía expone los argumentos de cada lado, sin vender ninguno, para que decidas con criterio.
 
-La conclusión por adelantado: el MSCI World (o el aún más amplio All-World) es la opción más diversificada y de menor arrepentimiento para la mayoría; el S&P 500 ha funcionado muy bien históricamente, pero es una apuesta concentrada en un solo país. Ninguna es "errónea"; la diferencia es cuánto confías en que EE.UU. seguirá liderando.
+La conclusión por adelantado: el MSCI World (o el aún más amplio All-World) reparte entre 23 países desarrollados; el S&P 500 ha funcionado muy bien históricamente, pero concentra el 100 % en uno solo. Ninguna es "errónea"; la diferencia es cuánto confías en que EE.UU. seguirá liderando.
 
 ---
 
@@ -621,7 +621,7 @@ La razón nº1 por la que mucha gente elige hoy "solo S&P 500" es que **EE.UU. l
 
 ## ¿Y si quiero aún más diversificación? El All-World
 
-El MSCI World deja fuera los **mercados emergentes** (China, India, etc.). Si quieres "el mundo entero", el **FTSE All-World** o el **MSCI ACWI** añaden esos emergentes (~10% adicional). Es la opción más diversificada de todas y la preferida de muchos Bogleheads por su simplicidad: un solo fondo con todo el mercado global. Las diferencias entre World y ACWI las vemos en [MSCI World vs MSCI ACWI](/blog/msci-world-vs-msci-acwi-diferencias).
+El MSCI World deja fuera los **mercados emergentes** (China, India, etc.). Si quieres "el mundo entero", el **FTSE All-World** o el **MSCI ACWI** añaden esos emergentes (~10% adicional). Es la cobertura más amplia de las tres, en un solo fondo con todo el mercado global — que es la razón por la que aparece tanto en las carteras Boglehead. Las diferencias entre World y ACWI las vemos en [MSCI World vs MSCI ACWI](/blog/msci-world-vs-msci-acwi-diferencias).
 
 ---
 
@@ -1813,7 +1813,7 @@ Comprar la casa en la que vives es un caso aparte: no es solo una inversión, es
 
 Depende de qué valores:
 
-**Elige fondos indexados si** priorizas la diversificación, la liquidez, el bajo coste y no querer gestionar nada. Para la mayoría de inversores particulares que quieren rentabilizar sus ahorros sin complicarse, es la opción más eficiente: empieza por la [cartera Boglehead de 3 fondos](/blog/cartera-boglehead-3-fondos-espana) o los [mejores fondos indexados](/blog/mejores-fondos-indexados-espana-2026), y elige dónde comprarlos con el [comparador de brókers](/calculadora/comparar-brokers).
+**Los fondos indexados** cubren diversificación, liquidez y bajo coste sin gestión activa por parte de quien invierte. Si es el terreno que te interesa, el punto de partida habitual es la [cartera Boglehead de 3 fondos](/blog/cartera-boglehead-3-fondos-espana) o la lista de [fondos indexados disponibles en España](/blog/mejores-fondos-indexados-espana-2026), y el [comparador de brókers](/calculadora/comparar-brokers) enseña dónde se compran y a qué coste.
 
 **Considera el inmobiliario si** quieres aprovechar el apalancamiento de la hipoteca, te gusta el activo tangible y no te importa gestionarlo (o pagar por ello). Funciona especialmente para quien puede dedicarle tiempo y dispone de capital para la entrada sin descapitalizarse.
 
@@ -1895,7 +1895,7 @@ Abres una cuenta de valores o de fondos **a nombre del niño** (necesita su prop
 
 Inviertes en **tu propia cuenta**, reservando mentalmente ese dinero para el niño, y se lo das cuando lo decidas (a los 18, para la universidad, para la entrada de un piso…).
 
-- **Ventaja**: mantienes el **control y la flexibilidad** totales. No hay donación hasta que efectivamente entregas el dinero, y decides el cuándo y el cómo. Es la opción más simple administrativamente.
+- **Ventaja**: mantienes el **control y la flexibilidad** totales. No hay donación hasta que efectivamente entregas el dinero, y decides el cuándo y el cómo. Es la vía con menos trámites.
 - **Inconveniente**: fiscalmente es tu dinero (tributas tú por las ganancias), y cuando se lo entregues podría haber donación. Forma parte de tu patrimonio a efectos de herencia.
 
 No hay una opción "correcta": la A optimiza algo de fiscalidad y simbolismo a cambio de perder control a los 18; la B prioriza control y simplicidad. Para muchas familias, la B es más práctica.
@@ -3010,7 +3010,7 @@ Donde IBKR marca diferencia es en el **cambio de divisa**. Si compras ETFs cotiz
 
 ## IBKR Lite vs IBKR Pro: cuál elegir
 
-Para un inversor indexado europeo que compra ETFs UCITS de acumulación, las diferencias prácticas entre Lite y Pro son menores. La distinción de fondo es el **order flow**: IBKR Lite financia su 0€ vendiendo el flujo de órdenes, mientras que IBKR Pro cobra una comisión transparente y ejecuta buscando el mejor precio. Si te incomoda el order flow o quieres la ejecución más limpia, Pro es la opción coherente; si priorizas el coste fijo y operas donde Lite es gratis, Lite cumple.
+Para un inversor indexado europeo que compra ETFs UCITS de acumulación, las diferencias prácticas entre Lite y Pro son menores. La distinción de fondo es el **order flow**: IBKR Lite financia su 0€ vendiendo el flujo de órdenes, mientras que IBKR Pro cobra una comisión transparente y ejecuta buscando el mejor precio. Quien no quiera order flow paga en Pro una comisión explícita a cambio de ejecución al mejor precio; quien priorice el coste fijo tiene Lite gratis allí donde opera.
 
 ---
 
@@ -3111,7 +3111,7 @@ Si tu caso es ese, IBKR te dará el coste más bajo durante décadas. Si estás 
     faq: [
       {
         q: '¿Cuál es el mejor ETF para empezar a invertir en España?',
-        a: 'Para un primer inversor en España, VWCE (Vanguard FTSE All-World Acc) es la opción más recomendada: domiciliado en Irlanda (fiscalmente eficiente), acumulación, TER 0,19% y diversificación global en un solo fondo. Si prefieres mayor exposición a EE.UU., IWDA o SWRD son alternativas de MSCI World igualmente válidas.',
+        a: 'VWCE (Vanguard FTSE All-World Acc) es el que más aparece en carteras de quien empieza en España, y estas son sus características: domiciliado en Irlanda (grado fiscal A), acumulación, TER 0,19 % y diversificación global en un solo fondo. IWDA y SWRD son alternativas de MSCI World, sin emergentes.',
       },
       {
         q: '¿Qué domicilio debe tener un ETF para ser eficiente fiscalmente en España?',
@@ -3189,7 +3189,7 @@ Los ETFs replican su índice de tres formas:
 - **Replicación física por muestreo**: compra una muestra representativa. Útil para índices con miles de valores pequeños e ilíquidos. Ejemplo: IWDA (MSCI World).
 - **Replicación sintética (swap)**: usa derivados para replicar el retorno. Puede ser más eficiente en ciertos mercados pero introduce riesgo de contraparte.
 
-Para un inversor Boglehead que empieza, **replicación física** (total o por muestreo) es la opción más sencilla y transparente.
+La **replicación física** (total o por muestreo) es la más transparente de las dos: el fondo tiene de verdad los valores del índice, sin swap de por medio.
 
 ### 4. Política de distribución: acumulación vs distribución
 
@@ -3260,7 +3260,7 @@ La exposición aproximada es: 60 % EE. UU., 15 % Europa desarrollada, 12 % Asia-
 | Domicilio | Irlanda |
 | Distribución | Acumulación |
 
-**Por qué es una gran alternativa**: el IWDA sigue el MSCI World, que cubre solo países desarrollados (~23 países). No incluye mercados emergentes. TER prácticamente idéntico al del VWCE (0,20 % vs 0,19 % tras la rebaja del VWCE a 0,19 % en 2025). Es ideal si prefieres limitarte a mercados más maduros o si ya tienes exposición a emergentes por otro vehículo.
+**Por qué es una gran alternativa**: el IWDA sigue el MSCI World, que cubre solo países desarrollados (~23 países). No incluye mercados emergentes. TER prácticamente idéntico al del VWCE (0,20 % vs 0,19 % tras la rebaja del VWCE a 0,19 % en 2025). Encaja con quien se limita a mercados desarrollados, o con quien ya tiene emergentes por otro vehículo.
 
 Nota: muchos inversores combinan IWDA + EMIM (iShares Core MSCI Emerging Markets, TER 0,18 %) para replicar el VWCE con mayor control de pesos.
 
@@ -3332,7 +3332,7 @@ Ya tienes los criterios, los brokers y los ETFs. El siguiente paso lógico es co
     faq: [
       {
         q: '¿Cuál es mejor: VWCE, CSPX o IWDA?',
-        a: 'Depende de tu estrategia. VWCE es la opción más diversificada (4.000+ empresas, incluye emergentes), ideal para una cartera en un solo ETF. IWDA cubre solo países desarrollados (sin emergentes, TER 0,20%) y CSPX se centra en las 500 mayores empresas de EE.UU. (TER 0,07%). Para un inversor español en fase de acumulación sin posiciones adicionales, VWCE o IWDA+EIMI son los puntos de partida más recomendados.',
+        a: 'Depende de tu estrategia. VWCE es el más amplio de los tres (4.000+ empresas, incluye emergentes) y cabe en una cartera de un solo ETF. IWDA cubre solo países desarrollados (sin emergentes, TER 0,20 %) y CSPX se centra en las 500 mayores empresas de EE. UU. (TER 0,07 %). En fase de acumulación sin posiciones adicionales, las combinaciones que más se ven son VWCE en solitario o IWDA+EIMI.',
       },
       {
         q: '¿Cuánto solapamiento hay entre VWCE, CSPX e IWDA?',
@@ -4399,7 +4399,7 @@ Menos posiciones, bien elegidas, baten a cinco ETFs que en el fondo son el mismo
       },
       {
         q: '¿Dónde puedo comprar fondos indexados en España?',
-        a: 'Necesitas una plataforma que los comercialice. MyInvestor es la opción más conocida, con acceso a fondos indexados de Vanguard, Amundi y Fidelity desde 1 €. Brokers como DEGIRO o Trade Republic trabajan sobre todo con ETFs y no ofrecen fondos indexados. Los ETFs, en cambio, se compran en casi cualquier broker con acceso a bolsa europea.',
+        a: 'Necesitas una plataforma que los comercialice. MyInvestor es la plataforma más extendida para esto, con acceso a fondos indexados de Vanguard, Amundi y Fidelity desde 1 €. Brokers como DEGIRO o Trade Republic trabajan sobre todo con ETFs y no ofrecen fondos indexados. Los ETFs, en cambio, se compran en casi cualquier broker con acceso a bolsa europea.',
       },
       {
         q: '¿Cuál es más barato, el fondo indexado o el ETF?',
@@ -4463,7 +4463,7 @@ Para automatizar el ahorro mensual con cantidades redondas, los fondos indexados
 
 ## Diferencia 4: dónde se compran
 
-**Fondos indexados**: necesitas una plataforma que los comercialice. En España, MyInvestor es la opción más conocida, con acceso a fondos indexados de Vanguard, Amundi, Fidelity y otros. Brokers como DEGIRO no ofrecen fondos indexados. Si te decantas por fondos, mira la guía de los [mejores fondos indexados en España por categoría](/blog/mejores-fondos-indexados-espana-2026), con TER e ISIN de cada uno.
+**Fondos indexados**: necesitas una plataforma que los comercialice. En España, MyInvestor es la plataforma más extendida para esto, con acceso a fondos indexados de Vanguard, Amundi, Fidelity y otros. Brokers como DEGIRO no ofrecen fondos indexados. Si te decantas por fondos, mira la guía de los [mejores fondos indexados en España por categoría](/blog/mejores-fondos-indexados-espana-2026), con TER e ISIN de cada uno.
 
 **ETFs**: los compras en casi cualquier broker con acceso a bolsa europea: Trade Republic, DEGIRO, Interactive Brokers, MyInvestor. Son universales.
 
@@ -5533,7 +5533,7 @@ Empezar con poco no es empezar en desventaja. Es, simplemente, empezar. Y empeza
     faq: [
       {
         q: '¿Cuál es el mejor ETF para un inversor español en 2026?',
-        a: 'No existe un único "mejor" ETF universal, pero para simplificar: VWCE (Vanguard FTSE All-World, acumulación, IE, TER 0,19%) es la opción todo-en-uno más recomendada por su diversificación global, domicilio irlandés y acumulación. Para quienes prefieren solo EE.UU., CSPX o SPXS son las opciones más eficientes en TER.',
+        a: 'No existe un único "mejor" ETF universal, pero para simplificar: VWCE (Vanguard FTSE All-World, acumulación, IE, TER 0,19%) es la opción todo-en-uno más recomendada por su diversificación global, domicilio irlandés y acumulación. Para quienes prefieren solo EE.UU., CSPX y SPXS son los de menor TER.',
       },
       {
         q: '¿Qué criterios son más importantes para elegir un ETF en España?',
@@ -6243,7 +6243,7 @@ Si tienes la disciplina para construir y mantener una cartera de fondos indexado
       },
       {
         q: '¿VWCE o IWDA? ¿Cuál es mejor para un inversor en España?',
-        a: 'VWCE incluye emergentes (~12%) y IWDA solo tiene mercados desarrollados. Si quieres exposición global sin gestionar dos ETFs, VWCE es más sencillo. Si quieres control sobre la proporción de emergentes, la combinación IWDA + EIMI (emergentes por separado) tiene más flexibilidad. Para la mayoría de inversores que empiezan, VWCE es la opción más simple y suficiente.',
+        a: 'VWCE incluye emergentes (~12%) y IWDA solo tiene mercados desarrollados. Si quieres exposición global sin gestionar dos ETFs, VWCE es más sencillo. Si quieres control sobre la proporción de emergentes, la combinación IWDA + EIMI (emergentes por separado) tiene más flexibilidad. VWCE es el más simple de los dos: un solo ETF en lugar de dos posiciones que rebalancear.',
       },
       {
         q: '¿Es VWCE fiscalmente eficiente para inversores en España?',
@@ -6367,7 +6367,7 @@ A largo plazo eso importa, pero la complejidad añadida (dos ETFs, dos órdenes,
 | MyInvestor | 0,20 € + 0,03% |
 | [XTB](/blog/xtb-opinion-2026) | 0 € hasta 100.000 €/mes en ETFs |
 
-Para aportaciones mensuales pequeñas, Trade Republic es la opción más eficiente. Para órdenes más grandes y control técnico, DEGIRO. El VWCE no está disponible en MyInvestor como ETF, pero sí su equivalente en fondo indexado (Vanguard Global Stock Index, que replica MSCI World, no FTSE All-World — índice diferente).
+En aportaciones mensuales pequeñas pesa la comisión fija, y Trade Republic cobra 0 € por operación. En órdenes más grandes y con más control técnico, DEGIRO. El VWCE no está disponible en MyInvestor como ETF, pero sí su equivalente en fondo indexado (Vanguard Global Stock Index, que replica MSCI World, no FTSE All-World — índice diferente).
 
 ---
 
@@ -7361,7 +7361,7 @@ Aquí MyInvestor no tiene competencia real en España. Es el único banco que of
 - **Mínimo de aportación 1€** (aportaciones recurrentes desde el primer euro)
 - **Traspaso fiscal libre** entre fondos (la mayor ventaja fiscal de los fondos sobre los ETFs en España)
 
-Para inversores que quieren una cartera de fondos indexados con la máxima eficiencia fiscal y el mínimo coste, MyInvestor es la opción objetivamente mejor en España.
+Para una cartera de fondos indexados con traspaso libre y coste mínimo, MyInvestor es el único de los tres que reúne ambas cosas en España.
 
 Las alternativas (Renta 4, Selfbank) ofrecen menos fondos o con comisiones de custodia. Los brokers extranjeros como DEGIRO o Trade Republic solo ofrecen ETFs, no fondos.
 
@@ -7587,7 +7587,7 @@ Es la opción ideal si:
 - Buscas la cuenta remunerada sin condiciones
 - Eres un inversor que tiende a sobrepensar las decisiones: la app te ayuda a aportar y olvidar
 
-No es ideal si:
+No encaja si:
 - Quieres fondos indexados con traspaso fiscal
 - Necesitas acceso a mercados asiáticos o ETFs nicho
 - Tu cartera es muy grande y quieres negociar con órdenes técnicas avanzadas
@@ -7975,7 +7975,7 @@ Para una comparativa más amplia que incluya VWCE (FTSE All-World que sí incluy
       },
       {
         q: '¿Para quién es buena la cartera permanente?',
-        a: 'Es ideal para inversores que priorizan la estabilidad sobre el crecimiento máximo: jubilados o cerca de jubilación, inversores con baja tolerancia psicológica a las caídas, personas que necesitan poder retirar dinero en cualquier momento sin riesgo de vender en mal momento. No es ideal para inversores jóvenes con horizonte largo (40+ años) y alta tolerancia al riesgo: una cartera más concentrada en renta variable tendrá mayor rentabilidad esperada a costa de mayor volatilidad.',
+        a: 'Está construido para quien prioriza la estabilidad sobre el crecimiento máximo: jubilados o cerca de la jubilación, inversores con baja tolerancia psicológica a las caídas, personas que necesitan poder retirar dinero en cualquier momento sin riesgo de vender en mal momento. Encaja mal con inversores jóvenes de horizonte largo (40+ años) y alta tolerancia al riesgo: una cartera más concentrada en renta variable tendrá mayor rentabilidad esperada a costa de mayor volatilidad.',
       },
     ],
     content: `# La cartera permanente de Harry Browne adaptada al inversor español (2026)
@@ -8123,14 +8123,14 @@ Para más detalles sobre cómo rebalancear de forma eficiente, lee [cómo rebala
 
 ## Para quién es la cartera permanente
 
-**Es ideal si**:
+**Encaja si**:
 - Estás cerca de la jubilación o ya retirado
 - Tu tolerancia psicológica a caídas es baja
 - Necesitas poder rescatar dinero en cualquier momento sin gran impacto
 - Valoras la robustez sobre la rentabilidad máxima
 - Has vivido al menos una caída del 50% en bolsa y sabes que no lo soportarías de nuevo
 
-**No es ideal si**:
+**No encaja si**:
 - Eres joven con horizonte de 40+ años
 - Tu prioridad es maximizar rentabilidad esperada
 - Toleras bien la volatilidad
@@ -8367,7 +8367,7 @@ Para entender este riesgo y planificar con la incertidumbre real del mercado, us
     faq: [
       {
         q: '¿Cuál es el mejor ETF Nasdaq 100 para inversores en España?',
-        a: 'Para la mayoría de inversores en España, EQQQ (Invesco EQQQ Nasdaq 100 UCITS ETF, ISIN IE0032077012) es la opción más popular: TER 0,30%, domiciliado en Irlanda, cotiza en múltiples bolsas europeas con buen volumen. Alternativas válidas: SXRV (iShares NASDAQ 100, TER 0,33%, acumulación) y CNDX (iShares NASDAQ 100 en LSE). EQQQ suele ser ligeramente más eficiente por su menor TER y mayor liquidez en Xetra.',
+        a: 'Para la mayoría de inversores en España, EQQQ (Invesco EQQQ Nasdaq 100 UCITS ETF, ISIN IE0032077012) es el más negociado: TER 0,30%, domiciliado en Irlanda, cotiza en múltiples bolsas europeas con buen volumen. Alternativas válidas: SXRV (iShares NASDAQ 100, TER 0,33%, acumulación) y CNDX (iShares NASDAQ 100 en LSE). EQQQ suele ser ligeramente más eficiente por su menor TER y mayor liquidez en Xetra.',
       },
       {
         q: '¿Cuál es la diferencia entre Nasdaq 100 y S&P 500?',
@@ -8545,7 +8545,7 @@ Para aportaciones recurrentes pequeñas: Trade Republic. Para órdenes grandes: 
     faq: [
       {
         q: '¿Cuál es la mejor forma de invertir en oro desde España?',
-        a: 'Para la mayoría de inversores indexados, los ETC de oro físico (SGLN de iShares, IGLN o 4GLD de Xtrackers) son la opción más eficiente: replican el precio del oro spot con TER bajo (0,12-0,20%), están respaldados por lingotes custodiados en bóvedas auditadas y se compran como cualquier ETF. Más eficientes que comprar oro físico (que tiene costes de custodia, seguro y spread alto) y mejor diversificación que invertir en mineras (que tienen riesgos empresariales adicionales).',
+        a: 'Para la mayoría de inversores indexados, los ETC de oro físico (SGLN de iShares, IGLN o 4GLD de Xtrackers) son los más eficientes en coste: replican el precio del oro spot con TER bajo (0,12-0,20%), están respaldados por lingotes custodiados en bóvedas auditadas y se compran como cualquier ETF. Más eficientes que comprar oro físico (que tiene costes de custodia, seguro y spread alto) y mejor diversificación que invertir en mineras (que tienen riesgos empresariales adicionales).',
       },
       {
         q: '¿Cómo tributa la venta de oro en España?',
@@ -8641,7 +8641,7 @@ Invierten en acciones de empresas extractoras de oro (Barrick Gold, Newmont, Agn
 
 ## Para el inversor indexado en España: ETC de oro
 
-Para la mayoría de inversores que siguen la filosofía Boglehead y quieren añadir oro a una cartera diversificada, los ETC de oro físico son la opción más eficiente:
+Para la mayoría de inversores que siguen la filosofía Boglehead y quieren añadir oro a una cartera diversificada, los ETC de oro físico son los más eficientes en coste:
 
 - **Coste mínimo**: TER 0,12% vs 4-8% de spread del oro físico
 - **Liquidez total**: compras y vendes en segundos
@@ -8742,7 +8742,7 @@ Para profundizar en cómo integrar oro en una cartera con filosofía robust, lee
       },
       {
         q: '¿Es mejor MSCI World o MSCI ACWI para una cartera indexada?',
-        a: 'Para diversificación máxima global en un solo ETF, MSCI ACWI (o su equivalente FTSE All-World) refleja el mercado real sin excluir economías importantes como China o India. Para quien quiera mayor control sobre el peso de emergentes o prefiera TER más bajo, combinar MSCI World + un ETF de emergentes por separado puede ser igual de bueno con mayor flexibilidad. Para la mayoría de inversores que empiezan, ACWI o All-World es la opción más sencilla.',
+        a: 'Para diversificación máxima global en un solo ETF, MSCI ACWI (o su equivalente FTSE All-World) refleja el mercado real sin excluir economías importantes como China o India. Para quien quiera mayor control sobre el peso de emergentes o prefiera TER más bajo, combinar MSCI World + un ETF de emergentes por separado puede ser igual de bueno con mayor flexibilidad. ACWI o All-World es lo más corto de montar: un solo fondo, sin decisiones de peso.',
       },
       {
         q: '¿Qué peso tienen los emergentes en MSCI ACWI?',
@@ -8893,7 +8893,7 @@ Para la mayoría de inversores que empiezan, **la segunda opción (ACWI o All-Wo
 
 ## Conclusión práctica
 
-Para la mayoría de inversores que empiezan en España, **un ETF MSCI ACWI o FTSE All-World** es la opción más sencilla y completa. Cubre desarrollados y emergentes en su peso natural, sin decisiones adicionales que tomar. Para más alternativas sobre ETFs globales, mira el [hub de ETFs All-World](/etfs/todo-mundo).
+**Un ETF MSCI ACWI o FTSE All-World** es lo más corto de montar y lo más amplio en cobertura. Cubre desarrollados y emergentes en su peso natural, sin decisiones adicionales que tomar. Para más alternativas sobre ETFs globales, mira el [hub de ETFs All-World](/etfs/todo-mundo).
 
 Si prefieres MSCI World por su TER ligeramente inferior, combínalo con un ETF de emergentes (12% del total) para tener exposición global comparable. Mira el [hub de ETFs MSCI World](/etfs/msci-world) y el [hub de ETFs emergentes](/etfs/emergentes) para los productos concretos disponibles.
 
@@ -9568,7 +9568,7 @@ Para ver el coste real de cada broker con tus datos concretos, usa el [comparado
     faq: [
       {
         q: '¿Cuál es el mejor broker para invertir en ETFs en España en 2026?',
-        a: 'No hay un único "mejor" para todos. Para aportaciones periódicas pequeñas y automatizadas, Trade Republic (0€ por operación, planes de ahorro desde 1€) es la opción más sencilla. Para combinar ETFs con fondos indexados de traspaso fiscal, MyInvestor. Para carteras grandes o acceso a muchos mercados, DEGIRO o Interactive Brokers. ING solo compensa si ya eres cliente, porque su broker es caro (9-22€ por orden).',
+        a: 'No hay un único "mejor" para todos. Para aportaciones periódicas pequeñas y automatizadas, Trade Republic (0€ por operación, planes de ahorro desde 1€) es el de configuración más corta. Para combinar ETFs con fondos indexados de traspaso fiscal, MyInvestor. Para carteras grandes o acceso a muchos mercados, DEGIRO o Interactive Brokers. ING solo compensa si ya eres cliente, porque su broker es caro (9-22€ por orden).',
       },
       {
         q: '¿Qué broker tiene las comisiones más bajas para ETFs?',
@@ -9584,7 +9584,7 @@ Para ver el coste real de cada broker con tus datos concretos, usa el [comparado
       },
       {
         q: '¿Qué broker es mejor para un principiante que empieza con poco dinero?',
-        a: 'Trade Republic es la opción más recomendada para empezar: 0€ por operación, planes de ahorro automáticos desde 1€/mes, app muy sencilla y cuenta remunerada. MyInvestor es la alternativa si quieres empezar con fondos indexados desde 1€ y aprovechar el traspaso fiscal. Ambos están regulados con cobertura de 100.000€.',
+        a: 'Trade Republic es el de arranque más corto: 0€ por operación, planes de ahorro automáticos desde 1€/mes, app muy sencilla y cuenta remunerada. MyInvestor es la alternativa si quieres empezar con fondos indexados desde 1€ y aprovechar el traspaso fiscal. Ambos están regulados con cobertura de 100.000€.',
       },
     ],
     content: `# Mejor broker para ETFs en España 2026: comparativa honesta
@@ -10096,7 +10096,7 @@ La diferencia de coste anual es mínima; la decisión real es la del [traspaso f
 - **Acumulación** (SPXS, CSPX, VUAA, Amundi Prime USA): reinvierte los dividendos dentro del fondo, sin que tributes por ellos hasta que vendas. Más eficiente en la fase de ahorro.
 - **Distribución** (VUSA, IUSA): te paga los dividendos en cuenta, que tributan cada año. Útil si quieres rentas periódicas.
 
-Para la mayoría de inversores en fase de acumulación, la versión de acumulación es la opción más eficiente fiscalmente.
+Para la mayoría de inversores en fase de acumulación, la versión de acumulación evita la tributación intermedia de los dividendos.
 
 ---
 
@@ -10222,7 +10222,7 @@ Aquí va el matiz importante. El MSCI World cubre solo países desarrollados. Ha
 - **MSCI World + un ETF de emergentes** (EIMI, VFEM) en un 10-20%: control total sobre la proporción, pero requiere rebalancear dos posiciones.
 - **Un ETF All-World** como VWCE (FTSE All-World) o ISAC (MSCI ACWI): incluye desarrollados y emergentes en su proporción natural (~88/12) en un solo producto. Más simple.
 
-Ninguna es "mejor" en abstracto: el MSCI World a secas es perfectamente válido (los emergentes son solo ~12% del mercado global y su aportación histórica es discutible), y el All-World es la opción más completa y cómoda. Lo comparamos en [MSCI World vs MSCI ACWI](/blog/msci-world-vs-msci-acwi-diferencias) y en [VWCE vs CSPX vs IWDA](/blog/vwce-vs-cspx-vs-iwda).
+Ninguna es "mejor" en abstracto: el MSCI World a secas es perfectamente válido (los emergentes son solo ~12% del mercado global y su aportación histórica es discutible), y el All-World es el de cobertura más amplia en un solo fondo. Lo comparamos en [MSCI World vs MSCI ACWI](/blog/msci-world-vs-msci-acwi-diferencias) y en [VWCE vs CSPX vs IWDA](/blog/vwce-vs-cspx-vs-iwda).
 
 Si lo que buscas es exposición solo a EE.UU., mira la guía paralela: [cómo invertir en el S&P 500 desde España](/blog/como-invertir-sp500-espana).
 

@@ -88,7 +88,7 @@ export default async function PlanPage({ params }: { params: Promise<{ edad: str
     },
     {
       q: `¿Qué broker uso para este plan?`,
-      a: `Para una aportación de ${formatEUR(monthlyNeeded)}/mes la opción más eficiente es Trade Republic: 0€ por operación, planes de ahorro automáticos desde 1€. Si prefieres fondos indexados con traspaso fiscal libre, MyInvestor desde 1€ con TER del 0,05% (Amundi Prime Global).`,
+      a: `Para una aportación de ${formatEUR(monthlyNeeded)}/mes Trade Republic cobra 0 € por operación y admite planes de ahorro automáticos desde 1 €. Si prefieres fondos indexados con traspaso fiscal libre, MyInvestor desde 1€ con TER del 0,05% (Amundi Prime Global).`,
     },
     {
       q: `¿Y si no puedo aportar tanto?`,

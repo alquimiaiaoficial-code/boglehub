@@ -139,7 +139,7 @@ export default async function AnalizaPage({
       {
         heading: `${etf.ticker} en una cartera FIRE`,
         paragraphs: [
-          `${etf.ticker} (${etf.name}) ${etf.accumulating ? 'es ideal para la fase de acumulación FIRE' : 'puede ser útil en la fase de retirada FIRE para generar dividendos sin vender participaciones'} por sus características: ${etf.accumulating ? 'acumulación (sin tributación intermedia de dividendos) y' : ''} domicilio en ${fiscal.domicileLabel} (grado fiscal ${fiscal.grade}).`,
+          `${etf.ticker} (${etf.name}) ${etf.accumulating ? 'encaja con la fase de acumulación FIRE' : 'puede ser útil en la fase de retirada FIRE para generar dividendos sin vender participaciones'} por sus características: ${etf.accumulating ? 'acumulación (sin tributación intermedia de dividendos) y' : ''} domicilio en ${fiscal.domicileLabel} (grado fiscal ${fiscal.grade}).`,
           `El TER del ${formatPct(etf.ter / 100, 2)} es ${etf.ter < 0.20 ? 'muy competitivo' : etf.ter < 0.30 ? 'aceptable' : 'algo alto'} para una cartera FIRE de largo plazo donde cada décima de coste anual se acumula durante décadas.`,
         ],
       },
@@ -175,7 +175,7 @@ export default async function AnalizaPage({
     faqs = [
       {
         q: `¿Cuál es el broker más barato para comprar ${etf.ticker}?`,
-        a: `Para aportaciones mensuales pequeñas, Trade Republic (0€ por operación con planes de ahorro automáticos desde 1€) es la opción más barata. Para órdenes grandes, las diferencias entre brokers son marginales.`,
+        a: `En aportaciones mensuales pequeñas pesa la comisión fija: Trade Republic cobra 0 € por operación y admite planes de ahorro automáticos desde 1 €. En órdenes grandes las diferencias entre brókeres son marginales.`,
       },
       {
         q: `¿Puedo comprar ${etf.ticker} en MyInvestor?`,

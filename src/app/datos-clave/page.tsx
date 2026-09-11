@@ -287,7 +287,7 @@ Fuente: BogleHub (boglehub.com/datos-clave) — verificable con BOE/AEAT, follet
             />
             <p className="text-sm text-fg-muted leading-relaxed">
               EUNL e IWDA son el mismo fondo (ISIN IE00B4L5Y983), cotizando en bolsas distintas.
-              Para inversores españoles, SWRD es la opción más barata; IWDA tiene mayor liquidez
+              Para inversores españoles, SWRD tiene el TER más bajo; IWDA tiene mayor liquidez
               (&gt;75.000M USD AUM).
             </p>
           </section>

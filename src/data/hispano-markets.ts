@@ -63,7 +63,7 @@ export const HISPANO_MARKETS: HispanoMarket[] = [
     dividendTax: '7% retención (general)',
     localBrokers: ['IOL (InvertirOnline)', 'Balanz', 'Bull Market Brokers', 'Cocos Capital'],
     foreignBrokers: ['Interactive Brokers Argentina', 'eToro'],
-    etfRecommendation: 'Para argentinos: CEDEARs son la opción más popular — son representaciones locales de acciones y ETFs internacionales (incluyendo SPY, QQQ, IWDA) cotizando en BYMA en pesos. Permiten exposición a mercado internacional sin sacar dinero del país. Para inversores con cuenta en USD afuera, Interactive Brokers da acceso a ETFs UCITS o US directamente.',
+    etfRecommendation: 'Para argentinos: CEDEARs son el vehículo más extendido — son representaciones locales de acciones y ETFs internacionales (incluyendo SPY, QQQ, IWDA) cotizando en BYMA en pesos. Permiten exposición a mercado internacional sin sacar dinero del país. Para inversores con cuenta en USD afuera, Interactive Brokers da acceso a ETFs UCITS o US directamente.',
     considerations: [
       'CEDEARs son la mejor opción para argentinos que no pueden o no quieren sacar dinero del país',
       'Restricciones cambiarias (cepo) limitan acceso a USD oficial y a brokers extranjeros',
@@ -120,7 +120,7 @@ export const HISPANO_MARKETS: HispanoMarket[] = [
     ],
     description: 'Chile cuenta con uno de los ecosistemas fintech más desarrollados de América Latina. Fintual lidera como roboadvisor (~250.000+ clientes) ofreciendo fondos mutuos indexados de bajo coste similar al modelo Indexa Capital en España. El sistema previsional AFP+APV permite ventajas fiscales adicionales para complementar la jubilación.',
     faq: [
-      { q: '¿Qué es Fintual?', a: 'Fintual es el roboadvisor más popular de Chile (también disponible en México). Ofrece fondos mutuos indexados con perfiles de riesgo del 1 al 10, similar a Indexa Capital en España. Coste total estimado: 1.1% anual aproximadamente. Para inversores chilenos que quieren delegar la gestión, es la opción más accesible.' },
+      { q: '¿Qué es Fintual?', a: 'Fintual es el roboadvisor más popular de Chile (también disponible en México). Ofrece fondos mutuos indexados con perfiles de riesgo del 1 al 10, similar a Indexa Capital en España. Coste total estimado: 1.1% anual aproximadamente. Para inversores chilenos que quieren delegar la gestión, es la vía más accesible.' },
       { q: '¿Cómo invertir en S&P 500 desde Chile?', a: 'Tres formas: (1) Fintual con perfil 9 o 10 (cartera global con peso alto en S&P 500), (2) Interactive Brokers Chile comprando CSPX o SPY directamente, (3) Algunos brokers locales ofrecen acceso al ETF iShares Chile o a fondos mutuos que replican S&P 500. La opción 2 es la más eficiente en costes.' },
     ],
   },

@@ -15,11 +15,11 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
   {
     q: '¿Qué broker es mejor para empezar a invertir en España?',
-    a: 'Para la mayoría de inversores que empiezan, Trade Republic es la opción más sencilla: 0€ por operación, planes de ahorro automáticos desde 1€, app móvil clara y cuenta remunerada al 2-2,5%. Si quieres combinar ETFs con fondos indexados (con traspaso fiscal libre), MyInvestor es la única opción que ofrece ambos en una sola plataforma. DEGIRO da acceso a más bolsas internacionales y su estructura de comisiones escala mejor en órdenes muy grandes.',
+    a: 'Trade Republic es el de configuración más corta: 0 € por operación, planes de ahorro automáticos desde 1 €, app móvil clara y cuenta remunerada al 2-2,5 %. Si quieres combinar ETFs con fondos indexados (con traspaso fiscal libre), MyInvestor es la única opción que ofrece ambos en una sola plataforma. DEGIRO da acceso a más bolsas internacionales y su estructura de comisiones escala mejor en órdenes muy grandes.',
   },
   {
     q: '¿Es mejor un ETF, un fondo indexado o un roboadvisor para empezar?',
-    a: 'Depende de tu estilo: si quieres delegar completamente la gestión y no tomar ninguna decisión, un roboadvisor como Indexa Capital es la opción más simple (a cambio de ~0,40-0,50% anual). Si valoras la fiscalidad española (traspaso libre entre fondos sin tributar), un fondo indexado en MyInvestor es lo más eficiente. Si prefieres flexibilidad y mínimo coste, un ETF como VWCE en Trade Republic. Las tres opciones son válidas — la peor opción es no empezar.',
+    a: 'Depende de tu estilo: un roboadvisor como Indexa Capital es el camino con menos decisiones que tomar, a cambio de ~0,40-0,50 % anual. Un fondo indexado en MyInvestor es la vía donde funciona el traspaso sin tributar de la fiscalidad española. Si prefieres flexibilidad y mínimo coste, un ETF como VWCE en Trade Republic. Las tres opciones son válidas — la peor opción es no empezar.',
   },
   {
     q: '¿Es seguro invertir en fondos indexados y ETFs en España?',

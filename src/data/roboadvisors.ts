@@ -58,7 +58,7 @@ export const ROBOADVISORS: Roboadvisor[] = [
     hasPensionPlan: true,
     tagline: 'El roboadvisor con más patrimonio gestionado de España',
     description:
-      'Indexa Capital es el roboadvisor líder en España por patrimonio gestionado. Fundado en 2015 por François Derbaix, registrado en CNMV como ESI nº 257. Invierte exclusivamente en fondos indexados de Vanguard, iShares y Amundi con metodología 100% pasiva. Sus carteras van del perfil 1/10 (máximo conservador) al 10/10 (máximo riesgo), con rebalanceo automático cuando se desvían del peso objetivo. Es la opción más establecida y con más historial auditado del mercado español.',
+      'Indexa Capital es el roboadvisor líder en España por patrimonio gestionado. Fundado en 2015 por François Derbaix, registrado en CNMV como ESI nº 257. Invierte exclusivamente en fondos indexados de Vanguard, iShares y Amundi con metodología 100% pasiva. Sus carteras van del perfil 1/10 (máximo conservador) al 10/10 (máximo riesgo), con rebalanceo automático cuando se desvían del peso objetivo. Es la más veterana y la de más historial auditado del mercado español.',
     idealFor: [
       'Inversores que quieren delegar completamente la gestión',
       'Quien valora rebalanceo y aportaciones automatizadas',

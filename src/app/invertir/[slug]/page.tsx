@@ -94,7 +94,7 @@ export default async function InvertirPage({ params }: { params: Promise<{ slug:
     },
     {
       q: `¿En qué broker invierto ${m.amount}€ al mes?`,
-      a: `Para aportaciones mensuales pequeñas-medianas como ${m.amount}€, Trade Republic es la opción más eficiente: 0€ por operación y planes de ahorro automáticos desde 1€. Si prefieres fondos indexados (con traspaso fiscal libre), MyInvestor desde 1€ con TER del 0,05% (Amundi Prime Global). Para mayor volumen, DEGIRO también es válido.`,
+      a: `Para aportaciones mensuales pequeñas-medianas como ${m.amount}€, Trade Republic cobra 0 € por operación y admite planes de ahorro automáticos desde 1 €. Si prefieres fondos indexados (con traspaso fiscal libre), MyInvestor desde 1€ con TER del 0,05% (Amundi Prime Global). Para mayor volumen, DEGIRO también es válido.`,
     },
     {
       q: `¿Cómo tributa lo que gano invirtiendo ${m.amount}€ al mes?`,

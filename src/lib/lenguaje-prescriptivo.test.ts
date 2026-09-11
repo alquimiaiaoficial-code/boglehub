@@ -67,6 +67,21 @@ const PRESCRIPTIVAS: readonly [RegExp, string][] = [
   [/\bes la mejor opci[óo]n\b/i, 'ídem: no hay una «mejor» sin decir para quién ni para qué'],
   [/\bes lo ideal\b/i, 'ídem'],
   [/\bno te compliques\b/i, 'decide por el lector, en imperativo'],
+  // Añadidos el 11-sep, tanda 3. Verificación dejó de buscar FRASES y buscó la FORMA
+  // —condición sobre el lector + predicado valorativo en la misma frase— sobre `src/data`,
+  // `src/app` y `src/components`: 12 candidatos, leídos uno a uno, 6 de la familia.
+  // Entre ellos el peor de todo el día, que no era estilo sino un hecho contradicho:
+  // `/blog/myinvestor-opinion-2026` decía «MyInvestor es la opción OBJETIVAMENTE MEJOR en
+  // España» mientras `/empezar` decía «no hay uno objetivamente mejor». El sitio afirmaba y
+  // negaba la misma proposición con las mismas dos palabras. Y es la peor combinación
+  // posible: superlativo que FINGE criterio, sobre un proveedor comercial con nombre,
+  // condicionado al perfil del lector, en una página donde además decimos que no hay
+  // afiliación — lo que la hace leer como desinteresada y por tanto más creíble.
+  [/\bobjetivamente mejor\b/i, 'un superlativo no se vuelve dato por llamarse objetivo: di el criterio medible'],
+  [/\bes la opci[óo]n m[áa]s\b/i, 'di el atributo («es el más simple porque…»), no el veredicto'],
+  [/\bes la opci[óo]n coherente\b/i, 'ídem'],
+  [/\bes ideal (?:si|para)\b/i, '«encaja con quien…», que describe el encaje en vez de dictarlo'],
+  [/\bes lo m[áa]s eficiente\b/i, 'di en qué es más eficiente y cuánto'],
 ]
 
 /**

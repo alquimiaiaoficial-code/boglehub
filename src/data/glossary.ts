@@ -1766,7 +1766,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     faq: [
       {
         q: '¿Por qué importa la liquidez al elegir un ETF?',
-        a: 'Porque un ETF con poca liquidez tiene un spread más amplio (mayor diferencia entre el precio al que compras y al que vendes), lo que encarece cada operación. Los ETFs que replican índices globales grandes (MSCI World, S&P 500, FTSE All-World) tienen muchísima liquidez y spreads mínimos, así que para el inversor indexado son la opción más eficiente también por este motivo.',
+        a: 'Porque un ETF con poca liquidez tiene un spread más amplio (mayor diferencia entre el precio al que compras y al que vendes), lo que encarece cada operación. Los ETFs que replican índices globales grandes (MSCI World, S&P 500, FTSE All-World) tienen muchísima liquidez y spreads mínimos, así que para el inversor indexado salen más baratos también por este motivo.',
       },
       {
         q: '¿La renta variable es líquida?',

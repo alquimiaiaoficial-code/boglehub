@@ -253,7 +253,7 @@ export const ETF_THEMES: EtfTheme[] = [
       },
       {
         q: '¿Qué diferencia hay entre un ETC de oro y un ETF de mineras de oro?',
-        a: 'Un ETC de oro (como SGLN o IGLN) replica directamente el precio del oro físico almacenado en bóvedas. Un ETF de mineras invierte en acciones de empresas extractoras de oro, cuyo precio depende no solo del metal sino también de los costes de producción, la gestión empresarial y el ciclo del sector. Para exposición directa al precio del oro, los ETCs son la opción más pura y directa.',
+        a: 'Un ETC de oro (como SGLN o IGLN) replica directamente el precio del oro físico almacenado en bóvedas. Un ETF de mineras invierte en acciones de empresas extractoras de oro, cuyo precio depende no solo del metal sino también de los costes de producción, la gestión empresarial y el ciclo del sector. Para exposición directa al precio del oro, los ETCs son el vehículo más directo: siguen el precio spot sin intermediar acciones mineras.',
       },
     ],
     note:
