@@ -4,6 +4,7 @@ import { PositionSchema } from '@/types/portfolio'
 import { calculateAllocation } from '@/lib/analysis'
 import { projectFire } from '@/lib/fire'
 import { fetchPrices } from '@/lib/prices'
+import { getEtfByTicker } from '@/lib/etf-database'
 import { generateAiNarrative } from '@/lib/ai'
 import { clasificarFalloDeIa } from '@/lib/fallo-ia'
 import { rateLimit } from '@/lib/rate-limit'
@@ -24,6 +25,32 @@ export async function POST(req: NextRequest) {
     const tickers = [...new Set(body.positions.map(p => p.ticker.toUpperCase()))]
     const pricesResult = await fetchPrices(tickers)
     if (!pricesResult.ok) {
+      /**
+       * `fetchPrices` falla cuando no consigue NI UN precio, y hasta el 11-sep-2026 de ahí
+       * se deducía «los proveedores están caídos». La deducción es falsa y tiene otra causa
+       * mucho más frecuente: **que ninguno de los tickers esté en el catálogo**.
+       *
+       * El caso real que lo destapó: quien tiene la cartera en fondos indexados —media
+       * España, porque se traspasan sin tributar— recibía «Servicio temporalmente no
+       * disponible. Inténtalo de nuevo en unos minutos». Las dos cosas eran mentira: ni era
+       * temporal, ni reintentar iba a servir de nada. El analizador solo lee los ETFs del
+       * catálogo, por ticker.
+       *
+       * Aquí se distingue por lo único que se puede saber sin adivinar: si ni un solo
+       * ticker de la petición existe en el catálogo, el problema es de catálogo. Si alguno
+       * existe y aun así no hubo precios, entonces sí es el proveedor.
+       */
+      const algunoConocido = tickers.some((t) => getEtfByTicker(t) != null)
+      if (!algunoConocido) {
+        return NextResponse.json(
+          {
+            success: false,
+            error:
+              'No reconocemos ninguno de esos tickers. El analizador lee un catálogo de ETFs cotizados por ticker (VWCE, IWDA, CSPX…); los fondos indexados todavía no los lee, aunque se busquen por ISIN. Revisa los tickers antes de volver a intentarlo.',
+          },
+          { status: 422 },
+        )
+      }
       return NextResponse.json({ success: false, error: 'Servicio de precios temporalmente no disponible. Inténtalo de nuevo en unos minutos.' }, { status: 503 })
     }
 
