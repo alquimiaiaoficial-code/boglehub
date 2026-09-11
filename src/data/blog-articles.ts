@@ -2502,7 +2502,7 @@ Para empezar con buen pie, la [guía para elegir tu primer ETF](/blog/como-elegi
     ],
     content: `# eToro: opinión y análisis para invertir en España (2026)
 
-eToro es uno de los nombres más conocidos —y más anunciados— del mundo de la inversión, sobre todo por haber popularizado el copy trading y por su apuesta por las criptomonedas. Esa fama hace que muchos inversores que empiezan se planteen usarlo para comprar ETFs. Este análisis, sin afiliación, explica por qué para la inversión indexada a largo plazo eToro rara vez es la mejor opción, y para qué perfil sí puede tener sentido.
+eToro es uno de los nombres más conocidos —y más anunciados— del mundo de la inversión, sobre todo por haber popularizado el copy trading y por su apuesta por las criptomonedas. Esa fama hace que muchos inversores que empiezan se planteen usarlo para comprar ETFs. Este análisis, sin afiliación, explica por qué para la inversión indexada a largo plazo eToro encaja mal, y para qué perfil sí puede tener sentido.
 
 La conclusión por adelantado: eToro es una plataforma válida si lo que buscas específicamente es copy trading o criptomonedas, pero su modelo de costes (spread, comisión de retirada, cuenta en dólares) penaliza al inversor indexado de comprar y mantener. Para una cartera Boglehead hay opciones europeas más eficientes.
 
@@ -3220,7 +3220,7 @@ Broker holandés con mucha historia en Europa. Tarifas muy bajas (0,50–2 € p
 
 ### MyInvestor
 
-El neobanco español del grupo Andbank es el único que ofrece tanto ETFs como fondos indexados Vanguard, Amundi y otros. Si quieres diversidad de vehículos de inversión bajo un mismo techo, es la mejor opción en España.
+El neobanco español del grupo Andbank es el único que ofrece tanto ETFs como fondos indexados Vanguard, Amundi y otros. Es el único sitio de España donde ambos vehículos conviven en la misma cuenta.
 
 - Ideal para: quien mezcle fondos y ETFs; quiera traspaso fiscal entre fondos
 - ETFs disponibles: selección de los más populares
@@ -6211,7 +6211,7 @@ El [comparador de costes roboadvisor vs DIY](/calculadora/roboadvisor-vs-diy) te
 
 ## Veredicto
 
-Indexa Capital es un producto bien construido, con comisiones justas para ser un servicio gestionado, regulado por la CNMV y con historial auditado. Es la mejor opción dentro de los roboadvisors españoles para el inversor que quiere despreocuparse por completo de la gestión.
+Indexa Capital es un producto bien construido, con comisiones justas para ser un servicio gestionado, regulado por la CNMV y con historial auditado. Dentro de los roboadvisors españoles es el más veterano y el de mayor patrimonio gestionado, y está construido para quien quiere despreocuparse por completo de la gestión.
 
 Si tienes la disciplina para construir y mantener una cartera de fondos indexados propia, el DIY es más barato. Si no la tienes — y seamos honestos con nosotros mismos — Indexa puede ser el mejor seguro contra los errores de comportamiento que destruyen rentabilidades.
 
@@ -7321,7 +7321,7 @@ Esa lógica es matemáticamente correcta pero psicológicamente peligrosa: la pr
       },
       {
         q: '¿MyInvestor cobra comisión por comprar ETFs?',
-        a: 'Sí, pero bajas. La comisión por orden de ETF es 0,20€ fijos + 0,03% del importe. Para órdenes pequeñas (<667€), la comisión mínima de 0,20€ es muy competitiva. Para órdenes grandes, el componente variable del 0,03% puede sumar más que en Trade Republic (0€) o DEGIRO (0,50€ + 0,004%). Para el inversor que quiere combinar ETFs y fondos indexados en una sola plataforma, MyInvestor es la mejor opción.',
+        a: 'Sí, pero bajas. La comisión por orden de ETF es 0,20€ fijos + 0,03% del importe. Para órdenes pequeñas (<667€), la comisión mínima de 0,20€ es muy competitiva. Para órdenes grandes, el componente variable del 0,03% puede sumar más que en Trade Republic (0€) o DEGIRO (0,50€ + 0,004%). Para combinar ETFs y fondos indexados en una sola plataforma, MyInvestor es el único de los tres que ofrece ambos.',
       },
       {
         q: '¿Puedo abrir una cuenta de pensiones indexada en MyInvestor?',
@@ -7418,7 +7418,7 @@ MyInvestor encaja con este perfil:
 
 ## Para quién NO tiene sentido MyInvestor
 
-MyInvestor no es la mejor opción si:
+MyInvestor no encaja si:
 
 - **Solo invertirás en ETFs sin fondos**: Trade Republic o DEGIRO son más baratos para órdenes grandes
 - **Tu cartera tiene poco patrimonio y valoras mucho la cuenta remunerada**: hay cuentas con TAE más alta en otros neobancos

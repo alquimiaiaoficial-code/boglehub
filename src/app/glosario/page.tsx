@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
+import { DescargoFiscal } from '@/components/DescargoFiscal'
 import { JsonLd } from '@/components/JsonLd'
 import { GLOSSARY_TERMS, CATEGORY_LABELS, type GlossaryTerm } from '@/data/glossary'
 
@@ -177,11 +178,15 @@ export default function GlossaryIndexPage() {
             </div>
           </section>
 
-          <p className="mt-8 text-xs text-fg-subtle text-center">
-            Información educativa, no asesoramiento financiero. Las definiciones son
-            orientativas. Para términos legales o fiscales precisos, consulta la normativa
-            vigente o un profesional cualificado.
-          </p>
+          {/*
+            Antes había aquí un párrafo suelto con un descargo propio. Se cambia por el
+            componente canónico el 11-sep-2026, a instancia de Verificación: el índice del
+            glosario no es solo un listado de enlaces, enseña definiciones fiscales enteras
+            («FIFO es el criterio que aplica Hacienda al vender solo una parte…»), así que le
+            corresponde el mismo descargo que a cualquier otra página con contenido fiscal.
+            Un solo texto canónico en todo el sitio y no dos redacciones que se parecen.
+          */}
+          <DescargoFiscal variant="fiscal" />
         </div>
       </main>
       <Footer />

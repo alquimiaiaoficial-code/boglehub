@@ -65,11 +65,11 @@ export const ETF_THEMES: EtfTheme[] = [
     faq: [
       {
         q: '¿Cuál es la diferencia entre CSPX y SXR8?',
-        a: 'Ambos son exactamente el mismo fondo iShares Core S&P 500 (ISIN IE00B5BMR087), gestionado por BlackRock. La diferencia es la bolsa de cotización: CSPX cotiza en la Bolsa de Londres (LSE) en dólares, mientras que SXR8 cotiza en Xetra (Frankfurt) en euros. Para un inversor español el resultado final es idéntico; elige el ticker que tenga menor comisión de compra en tu broker.',
+        a: 'Ambos son exactamente el mismo fondo iShares Core S&P 500 (ISIN IE00B5BMR087), gestionado por BlackRock. La diferencia es la bolsa de cotización: CSPX cotiza en la Bolsa de Londres (LSE) en dólares, mientras que SXR8 cotiza en Xetra (Frankfurt) en euros. Para un inversor español el resultado final es idéntico: entre los dos, lo único que cambia es la comisión de compra que aplique cada bróker.',
       },
       {
         q: '¿Es mejor un ETF S&P 500 o un ETF MSCI World?',
-        a: 'Un ETF S&P 500 concentra el 100% en EE.UU., mientras que MSCI World diversifica entre 23 países desarrollados (aunque EE.UU. supone ~71%). A largo plazo el S&P 500 ha superado al MSCI World en muchos periodos, pero con mayor concentración geográfica. Si quieres simplicidad y convicción en el mercado americano, el S&P 500 es sólido. Si lo que se busca es diversificación global, el MSCI World o un All-World cubre más mercados.',
+        a: 'Un ETF S&P 500 concentra el 100% en EE.UU., mientras que MSCI World diversifica entre 23 países desarrollados (aunque EE.UU. supone ~71%). A largo plazo el S&P 500 ha superado al MSCI World en muchos periodos, pero con mayor concentración geográfica. El S&P 500 da exposición concentrada al mercado americano; el MSCI World o un All-World cubre más mercados a cambio de diluir esa exposición.',
       },
       {
         q: '¿Por qué hay ETFs S&P 500 con TER diferente que tienen el mismo rendimiento?',

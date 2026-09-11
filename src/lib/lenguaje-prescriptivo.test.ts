@@ -58,7 +58,31 @@ const PRESCRIPTIVAS: readonly [RegExp, string][] = [
   [/\bc[áa]mbiate\s+a\b/i, 'prescripción directa: prohibida por §1'],
   [/\btienes\s+que\s+(?:comprar|vender|contratar)\b/i, 'prescripción directa: prohibida por §1'],
   [/\bcu[áa]nto\s+peso\s+darles?\s+en\s+tu\s+cartera\b/i, '«en una cartera indexada», no «en TU cartera»'],
+  // Añadidos el 11-sep. La primera pasada quitó «es preferible» de una frase y dejó viva, en
+  // el MISMO párrafo, «si quieres simplicidad y convicción en el mercado americano, el S&P
+  // 500 **es sólido**». Misma estructura —condición sobre la situación del lector + veredicto
+  // sobre el producto— con un adjetivo que la lista no tenía. Lo encontró Verificación
+  // leyendo, no grepeando.
+  [/\bes s[óo]lido\b/i, 'veredicto sobre un producto: di qué hace, no que sea «sólido»'],
+  [/\bes la mejor opci[óo]n\b/i, 'ídem: no hay una «mejor» sin decir para quién ni para qué'],
+  [/\bes lo ideal\b/i, 'ídem'],
+  [/\bno te compliques\b/i, 'decide por el lector, en imperativo'],
 ]
+
+/**
+ * ⚠️ Lo que este fichero NO puede hacer, escrito aquí para que nadie lo confunda con cobertura.
+ *
+ * La familia «condición sobre la situación del lector + veredicto sobre el producto» **no se
+ * agota con expresiones regulares**. «Si quieres X, Y es sólido» hace exactamente el trabajo de
+ * «Y es la opción correcta si X», y el castellano tiene infinitos adjetivos para el hueco de
+ * «sólido». Cada patrón de arriba se añadió DESPUÉS de que alguien leyera la frase.
+ *
+ * O sea: este test impide que vuelvan las fórmulas conocidas. **No demuestra que no haya
+ * otras.** Lo que encuentra frases nuevas es leer las páginas, y eso lo hace una persona o una
+ * sesión con ese encargo, no este fichero. Un barrido guiado por patrón arregla la mitad de la
+ * frase que casa y deja intacta la mitad que dice lo mismo con otras palabras: pasó el 11-sep,
+ * en el mismo párrafo y en la misma respuesta.
+ */
 
 /** Ficheros de contenido: lo que acaba siendo texto visible. */
 function ficherosDeContenido(): string[] {
@@ -72,6 +96,12 @@ function ficherosDeContenido(): string[] {
   }
   anda('src/data')
   anda('src/app')
+  // Añadido el 11-sep a instancia de Verificación. Aquí viven `AnalysisResults.tsx` y
+  // `OverlapAnalysis.tsx`, que envuelven la salida del analizador: es la ÚNICA interfaz del
+  // sitio que habla de la cartera concreta de alguien, y por tanto el sitio más probable del
+  // repo para que aparezca algún día un «deberías bajarlo al 50 %». Hoy está limpio; esto
+  // cierra el hueco antes de que lo haya, no después.
+  anda('src/components')
   return out
 }
 

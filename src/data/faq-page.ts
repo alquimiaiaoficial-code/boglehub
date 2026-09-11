@@ -71,7 +71,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: '¿Qué es la regla de los dos meses en la venta de ETFs?',
-        a: 'La regla de los dos meses (wash sale) impide computar fiscalmente una pérdida si vendes un ETF o acción con minusvalía y recompras el mismo valor en los dos meses anteriores o posteriores. Hacienda lo considera una venta puramente fiscal y rechaza la pérdida. Si quieres realizar una pérdida real, espera más de dos meses para recomprar el mismo ticker.',
+        a: 'La regla de los dos meses (wash sale) impide computar fiscalmente una pérdida si vendes un ETF o acción con minusvalía y recompras el mismo valor en los dos meses anteriores o posteriores. Hacienda lo considera una venta puramente fiscal y rechaza la pérdida. Para que la pérdida compute, tienen que pasar más de dos meses antes de recomprar el mismo ticker. Ojo con extender ese plazo a los fondos indexados: los dos meses son el plazo de los valores admitidos a negociación, y un fondo de inversión tradicional no cotiza. El artículo 33.5 de la Ley del IRPF fija un año para los no admitidos, y dónde encajan los fondos indexados es una cuestión que no está cerrada; contar doce meses es lo único compatible con las dos lecturas.',
       },
       {
         q: '¿Cuándo hay que presentar el Modelo 720?',
