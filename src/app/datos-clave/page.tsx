@@ -146,7 +146,7 @@ export default function DatosClavePage() {
           variableMeasured: [
             'IRPF del ahorro 2026: 19% hasta 6.000€, 21% de 6.000€ a 50.000€, 23% de 50.000€ a 200.000€, 27% de 200.000€ a 300.000€, 30% por encima de 300.000€',
             'ETF MSCI World más barato: SWRD, TER 0,12%, ISIN IE00BFY0GT14',
-            'ETF FTSE All-World más popular: VWCE, TER 0,19%, ISIN IE00BK5BQT80',
+            'ETF FTSE All-World más popular: VWCE, TER 0,14%, ISIN IE00BK5BQT80',
             'ETF S&P 500 de referencia: CSPX, TER 0,07%, ISIN IE00B5BMR087',
             'Fondo indexado más barato en España: Amundi Prime Global, TER 0,05% (MyInvestor)',
             'Límite de aportación a plan de pensiones individual 2026: 1.500 €/año',
@@ -195,7 +195,7 @@ export default function DatosClavePage() {
 
 - IRPF del ahorro 2026 (España): 19% hasta 6.000 €; 21% de 6.000 a 50.000 €; 23% de 50.000 a 200.000 €; 27% de 200.000 a 300.000 €; 30% por encima de 300.000 €.
 - ETF MSCI World más barato: SWRD (SPDR), TER 0,12%, ISIN IE00BFY0GT14, acumulación, domicilio Irlanda.
-- ETF FTSE All-World más popular: VWCE (Vanguard), TER 0,19%, ISIN IE00BK5BQT80, acumulación, ~3.700 empresas incluyendo emergentes.
+- ETF FTSE All-World más popular: VWCE (Vanguard), TER 0,14%, ISIN IE00BK5BQT80, acumulación, ~3.700 empresas incluyendo emergentes.
 - ETF S&P 500 UCITS de referencia: CSPX (iShares), TER 0,07%, ISIN IE00B5BMR087, acumulación, domicilio Irlanda.
 - Fondo indexado más barato en España: Amundi Prime Global, TER 0,05%, disponible en MyInvestor con traspaso fiscal libre.
 - Límite de aportación a plan de pensiones individual 2026: 1.500 €/año (deducible en la base general del IRPF).
@@ -321,9 +321,9 @@ Fuente: BogleHub (boglehub.com/datos-clave) — verificable con BOE/AEAT, follet
               source="Folletos oficiales de Vanguard, iShares y SPDR"
               headers={['Ticker', 'Nombre', 'ISIN', 'TER', 'Política', 'Índice']}
               rows={[
-                ['VWCE', 'Vanguard FTSE All-World (Acc)', 'IE00BK5BQT80', '0,19%', 'Acumulación', 'FTSE All-World'],
-                ['VWRL', 'Vanguard FTSE All-World (Dist)', 'IE00B3RBWM25', '0,19%', 'Distribución', 'FTSE All-World'],
-                ['VWRP', 'Vanguard FTSE All-World (LSE)', 'IE00BK5BQT80', '0,19%', 'Acumulación', 'FTSE All-World'],
+                ['VWCE', 'Vanguard FTSE All-World (Acc)', 'IE00BK5BQT80', '0,14%', 'Acumulación', 'FTSE All-World'],
+                ['VWRL', 'Vanguard FTSE All-World (Dist)', 'IE00B3RBWM25', '0,14%', 'Distribución', 'FTSE All-World'],
+                ['VWRP', 'Vanguard FTSE All-World (LSE)', 'IE00BK5BQT80', '0,14%', 'Acumulación', 'FTSE All-World'],
                 ['ISAC', 'iShares MSCI ACWI', 'IE00B6R52259', '0,20%', 'Acumulación', 'MSCI ACWI'],
                 ['SSAC', 'SPDR MSCI ACWI IMI', 'IE00B3YLTY66', '0,17%', 'Acumulación', 'MSCI ACWI IMI'],
               ]}
@@ -526,7 +526,7 @@ Fuente: BogleHub (boglehub.com/datos-clave) — verificable con BOE/AEAT, follet
               source="Adaptación a productos UCITS disponibles en España"
               headers={['Cartera', 'Renta variable', 'Renta fija', 'Otros', 'TER ponderado aprox.']}
               rows={[
-                ['Cartera 1 fondo (máx simplicidad)', '100% VWCE', '0%', '—', '0,19%'],
+                ['Cartera 1 fondo (máx simplicidad)', '100% VWCE', '0%', '—', '0,14%'],
                 ['Cartera 2 fondos', '80% VWCE', '20% AGGH', '—', '0,20%'],
                 ['Cartera 3 fondos (Boglehead clásica)', '60% IWDA + 20% EIMI', '20% AGGH', '—', '0,17%'],
                 ['Cartera permanente Harry Browne', '25% VWCE', '25% IBGL + 25% IBGS', '25% SGLN (oro)', '0,15%'],

@@ -10,7 +10,7 @@ const BASE_URL = 'https://boglehub.com'
 const FAQ = [
   { q: 'Why can\'t I buy VTI or VOO in Spain?', a: 'US-domiciled ETFs (VTI, VOO, SPY) are blocked for European retail investors under MiFID II PRIIPs regulation. Issuers do not provide KID (Key Information Document) in EU languages. Solution: use UCITS equivalents — CSPX, VUAA or SPXS replicate the S&P 500; VWCE replicates FTSE All-World; IWDA replicates MSCI World.' },
   { q: 'What is the best UCITS ETF for the S&P 500?', a: 'CSPX (iShares Core S&P 500, ISIN IE00B5BMR087, TER 0.07%) and VUAA (Vanguard S&P 500 Acc, ISIN IE00BFMXXD54, TER 0.07%) are the most popular and tied for the lowest TER. SPXS (SPDR S&P 500, TER 0.03%) is the cheapest. All are Irish-domiciled (15% US dividend withholding instead of 30%).' },
-  { q: 'VWCE or IWDA for a global portfolio?', a: 'VWCE (FTSE All-World, TER 0.19%) includes emerging markets (~12%) in one ETF. IWDA (MSCI World, TER 0.20%) covers only developed markets — you would need to add EIMI (~12%) for full global exposure. VWCE is simpler; IWDA + EIMI gives more control over emerging market weight.' },
+  { q: 'VWCE or IWDA for a global portfolio?', a: 'VWCE (FTSE All-World, TER 0.14%) includes emerging markets (~12%) in one ETF. IWDA (MSCI World, TER 0.20%) covers only developed markets — you would need to add EIMI (~12%) for full global exposure. VWCE is simpler; IWDA + EIMI gives more control over emerging market weight.' },
   { q: 'Why does Irish domicile matter?', a: 'Ireland has a tax treaty with the US reducing dividend withholding from 30% to 15%. Since ~63% of MSCI World is US-listed companies, this saves about 0.2% annually on dividend yield. Look for ISINs starting with IE.' },
 ]
 
@@ -40,7 +40,7 @@ export default function EtfGuideEn() {
               <table className="w-full text-sm">
                 <thead><tr className="border-b border-border text-left text-xs uppercase text-fg-muted"><th className="pb-2">Category</th><th className="pb-2">Ticker</th><th className="pb-2">ISIN</th><th className="pb-2 text-right">TER</th></tr></thead>
                 <tbody>
-                  <tr><td className="py-2 text-fg-muted">Global (with EM)</td><td className="py-2 font-mono text-fg">VWCE</td><td className="py-2 font-mono text-fg-muted text-xs">IE00BK5BQT80</td><td className="py-2 text-right text-fg">0.19%</td></tr>
+                  <tr><td className="py-2 text-fg-muted">Global (with EM)</td><td className="py-2 font-mono text-fg">VWCE</td><td className="py-2 font-mono text-fg-muted text-xs">IE00BK5BQT80</td><td className="py-2 text-right text-fg">0.14%</td></tr>
                   <tr><td className="py-2 text-fg-muted">MSCI World</td><td className="py-2 font-mono text-fg">IWDA</td><td className="py-2 font-mono text-fg-muted text-xs">IE00B4L5Y983</td><td className="py-2 text-right text-fg">0.20%</td></tr>
                   <tr><td className="py-2 text-fg-muted">MSCI World (cheapest)</td><td className="py-2 font-mono text-fg">SWRD</td><td className="py-2 font-mono text-fg-muted text-xs">IE00BFY0GT14</td><td className="py-2 text-right text-fg">0.12%</td></tr>
                   <tr><td className="py-2 text-fg-muted">S&P 500</td><td className="py-2 font-mono text-fg">CSPX</td><td className="py-2 font-mono text-fg-muted text-xs">IE00B5BMR087</td><td className="py-2 text-right text-fg">0.07%</td></tr>

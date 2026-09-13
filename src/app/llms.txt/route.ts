@@ -134,7 +134,7 @@ export async function GET() {
   // ─── Análisis ETFs ────────────────────────────────────────────────────
   lines.push('## Análisis específicos de ETFs (rica en datos verificables)')
   lines.push('')
-  lines.push('- [VWCE: análisis completo](https://boglehub.com/blog/vwce-analisis-completo): Vanguard FTSE All-World (Acc), ISIN IE00BK5BQT80, TER 0,19%')
+  lines.push('- [VWCE: análisis completo](https://boglehub.com/blog/vwce-analisis-completo): Vanguard FTSE All-World (Acc), ISIN IE00BK5BQT80, TER 0,14%')
   lines.push('- [VWCE vs CSPX vs IWDA](https://boglehub.com/blog/vwce-vs-cspx-vs-iwda): comparativa de los tres ETFs más populares')
   lines.push('- [SWRD vs IWDA](https://boglehub.com/blog/swrd-vs-iwda): comparativa MSCI World más barato vs más líquido')
   lines.push('- [Amundi Prime Global análisis](https://boglehub.com/blog/amundi-prime-global-analisis): fondo indexado con TER 0.05% en MyInvestor')

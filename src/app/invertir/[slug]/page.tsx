@@ -90,7 +90,7 @@ export default async function InvertirPage({ params }: { params: Promise<{ slug:
     },
     {
       q: `¿Qué ETF elijo para invertir ${m.amount}€ al mes?`,
-      a: `Para una cartera sencilla y diversificada, la opción más popular en España es VWCE (Vanguard FTSE All-World UCITS ETF Acc, ISIN IE00BK5BQT80): incluye 3.700+ empresas globales (desarrollados y emergentes), TER 0,19%, acumulación, domiciliado en Irlanda. Con ${m.amount}€/mes puedes empezar inmediatamente vía Trade Republic con planes de ahorro automáticos sin comisión.`,
+      a: `Para una cartera sencilla y diversificada, la opción más popular en España es VWCE (Vanguard FTSE All-World UCITS ETF Acc, ISIN IE00BK5BQT80): incluye 3.700+ empresas globales (desarrollados y emergentes), TER 0,14%, acumulación, domiciliado en Irlanda. Con ${m.amount}€/mes puedes empezar inmediatamente vía Trade Republic con planes de ahorro automáticos sin comisión.`,
     },
     {
       q: `¿En qué broker invierto ${m.amount}€ al mes?`,

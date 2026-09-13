@@ -90,7 +90,7 @@ export default function EmpezarPage() {
             },
             {
               name: 'Selecciona tus ETFs o fondos',
-              text: 'Cartera mínima recomendada: 80% VWCE (Vanguard FTSE All-World, TER 0,19%, ISIN IE00BK5BQT80) + 20% AGGH (renta fija global hedged EUR, TER 0,10%). Coste total ponderado ~0,20% anual.',
+              text: 'Cartera mínima recomendada: 80% VWCE (Vanguard FTSE All-World, TER 0,14%, ISIN IE00BK5BQT80) + 20% AGGH (renta fija global hedged EUR, TER 0,10%). Coste total ponderado ~0,13% anual.',
               url: `${BASE_URL}/empezar#paso-4`,
             },
             {
