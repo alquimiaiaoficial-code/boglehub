@@ -54,4 +54,31 @@ describe('lo que se envía al proveedor de IA', () => {
     // El usuario no pierde nada: lo que se recorta es lo que ve el modelo, no lo que ve él.
     expect(route).toMatch(/data:\s*\{[\s\S]*fire,/)
   })
+
+  /**
+   * Ampliación del 13-sep-2026. El payload se recortó el 8-sep y `llms.txt` **siguió
+   * diciendo durante cinco días** que al modelo le llegaban «su patrimonio total, su
+   * aportación mensual y su objetivo». Falso desde el recorte, y encima en la dirección
+   * que nos hace parecer peores de lo que somos — por eso no saltó ninguna alarma: **una
+   * afirmación falsa que nos perjudica no se siente como un error, se siente como
+   * prudencia.**
+   *
+   * Se descubrió el mismo día en que el fundador publicaba en el foro un mensaje que
+   * afirma lo contrario («la aportación mensual y el objetivo no salen de mi servidor»).
+   * Cualquiera que hubiera comparado las dos cosas habría encontrado la contradicción.
+   *
+   * `llms.txt` es lo que los motores de IA leen y repiten: una frase falsa ahí no la lee
+   * una persona, la propaga un tercero. Por eso entra en el mismo test que vigila el
+   * payload, y no en uno aparte.
+   */
+  it('llms.txt describe el payload real y no el de antes del recorte', () => {
+    const llms = readFileSync('src/app/llms.txt/route.ts', 'utf8')
+    expect(
+      llms,
+      'llms.txt afirma que la aportación y el objetivo llegan al modelo; route.ts solo pasa yearsToFire',
+    ).not.toMatch(/de su patrimonio total, su aportación mensual y su objetivo/)
+    expect(llms, 'debe decir explícitamente que esos datos no salen del servidor').toMatch(
+      /NO salen del servidor/,
+    )
+  })
 })
