@@ -39,6 +39,7 @@ export function Footer() {
               <li><Link href="/etfs/renta-fija" className="hover:text-fg transition-colors">ETFs renta fija</Link></li>
               <li><Link href="/fondo" className="hover:text-fg transition-colors">Fondos indexados</Link></li>
               <li><Link href="/gestora" className="hover:text-fg transition-colors">Gestoras</Link></li>
+              <li><Link href="/comparar-fondo" className="hover:text-fg transition-colors">Comparar fondos</Link></li>
             </ul>
           </div>
           {/*

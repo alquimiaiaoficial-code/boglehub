@@ -68,4 +68,33 @@ describe('todo hub indexable tiene un enlace desde la navegación', () => {
       expect(nav, `${h} sin enlace: era una de las tres familias invisibles`).toContain(`href="${h}"`)
     }
   })
+
+  /**
+   * Un nivel más abajo, y es donde estaba el resto del agujero.
+   *
+   * `/comparar` es un comparador interactivo: genera las combinaciones con JavaScript y no
+   * enlazaba a ninguna de las 16 comparativas que sí pedimos indexar. Googlebot no ejecuta
+   * el selector. Y `/comparar-fondo` **daba 404**, así que sus 11 páginas no tenían camino
+   * desde ningún sitio.
+   *
+   * Lo destapó un rastreo real desde la home: 25 de 316 URLs del sitemap eran inalcanzables,
+   * y las 25 eran comparativas. Estar en el sitemap no es tener camino.
+   */
+  it('las comparativas que pedimos indexar se enlazan desde su hub', () => {
+    const hub = readFileSync('src/app/comparar/page.tsx', 'utf8')
+    expect(hub, '/comparar debe listar las comparativas indexadas con <a>, no solo el selector').toMatch(
+      /INDEXED_PAIRS\.map/,
+    )
+    expect(hub).toMatch(/href=\{`\/comparar\/\$\{pairToSlug/)
+  })
+
+  it('el hub de comparativas de fondos existe y las enlaza', () => {
+    const hub = readFileSync('src/app/comparar-fondo/page.tsx', 'utf8')
+    expect(hub, 'sin este hub, las 11 comparativas de fondos quedan huérfanas').toMatch(
+      /FUND_PAIRS\.map/,
+    )
+    expect(hub).toMatch(/href=\{`\/comparar-fondo\/\$\{slug\}`\}/)
+    const nav2 = readFileSync('src/components/Footer.tsx', 'utf8')
+    expect(nav2, '/comparar-fondo debe tener enlace desde el pie').toContain('href="/comparar-fondo"')
+  })
 })

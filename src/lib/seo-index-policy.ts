@@ -80,7 +80,7 @@ const NOINDEX_PREFIXES = [
  *
  * Al comparar se normaliza el orden del par, así que da igual cómo se escriba el slug.
  */
-const INDEXED_PAIRS: readonly (readonly [string, string])[] = [
+export const INDEXED_PAIRS: readonly (readonly [string, string])[] = [
   ['VEUR', 'MWRD'], ['VWCE', 'CNDX'], ['VWCE', 'VFEM'], ['EIMI', 'AGGH'],
   ['VWCE', 'EIMI'], ['IWDA', 'IUSA'], ['ISAC', 'SXR8'], ['IWDA', 'EUNA'],
   ['CSPX', 'CNDX'], ['EQQQ', 'VEUR'], ['ISAC', 'VFEM'], ['IWDA', 'VUAA'],
