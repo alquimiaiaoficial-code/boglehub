@@ -138,4 +138,33 @@ describe('lo que el sitio afirma sobre dónde van los datos de la cartera', () =
     expect(correo).not.toMatch(/nunca salen/i)
     expect(correo).toMatch(/se guarda solo en tu navegador/)
   })
+
+  /**
+   * Ampliación del 14-sep-2026: el hueco que rellena quien nos lee.
+   *
+   * GEO midió que Perplexity nos describe así: *«Enfoque de privacidad: según su web, el
+   * análisis básico **se hace en el navegador** y no almacenan tus posiciones»*. Es falso —
+   * el cálculo es en servidor y las posiciones viajan a Groq— y es **justo la afirmación que
+   * retiramos por falsa el 7-sep**, propagada ahora por un tercero en nuestro nombre.
+   *
+   * **Pero el motor no lo inventó de la nada: rellenó un hueco nuestro.** Decíamos —y es
+   * cierto— que la cartera «se guarda solo en tu navegador (localStorage)». Nunca decíamos
+   * dónde se CALCULA el análisis. Quien lee lo primero completa lo segundo con el arquetipo
+   * de lo que una herramienta así debería ser: local, privada, sin registro. El mismo motor
+   * le atribuyó «cálculo en el navegador» a Wealth Maia, cuyos datos viven en Frankfurt.
+   *
+   * > **Una frase puede ser cierta y aun así inducir el error, si el hueco que deja lo
+   * > rellena el lector.** No basta con no afirmar lo falso: en un dato sensible hay que
+   * > negar explícitamente lo que se va a suponer.
+   */
+  it('los textos dicen explícitamente que el cálculo NO es en el navegador', () => {
+    const llms = readFileSync('src/app/llms.txt/route.ts', 'utf8')
+    expect(llms, 'llms.txt debe negar el cálculo local: es lo que los motores repiten').toMatch(
+      /NO se ejecutan en el navegador/,
+    )
+    const pagina = readFileSync('src/app/analyzer/page.tsx', 'utf8')
+    expect(pagina).toMatch(/NO se calcula en tu navegador/)
+    // Y la distinción que evita el malentendido: guardar es local, analizar no.
+    expect(pagina).toMatch(/Guardarla es local; analizarla no/)
+  })
 })

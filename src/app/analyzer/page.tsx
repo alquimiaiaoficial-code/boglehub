@@ -16,7 +16,7 @@ const ANALYZER_FAQ: { q: string; a: string }[] = [
   },
   {
     q: '¿Se guardan mis datos de inversión en algún servidor?',
-    a: 'Tu cartera se guarda solo en tu navegador (localStorage) y puedes borrarla cuando quieras. Al pulsar «Analizar», las posiciones sí viajan a nuestro servidor y al proveedor de IA (Groq) para generar el comentario. Si rellenas la proyección de independencia financiera, tu aportación mensual y tu objetivo llegan solo a nuestro servidor, que hace el cálculo: a Groq no se le envían, solo el número de años resultante. Todo se descarta al terminar: no se almacena ni se asocia a ti. Los detalles, en la política de privacidad.',
+    a: 'Tu cartera se guarda solo en tu navegador (localStorage) y puedes borrarla cuando quieras. Guardarla es local; analizarla no. El análisis NO se calcula en tu navegador: al pulsar «Analizar», las posiciones viajan a nuestro servidor, que hace los cálculos, y de ahí al proveedor de IA (Groq) para generar el comentario. Si rellenas la proyección de independencia financiera, tu aportación mensual y tu objetivo llegan solo a nuestro servidor, que hace el cálculo: a Groq no se le envían, solo el número de años resultante. Todo se descarta al terminar: no se almacena ni se asocia a ti. Los detalles, en la política de privacidad.',
   },
   {
     q: '¿Qué brókers reconoce automáticamente desde el PDF?',
