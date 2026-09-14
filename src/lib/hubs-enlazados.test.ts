@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { readFileSync } from 'node:fs'
+import { readFileSync, readdirSync, existsSync } from 'node:fs'
 import { shouldIndex } from './seo-index-policy'
 
 /**
@@ -34,7 +34,6 @@ import { shouldIndex } from './seo-index-policy'
 
 /** Rutas estáticas de primer nivel: `src/app/<algo>/page.tsx`, sin segmento dinámico. */
 function hubsDePrimerNivel(): string[] {
-  const { readdirSync, existsSync } = require('node:fs') as typeof import('node:fs')
   return readdirSync('src/app', { withFileTypes: true })
     .filter((e) => e.isDirectory() && !e.name.startsWith('[') && !e.name.startsWith('(') && e.name !== 'api')
     .filter((e) => existsSync(`src/app/${e.name}/page.tsx`))
