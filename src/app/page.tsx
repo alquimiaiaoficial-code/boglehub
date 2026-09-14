@@ -125,7 +125,7 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 { icon: BarChart3, title: 'Asignación detallada', desc: 'Renta variable vs fija, geografía, sectores, divisas. Visualizado para entender de un vistazo.' },
-                { icon: Globe2, title: 'Conversión EUR automática', desc: 'Tickers en USD, GBp o EUR — todos convertidos a euros con tipo de cambio en tiempo real.' },
+                { icon: Globe2, title: 'Conversión EUR automática', desc: 'Tickers en USD, GBp o EUR — todos convertidos a euros con el tipo de cambio del día.' },
                 { icon: PiggyBank, title: 'Calculadora FIRE', desc: 'Introduce aporte mensual y objetivo. Te decimos cuándo alcanzas la libertad financiera.' },
                 { icon: Sparkles, title: 'Análisis IA en español', desc: 'Un modelo de lenguaje alojado en Groq genera un análisis educativo: riesgos, áreas de mejora, comparativas.' },
                 { icon: ShieldCheck, title: 'Privado por diseño', desc: 'Tu cartera se guarda solo en tu navegador. Para analizarla, las posiciones viajan al servidor y se descartan: no se almacenan.' },

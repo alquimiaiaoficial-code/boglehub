@@ -99,7 +99,7 @@ export default function AnalyzerPage() {
             </p>
             <ul className="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-sm text-fg-subtle">
               <li>✓ Trade Republic, DEGIRO, MyInvestor, ING — detección por PDF</li>
-              <li>✓ Precios en tiempo real y conversión a EUR automática</li>
+              <li>✓ Precios de mercado actualizados (hasta 10 min de diferido) y conversión a EUR automática</li>
               <li>✓ Análisis en español generado por IA</li>
               <li>✓ Grado fiscal A–F por ETF (residente en España)</li>
             </ul>
