@@ -91,7 +91,11 @@ for (let i = 0; i < urls.length; i += 10000) {
   const cuerpo = await res.text()
   console.log(`Lote de ${lote.length}: HTTP ${res.status} ${res.statusText}${cuerpo ? ' — ' + cuerpo.slice(0, 200) : ''}`)
   if (res.status !== 200 && res.status !== 202) {
-    console.error('Respuesta no esperada. 403 = clave mal servida; 422 = URLs de otro host; 429 = demasiadas.')
+    console.error('Respuesta no esperada.')
+    console.error('  403 SiteVerificationNotCompleted -> la clave esta servida pero Bing aun no la ha')
+    console.error('      validado. Pasa en el PRIMER envio de un dominio: espera y reintenta, no toques nada.')
+    console.error('  403 (otro motivo) -> la clave no coincide con el fichero servido.')
+    console.error('  422 -> hay URLs que no son de este host. 429 -> demasiados envios.')
     process.exit(1)
   }
 }
