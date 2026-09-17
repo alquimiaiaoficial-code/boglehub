@@ -54,6 +54,30 @@ export async function POST(req: NextRequest) {
       }
     }
 
+    /**
+     * Si no queda NADA que valorar, se dice por qué antes de calcular.
+     *
+     * Bug real, cazado al probar en producción el 17-sep y que los 240 tests no vieron
+     * porque ninguno cubría este caso: una cartera formada solo por fondos que reconocemos
+     * y no analizamos no entraba en ninguna rama de error. `tickersEtf` estaba vacío, así
+     * que `fetchPrices` no se llamaba y `pricesResult` era `ok`; el análisis seguía adelante
+     * y devolvía `success: true` con todo a cero. Un reparto vacío y un TER de 0 % parecen
+     * un dato, no un fallo — que es la peor forma de fallar que hay en esta herramienta.
+     */
+    if (tickersEtf.length === 0 && fondos.size === 0) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: fondosRechazados.length > 0
+            ? `${fondosRechazados.length === 1 ? 'Reconocemos ese fondo, pero todavía no lo analizamos' : 'Reconocemos esos fondos, pero todavía no los analizamos'}. ${fondosRechazados
+                .map((f) => `${f.fondo.name}: ${f.motivo}`)
+                .join(' ')}`
+            : 'No hay nada que analizar en esa cartera.',
+        },
+        { status: 422 },
+      )
+    }
+
     const pricesResult = tickersEtf.length > 0
       ? await fetchPrices(tickersEtf)
       : ({ ok: true as const, value: {} as Record<string, number> })

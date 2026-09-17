@@ -77,7 +77,21 @@ describe('qué responde el analizador cuando no conoce los tickers', () => {
     // El corte va hasta el 422 inclusive: ese es el final de la rama de catálogo. Cortar en
     // `status: 503` metía dentro el mensaje del proveedor y hacía fallar el test por su
     // propia delimitación, no por el código.
-    const ramaCatalogo = route.slice(route.indexOf('algunoConocido'), route.indexOf('status: 422'))
+    //
+    // Y volvió a pasar el 17-sep, por segunda vez y por lo mismo. Al añadir la rama que
+    // rechaza una cartera formada solo por fondos no analizables apareció un `status: 422`
+    // ANTES de `algunoConocido`, así que `indexOf` cogía ese y el corte salía vacío: el test
+    // fallaba con el código correcto. Se busca el 422 que viene DESPUÉS del ancla, no el
+    // primero del fichero.
+    //
+    // La lección de fondo, por si hay una tercera: delimitar un trozo de código por cadenas
+    // literales es frágil por construcción. Aguanta mientras esas cadenas sean únicas, y
+    // nada garantiza que sigan siéndolo. Cuando se pueda comprobar el comportamiento en vez
+    // del texto —llamando al handler, como en `api/analyze/fondos-rechazados.test.ts`— eso
+    // es preferible.
+    const inicio = route.indexOf('algunoConocido')
+    const ramaCatalogo = route.slice(inicio, route.indexOf('status: 422', inicio))
+    expect(ramaCatalogo, 'la delimitación del test se ha quedado vacía').not.toBe('')
     expect(ramaCatalogo).not.toMatch(/Inténtalo de nuevo/)
     expect(ramaCatalogo).toMatch(/fondos indexados/)
   })
