@@ -31,18 +31,38 @@ function pos(ticker: string, shares = 1000): Position {
 }
 
 describe('el solapamiento ve los fondos indexados', () => {
+  /**
+   * ⚠️ ESTE TEST AFIRMABA ALGO FALSO HASTA EL 18-sep-2026, y conviene que quede escrito.
+   *
+   * La versión de ayer emparejaba IE00B03HCZ61 con IE00BYX5MX67 diciendo que «replican los
+   * dos el MSCI World» y exigía un solapamiento del 100 %. Y pasaba. Pasaba porque el
+   * catálogo tenía mal la ficha de IE00BYX5MX67: dice ser un MSCI World y es un S&P 500.
+   *
+   * O sea que el test no comprobaba la realidad, comprobaba que el código repitiera el mismo
+   * error que los datos. Al corregir la ficha, el test falló — y ese fallo fue la
+   * confirmación de que el error era real.
+   *
+   * Ahora usa dos fondos que SÍ comparten índice y que además son un caso más típico: dos
+   * S&P 500 de gestoras distintas, Vanguard y Fidelity.
+   */
   it('dos fondos que replican el MISMO índice se solapan al 100 %', () => {
-    // Vanguard Global Stock y Fidelity MSCI World replican los dos el MSCI World. Es el caso
-    // real que no avisaba de nada: dos productos idénticos en exposición, dos comisiones.
-    const pares = computeOverlaps([pos('IE00B03HCZ61'), pos('IE00BYX5MX67')])
+    const pares = computeOverlaps([pos('IE0032126645'), pos('IE00BYX5MX67')])
     expect(pares.length, 'un par de fondos debe producir un par').toBe(1)
     expect(pares[0].overlapPct).toBeGreaterThan(0.99)
   })
 
+  it('dos fondos de índices DISTINTOS no se solapan del todo, aunque los dos sean globales', () => {
+    // Un MSCI World y un S&P 500 comparten mucho —Estados Unidos pesa ~70 % del MSCI World—
+    // pero no son lo mismo, y decir 100 % ahí sería el error que este fichero vino a cazar.
+    const [par] = computeOverlaps([pos('IE00B03HCZ61'), pos('IE0032126645')])
+    expect(par.overlapPct).toBeGreaterThan(0.5)
+    expect(par.overlapPct).toBeLessThan(0.95)
+  })
+
   it('los identifica por su nombre, no por un ISIN que nadie reconoce', () => {
-    const [par] = computeOverlaps([pos('IE00B03HCZ61'), pos('IE00BYX5MX67')])
-    expect(par.etiquetaA).toMatch(/Vanguard Global Stock|Fidelity MSCI World/)
-    expect(par.etiquetaB).toMatch(/Vanguard Global Stock|Fidelity MSCI World/)
+    const [par] = computeOverlaps([pos('IE0032126645'), pos('IE00BYX5MX67')])
+    expect(par.etiquetaA).toMatch(/Vanguard U\.S\. 500|Fidelity S&P 500/)
+    expect(par.etiquetaB).toMatch(/Vanguard U\.S\. 500|Fidelity S&P 500/)
     expect(par.etiquetaA).not.toBe(par.etiquetaB)
   })
 

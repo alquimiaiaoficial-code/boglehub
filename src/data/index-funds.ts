@@ -92,24 +92,32 @@ export const INDEX_FUNDS: IndexFund[] = [
     ],
   },
   {
+    // ⚠️ El slug dice «msci-world» y el fondo es un S&P 500. Se mantiene A PROPOSITO: la URL
+    // /fondo/fidelity-msci-world ya esta en el sitemap y enlazada desde el blog, y cambiarla
+    // sin un redirect 301 la rompe. Pendiente: renombrar a fidelity-sp500 con redirect.
     slug: 'fidelity-msci-world',
-    name: 'Fidelity MSCI World Index Fund',
+    name: 'Fidelity S&P 500 Index Fund',
     manager: 'Fidelity',
     isin: 'IE00BYX5MX67',
-    index: 'MSCI World',
-    ter: 0.12,
+    // Verificado el 18-sep-2026 en el registro: «FIDELITY S&P 500 INDEX FUND P-ACC-EUR»,
+    // indice S&P 500, gastos corrientes 0,06 %. La ficha decia «MSCI World» con TER 0,12 %:
+    // nombre, indice y comision estaban los tres mal, y durante un dia el analizador le dio
+    // exposicion MSCI World a un fondo 100 % estadounidense.
+    index: 'S&P 500',
+    ter: 0.06,
     assetClass: 'Renta variable',
-    region: 'Global desarrollados',
+    region: 'Estados Unidos',
     accumulating: true,
     currency: 'EUR',
     availableAt: ['MyInvestor'],
     minimum: '1€',
-    tagline: 'MSCI World de Fidelity con TER 0,12%, punto medio entre Amundi y Vanguard',
+    tagline: 'S&P 500 de Fidelity al 0,06 %, uno de los indexados más baratos en España',
     description:
-      'El Fidelity MSCI World Index Fund replica el MSCI World original con un TER del 0,12%, situándose entre el Amundi Prime Global (0,05%, índice Solactive) y el Vanguard Global Stock (0,18%, MSCI World). Para el inversor que quiere el índice MSCI World oficial al menor coste posible, es una opción muy competitiva. Disponible en MyInvestor con traspaso fiscal libre.',
-    etfEquivalent: 'IWDA',
+      'El Fidelity S&P 500 Index Fund replica el S&P 500 con unos gastos corrientes del 0,06 %, lo que lo sitúa entre los fondos indexados más baratos disponibles en España y por debajo del Vanguard U.S. 500 Stock Index (0,10 %), que sigue el mismo índice. Da exposición a las grandes empresas estadounidenses, no a renta variable mundial: quien busque global necesita otro producto. Disponible en MyInvestor, y como fondo se puede traspasar a otro fondo sin tributar.',
+    etfEquivalent: 'CSPX',
     faq: [
-      { q: '¿Fidelity MSCI World es mejor que Vanguard Global Stock?', a: 'El Fidelity MSCI World (TER 0,12%) es más barato que el Vanguard Global Stock (TER 0,18%) y ambos replican el MSCI World original. Para coste mínimo manteniendo el índice MSCI World, Fidelity gana. La diferencia con Vanguard es la marca y el historial.' },
+      { q: '¿En qué se diferencia del Vanguard U.S. 500 Stock Index?', a: 'Los dos replican el S&P 500. El Fidelity cuesta un 0,06 % anual y el Vanguard un 0,10 %, así que sobre 10.000 € la diferencia es de unos 4 € al año. Ambos son fondos, no ETFs, así que se pueden traspasar entre sí sin tributar.' },
+      { q: '¿Es un fondo global?', a: 'No. El S&P 500 son 500 grandes empresas de Estados Unidos, así que la exposición es de un solo país. Un fondo de renta variable mundial como el Vanguard Global Stock Index (MSCI World) incluye además Europa, Japón y el resto de mercados desarrollados.' },
     ],
   },
   {

@@ -10202,7 +10202,7 @@ Si prefieres un fondo indexado —para aprovechar el traspaso fiscal libre—, t
 | **Fidelity MSCI World Index** | Fidelity | 0,12 % | IE00BYX5MX67 |
 | Vanguard Global Stock Index | Vanguard | 0,18 % | IE00B03HCZ61 |
 
-El **Amundi Prime Global** es el más barato (0,05%); replica el índice Solactive GBS, funcionalmente equivalente al MSCI World. El **Fidelity MSCI World** y el **Vanguard Global Stock** replican el MSCI World clásico. Fichas: [Amundi Prime Global](/fondo/amundi-prime-global), [Fidelity MSCI World](/fondo/fidelity-msci-world) y [Vanguard Global Stock](/fondo/vanguard-global-stock). Más en la [guía de mejores fondos indexados](/blog/mejores-fondos-indexados-espana-2026).
+El **Amundi Prime Global** es el más barato (0,05%); replica el índice Solactive GBS, funcionalmente equivalente al MSCI World. El **Vanguard Global Stock** replica el MSCI World clásico. El **Fidelity** de esa gama (IE00BYX5MX67) no es un MSCI World sino un **S&P 500** al 0,06 %, así que da solo Estados Unidos y no renta variable mundial. Fichas: [Amundi Prime Global](/fondo/amundi-prime-global), [Fidelity S&P 500](/fondo/fidelity-msci-world) y [Vanguard Global Stock](/fondo/vanguard-global-stock). Más en la [guía de mejores fondos indexados](/blog/mejores-fondos-indexados-espana-2026).
 
 ---
 

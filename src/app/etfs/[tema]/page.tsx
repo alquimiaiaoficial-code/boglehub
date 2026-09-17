@@ -54,7 +54,9 @@ const QUALITY_MOMENTUM_TICKERS = new Set(['IWQU', 'IWMO', 'XDEQ', 'XDWL'])
 // Fondos indexados con la misma exposición que el tema (traspaso fiscal libre).
 // Keyed by slug — keep in sync with ETF_THEMES e INDEX_FUNDS.
 const THEME_FUND_EQUIVALENTS: Record<string, string[]> = {
-  'msci-world': ['fidelity-msci-world', 'amundi-prime-global', 'vanguard-global-stock'],
+  // El 18-sep-2026 salio de aqui 'fidelity-msci-world': ese ISIN (IE00BYX5MX67) es un
+  // S&P 500, no un MSCI World, asi que listarlo en el hub del MSCI World era falso.
+  'msci-world': ['amundi-prime-global', 'vanguard-global-stock'],
   'sp500': ['vanguard-us-500-stock', 'amundi-prime-usa'],
   'todo-mundo': ['vanguard-global-stock'],
   'emergentes': ['fidelity-emerging-markets-index', 'amundi-index-msci-emerging-markets', 'vanguard-emerging-markets-stock'],

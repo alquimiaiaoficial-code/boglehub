@@ -50,65 +50,70 @@ interface Equivalencia {
  * La clave es el ISIN y no el slug porque es lo que el inversor tiene delante en su
  * plataforma, y porque un slug se renombra sin que nadie lo note.
  */
+/**
+ * ⚠️ REGLA DURA, ESCRITA EL 18-sep-2026 DESPUÉS DE UN FALLO CARO.
+ *
+ * Aquí solo entra un fondo cuyos datos —nombre, índice y TER— se hayan comprobado en una
+ * fuente EXTERNA, con la fecha puesta. No basta con que el ISIN exista en nuestro catálogo.
+ *
+ * POR QUÉ. El catálogo `index-funds.ts` se escribió como CONTENIDO para posicionar —páginas
+ * `/fondo/[slug]` de alta intención de búsqueda— y sus datos nunca se verificaron contra una
+ * fuente. El 17-sep los convertí en la base de un CÁLCULO sin comprobarlos, y el 18-sep, al
+ * ir a ampliar el catálogo, salió esto:
+ *
+ *  · `IE00BYX5MX67` estaba como «Fidelity MSCI World Index Fund, MSCI World, TER 0,12 %» y
+ *    es «FIDELITY S&P 500 INDEX FUND P-ACC-EUR», índice S&P 500, TER 0,06 %. Durante un día
+ *    el analizador le dio en producción exposición MSCI World —71 % EEUU, 16 % Europa, 7 %
+ *    Japón— a un fondo que es 100 % Estados Unidos, y un TER del doble del real. Además
+ *    calculó un solapamiento del 100 % con un MSCI World que es falso.
+ *  · `LU0996177134` figura como «Amundi Index MSCI Emerging Markets, TER 0,20 %» y el
+ *    registro dice «AMUNDI CORE MSCI Emerging Markets AE CAP», TER 0,30 %. Gamas distintas.
+ *  · `IE00BYX5L514` y `LU1931974692` no aparecen en el registro español consultado.
+ *
+ * LA LECCIÓN, que vale para todo el proyecto: **usar para calcular unos datos que se
+ * escribieron para posicionar.** Un dato de ficha que está mal se nota poco; el mismo dato
+ * alimentando un cálculo produce números plausibles y falsos, que es mucho peor.
+ *
+ * Y el test que tenía no lo habría cazado nunca: comprobaba que los ISINs EXISTIERAN en
+ * nuestro catálogo, no que los datos del catálogo fuesen ciertos. Verificaba la coherencia
+ * interna de una fuente sin verificar la fuente.
+ */
 const EQUIVALENCIAS: Record<string, Equivalencia> = {
-  // --- Exactas: el fondo y el ETF siguen el mismo índice ---
-  // Vanguard Global Stock Index Fund - MSCI World
+  /**
+   * Vanguard Global Stock Index Fund - MSCI World.
+   * Verificado el 18-sep-2026: «VANGUARD GLOBAL STOCK INDEX INVESTOR EUR CAP | MSCI World
+   * Index | 0,18 %».
+   */
   IE00B03HCZ61: { ticker: 'IWDA', calidad: 'exacta' },
-  // Fidelity MSCI World Index Fund - MSCI World
-  IE00BYX5MX67: { ticker: 'IWDA', calidad: 'exacta' },
-  // Vanguard U.S. 500 Stock Index Fund - S&P 500
+
+  /**
+   * Vanguard U.S. 500 Stock Index Fund - S&P 500.
+   * Verificado el 18-sep-2026: «VANGUARD U.S. 500 STOCK INDEX GENERAL EUR CAP | S&P 500
+   * Index | 0,10 %».
+   */
   IE0032126645: { ticker: 'CSPX', calidad: 'exacta' },
-  // Amundi Index MSCI Emerging Markets - MSCI EM (sin small caps)
-  LU0996177134: { ticker: 'AEEM', calidad: 'exacta' },
-  // Fidelity Emerging Markets Index Fund - MSCI EM
-  IE00BYX5L514: { ticker: 'AEEM', calidad: 'exacta' },
-  // Vanguard Global Bond Index Fund EUR Hedged - Bloomberg Global Aggregate EUR H
-  IE00B18GC888: { ticker: 'AGGH', calidad: 'exacta' },
+
   /**
    * Vanguard Emerging Markets Stock Index Fund - MSCI Emerging Markets.
+   * Verificado el 18-sep-2026 en el factsheet de Vanguard del 31 de agosto de 2026, que
+   * trae este ISIN: «seeks to track the performance of the MSCI Emerging Markets Index [...]
+   * large and mid-sized company stocks». Ticker del índice, MSDEEEMN.
    *
-   * Estuvo en la lista de «no analizables» desde el 17-sep porque sospeché que replicaba un
-   * índice FTSE: Vanguard usa FTSE en sus ETFs de emergentes y el `etfEquivalent` del
-   * catálogo apuntaba a VFEM, que es FTSE Emerging. La sospecha era razonable y era FALSA.
-   *
-   * Comprobado el 18-sep-2026 en la FUENTE PRIMARIA —el factsheet de Vanguard del 31 de
-   * agosto de 2026, que trae este ISIN—: «seeks to track the performance of the MSCI
-   * Emerging Markets Index (the "Index"). The Index is a market-capitalisation-weighted
-   * index comprised of large and mid-sized company stocks in emerging markets». Ticker del
-   * índice, MSDEEEMN. Nuestra ficha estaba bien; el `etfEquivalent` estaba mal.
-   *
-   * «Large and mid-sized», o sea SIN small caps, que es justo lo que AEEM replica y lo que
-   * EIMI (MSCI EM IMI) no: por eso la equivalencia es exacta con AEEM y habría sido
-   * aproximada con el que había puesto.
-   *
-   * Y la lección, que vale más que el fondo: una búsqueda web devolvía «MSCI Emerging
-   * Markets» pero mezclando fichas del fondo ESTADOUNIDENSE (VEMAX) con el irlandés, y
-   * describía 25 países «incluida Rusia», que salió de los índices en 2022. La respuesta
-   * correcta por la fuente equivocada sigue siendo una fuente equivocada.
+   * «Large and mid-sized», sin small caps: por eso AEEM (MSCI EM) y no EIMI (MSCI EM IMI).
    */
   IE0031786142: { ticker: 'AEEM', calidad: 'exacta' },
 
-  // --- Aproximadas: universo comparable, índice distinto ---
-  LU1931974692: {
-    ticker: 'SWRD',
-    calidad: 'aproximada',
-    nota: 'El fondo replica el Solactive GBS Global Markets Large & Mid Cap y la exposición se toma del MSCI World. El universo es el mismo —grandes y medianas de mercados desarrollados— pero los índices son de proveedores distintos y no coinciden empresa por empresa.',
-  },
-  LU2050633988: {
-    ticker: 'CSPX',
-    calidad: 'aproximada',
-    nota: 'El fondo replica el Solactive GBS United States y la exposición se toma del S&P 500. Ambos son grandes empresas estadounidenses, pero el S&P 500 aplica un comité de selección y el Solactive va puramente por capitalización.',
-  },
-  LU2089238385: {
-    ticker: 'SJPA',
-    calidad: 'aproximada',
-    nota: 'El fondo replica el Solactive GBS Japan y la exposición se toma del MSCI Japan IMI, que además incluye pequeña capitalización. La geografía es la misma; el tamaño medio de las empresas, no exactamente.',
-  },
-  LU1437015735: {
-    ticker: 'VGEA',
-    calidad: 'aproximada',
-    nota: 'Deuda pública de la eurozona en los dos casos, pero los índices no son el mismo y la composición por país y por plazo puede diferir.',
-  },
+  /**
+   * FIDELITY S&P 500 INDEX FUND P-ACC-EUR - S&P 500.
+   *
+   * Este es el fondo que estaba mal: el catálogo lo llamaba «Fidelity MSCI World Index Fund»
+   * con índice MSCI World y TER 0,12 %. Verificado el 18-sep-2026 en el registro: es un
+   * S&P 500 con TER 0,06 %. Nombre, índice y comisión, los tres equivocados.
+   *
+   * Se corrige en vez de retirarse porque el dato verdadero SÍ se conoce, y un S&P 500 tiene
+   * equivalencia exacta con CSPX. El nombre y el TER se arreglan en `index-funds.ts`.
+   */
+  IE00BYX5MX67: { ticker: 'CSPX', calidad: 'exacta' },
 }
 
 /**
@@ -119,7 +124,26 @@ const SIN_EQUIVALENCIA_FIABLE: Record<string, string> = {
   // Vanguard Eurozone Stock Index Fund
   IE0007987690:
     'Este fondo replica el MSCI EMU, que es solo la eurozona, y en el catálogo no hay ningún ETF de ese índice: los que hay son MSCI Europe, que incluye Reino Unido, Suiza y Suecia. La diferencia es demasiado grande para llamarla aproximación.',
+
+  // Amundi Index MSCI Emerging Markets
+  LU0996177134:
+    'Nuestra ficha lo llama «Amundi Index MSCI Emerging Markets» con un TER del 0,20 %, y el registro consultado el 18-sep-2026 devuelve «AMUNDI CORE MSCI Emerging Markets AE CAP» con un TER del 0,30 %. El índice coincide, pero el nombre y la comisión no, y son gamas distintas. Hasta aclarar de qué producto se trata, no se analiza.',
+
+  // Fidelity Emerging Markets Index Fund
+  IE00BYX5L514:
+    'Este ISIN no aparece en el registro de fondos comercializados en España que consultamos el 18-sep-2026. Puede ser un límite de esa fuente o puede ser un ISIN equivocado nuestro; mientras no se sepa cuál de las dos cosas es, no se analiza.',
 }
+
+/**
+ * Mensaje para un fondo del catálogo que no está en ninguna de las dos tablas de arriba.
+ *
+ * No es un caso residual: hoy le toca a cinco de los doce, y es deliberado. Después de
+ * encontrar tres fichas con datos equivocados, la política pasó a ser la contraria de la que
+ * había: **un fondo no se analiza hasta que sus datos estén comprobados en una fuente
+ * externa**, en vez de analizarse mientras nadie demuestre que están mal.
+ */
+const PENDIENTE_DE_VERIFICAR =
+  'Todavía no hemos comprobado los datos de este fondo —su índice y su comisión— contra una fuente externa, y sin eso no podemos calcular su exposición sin arriesgarnos a darla mal. Aparece en el catálogo con su ficha, pero no entra en el análisis.'
 
 export interface FondoAnalizable {
   fondo: IndexFund
@@ -174,8 +198,7 @@ export function resolverFondo(entrada: string): ResolucionFondo | null {
     return {
       noAnalizable: {
         fondo,
-        motivo:
-          'Todavía no hemos comprobado con qué ETF del catálogo comparte índice, así que no podemos calcular su exposición sin inventárnosla.',
+        motivo: PENDIENTE_DE_VERIFICAR,
       },
     }
   }
@@ -251,4 +274,24 @@ export function buscarFondosPorTexto(query: string): ResolucionFondo[] {
 /** ¿Lo que ha escrito el usuario es un fondo? Lo usa el formulario para pedir euros. */
 export function esFondoIndexado(entrada: string): boolean {
   return buscarFondo(entrada) != null
+}
+
+/**
+ * Cuándo se comprobó cada fondo contra una fuente EXTERNA, y cuál.
+ *
+ * Existe para que añadir un fondo al análisis obligue a escribir aquí de dónde salió el
+ * dato. No es burocracia: el 18-sep-2026 el catálogo tenía tres fichas con datos erróneos
+ * —una de ellas con el índice equivocado, sirviendo exposición falsa en producción— y ningún
+ * test lo cazó, porque todos comprobaban la coherencia interna de una fuente sin comprobar
+ * la fuente.
+ *
+ * `fondos-analizables.test.ts` exige que todo ISIN de `EQUIVALENCIAS` esté aquí. Quien
+ * quiera ampliar la tabla tiene que pasar por esta línea, y escribirla obliga a haber ido a
+ * mirar.
+ */
+export const VERIFICADOS_EN_FUENTE: Record<string, string> = {
+  IE00B03HCZ61: '18-sep-2026, registro de fondos: «VANGUARD GLOBAL STOCK INDEX INVESTOR EUR CAP | MSCI World Index | 0,18 %»',
+  IE0032126645: '18-sep-2026, registro de fondos: «VANGUARD U.S. 500 STOCK INDEX GENERAL EUR CAP | S&P 500 Index | 0,10 %»',
+  IE0031786142: '18-sep-2026, factsheet de Vanguard de 31-ago-2026 con este ISIN: «MSCI Emerging Markets Index […] large and mid-sized company stocks», ticker MSDEEEMN, OCF 0,23 %',
+  IE00BYX5MX67: '18-sep-2026, registro de fondos: «FIDELITY S&P 500 INDEX FUND P-ACC-EUR | S&P 500 Index | 0,06 %». La ficha decía MSCI World y 0,12 %: los tres datos estaban mal',
 }

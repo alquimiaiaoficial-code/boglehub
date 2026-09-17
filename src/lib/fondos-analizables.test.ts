@@ -6,6 +6,7 @@ import {
   fondosAnalizables,
   isinsClasificados,
   tickersDeExposicion,
+  VERIFICADOS_EN_FUENTE,
 } from './fondos-analizables'
 
 /**
@@ -38,13 +39,42 @@ describe('las tablas apuntan a fondos que existen de verdad', () => {
     expect(duplicados).toEqual([])
   })
 
-  it('los doce fondos del catálogo están clasificados, para que ninguno caiga en el limbo', () => {
-    const { conEquivalencia, sinEquivalencia } = isinsClasificados()
-    const cubiertos = new Set([...conEquivalencia, ...sinEquivalencia])
-    const huerfanos = INDEX_FUNDS.filter((f) => !cubiertos.has(f.isin.toUpperCase())).map(
-      (f) => f.name,
+  /**
+   * Antes miraba las dos tablas y exigía que todo fondo estuviera en una. Desde el
+   * 18-sep-2026 hay una tercera vía —el motivo genérico «pendiente de verificar»— y con la
+   * versión anterior el test fallaba con el código correcto.
+   *
+   * Se cambia por lo que de verdad importa: que NINGÚN fondo del catálogo deje a
+   * `resolverFondo` sin respuesta. Comprueba el comportamiento, no cómo está organizado por
+   * dentro, y así sigue valiendo cuando la organización cambie otra vez.
+   */
+  it('ningún fondo del catálogo se queda sin respuesta: o se analiza, o dice por qué no', () => {
+    const enElLimbo: string[] = []
+    for (const f of INDEX_FUNDS) {
+      const r = resolverFondo(f.isin)
+      if (r == null) {
+        enElLimbo.push(`${f.name}: resolverFondo devuelve null para un fondo del catálogo`)
+        continue
+      }
+      if ('noAnalizable' in r && r.noAnalizable.motivo.trim().length < 40) {
+        enElLimbo.push(`${f.name}: el motivo es demasiado corto para explicar nada`)
+      }
+    }
+    expect(enElLimbo).toEqual([])
+  })
+
+  it('los que no se analizan lo dicen con un motivo que una persona entiende', () => {
+    const fuera = INDEX_FUNDS.map((f) => resolverFondo(f.isin)).filter(
+      (r): r is { noAnalizable: { fondo: { name: string }; motivo: string } } =>
+        r != null && 'noAnalizable' in r,
     )
-    expect(huerfanos).toEqual([])
+    // Hoy son ocho de doce, y es deliberado: solo se analiza lo verificado en fuente.
+    expect(fuera.length).toBeGreaterThan(0)
+    for (const r of fuera) {
+      // Ni códigos, ni «no disponible», ni promesas de futuro sin explicación.
+      expect(r.noAnalizable.motivo).not.toMatch(/^(error|no disponible|n\/a)/i)
+      expect(r.noAnalizable.motivo).toMatch(/[.。]$/)
+    }
   })
 
   it('los ETFs de los que se toma prestada la exposición están en el catálogo y tienen reparto', () => {
@@ -56,6 +86,45 @@ describe('las tablas apuntan a fondos que existen de verdad', () => {
       const suma = Object.values(etf!.regionAllocation).reduce((a, b) => a + b, 0)
       expect(suma, `${ticker} debería repartir ~100 % por región`).toBeGreaterThan(0.9)
     }
+  })
+})
+
+/**
+ * El test que faltaba, y el que habría evitado el peor fallo de estos dos días.
+ *
+ * Todos los tests anteriores comprobaban que los ISINs EXISTIERAN en nuestro catálogo y que
+ * las tablas fueran coherentes entre sí. Ninguno comprobaba que los DATOS del catálogo
+ * fuesen ciertos, porque el catálogo era la única fuente. Verificar la coherencia interna de
+ * una fuente no dice nada sobre la fuente.
+ *
+ * Esto no puede salir a internet a comprobarlo, así que hace lo único que un test puede
+ * hacer: **obligar a que alguien lo haya comprobado y haya escrito dónde.**
+ */
+describe('nada se analiza sin haber comprobado sus datos fuera de casa', () => {
+  it('todo fondo analizable tiene declarada su verificación en fuente', () => {
+    const sinVerificar = isinsClasificados().conEquivalencia.filter(
+      (isin) => !VERIFICADOS_EN_FUENTE[isin],
+    )
+    expect(
+      sinVerificar,
+      'añadir un fondo al análisis exige declarar en VERIFICADOS_EN_FUENTE de dónde salió el dato',
+    ).toEqual([])
+  })
+
+  it('cada verificación dice la fecha y la fuente, no solo «comprobado»', () => {
+    for (const [isin, nota] of Object.entries(VERIFICADOS_EN_FUENTE)) {
+      // Un sello sin fecha no dice nada: es justo el problema que tenía el catálogo.
+      expect(nota, `${isin} debe fechar la comprobación`).toMatch(/\d{1,2}-[a-z]{3}-\d{4}/)
+      expect(nota.length, `${isin} debe decir qué fuente y qué decía`).toBeGreaterThan(50)
+    }
+  })
+
+  it('no hay verificaciones de fondos que ya no se analizan', () => {
+    // Si un fondo sale de EQUIVALENCIAS, su verificación sobra aquí: dejarla sugiere que
+    // está comprobado y en uso cuando no lo está.
+    const conEq = new Set(isinsClasificados().conEquivalencia)
+    const huerfanas = Object.keys(VERIFICADOS_EN_FUENTE).filter((i) => !conEq.has(i))
+    expect(huerfanas).toEqual([])
   })
 })
 
@@ -115,6 +184,18 @@ describe('resolverFondo', () => {
    * Se deja el caso con la aserción invertida en vez de borrarlo, para que si alguien vuelve
    * a moverlo tenga delante por qué está donde está.
    */
+  it('el Fidelity IE00BYX5MX67 se mapea a CSPX, porque es un S&P 500 y no un MSCI World', () => {
+    // El fallo del 18-sep: la ficha decía MSCI World y mapeaba a IWDA. Si alguien vuelve a
+    // cambiarlo, este test dice por qué está donde está.
+    const r = resolverFondo('IE00BYX5MX67')
+    expect(r && 'analizable' in r).toBe(true)
+    if (r && 'analizable' in r) {
+      expect(r.analizable.etfExposicion.ticker).toBe('CSPX')
+      expect(r.analizable.fondo.index).toBe('S&P 500')
+      expect(r.analizable.fondo.ter).toBe(0.06)
+    }
+  })
+
   it('analiza el Vanguard Emerging Markets con AEEM, porque replica MSCI EM y no FTSE', () => {
     const r = resolverFondo('IE0031786142')
     expect(r && 'analizable' in r).toBe(true)
@@ -155,13 +236,17 @@ describe('honestidad de lo que se muestra', () => {
 describe('cobertura', () => {
   it('hoy se puede analizar la mayoría de los fondos publicados', () => {
     const analizables = fondosAnalizables()
-    // 11 de 12. Si baja, algo se ha roto; si sube, hay que actualizar este número a mano
-    // para que nadie amplíe la tabla sin mirar la calidad de lo que añade.
+    // CUATRO de doce, y BAJÓ a propósito de once el 18-sep-2026.
     //
-    // Pasó de 10 a 11 el 18-sep-2026: el Vanguard Emerging Markets estaba fuera por una
-    // sospecha mía de que replicaba un índice FTSE, y el factsheet de Vanguard del 31 de
-    // agosto dice MSCI Emerging Markets. La sospecha era razonable y era falsa.
-    expect(analizables.length).toBe(11)
+    // Ese día, al ir a ampliar el catálogo, aparecieron tres fichas con datos erróneos: una
+    // de ellas (IE00BYX5MX67) figuraba como «Fidelity MSCI World, TER 0,12 %» y es un
+    // «FIDELITY S&P 500 INDEX FUND, TER 0,06 %». El analizador le estuvo dando en producción
+    // exposición MSCI World a un fondo 100 % estadounidense.
+    //
+    // La política se invirtió: un fondo NO se analiza hasta que sus datos están comprobados
+    // en una fuente externa, en vez de analizarse mientras nadie demuestre que están mal.
+    // Cuatro fondos correctos valen más que once con exposiciones plausibles y falsas.
+    expect(analizables.length).toBe(4)
     expect(analizables.length).toBeLessThan(INDEX_FUNDS.length)
   })
 })

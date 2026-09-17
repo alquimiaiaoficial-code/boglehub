@@ -6,6 +6,10 @@
 
 export const FUND_PAIRS: [string, string][] = [
   ['amundi-prime-global', 'vanguard-global-stock'],
+  // ⚠️ REVISAR LOS TEXTOS DE ESTOS DOS PARES (18-sep-2026). `fidelity-msci-world` es en
+  // realidad un S&P 500 (IE00BYX5MX67), no un MSCI World. Las comparativas siguen siendo
+  // utiles —global frente a solo EEUU es justo la duda que tiene la gente— pero se
+  // redactaron creyendo que los dos lados replicaban el mismo indice, y eso ya no es cierto.
   ['amundi-prime-global', 'fidelity-msci-world'],
   ['vanguard-global-stock', 'fidelity-msci-world'],
   ['amundi-prime-usa', 'vanguard-us-500-stock'],
