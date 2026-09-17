@@ -24,7 +24,7 @@ const ANALYZER_FAQ: { q: string; a: string }[] = [
   },
   {
     q: '¿Qué analiza exactamente de mi cartera?',
-    a: 'Asignación por clase de activo, diversificación geográfica y sectorial, TER ponderado de la cartera, solapamiento entre ETFs, grado fiscal por ETF para un residente en España y una proyección FIRE. El análisis en lenguaje natural lo genera un modelo de lenguaje alojado en Groq, en español.',
+    a: 'Asignación por clase de activo, diversificación geográfica y sectorial, TER ponderado de la cartera, solapamiento entre pares —tanto de ETFs como de fondos indexados—, qué cuesta deshacer ese solapamiento según el artículo 94 del IRPF, grado fiscal por ETF para un residente en España y una proyección FIRE. El análisis en lenguaje natural lo genera un modelo de lenguaje alojado en Groq, en español.',
   },
 ]
 
@@ -54,7 +54,7 @@ export default function AnalyzerPage() {
           type: 'SoftwareApplication',
           name: 'Analizador de cartera de BogleHub',
           description:
-            'Herramienta gratuita en español que analiza tu cartera de fondos indexados y ETFs con IA: asignación de activos, diversificación geográfica y sectorial, TER ponderado, solapamiento entre ETFs, grado fiscal para residentes en España y proyección FIRE. Sin registro; la cartera se guarda solo en el navegador y las posiciones que se envían para analizarla se descartan sin almacenarse.',
+            'Herramienta gratuita en español que analiza tu cartera de fondos indexados y ETFs con IA: asignación de activos, diversificación geográfica y sectorial, TER ponderado, solapamiento entre ETFs y entre fondos indexados con lo que cuesta deshacerlo, grado fiscal para residentes en España y proyección FIRE. Sin registro; la cartera se guarda solo en el navegador y las posiciones que se envían para analizarla se descartan sin almacenarse.',
           url: PAGE_URL,
           applicationCategory: 'FinanceApplication',
         }}
@@ -84,14 +84,16 @@ export default function AnalyzerPage() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 pt-8 pb-4">
           <header className="mb-6">
             <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">
-              Analizador de cartera de ETFs con IA
+              Analizador de cartera de fondos indexados y ETFs con IA
             </h1>
             {/* Respuesta-primero citable, con la entidad atada al dato */}
             <p className="mt-3 text-fg-muted max-w-2xl leading-relaxed">
               <span className="font-semibold text-fg">El analizador de cartera de BogleHub</span>{' '}
               es una herramienta gratuita en español que analiza tu cartera de fondos indexados y
               ETFs con inteligencia artificial: asignación por clase de activo,
-              diversificación geográfica y sectorial, TER ponderado, solapamiento entre ETFs, grado
+              diversificación geográfica y sectorial, TER ponderado, solapamiento entre pares
+              —tanto de ETFs como de fondos indexados— con lo que cuesta deshacerlo según el
+              artículo 94 del IRPF, grado
               fiscal por ETF para residentes en España y proyección FIRE. Sin registro: tu cartera se
               guarda solo en tu navegador. Las posiciones se envían al servidor y al proveedor
               de IA para analizarlas; tu aportación mensual y tu objetivo, si los rellenas, no
