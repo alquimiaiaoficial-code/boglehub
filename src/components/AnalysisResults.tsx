@@ -54,9 +54,44 @@ export function AnalysisResults({ analysis }: { analysis: Analysis }) {
           </ul>
           <p className="mt-2 text-fg-muted">
             Los porcentajes de abajo se calculan solo con las posiciones que sí hemos podido
-            valorar. El analizador lee un catálogo de ETFs por ticker; los fondos indexados
-            todavía no los lee.
+            valorar.
           </p>
+        </div>
+      )}
+
+      {/*
+        De dónde sale la exposición de cada fondo.
+
+        Esto no es letra pequeña: el reparto por región y sector de un fondo se calcula con
+        los datos del ETF que replica su mismo índice, y eso hay que decirlo donde se ven los
+        números, no en una página de metodología que nadie abre.
+
+        Y va justo aquí, entre los avisos y las pestañas, por lo mismo que los avisos van
+        arriba: una explicación de cómo se ha calculado algo llega tarde después de que la
+        persona ya haya leído el porcentaje y se lo haya creído.
+      */}
+      {analysis.fuentesDeExposicion != null && analysis.fuentesDeExposicion.length > 0 && (
+        <div className="mt-3 rounded-lg border border-border bg-surface-2 p-4 text-sm">
+          <p className="font-medium text-fg">Cómo hemos calculado tus fondos</p>
+          <p className="mt-1 text-fg-muted">
+            Un fondo indexado no publica su reparto por región y sector, pero sí el índice que
+            replica. Tomamos la exposición del ETF que sigue ese mismo índice. La comisión que
+            usamos es siempre la del fondo, no la del ETF.
+          </p>
+          <ul className="mt-3 space-y-2">
+            {analysis.fuentesDeExposicion.map((f) => (
+              <li key={f.isin} className="text-fg-muted">
+                <span className="text-fg">{f.fondo}</span>{' '}
+                <span className="text-fg-subtle">({f.isin})</span>
+                <br />
+                Índice: {f.indiceDelFondo} · exposición tomada de {f.exposicionTomadaDe} · TER{' '}
+                {f.ter} %
+                {f.calidad === 'aproximada' && (
+                  <span className="mt-1 block text-amber-500">Es una aproximación. {f.nota}</span>
+                )}
+              </li>
+            ))}
+          </ul>
         </div>
       )}
 

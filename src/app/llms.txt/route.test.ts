@@ -56,8 +56,35 @@ describe('llms.txt route', () => {
     const body = await (await GET()).text()
     // Los motores rellenan los huecos: un límite no dicho se lo inventan. Gemini nos
     // atribuyó «rebalanceo» el 7-sep porque no decíamos qué hacía la herramienta.
-    expect(body).toContain('NO admite fondos indexados')
     expect(body).toContain('el solapamiento es de exposición, no de valores concretos')
     expect(body).toMatch(/reglas explícitas del system prompt/)
+  })
+
+  /**
+   * Hasta el 17-sep-2026 este test exigía la frase «NO admite fondos indexados», y era
+   * correcta. Dejó de serlo ese día, cuando el analizador empezó a leer fondos.
+   *
+   * Se conserva la intención del test —que los límites estén DICHOS— y cambian los límites,
+   * porque ahora son otros y más finos. Borrar la comprobación sin poner la nueva habría
+   * dejado el hueco que este fichero existe para tapar: lo que no decimos, los motores se
+   * lo inventan.
+   *
+   * Es además el caso de manual de la «decimocuarta fuente que miente»: una afirmación
+   * verdadera que caduca. Aquí caducó por un cambio NUESTRO, que es la variante fácil de
+   * pasar por alto porque nadie sospecha de su propio despliegue.
+   */
+  it('lo que declara sobre fondos es lo que el analizador hace de verdad', async () => {
+    const body = await (await GET()).text()
+    expect(body).not.toContain('NO admite fondos indexados')
+    expect(body).toContain('fondos indexados identificados por su ISIN')
+    // Los tres límites que hacen honesta la función, y que un motor no puede deducir:
+    expect(body, 'debe decir de dónde saca la exposición de un fondo').toMatch(
+      /toma la exposición del ETF de su catálogo que replica ese mismo índice/,
+    )
+    expect(body, 'debe decir que hay casos aproximados').toMatch(/aproximación/)
+    expect(body, 'debe decir que el TER es el del fondo').toMatch(
+      /TER que se aplica es SIEMPRE el del fondo/,
+    )
+    expect(body, 'debe decir que hay fondos que no analiza').toMatch(/NO se analizan a propósito/)
   })
 })

@@ -5,6 +5,11 @@ import { calculateAllocation } from '@/lib/analysis'
 import { projectFire } from '@/lib/fire'
 import { fetchPrices } from '@/lib/prices'
 import { getEtfByTicker } from '@/lib/etf-database'
+import {
+  resolverFondo,
+  type FondoAnalizable,
+  type FondoNoAnalizable,
+} from '@/lib/fondos-analizables'
 import { generateAiNarrative } from '@/lib/ai'
 import { clasificarFalloDeIa } from '@/lib/fallo-ia'
 import { rateLimit } from '@/lib/rate-limit'
@@ -22,9 +27,42 @@ export async function POST(req: NextRequest) {
   try {
     const body = BodySchema.parse(await req.json())
 
-    const tickers = [...new Set(body.positions.map(p => p.ticker.toUpperCase()))]
-    const pricesResult = await fetchPrices(tickers)
-    if (!pricesResult.ok) {
+    const entradas = [...new Set(body.positions.map(p => p.ticker.toUpperCase()))]
+
+    /**
+     * Desde el 17-sep-2026 el analizador lee FONDOS INDEXADOS, no solo ETFs.
+     *
+     * El motivo, dicho por quien lo sabe: preguntado directamente por correo, Luis Ángel
+     * Hernández (Salud Financiera, ex-Rankia) contestó que «en España la mayoría de
+     * personas invierten en fondos no en ETFs, por lo que la mayoría de carteras están
+     * compuestas de fondos de inversión». La herramienta leía 68 ETFs y cero fondos.
+     *
+     * Un fondo no cotiza: no hay precio de mercado por ticker, y por eso no puede pasar por
+     * `fetchPrices`. Se separan aquí las dos cosas y cada una se valora como toca.
+     */
+    const fondos = new Map<string, FondoAnalizable>()
+    const fondosRechazados: FondoNoAnalizable[] = []
+    const tickersEtf: string[] = []
+    for (const entrada of entradas) {
+      const resuelto = resolverFondo(entrada)
+      if (resuelto == null) {
+        tickersEtf.push(entrada)
+      } else if ('analizable' in resuelto) {
+        fondos.set(entrada, resuelto.analizable)
+      } else {
+        fondosRechazados.push(resuelto.noAnalizable)
+      }
+    }
+
+    const pricesResult = tickersEtf.length > 0
+      ? await fetchPrices(tickersEtf)
+      : ({ ok: true as const, value: {} as Record<string, number> })
+
+    // Si los ETFs no dan precio pero hay fondos que sí se pueden analizar, el análisis
+    // sigue con los fondos y se avisa de lo que falta. Antes, un solo ETF sin precio
+    // tumbaba la cartera completa; para quien lleva mayoría de fondos eso era perderlo todo
+    // por la parte pequeña.
+    if (!pricesResult.ok && fondos.size === 0) {
       /**
        * `fetchPrices` falla cuando no consigue NI UN precio, y hasta el 11-sep-2026 de ahí
        * se deducía «los proveedores están caídos». La deducción es falsa y tiene otra causa
@@ -40,21 +78,31 @@ export async function POST(req: NextRequest) {
        * ticker de la petición existe en el catálogo, el problema es de catálogo. Si alguno
        * existe y aun así no hubo precios, entonces sí es el proveedor.
        */
-      const algunoConocido = tickers.some((t) => getEtfByTicker(t) != null)
+      const algunoConocido = tickersEtf.some((t) => getEtfByTicker(t) != null)
       if (!algunoConocido) {
-        return NextResponse.json(
-          {
-            success: false,
-            error:
-              'No reconocemos ninguno de esos tickers. El analizador lee un catálogo de ETFs cotizados por ticker (VWCE, IWDA, CSPX…); los fondos indexados todavía no los lee, aunque se busquen por ISIN. Revisa los tickers antes de volver a intentarlo.',
-          },
-          { status: 422 },
-        )
+        // Si lo que entró eran fondos que conocemos pero no analizamos todavía, el mensaje
+        // lo dice con nombre y motivo. Decirle «no reconocemos esos tickers» a quien pegó
+        // un fondo que tenemos publicado con su ficha sería mentira.
+        const error = fondosRechazados.length > 0
+          ? `Reconocemos ${fondosRechazados.length === 1 ? 'ese fondo' : 'esos fondos'}, pero todavía no ${fondosRechazados.length === 1 ? 'lo analizamos' : 'los analizamos'}. ${fondosRechazados
+              .map((f) => `${f.fondo.name}: ${f.motivo}`)
+              .join(' ')}`
+          : 'No reconocemos ninguno de esos identificadores. El analizador lee un catálogo de ETFs cotizados por ticker (VWCE, IWDA, CSPX…) y de fondos indexados por ISIN. Revísalos antes de volver a intentarlo.'
+        return NextResponse.json({ success: false, error }, { status: 422 })
       }
       return NextResponse.json({ success: false, error: 'Servicio de precios temporalmente no disponible. Inténtalo de nuevo en unos minutos.' }, { status: 503 })
     }
 
-    const allocation = calculateAllocation(body.positions, pricesResult.value)
+    /**
+     * Un fondo no tiene precio de mercado, así que su unidad es el euro y el precio de un
+     * euro es uno. Quien llama a la API pasa el importe en `shares`, que además es el dato
+     * que el inversor ve en su plataforma —MyInvestor dice «tienes 12.430,18 €», no «tienes
+     * 812,4431 participaciones a 15,30»—, y por tanto el menos propenso a error.
+     */
+    const precios: Record<string, number> = { ...(pricesResult.ok ? pricesResult.value : {}) }
+    for (const isin of fondos.keys()) precios[isin] = 1
+
+    const allocation = calculateAllocation(body.positions, precios, fondos)
 
     let fire: ReturnType<typeof projectFire> | undefined
     if (body.monthlyContribution != null && body.targetAmount != null) {
@@ -68,12 +116,28 @@ export async function POST(req: NextRequest) {
 
     const warnings: string[] = []
 
+    // Los fondos que reconocemos pero no analizamos se dicen con nombre y motivo, aunque el
+    // resto de la cartera sí se haya analizado. Quedarían fuera del reparto en silencio y el
+    // usuario vería porcentajes que no suman lo que él tiene sin saber por qué.
+    for (const rechazado of fondosRechazados) {
+      warnings.push(`${rechazado.fondo.name} no entra en este análisis. ${rechazado.motivo}`)
+    }
+
+    if (!pricesResult.ok && fondos.size > 0) {
+      warnings.push(
+        'No se han podido obtener los precios de los ETFs de la cartera, así que el análisis solo incluye los fondos. Los porcentajes son los de esa parte, no los del total.',
+      )
+    }
+
     const positionSummary = body.positions.map(p => {
       const ticker = p.ticker.toUpperCase()
-      if (pricesResult.value[ticker] == null) {
+      const esFondoRechazado = fondosRechazados.some(
+        (f) => f.fondo.isin.toUpperCase() === ticker || f.fondo.slug.toUpperCase() === ticker,
+      )
+      if (precios[ticker] == null && !esFondoRechazado) {
         warnings.push(`No se pudo obtener precio para ${ticker}`)
       }
-      const value = p.shares * (pricesResult.value[ticker] ?? 0)
+      const value = p.shares * (precios[ticker] ?? 0)
       return {
         ticker,
         valueEUR: value,
@@ -103,6 +167,33 @@ export async function POST(req: NextRequest) {
       ? aiResult.value
       : 'El comentario generado por IA no está disponible ahora mismo. El resto del análisis —reparto por región y sector, solapamiento, TER ponderado y proyección— está calculado con tus datos y es correcto.'
 
+    /**
+     * Se construye AQUÍ, después de llamar al modelo, y no arriba junto al resto del
+     * análisis. El motivo no es de estilo: `promesas-publicadas.test.ts` vigila el tramo
+     * entre `positionSummary` y `generateAiNarrative` como «lo que se le manda al modelo»,
+     * y al escribirlo ahí el test saltó. No se le mandaba —esto va al navegador—, pero el
+     * sitio hacía pensar que sí, y en un fichero donde la promesa pública es qué datos
+     * salen hacia un tercero, parecerlo ya es un problema.
+     */
+    /**
+     * De dónde sale la exposición de cada fondo, dicho fondo por fondo.
+     *
+     * Esto NO es un detalle de implementación que se pueda callar: el reparto por región y
+     * sector de un fondo se ha calculado con los datos de otro producto. Es correcto cuando
+     * ambos replican el mismo índice, y es una aproximación cuando no. En los dos casos el
+     * usuario tiene derecho a saberlo sin preguntar, y quien publique una captura de esto
+     * tiene derecho a no quedar en evidencia.
+     */
+    const fuentesDeExposicion = [...fondos.values()].map((f) => ({
+      fondo: f.fondo.name,
+      isin: f.fondo.isin,
+      ter: f.fondo.ter,
+      exposicionTomadaDe: f.etfExposicion.ticker,
+      indiceDelFondo: f.fondo.index,
+      calidad: f.calidad,
+      nota: f.nota,
+    }))
+
     return NextResponse.json({
       success: true,
       data: {
@@ -110,6 +201,7 @@ export async function POST(req: NextRequest) {
         fire,
         aiNarrative,
         warnings,
+        fuentesDeExposicion,
       },
     })
   } catch (err) {
