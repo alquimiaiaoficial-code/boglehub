@@ -51,3 +51,4 @@ content/x-reports/
 /.agents/
 skills-lock.json
 PROMPT-COWORK-*.md
+.indexnow-key.local
