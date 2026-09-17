@@ -85,6 +85,10 @@ describe('llms.txt route', () => {
     expect(body, 'debe decir que el TER es el del fondo').toMatch(
       /TER que se aplica es SIEMPRE el del fondo/,
     )
-    expect(body, 'debe decir que hay fondos que no analiza').toMatch(/NO se analizan a propósito/)
+    // Singular o plural: el numero de fondos fuera se calcula, asi que la frase cambia
+    // sola cuando cambia la tabla. Fijar el plural haria fallar el test por gramatica.
+    expect(body, 'debe decir que hay fondos que no analiza').toMatch(
+      /NO se analiza[n]? a propósito/,
+    )
   })
 })

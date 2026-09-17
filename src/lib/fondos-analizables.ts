@@ -64,6 +64,29 @@ const EQUIVALENCIAS: Record<string, Equivalencia> = {
   IE00BYX5L514: { ticker: 'AEEM', calidad: 'exacta' },
   // Vanguard Global Bond Index Fund EUR Hedged - Bloomberg Global Aggregate EUR H
   IE00B18GC888: { ticker: 'AGGH', calidad: 'exacta' },
+  /**
+   * Vanguard Emerging Markets Stock Index Fund - MSCI Emerging Markets.
+   *
+   * Estuvo en la lista de «no analizables» desde el 17-sep porque sospeché que replicaba un
+   * índice FTSE: Vanguard usa FTSE en sus ETFs de emergentes y el `etfEquivalent` del
+   * catálogo apuntaba a VFEM, que es FTSE Emerging. La sospecha era razonable y era FALSA.
+   *
+   * Comprobado el 18-sep-2026 en la FUENTE PRIMARIA —el factsheet de Vanguard del 31 de
+   * agosto de 2026, que trae este ISIN—: «seeks to track the performance of the MSCI
+   * Emerging Markets Index (the "Index"). The Index is a market-capitalisation-weighted
+   * index comprised of large and mid-sized company stocks in emerging markets». Ticker del
+   * índice, MSDEEEMN. Nuestra ficha estaba bien; el `etfEquivalent` estaba mal.
+   *
+   * «Large and mid-sized», o sea SIN small caps, que es justo lo que AEEM replica y lo que
+   * EIMI (MSCI EM IMI) no: por eso la equivalencia es exacta con AEEM y habría sido
+   * aproximada con el que había puesto.
+   *
+   * Y la lección, que vale más que el fondo: una búsqueda web devolvía «MSCI Emerging
+   * Markets» pero mezclando fichas del fondo ESTADOUNIDENSE (VEMAX) con el irlandés, y
+   * describía 25 países «incluida Rusia», que salió de los índices en 2022. La respuesta
+   * correcta por la fuente equivocada sigue siendo una fuente equivocada.
+   */
+  IE0031786142: { ticker: 'AEEM', calidad: 'exacta' },
 
   // --- Aproximadas: universo comparable, índice distinto ---
   LU1931974692: {
@@ -96,9 +119,6 @@ const SIN_EQUIVALENCIA_FIABLE: Record<string, string> = {
   // Vanguard Eurozone Stock Index Fund
   IE0007987690:
     'Este fondo replica el MSCI EMU, que es solo la eurozona, y en el catálogo no hay ningún ETF de ese índice: los que hay son MSCI Europe, que incluye Reino Unido, Suiza y Suecia. La diferencia es demasiado grande para llamarla aproximación.',
-  // Vanguard Emerging Markets Stock Index Fund
-  IE0031786142:
-    'Nuestra propia ficha dice que replica el MSCI Emerging Markets, pero Vanguard usa índices FTSE en emergentes y el ETF hermano es FTSE. Los dos índices clasifican Corea del Sur de forma distinta, que no es un detalle. Hasta confirmar cuál es el índice real, no se analiza.',
 }
 
 export interface FondoAnalizable {

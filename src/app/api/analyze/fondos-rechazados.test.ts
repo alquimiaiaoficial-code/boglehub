@@ -51,17 +51,34 @@ describe('una cartera solo de fondos no analizables no devuelve un análisis vac
     expect(cuerpo.error).toMatch(/MSCI EMU/)
   })
 
-  it('con dos fondos no analizables, los nombra los dos', async () => {
+  /**
+   * Este caso pedia dos fondos no analizables hasta el 18-sep-2026, cuando el Vanguard
+   * Emerging Markets paso a analizarse —su factsheet dice MSCI EM, no FTSE como sospeche—.
+   * Ya solo queda uno fuera, asi que el test pasa a cubrir algo MEJOR y mas realista: la
+   * cartera MIXTA, con un fondo que se analiza y otro que no.
+   *
+   * Es el caso que de verdad puede enganar: el analisis sale bien, con numeros correctos, y
+   * la posicion que se quedo fuera solo se nota si alguien la nombra.
+   */
+  it('si un fondo se analiza y otro no, devuelve el analisis Y nombra el que falta', async () => {
     const res = await POST(
       peticion([
-        { ticker: 'IE0007987690', shares: 3000 },
-        { ticker: 'IE0031786142', shares: 2000 },
+        { ticker: 'IE0031786142', shares: 5000 }, // analizable (MSCI EM -> AEEM)
+        { ticker: 'IE0007987690', shares: 3000 }, // fuera (MSCI EMU, sin ETF equivalente)
       ]),
     )
-    expect(res.status).toBe(422)
+    expect(res.status).toBe(200)
     const cuerpo = await res.json()
-    expect(cuerpo.error).toMatch(/Vanguard Eurozone/)
-    expect(cuerpo.error).toMatch(/Emerging Markets/)
+    expect(cuerpo.success).toBe(true)
+    // El que entra, entra con su procedencia declarada.
+    expect(cuerpo.data.fuentesDeExposicion).toHaveLength(1)
+    expect(cuerpo.data.fuentesDeExposicion[0].exposicionTomadaDe).toBe('AEEM')
+    // Y el que se queda fuera se dice con nombre y motivo, no en silencio.
+    const avisos = (cuerpo.data.warnings as string[]).join(' ')
+    expect(avisos).toMatch(/Vanguard Eurozone/)
+    expect(avisos).toMatch(/MSCI EMU/)
+    // El total es solo del que si se analizo: 5.000 EUR, no 8.000.
+    expect(cuerpo.data.allocation.totalValueEUR).toBe(5000)
   })
 
   it('NUNCA devuelve success con un total de cero euros', async () => {

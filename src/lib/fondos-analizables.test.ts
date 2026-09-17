@@ -104,11 +104,24 @@ describe('resolverFondo', () => {
     }
   })
 
-  it('se niega a analizar el Vanguard Emerging Markets por la contradicción de nuestra ficha', () => {
+  /**
+   * Este test decía lo contrario hasta el 18-sep-2026: exigía que el Vanguard Emerging
+   * Markets NO se analizara, porque yo sospechaba que replicaba un índice FTSE.
+   *
+   * El factsheet de Vanguard del 31-ago-2026 dice «MSCI Emerging Markets Index […] large and
+   * mid-sized company stocks». La sospecha era razonable —Vanguard usa FTSE en sus ETFs de
+   * emergentes, y el `etfEquivalent` del catálogo apuntaba a VFEM, que es FTSE— y era falsa.
+   *
+   * Se deja el caso con la aserción invertida en vez de borrarlo, para que si alguien vuelve
+   * a moverlo tenga delante por qué está donde está.
+   */
+  it('analiza el Vanguard Emerging Markets con AEEM, porque replica MSCI EM y no FTSE', () => {
     const r = resolverFondo('IE0031786142')
-    expect(r && 'noAnalizable' in r).toBe(true)
-    if (r && 'noAnalizable' in r) {
-      expect(r.noAnalizable.motivo).toMatch(/FTSE/)
+    expect(r && 'analizable' in r).toBe(true)
+    if (r && 'analizable' in r) {
+      expect(r.analizable.etfExposicion.ticker).toBe('AEEM')
+      expect(r.analizable.calidad).toBe('exacta')
+      expect(r.analizable.fondo.index).toMatch(/MSCI Emerging Markets/)
     }
   })
 })
@@ -142,9 +155,13 @@ describe('honestidad de lo que se muestra', () => {
 describe('cobertura', () => {
   it('hoy se puede analizar la mayoría de los fondos publicados', () => {
     const analizables = fondosAnalizables()
-    // 10 de 12. Si baja, algo se ha roto; si sube, hay que actualizar este número a mano
+    // 11 de 12. Si baja, algo se ha roto; si sube, hay que actualizar este número a mano
     // para que nadie amplíe la tabla sin mirar la calidad de lo que añade.
-    expect(analizables.length).toBe(10)
+    //
+    // Pasó de 10 a 11 el 18-sep-2026: el Vanguard Emerging Markets estaba fuera por una
+    // sospecha mía de que replicaba un índice FTSE, y el factsheet de Vanguard del 31 de
+    // agosto dice MSCI Emerging Markets. La sospecha era razonable y era falsa.
+    expect(analizables.length).toBe(11)
     expect(analizables.length).toBeLessThan(INDEX_FUNDS.length)
   })
 })

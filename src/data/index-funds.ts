@@ -170,7 +170,10 @@ export const INDEX_FUNDS: IndexFund[] = [
     tagline: 'Emergentes de Vanguard en formato fondo',
     description:
       'El Vanguard Emerging Markets Stock Index Fund da exposición a mercados emergentes con la reputación de Vanguard, TER 0,23%. Disponible en MyInvestor con traspaso fiscal libre. Alternativa al Amundi Index MSCI EM para quienes prefieren la marca Vanguard.',
-    etfEquivalent: 'VFEM',
+    // AEEM y no VFEM: este fondo replica el MSCI Emerging Markets (factsheet de Vanguard
+    // del 31-ago-2026, ticker de indice MSDEEEMN) y VFEM es FTSE Emerging, otra familia de
+    // indices que ademas clasifica Corea del Sur de otra forma. Corregido el 18-sep-2026.
+    etfEquivalent: 'AEEM',
     faq: [
       { q: '¿Vanguard o Amundi para emergentes en fondo?', a: 'El Amundi Index MSCI EM (TER 0,20%) es algo más barato que el Vanguard Emerging Markets (TER 0,23%). Ambos cubren emergentes globalmente. Para coste mínimo: Amundi. Para marca Vanguard: Vanguard. La diferencia de coste es pequeña en términos absolutos.' },
     ],
