@@ -230,3 +230,36 @@ export function computeMarginalSavingsTax(
     brackets,
   }
 }
+
+/**
+ * Grado fiscal de un FONDO indexado, que no es el mismo problema que el de un ETF.
+ *
+ * Los fondos tenían la ficha sin grado mientras los 68 ETFs sí lo mostraban, y la asimetría
+ * era rara justamente al revés de como suena: en España **un fondo es fiscalmente mejor que
+ * un ETF equivalente**, porque se traspasa a otro fondo sin computar la ganancia (artículo
+ * 94.1.a de la Ley del IRPF). Faltaba el grado en el lado que gana.
+ *
+ * QUÉ SE REUTILIZA Y QUÉ NO. El análisis de domicilio y de acumulación es idéntico —una
+ * retención en origen del 15 % por el convenio Irlanda-EE. UU. lo es igual para un fondo que
+ * para un ETF— así que se reutiliza `computeFiscalGrade` en vez de duplicar la lógica.
+ *
+ * LO QUE NO SE HACE, Y ES DELIBERADO: **la letra no sube por ser fondo.** La tentación era
+ * dar una «A+» o subir un escalón al traspaso, y sería inventarse una escala: la A ya
+ * significa máxima eficiencia y un fondo luxemburgués de acumulación no deja de arrastrar la
+ * retención del 30 % por poder traspasarse. Lo que cambia es la EXPLICACIÓN, que es donde el
+ * traspaso pesa de verdad, y así las dos letras siguen siendo comparables entre sí.
+ */
+export function computeFiscalGradeFondo(
+  isin: string | undefined,
+  accumulating: boolean,
+): FiscalAssessment {
+  const base = computeFiscalGrade(isin, accumulating)
+  if (!isin) return base
+
+  return {
+    ...base,
+    reason:
+      base.reason +
+      ' Y por ser un fondo y no un ETF, cambiar a otro fondo se puede hacer por traspaso: el artículo 94.1.a) de la Ley del IRPF dice que entonces «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a tu disposición. Con un ETF ese cambio exige vender, y la ganancia tributa ese año.',
+  }
+}

@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Card, CardTitle } from '@/components/ui/Card'
+import { computeFiscalGradeFondo } from '@/lib/fiscal'
 import { JsonLd } from '@/components/JsonLd'
 import { INDEX_FUNDS, getIndexFundBySlug } from '@/data/index-funds'
 
@@ -51,6 +52,7 @@ export default async function FondoPage({ params }: { params: Promise<{ slug: st
   const pageUrl = `${BASE_URL}/fondo/${slug}`
   const similar = INDEX_FUNDS.filter((x) => x.slug !== slug && x.assetClass === f.assetClass).slice(0, 4)
 
+  const gradoFiscal = computeFiscalGradeFondo(f.isin, f.accumulating)
   const faqs = [
     // Las FAQ propias de la ficha se OMITEN cuando está en revisión: se escribieron dando
     // por hecho que el producto era un fondo con traspaso libre, y en tres casos es un ETF.
@@ -159,7 +161,50 @@ export default async function FondoPage({ params }: { params: Promise<{ slug: st
               <div><dt className="text-xs uppercase text-fg-muted">Divisa</dt><dd className="font-medium text-fg">{f.currency}</dd></div>
               <div><dt className="text-xs uppercase text-fg-muted">Mínimo inversión</dt><dd className="font-medium text-fg">{f.minimum}</dd></div>
               <div className="sm:col-span-2"><dt className="text-xs uppercase text-fg-muted">Disponible en</dt><dd className="text-fg text-sm">{f.availableAt.join(', ')}</dd></div>
-              <div className="sm:col-span-2"><dt className="text-xs uppercase text-fg-muted">Traspaso fiscal libre</dt><dd className="text-accent font-medium text-sm">✓ Sí (ventaja de los fondos sobre ETFs)</dd></div>
+              {/*
+                Decía «✓ Sí (ventaja de los fondos sobre ETFs)» en TODAS las fichas, y tres de
+                estos productos resultaron ser ETFs el 18-sep-2026, que están excluidos del
+                régimen por el propio artículo 94.1.a). Era la afirmación más dañina de la
+                página: un dato marcado con un ✓ verde se lee como comprobado.
+              */}
+              <div className="sm:col-span-2">
+                <dt className="text-xs uppercase text-fg-muted">Traspaso fiscal libre</dt>
+                {f.avisoDeRevision ? (
+                  <dd className="text-warn font-medium text-sm">
+                    Sin confirmar — depende de si el producto es un fondo o un ETF, y eso está
+                    en revisión
+                  </dd>
+                ) : (
+                  <dd className="text-accent font-medium text-sm">
+                    ✓ Sí, si se tramita entre entidades (ventaja de los fondos sobre los ETFs)
+                  </dd>
+                )}
+              </div>
+              {/*
+                Grado fiscal, añadido el 18-sep-2026. Los 68 ETFs lo mostraban y los fondos no,
+                y la asimetría estaba justo al revés de como suena: en España un fondo es
+                fiscalmente MEJOR que un ETF equivalente. Faltaba en el lado que gana.
+              */}
+              {!f.avisoDeRevision && (
+                <div className="sm:col-span-2">
+                  <dt className="text-xs uppercase text-fg-muted">
+                    Grado fiscal para residente en España
+                  </dt>
+                  <dd className="mt-1">
+                    <span
+                      className={`inline-flex h-7 w-7 items-center justify-center rounded-md font-bold ${gradoFiscal.grade === 'A' ? 'bg-accent/15 text-accent' : 'bg-surface-3 text-fg'}`}
+                    >
+                      {gradoFiscal.grade}
+                    </span>
+                    <span className="ml-2 text-xs text-fg-subtle">
+                      {gradoFiscal.domicileLabel}
+                    </span>
+                    <span className="mt-1.5 block text-sm text-fg-muted leading-relaxed">
+                      {gradoFiscal.reason}
+                    </span>
+                  </dd>
+                </div>
+              )}
             </dl>
           </Card>
 
