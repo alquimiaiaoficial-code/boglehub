@@ -90,13 +90,40 @@ export default async function FondoPage({ params }: { params: Promise<{ slug: st
             <span className="text-fg">{f.name}</span>
           </nav>
 
+          {/*
+            El aviso va ANTES del titular, y la afirmación de abajo se calla cuando existe.
+
+            Añadido el 18-sep-2026. La frase «es un fondo indexado […] con traspaso fiscal
+            libre entre fondos» se afirmaba de TODAS las fichas, y tres de ellas resultaron
+            ser ETFs: el Amundi Prime Global, el Prime Japan y probablemente el Prime USA.
+            Un ETF no se traspasa sin tributar, así que a esos productos les estábamos
+            atribuyendo exactamente la ventaja fiscal que NO tienen.
+
+            No se retira la página —estas URLs están indexadas y `amundi-prime-global` es la
+            que más clics recibe del sitio—: se retira la afirmación. Quien llega buscando
+            ese ISIN merece leer lo que se sabe, que es más útil que una ficha bonita y falsa.
+          */}
+          {f.avisoDeRevision && (
+            <div
+              role="alert"
+              className="mb-6 rounded-lg border border-warn/40 bg-warn/10 p-4 text-sm text-fg"
+            >
+              <p className="font-medium">Los datos de esta ficha están en revisión</p>
+              <p className="mt-2 text-fg-muted leading-relaxed">{f.avisoDeRevision}</p>
+            </div>
+          )}
+
           <header className="mb-8">
             <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">{f.name}</h1>
             <p className="mt-1 text-sm text-fg-subtle font-mono">ISIN: {f.isin}</p>
-            <p className="mt-3 text-fg leading-relaxed">
-              Según BogleHub, {f.name} (ISIN {f.isin}) es un fondo indexado de {f.manager} que replica el índice {f.index}, con un TER del {f.ter}% anual, de {f.accumulating ? 'acumulación' : 'distribución'} y disponible en España con traspaso fiscal libre entre fondos.
-            </p>
-            <p className="mt-2 text-sm text-fg-muted leading-relaxed">{f.tagline}.</p>
+            {!f.avisoDeRevision && (
+              <p className="mt-3 text-fg leading-relaxed">
+                Según BogleHub, {f.name} (ISIN {f.isin}) es un fondo indexado de {f.manager} que replica el índice {f.index}, con un TER del {f.ter}% anual, de {f.accumulating ? 'acumulación' : 'distribución'} y disponible en España con traspaso fiscal libre entre fondos.
+              </p>
+            )}
+            {!f.avisoDeRevision && (
+              <p className="mt-2 text-sm text-fg-muted leading-relaxed">{f.tagline}.</p>
+            )}
           </header>
 
           <Card className="mb-8">

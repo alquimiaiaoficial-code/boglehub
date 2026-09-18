@@ -7,6 +7,7 @@ import {
   isinsClasificados,
   tickersDeExposicion,
   VERIFICADOS_EN_FUENTE,
+  type FondoNoAnalizable,
 } from './fondos-analizables'
 
 /**
@@ -64,9 +65,10 @@ describe('las tablas apuntan a fondos que existen de verdad', () => {
   })
 
   it('los que no se analizan lo dicen con un motivo que una persona entiende', () => {
+    // El predicado usa el tipo real exportado en vez de uno inventado a mano: escribir una
+    // forma aproximada del tipo aqui dejo de compilar en cuanto `IndexFund` crecio.
     const fuera = INDEX_FUNDS.map((f) => resolverFondo(f.isin)).filter(
-      (r): r is { noAnalizable: { fondo: { name: string }; motivo: string } } =>
-        r != null && 'noAnalizable' in r,
+      (r): r is { noAnalizable: FondoNoAnalizable } => r != null && 'noAnalizable' in r,
     )
     // Hoy son ocho de doce, y es deliberado: solo se analiza lo verificado en fuente.
     expect(fuera.length).toBeGreaterThan(0)

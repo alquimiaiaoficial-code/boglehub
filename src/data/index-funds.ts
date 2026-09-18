@@ -41,6 +41,19 @@ export interface IndexFund {
   description: string
   /** ETF equivalente para comparar */
   etfEquivalent?: string
+  /**
+   * Aviso que se enseña ARRIBA DEL TODO en la ficha cuando sus datos están en revisión.
+   *
+   * Creado el 18-sep-2026 al descubrir que varias fichas de este catálogo tienen datos
+   * equivocados, y que tres de ellas ni siquiera son fondos: son ETFs. Toda la web dice que
+   * los fondos se traspasan sin tributar y los ETF no, así que presentarlos aquí les
+   * atribuye una ventaja fiscal que NO tienen — justo al revés de lo cierto.
+   *
+   * La página NO se retira, porque estas URLs están indexadas y reciben tráfico: la de
+   * `amundi-prime-global` es la que más clics recibe de todo el sitio. Se retira la
+   * afirmación, no la página. Quien llegue buscando ese ISIN se merece leer lo que se sabe.
+   */
+  avisoDeRevision?: string
   faq: IndexFundFaq[]
 }
 
@@ -50,6 +63,8 @@ export const INDEX_FUNDS: IndexFund[] = [
     name: 'Amundi Prime Global',
     manager: 'Amundi',
     isin: 'LU1931974692',
+    avisoDeRevision:
+      'Este producto NO es un fondo indexado: es el «Amundi Prime Global UCITS ETF DR (D)», un ETF de DISTRIBUCIÓN que replica el Solactive GBS Developed Markets Large & Mid Cap. Y según justETF ha sido liquidado o fusionado, así que sus datos ya no se actualizan. Al ser un ETF y no un fondo, NO tiene traspaso fiscal libre: venderlo tributa. Comprobado el 18-sep-2026 en justETF y trackingdifferences. La ficha de abajo se escribió creyendo que era un fondo indexado de acumulación y está siendo revisada.',
     index: 'Solactive GBS Global Markets Large & Mid Cap',
     ter: 0.05,
     assetClass: 'Renta variable',
@@ -99,6 +114,8 @@ export const INDEX_FUNDS: IndexFund[] = [
     name: 'Fidelity S&P 500 Index Fund',
     manager: 'Fidelity',
     isin: 'IE00BYX5MX67',
+    avisoDeRevision:
+      'Esta ficha decía «Fidelity MSCI World Index Fund» con un TER del 0,12 % y el producto real es el «FIDELITY S&P 500 INDEX FUND P-ACC-EUR», con gastos del 0,06 %. Corregido el 18-sep-2026. La dirección de la página sigue diciendo «msci-world» porque cambiarla rompería los enlaces que ya apuntan aquí: es un S&P 500, o sea solo Estados Unidos, no renta variable mundial.',
     // Verificado el 18-sep-2026 en el registro: «FIDELITY S&P 500 INDEX FUND P-ACC-EUR»,
     // indice S&P 500, gastos corrientes 0,06 %. La ficha decia «MSCI World» con TER 0,12 %:
     // nombre, indice y comision estaban los tres mal, y durante un dia el analizador le dio
@@ -146,6 +163,8 @@ export const INDEX_FUNDS: IndexFund[] = [
     name: 'Amundi Index MSCI Emerging Markets',
     manager: 'Amundi',
     isin: 'LU0996177134',
+    avisoDeRevision:
+      'Nuestra ficha lo llama «Amundi Index MSCI Emerging Markets» con un TER del 0,20 %, y el registro consultado el 18-sep-2026 devuelve «AMUNDI CORE MSCI Emerging Markets AE CAP» con un 0,30 %. Son gamas distintas y la comisión difiere en la mitad. Datos en revisión.',
     index: 'MSCI Emerging Markets',
     ter: 0.20,
     assetClass: 'Renta variable',
@@ -254,6 +273,8 @@ export const INDEX_FUNDS: IndexFund[] = [
     name: 'Amundi Prime USA',
     manager: 'Amundi',
     isin: 'LU2050633988',
+    avisoDeRevision:
+      'Los datos de esta ficha están sin verificar y los de sus dos productos hermanos —Amundi Prime Global y Amundi Prime Japan— resultaron ser de ETFs y no de fondos indexados, lo que cambia por completo su fiscalidad: un ETF no se traspasa sin tributar. Hasta comprobarlo, tómese esta ficha con reservas.',
     index: 'Solactive GBS United States',
     ter: 0.05,
     assetClass: 'Renta variable',
@@ -275,6 +296,8 @@ export const INDEX_FUNDS: IndexFund[] = [
     name: 'Fidelity Emerging Markets Index Fund',
     manager: 'Fidelity',
     isin: 'IE00BYX5L514',
+    avisoDeRevision:
+      'Este ISIN no aparece en el registro de fondos comercializados en España consultado el 18-sep-2026. Puede ser un límite de esa fuente o un error nuestro. Datos en revisión.',
     index: 'MSCI Emerging Markets',
     ter: 0.20,
     assetClass: 'Renta variable',
@@ -296,6 +319,8 @@ export const INDEX_FUNDS: IndexFund[] = [
     name: 'Amundi Prime Japan',
     manager: 'Amundi',
     isin: 'LU2089238385',
+    avisoDeRevision:
+      'Este producto NO es un fondo indexado: es el «Amundi Prime Japan UCITS ETF DR (C)», un ETF. Al ser un ETF y no un fondo, NO tiene traspaso fiscal libre: venderlo tributa. El índice (Solactive GBS Japan Large & Mid Cap), el TER del 0,05 % y que es de acumulación sí están confirmados. Comprobado el 18-sep-2026 en justETF. La ficha de abajo se escribió creyendo que era un fondo y está siendo revisada.',
     index: 'Solactive GBS Japan',
     ter: 0.05,
     assetClass: 'Renta variable',
