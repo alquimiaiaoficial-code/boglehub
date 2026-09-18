@@ -8917,7 +8917,7 @@ Si prefieres MSCI World por su TER ligeramente inferior, combínalo con un ETF d
     faq: [
       {
         q: '¿Se puede traspasar un fondo de inversión sin pagar impuestos en España?',
-        a: 'Sí. Los fondos de inversión registrados en España con más de 500 partícipes disfrutan del régimen de diferimiento fiscal: al hacer un traspaso, el dinero pasa íntegro al fondo de destino y no tributas hasta el reembolso definitivo. Esta ventaja NO existe para los ETFs ni para fondos extranjeros no acogidos al régimen.',
+        a: 'Sí. Los fondos de inversión comercializados en España disfrutan del régimen de diferimiento del artículo 94.1.a) de la Ley del IRPF: al traspasar, «no procederá computar la ganancia o pérdida patrimonial» y las nuevas participaciones conservan el valor y la fecha de adquisición de las antiguas, así que no tributas hasta el reembolso definitivo. Dos precisiones que suelen contarse mal: el requisito de más de 500 partícipes es de las IIC con forma societaria (SICAV), NO de los fondos; y el diferimiento se pierde si el importe llega a estar a tu disposición, o sea que vender y volver a comprar no cuenta como traspaso. Los ETFs están excluidos expresamente del régimen.',
       },
       {
         q: '¿Cuánto tarda un traspaso de fondos?',
@@ -8948,11 +8948,30 @@ Esta guía explica qué es exactamente un traspaso, cómo funciona el régimen f
 
 Cuando vendes un ETF para comprar otro, Hacienda considera que has realizado una ganancia patrimonial y debes declararla en el IRPF del año de la venta. Con los fondos de inversión tradicionales, el legislador español estableció un régimen diferente: puedes mover el dinero de un fondo a otro sin que el cambio genere un evento fiscal.
 
-El mecanismo legal es el **diferimiento fiscal por traspaso** (artículo 94 de la Ley del IRPF). Las condiciones:
+El mecanismo legal es el **diferimiento fiscal por traspaso** (artículo 94 de la Ley del IRPF). Lo que dice el artículo, literal:
 
-- El fondo origen debe estar registrado en la CNMV o pertenecer a un Estado Miembro de la UE con presencia en España.
-- Tanto el fondo origen como el de destino deben tener **más de 500 partícipes** (excluye fondos muy pequeños).
-- El traspaso es entre el mismo tipo de vehículo: fondo a fondo. No aplica a ETFs, ni a acciones, ni a planes de pensiones (estos últimos tienen su propio régimen separado).
+> «Cuando el importe obtenido como consecuencia del reembolso o transmisión de participaciones o acciones en instituciones de inversión colectiva se destine [...] a la adquisición o suscripción de otras acciones o participaciones en instituciones de inversión colectiva, **no procederá computar la ganancia o pérdida patrimonial**, y las nuevas acciones o participaciones suscritas **conservarán el valor y la fecha de adquisición** de las acciones o participaciones transmitidas o reembolsadas.»
+
+Y a partir de ahí, las dos condiciones que de verdad importan:
+
+**1. El dinero no puede pasar por tus manos.** El propio artículo lo dice: el diferimiento «no resultará de aplicación cuando, por cualquier medio, se ponga a disposición del contribuyente el importe derivado del reembolso o transmisión». O sea que **vender un fondo, cobrar en tu cuenta y comprar otro NO es un traspaso**: es una venta y tributa. El traspaso lo tramitan las entidades entre ellas y tú no ves el dinero en ningún momento.
+
+**2. Los ETFs están excluidos, y sin resquicio.** El artículo exige que la operación «no tenga por objeto participaciones o acciones en instituciones de inversión colectiva análogas a los **fondos de inversión cotizados** [...] **cualquiera que sea el mercado regulado o el sistema multilateral de negociación en el que coticen y la composición del índice que reproduzcan**». Da igual que el ETF replique el mismo índice que el fondo: no hay traspaso posible. Tampoco aplica a acciones, ni a planes de pensiones, que tienen su propio régimen.
+
+### El requisito de los 500 partícipes NO es de los fondos
+
+Se repite mucho que «los dos fondos deben tener más de 500 partícipes», y esta guía lo decía hasta el 18 de septiembre de 2026. **Es incorrecto, y conviene saber de dónde sale.**
+
+El artículo 94.1.a) distingue dos casos:
+
+| Caso | Requisitos |
+|---|---|
+| **1.º Reembolsos de participaciones en FONDOS de inversión** | Ninguno adicional |
+| **2.º Transmisiones de acciones de IIC con forma SOCIETARIA** (una SICAV) | Más de 500 socios **y** que no hayas tenido más del 5 % del capital en los 12 meses anteriores |
+
+Los 500 partícipes y el 5 % son condiciones de las **SICAV**, no de los fondos. Si traspasas entre fondos de inversión —el caso normal de un indexado en MyInvestor, Renta 4 o cualquier gestora—, ese requisito no te afecta.
+
+Lo que sí hace falta es que el fondo esté **comercializado en España**, porque si no, ninguna entidad te tramita la operación.
 
 **Qué ocurre fiscalmente**: el precio de coste del fondo origen se "hereda" en el fondo destino. Cuando un día reembolses de verdad, la ganancia calculada será precio de venta menos precio de compra original, independientemente de cuántos traspasos hayas hecho entre medias.
 
@@ -9039,16 +9058,15 @@ Con el criterio FIFO, si haces traspasos parciales de un fondo que compraste en 
 ## Qué fondos permiten el traspaso (y cuáles no)
 
 **Sí permiten traspaso fiscal libre**:
-- Fondos de inversión españoles registrados en CNMV con más de 500 partícipes
-- Fondos domiciliados en la UE comercializados en España con más de 500 partícipes
-- Fondos de Vanguard, iShares, Amundi, Fidelity disponibles en MyInvestor o Renta 4
-- El Amundi Prime Global y equivalentes indexados disponibles en plataformas españolas
+- Fondos de inversión españoles registrados en la CNMV
+- Fondos domiciliados en la UE y comercializados en España
+- Los fondos indexados de Vanguard, iShares, Amundi o Fidelity que ofrecen MyInvestor, Renta 4 y otras plataformas españolas
 
 **NO permiten traspaso fiscal libre**:
-- ETFs (aunque coticen en bolsas europeas y sean UCITS)
-- Fondos con menos de 500 partícipes
+- **ETFs**, aunque coticen en bolsas europeas y sean UCITS. La exclusión del artículo 94.1.a) es deliberadamente amplia: «cualquiera que sea el mercado regulado o el sistema multilateral de negociación en el que coticen y la composición del índice que reproduzcan».
 - Acciones o derivados de ningún tipo
-- Planes de pensiones (tienen su propio régimen, no de traspaso sino de "movilización")
+- Planes de pensiones, que tienen su propio régimen: no se «traspasan», se «movilizan»
+- Las **SICAV** solo con condiciones: más de 500 socios y no haber tenido más del 5 % del capital en los 12 meses anteriores
 
 ---
 
@@ -9066,7 +9084,7 @@ Algunos brokers incluyen los traspasos en el informe fiscal anual a título info
 
 **2. Olvidar el plazo de los 8 días hábiles**. Si necesitas el dinero en una fecha concreta, calcula con margen. Los traspasos entre plataformas distintas pueden tardar hasta 8 días hábiles.
 
-**3. Asumir que todos los fondos lo permiten**. Si el fondo origen tiene menos de 500 partícipes, el régimen no aplica. Algunos fondos pequeños o temáticos no cumplen este requisito.
+**3. Creer que hace falta que el fondo tenga más de 500 partícipes**. Es el error más repetido en todo lo que se lee sobre traspasos, y esta guía lo tuvo hasta el 18 de septiembre de 2026. Ese requisito es de las IIC con **forma societaria** (las SICAV), no de los fondos de inversión: el artículo 94.1.a) trata los dos casos por separado y al primero no le pone condición de partícipes. Lo que sí hace falta es que el fondo esté comercializado en España, porque si no, no hay entidad que tramite la operación.
 
 **4. Traspasar a un ETF**. No es posible "traspasar" desde un fondo a un ETF con diferimiento fiscal. Para pasar de fondos a ETFs siempre hay que hacer reembolso (con tributación) y luego compra del ETF.
 
