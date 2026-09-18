@@ -12,7 +12,10 @@
 export const BLOG_META_TITLES: Record<string, string> = {
   'degiro-vs-trade-republic-vs-myinvestor-2026': 'DEGIRO vs Trade Republic vs MyInvestor (2026)',
   'vwce-analisis-completo': 'VWCE: análisis del ETF All-World Vanguard (2026)',
-  'amundi-prime-global-analisis': 'Amundi Prime Global: el fondo más barato (2026)',
+  // Decía «el fondo más barato» y es un ETF, no un fondo. Este mapa es lo que sale en el
+  // SERP, así que era la superficie donde más caída tenía la afirmación falsa: la ve quien
+  // busca, antes de entrar. Se descubrió tarde porque sobrescribe al título del artículo.
+  'amundi-prime-global-analisis': 'Amundi Prime Global: ¿fondo o ETF? (2026)',
   'finizens-vs-indexa-capital-2026': 'Finizens vs Indexa Capital: cuál elegir (2026)',
   'riesgo-divisa-etf-hedged-espana': 'Riesgo divisa en ETFs: ¿cubrir o no? (2026)',
   'swrd-vs-iwda': 'SWRD vs IWDA: qué ETF MSCI World elegir (2026)',
