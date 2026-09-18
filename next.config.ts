@@ -48,6 +48,37 @@ const nextConfig: NextConfig = {
         destination: 'https://boglehub.com/:path*',
         statusCode: 301,
       },
+
+      /**
+       * El fondo IE00BYX5MX67 se publicó como `fidelity-msci-world` y NO es un MSCI World:
+       * es el «Fidelity S&P 500 Index Fund». Verificado el 18-sep-2026 en el registro de
+       * fondos, donde figura como «FIDELITY S&P 500 INDEX FUND P-ACC-EUR».
+       *
+       * El contenido se corrigió el mismo día, pero la dirección seguía diciendo lo
+       * contrario. Una URL es una afirmación: quien la ve en un resultado de búsqueda o la
+       * comparte en un foro lee «fidelity msci world» sin abrirla.
+       *
+       * 301 y no borrar, porque las tres URLs están en el sitemap y la del blog apunta a la
+       * ficha. Se mantiene el mismo `statusCode: 301` explícito que el redirect de arriba en
+       * vez del `permanent: true` que emitiría un 308: no cambia nada para los buscadores,
+       * pero tener dos formas distintas de decir lo mismo en el mismo fichero invita a
+       * preguntarse si hay una diferencia, y no la hay.
+       */
+      {
+        source: '/fondo/fidelity-msci-world',
+        destination: '/fondo/fidelity-sp500',
+        statusCode: 301,
+      },
+      {
+        source: '/comparar-fondo/amundi-prime-global-vs-fidelity-msci-world',
+        destination: '/comparar-fondo/amundi-prime-global-vs-fidelity-sp500',
+        statusCode: 301,
+      },
+      {
+        source: '/comparar-fondo/vanguard-global-stock-vs-fidelity-msci-world',
+        destination: '/comparar-fondo/vanguard-global-stock-vs-fidelity-sp500',
+        statusCode: 301,
+      },
     ]
   },
 

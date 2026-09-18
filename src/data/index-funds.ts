@@ -107,10 +107,11 @@ export const INDEX_FUNDS: IndexFund[] = [
     ],
   },
   {
-    // ⚠️ El slug dice «msci-world» y el fondo es un S&P 500. Se mantiene A PROPOSITO: la URL
-    // /fondo/fidelity-msci-world ya esta en el sitemap y enlazada desde el blog, y cambiarla
-    // sin un redirect 301 la rompe. Pendiente: renombrar a fidelity-sp500 con redirect.
-    slug: 'fidelity-msci-world',
+    // Renombrado el 18-sep-2026 de `fidelity-msci-world` a `fidelity-sp500`, con redirect
+    // 301 de la URL antigua y de las dos comparativas que la usaban (ver `next.config.ts`).
+    // El slug anterior afirmaba que era un MSCI World, y una URL es una afirmacion: se lee
+    // en el resultado de busqueda sin abrir la pagina.
+    slug: 'fidelity-sp500',
     name: 'Fidelity S&P 500 Index Fund',
     manager: 'Fidelity',
     isin: 'IE00BYX5MX67',
