@@ -52,7 +52,11 @@ export default async function FondoPage({ params }: { params: Promise<{ slug: st
   const similar = INDEX_FUNDS.filter((x) => x.slug !== slug && x.assetClass === f.assetClass).slice(0, 4)
 
   const faqs = [
-    ...f.faq,
+    // Las FAQ propias de la ficha se OMITEN cuando está en revisión: se escribieron dando
+    // por hecho que el producto era un fondo con traspaso libre, y en tres casos es un ETF.
+    // La del Amundi Prime Global decía literalmente «permite traspaso fiscal libre entre
+    // fondos en España, ventaja exclusiva de los fondos» — sobre un ETF.
+    ...(f.avisoDeRevision ? [] : f.faq),
     {
       q: `¿Cuál es el ISIN del ${f.name}?`,
       a: `El ISIN del ${f.name} es ${f.isin}. Está gestionado por ${f.manager}, replica el índice ${f.index} y tiene un TER del ${f.ter}% anual. Es un fondo de ${f.accumulating ? 'acumulación' : 'distribución'} en ${f.currency}.`,
@@ -162,7 +166,24 @@ export default async function FondoPage({ params }: { params: Promise<{ slug: st
             <Card className="mb-8">
               <CardTitle className="mb-2">Fondo vs ETF equivalente</CardTitle>
               <p className="text-sm text-fg-muted leading-relaxed mb-3">
-                El equivalente en formato ETF de este fondo es <strong className="text-fg">{f.etfEquivalent}</strong>. La diferencia clave: el fondo permite traspaso fiscal libre entre fondos en España (puedes rebalancear sin tributar), mientras que cada venta del ETF tributa. El ETF, en cambio, cotiza en bolsa en tiempo real.
+                {f.avisoDeRevision ? (
+                  <>
+                    El producto comparable en formato ETF es{' '}
+                    <strong className="text-fg">{f.etfEquivalent}</strong>. La comparación
+                    «fondo frente a ETF» que había aquí daba por hecho que este producto es un
+                    fondo, y eso es justo lo que está en revisión: si resulta ser un ETF, no hay
+                    traspaso libre que lo distinga y la comparación no tiene sentido tal como
+                    estaba planteada.
+                  </>
+                ) : (
+                  <>
+                    El equivalente en formato ETF de este fondo es{' '}
+                    <strong className="text-fg">{f.etfEquivalent}</strong>. La diferencia clave:
+                    el fondo permite traspaso fiscal libre entre fondos en España (puedes
+                    rebalancear sin tributar), mientras que cada venta del ETF tributa. El ETF,
+                    en cambio, cotiza en bolsa en tiempo real.
+                  </>
+                )}
               </p>
               <Link href={`/etf/${f.etfEquivalent.toLowerCase()}`} className="text-sm text-brand-400 hover:text-brand-300">
                 Ver análisis del ETF {f.etfEquivalent} →
