@@ -56,11 +56,19 @@ export const ETF_THEMES: EtfTheme[] = [
   {
     slug: 'sp500',
     h1: 'Los mejores ETFs S&P 500 UCITS disponibles en España (2026)',
-    metaTitle: 'Mejores ETFs S&P 500 para España 2026 | BogleHub',
+    // La consulta más grande del informe de Bing del 18-sep-2026 es «mejores etfs s&p 500
+    // para inversores europeos»: 49 impresiones, posición media 5,0 y CERO clics. Aparecemos
+    // y nadie entra, y el motivo estaba en el título: decía «para España» mientras la
+    // pregunta dice «europeos». No es un problema de posición, es de correspondencia.
+    //
+    // Se añade «europeos» SIN quitar España: el nicho sigue siendo español y la fiscalidad
+    // que explicamos también, pero un ETF UCITS domiciliado en Irlanda sirve igual a
+    // cualquier inversor de la UE y la página ya trataba de eso sin decirlo.
+    metaTitle: 'Mejores ETFs S&P 500 UCITS para inversores europeos y España 2026 | BogleHub',
     metaDescription:
-      'Los mejores ETFs S&P 500 UCITS para España: CSPX, VUAA, SPXS y más, con TER desde 0,03%. Acumulación frente a distribución y disponibilidad por bróker.',
+      'Los mejores ETFs S&P 500 UCITS para inversores europeos y residentes en España: CSPX, VUAA, SPXS y más, con TER desde 0,03%. Por qué el domicilio irlandés importa, acumulación frente a distribución y disponibilidad por bróker.',
     intro:
-      'El S&P 500 agrupa las 500 mayores empresas cotizadas de Estados Unidos y es el índice bursátil más seguido del mundo. Invertir en él mediante un ETF UCITS ofrece acceso a gigantes como Apple, Microsoft o Nvidia junto con empresas de consumo, salud e industria. Para inversores españoles, el domicilio importa: un ETF domiciliado en Irlanda tiene grado fiscal A, y la clase de acumulación reinvierte los dividendos en vez de repartirlos. La diferencia entre tickers como CSPX y SXR8 es mínima: replican el mismo fondo, simplemente cotizan en bolsas distintas.',
+      'El S&P 500 agrupa las 500 mayores empresas cotizadas de Estados Unidos y es el índice bursátil más seguido del mundo. Invertir en él mediante un ETF UCITS ofrece acceso a gigantes como Apple, Microsoft o Nvidia junto con empresas de consumo, salud e industria. Y aquí está lo que separa a un inversor europeo de uno estadounidense: **no puede comprar los ETFs americanos** —VOO, SPY, IVV— porque la normativa PRIIPs exige un documento informativo que esas gestoras no publican en la UE. De ahí la existencia de los UCITS, que son la versión europea del mismo índice. El domicilio del fondo importa además por un motivo fiscal concreto: uno domiciliado en **Irlanda** se beneficia del convenio entre Irlanda y Estados Unidos, que reduce la retención en origen sobre los dividendos del 30 % al 15 %, y en BogleHub eso se traduce en grado fiscal A. La clase de acumulación reinvierte los dividendos en vez de repartirlos, lo que para un residente en España evita tributar por ellos cada año. La diferencia entre tickers como CSPX y SXR8 es mínima: replican el mismo fondo, simplemente cotizan en bolsas distintas.',
     listH2: 'ETFs S&P 500 disponibles en España',
     faq: [
       {
