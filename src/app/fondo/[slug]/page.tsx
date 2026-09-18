@@ -59,7 +59,13 @@ export default async function FondoPage({ params }: { params: Promise<{ slug: st
     ...(f.avisoDeRevision ? [] : f.faq),
     {
       q: `¿Cuál es el ISIN del ${f.name}?`,
-      a: `El ISIN del ${f.name} es ${f.isin}. Está gestionado por ${f.manager}, replica el índice ${f.index} y tiene un TER del ${f.ter}% anual. Es un fondo de ${f.accumulating ? 'acumulación' : 'distribución'} en ${f.currency}.`,
+      // La última frase decía «Es un fondo de acumulación en EUR» tomándolo del dato, y en
+      // las fichas en revisión ese dato es justo el que está en duda: el Amundi Prime Global
+      // figura como acumulación y el producto real es de distribución. Cuando hay aviso, esta
+      // respuesta se queda en lo que no depende de esa duda.
+      a: f.avisoDeRevision
+        ? `El ISIN de esta ficha es ${f.isin} y figura gestionado por ${f.manager}. El índice que replica y si es de acumulación o distribución están en revisión, así que no los afirmamos aquí: lee el aviso del principio de la página.`
+        : `El ISIN del ${f.name} es ${f.isin}. Está gestionado por ${f.manager}, replica el índice ${f.index} y tiene un TER del ${f.ter}% anual. Es un fondo de ${f.accumulating ? 'acumulación' : 'distribución'} en ${f.currency}.`,
     },
     {
       q: `¿El ${f.name} permite traspaso fiscal libre?`,
