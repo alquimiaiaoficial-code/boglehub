@@ -3136,7 +3136,7 @@ Esta guía te lleva paso a paso por los cuatro criterios que importan, los tres 
 
 ## ¿Por qué ETFs y no fondos indexados?
 
-La pregunta más frecuente entre nuevos inversores es si conviene un ETF o un fondo indexado tipo Amundi Prime Global o Vanguard Global Stock. Ambos son vehículos válidos dentro de la filosofía Boglehead, pero tienen diferencias prácticas relevantes para el inversor español:
+La pregunta más frecuente entre nuevos inversores es si conviene un ETF o un fondo indexado tipo Vanguard Global Stock. Ambos son vehículos válidos dentro de la filosofía Boglehead, pero tienen diferencias prácticas relevantes para el inversor español:
 
 **Fondos indexados**
 - Traspaso entre fondos sin tributar (ventaja fiscal clave en España)
@@ -5886,7 +5886,7 @@ Si la desviación es grande y no hay suficiente aportación para corregirla, sol
 
 ## La pregunta que siempre surge: ¿fondos o ETFs?
 
-Si usas MyInvestor, tienes acceso a los mismos índices en formato fondo indexado (Vanguard Global Stock, Amundi Prime Global, etc.). La ventaja: el traspaso entre fondos no tributa en España. La desventaja: sin comisión, sin horario de mercado, sin precio en tiempo real.
+Si usas MyInvestor, tienes acceso a los mismos índices en formato fondo indexado (el Vanguard Global Stock, por ejemplo). La ventaja: el traspaso entre fondos no tributa en España. La desventaja: sin comisión, sin horario de mercado, sin precio en tiempo real.
 
 Para esta cartera de 3 fondos, si operas en MyInvestor y tu horizonte es >10 años, los fondos indexados pueden tener ventaja fiscal sobre los ETFs. [Lee el artículo completo sobre fondos vs ETFs](/blog/fondos-indexados-vs-etfs-espana).
 
@@ -6002,7 +6002,7 @@ MyInvestor es el neobanco del grupo Andbank y el único de los tres que ofrece f
 
 **Comisiones ETF**: 0,20 € fijo + 0,03 % del importe. Para órdenes pequeñas (<667 €) la comisión mínima de 0,20 € es inferior a la de DEGIRO. Para órdenes grandes, el 0,03 % variable puede ser significativo.
 
-**Fondos indexados**: Vanguard Global Stock Index, Amundi Prime Global, Amundi Index MSCI Emerging Markets. Misma exposición que los ETFs equivalentes, sin comisión de compra, traspaso sin tributar.
+**Fondos indexados**: Vanguard Global Stock Index, Amundi Core MSCI Emerging Markets. Misma exposición que los ETFs equivalentes, sin comisión de compra, traspaso sin tributar.
 
 **Regulación española**: el único de los tres regulado por la CNMV. Para muchos inversores, tener su dinero en una entidad supervisada en España da tranquilidad adicional.
 
@@ -6200,8 +6200,8 @@ Indexa puede no ser la mejor opción si:
 
 Una cartera DIY básica para el inversor español puede ser tan sencilla como dos fondos en MyInvestor:
 
-- 80% Vanguard Global Stock Index (o Amundi Prime Global)
-- 20% Amundi Prime Euro Investment Grade Corporate Bond
+- 80% Vanguard Global Stock Index
+- 20% Vanguard Global Bond Index EUR Hedged
 
 Coste total: ~0,12–0,18% anual. Rebalanceo manual una vez al año. Traspaso entre fondos sin tributar. Es la [cartera de 3 fondos Boglehead](/blog/cartera-boglehead-3-fondos-espana) en su versión mínima.
 
@@ -6390,39 +6390,48 @@ Si usas Trade Republic o DEGIRO y buscas la solución más simple para largo pla
   },
   {
     slug: 'amundi-prime-global-analisis',
-    title: 'Amundi Prime Global: análisis del fondo indexado más barato de España (2026)',
+    title: 'Amundi Prime Global: no es un fondo indexado, es un ETF (2026)',
     excerpt:
-      'Análisis completo del Amundi Prime Global en 2026: TER 0,05%, disponible en MyInvestor con traspaso fiscal libre, comparativa con IWDA y Vanguard Global Stock.',
+      'El Amundi Prime Global se busca como fondo indexado y no lo es: es un ETF UCITS. Qué cambia eso en España, por qué no tiene traspaso fiscal libre, y qué pasó con el ISIN LU1931974692.',
     publishedAt: '2026-05-24',
-    readingMinutes: 8,
-    keywords: ['Amundi Prime Global análisis', 'Amundi Prime Global MyInvestor', 'fondo indexado más barato España', 'Amundi Prime Global TER'],
+    readingMinutes: 7,
+    keywords: ['Amundi Prime Global', 'Amundi Prime Global ETF o fondo', 'LU1931974692', 'Amundi Prime Global traspaso', 'Amundi Prime Global TER'],
     faq: [
       {
-        q: '¿Qué es el Amundi Prime Global y qué índice replica?',
-        a: 'El Amundi Prime Global es un fondo indexado UCITS que replica el índice Solactive GBS Global Markets Large & Mid Cap Index, que incluye aproximadamente 1.500-2.000 grandes y medianas empresas de mercados desarrollados de todo el mundo. Es equivalente funcional al MSCI World — no incluye mercados emergentes. Está disponible en MyInvestor desde 1 € de inversión mínima y permite traspaso fiscal entre fondos sin tributar.',
+        q: '¿El Amundi Prime Global es un fondo indexado o un ETF?',
+        a: 'Es un ETF UCITS, no un fondo indexado, aunque se busque con esa palabra. El nombre completo del producto es «Amundi Prime Global UCITS ETF». La distinción importa en España porque el traspaso entre fondos sin tributar, que recoge el artículo 94.1.a) de la Ley del IRPF, deja fuera expresamente a los fondos cotizados.',
       },
       {
-        q: '¿Cuánto cobra el Amundi Prime Global?',
-        a: 'El TER del Amundi Prime Global es del 0,05% anual, el más bajo entre los fondos indexados globales disponibles en España para el inversor particular. Es notablemente más barato que el Vanguard Global Stock Index (0,18%) o el MSCI World de Fidelity (0,12%). Sobre 10.000€, la diferencia de coste entre Amundi Prime Global y Vanguard Global Stock es de ~13€ al año — pequeña, pero se acumula.',
+        q: '¿Qué pasó con el ISIN LU1931974692?',
+        a: 'Corresponde al «Amundi Prime Global UCITS ETF DR (D)», domiciliado en Luxemburgo y de distribución. Consultado el 18 de septiembre de 2026, justETF lo da por liquidado o fusionado y el registro español de fondos no devuelve nada para ese código. La gama viva está domiciliada en Irlanda: IE000QIF5N15 reparte dividendos e IE0009DRDY20 los acumula, ambas con gastos del 0,05 % anual.',
       },
       {
-        q: '¿Es mejor el Amundi Prime Global que el Vanguard Global Stock Index?',
-        a: 'Depende de lo que valores. El Amundi Prime Global es más barato (TER 0,05% vs 0,18%) pero replica un índice diferente (Solactive en vez de MSCI). Los dos tienen rendimientos muy similares históricamente porque cubren el mismo universo de mercados desarrollados. Vanguard tiene más historial y es una gestora más conocida. En la práctica, para el inversor de largo plazo en España, ambos son excelentes opciones y la diferencia de 0,13% en TER es el único criterio objetivo de peso.',
+        q: '¿Tiene traspaso fiscal libre el Amundi Prime Global?',
+        a: 'No. El artículo 94.1.a) de la Ley del IRPF excluye del diferimiento a las participaciones «análogas a los fondos de inversión cotizados», cualquiera que sea el mercado en el que coticen y la composición del índice que reproduzcan. Vender un ETF para comprar otro producto es una venta a efectos fiscales, con su ganancia o pérdida patrimonial.',
       },
       {
-        q: '¿El Amundi Prime Global incluye emergentes?',
-        a: 'No. El índice Solactive GBS Global Markets Large & Mid Cap que replica cubre solo mercados desarrollados. Es equivalente funcional al MSCI World, no al FTSE All-World (que sí incluye emergentes). Si quieres exposición a emergentes junto con Amundi Prime Global, necesitas añadir un fondo de emergentes por separado. MyInvestor ofrece el Amundi Index MSCI Emerging Markets para completar la cobertura global.',
+        q: '¿Qué índice replica?',
+        a: 'El Solactive GBS Developed Markets Large & Mid Cap: grandes y medianas empresas de mercados desarrollados, sin emergentes. Cubre un universo equivalente al del MSCI World. Amundi usa índices de Solactive en su gama Prime por una razón de coste: la licencia es más barata que la de MSCI, y ese ahorro es parte de lo que explica un 0,05 %.',
       },
       {
-        q: '¿Cómo comprar el Amundi Prime Global en España?',
-        a: 'El Amundi Prime Global está disponible principalmente en MyInvestor (desde 1 €, sin comisión de compra, con traspaso fiscal libre). También está disponible en otros brokers como Selfbank o a través de algunas gestoras, pero MyInvestor ofrece las mejores condiciones para el inversor particular. No está disponible en DEGIRO ni en Trade Republic porque es un fondo de inversión, no un ETF.',
+        q: '¿Qué productos sí son fondos con traspaso en esta categoría?',
+        a: 'Entre los verificados en el registro español, el Vanguard Global Stock Index Fund (IE00B03HCZ61) replica el MSCI World con unos gastos del 0,18 % y sí es un fondo de inversión, no un ETF. Cuál encaja en una cartera concreta depende de si se va a rebalancear o cambiar de producto, que es cuando el diferimiento pesa, y de lo que cueste la diferencia de comisión en el plazo previsto.',
       },
     ],
-    content: `# Amundi Prime Global: análisis del fondo indexado más barato de España (2026)
+    content: `# Amundi Prime Global: no es un fondo indexado, es un ETF
 
-El Amundi Prime Global es el fondo indexado con el TER más bajo disponible para inversores particulares en España: 0,05% anual. Combina ese coste mínimo con disponibilidad en MyInvestor sin mínimo significativo, acceso desde 1 €, y la ventaja fiscal del traspaso entre fondos sin tributar.
+> **Corrección del 18 de septiembre de 2026.** Este artículo decía que el Amundi Prime
+> Global era «el fondo indexado más barato de España», de acumulación, domiciliado en
+> Luxemburgo y con traspaso fiscal libre. Las cuatro cosas son falsas: es un **ETF**, la
+> clase del ISIN que publicábamos es de **distribución**, ese ISIN figura como liquidado o
+> fusionado, y la gama viva está domiciliada en **Irlanda**. La sección sobre el domicilio
+> llegó a argumentar «a diferencia de los ETFs irlandeses» sobre lo que hoy es, exactamente,
+> un ETF irlandés. Se reescribe entera y se deja dicho lo que decía antes.
 
-Para un inversor en España que quiere una exposición global a mercados desarrollados al menor coste posible y aprovechar la fiscalidad de los fondos de inversión, el Amundi Prime Global es difícilmente superable.
+El Amundi Prime Global se busca casi siempre escribiendo «fondo», y no lo es. Es un **ETF
+UCITS** que replica el Solactive GBS Developed Markets Large & Mid Cap con unos gastos del
+**0,05 % anual**. El coste es real y es de los más bajos del mercado; lo que no existe es la
+ventaja fiscal con la que lo presentábamos.
 
 ---
 
@@ -6430,102 +6439,75 @@ Para un inversor en España que quiere una exposición global a mercados desarro
 
 | Dato | Valor |
 |---|---|
-| Nombre completo | Amundi Index Solutions - Amundi Prime Global |
-| ISIN | LU1931974692 |
-| Índice replicado | Solactive GBS Global Markets Large & Mid Cap |
-| TER | 0,05% anual |
-| Tipo de producto | Fondo de inversión UCITS |
-| Política de dividendos | Acumulación |
-| Mínimo de inversión (MyInvestor) | 1 € |
-| Disponible para traspaso fiscal | ✓ (como fondo de inversión en España) |
-| Domicilio | Luxemburgo |
+| Nombre | Amundi Prime Global UCITS ETF |
+| Tipo de producto | ETF UCITS (fondo cotizado) |
+| Índice replicado | Solactive GBS Developed Markets Large & Mid Cap |
+| Gastos corrientes | 0,05 % anual |
+| ISIN que publicábamos | LU1931974692 — Luxemburgo, distribución, **dado por liquidado o fusionado** |
+| Gama viva | IE000QIF5N15 (reparto) e IE0009DRDY20 (acumulación), **Irlanda** |
+| Traspaso sin tributar | No: los fondos cotizados quedan fuera del artículo 94.1.a) |
+
+Comprobado el 18 de septiembre de 2026 en justETF y en el registro español de fondos, que
+no devuelve ningún producto para LU1931974692.
 
 ---
 
-## El índice Solactive: ¿es lo mismo que el MSCI World?
+## Por qué la diferencia entre fondo y ETF pesa tanto en España
 
-El Amundi Prime Global no replica el MSCI World sino el **Solactive GBS Global Markets Large & Mid Cap Index**, un índice propiedad de la empresa alemana Solactive AG. La razón es económica: los derechos de licencia del MSCI World son caros para la gestora; Solactive ofrece un índice alternativo más barato con la misma cobertura.
+El artículo 94.1.a) de la Ley del IRPF establece que cuando el importe obtenido al reembolsar
+participaciones de un fondo se destina a suscribir otras, «no procederá computar la ganancia
+o pérdida patrimonial», y las nuevas participaciones «conservarán el valor y la fecha de
+adquisición» de las anteriores. El impuesto no desaparece: se aplaza hasta que el dinero sale.
 
-En la práctica, ambos índices cubren el mismo universo:
-- Grandes y medianas empresas de mercados desarrollados
-- Aproximadamente 23 países incluidos
-- ~1.500-2.000 valores (frente a ~1.400 en el MSCI World)
-- Ponderación por capitalización de mercado
+Ese diferimiento tiene dos condiciones que conviene leer juntas. La primera es que el importe
+no puede pasar por las manos del contribuyente en ningún momento. La segunda es la que afecta
+aquí: quedan fuera las participaciones «análogas a los fondos de inversión cotizados»,
+**cualquiera que sea el mercado regulado o el sistema multilateral de negociación en el que
+coticen y la composición del índice que reproduzcan**.
 
-La correlación histórica entre ambos índices supera el 99,9%. Para el inversor de largo plazo, la diferencia es estadísticamente irrelevante. Lo que sí importa es el TER: 0,05% frente al 0,20% del IWDA (MSCI World) o el 0,18% del Vanguard Global Stock Index.
-
----
-
-## La ventaja fiscal clave: traspaso entre fondos
-
-Aquí está la diferencia fundamental entre este fondo y un ETF equivalente como IWDA o SWRD.
-
-En España, los fondos de inversión gozan del régimen de **traspaso fiscal diferido**: puedes mover dinero de un fondo a otro sin que el cambio genere un evento fiscal. El IRPF se difiere hasta el momento en que realmente retiras el dinero de los fondos y lo llevas a tu cuenta corriente.
-
-Esto tiene implicaciones prácticas enormes:
-- Puedes rebalancear tu cartera (de más renta variable a más renta fija a medida que te acercas a la jubilación) sin tributar por las plusvalías acumuladas
-- Puedes cambiar de fondo si aparece uno mejor o más barato, sin coste fiscal
-- Los dividendos ya se acumulan dentro del fondo sin tributar
-
-Un ETF como IWDA no tiene este régimen: cada venta de ETF realiza la ganancia y tributa en el IRPF del año.
+Esa última frase está redactada para no dejar resquicio. Un ETF no se traspasa sin tributar,
+y da igual dónde cotice o qué índice siga.
 
 ---
 
-## Comparativa de costes: Amundi Prime Global vs alternativas
+## El índice Solactive frente al MSCI World
 
-| Fondo/ETF | TER | Índice | Traspaso fiscal | Dónde |
-|---|---|---|---|---|
-| Amundi Prime Global | **0,05%** | Solactive GBS | ✓ | MyInvestor |
-| Fidelity MSCI World | 0,12% | MSCI World | ✓ | MyInvestor, Fidelity |
-| Vanguard Global Stock Index | 0,18% | MSCI World | ✓ | MyInvestor |
-| SWRD (ETF) | 0,12% | MSCI World | ✗ | DEGIRO, Trade Republic |
-| IWDA (ETF) | 0,20% | MSCI World | ✗ | DEGIRO, Trade Republic |
+El Solactive GBS Developed Markets Large & Mid Cap cubre grandes y medianas empresas de
+mercados desarrollados. No incluye emergentes, igual que el MSCI World, y su universo es
+prácticamente el mismo: los dos índices se mueven muy parecido porque están comprando lo
+mismo.
 
-El Amundi Prime Global es el más barato de todos. La única razón para elegir Vanguard Global Stock Index sobre él es la preferencia por la marca Vanguard o la confianza en el índice MSCI frente al Solactive.
-
----
-
-## El domicilio en Luxemburgo: ¿afecta a la fiscalidad?
-
-A diferencia de los ETFs irlandeses (que aprovechan el convenio Irlanda-EE.UU. para pagar solo 15% de retención sobre dividendos americanos), el Amundi Prime Global está domiciliado en Luxemburgo. Luxemburgo tiene un convenio menos favorable con EE.UU. (retención del 30% en origen sobre dividendos americanos).
-
-En la práctica, como el fondo es de **acumulación**, los dividendos se reinvierten internamente y el inversor no los declara hasta vender. La "pérdida" por la mayor retención en origen ya está reflejada en el precio de la participación — no se puede recuperar, pero tampoco genera un evento fiscal para el partícipe.
-
-Para un fondo de acumulación a largo plazo, el impacto del domicilio es real pero difícil de cuantificar con precisión. La ventaja del menor TER (0,05% vs 0,20% del IWDA) suele compensar la menor eficiencia del domicilio luxemburgués.
+La razón de usar Solactive en vez de MSCI es de coste. La licencia de un índice es un gasto
+del producto, y las de MSCI son más caras. Parte de la diferencia entre un 0,05 % y un 0,20 %
+está ahí, no en la gestión.
 
 ---
 
-## Para quién es el Amundi Prime Global
+## Qué mira quien compara esto con un fondo
 
-Es la opción ideal si:
-- **Usas MyInvestor** como plataforma principal
-- **Quieres el coste mínimo posible** en un fondo de mercados desarrollados
-- **Valoras el traspaso fiscal libre** entre fondos
-- **No necesitas emergentes** en ese fondo (los añadirías por separado)
-- **Aportas cantidades pequeñas**: desde 1 €, sin comisión de compra
+| Producto | Gastos | Índice | Traspaso sin tributar |
+|---|---|---|---|
+| Amundi Prime Global (ETF) | 0,05 % | Solactive GBS Developed | No |
+| SWRD (ETF) | 0,12 % | MSCI World | No |
+| IWDA (ETF) | 0,20 % | MSCI World | No |
+| Vanguard Global Stock Index (fondo) | 0,18 % | MSCI World | Sí |
 
-Para un inversor que ya usa Trade Republic o DEGIRO y no tiene intención de cambiar, los ETFs SWRD o IWDA son alternativas igualmente válidas y con el mismo nivel de calidad.
+Los tres primeros son ETFs y ninguno se traspasa; entre ellos, la comparación es de coste y de
+índice. La cuarta fila es la que cambia de categoría: cuesta más que el Amundi, y a cambio
+permite cambiar de producto sin que la plusvalía tribute por el camino.
 
----
-
-## La cartera mínima con Amundi Prime Global en MyInvestor
-
-La cartera más sencilla que puedes construir con Amundi Prime Global:
-
-- **80-90% Amundi Prime Global** (desarrollados globales)
-- **10-20% Amundi Index MSCI Emerging Markets** (emergentes, TER 0,20%)
-
-El resultado es una cartera global similar al FTSE All-World del VWCE, con traspaso fiscal libre, desde 1 € de aportación mínima y un coste total ponderado inferior al 0,10% anual. Para muchos inversores en España, esto es la cartera óptima.
-
-Si quieres comparar el Amundi Prime Global con el resto de opciones, mira la guía de los [mejores fondos indexados en España por categoría](/blog/mejores-fondos-indexados-espana-2026).
+Cuánto vale ese diferimiento depende de algo que solo sabe cada uno: de si va a haber cambios
+de producto o rebalanceos con venta. Quien compra y no toca durante veinte años obtiene poco
+de él; quien rebalancea o cambia de estrategia, bastante. Esa cuenta no la puede hacer una
+página web por nadie, porque la mitad de los datos son personales.
 
 ---
 
-## Fuentes y lecturas complementarias
+## Fuentes
 
-- [Amundi — Ficha del fondo Amundi Prime Global](https://www.amundi.es) — Documentos oficiales, cartera y metodología del índice.
-- [MyInvestor — Fondos indexados disponibles](https://myinvestor.es) — Plataforma donde encontrar el fondo con las mejores condiciones para el inversor particular en España.
-- [Fondos indexados vs ETFs en España — BogleHub](/blog/fondos-indexados-vs-etfs-espana) — Guía completa sobre cuándo elegir cada vehículo.
+- [justETF — Amundi Prime Global UCITS ETF Dist (IE000QIF5N15)](https://www.justetf.com/en/etf-profile.html?isin=IE000QIF5N15) — Índice, gastos, domicilio y política de reparto.
+- [BOE — Ley 35/2006 del IRPF, artículo 94](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764) — Texto consolidado del régimen de traspasos y de la exclusión de los fondos cotizados.
+- [Fondos indexados vs ETFs en España — BogleHub](/blog/fondos-indexados-vs-etfs-espana) — En qué se diferencian los dos vehículos.
 `,
   },
   {
@@ -7356,7 +7338,7 @@ Lo que ofrece:
 Aquí MyInvestor no tiene competencia real en España. Es el único banco que ofrece a la vez:
 
 - **Fondos Vanguard institucionales** (no las clases minoristas más caras)
-- **Amundi Prime Global** con TER del 0,05% (el fondo indexado global más barato disponible al inversor español)
+- **Vanguard Global Stock Index** con TER del 0,18% (replica el MSCI World y es fondo, no ETF: se traspasa sin tributar)
 - **Sin comisión de compra ni custodia**
 - **Mínimo de aportación 1€** (aportaciones recurrentes desde el primer euro)
 - **Traspaso fiscal libre** entre fondos (la mayor ventaja fiscal de los fondos sobre los ETFs en España)
@@ -7430,7 +7412,7 @@ MyInvestor no encaja si:
 
 Para un inversor en fase de acumulación que quiera la máxima eficiencia fiscal y mínimo coste:
 
-- **80% Amundi Prime Global** (TER 0,05%, equivalente a MSCI World)
+- **80% Vanguard Global Stock Index** (TER 0,18%, MSCI World)
 - **10% Amundi Index MSCI Emerging Markets** (TER 0,20%, emergentes)
 - **10% Amundi Index Eurozone Government Bond** (TER 0,15%, renta fija eurozona)
 
@@ -7442,7 +7424,7 @@ Coste total ponderado: ~0,08-0,10% anual. Mínimo de aportación: 1€ por fondo
 
 - [MyInvestor — Catálogo de fondos indexados](https://myinvestor.es/fondos-de-inversion/) — Lista completa de fondos disponibles con datos de TER actualizados.
 - [Banco de España — Registro de entidades](https://www.bde.es/) — Verifica el registro de Andbank España (matriz de MyInvestor).
-- [Análisis Amundi Prime Global — BogleHub](/blog/amundi-prime-global-analisis) — Por qué este fondo de MyInvestor es el más eficiente del mercado español.
+- [Amundi Prime Global: no es un fondo, es un ETF — BogleHub](/blog/amundi-prime-global-analisis) — Por qué la etiqueta importa y qué cambia en el traspaso.
 `,
   },
   {
@@ -9871,11 +9853,11 @@ Las obligaciones de declaración pueden cambiar y tu caso puede tener particular
       'Mejores fondos indexados en España por categoría: global, S&P 500, emergentes y bonos. TER, ISIN y la ventaja del traspaso fiscal sin tributar.',
     publishedAt: '2026-05-31',
     readingMinutes: 10,
-    keywords: ['mejores fondos indexados España', 'mejores fondos indexados 2026', 'fondos indexados MyInvestor', 'fondo indexado MSCI World', 'Amundi Prime Global'],
+    keywords: ['mejores fondos indexados España', 'mejores fondos indexados 2026', 'fondos indexados MyInvestor', 'fondo indexado MSCI World', 'fondo indexado traspaso'],
     faq: [
       {
         q: '¿Cuáles son los mejores fondos indexados disponibles en España en 2026?',
-        a: 'Por coste, los más eficientes por categoría son: para renta variable global, el Amundi Prime Global (TER 0,05%); para S&P 500, el Amundi Prime USA (0,05%) o el Vanguard U.S. 500 Stock Index (0,10%); para emergentes, el Amundi Index MSCI Emerging Markets (0,20%); para renta fija global, el Vanguard Global Bond Index EUR Hedged (0,15%). Todos disponibles en MyInvestor desde 1€ con traspaso fiscal libre.',
+        a: 'Entre los que hemos verificado en el registro español: para renta variable global, el Vanguard Global Stock Index (0,18 %); para S&P 500, el Vanguard U.S. 500 Stock Index (0,10 %); para emergentes, el Fidelity MSCI Emerging Markets (0,20 %) o el Amundi Core MSCI Emerging Markets (0,30 %); para renta fija global, el Vanguard Global Bond Index EUR Hedged (0,15 %). Ojo con la gama Prime de Amundi, que aparece mucho en estas listas: son ETFs, no fondos, y por tanto no tienen traspaso sin tributar.',
       },
       {
         q: '¿Por qué elegir fondos indexados en lugar de ETFs en España?',
@@ -9887,11 +9869,11 @@ Las obligaciones de declaración pueden cambiar y tu caso puede tener particular
       },
       {
         q: '¿Qué TER es razonable para un fondo indexado global?',
-        a: 'En 2026, un fondo indexado global de bajo coste debería tener un TER por debajo del 0,20% anual. El más barato disponible en España es el Amundi Prime Global con un 0,05%. Por encima del 0,30% para un índice global estándar es difícil de justificar habiendo alternativas tan baratas. Recuerda que el TER se descuenta automáticamente del valor liquidativo cada día.',
+        a: 'En 2026, un fondo indexado global de bajo coste debería tener un TER por debajo del 0,20% anual. Entre los verificados, el Vanguard Global Stock Index está en el 0,18 %. Por encima del 0,30% para un índice global estándar es difícil de justificar habiendo alternativas tan baratas. Recuerda que el TER se descuenta automáticamente del valor liquidativo cada día.',
       },
       {
         q: '¿Un solo fondo indexado global es suficiente para mi cartera?',
-        a: 'Para la parte de renta variable, sí: un fondo indexado global como el Amundi Prime Global o el Vanguard Global Stock cubre los mercados desarrollados mundiales en un solo producto. Si quieres añadir emergentes y renta fija, una cartera de 2-3 fondos (global + emergentes + bonos) es la versión clásica Boglehead. La ventaja es que puedes rebalancear entre ellos con traspaso fiscal, sin tributar.',
+        a: 'Para la parte de renta variable, sí: un fondo indexado global como el Vanguard Global Stock cubre los mercados desarrollados mundiales en un solo producto. Si quieres añadir emergentes y renta fija, una cartera de 2-3 fondos (global + emergentes + bonos) es la versión clásica Boglehead. La ventaja es que puedes rebalancear entre ellos con traspaso fiscal, sin tributar.',
       },
     ],
     content: `# Mejores fondos indexados en España 2026: la lista por categoría
@@ -9900,7 +9882,7 @@ Los fondos indexados son, para muchos inversores españoles, la mejor forma de c
 
 Todos los datos de TER e ISIN de esta guía son los publicados por las gestoras; verifícalos siempre en la ficha oficial antes de invertir, ya que pueden cambiar.
 
-> **En resumen**: para renta variable global, el Amundi Prime Global (TER 0,05%) es el más barato. Para S&P 500, el Amundi Prime USA (0,05%). Para emergentes, el Amundi Index MSCI Emerging Markets (0,20%). Para renta fija global, el Vanguard Global Bond EUR Hedged (0,15%). Casi todos disponibles en MyInvestor desde 1€ con traspaso fiscal libre.
+> **En resumen**: entre los verificados en el registro, para renta variable global el Vanguard Global Stock Index (0,18 %); para S&P 500 el Vanguard U.S. 500 (0,10 %); para emergentes el Fidelity MSCI Emerging Markets (0,20 %); para renta fija global el Vanguard Global Bond EUR Hedged (0,15 %). Los cuatro son fondos, así que se traspasan sin tributar.
 
 ---
 
@@ -9922,11 +9904,10 @@ La base de casi cualquier cartera. Replican el MSCI World o un índice equivalen
 
 | Fondo | Índice | TER | ISIN |
 |---|---|---|---|
-| **Amundi Prime Global** | Solactive GBS Global Markets | **0,05 %** | LU1931974692 |
 | Fidelity MSCI World Index | MSCI World | 0,12 % | IE00BYX5MX67 |
 | Vanguard Global Stock Index | MSCI World | 0,18 % | IE00B03HCZ61 |
 
-El **Amundi Prime Global** es el fondo indexado global más barato disponible al inversor particular en España. Su índice (Solactive GBS) es funcionalmente equivalente al MSCI World. Lo analizamos en detalle en [Amundi Prime Global: análisis completo](/blog/amundi-prime-global-analisis) y tiene su [ficha técnica aquí](/fondo/amundi-prime-global).
+Falta de esta tabla un producto que aparece en casi todas las listas de fondos baratos: el **Amundi Prime Global**, al 0,05 %. No está porque **no es un fondo, es un ETF**, y por tanto no tiene el traspaso sin tributar que justifica esta sección. Lo contamos en [Amundi Prime Global: no es un fondo, es un ETF](/blog/amundi-prime-global-analisis).
 
 ---
 
@@ -9976,13 +9957,12 @@ Para quien quiera sobreponderar regiones concretas.
 | Fondo | Índice | TER | ISIN |
 |---|---|---|---|
 | Vanguard Eurozone Stock Index | MSCI EMU | 0,16 % | IE0007987690 |
-| **Amundi Prime Japan** | Solactive GBS Japan | **0,05 %** | LU2089238385 |
 
 ---
 
 ## Cómo elegir tus fondos indexados
 
-1. **Empieza por la base global.** Para la mayoría, un solo fondo global de bajo coste (Amundi Prime Global o Vanguard Global Stock) cubre la renta variable de mercados desarrollados.
+1. **Empieza por la base global.** Para la mayoría, un solo fondo global de bajo coste (el Vanguard Global Stock, por ejemplo) cubre la renta variable de mercados desarrollados.
 2. **Añade emergentes si quieres exposición completa al mundo** (10-20% de la renta variable).
 3. **Añade renta fija según tu perfil de riesgo** (desde 0% para horizontes muy largos hasta 40-60% cerca de la jubilación).
 4. **Fíjate en el TER, no en rentabilidades pasadas.** Para el mismo índice, el fondo más barato gana a largo plazo: el coste es lo único que conoces con certeza.
@@ -9995,7 +9975,7 @@ La gran ventaja: como todos permiten traspaso fiscal, puedes empezar simple (un 
 
 La versión más sencilla de una cartera Boglehead con fondos:
 
-- **80 % Amundi Prime Global** (renta variable global, TER 0,05%)
+- **80 % Vanguard Global Stock Index** (renta variable global, TER 0,18 %)
 - **20 % Vanguard Global Bond EUR Hedged** (renta fija global, TER 0,15%)
 
 TER ponderado: aproximadamente 0,07% anual. Difícil de batir en coste. Para una versión de tres fondos, añade un fondo de emergentes (por ejemplo, 70% global / 10% emergentes / 20% bonos). Más sobre carteras en la [cartera Boglehead de 3 fondos](/blog/cartera-boglehead-3-fondos-espana).
@@ -10023,7 +10003,7 @@ Una vez tengas tu cartera, puedes [analizarla gratis](/analyzer) para ver tu div
     faq: [
       {
         q: '¿Cómo se invierte en el S&P 500 desde España?',
-        a: 'A través de un ETF o un fondo indexado UCITS que replique el índice S&P 500, domiciliado en Irlanda para máxima eficiencia fiscal. No puedes comprar el SPY americano (la normativa europea MiFID II lo impide al inversor particular), pero sí sus equivalentes UCITS: ETFs como CSPX, VUAA o SPXS, o fondos como el Amundi Prime USA y el Vanguard U.S. 500. Se compran en un broker (Trade Republic, DEGIRO) o, en el caso de los fondos, en MyInvestor.',
+        a: 'A través de un ETF o un fondo indexado UCITS que replique el índice S&P 500, domiciliado en Irlanda para máxima eficiencia fiscal. No puedes comprar el SPY americano (la normativa europea MiFID II lo impide al inversor particular), pero sí sus equivalentes UCITS: ETFs como CSPX, VUAA o SPXS, o un fondo como el Vanguard U.S. 500. Se compran en un broker (Trade Republic, DEGIRO) o, en el caso de los fondos, en MyInvestor.',
       },
       {
         q: '¿Por qué no puedo comprar el ETF SPY o VOO americano desde España?',
@@ -10035,7 +10015,7 @@ Una vez tengas tu cartera, puedes [analizarla gratis](/analyzer) para ver tu div
       },
       {
         q: '¿Mejor un ETF o un fondo indexado para el S&P 500?',
-        a: 'Depende de si valoras el traspaso fiscal. Los fondos indexados como el Amundi Prime USA (TER 0,05%) o el Vanguard U.S. 500 (0,10%) permiten traspasar a otro fondo sin tributar, ventaja exclusiva de los fondos en España. Los ETFs (CSPX, VUAA) suelen tener costes de compra menores en algunos brokers pero no tienen traspaso fiscal. Para una cartera que vas a rebalancear, el fondo; para comprar y mantener sin tocar, el ETF también vale.',
+        a: 'Depende de si valoras el traspaso fiscal. Un fondo indexado como el Vanguard U.S. 500 (0,10 %) permite traspasar a otro fondo sin tributar, ventaja exclusiva de los fondos en España. Los ETFs (CSPX, VUAA) suelen tener costes de compra menores en algunos brokers pero no tienen traspaso fiscal. Para una cartera que vas a rebalancear, el fondo; para comprar y mantener sin tocar, el ETF también vale.',
       },
       {
         q: '¿Es buena idea invertir solo en el S&P 500?',
@@ -10048,7 +10028,7 @@ El S&P 500 es el índice más seguido del mundo: las 500 mayores empresas cotiza
 
 Los TER e ISIN de esta guía son los publicados por las gestoras; verifícalos en la ficha oficial antes de invertir, ya que pueden cambiar.
 
-> **En resumen**: inviertes en el S&P 500 a través de un ETF o fondo indexado UCITS domiciliado en Irlanda. Los ETFs más eficientes son SPXS (TER 0,03%), CSPX y VUAA (0,07%). Como fondo indexado, el Amundi Prime USA (0,05%) o el Vanguard U.S. 500 (0,10%), con la ventaja del traspaso fiscal. Los compras en un broker (Trade Republic, DEGIRO) o, los fondos, en MyInvestor.
+> **En resumen**: inviertes en el S&P 500 a través de un ETF o fondo indexado UCITS domiciliado en Irlanda. Los ETFs más eficientes son SPXS (TER 0,03%), CSPX y VUAA (0,07%). Como fondo indexado, el Vanguard U.S. 500 (0,10 %), con la ventaja del traspaso fiscal. Los compras en un broker (Trade Republic, DEGIRO) o, los fondos, en MyInvestor.
 
 ---
 
@@ -10100,7 +10080,7 @@ El **Vanguard U.S. 500** sigue el S&P 500 con unos gastos del 0,10 %. Su ficha: 
 
 ## ETF o fondo: cuál elegir para el S&P 500
 
-- **Fondo indexado** (Amundi Prime USA, Vanguard U.S. 500): permite **traspaso fiscal libre** —cambiar a otro fondo sin tributar—, aportaciones desde 1€ y compra a valor liquidativo. Ideal si vas a rebalancear o prevés cambiar de estrategia.
+- **Fondo indexado** (Vanguard U.S. 500): permite **traspaso fiscal libre** —cambiar a otro fondo sin tributar—, aportaciones desde 1€ y compra a valor liquidativo. Ideal si vas a rebalancear o prevés cambiar de estrategia.
 - **ETF** (SPXS, CSPX, VUAA): comisiones de compra muy bajas en brokers como Trade Republic (0€), precio en tiempo real, y planes de ahorro automáticos. Ideal para comprar y mantener.
 
 La diferencia de coste anual es mínima; la decisión real es la del [traspaso fiscal](/blog/como-hacer-traspaso-fondos-espana) frente a la comodidad del ETF. Lo desarrollamos en [fondos indexados o ETFs](/blog/fondos-indexados-vs-etfs-espana).
@@ -10109,7 +10089,7 @@ La diferencia de coste anual es mínima; la decisión real es la del [traspaso f
 
 ## Acumulación o distribución
 
-- **Acumulación** (SPXS, CSPX, VUAA, Amundi Prime USA): reinvierte los dividendos dentro del fondo, sin que tributes por ellos hasta que vendas. Más eficiente en la fase de ahorro.
+- **Acumulación** (SPXS, CSPX, VUAA): reinvierte los dividendos dentro del fondo, sin que tributes por ellos hasta que vendas. Más eficiente en la fase de ahorro.
 - **Distribución** (VUSA, IUSA): te paga los dividendos en cuenta, que tributan cada año. Útil si quieres rentas periódicas.
 
 Para la mayoría de inversores en fase de acumulación, la versión de acumulación evita la tributación intermedia de los dividendos.
@@ -10119,7 +10099,7 @@ Para la mayoría de inversores en fase de acumulación, la versión de acumulaci
 ## Dónde comprarlo
 
 - **ETFs** (CSPX, VUAA, SPXS): cualquier broker con acceso a bolsa europea. Trade Republic (0€ y planes de ahorro), DEGIRO, MyInvestor. Compara opciones en [mejor broker para ETFs en España](/blog/mejor-broker-etfs-espana-2026).
-- **Fondos** (Amundi Prime USA, Vanguard U.S. 500): MyInvestor es la plataforma más usada, con traspaso fiscal y aportaciones desde 1€.
+- **Fondos** (Vanguard U.S. 500): MyInvestor es la plataforma más usada, con traspaso fiscal y aportaciones desde 1€.
 
 ---
 
@@ -10154,7 +10134,7 @@ Una vez decidas, puedes [analizar tu cartera gratis](/analyzer) para ver tu expo
     faq: [
       {
         q: '¿Cómo se invierte en el MSCI World desde España?',
-        a: 'A través de un ETF o un fondo indexado UCITS que replique el índice MSCI World, domiciliado en Irlanda para máxima eficiencia fiscal. Los ETFs más populares son IWDA (iShares, TER 0,20%) y SWRD (SPDR, 0,12%); como fondos indexados, el Vanguard Global Stock (0,18%), el Fidelity MSCI World (0,12%) o el Amundi Prime Global (0,05%, índice equivalente). Los ETFs se compran en cualquier broker (Trade Republic, DEGIRO) y los fondos en MyInvestor.',
+        a: 'A través de un ETF o un fondo indexado UCITS que replique el índice MSCI World, domiciliado en Irlanda para máxima eficiencia fiscal. Los ETFs más populares son IWDA (iShares, TER 0,20%) y SWRD (SPDR, 0,12%); y como fondo indexado, el Vanguard Global Stock (0,18 %). Ojo con el Amundi Prime Global, que sale en muchas listas de fondos y es un ETF: su 0,05 % es real, pero no se traspasa sin tributar. Los ETFs se compran en cualquier broker (Trade Republic, DEGIRO) y los fondos en MyInvestor.',
       },
       {
         q: '¿Cuál es el mejor ETF de MSCI World para inversores en España?',
@@ -10170,7 +10150,7 @@ Una vez decidas, puedes [analizar tu cartera gratis](/analyzer) para ver tu expo
       },
       {
         q: '¿Mejor un ETF o un fondo indexado para el MSCI World?',
-        a: 'Depende de si valoras el traspaso fiscal. Los fondos indexados (Vanguard Global Stock, Fidelity MSCI World, Amundi Prime Global) permiten traspasar a otro fondo sin tributar, ventaja exclusiva de los fondos en España. Los ETFs (IWDA, SWRD) suelen tener comisiones de compra más bajas en algunos brokers y planes de ahorro automáticos. Para rebalancear sin coste fiscal, el fondo; para comprar y mantener, el ETF también vale.',
+        a: 'Depende de si valoras el traspaso fiscal. Un fondo indexado como el Vanguard Global Stock permite traspasar a otro fondo sin tributar, ventaja exclusiva de los fondos en España. Los ETFs (IWDA, SWRD) suelen tener comisiones de compra más bajas en algunos brokers y planes de ahorro automáticos. Para rebalancear sin coste fiscal, el fondo; para comprar y mantener, el ETF también vale.',
       },
     ],
     content: `# Cómo invertir en el MSCI World desde España (2026)
@@ -10179,7 +10159,7 @@ El MSCI World es el índice de referencia del inversor indexado en España: más
 
 Los TER e ISIN de esta guía son los publicados por las gestoras; verifícalos en la ficha oficial antes de invertir, ya que pueden cambiar.
 
-> **En resumen**: inviertes en el MSCI World con un ETF o fondo indexado UCITS domiciliado en Irlanda. Los ETFs más usados son IWDA (TER 0,20%) y SWRD (0,12%). Como fondo indexado, el Vanguard Global Stock (0,18%), el Fidelity MSCI World (0,12%) o el Amundi Prime Global (0,05%, índice equivalente). Los ETFs en cualquier broker; los fondos, en MyInvestor con traspaso fiscal.
+> **En resumen**: inviertes en el MSCI World con un ETF o fondo indexado UCITS domiciliado en Irlanda. Los ETFs más usados son IWDA (TER 0,20%) y SWRD (0,12%). Como fondo indexado, el Vanguard Global Stock (0,18 %). Los ETFs en cualquier broker; los fondos, en MyInvestor con traspaso fiscal.
 
 ---
 
@@ -10214,17 +10194,16 @@ Si prefieres un fondo indexado —para aprovechar el traspaso fiscal libre—, t
 
 | Fondo | Gestora | TER | ISIN |
 |---|---|---|---|
-| **Amundi Prime Global** | Amundi | **0,05 %** | LU1931974692 |
 | **Fidelity MSCI World Index** | Fidelity | 0,12 % | IE00BYX5MX67 |
 | Vanguard Global Stock Index | Vanguard | 0,18 % | IE00B03HCZ61 |
 
-El **Amundi Prime Global** es el más barato (0,05%); replica el índice Solactive GBS, funcionalmente equivalente al MSCI World. El **Vanguard Global Stock** replica el MSCI World clásico. El **Fidelity** de esa gama (IE00BYX5MX67) no es un MSCI World sino un **S&P 500** al 0,06 %, así que da solo Estados Unidos y no renta variable mundial. Fichas: [Amundi Prime Global](/fondo/amundi-prime-global), [Fidelity S&P 500](/fondo/fidelity-sp500) y [Vanguard Global Stock](/fondo/vanguard-global-stock). Más en la [guía de mejores fondos indexados](/blog/mejores-fondos-indexados-espana-2026).
+El **Vanguard Global Stock** replica el MSCI World y es un fondo de inversión, con lo que eso implica en el traspaso. Dos avisos sobre productos que suelen colarse en esta lista: el **Amundi Prime Global** (0,05 %) es un **ETF**, no un fondo, aunque se busque como fondo; y el **Fidelity** de esa gama (IE00BYX5MX67) no es un MSCI World sino un **S&P 500** al 0,06 %, así que da solo Estados Unidos. Fichas: [Fidelity S&P 500](/fondo/fidelity-sp500) y [Vanguard Global Stock](/fondo/vanguard-global-stock). Más en la [guía de mejores fondos indexados](/blog/mejores-fondos-indexados-espana-2026).
 
 ---
 
 ## ETF o fondo: cuál elegir para el MSCI World
 
-- **Fondo indexado** (Amundi Prime Global, Fidelity, Vanguard): permite **traspaso fiscal libre** —cambiar a otro fondo sin tributar—, aportaciones desde 1€ y compra a valor liquidativo. Ideal si vas a rebalancear o prevés cambiar de estrategia.
+- **Fondo indexado** (Vanguard Global Stock): permite **traspaso fiscal libre** —cambiar a otro fondo sin tributar—, aportaciones desde 1€ y compra a valor liquidativo. Ideal si vas a rebalancear o prevés cambiar de estrategia.
 - **ETF** (SWRD, IWDA): comisiones de compra muy bajas en brokers como Trade Republic (0€), precio en tiempo real y planes de ahorro automáticos. Ideal para comprar y mantener.
 
 La diferencia de coste anual es mínima; la decisión real es la del [traspaso fiscal](/blog/como-hacer-traspaso-fondos-espana) frente a la comodidad del ETF. Lo desarrollamos en [fondos indexados o ETFs](/blog/fondos-indexados-vs-etfs-espana).
@@ -10247,7 +10226,7 @@ Si lo que buscas es exposición solo a EE.UU., mira la guía paralela: [cómo in
 ## Dónde comprarlo
 
 - **ETFs** (SWRD, IWDA): cualquier broker con acceso a bolsa europea. Trade Republic (0€ y planes de ahorro), DEGIRO, MyInvestor. Compara opciones en [mejor broker para ETFs en España](/blog/mejor-broker-etfs-espana-2026).
-- **Fondos** (Amundi Prime Global, Fidelity, Vanguard): MyInvestor es la plataforma más usada, con traspaso fiscal y aportaciones desde 1€.
+- **Fondos** (Vanguard Global Stock): MyInvestor es la plataforma más usada, con traspaso fiscal y aportaciones desde 1€.
 
 Una vez montada tu cartera, puedes [analizarla gratis](/analyzer) para ver tu exposición real por región y comprobar que encaja con lo que quieres. Sin registro y con los datos solo en tu navegador.
 
