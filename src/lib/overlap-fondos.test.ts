@@ -80,14 +80,16 @@ describe('el solapamiento ve los fondos indexados', () => {
   })
 
   it('un fondo que NO analizamos se queda fuera en vez de entrar con datos flojos', () => {
-    // LU0996177134: nuestra ficha lo llama «Amundi Index MSCI EM» con TER 0,20 % y el
-    // registro devuelve «Amundi CORE MSCI EM» con 0,30 %. Gamas distintas, así que no se
-    // analiza hasta saber de qué producto se trata.
+    // LU1931974692 no se analiza por una razón que no puede caducar: NO ES UN FONDO. Es el
+    // «Amundi Prime Global UCITS ETF DR (D)», un ETF de distribución, además liquidado o
+    // fusionado y sustituido por clases irlandesas.
     //
-    // Antes este caso usaba IE0007987690, que era «el no analizable de ejemplo». Dejó de
-    // valer el 18-sep cuando resultó que replicaba MSCI Europe y sí tenía equivalencia: el
-    // motivo por el que estaba excluido salía de un dato nuestro equivocado.
-    const pares = computeOverlaps([pos('LU0996177134'), pos('VWCE')])
+    // El ejemplo se ha cambiado DOS veces por el mismo motivo, y eso es lo interesante:
+    // primero era IE0007987690 y luego LU0996177134, y los dos dejaron de servir al
+    // verificarlos, porque estaban excluidos por dudas sobre la fuente que en realidad
+    // eran errores nuestros. Un test que necesita «un caso malo» no debe apoyarse en uno
+    // que está pendiente de comprobar: se apoya en uno que es estructuralmente distinto.
+    const pares = computeOverlaps([pos('LU1931974692'), pos('VWCE')])
     expect(pares.length, 'no debe emparejarse un fondo sin exposición fiable').toBe(0)
   })
 

@@ -41,15 +41,15 @@ function peticion(tickers: { ticker: string; shares: number }[]): NextRequest {
 
 describe('una cartera solo de fondos no analizables no devuelve un análisis vacío', () => {
   it('un fondo no verificado solo devuelve 422, no un cero disfrazado de dato', async () => {
-    // LU0996177134: la ficha dice «Amundi Index MSCI EM, 0,20 %» y el registro devuelve
-    // «Amundi CORE MSCI EM, 0,30 %». Hasta aclararlo no se analiza.
-    const res = await POST(peticion([{ ticker: 'LU0996177134', shares: 3000 }]))
+    // LU1931974692 no se analiza porque NO ES UN FONDO: es el «Amundi Prime Global UCITS
+    // ETF DR (D)». El ejemplo anterior era LU0996177134 y dejó de valer al verificarlo.
+    const res = await POST(peticion([{ ticker: 'LU1931974692', shares: 3000 }]))
     expect(res.status).toBe(422)
     const cuerpo = await res.json()
     expect(cuerpo.success).toBe(false)
     // El mensaje tiene que explicar la causa a una persona, no dar un código.
     expect(cuerpo.error).toMatch(/Amundi/)
-    expect(cuerpo.error).toMatch(/0,30|0,20/)
+    expect(cuerpo.error).toMatch(/ETF/)
   })
 
   /**
@@ -65,7 +65,7 @@ describe('una cartera solo de fondos no analizables no devuelve un análisis vac
     const res = await POST(
       peticion([
         { ticker: 'IE0031786142', shares: 5000 }, // analizable (MSCI EM -> AEEM)
-        { ticker: 'LU0996177134', shares: 3000 }, // fuera (nombre y TER sin cuadrar)
+        { ticker: 'LU1931974692', shares: 3000 }, // fuera (es un ETF, no un fondo)
       ]),
     )
     expect(res.status).toBe(200)
@@ -77,7 +77,7 @@ describe('una cartera solo de fondos no analizables no devuelve un análisis vac
     // Y el que se queda fuera se dice con nombre y motivo, no en silencio.
     const avisos = (cuerpo.data.warnings as string[]).join(' ')
     expect(avisos).toMatch(/Amundi/)
-    expect(avisos).toMatch(/0,30|0,20/)
+    expect(avisos).toMatch(/ETF/)
     // El total es solo del que si se analizo: 5.000 EUR, no 8.000.
     expect(cuerpo.data.allocation.totalValueEUR).toBe(5000)
   })

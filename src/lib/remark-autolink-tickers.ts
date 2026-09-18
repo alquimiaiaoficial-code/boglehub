@@ -17,8 +17,8 @@ const KNOWN_TICKERS = new Set([
   'MEUD', 'CEUG', 'SMEA', 'IS3N', 'AEEM', 'EMIM', 'WSML', 'IUSN', 'ZPRS',
   'VGEA', 'EUNA', 'IBGX', 'VETY', 'SEGA', 'VHYL', 'ISPA', 'FGEQ', 'TDIV',
   'EXSG', 'EQQQ', 'SXRV', 'CNDX', 'SJPA', 'CPXJ', 'SGLN', 'IGLN',
-  'IWQU', 'IWMO', 'ZPRV', 'XDEQ', 'XDWL', 'VGOV', 'IGLH', 'XGIG',
-  'FLXE', 'XMWO', 'EUNH', 'WTEF', 'RBOT', 'IQQH',
+  'IWQU', 'IWMO', 'ZPRV', 'XDEQ', 'XDWL', 'VGOV', 'XGIG',
+  'FLXE', 'EUNH', 'WTEF', 'RBOT', 'IQQH',
 ])
 
 // Note: 4GLD starts with a digit — handle it separately if needed.

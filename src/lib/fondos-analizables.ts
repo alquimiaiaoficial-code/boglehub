@@ -68,7 +68,11 @@ interface Equivalencia {
  *    calculó un solapamiento del 100 % con un MSCI World que es falso.
  *  · `LU0996177134` figura como «Amundi Index MSCI Emerging Markets, TER 0,20 %» y el
  *    registro dice «AMUNDI CORE MSCI Emerging Markets AE CAP», TER 0,30 %. Gamas distintas.
- *  · `IE00BYX5L514` y `LU1931974692` no aparecen en el registro español consultado.
+ *  · `IE00BYX5L514` y `LU1931974692` no aparecían en el registro español consultado. Del
+ *    primero se dio por hecho que era un límite de la fuente. No lo era: su dígito de control
+ *    no cuadra, así que NO ES UN ISIN y no podía existir. El fondo sí existe y es
+ *    `IE00BYX5M476`. Ver `isin.ts`: un barrido encontró siete ISINs imposibles en el
+ *    repositorio, cinco de ellos en el catálogo de ETFs.
  *
  * LA LECCIÓN, que vale para todo el proyecto: **usar para calcular unos datos que se
  * escribieron para posicionar.** Un dato de ficha que está mal se nota poco; el mismo dato
@@ -143,6 +147,31 @@ const EQUIVALENCIAS: Record<string, Equivalencia> = {
    * regla de esta tabla es que «exacta» significa el MISMO índice. Casi el mismo no es el
    * mismo, y el día que alguien pregunte por la diferencia conviene que lo pusiera aquí.
    */
+  /**
+   * FIDELITY MSCI EMERGING MARKETS INDEX FUND P-ACC-EUR - MSCI Emerging Markets.
+   *
+   * Estuvo en la lista de no analizables con un motivo equivocado: «no aparece en el registro
+   * consultado, puede ser un límite de esa fuente». No era un límite de la fuente. El ISIN que
+   * teníamos, `IE00BYX5L514`, no supera el dígito de control, así que no existía. El fondo sí
+   * existe, es `IE00BYX5M476`, y está en ese mismo registro con el índice y el TER que
+   * decíamos. Es decir: buscamos un producto real con un identificador imposible y
+   * concluimos que fallaba el registro.
+   *
+   * AEEM y no EIMI: replica el MSCI Emerging Markets estándar (large y mid), no el IMI.
+   */
+  IE00BYX5M476: { ticker: 'AEEM', calidad: 'exacta' },
+
+  /**
+   * AMUNDI CORE MSCI EMERGING MARKETS AE CAP - MSCI Emerging Markets.
+   *
+   * También estuvo fuera, y el motivo era razonable pero incompleto: «el índice coincide, el
+   * nombre y la comisión no, son gamas distintas, hasta aclararlo no se analiza». Lo que
+   * faltaba por ver es que el ISIN SÍ es válido y el registro devuelve siempre el mismo
+   * producto: no había ambigüedad que aclarar, había una ficha nuestra mal escrita. El ISIN
+   * identifica; el nombre que le pusimos nosotros, no.
+   */
+  LU0996177134: { ticker: 'AEEM', calidad: 'exacta' },
+
   IE00B18GC888: {
     ticker: 'AGGH',
     calidad: 'aproximada',
@@ -155,13 +184,27 @@ const EQUIVALENCIAS: Record<string, Equivalencia> = {
  * mal: quien pega una cartera no puede saber que la equivalencia era floja.
  */
 const SIN_EQUIVALENCIA_FIABLE: Record<string, string> = {
-  // Amundi Index MSCI Emerging Markets
-  LU0996177134:
-    'Nuestra ficha lo llama «Amundi Index MSCI Emerging Markets» con un TER del 0,20 %, y el registro consultado el 18-sep-2026 devuelve «AMUNDI CORE MSCI Emerging Markets AE CAP» con un TER del 0,30 %. El índice coincide, pero el nombre y la comisión no, y son gamas distintas. Hasta aclarar de qué producto se trata, no se analiza.',
+  /*
+   * Los tres de aquí abajo NO son fondos: son ETFs que el catálogo publicaba como fondos.
+   * Tenían el mensaje genérico de «todavía no hemos comprobado sus datos», que había dejado
+   * de ser cierto: sí los hemos comprobado, y lo que sabemos es justo lo que más le importa
+   * a quien pregunta. Decirle «no lo hemos mirado» cuando lo hemos mirado y el producto no
+   * es lo que él cree es peor que no decir nada.
+   */
 
-  // Fidelity Emerging Markets Index Fund
-  IE00BYX5L514:
-    'Este ISIN no aparece en el registro de fondos comercializados en España que consultamos el 18-sep-2026. Puede ser un límite de esa fuente o puede ser un ISIN equivocado nuestro; mientras no se sepa cuál de las dos cosas es, no se analiza.',
+  // Amundi Prime Global
+  LU1931974692:
+    'No se analiza porque no es un fondo indexado: es el «Amundi Prime Global UCITS ETF DR (D)», un ETF de distribución sobre el Solactive GBS Developed Markets Large & Mid Cap. La diferencia no es de etiqueta: un ETF no se traspasa a otro producto sin tributar, y este además reparte dividendos en vez de reinvertirlos. Comprobado el 18-sep-2026; ese ISIN figura además como liquidado o fusionado, y la gama viva es irlandesa (IE000QIF5N15 de reparto e IE0009DRDY20 de acumulación).',
+
+  // Amundi Prime Japan
+  LU2089238385:
+    'No se analiza porque no es un fondo indexado sino un ETF de la gama Prime de Amundi, igual que su hermano global. Un ETF no tiene el traspaso sin tributación que esta ficha daba por hecho.',
+
+  // «Amundi Index Eurozone Government Bond»
+  LU1437015735:
+    'No se analiza porque el producto no es el que decía la ficha. Ese ISIN es el «Amundi Core MSCI Europe UCITS ETF»: un ETF de renta VARIABLE europea, no un fondo de renta FIJA de deuda pública de la eurozona. Comprobado el 18-sep-2026 en justETF, en la web de Amundi y en Euronext. Si lo que buscas es renta fija, este no es el producto.',
+
+
 }
 
 /**
@@ -325,5 +368,7 @@ export const VERIFICADOS_EN_FUENTE: Record<string, string> = {
   IE0031786142: '18-sep-2026, factsheet de Vanguard de 31-ago-2026 con este ISIN: «MSCI Emerging Markets Index […] large and mid-sized company stocks», ticker MSDEEEMN, OCF 0,23 %',
   IE00BYX5MX67: '18-sep-2026, registro de fondos: «FIDELITY S&P 500 INDEX FUND P-ACC-EUR | S&P 500 Index | 0,06 %». La ficha decía MSCI World y 0,12 %: los tres datos estaban mal',
   IE0007987690: '18-sep-2026, registro de fondos: «VANGUARD EUROPEAN STOCK INDEX INVESTOR EUR CAP | MSCI Europe Index | 0,12 %». La ficha decía «Eurozone Stock», MSCI EMU y 0,16 %: los tres estaban mal, y de ese error salió su exclusión del 17-sep',
+  LU0996177134: '18-sep-2026, registro de fondos: «AMUNDI CORE MSCI EMERGING MARKETS AE CAP | AMUNDI ASSET MANAGEMENT | MSCI Emerging Markets | 0,30 %». La ficha decía «Amundi Index» y 0,20 %: gama equivocada y la mitad de comisión',
+  IE00BYX5M476: '18-sep-2026, registro de fondos: «FIDELITY MSCI EMERGING MARKETS INDEX FUND P-ACC-EUR | FIL INVESTMENTS INTERNATIONAL | MSCI Emerging Markets Index | 0,20 %». Índice y TER coincidían; el ISIN del catálogo (`IE00BYX5L514`) era imposible y al nombre le faltaba «MSCI»',
   IE00B18GC888: '18-sep-2026, registro de fondos: «VANGUARD GLOBAL BOND INDEX GENERAL EUR HEDGED CAP | Bloomberg Global Aggregate Float Adjusted and Scaled | 0,15 %». Nombre y TER coincidían; el índice es una variante del Global Aggregate y por eso la equivalencia es aproximada',
 }

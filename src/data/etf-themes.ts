@@ -367,7 +367,7 @@ export const ETF_THEMES: EtfTheme[] = [
     faq: [
       {
         q: '¿Qué es exactamente el factor calidad?',
-        a: 'El factor calidad selecciona empresas con balance financiero sólido: alta rentabilidad sobre fondos propios (ROE), bajo nivel de deuda, crecimiento estable de beneficios. Empresas como Microsoft, Apple, Visa o Mastercard suelen aparecer en índices de calidad. La premisa: empresas de calidad son más resilientes en recesiones y han ofrecido rentabilidad ajustada al riesgo superior al mercado en periodos largos. IWQU (iShares Edge MSCI World Quality Factor UCITS ETF, TER 0,30%) es el más popular en formato UCITS.',
+        a: 'El factor calidad selecciona empresas con balance financiero sólido: alta rentabilidad sobre fondos propios (ROE), bajo nivel de deuda, crecimiento estable de beneficios. Empresas como Microsoft, Apple, Visa o Mastercard suelen aparecer en índices de calidad. La premisa: empresas de calidad son más resilientes en recesiones y han ofrecido rentabilidad ajustada al riesgo superior al mercado en periodos largos. IWQU (iShares Edge MSCI World Quality Factor UCITS ETF, TER 0,25%) es el más popular en formato UCITS.',
       },
       {
         q: '¿Qué es el factor momentum y cómo funciona?',

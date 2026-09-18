@@ -80,7 +80,6 @@ export const ETF_PAIRS: [string, string][] = [
   ['SGLN', 'EXSG'],   // oro vs commodities amplias
   // Renta fija extra
   ['VGOV', 'VGEA'],   // bonos gov UK vs eurozona
-  ['IGLH', 'AGGH'],   // global hedged variantes
   ['EUNH', 'AGGH'],   // high yield hedged vs agregado
   // Robotic / temáticos
   ['RBOT', 'IQQH'],   // robotica vs hidrogeno (temáticos)

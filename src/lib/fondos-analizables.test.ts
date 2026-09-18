@@ -256,7 +256,14 @@ describe('cobertura', () => {
     // Cuatro fondos correctos valen más que once con exposiciones plausibles y falsas.
     // Subio de 4 a 6 el mismo 18-sep, al verificar dos mas: el Vanguard European (que estaba
     // excluido por un motivo que partia de nuestro propio dato erroneo) y el Global Bond.
-    expect(analizables.length).toBe(6)
+    //
+    // Y de 6 a 8 despues, al ver que los dos que quedaban «sin aclarar» no estaban sin
+    // aclarar: el Fidelity EM no salía en el registro porque el ISIN que teníamos era
+    // IMPOSIBLE (no supera el dígito de control), no porque faltara en la fuente; y del
+    // Amundi EM dudábamos «de qué producto se trata» cuando su ISIN sí es válido y el
+    // registro devuelve siempre el mismo producto: lo que estaba mal era nuestra etiqueta.
+    // En los dos casos, la duda era sobre la fuente y el error estaba en casa.
+    expect(analizables.length).toBe(8)
     expect(analizables.length).toBeLessThan(INDEX_FUNDS.length)
   })
 })

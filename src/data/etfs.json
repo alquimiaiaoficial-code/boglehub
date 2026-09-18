@@ -259,7 +259,7 @@
   },
   {
     "ticker": "SEMB",
-    "isin": "IE00B7J9BP19",
+    "isin": "IE00B2NPKV68",
     "name": "iShares J.P. Morgan EM Bond UCITS ETF (Dist)",
     "ter": 0.45,
     "assetClass": "BOND",
@@ -1115,8 +1115,8 @@
   },
   {
     "ticker": "IUSN",
-    "isin": "IE00B3X0HQ01",
-    "name": "iShares MSCI World Small Cap UCITS ETF (Dist)",
+    "isin": "IE00BF4RFH31",
+    "name": "iShares MSCI World Small Cap UCITS ETF USD (Acc)",
     "ter": 0.35,
     "assetClass": "EQUITY",
     "regionAllocation": {
@@ -1145,7 +1145,7 @@
       "DIVERSIFIED": 0
     },
     "baseCurrency": "USD",
-    "accumulating": false
+    "accumulating": true
   },
   {
     "ticker": "ZPRS",
@@ -1683,9 +1683,9 @@
   },
   {
     "ticker": "IWQU",
-    "isin": "IE00BD45HH93",
+    "isin": "IE00BP3QZ601",
     "name": "iShares Edge MSCI World Quality Factor UCITS ETF (Acc)",
-    "ter": 0.30,
+    "ter": 0.25,
     "assetClass": "EQUITY",
     "regionAllocation": {
       "US": 0.67,
@@ -1872,26 +1872,6 @@
     "accumulating": true
   },
   {
-    "ticker": "IGLH",
-    "isin": "IE00BGQYYS21",
-    "name": "iShares EUR Govt Bond 1-3yr UCITS ETF (Acc)",
-    "ter": 0.09,
-    "assetClass": "BOND",
-    "regionAllocation": {
-      "US": 0,
-      "EUROPE": 1.0,
-      "EM": 0,
-      "JAPAN": 0,
-      "PACIFIC_EX_JAPAN": 0,
-      "GLOBAL": 0,
-      "UK": 0,
-      "CHINA": 0,
-      "OTHER": 0
-    },
-    "baseCurrency": "EUR",
-    "accumulating": true
-  },
-  {
     "ticker": "XGIG",
     "isin": "LU0378449770",
     "name": "Xtrackers II EUR Corporate Bond UCITS ETF 1C (Acc)",
@@ -1943,40 +1923,6 @@
       "DIVERSIFIED": 0
     },
     "baseCurrency": "EUR",
-    "accumulating": true
-  },
-  {
-    "ticker": "XMWO",
-    "isin": "IE00BJ0KDW41",
-    "name": "Xtrackers MSCI World Minimum Volatility UCITS ETF 1C (Acc)",
-    "ter": 0.25,
-    "assetClass": "EQUITY",
-    "regionAllocation": {
-      "US": 0.55,
-      "EUROPE": 0.25,
-      "EM": 0,
-      "JAPAN": 0.12,
-      "PACIFIC_EX_JAPAN": 0.06,
-      "GLOBAL": 0,
-      "UK": 0,
-      "CHINA": 0,
-      "OTHER": 0.02
-    },
-    "sectorAllocation": {
-      "TECHNOLOGY": 0.18,
-      "FINANCIAL": 0.18,
-      "HEALTHCARE": 0.16,
-      "CONSUMER_DISC": 0.06,
-      "INDUSTRIAL": 0.10,
-      "CONSUMER_STAPLES": 0.12,
-      "ENERGY": 0.04,
-      "MATERIALS": 0.04,
-      "COMMUNICATION": 0.07,
-      "UTILITIES": 0.05,
-      "REAL_ESTATE": 0,
-      "DIVERSIFIED": 0
-    },
-    "baseCurrency": "USD",
     "accumulating": true
   },
   {

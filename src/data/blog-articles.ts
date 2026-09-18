@@ -201,7 +201,7 @@ Por eso, la decisión sobre emergentes es en realidad una decisión sobre **qué
 
 ## Cómo invertir en emergentes desde España
 
-Si optas por la vía modular, lo haces con un **ETF de mercados emergentes** UCITS domiciliado en Irlanda. El más popular es el **EIMI** (iShares Core MSCI EM IMI), que incluye también pequeñas compañías; hay alternativas de Amundi y otras gestoras (ver [qué gestora elegir](/blog/vanguard-vs-ishares-vs-amundi)). Lo compras desde cualquier bróker de ETFs; la [comparativa de brókers](/blog/mejor-broker-etfs-espana-2026) te ayuda a elegir el más barato. Y si prefieres el formato fondo indexado (con traspaso fiscal libre entre fondos), la misma exposición existe como fondo: el [Fidelity Emerging Markets Index](/fondo/fidelity-emerging-markets-index) o el [Amundi Index MSCI Emerging Markets](/fondo/amundi-index-msci-emerging-markets), ambos con TER 0,20 %; tienes su [comparativa cara a cara](/comparar-fondo/amundi-index-msci-emerging-markets-vs-fidelity-emerging-markets-index).
+Si optas por la vía modular, lo haces con un **ETF de mercados emergentes** UCITS domiciliado en Irlanda. El más popular es el **EIMI** (iShares Core MSCI EM IMI), que incluye también pequeñas compañías; hay alternativas de Amundi y otras gestoras (ver [qué gestora elegir](/blog/vanguard-vs-ishares-vs-amundi)). Lo compras desde cualquier bróker de ETFs; la [comparativa de brókers](/blog/mejor-broker-etfs-espana-2026) te ayuda a elegir el más barato. Y si prefieres el formato fondo indexado (con traspaso fiscal libre entre fondos), la misma exposición existe como fondo: el [Fidelity MSCI Emerging Markets Index](/fondo/fidelity-emerging-markets-index), con unos gastos del 0,20 %, o el [Amundi Core MSCI Emerging Markets](/fondo/amundi-index-msci-emerging-markets), que cuesta 0,30 %; tienes su [comparativa cara a cara](/comparar-fondo/amundi-index-msci-emerging-markets-vs-fidelity-emerging-markets-index).
 
 Si combinas World + emergentes, el reparto habitual para replicar el mundo es en torno a **88% desarrollados / 12% emergentes** (su peso por capitalización), reajustándolo al [rebalancear](/blog/como-rebalancear-cartera-indexada). Aun así, recuerda: un All-World hace esto solo.
 
@@ -9936,10 +9936,9 @@ Para quien quiere concentrar en el mercado estadounidense.
 
 | Fondo | Índice | TER | ISIN |
 |---|---|---|---|
-| **Amundi Prime USA** | Solactive GBS United States | **0,05 %** | LU2050633988 |
-| Vanguard U.S. 500 Stock Index | S&P 500 | 0,10 % | IE0032126645 |
+| **Vanguard U.S. 500 Stock Index** | S&P 500 | **0,10 %** | IE0032126645 |
 
-El **Amundi Prime USA** replica el mercado estadounidense por solo un 0,05%. El Vanguard U.S. 500 sigue el S&P 500 clásico con un 0,10%. Ficha del [Vanguard U.S. 500 Stock Index](/fondo/vanguard-us-500-stock).
+El **Vanguard U.S. 500 Stock Index** sigue el S&P 500 con unos gastos del 0,10 %. Ficha del [Vanguard U.S. 500 Stock Index](/fondo/vanguard-us-500-stock).
 
 ---
 
@@ -9949,11 +9948,11 @@ El complemento habitual del fondo global para cubrir China, India, Taiwán, Bras
 
 | Fondo | Índice | TER | ISIN |
 |---|---|---|---|
-| **Amundi Index MSCI Emerging Markets** | MSCI Emerging Markets | **0,20 %** | LU0996177134 |
-| Fidelity Emerging Markets Index | MSCI Emerging Markets | 0,20 % | IE00BYX5L514 |
+| **Amundi Core MSCI Emerging Markets** | MSCI Emerging Markets | **0,30 %** | LU0996177134 |
+| Fidelity MSCI Emerging Markets Index | MSCI Emerging Markets | 0,20 % | IE00BYX5M476 |
 | Vanguard Emerging Markets Stock Index | MSCI Emerging Markets | 0,23 % | IE0031786142 |
 
-Los tres replican el mismo índice MSCI Emerging Markets. En una cartera Boglehead de 3 fondos, los emergentes suelen ocupar entre el 10% y el 20% de la renta variable. Fichas: [Amundi Index MSCI Emerging Markets](/fondo/amundi-index-msci-emerging-markets), [Fidelity Emerging Markets Index](/fondo/fidelity-emerging-markets-index) y [Vanguard Emerging Markets Stock](/fondo/vanguard-emerging-markets-stock). ¿Dudas entre los dos de 0,20 %? Mira la [comparativa Amundi vs Fidelity](/comparar-fondo/amundi-index-msci-emerging-markets-vs-fidelity-emerging-markets-index).
+Los tres replican el mismo índice MSCI Emerging Markets. En una cartera Boglehead de 3 fondos, los emergentes suelen ocupar entre el 10% y el 20% de la renta variable. Fichas: [Amundi Core MSCI Emerging Markets](/fondo/amundi-index-msci-emerging-markets), [Fidelity MSCI Emerging Markets Index](/fondo/fidelity-emerging-markets-index) y [Vanguard Emerging Markets Stock](/fondo/vanguard-emerging-markets-stock). El de Fidelity es el más barato de los tres por comisión; mira la [comparativa Amundi vs Fidelity](/comparar-fondo/amundi-index-msci-emerging-markets-vs-fidelity-emerging-markets-index).
 
 ---
 
@@ -10089,14 +10088,13 @@ El **SPXS** de SPDR es el más barato (0,03%). El **CSPX** de iShares es el más
 
 ## Los fondos indexados de S&P 500 (con traspaso fiscal)
 
-Si prefieres un fondo indexado en lugar de un ETF —para aprovechar el traspaso fiscal libre—, tienes dos opciones excelentes:
+Si prefieres un fondo indexado en lugar de un ETF —para aprovechar el traspaso fiscal libre—, esta es la opción de referencia:
 
 | Fondo | Gestora | TER | ISIN |
 |---|---|---|---|
-| **Amundi Prime USA** | Amundi | **0,05 %** | LU2050633988 |
-| Vanguard U.S. 500 Stock Index | Vanguard | 0,10 % | IE0032126645 |
+| **Vanguard U.S. 500 Stock Index** | Vanguard | **0,10 %** | IE0032126645 |
 
-El **Amundi Prime USA** replica el mercado estadounidense por un 0,05%, disponible en MyInvestor desde 1€. El **Vanguard U.S. 500** sigue el S&P 500 clásico. Sus fichas: [Amundi Prime USA](/fondo/amundi-prime-usa) y [Vanguard U.S. 500 Stock](/fondo/vanguard-us-500-stock). Ambos en la [guía de mejores fondos indexados](/blog/mejores-fondos-indexados-espana-2026).
+El **Vanguard U.S. 500** sigue el S&P 500 con unos gastos del 0,10 %. Su ficha: [Vanguard U.S. 500 Stock](/fondo/vanguard-us-500-stock), y el resto en la [guía de mejores fondos indexados](/blog/mejores-fondos-indexados-espana-2026).
 
 ---
 

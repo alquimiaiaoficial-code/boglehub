@@ -64,7 +64,7 @@ export const INDEX_FUNDS: IndexFund[] = [
     manager: 'Amundi',
     isin: 'LU1931974692',
     avisoDeRevision:
-      'Este producto NO es un fondo indexado: es el «Amundi Prime Global UCITS ETF DR (D)», un ETF de DISTRIBUCIÓN que replica el Solactive GBS Developed Markets Large & Mid Cap. Y según justETF ha sido liquidado o fusionado, así que sus datos ya no se actualizan. Al ser un ETF y no un fondo, NO tiene traspaso fiscal libre: venderlo tributa. Comprobado el 18-sep-2026 en justETF y trackingdifferences. La ficha de abajo se escribió creyendo que era un fondo indexado de acumulación y está siendo revisada.',
+      'Este producto NO es un fondo indexado: es el «Amundi Prime Global UCITS ETF DR (D)», un ETF de DISTRIBUCIÓN que replica el Solactive GBS Developed Markets Large & Mid Cap. Y según justETF ha sido liquidado o fusionado, así que sus datos ya no se actualizan. Al ser un ETF y no un fondo, NO tiene traspaso fiscal libre: venderlo tributa. Comprobado el 18-sep-2026 en justETF y trackingdifferences, y el registro español de fondos no devuelve nada para ese ISIN. La gama viva está hoy domiciliada en IRLANDA, no en Luxemburgo, y sigue siendo ETF en las dos clases: `IE000QIF5N15` (distribución) e `IE0009DRDY20` (acumulación), ambas con un 0,05 % y el mismo índice Solactive. No existe una versión fondo de este producto. La ficha de abajo se escribió creyendo que era un fondo indexado de acumulación y está siendo revisada.',
     index: 'Solactive GBS Global Markets Large & Mid Cap',
     ter: 0.05,
     assetClass: 'Renta variable',
@@ -161,13 +161,15 @@ export const INDEX_FUNDS: IndexFund[] = [
   },
   {
     slug: 'amundi-index-msci-emerging-markets',
-    name: 'Amundi Index MSCI Emerging Markets',
+    name: 'Amundi Core MSCI Emerging Markets',
     manager: 'Amundi',
     isin: 'LU0996177134',
-    avisoDeRevision:
-      'Nuestra ficha lo llama «Amundi Index MSCI Emerging Markets» con un TER del 0,20 %, y el registro consultado el 18-sep-2026 devuelve «AMUNDI CORE MSCI Emerging Markets AE CAP» con un 0,30 %. Son gamas distintas y la comisión difiere en la mitad. Datos en revisión.',
+    // Verificado el 18-sep-2026 en el registro: «AMUNDI CORE MSCI EMERGING MARKETS AE CAP |
+    // AMUNDI ASSET MANAGEMENT | MSCI Emerging Markets | 0,30 %». La ficha decía «Amundi Index»
+    // y 0,20 %: el nombre era de otra gama y la comisión, la mitad de la real. El índice sí
+    // era correcto, y por eso el fondo sí se puede analizar una vez corregido.
     index: 'MSCI Emerging Markets',
-    ter: 0.20,
+    ter: 0.30,
     assetClass: 'Renta variable',
     region: 'Emergentes',
     accumulating: true,
@@ -176,10 +178,10 @@ export const INDEX_FUNDS: IndexFund[] = [
     minimum: '1€',
     tagline: 'Exposición a mercados emergentes en formato fondo con traspaso libre',
     description:
-      'El Amundi Index MSCI Emerging Markets replica el índice MSCI Emerging Markets (China, India, Taiwán, Corea, Brasil y otros) con TER 0,20%. Complemento natural de un fondo de mercados desarrollados (Amundi Prime Global) para construir una cartera global completa en formato fondo, con traspaso fiscal libre entre ambos.',
+      'El Amundi Core MSCI Emerging Markets replica el índice MSCI Emerging Markets (China, India, Taiwán, Corea, Brasil y otros) con unos gastos del 0,30 %. Cubre la parte de emergentes de una cartera global, que por capitalización ronda el 10-12 %. Ojo al nombre: la gama «Core» de Amundi no es la gama «Index», y sus comisiones no son las mismas, así que conviene comprobar el ISIN y no el nombre al buscarlo.',
     etfEquivalent: 'EIMI',
     faq: [
-      { q: '¿Cuánto peso dar a emergentes con el Amundi Index MSCI EM?', a: 'El peso "neutral" por capitalización global es ~12%. En una cartera de fondos con Amundi Prime Global (desarrollados) + Amundi Index MSCI EM (emergentes), una proporción 85/15 o 88/12 replica aproximadamente un MSCI ACWI. Más del 20% en emergentes es una apuesta activa.' },
+      { q: '¿Cuánto peso dar a emergentes con este fondo?', a: 'El peso "neutral" por capitalización global ronda el 12 %. Combinado con un fondo de mercados desarrollados, una proporción de 85/15 o 88/12 se aproxima a un MSCI ACWI. Por encima del 20 % en emergentes ya es una apuesta activa respecto al mercado mundial.' },
     ],
   },
   {
@@ -285,35 +287,16 @@ export const INDEX_FUNDS: IndexFund[] = [
     ],
   },
   {
-    slug: 'amundi-prime-usa',
-    name: 'Amundi Prime USA',
-    manager: 'Amundi',
-    isin: 'LU2050633988',
-    avisoDeRevision:
-      'Los datos de esta ficha estan sin verificar, y sus dos productos hermanos —Amundi Prime Global y Amundi Prime Japan— resultaron ser ETFs y no fondos indexados, lo que cambia por completo su fiscalidad: un ETF no se traspasa sin tributar. Hasta comprobarlo, no uses esta ficha para decidir.',
-    index: 'Solactive GBS United States',
-    ter: 0.05,
-    assetClass: 'Renta variable',
-    region: 'Estados Unidos',
-    accumulating: true,
-    currency: 'EUR',
-    availableAt: ['MyInvestor'],
-    minimum: '1€',
-    tagline: 'Exposición a EE.UU. con el TER más bajo (0,05%) en formato fondo',
-    description:
-      'El Amundi Prime USA replica el mercado americano (Solactive GBS United States, equivalente al S&P 500 ampliado) con TER 0,05%, el más bajo para exposición USA en formato fondo en España. Alternativa ultra-económica al Vanguard US 500. Disponible en MyInvestor con traspaso fiscal libre.',
-    etfEquivalent: 'CSPX',
-    faq: [
-      { q: '¿Amundi Prime USA o Vanguard US 500?', a: 'Amundi Prime USA (TER 0,05%) es más barato que el Vanguard US 500 (TER 0,10%). Amundi replica el índice Solactive GBS United States; Vanguard el S&P 500. La cobertura es prácticamente idéntica (mercado americano). Para coste mínimo: Amundi Prime USA.' },
-    ],
-  },
-  {
     slug: 'fidelity-emerging-markets-index',
-    name: 'Fidelity Emerging Markets Index Fund',
+    name: 'Fidelity MSCI Emerging Markets Index Fund',
     manager: 'Fidelity',
-    isin: 'IE00BYX5L514',
-    avisoDeRevision:
-      'Este ISIN no aparece en el registro de fondos comercializados en España consultado el 18-sep-2026. Puede ser un límite de esa fuente o un error nuestro. Datos en revisión.',
+    isin: 'IE00BYX5M476',
+    // El catálogo decía `IE00BYX5L514`, que NO es un ISIN: su dígito de control no cuadra
+    // (debería acabar en 0 y acababa en 4), así que no podía existir ningún producto con él.
+    // El 18-sep-2026 se dió por hecho que era un límite del registro consultado; era un ISIN
+    // inventado. Verificado en el registro: «FIDELITY MSCI EMERGING MARKETS INDEX FUND
+    // P-ACC-EUR | FIL INVESTMENTS INTERNATIONAL | MSCI Emerging Markets Index | 0,20 %».
+    // Índice y TER sí eran correctos; al nombre le faltaba «MSCI».
     index: 'MSCI Emerging Markets',
     ter: 0.20,
     assetClass: 'Renta variable',
