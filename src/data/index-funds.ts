@@ -210,6 +210,8 @@ export const INDEX_FUNDS: IndexFund[] = [
     name: 'Vanguard Global Bond Index Fund EUR Hedged',
     manager: 'Vanguard',
     isin: 'IE00B18GC888',
+    avisoDeRevision:
+      'Verificado el 18-sep-2026 en el registro: «VANGUARD GLOBAL BOND INDEX GENERAL EUR HEDGED CAP», indice Bloomberg Global Aggregate Float Adjusted and Scaled, gastos 0,15 %. El TER y el nombre coinciden con esta ficha; el indice es una variante «float adjusted and scaled» del Global Aggregate, un detalle que la ficha no precisaba.',
     index: 'Bloomberg Global Aggregate Bond (EUR Hedged)',
     ter: 0.15,
     assetClass: 'Renta fija',
@@ -231,6 +233,8 @@ export const INDEX_FUNDS: IndexFund[] = [
     name: 'Amundi Index Eurozone Government Bond',
     manager: 'Amundi',
     isin: 'LU1437015735',
+    avisoDeRevision:
+      'ATENCION: el registro de fondos consultado el 18-sep-2026 devuelve para este ISIN el «AMUNDI CORE MSCI EUROPE UCITS ETF DR CAP» —un ETF de renta VARIABLE europea con gastos del 0,05 %—, y no un fondo de renta FIJA de deuda publica de la eurozona como describe esta ficha. No reescribimos la ficha hacia ese dato porque solo tenemos una fuente y Amundi fusiono y renombro muchos productos en 2024, asi que el ISIN pudo cambiar de subyacente. Lo que si esta claro es que NO se puede usar esta ficha para decidir: si buscas renta fija, comprueba el producto en tu plataforma antes de nada.',
     index: 'Bonos gobierno eurozona',
     ter: 0.15,
     assetClass: 'Renta fija',
@@ -249,23 +253,34 @@ export const INDEX_FUNDS: IndexFund[] = [
   },
   {
     slug: 'vanguard-eurozone-stock',
-    name: 'Vanguard Eurozone Stock Index Fund',
+    name: 'Vanguard European Stock Index Fund',
     manager: 'Vanguard',
     isin: 'IE0007987690',
-    index: 'MSCI EMU (eurozona)',
-    ter: 0.16,
+    avisoDeRevision:
+      'Esta ficha decia «Vanguard Eurozone Stock Index Fund», indice «MSCI EMU» y TER 0,16 %. Verificado el 18-sep-2026 en el registro: es el «VANGUARD EUROPEAN STOCK INDEX INVESTOR EUR CAP», que replica el MSCI Europe con unos gastos del 0,12 %. Ya esta corregido arriba. La diferencia importa: el MSCI Europe incluye Reino Unido, Suiza, Suecia, Dinamarca y Noruega, que el MSCI EMU no, asi que no es un producto «solo eurozona» ni elimina el riesgo divisa.',
+    // Verificado el 18-sep-2026 en el registro: «VANGUARD EUROPEAN STOCK INDEX INVESTOR EUR
+    // CAP | MSCI Europe Index | 0,12 %». La ficha decia «Eurozone Stock», indice «MSCI EMU» y
+    // TER 0,16: los tres datos estaban mal. Y la diferencia no es de matiz — el MSCI Europe
+    // incluye Reino Unido, Suiza, Suecia, Dinamarca y Noruega, que el MSCI EMU no.
+    //
+    // Consecuencia: el 17-sep saque este fondo del analisis diciendo «replica el MSCI EMU y
+    // no hay ETF de ese indice en el catalogo». Replica MSCI Europe, del que hay TRES. El
+    // motivo de la exclusion era falso porque partia de nuestro propio dato equivocado.
+    index: 'MSCI Europe',
+    ter: 0.12,
     assetClass: 'Renta variable',
-    region: 'Eurozona',
+    region: 'Europa desarrollada',
     accumulating: true,
     currency: 'EUR',
     availableAt: ['MyInvestor', 'Renta 4'],
     minimum: '1€ (MyInvestor)',
-    tagline: 'Bolsa de la eurozona en formato fondo, sin riesgo divisa',
+    tagline: 'Bolsa europea desarrollada en formato fondo, con traspaso fiscal libre',
     description:
-      'El Vanguard Eurozone Stock Index Fund replica el MSCI EMU (grandes empresas de la eurozona), TER 0,16%. Para inversores que quieren sobreponderar Europa o reducir el riesgo divisa de su cartera (todo en euros). Traspaso fiscal libre. Complemento de una cartera global, no sustituto.',
-    etfEquivalent: 'MEUD',
+      'El Vanguard European Stock Index Fund replica el MSCI Europe con unos gastos del 0,12 %. Ojo a un detalle que se confunde a menudo: el MSCI Europe NO es solo la eurozona — incluye Reino Unido, Suiza, Suecia, Dinamarca y Noruega, que tienen su propia divisa. Asi que sobreponderar Europa con este fondo no elimina el riesgo divisa, solo lo reduce. Es un complemento de una cartera global, no un sustituto.',
+    etfEquivalent: 'IMEU',
     faq: [
-      { q: '¿Tiene sentido sobreponderar eurozona si vivo en España?', a: 'Es un debate. La ponderación por capitalización (MSCI World) ya incluye Europa en su peso natural (~16%). Sobreponderar la eurozona reduce el riesgo divisa pero es una apuesta activa. Un sesgo moderado del 10-15% extra puede tener sentido si reduces tu ansiedad por la divisa, pero la filosofía Boglehead pura recomienda el peso de mercado.' },
+      { q: '¿Este fondo es solo de la eurozona?', a: 'No, y es la confusión más habitual con este producto. Replica el MSCI Europe, que incluye Reino Unido, Suiza, Suecia, Dinamarca y Noruega además de los países del euro. Si lo que se busca es exclusivamente eurozona, el índice sería el MSCI EMU, que es otro.' },
+      { q: '¿Elimina el riesgo divisa por estar en euros?', a: 'El fondo está denominado en euros, pero parte de las empresas que lo componen cotizan en libras, francos suizos o coronas, así que la exposición a divisa existe aunque no se vea en el valor liquidativo. Un fondo de renta variable de la eurozona sí la evitaría; este la reduce respecto a un global, no la elimina.' },
     ],
   },
   {
@@ -274,7 +289,7 @@ export const INDEX_FUNDS: IndexFund[] = [
     manager: 'Amundi',
     isin: 'LU2050633988',
     avisoDeRevision:
-      'Los datos de esta ficha están sin verificar y los de sus dos productos hermanos —Amundi Prime Global y Amundi Prime Japan— resultaron ser de ETFs y no de fondos indexados, lo que cambia por completo su fiscalidad: un ETF no se traspasa sin tributar. Hasta comprobarlo, tómese esta ficha con reservas.',
+      'Los datos de esta ficha estan sin verificar, y sus dos productos hermanos —Amundi Prime Global y Amundi Prime Japan— resultaron ser ETFs y no fondos indexados, lo que cambia por completo su fiscalidad: un ETF no se traspasa sin tributar. Hasta comprobarlo, no uses esta ficha para decidir.',
     index: 'Solactive GBS United States',
     ter: 0.05,
     assetClass: 'Renta variable',

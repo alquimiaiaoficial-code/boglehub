@@ -40,15 +40,16 @@ function peticion(tickers: { ticker: string; shares: number }[]): NextRequest {
 }
 
 describe('una cartera solo de fondos no analizables no devuelve un análisis vacío', () => {
-  it('el Vanguard Eurozone solo devuelve 422, no un cero disfrazado de dato', async () => {
-    // IE0007987690 replica el MSCI EMU y no hay ETF de ese índice en el catálogo.
-    const res = await POST(peticion([{ ticker: 'IE0007987690', shares: 3000 }]))
+  it('un fondo no verificado solo devuelve 422, no un cero disfrazado de dato', async () => {
+    // LU0996177134: la ficha dice «Amundi Index MSCI EM, 0,20 %» y el registro devuelve
+    // «Amundi CORE MSCI EM, 0,30 %». Hasta aclararlo no se analiza.
+    const res = await POST(peticion([{ ticker: 'LU0996177134', shares: 3000 }]))
     expect(res.status).toBe(422)
     const cuerpo = await res.json()
     expect(cuerpo.success).toBe(false)
     // El mensaje tiene que explicar la causa a una persona, no dar un código.
-    expect(cuerpo.error).toMatch(/Vanguard Eurozone/)
-    expect(cuerpo.error).toMatch(/MSCI EMU/)
+    expect(cuerpo.error).toMatch(/Amundi/)
+    expect(cuerpo.error).toMatch(/0,30|0,20/)
   })
 
   /**
@@ -64,7 +65,7 @@ describe('una cartera solo de fondos no analizables no devuelve un análisis vac
     const res = await POST(
       peticion([
         { ticker: 'IE0031786142', shares: 5000 }, // analizable (MSCI EM -> AEEM)
-        { ticker: 'IE0007987690', shares: 3000 }, // fuera (MSCI EMU, sin ETF equivalente)
+        { ticker: 'LU0996177134', shares: 3000 }, // fuera (nombre y TER sin cuadrar)
       ]),
     )
     expect(res.status).toBe(200)
@@ -75,8 +76,8 @@ describe('una cartera solo de fondos no analizables no devuelve un análisis vac
     expect(cuerpo.data.fuentesDeExposicion[0].exposicionTomadaDe).toBe('AEEM')
     // Y el que se queda fuera se dice con nombre y motivo, no en silencio.
     const avisos = (cuerpo.data.warnings as string[]).join(' ')
-    expect(avisos).toMatch(/Vanguard Eurozone/)
-    expect(avisos).toMatch(/MSCI EMU/)
+    expect(avisos).toMatch(/Amundi/)
+    expect(avisos).toMatch(/0,30|0,20/)
     // El total es solo del que si se analizo: 5.000 EUR, no 8.000.
     expect(cuerpo.data.allocation.totalValueEUR).toBe(5000)
   })
@@ -84,7 +85,7 @@ describe('una cartera solo de fondos no analizables no devuelve un análisis vac
   it('NUNCA devuelve success con un total de cero euros', async () => {
     // La invariante que faltaba, dicha directamente: si no hay nada valorado, no hay
     // análisis. Da igual por qué no lo haya.
-    const res = await POST(peticion([{ ticker: 'IE0007987690', shares: 3000 }]))
+    const res = await POST(peticion([{ ticker: 'LU0996177134', shares: 3000 }]))
     const cuerpo = await res.json()
     if (cuerpo.success === true) {
       expect(cuerpo.data.allocation.totalValueEUR, 'un análisis a cero no es un análisis').toBeGreaterThan(0)

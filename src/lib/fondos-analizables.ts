@@ -114,6 +114,40 @@ const EQUIVALENCIAS: Record<string, Equivalencia> = {
    * equivalencia exacta con CSPX. El nombre y el TER se arreglan en `index-funds.ts`.
    */
   IE00BYX5MX67: { ticker: 'CSPX', calidad: 'exacta' },
+
+  /**
+   * Vanguard European Stock Index Fund - MSCI Europe.
+   *
+   * ESTABA EN LA LISTA DE NO ANALIZABLES, Y EL MOTIVO ERA FALSO. El 17-sep lo excluí
+   * escribiendo «replica el MSCI EMU y en el catálogo no hay ningún ETF de ese índice; los
+   * que hay son MSCI Europe». Verificado el 18-sep en el registro: se llama «VANGUARD
+   * EUROPEAN STOCK INDEX INVESTOR EUR CAP» y replica **MSCI Europe**, del que tenemos tres
+   * ETFs. Nuestra propia ficha decía MSCI EMU, y de ahí salió la exclusión.
+   *
+   * O sea: excluí un fondo por una razón que solo existía en nuestro dato equivocado. La
+   * decisión de no analizarlo fue prudente por casualidad; el motivo escrito era falso, y eso
+   * es peor que no haberlo escrito, porque parecía resuelto.
+   *
+   * IMEU y no MEUD: los dos replican el MSCI Europe, pero IMEU es de acumulación como el
+   * fondo y MEUD de distribución. Para el reparto por región da igual; para no confundir a
+   * quien compare las dos fichas, no.
+   */
+  IE0007987690: { ticker: 'IMEU', calidad: 'exacta' },
+
+  /**
+   * Vanguard Global Bond Index Fund EUR Hedged - Bloomberg Global Aggregate Float Adjusted.
+   *
+   * APROXIMADA y no exacta, a propósito. Verificado el 18-sep: el fondo replica el «Bloomberg
+   * Global Aggregate **Float Adjusted and Scaled**» y AGGH el «Global Aggregate» sin más. Son
+   * variantes del mismo índice base y la exposición por región será casi idéntica, pero la
+   * regla de esta tabla es que «exacta» significa el MISMO índice. Casi el mismo no es el
+   * mismo, y el día que alguien pregunte por la diferencia conviene que lo pusiera aquí.
+   */
+  IE00B18GC888: {
+    ticker: 'AGGH',
+    calidad: 'aproximada',
+    nota: 'El fondo replica el Bloomberg Global Aggregate Float Adjusted and Scaled y la exposición se toma del Global Aggregate sin ese ajuste. Es el mismo universo de renta fija global cubierta a euros, pero el ajuste por capital flotante cambia algo los pesos.',
+  },
 }
 
 /**
@@ -121,10 +155,6 @@ const EQUIVALENCIAS: Record<string, Equivalencia> = {
  * mal: quien pega una cartera no puede saber que la equivalencia era floja.
  */
 const SIN_EQUIVALENCIA_FIABLE: Record<string, string> = {
-  // Vanguard Eurozone Stock Index Fund
-  IE0007987690:
-    'Este fondo replica el MSCI EMU, que es solo la eurozona, y en el catálogo no hay ningún ETF de ese índice: los que hay son MSCI Europe, que incluye Reino Unido, Suiza y Suecia. La diferencia es demasiado grande para llamarla aproximación.',
-
   // Amundi Index MSCI Emerging Markets
   LU0996177134:
     'Nuestra ficha lo llama «Amundi Index MSCI Emerging Markets» con un TER del 0,20 %, y el registro consultado el 18-sep-2026 devuelve «AMUNDI CORE MSCI Emerging Markets AE CAP» con un TER del 0,30 %. El índice coincide, pero el nombre y la comisión no, y son gamas distintas. Hasta aclarar de qué producto se trata, no se analiza.',
@@ -294,4 +324,6 @@ export const VERIFICADOS_EN_FUENTE: Record<string, string> = {
   IE0032126645: '18-sep-2026, registro de fondos: «VANGUARD U.S. 500 STOCK INDEX GENERAL EUR CAP | S&P 500 Index | 0,10 %»',
   IE0031786142: '18-sep-2026, factsheet de Vanguard de 31-ago-2026 con este ISIN: «MSCI Emerging Markets Index […] large and mid-sized company stocks», ticker MSDEEEMN, OCF 0,23 %',
   IE00BYX5MX67: '18-sep-2026, registro de fondos: «FIDELITY S&P 500 INDEX FUND P-ACC-EUR | S&P 500 Index | 0,06 %». La ficha decía MSCI World y 0,12 %: los tres datos estaban mal',
+  IE0007987690: '18-sep-2026, registro de fondos: «VANGUARD EUROPEAN STOCK INDEX INVESTOR EUR CAP | MSCI Europe Index | 0,12 %». La ficha decía «Eurozone Stock», MSCI EMU y 0,16 %: los tres estaban mal, y de ese error salió su exclusión del 17-sep',
+  IE00B18GC888: '18-sep-2026, registro de fondos: «VANGUARD GLOBAL BOND INDEX GENERAL EUR HEDGED CAP | Bloomberg Global Aggregate Float Adjusted and Scaled | 0,15 %». Nombre y TER coincidían; el índice es una variante del Global Aggregate y por eso la equivalencia es aproximada',
 }

@@ -80,9 +80,14 @@ describe('el solapamiento ve los fondos indexados', () => {
   })
 
   it('un fondo que NO analizamos se queda fuera en vez de entrar con datos flojos', () => {
-    // IE0007987690 es el Vanguard Eurozone: replica MSCI EMU y no hay ETF de ese índice.
-    // Meterlo con la exposición de un MSCI Europe daría un número plausible y falso.
-    const pares = computeOverlaps([pos('IE0007987690'), pos('VWCE')])
+    // LU0996177134: nuestra ficha lo llama «Amundi Index MSCI EM» con TER 0,20 % y el
+    // registro devuelve «Amundi CORE MSCI EM» con 0,30 %. Gamas distintas, así que no se
+    // analiza hasta saber de qué producto se trata.
+    //
+    // Antes este caso usaba IE0007987690, que era «el no analizable de ejemplo». Dejó de
+    // valer el 18-sep cuando resultó que replicaba MSCI Europe y sí tenía equivalencia: el
+    // motivo por el que estaba excluido salía de un dato nuestro equivocado.
+    const pares = computeOverlaps([pos('LU0996177134'), pos('VWCE')])
     expect(pares.length, 'no debe emparejarse un fondo sin exposición fiable').toBe(0)
   })
 

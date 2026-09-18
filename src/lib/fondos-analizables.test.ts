@@ -165,13 +165,19 @@ describe('resolverFondo', () => {
     expect(resolverFondo('LU0000000000')).toBeNull()
   })
 
-  it('se niega a analizar el Vanguard Eurozone y dice por qué', () => {
+  /**
+   * Este test exigia que el Vanguard «Eurozone» NO se analizara, con el motivo «replica el
+   * MSCI EMU y no hay ETF de ese indice». Verificado el 18-sep: el fondo se llama «European»,
+   * replica MSCI Europe y tenemos tres ETFs de ese indice. El motivo salia de nuestro propio
+   * dato equivocado, y el test lo daba por bueno porque leia la misma fuente que el codigo.
+   */
+  it('analiza el Vanguard European con IMEU, porque replica MSCI Europe y no MSCI EMU', () => {
     const r = resolverFondo('IE0007987690')
-    expect(r && 'noAnalizable' in r).toBe(true)
-    if (r && 'noAnalizable' in r) {
-      // El motivo se le enseña a una persona: tiene que explicar la causa, no dar un código.
-      expect(r.noAnalizable.motivo).toMatch(/MSCI EMU/)
-      expect(r.noAnalizable.motivo.length).toBeGreaterThan(60)
+    expect(r && 'analizable' in r).toBe(true)
+    if (r && 'analizable' in r) {
+      expect(r.analizable.etfExposicion.ticker).toBe('IMEU')
+      expect(r.analizable.fondo.index).toBe('MSCI Europe')
+      expect(r.analizable.fondo.ter).toBe(0.12)
     }
   })
 
@@ -248,7 +254,9 @@ describe('cobertura', () => {
     // La política se invirtió: un fondo NO se analiza hasta que sus datos están comprobados
     // en una fuente externa, en vez de analizarse mientras nadie demuestre que están mal.
     // Cuatro fondos correctos valen más que once con exposiciones plausibles y falsas.
-    expect(analizables.length).toBe(4)
+    // Subio de 4 a 6 el mismo 18-sep, al verificar dos mas: el Vanguard European (que estaba
+    // excluido por un motivo que partia de nuestro propio dato erroneo) y el Global Bond.
+    expect(analizables.length).toBe(6)
     expect(analizables.length).toBeLessThan(INDEX_FUNDS.length)
   })
 })
