@@ -64,12 +64,20 @@ export async function POST(req: NextRequest) {
      * y devolvía `success: true` con todo a cero. Un reparto vacío y un TER de 0 % parecen
      * un dato, no un fallo — que es la peor forma de fallar que hay en esta herramienta.
      */
+    /*
+     * El prefijo dice «identificador» y no «fondo», y no dice «todavía».
+     *
+     * Con los dos Amundi Prime retirados del catálogo, lo que se rechaza ya no es siempre un
+     * fondo: el mensaje empezaba con «reconocemos ese fondo, pero todavía no lo analizamos» y
+     * seguía explicando que NO es un fondo. Se contradecía en una frase. Y «todavía» promete
+     * que algún día entrará, que para un ETF en un catálogo de fondos es falso.
+     */
     if (tickersEtf.length === 0 && fondos.size === 0) {
       return NextResponse.json(
         {
           success: false,
           error: fondosRechazados.length > 0
-            ? `${fondosRechazados.length === 1 ? 'Reconocemos ese fondo, pero todavía no lo analizamos' : 'Reconocemos esos fondos, pero todavía no los analizamos'}. ${fondosRechazados
+            ? `${fondosRechazados.length === 1 ? 'Reconocemos ese identificador, pero no entra en el análisis' : 'Reconocemos esos identificadores, pero no entran en el análisis'}. ${fondosRechazados
                 .map((f) => `${f.nombre}: ${f.motivo}`)
                 .join(' ')}`
             : 'No hay nada que analizar en esa cartera.',
@@ -108,7 +116,7 @@ export async function POST(req: NextRequest) {
         // lo dice con nombre y motivo. Decirle «no reconocemos esos tickers» a quien pegó
         // un fondo que tenemos publicado con su ficha sería mentira.
         const error = fondosRechazados.length > 0
-          ? `Reconocemos ${fondosRechazados.length === 1 ? 'ese fondo' : 'esos fondos'}, pero todavía no ${fondosRechazados.length === 1 ? 'lo analizamos' : 'los analizamos'}. ${fondosRechazados
+          ? `Reconocemos ${fondosRechazados.length === 1 ? 'ese identificador' : 'esos identificadores'}, pero no ${fondosRechazados.length === 1 ? 'entra' : 'entran'} en el análisis. ${fondosRechazados
               .map((f) => `${f.nombre}: ${f.motivo}`)
               .join(' ')}`
           : 'No reconocemos ninguno de esos identificadores. El analizador lee un catálogo de ETFs cotizados por ticker (VWCE, IWDA, CSPX…) y de fondos indexados por ISIN. Revísalos antes de volver a intentarlo.'
