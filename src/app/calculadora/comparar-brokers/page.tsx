@@ -91,7 +91,7 @@ export default function CompararBrokersPage() {
             },
             {
               name: 'Compara el coste anual en euros',
-              text: 'La calculadora muestra el coste total al año de cada bróker: comisiones de compra, custodia y cambio de divisa. Elige el más barato para tu patrón real.',
+              text: 'La calculadora muestra el coste total al año de cada bróker: comisiones de compra, custodia y cambio de divisa, con el patrón de aportaciones que introduzcas.',
               url: `${BASE_URL}/calculadora/comparar-brokers`,
             },
           ],

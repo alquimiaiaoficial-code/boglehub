@@ -391,7 +391,7 @@ export default async function EtfPairPage({
                 <ul className="list-disc list-inside space-y-1">
                   <li>
                     Si tu broker opera principalmente en <strong>Xetra</strong> (DEGIRO, Trade Republic),
-                    elige el ticker que cotice en euros en Xetra para evitar conversión de divisa.
+                    el ticker que cotiza en euros en Xetra evita la conversión de divisa.
                   </li>
                   <li>
                     Si operas en <strong>LSE</strong> (Interactive Brokers, etc.), el ticker en GBP o USD

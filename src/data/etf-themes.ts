@@ -169,7 +169,7 @@ export const ETF_THEMES: EtfTheme[] = [
       },
       {
         q: '¿Cuál es la diferencia entre EIMI y EMIM?',
-        a: 'Ambos son el mismo fondo iShares Core MSCI Emerging Markets IMI (IE00BKM4GZ66). EIMI cotiza en la Bolsa de Londres (USD) y es de acumulación; EMIM cotiza en Euronext Amsterdam (EUR) y es de distribución. Elige el ticker con menor comisión de compra en tu broker. Si quieres acumulación, EIMI o IS3N son las opciones.',
+        a: 'Ambos son el mismo fondo iShares Core MSCI Emerging Markets IMI (IE00BKM4GZ66). EIMI cotiza en la Bolsa de Londres (USD) y es de acumulación; EMIM cotiza en Euronext Amsterdam (EUR) y es de distribución. La diferencia práctica suele estar en cuánto cobra cada bróker por comprar uno u otro. Si quieres acumulación, EIMI o IS3N son las opciones.',
       },
       {
         q: '¿Los ETFs de emergentes tienen más riesgo que los de países desarrollados?',
@@ -201,7 +201,7 @@ export const ETF_THEMES: EtfTheme[] = [
       },
       {
         q: '¿Qué diferencia hay entre VEUR e IMEU?',
-        a: 'VEUR (Vanguard FTSE Developed Europe) e IMEU (iShares Core MSCI Europe) replican índices muy similares con cobertura equivalente. IMEU tiene un TER de 0,12% y VEUR de 0,10%. Ambos son de acumulación y domiciliados en Irlanda. La diferencia práctica es mínima; elige el que tenga mejor acceso y menor comisión en tu broker.',
+        a: 'VEUR (Vanguard FTSE Developed Europe) e IMEU (iShares Core MSCI Europe) replican índices muy similares con cobertura equivalente. IMEU tiene un TER de 0,12% y VEUR de 0,10%. Ambos son de acumulación y domiciliados en Irlanda. La diferencia práctica es mínima, así que lo que los separa es el acceso y la comisión de cada bróker.',
       },
     ],
   },

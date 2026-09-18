@@ -45,7 +45,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       },
       {
         q: '¿Finizens o Indexa Capital?',
-        a: 'Son los dos referentes y para la mayoría resultan intercambiables. Finizens gana en mínimo de apertura (1.000€ vs 3.000€), comisiones algo más bajas y el oro como diversificador; Indexa, en granularidad (10 perfiles vs 5), patrimonio gestionado y antigüedad del historial. Elige por el mínimo que puedes aportar y por si te convence el oro en cartera.',
+        a: 'Son los dos referentes y para la mayoría resultan intercambiables. Finizens gana en mínimo de apertura (1.000€ vs 3.000€), comisiones algo más bajas y el oro como diversificador; Indexa, en granularidad (10 perfiles vs 5), patrimonio gestionado y antigüedad del historial. La diferencia práctica está en el mínimo que se puede aportar y en si el oro encaja como diversificador en cartera.',
       },
     ],
     content: `# Finizens: opinión y análisis completo del roboadvisor (2026)
@@ -476,7 +476,7 @@ Para entender por qué esa diversificación hace que las caídas no sean el verd
       },
       {
         q: '¿Cómo reduzco el riesgo sin renunciar a la rentabilidad?',
-        a: 'Estructurando la inversión para soportar la volatilidad: invierte en bolsa solo el dinero a largo plazo, ten un fondo de emergencia para no vender en las caídas, diversifica globalmente, elige una proporción de renta fija que puedas mantener sin vender, e ignora el ruido diario. La volatilidad es el precio de la rentabilidad; el objetivo es soportarla, no eliminarla.',
+        a: 'Estructurando la inversión para soportar la volatilidad: invierte en bolsa solo el dinero a largo plazo, ten un fondo de emergencia para no vender en las caídas, diversifica globalmente, la proporción de renta fija que se puede mantener sin vender en una caída, e ignora el ruido diario. La volatilidad es el precio de la rentabilidad; el objetivo es soportarla, no eliminarla.',
       },
     ],
     content: `# Volatilidad y riesgo: por qué las caídas no son el verdadero peligro (2026)
@@ -631,7 +631,7 @@ El MSCI World deja fuera los **mercados emergentes** (China, India, etc.). Si qu
 - **Si tienes convicción en EE.UU. y entiendes que es una apuesta concentrada**: el S&P 500 es defendible y ha funcionado, pero asume conscientemente esa concentración.
 - **Una postura intermedia común**: núcleo global (World/All-World) y, si quieres, una pequeña sobreponderación de EE.UU.; no al revés.
 
-Lo que **no** es buena idea es saltar de uno a otro según quién haya ganado el último año. Elige una política y mantenla. Para ver los ETFs concretos de cada índice, tienes el [catálogo de ETFs del S&P 500](/etfs/sp500) y el de [ETFs del MSCI World](/etfs/msci-world), y la comparativa [VWCE vs CSPX vs IWDA](/blog/vwce-vs-cspx-vs-iwda) que los pone cara a cara. Y para decidir dónde comprarlos al menor coste, el [comparador de brókers](/calculadora/comparar-brokers).
+Lo que **no** es buena idea es saltar de uno a otro según quién haya ganado el último año. Lo que separa un resultado de otro es fijar una política y mantenerla. Para ver los ETFs concretos de cada índice, tienes el [catálogo de ETFs del S&P 500](/etfs/sp500) y el de [ETFs del MSCI World](/etfs/msci-world), y la comparativa [VWCE vs CSPX vs IWDA](/blog/vwce-vs-cspx-vs-iwda) que los pone cara a cara. Y para decidir dónde comprarlos al menor coste, el [comparador de brókers](/calculadora/comparar-brokers).
 
 ---
 
@@ -661,7 +661,7 @@ Para entender mejor el índice global, sigue por [qué es el MSCI World](/blog/q
     faq: [
       {
         q: '¿Qué gestora de fondos indexados es mejor: Vanguard, iShares o Amundi?',
-        a: 'Ninguna es "la mejor" en abstracto: depende del producto concreto. Vanguard destaca por su estructura de propiedad alineada con el inversor y su producto global; iShares (BlackRock) por la amplitud de gama y la liquidez; Amundi y SPDR suelen ser de los más baratos en varios índices. Elige el fondo por su índice, su TER y su domicilio (Irlanda), no por la marca.',
+        a: 'Ninguna es "la mejor" en abstracto: depende del producto concreto. Vanguard destaca por su estructura de propiedad alineada con el inversor y su producto global; iShares (BlackRock) por la amplitud de gama y la liquidez; Amundi y SPDR suelen ser de los más baratos en varios índices. Lo que determina el resultado es el índice, el TER y el domicilio (Irlanda); la marca de la gestora, mucho menos.',
       },
       {
         q: '¿Importa la gestora o solo el índice que replica?',
@@ -734,7 +734,7 @@ El riesgo de que una gestora grande y regulada "quiebre" y te haga perder tu inv
 - Si valoras la **filosofía alineada con el inversor** y un producto global todo-en-uno: **Vanguard** (FTSE All-World).
 - Si quieres la **gama más amplia y máxima liquidez**: **iShares** (serie Core).
 - Si optimizas el **coste** al milímetro: mira **Amundi** y **SPDR** en tu índice concreto.
-- En todos los casos: elige el fondo por índice + TER + domicilio Irlanda, no por la marca de la portada.
+- En todos los casos: lo que pesa es el índice, el TER y el domicilio en Irlanda, no la marca de la portada.
 
 Para ver productos concretos recomendados, la [guía de mejores fondos indexados](/blog/mejores-fondos-indexados-espana-2026) y la de [mejores ETFs](/blog/mejores-etfs-espana-2026) bajan al detalle.
 
@@ -742,7 +742,7 @@ Para ver productos concretos recomendados, la [guía de mejores fondos indexados
 
 ## Conclusión práctica
 
-Vanguard, iShares, Amundi y SPDR son todas gestoras solventes y buenas opciones; ninguna te va a arruinar por elegirla. La diferencia real entre tus fondos no la marca su logo, sino el índice que replican, lo que cobran y dónde están domiciliados. Elige el **producto** adecuado —global, barato, irlandés y de réplica sólida— y la gestora vendrá dada. Y si te hace ilusión la coherencia, Vanguard tiene el guiño histórico de ser la casa que Bogle impulsó para que ganara el inversor, no la gestora.
+Vanguard, iShares, Amundi y SPDR son todas gestoras solventes y buenas opciones; ninguna te va a arruinar por elegirla. La diferencia real entre tus fondos no la marca su logo, sino el índice que replican, lo que cobran y dónde están domiciliados. Cuando el **producto** encaja —global, barato, irlandés y de réplica física—, la gestora viene dada. Y si te hace ilusión la coherencia, Vanguard tiene el guiño histórico de ser la casa que Bogle impulsó para que ganara el inversor, no la gestora.
 
 ---
 
@@ -2214,7 +2214,7 @@ inbestMe no compite por ser el más barato, y no pasa nada: compite por ser el r
       },
       {
         q: '¿Indexa o Finizens, cuál es mejor?',
-        a: 'Indexa tiene más perfiles (10 vs 5), más patrimonio gestionado y el historial más largo; Finizens tiene un mínimo de apertura más bajo (1.000€ vs 3.000€) e incluye oro en sus carteras conservadoras. Las comisiones son similares. Para la mayoría son intercambiables: elige por el mínimo que puedes aportar, si te interesa el oro y la interfaz que prefieras.',
+        a: 'Indexa tiene más perfiles (10 vs 5), más patrimonio gestionado y el historial más largo; Finizens tiene un mínimo de apertura más bajo (1.000€ vs 3.000€) e incluye oro en sus carteras conservadoras. Las comisiones son similares. Para la mayoría son intercambiables: lo que los separa en la práctica es el mínimo de aportación, si el oro entra como diversificador y la interfaz.',
       },
       {
         q: '¿Merece la pena un roboadvisor o es mejor hacerlo uno mismo?',
@@ -2457,7 +2457,7 @@ Es otra capa, y también está protegida. Un ETF es un fondo con personalidad ju
 
 ## Conclusión práctica
 
-El miedo a "perderlo todo si quiebra el bróker" se basa en un malentendido: tus ETFs y fondos son tuyos por la segregación de activos, no del bróker, y no entran en su concurso. Los fondos de garantía (20.000€ o 100.000€) son un backstop para el caso raro de fraude, y el de depósitos (100.000€) solo afecta a tu efectivo si el bróker es un banco. Elige un bróker regulado y solvente —todos los de este artículo lo son— y decide por coste y funciones, no por un miedo que la estructura legal ya resuelve.
+El miedo a "perderlo todo si quiebra el bróker" se basa en un malentendido: tus ETFs y fondos son tuyos por la segregación de activos, no del bróker, y no entran en su concurso. Los fondos de garantía (20.000€ o 100.000€) son un backstop para el caso raro de fraude, y el de depósitos (100.000€) solo afecta a tu efectivo si el bróker es un banco. Con un bróker regulado y solvente —todos los de este artículo lo son—, lo que queda por comparar es el coste y las funciones, no un miedo que la estructura legal ya resuelve.
 
 Para empezar con buen pie, la [guía para elegir tu primer ETF](/blog/como-elegir-tu-primer-etf-espana-2026) y la [comparativa de brókers](/blog/mejor-broker-etfs-espana-2026) son el siguiente paso.
 
@@ -5025,7 +5025,7 @@ Pero — y esto es clave — ese riesgo se gestiona **antes**, no durante. Se ge
 La decisión de cómo reaccionar a una caída no se toma durante la caída. Se toma hoy, en frío:
 
 - Escribe, en una nota, qué harás cuando el mercado caiga un 30 %: "No vender. Mantener aportaciones. Rebalancear." Léela cuando llegue el momento.
-- Elige una proporción de renta variable y fija que puedas soportar viendo números rojos, no solo en una hoja de cálculo.
+- La proporción de renta variable y fija que importa es la que se soporta viendo números rojos, no solo en una hoja de cálculo.
 - Automatiza las aportaciones para que no dependan de cómo te sientas ese mes.
 
 El mercado va a caer. Tu plan ya lo sabe. Tú también, ahora.
@@ -5143,7 +5143,7 @@ Si toda tu cartera es **un único ETF global** (por ejemplo, 100 % VWCE), no tie
 ## Guía práctica paso a paso
 
 1. **Ten claros tus pesos objetivo.** No puedes rebalancear hacia un destino que no has definido.
-2. **Elige una fecha fija al año** para revisar. El cumpleaños, enero, lo que recuerdes.
+2. **Una fecha fija al año** para revisar. El cumpleaños, enero, lo que recuerdes.
 3. **Mira la desviación real.** ¿Cuánto se ha alejado cada activo de su objetivo?
 4. **Corrige primero con aportaciones.** Dirige el dinero nuevo al activo rezagado.
 5. **Vende solo como último recurso**, consciente del coste fiscal, y prioriza vehículos con traspaso si los tienes.
@@ -5496,7 +5496,7 @@ Una persona que invierte 50 € al mes desde los 20 años llega a los 60 con bas
 
 **3. Abre un broker.** En España, opciones habituales para empezar con poco son Trade Republic o MyInvestor. Abrir cuenta es gratis. Tienes los criterios para elegir en la guía de [cómo elegir tu primer ETF](/blog/como-elegir-tu-primer-etf-espana-2026).
 
-**4. Elige UN producto global.** Para la inmensa mayoría, un único fondo o ETF de renta variable global es más que suficiente para empezar. No necesitas cinco. Uno, global y barato.
+**4. UN solo producto global basta.** Para la inmensa mayoría, un único fondo o ETF de renta variable global es más que suficiente para empezar. No necesitas cinco. Uno, global y barato.
 
 **5. Automatiza la aportación.** Configura una orden periódica (Trade Republic la llama "plan de ahorro") para que cada mes se invierta tu cantidad sin que tengas que hacer ni decidir nada.
 
@@ -9103,7 +9103,7 @@ La comparación con los ETFs en términos de flexibilidad fiscal es clara: para 
     faq: [
       {
         q: '¿Es seguro DEGIRO para invertir en España?',
-        a: 'Sí. DEGIRO está regulado por la AFM holandesa y desde 2021 es subsidiaria de flatexDEGIRO Bank AG, supervisado por el BaFin alemán. Los activos se custodian separados del balance del broker. El Fondo de Garantía de Inversiones holandés (IFD) cubre hasta 20.000€ en caso de insolvencia del broker. Para máxima segregación, elige la cuenta Custody en lugar de la cuenta básica.',
+        a: 'Sí. DEGIRO está regulado por la AFM holandesa y desde 2021 es subsidiaria de flatexDEGIRO Bank AG, supervisado por el BaFin alemán. Los activos se custodian separados del balance del broker. El Fondo de Garantía de Inversiones holandés (IFD) cubre hasta 20.000€ en caso de insolvencia del broker. La cuenta Custody ofrece más segregación que la básica.',
       },
       {
         q: '¿Qué comisiones cobra DEGIRO por comprar ETFs en España?',

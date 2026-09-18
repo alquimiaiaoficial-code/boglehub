@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ pair: str
 
   return {
     title: `${fA.name} vs ${fB.name}: comparativa de fondos (2026)`,
-    description: `${fA.name} vs ${fB.name}: índice, coste (TER), gestora y cuál elegir para tu cartera indexada en España.`,
+    description: `${fA.name} vs ${fB.name}: en qué se diferencian por índice, coste (TER) y gestora, y qué implica cambiar de uno a otro en España.`,
     openGraph: { locale: 'es_ES', images: [`/api/og?title=${encodeURIComponent(`${fA.manager} vs ${fB.manager}`)}&subtitle=${encodeURIComponent('Comparativa%20fondos%20indexados')}`] },
     alternates: { canonical: `/comparar-fondo/${pair}` },
   }
@@ -46,28 +46,60 @@ export default async function CompararFondoPage({ params }: { params: Promise<{ 
   const cheaper = fA.ter <= fB.ter ? fA : fB
   const terDiff = Math.abs(fA.ter - fB.ter)
 
+  /**
+   * Estas comparativas se generaban dando por hecho TRES cosas, y las tres podían ser falsas.
+   * Revisadas el 18-sep-2026:
+   *
+   *  1. Que los dos productos son FONDOS, y por tanto que el traspaso entre ellos no tributa.
+   *     Tres fichas del catálogo resultaron ser ETFs, que están excluidos del régimen del
+   *     artículo 94 del IRPF. Decirle a alguien que puede mover su dinero sin pagar cuando
+   *     pagaría es el peor error posible en esta página.
+   *  2. Que índices distintos tienen «cobertura comparable» y «resultados históricos muy
+   *     similares». Eso valía cuando todos los pares eran MSCI World contra MSCI World; con
+   *     un global frente a un S&P 500 es falso: uno es el mundo desarrollado y el otro un
+   *     solo país.
+   *  3. Que se puede recomendar el más barato. No se puede: BogleHub no está registrada en la
+   *     CNMV. El texto mandaba quedarse con el de menor TER, que es prescribir y no describir.
+   *
+   * `sinAfirmarFondo` es true cuando alguna de las dos fichas está en revisión: entonces no
+   * se afirma nada que dependa de que sean fondos.
+   */
+  const sinAfirmarFondo = Boolean(fA.avisoDeRevision || fB.avisoDeRevision)
+  const mismoIndice = fA.index === fB.index
+  const traspasoLibre = sinAfirmarFondo
+    ? ''
+    : ' Los dos son fondos de inversión, así que el traspaso entre ellos no computa ganancia (artículo 94.1.a de la Ley del IRPF), siempre que el importe no pase por tus manos.'
+
   const verdict = terDiff < 0.01
-    ? `Según BogleHub, ${fA.name} y ${fB.name} tienen un TER prácticamente idéntico (${fA.ter}% vs ${fB.ter}%); ambos son fondos indexados con traspaso fiscal libre en España, así que la elección depende más de la gestora o el índice que del coste.`
-    : `Según BogleHub, entre ${fA.name} (TER ${fA.ter}%) y ${fB.name} (TER ${fB.ter}%), el más barato es ${cheaper.name} (${cheaper.ter}%). Ambos son fondos indexados con traspaso fiscal libre en España: si replican exposiciones equivalentes suele convenir el de menor coste, y siempre puedes traspasar más adelante sin tributar.`
+    ? `Según BogleHub, ${fA.name} y ${fB.name} tienen un TER prácticamente idéntico (${fA.ter}% vs ${fB.ter}%).${traspasoLibre} ${mismoIndice ? 'Replican el mismo índice, así que lo que queda es la gestora.' : `Replican índices distintos —${fA.index} y ${fB.index}—, y esa diferencia pesa más que el coste.`}`
+    : `Según BogleHub, entre ${fA.name} (TER ${fA.ter}%) y ${fB.name} (TER ${fB.ter}%), el más barato es ${cheaper.name} (${cheaper.ter}%).${traspasoLibre} ${mismoIndice ? 'Replican el mismo índice, así que la diferencia de coste se compara directamente.' : `Pero replican índices distintos —${fA.index} y ${fB.index}—, así que no son intercambiables y comparar solo el coste lleva a una conclusión equivocada.`}`
 
   const faqs = [
     {
       q: `¿${fA.name} o ${fB.name}: cuál es más barato?`,
       a: terDiff < 0.01
-        ? `Ambos tienen TER prácticamente idéntico (${fA.ter}% vs ${fB.ter}%). El coste no es el criterio diferenciador; elige por gestora preferida o índice replicado.`
+        ? `Ambos tienen TER prácticamente idéntico (${fA.ter}% vs ${fB.ter}%), así que el coste no los separa: lo que queda distinto es la gestora y el índice que replica cada uno.`
         : `${cheaper.name} es más barato con TER ${cheaper.ter}% frente al ${(cheaper === fA ? fB : fA).ter}% del otro. La diferencia de ${terDiff.toFixed(2)}% anual se acumula a largo plazo, especialmente en carteras grandes.`,
     },
     {
       q: `¿Qué índice replica cada uno?`,
-      a: `${fA.name} replica el ${fA.index}. ${fB.name} replica el ${fB.index}. ${fA.index === fB.index ? 'Replican el mismo índice, por lo que la diferencia es solo de gestora y coste.' : 'Son índices distintos pero con cobertura comparable; los resultados históricos suelen ser muy similares.'}`,
+      // «Cobertura comparable y resultados muy similares» era cierto cuando todos los pares
+      // eran MSCI World contra MSCI World. Con un global frente a un S&P 500 es falso, y
+      // afirmarlo invita a tratarlos como intercambiables.
+      a: `${fA.name} replica el ${fA.index}. ${fB.name} replica el ${fB.index}. ${mismoIndice ? 'Replican el mismo índice, por lo que la diferencia está en la gestora y en el coste.' : 'Son índices distintos, así que la exposición no es la misma: antes de comparar comisiones conviene mirar qué mercados cubre cada uno, porque esa diferencia suele pesar mucho más que unas centésimas de TER.'}`,
     },
     {
       q: `¿Puedo traspasar de ${fA.name} a ${fB.name} sin tributar?`,
-      a: `Sí. Ambos son fondos de inversión, por lo que el traspaso entre ellos no genera evento fiscal en España. Puedes cambiar de uno a otro difiriendo el IRPF hasta el reembolso final. Esta es la gran ventaja de los fondos sobre los ETFs.`,
+      a: sinAfirmarFondo
+        ? `No está confirmado. Los datos de una de las dos fichas están en revisión y no sabemos con certeza si el producto es un fondo o un ETF, y de eso depende todo: el diferimiento del artículo 94.1.a) de la Ley del IRPF solo se aplica entre fondos de inversión y excluye expresamente a los cotizados. Si alguno resulta ser un ETF, el cambio implica vender y la ganancia tributa.`
+        : `Sí, si el traspaso se tramita entre entidades. Al ser los dos fondos de inversión, el artículo 94.1.a) de la Ley del IRPF dice que «no procederá computar la ganancia o pérdida patrimonial» y las nuevas participaciones conservan el valor y la fecha de adquisición de las antiguas: el impuesto no desaparece, se aplaza. La condición está en el propio artículo: no aplica si el importe llega a estar a tu disposición, o sea que vender y volver a comprar no vale.`,
     },
     {
-      q: `¿Cuál elijo para mi cartera?`,
-      a: `Si ambos replican exposiciones equivalentes, elige el más barato (${cheaper.name}, TER ${cheaper.ter}%) salvo que prefieras una gestora concreta. Lo importante es mantener el fondo a largo plazo; gracias al traspaso libre puedes cambiar más adelante sin coste fiscal si aparece una opción mejor.`,
+      // Mandaba quedarse con el de menor TER. Eso es prescribir, y BogleHub no esta registrada en la
+      // CNMV: la pregunta se reformula para describir en qué se diferencian, que es lo que
+      // esta herramienta puede hacer.
+      q: `¿En qué se diferencian a la hora de decidir?`,
+      a: `${mismoIndice ? `Replican el mismo índice, así que la exposición es la misma y lo que queda es el coste —${cheaper.name} cobra ${cheaper.ter}% frente al ${(cheaper === fA ? fB : fA).ter}%— y la gestora.` : `Replican índices distintos (${fA.index} y ${fB.index}), así que no cubren los mismos mercados: comparar solo el TER aquí es engañoso, porque se estaría poniendo precio a dos cosas diferentes.`}${sinAfirmarFondo ? '' : ' Y al ser los dos fondos, el cambio de uno a otro se puede hacer por traspaso sin computar la ganancia, lo que reduce el coste de equivocarse al elegir.'} Qué encaja en una cartera concreta depende de circunstancias personales que esta página no conoce.`,
     },
   ]
 

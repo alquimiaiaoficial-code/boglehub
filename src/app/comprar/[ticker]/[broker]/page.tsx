@@ -199,7 +199,7 @@ export default async function ComprarPage({
                 { title: `Abrir cuenta en ${brokerData.name}`, text: `Registrarse en la web o app oficial con DNI/NIE y datos bancarios. La verificación de identidad tarda entre 10 y 30 minutos según el broker.` },
                 { title: 'Aportar fondos', text: 'Realizar transferencia SEPA desde tu cuenta bancaria. Suele tardar 1-2 días hábiles. En Trade Republic puedes activar también pagos instantáneos por SEPA Instant si tu banco lo soporta.' },
                 { title: `Buscar el ETF`, text: `Usar el buscador con el ticker ${etf.ticker} o el ISIN ${etf.isin}. Verificar que el ISIN coincide exactamente para evitar comprar un ETF equivocado.` },
-                { title: 'Verificar mercado y divisa', text: 'Si el broker te permite elegir bolsa, opta por Xetra (Frankfurt, EUR) para la mayoría de ETFs UCITS — máxima liquidez y sin conversión de divisa.' },
+                { title: 'Verificar mercado y divisa', text: 'Si el broker permite elegir bolsa, Xetra (Frankfurt, EUR) es la de mayor liquidez para la mayoría de ETFs UCITS — máxima liquidez y sin conversión de divisa.' },
                 { title: 'Lanzar la orden', text: 'Introducir importe (en €) o número de participaciones. Elegir entre orden de mercado (ejecución inmediata al mejor precio disponible) u orden limitada (a un precio máximo que tú indiques). Para inversor indexado de largo plazo, ambas son válidas.' },
                 { title: 'Mantener', text: `${etf.ticker} es para mantener a largo plazo, no para tradear. La cartera se rebalancea una vez al año si es necesario.` },
               ].map((step, i) => (
