@@ -70,7 +70,7 @@ export async function POST(req: NextRequest) {
           success: false,
           error: fondosRechazados.length > 0
             ? `${fondosRechazados.length === 1 ? 'Reconocemos ese fondo, pero todavía no lo analizamos' : 'Reconocemos esos fondos, pero todavía no los analizamos'}. ${fondosRechazados
-                .map((f) => `${f.fondo.name}: ${f.motivo}`)
+                .map((f) => `${f.nombre}: ${f.motivo}`)
                 .join(' ')}`
             : 'No hay nada que analizar en esa cartera.',
         },
@@ -109,7 +109,7 @@ export async function POST(req: NextRequest) {
         // un fondo que tenemos publicado con su ficha sería mentira.
         const error = fondosRechazados.length > 0
           ? `Reconocemos ${fondosRechazados.length === 1 ? 'ese fondo' : 'esos fondos'}, pero todavía no ${fondosRechazados.length === 1 ? 'lo analizamos' : 'los analizamos'}. ${fondosRechazados
-              .map((f) => `${f.fondo.name}: ${f.motivo}`)
+              .map((f) => `${f.nombre}: ${f.motivo}`)
               .join(' ')}`
           : 'No reconocemos ninguno de esos identificadores. El analizador lee un catálogo de ETFs cotizados por ticker (VWCE, IWDA, CSPX…) y de fondos indexados por ISIN. Revísalos antes de volver a intentarlo.'
         return NextResponse.json({ success: false, error }, { status: 422 })
@@ -144,7 +144,7 @@ export async function POST(req: NextRequest) {
     // resto de la cartera sí se haya analizado. Quedarían fuera del reparto en silencio y el
     // usuario vería porcentajes que no suman lo que él tiene sin saber por qué.
     for (const rechazado of fondosRechazados) {
-      warnings.push(`${rechazado.fondo.name} no entra en este análisis. ${rechazado.motivo}`)
+      warnings.push(`${rechazado.nombre} no entra en este análisis. ${rechazado.motivo}`)
     }
 
     if (!pricesResult.ok && fondos.size > 0) {
@@ -156,7 +156,7 @@ export async function POST(req: NextRequest) {
     const positionSummary = body.positions.map(p => {
       const ticker = p.ticker.toUpperCase()
       const esFondoRechazado = fondosRechazados.some(
-        (f) => f.fondo.isin.toUpperCase() === ticker || f.fondo.slug.toUpperCase() === ticker,
+        (f) => f.isin.toUpperCase() === ticker || (f.slug !== '' && f.slug.toUpperCase() === ticker),
       )
       if (precios[ticker] == null && !esFondoRechazado) {
         warnings.push(`No se pudo obtener precio para ${ticker}`)

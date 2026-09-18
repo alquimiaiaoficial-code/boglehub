@@ -122,9 +122,11 @@ export default async function FondoPage({ params }: { params: Promise<{ slug: st
             Un ETF no se traspasa sin tributar, así que a esos productos les estábamos
             atribuyendo exactamente la ventaja fiscal que NO tienen.
 
-            No se retira la página —estas URLs están indexadas y `amundi-prime-global` es la
-            que más clics recibe del sitio—: se retira la afirmación. Quien llega buscando
-            ese ISIN merece leer lo que se sabe, que es más útil que una ficha bonita y falsa.
+            Las dos fichas Prime salieron del catálogo el 19-sep, cuando la API de Bing dejó
+            ver que `amundi-prime-global` no era «la que más clics recibe» —da 3, y el análisis
+            del VWCE da 9— sino la que MEJOR CONVIERTE, con un 33 %. Sus URLs van por 301 al
+            artículo que explica qué son, así que se conserva esa conversión sin seguir
+            clasificando un ETF como fondo. El aviso sigue aquí para el resto de fichas.
           */}
           {f.avisoDeRevision && (
             <div

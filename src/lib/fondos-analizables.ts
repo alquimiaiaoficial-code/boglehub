@@ -183,6 +183,28 @@ const EQUIVALENCIAS: Record<string, Equivalencia> = {
  * Fondos que NO se analizan, con el motivo. Preferimos negarnos a dar un número que darlo
  * mal: quien pega una cartera no puede saber que la equivalencia era floja.
  */
+/**
+ * Productos que ya NO están en el catálogo de fondos y que aun así hay que saber explicar.
+ *
+ * Los dos salieron el 19-sep-2026 porque no son fondos, son ETFs. Pero `LU1931974692` es
+ * el identificador por el que más nos buscan —«que tal el fondo lu1931974692…», posición 3
+ * en Bing— y quien lo pega en el analizador merece la respuesta útil, no un error de precio.
+ */
+const PRODUCTOS_RETIRADOS: Record<string, { nombre: string; indice: string; motivo: string }> = {
+  LU1931974692: {
+    nombre: 'Amundi Prime Global',
+    indice: 'Solactive GBS Developed Markets Large & Mid Cap',
+    motivo:
+      'No se analiza porque no es un fondo indexado: es el «Amundi Prime Global UCITS ETF DR (D)», un ETF de distribución. La diferencia no es de etiqueta: un ETF no se traspasa a otro producto sin tributar. Ese ISIN figura además como liquidado o fusionado, y la gama viva es irlandesa (IE000QIF5N15 de reparto e IE0009DRDY20 de acumulación).',
+  },
+  LU2089238385: {
+    nombre: 'Amundi Prime Japan',
+    indice: 'Solactive GBS Japan',
+    motivo:
+      'No se analiza porque no es un fondo indexado sino un ETF de la gama Prime de Amundi, igual que su hermano global. Un ETF no tiene el traspaso sin tributación que su antigua ficha daba por hecho.',
+  },
+}
+
 const SIN_EQUIVALENCIA_FIABLE: Record<string, string> = {
   /*
    * Los tres de aquí abajo NO son fondos: son ETFs que el catálogo publicaba como fondos.
@@ -191,14 +213,6 @@ const SIN_EQUIVALENCIA_FIABLE: Record<string, string> = {
    * a quien pregunta. Decirle «no lo hemos mirado» cuando lo hemos mirado y el producto no
    * es lo que él cree es peor que no decir nada.
    */
-
-  // Amundi Prime Global
-  LU1931974692:
-    'No se analiza porque no es un fondo indexado: es el «Amundi Prime Global UCITS ETF DR (D)», un ETF de distribución sobre el Solactive GBS Developed Markets Large & Mid Cap. La diferencia no es de etiqueta: un ETF no se traspasa a otro producto sin tributar, y este además reparte dividendos en vez de reinvertirlos. Comprobado el 18-sep-2026; ese ISIN figura además como liquidado o fusionado, y la gama viva es irlandesa (IE000QIF5N15 de reparto e IE0009DRDY20 de acumulación).',
-
-  // Amundi Prime Japan
-  LU2089238385:
-    'No se analiza porque no es un fondo indexado sino un ETF de la gama Prime de Amundi, igual que su hermano global. Un ETF no tiene el traspaso sin tributación que esta ficha daba por hecho.',
 
   // «Amundi Index Eurozone Government Bond»
   LU1437015735:
@@ -226,9 +240,24 @@ export interface FondoAnalizable {
   nota?: string
 }
 
-/** Un fondo reconocido del catálogo que, a propósito, no se analiza todavía. */
+/**
+ * Algo que reconocemos y que, a propósito, no entra en el análisis.
+ *
+ * Llevaba dentro el `IndexFund` entero, y eso daba por hecho que todo lo no analizable
+ * es una ficha del catálogo de fondos. Dejó de ser cierto el 19-sep-2026, al retirar del
+ * catálogo los dos Amundi Prime que son ETFs: sus ISINs seguían llegando al analizador
+ * —son de lo más buscado que tenemos— y de golpe el usuario pasó a recibir «no se pudo
+ * obtener precio para LU1931974692» en vez de «esto es un ETF, no un fondo».
+ *
+ * Retirar una ficha no borra la pregunta de la gente. Por eso el tipo lleva ahora lo que
+ * hace falta para explicarse, venga de una ficha o no.
+ */
 export interface FondoNoAnalizable {
-  fondo: IndexFund
+  isin: string
+  /** Para una ficha, su slug. Para un producto retirado, cadena vacía. */
+  slug: string
+  nombre: string
+  indice: string
   motivo: string
 }
 
@@ -258,23 +287,33 @@ export type ResolucionFondo =
  * de ETFs), y `noAnalizable` si es un fondo conocido que a propósito no se analiza.
  */
 export function resolverFondo(entrada: string): ResolucionFondo | null {
+  // Primero lo retirado. Va antes que el catálogo a propósito: si algún día vuelve a haber
+  // una ficha con uno de estos ISINs, queremos enterarnos por aquí y no que se analice
+  // calladamente un producto que sabemos que no es un fondo.
+  const retirado = PRODUCTOS_RETIRADOS[normalizar(entrada)]
+  if (retirado) {
+    return {
+      noAnalizable: {
+        isin: normalizar(entrada),
+        slug: '',
+        nombre: retirado.nombre,
+        indice: retirado.indice,
+        motivo: retirado.motivo,
+      },
+    }
+  }
+
   const fondo = buscarFondo(entrada)
   if (!fondo) return null
 
   const isin = normalizar(fondo.isin)
+  const base = { isin: fondo.isin, slug: fondo.slug, nombre: fondo.name, indice: fondo.index }
 
   const motivo = SIN_EQUIVALENCIA_FIABLE[isin]
-  if (motivo) return { noAnalizable: { fondo, motivo } }
+  if (motivo) return { noAnalizable: { ...base, motivo } }
 
   const eq = EQUIVALENCIAS[isin]
-  if (!eq) {
-    return {
-      noAnalizable: {
-        fondo,
-        motivo: PENDIENTE_DE_VERIFICAR,
-      },
-    }
-  }
+  if (!eq) return { noAnalizable: { ...base, motivo: PENDIENTE_DE_VERIFICAR } }
 
   const etf = getEtfByTicker(eq.ticker)
   if (!etf) {
@@ -282,7 +321,7 @@ export function resolverFondo(entrada: string): ResolucionFondo | null {
     // fondo se analice con una exposición vacía y el resultado salga en silencio a cero.
     return {
       noAnalizable: {
-        fondo,
+        ...base,
         motivo: `La exposición de este fondo se calculaba a partir del ETF ${eq.ticker}, que ya no está en el catálogo.`,
       },
     }

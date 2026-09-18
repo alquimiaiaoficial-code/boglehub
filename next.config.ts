@@ -70,13 +70,65 @@ const nextConfig: NextConfig = {
         statusCode: 301,
       },
       {
-        source: '/comparar-fondo/amundi-prime-global-vs-fidelity-msci-world',
-        destination: '/comparar-fondo/amundi-prime-global-vs-fidelity-sp500',
+        source: '/comparar-fondo/vanguard-global-stock-vs-fidelity-msci-world',
+        destination: '/comparar-fondo/vanguard-global-stock-vs-fidelity-sp500',
+        statusCode: 301,
+      },
+
+      /**
+       * Amundi Prime Global y Prime Japan salen del catálogo de FONDOS el 19-sep-2026,
+       * porque no son fondos: son ETFs. Mientras estuvieron ahí les atribuíamos el traspaso
+       * sin tributar, que es exactamente lo que un fondo cotizado NO tiene.
+       *
+       * Van a 301 y no a 404 por un dato que hasta hoy no teníamos. Con la API de Bing ya
+       * conectada se ve que `/fondo/amundi-prime-global` hace 9 impresiones y 3 clics: un
+       * 33 % de CTR, frente al 2,6 % de media del sitio. No es la página con más clics
+       * —creíamos que sí, y era falso: esa es /blog/vwce-analisis-completo con 9— pero sí es
+       * con diferencia la que mejor convierte. Tirar esa URL sería tirar la mejor conversión
+       * que tenemos.
+       *
+       * El destino es el artículo, no otra ficha, porque responde lo que busca quien llega:
+       * si eso es un fondo o un ETF, y qué pasó con ese ISIN (figura liquidado o fusionado,
+       * y la gama viva es irlandesa).
+       *
+       * Ojo con lo que había aquí: `/comparar-fondo/amundi-prime-global-vs-fidelity-msci-world`
+       * apuntaba a `...-vs-fidelity-sp500`, un par que desaparece con estas fichas. Era un 301
+       * hacia un 404. Al retirar contenido hay que mirar quién apuntaba a él, no solo quién
+       * lo enlazaba.
+       */
+      {
+        source: '/fondo/amundi-prime-global',
+        destination: '/blog/amundi-prime-global-analisis',
         statusCode: 301,
       },
       {
-        source: '/comparar-fondo/vanguard-global-stock-vs-fidelity-msci-world',
-        destination: '/comparar-fondo/vanguard-global-stock-vs-fidelity-sp500',
+        source: '/fondo/amundi-prime-japan',
+        destination: '/blog/amundi-prime-global-analisis',
+        statusCode: 301,
+      },
+      {
+        source: '/comparar-fondo/amundi-prime-global-vs-fidelity-msci-world',
+        destination: '/blog/amundi-prime-global-analisis',
+        statusCode: 301,
+      },
+      {
+        source: '/comparar-fondo/amundi-prime-global-vs-fidelity-sp500',
+        destination: '/blog/amundi-prime-global-analisis',
+        statusCode: 301,
+      },
+      {
+        source: '/comparar-fondo/amundi-prime-global-vs-vanguard-global-stock',
+        destination: '/blog/amundi-prime-global-analisis',
+        statusCode: 301,
+      },
+      {
+        source: '/comparar-fondo/amundi-prime-global-vs-vanguard-us-500-stock',
+        destination: '/blog/amundi-prime-global-analisis',
+        statusCode: 301,
+      },
+      {
+        source: '/comparar-fondo/vanguard-eurozone-stock-vs-amundi-prime-global',
+        destination: '/blog/amundi-prime-global-analisis',
         statusCode: 301,
       },
     ]

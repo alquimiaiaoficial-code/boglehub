@@ -49,41 +49,21 @@ export interface IndexFund {
    * los fondos se traspasan sin tributar y los ETF no, así que presentarlos aquí les
    * atribuye una ventaja fiscal que NO tienen — justo al revés de lo cierto.
    *
-   * La página NO se retira, porque estas URLs están indexadas y reciben tráfico: la de
-   * `amundi-prime-global` es la que más clics recibe de todo el sitio. Se retira la
-   * afirmación, no la página. Quien llegue buscando ese ISIN se merece leer lo que se sabe.
+   * El 18-sep se retiró la afirmación y no la página, con el argumento de que
+   * `amundi-prime-global` era «la que más clics recibe de todo el sitio». El 19-sep, ya con
+   * la API de Bing, eso resultó ser falso: da 3 clics y /blog/vwce-analisis-completo da 9.
+   * Lo que sí es, y por goleada, es la que MEJOR CONVIERTE: 9 impresiones y 3 clics, un
+   * 33 % frente al 2,6 % de media del sitio.
+   *
+   * Con ese dato la decisión cambia de forma: las dos fichas Prime salen del catálogo de
+   * fondos —no son fondos— y sus URLs van por 301 al artículo que explica qué son. Se
+   * conserva la conversión y se deja de clasificar un ETF como fondo.
    */
   avisoDeRevision?: string
   faq: IndexFundFaq[]
 }
 
 export const INDEX_FUNDS: IndexFund[] = [
-  {
-    slug: 'amundi-prime-global',
-    name: 'Amundi Prime Global',
-    manager: 'Amundi',
-    isin: 'LU1931974692',
-    avisoDeRevision:
-      'Este producto NO es un fondo indexado: es el «Amundi Prime Global UCITS ETF DR (D)», un ETF de DISTRIBUCIÓN que replica el Solactive GBS Developed Markets Large & Mid Cap. Y según justETF ha sido liquidado o fusionado, así que sus datos ya no se actualizan. Al ser un ETF y no un fondo, NO tiene traspaso fiscal libre: venderlo tributa. Comprobado el 18-sep-2026 en justETF y trackingdifferences, y el registro español de fondos no devuelve nada para ese ISIN. La gama viva está hoy domiciliada en IRLANDA, no en Luxemburgo, y sigue siendo ETF en las dos clases: `IE000QIF5N15` (distribución) e `IE0009DRDY20` (acumulación), ambas con un 0,05 % y el mismo índice Solactive. No existe una versión fondo de este producto. La ficha de abajo se escribió creyendo que era un fondo indexado de acumulación y está siendo revisada.',
-    index: 'Solactive GBS Global Markets Large & Mid Cap',
-    ter: 0.05,
-    assetClass: 'Renta variable',
-    region: 'Global desarrollados',
-    accumulating: true,
-    currency: 'EUR',
-    availableAt: ['MyInvestor'],
-    minimum: '1€',
-    tagline: 'El fondo indexado global más barato disponible en España (TER 0,05%)',
-    description:
-      'Comprobado el 18 de septiembre de 2026: este ISIN NO corresponde a un fondo indexado sino al «Amundi Prime Global UCITS ETF DR (D)», un ETF de distribución que replica el Solactive GBS Developed Markets Large & Mid Cap, y justETF lo da por liquidado o fusionado («no fund information is updated anymore»). La diferencia que importa: al ser un ETF y no un fondo, NO entra en el régimen de traspaso del artículo 94 del IRPF, así que venderlo tributa. El TER del 0,05 % sí está confirmado. Esta ficha se escribió antes de comprobarlo y está en revisión.',
-    etfEquivalent: 'SWRD',
-    faq: [
-      { q: '¿Qué índice replica el Amundi Prime Global?', a: 'Replica el Solactive GBS Global Markets Large & Mid Cap, que cubre aproximadamente 1.500-2.000 grandes y medianas empresas de mercados desarrollados. Es equivalente funcional al MSCI World (no incluye emergentes). La correlación con el MSCI World supera el 99,9%.' },
-      { q: '¿Por qué el Amundi Prime Global es tan barato (TER 0,05%)?', a: 'Amundi usa el índice Solactive (propiedad de la alemana Solactive AG) en lugar del MSCI World porque la licencia es más barata. Ese ahorro se traslada al inversor en forma de TER mínimo. La cobertura es prácticamente idéntica a un fondo MSCI World tradicional.' },
-      { q: '¿Dónde puedo comprar el Amundi Prime Global?', a: 'Está disponible principalmente en MyInvestor desde 1€ de inversión mínima, sin comisión de compra ni custodia, con traspaso fiscal libre. Es uno de los fondos estrella de la plataforma para inversores indexados.' },
-      { q: '¿Amundi Prime Global o el ETF SWRD?', a: 'Ambos cubren mercados desarrollados globales a coste bajísimo. El fondo Amundi Prime Global (TER 0,05%) permite traspaso fiscal libre entre fondos en España, ventaja exclusiva de los fondos. El ETF SWRD (TER 0,12%) es ligeramente más caro pero cotiza en bolsa en tiempo real. Para inversor a muy largo plazo en España que valore la fiscalidad: el fondo.' },
-    ],
-  },
   {
     slug: 'vanguard-global-stock',
     name: 'Vanguard Global Stock Index Fund',
@@ -311,29 +291,6 @@ export const INDEX_FUNDS: IndexFund[] = [
     etfEquivalent: 'EIMI',
     faq: [
       { q: '¿Qué fondo de emergentes elijo?', a: 'Amundi Index MSCI EM y Fidelity Emerging Markets tienen el mismo TER (0,20%), ambos replican MSCI Emerging Markets. Vanguard es algo más caro (0,23%). Cualquiera de los tres es válido; elige según disponibilidad y preferencia de gestora.' },
-    ],
-  },
-  {
-    slug: 'amundi-prime-japan',
-    name: 'Amundi Prime Japan',
-    manager: 'Amundi',
-    isin: 'LU2089238385',
-    avisoDeRevision:
-      'Este producto NO es un fondo indexado: es el «Amundi Prime Japan UCITS ETF DR (C)», un ETF. Al ser un ETF y no un fondo, NO tiene traspaso fiscal libre: venderlo tributa. El índice (Solactive GBS Japan Large & Mid Cap), el TER del 0,05 % y que es de acumulación sí están confirmados. Comprobado el 18-sep-2026 en justETF. La ficha de abajo se escribió creyendo que era un fondo y está siendo revisada.',
-    index: 'Solactive GBS Japan',
-    ter: 0.05,
-    assetClass: 'Renta variable',
-    region: 'Japón',
-    accumulating: true,
-    currency: 'EUR',
-    availableAt: ['MyInvestor'],
-    minimum: '1€',
-    tagline: 'Bolsa japonesa con TER mínimo (0,05%) en formato fondo',
-    description:
-      'El Amundi Prime Japan replica el mercado japonés (Solactive GBS Japan) con TER 0,05%. Para inversores que quieren sobreponderar Japón o construir una cartera por regiones. Disponible en MyInvestor con traspaso fiscal libre. Japón representa ~6% del MSCI World.',
-    etfEquivalent: 'SJPA',
-    faq: [
-      { q: '¿Tiene sentido un fondo solo de Japón?', a: 'Para la mayoría de inversores indexados, no como posición principal — Japón ya está en su peso natural (~6%) dentro de un fondo global. Un fondo de Japón tiene sentido como sesgo táctico moderado o para construir una cartera por regiones con control fino de pesos.' },
     ],
   },
 ]

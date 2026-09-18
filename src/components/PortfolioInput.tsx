@@ -62,9 +62,9 @@ export function PortfolioInput() {
             tipo: 'fondo' as const,
           }
         : {
-            valor: r.noAnalizable.fondo.isin,
-            etiqueta: r.noAnalizable.fondo.name,
-            detalle: `Fondo · ${r.noAnalizable.fondo.index}`,
+            valor: r.noAnalizable.isin,
+            etiqueta: r.noAnalizable.nombre,
+            detalle: `Fondo · ${r.noAnalizable.indice}`,
             tipo: 'fondo' as const,
             noAnalizable: r.noAnalizable.motivo,
           },
