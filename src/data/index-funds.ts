@@ -75,7 +75,7 @@ export const INDEX_FUNDS: IndexFund[] = [
     minimum: '1€',
     tagline: 'El fondo indexado global más barato disponible en España (TER 0,05%)',
     description:
-      'El Amundi Prime Global es el fondo indexado con el TER más bajo accesible al inversor particular en España: 0,05% anual. Replica el índice Solactive GBS Global Markets, equivalente funcional al MSCI World (mercados desarrollados, ~1.500-2.000 grandes y medianas empresas). Disponible en MyInvestor desde 1€, con traspaso fiscal libre entre fondos. Para inversores que priorizan el coste mínimo y la eficiencia fiscal española, es difícilmente superable.',
+      'Comprobado el 18 de septiembre de 2026: este ISIN NO corresponde a un fondo indexado sino al «Amundi Prime Global UCITS ETF DR (D)», un ETF de distribución que replica el Solactive GBS Developed Markets Large & Mid Cap, y justETF lo da por liquidado o fusionado («no fund information is updated anymore»). La diferencia que importa: al ser un ETF y no un fondo, NO entra en el régimen de traspaso del artículo 94 del IRPF, así que venderlo tributa. El TER del 0,05 % sí está confirmado. Esta ficha se escribió antes de comprobarlo y está en revisión.',
     etfEquivalent: 'SWRD',
     faq: [
       { q: '¿Qué índice replica el Amundi Prime Global?', a: 'Replica el Solactive GBS Global Markets Large & Mid Cap, que cubre aproximadamente 1.500-2.000 grandes y medianas empresas de mercados desarrollados. Es equivalente funcional al MSCI World (no incluye emergentes). La correlación con el MSCI World supera el 99,9%.' },

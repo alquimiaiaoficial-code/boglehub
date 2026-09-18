@@ -23,7 +23,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const title = `${f.name}: análisis del fondo indexado (ISIN ${f.isin}) 2026`
   // El nombre completo ya va en el title; no lo repetimos aquí para no truncar
   // la description en SERP (mismo criterio que las fichas de ETF).
-  const description = `${f.tagline}. TER ${f.ter}%, índice ${f.index}, con traspaso fiscal libre. Dónde comprarlo en España y comparativa con su ETF equivalente.`
+  // Cuando la ficha está en revisión, la description NO afirma que haya traspaso libre: tres
+  // de estos productos son ETFs y no lo tienen. Y es la description la que sale en el
+  // buscador, así que afirmarlo ahí lo propaga a quien ni siquiera entra.
+  const description = f.avisoDeRevision
+    ? `Datos en revisión. TER ${f.ter}%, índice ${f.index}. Qué se sabe de ${f.name} y qué está sin confirmar.`
+    : `${f.tagline}. TER ${f.ter}%, índice ${f.index}, con traspaso fiscal libre. Dónde comprarlo en España y comparativa con su ETF equivalente.`
 
   return {
     title,
@@ -54,7 +59,13 @@ export default async function FondoPage({ params }: { params: Promise<{ slug: st
     },
     {
       q: `¿El ${f.name} permite traspaso fiscal libre?`,
-      a: `Sí. Al ser un fondo de inversión (no un ETF), el ${f.name} permite traspaso libre entre fondos sin tributar en España. Puedes mover dinero entre este y otros fondos indexados difiriendo el IRPF hasta el reembolso final. Esta es la mayor ventaja fiscal de los fondos sobre los ETFs en España.`,
+      // La respuesta era «Sí» para TODAS las fichas, y tres de estos productos son ETFs, que
+      // están excluidos del régimen por el propio artículo 94.1.a). Responder que sí ahí no
+      // es un matiz de redacción: es decirle a alguien que puede mover su dinero sin pagar
+      // cuando pagaría.
+      a: f.avisoDeRevision
+        ? `No está confirmado, y por eso esta ficha está en revisión. El diferimiento del artículo 94.1.a) de la Ley del IRPF solo se aplica entre fondos de inversión, y excluye expresamente a los fondos cotizados «cualquiera que sea el mercado regulado en el que coticen». Si el producto resulta ser un ETF, venderlo tributa. Hasta comprobarlo no afirmamos ni una cosa ni la otra.`
+        : `Sí. Al ser un fondo de inversión (no un ETF), el ${f.name} permite traspaso libre entre fondos sin tributar en España. Puedes mover dinero entre este y otros fondos indexados difiriendo el IRPF hasta el reembolso final. Esta es la mayor ventaja fiscal de los fondos sobre los ETFs en España.`,
     },
   ]
 
