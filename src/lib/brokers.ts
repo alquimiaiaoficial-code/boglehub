@@ -104,11 +104,26 @@ export const BROKERS: Broker[] = [
       'Planes de ahorro periódicos en ETF totalmente gratuitos.',
       'Cuenta de efectivo remunerada (tipo variable).',
       'Una de las mejores apps de inversión en Europa.',
+      /**
+       * Añadido el 18-sep-2026 a raíz de una respuesta pública de Trade Republic en X, y
+       * comprobado después: la sucursal española se confirmó en el BOE el 24 de abril de
+       * 2025 y la migración de clientes a IBAN español empezó en junio de 2025. Desde
+       * entonces la sucursal retiene IRPF sobre dividendos e intereses e informa a la AEAT,
+       * así que los datos llegan precargados al borrador de la renta.
+       *
+       * Faltaba en la ficha, que solo decía «Alemania», y es justo el dato que a un inversor
+       * español le cambia el trabajo de declarar.
+       */
+      'Tiene sucursal en España desde 2025: retiene IRPF e informa a la AEAT, así que los datos van precargados al borrador de la renta.',
     ],
     cons: [
       'Solo ofrece ETFs y acciones, no fondos indexados con régimen español.',
       'No permite traspasos entre fondos.',
       'Catálogo más reducido que DEGIRO o IBKR.',
+      // El matiz que acompaña al dato de arriba y que conviene no perder: el reporte a la
+      // AEAT cubre desde la migración de cada cliente, no antes. Quien operase en 2024 o
+      // antes de migrar su cuenta sigue teniendo que reconstruir esas operaciones a mano.
+      'El reporte a la AEAT cubre desde que tu cuenta migró a IBAN español (2025); las operaciones anteriores hay que declararlas a mano.',
     ],
     bestFor:
       'Inversor que aporta de forma periódica a uno o dos ETFs concretos y valora simplicidad por encima de todo.',
