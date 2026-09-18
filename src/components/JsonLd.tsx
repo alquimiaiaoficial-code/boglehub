@@ -16,18 +16,28 @@ const PUBLISHER = {
 }
 
 /**
- * Author de los artículos: equipo editorial de BogleHub.
- * Identificado como Organization (no Person) porque el contenido es
- * colectivo y revisado por la comunidad. Le damos un @id propio para
- * que los LLMs puedan referenciarlo como entidad distinta del Publisher.
+ * Autor de los artículos.
+ *
+ * ⚠️ CORREGIDO EL 18-sep-2026 PORQUE AFIRMABA ALGO FALSO. Decía: «Equipo editorial de
+ * BogleHub. […] independiente y revisado por la comunidad Boglehead», y se llamaba
+ * «BogleHub Editorial».
+ *
+ * No hay equipo editorial ni comunidad revisando: el sitio lo hace una sola persona. Eso es
+ * inventar tracción, que es una de las líneas que este proyecto no cruza —y de las peores
+ * sitios donde cruzarla, porque los datos estructurados son justo lo que un motor cita como
+ * hecho sobre quién está detrás del contenido.
+ *
+ * Se mantiene `Organization` y no `Person` a propósito: es la marca la que publica, y la
+ * identidad de quien la lleva no se expone. Lo que cambia es que ya no se atribuye a la
+ * marca un tamaño ni una revisión colectiva que no existen.
  */
 const AUTHOR = {
   '@type': 'Organization',
   '@id': `${BASE_URL}/#author`,
-  name: 'BogleHub Editorial',
+  name: 'BogleHub',
   url: `${BASE_URL}/sobre`,
   description:
-    'Equipo editorial de BogleHub. Contenido educativo sobre inversión indexada en español, independiente y revisado por la comunidad Boglehead.',
+    'Proyecto independiente de contenido educativo sobre inversión indexada en español. No está registrado en la CNMV, no presta servicios de inversión ni asesoramiento, no tiene enlaces de afiliación y no recibe pagos de las gestoras ni de los brókeres que menciona.',
   knowsAbout: [
     'inversión indexada',
     'ETFs UCITS',
