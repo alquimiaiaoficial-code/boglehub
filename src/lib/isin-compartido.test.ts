@@ -81,35 +81,31 @@ describe('ISINs compartidos entre ETFs', () => {
   })
 
   /**
-   * Las fichas SIN ISIN son deliberadas, no un olvido.
+   * El catálogo pasó de 66 ETFs a 55, y ahora TODOS llevan ISIN verificado en fuente.
    *
-   * La noche del 19-sep-2026 se comprobaron los 45 ISINs que no se habían verificado y
-   * **veintiocho estaban equivocados**: eran de otro producto. No erratas de un dígito —
-   * SJPA («MSCI Japan») llevaba el del iShares EURO STOXX Mid, CPXJ («Pacific ex-Japan») el
-   * del Nikkei 225, SGLN («iShares Physical Gold») el de INVESCO.
+   * La historia, por si vuelve a pasar: la noche del 19-sep-2026 se verificaron 45 ISINs
+   * con búsquedas POR LOTES y se retiraron 29. Ese método daba falsos positivos —VUKE,
+   * WSML e IQQH tenían el ISIN correcto—. Rehecha la verificación PRODUCTO A PRODUCTO
+   * («nombre + ticker + ISIN»), aparecieron dos grupos distintos:
    *
-   * Con un 60 % de error el campo dejó de ser publicable, así que se retiró de todas las
-   * fichas salvo las verificadas una a una. Preferimos no dar el dato a darlo mal.
+   *  · 11 fichas donde el ticker era real y su producto relevante, con un gemelo en el
+   *    catálogo del que copiar los repartos verificados: mismo fondo en otra bolsa
+   *    (EMIM=EIMI, SMEA=IMEU, EUNA=AGGH, XDWL=XDWD, VETY=VGEA) o mismo índice (ZPRS e
+   *    IUSN sobre el MSCI World Small Cap, LCUW e IWDA sobre el MSCI World). Arregladas.
    *
-   * AL DÍA SIGUIENTE se rehízo la verificación **producto a producto** («nombre + ticker +
-   * ISIN») en vez de por lotes de ISINs, y resultó que el método de la noche daba falsos
-   * positivos: **VUKE, WSML e IQQH tenían el ISIN correcto y se lo quité**. La purga erró
-   * del lado seguro —quitar en vez de publicar mal— pero erró. Restauradas 14 fichas donde
-   * el ticker y el nombre coinciden con la fuente.
+   *  · 11 fichas sin gemelo del que copiar. `IMID` decía «iShares MSCI World Mid Cap» y es
+   *    el SPDR MSCI ACWI IMI; `EXSG` decía «DivDAX» y es el EURO STOXX Select Dividend 30;
+   *    `XGIG` decía «EUR Corporate Bond» y es un inflación-ligada con cobertura en LIBRAS.
+   *    Poner sus repartos a ojo habría sido inventar el dato que sostiene el analizador.
+   *    Retiradas. Sumaban UNA impresión en Bing en 28 días.
    *
-   * Las 22 que siguen sin ISIN son otra cosa y no se arreglan poniendo uno: en ellas el
-   * TICKER pertenece a un producto distinto del que describe la ficha. `VETY` no es un
-   * ticker de Vanguard (son VECA/VECP), `VAGF` tampoco (es VDCE), `ISPA` es el Global
-   * Select Dividend 100 y no el Europe 30, `FLXE` es el Franklin EM Multi-Factor y no el
-   * European Equity. Eso es una decisión sobre qué es cada página, no un dato que falte.
-   *
-   * Este test no puede comprobar que un ISIN sea el correcto —eso necesita fuente—, pero sí
-   * que nadie vuelva a rellenar el hueco sin pasar por ahí: si aparecen ISINs nuevos, el
-   * conteo sube y hay que explicar de dónde salieron.
+   * La regla que queda: **una ficha de producto no se publica sin identidad comprobada**,
+   * y los repartos se copian de un gemelo verificado o no se ponen.
    */
-  it('solo se publican los ISINs verificados en fuente', () => {
-    const conIsin = getAllEtfs().filter((e) => e.isin).map((e) => e.ticker).sort()
-    expect(conIsin.length, `fichas con ISIN: ${conIsin.join(', ')}`).toBe(44)
+  it('todas las fichas publican un ISIN verificado en fuente', () => {
+    const sinIsin = getAllEtfs().filter((e) => !e.isin).map((e) => e.ticker)
+    expect(sinIsin, `fichas sin ISIN: ${sinIsin.join(', ')}`).toEqual([])
+    expect(getAllEtfs().length).toBe(55)
   })
 
   it('los ISINs que sí están verificados siguen puestos', () => {

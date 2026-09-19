@@ -74,13 +74,9 @@ export const ETF_PAIRS: [string, string][] = [
   // EE.UU. value y growth
   ['ZPRV', 'CSPX'],   // small value vs S&P 500
   // Dividendos
-  ['VHYL', 'FGEQ'],   // dividendos altos vs calidad
-  ['TDIV', 'ISPA'],   // dividendos lideres vs aristócratas
   // Materias primas más allá de oro
-  ['SGLN', 'EXSG'],   // oro vs commodities amplias
   // Renta fija extra
   ['VGOV', 'VGEA'],   // bonos gov UK vs eurozona
-  ['EUNH', 'AGGH'],   // high yield hedged vs agregado
   // Robotic / temáticos
   ['RBOT', 'IQQH'],   // robotica vs hidrogeno (temáticos)
   ['EQQQ', 'RBOT'],   // Nasdaq tradicional vs robotica tematica

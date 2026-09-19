@@ -21,7 +21,7 @@
       "FINANCIAL": 0.16,
       "HEALTHCARE": 0.12,
       "CONSUMER_DISC": 0.11,
-      "INDUSTRIAL": 0.10,
+      "INDUSTRIAL": 0.1,
       "CONSUMER_STAPLES": 0.07,
       "ENERGY": 0.05,
       "MATERIALS": 0.05,
@@ -71,7 +71,7 @@
     "ticker": "IWDA",
     "isin": "IE00B4L5Y983",
     "name": "iShares Core MSCI World UCITS ETF (Acc)",
-    "ter": 0.20,
+    "ter": 0.2,
     "assetClass": "EQUITY",
     "regionAllocation": {
       "US": 0.71,
@@ -89,7 +89,7 @@
       "FINANCIAL": 0.15,
       "HEALTHCARE": 0.13,
       "CONSUMER_DISC": 0.11,
-      "INDUSTRIAL": 0.10,
+      "INDUSTRIAL": 0.1,
       "CONSUMER_STAPLES": 0.07,
       "ENERGY": 0.04,
       "MATERIALS": 0.04,
@@ -127,7 +127,7 @@
       "CONSUMER_STAPLES": 0.07,
       "ENERGY": 0.07,
       "MATERIALS": 0.08,
-      "COMMUNICATION": 0.10,
+      "COMMUNICATION": 0.1,
       "UTILITIES": 0,
       "REAL_ESTATE": 0,
       "DIVERSIFIED": 0
@@ -139,13 +139,13 @@
     "ticker": "AGGH",
     "isin": "IE00BDBRDM35",
     "name": "iShares Core Global Aggregate Bond UCITS ETF EUR Hedged (Acc)",
-    "ter": 0.10,
+    "ter": 0.1,
     "assetClass": "BOND",
     "regionAllocation": {
       "US": 0.45,
       "EUROPE": 0.27,
       "EM": 0,
-      "JAPAN": 0.10,
+      "JAPAN": 0.1,
       "PACIFIC_EX_JAPAN": 0,
       "GLOBAL": 0,
       "UK": 0,
@@ -157,8 +157,8 @@
   },
   {
     "ticker": "VEUR",
-    "name": "Vanguard FTSE Developed Europe UCITS ETF (Acc)",
-    "ter": 0.10,
+    "name": "Vanguard FTSE Developed Europe UCITS ETF (Dist)",
+    "ter": 0.1,
     "assetClass": "EQUITY",
     "regionAllocation": {
       "US": 0,
@@ -173,20 +173,21 @@
     },
     "sectorAllocation": {
       "TECHNOLOGY": 0.08,
-      "FINANCIAL": 0.18,
-      "HEALTHCARE": 0.14,
-      "CONSUMER_DISC": 0.11,
+      "FINANCIAL": 0.17,
+      "HEALTHCARE": 0.15,
+      "CONSUMER_DISC": 0.12,
       "INDUSTRIAL": 0.16,
-      "CONSUMER_STAPLES": 0.10,
+      "CONSUMER_STAPLES": 0.1,
       "ENERGY": 0.07,
       "MATERIALS": 0.07,
       "COMMUNICATION": 0.05,
-      "UTILITIES": 0.04,
+      "UTILITIES": 0.03,
       "REAL_ESTATE": 0,
       "DIVERSIFIED": 0
     },
     "baseCurrency": "EUR",
-    "accumulating": true
+    "accumulating": false,
+    "isin": "IE00B945VV12"
   },
   {
     "ticker": "VFEM",
@@ -206,7 +207,7 @@
       "OTHER": 0
     },
     "sectorAllocation": {
-      "TECHNOLOGY": 0.20,
+      "TECHNOLOGY": 0.2,
       "FINANCIAL": 0.23,
       "HEALTHCARE": 0.04,
       "CONSUMER_DISC": 0.13,
@@ -245,7 +246,7 @@
       "HEALTHCARE": 0.15,
       "CONSUMER_DISC": 0.12,
       "INDUSTRIAL": 0.16,
-      "CONSUMER_STAPLES": 0.10,
+      "CONSUMER_STAPLES": 0.1,
       "ENERGY": 0.07,
       "MATERIALS": 0.07,
       "COMMUNICATION": 0.05,
@@ -278,22 +279,23 @@
   },
   {
     "ticker": "VAGF",
-    "name": "Vanguard USD Corporate Bond UCITS ETF (EUR Hedged) (Acc)",
-    "ter": 0.09,
+    "name": "Vanguard Global Aggregate Bond UCITS ETF EUR Hedged (Acc)",
+    "ter": 0.08,
     "assetClass": "BOND",
     "regionAllocation": {
-      "US": 0.60,
-      "EUROPE": 0.25,
+      "US": 0.45,
+      "EUROPE": 0.27,
       "EM": 0,
-      "JAPAN": 0,
+      "JAPAN": 0.1,
       "PACIFIC_EX_JAPAN": 0,
       "GLOBAL": 0,
       "UK": 0,
       "CHINA": 0,
-      "OTHER": 0.15
+      "OTHER": 0.18
     },
     "baseCurrency": "EUR",
-    "accumulating": true
+    "accumulating": true,
+    "isin": "IE00BG47KH54"
   },
   {
     "ticker": "SXR8",
@@ -333,7 +335,7 @@
     "ticker": "EUNL",
     "isin": "IE00B4L5Y983",
     "name": "iShares Core MSCI World UCITS ETF EUR Listed (Acc)",
-    "ter": 0.20,
+    "ter": 0.2,
     "assetClass": "EQUITY",
     "regionAllocation": {
       "US": 0.71,
@@ -351,7 +353,7 @@
       "FINANCIAL": 0.15,
       "HEALTHCARE": 0.13,
       "CONSUMER_DISC": 0.11,
-      "INDUSTRIAL": 0.10,
+      "INDUSTRIAL": 0.1,
       "CONSUMER_STAPLES": 0.07,
       "ENERGY": 0.04,
       "MATERIALS": 0.04,
@@ -416,13 +418,13 @@
     },
     "sectorAllocation": {
       "TECHNOLOGY": 0,
-      "FINANCIAL": 0.20,
+      "FINANCIAL": 0.2,
       "HEALTHCARE": 0.12,
       "CONSUMER_DISC": 0.08,
-      "INDUSTRIAL": 0.10,
+      "INDUSTRIAL": 0.1,
       "CONSUMER_STAPLES": 0.15,
       "ENERGY": 0.15,
-      "MATERIALS": 0.10,
+      "MATERIALS": 0.1,
       "COMMUNICATION": 0.07,
       "UTILITIES": 0.03,
       "REAL_ESTATE": 0,
@@ -430,39 +432,6 @@
     },
     "baseCurrency": "GBP",
     "accumulating": false
-  },
-  {
-    "ticker": "IMID",
-    "name": "iShares MSCI World Mid Cap UCITS ETF (Acc)",
-    "ter": 0.30,
-    "assetClass": "EQUITY",
-    "regionAllocation": {
-      "US": 0.60,
-      "EUROPE": 0.20,
-      "EM": 0,
-      "JAPAN": 0.10,
-      "PACIFIC_EX_JAPAN": 0.07,
-      "GLOBAL": 0,
-      "UK": 0,
-      "CHINA": 0,
-      "OTHER": 0.03
-    },
-    "sectorAllocation": {
-      "TECHNOLOGY": 0.14,
-      "FINANCIAL": 0.15,
-      "HEALTHCARE": 0.11,
-      "CONSUMER_DISC": 0.13,
-      "INDUSTRIAL": 0.18,
-      "CONSUMER_STAPLES": 0.07,
-      "ENERGY": 0.04,
-      "MATERIALS": 0.07,
-      "COMMUNICATION": 0,
-      "UTILITIES": 0.03,
-      "REAL_ESTATE": 0.08,
-      "DIVERSIFIED": 0
-    },
-    "baseCurrency": "USD",
-    "accumulating": true
   },
   {
     "ticker": "IUSA",
@@ -499,39 +468,6 @@
     "accumulating": false
   },
   {
-    "ticker": "EQDS",
-    "name": "iShares MSCI World Quality Dividend ESG UCITS ETF (Acc)",
-    "ter": 0.38,
-    "assetClass": "EQUITY",
-    "regionAllocation": {
-      "US": 0.55,
-      "EUROPE": 0.25,
-      "EM": 0,
-      "JAPAN": 0.10,
-      "PACIFIC_EX_JAPAN": 0.07,
-      "GLOBAL": 0,
-      "UK": 0,
-      "CHINA": 0,
-      "OTHER": 0.03
-    },
-    "sectorAllocation": {
-      "TECHNOLOGY": 0.12,
-      "FINANCIAL": 0.20,
-      "HEALTHCARE": 0.15,
-      "CONSUMER_DISC": 0.07,
-      "INDUSTRIAL": 0.12,
-      "CONSUMER_STAPLES": 0.14,
-      "ENERGY": 0.08,
-      "MATERIALS": 0.05,
-      "COMMUNICATION": 0.03,
-      "UTILITIES": 0.04,
-      "REAL_ESTATE": 0,
-      "DIVERSIFIED": 0
-    },
-    "baseCurrency": "USD",
-    "accumulating": true
-  },
-  {
     "ticker": "XDWD",
     "isin": "IE00BJ0KDQ92",
     "name": "Xtrackers MSCI World UCITS ETF 1C (Acc)",
@@ -553,7 +489,7 @@
       "FINANCIAL": 0.15,
       "HEALTHCARE": 0.13,
       "CONSUMER_DISC": 0.11,
-      "INDUSTRIAL": 0.10,
+      "INDUSTRIAL": 0.1,
       "CONSUMER_STAPLES": 0.07,
       "ENERGY": 0.04,
       "MATERIALS": 0.04,
@@ -587,7 +523,7 @@
       "FINANCIAL": 0.16,
       "HEALTHCARE": 0.12,
       "CONSUMER_DISC": 0.11,
-      "INDUSTRIAL": 0.10,
+      "INDUSTRIAL": 0.1,
       "CONSUMER_STAPLES": 0.07,
       "ENERGY": 0.05,
       "MATERIALS": 0.05,
@@ -601,7 +537,7 @@
   },
   {
     "ticker": "LCUW",
-    "name": "Lyxor Core MSCI World (DR) UCITS ETF (Acc)",
+    "name": "Amundi MSCI World V UCITS ETF (Acc)",
     "ter": 0.12,
     "assetClass": "EQUITY",
     "regionAllocation": {
@@ -620,7 +556,7 @@
       "FINANCIAL": 0.15,
       "HEALTHCARE": 0.13,
       "CONSUMER_DISC": 0.11,
-      "INDUSTRIAL": 0.10,
+      "INDUSTRIAL": 0.1,
       "CONSUMER_STAPLES": 0.07,
       "ENERGY": 0.04,
       "MATERIALS": 0.04,
@@ -630,7 +566,8 @@
       "DIVERSIFIED": 0
     },
     "baseCurrency": "EUR",
-    "accumulating": true
+    "accumulating": true,
+    "isin": "LU1781541179"
   },
   {
     "ticker": "SWRD",
@@ -654,7 +591,7 @@
       "FINANCIAL": 0.15,
       "HEALTHCARE": 0.13,
       "CONSUMER_DISC": 0.11,
-      "INDUSTRIAL": 0.10,
+      "INDUSTRIAL": 0.1,
       "CONSUMER_STAPLES": 0.07,
       "ENERGY": 0.04,
       "MATERIALS": 0.04,
@@ -688,7 +625,7 @@
       "FINANCIAL": 0.16,
       "HEALTHCARE": 0.12,
       "CONSUMER_DISC": 0.11,
-      "INDUSTRIAL": 0.10,
+      "INDUSTRIAL": 0.1,
       "CONSUMER_STAPLES": 0.07,
       "ENERGY": 0.05,
       "MATERIALS": 0.04,
@@ -722,7 +659,7 @@
       "FINANCIAL": 0.16,
       "HEALTHCARE": 0.12,
       "CONSUMER_DISC": 0.11,
-      "INDUSTRIAL": 0.10,
+      "INDUSTRIAL": 0.1,
       "CONSUMER_STAPLES": 0.07,
       "ENERGY": 0.05,
       "MATERIALS": 0.05,
@@ -738,7 +675,7 @@
     "ticker": "ISAC",
     "isin": "IE00B6R52259",
     "name": "iShares MSCI ACWI UCITS ETF (Acc)",
-    "ter": 0.20,
+    "ter": 0.2,
     "assetClass": "EQUITY",
     "regionAllocation": {
       "US": 0.63,
@@ -756,7 +693,7 @@
       "FINANCIAL": 0.16,
       "HEALTHCARE": 0.12,
       "CONSUMER_DISC": 0.11,
-      "INDUSTRIAL": 0.10,
+      "INDUSTRIAL": 0.1,
       "CONSUMER_STAPLES": 0.07,
       "ENERGY": 0.05,
       "MATERIALS": 0.04,
@@ -790,7 +727,7 @@
       "FINANCIAL": 0.15,
       "HEALTHCARE": 0.13,
       "CONSUMER_DISC": 0.11,
-      "INDUSTRIAL": 0.10,
+      "INDUSTRIAL": 0.1,
       "CONSUMER_STAPLES": 0.07,
       "ENERGY": 0.04,
       "MATERIALS": 0.04,
@@ -893,7 +830,7 @@
       "HEALTHCARE": 0.14,
       "CONSUMER_DISC": 0.11,
       "INDUSTRIAL": 0.16,
-      "CONSUMER_STAPLES": 0.10,
+      "CONSUMER_STAPLES": 0.1,
       "ENERGY": 0.07,
       "MATERIALS": 0.07,
       "COMMUNICATION": 0.05,
@@ -905,9 +842,9 @@
     "accumulating": false
   },
   {
-    "ticker": "CEUG",
-    "name": "Amundi MSCI Europe UCITS ETF (Acc)",
-    "ter": 0.15,
+    "ticker": "SMEA",
+    "name": "iShares Core MSCI Europe UCITS ETF EUR (Acc)",
+    "ter": 0.12,
     "assetClass": "EQUITY",
     "regionAllocation": {
       "US": 0,
@@ -922,53 +859,21 @@
     },
     "sectorAllocation": {
       "TECHNOLOGY": 0.08,
-      "FINANCIAL": 0.18,
-      "HEALTHCARE": 0.14,
-      "CONSUMER_DISC": 0.11,
+      "FINANCIAL": 0.17,
+      "HEALTHCARE": 0.15,
+      "CONSUMER_DISC": 0.12,
       "INDUSTRIAL": 0.16,
-      "CONSUMER_STAPLES": 0.10,
+      "CONSUMER_STAPLES": 0.1,
       "ENERGY": 0.07,
       "MATERIALS": 0.07,
       "COMMUNICATION": 0.05,
-      "UTILITIES": 0.04,
+      "UTILITIES": 0.03,
       "REAL_ESTATE": 0,
       "DIVERSIFIED": 0
     },
     "baseCurrency": "EUR",
-    "accumulating": true
-  },
-  {
-    "ticker": "SMEA",
-    "name": "iShares MSCI Europe Small Cap UCITS ETF (Acc)",
-    "ter": 0.40,
-    "assetClass": "EQUITY",
-    "regionAllocation": {
-      "US": 0,
-      "EUROPE": 1.0,
-      "EM": 0,
-      "JAPAN": 0,
-      "PACIFIC_EX_JAPAN": 0,
-      "GLOBAL": 0,
-      "UK": 0,
-      "CHINA": 0,
-      "OTHER": 0
-    },
-    "sectorAllocation": {
-      "TECHNOLOGY": 0.10,
-      "FINANCIAL": 0.14,
-      "HEALTHCARE": 0.12,
-      "CONSUMER_DISC": 0.13,
-      "INDUSTRIAL": 0.22,
-      "CONSUMER_STAPLES": 0.07,
-      "ENERGY": 0.03,
-      "MATERIALS": 0.09,
-      "COMMUNICATION": 0.03,
-      "UTILITIES": 0.04,
-      "REAL_ESTATE": 0.03,
-      "DIVERSIFIED": 0
-    },
-    "baseCurrency": "EUR",
-    "accumulating": true
+    "accumulating": true,
+    "isin": "IE00B4K48X80"
   },
   {
     "ticker": "IS3N",
@@ -996,7 +901,7 @@
       "CONSUMER_STAPLES": 0.07,
       "ENERGY": 0.07,
       "MATERIALS": 0.08,
-      "COMMUNICATION": 0.10,
+      "COMMUNICATION": 0.1,
       "UTILITIES": 0,
       "REAL_ESTATE": 0,
       "DIVERSIFIED": 0
@@ -1030,7 +935,7 @@
       "CONSUMER_STAPLES": 0.07,
       "ENERGY": 0.07,
       "MATERIALS": 0.08,
-      "COMMUNICATION": 0.10,
+      "COMMUNICATION": 0.1,
       "UTILITIES": 0,
       "REAL_ESTATE": 0,
       "DIVERSIFIED": 0
@@ -1040,7 +945,7 @@
   },
   {
     "ticker": "EMIM",
-    "name": "iShares MSCI EM UCITS ETF (Dist)",
+    "name": "iShares Core MSCI EM IMI UCITS ETF EUR (Acc)",
     "ter": 0.18,
     "assetClass": "EQUITY",
     "regionAllocation": {
@@ -1063,13 +968,14 @@
       "CONSUMER_STAPLES": 0.07,
       "ENERGY": 0.07,
       "MATERIALS": 0.08,
-      "COMMUNICATION": 0.10,
+      "COMMUNICATION": 0.1,
       "UTILITIES": 0,
       "REAL_ESTATE": 0,
       "DIVERSIFIED": 0
     },
     "baseCurrency": "USD",
-    "accumulating": false
+    "accumulating": true,
+    "isin": "IE00BKM4GZ66"
   },
   {
     "ticker": "WSML",
@@ -1078,7 +984,7 @@
     "ter": 0.35,
     "assetClass": "EQUITY",
     "regionAllocation": {
-      "US": 0.60,
+      "US": 0.6,
       "EUROPE": 0.18,
       "EM": 0,
       "JAPAN": 0.12,
@@ -1093,7 +999,7 @@
       "FINANCIAL": 0.16,
       "HEALTHCARE": 0.11,
       "CONSUMER_DISC": 0.13,
-      "INDUSTRIAL": 0.20,
+      "INDUSTRIAL": 0.2,
       "CONSUMER_STAPLES": 0.06,
       "ENERGY": 0.04,
       "MATERIALS": 0.08,
@@ -1112,7 +1018,7 @@
     "ter": 0.35,
     "assetClass": "EQUITY",
     "regionAllocation": {
-      "US": 0.60,
+      "US": 0.6,
       "EUROPE": 0.18,
       "EM": 0,
       "JAPAN": 0.12,
@@ -1127,7 +1033,7 @@
       "FINANCIAL": 0.16,
       "HEALTHCARE": 0.11,
       "CONSUMER_DISC": 0.13,
-      "INDUSTRIAL": 0.20,
+      "INDUSTRIAL": 0.2,
       "CONSUMER_STAPLES": 0.06,
       "ENERGY": 0.04,
       "MATERIALS": 0.08,
@@ -1141,36 +1047,37 @@
   },
   {
     "ticker": "ZPRS",
-    "name": "SPDR MSCI Europe Small Cap Value Weighted UCITS ETF",
-    "ter": 0.30,
+    "name": "SPDR MSCI World Small Cap UCITS ETF (Acc)",
+    "ter": 0.45,
     "assetClass": "EQUITY",
     "regionAllocation": {
-      "US": 0,
-      "EUROPE": 1.0,
+      "US": 0.6,
+      "EUROPE": 0.18,
       "EM": 0,
-      "JAPAN": 0,
-      "PACIFIC_EX_JAPAN": 0,
+      "JAPAN": 0.12,
+      "PACIFIC_EX_JAPAN": 0.07,
       "GLOBAL": 0,
       "UK": 0,
       "CHINA": 0,
-      "OTHER": 0
+      "OTHER": 0.03
     },
     "sectorAllocation": {
-      "TECHNOLOGY": 0.06,
-      "FINANCIAL": 0.18,
-      "HEALTHCARE": 0.09,
-      "CONSUMER_DISC": 0.11,
-      "INDUSTRIAL": 0.20,
-      "CONSUMER_STAPLES": 0.09,
-      "ENERGY": 0.07,
-      "MATERIALS": 0.11,
-      "COMMUNICATION": 0.03,
-      "UTILITIES": 0.06,
-      "REAL_ESTATE": 0,
+      "TECHNOLOGY": 0.14,
+      "FINANCIAL": 0.16,
+      "HEALTHCARE": 0.11,
+      "CONSUMER_DISC": 0.13,
+      "INDUSTRIAL": 0.2,
+      "CONSUMER_STAPLES": 0.06,
+      "ENERGY": 0.04,
+      "MATERIALS": 0.08,
+      "COMMUNICATION": 0.02,
+      "UTILITIES": 0.03,
+      "REAL_ESTATE": 0.03,
       "DIVERSIFIED": 0
     },
     "baseCurrency": "EUR",
-    "accumulating": true
+    "accumulating": true,
+    "isin": "IE00BCBJG560"
   },
   {
     "ticker": "VGEA",
@@ -1189,30 +1096,32 @@
       "OTHER": 0
     },
     "baseCurrency": "EUR",
-    "accumulating": true
+    "accumulating": true,
+    "isin": "IE00BH04GL39"
   },
   {
     "ticker": "EUNA",
-    "name": "iShares Core EUR Govt Bond UCITS ETF (Acc)",
-    "ter": 0.09,
+    "name": "iShares Core Global Aggregate Bond UCITS ETF EUR Hedged (Acc)",
+    "ter": 0.1,
     "assetClass": "BOND",
     "regionAllocation": {
-      "US": 0,
-      "EUROPE": 1.0,
+      "US": 0.45,
+      "EUROPE": 0.27,
       "EM": 0,
-      "JAPAN": 0,
+      "JAPAN": 0.1,
       "PACIFIC_EX_JAPAN": 0,
       "GLOBAL": 0,
       "UK": 0,
       "CHINA": 0,
-      "OTHER": 0
+      "OTHER": 0.18
     },
     "baseCurrency": "EUR",
-    "accumulating": true
+    "accumulating": true,
+    "isin": "IE00BDBRDM35"
   },
   {
     "ticker": "IBGX",
-    "name": "iShares EUR Govt Bond 7-10yr UCITS ETF (Dist)",
+    "name": "iShares EUR Govt Bond 3-5yr UCITS ETF (Dist)",
     "ter": 0.15,
     "assetClass": "BOND",
     "regionAllocation": {
@@ -1227,31 +1136,13 @@
       "OTHER": 0
     },
     "baseCurrency": "EUR",
-    "accumulating": false
+    "accumulating": false,
+    "isin": "IE00B1FZS681"
   },
   {
     "ticker": "VETY",
-    "name": "Vanguard EUR Corporate Bond UCITS ETF (Acc)",
-    "ter": 0.09,
-    "assetClass": "BOND",
-    "regionAllocation": {
-      "US": 0.10,
-      "EUROPE": 0.80,
-      "EM": 0,
-      "JAPAN": 0,
-      "PACIFIC_EX_JAPAN": 0,
-      "GLOBAL": 0,
-      "UK": 0,
-      "CHINA": 0,
-      "OTHER": 0.10
-    },
-    "baseCurrency": "EUR",
-    "accumulating": true
-  },
-  {
-    "ticker": "SEGA",
-    "name": "SPDR Bloomberg Euro Government Bond UCITS ETF (Acc)",
-    "ter": 0.15,
+    "name": "Vanguard EUR Eurozone Government Bond UCITS ETF (Dist)",
+    "ter": 0.07,
     "assetClass": "BOND",
     "regionAllocation": {
       "US": 0,
@@ -1265,7 +1156,8 @@
       "OTHER": 0
     },
     "baseCurrency": "EUR",
-    "accumulating": true
+    "accumulating": false,
+    "isin": "IE00BZ163H91"
   },
   {
     "ticker": "VHYL",
@@ -1274,7 +1166,7 @@
     "ter": 0.29,
     "assetClass": "EQUITY",
     "regionAllocation": {
-      "US": 0.40,
+      "US": 0.4,
       "EUROPE": 0.22,
       "EM": 0.14,
       "JAPAN": 0.11,
@@ -1287,7 +1179,7 @@
     "sectorAllocation": {
       "TECHNOLOGY": 0.06,
       "FINANCIAL": 0.24,
-      "HEALTHCARE": 0.10,
+      "HEALTHCARE": 0.1,
       "CONSUMER_DISC": 0.07,
       "INDUSTRIAL": 0.11,
       "CONSUMER_STAPLES": 0.11,
@@ -1302,72 +1194,6 @@
     "accumulating": false
   },
   {
-    "ticker": "ISPA",
-    "name": "iShares STOXX Europe Select Dividend 30 UCITS ETF (Dist)",
-    "ter": 0.31,
-    "assetClass": "EQUITY",
-    "regionAllocation": {
-      "US": 0,
-      "EUROPE": 1.0,
-      "EM": 0,
-      "JAPAN": 0,
-      "PACIFIC_EX_JAPAN": 0,
-      "GLOBAL": 0,
-      "UK": 0,
-      "CHINA": 0,
-      "OTHER": 0
-    },
-    "sectorAllocation": {
-      "TECHNOLOGY": 0.03,
-      "FINANCIAL": 0.22,
-      "HEALTHCARE": 0.08,
-      "CONSUMER_DISC": 0.06,
-      "INDUSTRIAL": 0.12,
-      "CONSUMER_STAPLES": 0.12,
-      "ENERGY": 0.12,
-      "MATERIALS": 0.08,
-      "COMMUNICATION": 0.08,
-      "UTILITIES": 0.09,
-      "REAL_ESTATE": 0,
-      "DIVERSIFIED": 0
-    },
-    "baseCurrency": "EUR",
-    "accumulating": false
-  },
-  {
-    "ticker": "FGEQ",
-    "name": "Fidelity Global Quality Income UCITS ETF (Acc)",
-    "ter": 0.40,
-    "assetClass": "EQUITY",
-    "regionAllocation": {
-      "US": 0.55,
-      "EUROPE": 0.20,
-      "EM": 0,
-      "JAPAN": 0.10,
-      "PACIFIC_EX_JAPAN": 0.07,
-      "GLOBAL": 0,
-      "UK": 0,
-      "CHINA": 0,
-      "OTHER": 0.08
-    },
-    "sectorAllocation": {
-      "TECHNOLOGY": 0.14,
-      "FINANCIAL": 0.18,
-      "HEALTHCARE": 0.14,
-      "CONSUMER_DISC": 0.08,
-      "INDUSTRIAL": 0.12,
-      "CONSUMER_STAPLES": 0.14,
-      "ENERGY": 0.07,
-      "MATERIALS": 0.04,
-      "COMMUNICATION": 0.05,
-      "UTILITIES": 0.04,
-      "REAL_ESTATE": 0,
-      "DIVERSIFIED": 0
-    },
-    "baseCurrency": "USD",
-    "accumulating": true
-  },
-  {
     "ticker": "TDIV",
     "isin": "NL0011683594",
     "name": "VanEck Morningstar Developed Markets Dividend Leaders UCITS ETF (Dist)",
@@ -1378,18 +1204,18 @@
       "EUROPE": 0.34,
       "EM": 0,
       "JAPAN": 0.08,
-      "PACIFIC_EX_JAPAN": 0.10,
+      "PACIFIC_EX_JAPAN": 0.1,
       "GLOBAL": 0,
       "UK": 0,
       "CHINA": 0,
-      "OTHER": 0.20
+      "OTHER": 0.2
     },
     "sectorAllocation": {
       "TECHNOLOGY": 0.05,
       "FINANCIAL": 0.22,
       "HEALTHCARE": 0.08,
       "CONSUMER_DISC": 0.06,
-      "INDUSTRIAL": 0.10,
+      "INDUSTRIAL": 0.1,
       "CONSUMER_STAPLES": 0.12,
       "ENERGY": 0.14,
       "MATERIALS": 0.06,
@@ -1402,43 +1228,10 @@
     "accumulating": false
   },
   {
-    "ticker": "EXSG",
-    "name": "iShares DivDAX UCITS ETF (Dist)",
-    "ter": 0.31,
-    "assetClass": "EQUITY",
-    "regionAllocation": {
-      "US": 0,
-      "EUROPE": 1.0,
-      "EM": 0,
-      "JAPAN": 0,
-      "PACIFIC_EX_JAPAN": 0,
-      "GLOBAL": 0,
-      "UK": 0,
-      "CHINA": 0,
-      "OTHER": 0
-    },
-    "sectorAllocation": {
-      "TECHNOLOGY": 0.05,
-      "FINANCIAL": 0.20,
-      "HEALTHCARE": 0.12,
-      "CONSUMER_DISC": 0.08,
-      "INDUSTRIAL": 0.15,
-      "CONSUMER_STAPLES": 0.10,
-      "ENERGY": 0.10,
-      "MATERIALS": 0.10,
-      "COMMUNICATION": 0.05,
-      "UTILITIES": 0.05,
-      "REAL_ESTATE": 0,
-      "DIVERSIFIED": 0
-    },
-    "baseCurrency": "EUR",
-    "accumulating": false
-  },
-  {
     "ticker": "EQQQ",
     "isin": "IE0032077012",
     "name": "Invesco EQQQ Nasdaq-100 UCITS ETF (Dist)",
-    "ter": 0.30,
+    "ter": 0.3,
     "assetClass": "EQUITY",
     "regionAllocation": {
       "US": 0.92,
@@ -1574,7 +1367,7 @@
     "ticker": "CPXJ",
     "isin": "IE00B52MJY50",
     "name": "iShares Core MSCI Pacific ex-Japan UCITS ETF (Acc)",
-    "ter": 0.20,
+    "ter": 0.2,
     "assetClass": "EQUITY",
     "regionAllocation": {
       "US": 0,
@@ -1588,12 +1381,12 @@
       "OTHER": 0
     },
     "sectorAllocation": {
-      "TECHNOLOGY": 0.10,
-      "FINANCIAL": 0.30,
+      "TECHNOLOGY": 0.1,
+      "FINANCIAL": 0.3,
       "HEALTHCARE": 0.07,
       "CONSUMER_DISC": 0.06,
-      "INDUSTRIAL": 0.10,
-      "CONSUMER_STAPLES": 0.10,
+      "INDUSTRIAL": 0.1,
+      "CONSUMER_STAPLES": 0.1,
       "ENERGY": 0.05,
       "MATERIALS": 0.12,
       "COMMUNICATION": 0.04,
@@ -1686,7 +1479,7 @@
       "FINANCIAL": 0.14,
       "HEALTHCARE": 0.16,
       "CONSUMER_DISC": 0.09,
-      "INDUSTRIAL": 0.10,
+      "INDUSTRIAL": 0.1,
       "CONSUMER_STAPLES": 0.09,
       "ENERGY": 0.02,
       "MATERIALS": 0.02,
@@ -1719,7 +1512,7 @@
       "TECHNOLOGY": 0.35,
       "FINANCIAL": 0.14,
       "HEALTHCARE": 0.12,
-      "CONSUMER_DISC": 0.10,
+      "CONSUMER_DISC": 0.1,
       "INDUSTRIAL": 0.09,
       "CONSUMER_STAPLES": 0.06,
       "ENERGY": 0.03,
@@ -1736,7 +1529,7 @@
     "ticker": "ZPRV",
     "isin": "IE00BSPLC413",
     "name": "SPDR MSCI USA Small Cap Value Weighted UCITS ETF (Acc)",
-    "ter": 0.30,
+    "ter": 0.3,
     "assetClass": "EQUITY",
     "regionAllocation": {
       "US": 1.0,
@@ -1788,7 +1581,7 @@
       "FINANCIAL": 0.13,
       "HEALTHCARE": 0.16,
       "CONSUMER_DISC": 0.09,
-      "INDUSTRIAL": 0.10,
+      "INDUSTRIAL": 0.1,
       "CONSUMER_STAPLES": 0.09,
       "ENERGY": 0.02,
       "MATERIALS": 0.02,
@@ -1802,36 +1595,37 @@
   },
   {
     "ticker": "XDWL",
-    "name": "Xtrackers MSCI World Value Factor UCITS ETF 1C (Acc)",
-    "ter": 0.25,
+    "name": "Xtrackers MSCI World UCITS ETF 1D (Dist)",
+    "ter": 0.12,
     "assetClass": "EQUITY",
     "regionAllocation": {
-      "US": 0.58,
-      "EUROPE": 0.22,
+      "US": 0.71,
+      "EUROPE": 0.16,
       "EM": 0,
-      "JAPAN": 0.11,
-      "PACIFIC_EX_JAPAN": 0.06,
+      "JAPAN": 0.07,
+      "PACIFIC_EX_JAPAN": 0.04,
       "GLOBAL": 0,
       "UK": 0,
       "CHINA": 0,
-      "OTHER": 0.03
+      "OTHER": 0.02
     },
     "sectorAllocation": {
-      "TECHNOLOGY": 0.12,
-      "FINANCIAL": 0.22,
-      "HEALTHCARE": 0.12,
-      "CONSUMER_DISC": 0.09,
-      "INDUSTRIAL": 0.11,
-      "CONSUMER_STAPLES": 0.10,
-      "ENERGY": 0.09,
-      "MATERIALS": 0.06,
-      "COMMUNICATION": 0.06,
-      "UTILITIES": 0.03,
-      "REAL_ESTATE": 0,
+      "TECHNOLOGY": 0.25,
+      "FINANCIAL": 0.15,
+      "HEALTHCARE": 0.13,
+      "CONSUMER_DISC": 0.11,
+      "INDUSTRIAL": 0.1,
+      "CONSUMER_STAPLES": 0.07,
+      "ENERGY": 0.04,
+      "MATERIALS": 0.04,
+      "COMMUNICATION": 0.08,
+      "UTILITIES": 0.02,
+      "REAL_ESTATE": 0.01,
       "DIVERSIFIED": 0
     },
     "baseCurrency": "USD",
-    "accumulating": true
+    "accumulating": false,
+    "isin": "IE00BK1PV551"
   },
   {
     "ticker": "VGOV",
@@ -1854,114 +1648,24 @@
     "accumulating": true
   },
   {
-    "ticker": "XGIG",
-    "name": "Xtrackers II EUR Corporate Bond UCITS ETF 1C (Acc)",
-    "ter": 0.12,
-    "assetClass": "BOND",
-    "regionAllocation": {
-      "US": 0.12,
-      "EUROPE": 0.78,
-      "EM": 0,
-      "JAPAN": 0,
-      "PACIFIC_EX_JAPAN": 0,
-      "GLOBAL": 0,
-      "UK": 0,
-      "CHINA": 0,
-      "OTHER": 0.10
-    },
-    "baseCurrency": "EUR",
-    "accumulating": true
-  },
-  {
-    "ticker": "FLXE",
-    "name": "Franklin LibertyQ European Equity UCITS ETF (Acc)",
-    "ter": 0.25,
-    "assetClass": "EQUITY",
-    "regionAllocation": {
-      "US": 0,
-      "EUROPE": 1.0,
-      "EM": 0,
-      "JAPAN": 0,
-      "PACIFIC_EX_JAPAN": 0,
-      "GLOBAL": 0,
-      "UK": 0,
-      "CHINA": 0,
-      "OTHER": 0
-    },
-    "sectorAllocation": {
-      "TECHNOLOGY": 0.12,
-      "FINANCIAL": 0.18,
-      "HEALTHCARE": 0.13,
-      "CONSUMER_DISC": 0.10,
-      "INDUSTRIAL": 0.16,
-      "CONSUMER_STAPLES": 0.11,
-      "ENERGY": 0.07,
-      "MATERIALS": 0.07,
-      "COMMUNICATION": 0.04,
-      "UTILITIES": 0.02,
-      "REAL_ESTATE": 0,
-      "DIVERSIFIED": 0
-    },
-    "baseCurrency": "EUR",
-    "accumulating": true
-  },
-  {
-    "ticker": "EUNH",
-    "name": "iShares Core EUR Corp Bond UCITS ETF (Dist)",
-    "ter": 0.20,
-    "assetClass": "BOND",
-    "regionAllocation": {
-      "US": 0.12,
-      "EUROPE": 0.78,
-      "EM": 0,
-      "JAPAN": 0,
-      "PACIFIC_EX_JAPAN": 0,
-      "GLOBAL": 0,
-      "UK": 0,
-      "CHINA": 0,
-      "OTHER": 0.10
-    },
-    "baseCurrency": "EUR",
-    "accumulating": false
-  },
-  {
-    "ticker": "WTEF",
-    "name": "WisdomTree Global Efficient Core UCITS ETF (Acc)",
-    "ter": 0.25,
-    "assetClass": "MIXED",
-    "regionAllocation": {
-      "US": 0.63,
-      "EUROPE": 0.14,
-      "EM": 0.05,
-      "JAPAN": 0.06,
-      "PACIFIC_EX_JAPAN": 0.03,
-      "GLOBAL": 0.09,
-      "UK": 0,
-      "CHINA": 0,
-      "OTHER": 0
-    },
-    "baseCurrency": "USD",
-    "accumulating": true
-  },
-  {
     "ticker": "RBOT",
     "isin": "IE00BYZK4552",
     "name": "iShares Automation & Robotics UCITS ETF (Acc)",
-    "ter": 0.40,
+    "ter": 0.4,
     "assetClass": "EQUITY",
     "regionAllocation": {
-      "US": 0.40,
+      "US": 0.4,
       "EUROPE": 0.18,
       "EM": 0,
       "JAPAN": 0.28,
-      "PACIFIC_EX_JAPAN": 0.10,
+      "PACIFIC_EX_JAPAN": 0.1,
       "GLOBAL": 0,
       "UK": 0,
       "CHINA": 0.04,
       "OTHER": 0
     },
     "sectorAllocation": {
-      "TECHNOLOGY": 0.50,
+      "TECHNOLOGY": 0.5,
       "FINANCIAL": 0,
       "HEALTHCARE": 0.08,
       "CONSUMER_DISC": 0.05,
@@ -1985,23 +1689,23 @@
     "assetClass": "EQUITY",
     "regionAllocation": {
       "US": 0.45,
-      "EUROPE": 0.30,
+      "EUROPE": 0.3,
       "EM": 0,
       "JAPAN": 0.05,
-      "PACIFIC_EX_JAPAN": 0.10,
+      "PACIFIC_EX_JAPAN": 0.1,
       "GLOBAL": 0,
       "UK": 0,
-      "CHINA": 0.10,
+      "CHINA": 0.1,
       "OTHER": 0
     },
     "sectorAllocation": {
-      "TECHNOLOGY": 0.10,
+      "TECHNOLOGY": 0.1,
       "FINANCIAL": 0,
       "HEALTHCARE": 0,
       "CONSUMER_DISC": 0,
-      "INDUSTRIAL": 0.20,
+      "INDUSTRIAL": 0.2,
       "CONSUMER_STAPLES": 0,
-      "ENERGY": 0.30,
+      "ENERGY": 0.3,
       "MATERIALS": 0.05,
       "COMMUNICATION": 0,
       "UTILITIES": 0.35,

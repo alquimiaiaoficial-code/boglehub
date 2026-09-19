@@ -7,16 +7,16 @@ const yf = new YahooFinance()
 const SUFFIX_MAP: Record<string, string> = {
   VWCE: '.DE', CSPX: '.L', IWDA: '.AS', EIMI: '.L', AGGH: '.L',
   VEUR: '.L', VFEM: '.L', IMEU: '.L', SEMB: '.L', VAGF: '.L',
-  SXR8: '.DE', EUNL: '.DE', VUSA: '.L', VUKE: '.L', IMID: '.L',
-  IUSA: '.L', EQDS: '.L', XDWD: '.DE', VWRL: '.L', LCUW: '.PA',
+  SXR8: '.DE', EUNL: '.DE', VUSA: '.L', VUKE: '.L',
+  IUSA: '.L', XDWD: '.DE', VWRL: '.L', LCUW: '.PA',
 }
 
 // Currency each ticker is quoted in on its reference exchange (GBp = pence)
 const QUOTE_CURRENCY: Record<string, 'USD' | 'EUR' | 'GBp' | 'GBP'> = {
   VWCE: 'EUR', CSPX: 'USD', IWDA: 'USD', EIMI: 'USD', AGGH: 'USD',
   VEUR: 'EUR', VFEM: 'USD', IMEU: 'EUR', SEMB: 'USD', VAGF: 'EUR',
-  SXR8: 'EUR', EUNL: 'EUR', VUSA: 'GBp', VUKE: 'GBp', IMID: 'USD',
-  IUSA: 'GBp', EQDS: 'GBp', XDWD: 'EUR', VWRL: 'GBp', LCUW: 'EUR',
+  SXR8: 'EUR', EUNL: 'EUR', VUSA: 'GBp', VUKE: 'GBp',
+  IUSA: 'GBp', XDWD: 'EUR', VWRL: 'GBp', LCUW: 'EUR',
 }
 
 // Yahoo suffix -> MIC code, so Twelve Data consulta el MISMO mercado que

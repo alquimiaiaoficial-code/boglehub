@@ -12,13 +12,13 @@ import type { Root } from 'mdast'
 // All ETF tickers in the database (kept in sync with src/data/etfs.json)
 const KNOWN_TICKERS = new Set([
   'VWCE', 'CSPX', 'IWDA', 'EIMI', 'AGGH', 'VEUR', 'VFEM', 'IMEU', 'SEMB',
-  'VAGF', 'SXR8', 'EUNL', 'VUSA', 'VUKE', 'IMID', 'IUSA', 'EQDS', 'XDWD',
+  'VAGF', 'SXR8', 'EUNL', 'VUSA', 'VUKE', 'IUSA', 'XDWD',
   'VWRL', 'LCUW', 'SWRD', 'WEBN', 'VWRP', 'ISAC', 'MWRD', 'VUAA', 'SPXS',
-  'MEUD', 'CEUG', 'SMEA', 'IS3N', 'AEEM', 'EMIM', 'WSML', 'IUSN', 'ZPRS',
-  'VGEA', 'EUNA', 'IBGX', 'VETY', 'SEGA', 'VHYL', 'ISPA', 'FGEQ', 'TDIV',
-  'EXSG', 'EQQQ', 'SXRV', 'CNDX', 'SJPA', 'CPXJ', 'SGLN', 'IGLN',
-  'IWQU', 'IWMO', 'ZPRV', 'XDEQ', 'XDWL', 'VGOV', 'XGIG',
-  'FLXE', 'EUNH', 'WTEF', 'RBOT', 'IQQH',
+  'MEUD', 'SMEA', 'IS3N', 'AEEM', 'EMIM', 'WSML', 'IUSN', 'ZPRS',
+  'VGEA', 'EUNA', 'IBGX', 'VETY', 'VHYL', 'TDIV',
+  'EQQQ', 'SXRV', 'CNDX', 'SJPA', 'CPXJ', 'SGLN', 'IGLN',
+  'IWQU', 'IWMO', 'ZPRV', 'XDEQ', 'XDWL', 'VGOV',
+  'RBOT', 'IQQH',
 ])
 
 // Note: 4GLD starts with a digit — handle it separately if needed.

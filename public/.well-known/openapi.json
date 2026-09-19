@@ -51,7 +51,7 @@
       "get": {
         "operationId": "getEtfs",
         "summary": "Catálogo completo de ETFs UCITS para España",
-        "description": "Devuelve una lista de 66 ETFs UCITS disponibles para inversores residentes en España, cada uno con ticker, ISIN, TER (% anual), política de reparto (acumulación/distribución), divisa base, domicilio fiscal, grado fiscal estimado (A/B/C/D) y URL del análisis. Formato schema.org ItemList de FinancialProduct.",
+        "description": "Devuelve una lista de 55 ETFs UCITS disponibles para inversores residentes en España, cada uno con ticker, ISIN, TER (% anual), política de reparto (acumulación/distribución), divisa base, domicilio fiscal, grado fiscal estimado (A/B/C/D) y URL del análisis. Formato schema.org ItemList de FinancialProduct.",
         "responses": {
           "200": {
             "description": "ItemList de FinancialProduct en JSON-LD"
