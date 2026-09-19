@@ -31,7 +31,8 @@ import { esIsinValido } from './isin'
  * Esto complementa a `isin.test.ts`, que comprueba el dígito de control. Aquel detecta lo
  * IMPOSIBLE; este detecta una parte de lo FALSO: un ISIN perfectamente válido colocado en la
  * ficha equivocada. Ninguno de los dos prueba que un ISIN único sea el correcto — eso sigue
- * necesitando fuente externa, y está pendiente para las 59 fichas que hoy llevan uno.
+ * necesitando fuente externa, y por eso esa misma noche se verificaron los 45 restantes y se
+ * retiraron los 29 que no se pudieron confirmar. Hoy solo se publican 30, todos comprobados.
  */
 describe('ISINs compartidos entre ETFs', () => {
   const porIsin = new Map<string, ReturnType<typeof getAllEtfs>>()
@@ -80,12 +81,39 @@ describe('ISINs compartidos entre ETFs', () => {
   })
 
   /**
-   * Las fichas sin ISIN son deliberadas, no un olvido: son las siete a las que se les retiró
-   * porque pertenecía a otro producto. Si el número crece sin que nadie lo explique, algo se
-   * está perdiendo por el camino.
+   * Las fichas SIN ISIN son deliberadas, no un olvido.
+   *
+   * La noche del 19-sep-2026 se comprobaron los 45 ISINs que no se habían verificado y
+   * **veintiocho estaban equivocados**: eran de otro producto. No erratas de un dígito —
+   * SJPA («MSCI Japan») llevaba el del iShares EURO STOXX Mid, CPXJ («Pacific ex-Japan») el
+   * del Nikkei 225, SGLN («iShares Physical Gold») el de INVESCO.
+   *
+   * Con un 60 % de error el campo dejó de ser publicable, así que se retiró de todas las
+   * fichas salvo las verificadas una a una. Preferimos no dar el dato a darlo mal.
+   *
+   * Este test no puede comprobar que un ISIN sea el correcto —eso necesita fuente—, pero sí
+   * que nadie vuelva a rellenar el hueco sin pasar por ahí: si aparecen ISINs nuevos, el
+   * conteo sube y hay que explicar de dónde salieron.
    */
-  it('las fichas sin ISIN son las que se saben, y no más', () => {
-    const sinIsin = getAllEtfs().filter((e) => !e.isin).map((e) => e.ticker).sort()
-    expect(sinIsin).toEqual(['EMIM', 'EQDS', 'SEGA', 'SMEA', 'VGEA', 'XDWL', 'ZPRS'])
+  it('solo se publican los ISINs verificados en fuente', () => {
+    const conIsin = getAllEtfs().filter((e) => e.isin).map((e) => e.ticker).sort()
+    expect(conIsin.length, `fichas con ISIN: ${conIsin.join(', ')}`).toBe(30)
+  })
+
+  it('los ISINs que sí están verificados siguen puestos', () => {
+    // Una muestra de los que más se ven: si desaparecen, algo los ha barrido de más.
+    const porTicker = new Map(getAllEtfs().map((e) => [e.ticker, e.isin]))
+    expect(porTicker.get('VWCE')).toBe('IE00BK5BQT80')
+    expect(porTicker.get('CSPX')).toBe('IE00B5BMR087')
+    expect(porTicker.get('IWDA')).toBe('IE00B4L5Y983')
+    expect(porTicker.get('VUAA')).toBe('IE00BFMXXD54')
+    expect(porTicker.get('EQQQ')).toBe('IE0032077012')
+  })
+
+  it('WSML ya no comparte el ISIN de IUSN: son de gestoras distintas', () => {
+    // IE00BF4RFH31 es el iShares MSCI World Small Cap. WSML es el de SPDR, otro producto.
+    const porTicker = new Map(getAllEtfs().map((e) => [e.ticker, e.isin]))
+    expect(porTicker.get('IUSN')).toBe('IE00BF4RFH31')
+    expect(porTicker.get('WSML')).toBeUndefined()
   })
 })
