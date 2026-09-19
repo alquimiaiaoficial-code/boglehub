@@ -91,13 +91,25 @@ describe('ISINs compartidos entre ETFs', () => {
    * Con un 60 % de error el campo dejó de ser publicable, así que se retiró de todas las
    * fichas salvo las verificadas una a una. Preferimos no dar el dato a darlo mal.
    *
+   * AL DÍA SIGUIENTE se rehízo la verificación **producto a producto** («nombre + ticker +
+   * ISIN») en vez de por lotes de ISINs, y resultó que el método de la noche daba falsos
+   * positivos: **VUKE, WSML e IQQH tenían el ISIN correcto y se lo quité**. La purga erró
+   * del lado seguro —quitar en vez de publicar mal— pero erró. Restauradas 14 fichas donde
+   * el ticker y el nombre coinciden con la fuente.
+   *
+   * Las 22 que siguen sin ISIN son otra cosa y no se arreglan poniendo uno: en ellas el
+   * TICKER pertenece a un producto distinto del que describe la ficha. `VETY` no es un
+   * ticker de Vanguard (son VECA/VECP), `VAGF` tampoco (es VDCE), `ISPA` es el Global
+   * Select Dividend 100 y no el Europe 30, `FLXE` es el Franklin EM Multi-Factor y no el
+   * European Equity. Eso es una decisión sobre qué es cada página, no un dato que falte.
+   *
    * Este test no puede comprobar que un ISIN sea el correcto —eso necesita fuente—, pero sí
    * que nadie vuelva a rellenar el hueco sin pasar por ahí: si aparecen ISINs nuevos, el
    * conteo sube y hay que explicar de dónde salieron.
    */
   it('solo se publican los ISINs verificados en fuente', () => {
     const conIsin = getAllEtfs().filter((e) => e.isin).map((e) => e.ticker).sort()
-    expect(conIsin.length, `fichas con ISIN: ${conIsin.join(', ')}`).toBe(30)
+    expect(conIsin.length, `fichas con ISIN: ${conIsin.join(', ')}`).toBe(44)
   })
 
   it('los ISINs que sí están verificados siguen puestos', () => {
@@ -110,10 +122,20 @@ describe('ISINs compartidos entre ETFs', () => {
     expect(porTicker.get('EQQQ')).toBe('IE0032077012')
   })
 
-  it('WSML ya no comparte el ISIN de IUSN: son de gestoras distintas', () => {
-    // IE00BF4RFH31 es el iShares MSCI World Small Cap. WSML es el de SPDR, otro producto.
+  /**
+   * Esta comprobación decía lo contrario hace unas horas, y estaba mal.
+   *
+   * Al ver `IE00BF4RFH31` compartido entre WSML e IUSN supuse que WSML era el SPDR MSCI
+   * World Small Cap, que es otro producto. **No lo es**: WSML es el ticker de LSE del
+   * iShares, el mismo fondo que IUSN cotiza en Xetra. El SPDR tiene sus propios tickers
+   * (ZPRS, WDSD). Comprobado producto a producto.
+   *
+   * Vale como recordatorio de que «dos tickers comparten ISIN» es normal, y que el reflejo
+   * de sospechar tiene que terminar en una comprobación, no en una conclusión.
+   */
+  it('WSML e IUSN son el mismo fondo en dos bolsas, y eso es correcto', () => {
     const porTicker = new Map(getAllEtfs().map((e) => [e.ticker, e.isin]))
     expect(porTicker.get('IUSN')).toBe('IE00BF4RFH31')
-    expect(porTicker.get('WSML')).toBeUndefined()
+    expect(porTicker.get('WSML')).toBe('IE00BF4RFH31')
   })
 })

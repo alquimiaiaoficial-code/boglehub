@@ -399,6 +399,7 @@
   },
   {
     "ticker": "VUKE",
+    "isin": "IE00B810Q511",
     "name": "Vanguard FTSE 100 UCITS ETF (Dist)",
     "ter": 0.09,
     "assetClass": "EQUITY",
@@ -667,6 +668,7 @@
   },
   {
     "ticker": "WEBN",
+    "isin": "IE0003XJA0J9",
     "name": "Amundi Prime All Country World UCITS ETF (Acc)",
     "ter": 0.07,
     "assetClass": "EQUITY",
@@ -768,6 +770,7 @@
   },
   {
     "ticker": "MWRD",
+    "isin": "IE000BI8OT95",
     "name": "Amundi MSCI World UCITS ETF (Acc)",
     "ter": 0.12,
     "assetClass": "EQUITY",
@@ -1003,8 +1006,9 @@
   },
   {
     "ticker": "AEEM",
+    "isin": "LU1681045370",
     "name": "Amundi MSCI Emerging Markets UCITS ETF (Acc)",
-    "ter": 0.14,
+    "ter": 0.2,
     "assetClass": "EQUITY",
     "regionAllocation": {
       "US": 0,
@@ -1069,6 +1073,7 @@
   },
   {
     "ticker": "WSML",
+    "isin": "IE00BF4RFH31",
     "name": "iShares MSCI World Small Cap UCITS ETF (Acc)",
     "ter": 0.35,
     "assetClass": "EQUITY",
@@ -1364,6 +1369,7 @@
   },
   {
     "ticker": "TDIV",
+    "isin": "NL0011683594",
     "name": "VanEck Morningstar Developed Markets Dividend Leaders UCITS ETF (Dist)",
     "ter": 0.38,
     "assetClass": "EQUITY",
@@ -1532,6 +1538,7 @@
   },
   {
     "ticker": "SJPA",
+    "isin": "IE00B4L5YX21",
     "name": "iShares Core MSCI Japan IMI UCITS ETF (Acc)",
     "ter": 0.12,
     "assetClass": "EQUITY",
@@ -1565,6 +1572,7 @@
   },
   {
     "ticker": "CPXJ",
+    "isin": "IE00B52MJY50",
     "name": "iShares Core MSCI Pacific ex-Japan UCITS ETF (Acc)",
     "ter": 0.20,
     "assetClass": "EQUITY",
@@ -1598,6 +1606,7 @@
   },
   {
     "ticker": "SGLN",
+    "isin": "IE00B4ND3602",
     "name": "iShares Physical Gold ETC",
     "ter": 0.12,
     "assetClass": "COMMODITY",
@@ -1637,8 +1646,9 @@
   },
   {
     "ticker": "4GLD",
+    "isin": "DE000A0S9GB0",
     "name": "Xetra-Gold ETC (Dist)",
-    "ter": 0.36,
+    "ter": 0,
     "assetClass": "COMMODITY",
     "regionAllocation": {
       "US": 0,
@@ -1690,8 +1700,9 @@
   },
   {
     "ticker": "IWMO",
+    "isin": "IE00BP3QZ825",
     "name": "iShares Edge MSCI World Momentum Factor UCITS ETF (Acc)",
-    "ter": 0.30,
+    "ter": 0.25,
     "assetClass": "EQUITY",
     "regionAllocation": {
       "US": 0.72,
@@ -1757,6 +1768,7 @@
   },
   {
     "ticker": "XDEQ",
+    "isin": "IE00BL25JL35",
     "name": "Xtrackers MSCI World Quality UCITS ETF 1C (Acc)",
     "ter": 0.25,
     "assetClass": "EQUITY",
@@ -1933,6 +1945,7 @@
   },
   {
     "ticker": "RBOT",
+    "isin": "IE00BYZK4552",
     "name": "iShares Automation & Robotics UCITS ETF (Acc)",
     "ter": 0.40,
     "assetClass": "EQUITY",
@@ -1966,6 +1979,7 @@
   },
   {
     "ticker": "IQQH",
+    "isin": "IE00B1XNHC34",
     "name": "iShares Global Clean Energy UCITS ETF (Dist)",
     "ter": 0.65,
     "assetClass": "EQUITY",
