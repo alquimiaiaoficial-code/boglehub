@@ -12,7 +12,7 @@ import { ArrowRight, BarChart3, Globe2, PiggyBank, Sparkles, ShieldCheck, FileTe
 
 export const metadata: Metadata = {
   title: 'BogleHub — Análisis de cartera para inversores indexados',
-  description: 'Analiza tu cartera de ETFs con IA. Asignación, diversificación, costes y FIRE. Gratis para Bogleheads hispanos.',
+  description: 'Analiza tu cartera de fondos indexados y ETFs: solapamiento entre productos, reparto real por región y sector, TER del conjunto y fiscalidad española. Gratis y sin registro.',
   alternates: {
     canonical: '/',
     languages: { 'es-ES': '/', 'en-US': '/en' },
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 const FAQ_QUESTIONS = [
   { q: '¿Es de verdad gratis? ¿Cuál es el truco?', a: 'Sí, totalmente gratis. No vendemos tus datos: tu cartera se guarda en tu navegador y las posiciones que se envían para analizarla se descartan sin almacenarse. Es un proyecto educativo personal hecho para la comunidad de inversores indexados hispanos. En el futuro habrá funciones Pro opcionales, pero el análisis básico será siempre gratuito.' },
   { q: '¿Esto es asesoramiento financiero?', a: 'No. Es información educativa. BogleHub no recomienda comprar o vender activos específicos. Es una herramienta para que entiendas tu cartera, no para sustituir a un asesor regulado.' },
-  { q: '¿Qué brokers están soportados?', a: 'Manualmente puedes introducir cualquier ETF UCITS. Con detección automática por PDF: Trade Republic, DEGIRO, MyInvestor, ING. Más brokers se añaden a demanda.' },
+  { q: '¿Qué productos y qué brokers admite?', a: 'A mano se introducen ETFs por su ticker, dentro del catálogo de BogleHub, y fondos indexados por su ISIN. La lista de fondos es corta a propósito: solo entra uno cuyo índice y comisión se hayan comprobado en el registro, porque de ese índice sale el cálculo de su exposición. Con detección automática por PDF: Trade Republic, DEGIRO, MyInvestor e ING.' },
   { q: '¿Qué modelo de IA usáis?', a: `${GROQ_MODEL}, servido por Groq. El nombre se lee del código, así que esta respuesta no envejece: el modelo anterior fue retirado en agosto de 2026 y estuvimos quince días diciendo que usábamos uno que ya no existía.` },
   { q: '¿Mis datos son privados?', a: 'Sí. Tus posiciones se guardan en localStorage de tu navegador, no en nuestros servidores. Solo viajan al servidor durante el análisis y se descartan inmediatamente.' },
 ]
@@ -420,13 +420,15 @@ export default function HomePage() {
               <h2 className="text-3xl sm:text-4xl font-bold text-fg">Preguntas frecuentes</h2>
             </div>
             <div className="space-y-3">
-              {[
-                { q: '¿Es de verdad gratis? ¿Cuál es el truco?', a: 'Sí, totalmente gratis. No vendemos tus datos: tu cartera se guarda en tu navegador y las posiciones que se envían para analizarla se descartan sin almacenarse. Es un proyecto educativo personal hecho para la comunidad de inversores indexados hispanos. En el futuro habrá funciones Pro opcionales, pero el análisis básico será siempre gratuito.' },
-                { q: '¿Esto es asesoramiento financiero?', a: 'No. Es información educativa. BogleHub no recomienda comprar o vender activos específicos. Es una herramienta para que entiendas tu cartera, no para sustituir a un asesor regulado.' },
-                { q: '¿Qué brokers están soportados?', a: 'Manualmente puedes introducir cualquier ETF UCITS. Con detección automática por PDF: Trade Republic, DEGIRO, MyInvestor, ING. Más brokers se añaden a demanda.' },
-                { q: '¿Qué modelo de IA usáis?', a: `${GROQ_MODEL}, servido por Groq. El nombre se lee del código, así que esta respuesta no envejece: el modelo anterior fue retirado en agosto de 2026 y estuvimos quince días diciendo que usábamos uno que ya no existía.` },
-                { q: '¿Mis datos son privados?', a: 'Sí. Tus posiciones se guardan en localStorage de tu navegador, no en nuestros servidores. Solo viajan al servidor durante el análisis y se descartan inmediatamente.' },
-              ].map((item, i) => (
+              {/*
+                Esta lista era una COPIA de FAQ_QUESTIONS, que alimenta el schema.org de
+                arriba. Dos copias del mismo texto divergen en cuanto alguien toca una: el
+                19-sep-2026 las dos decían «puedes introducir cualquier ETF UCITS», que no
+                era cierto ni cuando se escribió —el catálogo siempre fue cerrado— y que
+                además ignoraba los fondos. Ahora la página y los datos estructurados leen
+                lo mismo y no pueden contradecirse.
+              */}
+              {FAQ_QUESTIONS.map((item, i) => (
                 <details key={i} className="group rounded-xl border border-border bg-surface p-5">
                   <summary className="flex justify-between items-center cursor-pointer text-fg font-medium list-none">
                     {item.q}

@@ -6688,6 +6688,14 @@ Para cuantificar exactamente el coste de un roboadvisor frente a gestionar tu pr
         a: 'Sí, si el ETF reparte dividendos. Los dividendos de un ETF de distribución tributan como rendimientos del capital mobiliario en el año en que se cobran, aunque no vendas ninguna participación. Tu broker te enviará un certificado fiscal con los importes. Los dividendos ya llevan retención a cuenta del 19% aplicada en origen (en el caso de brokers españoles), que luego se descuenta del IRPF a pagar.',
       },
       {
+        q: '¿Las ganancias de un ETF van en el mismo apartado que las de las acciones?',
+        a: 'Sí. En el IRPF, vender un ETF y vender acciones generan lo mismo: una ganancia o pérdida patrimonial por transmisión, que va a la base del ahorro y tributa con la misma escala. Por eso también se compensan entre sí sin límite: una pérdida en un ETF resta de una ganancia en acciones y al revés. La diferencia con los fondos de inversión no está en cómo tributa la venta, sino en que un fondo se puede traspasar a otro sin que esa venta llegue a existir.',
+      },
+      {
+        q: '¿Cómo se valora un ETF en el Impuesto sobre el Patrimonio?',
+        a: 'Por su valor liquidativo a 31 de diciembre, y esto sorprende a mucha gente porque NO es la regla de las acciones. Un ETF es una institución de inversión colectiva, y el artículo 16.2 de la Ley 19/1991 dice que las participaciones en IIC «se computarán por el valor liquidativo en la fecha del devengo del impuesto», que es el 31 de diciembre. Las acciones cotizadas van por el artículo 13, que usa «el valor de negociación media del cuarto trimestre». Mismo mercado, dos formas distintas de valorar. El Patrimonio es un impuesto aparte del IRPF, con un mínimo exento que fija el Estado y que cada comunidad autónoma puede cambiar, así que si declarar o no depende de dónde se resida.',
+      },
+      {
         q: '¿Puedo compensar las pérdidas de ETFs con ganancias de otros ETFs o acciones?',
         a: 'Sí. Las pérdidas y ganancias patrimoniales derivadas de la venta de ETFs, acciones y fondos de inversión pueden compensarse entre sí dentro del mismo ejercicio. Si el saldo final es negativo, puedes arrastrarlo a los cuatro ejercicios siguientes. También puedes compensar (con límites) las pérdidas patrimoniales con los rendimientos del capital mobiliario (dividendos, intereses). La calculadora de IRPF de BogleHub te ayuda a estimar el impuesto antes de vender.',
       },
