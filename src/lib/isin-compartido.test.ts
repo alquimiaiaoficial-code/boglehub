@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { getAllEtfs } from './etf-database'
+import { getAllEtfs, otrasCotizaciones } from './etf-database'
 import { esIsinValido } from './isin'
 
 /**
@@ -133,5 +133,25 @@ describe('ISINs compartidos entre ETFs', () => {
     const porTicker = new Map(getAllEtfs().map((e) => [e.ticker, e.isin]))
     expect(porTicker.get('IUSN')).toBe('IE00BF4RFH31')
     expect(porTicker.get('WSML')).toBe('IE00BF4RFH31')
+  })
+
+  /**
+   * El helper que alimenta la línea «es el mismo fondo que X» de la ficha.
+   *
+   * Existe porque la gente lo pregunta: «cuál es el etf de irlanda de vuaa», «diferencia
+   * entre fondos eunl iwda», «qué diferencia puntual hay entre el etf sgln y el igln». El
+   * dato estaba en el catálogo desde siempre y no se enseñaba.
+   */
+  it('otrasCotizaciones encuentra los hermanos y nunca se devuelve a sí mismo', () => {
+    expect(otrasCotizaciones('CSPX').map((e) => e.ticker)).toEqual(['SXR8'])
+    expect(otrasCotizaciones('IWDA').map((e) => e.ticker)).toEqual(['EUNL'])
+    // EIMI tiene DOS hermanos, así que la frase de la ficha tiene que saber enumerar.
+    expect(otrasCotizaciones('EIMI').map((e) => e.ticker).sort()).toEqual(['EMIM', 'IS3N'])
+    // Un ETF sin hermanos no debe inventarse ninguno.
+    expect(otrasCotizaciones('EQQQ')).toEqual([])
+    // Y jamás incluirse a sí mismo, que es el fallo fácil de este tipo de función.
+    for (const etf of getAllEtfs()) {
+      expect(otrasCotizaciones(etf.ticker).map((e) => e.ticker)).not.toContain(etf.ticker)
+    }
   })
 })

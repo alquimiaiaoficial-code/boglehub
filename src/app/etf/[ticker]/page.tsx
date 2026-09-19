@@ -6,7 +6,7 @@ import { Footer } from '@/components/Footer'
 import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
 import { NewsletterSignup } from '@/components/NewsletterSignup'
-import { getEtfByTicker, getAllEtfs } from '@/lib/etf-database'
+import { getEtfByTicker, getAllEtfs, otrasCotizaciones } from '@/lib/etf-database'
 import { computeFiscalGrade, GRADE_STYLES } from '@/lib/fiscal'
 import { formatPct } from '@/lib/utils'
 import { generateEtfDescription, generateEtfFaqs } from '@/lib/etf-faqs'
@@ -212,6 +212,7 @@ export default async function EtfPage({ params }: { params: Promise<{ ticker: st
     notFound()
   }
 
+  const hermanos = otrasCotizaciones(etf.ticker)
   const fiscal = computeFiscalGrade(etf.isin, etf.accumulating)
   const fiscalStyle = GRADE_STYLES[fiscal.grade]
 
@@ -305,6 +306,26 @@ export default async function EtfPage({ params }: { params: Promise<{ ticker: st
             <h1 className="text-2xl sm:text-3xl font-bold text-fg tracking-tight">{etf.name}</h1>
             {etf.isin && (
               <p className="mt-1 text-sm text-fg-subtle font-mono">ISIN: {etf.isin}</p>
+            )}
+            {/*
+              Nueve fondos del catálogo cotizan con más de un ticker y eso confunde: CSPX y
+              SXR8 son el mismo iShares Core S&P 500, IWDA y EUNL el mismo MSCI World. Se
+              ve en lo que nos preguntan —«cuál es el etf de irlanda de vuaa», «diferencia
+              entre fondos eunl iwda»— y el dato lo teníamos sin enseñar.
+            */}
+            {hermanos.length > 0 && (
+              <p className="mt-2 text-sm text-fg-muted">
+                Es el mismo fondo que{' '}
+                {hermanos.map((h, i) => (
+                  <span key={h.ticker}>
+                    {i > 0 && (i === hermanos.length - 1 ? ' y ' : ', ')}
+                    <Link href={`/etf/${h.ticker.toLowerCase()}`} className="text-brand-400 hover:underline font-mono">
+                      {h.ticker}
+                    </Link>
+                  </span>
+                ))}
+                : mismo ISIN, misma cartera y mismas comisiones, cotizando en otra bolsa.
+              </p>
             )}
             <p className="mt-4 text-fg leading-relaxed">{citableLead}</p>
             <p className="mt-3 text-fg-muted leading-relaxed">{etfDescription}</p>
