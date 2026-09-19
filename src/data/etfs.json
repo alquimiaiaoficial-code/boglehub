@@ -301,7 +301,7 @@
     "ticker": "SXR8",
     "isin": "IE00B5BMR087",
     "name": "iShares Core S&P 500 UCITS ETF EUR (Acc)",
-    "ter": 0.10,
+    "ter": 0.07,
     "assetClass": "EQUITY",
     "regionAllocation": {
       "US": 1.0,
@@ -503,7 +503,6 @@
   },
   {
     "ticker": "EQDS",
-    "isin": "IE00B53SZB19",
     "name": "iShares MSCI World Quality Dividend ESG UCITS ETF (Acc)",
     "ter": 0.38,
     "assetClass": "EQUITY",
@@ -538,8 +537,8 @@
   {
     "ticker": "XDWD",
     "isin": "IE00BJ0KDQ92",
-    "name": "Xtrackers MSCI World Swap UCITS ETF 1C (Acc)",
-    "ter": 0.19,
+    "name": "Xtrackers MSCI World UCITS ETF 1C (Acc)",
+    "ter": 0.12,
     "assetClass": "EQUITY",
     "regionAllocation": {
       "US": 0.71,
@@ -945,7 +944,6 @@
   },
   {
     "ticker": "SMEA",
-    "isin": "IE00B3VTML14",
     "name": "iShares MSCI Europe Small Cap UCITS ETF (Acc)",
     "ter": 0.40,
     "assetClass": "EQUITY",
@@ -1047,7 +1045,6 @@
   },
   {
     "ticker": "EMIM",
-    "isin": "IE00B3YLTY66",
     "name": "iShares MSCI EM UCITS ETF (Dist)",
     "ter": 0.18,
     "assetClass": "EQUITY",
@@ -1149,7 +1146,6 @@
   },
   {
     "ticker": "ZPRS",
-    "isin": "IE00B3VVMM84",
     "name": "SPDR MSCI Europe Small Cap Value Weighted UCITS ETF",
     "ter": 0.30,
     "assetClass": "EQUITY",
@@ -1183,7 +1179,6 @@
   },
   {
     "ticker": "VGEA",
-    "isin": "IE00B3VTML14",
     "name": "Vanguard EUR Eurozone Government Bond UCITS ETF (Acc)",
     "ter": 0.07,
     "assetClass": "BOND",
@@ -1263,7 +1258,6 @@
   },
   {
     "ticker": "SEGA",
-    "isin": "IE00B3YLTY66",
     "name": "SPDR Bloomberg Euro Government Bond UCITS ETF (Acc)",
     "ter": 0.15,
     "assetClass": "BOND",
@@ -1819,7 +1813,6 @@
   },
   {
     "ticker": "XDWL",
-    "isin": "IE00BJ0KDQ92",
     "name": "Xtrackers MSCI World Value Factor UCITS ETF 1C (Acc)",
     "ter": 0.25,
     "assetClass": "EQUITY",
