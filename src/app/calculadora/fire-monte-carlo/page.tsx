@@ -30,10 +30,27 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
 ]
 
+/**
+ * El título cambió el 19-sep-2026 y viene de los datos, no del gusto.
+ *
+ * En 28 días de Bing, «monte carlo ... jubilación» trajo 29 impresiones en 27 variantes de
+ * la misma pregunta, todas en posición 1-10, y **cero clics**. «FIRE» trajo 5. El título
+ * anterior abría con el término que trae 5 y enterraba el que trae 29, y añadía
+ * «anticipada», que no aparece en ninguna de esas consultas: la gente escribe «jubilación»
+ * a secas. Salíamos arriba y no se nos reconocía como la respuesta.
+ *
+ * «Gratis» está puesto a propósito: un tercio de esas variantes lleva pegado «precio»,
+ * «barato», «ofertas» o «comparativa». Quien busca eso quiere saber cuánto cuesta, y
+ * nuestra respuesta —no cuesta nada y no pide registro— es la que mejor compite. No es
+ * relleno: es el dato que decide el clic.
+ *
+ * El slug NO se toca. Cambiar una URL que ya ranquea para que case con el título es
+ * cambiar lo que funciona por lo que suena mejor.
+ */
 export const metadata: Metadata = {
-  title: 'Calculadora FIRE Monte Carlo: probabilidad de jubilación anticipada',
+  title: 'Simulación Monte Carlo para la jubilación, gratis',
   description:
-    'Simula 1.000 escenarios de mercado para tu plan FIRE. Calcula la probabilidad de que tu cartera aguante toda la jubilación con datos históricos de volatilidad del MSCI World. Gratis, en español.',
+    'Pones el capital que tienes, lo que gastas al año y los años que quedan, y prueba 1.000 escenarios de mercado para ver en cuántos aguanta la cartera. Con la volatilidad histórica del MSCI World y los supuestos a la vista. Sin registro.',
   openGraph: {
     title: 'Calculadora FIRE Monte Carlo | BogleHub',
     description:
@@ -121,7 +138,7 @@ export default function MonteCarloPage() {
           </nav>
           <header className="mb-4">
             <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">
-              Calculadora FIRE con simulación Monte Carlo
+              Simulación Monte Carlo para tu jubilación
             </h1>
             <p className="mt-2 text-fg-muted leading-relaxed">
               Simula 1.000 escenarios de mercado para tu plan de independencia financiera.
