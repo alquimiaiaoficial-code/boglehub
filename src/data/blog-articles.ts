@@ -6323,6 +6323,10 @@ Cada dividendo que las empresas del fondo reparten se reinvierte automáticament
 
 ---
 
+Antes de comparar dos ETFs en abstracto, suele importar más cuánto se pisan con lo que ya se tiene. El [analizador de cartera](/analyzer) mide ese solapamiento por exposición geográfica y sectorial, no por nombre.
+
+---
+
 ## VWCE vs IWDA: ¿cuál elegir?
 
 Esta es la comparativa que más se repite en los foros de inversión españoles:
@@ -6811,6 +6815,10 @@ Los brokers extranjeros (DEGIRO, Trade Republic) normalmente no aplican retenci�
 Los ETFs de acumulación (Acc) reinvierten los dividendos dentro del fondo. Desde la perspectiva del IRPF español, **no hay evento fiscal** por los dividendos reinvertidos. Solo tributas cuando vendes participaciones, por la diferencia entre precio de venta y precio de compra.
 
 Este es uno de los principales motivos por los que los ETFs de acumulación son más eficientes para inversores en España en fase de crecimiento.
+
+---
+
+El [analizador de cartera](/analyzer) asigna un grado fiscal de la A a la F a cada ETF para un residente en España, según su domicilio y su política de reparto. No sustituye a la declaración, pero sirve para ver de un vistazo cuáles dan trabajo cada año y cuáles no.
 
 ---
 
@@ -8466,6 +8474,10 @@ El Nasdaq 100 tiene sentido como **complemento estratégico** (10-20% del total)
 
 ---
 
+Un ETF del Nasdaq 100 se pisa mucho con cualquier fondo global, porque las mismas empresas pesan en los dos. El [analizador de cartera](/analyzer) pone número a ese solapamiento antes de que sea una sorpresa.
+
+---
+
 ## La trampa de la rentabilidad histórica reciente
 
 Entre 2010 y 2024, el Nasdaq 100 ha superado al S&P 500 con rentabilidad anualizada del ~17% vs ~13%. Esto ha creado una narrativa de "el Nasdaq siempre gana" que no se sostiene en periodos más largos.
@@ -8863,6 +8875,10 @@ Para la mayoría de inversores que empiezan, **la segunda opción (ACWI o All-Wo
 
 ---
 
+La diferencia entre estos dos índices se ve mejor en una cartera concreta que en una tabla: el [analizador de cartera](/analyzer) reparte tus posiciones por región y por sector y enseña qué peso real tienen los emergentes en el conjunto.
+
+---
+
 ## Errores frecuentes al elegir
 
 1. **Asumir que MSCI World incluye "el mundo entero"** — solo cubre desarrollados, falta ~30% del PIB mundial
@@ -9069,6 +9085,10 @@ Algunos brokers incluyen los traspasos en el informe fiscal anual a título info
 **3. Creer que hace falta que el fondo tenga más de 500 partícipes**. Es el error más repetido en todo lo que se lee sobre traspasos, y esta guía lo tuvo hasta el 18 de septiembre de 2026. Ese requisito es de las IIC con **forma societaria** (las SICAV), no de los fondos de inversión: el artículo 94.1.a) trata los dos casos por separado y al primero no le pone condición de partícipes. Lo que sí hace falta es que el fondo esté comercializado en España, porque si no, no hay entidad que tramite la operación.
 
 **4. Traspasar a un ETF**. No es posible "traspasar" desde un fondo a un ETF con diferimiento fiscal. Para pasar de fondos a ETFs siempre hay que hacer reembolso (con tributación) y luego compra del ETF.
+
+---
+
+Si ya tienes varios fondos y quieres ver cuánto se solapan entre ellos —y qué costaría deshacer ese solapamiento según el artículo 94 del IRPF—, el [analizador de cartera](/analyzer) lo calcula con las posiciones que le pegues.
 
 ---
 
