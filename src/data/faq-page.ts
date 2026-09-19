@@ -63,7 +63,15 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: '¿Puedo traspasar fondos indexados sin pagar impuestos en España?',
-        a: 'Sí. En España, los fondos de inversión gozan del régimen de traspaso fiscal diferido: puedes mover dinero entre fondos sin que el cambio genere un evento fiscal. El IRPF se difiere hasta que rescates definitivamente. Esta ventaja NO existe para los ETFs: cada venta de ETF tributa por la ganancia. Por eso muchos inversores españoles prefieren fondos indexados de MyInvestor frente a ETFs.',
+        a: 'Sí, y lo regula el artículo 94.1.a) de la Ley 35/2006 del IRPF. Cuando el importe de un reembolso se destina a suscribir participaciones de otro fondo, «no procederá computar la ganancia o pérdida patrimonial», y las nuevas participaciones «conservarán el valor y la fecha de adquisición» de las anteriores. El impuesto no desaparece: se aplaza hasta que el dinero sale. La norma pone una condición que se pasa por alto a menudo: el diferimiento no aplica cuando «por cualquier medio, se ponga a disposición del contribuyente el importe», así que vender un fondo, cobrar en tu cuenta y comprar otro NO es un traspaso. Lo tramitan las entidades entre ellas.',
+      },
+      {
+        q: '¿Se puede traspasar un ETF a un fondo indexado sin tributar?',
+        a: 'No. El mismo artículo 94.1.a) de la Ley del IRPF que permite el traspaso entre fondos excluye expresamente a las participaciones «análogas a los fondos de inversión cotizados». Vender un ETF para comprar otra cosa es una venta a efectos fiscales y genera una ganancia o pérdida patrimonial en el IRPF de ese año, aunque el dinero se reinvierta inmediatamente. Tampoco existe el camino inverso: no se puede traspasar un fondo a un ETF con diferimiento. Para pasar de uno a otro hay reembolso, con su tributación, y después compra.',
+      },
+      {
+        q: '¿Cambia algo que el ETF replique el mismo índice que el fondo?',
+        a: 'No cambia nada, y la ley está redactada para que no quede resquicio: la exclusión del artículo 94.1.a) alcanza a los fondos cotizados «cualquiera que sea el mercado regulado o el sistema multilateral de negociación en el que coticen y la composición del índice que reproduzcan». Un ETF sobre el MSCI World y un fondo indexado sobre el MSCI World tienen la misma cartera y distinto trato fiscal al cambiar de producto. Es la confusión más frecuente sobre este régimen.',
       },
       {
         q: '¿Qué es el criterio FIFO al vender ETFs?',
