@@ -7,22 +7,15 @@ import { GLOSSARY_TERMS } from '@/data/glossary'
 import { BROKERS } from '@/data/brokers'
 import { ROBOADVISORS } from '@/data/roboadvisors'
 import { GESTORAS } from '@/data/gestoras'
-import {
-  POPULAR_ETF_TICKERS,
-  COVERED_BROKER_SLUGS,
-  getAvailability,
-} from '@/data/etf-broker-availability'
 import { INVESTOR_PROFILES } from '@/data/investor-profiles'
 import { MONTHLY_AMOUNTS } from '@/data/monthly-amounts'
 import { BROKER_PAIRS, brokerPairToSlug } from '@/data/broker-pairs'
 import { OBJECTIVES } from '@/data/objectives'
-import { ETF_ASPECTS } from '@/data/etf-aspects'
 import { SECTORS } from '@/data/sectors'
 import { COUNTRIES } from '@/data/countries'
 import { AGES } from '@/data/ages'
 import { getAllHistoricalCombos } from '@/data/historical-returns'
 import { MODEL_PORTFOLIOS } from '@/data/model-portfolios'
-import { getAllPortfolioPairs, portfolioPairToSlug } from '@/data/portfolio-pairs'
 import { FIRE_AGES } from '@/data/fire-ages'
 import { YEAR_EVENTS, HISTORICAL_YEAR_TICKERS, getReturn } from '@/data/historical-years'
 import { HISPANO_MARKETS } from '@/data/hispano-markets'
@@ -42,6 +35,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/guia',                         priority: 0.9, freq: 'monthly' },
     { path: '/etf',                            priority: 0.8, freq: 'monthly' },
     { path: '/comparar',                     priority: 0.9, freq: 'weekly'  },
+    // El hub de comparativas de FONDOS. Faltaba: sus comparativas sí se anunciaban y él
+    // no, así que la única página que las lista entera dependía del enlace del pie.
+    { path: '/comparar-fondo',               priority: 0.8, freq: 'weekly'  },
     { path: '/chat',                         priority: 0.9, freq: 'weekly'  },
     { path: '/blog',                         priority: 0.8, freq: 'weekly'  },
     { path: '/glosario',                     priority: 0.7, freq: 'monthly' },
@@ -185,34 +181,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }))
 
-  // Programmatic: comprar [ETF] en [broker] — high commercial intent
-  const comprarRoutes: typeof staticRoutes = []
-  for (const ticker of POPULAR_ETF_TICKERS) {
-    for (const broker of COVERED_BROKER_SLUGS) {
-      if (getAvailability(ticker, broker).available) {
-        comprarRoutes.push({
-          url: `${BASE_URL}/comprar/${ticker.toLowerCase()}/${broker}`,
-          lastModified: new Date(),
-          changeFrequency: 'monthly' as const,
-          priority: 0.7,
-        })
-      }
-    }
-  }
-
-  // Programmatic: /analiza/[ticker]/[aspecto] (20 ETFs × 4 aspects = 80 pages)
-  const analizaRoutes: typeof staticRoutes = []
-  for (const ticker of POPULAR_ETF_TICKERS) {
-    for (const aspect of ETF_ASPECTS) {
-      analizaRoutes.push({
-        url: `${BASE_URL}/analiza/${ticker.toLowerCase()}/${aspect.slug}`,
-        lastModified: new Date(),
-        changeFrequency: 'monthly' as const,
-        priority: 0.65,
-      })
-    }
-  }
-
   // Sector individual pages
   const sectorRoutes = SECTORS.map((s) => ({
     url: `${BASE_URL}/sector/${s.slug}`,
@@ -257,27 +225,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: 'monthly' as const,
     priority: 0.75,
   }))
-
-  // Portfolio vs portfolio pages (C(10,2) = 45)
-  const portfolioPairRoutes = getAllPortfolioPairs().map(([a, b]) => ({
-    url: `${BASE_URL}/comparar-cartera/${portfolioPairToSlug(a, b)}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.65,
-  }))
-
-  // /dca/[ticker]/[anos] — 20 tickers × 6 horizons = 120 pages
-  const dcaRoutes: typeof staticRoutes = []
-  for (const ticker of POPULAR_ETF_TICKERS) {
-    for (const y of [5, 10, 15, 20, 25, 30]) {
-      dcaRoutes.push({
-        url: `${BASE_URL}/dca/${ticker.toLowerCase()}/${y}-anios`,
-        lastModified: new Date(),
-        changeFrequency: 'monthly' as const,
-        priority: 0.65,
-      })
-    }
-  }
 
   // FIRE retirement age pages
   const fireRoutes = FIRE_AGES.map((f) => ({
@@ -326,19 +273,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  // /ahorrar/[cantidad]/para/[objetivo] — 10 amounts × 10 objectives = 100 pages
-  const ahorrarRoutes: typeof staticRoutes = []
-  for (const m of MONTHLY_AMOUNTS) {
-    for (const o of OBJECTIVES) {
-      ahorrarRoutes.push({
-        url: `${BASE_URL}/ahorrar/${m.slug}/para/${o.slug}`,
-        lastModified: new Date(),
-        changeFrequency: 'monthly' as const,
-        priority: 0.7,
-      })
-    }
-  }
-
   const allRoutes = [
     ...staticRoutes,
     ...etfRoutes,
@@ -354,16 +288,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...invertirRoutes,
     ...vsBrokerRoutes,
     ...objectiveRoutes,
-    ...comprarRoutes,
-    ...analizaRoutes,
     ...sectorRoutes,
     ...countryRoutes,
     ...planRoutes,
     ...simulacionRoutes,
     ...carteraRoutes,
-    ...ahorrarRoutes,
-    ...portfolioPairRoutes,
-    ...dcaRoutes,
     ...fireRoutes,
     ...historicoRoutes,
     ...mercadoRoutes,

@@ -29,15 +29,16 @@ import { shouldIndex, NOINDEX_METADATA } from './seo-index-policy'
  * es lo que Next usa de verdad para enrutar. Comparar el código consigo mismo no prueba nada.
  */
 
-/** Las 13 familias afectadas por la política de indexación. */
+/**
+ * Las familias que siguen vivas bajo la política de indexación.
+ *
+ * Eran trece. El 19-sep-2026 cinco se borraron del sitio y ahora responden 410, así que
+ * no les aplica nada de lo de aquí: no hay `page.tsx` que leer. Lo suyo se comprueba en
+ * `familias-retiradas.test.ts`, que verifica justo lo contrario —que no existen—.
+ */
 const RUTAS = [
   'simulacion/[cantidad]/[ticker]/[ano]',
-  'dca/[ticker]/[anos]',
-  'comprar/[ticker]/[broker]',
-  'ahorrar/[cantidad]/para/[objetivo]',
   'plan/[edad]/[objetivo]',
-  'analiza/[ticker]/[aspecto]',
-  'comparar-cartera/[pair]',
   'historico/[ano]/[ticker]',
   'etf/[ticker]',
   'vs-broker/[pair]',
@@ -49,7 +50,7 @@ const RUTAS = [
 /**
  * Construye la URL de un param igual que lo hace el enrutador: recorriendo los segmentos
  * del directorio y sustituyendo los `[dinamicos]` por su valor. Los segmentos estáticos
- * (como el `para` de `/ahorrar/500/para/casa`) se copian tal cual.
+ * fijos en mitad de la ruta, si los hay, se copian tal cual.
  */
 function urlReal(ruta: string, param: Record<string, string>): string {
   const segmentos = ruta.split('/').map((seg) => {
@@ -106,9 +107,11 @@ describe('render bajo demanda de las páginas que no pedimos indexar', () => {
   })
 
   it('la política sigue diciendo noindex,follow y no otra cosa', () => {
-    // `follow` importa menos de lo que creíamos —SEO demostró el 9-sep que en cinco de las
-    // ocho familias no se dispara nunca, porque no hay enlaces que seguir hasta ellas— pero
-    // cambiarlo no es gratis y no toca hacerlo dentro de la ventana de medición.
+    // El 9-sep SEO demostró que en cinco de las ocho familias de combinatoria el `follow` no
+    // se disparaba nunca, porque no había enlaces que seguir hasta ellas. Esas cinco ya no
+    // existen: se borraron el 19-sep y responden 410. En las tres que quedan
+    // —`/simulacion/`, `/plan/` e `/historico/`— sí hay enlaces desde sus hubs, así que aquí
+    // el `follow` sí hace algo y se queda.
     expect(NOINDEX_METADATA).toEqual({
       index: false,
       follow: true,
@@ -119,7 +122,7 @@ describe('render bajo demanda de las páginas que no pedimos indexar', () => {
   it('sigue habiendo páginas que SÍ se pre-generan: esto no vació el build entero', async () => {
     // Sin esta comprobación, un `shouldIndex` que devolviera siempre false pasaría todos los
     // tests de arriba con nota. Las 16 comparativas con demanda probada tienen que seguir
-    // saliendo del build ya renderizadas: son las únicas de estas trece familias que
+    // saliendo del build ya renderizadas: son las únicas de estas ocho familias que
     // pedimos indexar, y Googlebot no debería esperar a un render para verlas.
     const mod = await cargar('comparar/[pair]')
     const params: Record<string, string>[] = await mod.generateStaticParams()

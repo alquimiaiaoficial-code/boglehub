@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import { readFileSync, readdirSync, existsSync } from 'node:fs'
 import { shouldIndex } from './seo-index-policy'
+import sitemap from '../app/sitemap'
 
 /**
  * Ningún hub que pedimos indexar puede quedar sin camino desde la home.
@@ -88,9 +89,28 @@ describe('todo hub indexable tiene un enlace desde la navegación', () => {
     expect(hub).toMatch(/href=\{`\/comparar\/\$\{pairToSlug/)
   })
 
+  /**
+   * Tener camino desde el menú y estar en el sitemap son dos cosas distintas, y hacen falta
+   * las dos. Lo destapó el borrado del 19-sep-2026: al contar las URLs del sitemap apareció
+   * que `/comparar-fondo` era el único hub de primer nivel que no se anunciaba. Sus
+   * comparativas sí estaban; la página que las lista, no. O sea que el único camino hasta
+   * ella era el enlace del pie, y si alguien lo quitaba nadie se enteraba.
+   */
+  it('todo hub indexable se anuncia también en el sitemap', () => {
+    const anunciadas = new Set(sitemap().map((r) => r.url.replace('https://boglehub.com', '')))
+    const fuera = hubsDePrimerNivel()
+      .filter((h) => shouldIndex(h))
+      .filter((h) => !anunciadas.has(h))
+
+    expect(
+      fuera,
+      `estos hubs existen y pedimos indexarlos, pero el sitemap no los menciona: ${fuera.join(', ')}`,
+    ).toEqual([])
+  })
+
   it('el hub de comparativas de fondos existe y las enlaza', () => {
     const hub = readFileSync('src/app/comparar-fondo/page.tsx', 'utf8')
-    expect(hub, 'sin este hub, las 11 comparativas de fondos quedan huérfanas').toMatch(
+    expect(hub, 'sin este hub, las comparativas de fondos quedan huérfanas').toMatch(
       /FUND_PAIRS\.map/,
     )
     expect(hub).toMatch(/href=\{`\/comparar-fondo\/\$\{slug\}`\}/)

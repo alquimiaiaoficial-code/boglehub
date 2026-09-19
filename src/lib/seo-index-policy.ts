@@ -28,18 +28,52 @@
 import { slugToPair } from '@/data/etf-pairs'
 
 /**
+ * Familias BORRADAS del sitio, que responden 410.
+ *
+ * Contexto (19-sep-2026). El recorte de agosto dejó 1.089 páginas en `noindex, follow`
+ * con el argumento de que seguían repartiendo enlaces internos. SEO fue a comprobarlo el
+ * 9-sep y el argumento resultó hueco para estas cinco: **ninguna página indexada las
+ * enlaza**, así que no hay camino por el que un rastreador llegue a ellas y el `follow`
+ * nunca se dispara. No reparten nada.
+ *
+ * Lo que rendían, medido en los dos canales antes de borrarlas:
+ *   · Google, 24 al 31-ago: **0 impresiones**, sobre 12 del sitio entero.
+ *   · Bing, 28 días hasta el 16-sep: **0 impresiones** en las cinco familias. Esta
+ *     segunda comprobación importa más que la primera, porque Bing nos trae 54 veces
+ *     más que Google y la decisión original se había tomado solo con datos de Google.
+ *
+ * **410 y no 404, a propósito.** 404 dice «no la encuentro», que un buscador reintenta
+ * durante meses; 410 dice «existió y ya no existe», que es exactamente el caso y sale
+ * antes del índice. Lo sirve `src/proxy.ts`.
+ *
+ * ⚠️ **Las otras tres familias de combinatoria NO están aquí y no es un olvido.**
+ * `/simulacion/`, `/plan/` e `/historico/` sí reciben enlaces internos desde sus hubs (18,
+ * 18 y 40), así que Googlebot sí las pide. Borrarlas produciría un pico real de 410 en
+ * Search Console dentro de la ventana del 20 al 27-sep, que es justo lo que se está
+ * midiendo, y no se podría separar qué causó qué. Se deciden cuando esa medición esté
+ * leída, no antes.
+ */
+export const FAMILIAS_RETIRADAS = [
+  '/dca/',
+  '/comprar/',
+  '/ahorrar/',
+  '/analiza/',
+  '/comparar-cartera/',
+] as const
+
+/** ¿Esta ruta pertenece a una familia borrada? Entonces le toca 410, no 404. */
+export function estaRetirada(path: string): boolean {
+  return FAMILIAS_RETIRADAS.some((p) => path === p.slice(0, -1) || path.startsWith(p))
+}
+
+/**
  * Familias de páginas generadas por combinatoria (cantidad × ticker × año, edad ×
  * objetivo, ticker × bróker...). Se excluyen las páginas de detalle, NO los hubs:
  * `/simulacion` sigue indexado, `/simulacion/1000/vwce/2020` no.
  */
 const NOINDEX_PREFIXES = [
   '/simulacion/',
-  '/dca/',
-  '/comprar/',
-  '/ahorrar/',
   '/plan/',
-  '/analiza/',
-  '/comparar-cartera/',
   '/historico/',
   // Segundo recorte (26-ago-2026), a partir de la auditoría de SEO que cruzó el
   // sitemap con el historial de impresiones. Estas cuatro familias llevan vivas e

@@ -253,7 +253,6 @@ export async function GET() {
   lines.push('- Simulación histórica «¿cuánto valdrían hoy X € invertidos en [ETF] en [año]?»: https://boglehub.com/simulacion/1000/vwce/2015 (200+ combinaciones de cantidad/ETF/año)')
   lines.push('- Plan «¿cuánto aportar al mes desde los [edad] para llegar a [objetivo]?»: https://boglehub.com/plan/35-anios/1-millon-euros')
   lines.push('- Aportación para un objetivo «¿cuánto necesito invertir al mes para [objetivo]?»: https://boglehub.com/cuanto-necesito/1-millon-euros')
-  lines.push('- DCA «¿cuánto acumulo aportando [X]/mes en [ETF] durante [años]?»: https://boglehub.com/dca/vwce/20-anios')
   lines.push('- Rendimiento histórico «¿cuánto rindió [ETF] en [año]?»: https://boglehub.com/historico/2020/vwce')
   lines.push('- FIRE por edad «¿cuánto necesito para jubilarme a los [edad]?»: https://boglehub.com/jubilacion/jubilarse-a-los-45')
   lines.push('')

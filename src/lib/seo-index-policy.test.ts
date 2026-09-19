@@ -45,12 +45,7 @@ describe('política de indexación', () => {
   it('excluye las páginas de detalle generadas por combinatoria', () => {
     for (const path of [
       '/simulacion/1000/vwce/2020',
-      '/dca/vwce/20-anios',
-      '/comprar/vwce/degiro',
-      '/ahorrar/100-euros-al-mes/para/1-millon-euros',
       '/plan/30-anos/jubilacion',
-      '/analiza/vwce/donde-comprar',
-      '/comparar-cartera/boglehead-3-vs-all-weather',
       '/historico/2008/vwce',
     ]) {
       expect(shouldIndex(path), path).toBe(false)
@@ -82,7 +77,7 @@ describe('política de indexación', () => {
 
   it('robotsFor solo devuelve bloque en las rutas excluidas', () => {
     expect(robotsFor('/analyzer')).toBeUndefined()
-    expect(robotsFor('/dca/vwce/20-anios')).toMatchObject({ index: false, follow: true })
+    expect(robotsFor('/historico/2008/vwce')).toMatchObject({ index: false, follow: true })
   })
 })
 
