@@ -81,9 +81,12 @@ export async function generateMetadata({
   const term = getTermBySlug(slug)
   if (!term) return { title: 'Término no encontrado' }
 
-  const title = term.fullForm
-    ? `${term.fullForm}: definición y ejemplos`
-    : `${term.term}: qué es y cómo funciona`
+  // `tituloSerp` manda cuando existe: ver por qué en la definición del campo.
+  const title =
+    term.tituloSerp ??
+    (term.fullForm
+      ? `${term.fullForm}: definición y ejemplos`
+      : `${term.term}: qué es y cómo funciona`)
 
   // La definición rápida puede pasar de los ~160 chars óptimos para el meta;
   // se trunca en el último espacio (sin partir palabras) solo para la meta tag.

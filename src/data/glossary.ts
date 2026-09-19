@@ -20,6 +20,24 @@ export interface GlossaryFaq {
 
 export interface GlossaryTerm {
   slug: string
+  /**
+   * Título SOLO para el resultado de búsqueda, cuando el de por defecto no da motivos
+   * para entrar.
+   *
+   * Medido el 19-sep-2026: el glosario hace 230 impresiones y 4 clics (1,7 %), y las tres
+   * páginas con más volumen —lump sum, glide path y rebalanceo— suman 145 impresiones y UN
+   * clic. Todas se titulaban «X: qué es y cómo funciona», que promete exactamente lo que
+   * Bing ya enseña en el propio resultado. Si la definición ya está delante, entrar no
+   * aporta nada.
+   *
+   * Aquí solo va un título que la página cumpla de verdad: cada uno de los que hay salió
+   * de una pregunta que ESTÁ en su FAQ. Prometer en el título algo que no está dentro
+   * sube el clic una vez y quema la página para siempre.
+   *
+   * Se deja a propósito sin poner en los otros 66 términos: sirven de grupo de control
+   * para saber si el cambio fue el título o fue la temporada.
+   */
+  tituloSerp?: string
   /** Término que aparecerá en el H1 y en el listado */
   term: string
   /** Sigla original si aplica, ej. "TER (Total Expense Ratio)" */
@@ -212,6 +230,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   },
   {
     slug: 'tracking-error',
+    tituloSerp: 'Tracking error o tracking difference: cuál importa',
     term: 'Tracking error',
     category: 'metricas',
     shortDefinition:
@@ -253,6 +272,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   },
   {
     slug: 'aum',
+    tituloSerp: 'AUM de un ETF: a partir de qué tamaño es seguro',
     term: 'AUM',
     fullForm: 'AUM (Assets Under Management)',
     category: 'metricas',
@@ -496,6 +516,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   },
   {
     slug: 'rebalanceo',
+    tituloSerp: 'Rebalanceo: cada cuánto y qué pasa con Hacienda',
     term: 'Rebalanceo',
     category: 'estrategias',
     shortDefinition:
@@ -1084,6 +1105,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   // ---------------------------------------------------------------------------
   {
     slug: 'lump-sum',
+    tituloSerp: 'Invertir una herencia: de golpe o poco a poco',
     term: 'Lump sum',
     category: 'estrategias',
     shortDefinition:
@@ -1106,6 +1128,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   },
   {
     slug: 'glide-path',
+    tituloSerp: 'Glide path: qué porcentaje en bolsa según tu edad',
     term: 'Glide path',
     category: 'estrategias',
     shortDefinition:
@@ -1176,6 +1199,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   },
   {
     slug: 'comision-gestion',
+    tituloSerp: 'Comisión de gestión y TER: cuál es razonable',
     term: 'Comisión de gestión',
     category: 'plataformas',
     shortDefinition:
