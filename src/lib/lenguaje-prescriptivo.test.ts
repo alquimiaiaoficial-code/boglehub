@@ -110,6 +110,36 @@ const PRESCRIPTIVAS: readonly [RegExp, string][] = [
   [/\bes la opci[óo]n coherente\b/i, 'ídem'],
   [/\bes ideal (?:si|para)\b/i, '«encaja con quien…», que describe el encaje en vez de dictarlo'],
   [/\bes lo m[áa]s eficiente\b/i, 'di en qué es más eficiente y cuánto'],
+  /**
+   * Añadidos el 19-sep-2026. No salieron de un grep: salieron de LEER una comparativa
+   * entera mientras se medía otra cosa, que es el único método que este fichero reconoce
+   * como capaz de encontrar fórmulas nuevas —lo dice el aviso de abajo desde el 11-sep—.
+   *
+   * Las cuatro estaban en `/comparar/[pair]`, y tres DENTRO del `FAQPage`, o sea en los
+   * datos estructurados que un motor de IA cita literalmente como respuesta de BogleHub.
+   * Es el peor sitio posible para una recomendación:
+   *
+   *   «…así que en general conviene elegir uno, no ambos»
+   *   «Sería mejor consolidar en uno solo»
+   *   «Elige uno y mantén la posición consolidada»
+   *   «si buscas simplicidad, elige uno solo»   <- la familia condición + veredicto
+   *
+   * ⚠️ `conviene elegir` va ACOTADO, por la misma razón que el imperativo desnudo de
+   * arriba. Suelto marca tres usos legítimos que dicen dónde pulsar y no qué comprar
+   * («conviene elegir la cotización en euros»). Pero al acotarlo apareció una infracción de
+   * verdad que llevaba meses en el glosario: «conviene elegir ETFs grandes y muy
+   * negociados». Afinar el patrón encontró lo que el patrón ancho habría enterrado entre
+   * falsos positivos.
+   */
+  [
+    /\bconviene\s+(?:elegir|optar\s+por|quedarse\s+con)\s+(?:el|la|un|una|unos|unas)?\s*(?:fondos?|etfs?|productos?|gestoras?|uno\b|m[áa]s\s+barato)/i,
+    'dice qué comprar, no cómo operar: describe la diferencia y deja la elección fuera',
+  ],
+  [
+    /\bser[ía]a\s+mejor\s+(?:consolidar|elegir|tener|comprar|vender|traspasar|quedarse)/i,
+    'veredicto sobre la cartera del lector: di qué cambia cada opción',
+  ],
+  [/\belige\s+uno\b/i, 'imperativo sobre la cartera: describe qué añade el segundo y para ahí'],
 ]
 
 /**

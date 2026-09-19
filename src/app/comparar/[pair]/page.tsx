@@ -210,6 +210,24 @@ export default async function EtfPairPage({
         : `No son el mismo ETF, aunque pueden tener partes en común. El solapamiento geográfico entre ambos es del ${formatPct(overlap, 0)}, lo que significa que tener los dos en cartera implica ${overlap > 0.6 ? 'considerable concentración' : 'diversificación real'} en las regiones compartidas.`,
     },
     {
+      /**
+       * Añadida el 19-sep-2026 por una razón medida, no por completar el FAQ.
+       *
+       * Preguntado ese día a ChatGPT cuánto se solapan VWCE y CSPX, responde citando a dos
+       * herramientas inglesas y dando la cifra CON FECHA: «una comparación actualizada al 18
+       * de septiembre calcula 59,7 %». O sea que lo que un motor cita no es el número: es el
+       * número con su procedencia. Nosotros publicábamos «60 %» a secas.
+       *
+       * Y había algo peor que la falta de fecha. `src/lib/overlap.ts` dice desde siempre que
+       * esto NO mide empresas repetidas, y la página no lo decía: soltaba un porcentaje que
+       * el lector podía tomar por solapamiento de carteras reales. El código era honesto y
+       * la página no. Decir qué mide el número lo hace a la vez más honesto y más citable,
+       * que resulta ser la misma cosa.
+       */
+      q: `¿Cómo se calcula ese solapamiento del ${formatPct(overlap, 0)}?`,
+      a: `Sumando, región por región, el peso menor de los dos. Si ${tickerA} tiene un 60 % en EE. UU. y ${tickerB} un 100 %, cuentan 60 puntos de solapamiento en esa región; se repite con Europa, Japón, emergentes y el resto, y la suma es la cifra. Es una medida por REGIONES, no por empresas: dice si estás comprando dos veces la misma exposición geográfica, y no cuántas acciones concretas se repiten en las dos carteras. Para eso harían falta las participaciones completas de cada fondo, que no publicamos porque no las tenemos verificadas. El método entero está en boglehub.com/metodologia.`,
+    },
+    {
       q: `¿Cuál es más eficiente fiscalmente para un residente en España?`,
       a: fiscalA.grade === fiscalB.grade
         ? `Ambos tienen la misma eficiencia fiscal (grado ${fiscalA.grade}): los dos están domiciliados en ${fiscalA.domicileLabel} y tienen la misma política de distribución.`
@@ -218,12 +236,12 @@ export default async function EtfPairPage({
     {
       q: `¿Tiene sentido tener ${tickerA} y ${tickerB} a la vez en la cartera?`,
       a: sameFund
-        ? `No. Al ser esencialmente el mismo fondo (solapamiento del ${formatPct(overlap, 0)}), tener ambos no aporta diversificación. Sería mejor consolidar en uno solo para simplificar la cartera y reducir la fricción operativa de gestionar dos posiciones idénticas.`
+        ? `Al ser esencialmente el mismo fondo (solapamiento del ${formatPct(overlap, 0)}), tener los dos no añade diversificación: es la misma exposición repetida, con dos posiciones que mantener y rebalancear en vez de una.`
         : overlap > 0.6
-          ? `En general no. Tienen un solapamiento del ${formatPct(overlap, 0)}, lo que significa que la mayor parte de su exposición regional es compartida. Sumarlos no añade diversificación real, solo complejidad. Elige uno y mantén la posición consolidada — el rebalanceo será más sencillo.`
+          ? `Tienen un solapamiento del ${formatPct(overlap, 0)}, así que la mayor parte de su exposición por regiones es compartida. Lo que añade el segundo no es diversificación, sino más peso sobre las mismas regiones y una posición más que rebalancear.`
           : etfA.assetClass !== etfB.assetClass
             ? `Sí. ${tickerA} y ${tickerB} pertenecen a clases de activo diferentes (${ASSET_CLASS_LABEL[etfA.assetClass] ?? etfA.assetClass} y ${ASSET_CLASS_LABEL[etfB.assetClass] ?? etfB.assetClass}), por lo que son complementarios, no alternativos. Pueden formar parte de una cartera diversificada juntos.`
-            : `Puede tener sentido. El solapamiento es solo del ${formatPct(overlap, 0)}, lo que indica que aportan exposición a regiones o estrategias diferenciadas dentro de la misma clase de activo. Si tu objetivo es diversificación real, combinarlos puede ser razonable; si buscas simplicidad, elige uno solo.`,
+            : `El solapamiento es solo del ${formatPct(overlap, 0)}, así que aportan exposición a regiones o estrategias distintas dentro de la misma clase de activo. Tenerlos juntos añade diversificación por esa vía, y también una posición más que mantener. Cuál de las dos cosas pesa más depende de para qué sea la cartera.`,
     },
     {
       q: `¿Dónde puedo comprar ${tickerA} y ${tickerB} en España?`,
@@ -282,7 +300,7 @@ export default async function EtfPairPage({
                 ? `Ambos comparten el mismo grado fiscal (${fiscalA.grade}) para un residente en España.`
                 : `${fiscalA.grade < fiscalB.grade ? tickerA : tickerB} es además más eficiente fiscalmente (grado ${fiscalA.grade < fiscalB.grade ? fiscalA.grade : fiscalB.grade} frente a ${fiscalA.grade < fiscalB.grade ? fiscalB.grade : fiscalA.grade}).`}{' '}
               {overlap > 0.6
-                ? `Su solapamiento geográfico es del ${formatPct(overlap, 0)}, así que en general conviene elegir uno, no ambos.`
+                ? `Su solapamiento por regiones es del ${formatPct(overlap, 0)}: la mayor parte de lo que hay dentro de uno está también dentro del otro.`
                 : ''}
             </p>
           )}
@@ -430,15 +448,16 @@ export default async function EtfPairPage({
                 {overlap > 0.6 && etfA.assetClass === etfB.assetClass && (
                   <p>
                     <strong className="text-fg">Solapamiento alto ({formatPct(overlap, 0)}).</strong>{' '}
-                    Tener ambos no añade diversificación real. Elige uno y mantente con él. La decisión
-                    depende de si prefieres el índice de {tickerA} o el de {tickerB}.
+                    La mayor parte de la exposición por regiones es la misma en los dos, así que el
+                    segundo añade peso sobre lo que ya hay, no una exposición nueva. Lo que cambia
+                    entre ellos es qué índice replican: el de {tickerA} o el de {tickerB}.
                   </p>
                 )}
                 {overlap < 0.4 && etfA.assetClass === etfB.assetClass && (
                   <p>
                     <strong className="text-fg">Solapamiento bajo ({formatPct(overlap, 0)}).</strong>{' '}
-                    Son complementarios dentro de la misma clase de activo. Combinarlos puede tener sentido
-                    para una exposición más equilibrada.
+                    Cubren regiones o estrategias distintas dentro de la misma clase de activo, así que
+                    cada uno añade exposición que el otro no da.
                   </p>
                 )}
               </div>
