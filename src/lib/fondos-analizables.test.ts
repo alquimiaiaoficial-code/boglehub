@@ -263,7 +263,16 @@ describe('cobertura', () => {
     // Amundi EM dudábamos «de qué producto se trata» cuando su ISIN sí es válido y el
     // registro devuelve siempre el mismo producto: lo que estaba mal era nuestra etiqueta.
     // En los dos casos, la duda era sobre la fuente y el error estaba en casa.
-    expect(analizables.length).toBe(8)
+    //
+    // Y de 8 a 14 el 19-sep, al ampliar el catálogo. No es una cifra de vanidad: es lo que
+    // se le prometió POR ESCRITO a Luis Ángel Hernández (Salud Financiera) el 17-sep —
+    // «ampliar el catálogo de fondos, doce son pocos»— después de que contestara que «en
+    // España la mayoría de personas invierten en fondos no en ETFs».
+    //
+    // Los seis nuevos salen del registro español con nombre, índice y comisión citados
+    // literalmente, y cuatro tienen equivalencia EXACTA de índice. Ninguno se escribió de
+    // memoria: eso fue exactamente lo que dejó ocho de doce fichas mal el 18-sep.
+    expect(analizables.length).toBe(14)
     expect(analizables.length).toBeLessThan(INDEX_FUNDS.length)
   })
 })

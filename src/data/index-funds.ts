@@ -65,6 +65,145 @@ export interface IndexFund {
 
 export const INDEX_FUNDS: IndexFund[] = [
   {
+    slug: 'ishares-developed-world-index',
+    name: 'iShares Developed World Index Fund',
+    manager: 'BlackRock',
+    isin: 'IE00BD0NCM55',
+    // Verificado el 19-sep-2026 en el registro: «ISHARES DEVELOPED WORLD INDEX FUND (IE) D
+    // EUR ACC | BLACKROCK INVESTMENT MANAGEMENT | MSCI World | 0,30 %».
+    index: 'MSCI World',
+    ter: 0.30,
+    assetClass: 'Renta variable',
+    region: 'Global desarrollado',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado',
+    tagline: 'MSCI World en formato fondo, de BlackRock',
+    description:
+      'El iShares Developed World Index Fund replica el MSCI World con unos gastos del 0,30 % anual. Cubre unas 1.500 empresas grandes y medianas de 23 mercados desarrollados, sin emergentes. Es el mismo índice que siguen ETFs como IWDA o SWRD, con la diferencia de forma jurídica que importa en España: un fondo entra en el régimen de traspasos del artículo 94.1.a) del IRPF y un ETF no.',
+    etfEquivalent: 'IWDA',
+    faq: [
+      { q: '¿En qué se diferencia de un ETF sobre el MSCI World?', a: 'En la cartera, en nada: el índice es el mismo y las empresas también. La diferencia está en el vehiculo. Un fondo de inversión se puede traspasar a otro fondo sin que la plusvalía tribute en ese momento; un ETF queda fuera de ese régimen porque el artículo 94.1.a) excluye a los fondos cotizados. La otra diferencia es el coste: este fondo cuesta 0,30 % y hay ETFs sobre el mismo índice por 0,12-0,20 %.' },
+    ],
+  },
+  {
+    slug: 'amundi-index-msci-world',
+    name: 'Amundi Index MSCI World',
+    manager: 'Amundi',
+    isin: 'LU0996182563',
+    // Verificado el 19-sep-2026 en el registro: «AMUNDI INDEX MSCI WORLD AE CAP | AMUNDI
+    // ASSET MANAGEMENT | MSCI World | 0,15 %».
+    index: 'MSCI World',
+    ter: 0.15,
+    assetClass: 'Renta variable',
+    region: 'Global desarrollado',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado',
+    tagline: 'MSCI World en formato fondo, con una comisión del 0,15 %',
+    description:
+      'El Amundi Index MSCI World replica el MSCI World con unos gastos del 0,15 % anual, la mitad que el fondo equivalente de BlackRock. Cubre mercados desarrollados y deja fuera a los emergentes, que hay que añadir aparte si se quiere una cartera mundial completa. Ojo con el nombre: la gama «Index» de Amundi no es la gama «Core» ni la «Prime», y sus comisiones y formatos no coinciden.',
+    etfEquivalent: 'IWDA',
+    faq: [
+      { q: '¿Es lo mismo que el Amundi Prime Global?', a: 'No. El Amundi Prime Global es un ETF, no un fondo, y sigue un índice de Solactive en vez del MSCI World. La confusión es fácil porque las tres gamas de Amundi —Index, Core y Prime— se parecen en el nombre y se diferencian en formato, índice y comisión. Lo que distingue a uno de otro es el ISIN, no la marca.' },
+    ],
+  },
+  {
+    slug: 'fidelity-msci-europe-index',
+    name: 'Fidelity MSCI Europe Index Fund',
+    manager: 'Fidelity',
+    isin: 'IE00BYX5MD61',
+    // Verificado el 19-sep-2026 en el registro: «FIDELITY MSCI EUROPE INDEX FUND P-ACC-EUR |
+    // FIL INVESTMENTS INTERNATIONAL | MSCI Europe Index | 0,10 %».
+    index: 'MSCI Europe',
+    ter: 0.10,
+    assetClass: 'Renta variable',
+    region: 'Europa desarrollada',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado',
+    tagline: 'Bolsa europea desarrollada por un 0,10 %',
+    description:
+      'El Fidelity MSCI Europe Index Fund replica el MSCI Europe con unos gastos del 0,10 % anual. Conviene saber qué hay dentro: el MSCI Europe NO es solo la eurozona, incluye Reino Unido, Suiza, Suecia, Dinamarca y Noruega, que tienen su propia divisa. Así que añadir Europa con este fondo reduce la exposición a divisa extranjera respecto a un fondo global, pero no la elimina.',
+    etfEquivalent: 'IMEU',
+    faq: [
+      { q: '¿Cuánto se solapa con un fondo global?', a: 'Bastante. En un MSCI World, Europa desarrollada pesa en torno al 15-20 %, y son en gran parte las mismas empresas. Sumar un fondo europeo a uno global no añade empresas nuevas: cambia el peso que tienen las que ya están. El analizador de cartera pone número a ese solapamiento y dice qué costaría deshacerlo.' },
+    ],
+  },
+  {
+    slug: 'vanguard-global-small-cap-index',
+    name: 'Vanguard Global Small-Cap Index Fund',
+    manager: 'Vanguard',
+    isin: 'IE00B42W4L06',
+    // Verificado el 19-sep-2026 en el registro: «VANGUARD GLOBAL SMALL-CAP INDEX GENERAL EUR
+    // CAP | VANGUARD ASSET MANAGEMENT | MSCI World Small Cap Index | 0,29 %».
+    index: 'MSCI World Small Cap',
+    ter: 0.29,
+    assetClass: 'Renta variable',
+    region: 'Global desarrollado (pequeña capitalización)',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado',
+    tagline: 'Pequeñas empresas de mercados desarrollados, en formato fondo',
+    description:
+      'El Vanguard Global Small-Cap Index Fund replica el MSCI World Small Cap con unos gastos del 0,29 % anual. Cubre las compañías de menor capitalización de los mercados desarrollados, que un MSCI World deja fuera por construcción: ese índice solo llega hasta las medianas. Es un complemento de una cartera global, no un sustituto, y su comportamiento es más volátil que el del índice grande.',
+    etfEquivalent: 'IUSN',
+    faq: [
+      { q: '¿Se solapa con un fondo que replique el MSCI World?', a: 'Casi nada, y esa es la razón de añadirlo. El MSCI World cubre grandes y medianas; el MSCI World Small Cap empieza donde el otro termina. Son índices complementarios por diseño, al contrario de lo que pasa al juntar dos fondos globales.' },
+    ],
+  },
+  {
+    slug: 'vanguard-japan-stock-index',
+    name: 'Vanguard Japan Stock Index Fund',
+    manager: 'Vanguard',
+    isin: 'IE0007286036',
+    // Verificado el 19-sep-2026 en el registro: «VANGUARD JAPAN STOCK INDEX GENERAL EUR CAP |
+    // VANGUARD ASSET MANAGEMENT | MSCI Japan Index | 0,16 %».
+    index: 'MSCI Japan',
+    ter: 0.16,
+    assetClass: 'Renta variable',
+    region: 'Japón',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado',
+    tagline: 'Bolsa japonesa en formato fondo',
+    description:
+      'El Vanguard Japan Stock Index Fund replica el MSCI Japan con unos gastos del 0,16 % anual. En un MSCI World, Japón pesa alrededor del 6 %, así que añadir este fondo a una cartera global sube ese peso en vez de añadir empresas nuevas. El fondo está denominado en euros, pero las empresas cotizan en yenes: la exposición a divisa existe aunque no se vea en el valor liquidativo.',
+    etfEquivalent: 'SJPA',
+    faq: [
+      { q: '¿La exposición que calcula el analizador es exacta?', a: 'Es aproximada, y se dice en pantalla. La exposición se toma del ETF del catálogo que replica el índice más cercano, que en este caso sigue el MSCI Japan IMI: el mismo mercado, pero incluyendo también pequeña capitalización. El reparto por sector y por región sale casi igual; el matiz queda anotado en el resultado.' },
+    ],
+  },
+  {
+    slug: 'vanguard-euro-government-bond-index',
+    name: 'Vanguard Euro Government Bond Index Fund',
+    manager: 'Vanguard',
+    isin: 'IE0007472115',
+    // Verificado el 19-sep-2026 en el registro: «VANGUARD EURO GOVERNMENT BOND INDEX INVESTOR
+    // EUR CAP | VANGUARD ASSET MANAGEMENT | Bloomberg Euro Government Float Adjusted Bond
+    // Index | 0,12 %».
+    index: 'Bloomberg Euro Government Float Adjusted',
+    ter: 0.12,
+    assetClass: 'Renta fija',
+    region: 'Eurozona',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado',
+    tagline: 'Deuda pública de la eurozona, sin riesgo divisa',
+    description:
+      'El Vanguard Euro Government Bond Index Fund replica el Bloomberg Euro Government Float Adjusted con unos gastos del 0,12 % anual. Son bonos emitidos por estados de la eurozona y denominados en euros, así que para alguien que gasta en euros no hay riesgo de divisa. El «float adjusted» significa que pondera por la deuda realmente negociable, no por la emitida, lo que reduce algo el peso de los países cuyos bonos estan en manos del banco central.',
+    etfEquivalent: 'VGEA',
+    faq: [
+      { q: '¿Qué hace la renta fija en una cartera indexada?', a: 'Amortiguar. La deuda pública de la eurozona se mueve mucho menos que la bolsa y suele caer menos en los años malos, de modo que su función es reducir la oscilación del conjunto, no aportar rentabilidad. Cuanto peso darle es una decisión personal que depende del plazo y de lo que cada uno aguanta ver en rojo.' },
+    ],
+  },
+  {
     slug: 'vanguard-global-stock',
     name: 'Vanguard Global Stock Index Fund',
     manager: 'Vanguard',

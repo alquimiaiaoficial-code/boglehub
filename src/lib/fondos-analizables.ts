@@ -172,6 +172,38 @@ const EQUIVALENCIAS: Record<string, Equivalencia> = {
    */
   LU0996177134: { ticker: 'AEEM', calidad: 'exacta' },
 
+  /**
+   * Seis fondos añadidos el 19-sep-2026 al ampliar el catálogo, que es lo que se le prometió
+   * por escrito a Luis Ángel Hernández (Salud Financiera) el 17-sep: «ampliar el catálogo de
+   * fondos, doce son pocos». Los seis salen del registro español con nombre, índice y
+   * comisión citados; ninguno se escribió de memoria.
+   */
+  IE00BD0NCM55: { ticker: 'IWDA', calidad: 'exacta' },   // iShares Developed World — MSCI World
+  LU0996182563: { ticker: 'IWDA', calidad: 'exacta' },   // Amundi Index MSCI World — MSCI World
+  IE00BYX5MD61: { ticker: 'IMEU', calidad: 'exacta' },   // Fidelity MSCI Europe — MSCI Europe
+  IE00B42W4L06: { ticker: 'IUSN', calidad: 'exacta' },   // Vanguard Global Small-Cap — MSCI World Small Cap
+
+  /**
+   * MSCI Japan contra un ETF que replica el MSCI Japan IMI: mismo mercado, pero el IMI
+   * incluye también pequeña capitalización. El reparto por región y sector sale casi igual y
+   * aún así es aproximada, porque en esta tabla «exacta» significa EL MISMO índice.
+   */
+  IE0007286036: {
+    ticker: 'SJPA',
+    calidad: 'aproximada',
+    nota: 'El fondo replica el MSCI Japan y la exposición se toma de un ETF sobre el MSCI Japan IMI, que añade pequeña capitalización. Mismo mercado, universo algo más amplio.',
+  },
+
+  /**
+   * Bloomberg Euro Government Float Adjusted contra el Euro Aggregate Treasury del ETF: los
+   * dos son deuda pública de la eurozona, pero el primero pondera por deuda negociable.
+   */
+  IE0007472115: {
+    ticker: 'VGEA',
+    calidad: 'aproximada',
+    nota: 'El fondo replica el Bloomberg Euro Government Float Adjusted y la exposición se toma de un ETF sobre el Euro Aggregate Treasury. Es la misma deuda pública de la eurozona; el ajuste por capital flotante cambia algo los pesos por país.',
+  },
+
   IE00B18GC888: {
     ticker: 'AGGH',
     calidad: 'aproximada',
@@ -409,5 +441,11 @@ export const VERIFICADOS_EN_FUENTE: Record<string, string> = {
   IE0007987690: '18-sep-2026, registro de fondos: «VANGUARD EUROPEAN STOCK INDEX INVESTOR EUR CAP | MSCI Europe Index | 0,12 %». La ficha decía «Eurozone Stock», MSCI EMU y 0,16 %: los tres estaban mal, y de ese error salió su exclusión del 17-sep',
   LU0996177134: '18-sep-2026, registro de fondos: «AMUNDI CORE MSCI EMERGING MARKETS AE CAP | AMUNDI ASSET MANAGEMENT | MSCI Emerging Markets | 0,30 %». La ficha decía «Amundi Index» y 0,20 %: gama equivocada y la mitad de comisión',
   IE00BYX5M476: '18-sep-2026, registro de fondos: «FIDELITY MSCI EMERGING MARKETS INDEX FUND P-ACC-EUR | FIL INVESTMENTS INTERNATIONAL | MSCI Emerging Markets Index | 0,20 %». Índice y TER coincidían; el ISIN del catálogo (`IE00BYX5L514`) era imposible y al nombre le faltaba «MSCI»',
+  IE00BD0NCM55: '19-sep-2026, registro de fondos: «ISHARES DEVELOPED WORLD INDEX FUND (IE) D EUR ACC | BLACKROCK INVESTMENT MANAGEMENT | MSCI World | 0,30 %»',
+  LU0996182563: '19-sep-2026, registro de fondos: «AMUNDI INDEX MSCI WORLD AE CAP | AMUNDI ASSET MANAGEMENT | MSCI World | 0,15 %»',
+  IE00BYX5MD61: '19-sep-2026, registro de fondos: «FIDELITY MSCI EUROPE INDEX FUND P-ACC-EUR | FIL INVESTMENTS INTERNATIONAL | MSCI Europe Index | 0,10 %»',
+  IE00B42W4L06: '19-sep-2026, registro de fondos: «VANGUARD GLOBAL SMALL-CAP INDEX GENERAL EUR CAP | VANGUARD ASSET MANAGEMENT | MSCI World Small Cap Index | 0,29 %»',
+  IE0007286036: '19-sep-2026, registro de fondos: «VANGUARD JAPAN STOCK INDEX GENERAL EUR CAP | VANGUARD ASSET MANAGEMENT | MSCI Japan Index | 0,16 %»',
+  IE0007472115: '19-sep-2026, registro de fondos: «VANGUARD EURO GOVERNMENT BOND INDEX INVESTOR EUR CAP | VANGUARD ASSET MANAGEMENT | Bloomberg Euro Government Float Adjusted Bond Index | 0,12 %»',
   IE00B18GC888: '18-sep-2026, registro de fondos: «VANGUARD GLOBAL BOND INDEX GENERAL EUR HEDGED CAP | Bloomberg Global Aggregate Float Adjusted and Scaled | 0,15 %». Nombre y TER coincidían; el índice es una variante del Global Aggregate y por eso la equivalencia es aproximada',
 }
