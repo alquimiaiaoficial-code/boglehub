@@ -343,7 +343,7 @@ Fuente: BogleHub (boglehub.com/datos-clave) — verificable con BOE/AEAT, follet
               headers={['Ticker', 'Nombre', 'ISIN', 'TER', 'Política']}
               rows={[
                 ['EIMI', 'iShares Core MSCI EM IMI', 'IE00BKM4GZ66', '0,18%', 'Acumulación'],
-                ['EMIM', 'iShares Core MSCI EM IMI (Dist)', 'IE00BKM4GZ66', '0,18%', 'Distribución'],
+                ['EMIM', 'iShares Core MSCI EM IMI (Acc)', 'IE00BKM4GZ66', '0,18%', 'Acumulación'],
                 ['VFEM', 'Vanguard FTSE Emerging Markets', 'IE00BK5BR733', '0,22%', 'Acumulación'],
                 ['AEEM', 'Amundi MSCI Emerging Markets', 'LU1681045370', '0,20%', 'Acumulación'],
                 ['IS3N', 'iShares Core MSCI EM IMI (Xetra)', 'IE00BKM4GZ66', '0,18%', 'Acumulación'],
@@ -362,7 +362,7 @@ Fuente: BogleHub (boglehub.com/datos-clave) — verificable con BOE/AEAT, follet
                 ['EUNA', 'iShares Core Euro Government Bond', 'IE00B4WXJJ64', '0,07%', 'EUR (eurozona)'],
                 ['IBCS', 'iShares € Corporate Bond', 'IE00B3F81R35', '0,20%', 'EUR (eurozona)'],
                 ['IBGS', 'iShares € Govt Bond 1-3yr', 'IE00B14X4Q57', '0,15%', 'EUR (corto plazo)'],
-                ['VGEA', 'Vanguard Global Aggregate Bond EUR Hedged', 'IE00BG47KH54', '0,10%', 'EUR Hedged'],
+                ['VGEA', 'Vanguard EUR Eurozone Government Bond (Acc)', 'IE00BH04GL39', '0,07%', 'Acumulación'],
               ]}
             />
             <p className="text-sm text-fg-muted leading-relaxed">
@@ -457,7 +457,7 @@ Fuente: BogleHub (boglehub.com/datos-clave) — verificable con BOE/AEAT, follet
                 ['Fidelity MSCI World Index', 'IE00BYX5MX67', '0,12%', 'MSCI World', '1€'],
                 ['Amundi Index MSCI Emerging Markets', 'LU0996177134', '0,20%', 'MSCI EM', '1€'],
                 ['Vanguard Global Bond Index Hedged EUR', 'IE00B18GC888', '0,15%', 'Renta fija global', '1€'],
-                ['Amundi Index Eurozone Govt Bond', 'LU1437015735', '0,15%', 'Bonos eurozona', '1€'],
+                ['Vanguard Euro Government Bond Index', 'IE0007472115', '0,12%', 'Bonos eurozona', 'Consultar'],
               ]}
             />
             <p className="text-sm text-fg-muted leading-relaxed">
