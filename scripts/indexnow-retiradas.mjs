@@ -23,16 +23,15 @@ const HOST = 'boglehub.com'
 const ENDPOINT = 'https://api.indexnow.org/indexnow'
 const dry = process.argv.includes('--dry')
 
-/** Retiradas el 18-sep-2026. Cada una con el motivo, que es lo que cuesta reconstruir luego. */
+/** Lo retirado, con el motivo al lado: es lo que cuesta reconstruir luego. */
 const RETIRADAS = [
-  '/etf/iglh',                        // la ficha fusionaba dos productos distintos
-  '/etf/xmwo',                        // idem
-  '/comparar/iglh-vs-aggh',
-  '/comprar/iglh/trade-republic',
-  '/comprar/xmwo/trade-republic',
-  '/fondo/amundi-prime-usa',          // el ISIN no superaba el dígito de control
-  '/comparar-fondo/amundi-prime-usa-vs-vanguard-us-500-stock',
-  '/comparar-fondo/amundi-prime-global-vs-amundi-prime-usa',
+  // 19-sep-2026, segunda tanda: once fichas de ETF cuyo TICKER pertenecia a otro producto
+  // y que no se podian arreglar sin inventar los repartos por region y sector.
+  '/etf/imid', '/etf/eqds', '/etf/ceug', '/etf/sega', '/etf/ispa', '/etf/fgeq',
+  '/etf/exsg', '/etf/xgig', '/etf/flxe', '/etf/eunh', '/etf/wtef',
+  // Y las comparativas que las emparejaban.
+  '/comparar/vhyl-vs-fgeq', '/comparar/tdiv-vs-ispa',
+  '/comparar/sgln-vs-exsg', '/comparar/eunh-vs-aggh',
 ]
 
 function leerClave() {

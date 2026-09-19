@@ -10,23 +10,31 @@ import { getAllEtfs } from './etf-database'
  * casa. Un reparto por regiones o por sectores tiene que sumar 100 %. Si no suma, hay un dato
  * mal, y eso se sabe sin consultar a nadie.
  *
- * Los repartos por región salen todos correctos. Los sectoriales, seis: los seis ETFs del
- * S&P 500, que comparten una misma tabla copiada y suman 103 %.
+ * Cuando se escribió, seis ETFs del S&P 500 compartían una tabla copiada que sumaba 103 %.
+ * Se dejaron listados como excepción, a la vista, en vez de repartir el 3 % que sobraba: un
+ * número plausible inventado es peor que un número que no cuadra, porque el segundo se nota.
  *
- * NO se corrigen inventando el 3 % que sobra. Un reparto sectorial sale de la cartera real del
- * fondo y hay que sacarlo de su factsheet; repartir el exceso «a ojo» sería exactamente el
- * error que este proyecto lleva dos días desmontando: un número plausible y falso. Así que se
- * dejan listados aquí con su valor de hoy, para que se vean y para que no empeoren.
+ * El 19-sep se arreglaron de verdad, buscando los pesos reales del índice. La lista de
+ * excepciones está vacía y la comprobación sigue puesta.
  */
-const CONOCIDOS_QUE_NO_SUMAN: Record<string, number> = {
-  // Los seis del S&P 500 comparten tabla. Pendiente de sacar el reparto real del factsheet.
-  CSPX: 1.03,
-  SXR8: 1.03,
-  VUSA: 1.03,
-  IUSA: 1.03,
-  VUAA: 1.03,
-  SPXS: 1.03,
-}
+/**
+ * Vacía desde el 19-sep-2026, y conviene que siga así.
+ *
+ * Tenía los seis ETFs del S&P 500, que compartían una tabla sectorial copiada sumando
+ * 103 %. No se arreglaron repartiendo el 3 % que sobraba —eso habría sido inventar el dato
+ * que alimenta el analizador— sino buscando los pesos GICS reales del índice.
+ *
+ * Los que hay ahora son los del **cierre del 18-sep-2026**: Tecnología 38,9 %, Financieras
+ * 11,9 %, Comunicación 9,8 %, Salud 9,1 %, Consumo discrecional 8,9 %, Industrial 8,1 %,
+ * Consumo básico 4,4 %, Energía 3,5 %, Utilities 2,0 %, Materiales 1,7 % e Inmobiliario
+ * 1,6 %. Suman 99,9 % por redondeo.
+ *
+ * ⚠️ **Son una foto, no una constante.** Los pesos sectoriales se mueven: Tecnología pasó
+ * del 20 % a casi el 39 % en unos años. Si alguien los revisa dentro de seis meses y no
+ * cuadran con el índice, no es un error de este fichero: es que caducaron. Lo que no puede
+ * pasar es que vuelvan a sumar 103 %.
+ */
+const CONOCIDOS_QUE_NO_SUMAN: Record<string, number> = {}
 
 const TOLERANCIA = 0.01
 
