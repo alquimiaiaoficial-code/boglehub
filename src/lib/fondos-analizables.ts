@@ -1,4 +1,5 @@
 import { INDEX_FUNDS, type IndexFund } from '@/data/index-funds'
+import { getFundClassByIsin } from '@/data/fund-classes'
 import { getEtfByTicker } from './etf-database'
 import type { EtfMetadata } from '@/types/etf'
 
@@ -370,7 +371,7 @@ export function resolverFondo(entrada: string): ResolucionFondo | null {
   }
 
   const fondo = buscarFondo(entrada)
-  if (!fondo) return null
+  if (!fondo) return resolverClase(entrada)
 
   const isin = normalizar(fondo.isin)
   const base = { isin: fondo.isin, slug: fondo.slug, nombre: fondo.name, indice: fondo.index }
@@ -394,6 +395,40 @@ export function resolverFondo(entrada: string): ResolucionFondo | null {
   }
 
   return { analizable: { fondo, etfExposicion: etf, calidad: eq.calidad, nota: eq.nota } }
+}
+
+/**
+ * Resuelve una CLASE de un fondo que ya está en el catálogo (ver `src/data/fund-classes.ts`).
+ *
+ * Exposición: la del fondo padre, porque es el mismo fondo legal y el mismo índice.
+ * Comisión, mínimo, divisa y reparto de rendimientos: los de la clase.
+ *
+ * Por qué la comisión de la clase y no la del padre, que parece un detalle y no lo es: la
+ * clase Inst del iShares Developed World cuesta 0,15 %, la D 0,30 % y la S 0,04 %. Si el
+ * analizador usara la del padre, a quien tiene la clase barata le calcularía un TER
+ * ponderado siete veces más alto del que paga, y a quien tiene la cara uno más bajo. El
+ * número que más se mira de todo el análisis saldría mal justo en las carteras más cuidadas.
+ */
+function resolverClase(entrada: string): ResolucionFondo | null {
+  const clase = getFundClassByIsin(normalizar(entrada))
+  if (!clase) return null
+  const padre = INDEX_FUNDS.find((f) => f.slug === clase.parentSlug)
+  if (!padre) return null
+  const r = resolverFondo(padre.isin)
+  if (!r) return null
+
+  const nombreBase = padre.name.replace(/\s*\(clase [^)]*\)\s*$/i, '')
+  const comoFondo: IndexFund = {
+    ...padre,
+    isin: clase.isin,
+    name: `${nombreBase} (clase ${clase.className})`,
+    ter: clase.ter,
+    accumulating: clase.accumulating,
+    currency: clase.currency,
+    minimum: clase.minimum,
+  }
+  if ('analizable' in r) return { analizable: { ...r.analizable, fondo: comoFondo } }
+  return { noAnalizable: { ...r.noAnalizable, isin: clase.isin, nombre: comoFondo.name } }
 }
 
 /** Todos los fondos que hoy se pueden analizar. Para tests y para la interfaz. */

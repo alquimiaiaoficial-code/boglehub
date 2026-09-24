@@ -7,6 +7,7 @@ import { Card, CardTitle } from '@/components/ui/Card'
 import { computeFiscalGradeFondo } from '@/lib/fiscal'
 import { JsonLd } from '@/components/JsonLd'
 import { INDEX_FUNDS, getIndexFundBySlug } from '@/data/index-funds'
+import { getClassesOfFund } from '@/data/fund-classes'
 
 import { DescargoFiscal } from '@/components/DescargoFiscal'
 const BASE_URL = 'https://boglehub.com'
@@ -51,6 +52,11 @@ export default async function FondoPage({ params }: { params: Promise<{ slug: st
 
   const pageUrl = `${BASE_URL}/fondo/${slug}`
   const similar = INDEX_FUNDS.filter((x) => x.slug !== slug && x.assetClass === f.assetClass).slice(0, 4)
+  // Clases de este mismo fondo (fund-classes.ts). No tienen ficha propia a propósito:
+  // serían páginas casi idénticas. Se listan aquí, que es donde aportan.
+  const clases = getClassesOfFund(f.slug)
+  const pct = (n: number) => `${n.toFixed(2).replace('.', ',')} %`
+  const claseDeEsta = /\(clase ([^)]*)\)/i.exec(f.name)?.[1] ?? 'Esta ficha'
 
   const gradoFiscal = computeFiscalGradeFondo(f.isin, f.accumulating)
   const faqs = [
@@ -241,6 +247,54 @@ export default async function FondoPage({ params }: { params: Promise<{ slug: st
               <Link href={`/etf/${f.etfEquivalent.toLowerCase()}`} className="text-sm text-brand-400 hover:text-brand-300">
                 Ver análisis del ETF {f.etfEquivalent} →
               </Link>
+            </Card>
+          )}
+
+          {clases.length > 0 && (
+            <Card className="mb-8">
+              <CardTitle className="mb-2">Otras clases de este mismo fondo</CardTitle>
+              <p className="text-sm text-fg-muted leading-relaxed mb-4">
+                Es el mismo fondo y el mismo índice. Lo que cambia entre clases es la comisión y
+                a quién va dirigida. El analizador reconoce todas y calcula con la comisión de la
+                clase que tengas, no con la de esta ficha.
+              </p>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="text-left text-fg-subtle border-b border-border">
+                      <th className="py-2 pr-4 font-medium">Clase</th>
+                      <th className="py-2 pr-4 font-medium">ISIN</th>
+                      <th className="py-2 pr-4 font-medium text-right">Gastos</th>
+                      <th className="py-2 font-medium">Pensada para</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-border/50">
+                      <td className="py-2 pr-4 text-fg font-medium">{claseDeEsta}</td>
+                      <td className="py-2 pr-4 font-mono text-xs text-fg-muted">{f.isin}</td>
+                      <td className="py-2 pr-4 text-right text-fg">{pct(f.ter)}</td>
+                      <td className="py-2 text-fg-muted">la de esta ficha</td>
+                    </tr>
+                    {clases.map((c) => (
+                      <tr key={c.isin} className="border-b border-border/50">
+                        <td className="py-2 pr-4 text-fg font-medium">{c.className}</td>
+                        <td className="py-2 pr-4 font-mono text-xs text-fg-muted">{c.isin}</td>
+                        <td className="py-2 pr-4 text-right text-fg">{pct(c.ter)}</td>
+                        <td className="py-2 text-fg-muted">{c.institutional ? 'institucionales*' : 'particulares'}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              {clases.some((c) => c.institutional) && (
+                <p className="text-xs text-fg-subtle leading-relaxed mt-3">
+                  * El mínimo que exige la gestora en una clase institucional se aplica a quien
+                  suscribe, y quien suscribe no es el particular sino su comercializadora. Una
+                  plataforma que agrupa a sus clientes en una cuenta ómnibus sí llega, y entonces
+                  el mínimo que te aplica a ti lo decide ella, no la gestora. Comprueba en tu
+                  plataforma qué clase ofrece y desde cuánto.
+                </p>
+              )}
             </Card>
           )}
 
