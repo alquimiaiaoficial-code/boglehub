@@ -88,6 +88,42 @@ export const INDEX_FUNDS: IndexFund[] = [
     ],
   },
   {
+    slug: 'ishares-euro-government-bond-index',
+    name: 'iShares Euro Government Bond Index Fund (clase D)',
+    manager: 'BlackRock',
+    isin: 'IE00BD0NC037',
+    // Verificado el 25-sep-2026 en la ficha de la GESTORA:
+    // blackrock.com/es/profesionales/productos/287637/ishares-euro-government-bond-index-fund-ie
+    // «Clase D | Índice de referencia: FTSE EMU Government Bond Index (EUR) |
+    // Porcentaje de gastos: 0,07 por ciento | Uso de los ingresos: Acumulación |
+    // Domicilio: Irlanda | Inversión inicial mínima: EUR 100.000 | posterior: EUR 5.000».
+    //
+    // Por qué este y no otro de los 66 que quedan: la comparativa de comisiones de
+    // bogleheads.es cita este ISIN junto al IE000ZYRH0Q7 como los dos de referencia de
+    // MyInvestor. O sea que es de los que la gente tiene de verdad, no de los que se ven
+    // bien en una lista.
+    index: 'FTSE EMU Government Bond',
+    ter: 0.07,
+    assetClass: 'Renta fija',
+    region: 'Eurozona',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    // Ojo: 100.000 € es la entrada que pide BlackRock, no la que pide tu plataforma. Menos
+    // que los 200 millones de las clases S, pero sigue estando fuera del alcance directo de
+    // casi cualquier particular.
+    minimum: 'BlackRock exige 100.000 € de inversión inicial y 5.000 € en las siguientes; lo que te pida tu comercializadora puede ser muy distinto',
+    tagline: 'Deuda pública de la eurozona en formato fondo, al 0,07 %',
+    description:
+      'El iShares Euro Government Bond Index Fund replica el FTSE EMU Government Bond Index con unos gastos del 0,07 % anual, verificados en la ficha de BlackRock. Invierte en deuda pública emitida por los estados de la eurozona, así que no hay riesgo de divisa para quien invierte en euros, pero sí riesgo de tipos de interés: cuando los tipos suben, el precio de los bonos ya emitidos baja. Al ser un fondo y no un ETF, entra en el régimen de traspasos del artículo 94.1.a) del IRPF.',
+    etfEquivalent: 'VGEA',
+    faq: [
+      { q: '¿Por qué bajó tanto la renta fija en 2022 si es lo «seguro»?', a: 'Porque «seguro» en renta fija significa que el emisor devuelve el dinero al vencimiento, no que el precio no se mueva por el camino. Un bono ya emitido paga un cupón fijo; si los tipos suben, los bonos nuevos pagan más y el viejo solo se puede vender más barato. Cuanto más lejos esté el vencimiento, mayor es esa caída: es lo que mide la duración. En 2022 los tipos subieron muy deprisa desde niveles muy bajos y los fondos de deuda con duración larga cayeron con fuerza.' },
+      { q: '¿Qué países hay dentro?', a: 'Deuda pública de los estados de la eurozona, ponderada por volumen emitido. Eso significa que los países más endeudados pesan más, que es lo contrario de lo que mucha gente supone: Italia y Francia pesan bastante más que Países Bajos o Irlanda. No es un defecto del fondo, es cómo funciona un índice de renta fija ponderado por capitalización.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza, no desaparece.' },
+    ],
+  },
+  {
     slug: 'ishares-emerging-markets-index-clase-s',
     name: 'iShares Emerging Markets Index Fund (clase S)',
     manager: 'BlackRock',

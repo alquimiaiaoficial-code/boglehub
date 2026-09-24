@@ -220,6 +220,17 @@ const EQUIVALENCIAS: Record<string, Equivalencia> = {
     nota: 'El fondo replica el Bloomberg Euro Government Float Adjusted y la exposición se toma de un ETF sobre el Euro Aggregate Treasury. Es la misma deuda pública de la eurozona; el ajuste por capital flotante cambia algo los pesos por país.',
   },
 
+  /**
+   * FTSE EMU Government Bond contra el Euro Aggregate Treasury del ETF. Mismo universo
+   * —deuda pública de los estados de la eurozona— y distinto proveedor de índice, así que
+   * aproximada. Verificado el 25-sep-2026 en la ficha de BlackRock.
+   */
+  IE00BD0NC037: {
+    ticker: 'VGEA',
+    calidad: 'aproximada',
+    nota: 'El fondo replica el FTSE EMU Government Bond y la exposición se toma de un ETF sobre el Euro Aggregate Treasury de Bloomberg. Es la misma deuda pública de la eurozona, con dos proveedores de índice distintos: los criterios de inclusión y los pesos por país no son idénticos.',
+  },
+
   IE00B18GC888: {
     ticker: 'AGGH',
     calidad: 'aproximada',
@@ -460,6 +471,7 @@ export const VERIFICADOS_EN_FUENTE: Record<string, string> = {
   IE00BD0NCM55: '19-sep-2026, registro de fondos: «ISHARES DEVELOPED WORLD INDEX FUND (IE) D EUR ACC | BLACKROCK INVESTMENT MANAGEMENT | MSCI World | 0,30 %»',
   IE000ZYRH0Q7: '24-sep-2026, ficha de la GESTORA (blackrock.com/es/profesionales/productos/345277): «Clase S (EUR) Acumulación | Índice de referencia: MSCI World Index Net (EUR) | Porcentaje de gastos: 0,04 % | Domicilio: Irlanda | Gestora: BlackRock Asset Management Ireland Limited | Lanzamiento de la serie: 21 ago 2025». Misma cartera que la clase D de arriba y siete veces y media más barata',
   IE000QAZP7L2: '24-sep-2026, ficha de la GESTORA (blackrock.com/es/profesionales/productos/345276): «Clase S | Índice: MSCI Emerging Markets, Net Returns (EUR) | Porcentaje de gastos: 0,08 por ciento | Domicilio: Irlanda | Inversión inicial mínima: EUR 200.000.000»',
+  IE00BD0NC037: '25-sep-2026, ficha de la GESTORA (blackrock.com/es/profesionales/productos/287637): «Clase D | Índice de referencia: FTSE EMU Government Bond Index (EUR) | Porcentaje de gastos: 0,07 por ciento | Acumulación | Domicilio: Irlanda | Inversión inicial mínima: EUR 100.000». Citado por la comparativa de comisiones de bogleheads.es como uno de los dos ISIN de referencia de MyInvestor',
   LU0996182563: '19-sep-2026, registro de fondos: «AMUNDI INDEX MSCI WORLD AE CAP | AMUNDI ASSET MANAGEMENT | MSCI World | 0,15 %»',
   IE00BYX5MD61: '19-sep-2026, registro de fondos: «FIDELITY MSCI EUROPE INDEX FUND P-ACC-EUR | FIL INVESTMENTS INTERNATIONAL | MSCI Europe Index | 0,10 %»',
   IE00B42W4L06: '19-sep-2026, registro de fondos: «VANGUARD GLOBAL SMALL-CAP INDEX GENERAL EUR CAP | VANGUARD ASSET MANAGEMENT | MSCI World Small Cap Index | 0,29 %»',
