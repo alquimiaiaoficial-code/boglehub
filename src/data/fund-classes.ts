@@ -98,6 +98,102 @@ export const FUND_CLASSES: FundClass[] = [
     verified:
       '25-sep-2026, ficha de BlackRock (blackrock.com/es/profesionales/productos/229063): «iShares Euro Government Bond Index Fund (IE) | Inst | Índice de referencia: FTSE EMU Government Bond Index (EUR) | Porcentaje de gastos: 0,10 por ciento | Inversión inicial mínima: EUR 250.000 | Acumulación»',
   },
+  {
+    isin: 'IE00B6RVWW34',
+    parentSlug: 'ishares-japan-index',
+    className: 'Inst',
+    ter: 0.15,
+    accumulating: true,
+    currency: 'EUR',
+    minimum: 'Clase institucional: BlackRock exige 1.000.000 € de inversión inicial. Un particular solo entra a través de una comercializadora que agrupe en cuenta ómnibus',
+    institutional: true,
+    verified:
+      '25-sep-2026, ficha de BlackRock (blackrock.com/es/profesionales/productos/228488): «Inst | Índice de referencia: MSCI Developed - Japan Net Total Return Index in EUR | Porcentaje de gastos: 0,15 por ciento | Inversión inicial mínima: EUR 1.000.000»',
+  },
+  {
+    isin: 'IE00B56H2V49',
+    parentSlug: 'ishares-pacific-index',
+    className: 'Inst',
+    ter: 0.15,
+    accumulating: true,
+    currency: 'EUR',
+    minimum: 'Clase institucional: BlackRock exige 1.000.000 € de inversión inicial. Un particular solo entra a través de una comercializadora que agrupe en cuenta ómnibus',
+    institutional: true,
+    verified:
+      '25-sep-2026, ficha de BlackRock (blackrock.com/es/profesionales/productos/228486): «Inst | Índice de referencia: MSCI Developed Pacific Ex Japan in EUR Net TR Index | Porcentaje de gastos: 0,15 por ciento | Inversión inicial mínima: EUR 1.000.000»',
+  },
+  {
+    isin: 'IE0004ZP1ND3',
+    parentSlug: 'ishares-global-aggregate-1-5-year-bond-index',
+    className: 'S Hedged',
+    ter: 0.07,
+    accumulating: true,
+    currency: 'EUR',
+    minimum: 'Clase institucional: BlackRock exige 200.000.000 € de inversión inicial. Un particular solo entra a través de una comercializadora que agrupe en cuenta ómnibus',
+    institutional: true,
+    verified:
+      '25-sep-2026, ficha de BlackRock (blackrock.com/es/profesionales/productos/345260): «Class S Hedged | Índice de referencia: BBG Global Aggregate 1-5 Year Index | Porcentaje de gastos: 0,07 por ciento | Inversión inicial mínima: EUR 200.000.000»',
+  },
+  {
+    isin: 'LU1811363917',
+    parentSlug: 'ishares-north-america-index',
+    className: 'D2 (versión luxemburguesa)',
+    ter: 0.15,
+    accumulating: true,
+    currency: 'EUR',
+    minimum: 'BlackRock exige 100.000 $ de inversión inicial; lo que te pida tu comercializadora puede ser muy distinto',
+    institutional: false,
+    verified:
+      '25-sep-2026, ficha de BlackRock (blackrock.com/es/profesionales/productos/297054): «iShares North America Equity Index Fund (LU) | D2 | Índice de referencia: MSCI North America Net EUR | Porcentaje de gastos: 0,15 por ciento | Inversión inicial mínima: USD 100.000»',
+  },
+  {
+    isin: 'LU2504564761',
+    parentSlug: 'ishares-developed-world-index',
+    className: 'A2 (versión luxemburguesa)',
+    ter: 0.45,
+    accumulating: true,
+    currency: 'EUR',
+    minimum: 'BlackRock exige 5.000 $ de inversión inicial; lo que te pida tu comercializadora puede ser muy distinto',
+    institutional: false,
+    verified:
+      '25-sep-2026, ficha de BlackRock (blackrock.com/es/profesionales/productos/329350): «iShares World Equity Index Fund (LU) | A2 | Índice de referencia: MSCI WORLD Net EUR | Porcentaje de gastos: 0,45 por ciento | Inversión inicial mínima: USD 5.000»',
+  },
+  {
+    isin: 'LU0836514744',
+    parentSlug: 'ishares-europe-index',
+    className: 'D2 (versión luxemburguesa)',
+    ter: 0.15,
+    accumulating: true,
+    currency: 'EUR',
+    minimum: 'BlackRock exige 100.000 $ de inversión inicial; lo que te pida tu comercializadora puede ser muy distinto',
+    institutional: false,
+    verified:
+      '25-sep-2026, ficha de BlackRock (blackrock.com/es/profesionales/productos/246687): «iShares Europe Equity Index Fund (LU) | D2 | Índice de referencia: MSCI Europe Index | Porcentaje de gastos: 0,15 por ciento | Inversión inicial mínima: USD 100.000»',
+  },
+  {
+    isin: 'LU0836512706',
+    parentSlug: 'ishares-europe-index',
+    className: 'A2 (versión luxemburguesa)',
+    ter: 0.45,
+    accumulating: true,
+    currency: 'EUR',
+    minimum: 'BlackRock exige 5.000 $ de inversión inicial; lo que te pida tu comercializadora puede ser muy distinto',
+    institutional: false,
+    verified:
+      '25-sep-2026, ficha de BlackRock (blackrock.com/es/profesionales/productos/243969): «iShares Europe Equity Index Fund (LU) | A2 | Índice de referencia: MSCI Europe Index | Porcentaje de gastos: 0,45 por ciento | Inversión inicial mínima: USD 5.000»',
+  },
+  {
+    isin: 'LU0836513266',
+    parentSlug: 'ishares-euro-government-bond-index',
+    className: 'A2 (versión luxemburguesa)',
+    ter: 0.45,
+    accumulating: true,
+    currency: 'EUR',
+    minimum: 'BlackRock exige 5.000 $ de inversión inicial; lo que te pida tu comercializadora puede ser muy distinto',
+    institutional: false,
+    verified:
+      '25-sep-2026, ficha de BlackRock (blackrock.com/es/profesionales/productos/243976): «iShares Euro Government Bond Index Fund (LU) | A2 | Índice de referencia: FTSE EMU Government Bond Index (EUR) | Porcentaje de gastos: 0,45 por ciento | Inversión inicial mínima: USD 5.000»',
+  },
 ]
 
 export function getFundClassByIsin(isin: string): FundClass | undefined {

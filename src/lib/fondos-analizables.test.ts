@@ -277,7 +277,12 @@ describe('cobertura', () => {
     // dos usuarios decían que su hoja de cálculo no reconocía ese ISIN, y la nuestra
     // tampoco. Es el mismo fondo que la clase D que ya teníamos, al 0,04 % en vez del
     // 0,30 %.
-    expect(analizables.length).toBe(18)
+    // 25-sep-2026: 23. El lote de BlackRock metió 11 fondos con ficha, pero solo 5 con
+    // equivalencia fiable (North America, Japan, Pacific, Global Aggregate 1-5 y Ultra High
+    // Quality Euro Gov). Los otros 6 —inmobiliario, EMU, corporativos, mundial sin euro,
+    // Euro Aggregate e inflación— se RECONOCEN pero no se analizan, porque no tenemos un ETF
+    // con esa exposición y dar un número con la de otro sería inventarlo. Eso es a propósito.
+    expect(analizables.length).toBe(23)
     expect(analizables.length).toBeLessThan(INDEX_FUNDS.length)
   })
 })

@@ -107,6 +107,37 @@ const EQUIVALENCIAS: Record<string, Equivalencia> = {
    */
   IE000QAZP7L2: { ticker: 'EIMI', calidad: 'exacta' },
 
+  // iShares North America Index Fund (clase D) - MSCI North America. Verificado el 25-sep-2026 en la ficha de BlackRock.
+  IE00BD575G75: {
+    ticker: 'CSPX',
+    calidad: 'aproximada',
+    nota: 'El fondo replica el MSCI North America y la exposición se toma de un ETF sobre el S&P 500. El MSCI North America añade Canadá, en torno a un 3 %, y algo más de empresas medianas; el resto son las mismas grandes compañías de Estados Unidos.',
+  },
+
+  // iShares Japan Index Fund (clase D) - MSCI Japan. Verificado el 25-sep-2026 en la ficha de BlackRock.
+  IE00BDRK7T12: {
+    ticker: 'SJPA',
+    calidad: 'aproximada',
+    nota: 'El fondo replica el MSCI Japan y la exposición se toma de un ETF sobre el MSCI Japan IMI, que añade pequeña capitalización. Mismo mercado, universo algo más amplio.',
+  },
+
+  // iShares Pacific Index Fund (clase D) - MSCI Pacific ex Japan. Verificado el 25-sep-2026 en la ficha de BlackRock. Mismo índice que CPXJ.
+  IE00BDRK7R97: { ticker: 'CPXJ', calidad: 'exacta' },
+
+  // iShares Global Aggregate 1-5 Year Bond Index Fund (clase D Hedged) - Bloomberg Global Aggregate 1-5 Year. Verificado el 25-sep-2026 en la ficha de BlackRock.
+  IE00BMZ3NN11: {
+    ticker: 'AGGH',
+    calidad: 'aproximada',
+    nota: 'El fondo replica el Global Aggregate con vencimientos de 1 a 5 años y la exposición se toma del Global Aggregate completo. Mismos emisores y países; la diferencia es el plazo, y un plazo más corto hace que el precio se mueva bastante menos cuando cambian los tipos.',
+  },
+
+  // iShares Ultra High Quality Euro Government Bond Index Fund (clase Inst) - iBoxx Eurozone AAA. Verificado el 25-sep-2026 en la ficha de BlackRock.
+  IE00B4XCK338: {
+    ticker: 'VGEA',
+    calidad: 'aproximada',
+    nota: 'El fondo solo compra deuda de estados de la eurozona con calificación AAA y la exposición se toma de un ETF de toda la deuda pública de la eurozona. Misma región y mismo tipo de emisor; los países cambian mucho, porque Italia o España no son AAA y aquí no están.',
+  },
+
   /**
    * iShares Europe Index Fund (IE), clase D - MSCI Europe.
    * Verificado el 25-sep-2026 en la ficha de BlackRock: «Clase D | Índice de referencia:
@@ -273,6 +304,19 @@ const PRODUCTOS_RETIRADOS: Record<string, { nombre: string; indice: string; moti
 }
 
 const SIN_EQUIVALENCIA_FIABLE: Record<string, string> = {
+  // iShares Developed Real Estate Index Fund (clase Inst). Verificado el 25-sep-2026 en blackrock.com/es/profesionales/productos/249682: «Inst | Índice de referencia: FTSE EPRA Nareit Developed Net Index EUR | Porcentaje de gastos: 0,20 por ciento | Inversión inicial mínima: 1.000.000 | Acumulación».
+  IE00B83YJG36: 'No tenemos en el catálogo un ETF que replique el FTSE EPRA Nareit Developed, que es inmobiliario cotizado. Usar la exposición de un índice de acciones general daría un reparto por sectores falso, así que preferimos no dar número.',
+  // iShares EMU Index Fund (clase Inst). Verificado el 25-sep-2026 en blackrock.com/es/profesionales/productos/228478: «Inst | Índice de referencia: MSCI EMU Net TR Index (EUR) | Porcentaje de gastos: 0,15 por ciento | Inversión inicial mínima: 1.000.000 | Acumulación».
+  IE00B3B2KS38: 'No tenemos en el catálogo un ETF sobre el MSCI EMU. El único europeo que hay replica el MSCI Europe, que incluye Reino Unido, Suiza y los nórdicos, alrededor de un tercio del índice fuera de la eurozona. Usarlo daría una exposición por países falsa, así que preferimos no dar número.',
+  // iShares Euro Investment Grade Corporate Bond Index Fund (clase Inst). Verificado el 25-sep-2026 en blackrock.com/es/profesionales/productos/228525: «Inst | Índice de referencia: BBG Euro Corporate Index (EUR) | Porcentaje de gastos: 0,12 por ciento | Inversión inicial mínima: EUR 500.000 | Acumulación».
+  IE00B67T5G21: 'No tenemos en el catálogo un ETF de deuda corporativa en euros. Tomar la exposición de uno de deuda pública pondría este fondo como 100 % bonos del Estado cuando son bonos de empresas, así que preferimos no dar número.',
+  // iShares World ex-Euro Government Bond Index Fund (clase Inst Hedged). Verificado el 25-sep-2026 en blackrock.com/es/profesionales/productos/306040: «Inst Hedged Acc | Índice de referencia: FTSE Non-EUR World Government Bond Index | Porcentaje de gastos: 0,14 por ciento | Inversión inicial mínima: GBP 500.000 | Acumulación».
+  IE00BGR7K831: 'No tenemos en el catálogo un ETF de deuda pública mundial sin la eurozona. El global agregado que hay incluye deuda corporativa y deuda en euros, así que el reparto saldría falso; preferimos no dar número.',
+  // iShares Euro Aggregate Bond Index Fund (clase A2). Verificado el 25-sep-2026 en blackrock.com/es/profesionales/productos/254304: «A2 | Índice de referencia: BBG Euro Aggregate Index (EUR) | Porcentaje de gastos: 0,45 por ciento | Inversión inicial mínima: EUR 5.000 | Acumulación».
+  LU0836513423: 'No tenemos en el catálogo un ETF sobre el Euro Aggregate, que mezcla deuda pública y de empresas. El de deuda pública en euros lo pondría todo como bonos del Estado, y alrededor de una cuarta parte son corporativos; preferimos no dar número.',
+  // iShares Euro Government Inflation-Linked Bond Index Fund (clase Inst). Verificado el 25-sep-2026 en blackrock.com/es/profesionales/productos/228466: «Inst | Índice de referencia: BBG Euro Government Inflation-Linked Bond Index (EUR) | Porcentaje de gastos: 0,10 por ciento | Inversión inicial mínima: EUR 500.000 | Acumulación».
+  IE00B4WXT857: 'No tenemos en el catálogo un ETF de bonos ligados a la inflación. El de deuda pública en euros tiene la misma región y el mismo emisor, pero se comporta distinto cuando cambia la inflación, que es justo para lo que existe este fondo; preferimos no dar número.',
+
   /*
    * Los tres de aquí abajo NO son fondos: son ETFs que el catálogo publicaba como fondos.
    * Tenían el mensaje genérico de «todavía no hemos comprobado sus datos», que había dejado
@@ -515,6 +559,11 @@ export const VERIFICADOS_EN_FUENTE: Record<string, string> = {
   IE000QAZP7L2: '24-sep-2026, ficha de la GESTORA (blackrock.com/es/profesionales/productos/345276): «Clase S | Índice: MSCI Emerging Markets, Net Returns (EUR) | Porcentaje de gastos: 0,08 por ciento | Domicilio: Irlanda | Inversión inicial mínima: EUR 200.000.000»',
   IE00BD0NC037: '25-sep-2026, ficha de la GESTORA (blackrock.com/es/profesionales/productos/287637): «Clase D | Índice de referencia: FTSE EMU Government Bond Index (EUR) | Porcentaje de gastos: 0,07 por ciento | Acumulación | Domicilio: Irlanda | Inversión inicial mínima: EUR 100.000». Citado por la comparativa de comisiones de bogleheads.es como uno de los dos ISIN de referencia de MyInvestor',
   IE00BDRK7L36: '25-sep-2026, ficha de la GESTORA (blackrock.com/es/profesionales/productos/287906): «Clase D | Índice de referencia: MSCI Europe Index | Porcentaje de gastos: 0,30 por ciento | Acumulación | Inversión inicial mínima: EUR 100.000». Es el más caro de los tres que tenemos sobre este índice y entra igual, porque el catálogo reconoce lo que la gente tiene',
+  IE00BD575G75: '25-sep-2026, ficha de la GESTORA (blackrock.com/es/profesionales/productos/284072): «Clase D | Índice de referencia: MSCI Daily Net TR North America (EUR) | Porcentaje de gastos: 0,08 por ciento | Inversión inicial mínima: 100.000 | Acumulación»',
+  IE00BDRK7T12: '25-sep-2026, ficha de la GESTORA (blackrock.com/es/profesionales/productos/287903): «Clase D | Índice de referencia: MSCI Developed - Japan Net EUR Index | Porcentaje de gastos: 0,30 por ciento | Inversión inicial mínima: EUR 100.000 | Acumulación»',
+  IE00BDRK7R97: '25-sep-2026, ficha de la GESTORA (blackrock.com/es/profesionales/productos/287905): «Clase D | Índice de referencia: MSCI Developed Pacific Ex Japan in EUR Net TR Index | Porcentaje de gastos: 0,30 por ciento | Inversión inicial mínima: EUR 100.000 | Acumulación»',
+  IE00BMZ3NN11: '25-sep-2026, ficha de la GESTORA (blackrock.com/es/profesionales/productos/318356): «Class D Hedged | Índice de referencia: BBG Global Aggregate 1-5 Year Index | Porcentaje de gastos: 0,14 por ciento | Inversión inicial mínima: EUR 100.000 | Acumulación»',
+  IE00B4XCK338: '25-sep-2026, ficha de la GESTORA (blackrock.com/es/profesionales/productos/229107): «Inst | Índice de referencia: iBoxx Eurozone AAA Index (EUR) | Porcentaje de gastos: 0,10 por ciento | Inversión inicial mínima: EUR 250.000 | Acumulación»',
   LU0996182563: '19-sep-2026, registro de fondos: «AMUNDI INDEX MSCI WORLD AE CAP | AMUNDI ASSET MANAGEMENT | MSCI World | 0,15 %»',
   IE00BYX5MD61: '19-sep-2026, registro de fondos: «FIDELITY MSCI EUROPE INDEX FUND P-ACC-EUR | FIL INVESTMENTS INTERNATIONAL | MSCI Europe Index | 0,10 %»',
   IE00B42W4L06: '19-sep-2026, registro de fondos: «VANGUARD GLOBAL SMALL-CAP INDEX GENERAL EUR CAP | VANGUARD ASSET MANAGEMENT | MSCI World Small Cap Index | 0,29 %»',

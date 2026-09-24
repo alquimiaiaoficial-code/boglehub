@@ -88,6 +88,281 @@ export const INDEX_FUNDS: IndexFund[] = [
     ],
   },
   {
+    slug: 'ishares-north-america-index',
+    name: 'iShares North America Index Fund (clase D)',
+    manager: 'BlackRock',
+    isin: 'IE00BD575G75',
+    // Verificado el 25-sep-2026 en la ficha de la GESTORA:
+    // blackrock.com/es/profesionales/productos/284072
+    // «Clase D | Índice de referencia: MSCI Daily Net TR North America (EUR) | Porcentaje de gastos: 0,08 por ciento | Inversión inicial mínima: 100.000 | Acumulación».
+    index: 'MSCI North America',
+    ter: 0.08,
+    assetClass: 'Renta variable',
+    region: 'Norteamérica',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'BlackRock exige 100.000 € de inversión inicial; lo que te pida tu comercializadora puede ser muy distinto',
+    tagline: 'Estados Unidos y Canadá en formato fondo, al 0,08 %',
+    description:
+      'El iShares North America Index Fund replica el MSCI North America con unos gastos del 0,08 % anual, verificados en la ficha de BlackRock. Son las grandes y medianas empresas de Estados Unidos y Canadá: Estados Unidos pesa en torno al 97 % y Canadá el resto. Es parecido al S&P 500 pero algo más amplio, porque añade Canadá y más empresas medianas.',
+    etfEquivalent: 'CSPX',
+    faq: [
+      { q: '¿En qué se diferencia del S&P 500?', a: 'El S&P 500 son unas 500 grandes empresas de Estados Unidos. El MSCI North America añade Canadá, que pesa en torno a un 3 %, y algo más de empresas medianas estadounidenses. En la práctica se mueven casi igual: la mayor parte del índice son las mismas grandes compañías de Estados Unidos.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'ishares-developed-real-estate-index',
+    name: 'iShares Developed Real Estate Index Fund (clase Inst)',
+    manager: 'BlackRock',
+    isin: 'IE00B83YJG36',
+    // Verificado el 25-sep-2026 en la ficha de la GESTORA:
+    // blackrock.com/es/profesionales/productos/249682
+    // «Inst | Índice de referencia: FTSE EPRA Nareit Developed Net Index EUR | Porcentaje de gastos: 0,20 por ciento | Inversión inicial mínima: 1.000.000 | Acumulación».
+    index: 'FTSE EPRA Nareit Developed',
+    ter: 0.20,
+    assetClass: 'Renta variable',
+    region: 'Global desarrollado',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'Clase institucional: BlackRock exige 1.000.000 € de inversión inicial. Un particular solo entra a través de una comercializadora que agrupe en cuenta ómnibus',
+    tagline: 'Inmobiliario cotizado de países desarrollados, al 0,20 %',
+    description:
+      'El iShares Developed Real Estate Index Fund replica el FTSE EPRA Nareit Developed, un índice de empresas inmobiliarias cotizadas y SOCIMIs de países desarrollados, con unos gastos del 0,20 % anual verificados en la ficha de BlackRock. No compra inmuebles: compra acciones de empresas que los poseen y alquilan, así que se comporta como renta variable y no como un piso.',
+    faq: [
+      { q: '¿Invertir en este fondo es como comprar un inmueble?', a: 'No. Compra acciones de empresas inmobiliarias cotizadas, así que su precio se mueve con la bolsa y puede caer mucho en una crisis aunque los alquileres sigan cobrándose. Tiene liquidez diaria, que un piso no tiene, y a cambio no da la estabilidad de precio que la gente suele asociar al ladrillo.' },
+      { q: 'Si es una clase institucional, ¿cómo la compra un particular?', a: 'El mínimo lo exige el fondo a quien suscribe, y quien suscribe no eres tú sino tu comercializadora. Una plataforma que agrupa a sus clientes en una cuenta ómnibus sí llega a ese mínimo, y luego te deja entrar con lo que ella decida. Por eso el mínimo que te aplique a ti lo pone tu plataforma, no BlackRock: compruébalo allí.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'ishares-emu-index',
+    name: 'iShares EMU Index Fund (clase Inst)',
+    manager: 'BlackRock',
+    isin: 'IE00B3B2KS38',
+    // Verificado el 25-sep-2026 en la ficha de la GESTORA:
+    // blackrock.com/es/profesionales/productos/228478
+    // «Inst | Índice de referencia: MSCI EMU Net TR Index (EUR) | Porcentaje de gastos: 0,15 por ciento | Inversión inicial mínima: 1.000.000 | Acumulación».
+    index: 'MSCI EMU',
+    ter: 0.15,
+    assetClass: 'Renta variable',
+    region: 'Eurozona',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'Clase institucional: BlackRock exige 1.000.000 € de inversión inicial. Un particular solo entra a través de una comercializadora que agrupe en cuenta ómnibus',
+    tagline: 'Solo eurozona en formato fondo, al 0,15 %',
+    description:
+      'El iShares EMU Index Fund replica el MSCI EMU, las grandes y medianas empresas de los países que usan el euro, con unos gastos del 0,15 % anual verificados en la ficha de BlackRock. A diferencia del MSCI Europe, deja fuera Reino Unido, Suiza, Suecia, Dinamarca y Noruega, así que no tiene riesgo de divisa para quien invierte en euros.',
+    faq: [
+      { q: '¿Qué diferencia hay entre MSCI EMU y MSCI Europe?', a: 'El MSCI EMU solo tiene países del euro. El MSCI Europe añade Reino Unido, Suiza, Suecia, Dinamarca y Noruega, que tienen moneda propia y pesan en torno a un tercio del índice. Si lo que se busca es no tener riesgo de divisa, el EMU lo elimina y el Europe no.' },
+      { q: 'Si es una clase institucional, ¿cómo la compra un particular?', a: 'El mínimo lo exige el fondo a quien suscribe, y quien suscribe no eres tú sino tu comercializadora. Una plataforma que agrupa a sus clientes en una cuenta ómnibus sí llega a ese mínimo, y luego te deja entrar con lo que ella decida. Por eso el mínimo que te aplique a ti lo pone tu plataforma, no BlackRock: compruébalo allí.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'ishares-japan-index',
+    name: 'iShares Japan Index Fund (clase D)',
+    manager: 'BlackRock',
+    isin: 'IE00BDRK7T12',
+    // Verificado el 25-sep-2026 en la ficha de la GESTORA:
+    // blackrock.com/es/profesionales/productos/287903
+    // «Clase D | Índice de referencia: MSCI Developed - Japan Net EUR Index | Porcentaje de gastos: 0,30 por ciento | Inversión inicial mínima: EUR 100.000 | Acumulación».
+    index: 'MSCI Japan',
+    ter: 0.30,
+    assetClass: 'Renta variable',
+    region: 'Japón',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'BlackRock exige 100.000 € de inversión inicial; lo que te pida tu comercializadora puede ser muy distinto',
+    tagline: 'Japón en formato fondo, de BlackRock',
+    description:
+      'El iShares Japan Index Fund replica el MSCI Japan, las grandes y medianas empresas japonesas, con unos gastos del 0,30 % anual verificados en la ficha de BlackRock. Invierte en yenes, así que para quien invierte en euros hay riesgo de divisa además del de la bolsa.',
+    etfEquivalent: 'SJPA',
+    faq: [
+      { q: '¿Por qué hay clases de este fondo con comisiones tan distintas?', a: 'Porque una clase no es un fondo distinto, es otra forma de entrar en el mismo. Esta clase D cuesta 0,30 % y la Inst del mismo fondo 0,15 %, con la misma cartera. Lo que cambia es el mínimo de entrada y a quién va dirigida.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'ishares-pacific-index',
+    name: 'iShares Pacific Index Fund (clase D)',
+    manager: 'BlackRock',
+    isin: 'IE00BDRK7R97',
+    // Verificado el 25-sep-2026 en la ficha de la GESTORA:
+    // blackrock.com/es/profesionales/productos/287905
+    // «Clase D | Índice de referencia: MSCI Developed Pacific Ex Japan in EUR Net TR Index | Porcentaje de gastos: 0,30 por ciento | Inversión inicial mínima: EUR 100.000 | Acumulación».
+    index: 'MSCI Pacific ex Japan',
+    ter: 0.30,
+    assetClass: 'Renta variable',
+    region: 'Pacífico ex-Japón',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'BlackRock exige 100.000 € de inversión inicial; lo que te pida tu comercializadora puede ser muy distinto',
+    tagline: 'Australia, Hong Kong, Singapur y Nueva Zelanda en fondo',
+    description:
+      'El iShares Pacific Index Fund replica el MSCI Pacific ex Japan, las grandes y medianas empresas de Australia, Hong Kong, Singapur y Nueva Zelanda, con unos gastos del 0,30 % anual verificados en la ficha de BlackRock. Australia es con diferencia el mayor peso del índice.',
+    etfEquivalent: 'CPXJ',
+    faq: [
+      { q: '¿Qué países incluye?', a: 'Australia, Hong Kong, Singapur y Nueva Zelanda. Australia pesa la mayor parte, en torno a dos tercios, así que el comportamiento del fondo depende mucho de la bolsa australiana, que tiene mucho peso de bancos y de materias primas. No incluye Japón, que tiene su propio índice.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'ishares-global-aggregate-1-5-year-bond-index',
+    name: 'iShares Global Aggregate 1-5 Year Bond Index Fund (clase D Hedged)',
+    manager: 'BlackRock',
+    isin: 'IE00BMZ3NN11',
+    // Verificado el 25-sep-2026 en la ficha de la GESTORA:
+    // blackrock.com/es/profesionales/productos/318356
+    // «Class D Hedged | Índice de referencia: BBG Global Aggregate 1-5 Year Index | Porcentaje de gastos: 0,14 por ciento | Inversión inicial mínima: EUR 100.000 | Acumulación».
+    index: 'Bloomberg Global Aggregate 1-5 Year',
+    ter: 0.14,
+    assetClass: 'Renta fija',
+    region: 'Global',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'BlackRock exige 100.000 € de inversión inicial; lo que te pida tu comercializadora puede ser muy distinto',
+    tagline: 'Renta fija global a corto plazo, cubierta a euros',
+    description:
+      'El iShares Global Aggregate 1-5 Year Bond Index Fund replica la parte de 1 a 5 años del Bloomberg Global Aggregate, deuda pública y corporativa con grado de inversión de todo el mundo, con unos gastos del 0,14 % anual verificados en la ficha de BlackRock. Está cubierto a euros, así que el riesgo de divisa se neutraliza.',
+    etfEquivalent: 'AGGH',
+    faq: [
+      { q: '¿Qué cambia por ser de 1 a 5 años?', a: 'La sensibilidad a los tipos de interés. Un bono a 20 años pierde mucho precio si los tipos suben; uno a 3 años, poco, porque vence pronto y se reinvierte al tipo nuevo. Por eso un fondo de plazo corto cae mucho menos en años como 2022, y a cambio suele rentar algo menos cuando los tipos bajan.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'ishares-ultra-high-quality-euro-government-bond-index',
+    name: 'iShares Ultra High Quality Euro Government Bond Index Fund (clase Inst)',
+    manager: 'BlackRock',
+    isin: 'IE00B4XCK338',
+    // Verificado el 25-sep-2026 en la ficha de la GESTORA:
+    // blackrock.com/es/profesionales/productos/229107
+    // «Inst | Índice de referencia: iBoxx Eurozone AAA Index (EUR) | Porcentaje de gastos: 0,10 por ciento | Inversión inicial mínima: EUR 250.000 | Acumulación».
+    index: 'iBoxx Eurozone AAA',
+    ter: 0.10,
+    assetClass: 'Renta fija',
+    region: 'Eurozona',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'Clase institucional: BlackRock exige 250.000 € de inversión inicial. Un particular solo entra a través de una comercializadora que agrupe en cuenta ómnibus',
+    tagline: 'Solo la deuda pública AAA de la eurozona',
+    description:
+      'El iShares Ultra High Quality Euro Government Bond Index Fund replica el iBoxx Eurozone AAA, es decir, solo la deuda de los estados de la eurozona con la máxima calificación crediticia, con unos gastos del 0,10 % anual verificados en la ficha de BlackRock. Deja fuera a países como Italia, España o Francia, que no tienen AAA.',
+    etfEquivalent: 'VGEA',
+    faq: [
+      { q: '¿Qué países entran si solo compra AAA?', a: 'Los estados de la eurozona que en cada momento tienen la máxima calificación, como Alemania o Países Bajos. Italia, España o Francia no están, porque no son AAA. Eso lo hace más conservador en riesgo de impago, y también más concentrado en pocos emisores.' },
+      { q: 'Si es una clase institucional, ¿cómo la compra un particular?', a: 'El mínimo lo exige el fondo a quien suscribe, y quien suscribe no eres tú sino tu comercializadora. Una plataforma que agrupa a sus clientes en una cuenta ómnibus sí llega a ese mínimo, y luego te deja entrar con lo que ella decida. Por eso el mínimo que te aplique a ti lo pone tu plataforma, no BlackRock: compruébalo allí.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'ishares-euro-investment-grade-corporate-bond-index',
+    name: 'iShares Euro Investment Grade Corporate Bond Index Fund (clase Inst)',
+    manager: 'BlackRock',
+    isin: 'IE00B67T5G21',
+    // Verificado el 25-sep-2026 en la ficha de la GESTORA:
+    // blackrock.com/es/profesionales/productos/228525
+    // «Inst | Índice de referencia: BBG Euro Corporate Index (EUR) | Porcentaje de gastos: 0,12 por ciento | Inversión inicial mínima: EUR 500.000 | Acumulación».
+    index: 'Bloomberg Euro Corporate',
+    ter: 0.12,
+    assetClass: 'Renta fija',
+    region: 'Eurozona',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'Clase institucional: BlackRock exige 500.000 € de inversión inicial. Un particular solo entra a través de una comercializadora que agrupe en cuenta ómnibus',
+    tagline: 'Bonos de empresas en euros con grado de inversión',
+    description:
+      'El iShares Euro Investment Grade Corporate Bond Index Fund replica el Bloomberg Euro Corporate, deuda en euros emitida por empresas con calificación de grado de inversión, con unos gastos del 0,12 % anual verificados en la ficha de BlackRock. Paga algo más que la deuda pública a cambio de un riesgo de impago algo mayor.',
+    faq: [
+      { q: '¿Qué diferencia hay con la deuda pública?', a: 'El emisor. Aquí son empresas, no estados. Suelen pagar algo más de interés porque el riesgo de que una empresa no pague es mayor que el de un estado europeo, y en una crisis su precio suele caer más. Grado de inversión significa que las agencias las califican como de riesgo bajo, no como sin riesgo.' },
+      { q: 'Si es una clase institucional, ¿cómo la compra un particular?', a: 'El mínimo lo exige el fondo a quien suscribe, y quien suscribe no eres tú sino tu comercializadora. Una plataforma que agrupa a sus clientes en una cuenta ómnibus sí llega a ese mínimo, y luego te deja entrar con lo que ella decida. Por eso el mínimo que te aplique a ti lo pone tu plataforma, no BlackRock: compruébalo allí.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'ishares-world-ex-euro-government-bond-index',
+    name: 'iShares World ex-Euro Government Bond Index Fund (clase Inst Hedged)',
+    manager: 'BlackRock',
+    isin: 'IE00BGR7K831',
+    // Verificado el 25-sep-2026 en la ficha de la GESTORA:
+    // blackrock.com/es/profesionales/productos/306040
+    // «Inst Hedged Acc | Índice de referencia: FTSE Non-EUR World Government Bond Index | Porcentaje de gastos: 0,14 por ciento | Inversión inicial mínima: GBP 500.000 | Acumulación».
+    index: 'FTSE Non-EUR World Government Bond',
+    ter: 0.14,
+    assetClass: 'Renta fija',
+    region: 'Global',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'Clase institucional: BlackRock exige 500.000 £ de inversión inicial. Un particular solo entra a través de una comercializadora que agrupe en cuenta ómnibus',
+    tagline: 'Deuda pública mundial fuera del euro, cubierta',
+    description:
+      'El iShares World ex-Euro Government Bond Index Fund replica el FTSE Non-EUR World Government Bond, deuda pública de países desarrollados que no usan el euro (Estados Unidos, Japón, Reino Unido y otros), con unos gastos del 0,14 % anual verificados en la ficha de BlackRock. Esta clase está cubierta, así que el riesgo de divisa se neutraliza.',
+    faq: [
+      { q: '¿Para qué sirve deuda pública fuera del euro?', a: 'Para no depender solo de los estados de la eurozona. Estados Unidos, Japón o Reino Unido tienen ciclos de tipos distintos, así que sus bonos no siempre se mueven igual que los europeos. Al estar cubierta a euros, lo que queda es el efecto de los tipos de esos países sin el vaivén de sus monedas.' },
+      { q: 'Si es una clase institucional, ¿cómo la compra un particular?', a: 'El mínimo lo exige el fondo a quien suscribe, y quien suscribe no eres tú sino tu comercializadora. Una plataforma que agrupa a sus clientes en una cuenta ómnibus sí llega a ese mínimo, y luego te deja entrar con lo que ella decida. Por eso el mínimo que te aplique a ti lo pone tu plataforma, no BlackRock: compruébalo allí.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'ishares-euro-aggregate-bond-index',
+    name: 'iShares Euro Aggregate Bond Index Fund (clase A2)',
+    manager: 'BlackRock',
+    isin: 'LU0836513423',
+    // Verificado el 25-sep-2026 en la ficha de la GESTORA:
+    // blackrock.com/es/profesionales/productos/254304
+    // «A2 | Índice de referencia: BBG Euro Aggregate Index (EUR) | Porcentaje de gastos: 0,45 por ciento | Inversión inicial mínima: EUR 5.000 | Acumulación».
+    index: 'Bloomberg Euro Aggregate',
+    ter: 0.45,
+    assetClass: 'Renta fija',
+    region: 'Eurozona',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'BlackRock exige 5.000 € de inversión inicial; lo que te pida tu comercializadora puede ser muy distinto',
+    tagline: 'Toda la renta fija en euros con grado de inversión',
+    description:
+      'El iShares Euro Aggregate Bond Index Fund replica el Bloomberg Euro Aggregate, que reúne deuda pública y corporativa en euros con grado de inversión, con unos gastos del 0,45 % anual verificados en la ficha de BlackRock. Es un fondo luxemburgués y esta clase tiene un mínimo de entrada asequible, 5.000 €.',
+    faq: [
+      { q: '¿Qué significa «aggregate»?', a: 'Que junta varios tipos de deuda en un solo índice: bonos de estados, de organismos públicos y de empresas, todos en euros y con grado de inversión. Es la forma de tener la renta fija en euros entera en un solo producto, en lugar de separar pública y corporativa.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'ishares-euro-government-inflation-linked-bond-index',
+    name: 'iShares Euro Government Inflation-Linked Bond Index Fund (clase Inst)',
+    manager: 'BlackRock',
+    isin: 'IE00B4WXT857',
+    // Verificado el 25-sep-2026 en la ficha de la GESTORA:
+    // blackrock.com/es/profesionales/productos/228466
+    // «Inst | Índice de referencia: BBG Euro Government Inflation-Linked Bond Index (EUR) | Porcentaje de gastos: 0,10 por ciento | Inversión inicial mínima: EUR 500.000 | Acumulación».
+    index: 'Bloomberg Euro Government Inflation-Linked',
+    ter: 0.10,
+    assetClass: 'Renta fija',
+    region: 'Eurozona',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'Clase institucional: BlackRock exige 500.000 € de inversión inicial. Un particular solo entra a través de una comercializadora que agrupe en cuenta ómnibus',
+    tagline: 'Bonos de la eurozona que suben con la inflación',
+    description:
+      'El iShares Euro Government Inflation-Linked Bond Index Fund replica el Bloomberg Euro Government Inflation-Linked, bonos de estados de la eurozona cuyo principal se ajusta con la inflación, con unos gastos del 0,10 % anual verificados en la ficha de BlackRock.',
+    faq: [
+      { q: '¿Protege de la inflación sin riesgo?', a: 'Protege de la inflación, no del riesgo. El principal se ajusta con la inflación, pero el precio del bono sigue moviéndose con los tipos de interés reales, y puede caer bastante si suben, como pasó en 2022. Lo que ofrece es que la inflación no se coma el valor al vencimiento.' },
+      { q: 'Si es una clase institucional, ¿cómo la compra un particular?', a: 'El mínimo lo exige el fondo a quien suscribe, y quien suscribe no eres tú sino tu comercializadora. Una plataforma que agrupa a sus clientes en una cuenta ómnibus sí llega a ese mínimo, y luego te deja entrar con lo que ella decida. Por eso el mínimo que te aplique a ti lo pone tu plataforma, no BlackRock: compruébalo allí.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
     slug: 'ishares-europe-index',
     name: 'iShares Europe Index Fund (clase D)',
     manager: 'BlackRock',
