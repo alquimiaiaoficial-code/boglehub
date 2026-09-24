@@ -68,13 +68,19 @@ const fuente = (ruta: string) => readFileSync(`src/app/${ruta}/page.tsx`, 'utf8'
 const cargar = (ruta: string) => import(`../app/${ruta}/page`) as Promise<any>
 
 describe('render bajo demanda de las páginas que no pedimos indexar', () => {
+  // El timeout va a 20 s y no es un capricho. Lo que mide esta prueba es el valor de
+  // `dynamicParams`, no la velocidad de nada; pero es el PRIMER import dinámico del fichero
+  // y paga la compilación de toda la página, que con la suite entera en marcha pasa de los
+  // 5 s por defecto. El 24-sep falló dos veces seguidas con la suite completa y pasó las dos
+  // al ejecutarla sola. Un test que falla cuando la máquina va cargada acaba ignorándose, y
+  // entonces el día que falle de verdad tampoco lo mirará nadie.
   it.each(RUTAS)('%s · condición 1: dynamicParams true, para que respondan 200 y no 404', async (ruta) => {
     const mod = await cargar(ruta)
     expect(
       mod.dynamicParams,
       `${ruta} con dynamicParams=false devolvería 404 en todo lo no pre-generado, que es justo lo que SEO vetó`,
     ).toBe(true)
-  })
+  }, 20000)
 
   it.each(RUTAS)('%s · condición 2: sigue emitiendo la meta robots de la política', (ruta) => {
     expect(fuente(ruta)).toMatch(/robots: robotsFor\(/)

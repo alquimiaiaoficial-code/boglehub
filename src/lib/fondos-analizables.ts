@@ -91,6 +91,14 @@ const EQUIVALENCIAS: Record<string, Equivalencia> = {
   IE00B03HCZ61: { ticker: 'IWDA', calidad: 'exacta' },
 
   /**
+   * iShares Developed World Index Fund (IE), CLASE S - MSCI World.
+   * Verificado el 24-sep-2026 en la ficha de BlackRock: «Clase S (EUR) Acumulación |
+   * Índice de referencia: MSCI World Index Net (EUR) | Porcentaje de gastos: 0,04 %».
+   * Mismo índice que IWDA, así que la exposición es la misma y la calidad es exacta.
+   */
+  IE000ZYRH0Q7: { ticker: 'IWDA', calidad: 'exacta' },
+
+  /**
    * Vanguard U.S. 500 Stock Index Fund - S&P 500.
    * Verificado el 18-sep-2026: «VANGUARD U.S. 500 STOCK INDEX GENERAL EUR CAP | S&P 500
    * Index | 0,10 %».
@@ -442,6 +450,7 @@ export const VERIFICADOS_EN_FUENTE: Record<string, string> = {
   LU0996177134: '18-sep-2026, registro de fondos: «AMUNDI CORE MSCI EMERGING MARKETS AE CAP | AMUNDI ASSET MANAGEMENT | MSCI Emerging Markets | 0,30 %». La ficha decía «Amundi Index» y 0,20 %: gama equivocada y la mitad de comisión',
   IE00BYX5M476: '18-sep-2026, registro de fondos: «FIDELITY MSCI EMERGING MARKETS INDEX FUND P-ACC-EUR | FIL INVESTMENTS INTERNATIONAL | MSCI Emerging Markets Index | 0,20 %». Índice y TER coincidían; el ISIN del catálogo (`IE00BYX5L514`) era imposible y al nombre le faltaba «MSCI»',
   IE00BD0NCM55: '19-sep-2026, registro de fondos: «ISHARES DEVELOPED WORLD INDEX FUND (IE) D EUR ACC | BLACKROCK INVESTMENT MANAGEMENT | MSCI World | 0,30 %»',
+  IE000ZYRH0Q7: '24-sep-2026, ficha de la GESTORA (blackrock.com/es/profesionales/productos/345277): «Clase S (EUR) Acumulación | Índice de referencia: MSCI World Index Net (EUR) | Porcentaje de gastos: 0,04 % | Domicilio: Irlanda | Gestora: BlackRock Asset Management Ireland Limited | Lanzamiento de la serie: 21 ago 2025». Misma cartera que la clase D de arriba y siete veces y media más barata',
   LU0996182563: '19-sep-2026, registro de fondos: «AMUNDI INDEX MSCI WORLD AE CAP | AMUNDI ASSET MANAGEMENT | MSCI World | 0,15 %»',
   IE00BYX5MD61: '19-sep-2026, registro de fondos: «FIDELITY MSCI EUROPE INDEX FUND P-ACC-EUR | FIL INVESTMENTS INTERNATIONAL | MSCI Europe Index | 0,10 %»',
   IE00B42W4L06: '19-sep-2026, registro de fondos: «VANGUARD GLOBAL SMALL-CAP INDEX GENERAL EUR CAP | VANGUARD ASSET MANAGEMENT | MSCI World Small Cap Index | 0,29 %»',

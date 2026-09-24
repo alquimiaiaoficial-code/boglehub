@@ -88,6 +88,47 @@ export const INDEX_FUNDS: IndexFund[] = [
     ],
   },
   {
+    slug: 'ishares-developed-world-index-clase-s',
+    name: 'iShares Developed World Index Fund (clase S)',
+    manager: 'BlackRock',
+    isin: 'IE000ZYRH0Q7',
+    // Verificado el 24-sep-2026 en la web de la GESTORA, no copiado de ninguna lista:
+    // blackrock.com/es/profesionales/productos/345277/ishares-developed-world-index-fund-ie
+    // «Clase S (EUR) Acumulación | Índice de referencia: MSCI World Index Net (EUR) |
+    // Porcentaje de gastos: 0,04 % | Domicilio: Irlanda | Gestora: BlackRock Asset
+    // Management Ireland Limited | Fecha de lanzamiento de la serie: 21 ago 2025».
+    //
+    // Por qué entra, y por qué importa más que otro fondo cualquiera: es la MISMA cartera
+    // que la clase D que ya teníamos arriba, y cuesta 0,04 % en vez de 0,30 %. Siete veces
+    // y media más barato. MyInvestor la estrenó en España en septiembre de 2025 y la
+    // comunidad de bogleheads.es la está contratando: la comparativa de comisiones del foro
+    // bajó su estimación del 0,12 % al 0,08 % anual por este lanzamiento.
+    //
+    // Y la razón por la que lo encontramos: dos usuarios del hilo de la plantilla decían que
+    // su hoja de cálculo NO reconocía este ISIN. La nuestra tampoco lo reconocía.
+    index: 'MSCI World',
+    ter: 0.04,
+    assetClass: 'Renta variable',
+    region: 'Global desarrollado',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    // BlackRock publica «Inversión mínima posterior: EUR 10.000,00» para esta clase. Lo que
+    // exija tu plataforma puede ser otra cosa: las comercializadoras agrupan participaciones
+    // en cuentas ómnibus y suelen poder ofrecer clases con mínimos que un particular no
+    // alcanzaría por su cuenta. No lo damos por hecho.
+    minimum: 'BlackRock publica 10.000 € de inversión mínima posterior; tu plataforma puede aplicar otro mínimo',
+    tagline: 'El MSCI World más barato en formato fondo: 0,04 %',
+    description:
+      'La clase S del iShares Developed World Index Fund replica el MSCI World con unos gastos del 0,04 % anual, verificados en la ficha de BlackRock. Es exactamente la misma cartera que la clase D del mismo fondo —unas 1.500 empresas de 23 mercados desarrollados, sin emergentes— con la diferencia de que cuesta 0,04 % en vez de 0,30 %. Al ser un fondo y no un ETF, entra en el régimen de traspasos del artículo 94.1.a) del IRPF.',
+    etfEquivalent: 'IWDA',
+    faq: [
+      { q: '¿En qué se diferencia de la clase D del mismo fondo?', a: 'En la cartera, en nada: es el mismo fondo y el mismo índice. Lo que cambia es la comisión: la clase S cuesta 0,04 % anual y la clase D, 0,30 %. Sobre 10.000 € son 26 € de diferencia al año, y sobre 100.000 € son 260 €. Las clases baratas suelen existir para grandes patrimonios; lo que ha cambiado es que algunas plataformas españolas las ofrecen ahora al particular.' },
+      { q: '¿Por qué un mismo fondo tiene clases con comisiones tan distintas?', a: 'Porque una clase no es un fondo distinto, es una forma de entrar en el mismo. La gestora crea varias con condiciones diferentes: unas con mínimos altos y comisión baja, pensadas para institucionales, y otras sin mínimo y más caras. La cartera de acciones es la misma para todas y el valor liquidativo se calcula por separado en cada una.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí, como cualquier fondo de inversión. El artículo 94.1.a) de la Ley del IRPF establece que si el reembolso de un fondo se destina a suscribir otro «no procederá computar la ganancia o pérdida patrimonial», con dos condiciones: que el importe no llegue a estar a disposición del contribuyente, o sea que sea un traspaso tramitado entre entidades y no una venta seguida de una compra. El impuesto no desaparece, se aplaza hasta la venta definitiva.' },
+    ],
+  },
+  {
     slug: 'amundi-index-msci-world',
     name: 'Amundi Index MSCI World',
     manager: 'Amundi',

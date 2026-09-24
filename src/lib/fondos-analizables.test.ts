@@ -272,7 +272,12 @@ describe('cobertura', () => {
     // Los seis nuevos salen del registro español con nombre, índice y comisión citados
     // literalmente, y cuatro tienen equivalencia EXACTA de índice. Ninguno se escribió de
     // memoria: eso fue exactamente lo que dejó ocho de doce fichas mal el 18-sep.
-    expect(analizables.length).toBe(14)
+    // 24-sep-2026: 15. El nuevo es la CLASE S del iShares Developed World (IE000ZYRH0Q7),
+    // verificada en la ficha de BlackRock y no en una lista ajena. Salió de leer el foro:
+    // dos usuarios decían que su hoja de cálculo no reconocía ese ISIN, y la nuestra
+    // tampoco. Es el mismo fondo que la clase D que ya teníamos, al 0,04 % en vez del
+    // 0,30 %.
+    expect(analizables.length).toBe(15)
     expect(analizables.length).toBeLessThan(INDEX_FUNDS.length)
   })
 })
