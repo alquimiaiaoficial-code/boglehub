@@ -88,6 +88,39 @@ export const INDEX_FUNDS: IndexFund[] = [
     ],
   },
   {
+    slug: 'ishares-europe-index',
+    name: 'iShares Europe Index Fund (clase D)',
+    manager: 'BlackRock',
+    isin: 'IE00BDRK7L36',
+    // Verificado el 25-sep-2026 en la ficha de la GESTORA:
+    // blackrock.com/es/profesionales/productos/287906/ishares-europe-index-fund-ie
+    // «Clase D | Índice de referencia: MSCI Europe Index | Porcentaje de gastos: 0,30 por
+    // ciento | Uso de los ingresos: Acumulación | Inversión inicial mínima: EUR 100.000».
+    //
+    // ⚠️ Entra sabiendo que es el más caro de los tres que tenemos sobre el MSCI Europe: el
+    // Fidelity cuesta 0,10 % y el Vanguard 0,12 %, o sea un tercio. Se añade igual porque
+    // este catálogo existe para RECONOCER lo que alguien tiene cuando pega su cartera, no
+    // para listar lo barato. Si solo tuviéramos lo barato, al que tiene este le diríamos
+    // «no lo reconozco», que es la peor respuesta posible. La ficha dice la diferencia.
+    index: 'MSCI Europe',
+    ter: 0.30,
+    assetClass: 'Renta variable',
+    region: 'Europa',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'BlackRock exige 100.000 € de inversión inicial; lo que te pida tu comercializadora puede ser muy distinto',
+    tagline: 'MSCI Europe en formato fondo, de BlackRock',
+    description:
+      'El iShares Europe Index Fund replica el MSCI Europe con unos gastos del 0,30 % anual, verificados en la ficha de BlackRock. Cubre unas 400 empresas grandes y medianas de 15 mercados desarrollados europeos, incluidos Reino Unido, Suiza, Suecia, Dinamarca y Noruega, que no están en la eurozona y por tanto añaden riesgo de divisa para quien invierte en euros. Al ser un fondo entra en el régimen de traspasos del artículo 94.1.a) del IRPF.',
+    etfEquivalent: 'IMEU',
+    faq: [
+      { q: '¿Hay fondos más baratos sobre el mismo índice?', a: 'Sí, y la diferencia no es pequeña. Sobre el MSCI Europe hay fondos indexados desde el 0,10 % anual; este cuesta 0,30 %. Sobre 20.000 € son unos 40 € más al año, y la comisión se cobra sobre el saldo, así que crece con la cartera. Esto es un dato, no una recomendación: puede haber motivos para tener uno u otro, como en qué plataforma está disponible cada uno o qué tienes ya contratado.' },
+      { q: '¿El MSCI Europe es lo mismo que «eurozona»?', a: 'No, y es la confusión más común con este índice. El MSCI Europe incluye Reino Unido, Suiza, Suecia, Dinamarca y Noruega, que tienen su propia moneda. El índice de eurozona es el MSCI EMU, que sí se limita a países del euro. Si lo que buscabas era no tener riesgo de divisa, el Europe no lo elimina: Reino Unido y Suiza pesan una parte importante.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza, no desaparece.' },
+    ],
+  },
+  {
     slug: 'ishares-euro-government-bond-index',
     name: 'iShares Euro Government Bond Index Fund (clase D)',
     manager: 'BlackRock',
