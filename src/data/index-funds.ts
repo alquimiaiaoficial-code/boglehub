@@ -88,6 +88,35 @@ export const INDEX_FUNDS: IndexFund[] = [
     ],
   },
   {
+    slug: 'ishares-emerging-markets-index-clase-s',
+    name: 'iShares Emerging Markets Index Fund (clase S)',
+    manager: 'BlackRock',
+    isin: 'IE000QAZP7L2',
+    // Verificado el 24-sep-2026 en la ficha de la GESTORA:
+    // blackrock.com/es/profesionales/productos/345276/ishares-emerging-markets-index-fund-ie
+    // «Clase S | Índice de referencia: MSCI Emerging Markets, Net Returns (EUR) |
+    // Porcentaje de gastos: 0,08 por ciento | Domicilio: Irlanda | Gestora: BlackRock Asset
+    // Management Ireland Limited | Lanzamiento de la serie: 21 ago 2025 |
+    // Inversión inicial mínima: EUR 200.000.000,00 | mínima posterior: EUR 10.000».
+    index: 'MSCI Emerging Markets',
+    ter: 0.08,
+    assetClass: 'Renta variable',
+    region: 'Emergentes',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'Clase institucional: BlackRock exige 200.000.000 € de inversión inicial. Un particular solo entra a través de una comercializadora que agrupe en cuenta ómnibus',
+    tagline: 'Emergentes en formato fondo, al 0,08 %',
+    description:
+      'La clase S del iShares Emerging Markets Index Fund replica el MSCI Emerging Markets con unos gastos del 0,08 % anual, verificados en la ficha de BlackRock. Es la clase barata del mismo fondo, lanzada en agosto de 2025 a la vez que la del MSCI World. Al ser un fondo y no un ETF, entra en el régimen de traspasos del artículo 94.1.a) del IRPF.',
+    etfEquivalent: 'EIMI',
+    faq: [
+      { q: 'Si el mínimo son 200 millones, ¿cómo puede comprarla un particular?', a: 'Porque el mínimo lo exige el fondo a quien suscribe, y quien suscribe no eres tú: es tu comercializadora. BlackRock pide 200.000.000 € de inversión inicial en esta clase, una cifra pensada para institucionales. Una plataforma que junta a miles de clientes en una cuenta ómnibus sí llega, y luego te deja entrar a ti con lo que ella decida. Por eso la misma clase puede ser inalcanzable por tu cuenta y estar disponible desde pocos euros en una plataforma concreta. Y por eso el mínimo que te aplique a ti no lo decide BlackRock: lo decide dónde lo contrates.' },
+      { q: '¿Qué países incluye el MSCI Emerging Markets?', a: 'Unos veinticuatro mercados clasificados como emergentes por MSCI. China, India, Taiwán, Corea del Sur y Brasil pesan la mayor parte; el resto se reparte entre Sudáfrica, México, Arabia Saudí y otros. La clasificación la revisa MSCI y cambia: Corea del Sur lleva años en el límite entre emergente y desarrollado, y FTSE la clasifica de otra forma. Por eso dos fondos «de emergentes» pueden no contener los mismos países.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí, como cualquier fondo de inversión. El artículo 94.1.a) de la Ley del IRPF establece que si el reembolso de un fondo se destina a suscribir otro «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto no desaparece: se aplaza hasta la venta definitiva.' },
+    ],
+  },
+  {
     slug: 'ishares-developed-world-index-clase-s',
     name: 'iShares Developed World Index Fund (clase S)',
     manager: 'BlackRock',
@@ -113,11 +142,15 @@ export const INDEX_FUNDS: IndexFund[] = [
     accumulating: true,
     currency: 'EUR',
     availableAt: ['No verificado — compruébalo en tu plataforma'],
-    // BlackRock publica «Inversión mínima posterior: EUR 10.000,00» para esta clase. Lo que
-    // exija tu plataforma puede ser otra cosa: las comercializadoras agrupan participaciones
-    // en cuentas ómnibus y suelen poder ofrecer clases con mínimos que un particular no
-    // alcanzaría por su cuenta. No lo damos por hecho.
-    minimum: 'BlackRock publica 10.000 € de inversión mínima posterior; tu plataforma puede aplicar otro mínimo',
+    // ⚠️ CORREGIDO el 24-sep-2026, una hora después de publicarlo.
+    // Aquí ponía «BlackRock publica 10.000 € de inversión mínima posterior». Era cierto y
+    // engañoso a la vez, que es la peor combinación: se leía como si un particular pudiera
+    // abrir posición con diez mil euros. La ficha de BlackRock dice, en el campo de al lado
+    // del que yo leí, «Inversión inicial mínima: EUR 200.000.000,00». Los 10.000 € son el
+    // mínimo de las aportaciones SIGUIENTES, no el de entrada.
+    // Lo destapó añadir la clase S de emergentes, donde ese campo apareció primero y me hizo
+    // volver. Leer un campo y no el de al lado es cómo se publican medias verdades.
+    minimum: 'Clase institucional: BlackRock exige 200.000.000 € de inversión inicial. Un particular solo entra a través de una comercializadora que agrupe en cuenta ómnibus',
     tagline: 'El MSCI World más barato en formato fondo: 0,04 %',
     description:
       'La clase S del iShares Developed World Index Fund replica el MSCI World con unos gastos del 0,04 % anual, verificados en la ficha de BlackRock. Es exactamente la misma cartera que la clase D del mismo fondo —unas 1.500 empresas de 23 mercados desarrollados, sin emergentes— con la diferencia de que cuesta 0,04 % en vez de 0,30 %. Al ser un fondo y no un ETF, entra en el régimen de traspasos del artículo 94.1.a) del IRPF.',
@@ -125,6 +158,7 @@ export const INDEX_FUNDS: IndexFund[] = [
     faq: [
       { q: '¿En qué se diferencia de la clase D del mismo fondo?', a: 'En la cartera, en nada: es el mismo fondo y el mismo índice. Lo que cambia es la comisión: la clase S cuesta 0,04 % anual y la clase D, 0,30 %. Sobre 10.000 € son 26 € de diferencia al año, y sobre 100.000 € son 260 €. Las clases baratas suelen existir para grandes patrimonios; lo que ha cambiado es que algunas plataformas españolas las ofrecen ahora al particular.' },
       { q: '¿Por qué un mismo fondo tiene clases con comisiones tan distintas?', a: 'Porque una clase no es un fondo distinto, es una forma de entrar en el mismo. La gestora crea varias con condiciones diferentes: unas con mínimos altos y comisión baja, pensadas para institucionales, y otras sin mínimo y más caras. La cartera de acciones es la misma para todas y el valor liquidativo se calcula por separado en cada una.' },
+      { q: 'Si el mínimo son 200 millones, ¿cómo puede comprarla un particular?', a: 'Porque el mínimo lo exige el fondo a quien suscribe, y quien suscribe no eres tú: es tu comercializadora. BlackRock pide 200.000.000 € de inversión inicial en esta clase, una cifra pensada para institucionales. Una plataforma que junta a miles de clientes en una cuenta ómnibus sí llega, y luego te deja entrar a ti con lo que ella decida. Por eso la misma clase puede ser inalcanzable por tu cuenta y estar disponible desde pocos euros en una plataforma concreta. Y por eso el mínimo que te aplique a ti no lo decide BlackRock: lo decide dónde lo contrates.' },
       { q: '¿Se puede traspasar sin tributar?', a: 'Sí, como cualquier fondo de inversión. El artículo 94.1.a) de la Ley del IRPF establece que si el reembolso de un fondo se destina a suscribir otro «no procederá computar la ganancia o pérdida patrimonial», con dos condiciones: que el importe no llegue a estar a disposición del contribuyente, o sea que sea un traspaso tramitado entre entidades y no una venta seguida de una compra. El impuesto no desaparece, se aplaza hasta la venta definitiva.' },
     ],
   },

@@ -277,7 +277,7 @@ describe('cobertura', () => {
     // dos usuarios decían que su hoja de cálculo no reconocía ese ISIN, y la nuestra
     // tampoco. Es el mismo fondo que la clase D que ya teníamos, al 0,04 % en vez del
     // 0,30 %.
-    expect(analizables.length).toBe(15)
+    expect(analizables.length).toBe(16)
     expect(analizables.length).toBeLessThan(INDEX_FUNDS.length)
   })
 })
