@@ -1525,6 +1525,30 @@ export const INDEX_FUNDS: IndexFund[] = [
       { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
     ],
   },
+  {
+    slug: 'lg-msci-acwi-imi-equity-index',
+    name: 'L&G MSCI ACWI IMI Equity Index Fund (clase I EUR Acc)',
+    manager: 'L&G',
+    isin: 'IE0003PI5332',
+    // 28-sep-2026, ficha de la GESTORA (https://fundcentres.landg.com/en/ie/adviser-wealth/fund-centre/ICAV/MSCI-ACWI-IMI-Equity-Index-Fund/IE0003PI5332/): «L&G MSCI ACWI IMI Equity Index Fund | I-Class EUR Accumulation | ISIN IE0003PI5332 | Benchmark MSCI ACWI IMI | Fund launch date 7 Jan 2025 | Domicile Ireland»; ficha mensual a 31-ago-2026: «Ongoing charge 0.16%»; documento de datos fundamentales de 15-jun-2026: «Management fees and other administrative or operating costs 0.16%». Para leerla hubo que aceptar el aviso legal de L&G, con permiso expreso del fundador
+    index: 'MSCI ACWI IMI',
+    ter: 0.16,
+    assetClass: 'Renta variable',
+    region: 'Global (desarrollados y emergentes)',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la ficha y el documento de datos fundamentales de L&G que hemos leído no publican el mínimo de esta clase. Compruébalo en tu plataforma',
+    tagline: 'Todo el mercado mundial, con emergentes y pequeñas empresas, en un solo fondo',
+    description:
+      'El L&G MSCI ACWI IMI Equity Index Fund replica el MSCI ACWI IMI con unos gastos corrientes del 0,16 % anual en su clase I EUR Acc, según la ficha mensual de L&G de agosto de 2026 y su documento de datos fundamentales de junio. El índice cubre países desarrollados y emergentes, y dentro de ellos empresas grandes, medianas y pequeñas: es lo que significa «IMI». El fondo se lanzó en enero de 2025.',
+    etfEquivalent: 'ISAC',
+    faq: [
+      { q: '¿Qué añade el «IMI» respecto al MSCI ACWI?', a: 'Las pequeñas empresas. El MSCI ACWI cubre grandes y medianas de países desarrollados y emergentes; el ACWI IMI añade también las pequeñas, así que tiene muchas más compañías. Por región y sector el reparto se parece mucho, porque en un índice ponderado por capitalización las pequeñas pesan poco.' },
+      { q: '¿Se solapa con un fondo del MSCI World?', a: 'Mucho. Los países desarrollados son la mayor parte de este índice, y son las mismas empresas que tiene un MSCI World. Juntar los dos no añade empresas nuevas salvo las de emergentes y las pequeñas: cambia el peso de las que ya están. El analizador pone número a ese solapamiento por regiones.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
 ]
 
 export function getIndexFundBySlug(slug: string): IndexFund | undefined {

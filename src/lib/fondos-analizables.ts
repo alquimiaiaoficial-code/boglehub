@@ -276,6 +276,13 @@ const EQUIVALENCIAS: Record<string, Equivalencia> = {
     nota: 'El fondo replica el Bloomberg Global Aggregate Float Adjusted and Scaled y la exposición se toma del Global Aggregate sin ese ajuste. Es el mismo universo de renta fija global cubierta a euros, pero el ajuste por capital flotante cambia algo los pesos.',
   },
 
+  // L&G MSCI ACWI IMI Equity Index Fund (clase I EUR Acc) - MSCI ACWI IMI. Verificado el 28-sep-2026 en la gestora.
+  IE0003PI5332: {
+    ticker: 'ISAC',
+    calidad: 'aproximada',
+    nota: 'El fondo replica el MSCI ACWI IMI y la exposición se toma de un ETF sobre el MSCI ACWI. Mismos países, desarrollados y emergentes; el IMI añade pequeñas empresas, que en un índice ponderado por capitalización pesan poco, así que el reparto por regiones y sectores sale muy parecido.',
+  },
+
   /**
    * Lote del 28-sep-2026: 19 fondos nuevos con equivalencia, todos verificados ese día en la
    * web o en los documentos legales de la gestora. «Exacta» solo cuando es el MISMO índice;
@@ -684,6 +691,7 @@ export const VERIFICADOS_EN_FUENTE: Record<string, string> = {
   IE0007472115: '28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-fija/9970/euro-government-bond-index-fund-eur): «Euro Government Bond Index Fund - Investor EUR Acc (VANEGBX) | Índice de referencia: Bloomberg Euro Government Float Adjusted Bond Index | Comisión: 0,12 %». Confirma lo que ya decía la verificación anterior: 19-sep-2026, registro de fondos: «VANGUARD EURO GOVERNMENT BOND INDEX INVESTOR EUR CAP | VANGUARD ASSET MANAGEMENT | Bloomberg Euro Government Float Adjusted Bond Index | 0,12 %»',
   IE00B18GC888: '28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-fija/9197/global-bond-index-fund-eur-hedged-acc): «Global Bond Index Fund - EUR Hedged Acc (VANGEHI) | Índice de referencia: Bloomberg Global Aggregate Float Adjusted and Scaled Index in EUR | Comisión: 0,15 %». Confirma lo que ya decía la verificación anterior: 18-sep-2026, registro de fondos: «VANGUARD GLOBAL BOND INDEX GENERAL EUR HEDGED CAP | Bloomberg Global Aggregate Float Adjusted and Scaled | 0,15 %». Nombre y TER coincidían; el índice es una variante del Global Aggregate y por eso la equivalencia es aproximada',
   // Lote del 28-sep-2026, todos en la gestora.
+  IE0003PI5332: '28-sep-2026, ficha de la GESTORA (https://fundcentres.landg.com/en/ie/adviser-wealth/fund-centre/ICAV/MSCI-ACWI-IMI-Equity-Index-Fund/IE0003PI5332/): «L&G MSCI ACWI IMI Equity Index Fund | I-Class EUR Accumulation | ISIN IE0003PI5332 | Benchmark MSCI ACWI IMI | Fund launch date 7 Jan 2025 | Domicile Ireland»; ficha mensual a 31-ago-2026: «Ongoing charge 0.16%»; documento de datos fundamentales de 15-jun-2026: «Management fees and other administrative or operating costs 0.16%». Para leerla hubo que aceptar el aviso legal de L&G, con permiso expreso del fundador',
   IE0007201266: '28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-variable/9211/pacific-ex-japan-stock-index-fund-eur-acc): «Pacific ex-Japan Stock Index Fund - EUR Acc (VAPEJEI) | Índice de referencia: MSCI Pacific ex Japan Index | Comisión: 0,16 %»',
   IE00B246KL88: '28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-fija/9132/20-year-euro-treasury-index-fund-eur-acc): «20+ Year Euro Treasury Index Fund - Euro Shares (VGYETII) | Índice de referencia: Bloomberg Euro Treasury 20+ Year Bond Index | Comisión: 0,16 %»',
   IE00B526YN16: '28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-variable/9163/esg-developed-europe-index-fund-eur-acc): «ESG Developed Europe Index Fund - EUR Acc (VGSESIE) | Índice de referencia: FTSE Developed Europe Choice Index | Comisión: 0,14 %»',

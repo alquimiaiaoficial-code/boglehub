@@ -287,7 +287,10 @@ describe('cobertura', () => {
     // contrastar con la gestora lo que venía del «registro de fondos», salieron tres
     // comisiones mal: Amundi World AE (0,15 → 0,30), Amundi EM AE (0,30 → 0,45) e iShares
     // Developed World D (0,30 → 0,10). Todo lo que se analiza cita ya a la gestora.
-    expect(analizables.length).toBe(42)
+    // Y 43 ese mismo día: el L&G MSCI ACWI IMI, en cuanto el fundador autorizó aceptar el
+    // aviso legal de L&G, que era lo único que impedía leer su ficha. Con él, los 64 ISIN
+    // de la hoja comunitaria están resueltos: 62 dentro y 2 fuera con motivo.
+    expect(analizables.length).toBe(43)
     expect(analizables.length).toBeLessThan(INDEX_FUNDS.length)
   })
 })
