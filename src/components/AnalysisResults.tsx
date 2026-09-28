@@ -11,6 +11,8 @@ import { formatEUR, cn } from '@/lib/utils'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { Sparkles, ArrowRight, Share2 } from 'lucide-react'
+import { calcularConcentracion } from '@/lib/concentracion'
+import { nombreDeFondo } from '@/lib/fondos-analizables'
 
 type Tab = 'overview' | 'geo' | 'sector' | 'ai'
 
@@ -119,6 +121,7 @@ export function AnalysisResults({ analysis }: { analysis: Analysis }) {
             <Stat label="Clases de activo" value={`${Object.keys(analysis.allocation.byAssetClass).length}`} />
           </div>
           <AllocationPie breakdown={analysis.allocation} />
+          <Concentracion analysis={analysis} />
         </div>
       )}
 
@@ -227,6 +230,46 @@ function ShareSection({ analysis }: { analysis: Analysis }) {
           <ArrowRight className="h-4 w-4" />
         </button>
       </div>
+    </div>
+  )
+}
+
+/**
+ * Concentración (28-sep-2026). Ver `lib/concentracion.ts` para el porqué de medirla por región
+ * y no solo por posición. Todo descriptivo: cómo está la cartera, no cómo debería estar.
+ */
+function Concentracion({ analysis }: { analysis: Analysis }) {
+  const c = calcularConcentracion(analysis.allocation.byRegion, analysis.posiciones)
+  if (!c.mayorRegion) return null
+  const pct = (x: number) => `${Math.round(x * 100)} %`
+  const nombrePosicion = c.mayorPosicion ? nombreDeFondo(c.mayorPosicion.ticker) ?? c.mayorPosicion.ticker : null
+  return (
+    <div className="rounded-lg border border-border bg-surface-2 p-4 text-sm">
+      <p className="font-medium text-fg">Concentración</p>
+      <dl className="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <div>
+          <dt className="text-xs text-fg-subtle">Mayor región</dt>
+          <dd className="text-fg">{c.mayorRegion.nombre}: <strong>{pct(c.mayorRegion.peso)}</strong></dd>
+        </div>
+        <div>
+          <dt className="text-xs text-fg-subtle">Índice HHI por regiones</dt>
+          <dd className="text-fg"><strong>{c.hhiRegiones.toLocaleString('es-ES')}</strong> de 10.000</dd>
+        </div>
+        {c.mayorPosicion && nombrePosicion && (
+          <div>
+            <dt className="text-xs text-fg-subtle">Mayor posición</dt>
+            <dd className="text-fg">{nombrePosicion}: <strong>{pct(c.mayorPosicion.peso)}</strong></dd>
+          </div>
+        )}
+      </dl>
+      <p className="mt-3 text-xs text-fg-muted leading-relaxed">
+        El índice HHI suma el peso de cada región al cuadrado: 10.000 sería todo en una sola
+        región. Lo medimos por regiones y no solo por posiciones porque un fondo o ETF indexado
+        amplio no es una apuesta concentrada aunque sea tu única posición: dentro hay cientos o
+        miles de empresas. Lo que sí dice cuánto depende una cartera indexada de una sola cosa es
+        su peso por región. Es una descripción de tu cartera, no una indicación de cómo debería
+        estar.
+      </p>
     </div>
   )
 }

@@ -6,6 +6,7 @@ interface SharePosition {
   s: number // shares
   p: number // avgPrice
   c: string // currency
+  u?: 'e' // unidad: «e» = euros (solo cuando lo es)
 }
 
 /** Encodes a portfolio into a URL-safe base64 string. */
@@ -15,6 +16,7 @@ export function encodePortfolio(positions: Position[]): string {
     s: p.shares,
     p: p.avgPrice,
     c: p.currency,
+    ...(p.unidad === 'euros' ? { u: 'e' as const } : {}),
   }))
   const json = JSON.stringify(compact)
   return btoa(encodeURIComponent(json))
@@ -35,11 +37,14 @@ export function decodePortfolio(encoded: string): Position[] | null {
       const currency = c.c === 'USD' || c.c === 'GBP' ? c.c : 'EUR'
       return {
         id: crypto.randomUUID(),
-        ticker: String(c.t).toUpperCase().slice(0, 10),
+        // 12 y no 10 (28-sep-2026): un ISIN tiene 12 caracteres, y con 10 cualquier cartera
+        // compartida que llevara un fondo llegaba rota a quien abría el enlace.
+        ticker: String(c.t).toUpperCase().slice(0, 12),
         shares: Number(c.s),
         avgPrice: Number(c.p),
         currency,
         addedAt: new Date().toISOString(),
+        ...(c.u === 'e' ? { unidad: 'euros' as const } : {}),
       }
     })
 

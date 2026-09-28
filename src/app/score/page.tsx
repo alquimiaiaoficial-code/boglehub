@@ -31,8 +31,11 @@ function parseParams(
   const score = Number.isFinite(rawScore)
     ? Math.max(0, Math.min(100, Math.round(rawScore)))
     : 0
-  const ter = Number(searchParams.ter ?? 0)
-  const etfs = Number(searchParams.etfs ?? 0)
+  // Acotados (28-sep-2026): con ?ter=abc la página enseñaba «NaN %» con la marca debajo.
+  const rawTer = Number(searchParams.ter ?? 0)
+  const ter = Number.isFinite(rawTer) ? Math.max(0, Math.min(5, rawTer)) : 0
+  const rawEtfs = Number(searchParams.etfs ?? 0)
+  const etfs = Number.isFinite(rawEtfs) ? Math.max(0, Math.min(50, Math.round(rawEtfs))) : 0
   return { score, ter, etfs }
 }
 

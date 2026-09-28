@@ -43,6 +43,8 @@ export interface Analysis {
   aiNarrative: string
   warnings: string[]
   fuentesDeExposicion?: FuenteDeExposicion[]
+  /** Valor y peso de cada posición (desde el 28-sep-2026). */
+  posiciones?: { ticker: string; valueEUR: number; weight: number }[]
 }
 
 export type Result<T, E = Error> =

@@ -2,14 +2,22 @@ import { NextRequest } from 'next/server'
 import Groq from 'groq-sdk'
 import { z } from 'zod'
 import { rateLimit } from '@/lib/rate-limit'
+import { recortarConversacion } from '@/lib/chat-limites'
 
 
 import { GROQ_MODEL } from '@/lib/groq-model'
 import { clasificarFalloDeIa } from '@/lib/fallo-ia'
+/**
+ * Solo «user» y «assistant». Hasta el 28-sep-2026 el esquema aceptaba también «system» desde
+ * el navegador: cualquiera podía mandar sus propias instrucciones de sistema y pasar por
+ * encima de SYSTEM_PROMPT, incluida la prohibición de dar asesoramiento personalizado, que es
+ * la línea que no podemos cruzar con la CNMV. La web nunca lo usaba; un atacante sí podía.
+ */
 const MessageSchema = z.object({
-  role: z.enum(['user', 'assistant', 'system']),
+  role: z.enum(['user', 'assistant']),
   content: z.string().min(1).max(8000),
 })
+
 
 const BodySchema = z.object({
   messages: z.array(MessageSchema).min(1).max(40),
@@ -43,13 +51,22 @@ export async function POST(req: NextRequest) {
   const limited = rateLimit(req, 'chat', 20)
   if (limited) return limited
 
+  // La entrada se valida antes que nada: una petición mal formada es un 400, no un fallo
+  // del proveedor de IA, y no debe llegar al modelo.
+  let body: z.infer<typeof BodySchema>
+  try {
+    const parsed = BodySchema.safeParse(await req.json())
+    if (!parsed.success) return new Response('Petición no válida.', { status: 400 })
+    body = { messages: recortarConversacion(parsed.data.messages) }
+  } catch {
+    return new Response('Petición no válida.', { status: 400 })
+  }
+
   try {
     const apiKey = process.env.GROQ_API_KEY
     if (!apiKey) {
       return new Response('El chat no está disponible ahora mismo. El resto del sitio funciona con normalidad.', { status: 503 })
     }
-
-    const body = BodySchema.parse(await req.json())
 
     const groq = new Groq({ apiKey })
     const messages = [

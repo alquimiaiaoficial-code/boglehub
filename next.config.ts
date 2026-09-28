@@ -141,8 +141,17 @@ const nextConfig: NextConfig = {
         source: '/(.*)',
         headers: [
           { key: 'Link', value: LINK_HEADER },
-          // Permitir indexación explícita y referencias por AI Overview / SGE
-          { key: 'X-Robots-Tag', value: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' },
+          // Sin «index, follow» desde el 28-sep-2026: iba en TODAS las respuestas, también en las
+          // páginas que en su HTML dicen noindex, y eran dos señales contradictorias. Indexar es
+          // lo que hace un buscador por defecto; aquí solo quedan los permisos de fragmento.
+          { key: 'X-Robots-Tag', value: 'max-image-preview:large, max-snippet:-1, max-video-preview:-1' },
+          // Cabeceras de seguridad (revisión del 28-sep-2026 con Wapiti). Solo las que no pueden
+          // romper nada: una CSP completa exigiría nonces para los scripts de Next y de Vercel.
+          { key: 'X-Content-Type-Options', value: 'nosniff' },
+          { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
+          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+          { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=(), payment=(), usb=()' },
+          { key: 'Content-Security-Policy', value: "frame-ancestors 'self'; base-uri 'self'; object-src 'none'; form-action 'self'" },
         ],
       },
 

@@ -232,6 +232,20 @@ type Schema =
 
 // ─── Component ─────────────────────────────────────────────────────────────
 
+/**
+ * JSON para meter dentro de <script type="application/ld+json">, con < > & escapados.
+ *
+ * `JSON.stringify` no escapa «</script>»: si algún día un dato de la URL o del usuario acaba
+ * en los datos estructurados, podría cerrar la etiqueta y ejecutar código en la página. Hoy
+ * ningún dato llega así; esto cierra la puerta antes de que llegue (28-sep-2026).
+ */
+export function serializarJsonLd(data: unknown): string {
+  return JSON.stringify(data)
+    .replace(/</g, '\\u003c')
+    .replace(/>/g, '\\u003e')
+    .replace(/&/g, '\\u0026')
+}
+
 export function JsonLd({ schema }: { schema: Schema }) {
   let data: Record<string, unknown>
 
@@ -621,7 +635,7 @@ export function JsonLd({ schema }: { schema: Schema }) {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: serializarJsonLd(data) }}
     />
   )
 }

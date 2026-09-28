@@ -134,7 +134,17 @@ export async function POST(req: NextRequest) {
     const precios: Record<string, number> = { ...(pricesResult.ok ? pricesResult.value : {}) }
     for (const isin of fondos.keys()) precios[isin] = 1
 
-    const allocation = calculateAllocation(body.positions, precios, fondos)
+    // Un ETF metido en euros se pasa a participaciones con el precio del día; desde aquí todo
+    // se calcula igual que si hubiera venido en participaciones. Si no hay precio se deja como
+    // está y el aviso de «no se pudo obtener precio» de más abajo lo dice.
+    const posiciones = body.positions.map((p) => {
+      const clave = p.ticker.toUpperCase()
+      if (p.unidad !== 'euros' || fondos.has(clave)) return p
+      const precio = precios[clave]
+      return precio ? { ...p, shares: p.shares / precio, avgPrice: 0 } : p
+    })
+
+    const allocation = calculateAllocation(posiciones, precios, fondos)
 
     let fire: ReturnType<typeof projectFire> | undefined
     if (body.monthlyContribution != null && body.targetAmount != null) {
@@ -161,7 +171,7 @@ export async function POST(req: NextRequest) {
       )
     }
 
-    const positionSummary = body.positions.map(p => {
+    const positionSummary = posiciones.map(p => {
       const ticker = p.ticker.toUpperCase()
       const esFondoRechazado = fondosRechazados.some(
         (f) => f.isin.toUpperCase() === ticker || (f.slug !== '' && f.slug.toUpperCase() === ticker),
@@ -234,6 +244,8 @@ export async function POST(req: NextRequest) {
         aiNarrative,
         warnings,
         fuentesDeExposicion,
+        // Peso de cada posición, para la concentración que enseña el navegador.
+        posiciones: positionSummary,
       },
     })
   } catch (err) {

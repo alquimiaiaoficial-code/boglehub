@@ -24,6 +24,15 @@ export const PositionSchema = z.object({
   avgPrice: z.number().nonnegative(),
   currency: CurrencySchema,
   addedAt: z.string().datetime(),
+  /**
+   * En qué viene `shares` para un ETF (28-sep-2026). Por defecto, participaciones. Con
+   * «euros», `shares` es el importe que la persona ve en su bróker y el servidor lo pasa a
+   * participaciones con el precio del día. Un fondo va SIEMPRE en euros, diga lo que diga
+   * este campo. Existe porque pedir participaciones y precio era la mayor fricción de
+   * entrada: casi nadie sabe cuántas participaciones tiene, y todo el mundo sabe cuántos
+   * euros.
+   */
+  unidad: z.enum(['participaciones', 'euros']).optional(),
 })
 
 export type Position = z.infer<typeof PositionSchema>

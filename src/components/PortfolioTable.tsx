@@ -48,6 +48,8 @@ export function PortfolioTable() {
             {positions.map((p) => {
               // Fondo o clase: las clases no tienen ficha y `buscarFondo` no las ve.
               const fondo = nombreDeFondo(p.ticker)
+              // Un fondo, o un ETF metido en euros: la cantidad ES el importe.
+              const enEuros = fondo != null || p.unidad === 'euros'
               return (
               <tr key={p.id} className="border-b border-border">
                 <td className="py-3 font-medium">
@@ -64,12 +66,12 @@ export function PortfolioTable() {
                 </td>
                 {/* Para un fondo la cantidad ES el importe: se enseña en euros y no como un
                     número suelto que se lee como participaciones. */}
-                <td className="py-3">{fondo ? formatEUR(p.shares) : p.shares}</td>
+                <td className="py-3">{enEuros ? formatEUR(p.shares) : p.shares}</td>
                 <td className="py-3">
-                  {fondo ? <span className="text-fg-subtle">no aplica</span> : formatEUR(p.avgPrice)}
+                  {enEuros ? <span className="text-fg-subtle">no aplica</span> : formatEUR(p.avgPrice)}
                 </td>
                 <td className="py-3">
-                  {fondo ? formatEUR(p.shares) : formatEUR(p.shares * p.avgPrice)}
+                  {enEuros ? formatEUR(p.shares) : formatEUR(p.shares * p.avgPrice)}
                 </td>
                 <td className="py-3 text-right">
                   <Button variant="ghost" size="sm" onClick={() => removePosition(p.id)} aria-label="Eliminar">
