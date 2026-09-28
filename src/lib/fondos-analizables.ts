@@ -275,6 +275,98 @@ const EQUIVALENCIAS: Record<string, Equivalencia> = {
     calidad: 'aproximada',
     nota: 'El fondo replica el Bloomberg Global Aggregate Float Adjusted and Scaled y la exposición se toma del Global Aggregate sin ese ajuste. Es el mismo universo de renta fija global cubierta a euros, pero el ajuste por capital flotante cambia algo los pesos.',
   },
+
+  /**
+   * Lote del 28-sep-2026: 19 fondos nuevos con equivalencia, todos verificados ese día en la
+   * web o en los documentos legales de la gestora. «Exacta» solo cuando es el MISMO índice;
+   * el resto lleva nota que dice en qué se aparta.
+   */
+  // Vanguard Pacific ex-Japan Stock Index Fund (clase EUR Acc) - MSCI Pacific ex Japan. Verificado el 28-sep-2026 en la gestora.
+  IE0007201266: { ticker: 'CPXJ', calidad: 'exacta' },
+  // Vanguard 20+ Year Euro Treasury Index Fund (clase Euro Shares) - Bloomberg Euro Treasury 20+ Year. Verificado el 28-sep-2026 en la gestora.
+  IE00B246KL88: {
+    ticker: 'VGEA',
+    calidad: 'aproximada',
+    nota: 'El fondo solo compra deuda pública de la eurozona con más de 20 años de vida y la exposición se toma de un ETF de toda la deuda pública de la eurozona. Misma región y mismo tipo de emisor; el plazo es mucho más largo, así que el precio se mueve bastante más cuando cambian los tipos.',
+  },
+  // Vanguard ESG Developed Europe Index Fund (clase EUR Acc) - FTSE Developed Europe Choice. Verificado el 28-sep-2026 en la gestora.
+  IE00B526YN16: {
+    ticker: 'VEUR',
+    calidad: 'aproximada',
+    nota: 'El fondo replica el FTSE Developed Europe Choice y la exposición se toma de un ETF sobre el FTSE Developed Europe sin filtro. Mismos países; el índice «Choice» excluye empresas por su actividad, sobre todo de energía, así que el reparto por sectores se aparta algo.',
+  },
+  // Vanguard ESG Developed World All Cap Equity Index Fund (clase EUR Acc) - FTSE Developed All Cap Choice. Verificado el 28-sep-2026 en la gestora.
+  IE00B5456744: {
+    ticker: 'IWDA',
+    calidad: 'aproximada',
+    nota: 'El fondo replica el FTSE Developed All Cap Choice y la exposición se toma de un ETF sobre el MSCI World. Mismos mercados desarrollados, con tres diferencias: el índice del fondo incluye pequeñas empresas, excluye algunas por criterios ESG y cuenta Corea del Sur como desarrollado.',
+  },
+  // Vanguard Global Short-Term Bond Index Fund (clase EUR Hedged Acc) - Bloomberg Global Aggregate ex US MBS 1-5 Year (cubierto a EUR). Verificado el 28-sep-2026 en la gestora.
+  IE00BH65QP47: {
+    ticker: 'AGGH',
+    calidad: 'aproximada',
+    nota: 'El fondo replica el Global Aggregate con vencimientos de 1 a 5 años y sin titulizaciones hipotecarias de Estados Unidos, y la exposición se toma del Global Aggregate completo. Mismo tipo de emisores y países; el plazo es más corto y faltan esas titulizaciones, así que los pesos por país cambian algo.',
+  },
+  // Vanguard ESG Emerging Markets All Cap Equity Index Fund (clase EUR Acc) - FTSE Emerging All Cap Choice. Verificado el 28-sep-2026 en la gestora.
+  IE00BKV0W243: {
+    ticker: 'VFEM',
+    calidad: 'aproximada',
+    nota: 'El fondo replica el FTSE Emerging All Cap Choice y la exposición se toma de un ETF sobre el FTSE Emerging sin filtro. Mismos países, sin Corea del Sur en ninguno de los dos; el índice del fondo añade pequeñas empresas y excluye algunas por criterios ESG.',
+  },
+  // Vanguard U.K. Government Bond Index Fund (clase EUR Hedged Acc) - Bloomberg U.K. Government Float Adjusted (cubierto a EUR). Verificado el 28-sep-2026 en la gestora.
+  IE00BLPJRG31: {
+    ticker: 'VGOV',
+    calidad: 'aproximada',
+    nota: 'El fondo replica la deuda pública británica cubierta a euros y la exposición se toma de un ETF de gilts sin cubrir. Mismo emisor y mismo país; la diferencia es la divisa, que en el ETF sí mueve el valor y en esta clase casi no.',
+  },
+  // Amundi Core MSCI Europe (clase AE) - MSCI Europe. Verificado el 28-sep-2026 en la gestora.
+  LU0389811885: { ticker: 'IMEU', calidad: 'exacta' },
+  // Amundi MSCI North America ESG Broad Transition (clase AE) - MSCI North America ESG Broad CTB Select. Verificado el 28-sep-2026 en la gestora.
+  LU0389812347: {
+    ticker: 'CSPX',
+    calidad: 'aproximada',
+    nota: 'El fondo replica una versión ESG y de transición climática del MSCI North America y la exposición se toma de un ETF sobre el S&P 500. Mismo mercado; el índice del fondo añade Canadá y cambia los pesos para rebajar las empresas más emisoras, así que el reparto por sectores se aparta algo.',
+  },
+  // Amundi Core Euro Government Bond (clase AE) - Bloomberg Euro Treasury 50bn. Verificado el 28-sep-2026 en la gestora.
+  LU1050470373: {
+    ticker: 'VGEA',
+    calidad: 'aproximada',
+    nota: 'El fondo replica el Bloomberg Euro Treasury 50bn, que solo incluye los emisores grandes de la eurozona, y la exposición se toma de un ETF de toda la deuda pública de la eurozona. Misma región y mismo tipo de emisor; los pesos por país cambian algo.',
+  },
+  // Pictet-USA Index (clase P EUR) - S&P 500. Verificado el 28-sep-2026 en la gestora.
+  LU0474966164: { ticker: 'CSPX', calidad: 'exacta' },
+  // Pictet-Europe Index (clase P EUR) - MSCI Europe. Verificado el 28-sep-2026 en la gestora.
+  LU0130731390: { ticker: 'IMEU', calidad: 'exacta' },
+  // Pictet-Japan Index (clase P EUR) - MSCI Japan. Verificado el 28-sep-2026 en la gestora.
+  LU0474966750: {
+    ticker: 'SJPA',
+    calidad: 'aproximada',
+    nota: 'El fondo replica el MSCI Japan y la exposición se toma de un ETF sobre el MSCI Japan IMI, que añade pequeña capitalización. Mismo mercado, universo algo más amplio.',
+  },
+  // Pictet-Pacific Ex Japan Index (clase P EUR) - MSCI Pacific ex Japan. Verificado el 28-sep-2026 en la gestora.
+  LU0474967055: { ticker: 'CPXJ', calidad: 'exacta' },
+  // Pictet-Emerging Markets Index (clase P EUR) - MSCI Emerging Markets. Verificado el 28-sep-2026 en la gestora.
+  LU0474967998: { ticker: 'AEEM', calidad: 'exacta' },
+  // Fidelity MSCI World Index Fund (clase P Acc EUR) - MSCI World. Verificado el 28-sep-2026 en la gestora.
+  IE00BYX5NX33: { ticker: 'IWDA', calidad: 'exacta' },
+  // Fidelity MSCI Japan Index Fund (clase P Acc EUR) - MSCI Japan. Verificado el 28-sep-2026 en la gestora.
+  IE00BYX5N771: {
+    ticker: 'SJPA',
+    calidad: 'aproximada',
+    nota: 'El fondo replica el MSCI Japan y la exposición se toma de un ETF sobre el MSCI Japan IMI, que añade pequeña capitalización. Mismo mercado, universo algo más amplio.',
+  },
+  // State Street EMU Government Bond Index Fund (clase P) - FTSE EMU Government Bond. Verificado el 28-sep-2026 en la gestora.
+  LU0438093006: {
+    ticker: 'VGEA',
+    calidad: 'aproximada',
+    nota: 'El fondo replica el FTSE EMU Government Bond y la exposición se toma de un ETF sobre el Euro Aggregate Treasury de Bloomberg. Es la misma deuda pública de la eurozona, con dos proveedores de índice distintos: los criterios de inclusión y los pesos por país no son idénticos.',
+  },
+  // State Street Euro Core Treasury Bond Index Fund (clase P) - Bloomberg Global Treasury Euro Core (40 % Alemania, 40 % Francia, 20 % Países Bajos). Verificado el 28-sep-2026 en la gestora.
+  LU0570151448: {
+    ticker: 'VGEA',
+    calidad: 'aproximada',
+    nota: 'El fondo solo tiene deuda pública de Alemania, Francia y Países Bajos, en pesos fijos, y la exposición se toma de un ETF de toda la deuda pública de la eurozona. Misma región y mismo tipo de emisor; los países cambian mucho, porque Italia o España no están.',
+  },
 }
 
 /**
@@ -326,6 +418,27 @@ const SIN_EQUIVALENCIA_FIABLE: Record<string, string> = {
    */
 
   // «Amundi Index Eurozone Government Bond»
+  // Vanguard Eurozone Stock Index Fund (clase EUR Acc). 28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-variable/9927/eurozone-stock-index-fund-eur-acc): «Eurozone Stock Index Fund - EUR Acc (VANESII) | Índice de referencia: MSCI EMU Index | Comisión: 0,12 %»
+  IE0008248803: 'No tenemos en el catálogo un ETF sobre el MSCI EMU. El único europeo que hay replica el MSCI Europe, que incluye Reino Unido, Suiza y los nórdicos, alrededor de un tercio del índice fuera de la eurozona. Usarlo daría una exposición por países falsa, así que preferimos no dar número.',
+  // Vanguard U.S. Government Bond Index Fund (clase EUR Hedged Acc). 28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-fija/9284/us-government-bond-index-fund-eur-hedged-acc): «U.S. Government Bond Index Fund - EUR Hedged Acc (VGUGBSE) | Índice de referencia: Bloomberg U.S. Government Float Adjusted Bond Index in EUR | Comisión: 0,12 %»
+  IE0007471471: 'No tenemos en el catálogo un ETF de deuda pública de Estados Unidos. El de renta fija global que hay mezcla bonos de muchos países y de empresas, así que la exposición saldría falsa; preferimos no dar número.',
+  // Vanguard Euro Investment Grade Bond Index Fund (clase EUR Acc). 28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-fija/9991/euro-investment-grade-bond-index-fund-eur-acc): «Euro Investment Grade Bond Index Fund - EUR Acc (VANEIGB) | Índice de referencia: Bloomberg EUR Non-Government Float Adjusted Bond Index | Comisión: 0,12 %»
+  IE00B04FFJ44: 'No tenemos en el catálogo un ETF de deuda en euros que no sea pública. Tomar la exposición de uno de deuda del Estado pondría este fondo como 100 % bonos soberanos cuando no lo es; preferimos no dar número.',
+  // Vanguard Eurozone Inflation-Linked Bond Index Fund (clase EUR Acc). 28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-fija/9104/eurozone-inflation-linked-bond-index-fund-eur-acc): «Eurozone Inflation-Linked Bond Index Fund - EUR Acc (VANEZON) | Índice de referencia: Bloomberg Global Inflation-Linked: Eurozone - Euro CPI Index | Comisión: 0,12 %»
+  IE00B04GQR24: 'No tenemos en el catálogo un ETF de bonos ligados a la inflación. El de deuda pública en euros tiene la misma región y el mismo emisor, pero se comporta distinto cuando cambia la inflación, que es justo para lo que existe este fondo; preferimos no dar número.',
+  // Vanguard Global Corporate Bond Index Fund (clase EUR Hedged Acc). 28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-fija/9459/global-corporate-bond-index-fund-eur-hedged-acc): «Global Corporate Bond Index Fund - EUR Hedged Acc (VAIHAHE) | Índice de referencia: Bloomberg Global Aggregate Float Adjusted Corporate Index in EUR | Comisión: 0,18 %»
+  IE00BDFB5N63: 'No tenemos en el catálogo un ETF de bonos de empresas. El de renta fija global agregada mezcla deuda pública y corporativa, y usarlo daría a este fondo un peso de deuda pública que no tiene; preferimos no dar número.',
+  // Vanguard Global Short-Term Corporate Bond Index Fund (clase EUR Hedged Acc). 28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-fija/9544/global-short-term-corporate-bond-index-fund-eur-hedged-acc): «Global Short-Term Corporate Bond Index Fund - EUR Hedged Acc (VACBIEH) | Índice de referencia: Bloomberg Global Aggregate Corporate 1-5 Year Float Adjusted Index in EUR | Comisión: 0,18 %»
+  IE00BDFB7290: 'No tenemos en el catálogo un ETF de bonos de empresas. El de renta fija global agregada mezcla deuda pública y corporativa de todos los plazos, así que la exposición saldría falsa; preferimos no dar número.',
+  // Vanguard Japan Government Bond Index Fund (clase EUR Hedged Acc). 28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-fija/9463/japan-government-bond-index-fund-eur-hedged-acc): «Japan Government Bond Index Fund - EUR Hedged Acc (VAIHAHA) | Índice de referencia: Bloomberg Japan Government Float Adjusted Bond Index in EUR | Comisión: 0,12 %»
+  IE00BLPJRH48: 'No tenemos en el catálogo un ETF de deuda pública japonesa. Tomar la exposición de uno de renta fija global pondría a este fondo en Estados Unidos y Europa, donde no invierte; preferimos no dar número.',
+  // Amundi FTSE EPRA NAREIT Global (clase AE). 28-sep-2026, Documento de Datos Fundamentales de la GESTORA (https://www.amundi.es/retail/dl/doc/kid-priips/LU1328852659/SPA/ESP, publicado el 05/06/2026): «Amundi FTSE EPRA NAREIT Global AE | objetivo: replicar la rentabilidad del FTSE EPRA/NAREIT Developed Index | Comisiones de gestión y otros costes administrativos o de funcionamiento: el 0,34 % del valor de su inversión al año»
+  LU1328852659: 'No tenemos en el catálogo un ETF que replique el FTSE EPRA Nareit Developed, que es inmobiliario cotizado. Usar la exposición de un índice de acciones general daría un reparto por sectores falso, así que preferimos no dar número.',
+  // Amundi Core Global Government Bond (clase AHE). 28-sep-2026, Documento de Datos Fundamentales de la GESTORA (https://www.amundi.es/retail/dl/doc/kid-priips/LU0389812933/SPA/ESP, publicado el 28/04/2026): «Amundi Core Global Government Bond AHE | objetivo: replicar la rentabilidad del J.P. Morgan Government Bond Index Global (GBI Global) | Comisiones de gestión y otros costes administrativos o de funcionamiento: el 0,35 % del valor de su inversión al año»
+  LU0389812933: 'No tenemos en el catálogo un ETF de deuda pública mundial. El de renta fija global agregada mezcla deuda pública y de empresas, así que el reparto saldría falso; preferimos no dar número.',
+  // Pictet-Euroland Index (clase P EUR). 28-sep-2026, ficha de la GESTORA (https://am.pictet.com/es/es/individuals/funds/pictet-euroland-index/LU0255980913): «Índice de referencia: MSCI EMU Index» y su Documento de Datos Fundamentales de 19/06/2026: «Comisiones de gestión y otros costes administrativos o de funcionamiento: 0.46% detraído de esta Clase de participaciones»
+  LU0255980913: 'No tenemos en el catálogo un ETF sobre el MSCI EMU. El único europeo que hay replica el MSCI Europe, que incluye Reino Unido, Suiza y los nórdicos, alrededor de un tercio del índice fuera de la eurozona. Usarlo daría una exposición por países falsa, así que preferimos no dar número.',
+
   LU1437015735:
     'No se analiza porque el producto no es el que decía la ficha. Ese ISIN es el «Amundi Core MSCI Europe UCITS ETF»: un ETF de renta VARIABLE europea, no un fondo de renta FIJA de deuda pública de la eurozona. Comprobado el 18-sep-2026 en justETF, en la web de Amundi y en Euronext. Si lo que buscas es renta fija, este no es el producto.',
 
@@ -547,14 +660,14 @@ export function esFondoIndexado(entrada: string): boolean {
  * mirar.
  */
 export const VERIFICADOS_EN_FUENTE: Record<string, string> = {
-  IE00B03HCZ61: '18-sep-2026, registro de fondos: «VANGUARD GLOBAL STOCK INDEX INVESTOR EUR CAP | MSCI World Index | 0,18 %»',
-  IE0032126645: '18-sep-2026, registro de fondos: «VANGUARD U.S. 500 STOCK INDEX GENERAL EUR CAP | S&P 500 Index | 0,10 %»',
-  IE0031786142: '18-sep-2026, factsheet de Vanguard de 31-ago-2026 con este ISIN: «MSCI Emerging Markets Index […] large and mid-sized company stocks», ticker MSDEEEMN, OCF 0,23 %',
-  IE00BYX5MX67: '18-sep-2026, registro de fondos: «FIDELITY S&P 500 INDEX FUND P-ACC-EUR | S&P 500 Index | 0,06 %». La ficha decía MSCI World y 0,12 %: los tres datos estaban mal',
-  IE0007987690: '18-sep-2026, registro de fondos: «VANGUARD EUROPEAN STOCK INDEX INVESTOR EUR CAP | MSCI Europe Index | 0,12 %». La ficha decía «Eurozone Stock», MSCI EMU y 0,16 %: los tres estaban mal, y de ese error salió su exclusión del 17-sep',
-  LU0996177134: '18-sep-2026, registro de fondos: «AMUNDI CORE MSCI EMERGING MARKETS AE CAP | AMUNDI ASSET MANAGEMENT | MSCI Emerging Markets | 0,30 %». La ficha decía «Amundi Index» y 0,20 %: gama equivocada y la mitad de comisión',
-  IE00BYX5M476: '18-sep-2026, registro de fondos: «FIDELITY MSCI EMERGING MARKETS INDEX FUND P-ACC-EUR | FIL INVESTMENTS INTERNATIONAL | MSCI Emerging Markets Index | 0,20 %». Índice y TER coincidían; el ISIN del catálogo (`IE00BYX5L514`) era imposible y al nombre le faltaba «MSCI»',
-  IE00BD0NCM55: '19-sep-2026, registro de fondos: «ISHARES DEVELOPED WORLD INDEX FUND (IE) D EUR ACC | BLACKROCK INVESTMENT MANAGEMENT | MSCI World | 0,30 %»',
+  IE00B03HCZ61: '28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-variable/9932/global-stock-index-fund-eur): «Global Stock Index Fund - Investor EUR Acc (VANGLVI) | Índice de referencia: MSCI World Index | Comisión: 0,18 %». Confirma lo que ya decía la verificación anterior: 18-sep-2026, registro de fondos: «VANGUARD GLOBAL STOCK INDEX INVESTOR EUR CAP | MSCI World Index | 0,18 %»',
+  IE0032126645: '28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-variable/9834/us-500-stock-index-fund-eur-acc): «U.S. 500 Stock Index Fund - EUR Acc (VANUIEI) | Índice de referencia: Standard and Poor’s 500 Index | Comisión: 0,10 %». Confirma lo que ya decía la verificación anterior: 18-sep-2026, registro de fondos: «VANGUARD U.S. 500 STOCK INDEX GENERAL EUR CAP | S&P 500 Index | 0,10 %»',
+  IE0031786142: '28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-variable/9115/emerging-markets-stock-index-fund-eur): «Emerging Markets Stock Index Fund - Investor EUR Acc (VANEMSI) | Índice de referencia: MSCI Emerging Markets Index | Comisión: 0,23 %». Confirma lo que ya decía la verificación anterior: 18-sep-2026, factsheet de Vanguard de 31-ago-2026 con este ISIN: «MSCI Emerging Markets Index […] large and mid-sized company stocks», ticker MSDEEEMN, OCF 0,23 %',
+  IE00BYX5MX67: '28-sep-2026, ficha mensual de la GESTORA a 31-ago-2026 (https://www.fidelityinternational.com/FILPS/Documents/en/current/ret.en.xx.IE00BYX5MX67.pdf): «Fidelity S&P 500 Index Fund P-ACC-Euro | Index Name: S&P 500 Index (Net) | ISIN: IE00BYX5MX67 | Share Class Ongoing Charges: 0.06% | Distribution type: Accumulating». Confirma lo que ya decía la verificación anterior: 18-sep-2026, registro de fondos: «FIDELITY S&P 500 INDEX FUND P-ACC-EUR | S&P 500 Index | 0,06 %». La ficha decía MSCI World y 0,12 %: los tres datos estaban mal',
+  IE0007987690: '28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-variable/9923/european-stock-index-fund-eur): «European Stock Index Fund - Investor EUR Acc (VANEIEI) | Índice de referencia: MSCI Europe Index | Comisión: 0,12 %». Confirma lo que ya decía la verificación anterior: 18-sep-2026, registro de fondos: «VANGUARD EUROPEAN STOCK INDEX INVESTOR EUR CAP | MSCI Europe Index | 0,12 %». La ficha decía «Eurozone Stock», MSCI EMU y 0,16 %: los tres estaban mal, y de ese error salió su exclusión del 17-sep',
+  LU0996177134: '28-sep-2026, Documento de Datos Fundamentales de la GESTORA (https://www.amundi.es/retail/dl/doc/kid-priips/LU0996177134/SPA/ESP, publicado el 28/04/2026): «Amundi Core MSCI Emerging Markets AE | objetivo: replicar la rentabilidad del MSCI Emerging Markets Index | Comisiones de gestión y otros costes administrativos o de funcionamiento: el 0,45 % del valor de su inversión al año». Historia: la ficha decía «Amundi Index» y 0,20 %; el registro de fondos del 18-sep decía 0,30 %. Ninguna de las dos cifras salía de la gestora',
+  IE00BYX5M476: '28-sep-2026, ficha mensual de la GESTORA a 31-ago-2026 (https://www.fidelityinternational.com/FILPS/Documents/en/current/ret.en.xx.IE00BYX5M476.pdf): «Fidelity MSCI Emerging Markets Index Fund P-ACC-Euro | Index Name: MSCI Emerging Markets Index (Net) | ISIN: IE00BYX5M476 | Share Class Ongoing Charges: 0.20% | Distribution type: Accumulating». Confirma lo que ya decía la verificación anterior: 18-sep-2026, registro de fondos: «FIDELITY MSCI EMERGING MARKETS INDEX FUND P-ACC-EUR | FIL INVESTMENTS INTERNATIONAL | MSCI Emerging Markets Index | 0,20 %». Índice y TER coincidían; el ISIN del catálogo (`IE00BYX5L514`) era imposible y al nombre le faltaba «MSCI»',
+  IE00BD0NCM55: '28-sep-2026, ficha de la GESTORA (https://www.blackrock.com/es/profesionales/productos/287649): «Ongoing Charge Fee 0,12% | ISIN IE00BD0NCM55 | Inversión inicial mínima EUR 100.000,00 | Uso de los ingresos Acumulación | Índice de referencia MSCI World Index Net (EUR) | Porcentaje de gastos 0,10%». Sustituye al registro de fondos del 19-sep, que decía 0,30 %',
   IE000ZYRH0Q7: '24-sep-2026, ficha de la GESTORA (blackrock.com/es/profesionales/productos/345277): «Clase S (EUR) Acumulación | Índice de referencia: MSCI World Index Net (EUR) | Porcentaje de gastos: 0,04 % | Domicilio: Irlanda | Gestora: BlackRock Asset Management Ireland Limited | Lanzamiento de la serie: 21 ago 2025». Misma cartera que la clase D de arriba y siete veces y media más barata',
   IE000QAZP7L2: '24-sep-2026, ficha de la GESTORA (blackrock.com/es/profesionales/productos/345276): «Clase S | Índice: MSCI Emerging Markets, Net Returns (EUR) | Porcentaje de gastos: 0,08 por ciento | Domicilio: Irlanda | Inversión inicial mínima: EUR 200.000.000»',
   IE00BD0NC037: '25-sep-2026, ficha de la GESTORA (blackrock.com/es/profesionales/productos/287637): «Clase D | Índice de referencia: FTSE EMU Government Bond Index (EUR) | Porcentaje de gastos: 0,07 por ciento | Acumulación | Domicilio: Irlanda | Inversión inicial mínima: EUR 100.000». Citado por la comparativa de comisiones de bogleheads.es como uno de los dos ISIN de referencia de MyInvestor',
@@ -564,10 +677,30 @@ export const VERIFICADOS_EN_FUENTE: Record<string, string> = {
   IE00BDRK7R97: '25-sep-2026, ficha de la GESTORA (blackrock.com/es/profesionales/productos/287905): «Clase D | Índice de referencia: MSCI Developed Pacific Ex Japan in EUR Net TR Index | Porcentaje de gastos: 0,30 por ciento | Inversión inicial mínima: EUR 100.000 | Acumulación»',
   IE00BMZ3NN11: '25-sep-2026, ficha de la GESTORA (blackrock.com/es/profesionales/productos/318356): «Class D Hedged | Índice de referencia: BBG Global Aggregate 1-5 Year Index | Porcentaje de gastos: 0,14 por ciento | Inversión inicial mínima: EUR 100.000 | Acumulación»',
   IE00B4XCK338: '25-sep-2026, ficha de la GESTORA (blackrock.com/es/profesionales/productos/229107): «Inst | Índice de referencia: iBoxx Eurozone AAA Index (EUR) | Porcentaje de gastos: 0,10 por ciento | Inversión inicial mínima: EUR 250.000 | Acumulación»',
-  LU0996182563: '19-sep-2026, registro de fondos: «AMUNDI INDEX MSCI WORLD AE CAP | AMUNDI ASSET MANAGEMENT | MSCI World | 0,15 %»',
-  IE00BYX5MD61: '19-sep-2026, registro de fondos: «FIDELITY MSCI EUROPE INDEX FUND P-ACC-EUR | FIL INVESTMENTS INTERNATIONAL | MSCI Europe Index | 0,10 %»',
-  IE00B42W4L06: '19-sep-2026, registro de fondos: «VANGUARD GLOBAL SMALL-CAP INDEX GENERAL EUR CAP | VANGUARD ASSET MANAGEMENT | MSCI World Small Cap Index | 0,29 %»',
-  IE0007286036: '19-sep-2026, registro de fondos: «VANGUARD JAPAN STOCK INDEX GENERAL EUR CAP | VANGUARD ASSET MANAGEMENT | MSCI Japan Index | 0,16 %»',
-  IE0007472115: '19-sep-2026, registro de fondos: «VANGUARD EURO GOVERNMENT BOND INDEX INVESTOR EUR CAP | VANGUARD ASSET MANAGEMENT | Bloomberg Euro Government Float Adjusted Bond Index | 0,12 %»',
-  IE00B18GC888: '18-sep-2026, registro de fondos: «VANGUARD GLOBAL BOND INDEX GENERAL EUR HEDGED CAP | Bloomberg Global Aggregate Float Adjusted and Scaled | 0,15 %». Nombre y TER coincidían; el índice es una variante del Global Aggregate y por eso la equivalencia es aproximada',
+  LU0996182563: '28-sep-2026, Documento de Datos Fundamentales de la GESTORA (https://www.amundi.es/retail/dl/doc/kid-priips/LU0996182563/SPA/ESP, publicado el 28/04/2026): «Amundi Index MSCI World AE | objetivo: replicar la rentabilidad del MSCI World Index | Comisiones de gestión y otros costes administrativos o de funcionamiento: el 0,30 % del valor de su inversión al año». Sustituye al registro de fondos del 19-sep, que decía 0,15 %: la mitad de lo real',
+  IE00BYX5MD61: '28-sep-2026, ficha mensual de la GESTORA a 31-ago-2026 (https://www.fidelityinternational.com/FILPS/Documents/en/current/ret.en.xx.IE00BYX5MD61.pdf): «Fidelity MSCI Europe Index Fund P-ACC-Euro | Index Name: MSCI Europe Index (Net) | ISIN: IE00BYX5MD61 | Share Class Ongoing Charges: 0.10% | Distribution type: Accumulating». Confirma lo que ya decía la verificación anterior: 19-sep-2026, registro de fondos: «FIDELITY MSCI EUROPE INDEX FUND P-ACC-EUR | FIL INVESTMENTS INTERNATIONAL | MSCI Europe Index | 0,10 %»',
+  IE00B42W4L06: '28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-variable/9159/global-small-cap-index-fund-eur-acc): «Global Small-Cap Index Fund - EUR Acc (VANIEUI) | Índice de referencia: MSCI World Small Cap Index | Comisión: 0,29 %». Confirma lo que ya decía la verificación anterior: 19-sep-2026, registro de fondos: «VANGUARD GLOBAL SMALL-CAP INDEX GENERAL EUR CAP | VANGUARD ASSET MANAGEMENT | MSCI World Small Cap Index | 0,29 %»',
+  IE0007286036: '28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-variable/9113/japan-stock-index-fund-eur-acc): «Japan Stock Index Fund - EUR Acc (VANSTKE) | Índice de referencia: MSCI Japan Index | Comisión: 0,16 %». Confirma lo que ya decía la verificación anterior: 19-sep-2026, registro de fondos: «VANGUARD JAPAN STOCK INDEX GENERAL EUR CAP | VANGUARD ASSET MANAGEMENT | MSCI Japan Index | 0,16 %»',
+  IE0007472115: '28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-fija/9970/euro-government-bond-index-fund-eur): «Euro Government Bond Index Fund - Investor EUR Acc (VANEGBX) | Índice de referencia: Bloomberg Euro Government Float Adjusted Bond Index | Comisión: 0,12 %». Confirma lo que ya decía la verificación anterior: 19-sep-2026, registro de fondos: «VANGUARD EURO GOVERNMENT BOND INDEX INVESTOR EUR CAP | VANGUARD ASSET MANAGEMENT | Bloomberg Euro Government Float Adjusted Bond Index | 0,12 %»',
+  IE00B18GC888: '28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-fija/9197/global-bond-index-fund-eur-hedged-acc): «Global Bond Index Fund - EUR Hedged Acc (VANGEHI) | Índice de referencia: Bloomberg Global Aggregate Float Adjusted and Scaled Index in EUR | Comisión: 0,15 %». Confirma lo que ya decía la verificación anterior: 18-sep-2026, registro de fondos: «VANGUARD GLOBAL BOND INDEX GENERAL EUR HEDGED CAP | Bloomberg Global Aggregate Float Adjusted and Scaled | 0,15 %». Nombre y TER coincidían; el índice es una variante del Global Aggregate y por eso la equivalencia es aproximada',
+  // Lote del 28-sep-2026, todos en la gestora.
+  IE0007201266: '28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-variable/9211/pacific-ex-japan-stock-index-fund-eur-acc): «Pacific ex-Japan Stock Index Fund - EUR Acc (VAPEJEI) | Índice de referencia: MSCI Pacific ex Japan Index | Comisión: 0,16 %»',
+  IE00B246KL88: '28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-fija/9132/20-year-euro-treasury-index-fund-eur-acc): «20+ Year Euro Treasury Index Fund - Euro Shares (VGYETII) | Índice de referencia: Bloomberg Euro Treasury 20+ Year Bond Index | Comisión: 0,16 %»',
+  IE00B526YN16: '28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-variable/9163/esg-developed-europe-index-fund-eur-acc): «ESG Developed Europe Index Fund - EUR Acc (VGSESIE) | Índice de referencia: FTSE Developed Europe Choice Index | Comisión: 0,14 %»',
+  IE00B5456744: '28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-variable/9164/esg-developed-world-all-cap-equity-index-fund-eur-acc): «ESG Developed World All Cap Equity Index Fund - EUR Acc (VGSGSIE) | Índice de referencia: FTSE Developed All Cap Choice Index | Comisión: 0,20 %»',
+  IE00BH65QP47: '28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-fija/9110/global-short-term-bond-index-fund-eur-hedged-acc): «Global Short-Term Bond Index Fund - EUR Hedged Acc (VGSTIEH) | Índice de referencia: Bloomberg Global Aggregate Ex US MBS 1-5 Year Float Adjusted and Scaled Index in EUR | Comisión: 0,15 %»',
+  IE00BKV0W243: '28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-variable/9684/esg-emerging-markets-all-cap-equity-index-fund-eur-acc): «ESG Emerging Markets All Cap Equity Index Fund - EUR Acc (VAEAIIE) | Índice de referencia: FTSE Emerging All Cap Choice Index | Comisión: 0,25 %»',
+  IE00BLPJRG31: '28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-fija/9462/uk-government-bond-index-fund-eur-hedged-acc): «U.K. Government Bond Index Fund - EUR Hedged Acc (VAUKGEH) | Índice de referencia: Bloomberg U.K. Government Float Adjusted Bond Index Hedged in EUR | Comisión: 0,12 %»',
+  LU0389811885: '28-sep-2026, Documento de Datos Fundamentales de la GESTORA (https://www.amundi.es/retail/dl/doc/kid-priips/LU0389811885/SPA/ESP, publicado el 05/06/2026): «Amundi Core MSCI Europe AE | objetivo: replicar la rentabilidad del MSCI Europe Index | Comisiones de gestión y otros costes administrativos o de funcionamiento: el 0,30 % del valor de su inversión al año»',
+  LU0389812347: '28-sep-2026, Documento de Datos Fundamentales de la GESTORA (https://www.amundi.es/retail/dl/doc/kid-priips/LU0389812347/SPA/ESP, publicado el 15/06/2026): «Amundi MSCI North America ESG Broad Transition AE | objetivo: replicar la rentabilidad del MSCI North America ESG Broad CTB Select Index | Comisiones de gestión y otros costes administrativos o de funcionamiento: el 0,30 % del valor de su inversión al año»',
+  LU1050470373: '28-sep-2026, Documento de Datos Fundamentales de la GESTORA (https://www.amundi.es/retail/dl/doc/kid-priips/LU1050470373/SPA/ESP, publicado el 28/04/2026): «Amundi Core Euro Government Bond AE | objetivo: replicar la rentabilidad del Bloomberg Euro Treasury 50bn Bond Index | Comisiones de gestión y otros costes administrativos o de funcionamiento: el 0,35 % del valor de su inversión al año»',
+  LU0474966164: '28-sep-2026, ficha de la GESTORA (https://am.pictet.com/es/es/individuals/funds/pictet-usa-index/LU0474966164): «Índice de referencia: S&P 500 Composite Index» y su Documento de Datos Fundamentales de 19/06/2026: «Comisiones de gestión y otros costes administrativos o de funcionamiento: 0.44% detraído de esta Clase de participaciones»',
+  LU0130731390: '28-sep-2026, ficha de la GESTORA (https://am.pictet.com/es/es/individuals/funds/pictet-europe-index/LU0130731390): «Índice de referencia: MSCI Europe (EUR)» y su Documento de Datos Fundamentales de 19/06/2026: «Comisiones de gestión y otros costes administrativos o de funcionamiento: 0.45% detraído de esta Clase de participaciones»',
+  LU0474966750: '28-sep-2026, ficha de la GESTORA (https://am.pictet.com/es/es/individuals/funds/pictet-japan-index/LU0474966750): «Índice de referencia: MSCI Japan Index» y su Documento de Datos Fundamentales de 19/06/2026: «Comisiones de gestión y otros costes administrativos o de funcionamiento: 0.45% detraído de esta Clase de participaciones»',
+  LU0474967055: '28-sep-2026, ficha de la GESTORA (https://am.pictet.com/es/es/individuals/funds/pictet-pacific-ex-japan-index/LU0474967055): «Índice de referencia: MSCI Pacific ex-Japan (USD)» y su Documento de Datos Fundamentales de 19/06/2026: «Comisiones de gestión y otros costes administrativos o de funcionamiento: 0.45% detraído de esta Clase de participaciones»',
+  LU0474967998: '28-sep-2026, ficha de la GESTORA (https://am.pictet.com/es/es/individuals/funds/pictet-emerging-markets-index/LU0474967998): «Índice de referencia: MSCI Emerging Markets Index» y su Documento de Datos Fundamentales de 19/06/2026: «Comisiones de gestión y otros costes administrativos o de funcionamiento: 0.58% detraído de esta Clase de participaciones»',
+  IE00BYX5NX33: '28-sep-2026, ficha mensual de la GESTORA a 31-ago-2026 (https://www.fidelityinternational.com/FILPS/Documents/en/current/ret.en.xx.IE00BYX5NX33.pdf): «Fidelity MSCI World Index Fund P-ACC-Euro | Index Name: MSCI World Index (Net) | ISIN: IE00BYX5NX33 | Share Class Ongoing Charges: 0.12% | Distribution type: Accumulating»',
+  IE00BYX5N771: '28-sep-2026, ficha mensual de la GESTORA a 31-ago-2026 (https://www.fidelityinternational.com/FILPS/Documents/en/current/ret.en.xx.IE00BYX5N771.pdf): «Fidelity MSCI Japan Index Fund P-ACC-Euro | Index Name: MSCI Japan Index (Net) | ISIN: IE00BYX5N771 | Share Class Ongoing Charges: 0.10% | Distribution type: Accumulating»',
+  LU0438093006: '28-sep-2026, ficha mensual de la GESTORA a 31-ago-2026 (https://www.ssga.com/uk/en_gb/institutional/library-content/products/factsheets/mf/emea/factsheet-emea-en_gb-lu0438093006.pdf): «Share Class [P] All Investors | Benchmark FTSE EMU Government Bond Index | ISIN LU0438093006 | Minimum Initial Investment EUR 50.00 | Actual TER 0.36%»',
+  LU0570151448: '28-sep-2026, ficha mensual de la GESTORA a 31-ago-2026 (https://www.ssga.com/uk/en_gb/institutional/library-content/products/factsheets/mf/emea/factsheet-emea-en_gb-lu0570151448.pdf): «Share Class [P] All Investors | Benchmark Bloomberg Global Treasury 40% Germany 40% France 20% Netherlands Custom Index | ISIN LU0570151448 | Minimum Initial Investment EUR 50.00 | Actual TER 0.38%»',
 }

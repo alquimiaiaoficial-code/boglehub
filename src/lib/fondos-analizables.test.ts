@@ -282,7 +282,12 @@ describe('cobertura', () => {
     // Quality Euro Gov). Los otros 6 —inmobiliario, EMU, corporativos, mundial sin euro,
     // Euro Aggregate e inflación— se RECONOCEN pero no se analizan, porque no tenemos un ETF
     // con esa exposición y dar un número con la de otro sería inventarlo. Eso es a propósito.
-    expect(analizables.length).toBe(23)
+    // 28-sep-2026: 42. Lote de Vanguard, Amundi, Pictet, Fidelity y State Street: 29 fondos
+    // con ficha, 19 con equivalencia y 10 reconocidos sin analizar. Ese mismo día, al
+    // contrastar con la gestora lo que venía del «registro de fondos», salieron tres
+    // comisiones mal: Amundi World AE (0,15 → 0,30), Amundi EM AE (0,30 → 0,45) e iShares
+    // Developed World D (0,30 → 0,10). Todo lo que se analiza cita ya a la gestora.
+    expect(analizables.length).toBe(42)
     expect(analizables.length).toBeLessThan(INDEX_FUNDS.length)
   })
 })

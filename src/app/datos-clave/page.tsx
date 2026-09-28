@@ -448,16 +448,17 @@ Fuente: BogleHub (boglehub.com/datos-clave) — verificable con BOE/AEAT, follet
           {/* 12. Fondos en MyInvestor */}
           <section id="fondos-myinvestor" className="mb-12 scroll-mt-20">
             <DataTable
-              caption="12. Fondos indexados disponibles en MyInvestor con TER bajo"
-              source="Catálogo oficial de MyInvestor, mayo 2026"
-              headers={['Fondo', 'ISIN', 'TER', 'Categoría', 'Mínimo']}
+              caption="12. Fondos indexados con su comisión según la gestora (28-sep-2026)"
+              source="Ficha o documento de datos fundamentales de cada gestora, leídos el 28-sep-2026. Hasta ese día esta tabla incluía un ETF como si fuera fondo, un ISIN de S&P 500 presentado como MSCI World y una comisión de Amundi de menos de la mitad de la real."
+              headers={['Fondo', 'ISIN', 'Gastos', 'Índice']}
               rows={[
-                ['Amundi Prime Global', 'LU1931974692', '0,05%', 'MSCI World eq.', '1€'],
-                ['Vanguard Global Stock Index', 'IE00B03HCZ61', '0,18%', 'MSCI World', '1€'],
-                ['Fidelity MSCI World Index', 'IE00BYX5MX67', '0,12%', 'MSCI World', '1€'],
-                ['Amundi Index MSCI Emerging Markets', 'LU0996177134', '0,20%', 'MSCI EM', '1€'],
-                ['Vanguard Global Bond Index Hedged EUR', 'IE00B18GC888', '0,15%', 'Renta fija global', '1€'],
-                ['Vanguard Euro Government Bond Index', 'IE0007472115', '0,12%', 'Bonos eurozona', 'Consultar'],
+                ['Vanguard Global Stock Index (Investor)', 'IE00B03HCZ61', '0,18%', 'MSCI World'],
+                ['Fidelity MSCI World Index (P Acc)', 'IE00BYX5NX33', '0,12%', 'MSCI World'],
+                ['Fidelity S&P 500 Index (P Acc)', 'IE00BYX5MX67', '0,06%', 'S&P 500'],
+                ['Amundi Core MSCI Emerging Markets (AE)', 'LU0996177134', '0,45%', 'MSCI Emerging Markets'],
+                ['Fidelity MSCI Emerging Markets Index (P Acc)', 'IE00BYX5M476', '0,20%', 'MSCI Emerging Markets'],
+                ['Vanguard Global Bond Index EUR Hedged', 'IE00B18GC888', '0,15%', 'Bloomberg Global Aggregate'],
+                ['Vanguard Euro Government Bond Index (Investor)', 'IE0007472115', '0,12%', 'Bloomberg Euro Government'],
               ]}
             />
             <p className="text-sm text-fg-muted leading-relaxed">

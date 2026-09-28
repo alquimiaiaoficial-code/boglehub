@@ -7424,15 +7424,11 @@ MyInvestor no encaja si:
 
 ---
 
-## Cartera mínima recomendada en MyInvestor
+## Antes de elegir fondos en MyInvestor: el ISIN y la comisión, de la gestora
 
-Para un inversor en fase de acumulación que quiera la máxima eficiencia fiscal y mínimo coste:
+La combinación que más se repite en los foros es un fondo global de países desarrollados, uno de emergentes y uno de renta fija. Qué peso dar a cada parte depende del plazo y de cuánta caída aguanta cada uno, y eso no lo decide una plataforma ni este artículo.
 
-- **80% Vanguard Global Stock Index** (TER 0,18%, MSCI World)
-- **10% Amundi Index MSCI Emerging Markets** (TER 0,20%, emergentes)
-- **10% Amundi Index Eurozone Government Bond** (TER 0,15%, renta fija eurozona)
-
-Coste total ponderado: ~0,08-0,10% anual. Mínimo de aportación: 1€ por fondo. Traspaso libre entre los tres. Para muchos inversores en España, esta es la cartera óptima.
+Lo que sí se puede comprobar es el producto. Busca por ISIN, no por nombre, y mira la comisión en la documentación de la gestora. Lo decimos por experiencia propia: hasta el 28 de septiembre de 2026 publicábamos el Amundi Index MSCI World AE al 0,15 % y el Amundi Core MSCI Emerging Markets AE al 0,30 %, y según los documentos de datos fundamentales de Amundi de abril de 2026 cuestan 0,30 % y 0,45 %. Este mismo apartado recomendaba además un «Amundi Index Eurozone Government Bond» cuyo ISIN resultó ser un ETF de renta variable. El [catálogo de fondos indexados](/fondo) lista los que tenemos verificados, cada uno con la fecha y la fuente.
 
 ---
 
@@ -9885,7 +9881,7 @@ Las obligaciones de declaración pueden cambiar y tu caso puede tener particular
     faq: [
       {
         q: '¿Cuáles son los mejores fondos indexados disponibles en España en 2026?',
-        a: 'Entre los que hemos verificado en el registro español: para renta variable global, el Vanguard Global Stock Index (0,18 %); para S&P 500, el Vanguard U.S. 500 Stock Index (0,10 %); para emergentes, el Fidelity MSCI Emerging Markets (0,20 %) o el Amundi Core MSCI Emerging Markets (0,30 %); para renta fija global, el Vanguard Global Bond Index EUR Hedged (0,15 %). Ojo con la gama Prime de Amundi, que aparece mucho en estas listas: son ETFs, no fondos, y por tanto no tienen traspaso sin tributar.',
+        a: 'Entre los que hemos verificado en la documentación de cada gestora en septiembre de 2026: para renta variable global, el Vanguard Global Stock Index (0,18 %); para S&P 500, el Vanguard U.S. 500 Stock Index (0,10 %); para emergentes, el Fidelity MSCI Emerging Markets (0,20 %) o el Amundi Core MSCI Emerging Markets (0,45 % en su clase AE, 0,20 % en la IE); para renta fija global, el Vanguard Global Bond Index EUR Hedged (0,15 %). Ojo con la gama Prime de Amundi, que aparece mucho en estas listas: son ETFs, no fondos, y por tanto no tienen traspaso sin tributar.',
       },
       {
         q: '¿Por qué elegir fondos indexados en lugar de ETFs en España?',
@@ -9957,7 +9953,7 @@ El complemento habitual del fondo global para cubrir China, India, Taiwán, Bras
 
 | Fondo | Índice | TER | ISIN |
 |---|---|---|---|
-| **Amundi Core MSCI Emerging Markets** | MSCI Emerging Markets | **0,30 %** | LU0996177134 |
+| **Amundi Core MSCI Emerging Markets** (clase AE) | MSCI Emerging Markets | **0,45 %** | LU0996177134 |
 | Fidelity MSCI Emerging Markets Index | MSCI Emerging Markets | 0,20 % | IE00BYX5M476 |
 | Vanguard Emerging Markets Stock Index | MSCI Emerging Markets | 0,23 % | IE0031786142 |
 

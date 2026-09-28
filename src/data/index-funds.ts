@@ -69,22 +69,25 @@ export const INDEX_FUNDS: IndexFund[] = [
     name: 'iShares Developed World Index Fund',
     manager: 'BlackRock',
     isin: 'IE00BD0NCM55',
-    // Verificado el 19-sep-2026 en el registro: «ISHARES DEVELOPED WORLD INDEX FUND (IE) D
-    // EUR ACC | BLACKROCK INVESTMENT MANAGEMENT | MSCI World | 0,30 %».
+    // CORREGIDO el 28-sep-2026. Publicábamos 0,30 % con un dato del «registro de fondos» del
+    // 19-sep. La ficha de la GESTORA (blackrock.com/es/profesionales/productos/287649) dice:
+    // «Ongoing Charge Fee 0,12% | ISIN IE00BD0NCM55 | Inversión inicial mínima EUR 100.000,00 |
+    // Índice de referencia MSCI World Index Net (EUR) | Porcentaje de gastos 0,10%». Se publica
+    // el «Porcentaje de gastos», que es el campo que usamos en todas las fichas de BlackRock.
     index: 'MSCI World',
-    ter: 0.30,
+    ter: 0.10,
     assetClass: 'Renta variable',
     region: 'Global desarrollado',
     accumulating: true,
     currency: 'EUR',
     availableAt: ['No verificado — compruébalo en tu plataforma'],
-    minimum: 'No verificado',
+    minimum: 'BlackRock exige 100.000 € de inversión inicial; lo que te pida tu comercializadora puede ser muy distinto',
     tagline: 'MSCI World en formato fondo, de BlackRock',
     description:
-      'El iShares Developed World Index Fund replica el MSCI World con unos gastos del 0,30 % anual. Cubre unas 1.500 empresas grandes y medianas de 23 mercados desarrollados, sin emergentes. Es el mismo índice que siguen ETFs como IWDA o SWRD, con la diferencia de forma jurídica que importa en España: un fondo entra en el régimen de traspasos del artículo 94.1.a) del IRPF y un ETF no.',
+      'El iShares Developed World Index Fund replica el MSCI World con unos gastos del 0,10 % anual en su clase D, según la ficha de BlackRock de septiembre de 2026 (hasta el 28-sep publicábamos 0,30 %, un dato que no salía de la gestora). Cubre las grandes y medianas empresas de 23 mercados desarrollados, sin emergentes. Es el mismo índice que siguen ETFs como IWDA o SWRD, con la diferencia de forma jurídica que importa en España: un fondo entra en el régimen de traspasos del artículo 94.1.a) del IRPF y un ETF no.',
     etfEquivalent: 'IWDA',
     faq: [
-      { q: '¿En qué se diferencia de un ETF sobre el MSCI World?', a: 'En la cartera, en nada: el índice es el mismo y las empresas también. La diferencia está en el vehiculo. Un fondo de inversión se puede traspasar a otro fondo sin que la plusvalía tribute en ese momento; un ETF queda fuera de ese régimen porque el artículo 94.1.a) excluye a los fondos cotizados. La otra diferencia es el coste: este fondo cuesta 0,30 % y hay ETFs sobre el mismo índice por 0,12-0,20 %.' },
+      { q: '¿En qué se diferencia de un ETF sobre el MSCI World?', a: 'En la cartera, en nada: el índice es el mismo y las empresas también. La diferencia está en el vehiculo. Un fondo de inversión se puede traspasar a otro fondo sin que la plusvalía tribute en ese momento; un ETF queda fuera de ese régimen porque el artículo 94.1.a) excluye a los fondos cotizados. En coste, esta clase D cuesta 0,10 % según BlackRock, y el mismo fondo tiene otras clases más caras y más baratas, que están en el cuadro de esta ficha.' },
     ],
   },
   {
@@ -497,10 +500,10 @@ export const INDEX_FUNDS: IndexFund[] = [
     minimum: 'Clase institucional: BlackRock exige 200.000.000 € de inversión inicial. Un particular solo entra a través de una comercializadora que agrupe en cuenta ómnibus',
     tagline: 'El MSCI World más barato en formato fondo: 0,04 %',
     description:
-      'La clase S del iShares Developed World Index Fund replica el MSCI World con unos gastos del 0,04 % anual, verificados en la ficha de BlackRock. Es exactamente la misma cartera que la clase D del mismo fondo —unas 1.500 empresas de 23 mercados desarrollados, sin emergentes— con la diferencia de que cuesta 0,04 % en vez de 0,30 %. Al ser un fondo y no un ETF, entra en el régimen de traspasos del artículo 94.1.a) del IRPF.',
+      'La clase S del iShares Developed World Index Fund replica el MSCI World con unos gastos del 0,04 % anual, verificados en la ficha de BlackRock. Es exactamente la misma cartera que la clase D del mismo fondo —unas 1.500 empresas de 23 mercados desarrollados, sin emergentes— con la diferencia de que cuesta 0,04 % en vez de 0,10 %. Al ser un fondo y no un ETF, entra en el régimen de traspasos del artículo 94.1.a) del IRPF.',
     etfEquivalent: 'IWDA',
     faq: [
-      { q: '¿En qué se diferencia de la clase D del mismo fondo?', a: 'En la cartera, en nada: es el mismo fondo y el mismo índice. Lo que cambia es la comisión: la clase S cuesta 0,04 % anual y la clase D, 0,30 %. Sobre 10.000 € son 26 € de diferencia al año, y sobre 100.000 € son 260 €. Las clases baratas suelen existir para grandes patrimonios; lo que ha cambiado es que algunas plataformas españolas las ofrecen ahora al particular.' },
+      { q: '¿En qué se diferencia de la clase D del mismo fondo?', a: 'En la cartera, en nada: es el mismo fondo y el mismo índice. Lo que cambia es la comisión: la clase S cuesta 0,04 % anual y la clase D, 0,10 %, según las fichas de BlackRock. Sobre 10.000 € son 6 € de diferencia al año, y sobre 100.000 € son 60 €. Las clases baratas suelen existir para grandes patrimonios; lo que ha cambiado es que algunas plataformas españolas las ofrecen ahora al particular.' },
       { q: '¿Por qué un mismo fondo tiene clases con comisiones tan distintas?', a: 'Porque una clase no es un fondo distinto, es una forma de entrar en el mismo. La gestora crea varias con condiciones diferentes: unas con mínimos altos y comisión baja, pensadas para institucionales, y otras sin mínimo y más caras. La cartera de acciones es la misma para todas y el valor liquidativo se calcula por separado en cada una.' },
       { q: 'Si el mínimo son 200 millones, ¿cómo puede comprarla un particular?', a: 'Porque el mínimo lo exige el fondo a quien suscribe, y quien suscribe no eres tú: es tu comercializadora. BlackRock pide 200.000.000 € de inversión inicial en esta clase, una cifra pensada para institucionales. Una plataforma que junta a miles de clientes en una cuenta ómnibus sí llega, y luego te deja entrar a ti con lo que ella decida. Por eso la misma clase puede ser inalcanzable por tu cuenta y estar disponible desde pocos euros en una plataforma concreta. Y por eso el mínimo que te aplique a ti no lo decide BlackRock: lo decide dónde lo contrates.' },
       { q: '¿Se puede traspasar sin tributar?', a: 'Sí, como cualquier fondo de inversión. El artículo 94.1.a) de la Ley del IRPF establece que si el reembolso de un fondo se destina a suscribir otro «no procederá computar la ganancia o pérdida patrimonial», con dos condiciones: que el importe no llegue a estar a disposición del contribuyente, o sea que sea un traspaso tramitado entre entidades y no una venta seguida de una compra. El impuesto no desaparece, se aplaza hasta la venta definitiva.' },
@@ -511,19 +514,22 @@ export const INDEX_FUNDS: IndexFund[] = [
     name: 'Amundi Index MSCI World',
     manager: 'Amundi',
     isin: 'LU0996182563',
-    // Verificado el 19-sep-2026 en el registro: «AMUNDI INDEX MSCI WORLD AE CAP | AMUNDI
-    // ASSET MANAGEMENT | MSCI World | 0,15 %».
+    // CORREGIDO el 28-sep-2026. Publicábamos 0,15 % con un dato del «registro de fondos» del
+    // 19-sep. El Documento de Datos Fundamentales de la GESTORA (amundi.es, publicado el
+    // 28/04/2026) dice: «Amundi Index MSCI World AE | replicar la rentabilidad del MSCI World
+    // Index | Comisiones de gestión y otros costes administrativos o de funcionamiento: el
+    // 0,30 %». El KIID británico de febrero de 2026 dice lo mismo. Era la MITAD de lo real.
     index: 'MSCI World',
-    ter: 0.15,
+    ter: 0.30,
     assetClass: 'Renta variable',
     region: 'Global desarrollado',
     accumulating: true,
     currency: 'EUR',
     availableAt: ['No verificado — compruébalo en tu plataforma'],
     minimum: 'No verificado',
-    tagline: 'MSCI World en formato fondo, con una comisión del 0,15 %',
+    tagline: 'MSCI World de Amundi en formato fondo, con dos clases',
     description:
-      'El Amundi Index MSCI World replica el MSCI World con unos gastos del 0,15 % anual, la mitad que el fondo equivalente de BlackRock. Cubre mercados desarrollados y deja fuera a los emergentes, que hay que añadir aparte si se quiere una cartera mundial completa. Ojo con el nombre: la gama «Index» de Amundi no es la gama «Core» ni la «Prime», y sus comisiones y formatos no coinciden.',
+      'El Amundi Index MSCI World replica el MSCI World con unos gastos del 0,30 % anual en su clase AE, según el documento de datos fundamentales de Amundi de abril de 2026; su clase IE cuesta 0,20 %. Hasta el 28-sep publicábamos 0,15 %, un dato que no salía de la gestora. Cubre mercados desarrollados y deja fuera a los emergentes, que hay que añadir aparte si se quiere una cartera mundial completa. Ojo con el nombre: la gama «Index» de Amundi no es la gama «Core» ni la «Prime», y sus comisiones y formatos no coinciden.',
     etfEquivalent: 'IWDA',
     faq: [
       { q: '¿Es lo mismo que el Amundi Prime Global?', a: 'No. El Amundi Prime Global es un ETF, no un fondo, y sigue un índice de Solactive en vez del MSCI World. La confusión es fácil porque las tres gamas de Amundi —Index, Core y Prime— se parecen en el nombre y se diferencian en formato, índice y comisión. Lo que distingue a uno de otro es el ISIN, no la marca.' },
@@ -637,10 +643,10 @@ export const INDEX_FUNDS: IndexFund[] = [
     minimum: '1€ (MyInvestor)',
     tagline: 'El clásico fondo indexado MSCI World de Vanguard en España',
     description:
-      'El Vanguard Global Stock Index Fund replica el MSCI World con la calidad y reputación de Vanguard, la gestora fundada por John Bogle. TER 0,18%, acumulación, disponible en MyInvestor desde 1€ con traspaso fiscal libre. Es la opción preferida por los inversores que valoran la marca Vanguard y su estructura de propiedad mutua, aceptando un TER ligeramente superior al Amundi Prime Global a cambio del índice MSCI World original.',
+      'El Vanguard Global Stock Index Fund replica el MSCI World con la calidad y reputación de Vanguard, la gestora fundada por John Bogle. TER 0,18%, acumulación, disponible en MyInvestor desde 1€ con traspaso fiscal libre. Tiene dos clases con la misma comisión, 0,18 % según Vanguard: la Investor de esta ficha y la EUR Acc, que están en el cuadro de abajo.',
     etfEquivalent: 'IWDA',
     faq: [
-      { q: '¿Vanguard Global Stock o Amundi Prime Global?', a: 'Ambos cubren mercados desarrollados. Vanguard Global Stock (TER 0,18%) replica el MSCI World original con la reputación de Vanguard. Amundi Prime Global (TER 0,05%) replica el Solactive (equivalente) y es más barato. Si priorizas coste: Amundi. Si priorizas la marca Vanguard y el índice MSCI: Vanguard.' },
+      { q: '¿Es lo mismo que el Amundi Prime Global?', a: 'No. El Amundi Prime Global es un ETF, no un fondo: sigue un índice de Solactive y no se puede traspasar a otro fondo sin tributar. El Vanguard Global Stock es un fondo que replica el MSCI World, con unos gastos del 0,18 % según la ficha de Vanguard, y sí entra en el régimen de traspasos.' },
       { q: '¿El Vanguard Global Stock permite traspaso fiscal libre?', a: 'Sí. Al ser un fondo de inversión (no un ETF), permite traspaso libre entre fondos sin tributar en España. Puedes mover dinero entre este y otros fondos indexados difiriendo el IRPF hasta el reembolso final.' },
     ],
   },
@@ -691,10 +697,10 @@ export const INDEX_FUNDS: IndexFund[] = [
     minimum: '1€ (MyInvestor)',
     tagline: 'El fondo indexado S&P 500 de Vanguard para España',
     description:
-      'El Vanguard U.S. 500 Stock Index Fund replica el S&P 500 (500 mayores empresas de EE.UU.) con TER 0,10%. Es el equivalente en formato fondo del popular ETF CSPX/VUAA. Disponible en MyInvestor desde 1€ con traspaso fiscal libre. Ideal para inversores que quieren exposición concentrada al mercado americano aprovechando la fiscalidad de los fondos en España.',
+      'El Vanguard U.S. 500 Stock Index Fund replica el S&P 500 (500 mayores empresas de EE.UU.) con TER 0,10%. Es el equivalente en formato fondo del popular ETF CSPX/VUAA. Disponible en MyInvestor desde 1€ con traspaso fiscal libre. Da exposición a un solo país, Estados Unidos, con la fiscalidad de los fondos en España.',
     etfEquivalent: 'CSPX',
     faq: [
-      { q: '¿Vanguard US 500 fondo o el ETF CSPX?', a: 'Ambos replican el S&P 500. El fondo Vanguard US 500 (TER 0,10%) permite traspaso fiscal libre entre fondos en España. El ETF CSPX (TER 0,07%) es algo más barato pero cada venta tributa. Para inversor a largo plazo en España que quiera rebalancear sin coste fiscal: el fondo.' },
+      { q: '¿En qué se diferencia del ETF CSPX?', a: 'Los dos replican el S&P 500. Este fondo cuesta 0,10 % según Vanguard y se puede traspasar a otro fondo sin tributar en ese momento; el ETF CSPX es algo más barato y, como cualquier ETF, tributa cada vez que se vende. Qué pesa más depende de si se va a mover el dinero entre productos o no.' },
     ],
   },
   {
@@ -702,12 +708,16 @@ export const INDEX_FUNDS: IndexFund[] = [
     name: 'Amundi Core MSCI Emerging Markets',
     manager: 'Amundi',
     isin: 'LU0996177134',
+    // CORREGIDO el 28-sep-2026: 0,30 % → 0,45 %. El Documento de Datos Fundamentales de la
+    // GESTORA (amundi.es, publicado el 28/04/2026) dice «Amundi Core MSCI Emerging Markets AE |
+    // Comisiones de gestión y otros costes administrativos o de funcionamiento: el 0,45 %».
+    // Lo que sigue es la historia anterior, que se conserva: el registro tampoco acertaba.
     // Verificado el 18-sep-2026 en el registro: «AMUNDI CORE MSCI EMERGING MARKETS AE CAP |
     // AMUNDI ASSET MANAGEMENT | MSCI Emerging Markets | 0,30 %». La ficha decía «Amundi Index»
     // y 0,20 %: el nombre era de otra gama y la comisión, la mitad de la real. El índice sí
     // era correcto, y por eso el fondo sí se puede analizar una vez corregido.
     index: 'MSCI Emerging Markets',
-    ter: 0.30,
+    ter: 0.45,
     assetClass: 'Renta variable',
     region: 'Emergentes',
     accumulating: true,
@@ -716,7 +726,7 @@ export const INDEX_FUNDS: IndexFund[] = [
     minimum: '1€',
     tagline: 'Exposición a mercados emergentes en formato fondo con traspaso libre',
     description:
-      'El Amundi Core MSCI Emerging Markets replica el índice MSCI Emerging Markets (China, India, Taiwán, Corea, Brasil y otros) con unos gastos del 0,30 %. Cubre la parte de emergentes de una cartera global, que por capitalización ronda el 10-12 %. Ojo al nombre: la gama «Core» de Amundi no es la gama «Index», y sus comisiones no son las mismas, así que conviene comprobar el ISIN y no el nombre al buscarlo.',
+      'El Amundi Core MSCI Emerging Markets replica el índice MSCI Emerging Markets (China, India, Taiwán, Corea, Brasil y otros) con unos gastos del 0,45 % en su clase AE, según el documento de datos fundamentales de Amundi de abril de 2026; su clase IE cuesta 0,20 %. Cubre la parte de emergentes de una cartera global, que por capitalización ronda el 10-12 %. Ojo al nombre: la gama «Core» de Amundi no es la gama «Index», y sus comisiones no son las mismas, así que conviene comprobar el ISIN y no el nombre al buscarlo.',
     etfEquivalent: 'EIMI',
     faq: [
       { q: '¿Cuánto peso dar a emergentes con este fondo?', a: 'El peso "neutral" por capitalización global ronda el 12 %. Combinado con un fondo de mercados desarrollados, una proporción de 85/15 o 88/12 se aproxima a un MSCI ACWI. Por encima del 20 % en emergentes ya es una apuesta activa respecto al mercado mundial.' },
@@ -737,13 +747,13 @@ export const INDEX_FUNDS: IndexFund[] = [
     minimum: '1€ (MyInvestor)',
     tagline: 'Emergentes de Vanguard en formato fondo',
     description:
-      'El Vanguard Emerging Markets Stock Index Fund da exposición a mercados emergentes con la reputación de Vanguard, TER 0,23%. Disponible en MyInvestor con traspaso fiscal libre. Alternativa al Amundi Index MSCI EM para quienes prefieren la marca Vanguard.',
+      'El Vanguard Emerging Markets Stock Index Fund da exposición a mercados emergentes con la reputación de Vanguard, TER 0,23%. Disponible en MyInvestor con traspaso fiscal libre. Replica el MSCI Emerging Markets, grandes y medianas empresas, sin pequeñas.',
     // AEEM y no VFEM: este fondo replica el MSCI Emerging Markets (factsheet de Vanguard
     // del 31-ago-2026, ticker de indice MSDEEEMN) y VFEM es FTSE Emerging, otra familia de
     // indices que ademas clasifica Corea del Sur de otra forma. Corregido el 18-sep-2026.
     etfEquivalent: 'AEEM',
     faq: [
-      { q: '¿Vanguard o Amundi para emergentes en fondo?', a: 'El Amundi Index MSCI EM (TER 0,20%) es algo más barato que el Vanguard Emerging Markets (TER 0,23%). Ambos cubren emergentes globalmente. Para coste mínimo: Amundi. Para marca Vanguard: Vanguard. La diferencia de coste es pequeña en términos absolutos.' },
+      { q: '¿En qué se diferencia del fondo de emergentes de Amundi?', a: 'En la comisión, no en el índice: los dos replican el MSCI Emerging Markets. Según la documentación de cada gestora de septiembre de 2026, esta clase Investor de Vanguard cuesta 0,23 %, y el Amundi Core MSCI Emerging Markets cuesta 0,45 % en su clase AE y 0,20 % en su clase IE. Cuál pagas depende de la clase que te ofrezca tu plataforma.' },
     ],
   },
   {
@@ -848,7 +858,671 @@ export const INDEX_FUNDS: IndexFund[] = [
       'El Fidelity Emerging Markets Index Fund replica el MSCI Emerging Markets con TER 0,20%. Alternativa a Amundi y Vanguard para la exposición a emergentes en formato fondo, con traspaso fiscal libre en MyInvestor.',
     etfEquivalent: 'EIMI',
     faq: [
-      { q: '¿Qué fondo de emergentes elijo?', a: 'Amundi Index MSCI EM y Fidelity Emerging Markets tienen el mismo TER (0,20%), ambos replican MSCI Emerging Markets. Vanguard es algo más caro (0,23%). Cualquiera de los tres es válido; elige según disponibilidad y preferencia de gestora.' },
+      { q: '¿En qué se diferencian los fondos de emergentes del catálogo?', a: 'En la comisión de cada clase, porque el índice es el mismo, el MSCI Emerging Markets. Con los datos de cada gestora de septiembre de 2026: Fidelity 0,20 %, Vanguard 0,23 % en su clase Investor, Amundi 0,45 % en su clase AE y 0,20 % en la IE, y Pictet 0,58 % en su clase P. La cartera es prácticamente la misma.' },
+    ],
+  },
+  // ---------------------------------------------------------------------------------------
+  // Lote del 28-sep-2026: 29 fondos de Vanguard, Amundi, Pictet, Fidelity y State Street,
+  // todos verificados en la web o en los documentos legales de la GESTORA ese mismo día.
+  // Salen de la hoja comunitaria de dullinvestor (bogleheads.es, t=89), que solo dice QUÉ
+  // mirar: ningún dato de aquí se ha copiado de ella. Las clases hermanas de fondos que ya
+  // estaban van a fund-classes.ts, sin página propia.
+  // ---------------------------------------------------------------------------------------
+  {
+    slug: 'vanguard-pacific-ex-japan-stock-index',
+    name: 'Vanguard Pacific ex-Japan Stock Index Fund (clase EUR Acc)',
+    manager: 'Vanguard',
+    isin: 'IE0007201266',
+    // 28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-variable/9211/pacific-ex-japan-stock-index-fund-eur-acc): «Pacific ex-Japan Stock Index Fund - EUR Acc (VAPEJEI) | Índice de referencia: MSCI Pacific ex Japan Index | Comisión: 0,16 %»
+    index: 'MSCI Pacific ex Japan',
+    ter: 0.16,
+    assetClass: 'Renta variable',
+    region: 'Pacífico sin Japón',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la ficha española de Vanguard muestra 1.000.000 € en todas sus clases, también en las que las plataformas ofrecen a particulares, así que no distingue una de otra. Compruébalo en tu plataforma',
+    tagline: 'Australia, Hong Kong, Singapur y Nueva Zelanda en formato fondo, al 0,16 %',
+    description:
+      'El Vanguard Pacific ex-Japan Stock Index Fund replica el MSCI Pacific ex Japan con unos gastos del 0,16 % anual, según la ficha de Vanguard. Son las grandes y medianas empresas de los cuatro mercados desarrollados de Asia-Pacífico que no son Japón: Australia, Hong Kong, Singapur y Nueva Zelanda. En un MSCI World esta región pesa poco, así que añadir este fondo a uno global sube ese peso en vez de añadir empresas nuevas.',
+    etfEquivalent: 'CPXJ',
+    faq: [
+      { q: '¿Qué países entran en el MSCI Pacific ex Japan?', a: 'Cuatro mercados desarrollados de Asia-Pacífico: Australia, Hong Kong, Singapur y Nueva Zelanda. Japón queda fuera porque tiene su propio índice, y China también, porque MSCI la clasifica como emergente. Es la región más pequeña de las que forman el MSCI World.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'vanguard-eurozone-stock-index',
+    name: 'Vanguard Eurozone Stock Index Fund (clase EUR Acc)',
+    manager: 'Vanguard',
+    isin: 'IE0008248803',
+    // 28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-variable/9927/eurozone-stock-index-fund-eur-acc): «Eurozone Stock Index Fund - EUR Acc (VANESII) | Índice de referencia: MSCI EMU Index | Comisión: 0,12 %»
+    index: 'MSCI EMU',
+    ter: 0.12,
+    assetClass: 'Renta variable',
+    region: 'Eurozona',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la ficha española de Vanguard muestra 1.000.000 € en todas sus clases, también en las que las plataformas ofrecen a particulares, así que no distingue una de otra. Compruébalo en tu plataforma',
+    tagline: 'Solo las bolsas del euro, sin Reino Unido ni Suiza, al 0,12 %',
+    description:
+      'El Vanguard Eurozone Stock Index Fund replica el MSCI EMU con unos gastos del 0,12 % anual, según la ficha de Vanguard. El MSCI EMU solo incluye empresas de los países que usan el euro, así que deja fuera a Reino Unido, Suiza, Suecia, Dinamarca y Noruega. No hay que confundirlo con el Vanguard European Stock Index, que replica el MSCI Europe y sí los incluye: nombres parecidos, índices distintos.',
+    faq: [
+      { q: '¿En qué se diferencia del Vanguard European Stock Index?', a: 'En el índice. Este replica el MSCI EMU, solo eurozona, y todas sus acciones cotizan en euros. El European Stock replica el MSCI Europe, que además incluye Reino Unido, Suiza y los nórdicos, cuyas acciones cotizan en libras, francos o coronas. Los dos cuestan 0,12 % según Vanguard.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'vanguard-us-government-bond-index',
+    name: 'Vanguard U.S. Government Bond Index Fund (clase EUR Hedged Acc)',
+    manager: 'Vanguard',
+    isin: 'IE0007471471',
+    // 28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-fija/9284/us-government-bond-index-fund-eur-hedged-acc): «U.S. Government Bond Index Fund - EUR Hedged Acc (VGUGBSE) | Índice de referencia: Bloomberg U.S. Government Float Adjusted Bond Index in EUR | Comisión: 0,12 %»
+    index: 'Bloomberg U.S. Government Float Adjusted (cubierto a EUR)',
+    ter: 0.12,
+    assetClass: 'Renta fija',
+    region: 'Estados Unidos',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la ficha española de Vanguard muestra 1.000.000 € en todas sus clases, también en las que las plataformas ofrecen a particulares, así que no distingue una de otra. Compruébalo en tu plataforma',
+    tagline: 'Deuda pública de Estados Unidos con el dólar cubierto a euros',
+    description:
+      'El Vanguard U.S. Government Bond Index Fund replica el Bloomberg U.S. Government Float Adjusted con unos gastos del 0,12 % anual en su clase cubierta a euros, según la ficha de Vanguard. Son bonos emitidos por el Gobierno de Estados Unidos. La cobertura hace que el movimiento del dólar frente al euro apenas afecte al valor liquidativo; lo que queda es el efecto de los tipos de interés estadounidenses.',
+    faq: [
+      { q: '¿Qué hace la cobertura a euros?', a: 'Neutraliza casi todo el efecto del tipo de cambio dólar-euro sobre el valor del fondo. Sin cobertura, una caída del dólar restaría rentabilidad aunque los bonos subieran; con ella, lo que mueve el fondo son sobre todo los tipos de interés de Estados Unidos. La cobertura tiene un coste que depende de la diferencia de tipos entre las dos zonas y no aparece en la comisión.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'vanguard-euro-investment-grade-bond-index',
+    name: 'Vanguard Euro Investment Grade Bond Index Fund (clase EUR Acc)',
+    manager: 'Vanguard',
+    isin: 'IE00B04FFJ44',
+    // 28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-fija/9991/euro-investment-grade-bond-index-fund-eur-acc): «Euro Investment Grade Bond Index Fund - EUR Acc (VANEIGB) | Índice de referencia: Bloomberg EUR Non-Government Float Adjusted Bond Index | Comisión: 0,12 %»
+    index: 'Bloomberg EUR Non-Government Float Adjusted',
+    ter: 0.12,
+    assetClass: 'Renta fija',
+    region: 'Eurozona',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la ficha española de Vanguard muestra 1.000.000 € en todas sus clases, también en las que las plataformas ofrecen a particulares, así que no distingue una de otra. Compruébalo en tu plataforma',
+    tagline: 'Bonos en euros con grado de inversión que no emite un Estado',
+    description:
+      'El Vanguard Euro Investment Grade Bond Index Fund replica el Bloomberg EUR Non-Government Float Adjusted con unos gastos del 0,12 % anual, según la ficha de Vanguard. Pese al nombre, el índice no se define por ser de empresas sino por no ser deuda de un Estado: recoge los bonos en euros con grado de inversión emitidos por quien no es un gobierno central. Por eso paga algo más que la deuda pública y tiene algo más de riesgo de impago.',
+    faq: [
+      { q: '¿Es un fondo de bonos corporativos?', a: 'En buena parte, pero no solo. El índice es de deuda en euros «no gubernamental»: todo lo que tiene grado de inversión y no emite un Estado. Las empresas son el grueso, y el desglose exacto por tipo de emisor lo publica Vanguard en la ficha del fondo.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'vanguard-eurozone-inflation-linked-bond-index',
+    name: 'Vanguard Eurozone Inflation-Linked Bond Index Fund (clase EUR Acc)',
+    manager: 'Vanguard',
+    isin: 'IE00B04GQR24',
+    // 28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-fija/9104/eurozone-inflation-linked-bond-index-fund-eur-acc): «Eurozone Inflation-Linked Bond Index Fund - EUR Acc (VANEZON) | Índice de referencia: Bloomberg Global Inflation-Linked: Eurozone - Euro CPI Index | Comisión: 0,12 %»
+    index: 'Bloomberg Global Inflation-Linked Eurozone (Euro CPI)',
+    ter: 0.12,
+    assetClass: 'Renta fija',
+    region: 'Eurozona',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la ficha española de Vanguard muestra 1.000.000 € en todas sus clases, también en las que las plataformas ofrecen a particulares, así que no distingue una de otra. Compruébalo en tu plataforma',
+    tagline: 'Deuda pública del euro que se ajusta con la inflación',
+    description:
+      'El Vanguard Eurozone Inflation-Linked Bond Index Fund replica el Bloomberg Global Inflation-Linked: Eurozone - Euro CPI con unos gastos del 0,12 % anual, según la ficha de Vanguard. Son bonos de Estados de la eurozona cuyo principal se ajusta con la inflación de la zona euro. Protegen del dato de inflación, pero su precio sigue dependiendo de los tipos de interés reales.',
+    faq: [
+      { q: '¿Protegen de la inflación siempre?', a: 'Protegen del dato de inflación, no de todo lo demás. El principal del bono se ajusta con el IPC de la eurozona, pero su precio también depende de los tipos de interés reales: si suben, el precio baja aunque la inflación sea alta. Por eso un fondo de bonos ligados a la inflación puede perder dinero en un año de inflación alta.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'vanguard-20-year-euro-treasury-index',
+    name: 'Vanguard 20+ Year Euro Treasury Index Fund (clase Euro Shares)',
+    manager: 'Vanguard',
+    isin: 'IE00B246KL88',
+    // 28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-fija/9132/20-year-euro-treasury-index-fund-eur-acc): «20+ Year Euro Treasury Index Fund - Euro Shares (VGYETII) | Índice de referencia: Bloomberg Euro Treasury 20+ Year Bond Index | Comisión: 0,16 %»
+    index: 'Bloomberg Euro Treasury 20+ Year',
+    ter: 0.16,
+    assetClass: 'Renta fija',
+    region: 'Eurozona',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la ficha española de Vanguard muestra 1.000.000 € en todas sus clases, también en las que las plataformas ofrecen a particulares, así que no distingue una de otra. Compruébalo en tu plataforma',
+    tagline: 'Deuda pública del euro a más de 20 años: la parte más sensible a los tipos',
+    description:
+      'El Vanguard 20+ Year Euro Treasury Index Fund replica el Bloomberg Euro Treasury 20+ Year con unos gastos del 0,16 % anual, según la ficha de Vanguard. Solo compra bonos de Estados de la eurozona a los que les quedan más de 20 años de vida. Con un plazo tan largo, su precio reacciona mucho a los tipos de interés: sube con fuerza cuando bajan y cae con fuerza cuando suben, bastante más que un fondo de deuda pública con todos los plazos.',
+    etfEquivalent: 'VGEA',
+    faq: [
+      { q: '¿Es igual de estable que un fondo de deuda pública normal?', a: 'No. Con el mismo emisor, cuanto más largo es el plazo, más se mueve el precio cuando cambian los tipos. Un fondo de bonos a más de 20 años puede tener caídas de doble dígito en un año de subidas de tipos, algo raro en deuda pública a plazos cortos. Es el mismo riesgo de impago con mucho más riesgo de tipos.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'vanguard-esg-developed-europe-index',
+    name: 'Vanguard ESG Developed Europe Index Fund (clase EUR Acc)',
+    manager: 'Vanguard',
+    isin: 'IE00B526YN16',
+    // 28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-variable/9163/esg-developed-europe-index-fund-eur-acc): «ESG Developed Europe Index Fund - EUR Acc (VGSESIE) | Índice de referencia: FTSE Developed Europe Choice Index | Comisión: 0,14 %»
+    index: 'FTSE Developed Europe Choice',
+    ter: 0.14,
+    assetClass: 'Renta variable',
+    region: 'Europa desarrollada',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la ficha española de Vanguard muestra 1.000.000 € en todas sus clases, también en las que las plataformas ofrecen a particulares, así que no distingue una de otra. Compruébalo en tu plataforma',
+    tagline: 'Bolsa europea desarrollada con exclusiones ESG, al 0,14 %',
+    description:
+      'El Vanguard ESG Developed Europe Index Fund replica el FTSE Developed Europe Choice con unos gastos del 0,14 % anual, según la ficha de Vanguard. Es el índice europeo desarrollado de FTSE, con Reino Unido, Suiza y los nórdicos, al que se le quitan empresas por su actividad. Por eso no es exactamente la misma cartera que un índice europeo sin filtro: faltan algunas empresas y las que quedan pesan algo más.',
+    etfEquivalent: 'VEUR',
+    faq: [
+      { q: '¿Qué excluye un índice «Choice»?', a: 'Empresas cuya actividad queda fuera de los criterios del índice: entre otras, energía no renovable, armas y productos como el tabaco, además de las que incumplen ciertas normas de conducta. La lista exacta está en la metodología de FTSE Russell. El efecto práctico es que el fondo pesa menos en energía que el índice sin filtro.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'vanguard-esg-developed-world-all-cap-index',
+    name: 'Vanguard ESG Developed World All Cap Equity Index Fund (clase EUR Acc)',
+    manager: 'Vanguard',
+    isin: 'IE00B5456744',
+    // 28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-variable/9164/esg-developed-world-all-cap-equity-index-fund-eur-acc): «ESG Developed World All Cap Equity Index Fund - EUR Acc (VGSGSIE) | Índice de referencia: FTSE Developed All Cap Choice Index | Comisión: 0,20 %»
+    index: 'FTSE Developed All Cap Choice',
+    ter: 0.20,
+    assetClass: 'Renta variable',
+    region: 'Global desarrollado',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la ficha española de Vanguard muestra 1.000.000 € en todas sus clases, también en las que las plataformas ofrecen a particulares, así que no distingue una de otra. Compruébalo en tu plataforma',
+    tagline: 'Países desarrollados con pequeñas empresas y exclusiones ESG',
+    description:
+      'El Vanguard ESG Developed World All Cap Equity Index Fund replica el FTSE Developed All Cap Choice con unos gastos del 0,20 % anual, según la ficha de Vanguard. Se diferencia de un MSCI World en tres cosas: incluye pequeñas empresas, excluye algunas por su actividad, y usa la clasificación de países de FTSE, que cuenta a Corea del Sur como mercado desarrollado y MSCI no.',
+    etfEquivalent: 'IWDA',
+    faq: [
+      { q: '¿Cubre lo mismo que un fondo del MSCI World?', a: 'Casi, con tres diferencias: añade pequeñas empresas, quita las excluidas por los criterios del índice y mete Corea del Sur, que para FTSE es desarrollado y para MSCI emergente. Juntarlo con un fondo de emergentes que siga un índice MSCI haría que Corea contara dos veces; con uno de emergentes de FTSE, no.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'vanguard-global-corporate-bond-index',
+    name: 'Vanguard Global Corporate Bond Index Fund (clase EUR Hedged Acc)',
+    manager: 'Vanguard',
+    isin: 'IE00BDFB5N63',
+    // 28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-fija/9459/global-corporate-bond-index-fund-eur-hedged-acc): «Global Corporate Bond Index Fund - EUR Hedged Acc (VAIHAHE) | Índice de referencia: Bloomberg Global Aggregate Float Adjusted Corporate Index in EUR | Comisión: 0,18 %»
+    index: 'Bloomberg Global Aggregate Corporate (cubierto a EUR)',
+    ter: 0.18,
+    assetClass: 'Renta fija',
+    region: 'Global',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la ficha española de Vanguard muestra 1.000.000 € en todas sus clases, también en las que las plataformas ofrecen a particulares, así que no distingue una de otra. Compruébalo en tu plataforma',
+    tagline: 'Bonos de empresas de todo el mundo con la divisa cubierta a euros',
+    description:
+      'El Vanguard Global Corporate Bond Index Fund replica el Bloomberg Global Aggregate Float Adjusted Corporate con unos gastos del 0,18 % anual en su clase cubierta a euros, según la ficha de Vanguard. Son bonos de empresas con grado de inversión de muchos países, no deuda pública. Pagan algo más que los bonos del Estado a cambio de un riesgo de impago mayor, que se nota sobre todo en las crisis.',
+    faq: [
+      { q: '¿En qué se diferencia de un fondo de renta fija global agregada?', a: 'En el emisor. Un índice agregado mezcla deuda pública y de empresas, y la pública suele ser la mayor parte. Este índice es solo de empresas, así que tiene más riesgo de crédito: en una recesión sus precios pueden caer mientras la deuda pública sube.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'vanguard-global-short-term-corporate-bond-index',
+    name: 'Vanguard Global Short-Term Corporate Bond Index Fund (clase EUR Hedged Acc)',
+    manager: 'Vanguard',
+    isin: 'IE00BDFB7290',
+    // 28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-fija/9544/global-short-term-corporate-bond-index-fund-eur-hedged-acc): «Global Short-Term Corporate Bond Index Fund - EUR Hedged Acc (VACBIEH) | Índice de referencia: Bloomberg Global Aggregate Corporate 1-5 Year Float Adjusted Index in EUR | Comisión: 0,18 %»
+    index: 'Bloomberg Global Aggregate Corporate 1-5 Year (cubierto a EUR)',
+    ter: 0.18,
+    assetClass: 'Renta fija',
+    region: 'Global',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la ficha española de Vanguard muestra 1.000.000 € en todas sus clases, también en las que las plataformas ofrecen a particulares, así que no distingue una de otra. Compruébalo en tu plataforma',
+    tagline: 'Bonos de empresas a uno-cinco años, de todo el mundo, cubiertos a euros',
+    description:
+      'El Vanguard Global Short-Term Corporate Bond Index Fund replica el Bloomberg Global Aggregate Corporate 1-5 Year Float Adjusted con unos gastos del 0,18 % anual en su clase cubierta a euros, según la ficha de Vanguard. Es el mismo tipo de bono que el fondo corporativo global de Vanguard, pero solo con vencimientos de uno a cinco años: el precio se mueve menos cuando cambian los tipos, y el riesgo de que la empresa no pague sigue ahí.',
+    faq: [
+      { q: '¿Qué aporta el plazo corto?', a: 'Menos sensibilidad a los tipos de interés. Un bono que vence en dos o tres años cambia poco de precio cuando los tipos suben un punto; uno a diez años cambia bastante más. Lo que no reduce el plazo corto es el riesgo de crédito: siguen siendo bonos de empresas.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'vanguard-global-short-term-bond-index',
+    name: 'Vanguard Global Short-Term Bond Index Fund (clase EUR Hedged Acc)',
+    manager: 'Vanguard',
+    isin: 'IE00BH65QP47',
+    // 28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-fija/9110/global-short-term-bond-index-fund-eur-hedged-acc): «Global Short-Term Bond Index Fund - EUR Hedged Acc (VGSTIEH) | Índice de referencia: Bloomberg Global Aggregate Ex US MBS 1-5 Year Float Adjusted and Scaled Index in EUR | Comisión: 0,15 %»
+    index: 'Bloomberg Global Aggregate ex US MBS 1-5 Year (cubierto a EUR)',
+    ter: 0.15,
+    assetClass: 'Renta fija',
+    region: 'Global',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la ficha española de Vanguard muestra 1.000.000 € en todas sus clases, también en las que las plataformas ofrecen a particulares, así que no distingue una de otra. Compruébalo en tu plataforma',
+    tagline: 'Renta fija global a uno-cinco años, cubierta a euros',
+    description:
+      'El Vanguard Global Short-Term Bond Index Fund replica el Bloomberg Global Aggregate ex US MBS 1-5 Year Float Adjusted and Scaled con unos gastos del 0,15 % anual en su clase cubierta a euros, según la ficha de Vanguard. Es renta fija global agregada, deuda pública y de empresas de muchos países, con vencimientos de uno a cinco años y sin las titulizaciones hipotecarias estadounidenses. El plazo corto hace que su precio se mueva poco cuando cambian los tipos.',
+    etfEquivalent: 'AGGH',
+    faq: [
+      { q: '¿Qué significa «ex US MBS»?', a: 'Que el índice deja fuera las titulizaciones hipotecarias de Estados Unidos, bonos respaldados por hipotecas que en el índice global completo tienen un peso importante. El resto, deuda pública, de agencias y de empresas de muchos países, se queda.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'vanguard-esg-emerging-markets-all-cap-index',
+    name: 'Vanguard ESG Emerging Markets All Cap Equity Index Fund (clase EUR Acc)',
+    manager: 'Vanguard',
+    isin: 'IE00BKV0W243',
+    // 28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-variable/9684/esg-emerging-markets-all-cap-equity-index-fund-eur-acc): «ESG Emerging Markets All Cap Equity Index Fund - EUR Acc (VAEAIIE) | Índice de referencia: FTSE Emerging All Cap Choice Index | Comisión: 0,25 %»
+    index: 'FTSE Emerging All Cap Choice',
+    ter: 0.25,
+    assetClass: 'Renta variable',
+    region: 'Emergentes',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la ficha española de Vanguard muestra 1.000.000 € en todas sus clases, también en las que las plataformas ofrecen a particulares, así que no distingue una de otra. Compruébalo en tu plataforma',
+    tagline: 'Emergentes con pequeñas empresas y exclusiones ESG, sin Corea del Sur',
+    description:
+      'El Vanguard ESG Emerging Markets All Cap Equity Index Fund replica el FTSE Emerging All Cap Choice con unos gastos del 0,25 % anual, según la ficha de Vanguard. Es un índice de emergentes de FTSE, no de MSCI, y la diferencia importa: FTSE clasifica Corea del Sur como país desarrollado, así que aquí no está, mientras que en un MSCI Emerging Markets sí. Además incluye pequeñas empresas y excluye algunas por su actividad.',
+    etfEquivalent: 'VFEM',
+    faq: [
+      { q: '¿Por qué no incluye Corea del Sur?', a: 'Porque es un índice de FTSE, y FTSE considera Corea del Sur mercado desarrollado. MSCI la sigue clasificando como emergente. Si se combina este fondo con uno de países desarrollados que siga un índice MSCI, Corea no aparece en ninguno de los dos.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'vanguard-uk-government-bond-index',
+    name: 'Vanguard U.K. Government Bond Index Fund (clase EUR Hedged Acc)',
+    manager: 'Vanguard',
+    isin: 'IE00BLPJRG31',
+    // 28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-fija/9462/uk-government-bond-index-fund-eur-hedged-acc): «U.K. Government Bond Index Fund - EUR Hedged Acc (VAUKGEH) | Índice de referencia: Bloomberg U.K. Government Float Adjusted Bond Index Hedged in EUR | Comisión: 0,12 %»
+    index: 'Bloomberg U.K. Government Float Adjusted (cubierto a EUR)',
+    ter: 0.12,
+    assetClass: 'Renta fija',
+    region: 'Reino Unido',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la ficha española de Vanguard muestra 1.000.000 € en todas sus clases, también en las que las plataformas ofrecen a particulares, así que no distingue una de otra. Compruébalo en tu plataforma',
+    tagline: 'Deuda pública británica con la libra cubierta a euros',
+    description:
+      'El Vanguard U.K. Government Bond Index Fund replica el Bloomberg U.K. Government Float Adjusted con unos gastos del 0,12 % anual en su clase cubierta a euros, según la ficha de Vanguard. Son bonos del Estado británico, los gilts. La cobertura quita casi todo el efecto de la libra frente al euro, así que lo que mueve el fondo son los tipos de interés del Reino Unido.',
+    etfEquivalent: 'VGOV',
+    faq: [
+      { q: '¿Qué diferencia hay con un ETF de gilts sin cubrir?', a: 'La divisa. Un ETF de gilts en libras sube o baja también con el tipo de cambio libra-euro, que en renta fija puede pesar más que el propio bono. Esta clase cubre ese riesgo a euros. La cobertura no es gratis: su coste depende de la diferencia de tipos entre el Reino Unido y la eurozona.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'vanguard-japan-government-bond-index',
+    name: 'Vanguard Japan Government Bond Index Fund (clase EUR Hedged Acc)',
+    manager: 'Vanguard',
+    isin: 'IE00BLPJRH48',
+    // 28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-fija/9463/japan-government-bond-index-fund-eur-hedged-acc): «Japan Government Bond Index Fund - EUR Hedged Acc (VAIHAHA) | Índice de referencia: Bloomberg Japan Government Float Adjusted Bond Index in EUR | Comisión: 0,12 %»
+    index: 'Bloomberg Japan Government Float Adjusted (cubierto a EUR)',
+    ter: 0.12,
+    assetClass: 'Renta fija',
+    region: 'Japón',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la ficha española de Vanguard muestra 1.000.000 € en todas sus clases, también en las que las plataformas ofrecen a particulares, así que no distingue una de otra. Compruébalo en tu plataforma',
+    tagline: 'Deuda pública japonesa con el yen cubierto a euros',
+    description:
+      'El Vanguard Japan Government Bond Index Fund replica el Bloomberg Japan Government Float Adjusted con unos gastos del 0,12 % anual en su clase cubierta a euros, según la ficha de Vanguard. Son bonos del Estado japonés. La cobertura neutraliza casi todo el movimiento del yen frente al euro; lo que queda es el efecto de los tipos de interés en Japón.',
+    faq: [
+      { q: '¿Por qué cubrir el yen en un fondo de bonos?', a: 'Porque en renta fija la divisa puede moverse más que el propio bono: un año de yen débil podría borrar varios años de intereses. Con la cobertura, el resultado depende sobre todo de los bonos. Su coste depende de la diferencia de tipos entre Japón y la eurozona y no aparece en la comisión del fondo.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'amundi-core-msci-europe',
+    name: 'Amundi Core MSCI Europe (clase AE)',
+    manager: 'Amundi',
+    isin: 'LU0389811885',
+    // 28-sep-2026, Documento de Datos Fundamentales de la GESTORA (https://www.amundi.es/retail/dl/doc/kid-priips/LU0389811885/SPA/ESP, publicado el 05/06/2026): «Amundi Core MSCI Europe AE | objetivo: replicar la rentabilidad del MSCI Europe Index | Comisiones de gestión y otros costes administrativos o de funcionamiento: el 0,30 % del valor de su inversión al año»
+    index: 'MSCI Europe',
+    ter: 0.30,
+    assetClass: 'Renta variable',
+    region: 'Europa desarrollada',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la documentación de Amundi que hemos leído no publica el mínimo de esta clase. Compruébalo en tu plataforma',
+    tagline: 'MSCI Europe de Amundi en formato fondo',
+    description:
+      'El Amundi Core MSCI Europe replica el MSCI Europe con unos gastos del 0,30 % anual en su clase AE, según el documento de datos fundamentales de Amundi publicado en junio de 2026. Tiene también una clase IE al 0,15 %. El MSCI Europe incluye Reino Unido, Suiza y los nórdicos además de la eurozona, así que no es un fondo «solo euro».',
+    etfEquivalent: 'IMEU',
+    faq: [
+      { q: '¿Qué diferencia hay entre la clase AE y la IE?', a: 'La comisión: según los documentos de datos fundamentales de Amundi, la AE cuesta 0,30 % al año y la IE 0,15 %. La cartera es la misma. Cuál puedes contratar depende de lo que ofrezca tu plataforma, y el analizador reconoce las dos y calcula con la comisión de la que tengas.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'amundi-msci-north-america-esg-broad-transition',
+    name: 'Amundi MSCI North America ESG Broad Transition (clase AE)',
+    manager: 'Amundi',
+    isin: 'LU0389812347',
+    // 28-sep-2026, Documento de Datos Fundamentales de la GESTORA (https://www.amundi.es/retail/dl/doc/kid-priips/LU0389812347/SPA/ESP, publicado el 15/06/2026): «Amundi MSCI North America ESG Broad Transition AE | objetivo: replicar la rentabilidad del MSCI North America ESG Broad CTB Select Index | Comisiones de gestión y otros costes administrativos o de funcionamiento: el 0,30 % del valor de su inversión al año»
+    index: 'MSCI North America ESG Broad CTB Select',
+    ter: 0.30,
+    assetClass: 'Renta variable',
+    region: 'Norteamérica',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la documentación de Amundi que hemos leído no publica el mínimo de esta clase. Compruébalo en tu plataforma',
+    tagline: 'Estados Unidos y Canadá con criterios de transición climática',
+    description:
+      'El Amundi MSCI North America ESG Broad Transition replica el MSCI North America ESG Broad CTB Select con unos gastos del 0,30 % anual en su clase AE, según el documento de datos fundamentales de Amundi publicado en junio de 2026. Parte del MSCI North America, Estados Unidos y Canadá, y reajusta los pesos para cumplir los requisitos de un índice de transición climática de la UE (el «CTB» del nombre), lo que rebaja el peso de las empresas más emisoras.',
+    etfEquivalent: 'CSPX',
+    faq: [
+      { q: '¿Es lo mismo que un fondo del S&P 500?', a: 'No del todo. Cubre el mismo mercado, grandes y medianas empresas de Estados Unidos más Canadá, pero con los pesos cambiados por criterios climáticos y ESG. Su rentabilidad puede separarse de la de un S&P 500 en los años en que la energía o la industria pesada van muy bien o muy mal.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'amundi-ftse-epra-nareit-global',
+    name: 'Amundi FTSE EPRA NAREIT Global (clase AE)',
+    manager: 'Amundi',
+    isin: 'LU1328852659',
+    // 28-sep-2026, Documento de Datos Fundamentales de la GESTORA (https://www.amundi.es/retail/dl/doc/kid-priips/LU1328852659/SPA/ESP, publicado el 05/06/2026): «Amundi FTSE EPRA NAREIT Global AE | objetivo: replicar la rentabilidad del FTSE EPRA/NAREIT Developed Index | Comisiones de gestión y otros costes administrativos o de funcionamiento: el 0,34 % del valor de su inversión al año»
+    index: 'FTSE EPRA Nareit Developed',
+    ter: 0.34,
+    assetClass: 'Renta variable',
+    region: 'Global desarrollado',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la documentación de Amundi que hemos leído no publica el mínimo de esta clase. Compruébalo en tu plataforma',
+    tagline: 'Inmobiliario cotizado de países desarrollados, al 0,34 %',
+    description:
+      'El Amundi FTSE EPRA NAREIT Global replica el FTSE EPRA/NAREIT Developed con unos gastos del 0,34 % anual en su clase AE, según el documento de datos fundamentales de Amundi publicado en junio de 2026. Es el mismo índice que el fondo inmobiliario de iShares del catálogo: empresas inmobiliarias cotizadas y SOCIMIs de países desarrollados. Compra acciones, no inmuebles, así que se comporta como renta variable.',
+    faq: [
+      { q: '¿En qué se diferencia del iShares Developed Real Estate Index Fund?', a: 'En la gestora y en la clase, no en el índice: los dos replican el FTSE EPRA Nareit Developed. La clase Inst de iShares cuesta 0,20 % según BlackRock, y esta clase AE de Amundi 0,34 % según Amundi.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'amundi-core-euro-government-bond',
+    name: 'Amundi Core Euro Government Bond (clase AE)',
+    manager: 'Amundi',
+    isin: 'LU1050470373',
+    // 28-sep-2026, Documento de Datos Fundamentales de la GESTORA (https://www.amundi.es/retail/dl/doc/kid-priips/LU1050470373/SPA/ESP, publicado el 28/04/2026): «Amundi Core Euro Government Bond AE | objetivo: replicar la rentabilidad del Bloomberg Euro Treasury 50bn Bond Index | Comisiones de gestión y otros costes administrativos o de funcionamiento: el 0,35 % del valor de su inversión al año»
+    index: 'Bloomberg Euro Treasury 50bn',
+    ter: 0.35,
+    assetClass: 'Renta fija',
+    region: 'Eurozona',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la documentación de Amundi que hemos leído no publica el mínimo de esta clase. Compruébalo en tu plataforma',
+    tagline: 'Deuda pública de la eurozona, solo de los emisores grandes',
+    description:
+      'El Amundi Core Euro Government Bond replica el Bloomberg Euro Treasury 50bn con unos gastos del 0,35 % anual en su clase AE, según el documento de datos fundamentales de Amundi publicado en abril de 2026. Tiene también una clase IE al 0,15 %. El «50bn» del nombre es un umbral de tamaño: según la metodología de Bloomberg, solo entran los emisores con un volumen mínimo de deuda en circulación, lo que deja fuera a los más pequeños de la eurozona.',
+    etfEquivalent: 'VGEA',
+    faq: [
+      { q: '¿Por qué la clase AE cuesta más del doble que la IE?', a: 'Porque son clases pensadas para canales distintos, no carteras distintas. Según los documentos de datos fundamentales de Amundi, la AE cuesta 0,35 % y la IE 0,15 % al año. En renta fija, donde la rentabilidad esperada es más baja, esa diferencia pesa proporcionalmente más que en un fondo de acciones.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'amundi-core-global-government-bond',
+    name: 'Amundi Core Global Government Bond (clase AHE)',
+    manager: 'Amundi',
+    isin: 'LU0389812933',
+    // 28-sep-2026, Documento de Datos Fundamentales de la GESTORA (https://www.amundi.es/retail/dl/doc/kid-priips/LU0389812933/SPA/ESP, publicado el 28/04/2026): «Amundi Core Global Government Bond AHE | objetivo: replicar la rentabilidad del J.P. Morgan Government Bond Index Global (GBI Global) | Comisiones de gestión y otros costes administrativos o de funcionamiento: el 0,35 % del valor de su inversión al año»
+    index: 'J.P. Morgan GBI Global (cubierto a EUR)',
+    ter: 0.35,
+    assetClass: 'Renta fija',
+    region: 'Global',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la documentación de Amundi que hemos leído no publica el mínimo de esta clase. Compruébalo en tu plataforma',
+    tagline: 'Deuda pública de los países desarrollados, cubierta a euros',
+    description:
+      'El Amundi Core Global Government Bond replica el J.P. Morgan Government Bond Index Global con unos gastos del 0,35 % anual en su clase AHE, según el documento de datos fundamentales de Amundi publicado en abril de 2026. Tiene también una clase IHE al 0,20 %. Son bonos de Estados de todo el mundo, y estas dos clases cubren la divisa a euros, así que el tipo de cambio apenas mueve su valor.',
+    faq: [
+      { q: '¿Qué países tiene dentro?', a: 'Los que componen el índice GBI Global de J.P. Morgan: deuda pública de mercados desarrollados, donde Estados Unidos, Japón y los grandes países de la eurozona son los mayores emisores. El peso exacto de cada país lo publica Amundi en la ficha mensual del fondo.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'pictet-usa-index',
+    name: 'Pictet-USA Index (clase P EUR)',
+    manager: 'Pictet',
+    isin: 'LU0474966164',
+    // 28-sep-2026, ficha de la GESTORA (https://am.pictet.com/es/es/individuals/funds/pictet-usa-index/LU0474966164): «Índice de referencia: S&P 500 Composite Index» y su Documento de Datos Fundamentales de 19/06/2026: «Comisiones de gestión y otros costes administrativos o de funcionamiento: 0.44% detraído de esta Clase de participaciones»
+    index: 'S&P 500',
+    ter: 0.44,
+    assetClass: 'Renta variable',
+    region: 'Estados Unidos',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la documentación de Pictet que hemos leído no publica el mínimo de esta clase. Compruébalo en tu plataforma',
+    tagline: 'El S&P 500 de Pictet en formato fondo',
+    description:
+      'El Pictet-USA Index replica el S&P 500 con unos gastos del 0,44 % anual en su clase P EUR, según el documento de datos fundamentales de Pictet de junio de 2026. Es el mismo índice que el Fidelity S&P 500 Index Fund (0,06 % según la ficha de Fidelity de agosto de 2026) y el Vanguard U.S. 500 Stock Index (0,10 % según Vanguard): la misma cartera con comisiones muy distintas.',
+    etfEquivalent: 'CSPX',
+    faq: [
+      { q: '¿Por qué cuesta más que otros fondos del S&P 500?', a: 'Porque cada gestora fija la comisión de cada clase, y la cartera es la misma porque el índice es el mismo. Con los datos de cada gestora, sobre 10.000 € la diferencia entre el 0,44 % de esta clase y el 0,10 % del Vanguard U.S. 500 son 34 € al año.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'pictet-europe-index',
+    name: 'Pictet-Europe Index (clase P EUR)',
+    manager: 'Pictet',
+    isin: 'LU0130731390',
+    // 28-sep-2026, ficha de la GESTORA (https://am.pictet.com/es/es/individuals/funds/pictet-europe-index/LU0130731390): «Índice de referencia: MSCI Europe (EUR)» y su Documento de Datos Fundamentales de 19/06/2026: «Comisiones de gestión y otros costes administrativos o de funcionamiento: 0.45% detraído de esta Clase de participaciones»
+    index: 'MSCI Europe',
+    ter: 0.45,
+    assetClass: 'Renta variable',
+    region: 'Europa desarrollada',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la documentación de Pictet que hemos leído no publica el mínimo de esta clase. Compruébalo en tu plataforma',
+    tagline: 'El MSCI Europe de Pictet en formato fondo',
+    description:
+      'El Pictet-Europe Index replica el MSCI Europe con unos gastos del 0,45 % anual en su clase P EUR, según el documento de datos fundamentales de Pictet de junio de 2026. El MSCI Europe incluye Reino Unido, Suiza y los nórdicos además de la eurozona. Sobre el mismo índice el catálogo tiene fondos de Fidelity (0,10 %) y Vanguard (0,12 %), cada uno con el dato de su gestora.',
+    etfEquivalent: 'IMEU',
+    faq: [
+      { q: '¿Es solo eurozona?', a: 'No. El MSCI Europe incluye Reino Unido, Suiza, Suecia, Dinamarca y Noruega, que tienen su propia moneda. Para solo eurozona, Pictet tiene otro fondo, el Pictet-Euroland Index, que replica el MSCI EMU.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'pictet-euroland-index',
+    name: 'Pictet-Euroland Index (clase P EUR)',
+    manager: 'Pictet',
+    isin: 'LU0255980913',
+    // 28-sep-2026, ficha de la GESTORA (https://am.pictet.com/es/es/individuals/funds/pictet-euroland-index/LU0255980913): «Índice de referencia: MSCI EMU Index» y su Documento de Datos Fundamentales de 19/06/2026: «Comisiones de gestión y otros costes administrativos o de funcionamiento: 0.46% detraído de esta Clase de participaciones»
+    index: 'MSCI EMU',
+    ter: 0.46,
+    assetClass: 'Renta variable',
+    region: 'Eurozona',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la documentación de Pictet que hemos leído no publica el mínimo de esta clase. Compruébalo en tu plataforma',
+    tagline: 'Solo las bolsas del euro, de Pictet',
+    description:
+      'El Pictet-Euroland Index replica el MSCI EMU con unos gastos del 0,46 % anual en su clase P EUR, según el documento de datos fundamentales de Pictet de junio de 2026. Solo incluye empresas de los países que usan el euro: ni Reino Unido, ni Suiza, ni los nórdicos. Es el mismo índice que el Vanguard Eurozone Stock Index Fund y el iShares EMU Index Fund del catálogo.',
+    faq: [
+      { q: '¿Qué diferencia hay entre «Euroland» y «Europe»?', a: 'El índice. Euroland es el MSCI EMU, solo países del euro. Europe es el MSCI Europe, que añade Reino Unido, Suiza y los nórdicos. Pictet tiene un fondo de cada, con comisiones parecidas, y conviene no confundirlos porque las acciones del segundo cotizan en varias monedas.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'pictet-japan-index',
+    name: 'Pictet-Japan Index (clase P EUR)',
+    manager: 'Pictet',
+    isin: 'LU0474966750',
+    // 28-sep-2026, ficha de la GESTORA (https://am.pictet.com/es/es/individuals/funds/pictet-japan-index/LU0474966750): «Índice de referencia: MSCI Japan Index» y su Documento de Datos Fundamentales de 19/06/2026: «Comisiones de gestión y otros costes administrativos o de funcionamiento: 0.45% detraído de esta Clase de participaciones»
+    index: 'MSCI Japan',
+    ter: 0.45,
+    assetClass: 'Renta variable',
+    region: 'Japón',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la documentación de Pictet que hemos leído no publica el mínimo de esta clase. Compruébalo en tu plataforma',
+    tagline: 'La bolsa japonesa de Pictet en formato fondo',
+    description:
+      'El Pictet-Japan Index replica el MSCI Japan con unos gastos del 0,45 % anual en su clase P EUR, según el documento de datos fundamentales de Pictet de junio de 2026. Son las grandes y medianas empresas japonesas. La clase está en euros, pero las acciones cotizan en yenes, así que el tipo de cambio afecta al valor aunque no se vea en la divisa del fondo.',
+    etfEquivalent: 'SJPA',
+    faq: [
+      { q: '¿Hay otros fondos del MSCI Japan en el catálogo?', a: 'Sí: el Fidelity MSCI Japan Index Fund (0,10 % según su ficha de agosto de 2026), el Vanguard Japan Stock Index (0,16 %) y el iShares Japan Index Fund (0,30 % en su clase D). Todos replican el mismo índice; lo que cambia es la comisión.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'pictet-pacific-ex-japan-index',
+    name: 'Pictet-Pacific Ex Japan Index (clase P EUR)',
+    manager: 'Pictet',
+    isin: 'LU0474967055',
+    // 28-sep-2026, ficha de la GESTORA (https://am.pictet.com/es/es/individuals/funds/pictet-pacific-ex-japan-index/LU0474967055): «Índice de referencia: MSCI Pacific ex-Japan (USD)» y su Documento de Datos Fundamentales de 19/06/2026: «Comisiones de gestión y otros costes administrativos o de funcionamiento: 0.45% detraído de esta Clase de participaciones»
+    index: 'MSCI Pacific ex Japan',
+    ter: 0.45,
+    assetClass: 'Renta variable',
+    region: 'Pacífico sin Japón',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la documentación de Pictet que hemos leído no publica el mínimo de esta clase. Compruébalo en tu plataforma',
+    tagline: 'Australia, Hong Kong, Singapur y Nueva Zelanda, de Pictet',
+    description:
+      'El Pictet-Pacific Ex Japan Index replica el MSCI Pacific ex Japan con unos gastos del 0,45 % anual en su clase P EUR, según el documento de datos fundamentales de Pictet de junio de 2026. Son las grandes y medianas empresas de Australia, Hong Kong, Singapur y Nueva Zelanda. Sobre el mismo índice el catálogo tiene el Vanguard Pacific ex-Japan Stock Index (0,16 %) y el iShares Pacific Index Fund (0,30 % en su clase D).',
+    etfEquivalent: 'CPXJ',
+    faq: [
+      { q: '¿Por qué no está China?', a: 'Porque MSCI clasifica China como mercado emergente, y este índice es solo de desarrollados del Pacífico. China está en los índices de emergentes, y Japón tiene el suyo propio. Por eso esta región es pequeña: cuatro países.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'pictet-emerging-markets-index',
+    name: 'Pictet-Emerging Markets Index (clase P EUR)',
+    manager: 'Pictet',
+    isin: 'LU0474967998',
+    // 28-sep-2026, ficha de la GESTORA (https://am.pictet.com/es/es/individuals/funds/pictet-emerging-markets-index/LU0474967998): «Índice de referencia: MSCI Emerging Markets Index» y su Documento de Datos Fundamentales de 19/06/2026: «Comisiones de gestión y otros costes administrativos o de funcionamiento: 0.58% detraído de esta Clase de participaciones»
+    index: 'MSCI Emerging Markets',
+    ter: 0.58,
+    assetClass: 'Renta variable',
+    region: 'Emergentes',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la documentación de Pictet que hemos leído no publica el mínimo de esta clase. Compruébalo en tu plataforma',
+    tagline: 'Emergentes de Pictet en formato fondo',
+    description:
+      'El Pictet-Emerging Markets Index replica el MSCI Emerging Markets con unos gastos del 0,58 % anual en su clase P EUR, según el documento de datos fundamentales de Pictet de junio de 2026. Es el mismo índice que los fondos de emergentes de Fidelity (0,20 %), Vanguard (0,23 %) y Amundi (0,45 % en su clase AE) del catálogo, y el más caro de los cuatro en las clases que tenemos verificadas.',
+    etfEquivalent: 'AEEM',
+    faq: [
+      { q: '¿Qué países tiene dentro?', a: 'Los que MSCI clasifica como emergentes: China, India, Taiwán, Corea del Sur y Brasil entre los de más peso, junto a una veintena más. Corea está aquí porque para MSCI es emergente; en los índices de FTSE cuenta como desarrollado.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'fidelity-msci-world-index',
+    name: 'Fidelity MSCI World Index Fund (clase P Acc EUR)',
+    manager: 'Fidelity',
+    isin: 'IE00BYX5NX33',
+    // 28-sep-2026, ficha mensual de la GESTORA a 31-ago-2026 (https://www.fidelityinternational.com/FILPS/Documents/en/current/ret.en.xx.IE00BYX5NX33.pdf): «Fidelity MSCI World Index Fund P-ACC-Euro | Index Name: MSCI World Index (Net) | ISIN: IE00BYX5NX33 | Share Class Ongoing Charges: 0.12% | Distribution type: Accumulating»
+    index: 'MSCI World',
+    ter: 0.12,
+    assetClass: 'Renta variable',
+    region: 'Global desarrollado',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la documentación de Fidelity que hemos leído no publica el mínimo de esta clase. Compruébalo en tu plataforma',
+    tagline: 'El MSCI World de Fidelity, al 0,12 %',
+    description:
+      'El Fidelity MSCI World Index Fund replica el MSCI World con unos gastos corrientes del 0,12 % anual en su clase P Acc EUR, según la ficha mensual de Fidelity de agosto de 2026, en la que el fondo tenía 1.283 posiciones de 23 países desarrollados, sin emergentes. Ojo con un error que circula: el ISIN IE00BYX5MX67 no es este fondo sino el Fidelity S&P 500, y hasta el 18 de septiembre de 2026 nosotros mismos lo publicábamos mal.',
+    etfEquivalent: 'IWDA',
+    faq: [
+      { q: '¿Es el mismo fondo que IE00BYX5MX67?', a: 'No. IE00BYX5MX67 es el Fidelity S&P 500 Index Fund, solo Estados Unidos. Este es el MSCI World, con Europa, Japón y el resto de desarrollados. El ISIN es lo que identifica el producto, no el nombre, y en este caso los dos nombres se confunden a menudo.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'fidelity-msci-japan-index',
+    name: 'Fidelity MSCI Japan Index Fund (clase P Acc EUR)',
+    manager: 'Fidelity',
+    isin: 'IE00BYX5N771',
+    // 28-sep-2026, ficha mensual de la GESTORA a 31-ago-2026 (https://www.fidelityinternational.com/FILPS/Documents/en/current/ret.en.xx.IE00BYX5N771.pdf): «Fidelity MSCI Japan Index Fund P-ACC-Euro | Index Name: MSCI Japan Index (Net) | ISIN: IE00BYX5N771 | Share Class Ongoing Charges: 0.10% | Distribution type: Accumulating»
+    index: 'MSCI Japan',
+    ter: 0.10,
+    assetClass: 'Renta variable',
+    region: 'Japón',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'No verificado: la documentación de Fidelity que hemos leído no publica el mínimo de esta clase. Compruébalo en tu plataforma',
+    tagline: 'La bolsa japonesa de Fidelity, al 0,10 %',
+    description:
+      'El Fidelity MSCI Japan Index Fund replica el MSCI Japan con unos gastos corrientes del 0,10 % anual en su clase P Acc EUR, según la ficha mensual de Fidelity de agosto de 2026. Es el más barato de los fondos del MSCI Japan que tenemos en el catálogo. La clase está en euros sin cubrir, así que el yen afecta al valor.',
+    etfEquivalent: 'SJPA',
+    faq: [
+      { q: '¿Qué diferencia hay con un ETF del MSCI Japan IMI?', a: 'El IMI añade pequeñas empresas japonesas; el MSCI Japan se queda en grandes y medianas. El reparto por sectores es parecido. Y fiscalmente este es un fondo y se puede traspasar sin tributar; un ETF no.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'state-street-emu-government-bond-index',
+    name: 'State Street EMU Government Bond Index Fund (clase P)',
+    manager: 'State Street',
+    isin: 'LU0438093006',
+    // 28-sep-2026, ficha mensual de la GESTORA a 31-ago-2026 (https://www.ssga.com/uk/en_gb/institutional/library-content/products/factsheets/mf/emea/factsheet-emea-en_gb-lu0438093006.pdf): «Share Class [P] All Investors | Benchmark FTSE EMU Government Bond Index | ISIN LU0438093006 | Minimum Initial Investment EUR 50.00 | Actual TER 0.36%»
+    index: 'FTSE EMU Government Bond',
+    ter: 0.36,
+    assetClass: 'Renta fija',
+    region: 'Eurozona',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'State Street exige 50 € de inversión inicial en esta clase; lo que te pida tu comercializadora puede ser distinto',
+    tagline: 'Deuda pública de la eurozona, de State Street',
+    description:
+      'El State Street EMU Government Bond Index Fund replica el FTSE EMU Government Bond con un TER del 0,36 % anual en su clase P, según la ficha mensual de State Street de agosto de 2026. Es deuda pública de los Estados de la eurozona, el mismo índice que el iShares Euro Government Bond Index Fund del catálogo, que en su clase D cuesta 0,07 % según BlackRock.',
+    etfEquivalent: 'VGEA',
+    faq: [
+      { q: '¿Por qué cuesta cinco veces más que el de iShares si replica el mismo índice?', a: 'Porque cada gestora pone la comisión de cada clase. Según sus fichas, esta clase P de State Street tiene un TER del 0,36 % y la clase D de iShares, del 0,07 %. En renta fija esa diferencia pesa mucho: con una rentabilidad esperada baja, 0,29 puntos al año se llevan una parte grande de lo que rinden los bonos.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
+    ],
+  },
+  {
+    slug: 'state-street-euro-core-treasury-bond-index',
+    name: 'State Street Euro Core Treasury Bond Index Fund (clase P)',
+    manager: 'State Street',
+    isin: 'LU0570151448',
+    // 28-sep-2026, ficha mensual de la GESTORA a 31-ago-2026 (https://www.ssga.com/uk/en_gb/institutional/library-content/products/factsheets/mf/emea/factsheet-emea-en_gb-lu0570151448.pdf): «Share Class [P] All Investors | Benchmark Bloomberg Global Treasury 40% Germany 40% France 20% Netherlands Custom Index | ISIN LU0570151448 | Minimum Initial Investment EUR 50.00 | Actual TER 0.38%»
+    index: 'Bloomberg Global Treasury Euro Core (40 % Alemania, 40 % Francia, 20 % Países Bajos)',
+    ter: 0.38,
+    assetClass: 'Renta fija',
+    region: 'Eurozona',
+    accumulating: true,
+    currency: 'EUR',
+    availableAt: ['No verificado — compruébalo en tu plataforma'],
+    minimum: 'State Street exige 50 € de inversión inicial en esta clase; lo que te pida tu comercializadora puede ser distinto',
+    tagline: 'Deuda pública de Alemania, Francia y Países Bajos, en pesos fijos',
+    description:
+      'El State Street Euro Core Treasury Bond Index Fund replica un índice a medida de Bloomberg con deuda pública de solo tres países: 40 % Alemania, 40 % Francia y 20 % Países Bajos. Su TER es del 0,38 % anual en la clase P, según la ficha mensual de State Street de agosto de 2026. Deja fuera a Italia, España y el resto de la periferia del euro.',
+    etfEquivalent: 'VGEA',
+    faq: [
+      { q: '¿En qué se diferencia de un fondo de deuda pública de toda la eurozona?', a: 'En los países. Un índice de toda la eurozona incluye Italia, España, Bélgica y el resto, con pesos según su deuda. Este solo tiene Alemania, Francia y Países Bajos en proporciones fijas. Los bonos de esos tres suelen pagar menos interés que los de la periferia, y a cambio el fondo no tiene dentro la deuda de los países que más sufren en una crisis del euro.' },
+      { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
     ],
   },
 ]
