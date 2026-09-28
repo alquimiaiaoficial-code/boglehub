@@ -203,7 +203,7 @@ export const INVESTOR_PROFILES: InvestorProfile[] = [
     name: 'Expatriados y nómadas digitales',
     tagline: 'Inversión cuando cambias de país',
     description:
-      'Los expatriados españoles fuera del país, o nómadas digitales que cambian de residencia fiscal con frecuencia, enfrentan complicaciones específicas: convenios de doble imposición, posibles obligaciones de declaración en varios países, restricciones MiFID II para residentes fuera de la UE. La estrategia recomendada: ETFs UCITS irlandeses que mantienen eficiencia fiscal en la mayoría de jurisdicciones europeas, broker europeo (Trade Republic, DEGIRO o Interactive Brokers) y asesor fiscal local de cada residencia.',
+      'Los expatriados españoles fuera del país, o nómadas digitales que cambian de residencia fiscal con frecuencia, enfrentan complicaciones específicas: convenios de doble imposición, posibles obligaciones de declaración en varios países, restricciones MiFID II para residentes fuera de la UE. Lo que suele hacerse: ETFs UCITS irlandeses que mantienen eficiencia fiscal en la mayoría de jurisdicciones europeas, broker europeo (Trade Republic, DEGIRO o Interactive Brokers) y asesor fiscal local de cada residencia.',
     recommendations: {
       horizon: 'Depende del plan personal',
       equityWeight: 'Variable según edad',

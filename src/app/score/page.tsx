@@ -82,7 +82,7 @@ export default async function ScorePage({
       <main className="bg-bg min-h-screen">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
           <div className="rounded-2xl border border-border bg-surface p-8 sm:p-12">
-            <p className="text-sm text-fg-muted mb-2">Mi nota Boglehead</p>
+            <h1 className="text-sm font-normal text-fg-muted mb-2">Mi nota Boglehead</h1>
             <div className="flex items-end gap-4 mb-8">
               <span
                 className={`text-7xl sm:text-8xl font-extrabold ${grade.colorClass} leading-none`}

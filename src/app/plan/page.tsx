@@ -11,7 +11,7 @@ const BASE_URL = 'https://boglehub.com'
 
 export const metadata: Metadata = {
   title: 'Plan personalizado de inversión por edad y objetivo (2026)',
-  description: `Selecciona tu edad y objetivo patrimonial para ver el plan personalizado: aportación mensual necesaria, cartera recomendada y broker. ${AGES.length}×${OBJECTIVES.length} combinaciones.`,
+  description: `Selecciona tu edad y objetivo patrimonial para ver el plan personalizado: aportación mensual necesaria y una cartera de ejemplo. ${AGES.length}×${OBJECTIVES.length} combinaciones.`,
   alternates: { canonical: '/plan' },
 }
 

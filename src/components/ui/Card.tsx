@@ -9,8 +9,11 @@ export function CardHeader({ className, ...props }: HTMLAttributes<HTMLDivElemen
   return <div className={cn('mb-4', className)} {...props} />
 }
 
+// h2 y no h3 (28-sep-2026): muchas páginas ponen una tarjeta justo debajo del h1, y el salto de
+// h1 a h3 rompe el esquema de encabezados que usan los lectores de pantalla (Lighthouse,
+// «heading-order»). El aspecto no cambia: lo da la clase, no la etiqueta.
 export function CardTitle({ className, ...props }: HTMLAttributes<HTMLHeadingElement>) {
-  return <h3 className={cn('text-lg font-semibold text-fg', className)} {...props} />
+  return <h2 className={cn('text-lg font-semibold text-fg', className)} {...props} />
 }
 
 export function CardFooter({ className, ...props }: HTMLAttributes<HTMLDivElement>) {

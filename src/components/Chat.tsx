@@ -83,7 +83,7 @@ export function Chat() {
             <Sparkles className="h-4 w-4" />
           </div>
           <div>
-            <h2 className="text-sm font-semibold text-fg">Chat IA</h2>
+            <h1 className="text-sm font-semibold text-fg">Chat IA</h1>
             <p className="text-xs text-fg-subtle">
               Estás hablando con una inteligencia artificial, no con una persona
             </p>

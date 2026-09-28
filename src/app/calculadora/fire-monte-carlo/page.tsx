@@ -205,7 +205,7 @@ export default function MonteCarloPage() {
             <p className="text-fg-muted leading-relaxed">
               Para un inversor en España, la pensión pública es una variable que puede cambiar
               radicalmente el cálculo. Si logras la independencia financiera a los 45 y esperas
-              cobrar una pensión de 1.000 € al mes a los 65, esos 20 años de "agujero" son los
+              cobrar una pensión de 1.000 € al mes a los 65, esos 20 años de «agujero» son los
               críticos: la cartera solo tiene que aguantar hasta que empiece la pensión, y a
               partir de ahí la presión sobre la cartera baja considerablemente.
             </p>

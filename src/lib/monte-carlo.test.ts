@@ -13,6 +13,18 @@ const baseInput: MonteCarloInputs = {
 }
 
 describe('runMonteCarlo', () => {
+  it('es determinista: las mismas entradas dan el mismo resultado en el servidor y en el navegador', () => {
+    // Si esto falla, vuelve el error #418 de hidratación en /calculadora/fire-monte-carlo.
+    expect(runMonteCarlo(baseInput)).toEqual(runMonteCarlo(baseInput))
+  })
+
+  it('con otra semilla sale otro recorrido, pero la misma conclusión', () => {
+    const a = runMonteCarlo(baseInput)
+    const b = runMonteCarlo({ ...baseInput, seed: 7 })
+    expect(a.percentiles.p50).not.toEqual(b.percentiles.p50)
+    expect(Math.abs(a.successRate - b.successRate)).toBeLessThan(0.1)
+  })
+
   it('returns a success rate between 0 and 1', () => {
     const result = runMonteCarlo(baseInput)
     expect(result.successRate).toBeGreaterThanOrEqual(0)

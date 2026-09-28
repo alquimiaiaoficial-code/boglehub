@@ -13,7 +13,7 @@ export function Footer() {
             </p>
           </div>
           <div>
-            <h4 className="font-semibold text-sm text-fg mb-3">Producto</h4>
+            <h2 className="font-semibold text-sm text-fg mb-3">Producto</h2>
             <ul className="space-y-2 text-sm text-fg-muted">
               <li><Link href="/empezar" className="hover:text-fg transition-colors">Cómo empezar</Link></li>
               <li><Link href="/analyzer" className="hover:text-fg transition-colors">Analizador</Link></li>
@@ -30,7 +30,7 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold text-sm text-fg mb-3">ETFs y fondos</h4>
+            <h2 className="font-semibold text-sm text-fg mb-3">ETFs y fondos</h2>
             <ul className="space-y-2 text-sm text-fg-muted">
               <li><Link href="/etf" className="hover:text-fg transition-colors">Catálogo ETF</Link></li>
               <li><Link href="/etfs/msci-world" className="hover:text-fg transition-colors">ETFs MSCI World</Link></li>
@@ -52,7 +52,7 @@ export function Footer() {
             llegaba. `hubs-enlazados.test.ts` impide que vuelva a pasar.
           */}
           <div>
-            <h4 className="font-semibold text-sm text-fg mb-3">Dónde invertir</h4>
+            <h2 className="font-semibold text-sm text-fg mb-3">Dónde invertir</h2>
             <ul className="space-y-2 text-sm text-fg-muted">
               <li><Link href="/broker" className="hover:text-fg transition-colors">Brókers</Link></li>
               <li><Link href="/roboadvisor" className="hover:text-fg transition-colors">Roboadvisors</Link></li>
@@ -64,7 +64,7 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold text-sm text-fg mb-3">Mercados</h4>
+            <h2 className="font-semibold text-sm text-fg mb-3">Mercados</h2>
             <ul className="space-y-2 text-sm text-fg-muted">
               <li><Link href="/mercado" className="hover:text-fg transition-colors">Mercados</Link></li>
               <li><Link href="/pais" className="hover:text-fg transition-colors">Por país</Link></li>
@@ -74,7 +74,7 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold text-sm text-fg mb-3">Recursos</h4>
+            <h2 className="font-semibold text-sm text-fg mb-3">Recursos</h2>
             <ul className="space-y-2 text-sm text-fg-muted">
               <li><Link href="/blog" className="hover:text-fg transition-colors">Blog</Link></li>
               <li><Link href="/glosario" className="hover:text-fg transition-colors">Glosario</Link></li>
@@ -117,7 +117,7 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold text-sm text-fg mb-3">Legal</h4>
+            <h2 className="font-semibold text-sm text-fg mb-3">Legal</h2>
             <ul className="space-y-2 text-sm text-fg-muted">
               <li><Link href="/aviso-legal" className="hover:text-fg transition-colors">Aviso legal</Link></li>
               <li><Link href="/privacidad" className="hover:text-fg transition-colors">Privacidad</Link></li>

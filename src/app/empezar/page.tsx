@@ -90,7 +90,7 @@ export default function EmpezarPage() {
             },
             {
               name: 'Selecciona tus ETFs o fondos',
-              text: 'Cartera mínima recomendada: 80% VWCE (Vanguard FTSE All-World, TER 0,14%, ISIN IE00BK5BQT80) + 20% AGGH (renta fija global hedged EUR, TER 0,10%). Coste total ponderado ~0,13% anual.',
+              text: 'Un ejemplo de cartera mínima que se cita a menudo: 80% VWCE (Vanguard FTSE All-World, TER 0,14%, ISIN IE00BK5BQT80) + 20% AGGH (renta fija global hedged EUR, TER 0,10%). Coste total ponderado ~0,13% anual. Es un ejemplo, no una recomendación: el reparto entre renta variable y renta fija depende del plazo y de cuánta caída aguanta cada uno.',
               url: `${BASE_URL}/empezar#paso-4`,
             },
             {
@@ -123,8 +123,8 @@ export default function EmpezarPage() {
               Cómo empezar a invertir en España: guía paso a paso (2026)
             </h1>
             <p className="mt-4 text-fg-muted leading-relaxed max-w-3xl">
-              Si nunca has invertido antes, esta guía te lleva en 6 pasos desde "no sé por dónde
-              empezar" hasta tener tu primera cartera funcionando. Sin jerga innecesaria, con
+              Si nunca has invertido antes, esta guía te lleva en 6 pasos desde «no sé por dónde
+              empezar» hasta tener tu primera cartera funcionando. Sin jerga innecesaria, con
               recursos prácticos y todas las opciones reales que tienes en España en 2026. Sin
               registro, sin venderte productos: información educativa pura.
             </p>
@@ -363,7 +363,7 @@ export default function EmpezarPage() {
             </p>
 
             <Card className="mb-4">
-              <CardTitle className="mb-3">Cartera mínima recomendada para empezar</CardTitle>
+              <CardTitle className="mb-3">Un ejemplo de cartera mínima</CardTitle>
               <ul className="space-y-3 text-sm">
                 <li className="flex items-start gap-3">
                   <span className="rounded-full bg-brand-500/10 text-brand-400 text-xs font-mono font-bold px-2 py-0.5 mt-0.5">80%</span>
@@ -372,7 +372,7 @@ export default function EmpezarPage() {
                       VWCE (Vanguard FTSE All-World)
                     </Link>
                     <p className="text-xs text-fg-muted mt-0.5">
-                      Renta variable global, ~3.700 empresas, TER 0,19%, acumulación
+                      Renta variable global, ~3.700 empresas, TER 0,14%, acumulación
                     </p>
                   </div>
                 </li>

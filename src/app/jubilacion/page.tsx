@@ -24,7 +24,7 @@ export default function JubilacionIndexPage() {
           <nav className="text-sm text-fg-subtle mb-6"><Link href="/" className="hover:text-fg">Inicio</Link><span className="mx-2">/</span><span className="text-fg">Jubilación</span></nav>
           <header className="mb-8">
             <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">Jubilación anticipada en España</h1>
-            <p className="mt-3 text-fg-muted leading-relaxed">Planes FIRE concretos según la edad objetivo de jubilación. Cada uno incluye capital necesario, aportación mensual, cartera recomendada y consideraciones específicas.</p>
+            <p className="mt-3 text-fg-muted leading-relaxed">Planes FIRE concretos según la edad objetivo de jubilación. Cada uno incluye capital necesario, aportación mensual, una cartera de ejemplo y consideraciones específicas.</p>
           </header>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

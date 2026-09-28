@@ -12,8 +12,6 @@ import {
   ResponsiveContainer,
 } from 'recharts'
 import Link from 'next/link'
-import { Header } from '@/components/Header'
-import { Footer } from '@/components/Footer'
 import { Card, CardTitle } from '@/components/ui/Card'
 import { Input } from '@/components/ui/Input'
 import { formatEUR, formatPct } from '@/lib/utils'
@@ -71,19 +69,9 @@ export function MonteCarloCalculator() {
   const markUsed = useFireOnce('calculator_used', { calculator: 'fire-monte-carlo' })
 
   return (
-    <>
-      <Header />
-      <main className="bg-bg min-h-screen">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 py-10">
-          <header className="mb-8">
-            <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">
-              Calculadora Monte Carlo para tu jubilación
-            </h1>
-            <p className="mt-2 text-fg-muted">
-              Simulamos {SIMULATIONS.toLocaleString('es-ES')} escenarios de mercado con volatilidad
-              real para estimar si tu cartera aguanta toda tu jubilación.
-            </p>
-          </header>
+    // Sin Header, <main>, h1 ni Footer: los pone la página. Hasta el 28-sep-2026 salían
+    // duplicados (dos menús, dos pies y dos h1), porque el componente traía su propio marco.
+    <div className="mx-auto max-w-5xl px-4 sm:px-6 py-10">
 
           {/* Inputs */}
           <Card className="mb-6">
@@ -301,9 +289,6 @@ export function MonteCarloCalculator() {
             Información educativa, no asesoramiento financiero. Las simulaciones se basan en datos
             históricos y no garantizan resultados futuros.
           </p>
-        </div>
-      </main>
-      <Footer />
-    </>
+    </div>
   )
 }

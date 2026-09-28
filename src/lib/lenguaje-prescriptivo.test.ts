@@ -140,6 +140,17 @@ const PRESCRIPTIVAS: readonly [RegExp, string][] = [
     'veredicto sobre la cartera del lector: di qué cambia cada opción',
   ],
   [/\belige\s+uno\b/i, 'imperativo sobre la cartera: describe qué añade el segundo y para ahí'],
+  /**
+   * Añadidos el 28-sep-2026, al revisar la web entera. El sustantivo hace lo que el verbo
+   * tiene prohibido: «Cartera mínima recomendada: 80 % VWCE + 20 % AGGH» en /empezar, «Para
+   * tu edad, la asignación recomendada es…» en los planes, «ETFs recomendados» en las guías
+   * por país, «la cartera óptima» en dos artículos. Ninguna lleva «deberías» ni «te
+   * conviene», así que ningún patrón anterior las veía. Eran 18.
+   */
+  [/\b(?:cartera|asignaci[óo]n|estrategia|distribuci[óo]n)\s+(?:m[íi]nima\s+)?recomendada\b/i, '«un ejemplo de cartera», «una regla que se cita a menudo»: describe lo habitual, no lo recomiendes'],
+  [/\b(?:etfs?|fondos?|productos?|brokers?)\s+recomendad[oa]s?\b/i, '«que se usan a menudo», «habituales»'],
+  [/\bcartera\s+[óo]ptima\b/i, 'no hay una cartera óptima sin conocer a quien la lleva: «una combinación habitual»'],
+  [/\brecomendadas?\s+para\s+tu\b/i, 'recomendación personalizada al lector: justo el requisito 3 de la CNMV'],
 ]
 
 /**

@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer'
 import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
 import { MODEL_PORTFOLIOS, getPortfolioBySlug } from '@/data/model-portfolios'
+import { getEtfByTicker } from '@/lib/etf-database'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -61,10 +62,16 @@ export default async function CarteraPage({ params }: { params: Promise<{ slug: 
                   </div>
                   <div className="flex-1">
                     <p className="text-sm font-medium text-fg">{a.asset}</p>
-                    {a.suggestedTicker && (
+                    {/* Solo se enlaza la ficha si el ETF sigue en el catálogo. Los retirados el
+                        18-19 sep (ISIN sin verificar) dejaban aquí enlaces a 404, vistos al
+                        auditar el sitio el 28-sep-2026. */}
+                    {a.suggestedTicker && getEtfByTicker(a.suggestedTicker) && (
                       <Link href={`/etf/${a.suggestedTicker.toLowerCase()}`} className="text-xs text-brand-400 hover:text-brand-300 font-mono">
                         → {a.suggestedTicker}
                       </Link>
+                    )}
+                    {a.suggestedTicker && !getEtfByTicker(a.suggestedTicker) && (
+                      <span className="text-xs text-fg-subtle font-mono">ejemplo: {a.suggestedTicker}</span>
                     )}
                   </div>
                   <div className="shrink-0 w-32">

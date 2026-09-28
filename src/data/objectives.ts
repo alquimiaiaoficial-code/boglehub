@@ -6,6 +6,11 @@ export interface Objective {
   slug: string
   /** Etiqueta legible */
   label: string
+  /**
+   * Lo que va detrás de «para» en una frase. «llegar a 1 millón €» se lee bien; «llegar a
+   * Complementar pensión» no, y salía así en el título de la página (28-sep-2026).
+   */
+  frase?: string
   /** Capital objetivo en € */
   targetAmount: number
   /** Tipo de objetivo */
@@ -31,9 +36,9 @@ export const OBJECTIVES: Objective[] = [
     description: 'FIRE cómodo: 40.000€/año con regla del 4%. Vida sin restricciones para una persona en España.' },
   { slug: 'fire-de-lujo', label: 'FIRE de lujo (2M)', targetAmount: 2_000_000, type: 'fire',
     description: 'FIRE de lujo: 80.000€/año al 4%. Cubre familia, viajes y casa principal sin restricciones.' },
-  { slug: 'complementar-pension', label: 'Complementar pensión', targetAmount: 200_000, type: 'jubilacion',
+  { slug: 'complementar-pension', label: 'Complementar pensión', frase: 'complementar la pensión', targetAmount: 200_000, type: 'jubilacion',
     description: 'Complemento a la pensión pública: 200.000€ generan ~8.000€/año extra (~670€/mes).' },
-  { slug: 'jubilacion-tradicional', label: 'Jubilación tradicional', targetAmount: 500_000, type: 'jubilacion',
+  { slug: 'jubilacion-tradicional', label: 'Jubilación tradicional', frase: 'una jubilación tradicional', targetAmount: 500_000, type: 'jubilacion',
     description: 'Capital para complementar la pensión pública y mantener calidad de vida.' },
 ]
 

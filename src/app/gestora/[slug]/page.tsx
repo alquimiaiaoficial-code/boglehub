@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer'
 import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
 import { GESTORAS, getGestoraBySlug } from '@/data/gestoras'
+import { getEtfByTicker } from '@/lib/etf-database'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -127,11 +128,14 @@ export default async function GestoraPage({ params }: { params: Promise<{ slug: 
             <p className="text-fg-muted leading-relaxed">{g.description}</p>
           </section>
 
-          {g.popularEtfs.length > 0 && (
+          {/* Solo los ETFs que siguen en el catálogo, que son los que tienen el ISIN
+              verificado. Los retirados el 18-19 sep dejaban enlaces a 404 (auditoría del
+              28-sep-2026) y, peor, seguían presentados como «populares» sin respaldo. */}
+          {g.popularEtfs.some((e) => getEtfByTicker(e.ticker)) && (
             <section className="mb-8">
               <h2 className="text-xl font-bold text-fg mb-4">ETFs populares de {g.name} en España</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {g.popularEtfs.map((etf) => (
+                {g.popularEtfs.filter((e) => getEtfByTicker(e.ticker)).map((etf) => (
                   <Link
                     key={etf.ticker}
                     href={`/etf/${etf.ticker.toLowerCase()}`}

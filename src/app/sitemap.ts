@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 import { getAllEtfs } from '@/lib/etf-database'
 import { BLOG_ARTICLES } from '@/data/blog-articles'
-import { ETF_PAIRS, pairToSlug, getAllPossiblePairs } from '@/data/etf-pairs'
+import { pairToSlug, getAllPossiblePairs } from '@/data/etf-pairs'
 import { ETF_THEMES } from '@/data/etf-themes'
 import { GLOSSARY_TERMS } from '@/data/glossary'
 import { BROKERS } from '@/data/brokers'

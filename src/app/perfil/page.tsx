@@ -50,8 +50,8 @@ export default function PerfilIndexPage() {
             </h1>
             <p className="mt-3 text-fg-muted leading-relaxed">
               Estrategias específicas de inversión indexada adaptadas a {INVESTOR_PROFILES.length}
-              {' '}perfiles concretos. Encuentra el tuyo y descubre la cartera, broker y aportación
-              recomendadas para tu situación.
+              {' '}perfiles concretos. Cada uno explica qué suele pesar en esa situación: el reparto, el
+              tipo de bróker y la aportación, con ejemplos, no con recomendaciones.
             </p>
           </header>
 

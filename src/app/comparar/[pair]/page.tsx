@@ -8,7 +8,7 @@ import { JsonLd } from '@/components/JsonLd'
 import { getEtfByTicker, CATALOGO_ACTUALIZADO } from '@/lib/etf-database'
 import { computeFiscalGrade, GRADE_STYLES } from '@/lib/fiscal'
 import { formatPct } from '@/lib/utils'
-import { ETF_PAIRS, slugToPair, pairToSlug, getAllPossiblePairs } from '@/data/etf-pairs'
+import { slugToPair, pairToSlug, getAllPossiblePairs } from '@/data/etf-pairs'
 import type { EtfMetadata, Region } from '@/types/etf'
 import { robotsFor, soloIndexables } from '@/lib/seo-index-policy'
 

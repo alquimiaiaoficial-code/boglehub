@@ -5,10 +5,9 @@ import { NewsletterSignup } from '@/components/NewsletterSignup'
 import { Check } from 'lucide-react'
 
 import { DescargoFiscal } from '@/components/DescargoFiscal'
-const BASE_URL = 'https://boglehub.com'
 
 export const metadata: Metadata = {
-  title: 'Guía gratis: tu primera cartera indexada en España | BogleHub',
+  title: 'Guía gratis: tu primera cartera indexada en España',
   description:
     'Descarga gratis la guía en PDF «Tu primera cartera indexada en España, paso a paso»: cartera, bróker, fiscalidad 2026 y checklist. Solo tu email.',
   alternates: { canonical: '/guia' },

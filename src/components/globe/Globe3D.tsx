@@ -1,6 +1,6 @@
 'use client'
 
-import { useMemo, useRef, useState, useEffect } from 'react'
+import { useMemo, useRef, useSyncExternalStore } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Line } from '@react-three/drei'
 import * as THREE from 'three'
@@ -136,16 +136,20 @@ function Scene({ reducedMotion }: { reducedMotion: boolean }) {
   )
 }
 
-export default function Globe3D() {
-  const [reducedMotion, setReducedMotion] = useState(false)
+const REDUCED_MOTION = '(prefers-reduced-motion: reduce)'
 
-  useEffect(() => {
-    const mq = window.matchMedia('(prefers-reduced-motion: reduce)')
-    setReducedMotion(mq.matches)
-    const handler = (e: MediaQueryListEvent) => setReducedMotion(e.matches)
-    mq.addEventListener('change', handler)
-    return () => mq.removeEventListener('change', handler)
-  }, [])
+export default function Globe3D() {
+  // Preferencia de «movimiento reducido» del sistema, leída con la API de React para fuentes
+  // externas en vez de copiarla al estado dentro de un efecto (render de más y aviso del lint).
+  const reducedMotion = useSyncExternalStore(
+    (avisar) => {
+      const mq = window.matchMedia(REDUCED_MOTION)
+      mq.addEventListener('change', avisar)
+      return () => mq.removeEventListener('change', avisar)
+    },
+    () => window.matchMedia(REDUCED_MOTION).matches,
+    () => false,
+  )
 
   return (
     <Canvas

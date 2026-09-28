@@ -206,9 +206,9 @@ export default async function InvertirPage({ params }: { params: Promise<{ slug:
 
           {/* Recomendación */}
           <section className="mb-8">
-            <h2 className="text-xl font-bold text-fg mb-3">Estrategia recomendada para {m.amount}€/mes</h2>
+            <h2 className="text-xl font-bold text-fg mb-3">Cómo se suele invertir con {m.amount}€/mes</h2>
             <p className="text-fg-muted leading-relaxed mb-3">
-              Con una aportación mensual de {m.amount}€, la estrategia más eficiente combina
+              Con una aportación mensual de {m.amount}€, lo habitual es combinar
               {' '}{m.amount >= 200 ? 'fondos indexados de bajo coste (MyInvestor) con ETFs (Trade Republic)' : 'ETFs sin comisión vía Trade Republic con planes de ahorro automáticos'}.
               Aporta el mismo día cada mes para implementar Dollar Cost Averaging (DCA) sin
               decidir nada.

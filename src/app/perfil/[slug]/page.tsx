@@ -27,7 +27,7 @@ export async function generateMetadata({
 
   return {
     title: `Cómo invertir siendo ${p.name.toLowerCase()} (guía 2026)`,
-    description: `${p.tagline}. Estrategia indexada específica para ${p.name.toLowerCase()}: cartera recomendada, broker, aportación mensual, riesgos y consideraciones específicas.`,
+    description: `${p.tagline}. Estrategia indexada específica para ${p.name.toLowerCase()}: cartera de ejemplo, broker, aportación mensual, riesgos y consideraciones específicas.`,
     openGraph: {
       locale: 'es_ES',
       images: [`/api/og?title=${encodeURIComponent(p.name)}&subtitle=${encodeURIComponent('C%C3%B3mo%20invertir')}`],

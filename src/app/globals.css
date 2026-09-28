@@ -13,7 +13,9 @@
   /* Text */
   --color-fg: #fafafa;
   --color-fg-muted: #a1a1aa;
-  --color-fg-subtle: #71717a;
+  /* Era #71717a: 4,1:1 sobre el fondo, por debajo del 4,5:1 que pide WCAG AA para texto normal
+     (Lighthouse, 28-sep-2026). #8e8e97 da 4,66:1 incluso sobre el panel más claro (#262626). */
+  --color-fg-subtle: #8e8e97;
 
   /* Accents */
   --color-accent: #10b981;

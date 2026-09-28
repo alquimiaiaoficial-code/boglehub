@@ -1,7 +1,7 @@
 'use client'
 
 import { track } from '@vercel/analytics'
-import { useCallback, useRef } from 'react'
+import { useCallback, useEffect, useRef } from 'react'
 
 /**
  * Custom product events tracked via Vercel Analytics.
@@ -40,7 +40,11 @@ export function trackEvent(event: BogleEvent, props?: EventProps): void {
 export function useFireOnce(event: BogleEvent, props?: EventProps): () => void {
   const fired = useRef(false)
   const propsRef = useRef(props)
-  propsRef.current = props
+  // Se actualiza en un efecto y no durante el render: escribir una ref al renderizar puede
+  // dar lecturas inconsistentes con el renderizado concurrente de React.
+  useEffect(() => {
+    propsRef.current = props
+  })
   return useCallback(() => {
     if (fired.current) return
     fired.current = true

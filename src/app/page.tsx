@@ -70,7 +70,7 @@ export default function HomePage() {
             </div>
             <p className="mt-4 text-sm text-fg-subtle">Sin registro · Tu cartera se guarda en tu navegador</p>
             <p className="mt-2 text-sm text-fg-subtle">
-              O <Link href="/chat" className="text-brand-400 hover:text-brand-300 underline-offset-4 hover:underline">prueba el chat IA</Link> para hacer preguntas libres sobre inversión.
+              O <Link href="/chat" className="text-brand-400 hover:text-brand-300 underline underline-offset-4">prueba el chat IA</Link> para hacer preguntas libres sobre inversión.
             </p>
           </Reveal>
         </section>

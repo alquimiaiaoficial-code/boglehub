@@ -10,7 +10,7 @@ export function Header() {
           <Logo size="md" />
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm text-fg-muted">
-          <Link href="/empezar" className="hover:text-fg transition-colors">Empezar</Link>
+          <Link href="/empezar" className="hover:text-fg transition-colors">Guía para empezar</Link>
           <Link href="/analyzer" className="hover:text-fg transition-colors">Analizador</Link>
           <Link href="/comparar" className="hover:text-fg transition-colors">Comparar</Link>
           <Link href="/etfs" className="hover:text-fg transition-colors">ETFs</Link>

@@ -53,7 +53,7 @@ export function PdfUpload() {
   return (
     <Card>
       <div className="mb-4">
-        <h3 className="text-base font-semibold text-fg">Importar desde PDF</h3>
+        <h2 className="text-base font-semibold text-fg">Importar desde PDF</h2>
         <p className="text-xs text-fg-muted mt-1">Trade Republic · DEGIRO · MyInvestor · ING</p>
       </div>
 

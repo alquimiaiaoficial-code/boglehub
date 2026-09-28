@@ -32,7 +32,7 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
   {
     q: '¿Cuáles son los ETFs MSCI World más baratos disponibles en España?',
-    a: 'En 2026, los ETFs MSCI World UCITS con TER más bajo son SWRD (SPDR, TER 0,12%, ISIN IE00BFY0GT14) y MWRD (Lyxor, TER 0,12%). Más populares pero ligeramente más caros: IWDA (iShares Core, TER 0,20%, ISIN IE00B4L5Y983) y XDWD (Xtrackers, TER 0,19%). Todos domiciliados en Irlanda y de acumulación.',
+    a: 'Entre los ETFs MSCI World UCITS del catálogo de BogleHub, verificados en septiembre de 2026, los de TER más bajo son SWRD (SPDR, TER 0,12%, ISIN IE00BFY0GT14), MWRD (Amundi, TER 0,12%) y XDWD (Xtrackers, TER 0,12%). IWDA (iShares Core, TER 0,20%, ISIN IE00B4L5Y983) es el más popular y algo más caro. Todos domiciliados en Irlanda y de acumulación.',
   },
   {
     q: '¿Cuál es la diferencia de coste entre los principales brokers para ETFs en España?',

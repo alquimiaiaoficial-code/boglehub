@@ -719,7 +719,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     longDefinition:
       'El MSCI World es el índice de referencia más usado para invertir de forma indexada en países desarrollados. Incluye unas 1.500 empresas grandes y medianas de 23 economías avanzadas (EE.UU., Japón, Reino Unido, Canadá, Suiza, Francia, Alemania, etc.), ponderadas por capitalización bursátil.\n\nNo incluye mercados emergentes (China, India, Brasil), lo que sería el MSCI ACWI o el FTSE All-World. EE.UU. representa aproximadamente el 70% del MSCI World debido a su gran capitalización. Los sectores más representados son tecnología (~24%), financiero (~14%) y salud (~13%).',
     example:
-      'ETFs MSCI World disponibles en España: IWDA (TER 0,20%), SWRD (TER 0,12%), MWRD (TER 0,12%), XDWD (TER 0,19%). Todos son irlandeses, de acumulación y replican el mismo índice.',
+      'ETFs MSCI World disponibles en España: IWDA (TER 0,20%), SWRD (TER 0,12%), MWRD (TER 0,12%), XDWD (TER 0,12%). Todos son irlandeses, de acumulación y replican el mismo índice.',
     relatedArticles: ['que-es-el-msci-world'],
     relatedLinks: [{ label: 'Mejores ETFs MSCI World', href: '/etfs/msci-world' }],
     faq: [

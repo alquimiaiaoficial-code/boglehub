@@ -38,9 +38,10 @@ export async function generateMetadata({ params }: { params: Promise<{ edad: str
   const age = getAgeBySlug(edad)
   const obj = getObjectiveBySlug(objetivo)
   if (!age || !obj) return { title: 'No encontrado' }
+  const paraQue = obj.frase ?? `llegar a ${obj.label}`
   return {
-    title: `Plan inversión con ${age.age} años para llegar a ${obj.label} (2026)`,
-    description: `Cuánto invertir al mes desde los ${age.age} años para llegar a ${obj.label}: aportación necesaria con rentabilidad del 7%, cartera recomendada y broker.`,
+    title: `Plan de inversión con ${age.age} años para ${paraQue} (2026)`,
+    description: `Cuánto invertir al mes desde los ${age.age} años para ${paraQue}: aportación necesaria con rentabilidad del 7% y una cartera de ejemplo.`,
     openGraph: { locale: 'es_ES', images: [`/api/og?title=${encodeURIComponent(`${age.age} años → ${obj.label}`)}&subtitle=${encodeURIComponent('Plan%20personalizado')}`] },
     alternates: { canonical: `/plan/${edad}/${objetivo}` },
     robots: robotsFor(`/plan/${edad}/${objetivo}`),
@@ -62,7 +63,9 @@ export default async function PlanPage({ params }: { params: Promise<{ edad: str
   const compoundGain = obj.targetAmount - totalAportado
 
   // Frase citable autocontenida (misma cifra que el H1 y el Dataset JSON-LD).
-  const citableClaim = `Para alcanzar ${obj.label} (${formatEUR(obj.targetAmount)}) a los 65 años partiendo de los ${age.age} años (${age.yearsToRetirement} años de horizonte) hay que aportar aproximadamente ${formatEUR(monthlyNeeded)} al mes, asumiendo una rentabilidad anual del 7% (histórica del MSCI World). Total aportado: ${formatEUR(totalAportado)}; el interés compuesto añade ${formatEUR(compoundGain)}. Cálculo de BogleHub (proyección educativa, no garantizada).`
+  // «llegar a 1 millón €», pero «complementar la pensión»: ver `frase` en objectives.ts.
+  const paraQue = obj.frase ?? `llegar a ${obj.label}`
+  const citableClaim = `Para ${paraQue} (${formatEUR(obj.targetAmount)}) a los 65 años partiendo de los ${age.age} años (${age.yearsToRetirement} años de horizonte) hay que aportar aproximadamente ${formatEUR(monthlyNeeded)} al mes, asumiendo una rentabilidad anual del 7% (histórica del MSCI World). Total aportado: ${formatEUR(totalAportado)}; el interés compuesto añade ${formatEUR(compoundGain)}. Cálculo de BogleHub (proyección educativa, no garantizada).`
 
   // Tabla de alternativas con menos años
   const horizons = [10, 15, 20, 25, 30, age.yearsToRetirement]
@@ -71,11 +74,11 @@ export default async function PlanPage({ params }: { params: Promise<{ edad: str
 
   const faqs = [
     {
-      q: `¿Cuánto tengo que invertir al mes con ${age.age} años para llegar a ${obj.label}?`,
-      a: `Para alcanzar ${obj.label} a los 65 años desde tu edad actual (${age.age}), tendrías ${age.yearsToRetirement} años por delante. Asumiendo rentabilidad anual del 7% (histórica del MSCI World), necesitas aportar aproximadamente ${formatEUR(monthlyNeeded)}/mes durante todo el periodo. En total aportarás ${formatEUR(totalAportado)} y el interés compuesto añadirá ${formatEUR(compoundGain)} extra.`,
+      q: `¿Cuánto tengo que invertir al mes con ${age.age} años para ${paraQue}?`,
+      a: `Para ${paraQue} a los 65 años desde tu edad actual (${age.age}), tendrías ${age.yearsToRetirement} años por delante. Asumiendo rentabilidad anual del 7% (histórica del MSCI World), necesitas aportar aproximadamente ${formatEUR(monthlyNeeded)}/mes durante todo el periodo. En total aportarás ${formatEUR(totalAportado)} y el interés compuesto añadirá ${formatEUR(compoundGain)} extra.`,
     },
     {
-      q: `¿Es realista llegar a ${obj.label} con ${age.age} años?`,
+      q: `¿Es realista ${paraQue} con ${age.age} años?`,
       a: age.age <= 35
         ? `Sí, perfectamente realista con disciplina. Tienes ${age.yearsToRetirement} años por delante y el interés compuesto es brutal a este horizonte. Solo necesitas aportar consistentemente y no tocar la cartera durante caídas del mercado.`
         : age.age <= 50
@@ -83,8 +86,8 @@ export default async function PlanPage({ params }: { params: Promise<{ edad: str
           : `Es muy ambicioso a esta edad. Con solo ${age.yearsToRetirement} años hasta la jubilación, la aportación mensual necesaria es alta (${formatEUR(monthlyNeeded)}/mes). Considera objetivos más realistas o ampliar el horizonte trabajando hasta después de los 65.`,
     },
     {
-      q: `¿Qué cartera me recomiendan para este plan?`,
-      a: `Para tu edad (${age.age}), la asignación recomendada es ${age.recommendedEquity} en renta variable: ${age.recommendedPortfolio}. Esto equilibra crecimiento esperado con tolerancia a caídas. VWCE da diversificación global (incluye emergentes). AGGH es renta fija global con cobertura EUR, amortigua las caídas bursátiles.`,
+      q: `¿Qué cartera se suele usar en un plan así?`,
+      a: `Una regla que se cita a menudo a los ${age.age} años es tener ${age.recommendedEquity} en renta variable, por ejemplo así: ${age.recommendedPortfolio}. Es un ejemplo, no una recomendación: el reparto depende del plazo y de cuánta caída aguanta cada uno. VWCE da diversificación global (incluye emergentes). AGGH es renta fija global con cobertura EUR, amortigua las caídas bursátiles.`,
     },
     {
       q: `¿Qué broker uso para este plan?`,
@@ -92,7 +95,7 @@ export default async function PlanPage({ params }: { params: Promise<{ edad: str
     },
     {
       q: `¿Y si no puedo aportar tanto?`,
-      a: `Tienes tres opciones: (1) reducir el objetivo de ${obj.label} a una cantidad alcanzable, (2) ampliar el horizonte trabajando hasta después de los 65, (3) aportar lo máximo posible aceptando que el capital final será menor. Lo importante es empezar — algo es infinitamente mejor que nada. Aportar 100€/mes desde los ${age.age} es mejor que aportar 1000€/mes empezando 10 años más tarde.`,
+      a: `Tienes tres opciones: (1) reducir el objetivo de ${obj.label} a una cantidad alcanzable, (2) ampliar el horizonte trabajando hasta después de los 65, (3) aportar lo máximo posible aceptando que el capital final será menor. Empezar antes pesa mucho: con un 7 % anual, cada euro aportado a los ${age.age} años tiene diez años más de interés compuesto que uno aportado a los ${age.age + 10}, y en ese plazo casi se duplica.`,
     },
   ]
 
@@ -100,7 +103,7 @@ export default async function PlanPage({ params }: { params: Promise<{ edad: str
     <>
       <JsonLd schema={{ type: 'FAQPage', questions: faqs }} />
       <JsonLd schema={{ type: 'BreadcrumbList', items: [{ name: 'Inicio', url: BASE_URL }, { name: 'Plan', url: `${BASE_URL}/plan` }, { name: `${age.age}a → ${obj.label}`, url: pageUrl }] }} />
-      <JsonLd schema={{ type: 'Article', headline: `Plan inversión con ${age.age} años para ${obj.label}`, description: citableClaim, url: pageUrl, datePublished: '2026-05-24', dateModified: '2026-05-30', articleSection: 'Plan personalizado' }} />
+      <JsonLd schema={{ type: 'Article', headline: `Plan de inversión con ${age.age} años para ${obj.label}`, description: citableClaim, url: pageUrl, datePublished: '2026-05-24', dateModified: '2026-05-30', articleSection: 'Plan personalizado' }} />
       <JsonLd schema={{
         type: 'Dataset',
         name: `Plan de inversión: ${formatEUR(obj.targetAmount)} a los 65 desde los ${age.age} años`,
@@ -129,10 +132,10 @@ export default async function PlanPage({ params }: { params: Promise<{ edad: str
 
           <header className="mb-8">
             <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">
-              Plan inversión a los {age.age} años para llegar a {obj.label}
+              Plan de inversión a los {age.age} años para {paraQue}
             </h1>
             <p className="mt-4 text-fg leading-relaxed">
-              Según el cálculo de BogleHub, para alcanzar {obj.label} ({formatEUR(obj.targetAmount)}) a los 65 años partiendo de los {age.age} años hay que aportar aproximadamente {formatEUR(monthlyNeeded)} al mes durante {age.yearsToRetirement} años, asumiendo una rentabilidad anual del 7% (histórica del MSCI World). Total aportado: {formatEUR(totalAportado)}; el interés compuesto añade {formatEUR(compoundGain)} extra hasta el objetivo.
+              Según el cálculo de BogleHub, para {paraQue} ({formatEUR(obj.targetAmount)}) a los 65 años partiendo de los {age.age} años hay que aportar aproximadamente {formatEUR(monthlyNeeded)} al mes durante {age.yearsToRetirement} años, asumiendo una rentabilidad anual del 7% (histórica del MSCI World). Total aportado: {formatEUR(totalAportado)}; el interés compuesto añade {formatEUR(compoundGain)} extra hasta el objetivo.
             </p>
           </header>
 
@@ -140,7 +143,7 @@ export default async function PlanPage({ params }: { params: Promise<{ edad: str
           <Card className="mb-8 bg-accent-dim border-accent/30">
             <CardTitle className="mb-3">Tu plan en una frase</CardTitle>
             <p className="text-lg text-fg leading-relaxed">
-              Para llegar a <strong className="text-accent">{obj.label}</strong> a los 65 años partiendo de los {age.age} años, necesitas aportar{' '}
+              Para <strong className="text-accent">{paraQue}</strong> a los 65 años partiendo de los {age.age} años, necesitas aportar{' '}
               <strong className="text-accent">{formatEUR(monthlyNeeded)}/mes</strong> durante{' '}
               <strong className="text-accent">{age.yearsToRetirement} años</strong> con una cartera{' '}
               <strong>{age.recommendedPortfolio}</strong>.

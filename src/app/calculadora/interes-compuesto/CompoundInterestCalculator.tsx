@@ -11,8 +11,6 @@ import {
   Legend,
   ResponsiveContainer,
 } from 'recharts'
-import { Header } from '@/components/Header'
-import { Footer } from '@/components/Footer'
 import { Card, CardTitle } from '@/components/ui/Card'
 import { Input } from '@/components/ui/Input'
 import { formatEUR } from '@/lib/utils'
@@ -76,18 +74,9 @@ export function CompoundInterestCalculator() {
   const markUsed = useFireOnce('calculator_used', { calculator: 'interes-compuesto' })
 
   return (
-    <>
-      <Header />
-      <main className="bg-bg min-h-screen">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 py-10">
-          <header className="mb-8">
-            <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">
-              Calculadora de interés compuesto
-            </h1>
-            <p className="mt-2 text-fg-muted">
-              Descubre cómo tu inversión crece exponencialmente con el paso del tiempo.
-            </p>
-          </header>
+    // Sin Header, <main>, h1 ni Footer: los pone la página. Hasta el 28-sep-2026 salían
+    // duplicados (dos menús, dos pies y dos h1), porque el componente traía su propio marco.
+    <div className="mx-auto max-w-5xl px-4 sm:px-6 py-10">
 
           {/* Inputs */}
           <Card className="mb-6">
@@ -240,9 +229,6 @@ export function CompoundInterestCalculator() {
               </table>
             </div>
           </Card>
-        </div>
-      </main>
-      <Footer />
-    </>
+    </div>
   )
 }

@@ -204,8 +204,8 @@ export default function CalculadoraHubPage() {
               >
                 calculadora de IRPF
               </Link>{' '}
-              te lo cuenta con desglose por tramos. Y si la pregunta es "cuándo puedo dejar
-              de trabajar", la{' '}
+              te lo cuenta con desglose por tramos. Y si la pregunta es «cuándo puedo dejar
+              de trabajar», la{' '}
               <Link
                 href="/calculadora/fire-monte-carlo"
                 className="text-brand-400 hover:text-brand-500 underline underline-offset-2"

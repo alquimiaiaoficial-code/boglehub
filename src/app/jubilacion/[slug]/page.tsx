@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!f) return { title: 'No encontrado' }
   return {
     title: `Cómo jubilarse a los ${f.targetAge} años en España: plan FIRE 2026`,
-    description: `${f.description} Plan paso a paso: capital necesario, aportación mensual, cartera recomendada y consideraciones específicas para retirada a los ${f.targetAge}.`,
+    description: `${f.description} Plan paso a paso: capital necesario, aportación mensual, una cartera de ejemplo y consideraciones específicas para retirada a los ${f.targetAge}.`,
     openGraph: { locale: 'es_ES', images: [`/api/og?title=${encodeURIComponent(`Jubilarse a los ${f.targetAge}`)}&subtitle=${encodeURIComponent('Plan FIRE Espa%C3%B1a')}`] },
     alternates: { canonical: `/jubilacion/${slug}` },
   }

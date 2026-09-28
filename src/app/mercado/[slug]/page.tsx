@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!m) return { title: 'No encontrado' }
   return {
     title: `Inversión indexada en ${m.countryName}: brokers, fiscalidad y ETFs (2026)`,
-    description: `Guía completa de inversión indexada para residentes en ${m.countryName}: brokers locales (${m.localBrokers.slice(0, 2).join(', ')}), fiscalidad (${m.capitalGainsTax}), ETFs recomendados y estrategia.`,
+    description: `Guía completa de inversión indexada para residentes en ${m.countryName}: brokers locales (${m.localBrokers.slice(0, 2).join(', ')}), fiscalidad (${m.capitalGainsTax}), ETFs habituales y estrategia.`,
     openGraph: { locale: 'es_ES', images: [`/api/og?title=${encodeURIComponent(`Invertir en ${m.countryName}`)}&subtitle=${encodeURIComponent('Gu%C3%ADa%20completa')}`] },
     alternates: { canonical: `/mercado/${slug}` },
   }
@@ -67,7 +67,7 @@ export default async function MercadoPage({ params }: { params: Promise<{ slug: 
           </Card>
 
           <Card className="mb-8">
-            <CardTitle className="mb-3">ETFs recomendados</CardTitle>
+            <CardTitle className="mb-3">ETFs que se usan a menudo</CardTitle>
             <p className="text-sm text-fg-muted leading-relaxed">{m.etfRecommendation}</p>
           </Card>
 

@@ -317,7 +317,7 @@ export const ETF_THEMES: EtfTheme[] = [
       },
       {
         q: '¿Qué diferencia hay entre WSML e IUSN?',
-        a: 'WSML (SPDR MSCI World Small Cap UCITS ETF) y IUSN (iShares MSCI World Small Cap UCITS ETF) replican ambos el índice MSCI World Small Cap. WSML tiene TER de 0,45% y IUSN de 0,35%. Ambos son de acumulación, domiciliados en Irlanda y cotizan en bolsas europeas. IUSN es ligeramente más barato; ambos cumplen la misma función en la cartera.',
+        a: 'WSML e IUSN no son dos productos distintos: son dos cotizaciones del mismo fondo, el iShares MSCI World Small Cap UCITS ETF (ISIN IE00BF4RFH31), que replica el MSCI World Small Cap con un TER del 0,35 %. Lo que cambia es la bolsa y la divisa en la que cotizan, no la cartera ni la comisión. Es de acumulación y está domiciliado en Irlanda.',
       },
       {
         q: '¿ZPRV es lo mismo que las small caps globales?',
@@ -349,7 +349,7 @@ export const ETF_THEMES: EtfTheme[] = [
       },
       {
         q: '¿Cuál es la diferencia entre SGLN, IGLN y 4GLD?',
-        a: 'SGLN (iShares Physical Gold ETC, TER 0,12%) e IGLN (iShares Physical Gold ETC, TER 0,12%) son productos muy similares de iShares, con respaldo físico en JP Morgan London. 4GLD (Xtrackers Physical Gold ETC EUR, TER 0,15%) tiene la particularidad de cotizar en euros y estar pensado específicamente para inversores europeos. La elección entre ellos depende más de la disponibilidad y comisión en tu broker que de diferencias estructurales relevantes.',
+        a: 'SGLN e IGLN son dos cotizaciones del mismo producto, el iShares Physical Gold ETC (ISIN IE00B4ND3602), con un TER del 0,12 %: cambian la bolsa y la divisa en la que cotizan. 4GLD es otro producto, el Xetra-Gold (ISIN DE000A0S9GB0), respaldado por oro físico y que no cobra TER. En la práctica los separa en qué bolsa cotiza cada uno y qué cobra cada bróker por operar en ella.',
       },
     ],
     note:
@@ -371,7 +371,7 @@ export const ETF_THEMES: EtfTheme[] = [
       },
       {
         q: '¿Qué es el factor momentum y cómo funciona?',
-        a: 'El factor momentum selecciona empresas que han subido más en los últimos 6-12 meses, bajo la premisa de que las tendencias del mercado tienden a continuar a corto plazo. Es un factor con base académica sólida (Jegadeesh y Titman, 1993) pero con alta rotación interna del índice (las empresas entran y salen frecuentemente). IWMO (iShares Edge MSCI World Momentum Factor, TER 0,30%) y XDEQ son las opciones principales en España.',
+        a: 'El factor momentum selecciona empresas que han subido más en los últimos 6-12 meses, bajo la premisa de que las tendencias del mercado tienden a continuar a corto plazo. Es un factor con base académica sólida (Jegadeesh y Titman, 1993) pero con alta rotación interna del índice (las empresas entran y salen frecuentemente). IWMO (iShares Edge MSCI World Momentum Factor, TER 0,25%) es el ETF de momentum del catálogo. XDEQ, que a veces se cita junto a él, es de otro factor: calidad.',
       },
       {
         q: '¿Merece la pena invertir en factor ETFs frente a un MSCI World normal?',

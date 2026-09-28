@@ -10,6 +10,11 @@ export interface MonteCarloInputs {
   meanReturn: number // annual, e.g. 0.07
   stdReturn: number // annual stddev, e.g. 0.15
   simulations: number // e.g. 1000
+  /**
+   * Semilla del generador aleatorio. Por defecto fija: las mismas entradas dan siempre el
+   * mismo resultado. Ver `generadorConSemilla`.
+   */
+  seed?: number
 }
 
 export interface MonteCarloResult {
@@ -23,13 +28,34 @@ export interface MonteCarloResult {
 }
 
 /**
+ * Generador pseudoaleatorio con semilla (mulberry32).
+ *
+ * Por qué no `Math.random` (28-sep-2026): la simulación se calcula al renderizar, en el
+ * servidor y otra vez en el navegador. Con `Math.random` cada uno sacaba su propio azar, el
+ * HTML del servidor no coincidía con el del navegador y React tiraba la página entera para
+ * rehacerla (error #418 en consola, visto al auditar la web). Con semilla, los dos obtienen
+ * los mismos números, y además quien recarga con los mismos datos ve las mismas cifras en
+ * vez de unas que bailan un par de puntos cada vez.
+ */
+export function generadorConSemilla(semilla: number): () => number {
+  let a = semilla >>> 0
+  return () => {
+    a = (a + 0x6d2b79f5) >>> 0
+    let t = a
+    t = Math.imul(t ^ (t >>> 15), t | 1)
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61)
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296
+  }
+}
+
+/**
  * Box-Muller transform: returns a standard normally distributed value (mean 0, stddev 1).
  */
-function gaussianRandom(): number {
+function gaussianRandom(rand: () => number): number {
   let u = 0
   let v = 0
-  while (u === 0) u = Math.random()
-  while (v === 0) v = Math.random()
+  while (u === 0) u = rand()
+  while (v === 0) v = rand()
   return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v)
 }
 
@@ -63,6 +89,7 @@ export function runMonteCarlo(input: MonteCarloInputs): MonteCarloResult {
     stdReturn,
     simulations,
   } = input
+  const rand = generadorConSemilla(input.seed ?? 20260928)
 
   const totalYears = yearsToRetire + yearsInRetirement
   const annualContribution = monthlyContribution * 12
@@ -77,7 +104,7 @@ export function runMonteCarlo(input: MonteCarloInputs): MonteCarloResult {
     balancesByYear[0].push(balance)
 
     for (let year = 1; year <= totalYears; year++) {
-      const annualReturn = meanReturn + stdReturn * gaussianRandom()
+      const annualReturn = meanReturn + stdReturn * gaussianRandom(rand)
 
       if (year <= yearsToRetire) {
         // Accumulation phase
