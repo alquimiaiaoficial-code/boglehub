@@ -4,7 +4,7 @@ import { usePortfolio } from '@/lib/store'
 import { Card, CardTitle } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { formatEUR } from '@/lib/utils'
-import { buscarFondo } from '@/lib/fondos-analizables'
+import { nombreDeFondo } from '@/lib/fondos-analizables'
 import { Trash2 } from 'lucide-react'
 
 export function PortfolioTable() {
@@ -46,13 +46,14 @@ export function PortfolioTable() {
               Un dato bien calculado y mal etiquetado se lee mal igual.
             */}
             {positions.map((p) => {
-              const fondo = buscarFondo(p.ticker)
+              // Fondo o clase: las clases no tienen ficha y `buscarFondo` no las ve.
+              const fondo = nombreDeFondo(p.ticker)
               return (
               <tr key={p.id} className="border-b border-border">
                 <td className="py-3 font-medium">
                   {fondo ? (
                     <>
-                      <span className="block">{fondo.name}</span>
+                      <span className="block">{fondo}</span>
                       <span className="block text-xs font-normal text-fg-subtle">
                         Fondo · {p.ticker}
                       </span>

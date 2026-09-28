@@ -648,9 +648,26 @@ export function buscarFondosPorTexto(query: string): ResolucionFondo[] {
     .filter((r): r is ResolucionFondo => r != null)
 }
 
-/** ¿Lo que ha escrito el usuario es un fondo? Lo usa el formulario para pedir euros. */
+/**
+ * Nombre para enseñar de un fondo o de una CLASE del catálogo. Null si no es un fondo.
+ *
+ * Existe porque `buscarFondo` solo mira las fichas, y desde el 25-sep hay clases sin ficha
+ * propia. El 28-sep se vio el efecto: el ISIN de una clase que el servidor analizaba bien
+ * hacía que el formulario pidiera «participaciones» y precio en vez de euros, y que la tabla
+ * lo enseñara como un ISIN suelto con «precio medio 0 €». El cálculo estaba bien; la
+ * pantalla invitaba a meter un dato equivocado.
+ */
+export function nombreDeFondo(entrada: string): string | null {
+  const fondo = buscarFondo(entrada)
+  if (fondo) return fondo.name
+  const clase = resolverClase(entrada)
+  if (!clase) return null
+  return 'analizable' in clase ? clase.analizable.fondo.name : clase.noAnalizable.nombre
+}
+
+/** ¿Lo que ha escrito el usuario es un fondo o una clase? Lo usa el formulario para pedir euros. */
 export function esFondoIndexado(entrada: string): boolean {
-  return buscarFondo(entrada) != null
+  return nombreDeFondo(entrada) != null
 }
 
 /**
