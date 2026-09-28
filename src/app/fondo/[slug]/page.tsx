@@ -280,7 +280,7 @@ export default async function FondoPage({ params }: { params: Promise<{ slug: st
                         <td className="py-2 pr-4 text-fg font-medium">{c.className}</td>
                         <td className="py-2 pr-4 font-mono text-xs text-fg-muted">{c.isin}</td>
                         <td className="py-2 pr-4 text-right text-fg">{pct(c.ter)}</td>
-                        <td className="py-2 text-fg-muted">{c.institutional ? 'institucionales*' : 'particulares'}</td>
+                        <td className="py-2 text-fg-muted">{c.institutional ? 'institucionales*' : c.audienciaSinComprobar ? 'sin comprobar' : 'particulares'}</td>
                       </tr>
                     ))}
                   </tbody>

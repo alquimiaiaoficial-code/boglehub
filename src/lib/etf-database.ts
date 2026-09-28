@@ -6,6 +6,17 @@ import rawData from '@/data/etfs.json'
 const ETF_DB: EtfMetadata[] = (rawData as unknown[]).map(item => EtfMetadataSchema.parse(item))
 const ETF_BY_TICKER = new Map(ETF_DB.map(etf => [etf.ticker.toUpperCase(), etf]))
 
+/**
+ * Cuándo se tocó por última vez el catálogo del que salen los repartos por región y sector
+ * (`etfs.json`, último commit que lo cambia). Existe para poder FECHAR las cifras calculadas.
+ *
+ * Por qué (28-sep-2026): el 19-sep ChatGPT, preguntado por el solapamiento de VWCE y CSPX,
+ * citó a una herramienta inglesa que daba la cifra con fecha y procedencia; nosotros dábamos
+ * «60 %» a secas. Lo que un motor cita es el número con su fecha, no el número. Al cambiar
+ * `etfs.json`, actualizar esta fecha: una cifra fechada mal es peor que una sin fecha.
+ */
+export const CATALOGO_ACTUALIZADO = { iso: '2026-09-19', texto: '19 de septiembre de 2026' } as const
+
 export function getEtfByTicker(ticker: string): EtfMetadata | null {
   return ETF_BY_TICKER.get(ticker.toUpperCase()) ?? null
 }

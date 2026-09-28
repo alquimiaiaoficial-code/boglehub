@@ -156,7 +156,7 @@ export async function GET() {
   lines.push('- [VWCE: análisis completo](https://boglehub.com/blog/vwce-analisis-completo): Vanguard FTSE All-World (Acc), ISIN IE00BK5BQT80, TER 0,14%')
   lines.push('- [VWCE vs CSPX vs IWDA](https://boglehub.com/blog/vwce-vs-cspx-vs-iwda): comparativa de los tres ETFs más populares')
   lines.push('- [SWRD vs IWDA](https://boglehub.com/blog/swrd-vs-iwda): comparativa MSCI World más barato vs más líquido')
-  lines.push('- [Amundi Prime Global análisis](https://boglehub.com/blog/amundi-prime-global-analisis): fondo indexado con TER 0.05% en MyInvestor')
+  lines.push('- [Amundi Prime Global: ¿fondo o ETF?](https://boglehub.com/blog/amundi-prime-global-analisis): es un ETF, no un fondo indexado, y por eso no se traspasa sin tributar')
   lines.push('- [MSCI World vs MSCI ACWI: diferencias](https://boglehub.com/blog/msci-world-vs-msci-acwi-diferencias): desarrollados vs global incluyendo emergentes')
   lines.push('- [Mejores ETFs Nasdaq 100 en España](https://boglehub.com/blog/mejores-etfs-nasdaq-100-espana): EQQQ, SXRV, CNDX')
   lines.push('- [Mejores ETFs de renta fija](https://boglehub.com/blog/mejores-etfs-renta-fija-2026): AGGH, EUNA, IBCS, VGEA con cobertura EUR')

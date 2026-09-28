@@ -337,7 +337,7 @@ export const INVESTOR_PROFILES: InvestorProfile[] = [
     name: 'Patrimonio grande (>500k€)',
     tagline: 'Optimización para inversores con cartera grande',
     description:
-      'Cuando el patrimonio supera los 500.000€, las decisiones marginales (0,1% más caro o 0,1% más eficiente) pasan de irrelevantes a importantes. Sobre 1M€, cada décima de TER son 1.000€/año. La estrategia se enfoca en máxima eficiencia fiscal (Irlanda y acumulación), TER mínimo (SWRD vs IWDA, Amundi Prime Global vs Vanguard), diversificación entre brokers para garantías y planificación sucesoria.',
+      'Cuando el patrimonio supera los 500.000€, las decisiones marginales (0,1% más caro o 0,1% más eficiente) pasan de irrelevantes a importantes. Sobre 1M€, cada décima de TER son 1.000€/año. La estrategia se enfoca en máxima eficiencia fiscal (Irlanda y acumulación), TER mínimo (SWRD frente a IWDA, o la clase dentro de un mismo fondo: 0,04 % frente a 0,10 % en el iShares Developed World), diversificación entre brokers para garantías y planificación sucesoria.',
     recommendations: {
       horizon: 'Largo plazo, generalmente >15 años',
       equityWeight: 'Según edad y plan',

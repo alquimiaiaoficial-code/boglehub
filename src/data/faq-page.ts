@@ -117,7 +117,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: '¿Cuál es el fondo indexado más barato disponible en España?',
-        a: 'El Amundi Prime Global (ISIN LU1931974692) tiene TER 0,05%, el más bajo entre los fondos indexados globales disponibles al inversor particular en España. Disponible en MyInvestor desde 1€, permite traspaso fiscal libre. Replica el índice Solactive GBS Global Markets, equivalente al MSCI World.',
+        a: 'Entre los fondos del MSCI World que tenemos verificados en la web de cada gestora (28-sep-2026), la clase S del iShares Developed World cuesta 0,04 % (es una clase institucional: el particular solo llega a ella a través de una plataforma que agrupe a sus clientes en cuenta ómnibus), su clase D 0,10 % y el Fidelity MSCI World 0,12 %. Cuál te sale más barato a ti depende de la clase que ofrezca tu plataforma. Ojo con el Amundi Prime Global, que suele aparecer en estas listas: es un ETF, no un fondo, y no se traspasa sin tributar.',
       },
     ],
   },

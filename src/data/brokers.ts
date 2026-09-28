@@ -165,7 +165,7 @@ export const BROKERS: Broker[] = [
     minimumOpening: '1€ en fondos',
     tagline: 'El único banco español con Vanguard, Amundi y traspaso fiscal libre',
     description:
-      'MyInvestor es la marca digital de Andbank España, un banco regulado por CNMV y Banco de España desde 2010. Es el único broker español que ofrece a la vez fondos indexados Vanguard institucionales, Amundi Prime Global (TER 0,05%) y Fidelity, junto con ETFs en bolsa europea. Su combinación única —fondos indexados + ETFs + traspaso fiscal libre + plan de pensiones indexado— lo convierte en la opción más completa para inversores residentes en España que quieren todo en una sola entidad.',
+      'MyInvestor es la marca digital de Andbank España, un banco regulado por CNMV y Banco de España desde 2010. Es el único broker español que ofrece a la vez fondos indexados de Vanguard, Fidelity y otras gestoras, junto con ETFs en bolsa europea. Su combinación única —fondos indexados + ETFs + traspaso fiscal libre + plan de pensiones indexado— lo convierte en la opción más completa para inversores residentes en España que quieren todo en una sola entidad.',
     idealFor: [
       'Quien quiera fondos indexados con traspaso fiscal libre',
       'Inversores que valoran banco regulado en España',
@@ -190,7 +190,7 @@ export const BROKERS: Broker[] = [
       },
       {
         q: '¿Qué es el Amundi Prime Global en MyInvestor?',
-        a: 'El Amundi Prime Global (ISIN LU1931974692) es el fondo indexado con el TER más bajo disponible para el inversor particular en España: 0,05% anual. Replica el índice Solactive GBS Global Markets (equivalente al MSCI World) y está disponible en MyInvestor desde 1€ de aportación, sin comisión de compra y con traspaso fiscal libre.',
+        a: 'El Amundi Prime Global (ISIN LU1931974692) no es un fondo indexado: es un ETF, el «Amundi Prime Global UCITS ETF DR (D)», y como cualquier ETF no se puede traspasar a otro producto sin tributar. Ese ISIN figura además como liquidado o fusionado; la gama viva es irlandesa (IE000QIF5N15 de reparto e IE0009DRDY20 de acumulación). Se cita a menudo como «el fondo indexado más barato de España», y nosotros mismos lo publicamos así hasta septiembre de 2026.',
       },
       {
         q: '¿MyInvestor tiene plan de pensiones indexado?',

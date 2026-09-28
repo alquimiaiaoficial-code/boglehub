@@ -172,6 +172,8 @@ interface DatasetSchema {
   keywords?: string[]
   variableMeasured?: string[]
   license?: string
+  /** Fecha de los datos, ISO. Sin ella una cifra calculada no es citable. */
+  dateModified?: string
 }
 
 interface FinancialProductSchema {
@@ -546,6 +548,7 @@ export function JsonLd({ schema }: { schema: Schema }) {
         variableMeasured: schema.variableMeasured,
       }),
       ...(schema.license && { license: schema.license }),
+      ...(schema.dateModified && { dateModified: schema.dateModified }),
       isAccessibleForFree: true,
     }
   } else if (schema.type === 'FinancialProduct') {

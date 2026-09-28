@@ -39,6 +39,12 @@ export interface FundClass {
   minimum: string
   /** Pensada para institucionales: el particular solo accede vía comercializadora. */
   institutional: boolean
+  /**
+   * La gestora no dice a quién va dirigida la clase, así que no lo afirmamos. Sin esto, el
+   * cuadro de la ficha ponía «particulares» a toda clase no institucional, y el 28-sep-2026
+   * lo estaba diciendo de la clase IE de Amundi sin que Amundi lo diga en ningún sitio.
+   */
+  audienciaSinComprobar?: boolean
   /** Fecha, URL de la ficha de la gestora y cita literal de los datos. */
   verified: string
 }
@@ -205,6 +211,7 @@ export const FUND_CLASSES: FundClass[] = [
     currency: 'EUR',
     minimum: 'No verificado: la ficha española de Vanguard muestra 1.000.000 € en todas sus clases, también en las que las plataformas ofrecen a particulares, así que no distingue una de otra. Compruébalo en tu plataforma',
     institutional: false,
+    audienciaSinComprobar: true,
     verified:
       '28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-variable/9837/global-stock-index-fund-eur-acc): «Global Stock Index Fund - EUR Acc (VANGEIS) | Índice de referencia: MSCI World Index | Comisión: 0,18 %». Misma comisión que la clase Investor de la ficha',
   },
@@ -217,6 +224,7 @@ export const FUND_CLASSES: FundClass[] = [
     currency: 'EUR',
     minimum: 'No verificado: la ficha española de Vanguard muestra 1.000.000 € en todas sus clases, también en las que las plataformas ofrecen a particulares, así que no distingue una de otra. Compruébalo en tu plataforma',
     institutional: false,
+    audienciaSinComprobar: true,
     verified:
       '28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-variable/9922/european-stock-index-fund-eur-acc): «European Stock Index Fund - EUR Acc (VANEINI) | Índice de referencia: MSCI Europe Index | Comisión: 0,12 %»',
   },
@@ -229,6 +237,7 @@ export const FUND_CLASSES: FundClass[] = [
     currency: 'EUR',
     minimum: 'No verificado: la ficha española de Vanguard muestra 1.000.000 € en todas sus clases, también en las que las plataformas ofrecen a particulares, así que no distingue una de otra. Compruébalo en tu plataforma',
     institutional: false,
+    audienciaSinComprobar: true,
     verified:
       '28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-variable/9229/emerging-markets-stock-index-fund-eur-acc): «Emerging Markets Stock Index Fund - EUR Acc (VANEMEI) | Índice de referencia: MSCI Emerging Markets Index | Comisión: 0,23 %»',
   },
@@ -241,6 +250,7 @@ export const FUND_CLASSES: FundClass[] = [
     currency: 'EUR',
     minimum: 'No verificado: la ficha española de Vanguard muestra 1.000.000 € en todas sus clases, también en las que las plataformas ofrecen a particulares, así que no distingue una de otra. Compruébalo en tu plataforma',
     institutional: false,
+    audienciaSinComprobar: true,
     verified:
       '28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-fija/9971/euro-government-bond-index-fund-eur-acc): «Euro Government Bond Index Fund - EUR Acc (VANEUGB) | Índice de referencia: Bloomberg Euro Government Float Adjusted Bond Index | Comisión: 0,12 %»',
   },
@@ -253,6 +263,7 @@ export const FUND_CLASSES: FundClass[] = [
     currency: 'EUR',
     minimum: 'No verificado: la documentación de Amundi que hemos leído no publica el mínimo de esta clase. Compruébalo en tu plataforma',
     institutional: false,
+    audienciaSinComprobar: true,
     verified:
       '28-sep-2026, Documento de Datos Fundamentales de la GESTORA (https://www.amundi.es/retail/dl/doc/kid-priips/LU0996181599/SPA/ESP, publicado el 28/04/2026): «Amundi Index MSCI World IE | objetivo: replicar la rentabilidad del MSCI World Index | Comisiones de gestión y otros costes administrativos o de funcionamiento: el 0,20 % del valor de su inversión al año»',
   },
@@ -265,6 +276,7 @@ export const FUND_CLASSES: FundClass[] = [
     currency: 'EUR',
     minimum: 'No verificado: la documentación de Amundi que hemos leído no publica el mínimo de esta clase. Compruébalo en tu plataforma',
     institutional: false,
+    audienciaSinComprobar: true,
     verified:
       '28-sep-2026, Documento de Datos Fundamentales de la GESTORA (https://www.amundi.es/retail/dl/doc/kid-priips/LU0996175948/SPA/ESP, publicado el 28/04/2026): «Amundi Core MSCI Emerging Markets IE | objetivo: replicar la rentabilidad del MSCI Emerging Markets Index | Comisiones de gestión y otros costes administrativos o de funcionamiento: el 0,20 % del valor de su inversión al año»',
   },
@@ -277,6 +289,7 @@ export const FUND_CLASSES: FundClass[] = [
     currency: 'EUR',
     minimum: 'No verificado: la documentación de Amundi que hemos leído no publica el mínimo de esta clase. Compruébalo en tu plataforma',
     institutional: false,
+    audienciaSinComprobar: true,
     verified:
       '28-sep-2026, Documento de Datos Fundamentales de la GESTORA (https://www.amundi.es/retail/dl/doc/kid-priips/LU0389811539/SPA/ESP, publicado el 05/06/2026): «Amundi Core MSCI Europe IE | objetivo: replicar la rentabilidad del MSCI Europe Index | Comisiones de gestión y otros costes administrativos o de funcionamiento: el 0,15 % del valor de su inversión al año»',
   },
@@ -289,6 +302,7 @@ export const FUND_CLASSES: FundClass[] = [
     currency: 'EUR',
     minimum: 'No verificado: la documentación de Amundi que hemos leído no publica el mínimo de esta clase. Compruébalo en tu plataforma',
     institutional: false,
+    audienciaSinComprobar: true,
     verified:
       '28-sep-2026, Documento de Datos Fundamentales de la GESTORA (https://www.amundi.es/retail/dl/doc/kid-priips/LU1050469870/SPA/ESP, publicado el 28/04/2026): «Amundi Core Euro Government Bond IE | objetivo: replicar la rentabilidad del Bloomberg Euro Treasury 50bn Bond Index | Comisiones de gestión y otros costes administrativos o de funcionamiento: el 0,15 % del valor de su inversión al año»',
   },
@@ -301,6 +315,7 @@ export const FUND_CLASSES: FundClass[] = [
     currency: 'EUR',
     minimum: 'No verificado: la documentación de Amundi que hemos leído no publica el mínimo de esta clase. Compruébalo en tu plataforma',
     institutional: false,
+    audienciaSinComprobar: true,
     verified:
       '28-sep-2026, Documento de Datos Fundamentales de la GESTORA (https://www.amundi.es/retail/dl/doc/kid-priips/LU0389812693/SPA/ESP, publicado el 28/04/2026): «Amundi Core Global Government Bond IHE | objetivo: replicar la rentabilidad del J.P. Morgan Government Bond Index Global (GBI Global) | Comisiones de gestión y otros costes administrativos o de funcionamiento: el 0,20 % del valor de su inversión al año»',
   },

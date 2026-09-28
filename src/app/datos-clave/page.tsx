@@ -148,7 +148,7 @@ export default function DatosClavePage() {
             'ETF MSCI World más barato: SWRD, TER 0,12%, ISIN IE00BFY0GT14',
             'ETF FTSE All-World más popular: VWCE, TER 0,14%, ISIN IE00BK5BQT80',
             'ETF S&P 500 de referencia: CSPX, TER 0,07%, ISIN IE00B5BMR087',
-            'Fondo indexado más barato en España: Amundi Prime Global, TER 0,05% (MyInvestor)',
+            'Fondos del MSCI World con menor comisión verificada en la gestora (28-sep-2026): iShares Developed World clase S 0,04% (clase institucional), clase D 0,10%, Fidelity MSCI World 0,12%. El Amundi Prime Global es un ETF, no un fondo',
             'Límite de aportación a plan de pensiones individual 2026: 1.500 €/año',
             'Convenio Irlanda-EE. UU.: retención sobre dividendos estadounidenses del 15% (vs 30%)',
             'Capital para FIRE (regla del 4%): 25 veces el gasto anual',
@@ -197,7 +197,7 @@ export default function DatosClavePage() {
 - ETF MSCI World más barato: SWRD (SPDR), TER 0,12%, ISIN IE00BFY0GT14, acumulación, domicilio Irlanda.
 - ETF FTSE All-World más popular: VWCE (Vanguard), TER 0,14%, ISIN IE00BK5BQT80, acumulación, ~3.700 empresas incluyendo emergentes.
 - ETF S&P 500 UCITS de referencia: CSPX (iShares), TER 0,07%, ISIN IE00B5BMR087, acumulación, domicilio Irlanda.
-- Fondo indexado más barato en España: Amundi Prime Global, TER 0,05%, disponible en MyInvestor con traspaso fiscal libre.
+- Fondos del MSCI World con menor comisión verificada en la gestora (28-sep-2026): iShares Developed World clase S 0,04 % (clase institucional, 200 millones de inversión inicial para quien suscribe), clase D 0,10 %, Fidelity MSCI World 0,12 %. El Amundi Prime Global, que se cita a menudo como el fondo más barato, es un ETF y no tiene traspaso sin tributar.
 - Límite de aportación a plan de pensiones individual 2026: 1.500 €/año (deducible en la base general del IRPF).
 - Convenio Irlanda–EE. UU.: retención sobre dividendos estadounidenses del 15% (frente al 30% en otros domicilios); por eso los ETF irlandeses (ISIN IE…) son más eficientes fiscalmente.
 - Capital necesario para FIRE (regla del 4%): 25 veces el gasto anual (p. ej. 30.000 €/año de gasto → 750.000 € de capital).

@@ -179,7 +179,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     longDefinition:
       'Un fondo indexado es un fondo de inversión cuya estrategia es replicar la composición y rentabilidad de un índice bursátil específico, comprando las mismas acciones (o una muestra representativa) en las mismas proporciones que el índice. A diferencia de la gestión activa, no intenta "batir al mercado": busca igualarlo al menor coste posible.\n\nEn España, los fondos indexados disfrutan de una ventaja fiscal clave sobre los ETFs: **el traspaso entre fondos no tributa**. Esto significa que puedes mover dinero entre distintos fondos indexados sin pasar por Hacienda, difiriendo el IRPF hasta el momento del rescate real. Esta ventaja es especialmente valiosa para inversores de largo plazo que prevén rebalancear o cambiar de fondo varias veces.',
     example:
-      'El Amundi Prime Global (TER 0,05%) replica el índice Solactive Global Markets, equivalente al MSCI World. Disponible en MyInvestor desde 1€, permite traspaso fiscal libre a otro fondo indexado sin pagar IRPF por las plusvalías acumuladas.',
+      'El Vanguard Global Stock Index Fund replica el MSCI World con unos gastos del 0,18 % según Vanguard. Como es un fondo de inversión y no un ETF, se puede traspasar a otro fondo indexado sin pagar IRPF en ese momento por las plusvalías acumuladas.',
     relatedArticles: [
       'amundi-prime-global-analisis',
       'fondos-indexados-vs-etfs-espana',
@@ -191,7 +191,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       },
       {
         q: '¿Cuál es el fondo indexado más barato para empezar en España?',
-        a: 'El Amundi Prime Global tiene un TER del 0,05% y está disponible en MyInvestor desde 1€. Replica el índice Solactive Global Markets, equivalente al MSCI World, y permite traspaso fiscal libre a otro fondo indexado.',
+        a: 'Entre los fondos del MSCI World que tenemos verificados en la web de cada gestora (28-sep-2026), la clase S del iShares Developed World cuesta 0,04 % (es una clase institucional: el particular solo llega a ella a través de una plataforma que agrupe a sus clientes en cuenta ómnibus), su clase D 0,10 % y el Fidelity MSCI World 0,12 %. El Amundi Prime Global, que se cita a menudo, es un ETF y no un fondo.',
       },
       {
         q: '¿Un fondo indexado intenta batir al mercado?',
@@ -1207,11 +1207,11 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     longDefinition:
       'La comisión de gestión es el ingreso principal de las gestoras (Vanguard, BlackRock, Amundi, Fidelity) y la principal diferencia entre fondos baratos y caros. Se aplica como porcentaje anual sobre el patrimonio del fondo y se descuenta automáticamente del valor liquidativo, día a día.\n\nPara fondos de gestión activa, la comisión de gestión típica en España es 1,2-2% anual. Para fondos indexados, varía entre 0,05% (Amundi Prime Global) y 0,30% (algunos fondos especializados). La diferencia acumulada durante 30 años puede transformar tu cartera final entre el doble y la mitad.\n\nAdemás de la comisión de gestión, los fondos pueden tener: **comisión de éxito** (porcentaje sobre la rentabilidad obtenida), **comisión de suscripción** (al entrar), **comisión de reembolso** (al salir), **comisión de custodia** (al banco depositario). El conjunto se refleja en el TER.',
     example:
-      'Un fondo activo del banco con comisión de gestión 1,75% + comisión éxito 9% sobre beneficio anual. Frente a Amundi Prime Global con comisión gestión 0,05% sin comisión éxito. Sobre 100.000€ a 30 años, la diferencia acumulada supera los 200.000€.',
+      'Un fondo activo del banco con comisión de gestión 1,75% + comisión éxito 9% sobre beneficio anual. Frente a un fondo indexado del MSCI World con una comisión del 0,10 % y sin comisión de éxito. Sobre 100.000€ a 30 años, la diferencia acumulada supera los 200.000€.',
     faq: [
       {
         q: '¿Qué comisión de gestión es razonable en un fondo?',
-        a: 'En fondos indexados, entre el 0,05% (Amundi Prime Global) y el 0,30%. Los fondos de gestión activa cobran típicamente 1,2-2% anual en España. La diferencia acumulada en 30 años puede transformar tu cartera final entre el doble y la mitad.',
+        a: 'En los fondos indexados que tenemos verificados en cada gestora (28-sep-2026), entre el 0,04 % de una clase institucional y el 0,58 %. Los fondos de gestión activa cobran típicamente 1,2-2% anual en España. La diferencia acumulada en 30 años puede transformar tu cartera final entre el doble y la mitad.',
       },
       {
         q: '¿La comisión de gestión es lo mismo que el TER?',
@@ -1927,7 +1927,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     longDefinition:
       'Un índice bursátil es un indicador que agrupa un conjunto de valores cotizados (acciones, bonos) y mide su evolución conjunta a lo largo del tiempo. Funciona como el "termómetro" de un mercado: cuando se dice que "la bolsa subió un 1%", normalmente se refiere a que subió su índice de referencia.\n\nCada índice tiene una metodología que define qué incluye y con qué peso. Los más relevantes para el inversor indexado:\n- **IBEX 35**: las 35 mayores empresas españolas.\n- **S&P 500**: las 500 mayores de EE.UU.\n- **MSCI World**: ~1.400 empresas de 23 países desarrollados.\n- **FTSE All-World / MSCI ACWI**: desarrollados + emergentes, el mercado global.\n\nLa mayoría de índices ponderan a cada empresa según su capitalización bursátil: las más grandes pesan más. Esto hace que el índice se autoajuste al mercado sin intervención.\n\nLos índices no se pueden comprar directamente: son cálculos. Para "invertir en un índice" usas un fondo indexado o un ETF que lo replica comprando las mismas empresas en las mismas proporciones. Esa es la esencia de la inversión indexada: en vez de elegir acciones, replicas un índice entero al menor coste.',
     example:
-      'No puedes "comprar el MSCI World" directamente, pero sí un ETF como IWDA o un fondo como el Amundi Prime Global que lo replican. Si el índice sube un 8% en el año, tu fondo subirá aproximadamente ese 8% menos un TER mínimo.',
+      'No puedes "comprar el MSCI World" directamente, pero sí un ETF como IWDA o un fondo como el Vanguard Global Stock Index que lo replican. Si el índice sube un 8% en el año, tu fondo subirá aproximadamente ese 8% menos un TER mínimo.',
     relatedArticles: [
       'que-es-el-msci-world',
       'bogleheads-espana-guia-completa',

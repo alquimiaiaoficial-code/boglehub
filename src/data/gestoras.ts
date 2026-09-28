@@ -132,7 +132,7 @@ export const GESTORAS: Gestora[] = [
     etfBrand: 'Amundi ETF (antes Lyxor)',
     tagline: 'Mayor gestora europea, fusionada con Lyxor en 2022',
     description:
-      'Amundi es la mayor gestora de activos europea, con sede en París. En 2022 adquirió Lyxor, integrando dos familias de ETFs UCITS en una sola. Para inversores españoles, Amundi destaca especialmente por el Amundi Prime Global (TER 0,05%), el fondo indexado global más barato disponible al inversor particular en España vía MyInvestor, con traspaso fiscal libre.',
+      'Amundi es la mayor gestora de activos europea, con sede en París. En 2022 adquirió Lyxor, integrando dos familias de ETFs UCITS en una sola. En España se la conoce sobre todo por la gama Prime, que son ETFs y no fondos, así que no tienen el traspaso sin tributar de los fondos. Sus fondos indexados son las gamas Index y Core, cuya comisión conviene mirar clase a clase: el Amundi Index MSCI World cuesta 0,30 % en su clase AE y 0,20 % en la IE, según sus documentos de datos fundamentales de abril de 2026.',
     popularEtfs: [
       { ticker: 'MWRD', name: 'Amundi Core MSCI World UCITS ETF' },
       { ticker: 'AEEM', name: 'Amundi MSCI Emerging Markets UCITS ETF' },
@@ -142,8 +142,8 @@ export const GESTORAS: Gestora[] = [
     officialUrl: 'https://www.amundi.es',
     faq: [
       {
-        q: '¿Qué es el Amundi Prime Global y por qué destaca?',
-        a: 'El Amundi Prime Global (ISIN LU1931974692) es un fondo indexado con TER 0,05%, el más bajo disponible al inversor particular en España. Replica el índice Solactive GBS Global Markets (equivalente al MSCI World). Solo disponible en MyInvestor desde 1€ con traspaso fiscal libre. Es la más barata en coste para la exposición global a mercados desarrollados.',
+        q: '¿El Amundi Prime Global es un fondo indexado?',
+        a: 'El Amundi Prime Global (ISIN LU1931974692) no es un fondo indexado: es un ETF, el «Amundi Prime Global UCITS ETF DR (D)», y como cualquier ETF no se puede traspasar a otro producto sin tributar. Ese ISIN figura además como liquidado o fusionado; la gama viva es irlandesa (IE000QIF5N15 de reparto e IE0009DRDY20 de acumulación). Se cita a menudo como «el fondo indexado más barato de España», y nosotros mismos lo publicamos así hasta septiembre de 2026.',
       },
       {
         q: '¿Qué pasó con Lyxor después de la fusión con Amundi?',

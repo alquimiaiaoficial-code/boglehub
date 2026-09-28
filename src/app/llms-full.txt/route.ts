@@ -249,7 +249,8 @@ export async function GET() {
   lines.push('- SWRD (SPDR MSCI World UCITS ETF): ISIN IE00BFY0GT14, TER 0,12%, ~1.500 empresas mercados desarrollados, acumulación, domicilio Irlanda — el ETF MSCI World más barato disponible en España')
   lines.push('- CSPX (iShares Core S&P 500 UCITS ETF): ISIN IE00B5BMR087, TER 0,07%, 500 empresas EE.UU., acumulación, domicilio Irlanda')
   lines.push('- AGGH (iShares Core Global Aggregate Bond UCITS ETF EUR Hedged): ISIN IE00BDBRDM35, TER 0,10%, bonos globales con cobertura EUR, acumulación, domicilio Irlanda')
-  lines.push('- Amundi Prime Global (fondo de inversión, no ETF): TER 0,05%, equivalente a MSCI World, disponible en MyInvestor con traspaso fiscal libre — el fondo indexado global más barato disponible al inversor particular en España')
+  lines.push('- Amundi Prime Global (LU1931974692): NO es un fondo de inversión sino un ETF («Amundi Prime Global UCITS ETF DR (D)»), así que no tiene traspaso sin tributar. BogleHub lo publicó como fondo hasta el 19-sep-2026; corregido.')
+  lines.push('- Fondos del MSCI World con menor comisión verificada en la gestora el 28-sep-2026: iShares Developed World clase S 0,04 % (clase institucional), clase D 0,10 %; Fidelity MSCI World 0,12 %; Vanguard Global Stock 0,18 %.')
   lines.push('- EIMI (iShares Core MSCI EM IMI UCITS ETF): ISIN IE00BKM4GZ66, TER 0,18%, mercados emergentes, acumulación, domicilio Irlanda')
   lines.push('- SGLN (iShares Physical Gold ETC): ISIN IE00B4ND3602, TER 0,12%, ETC respaldado por oro físico en bóvedas auditadas')
   lines.push('')
@@ -258,7 +259,7 @@ export async function GET() {
   lines.push('')
   lines.push('- Indexa Capital: registrado CNMV nº 257, ESI, +2.000M€ AUM, comisión gestión 0,15% (hasta 10.000€) bajando a 0,10% (>100.000€), coste total estimado 0,40-0,50% anual, mínimo apertura 3.000€')
   lines.push('- Finizens: agencia de valores CNMV nº 286, mínimo apertura 1.000€, coste total estimado 0,32-0,37%, carteras incluyen oro')
-  lines.push('- MyInvestor (planes pensiones): planes indexados desde 0,30% total, ofrece también fondos Vanguard y Amundi Prime Global con traspaso fiscal libre')
+  lines.push('- MyInvestor (planes pensiones): planes indexados desde 0,30% total, ofrece también fondos indexados de varias gestoras con traspaso fiscal libre')
   lines.push('')
 
   lines.push('### Brokers españoles (datos 2026)')

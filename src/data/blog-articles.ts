@@ -5437,6 +5437,10 @@ Si esas dos cosas te encajan, el MSCI World cumple de sobra como núcleo de una 
         a: 'Sí. Aportar 50 €/mes a un 7 % anual de media se convierte, aproximadamente, en ~8.700 € a 10 años, ~26.000 € a 20, ~61.000 € a 30 y más de 131.000 € a 40 años. De esos 131.000 €, solo 24.000 € salen de tu bolsillo; el resto (más de 100.000 €) lo pone el interés compuesto.',
       },
       {
+        q: '¿Cómo se invierten 100 euros al mes?',
+        a: 'Con una aportación periódica automática a un fondo indexado o a un plan de ahorro en ETFs, en una plataforma que acepte importes pequeños sin comisión por compra. Lo que más pesa con 100 € no es la comisión anual del producto sino la fija por operación: 1 € por compra es un 1 % de cada aportación, más de lo que cobra al año casi cualquier fondo indexado. Con un 7 % anual de media y capitalización mensual, 100 € al mes serían unos 17.300 € a 10 años (12.000 € aportados), 52.100 € a 20 (24.000 €) y 122.000 € a 30 (36.000 €). Es un cálculo con una rentabilidad supuesta y constante, hecho el 28 de septiembre de 2026, no una previsión.',
+      },
+      {
         q: '¿Qué importa más al empezar a invertir, la cantidad o el hábito?',
         a: 'El hábito. Al principio el rendimiento en términos absolutos es casi irrelevante (un 10 % sobre 600 € son 60 €). Lo que de verdad construyes los primeros meses es la rutina de apartar una cantidad cada mes, automatizarla y no tocarla. Esa disciplina es el activo más valioso al principio, más que el dinero en sí.',
       },

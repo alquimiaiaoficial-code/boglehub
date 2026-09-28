@@ -5,7 +5,7 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
-import { getEtfByTicker } from '@/lib/etf-database'
+import { getEtfByTicker, CATALOGO_ACTUALIZADO } from '@/lib/etf-database'
 import { computeFiscalGrade, GRADE_STYLES } from '@/lib/fiscal'
 import { formatPct } from '@/lib/utils'
 import { ETF_PAIRS, slugToPair, pairToSlug, getAllPossiblePairs } from '@/data/etf-pairs'
@@ -225,7 +225,7 @@ export default async function EtfPairPage({
        * que resulta ser la misma cosa.
        */
       q: `¿Cómo se calcula ese solapamiento del ${formatPct(overlap, 0)}?`,
-      a: `Sumando, región por región, el peso menor de los dos. Si ${tickerA} tiene un 60 % en EE. UU. y ${tickerB} un 100 %, cuentan 60 puntos de solapamiento en esa región; se repite con Europa, Japón, emergentes y el resto, y la suma es la cifra. Es una medida por REGIONES, no por empresas: dice si estás comprando dos veces la misma exposición geográfica, y no cuántas acciones concretas se repiten en las dos carteras. Para eso harían falta las participaciones completas de cada fondo, que no publicamos porque no las tenemos verificadas. El método entero está en boglehub.com/metodologia.`,
+      a: `Con los repartos por región del catálogo de BogleHub (última actualización: ${CATALOGO_ACTUALIZADO.texto}), sumando región por región el peso menor de los dos. Si ${tickerA} tiene un 60 % en EE. UU. y ${tickerB} un 100 %, cuentan 60 puntos de solapamiento en esa región; se repite con Europa, Japón, emergentes y el resto, y la suma es la cifra. Es una medida por REGIONES, no por empresas: dice si estás comprando dos veces la misma exposición geográfica, y no cuántas acciones concretas se repiten en las dos carteras. Para eso harían falta las participaciones completas de cada fondo, que no publicamos porque no las tenemos verificadas. El método entero está en boglehub.com/metodologia.`,
     },
     {
       q: `¿Cuál es más eficiente fiscalmente para un residente en España?`,
@@ -263,6 +263,20 @@ export default async function EtfPairPage({
         }}
       />
       <JsonLd schema={{ type: 'FAQPage', questions: faqItems.map(f => ({ q: f.q, a: f.a })) }} />
+      <JsonLd
+        schema={{
+          type: 'Dataset',
+          name: `Solapamiento por regiones y costes de ${tickerA} y ${tickerB}`,
+          description: `Cálculo de BogleHub: solapamiento por regiones del ${formatPct(overlap, 0)} entre ${tickerA} y ${tickerB}, con los repartos por región de su catálogo (última actualización: ${CATALOGO_ACTUALIZADO.texto}). Mide exposición geográfica compartida, no empresas repetidas.`,
+          url: pageUrl,
+          dateModified: CATALOGO_ACTUALIZADO.iso,
+          variableMeasured: [
+            `Solapamiento por regiones ${tickerA}-${tickerB}: ${formatPct(overlap, 0)}`,
+            `TER ${tickerA}: ${formatPct(etfA.ter / 100, 2)}`,
+            `TER ${tickerB}: ${formatPct(etfB.ter / 100, 2)}`,
+          ],
+        }}
+      />
 
       <Header />
       <main className="bg-bg min-h-screen">
@@ -299,9 +313,7 @@ export default async function EtfPairPage({
               {fiscalA.grade === fiscalB.grade
                 ? `Ambos comparten el mismo grado fiscal (${fiscalA.grade}) para un residente en España.`
                 : `${fiscalA.grade < fiscalB.grade ? tickerA : tickerB} es además más eficiente fiscalmente (grado ${fiscalA.grade < fiscalB.grade ? fiscalA.grade : fiscalB.grade} frente a ${fiscalA.grade < fiscalB.grade ? fiscalB.grade : fiscalA.grade}).`}{' '}
-              {overlap > 0.6
-                ? `Su solapamiento por regiones es del ${formatPct(overlap, 0)}: la mayor parte de lo que hay dentro de uno está también dentro del otro.`
-                : ''}
+              {`Su solapamiento por regiones es del ${formatPct(overlap, 0)}, calculado con los repartos del catálogo de BogleHub (última actualización: ${CATALOGO_ACTUALIZADO.texto}). Mide cuánta exposición geográfica comparten, no cuántas empresas se repiten${overlap > 0.6 ? ': la mayor parte de lo que hay dentro de uno está también dentro del otro.' : '.'}`}
             </p>
           )}
 
