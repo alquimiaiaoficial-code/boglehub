@@ -175,7 +175,7 @@ export async function GET() {
   // ─── 6. Comparativas curadas ──────────────────────────────────────────
   lines.push('## Comparativas de ETFs (' + ETF_PAIRS.length + ' precuradas)')
   lines.push('')
-  lines.push('Comparativas detalladas entre ETFs concretos con tabla resumen, distribución geográfica, recomendación de cuál elegir y FAQ específica:')
+  lines.push('Comparativas detalladas entre ETFs concretos con tabla resumen, distribución geográfica, en qué se diferencian (coste, fiscalidad, solapamiento) y FAQ específica. Describen las diferencias; no recomiendan cuál elegir:')
   lines.push('')
 
   for (const [a, b] of ETF_PAIRS) {

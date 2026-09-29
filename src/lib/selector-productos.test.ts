@@ -85,3 +85,15 @@ describe('una clase es un fondo también en el formulario y en la tabla', () => 
     expect(nombreDeFondo('VWCE')).toBeNull()
   })
 })
+
+describe('variantes de escritura', () => {
+  it('«sp500», «sp 500» y «s&p500» encuentran lo mismo que «s&p 500»', async () => {
+    const { catalogoSelector, filtrarCatalogo } = await import('./selector-productos')
+    const cat = catalogoSelector()
+    const base = filtrarCatalogo(cat, 's&p 500').map((o) => o.valor)
+    expect(base.length).toBeGreaterThan(3)
+    for (const q of ['sp500', 'sp 500', 's&p500', 'SP500']) {
+      expect(filtrarCatalogo(cat, q).map((o) => o.valor)).toEqual(base)
+    }
+  })
+})

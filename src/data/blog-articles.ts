@@ -715,7 +715,7 @@ La gestora que **creó el primer ETF de la historia**. Tiene algunas opciones de
 Antes de elegir por gestora, mira el **producto concreto**:
 
 1. **El índice que replica**: que sea el que quieres (MSCI World, FTSE All-World, S&P 500…). Dos gestoras distintas que replican el mismo índice te dan, en la práctica, casi lo mismo.
-2. **El TER (coste)**: a igualdad de índice, el más barato gana a largo plazo. Aquí Amundi y SPDR suelen ser competitivos, pero compara caso a caso.
+2. **El TER (coste)**: a igualdad de índice, el de menor TER deja más rentabilidad neta a largo plazo, porque la comisión se descuenta todos los años. Aquí Amundi y SPDR suelen tener TER bajos, pero cambia de un producto a otro.
 3. **El domicilio**: prioriza **Irlanda** (ISIN que empieza por IE) por su eficiencia fiscal en dividendos. Lo explicamos en [cómo elegir tu primer ETF](/blog/como-elegir-tu-primer-etf-espana-2026).
 4. **La réplica y el tamaño**: la réplica física y un patrimonio amplio suelen dar menos sorpresas de seguimiento.
 

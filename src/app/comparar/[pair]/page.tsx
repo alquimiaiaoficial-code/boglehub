@@ -8,6 +8,7 @@ import { JsonLd } from '@/components/JsonLd'
 import { getEtfByTicker, CATALOGO_ACTUALIZADO } from '@/lib/etf-database'
 import { computeFiscalGradeEtf, politicaDeReparto, GRADE_STYLES } from '@/lib/fiscal'
 import { formatPct } from '@/lib/utils'
+import { costeDiferenciaTer } from '@/lib/coste-ter'
 import { slugToPair, pairToSlug, getAllPossiblePairs } from '@/data/etf-pairs'
 import type { EtfMetadata, Region } from '@/types/etf'
 import { robotsFor, soloIndexables } from '@/lib/seo-index-policy'
@@ -410,13 +411,17 @@ export default async function EtfPairPage({
             ))}
           </Card>
 
-          {/* ¿Cuál elegir? */}
+          {/* Qué los diferencia. Hasta el 29-sep-2026 esta tarjeta se titulaba «¿Cuál elegir?» y
+              mandaba elegir el más barato, daba a ese por ganador y declaraba la «ventaja» fiscal
+              de uno de los dos, en las 53 comparativas: decidir por el lector, que es la línea de
+              CUMPLIMIENTO-LEGAL.md §1.
+              Ahora dice en qué se diferencian y cuánto, y la elección se queda fuera. */}
           <Card className="mb-6">
-            <CardTitle className="mb-4">¿Cuál elegir?</CardTitle>
+            <CardTitle className="mb-4">Qué los diferencia</CardTitle>
             {sameFund ? (
               <div className="space-y-3 text-sm text-fg-muted leading-relaxed">
                 <p>
-                  Al ser el mismo fondo, la elección depende exclusivamente de dónde y cómo lo compras:
+                  Son el mismo fondo, así que lo único que cambia es dónde cotiza cada ticker:
                 </p>
                 <ul className="list-disc list-inside space-y-1">
                   <li>
@@ -439,21 +444,22 @@ export default async function EtfPairPage({
                   <p>
                     <strong className="text-fg">Clases de activo distintas.</strong>{' '}
                     {tickerA} ({ASSET_CLASS_LABEL[etfA.assetClass]}) y {tickerB} ({ASSET_CLASS_LABEL[etfB.assetClass]})
-                    son complementarios, no alternativos. Puedes tener ambos en una cartera diversificada.
+                    invierten en cosas distintas, así que uno no hace lo mismo que el otro.
                   </p>
                 )}
                 {terDiff >= 0.05 && (
                   <p>
-                    <strong className="text-fg">El coste importa: elige {cheaperTicker}.</strong>{' '}
-                    Una diferencia de {formatPct(terDiff / 100, 2)} anual parece pequeña, pero sobre 50.000 €
-                    a 20 años con un 7 % de retorno supone aproximadamente{' '}
-                    {Math.round(50000 * ((1.07 - terDiff / 100 / 2) ** 20 - 1.07 ** 20) * -1).toLocaleString('es-ES')} €
-                    {' '}menos en cartera. Si el universo de inversión es similar, el más barato gana.
+                    <strong className="text-fg">Diferencia de coste: {cheaperTicker} cuesta {formatPct(terDiff / 100, 2)} menos al año.</strong>{' '}
+                    Parece poco, pero es un coste que se paga todos los años sobre todo el patrimonio: sobre
+                    50.000 € a 20 años, con un 7 % anual antes de comisiones, esa diferencia sola supone
+                    unos{' '}
+                    {costeDiferenciaTer(50000, 0.07, Math.min(etfA.ter, etfB.ter) / 100, Math.max(etfA.ter, etfB.ter) / 100, 20).toLocaleString('es-ES')} €
+                    {' '}(cálculo ilustrativo, no una previsión).
                   </p>
                 )}
                 {fiscalA.grade !== fiscalB.grade && (
                   <p>
-                    <strong className="text-fg">Fiscalidad: ventaja para {fiscalA.grade < fiscalB.grade ? tickerA : tickerB}.</strong>{' '}
+                    <strong className="text-fg">Fiscalidad: {tickerA} tiene grado {fiscalA.grade} y {tickerB} grado {fiscalB.grade}.</strong>{' '}
                     {fiscalA.grade < fiscalB.grade ? fiscalA.reason : fiscalB.reason}
                   </p>
                 )}

@@ -34,6 +34,15 @@ export function normalizarBusqueda(texto: string): string {
   return texto.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
 }
 
+/**
+ * Formas de escribir lo mismo que la gente usa y los nombres oficiales no (29-sep-2026).
+ * Al probar el comparador, \u00absp500\u00bb no encontraba ni un producto: todos dicen \u00abS&P 500\u00bb.
+ * Se a\u00f1aden al texto donde se busca, no a lo que se ense\u00f1a.
+ */
+function conVariantes(texto: string): string {
+  return /s&p\s*500/.test(texto) ? `${texto} sp500 sp 500 s&p500` : texto
+}
+
 const pct = (n: number) => `${n.toFixed(2).replace('.', ',')} %`
 
 function opcionDeFondo(isin: string, ter: number, gestora: string, indice: string, region: string): OpcionProducto | null {
@@ -48,7 +57,7 @@ function opcionDeFondo(isin: string, ter: number, gestora: string, indice: strin
     ...('noAnalizable' in r ? { noAnalizable: true } : {}),
     // La región va en español («Japón», «Emergentes», «Pacífico sin Japón») porque los nombres de
     // los fondos están en inglés y la gente busca como habla.
-    busqueda: normalizarBusqueda([nombre, isin, gestora, indice, region].join(' ')),
+    busqueda: conVariantes(normalizarBusqueda([nombre, isin, gestora, indice, region].join(' '))),
   }
 }
 
@@ -72,7 +81,7 @@ export function catalogoSelector(): OpcionProducto[] {
       etiqueta: e.ticker,
       detalle: `ETF · ${e.name} · ${pct(e.ter)}${e.isin ? ` · ${e.isin}` : ''}`,
       tipo: 'etf' as const,
-      busqueda: normalizarBusqueda([e.ticker, e.name, e.isin ?? ''].join(' ')),
+      busqueda: conVariantes(normalizarBusqueda([e.ticker, e.name, e.isin ?? ''].join(' '))),
     }))
     .sort((a, b) => a.etiqueta.localeCompare(b.etiqueta, 'es'))
 

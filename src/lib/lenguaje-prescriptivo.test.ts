@@ -151,6 +151,17 @@ const PRESCRIPTIVAS: readonly [RegExp, string][] = [
   [/\b(?:etfs?|fondos?|productos?|brokers?)\s+recomendad[oa]s?\b/i, '«que se usan a menudo», «habituales»'],
   [/\bcartera\s+[óo]ptima\b/i, 'no hay una cartera óptima sin conocer a quien la lleva: «una combinación habitual»'],
   [/\brecomendadas?\s+para\s+tu\b/i, 'recomendación personalizada al lector: justo el requisito 3 de la CNMV'],
+  /**
+   * Añadidos el 29-sep-2026. Estaban en /comparar y en las 53 comparativas y ningún patrón
+   * los veía, porque el producto no estaba escrito: lo ponía el código. «Elige
+   * {cheaperTicker}» no contiene «el fondo» ni «el ETF», contiene una llave. Y el
+   * comparador prometía «recibe una recomendación personalizada» del chat, que es
+   * exactamente lo que no podemos dar.
+   */
+  [/\belige\s+\{/i, 'imperativo sobre un producto calculado en el código: describe la diferencia'],
+  [/\bel\s+m[áa]s\s+barato\s+gana\b/i, 'veredicto: di cuánto cuesta la diferencia, no quién gana'],
+  [/\bventaja\s+para\s+\{/i, 'veredicto sobre un producto calculado: di los dos grados y por qué'],
+  [/\brecib(?:e|es|ir[áa]s)\s+una\s+recomendaci[óo]n\b/i, 'promete recomendación: BogleHub no la da (§1)'],
 ]
 
 /**
