@@ -99,7 +99,7 @@ export async function generateMetadata({
   if (!etfA || !etfB) return { title: 'ETF no encontrado' }
 
   const title = `${tickerA} vs ${tickerB}: comparativa ${CURRENT_YEAR}`
-  const description = `Comparativa completa ${tickerA} vs ${tickerB}: TER (${formatPct(etfA.ter / 100, 2)} vs ${formatPct(etfB.ter / 100, 2)}), domicilio fiscal, asignación geográfica y sectorial. Cuál elegir para tu cartera indexada en España.`
+  const description = `Comparativa completa ${tickerA} vs ${tickerB}: TER (${formatPct(etfA.ter / 100, 2)} vs ${formatPct(etfB.ter / 100, 2)}), domicilio fiscal, asignación geográfica y sectorial, y en qué se diferencian para un inversor en España.`
 
   return {
     title,
