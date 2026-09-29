@@ -7690,12 +7690,13 @@ Selecciona 100 empresas con mayor dividend yield de mercados desarrollados. Conc
 
 | Dato | Valor |
 |---|---|
+| ISIN | IE00BYXVGX24 |
 | TER | 0,25% |
 | Distribución | Trimestral |
-| Dividend yield aprox | 2,5-3% |
+| Dividend yield | 1,38 % (Fidelity, 29-sep-2026) |
 | Domicilio | Irlanda |
 
-Foco exclusivo en EEUU, con criterio de calidad. No es estrictamente "alto dividendo" sino "calidad con dividendo decente". Encaja con quien quiere exposición específica al mercado americano. (Hasta el 29-sep-2026 esta tabla daba el ISIN IE00BYXVGZ48, que es el del Fidelity Global Quality Income, no el de este ETF; consulta el ISIN en la web de Fidelity antes de operar.)
+Foco exclusivo en EEUU, con criterio de calidad. No es estrictamente "alto dividendo" sino "calidad con dividendo decente". Encaja con quien quiere exposición específica al mercado americano. En Londres cotiza también como FUSI (en libras); es el mismo producto y el mismo ISIN. (Hasta el 29-sep-2026 esta tabla daba el ISIN del Fidelity Global Quality Income y una rentabilidad por dividendo del 2,5-3 %; los dos datos eran de otro producto o viejos.)
 
 ### 4. ZPRG — SPDR S&P Global Dividend Aristocrats UCITS ETF
 
