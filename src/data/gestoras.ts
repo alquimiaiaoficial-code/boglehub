@@ -163,7 +163,7 @@ export const GESTORAS: Gestora[] = [
       'Invesco es una gestora americana presente en Europa con productos UCITS. Su ETF más popular en España es EQQQ (Invesco EQQQ Nasdaq 100 UCITS ETF, ISIN IE0032077012), el ETF Nasdaq 100 más popular y líquido del mercado europeo. También tiene productos en oro, materias primas y ETFs sectoriales.',
     popularEtfs: [
       { ticker: 'EQQQ', name: 'Invesco EQQQ Nasdaq 100 UCITS ETF' },
-      { ticker: 'EGLN', name: 'Invesco Physical Gold ETC' },
+      { ticker: 'SGLD', name: 'Invesco Physical Gold ETC' },
     ],
     availableInMyInvestor: false,
     officialUrl: 'https://www.invesco.com',
@@ -184,18 +184,17 @@ export const GESTORAS: Gestora[] = [
     etfBrand: 'Xtrackers',
     tagline: 'ETFs alemanes de DWS (grupo Deutsche Bank)',
     description:
-      'Xtrackers es la marca de ETFs de DWS, gestora alemana del grupo Deutsche Bank. Productos UCITS competitivos en MSCI World, MSCI ACWI, eurozona y materias primas. El 4GLD (Xtrackers IE Physical Gold EUR) es un ETC de oro físico que cotiza directamente en euros, útil para inversores que quieren evitar el riesgo divisa en su exposición al oro.',
+      'Xtrackers es la marca de ETFs de DWS, gestora alemana del grupo Deutsche Bank. Productos UCITS competitivos en MSCI World, MSCI ACWI, eurozona y materias primas.',
     popularEtfs: [
       { ticker: 'XDWD', name: 'Xtrackers MSCI World UCITS ETF' },
       { ticker: 'XDEM', name: 'Xtrackers MSCI Emerging Markets UCITS ETF' },
-      { ticker: '4GLD', name: 'Xtrackers IE Physical Gold EUR ETC' },
     ],
     availableInMyInvestor: false,
     officialUrl: 'https://etf.dws.com',
     faq: [
       {
         q: '¿Por qué elegir Xtrackers sobre iShares o Vanguard?',
-        a: 'Para la mayoría de inversores, iShares y Vanguard son las gestoras con más patrimonio y volumen de negociación. Xtrackers tiene productos competitivos en algunos nichos: el 4GLD cotiza directamente en euros (útil para evitar conversión), y algunos productos europeos tienen TER más bajo. Para cartera estándar, iShares/Vanguard son más establecidos.',
+        a: 'Para la mayoría de inversores, iShares y Vanguard son las gestoras con más patrimonio y volumen de negociación. Xtrackers tiene productos competitivos en algunos nichos, y algunos de sus productos europeos tienen TER más bajo. Para cartera estándar, iShares/Vanguard son más establecidos.',
       },
     ],
   },

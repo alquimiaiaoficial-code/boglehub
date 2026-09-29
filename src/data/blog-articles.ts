@@ -7965,7 +7965,7 @@ Para una comparativa más amplia que incluya VWCE (FTSE All-World que sí incluy
       },
       {
         q: '¿Cómo incluyo oro en una cartera permanente desde España?',
-        a: 'La forma más eficiente es a través de un ETC físico de oro como SGLN (iShares Physical Gold ETC) o EGLN (Invesco Physical Gold ETC), ambos respaldados por oro físico custodiado en Londres. Tienen TER del 0,12-0,20% y se compran como cualquier ETF en bolsa. Alternativas: oro físico (monedas o lingotes), pero implica costes de custodia y problemas de liquidez. Los fondos de minería de oro no son sustitutos: tienen correlación con renta variable y no replican el comportamiento del metal.',
+        a: 'La forma más eficiente es a través de un ETC físico de oro como SGLN (iShares Physical Gold ETC) o SGLD (Invesco Physical Gold ETC), ambos respaldados por oro físico custodiado en Londres. Tienen TER del 0,12-0,20% y se compran como cualquier ETF en bolsa. Alternativas: oro físico (monedas o lingotes), pero implica costes de custodia y problemas de liquidez. Los fondos de minería de oro no son sustitutos: tienen correlación con renta variable y no replican el comportamiento del metal.',
       },
       {
         q: '¿Cuál es la rentabilidad histórica de la cartera permanente?',
@@ -8020,7 +8020,7 @@ Esta versión funciona excelentemente para inversores americanos. Para un invers
 |---|---|---|
 | Renta variable | 25% | VWCE (FTSE All-World) o IWDA (MSCI World) |
 | Bonos largo plazo | 25% | IBGL (iShares Euro Govt Bond 15-30y) o equivalente |
-| Oro | 25% | SGLN (iShares Physical Gold ETC) o EGLN (Invesco Physical Gold) |
+| Oro | 25% | SGLN (iShares Physical Gold ETC) o SGLD (Invesco Physical Gold) |
 | Liquidez / corto plazo | 25% | IBGS (iShares Euro Govt Bond 1-3y), cuenta remunerada o IB01 (Treasury 0-1y EUR Hedged) |
 
 **Ventajas de esta versión española**:
@@ -8062,7 +8062,7 @@ Esta versión funciona excelentemente para inversores americanos. Para un invers
 - Respaldado por oro físico custodiado en Londres
 - Sin riesgo de derivados, oro real
 
-**Alternativa: EGLN — Invesco Physical Gold ETC**
+**Alternativa: SGLD — Invesco Physical Gold ETC**
 - ISIN: IE00B579F325
 - TER: 0,12%
 - Mismo concepto, gestora diferente
@@ -8547,11 +8547,11 @@ Para aportaciones recurrentes pequeñas: Trade Republic. Para órdenes grandes: 
     faq: [
       {
         q: '¿Cuál es la mejor forma de invertir en oro desde España?',
-        a: 'Para la mayoría de inversores indexados, los ETC de oro físico (SGLN de iShares, IGLN o 4GLD de Xtrackers) son los más eficientes en coste: replican el precio del oro spot con TER bajo (0,12-0,20%), están respaldados por lingotes custodiados en bóvedas auditadas y se compran como cualquier ETF. Más eficientes que comprar oro físico (que tiene costes de custodia, seguro y spread alto) y mejor diversificación que invertir en mineras (que tienen riesgos empresariales adicionales).',
+        a: 'Para la mayoría de inversores indexados, los ETC de oro físico (SGLN o IGLN de iShares, SGLD de Invesco) son los más eficientes en coste: replican el precio del oro spot con TER bajo (0,12 %), están respaldados por lingotes custodiados en bóvedas auditadas y se compran como cualquier ETF. Más eficientes que comprar oro físico (que tiene costes de custodia, seguro y spread alto) y mejor diversificación que invertir en mineras (que tienen riesgos empresariales adicionales).',
       },
       {
         q: '¿Cómo tributa la venta de oro en España?',
-        a: 'Depende del formato. Los ETC de oro (SGLN, IGLN, 4GLD) tributan igual que cualquier ETF: la ganancia patrimonial se declara en la base del ahorro del IRPF (19-30%). El oro físico también tributa como ganancia patrimonial al venderlo, sumando todas las ventas del año por encima de los 1.000€. Los ETFs de mineras también tributan como ganancias patrimoniales. En todos los casos, no hay régimen especial por ser oro.',
+        a: 'Depende del formato. Los ETC de oro (SGLN, IGLN, SGLD) tributan cuando se venden: lo que ganes va a la base del ahorro del IRPF (19-30 %). El oro físico también tributa como ganancia patrimonial al venderlo, desde el primer euro. Los ETFs de mineras también tributan como ganancias patrimoniales. En todos los casos, no hay régimen especial por ser oro.',
       },
       {
         q: '¿Es mejor invertir en oro físico o en ETC de oro?',
@@ -8605,8 +8605,7 @@ Los Exchange Traded Commodities (ETC) de oro físico están respaldados al 100% 
 |---|---|---|---|
 | SGLN — iShares Physical Gold | IE00B4ND3602 | 0,12% | JP Morgan London |
 | IGLN — iShares Physical Gold | IE00B4ND3602 | 0,12% | JP Morgan London |
-| 4GLD — Xtrackers Physical Gold | DE000A1E0HR8 | 0,15% | Deutsche Bank |
-| EGLN — Invesco Physical Gold | IE00B579F325 | 0,12% | JP Morgan London |
+| SGLD — Invesco Physical Gold | IE00B579F325 | 0,12% | JP Morgan London |
 
 **Ventajas:**
 - TER muy bajo (0,12-0,20%)
@@ -8709,7 +8708,7 @@ Independientemente del formato (físico, ETC, mineras), las ganancias por venta 
 
 No hay tratamiento fiscal especial por ser oro. Las pérdidas pueden compensar ganancias del mismo año.
 
-**Caso particular del oro físico**: ventas inferiores a 1.000€ no requieren identificación del comprador en España, pero la ganancia sigue siendo declarable. No es "oro negro" ni una forma de ocultar patrimonio: el IRPF aplica igual.
+**Caso particular del oro físico**: la ganancia al venderlo se declara como cualquier otra, sea cual sea el importe. No es una forma de ocultar patrimonio: el IRPF aplica igual.
 
 ---
 

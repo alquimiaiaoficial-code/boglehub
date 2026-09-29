@@ -52,8 +52,6 @@ export const ETF_PAIRS: [string, string][] = [
   ['IUSN', 'ZPRS'],
   // Oro
   ['SGLN', 'IGLN'],
-  ['SGLN', '4GLD'],
-  ['IGLN', '4GLD'],
   // Nasdaq 100
   ['EQQQ', 'SXRV'],
   ['EQQQ', 'CNDX'],

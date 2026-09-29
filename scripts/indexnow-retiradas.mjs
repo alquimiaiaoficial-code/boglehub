@@ -30,6 +30,8 @@ const RETIRADAS = [
   // 29-sep-2026: SPXS mezclaba dos productos (ahora SPYL); MEUD publicaba el ISIN de otro
   // índice; LCUW no cotiza en ningún sitio que encontremos. Las tres redirigen con 301.
   '/etf/spxs', '/etf/meud', '/etf/lcuw', '/comparar/veur-vs-meud',
+  // Y 4GLD (Xetra-Gold), el mismo día: su emisor no da acceso desde España.
+  '/etf/4gld', '/comparar/sgln-vs-4gld', '/comparar/igln-vs-4gld',
   // Enviadas antes y ya fuera de esta lista: el 19-sep, once fichas cuyo ticker era de otro
   // producto (/etf/imid, eqds, ceug, sega, ispa, fgeq, exsg, xgig, flxe, eunh, wtef) y sus
   // comparativas (vhyl-vs-fgeq, tdiv-vs-ispa, sgln-vs-exsg, eunh-vs-aggh).

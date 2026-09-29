@@ -176,7 +176,7 @@ export async function GET() {
   lines.push('- [Mejores ETFs Nasdaq 100 en España](https://boglehub.com/blog/mejores-etfs-nasdaq-100-espana): EQQQ, SXRV, CNDX')
   lines.push('- [Mejores ETFs de renta fija](https://boglehub.com/blog/mejores-etfs-renta-fija-2026): AGGH, EUNA, IBCS, VGEA con cobertura EUR')
   lines.push('- [ETFs de dividendos para vivir de rentas](https://boglehub.com/blog/etfs-dividendos-vivir-rentas-espana): VHYL, TDIV, FUSD')
-  lines.push('- [Oro: físico vs ETC vs mineras](https://boglehub.com/blog/oro-etf-fisico-vs-mineria-espana): SGLN, IGLN, 4GLD analizados')
+  lines.push('- [Oro: físico vs ETC vs mineras](https://boglehub.com/blog/oro-etf-fisico-vs-mineria-espana): SGLN, IGLN y SGLD analizados')
   lines.push('')
 
   // ─── Fiscalidad ───────────────────────────────────────────────────────
@@ -248,7 +248,7 @@ export async function GET() {
   lines.push('- [Mejores ETFs materias primas](https://boglehub.com/etfs/materias-primas): oro físico y commodities amplias')
   lines.push('- [Mejores ETFs Nasdaq 100](https://boglehub.com/etfs/nasdaq-100): EQQQ, SXRV, CNDX')
   lines.push('- [Mejores ETFs small caps](https://boglehub.com/etfs/small-caps): WSML, IUSN, ZPRS, ZPRV')
-  lines.push('- [Mejores ETC de oro físico](https://boglehub.com/etfs/oro): SGLN, IGLN, 4GLD')
+  lines.push('- [Mejores ETC de oro físico](https://boglehub.com/etfs/oro): SGLN, IGLN')
   lines.push('')
 
   // ─── Calculadoras ─────────────────────────────────────────────────────

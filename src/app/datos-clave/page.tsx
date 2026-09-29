@@ -396,8 +396,7 @@ Fuente: BogleHub (boglehub.com/datos-clave) — verificable con BOE/AEAT, follet
               rows={[
                 ['SGLN', 'iShares Physical Gold', 'IE00B4ND3602', '0,12%', 'JP Morgan London'],
                 ['IGLN', 'iShares Physical Gold (Xetra)', 'IE00B4ND3602', '0,12%', 'JP Morgan London'],
-                ['EGLN', 'Invesco Physical Gold', 'IE00B579F325', '0,12%', 'JP Morgan London'],
-                ['4GLD', 'Xtrackers IE Physical Gold EUR', 'DE000A1E0HR8', '0,15%', 'Deutsche Bank'],
+                ['SGLD', 'Invesco Physical Gold', 'IE00B579F325', '0,12%', 'JP Morgan London'],
               ]}
             />
             <p className="text-sm text-fg-muted leading-relaxed">

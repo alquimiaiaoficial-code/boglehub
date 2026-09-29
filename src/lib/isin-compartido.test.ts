@@ -106,7 +106,7 @@ describe('ISINs compartidos entre ETFs', () => {
   it('todas las fichas publican un ISIN verificado en fuente', () => {
     const sinIsin = getAllEtfs().filter((e) => !e.isin).map((e) => e.ticker)
     expect(sinIsin, `fichas sin ISIN: ${sinIsin.join(', ')}`).toEqual([])
-    expect(getAllEtfs().length).toBe(53)
+    expect(getAllEtfs().length).toBe(52)
   })
 
   it('los ISINs que sí están verificados siguen puestos', () => {
@@ -219,7 +219,7 @@ describe('SPDR S&P 500 (Acc)', () => {
 describe('ETC de oro', () => {
   it('no se presentan como productos de distribución', async () => {
     const { computeFiscalGradeEtf, politicaDeReparto } = await import('./fiscal')
-    for (const t of ['SGLN', 'IGLN', '4GLD']) {
+    for (const t of ['SGLN', 'IGLN']) {
       const e = getAllEtfs().find((x) => x.ticker === t)!
       expect(e.assetClass).toBe('COMMODITY')
       expect(e.name).not.toMatch(/\(Dist\)/)

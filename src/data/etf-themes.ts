@@ -330,14 +330,14 @@ export const ETF_THEMES: EtfTheme[] = [
     h1: 'Los mejores ETC de oro físico UCITS para inversores en España (2026)',
     metaTitle: 'Mejores ETC de oro físico para España 2026 | BogleHub',
     metaDescription:
-      'Los mejores ETC de oro físico para España: SGLN, IGLN, 4GLD, con TER desde 0,12%. Custodia, fiscalidad y cuándo añadir oro como cobertura a tu cartera.',
+      'Los mejores ETC de oro físico para España: SGLN e IGLN, con TER del 0,12 %. Custodia, fiscalidad y qué papel se le suele dar al oro en una cartera.',
     intro:
       'Los ETC (Exchange Traded Commodities) de oro físico están respaldados por lingotes de oro custodiados en bóvedas seguras (principalmente Londres y Zúrich). Replican el precio del oro spot con baja fricción y son la forma más eficiente de tener exposición al oro sin comprar lingotes físicos. Para un inversor en España, el oro puede actuar como cobertura frente a la inflación, diversificador descorrelacionado de acciones y bonos, y componente clave de carteras como la cartera permanente de Harry Browne. Su rentabilidad histórica a largo plazo ha sido inferior a la renta variable pero con comportamiento diferenciador en crisis.',
     listH2: 'ETC de oro físico disponibles en España',
     faq: [
       {
         q: '¿Es seguro un ETC de oro físico?',
-        a: 'Sí, en términos operativos. Los principales ETC (SGLN de iShares, IGLN de iShares, 4GLD de Xtrackers) están respaldados por oro físico custodiado en bóvedas auditadas regularmente. El oro está segregado del emisor y permanece como propiedad del fondo. El riesgo principal no es operativo sino de mercado: el precio del oro es volátil (puede caer 20-30% en un año) y no genera ingresos como acciones o bonos.',
+        a: 'Sí, en términos operativos. Los principales ETC (SGLN e IGLN de iShares, SGLD de Invesco) están respaldados por oro físico custodiado en bóvedas auditadas regularmente. El oro está custodiado aparte y respalda los títulos del ETC. El riesgo principal no es operativo sino de mercado: el precio del oro es volátil (puede caer 20-30% en un año) y no genera ingresos como acciones o bonos.',
       },
       {
         q: '¿Cómo tributa la venta de un ETC de oro en España?',
@@ -348,8 +348,8 @@ export const ETF_THEMES: EtfTheme[] = [
         a: 'No hay una respuesta única. La filosofía Boglehead pura no incluye oro. La cartera permanente de Harry Browne sugiere 25%. Para una cartera indexada estándar, los inversores que añaden oro suelen ubicarlo en el 5-10% del total. Más del 15% supone una apuesta concentrada en un activo que no genera rendimientos internos.',
       },
       {
-        q: '¿Cuál es la diferencia entre SGLN, IGLN y 4GLD?',
-        a: 'SGLN e IGLN son dos cotizaciones del mismo producto, el iShares Physical Gold ETC (ISIN IE00B4ND3602), con un TER del 0,12 %: cambian la bolsa y la divisa en la que cotizan. 4GLD es otro producto, el Xetra-Gold (ISIN DE000A0S9GB0), respaldado por oro físico y que no cobra TER. En la práctica los separa en qué bolsa cotiza cada uno y qué cobra cada bróker por operar en ella.',
+        q: '¿Cuál es la diferencia entre SGLN e IGLN?',
+        a: 'Ninguna en el producto: son dos cotizaciones del mismo iShares Physical Gold ETC (ISIN IE00B4ND3602), con un TER del 0,12 %. Cambian la bolsa y la divisa en la que cotizan, y con ello lo que cobra cada bróker por operar.',
       },
     ],
     note:

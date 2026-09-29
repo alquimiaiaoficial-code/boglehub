@@ -1370,26 +1370,6 @@
     "accumulating": true
   },
   {
-    "ticker": "4GLD",
-    "isin": "DE000A0S9GB0",
-    "name": "Xetra-Gold ETC",
-    "ter": 0,
-    "assetClass": "COMMODITY",
-    "regionAllocation": {
-      "US": 0,
-      "EUROPE": 0,
-      "EM": 0,
-      "JAPAN": 0,
-      "PACIFIC_EX_JAPAN": 0,
-      "GLOBAL": 1.0,
-      "UK": 0,
-      "CHINA": 0,
-      "OTHER": 0
-    },
-    "baseCurrency": "EUR",
-    "accumulating": true
-  },
-  {
     "ticker": "IWQU",
     "isin": "IE00BP3QZ601",
     "name": "iShares Edge MSCI World Quality Factor UCITS ETF (Acc)",

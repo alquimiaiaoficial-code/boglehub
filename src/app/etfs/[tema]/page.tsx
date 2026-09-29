@@ -48,7 +48,7 @@ const ALL_WORLD_FILTER = (etf: EtfMetadata) =>
 
 const NASDAQ_100_TICKERS = new Set(['EQQQ', 'SXRV', 'CNDX'])
 const SMALL_CAPS_TICKERS = new Set(['WSML', 'IUSN', 'ZPRS', 'ZPRV'])
-const GOLD_TICKERS = new Set(['SGLN', 'IGLN', '4GLD'])
+const GOLD_TICKERS = new Set(['SGLN', 'IGLN'])
 const QUALITY_MOMENTUM_TICKERS = new Set(['IWQU', 'IWMO', 'XDEQ', 'XDWL'])
 
 // Fondos indexados con la misma exposición que el tema (traspaso fiscal libre).

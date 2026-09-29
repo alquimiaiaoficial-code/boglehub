@@ -119,6 +119,29 @@ const nextConfig: NextConfig = {
         destination: '/etfs/msci-world',
         statusCode: 301,
       },
+      /**
+       * 4GLD (Xetra-Gold, DE000A0S9GB0), retirada el 29-sep-2026. Su emisor, Deutsche Börse
+       * Commodities, no da acceso a su web a un particular desde España «due to legal
+       * restrictions», así que ni se puede leer su coste en la fuente ni consta que se ofrezca
+       * aquí. La ficha publicaba TER 0 % (no tiene TER, pero sí comisión de custodia) y salía
+       * como el más barato; y /datos-clave, un artículo y la página de gestoras le ponían el
+       * nombre, el ISIN y el coste de un Xtrackers. Va al hub del oro.
+       */
+      {
+        source: '/etf/4gld',
+        destination: '/etfs/oro',
+        statusCode: 301,
+      },
+      {
+        source: '/comparar/sgln-vs-4gld',
+        destination: '/etfs/oro',
+        statusCode: 301,
+      },
+      {
+        source: '/comparar/igln-vs-4gld',
+        destination: '/etfs/oro',
+        statusCode: 301,
+      },
 
       /**
        * Amundi Prime Global y Prime Japan salen del catálogo de FONDOS el 19-sep-2026,

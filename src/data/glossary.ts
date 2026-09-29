@@ -151,7 +151,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     shortDefinition:
       'Un ETC es un producto cotizado en bolsa similar a un ETF pero que replica el precio de una materia prima (oro, plata, petróleo). Está respaldado físicamente o por derivados.',
     longDefinition:
-      'Un ETC (Exchange Traded Commodity) es la versión para materias primas de un ETF. La diferencia técnica es legal: los ETC se estructuran como notas de deuda emitidas por una entidad, respaldadas por la materia prima subyacente. Para el inversor particular el comportamiento es prácticamente idéntico al de un ETF.\n\nLos ETC más populares en España son los de oro físico (SGLN, IGLN, 4GLD), respaldados al 100% por lingotes custodiados en bóvedas auditadas. Otros ETC siguen materias primas como plata, petróleo o cestas amplias. Fiscalmente tributan igual que un ETF: las ganancias y pérdidas patrimoniales se declaran en la base del ahorro del IRPF.',
+      'Un ETC (Exchange Traded Commodity) es la versión para materias primas de un ETF. La diferencia técnica es legal: los ETC se estructuran como notas de deuda emitidas por una entidad, respaldadas por la materia prima subyacente. Para el inversor particular el comportamiento es prácticamente idéntico al de un ETF.\n\nLos ETC más populares en España son los de oro físico (SGLN, IGLN, SGLD), respaldados al 100% por lingotes custodiados en bóvedas auditadas. Otros ETC siguen materias primas como plata, petróleo o cestas amplias. Fiscalmente tributan igual que un ETF: las ganancias y pérdidas patrimoniales se declaran en la base del ahorro del IRPF.',
     example:
       'SGLN (iShares Physical Gold ETC) es un ETC respaldado por oro físico custodiado en Londres. Comprar una participación equivale a poseer una fracción de un lingote real.',
     relatedLinks: [{ label: 'Mejores ETC de oro físico para España', href: '/etfs/oro' }],
@@ -162,7 +162,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       },
       {
         q: '¿El oro en un ETC está respaldado por oro físico?',
-        a: 'En los ETC de oro físico (como SGLN, IGLN o 4GLD) sí: están respaldados al 100% por lingotes custodiados en bóvedas auditadas, así que comprar una participación equivale a poseer una fracción de un lingote real. Otros ETC siguen materias primas mediante derivados.',
+        a: 'En los ETC de oro físico (como SGLN o IGLN) sí: están respaldados al 100% por lingotes custodiados en bóvedas auditadas, así que comprar una participación equivale a poseer una fracción de un lingote real. Otros ETC siguen materias primas mediante derivados.',
       },
       {
         q: '¿Cómo tributan los ETC en España?',
