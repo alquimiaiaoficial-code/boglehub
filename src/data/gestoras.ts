@@ -136,7 +136,6 @@ export const GESTORAS: Gestora[] = [
     popularEtfs: [
       { ticker: 'MWRD', name: 'Amundi Core MSCI World UCITS ETF' },
       { ticker: 'AEEM', name: 'Amundi MSCI Emerging Markets UCITS ETF' },
-      { ticker: 'MEUD', name: 'Amundi Stoxx Europe 600 UCITS ETF' },
     ],
     availableInMyInvestor: true,
     officialUrl: 'https://www.amundi.es',

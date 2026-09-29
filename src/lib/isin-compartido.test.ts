@@ -106,7 +106,7 @@ describe('ISINs compartidos entre ETFs', () => {
   it('todas las fichas publican un ISIN verificado en fuente', () => {
     const sinIsin = getAllEtfs().filter((e) => !e.isin).map((e) => e.ticker)
     expect(sinIsin, `fichas sin ISIN: ${sinIsin.join(', ')}`).toEqual([])
-    expect(getAllEtfs().length).toBe(55)
+    expect(getAllEtfs().length).toBe(54)
   })
 
   it('los ISINs que sí están verificados siguen puestos', () => {

@@ -108,6 +108,25 @@ const nextConfig: NextConfig = {
         destination: '/etf/spyl',
         statusCode: 301,
       },
+      /**
+       * MEUD, retirada el 29-sep-2026. El ticker es el Amundi Core STOXX Europe 600 Acc
+       * (LU0908500753, 0,07 %), pero la ficha publicaba el ISIN y el nombre del Amundi MSCI
+       * Europe (FR0010261198, que cotiza como MEU) y una política y un TER que no eran de
+       * ninguno de los dos. Para rehacerla faltaba el reparto sectorial del STOXX 600: su
+       * factsheet solo publica los 10 primeros supersectores, y copiar el del MSCI Europe
+       * sería poner datos de otro índice. Va al hub de Europa, no a otra ficha, porque ninguna
+       * es ese producto.
+       */
+      {
+        source: '/etf/meud',
+        destination: '/etfs/europa',
+        statusCode: 301,
+      },
+      {
+        source: '/comparar/veur-vs-meud',
+        destination: '/etfs/europa',
+        statusCode: 301,
+      },
       {
         source: '/fondo/amundi-prime-global',
         destination: '/blog/amundi-prime-global-analisis',

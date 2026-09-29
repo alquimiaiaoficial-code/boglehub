@@ -11,7 +11,7 @@ const SUFFIX_MAP: Record<string, string> = {
   IUSA: '.L', XDWD: '.DE', VWRL: '.L', LCUW: '.PA',
   // Añadidos el 29-sep-2026: los que se buscaban donde no cotizan (ver SYMBOL_ALIAS).
   VWRP: '.DE', EMIM: '.DE', WSML: '.DE', CNDX: '.DE', SMEA: '.AS',
-  SGLN: '.L', IGLN: '.L', SWRD: '.L', ISAC: '.L', MEUD: '.PA', AEEM: '.PA',
+  SGLN: '.L', IGLN: '.L', SWRD: '.L', ISAC: '.L', AEEM: '.PA',
   IBGX: '.AS', VETY: '.AS', TDIV: '.AS', VHYL: '.L', SJPA: '.L', CPXJ: '.SW',
   IWQU: '.L', IWMO: '.L', RBOT: '.L', SPYL: '.DE',
 }
@@ -29,7 +29,7 @@ const SUFFIX_MAP: Record<string, string> = {
  *
  *   VWRP → VWCE (IE00BK5BQT80)   EMIM → IS3N (IE00BKM4GZ66)   AGGH → EUNA (IE00BDBRDM35)
  *   WSML → IUSN (IE00BF4RFH31)   CNDX → SXRV (IE00B53SZB19)   SMEA → IMAE (IE00B4K48X80)
- *   SGLN → IGLN (IE00B4ND3602)   MEUD → MEU  (FR0010261198)   VHYL → VHYD (IE00B8GKDB10)
+ *   SGLN → IGLN (IE00B4ND3602)   VHYL → VHYD (IE00B8GKDB10)
  *   SJPA → IJPA (IE00B4L5YX21)   CPXJ → CSPXJ (IE00B52MJY50)
  *
  * Sin alias: LCUW (Yahoo no devuelve ninguna cotización para su ISIN). SPXS era una ficha
@@ -37,7 +37,7 @@ const SUFFIX_MAP: Record<string, string> = {
  */
 const SYMBOL_ALIAS: Record<string, string> = {
   VWRP: 'VWCE', EMIM: 'IS3N', AGGH: 'EUNA', WSML: 'IUSN', CNDX: 'SXRV', SMEA: 'IMAE',
-  SGLN: 'IGLN', MEUD: 'MEU', VHYL: 'VHYD', SJPA: 'IJPA', CPXJ: 'CSPXJ',
+  SGLN: 'IGLN', VHYL: 'VHYD', SJPA: 'IJPA', CPXJ: 'CSPXJ',
 }
 
 // Currency each ticker is quoted in on its reference exchange (GBp = pence)
@@ -65,7 +65,7 @@ const QUOTE_CURRENCY: Record<string, 'USD' | 'EUR' | 'GBp' | 'GBP'> = {
   // Stuttgart (138,64 GBP = 161,6 € frente a 161,54 €). Leído como euros salía un 14 % bajo.
   MWRD: 'GBP',
   VWRP: 'EUR', EMIM: 'EUR', WSML: 'EUR', CNDX: 'EUR', SMEA: 'EUR',
-  SGLN: 'USD', IGLN: 'USD', SWRD: 'USD', ISAC: 'USD', MEUD: 'EUR', AEEM: 'EUR',
+  SGLN: 'USD', IGLN: 'USD', SWRD: 'USD', ISAC: 'USD', AEEM: 'EUR',
   IBGX: 'EUR', VETY: 'EUR', TDIV: 'EUR', VHYL: 'USD', SJPA: 'USD', CPXJ: 'USD',
   IWQU: 'USD', IWMO: 'USD', RBOT: 'USD', SPYL: 'EUR',
 }

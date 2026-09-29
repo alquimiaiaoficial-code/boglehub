@@ -708,7 +708,7 @@
   {
     "ticker": "MWRD",
     "isin": "IE000BI8OT95",
-    "name": "Amundi MSCI World UCITS ETF (Acc)",
+    "name": "Amundi Core MSCI World UCITS ETF (Acc)",
     "ter": 0.12,
     "assetClass": "EQUITY",
     "regionAllocation": {
@@ -808,40 +808,6 @@
     "accumulating": true
   },
   {
-    "ticker": "MEUD",
-    "isin": "FR0010261198",
-    "name": "Amundi ETF MSCI Europe UCITS ETF (Dist)",
-    "ter": 0.15,
-    "assetClass": "EQUITY",
-    "regionAllocation": {
-      "US": 0,
-      "EUROPE": 1.0,
-      "EM": 0,
-      "JAPAN": 0,
-      "PACIFIC_EX_JAPAN": 0,
-      "GLOBAL": 0,
-      "UK": 0,
-      "CHINA": 0,
-      "OTHER": 0
-    },
-    "sectorAllocation": {
-      "TECHNOLOGY": 0.08,
-      "FINANCIAL": 0.18,
-      "HEALTHCARE": 0.14,
-      "CONSUMER_DISC": 0.11,
-      "INDUSTRIAL": 0.16,
-      "CONSUMER_STAPLES": 0.1,
-      "ENERGY": 0.07,
-      "MATERIALS": 0.07,
-      "COMMUNICATION": 0.05,
-      "UTILITIES": 0.04,
-      "REAL_ESTATE": 0,
-      "DIVERSIFIED": 0
-    },
-    "baseCurrency": "EUR",
-    "accumulating": false
-  },
-  {
     "ticker": "SMEA",
     "name": "iShares Core MSCI Europe UCITS ETF EUR (Acc)",
     "ter": 0.12,
@@ -912,7 +878,7 @@
   {
     "ticker": "AEEM",
     "isin": "LU1681045370",
-    "name": "Amundi MSCI Emerging Markets UCITS ETF (Acc)",
+    "name": "Amundi MSCI Emerging Markets Swap UCITS ETF EUR (Acc)",
     "ter": 0.2,
     "assetClass": "EQUITY",
     "regionAllocation": {

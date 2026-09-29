@@ -35,7 +35,6 @@ export const ETF_PAIRS: [string, string][] = [
   ['EMIM', 'VFEM'],
   // Europa
   ['VEUR', 'SMEA'],
-  ['VEUR', 'MEUD'],
   ['SMEA', 'IMEU'],
   // Renta fija / bonos
   ['AGGH', 'VAGF'],

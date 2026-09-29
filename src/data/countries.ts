@@ -50,7 +50,6 @@ export const COUNTRIES: Country[] = [
       { ticker: 'VEUR', name: 'Vanguard FTSE Developed Europe UCITS ETF' },
       { ticker: 'IMEU', name: 'iShares Core MSCI Europe UCITS ETF' },
       { ticker: 'SMEA', name: 'iShares Core MSCI EMU UCITS ETF (eurozona)' },
-      { ticker: 'MEUD', name: 'Amundi Stoxx Europe 600 UCITS ETF' },
     ],
     marketType: 'desarrollado',
     taxTreaty: 'Sin retención adicional para ETFs UCITS irlandeses con activos europeos',

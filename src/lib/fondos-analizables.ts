@@ -25,7 +25,8 @@ import type { EtfMetadata } from '@/types/etf'
  * EL `etfEquivalent` DE `index-funds.ts` NO SIRVE PARA ESTO Y NO SE USA AQUÍ.
  * Se puso para enlazar páginas entre sí, no para calcular, y al revisarlo uno por uno el
  * 17-sep tres de los doce eran malos para un cálculo de exposición. El peor: Vanguard
- * Eurozone Stock replica MSCI EMU y apuntaba a MEUD, que es MSCI Europe —con Reino Unido,
+ * Eurozone Stock replica MSCI EMU y apuntaba a MEUD, que es Europa entera (el STOXX Europe
+ * 600; hasta el 29-sep nuestra ficha decía, también mal, MSCI Europe) —con Reino Unido,
  * Suiza y Suecia dentro—. Eso no es una aproximación, es otra cosa. Esta tabla es
  * independiente y explícita, y cada fila dice de qué calidad es.
  */
@@ -187,9 +188,9 @@ const EQUIVALENCIAS: Record<string, Equivalencia> = {
    * decisión de no analizarlo fue prudente por casualidad; el motivo escrito era falso, y eso
    * es peor que no haberlo escrito, porque parecía resuelto.
    *
-   * SMEA y no MEUD: los dos replican el MSCI Europe, pero SMEA es de acumulación como el
-   * fondo y MEUD de distribución. Para el reparto por región da igual; para no confundir a
-   * quien compare las dos fichas, no. Hasta el 29-sep-2026 ponía IMEU, dando por hecho que
+   * SMEA porque replica el MSCI Europe y es de acumulación, como el fondo. (Hasta el 29-sep
+   * aquí se descartaba MEUD «por ser de distribución». Era falso dos veces: MEUD es el Amundi
+   * Core STOXX Europe 600, otro índice, y acumula. Su ficha se retiró ese día.) Hasta el 29-sep-2026 ponía IMEU, dando por hecho que
    * acumulaba: BlackRock dice que el ticker IMEU es la clase de DISTRIBUCIÓN
    * (IE00B1YZSC51). La de acumulación, con la misma cartera, es SMEA (IE00B4K48X80).
    */
