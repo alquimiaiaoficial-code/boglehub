@@ -17,8 +17,12 @@ export async function GET(req: NextRequest) {
   const score = Number.isFinite(rawScore)
     ? Math.max(0, Math.min(100, Math.round(rawScore)))
     : 0
-  const ter = Number(searchParams.get('ter') ?? '0')
-  const etfs = Number(searchParams.get('etfs') ?? '0')
+  // Acotados (29-sep-2026): con ?ter=abc la tarjeta compartida mostraba «NaN%». Mismo arreglo
+  // que en la página /score, aquí en la imagen que viaja a redes.
+  const rawTer = Number(searchParams.get('ter') ?? '0')
+  const ter = Number.isFinite(rawTer) ? Math.max(0, Math.min(5, rawTer)) : 0
+  const rawEtfs = Number(searchParams.get('etfs') ?? '0')
+  const etfs = Number.isFinite(rawEtfs) ? Math.max(0, Math.min(50, Math.round(rawEtfs))) : 0
   const { letter, color } = gradeFromScore(score)
 
   return new ImageResponse(

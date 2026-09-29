@@ -5,8 +5,10 @@ export const runtime = 'edge'
 
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url)
-  const title = searchParams.get('title') ?? 'BogleHub'
-  const subtitle = searchParams.get('subtitle') ?? 'Análisis de cartera con IA'
+  // Acotado (29-sep-2026): la imagen refleja estos textos de la URL. No es HTML —se rasteriza,
+  // así que no hay inyección— pero un texto larguísimo desbordaba la tarjeta. Se corta.
+  const title = (searchParams.get('title') ?? 'BogleHub').slice(0, 120)
+  const subtitle = (searchParams.get('subtitle') ?? 'Análisis de cartera con IA').slice(0, 160)
 
   return new ImageResponse(
     (

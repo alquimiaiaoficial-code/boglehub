@@ -26,9 +26,12 @@ export async function POST(req: NextRequest) {
     const result = await parsePdf(buffer)
     return NextResponse.json({ success: true, data: result })
   } catch (err) {
-    return NextResponse.json({
-      success: false,
-      error: err instanceof Error ? err.message : 'Error desconocido',
-    }, { status: 500 })
+    // El detalle va al registro del servidor, no al cliente: el mensaje de la librería de
+    // PDF puede revelar rutas o versiones. Mismo criterio que el chat (28-sep-2026).
+    console.error('[parse-pdf] fallo al procesar el PDF:', err)
+    return NextResponse.json(
+      { success: false, error: 'No se pudo leer el PDF. Comprueba que es un PDF válido y vuelve a intentarlo.' },
+      { status: 500 },
+    )
   }
 }
