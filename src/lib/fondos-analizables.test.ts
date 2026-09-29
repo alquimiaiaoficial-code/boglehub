@@ -171,11 +171,11 @@ describe('resolverFondo', () => {
    * replica MSCI Europe y tenemos tres ETFs de ese indice. El motivo salia de nuestro propio
    * dato equivocado, y el test lo daba por bueno porque leia la misma fuente que el codigo.
    */
-  it('analiza el Vanguard European con IMEU, porque replica MSCI Europe y no MSCI EMU', () => {
+  it('analiza el Vanguard European con SMEA, porque replica MSCI Europe y no MSCI EMU', () => {
     const r = resolverFondo('IE0007987690')
     expect(r && 'analizable' in r).toBe(true)
     if (r && 'analizable' in r) {
-      expect(r.analizable.etfExposicion.ticker).toBe('IMEU')
+      expect(r.analizable.etfExposicion.ticker).toBe('SMEA')
       expect(r.analizable.fondo.index).toBe('MSCI Europe')
       expect(r.analizable.fondo.ter).toBe(0.12)
     }

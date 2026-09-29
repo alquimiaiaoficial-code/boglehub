@@ -141,9 +141,9 @@ const EQUIVALENCIAS: Record<string, Equivalencia> = {
   /**
    * iShares Europe Index Fund (IE), clase D - MSCI Europe.
    * Verificado el 25-sep-2026 en la ficha de BlackRock: «Clase D | Índice de referencia:
-   * MSCI Europe Index | Porcentaje de gastos: 0,30 por ciento». Mismo índice que IMEU.
+   * MSCI Europe Index | Porcentaje de gastos: 0,30 por ciento». Mismo índice que SMEA.
    */
-  IE00BDRK7L36: { ticker: 'IMEU', calidad: 'exacta' },
+  IE00BDRK7L36: { ticker: 'SMEA', calidad: 'exacta' },
 
   /**
    * Vanguard U.S. 500 Stock Index Fund - S&P 500.
@@ -187,11 +187,13 @@ const EQUIVALENCIAS: Record<string, Equivalencia> = {
    * decisión de no analizarlo fue prudente por casualidad; el motivo escrito era falso, y eso
    * es peor que no haberlo escrito, porque parecía resuelto.
    *
-   * IMEU y no MEUD: los dos replican el MSCI Europe, pero IMEU es de acumulación como el
+   * SMEA y no MEUD: los dos replican el MSCI Europe, pero SMEA es de acumulación como el
    * fondo y MEUD de distribución. Para el reparto por región da igual; para no confundir a
-   * quien compare las dos fichas, no.
+   * quien compare las dos fichas, no. Hasta el 29-sep-2026 ponía IMEU, dando por hecho que
+   * acumulaba: BlackRock dice que el ticker IMEU es la clase de DISTRIBUCIÓN
+   * (IE00B1YZSC51). La de acumulación, con la misma cartera, es SMEA (IE00B4K48X80).
    */
-  IE0007987690: { ticker: 'IMEU', calidad: 'exacta' },
+  IE0007987690: { ticker: 'SMEA', calidad: 'exacta' },
 
   /**
    * Vanguard Global Bond Index Fund EUR Hedged - Bloomberg Global Aggregate Float Adjusted.
@@ -235,7 +237,7 @@ const EQUIVALENCIAS: Record<string, Equivalencia> = {
    */
   IE00BD0NCM55: { ticker: 'IWDA', calidad: 'exacta' },   // iShares Developed World — MSCI World
   LU0996182563: { ticker: 'IWDA', calidad: 'exacta' },   // Amundi Index MSCI World — MSCI World
-  IE00BYX5MD61: { ticker: 'IMEU', calidad: 'exacta' },   // Fidelity MSCI Europe — MSCI Europe
+  IE00BYX5MD61: { ticker: 'SMEA', calidad: 'exacta' },   // Fidelity MSCI Europe — MSCI Europe
   IE00B42W4L06: { ticker: 'IUSN', calidad: 'exacta' },   // Vanguard Global Small-Cap — MSCI World Small Cap
 
   /**
@@ -327,7 +329,7 @@ const EQUIVALENCIAS: Record<string, Equivalencia> = {
     nota: 'El fondo replica la deuda pública británica cubierta a euros y la exposición se toma de un ETF de gilts sin cubrir. Mismo emisor y mismo país; la diferencia es la divisa, que en el ETF sí mueve el valor y en esta clase casi no.',
   },
   // Amundi Core MSCI Europe (clase AE) - MSCI Europe. Verificado el 28-sep-2026 en la gestora.
-  LU0389811885: { ticker: 'IMEU', calidad: 'exacta' },
+  LU0389811885: { ticker: 'SMEA', calidad: 'exacta' },
   // Amundi MSCI North America ESG Broad Transition (clase AE) - MSCI North America ESG Broad CTB Select. Verificado el 28-sep-2026 en la gestora.
   LU0389812347: {
     ticker: 'CSPX',
@@ -343,7 +345,7 @@ const EQUIVALENCIAS: Record<string, Equivalencia> = {
   // Pictet-USA Index (clase P EUR) - S&P 500. Verificado el 28-sep-2026 en la gestora.
   LU0474966164: { ticker: 'CSPX', calidad: 'exacta' },
   // Pictet-Europe Index (clase P EUR) - MSCI Europe. Verificado el 28-sep-2026 en la gestora.
-  LU0130731390: { ticker: 'IMEU', calidad: 'exacta' },
+  LU0130731390: { ticker: 'SMEA', calidad: 'exacta' },
   // Pictet-Japan Index (clase P EUR) - MSCI Japan. Verificado el 28-sep-2026 en la gestora.
   LU0474966750: {
     ticker: 'SJPA',

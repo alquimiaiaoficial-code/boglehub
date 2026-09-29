@@ -111,3 +111,42 @@ describe('fetchPrices', () => {
     expect(result.ok).toBe(false)
   })
 })
+
+// 29-sep-2026: 24 ETFs se buscaban con un ticker que no existe en esa bolsa. Ahora se
+// buscan por una cotización del mismo ISIN (SYMBOL_ALIAS en prices.ts).
+describe('fetchPrices con alias de cotización', () => {
+  const fxYahoo = (lista: { symbol: string; regularMarketPrice: number }[]) =>
+    async (sym: string | string[]) => {
+      if (Array.isArray(sym)) return lista.filter((q) => sym.includes(q.symbol))
+      if (sym === 'EURUSD=X') return { regularMarketPrice: 1.1 }
+      if (sym === 'EURGBP=X') return { regularMarketPrice: 0.85 }
+      return null
+    }
+
+  it('VWRP toma el precio de VWCE en Xetra, que es el mismo ISIN', async () => {
+    mockQuote.mockImplementation(fxYahoo([{ symbol: 'VWCE.DE', regularMarketPrice: 169.4 }]))
+    const result = await fetchPrices(['VWRP'])
+    expect(result.ok).toBe(true)
+    if (result.ok) expect(result.value.VWRP).toBeCloseTo(169.4)
+  })
+
+  it('dos tickers con el mismo símbolo reciben los dos el precio (SGLN e IGLN)', async () => {
+    mockQuote.mockImplementation(fxYahoo([{ symbol: 'IGLN.L', regularMarketPrice: 80.67 }]))
+    const result = await fetchPrices(['SGLN', 'IGLN'])
+    expect(result.ok).toBe(true)
+    if (result.ok) {
+      expect(result.value.SGLN).toBeCloseTo(80.67 / 1.1)
+      expect(result.value.IGLN).toBeCloseTo(80.67 / 1.1)
+    }
+  })
+
+  it('pedir VWCE y VWRP a la vez no pisa ninguno de los dos', async () => {
+    mockQuote.mockImplementation(fxYahoo([{ symbol: 'VWCE.DE', regularMarketPrice: 169.4 }]))
+    const result = await fetchPrices(['VWCE', 'VWRP'])
+    expect(result.ok).toBe(true)
+    if (result.ok) {
+      expect(result.value.VWCE).toBeCloseTo(169.4)
+      expect(result.value.VWRP).toBeCloseTo(169.4)
+    }
+  })
+})

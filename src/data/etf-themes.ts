@@ -209,7 +209,7 @@ export const ETF_THEMES: EtfTheme[] = [
       },
       {
         q: '¿Qué diferencia hay entre VEUR e IMEU?',
-        a: 'VEUR (Vanguard FTSE Developed Europe) e IMEU (iShares Core MSCI Europe) replican índices muy similares con cobertura equivalente. IMEU tiene un TER de 0,12% y VEUR de 0,10%. Ambos son de acumulación y domiciliados en Irlanda. La diferencia práctica es mínima, así que lo que los separa es el acceso y la comisión de cada bróker.',
+        a: 'VEUR (Vanguard FTSE Developed Europe) e IMEU (iShares Core MSCI Europe) replican índices muy similares con cobertura equivalente. IMEU tiene un TER de 0,12% y VEUR de 0,10%. Los dos son de distribución (reparten dividendos, que tributan cada año en el IRPF) y están domiciliados en Irlanda. Si se busca acumulación, SMEA es la clase de acumulación del mismo fondo que IMEU. Entre VEUR e IMEU la diferencia práctica es mínima, así que lo que los separa es el acceso y la comisión de cada bróker.',
       },
     ],
   },

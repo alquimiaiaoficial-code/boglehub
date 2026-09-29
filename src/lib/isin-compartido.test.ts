@@ -90,7 +90,8 @@ describe('ISINs compartidos entre ETFs', () => {
    *
    *  · 11 fichas donde el ticker era real y su producto relevante, con un gemelo en el
    *    catálogo del que copiar los repartos verificados: mismo fondo en otra bolsa
-   *    (EMIM=EIMI, SMEA=IMEU, EUNA=AGGH, XDWL=XDWD, VETY=VGEA) o mismo índice (ZPRS e
+   *    (EMIM=EIMI, EUNA=AGGH, XDWL=XDWD, VETY=VGEA; SMEA=IMEU también estaba aquí y era
+   *    falso: comparten fondo pero no clase, ver el test de IMEU más abajo) o mismo índice (ZPRS e
    *    IUSN sobre el MSCI World Small Cap, LCUW e IWDA sobre el MSCI World). Arregladas.
    *
    *  · 11 fichas sin gemelo del que copiar. `IMID` decía «iShares MSCI World Mid Cap» y es
@@ -153,5 +154,40 @@ describe('ISINs compartidos entre ETFs', () => {
     for (const etf of getAllEtfs()) {
       expect(otrasCotizaciones(etf.ticker).map((e) => e.ticker)).not.toContain(etf.ticker)
     }
+  })
+})
+
+/**
+ * Política de reparto comprobada en la gestora el 29-sep-2026, clase a clase.
+ *
+ * El 19-sep se dio por hecho que IMEU y SMEA eran «el mismo fondo en otra bolsa» y se le
+ * copió a IMEU el ISIN y la acumulación de SMEA. Son el mismo fondo, pero no la misma
+ * clase: una reparte y la otra acumula, y para un residente en España eso cambia cuándo se
+ * paga el IRPF. En la ficha salía «de acumulación» y grado fiscal A.
+ *
+ * - IMEU: BlackRock España, ficha 251860: «ISIN IE00B1YZSC51 · Uso de los ingresos
+ *   Distribución · Frecuencia de Distribución Trimestral · Comisión de gestión (TER) 0,12%
+ *   · Benchmark Index MSCI Europe Index». La de acumulación (IE00B4K48X80) es SMEA, ficha
+ *   251861.
+ * - VGOV: Vanguard España, ficha 9501: «U.K. Gilt UCITS ETF (GBP) Distributing · ISIN:
+ *   IE00B42WWV65 · Frecuencia de distribución Mensual». Lo publicábamos como «(Acc)».
+ *
+ * Todos los demás iShares del catálogo se cruzaron con el buscador de BlackRock ese día y
+ * cuadran, salvo el oro físico (ver PENDIENTES: un ETC no reparte ni acumula dividendos).
+ */
+describe('política de reparto verificada en la gestora', () => {
+  const porTicker = new Map(getAllEtfs().map((e) => [e.ticker, e]))
+
+  it('IMEU es la clase de distribución, con su propio ISIN', () => {
+    const imeu = porTicker.get('IMEU')!
+    expect(imeu.isin).toBe('IE00B1YZSC51')
+    expect(imeu.accumulating).toBe(false)
+    expect(porTicker.get('SMEA')!.isin).toBe('IE00B4K48X80')
+    expect(porTicker.get('SMEA')!.accumulating).toBe(true)
+  })
+
+  it('VGOV reparte', () => {
+    expect(porTicker.get('VGOV')!.accumulating).toBe(false)
+    expect(porTicker.get('VGOV')!.name).toMatch(/Distributing/)
   })
 })

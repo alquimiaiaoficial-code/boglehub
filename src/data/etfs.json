@@ -225,8 +225,8 @@
   },
   {
     "ticker": "IMEU",
-    "isin": "IE00B4K48X80",
-    "name": "iShares Core MSCI Europe UCITS ETF (Acc)",
+    "isin": "IE00B1YZSC51",
+    "name": "iShares Core MSCI Europe UCITS ETF (Dist)",
     "ter": 0.12,
     "assetClass": "EQUITY",
     "regionAllocation": {
@@ -255,7 +255,7 @@
       "DIVERSIFIED": 0
     },
     "baseCurrency": "EUR",
-    "accumulating": true
+    "accumulating": false
   },
   {
     "ticker": "SEMB",
@@ -1630,7 +1630,7 @@
   {
     "ticker": "VGOV",
     "isin": "IE00B42WWV65",
-    "name": "Vanguard UK Government Bond UCITS ETF (Acc)",
+    "name": "Vanguard U.K. Gilt UCITS ETF (GBP) Distributing",
     "ter": 0.07,
     "assetClass": "BOND",
     "regionAllocation": {
@@ -1645,7 +1645,7 @@
       "OTHER": 0
     },
     "baseCurrency": "GBP",
-    "accumulating": true
+    "accumulating": false
   },
   {
     "ticker": "RBOT",

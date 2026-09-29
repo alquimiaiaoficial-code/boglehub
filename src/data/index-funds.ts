@@ -391,7 +391,7 @@ export const INDEX_FUNDS: IndexFund[] = [
     tagline: 'MSCI Europe en formato fondo, de BlackRock',
     description:
       'El iShares Europe Index Fund replica el MSCI Europe con unos gastos del 0,30 % anual, verificados en la ficha de BlackRock. Cubre unas 400 empresas grandes y medianas de 15 mercados desarrollados europeos, incluidos Reino Unido, Suiza, Suecia, Dinamarca y Noruega, que no están en la eurozona y por tanto añaden riesgo de divisa para quien invierte en euros. Al ser un fondo entra en el régimen de traspasos del artículo 94.1.a) del IRPF.',
-    etfEquivalent: 'IMEU',
+    etfEquivalent: 'SMEA',
     faq: [
       { q: '¿Hay fondos más baratos sobre el mismo índice?', a: 'Sí, y la diferencia no es pequeña. Sobre el MSCI Europe hay fondos indexados desde el 0,10 % anual; este cuesta 0,30 %. Sobre 20.000 € son unos 40 € más al año, y la comisión se cobra sobre el saldo, así que crece con la cartera. Esto es un dato, no una recomendación: puede haber motivos para tener uno u otro, como en qué plataforma está disponible cada uno o qué tienes ya contratado.' },
       { q: '¿El MSCI Europe es lo mismo que «eurozona»?', a: 'No, y es la confusión más común con este índice. El MSCI Europe incluye Reino Unido, Suiza, Suecia, Dinamarca y Noruega, que tienen su propia moneda. El índice de eurozona es el MSCI EMU, que sí se limita a países del euro. Si lo que buscabas era no tener riesgo de divisa, el Europe no lo elimina: Reino Unido y Suiza pesan una parte importante.' },
@@ -553,7 +553,7 @@ export const INDEX_FUNDS: IndexFund[] = [
     tagline: 'Bolsa europea desarrollada por un 0,10 %',
     description:
       'El Fidelity MSCI Europe Index Fund replica el MSCI Europe con unos gastos del 0,10 % anual. Conviene saber qué hay dentro: el MSCI Europe NO es solo la eurozona, incluye Reino Unido, Suiza, Suecia, Dinamarca y Noruega, que tienen su propia divisa. Así que añadir Europa con este fondo reduce la exposición a divisa extranjera respecto a un fondo global, pero no la elimina.',
-    etfEquivalent: 'IMEU',
+    etfEquivalent: 'SMEA',
     faq: [
       { q: '¿Cuánto se solapa con un fondo global?', a: 'Bastante. En un MSCI World, Europa desarrollada pesa en torno al 15-20 %, y son en gran parte las mismas empresas. Sumar un fondo europeo a uno global no añade empresas nuevas: cambia el peso que tienen las que ya están. El analizador de cartera pone número a ese solapamiento y dice qué costaría deshacerlo.' },
     ],
@@ -828,7 +828,7 @@ export const INDEX_FUNDS: IndexFund[] = [
     tagline: 'Bolsa europea desarrollada en formato fondo, con traspaso fiscal libre',
     description:
       'El Vanguard European Stock Index Fund replica el MSCI Europe con unos gastos del 0,12 %. Ojo a un detalle que se confunde a menudo: el MSCI Europe NO es solo la eurozona — incluye Reino Unido, Suiza, Suecia, Dinamarca y Noruega, que tienen su propia divisa. Asi que sobreponderar Europa con este fondo no elimina el riesgo divisa, solo lo reduce. Es un complemento de una cartera global, no un sustituto.',
-    etfEquivalent: 'IMEU',
+    etfEquivalent: 'SMEA',
     faq: [
       { q: '¿Este fondo es solo de la eurozona?', a: 'No, y es la confusión más habitual con este producto. Replica el MSCI Europe, que incluye Reino Unido, Suiza, Suecia, Dinamarca y Noruega además de los países del euro. Si lo que se busca es exclusivamente eurozona, el índice sería el MSCI EMU, que es otro.' },
       { q: '¿Elimina el riesgo divisa por estar en euros?', a: 'El fondo está denominado en euros, pero parte de las empresas que lo componen cotizan en libras, francos suizos o coronas, así que la exposición a divisa existe aunque no se vea en el valor liquidativo. Un fondo de renta variable de la eurozona sí la evitaría; este la reduce respecto a un global, no la elimina.' },
@@ -1200,7 +1200,7 @@ export const INDEX_FUNDS: IndexFund[] = [
     tagline: 'MSCI Europe de Amundi en formato fondo',
     description:
       'El Amundi Core MSCI Europe replica el MSCI Europe con unos gastos del 0,30 % anual en su clase AE, según el documento de datos fundamentales de Amundi publicado en junio de 2026. Tiene también una clase IE al 0,15 %. El MSCI Europe incluye Reino Unido, Suiza y los nórdicos además de la eurozona, así que no es un fondo «solo euro».',
-    etfEquivalent: 'IMEU',
+    etfEquivalent: 'SMEA',
     faq: [
       { q: '¿Qué diferencia hay entre la clase AE y la IE?', a: 'La comisión: según los documentos de datos fundamentales de Amundi, la AE cuesta 0,30 % al año y la IE 0,15 %. La cartera es la misma. Cuál puedes contratar depende de lo que ofrezca tu plataforma, y el analizador reconoce las dos y calcula con la comisión de la que tengas.' },
       { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
@@ -1336,7 +1336,7 @@ export const INDEX_FUNDS: IndexFund[] = [
     tagline: 'El MSCI Europe de Pictet en formato fondo',
     description:
       'El Pictet-Europe Index replica el MSCI Europe con unos gastos del 0,45 % anual en su clase P EUR, según el documento de datos fundamentales de Pictet de junio de 2026. El MSCI Europe incluye Reino Unido, Suiza y los nórdicos además de la eurozona. Sobre el mismo índice el catálogo tiene fondos de Fidelity (0,10 %) y Vanguard (0,12 %), cada uno con el dato de su gestora.',
-    etfEquivalent: 'IMEU',
+    etfEquivalent: 'SMEA',
     faq: [
       { q: '¿Es solo eurozona?', a: 'No. El MSCI Europe incluye Reino Unido, Suiza, Suecia, Dinamarca y Noruega, que tienen su propia moneda. Para solo eurozona, Pictet tiene otro fondo, el Pictet-Euroland Index, que replica el MSCI EMU.' },
       { q: '¿Se puede traspasar sin tributar?', a: 'Sí. Es un fondo de inversión, así que le aplica el artículo 94.1.a) de la Ley del IRPF: si el reembolso se destina a suscribir otro fondo «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a disposición del contribuyente. El impuesto se aplaza hasta la venta definitiva, no desaparece.' },
