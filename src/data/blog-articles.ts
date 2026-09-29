@@ -8823,8 +8823,8 @@ Diferencia clave: el sector financiero pesa algo más en ACWI por el peso de ban
 |---|---|---|---|
 | IWDA | iShares Core MSCI World | 0,20% | Acumulación |
 | SWRD | SPDR MSCI World | 0,12% | Acumulación |
-| XDWD | Xtrackers MSCI World | 0,19% | Acumulación |
-| MWRD | Lyxor Core MSCI World | 0,12% | Acumulación |
+| XDWD | Xtrackers MSCI World | 0,12% | Acumulación |
+| MWRD | Amundi Core MSCI World | 0,12% | Acumulación |
 
 ### ETFs MSCI ACWI (con emergentes)
 
@@ -10215,10 +10215,10 @@ Todos replican el MSCI World, son de acumulación y están domiciliados en Irlan
 |---|---|---|---|---|
 | **SWRD** | SPDR | **0,12 %** | Física | IE00BFY0GT14 |
 | **MWRD** | Amundi | 0,12 % | Física | IE000BI8OT95 |
-| XDWD | Xtrackers | 0,19 % | Sintética (swap) | IE00BJ0KDQ92 |
+| XDWD | Xtrackers | 0,12 % | Física | IE00BJ0KDQ92 |
 | **IWDA** | iShares | 0,20 % | Física | IE00B4L5Y983 |
 
-El **SWRD** de SPDR y el **MWRD** de Amundi son los más baratos (0,12%). El **IWDA** de iShares es el más popular y con mayor patrimonio, lo que le da máxima liquidez. XDWD usa réplica sintética (swap), que puede mejorar el tracking pero añade una capa de riesgo de contraparte; los demás son de réplica física. Puedes comparar dos cualquiera en el [comparador de ETFs](/comparar) o ver la [categoría completa de ETFs MSCI World](/etfs/msci-world).
+El **SWRD** de SPDR, el **MWRD** de Amundi y el **XDWD** de Xtrackers tienen el TER más bajo de la tabla (0,12%). El **IWDA** de iShares es el más popular y con mayor patrimonio, lo que le da máxima liquidez. Los cuatro son de réplica física. Puedes comparar dos cualquiera en el [comparador de ETFs](/comparar) o ver la [categoría completa de ETFs MSCI World](/etfs/msci-world).
 
 ---
 

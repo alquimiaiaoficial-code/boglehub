@@ -87,7 +87,7 @@ export const GESTORAS: Gestora[] = [
     faq: [
       {
         q: '¿Vanguard o iShares para inversor español?',
-        a: 'Ambas son excelentes, pero con perfiles distintos. iShares (IWDA, CSPX) tiene mayor liquidez y patrimonio en sus ETFs, lo que se traduce en spreads más estrechos. Vanguard tiene la estructura única de propiedad mutua que históricamente garantiza TER muy bajos. Para máxima simplicidad global, VWCE (Vanguard). Para Core MSCI World con TER 0,20%, IWDA (iShares). Ambos son válidos.',
+        a: 'Tienen perfiles distintos. iShares (IWDA, CSPX) tiene más liquidez y patrimonio en sus ETFs, lo que suele traducirse en spreads más estrechos. Vanguard tiene una estructura de propiedad mutua que históricamente se ha asociado a TER bajos. Su VWCE cubre el mundo entero en un solo ETF (TER 0,14 %); el IWDA de iShares replica el MSCI World (TER 0,20 %), que no incluye emergentes. Qué encaja depende de lo que busque cada uno.',
       },
       {
         q: '¿Qué significa Core en los ETFs iShares?',
