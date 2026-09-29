@@ -279,8 +279,8 @@ Fuente: BogleHub (boglehub.com/datos-clave) — verificable con BOE/AEAT, follet
               headers={['Ticker', 'Nombre', 'ISIN', 'TER', 'Política', 'Domicilio']}
               rows={[
                 ['SWRD', 'SPDR MSCI World UCITS', 'IE00BFY0GT14', '0,12%', 'Acumulación', 'Irlanda'],
-                ['MWRD', 'Lyxor Core MSCI World', 'LU1781541179', '0,12%', 'Acumulación', 'Luxemburgo'],
-                ['XDWD', 'Xtrackers MSCI World', 'IE00BJ0KDQ92', '0,19%', 'Acumulación', 'Irlanda'],
+                ['MWRD', 'Amundi Core MSCI World', 'IE000BI8OT95', '0,12%', 'Acumulación', 'Irlanda'],
+                ['XDWD', 'Xtrackers MSCI World', 'IE00BJ0KDQ92', '0,12%', 'Acumulación', 'Irlanda'],
                 ['IWDA', 'iShares Core MSCI World', 'IE00B4L5Y983', '0,20%', 'Acumulación', 'Irlanda'],
                 ['EUNL', 'iShares Core MSCI World (Xetra)', 'IE00B4L5Y983', '0,20%', 'Acumulación', 'Irlanda'],
               ]}
@@ -325,12 +325,12 @@ Fuente: BogleHub (boglehub.com/datos-clave) — verificable con BOE/AEAT, follet
                 ['VWRL', 'Vanguard FTSE All-World (Dist)', 'IE00B3RBWM25', '0,14%', 'Distribución', 'FTSE All-World'],
                 ['VWRP', 'Vanguard FTSE All-World (LSE)', 'IE00BK5BQT80', '0,14%', 'Acumulación', 'FTSE All-World'],
                 ['ISAC', 'iShares MSCI ACWI', 'IE00B6R52259', '0,20%', 'Acumulación', 'MSCI ACWI'],
-                ['SSAC', 'SPDR MSCI ACWI IMI', 'IE00B3YLTY66', '0,17%', 'Acumulación', 'MSCI ACWI IMI'],
+                ['SPYI', 'SPDR MSCI ACWI IMI', 'IE00B3YLTY66', '0,17%', 'Acumulación', 'MSCI ACWI IMI'],
               ]}
             />
             <p className="text-sm text-fg-muted leading-relaxed">
-              VWCE incluye ~12% de mercados emergentes en su índice FTSE All-World. ISAC y SSAC
-              replican MSCI ACWI con composición funcionalmente equivalente. Para máxima
+              VWCE incluye ~12% de mercados emergentes en su índice FTSE All-World. ISAC y SPYI
+              replican MSCI ACWI (SPYI, la versión IMI, con pequeñas empresas) con composición funcionalmente equivalente. Para máxima
               diversificación en un solo ETF, cualquiera de los tres es válido.
             </p>
           </section>
@@ -344,7 +344,7 @@ Fuente: BogleHub (boglehub.com/datos-clave) — verificable con BOE/AEAT, follet
               rows={[
                 ['EIMI', 'iShares Core MSCI EM IMI', 'IE00BKM4GZ66', '0,18%', 'Acumulación'],
                 ['EMIM', 'iShares Core MSCI EM IMI (Acc)', 'IE00BKM4GZ66', '0,18%', 'Acumulación'],
-                ['VFEM', 'Vanguard FTSE Emerging Markets', 'IE00BK5BR733', '0,22%', 'Acumulación'],
+                ['VFEM', 'Vanguard FTSE Emerging Markets (Dist)', 'IE00B3VVMM84', '0,22%', 'Distribución'],
                 ['AEEM', 'Amundi MSCI Emerging Markets', 'LU1681045370', '0,20%', 'Acumulación'],
                 ['IS3N', 'iShares Core MSCI EM IMI (Xetra)', 'IE00BKM4GZ66', '0,18%', 'Acumulación'],
               ]}
@@ -359,9 +359,9 @@ Fuente: BogleHub (boglehub.com/datos-clave) — verificable con BOE/AEAT, follet
               headers={['Ticker', 'Nombre', 'ISIN', 'TER', 'Cobertura']}
               rows={[
                 ['AGGH', 'iShares Core Global Aggregate Bond EUR Hedged', 'IE00BDBRDM35', '0,10%', 'EUR Hedged'],
-                ['EUNA', 'iShares Core Euro Government Bond', 'IE00B4WXJJ64', '0,07%', 'EUR (eurozona)'],
-                ['IBCS', 'iShares € Corporate Bond', 'IE00B3F81R35', '0,20%', 'EUR (eurozona)'],
-                ['IBGS', 'iShares € Govt Bond 1-3yr', 'IE00B14X4Q57', '0,15%', 'EUR (corto plazo)'],
+                ['IEGA', 'iShares Core € Govt Bond (Dist)', 'IE00B4WXJJ64', '0,07%', 'EUR (eurozona)'],
+                ['IEAC', 'iShares Core € Corp Bond (Dist)', 'IE00B3F81R35', '0,09%', 'EUR (eurozona)'],
+                ['IBGS', 'iShares € Govt Bond 1-3yr (Dist)', 'IE00B14X4Q57', '0,10%', 'EUR (corto plazo)'],
                 ['VGEA', 'Vanguard EUR Eurozone Government Bond (Acc)', 'IE00BH04GL39', '0,07%', 'Acumulación'],
               ]}
             />

@@ -109,7 +109,7 @@ export const GESTORAS: Gestora[] = [
     popularEtfs: [
       { ticker: 'SWRD', name: 'SPDR MSCI World UCITS ETF' },
       { ticker: 'SPYL', name: 'SPDR S&P 500 UCITS ETF (Acc)' },
-      { ticker: 'SSAC', name: 'SPDR MSCI ACWI IMI UCITS ETF' },
+      { ticker: 'SPYI', name: 'SPDR MSCI ACWI IMI UCITS ETF' },
       { ticker: 'ZPRV', name: 'SPDR S&P 600 US Small Cap Value UCITS ETF' },
       { ticker: 'ZPRG', name: 'SPDR S&P Global Dividend Aristocrats UCITS ETF' },
     ],

@@ -7189,36 +7189,39 @@ No tener nada de renta fija no es ni mejor ni peor: es una decisión de riesgo. 
 |---|---|
 | ISIN | IE00BDBRDM35 |
 | TER | 0,10% |
+| Reparto | Acumulación |
 | Cobertura | EUR Hedged |
 | Tipo | Renta fija global (soberana + corporativa) |
 | Domicilio | Irlanda |
 
-El ETF de renta fija más popular entre Bogleheads españoles. Replica el índice Bloomberg Global Aggregate Bond, que incluye más de 7.000 bonos de gobiernos y empresas de grado de inversión de todo el mundo. La cobertura EUR es esencial.
+El ETF de renta fija más popular entre Bogleheads españoles. Replica el índice Bloomberg Global Aggregate Bond, que incluye más de 7.000 bonos de gobiernos y empresas de grado de inversión de todo el mundo. La cobertura a euros elimina el riesgo de divisa.
 
-**Para qué cartera**: la elección por defecto para la parte de renta fija de cualquier cartera Boglehead estándar. Diversificación máxima, coste mínimo, cobertura adecuada.
+**Para qué cartera**: es el que más se cita para la parte de renta fija de una cartera Boglehead: muy diversificado, barato y cubierto a euros.
 
 **Versión fondo**: si prefieres un fondo indexado en lugar de un ETF (por el traspaso fiscal libre), el equivalente es el [Vanguard Global Bond Index EUR Hedged](/fondo/vanguard-global-bond-eur-hedged): misma exposición de renta fija global cubierta a euros, en formato fondo.
 
-### 2. EUNA — iShares Core Euro Government Bond UCITS ETF
+### 2. IEGA — iShares Core € Govt Bond UCITS ETF
 
 | Dato | Valor |
 |---|---|
 | ISIN | IE00B4WXJJ64 |
 | TER | 0,07% |
+| Reparto | Distribución (semestral) |
 | Cobertura | EUR (activos en EUR) |
 | Tipo | Renta fija soberana eurozona |
 | Domicilio | Irlanda |
 
 Si quieres exposición exclusiva a bonos gubernamentales de países de la eurozona (Alemania, Francia, Italia, España, Países Bajos...). No hay riesgo divisa porque todos los activos son en euros.
 
-**Para qué cartera**: inversores que prefieren máxima seguridad y simplicidad, sin exposición a high yield ni divisas extranjeras. Idóneo para perfiles muy conservadores.
+**Para qué cartera**: encaja con quien quiere solo deuda pública en euros, sin high yield ni divisas extranjeras.
 
-### 3. IBCS — iShares € Corp Bond UCITS ETF
+### 3. IEAC — iShares Core € Corp Bond UCITS ETF
 
 | Dato | Valor |
 |---|---|
 | ISIN | IE00B3F81R35 |
-| TER | 0,20% |
+| TER | 0,09% |
+| Reparto | Distribución (semestral) |
 | Cobertura | EUR (activos en EUR) |
 | Tipo | Renta fija corporativa eurozona, grado de inversión |
 | Domicilio | Irlanda |
@@ -7227,12 +7230,13 @@ Bonos emitidos por empresas grandes de la eurozona con rating de grado de invers
 
 **Para qué cartera**: complemento de bonos soberanos en cartera diversificada, o sustituto si quieres más rentabilidad sin salir del grado de inversión.
 
-### 4. VGEA — Vanguard Global Aggregate Bond UCITS ETF EUR Hedged
+### 4. VAGF — Vanguard Global Aggregate Bond UCITS ETF EUR Hedged
 
 | Dato | Valor |
 |---|---|
 | ISIN | IE00BG47KH54 |
-| TER | 0,10% |
+| TER | 0,08% |
+| Reparto | Acumulación |
 | Cobertura | EUR Hedged |
 | Tipo | Renta fija global (soberana + corporativa) |
 | Domicilio | Irlanda |
@@ -7246,7 +7250,8 @@ Alternativa de Vanguard al AGGH. Misma filosofía (renta fija global cubierta en
 | Dato | Valor |
 |---|---|
 | ISIN | IE00B14X4Q57 |
-| TER | 0,15% |
+| TER | 0,10% |
+| Reparto | Distribución (semestral) |
 | Cobertura | EUR |
 | Tipo | Bonos soberanos eurozona corto plazo |
 | Domicilio | Irlanda |
@@ -7257,17 +7262,19 @@ Renta fija de corto plazo (1-3 años de duración). Muy poca sensibilidad a los 
 
 ---
 
-## Composición de la parte renta fija según perfil
+## Ejemplos de combinaciones que se citan a menudo
 
-**Perfil conservador (60% renta fija)**:
+Son ejemplos de cómo se suele repartir la parte de renta fija, no una recomendación: cuánto pesa la renta fija y qué se pone dentro depende del plazo y de la situación de cada uno.
+
+**Con mucha renta fija (60 %)**:
 - 70% AGGH (global, agregado)
-- 20% EUNA (eurozona soberana)
-- 10% IBCS (corporativos eurozona)
+- 20% IEGA (eurozona soberana)
+- 10% IEAC (corporativos eurozona)
 
-**Perfil moderado (20-30% renta fija)**:
+**Con algo de renta fija (20-30 %)**:
 - 100% AGGH (simplicidad máxima)
 
-**Perfil agresivo (10% renta fija)**:
+**Con poca renta fija (10 %)**:
 - 100% AGGH (función amortiguadora, no rentabilidad)
 
 **Cerca de jubilación o ya retirado**:
@@ -7683,13 +7690,12 @@ Selecciona 100 empresas con mayor dividend yield de mercados desarrollados. Conc
 
 | Dato | Valor |
 |---|---|
-| ISIN | IE00BYXVGZ48 |
 | TER | 0,25% |
 | Distribución | Trimestral |
 | Dividend yield aprox | 2,5-3% |
 | Domicilio | Irlanda |
 
-Foco exclusivo en EEUU, con criterio de calidad. No es estrictamente "alto dividendo" sino "calidad con dividendo decente". Buena complementariedad si quieres exposición específica al mercado americano.
+Foco exclusivo en EEUU, con criterio de calidad. No es estrictamente "alto dividendo" sino "calidad con dividendo decente". Encaja con quien quiere exposición específica al mercado americano. (Hasta el 29-sep-2026 esta tabla daba el ISIN IE00BYXVGZ48, que es el del Fidelity Global Quality Income, no el de este ETF; consulta el ISIN en la web de Fidelity antes de operar.)
 
 ### 4. ZPRG — SPDR S&P Global Dividend Aristocrats UCITS ETF
 
@@ -8050,7 +8056,7 @@ Esta versión funciona excelentemente para inversores americanos. Para un invers
 
 **IBGL — iShares Euro Government Bond 15-30yr UCITS ETF**
 - ISIN: IE00B1FZS913
-- TER: 0,20%
+- TER: 0,15% (reparte cada seis meses)
 - Bonos gubernamentales eurozona 15-30 años
 - Alta sensibilidad a tipos de interés (deseable: amplifica el efecto en deflación)
 
@@ -8071,7 +8077,7 @@ Esta versión funciona excelentemente para inversores americanos. Para un invers
 
 **IBGS — iShares Euro Govt Bond 1-3yr UCITS ETF**
 - ISIN: IE00B14X4Q57
-- TER: 0,15%
+- TER: 0,10% (reparte cada seis meses)
 - Bonos soberanos eurozona corto plazo
 - Volatilidad mínima
 
@@ -8824,8 +8830,8 @@ Diferencia clave: el sector financiero pesa algo más en ACWI por el peso de ban
 | Ticker | Nombre | TER | Política |
 |---|---|---|---|
 | ISAC | iShares MSCI ACWI | 0,20% | Acumulación |
-| SSAC | SPDR MSCI ACWI IMI | 0,17% | Acumulación |
-| IUSQ | iShares MSCI ACWI (USD) | 0,40% | Distribución |
+| SPYI | SPDR MSCI ACWI IMI | 0,17% | Acumulación |
+| IUSQ | iShares MSCI ACWI (Xetra, el mismo fondo que ISAC) | 0,20% | Acumulación |
 
 ### Alternativa: FTSE All-World (índice equivalente)
 
@@ -8859,7 +8865,7 @@ A muy largo plazo (>30 años), MSCI ACWI ha rendido similar al MSCI World, con m
 - Estás de acuerdo en sobreponderar EEUU vs el resto del mundo
 - Tu cartera ya tiene exposición específica a emergentes por otro lado
 
-**Elige MSCI ACWI (ISAC, SSAC) o FTSE All-World (VWCE) si:**
+**MSCI ACWI (ISAC, SPYI) o FTSE All-World (VWCE) encajan con quien:**
 - Quieres la solución más simple: un solo ETF que cubra "todo"
 - Quieres replicar fielmente el mercado global por capitalización
 - No quieres preocuparte por gestionar el peso de emergentes manualmente
@@ -8867,15 +8873,15 @@ A muy largo plazo (>30 años), MSCI ACWI ha rendido similar al MSCI World, con m
 
 ---
 
-## La cartera mínima con cualquiera de las dos opciones
+## Cómo queda una cartera global con cada opción
 
-**Con MSCI World (necesitas dos ETFs para cubrir global):**
+**Con MSCI World (hacen falta dos ETFs para cubrir todo el mundo):**
 - 88% IWDA o SWRD (MSCI World, desarrollados)
 - 12% EIMI o EMIM (MSCI Emerging Markets)
 - Resultado: exposición global con mayor control y TER ponderado del ~0,14%
 
 **Con MSCI ACWI o FTSE All-World (un solo ETF):**
-- 100% ISAC, SSAC o VWCE
+- 100% ISAC, SPYI o VWCE
 - Resultado: exposición global automática, menos decisiones, TER 0,17-0,20%
 
 Para la mayoría de inversores que empiezan, **la segunda opción (ACWI o All-World) es más sencilla y suficiente**. La diferencia de TER es marginal en términos absolutos.
@@ -10207,7 +10213,7 @@ Todos replican el MSCI World, son de acumulación y están domiciliados en Irlan
 | ETF | Gestora | TER | Réplica | ISIN |
 |---|---|---|---|---|
 | **SWRD** | SPDR | **0,12 %** | Física | IE00BFY0GT14 |
-| **MWRD** | Amundi | 0,12 % | Física | IE00BK1PV551 |
+| **MWRD** | Amundi | 0,12 % | Física | IE000BI8OT95 |
 | XDWD | Xtrackers | 0,19 % | Sintética (swap) | IE00BJ0KDQ92 |
 | **IWDA** | iShares | 0,20 % | Física | IE00B4L5Y983 |
 

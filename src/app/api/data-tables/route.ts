@@ -87,8 +87,8 @@ export async function GET() {
       headers: ['ticker', 'nombre', 'isin', 'ter_anual', 'politica', 'domicilio'],
       rows: [
         { ticker: 'SWRD', nombre: 'SPDR MSCI World', isin: 'IE00BFY0GT14', ter_anual: '0,12%', politica: 'Acumulación', domicilio: 'Irlanda' },
-        { ticker: 'MWRD', nombre: 'Lyxor Core MSCI World', isin: 'LU1781541179', ter_anual: '0,12%', politica: 'Acumulación', domicilio: 'Luxemburgo' },
-        { ticker: 'XDWD', nombre: 'Xtrackers MSCI World', isin: 'IE00BJ0KDQ92', ter_anual: '0,19%', politica: 'Acumulación', domicilio: 'Irlanda' },
+        { ticker: 'MWRD', nombre: 'Amundi Core MSCI World', isin: 'IE000BI8OT95', ter_anual: '0,12%', politica: 'Acumulación', domicilio: 'Irlanda' },
+        { ticker: 'XDWD', nombre: 'Xtrackers MSCI World', isin: 'IE00BJ0KDQ92', ter_anual: '0,12%', politica: 'Acumulación', domicilio: 'Irlanda' },
         { ticker: 'IWDA', nombre: 'iShares Core MSCI World', isin: 'IE00B4L5Y983', ter_anual: '0,20%', politica: 'Acumulación', domicilio: 'Irlanda' },
       ],
       sourceUrl: `${BASE_URL}/etfs/msci-world`,
