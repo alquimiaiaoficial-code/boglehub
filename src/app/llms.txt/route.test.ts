@@ -92,3 +92,35 @@ describe('llms.txt route', () => {
     )
   })
 })
+
+/**
+ * 29-sep-2026: el bloque del analizador decía que TODOS los fondos que no se analizan
+ * quedaban fuera porque su ISIN es un ETF. Era cierto para 1 de 17; los otros 16 no tienen
+ * un ETF en el catálogo con el que calcular su exposición. Ahora el motivo se cuenta.
+ */
+describe('llms.txt: por qué no se analizan algunos fondos', () => {
+  it('los motivos contados suman exactamente los fondos que no se analizan', async () => {
+    const { recuentoNoAnalizables, fondosAnalizables } = await import('@/lib/fondos-analizables')
+    const { INDEX_FUNDS } = await import('@/data/index-funds')
+    const m = recuentoNoAnalizables()
+    const fuera = INDEX_FUNDS.length - fondosAnalizables().length
+    expect(m.sinEquivalencia + m.noSonFondos + m.pendientes + m.otros).toBe(fuera)
+    // «otros» no tiene frase en llms.txt: si aparece uno, hay que escribirla.
+    expect(m.otros).toBe(0)
+  })
+
+  it('cada motivo sale con su número y ya no se atribuye a todos el de «es un ETF»', async () => {
+    const { recuentoNoAnalizables } = await import('@/lib/fondos-analizables')
+    const m = recuentoNoAnalizables()
+    const body = await (await GET()).text()
+    if (m.sinEquivalencia > 0) expect(body).toContain('En ' + m.sinEquivalencia + ' no hay en el catálogo un ETF')
+    if (m.noSonFondos > 0) expect(body).toContain('En ' + m.noSonFondos + ' el ISIN no corresponde a un fondo sino a un ETF')
+    expect(body).not.toContain('a propósito, y la razón importa: ese ISIN no corresponde')
+  })
+
+  it('la fuente de verificación es la gestora, no el registro', async () => {
+    const body = await (await GET()).text()
+    expect(body).not.toContain('comprobados contra el registro')
+    expect(body).toContain('comprobados en la web o en el documento legal de su gestora')
+  })
+})

@@ -416,15 +416,6 @@ const SIN_EQUIVALENCIA_FIABLE: Record<string, string> = {
   // iShares Euro Government Inflation-Linked Bond Index Fund (clase Inst). Verificado el 25-sep-2026 en blackrock.com/es/profesionales/productos/228466: «Inst | Índice de referencia: BBG Euro Government Inflation-Linked Bond Index (EUR) | Porcentaje de gastos: 0,10 por ciento | Inversión inicial mínima: EUR 500.000 | Acumulación».
   IE00B4WXT857: 'No tenemos en el catálogo un ETF de bonos ligados a la inflación. El de deuda pública en euros tiene la misma región y el mismo emisor, pero se comporta distinto cuando cambia la inflación, que es justo para lo que existe este fondo; preferimos no dar número.',
 
-  /*
-   * Los tres de aquí abajo NO son fondos: son ETFs que el catálogo publicaba como fondos.
-   * Tenían el mensaje genérico de «todavía no hemos comprobado sus datos», que había dejado
-   * de ser cierto: sí los hemos comprobado, y lo que sabemos es justo lo que más le importa
-   * a quien pregunta. Decirle «no lo hemos mirado» cuando lo hemos mirado y el producto no
-   * es lo que él cree es peor que no decir nada.
-   */
-
-  // «Amundi Index Eurozone Government Bond»
   // Vanguard Eurozone Stock Index Fund (clase EUR Acc). 28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-variable/9927/eurozone-stock-index-fund-eur-acc): «Eurozone Stock Index Fund - EUR Acc (VANESII) | Índice de referencia: MSCI EMU Index | Comisión: 0,12 %»
   IE0008248803: 'No tenemos en el catálogo un ETF sobre el MSCI EMU. El único europeo que hay replica el MSCI Europe, que incluye Reino Unido, Suiza y los nórdicos, alrededor de un tercio del índice fuera de la eurozona. Usarlo daría una exposición por países falsa, así que preferimos no dar número.',
   // Vanguard U.S. Government Bond Index Fund (clase EUR Hedged Acc). 28-sep-2026, ficha de la GESTORA (https://www.es.vanguard/profesionales/producto/fondo/renta-fija/9284/us-government-bond-index-fund-eur-hedged-acc): «U.S. Government Bond Index Fund - EUR Hedged Acc (VGUGBSE) | Índice de referencia: Bloomberg U.S. Government Float Adjusted Bond Index in EUR | Comisión: 0,12 %»
@@ -446,10 +437,52 @@ const SIN_EQUIVALENCIA_FIABLE: Record<string, string> = {
   // Pictet-Euroland Index (clase P EUR). 28-sep-2026, ficha de la GESTORA (https://am.pictet.com/es/es/individuals/funds/pictet-euroland-index/LU0255980913): «Índice de referencia: MSCI EMU Index» y su Documento de Datos Fundamentales de 19/06/2026: «Comisiones de gestión y otros costes administrativos o de funcionamiento: 0.46% detraído de esta Clase de participaciones»
   LU0255980913: 'No tenemos en el catálogo un ETF sobre el MSCI EMU. El único europeo que hay replica el MSCI Europe, que incluye Reino Unido, Suiza y los nórdicos, alrededor de un tercio del índice fuera de la eurozona. Usarlo daría una exposición por países falsa, así que preferimos no dar número.',
 
+  /*
+   * Este NO es un fondo: es un ETF que el catálogo publicaba como fondo, con la ficha
+   * «Amundi Index Eurozone Government Bond». Tenía el mensaje genérico de «todavía no hemos
+   * comprobado sus datos», que había dejado de ser cierto: sí lo hemos comprobado, y lo que
+   * sabemos es justo lo que más le importa a quien pregunta. Va en `NO_SON_FONDOS`.
+   */
   LU1437015735:
     'No se analiza porque el producto no es el que decía la ficha. Ese ISIN es el «Amundi Core MSCI Europe UCITS ETF»: un ETF de renta VARIABLE europea, no un fondo de renta FIJA de deuda pública de la eurozona. Comprobado el 18-sep-2026 en justETF, en la web de Amundi y en Euronext. Si lo que buscas es renta fija, este no es el producto.',
 
 
+}
+
+/**
+ * Los ISINs de `SIN_EQUIVALENCIA_FIABLE` que en realidad son ETFs y no fondos.
+ *
+ * Existe para poder contar bien los motivos. El 29-sep-2026 `llms.txt` decía que los 17
+ * fondos que no se analizan quedaban fuera porque «ese ISIN no corresponde a un fondo sino a
+ * un ETF». Era verdad para uno. Los otros dieciséis están fuera porque no hay en el catálogo
+ * un ETF con el que calcular su exposición, y eso lo estaban leyendo las IAs como un hecho.
+ */
+const NO_SON_FONDOS = new Set(['LU1437015735'])
+
+export interface RecuentoNoAnalizables {
+  /** No hay ETF en el catálogo que replique un índice lo bastante parecido. */
+  sinEquivalencia: number
+  /** El ISIN de la ficha es un ETF, no un fondo. */
+  noSonFondos: number
+  /** Sin datos comprobados todavía. */
+  pendientes: number
+  /** Cualquier otro motivo (p. ej. el ETF de exposición salió del catálogo). */
+  otros: number
+}
+
+/** Por qué no se analiza cada ficha de fondo que no se analiza, contado. Para `llms.txt`. */
+export function recuentoNoAnalizables(): RecuentoNoAnalizables {
+  const r: RecuentoNoAnalizables = { sinEquivalencia: 0, noSonFondos: 0, pendientes: 0, otros: 0 }
+  for (const f of INDEX_FUNDS) {
+    const res = resolverFondo(f.isin)
+    if (!res || 'analizable' in res) continue
+    const isin = normalizar(f.isin)
+    if (NO_SON_FONDOS.has(isin)) r.noSonFondos++
+    else if (SIN_EQUIVALENCIA_FIABLE[isin]) r.sinEquivalencia++
+    else if (!EQUIVALENCIAS[isin]) r.pendientes++
+    else r.otros++
+  }
+  return r
 }
 
 /**
