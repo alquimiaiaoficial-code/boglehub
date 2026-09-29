@@ -6,7 +6,7 @@ import { Footer } from '@/components/Footer'
 import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
 import { getAllEtfs } from '@/lib/etf-database'
-import { computeFiscalGrade, GRADE_STYLES } from '@/lib/fiscal'
+import { computeFiscalGradeEtf, esEtc, politicaDeReparto, GRADE_STYLES } from '@/lib/fiscal'
 import { formatPct } from '@/lib/utils'
 import { ETF_THEMES, getThemeBySlug } from '@/data/etf-themes'
 import { getIndexFundBySlug, type IndexFund } from '@/data/index-funds'
@@ -68,8 +68,8 @@ const THEME_FILTERS: Record<string, (etf: EtfMetadata) => boolean> = {
   'msci-world': MSCI_WORLD_FILTER,
   'sp500': (etf) => SP500_TICKERS.has(etf.ticker),
   'todo-mundo': ALL_WORLD_FILTER,
-  'acumulacion': (etf) => etf.accumulating,
-  'distribucion': (etf) => !etf.accumulating,
+  'acumulacion': (etf) => etf.accumulating && !esEtc(etf),
+  'distribucion': (etf) => !etf.accumulating && !esEtc(etf),
   'emergentes': (etf) =>
     etf.assetClass === 'EQUITY' &&
     ((etf.regionAllocation.EM ?? 0) + (etf.regionAllocation.CHINA ?? 0)) > 0.5,
@@ -121,7 +121,7 @@ export async function generateMetadata({
 // ETF card component
 // ---------------------------------------------------------------------------
 function EtfCard({ etf }: { etf: EtfMetadata }) {
-  const fiscal = computeFiscalGrade(etf.isin, etf.accumulating)
+  const fiscal = computeFiscalGradeEtf(etf)
   const fiscalStyle = GRADE_STYLES[fiscal.grade]
 
   return (
@@ -146,7 +146,7 @@ function EtfCard({ etf }: { etf: EtfMetadata }) {
           TER {formatPct(etf.ter / 100, 2)}
         </span>
         <span className="rounded-full bg-surface-2 px-2 py-0.5 text-xs text-fg-muted">
-          {etf.accumulating ? 'Acumulación' : 'Distribución'}
+          {politicaDeReparto(etf).largo}
         </span>
         <span className="rounded-full bg-surface-2 px-2 py-0.5 text-xs text-fg-muted">
           {etf.baseCurrency}
@@ -182,7 +182,7 @@ export default async function EtfThemePage({
   const pageUrl = `${BASE_URL}/etfs/${tema}`
   const cheapest = etfs[0]
   const cheapestFiscal = cheapest
-    ? computeFiscalGrade(cheapest.isin, cheapest.accumulating)
+    ? computeFiscalGradeEtf(cheapest)
     : null
 
   return (
@@ -259,8 +259,8 @@ export default async function EtfThemePage({
               >
                 {cheapest.ticker}
               </Link>{' '}
-              ({cheapest.name}): TER {formatPct(cheapest.ter / 100, 2)}, ISIN {cheapest.isin}, de{' '}
-              {cheapest.accumulating ? 'acumulación' : 'distribución'} y grado fiscal{' '}
+              ({cheapest.name}): TER {formatPct(cheapest.ter / 100, 2)}, ISIN {cheapest.isin},{' '}
+              {politicaDeReparto(cheapest).frase} y grado fiscal{' '}
               {cheapestFiscal.grade} ({cheapestFiscal.domicileLabel}).
             </p>
           )}

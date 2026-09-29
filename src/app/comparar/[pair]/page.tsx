@@ -6,7 +6,7 @@ import { Footer } from '@/components/Footer'
 import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
 import { getEtfByTicker, CATALOGO_ACTUALIZADO } from '@/lib/etf-database'
-import { computeFiscalGrade, GRADE_STYLES } from '@/lib/fiscal'
+import { computeFiscalGradeEtf, politicaDeReparto, GRADE_STYLES } from '@/lib/fiscal'
 import { formatPct } from '@/lib/utils'
 import { slugToPair, pairToSlug, getAllPossiblePairs } from '@/data/etf-pairs'
 import type { EtfMetadata, Region } from '@/types/etf'
@@ -184,8 +184,8 @@ export default async function EtfPairPage({
   const etfB = getEtfByTicker(tickerB)
   if (!etfA || !etfB) notFound()
 
-  const fiscalA = computeFiscalGrade(etfA.isin, etfA.accumulating)
-  const fiscalB = computeFiscalGrade(etfB.isin, etfB.accumulating)
+  const fiscalA = computeFiscalGradeEtf(etfA)
+  const fiscalB = computeFiscalGradeEtf(etfB)
   const overlap = computeOverlap(etfA, etfB)
   const overlapInfo = overlapLabel(overlap)
   const sameFund = isSameFund(etfA, etfB, overlap)
@@ -365,8 +365,8 @@ export default async function EtfPairPage({
                   />
                   <ComparisonRow
                     label="Distribución"
-                    valueA={etfA.accumulating ? 'Acumulación' : 'Distribución'}
-                    valueB={etfB.accumulating ? 'Acumulación' : 'Distribución'}
+                    valueA={politicaDeReparto(etfA).largo}
+                    valueB={politicaDeReparto(etfB).largo}
                   />
                   <tr className="border-t border-border">
                     <td className="py-3 px-4 text-sm text-fg-muted font-medium">Grado fiscal (España)</td>

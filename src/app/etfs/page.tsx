@@ -52,8 +52,8 @@ const THEME_FILTERS: Record<string, (etf: EtfMetadata) => boolean> = {
   'msci-world': MSCI_WORLD_FILTER,
   'sp500': (etf) => SP500_TICKERS.has(etf.ticker),
   'todo-mundo': ALL_WORLD_FILTER,
-  'acumulacion': (etf) => etf.accumulating,
-  'distribucion': (etf) => !etf.accumulating,
+  'acumulacion': (etf) => etf.accumulating && etf.assetClass !== 'COMMODITY',
+  'distribucion': (etf) => !etf.accumulating && etf.assetClass !== 'COMMODITY',
   'emergentes': (etf) =>
     etf.assetClass === 'EQUITY' &&
     ((etf.regionAllocation.EM ?? 0) + (etf.regionAllocation.CHINA ?? 0)) > 0.5,

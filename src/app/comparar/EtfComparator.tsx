@@ -208,8 +208,8 @@ export function EtfComparator() {
                       <EtfInfoRow label="Divisa base" a={etfA.baseCurrency} b={etfB.baseCurrency} />
                       <EtfInfoRow
                         label="Acumulativo"
-                        a={etfA.accumulating ? 'Sí' : 'No'}
-                        b={etfB.accumulating ? 'Sí' : 'No'}
+                        a={etfA.assetClass === 'COMMODITY' ? 'No aplica (ETC)' : etfA.accumulating ? 'Sí' : 'No'}
+                        b={etfB.assetClass === 'COMMODITY' ? 'No aplica (ETC)' : etfB.accumulating ? 'Sí' : 'No'}
                       />
                     </tbody>
                   </table>

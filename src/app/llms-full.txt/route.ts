@@ -3,7 +3,7 @@ import { GLOSSARY_TERMS, CATEGORY_LABELS } from '@/data/glossary'
 import { ETF_THEMES } from '@/data/etf-themes'
 import { ETF_PAIRS, pairToSlug } from '@/data/etf-pairs'
 import { getAllEtfs } from '@/lib/etf-database'
-import { computeFiscalGrade } from '@/lib/fiscal'
+import { computeFiscalGradeEtf, esEtc } from '@/lib/fiscal'
 import {
   BLOG_CATEGORIES,
   getArticleCategory,
@@ -108,8 +108,8 @@ export async function GET() {
   lines.push('|---|---|---|---|---|---|---|')
 
   for (const etf of allEtfs) {
-    const fiscal = computeFiscalGrade(etf.isin, etf.accumulating)
-    const acc = etf.accumulating ? 'Sí' : 'No'
+    const fiscal = computeFiscalGradeEtf(etf)
+    const acc = esEtc(etf) ? 'No aplica (ETC, no reparte)' : etf.accumulating ? 'Sí' : 'No'
     lines.push(
       `| ${etf.ticker} | ${etf.name} | ${etf.isin} | ${etf.ter.toFixed(2)}% | ${acc} | ${fiscal.grade} (${fiscal.domicileLabel}) | ${BASE_URL}/etf/${etf.ticker.toLowerCase()} |`,
     )

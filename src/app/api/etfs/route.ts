@@ -1,5 +1,5 @@
 import { getAllEtfs } from '@/lib/etf-database'
-import { computeFiscalGrade } from '@/lib/fiscal'
+import { computeFiscalGradeEtf } from '@/lib/fiscal'
 
 export const dynamic = 'force-static'
 export const revalidate = false
@@ -35,7 +35,7 @@ export async function GET() {
       url: BASE_URL,
     },
     itemListElement: etfs.map((etf, index) => {
-      const fiscal = computeFiscalGrade(etf.isin, etf.accumulating)
+      const fiscal = computeFiscalGradeEtf(etf)
       const provider = etf.name.split(' ')[0]
 
       return {

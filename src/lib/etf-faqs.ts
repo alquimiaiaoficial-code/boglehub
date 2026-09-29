@@ -9,7 +9,7 @@
  * página tenga texto original, no boilerplate idéntico.
  */
 import type { EtfMetadata } from '@/types/etf'
-import { computeFiscalGrade } from './fiscal'
+import { computeFiscalGradeEtf, esEtc, politicaDeReparto } from './fiscal'
 import { formatPct } from './utils'
 
 export interface EtfFaq {
@@ -31,9 +31,11 @@ const ASSET_CLASS_DESCRIPTION: Record<string, string> = {
  * Se usa como introducción indexable encima de las FAQs.
  */
 export function generateEtfDescription(etf: EtfMetadata): string {
-  const fiscal = computeFiscalGrade(etf.isin, etf.accumulating)
+  const fiscal = computeFiscalGradeEtf(etf)
   const assetText = ASSET_CLASS_DESCRIPTION[etf.assetClass] ?? 'inversión'
-  const policyText = etf.accumulating ? 'acumulación (reinvierte los dividendos)' : 'distribución (reparte dividendos)'
+  const policyText = esEtc(etf)
+    ? 'un producto que no reparte nada (el oro no genera dividendos)'
+    : etf.accumulating ? 'acumulación (reinvierte los dividendos)' : 'distribución (reparte dividendos)'
   const fiscalText =
     fiscal.grade === 'A'
       ? `fiscalmente eficiente para residentes en España (grado A: ${fiscal.domicileLabel})`
@@ -67,14 +69,14 @@ export function generateEtfDescription(etf: EtfMetadata): string {
  * Las respuestas combinan plantillas con valores reales del ETF.
  */
 export function generateEtfFaqs(etf: EtfMetadata): EtfFaq[] {
-  const fiscal = computeFiscalGrade(etf.isin, etf.accumulating)
+  const fiscal = computeFiscalGradeEtf(etf)
   const faqs: EtfFaq[] = []
 
   // FAQ 1: ¿Qué replica este ETF?
   const assetText = ASSET_CLASS_DESCRIPTION[etf.assetClass] ?? 'activos'
   faqs.push({
     q: `¿Qué tipo de activos contiene el ETF ${etf.ticker}?`,
-    a: `${etf.name} es un ETF UCITS de ${assetText}. Su composición se distribuye principalmente entre las regiones y sectores indicados en las gráficas anteriores. El ETF cotiza en bolsa europea y puede comprarse desde brokers como Trade Republic, DEGIRO o MyInvestor en España. El ISIN ${etf.isin} permite identificar inequívocamente este fondo entre los distintos tickers en los que pueda cotizar.`,
+    a: `${etf.name} es ${esEtc(etf) ? `un ETC (producto cotizado de ${assetText}), no un fondo UCITS` : `un ETF UCITS de ${assetText}`}. Su composición se distribuye principalmente entre las regiones y sectores indicados en las gráficas anteriores. El ETF cotiza en bolsa europea y puede comprarse desde brokers como Trade Republic, DEGIRO o MyInvestor en España. El ISIN ${etf.isin} permite identificar inequívocamente este fondo entre los distintos tickers en los que pueda cotizar.`,
   })
 
   // FAQ 2: Coste anual (TER)
@@ -92,14 +94,16 @@ export function generateEtfFaqs(etf: EtfMetadata): EtfFaq[] {
     a: `El TER (Total Expense Ratio) de ${etf.ticker} es del ${terText} anual. Este coste se descuenta directamente del valor liquidativo del fondo de forma diaria, por lo que no aparece como una factura separada. Sobre una posición de 10.000€, el coste anual es aproximadamente ${formatPct(etf.ter / 100, 2)}, es decir ${(etf.ter * 100).toFixed(0)}€ al año. Es un TER ${terComparison}.`,
   })
 
-  // FAQ 3: Acumulación o distribución
-  const policyTitle = etf.accumulating ? 'de acumulación' : 'de distribución'
-  const policyExplanation = etf.accumulating
+  // FAQ 3: Acumulación o distribución. Un ETC no es ninguna de las dos (29-sep-2026).
+  const policyTitle = politicaDeReparto(etf).frase
+  const policyExplanation = esEtc(etf)
+    ? `No es ni de acumulación ni de distribución, porque no tiene rentas que acumular ni repartir: es un ETC respaldado por oro físico, y el oro no genera dividendos. Su valor sigue al precio del metal, y lo que ganes tributa cuando vendas, en la base del ahorro del IRPF.`
+    : etf.accumulating
     ? `Esto significa que reinvierte automáticamente los dividendos generados por las empresas en cartera, sin pagar al inversor. Para residentes en España, esta política es generalmente más eficiente fiscalmente en fase de acumulación porque difiere el IRPF hasta el momento de la venta.`
     : `Esto significa que reparte periódicamente los dividendos generados por las empresas en cartera al inversor. Los dividendos tributan al cobrarse como rendimientos del capital mobiliario en el IRPF español (19-30% según importe). Es la opción natural para inversores en fase de retiro que quieren cobrar rentas sin vender participaciones.`
   faqs.push({
     q: `¿${etf.ticker} es de acumulación o de distribución?`,
-    a: `${etf.ticker} es un ETF ${policyTitle}. ${policyExplanation}`,
+    a: `${etf.ticker} es ${esEtc(etf) ? 'un ETC' : 'un ETF'} ${policyTitle}. ${policyExplanation}`,
   })
 
   // FAQ 4: Eficiencia fiscal para España

@@ -106,7 +106,7 @@ describe('ISINs compartidos entre ETFs', () => {
   it('todas las fichas publican un ISIN verificado en fuente', () => {
     const sinIsin = getAllEtfs().filter((e) => !e.isin).map((e) => e.ticker)
     expect(sinIsin, `fichas sin ISIN: ${sinIsin.join(', ')}`).toEqual([])
-    expect(getAllEtfs().length).toBe(54)
+    expect(getAllEtfs().length).toBe(53)
   })
 
   it('los ISINs que sí están verificados siguen puestos', () => {
@@ -206,5 +206,33 @@ describe('SPDR S&P 500 (Acc)', () => {
     expect(e.accumulating).toBe(true)
     expect(e.ter).toBe(0.03)
     expect(getAllEtfs().some((x) => x.ticker === 'SPXS')).toBe(false)
+  })
+})
+
+/**
+ * El oro (29-sep-2026). Los tres ETC del catálogo salían «de distribución (reparte
+ * dividendos)», con un grado fiscal que hablaba de dividendos cobrados cada año. El oro no
+ * paga dividendos. BlackRock da el iShares Physical Gold (IE00B4ND3602) como «Acumulativo»,
+ * que en un ETC solo quiere decir que no reparte nada. La ficha ya no dice ni una cosa ni la
+ * otra: dice que no reparte, y el grado fiscal lleva su propia explicación.
+ */
+describe('ETC de oro', () => {
+  it('no se presentan como productos de distribución', async () => {
+    const { computeFiscalGradeEtf, politicaDeReparto } = await import('./fiscal')
+    for (const t of ['SGLN', 'IGLN', '4GLD']) {
+      const e = getAllEtfs().find((x) => x.ticker === t)!
+      expect(e.assetClass).toBe('COMMODITY')
+      expect(e.name).not.toMatch(/\(Dist\)/)
+      expect(politicaDeReparto(e).largo).toBe('No reparte (ETC)')
+      const f = computeFiscalGradeEtf(e)
+      expect(f.reason).not.toMatch(/dividendos te llegan|reinvierten/)
+      expect(f.reason).toMatch(/base del ahorro/)
+    }
+  })
+
+  it('un ETF normal sigue con su explicación de siempre', async () => {
+    const { computeFiscalGradeEtf, computeFiscalGrade } = await import('./fiscal')
+    const vwce = getAllEtfs().find((x) => x.ticker === 'VWCE')!
+    expect(computeFiscalGradeEtf(vwce)).toEqual(computeFiscalGrade(vwce.isin, vwce.accumulating))
   })
 })

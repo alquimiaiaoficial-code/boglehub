@@ -7,7 +7,7 @@ import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
 import { NewsletterSignup } from '@/components/NewsletterSignup'
 import { getEtfByTicker, getAllEtfs, otrasCotizaciones } from '@/lib/etf-database'
-import { computeFiscalGrade, GRADE_STYLES } from '@/lib/fiscal'
+import { computeFiscalGradeEtf, esEtc, politicaDeReparto, GRADE_STYLES } from '@/lib/fiscal'
 import { formatPct } from '@/lib/utils'
 import { generateEtfDescription, generateEtfFaqs } from '@/lib/etf-faqs'
 import { ETF_PAIRS, pairToSlug } from '@/data/etf-pairs'
@@ -67,11 +67,13 @@ function getRelevantThemes(etf: EtfMetadata): { slug: string; label: string }[] 
     themes.push({ slug: 'msci-world', label: 'MSCI World / mercados desarrollados' })
   }
 
-  // Acumulación / Distribución
-  if (etf.accumulating) {
-    themes.push({ slug: 'acumulacion', label: 'ETFs de acumulación' })
-  } else {
-    themes.push({ slug: 'distribucion', label: 'ETFs de distribución' })
+  // Acumulación / Distribución. Un ETC no es ninguna de las dos: no entra en esos hubs.
+  if (!esEtc(etf)) {
+    themes.push(
+      etf.accumulating
+        ? { slug: 'acumulacion', label: 'ETFs de acumulación' }
+        : { slug: 'distribucion', label: 'ETFs de distribución' },
+    )
   }
 
   return themes
@@ -139,7 +141,7 @@ export async function generateMetadata({
   if (!etf) {
     return { title: 'ETF no encontrado' }
   }
-  const fiscal = computeFiscalGrade(etf.isin, etf.accumulating)
+  const fiscal = computeFiscalGradeEtf(etf)
   const title = `${etf.name} (${etf.ticker})`
   // Meta description ≤ ~155 chars: usar el ticker (no el nombre completo, que
   // dispara el truncado en SERP). El nombre completo va en el title.
@@ -213,7 +215,7 @@ export default async function EtfPage({ params }: { params: Promise<{ ticker: st
   }
 
   const hermanos = otrasCotizaciones(etf.ticker)
-  const fiscal = computeFiscalGrade(etf.isin, etf.accumulating)
+  const fiscal = computeFiscalGradeEtf(etf)
   const fiscalStyle = GRADE_STYLES[fiscal.grade]
 
   // Tipo de producto preciso: los ETC de materias primas (oro) no son ETF UCITS.
@@ -223,7 +225,7 @@ export default async function EtfPage({ params }: { params: Promise<{ ticker: st
       : `ETF UCITS de ${(ASSET_CLASS_LABEL[etf.assetClass] ?? etf.assetClass).toLowerCase()}`
   // Frase citable autocontenida (respuesta-primero). El TER se lee de los datos,
   // así que se mantiene correcto sin duplicar cifras.
-  const citableLead = `Según BogleHub, ${etf.ticker} (${etf.name}${etf.isin ? `, ISIN ${etf.isin}` : ''}) es un ${productType} con un TER del ${formatPct(etf.ter / 100, 2)} anual, de ${etf.accumulating ? 'acumulación' : 'distribución'}, domiciliado en ${fiscal.domicileLabel} (eficiencia fiscal ${fiscal.grade} para un inversor residente en España).`
+  const citableLead = `Según BogleHub, ${etf.ticker} (${etf.name}${etf.isin ? `, ISIN ${etf.isin}` : ''}) es un ${productType} con un TER del ${formatPct(etf.ter / 100, 2)} anual, ${politicaDeReparto(etf).frase}, domiciliado en ${fiscal.domicileLabel} (eficiencia fiscal ${fiscal.grade} para un inversor residente en España).`
 
   const similar: EtfMetadata[] = getAllEtfs()
     .filter((e) => e.assetClass === etf.assetClass && e.ticker !== etf.ticker)
@@ -338,7 +340,7 @@ export default async function EtfPage({ params }: { params: Promise<{ ticker: st
             <Stat label="Divisa base" value={etf.baseCurrency} />
             <Stat
               label="Reparto"
-              value={etf.accumulating ? 'Acumulación' : 'Distribución'}
+              value={politicaDeReparto(etf).largo}
             />
           </div>
 
@@ -353,7 +355,7 @@ export default async function EtfPage({ params }: { params: Promise<{ ticker: st
               </div>
               <div className="flex-1 min-w-0">
                 <div className="text-sm font-semibold text-fg">
-                  Domicilio: {fiscal.domicileLabel} · {etf.accumulating ? 'Acumulación' : 'Distribución'}
+                  Domicilio: {fiscal.domicileLabel} · {politicaDeReparto(etf).largo}
                 </div>
                 <p className="text-xs text-fg-muted mt-1 leading-relaxed">{fiscal.reason}</p>
               </div>

@@ -76,27 +76,6 @@ const nextConfig: NextConfig = {
       },
 
       /**
-       * Amundi Prime Global y Prime Japan salen del catálogo de FONDOS el 19-sep-2026,
-       * porque no son fondos: son ETFs. Mientras estuvieron ahí les atribuíamos el traspaso
-       * sin tributar, que es exactamente lo que un fondo cotizado NO tiene.
-       *
-       * Van a 301 y no a 404 por un dato que hasta hoy no teníamos. Con la API de Bing ya
-       * conectada se ve que `/fondo/amundi-prime-global` hace 9 impresiones y 3 clics: un
-       * 33 % de CTR, frente al 2,6 % de media del sitio. No es la página con más clics
-       * —creíamos que sí, y era falso: esa es /blog/vwce-analisis-completo con 9— pero sí es
-       * con diferencia la que mejor convierte. Tirar esa URL sería tirar la mejor conversión
-       * que tenemos.
-       *
-       * El destino es el artículo, no otra ficha, porque responde lo que busca quien llega:
-       * si eso es un fondo o un ETF, y qué pasó con ese ISIN (figura liquidado o fusionado,
-       * y la gama viva es irlandesa).
-       *
-       * Ojo con lo que había aquí: `/comparar-fondo/amundi-prime-global-vs-fidelity-msci-world`
-       * apuntaba a `...-vs-fidelity-sp500`, un par que desaparece con estas fichas. Era un 301
-       * hacia un 404. Al retirar contenido hay que mirar quién apuntaba a él, no solo quién
-       * lo enlazaba.
-       */
-      /**
        * La ficha «SPXS» mezclaba dos productos (29-sep-2026): el nombre y la acumulación del
        * SPDR S&P 500 (Acc) con el ISIN de su clase de distribución, y un ticker que State
        * Street no usa para ninguna de las dos. Según su factsheet, la clase de acumulación
@@ -127,6 +106,41 @@ const nextConfig: NextConfig = {
         destination: '/etfs/europa',
         statusCode: 301,
       },
+      /**
+       * LCUW (Amundi MSCI World V, LU1781541179), retirada el 29-sep-2026 porque no
+       * encontramos dónde se compra: ninguna cotización en Yahoo, ningún instrumento en
+       * Euronext con su ISIN (el control, MWRD, sí sale) y su documento de datos
+       * fundamentales es del 13/12/2024 cuando los de las demás clases de Amundi son de 2026.
+       * NO se afirma que esté liquidado: la web de Amundi pide aceptar un aviso para verlo.
+       * Va al hub de MSCI World, no a otra ficha, porque no consta que tenga sucesor.
+       */
+      {
+        source: '/etf/lcuw',
+        destination: '/etfs/msci-world',
+        statusCode: 301,
+      },
+
+      /**
+       * Amundi Prime Global y Prime Japan salen del catálogo de FONDOS el 19-sep-2026,
+       * porque no son fondos: son ETFs. Mientras estuvieron ahí les atribuíamos el traspaso
+       * sin tributar, que es exactamente lo que un fondo cotizado NO tiene.
+       *
+       * Van a 301 y no a 404 por un dato que hasta hoy no teníamos. Con la API de Bing ya
+       * conectada se ve que `/fondo/amundi-prime-global` hace 9 impresiones y 3 clics: un
+       * 33 % de CTR, frente al 2,6 % de media del sitio. No es la página con más clics
+       * —creíamos que sí, y era falso: esa es /blog/vwce-analisis-completo con 9— pero sí es
+       * con diferencia la que mejor convierte. Tirar esa URL sería tirar la mejor conversión
+       * que tenemos.
+       *
+       * El destino es el artículo, no otra ficha, porque responde lo que busca quien llega:
+       * si eso es un fondo o un ETF, y qué pasó con ese ISIN (figura liquidado o fusionado,
+       * y la gama viva es irlandesa).
+       *
+       * Ojo con lo que había aquí: `/comparar-fondo/amundi-prime-global-vs-fidelity-msci-world`
+       * apuntaba a `...-vs-fidelity-sp500`, un par que desaparece con estas fichas. Era un 301
+       * hacia un 404. Al retirar contenido hay que mirar quién apuntaba a él, no solo quién
+       * lo enlazaba.
+       */
       {
         source: '/fondo/amundi-prime-global',
         destination: '/blog/amundi-prime-global-analisis',

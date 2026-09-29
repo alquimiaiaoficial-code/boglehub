@@ -263,3 +263,61 @@ export function computeFiscalGradeFondo(
       ' Y por ser un fondo y no un ETF, cambiar a otro fondo se puede hacer por traspaso: el artículo 94.1.a) de la Ley del IRPF dice que entonces «no procederá computar la ganancia o pérdida patrimonial», siempre que el importe no llegue a estar a tu disposición. Con un ETF ese cambio exige vender, y la ganancia tributa ese año.',
   }
 }
+
+/**
+ * Lo mínimo de un producto cotizado que hace falta para calificarlo. Estructural a propósito,
+ * para no importar `EtfMetadata` aquí y crear un ciclo.
+ */
+interface ProductoCotizado {
+  isin?: string
+  accumulating: boolean
+  assetClass?: string
+}
+
+/** Un ETC de materias primas (el oro del catálogo): no es un fondo y no produce rentas. */
+export function esEtc(p: { assetClass?: string }): boolean {
+  return p.assetClass === 'COMMODITY'
+}
+
+/**
+ * Grado fiscal de un producto cotizado, con los ETC tratados aparte (29-sep-2026).
+ *
+ * `computeFiscalGrade` solo sabe de dividendos: los acumula o los reparte. Un ETC de oro no
+ * tiene ninguno, porque el oro no paga dividendos. Con la casilla en «distribución» la ficha
+ * decía que los dividendos llegan cada año y tributan; con la casilla en «acumulación» diría
+ * que se reinvierten. Las dos cosas son falsas, así que el ETC lleva su propia explicación.
+ *
+ * La letra es A porque, a efectos del IRPF, se comporta como lo mejor de la escala: nada
+ * tributa hasta vender. La afirmación fiscal es la mínima que se sostiene sea cual sea la
+ * calificación de la renta (rendimiento del capital mobiliario del art. 25.2 o ganancia
+ * patrimonial): las dos van a la base del ahorro, art. 46 de la Ley 35/2006, comprobado en
+ * el texto consolidado del BOE el 29-sep-2026.
+ */
+export function computeFiscalGradeEtf(p: ProductoCotizado): FiscalAssessment {
+  if (esEtc(p) && p.isin) {
+    const domicile = inferDomicile(p.isin)
+    return {
+      grade: 'A',
+      domicile,
+      domicileLabel: DOMICILE_LABEL[domicile],
+      reason:
+        'ETC de oro físico: no reparte nada, porque el oro no genera dividendos, y por eso tampoco hay retención en origen que perder. Lo que ganes tributa solo cuando vendas, en la base del ahorro del IRPF (artículo 46 de la Ley 35/2006). Un ETC no es un fondo sino un título de deuda respaldado por el metal, así que, igual que un ETF, no se puede traspasar sin tributar.',
+    }
+  }
+  return computeFiscalGrade(p.isin, p.accumulating)
+}
+
+/** Cómo se nombra la política de reparto de un producto, en sus tres formas de uso. */
+export function politicaDeReparto(p: { accumulating: boolean; assetClass?: string }): {
+  /** Para columnas estrechas. */
+  corto: string
+  /** Para una etiqueta o una celda. */
+  largo: string
+  /** Para dentro de una frase: «es un ETF {frase}» → «de acumulación». */
+  frase: string
+} {
+  if (esEtc(p)) return { corto: 'Sin reparto', largo: 'No reparte (ETC)', frase: 'que no reparte nada' }
+  return p.accumulating
+    ? { corto: 'Acc', largo: 'Acumulación', frase: 'de acumulación' }
+    : { corto: 'Dist', largo: 'Distribución', frase: 'de distribución' }
+}

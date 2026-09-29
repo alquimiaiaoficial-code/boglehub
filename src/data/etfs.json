@@ -536,40 +536,6 @@
     "accumulating": false
   },
   {
-    "ticker": "LCUW",
-    "name": "Amundi MSCI World V UCITS ETF (Acc)",
-    "ter": 0.12,
-    "assetClass": "EQUITY",
-    "regionAllocation": {
-      "US": 0.71,
-      "EUROPE": 0.16,
-      "EM": 0,
-      "JAPAN": 0.07,
-      "PACIFIC_EX_JAPAN": 0.04,
-      "GLOBAL": 0,
-      "UK": 0,
-      "CHINA": 0,
-      "OTHER": 0.02
-    },
-    "sectorAllocation": {
-      "TECHNOLOGY": 0.25,
-      "FINANCIAL": 0.15,
-      "HEALTHCARE": 0.13,
-      "CONSUMER_DISC": 0.11,
-      "INDUSTRIAL": 0.1,
-      "CONSUMER_STAPLES": 0.07,
-      "ENERGY": 0.04,
-      "MATERIALS": 0.04,
-      "COMMUNICATION": 0.08,
-      "UTILITIES": 0.02,
-      "REAL_ESTATE": 0.01,
-      "DIVERSIFIED": 0
-    },
-    "baseCurrency": "EUR",
-    "accumulating": true,
-    "isin": "LU1781541179"
-  },
-  {
     "ticker": "SWRD",
     "isin": "IE00BFY0GT14",
     "name": "SPDR MSCI World UCITS ETF (Acc)",
@@ -1381,12 +1347,12 @@
       "OTHER": 0
     },
     "baseCurrency": "USD",
-    "accumulating": false
+    "accumulating": true
   },
   {
     "ticker": "IGLN",
     "isin": "IE00B4ND3602",
-    "name": "iShares Physical Gold ETC GBP (Dist)",
+    "name": "iShares Physical Gold ETC",
     "ter": 0.12,
     "assetClass": "COMMODITY",
     "regionAllocation": {
@@ -1401,12 +1367,12 @@
       "OTHER": 0
     },
     "baseCurrency": "GBP",
-    "accumulating": false
+    "accumulating": true
   },
   {
     "ticker": "4GLD",
     "isin": "DE000A0S9GB0",
-    "name": "Xetra-Gold ETC (Dist)",
+    "name": "Xetra-Gold ETC",
     "ter": 0,
     "assetClass": "COMMODITY",
     "regionAllocation": {
@@ -1421,7 +1387,7 @@
       "OTHER": 0
     },
     "baseCurrency": "EUR",
-    "accumulating": false
+    "accumulating": true
   },
   {
     "ticker": "IWQU",

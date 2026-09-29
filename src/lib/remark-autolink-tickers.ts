@@ -13,7 +13,7 @@ import type { Root } from 'mdast'
 const KNOWN_TICKERS = new Set([
   'VWCE', 'CSPX', 'IWDA', 'EIMI', 'AGGH', 'VEUR', 'VFEM', 'IMEU', 'SEMB',
   'VAGF', 'SXR8', 'EUNL', 'VUSA', 'VUKE', 'IUSA', 'XDWD',
-  'VWRL', 'LCUW', 'SWRD', 'WEBN', 'VWRP', 'ISAC', 'MWRD', 'VUAA', 'SPYL',
+  'VWRL', 'SWRD', 'WEBN', 'VWRP', 'ISAC', 'MWRD', 'VUAA', 'SPYL',
   'SMEA', 'IS3N', 'AEEM', 'EMIM', 'WSML', 'IUSN', 'ZPRS',
   'VGEA', 'EUNA', 'IBGX', 'VETY', 'VHYL', 'TDIV',
   'EQQQ', 'SXRV', 'CNDX', 'SJPA', 'CPXJ', 'SGLN', 'IGLN',

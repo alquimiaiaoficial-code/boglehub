@@ -4,7 +4,7 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { JsonLd } from '@/components/JsonLd'
 import { getAllEtfs } from '@/lib/etf-database'
-import { computeFiscalGrade, GRADE_STYLES } from '@/lib/fiscal'
+import { computeFiscalGradeEtf, politicaDeReparto, GRADE_STYLES } from '@/lib/fiscal'
 import { formatPct } from '@/lib/utils'
 
 const BASE_URL = 'https://boglehub.com'
@@ -170,7 +170,7 @@ export default function EtfIndexPage() {
                   </thead>
                   <tbody className="divide-y divide-border">
                     {etfs.map((etf) => {
-                      const fiscal = computeFiscalGrade(etf.isin, etf.accumulating)
+                      const fiscal = computeFiscalGradeEtf(etf)
                       const fStyle = GRADE_STYLES[fiscal.grade]
                       return (
                         <tr key={etf.ticker} className="group hover:bg-surface-2 transition-colors">
@@ -203,7 +203,7 @@ export default function EtfIndexPage() {
                           </td>
                           <td className="py-2.5 pr-3 text-center hidden sm:table-cell">
                             <span className="text-xs text-fg-subtle">
-                              {etf.accumulating ? 'Acc' : 'Dist'}
+                              {politicaDeReparto(etf).corto}
                             </span>
                           </td>
                           <td className="py-2.5 text-center">

@@ -8,7 +8,7 @@ const SUFFIX_MAP: Record<string, string> = {
   VWCE: '.DE', CSPX: '.L', IWDA: '.AS', EIMI: '.L', AGGH: '.DE',
   VEUR: '.L', VFEM: '.L', IMEU: '.L', SEMB: '.L', VAGF: '.MI',
   SXR8: '.DE', EUNL: '.DE', VUSA: '.L', VUKE: '.L',
-  IUSA: '.L', XDWD: '.DE', VWRL: '.L', LCUW: '.PA',
+  IUSA: '.L', XDWD: '.DE', VWRL: '.L',
   // Añadidos el 29-sep-2026: los que se buscaban donde no cotizan (ver SYMBOL_ALIAS).
   VWRP: '.DE', EMIM: '.DE', WSML: '.DE', CNDX: '.DE', SMEA: '.AS',
   SGLN: '.L', IGLN: '.L', SWRD: '.L', ISAC: '.L', AEEM: '.PA',
@@ -32,8 +32,8 @@ const SUFFIX_MAP: Record<string, string> = {
  *   SGLN → IGLN (IE00B4ND3602)   VHYL → VHYD (IE00B8GKDB10)
  *   SJPA → IJPA (IE00B4L5YX21)   CPXJ → CSPXJ (IE00B52MJY50)
  *
- * Sin alias: LCUW (Yahoo no devuelve ninguna cotización para su ISIN). SPXS era una ficha
- * que mezclaba dos productos; desde el 29-sep-2026 es SPYL y cotiza con su propio ticker.
+ * SPXS era una ficha que mezclaba dos productos; desde el 29-sep-2026 es SPYL y cotiza con
+ * su propio ticker. LCUW y MEUD se retiraron del catálogo ese día (ver next.config.ts).
  */
 const SYMBOL_ALIAS: Record<string, string> = {
   VWRP: 'VWCE', EMIM: 'IS3N', AGGH: 'EUNA', WSML: 'IUSN', CNDX: 'SXRV', SMEA: 'IMAE',
@@ -59,7 +59,7 @@ const QUOTE_CURRENCY: Record<string, 'USD' | 'EUR' | 'GBp' | 'GBP'> = {
   VWCE: 'EUR', CSPX: 'USD', IWDA: 'EUR', EIMI: 'USD', AGGH: 'EUR',
   VEUR: 'GBP', VFEM: 'GBP', IMEU: 'GBp', SEMB: 'GBp', VAGF: 'EUR',
   SXR8: 'EUR', EUNL: 'EUR', VUSA: 'GBP', VUKE: 'GBP',
-  IUSA: 'GBp', XDWD: 'EUR', VWRL: 'GBP', LCUW: 'EUR',
+  IUSA: 'GBp', XDWD: 'EUR', VWRL: 'GBP',
   // 29-sep-2026, divisa que declara Yahoo para cada cotización de SUFFIX_MAP/SYMBOL_ALIAS.
   // MWRD: Yahoo lo da en GBP en Xetra; parece raro pero cuadra con su línea en euros de
   // Stuttgart (138,64 GBP = 161,6 € frente a 161,54 €). Leído como euros salía un 14 % bajo.
