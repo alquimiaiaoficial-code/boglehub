@@ -13,7 +13,7 @@ const SUFFIX_MAP: Record<string, string> = {
   VWRP: '.DE', EMIM: '.DE', WSML: '.DE', CNDX: '.DE', SMEA: '.AS',
   SGLN: '.L', IGLN: '.L', SWRD: '.L', ISAC: '.L', MEUD: '.PA', AEEM: '.PA',
   IBGX: '.AS', VETY: '.AS', TDIV: '.AS', VHYL: '.L', SJPA: '.L', CPXJ: '.SW',
-  IWQU: '.L', IWMO: '.L', RBOT: '.L',
+  IWQU: '.L', IWMO: '.L', RBOT: '.L', SPYL: '.DE',
 }
 
 /**
@@ -32,8 +32,8 @@ const SUFFIX_MAP: Record<string, string> = {
  *   SGLN → IGLN (IE00B4ND3602)   MEUD → MEU  (FR0010261198)   VHYL → VHYD (IE00B8GKDB10)
  *   SJPA → IJPA (IE00B4L5YX21)   CPXJ → CSPXJ (IE00B52MJY50)
  *
- * Sin alias a propósito: SPXS (su ficha mezcla dos productos; se rehace aparte) y LCUW
- * (Yahoo no devuelve ninguna cotización para su ISIN).
+ * Sin alias: LCUW (Yahoo no devuelve ninguna cotización para su ISIN). SPXS era una ficha
+ * que mezclaba dos productos; desde el 29-sep-2026 es SPYL y cotiza con su propio ticker.
  */
 const SYMBOL_ALIAS: Record<string, string> = {
   VWRP: 'VWCE', EMIM: 'IS3N', AGGH: 'EUNA', WSML: 'IUSN', CNDX: 'SXRV', SMEA: 'IMAE',
@@ -67,7 +67,7 @@ const QUOTE_CURRENCY: Record<string, 'USD' | 'EUR' | 'GBp' | 'GBP'> = {
   VWRP: 'EUR', EMIM: 'EUR', WSML: 'EUR', CNDX: 'EUR', SMEA: 'EUR',
   SGLN: 'USD', IGLN: 'USD', SWRD: 'USD', ISAC: 'USD', MEUD: 'EUR', AEEM: 'EUR',
   IBGX: 'EUR', VETY: 'EUR', TDIV: 'EUR', VHYL: 'USD', SJPA: 'USD', CPXJ: 'USD',
-  IWQU: 'USD', IWMO: 'USD', RBOT: 'USD',
+  IWQU: 'USD', IWMO: 'USD', RBOT: 'USD', SPYL: 'EUR',
 }
 
 // Yahoo suffix -> MIC code, so Twelve Data consulta el MISMO mercado que

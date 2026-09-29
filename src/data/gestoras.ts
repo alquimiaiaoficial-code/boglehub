@@ -105,10 +105,10 @@ export const GESTORAS: Gestora[] = [
     etfBrand: 'SPDR',
     tagline: 'Pionero de los ETFs: lanzaron el primer ETF en 1993 (SPY)',
     description:
-      'State Street Global Advisors lanzó el primer ETF de la historia en 1993: el SPDR S&P 500 (SPY), aún hoy uno de los más grandes del mundo. La familia SPDR UCITS es popular en Europa por TER muy competitivos en algunos productos clave: SWRD (MSCI World, TER 0,12%) es el ETF MSCI World UCITS más barato del mercado, SPXS (S&P 500, TER 0,03%) compite con CSPX/VUAA.',
+      'State Street Global Advisors lanzó el primer ETF de la historia en 1993: el SPDR S&P 500 (SPY), aún hoy uno de los más grandes del mundo. La familia SPDR UCITS es popular en Europa por TER muy competitivos en algunos productos clave: SWRD (MSCI World, TER 0,12%) es el ETF MSCI World UCITS más barato del mercado, SPYL (S&P 500, TER 0,03%) compite con CSPX/VUAA.',
     popularEtfs: [
       { ticker: 'SWRD', name: 'SPDR MSCI World UCITS ETF' },
-      { ticker: 'SPXS', name: 'SPDR S&P 500 UCITS ETF' },
+      { ticker: 'SPYL', name: 'SPDR S&P 500 UCITS ETF (Acc)' },
       { ticker: 'SSAC', name: 'SPDR MSCI ACWI IMI UCITS ETF' },
       { ticker: 'ZPRV', name: 'SPDR S&P 600 US Small Cap Value UCITS ETF' },
       { ticker: 'ZPRG', name: 'SPDR S&P Global Dividend Aristocrats UCITS ETF' },

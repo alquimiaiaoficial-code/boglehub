@@ -191,3 +191,20 @@ describe('política de reparto verificada en la gestora', () => {
     expect(porTicker.get('VGOV')!.name).toMatch(/Distributing/)
   })
 })
+
+/**
+ * SPXS → SPYL (29-sep-2026). La ficha decía «SPDR S&P 500 UCITS ETF (Acc)» con el ISIN
+ * IE00B6YX5C33, que según State Street es la clase de DISTRIBUCIÓN (SPY5), y un ticker que
+ * State Street no usa. Y en /datos-clave y en la API de tablas llevaba el ISIN del SPDR MSCI
+ * World. Factsheet de State Street (factsheet-emea-en_gb-spyl-gy.pdf): «ISIN IE000XZSV718 ·
+ * Index Name S&P 500 Index · TER 0.03% · Income Treatment Accumulation · Domicile Ireland».
+ */
+describe('SPDR S&P 500 (Acc)', () => {
+  it('se publica como SPYL, con el ISIN de la clase de acumulación', () => {
+    const e = getAllEtfs().find((x) => x.ticker === 'SPYL')!
+    expect(e.isin).toBe('IE000XZSV718')
+    expect(e.accumulating).toBe(true)
+    expect(e.ter).toBe(0.03)
+    expect(getAllEtfs().some((x) => x.ticker === 'SPXS')).toBe(false)
+  })
+})

@@ -36,7 +36,7 @@ const MSCI_WORLD_FILTER = (etf: EtfMetadata) =>
   (etf.regionAllocation.US ?? 0) >= 0.55 &&
   (etf.regionAllocation.US ?? 0) < 0.85
 
-const SP500_TICKERS = new Set(['CSPX', 'SXR8', 'VUSA', 'IUSA', 'VUAA', 'SPXS'])
+const SP500_TICKERS = new Set(['CSPX', 'SXR8', 'VUSA', 'IUSA', 'VUAA', 'SPYL'])
 
 // All-World: global equity including EM (VWCE-like: US ~60-65%, EM ~12%)
 const ALL_WORLD_FILTER = (etf: EtfMetadata) =>

@@ -299,7 +299,7 @@ Fuente: BogleHub (boglehub.com/datos-clave) — verificable con BOE/AEAT, follet
               source="Folletos oficiales de las gestoras y JustETF"
               headers={['Ticker', 'Nombre', 'ISIN', 'TER', 'Política', 'Domicilio']}
               rows={[
-                ['SPXS', 'SPDR S&P 500 UCITS', 'IE00BFY0GT14', '0,03%', 'Acumulación', 'Irlanda'],
+                ['SPYL', 'SPDR S&P 500 UCITS (Acc)', 'IE000XZSV718', '0,03%', 'Acumulación', 'Irlanda'],
                 ['CSPX', 'iShares Core S&P 500 (LSE)', 'IE00B5BMR087', '0,07%', 'Acumulación', 'Irlanda'],
                 ['SXR8', 'iShares Core S&P 500 (Xetra)', 'IE00B5BMR087', '0,07%', 'Acumulación', 'Irlanda'],
                 ['VUAA', 'Vanguard S&P 500 (Acc)', 'IE00BFMXXD54', '0,07%', 'Acumulación', 'Irlanda'],
@@ -308,8 +308,8 @@ Fuente: BogleHub (boglehub.com/datos-clave) — verificable con BOE/AEAT, follet
               ]}
             />
             <p className="text-sm text-fg-muted leading-relaxed">
-              CSPX y SXR8 son el mismo fondo (ISIN IE00B5BMR087) en distintas bolsas. SPXS es
-              actualmente el S&P 500 UCITS más barato. Todos están domiciliados en Irlanda,
+              CSPX y SXR8 son el mismo fondo (ISIN IE00B5BMR087) en distintas bolsas. SPYL es
+              el S&P 500 UCITS más barato de esta tabla. Todos están domiciliados en Irlanda,
               aprovechando el convenio fiscal con EE.UU. (retención dividendos 15% vs 30%).
             </p>
           </section>

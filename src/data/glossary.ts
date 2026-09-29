@@ -746,7 +746,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     longDefinition:
       'El S&P 500 (Standard & Poor\'s 500) es un índice de las 500 empresas más grandes de EE.UU. cotizadas en el NYSE o el Nasdaq, ponderado por capitalización bursátil. Es el benchmark de referencia para evaluar el mercado americano.\n\nA diferencia del Nasdaq 100 (~100 empresas, sesgo tecnológico) o el Dow Jones (~30 empresas, ponderado por precio), el S&P 500 representa una visión amplia y diversificada de la economía americana. Las 10 mayores empresas (Apple, Microsoft, Nvidia, Amazon, Google, Meta, Berkshire Hathaway, Eli Lilly, Tesla, JP Morgan) suelen pesar entre el 30-35% del índice.',
     example:
-      'ETFs S&P 500 disponibles en España: CSPX/SXR8 (iShares, TER 0,07%, mismo fondo en dos bolsas), VUAA/VUSA (Vanguard, TER 0,07%, acc/dist), SPXS (SPDR, TER 0,03% — el más barato).',
+      'ETFs S&P 500 disponibles en España: CSPX/SXR8 (iShares, TER 0,07%, mismo fondo en dos bolsas), VUAA/VUSA (Vanguard, TER 0,07%, acc/dist), SPYL (SPDR, TER 0,03% — el más barato).',
     relatedLinks: [{ label: 'Mejores ETFs S&P 500', href: '/etfs/sp500' }],
     faq: [
       {
@@ -755,7 +755,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       },
       {
         q: '¿Cuál es el ETF de S&P 500 más barato en España?',
-        a: 'SPXS (SPDR) tiene el TER más bajo, del 0,03%. CSPX/SXR8 (iShares) y VUAA/VUSA (Vanguard) tienen un TER del 0,07%. Todos son UCITS irlandeses comprables desde España.',
+        a: 'SPYL (SPDR) tiene el TER más bajo, del 0,03%. CSPX/SXR8 (iShares) y VUAA/VUSA (Vanguard) tienen un TER del 0,07%. Todos son UCITS irlandeses comprables desde España.',
       },
       {
         q: '¿Es mejor el S&P 500 o el MSCI World?',

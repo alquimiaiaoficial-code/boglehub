@@ -96,6 +96,18 @@ const nextConfig: NextConfig = {
        * hacia un 404. Al retirar contenido hay que mirar quién apuntaba a él, no solo quién
        * lo enlazaba.
        */
+      /**
+       * La ficha «SPXS» mezclaba dos productos (29-sep-2026): el nombre y la acumulación del
+       * SPDR S&P 500 (Acc) con el ISIN de su clase de distribución, y un ticker que State
+       * Street no usa para ninguna de las dos. Según su factsheet, la clase de acumulación
+       * —la que describen todos nuestros textos, TER 0,03 %— es IE000XZSV718 y cotiza como
+       * SPYL. La URL vieja va a la ficha buena.
+       */
+      {
+        source: '/etf/spxs',
+        destination: '/etf/spyl',
+        statusCode: 301,
+      },
       {
         source: '/fondo/amundi-prime-global',
         destination: '/blog/amundi-prime-global-analisis',

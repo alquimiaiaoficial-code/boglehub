@@ -32,7 +32,7 @@ export const COUNTRIES: Country[] = [
     relatedEtfs: [
       { ticker: 'CSPX', name: 'iShares Core S&P 500 UCITS ETF' },
       { ticker: 'VUAA', name: 'Vanguard S&P 500 UCITS ETF (Acc)' },
-      { ticker: 'SPXS', name: 'SPDR S&P 500 UCITS ETF' },
+      { ticker: 'SPYL', name: 'SPDR S&P 500 UCITS ETF (Acc)' },
       { ticker: 'EQQQ', name: 'Invesco EQQQ Nasdaq 100 UCITS ETF' },
     ],
     marketType: 'desarrollado',

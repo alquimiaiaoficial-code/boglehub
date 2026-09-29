@@ -238,7 +238,7 @@ export async function GET() {
   lines.push('## Hubs de categoría de ETFs')
   lines.push('')
   lines.push('- [Mejores ETFs MSCI World (España)](https://boglehub.com/etfs/msci-world): IWDA, SWRD, MWRD, XDWD comparados')
-  lines.push('- [Mejores ETFs S&P 500](https://boglehub.com/etfs/sp500): CSPX, SXR8, VUAA, VUSA, SPXS')
+  lines.push('- [Mejores ETFs S&P 500](https://boglehub.com/etfs/sp500): CSPX, SXR8, VUAA, VUSA, SPYL')
   lines.push('- [Mejores ETFs All-World](https://boglehub.com/etfs/todo-mundo): VWCE, ISAC con emergentes incluidos')
   lines.push('- [Mejores ETFs de acumulación](https://boglehub.com/etfs/acumulacion): selección por eficiencia fiscal')
   lines.push('- [Mejores ETFs de distribución](https://boglehub.com/etfs/distribucion): para vivir de rentas')

@@ -23,7 +23,7 @@ const FOUNDATIONAL = [
 ]
 
 // Conjuntos de tickers (en sincronía con etfs/[tema] y etf/[ticker]).
-const SP500_TICKERS = new Set(['CSPX', 'SXR8', 'VUSA', 'IUSA', 'VUAA', 'SPXS'])
+const SP500_TICKERS = new Set(['CSPX', 'SXR8', 'VUSA', 'IUSA', 'VUAA', 'SPYL'])
 const NASDAQ_TICKERS = new Set(['EQQQ', 'SXRV', 'CNDX'])
 const DIVIDEND_TICKERS = new Set(['VHYL', 'VWRL', 'TDIV'])
 

@@ -21,7 +21,7 @@ const BASE_URL = 'https://boglehub.com'
 // ---------------------------------------------------------------------------
 // Theme cross-links: map an ETF to its relevant category page(s)
 // ---------------------------------------------------------------------------
-const SP500_TICKERS = new Set(['CSPX', 'SXR8', 'VUSA', 'IUSA', 'VUAA', 'SPXS'])
+const SP500_TICKERS = new Set(['CSPX', 'SXR8', 'VUSA', 'IUSA', 'VUAA', 'SPYL'])
 
 function getRelevantThemes(etf: EtfMetadata): { slug: string; label: string }[] {
   const themes: { slug: string; label: string }[] = []

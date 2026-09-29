@@ -101,7 +101,7 @@ export async function GET() {
       source: 'Folletos oficiales',
       headers: ['ticker', 'nombre', 'isin', 'ter_anual', 'politica'],
       rows: [
-        { ticker: 'SPXS', nombre: 'SPDR S&P 500', isin: 'IE00BFY0GT14', ter_anual: '0,03%', politica: 'Acumulación' },
+        { ticker: 'SPYL', nombre: 'SPDR S&P 500 (Acc)', isin: 'IE000XZSV718', ter_anual: '0,03%', politica: 'Acumulación' },
         { ticker: 'CSPX', nombre: 'iShares Core S&P 500 (LSE)', isin: 'IE00B5BMR087', ter_anual: '0,07%', politica: 'Acumulación' },
         { ticker: 'SXR8', nombre: 'iShares Core S&P 500 (Xetra)', isin: 'IE00B5BMR087', ter_anual: '0,07%', politica: 'Acumulación' },
         { ticker: 'VUAA', nombre: 'Vanguard S&P 500 (Acc)', isin: 'IE00BFMXXD54', ter_anual: '0,07%', politica: 'Acumulación' },

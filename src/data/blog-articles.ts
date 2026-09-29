@@ -3119,7 +3119,7 @@ Si tu caso es ese, IBKR te dará el coste más bajo durante décadas. Si estás 
       },
       {
         q: '¿Qué TER máximo debería aceptar en un ETF indexado?',
-        a: 'Para ETFs de renta variable global (MSCI World, S&P 500, All-World), un TER por encima del 0,30% anual es difícilmente justificable en 2026, cuando existen alternativas desde 0,03% (SPXS) hasta 0,14% (VWCE). Para renta fija o emergentes, un TER hasta 0,25% es razonable.',
+        a: 'Para ETFs de renta variable global (MSCI World, S&P 500, All-World), un TER por encima del 0,30% anual es difícilmente justificable en 2026, cuando existen alternativas desde 0,03% (SPYL) hasta 0,14% (VWCE). Para renta fija o emergentes, un TER hasta 0,25% es razonable.',
       },
       {
         q: '¿Es mejor un ETF de acumulación o de distribución para empezar?',
@@ -5537,7 +5537,7 @@ Empezar con poco no es empezar en desventaja. Es, simplemente, empezar. Y empeza
     faq: [
       {
         q: '¿Cuál es el mejor ETF para un inversor español en 2026?',
-        a: 'No existe un único "mejor" ETF universal, pero para simplificar: VWCE (Vanguard FTSE All-World, acumulación, IE, TER 0,14%) es el todo-en-uno más extendido, por diversificación global, domicilio irlandés y acumulación. Para quienes prefieren solo EE.UU., CSPX y SPXS son los de menor TER.',
+        a: 'No existe un único "mejor" ETF universal, pero para simplificar: VWCE (Vanguard FTSE All-World, acumulación, IE, TER 0,14%) es el todo-en-uno más extendido, por diversificación global, domicilio irlandés y acumulación. Para quienes prefieren solo EE.UU., CSPX y SPYL son los de menor TER.',
       },
       {
         q: '¿Qué criterios son más importantes para elegir un ETF en España?',
@@ -8451,7 +8451,7 @@ Funcionalmente equivalente a SXRV (mismo ISIN), pero cotiza en la Bolsa de Londr
 | Nº empresas | 100 | 500 |
 | Sectores | Sin financieras | Todos |
 | Peso tecnología | ~50% | ~30% |
-| TER ETF UCITS | 0,30% (EQQQ) | 0,03-0,07% (SPXS, CSPX) |
+| TER ETF UCITS | 0,30% (EQQQ) | 0,03-0,07% (SPYL, CSPX) |
 | Volatilidad histórica | Alta | Moderada |
 | Caída max histórica | ~80% (2000-2002) | ~50% (2008) |
 | Mejor periodo reciente | 2010-2020 (gran ciclo tech) | Más estable |
@@ -10031,7 +10031,7 @@ Una vez tengas tu cartera, puedes [analizarla gratis](/analyzer) para ver tu div
     faq: [
       {
         q: '¿Cómo se invierte en el S&P 500 desde España?',
-        a: 'A través de un ETF o un fondo indexado UCITS que replique el índice S&P 500, domiciliado en Irlanda para máxima eficiencia fiscal. No puedes comprar el SPY americano (la normativa europea MiFID II lo impide al inversor particular), pero sí sus equivalentes UCITS: ETFs como CSPX, VUAA o SPXS, o un fondo como el Vanguard U.S. 500. Se compran en un broker (Trade Republic, DEGIRO) o, en el caso de los fondos, en MyInvestor.',
+        a: 'A través de un ETF o un fondo indexado UCITS que replique el índice S&P 500, domiciliado en Irlanda para máxima eficiencia fiscal. No puedes comprar el SPY americano (la normativa europea MiFID II lo impide al inversor particular), pero sí sus equivalentes UCITS: ETFs como CSPX, VUAA o SPYL, o un fondo como el Vanguard U.S. 500. Se compran en un broker (Trade Republic, DEGIRO) o, en el caso de los fondos, en MyInvestor.',
       },
       {
         q: '¿Por qué no puedo comprar el ETF SPY o VOO americano desde España?',
@@ -10039,7 +10039,7 @@ Una vez tengas tu cartera, puedes [analizarla gratis](/analyzer) para ver tu div
       },
       {
         q: '¿Cuál es el ETF de S&P 500 más barato disponible en España?',
-        a: 'Por TER, el SPDR S&P 500 (SPXS) es el más barato con un 0,03% anual. Otros muy populares y eficientes son el iShares Core S&P 500 (CSPX) y el Vanguard S&P 500 (VUAA en acumulación, VUSA en distribución), ambos con un TER del 0,07%. Todos están domiciliados en Irlanda. La diferencia entre 0,03% y 0,07% es mínima en euros; pesa más elegir bien acumulación vs distribución y el broker.',
+        a: 'Por TER, el SPDR S&P 500 (SPYL) es el más barato con un 0,03% anual. Otros muy populares y eficientes son el iShares Core S&P 500 (CSPX) y el Vanguard S&P 500 (VUAA en acumulación, VUSA en distribución), ambos con un TER del 0,07%. Todos están domiciliados en Irlanda. La diferencia entre 0,03% y 0,07% es mínima en euros; pesa más elegir bien acumulación vs distribución y el broker.',
       },
       {
         q: '¿Mejor un ETF o un fondo indexado para el S&P 500?',
@@ -10056,7 +10056,7 @@ El S&P 500 es el índice más seguido del mundo: las 500 mayores empresas cotiza
 
 Los TER e ISIN de esta guía son los publicados por las gestoras; verifícalos en la ficha oficial antes de invertir, ya que pueden cambiar.
 
-> **En resumen**: inviertes en el S&P 500 a través de un ETF o fondo indexado UCITS domiciliado en Irlanda. Los ETFs más eficientes son SPXS (TER 0,03%), CSPX y VUAA (0,07%). Como fondo indexado, el Vanguard U.S. 500 (0,10 %), con la ventaja del traspaso fiscal. Los compras en un broker (Trade Republic, DEGIRO) o, los fondos, en MyInvestor.
+> **En resumen**: inviertes en el S&P 500 a través de un ETF o fondo indexado UCITS domiciliado en Irlanda. Los ETFs más eficientes son SPYL (TER 0,03%), CSPX y VUAA (0,07%). Como fondo indexado, el Vanguard U.S. 500 (0,10 %), con la ventaja del traspaso fiscal. Los compras en un broker (Trade Republic, DEGIRO) o, los fondos, en MyInvestor.
 
 ---
 
@@ -10084,13 +10084,13 @@ Todos replican el mismo índice S&P 500 y están domiciliados en Irlanda (grado 
 
 | ETF | Gestora | TER | Reparto | ISIN |
 |---|---|---|---|---|
-| **SPXS** | SPDR | **0,03 %** | Acumulación | IE00B6YX5C33 |
+| **SPYL** | SPDR | **0,03 %** | Acumulación | IE000XZSV718 |
 | **CSPX** | iShares | 0,07 % | Acumulación | IE00B5BMR087 |
 | **VUAA** | Vanguard | 0,07 % | Acumulación | IE00BFMXXD54 |
 | VUSA | Vanguard | 0,07 % | Distribución | IE00B3XXRP09 |
 | IUSA | iShares | 0,07 % | Distribución | IE0031442068 |
 
-El **SPXS** de SPDR es el más barato (0,03%). El **CSPX** de iShares es el más popular y con mayor patrimonio. **VUAA** (acumulación) y **VUSA** (distribución) son las versiones de Vanguard. La diferencia de TER entre 0,03% y 0,07% es de céntimos al año por cada 1.000€; pesa más elegir bien entre acumulación y distribución. Puedes comparar dos cualquiera en el [comparador de ETFs](/comparar) o ver la [categoría completa de ETFs S&P 500](/etfs/sp500).
+El **SPYL** de SPDR es el más barato (0,03%). El **CSPX** de iShares es el más popular y con mayor patrimonio. **VUAA** (acumulación) y **VUSA** (distribución) son las versiones de Vanguard. La diferencia de TER entre 0,03% y 0,07% es de céntimos al año por cada 1.000€; pesa más elegir bien entre acumulación y distribución. Puedes comparar dos cualquiera en el [comparador de ETFs](/comparar) o ver la [categoría completa de ETFs S&P 500](/etfs/sp500).
 
 ---
 
@@ -10109,7 +10109,7 @@ El **Vanguard U.S. 500** sigue el S&P 500 con unos gastos del 0,10 %. Su ficha: 
 ## ETF o fondo: cuál elegir para el S&P 500
 
 - **Fondo indexado** (Vanguard U.S. 500): permite **traspaso fiscal libre** —cambiar a otro fondo sin tributar—, aportaciones desde 1€ y compra a valor liquidativo. Ideal si vas a rebalancear o prevés cambiar de estrategia.
-- **ETF** (SPXS, CSPX, VUAA): comisiones de compra muy bajas en brokers como Trade Republic (0€), precio en tiempo real, y planes de ahorro automáticos. Ideal para comprar y mantener.
+- **ETF** (SPYL, CSPX, VUAA): comisiones de compra muy bajas en brokers como Trade Republic (0€), precio en tiempo real, y planes de ahorro automáticos. Ideal para comprar y mantener.
 
 La diferencia de coste anual es mínima; la decisión real es la del [traspaso fiscal](/blog/como-hacer-traspaso-fondos-espana) frente a la comodidad del ETF. Lo desarrollamos en [fondos indexados o ETFs](/blog/fondos-indexados-vs-etfs-espana).
 
@@ -10117,7 +10117,7 @@ La diferencia de coste anual es mínima; la decisión real es la del [traspaso f
 
 ## Acumulación o distribución
 
-- **Acumulación** (SPXS, CSPX, VUAA): reinvierte los dividendos dentro del fondo, sin que tributes por ellos hasta que vendas. Más eficiente en la fase de ahorro.
+- **Acumulación** (SPYL, CSPX, VUAA): reinvierte los dividendos dentro del fondo, sin que tributes por ellos hasta que vendas. Más eficiente en la fase de ahorro.
 - **Distribución** (VUSA, IUSA): te paga los dividendos en cuenta, que tributan cada año. Útil si quieres rentas periódicas.
 
 Para la mayoría de inversores en fase de acumulación, la versión de acumulación evita la tributación intermedia de los dividendos.
@@ -10126,7 +10126,7 @@ Para la mayoría de inversores en fase de acumulación, la versión de acumulaci
 
 ## Dónde comprarlo
 
-- **ETFs** (CSPX, VUAA, SPXS): cualquier broker con acceso a bolsa europea. Trade Republic (0€ y planes de ahorro), DEGIRO, MyInvestor. Compara opciones en [mejor broker para ETFs en España](/blog/mejor-broker-etfs-espana-2026).
+- **ETFs** (CSPX, VUAA, SPYL): cualquier broker con acceso a bolsa europea. Trade Republic (0€ y planes de ahorro), DEGIRO, MyInvestor. Compara opciones en [mejor broker para ETFs en España](/blog/mejor-broker-etfs-espana-2026).
 - **Fondos** (Vanguard U.S. 500): MyInvestor es la plataforma más usada, con traspaso fiscal y aportaciones desde 1€.
 
 ---

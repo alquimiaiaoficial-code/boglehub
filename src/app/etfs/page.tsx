@@ -34,7 +34,7 @@ const MSCI_WORLD_FILTER = (etf: EtfMetadata) =>
   (etf.regionAllocation.US ?? 0) >= 0.55 &&
   (etf.regionAllocation.US ?? 0) < 0.85
 
-const SP500_TICKERS = new Set(['CSPX', 'SXR8', 'VUSA', 'IUSA', 'VUAA', 'SPXS'])
+const SP500_TICKERS = new Set(['CSPX', 'SXR8', 'VUSA', 'IUSA', 'VUAA', 'SPYL'])
 
 const ALL_WORLD_FILTER = (etf: EtfMetadata) =>
   etf.assetClass === 'EQUITY' &&

@@ -66,7 +66,7 @@ export const ETF_THEMES: EtfTheme[] = [
     // cualquier inversor de la UE y la página ya trataba de eso sin decirlo.
     metaTitle: 'Mejores ETFs S&P 500 UCITS para inversores europeos y España 2026 | BogleHub',
     metaDescription:
-      'Los mejores ETFs S&P 500 UCITS para inversores europeos y residentes en España: CSPX, VUAA, SPXS y más, con TER desde 0,03%. Por qué el domicilio irlandés importa, acumulación frente a distribución y disponibilidad por bróker.',
+      'Los mejores ETFs S&P 500 UCITS para inversores europeos y residentes en España: CSPX, VUAA, SPYL y más, con TER desde 0,03%. Por qué el domicilio irlandés importa, acumulación frente a distribución y disponibilidad por bróker.',
     intro:
       'El S&P 500 agrupa las 500 mayores empresas cotizadas de Estados Unidos y es el índice bursátil más seguido del mundo. Invertir en él mediante un ETF UCITS ofrece acceso a gigantes como Apple, Microsoft o Nvidia junto con empresas de consumo, salud e industria. Y aquí está lo que separa a un inversor europeo de uno estadounidense: **no puede comprar los ETFs americanos** —VOO, SPY, IVV— porque la normativa PRIIPs exige un documento informativo que esas gestoras no publican en la UE. De ahí la existencia de los UCITS, que son la versión europea del mismo índice. El domicilio del fondo importa además por un motivo fiscal concreto: uno domiciliado en **Irlanda** se beneficia del convenio entre Irlanda y Estados Unidos, que reduce la retención en origen sobre los dividendos del 30 % al 15 %, y en BogleHub eso se traduce en grado fiscal A. La clase de acumulación reinvierte los dividendos en vez de repartirlos, lo que para un residente en España evita tributar por ellos cada año. La diferencia entre tickers como CSPX y SXR8 es mínima: replican el mismo fondo, simplemente cotizan en bolsas distintas.',
     listH2: 'ETFs S&P 500 disponibles en España',
@@ -81,7 +81,7 @@ export const ETF_THEMES: EtfTheme[] = [
       },
       {
         q: '¿Por qué hay ETFs S&P 500 con TER diferente que tienen el mismo rendimiento?',
-        a: 'El TER publicado es el coste nominal, pero el coste neto real (tracking difference) puede ser incluso mejor en algunos fondos que prestan acciones a terceros y recuperan una renta. SPXS de SPDR tiene el TER más bajo (0,03%), aunque CSPX y VUAA (0,07%) tienen históricos de tracking difference igualmente excelentes. En la práctica, las diferencias son mínimas para el inversor a largo plazo.',
+        a: 'El TER publicado es el coste nominal, pero el coste neto real (tracking difference) puede ser incluso mejor en algunos fondos que prestan acciones a terceros y recuperan una renta. SPYL de SPDR tiene el TER más bajo (0,03%), aunque CSPX y VUAA (0,07%) tienen históricos de tracking difference igualmente excelentes. En la práctica, las diferencias son mínimas para el inversor a largo plazo.',
       },
       {
         q: '¿Un ETF S&P 500 es compatible con la cartera Boglehead?',
