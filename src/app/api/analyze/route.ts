@@ -90,11 +90,34 @@ export async function POST(req: NextRequest) {
       ? await fetchPrices(tickersEtf)
       : ({ ok: true as const, value: {} as Record<string, number> })
 
+    /**
+     * Un ETF del catálogo metido en EUROS no necesita precio: su valor es el importe.
+     *
+     * Hasta el 29-sep-2026 se le pedía precio igual, para pasarlo a participaciones y luego
+     * volver a multiplicar por ese mismo precio. La cuenta se anula, así que el precio no
+     * aportaba nada; lo único que hacía era dejar FUERA del análisis a todo ETF sin precio.
+     * Y ese día 24 de los 55 del catálogo no tenían (VWRP, SWRD, EMIM, IGLN…: se buscaban
+     * con un símbolo que no existe en esa bolsa). Quien escribía «5.000 € en VWRP» veía
+     * «No se pudo obtener precio» por un dato que no hacía falta.
+     *
+     * Solo si TODAS las posiciones de ese ticker van en euros. Si alguna va en
+     * participaciones, sin precio no hay forma honesta de valorarla y se avisa como siempre.
+     */
+    const preciosObtenidos: Record<string, number> = pricesResult.ok ? pricesResult.value : {}
+    const etfsSoloEnEuros = new Set(
+      tickersEtf.filter(
+        (t) =>
+          preciosObtenidos[t] == null &&
+          getEtfByTicker(t) != null &&
+          body.positions.every((p) => p.ticker.toUpperCase() !== t || p.unidad === 'euros'),
+      ),
+    )
+
     // Si los ETFs no dan precio pero hay fondos que sí se pueden analizar, el análisis
     // sigue con los fondos y se avisa de lo que falta. Antes, un solo ETF sin precio
     // tumbaba la cartera completa; para quien lleva mayoría de fondos eso era perderlo todo
     // por la parte pequeña.
-    if (!pricesResult.ok && fondos.size === 0) {
+    if (!pricesResult.ok && fondos.size === 0 && etfsSoloEnEuros.size === 0) {
       /**
        * `fetchPrices` falla cuando no consigue NI UN precio, y hasta el 11-sep-2026 de ahí
        * se deducía «los proveedores están caídos». La deducción es falsa y tiene otra causa
@@ -131,8 +154,10 @@ export async function POST(req: NextRequest) {
      * que el inversor ve en su plataforma —MyInvestor dice «tienes 12.430,18 €», no «tienes
      * 812,4431 participaciones a 15,30»—, y por tanto el menos propenso a error.
      */
-    const precios: Record<string, number> = { ...(pricesResult.ok ? pricesResult.value : {}) }
+    const precios: Record<string, number> = { ...preciosObtenidos }
     for (const isin of fondos.keys()) precios[isin] = 1
+    // Mismo razonamiento que un fondo: la unidad es el euro, así que el «precio» es uno.
+    for (const t of etfsSoloEnEuros) precios[t] = 1
 
     // Un ETF metido en euros se pasa a participaciones con el precio del día; desde aquí todo
     // se calcula igual que si hubiera venido en participaciones. Si no hay precio se deja como
@@ -165,7 +190,7 @@ export async function POST(req: NextRequest) {
       warnings.push(`${rechazado.nombre} no entra en este análisis. ${rechazado.motivo}`)
     }
 
-    if (!pricesResult.ok && fondos.size > 0) {
+    if (!pricesResult.ok && fondos.size > 0 && tickersEtf.every((t) => precios[t] == null)) {
       warnings.push(
         'No se han podido obtener los precios de los ETFs de la cartera, así que el análisis solo incluye los fondos. Los porcentajes son los de esa parte, no los del total.',
       )

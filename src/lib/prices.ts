@@ -12,11 +12,25 @@ const SUFFIX_MAP: Record<string, string> = {
 }
 
 // Currency each ticker is quoted in on its reference exchange (GBp = pence)
+//
+// Revisada el 29-sep-2026 contra la divisa que declara cada cotización en Yahoo, y con un
+// control independiente donde lo había. Ocho estaban mal y el analizador daba precios
+// falsos en modo participaciones:
+//   IWDA  USD → EUR  en Ámsterdam cotiza en euros: salía a 113,51 € y EUNL, el mismo
+//                    fondo en Xetra, a 128,71 €. La diferencia era justo el cambio EUR/USD.
+//   VUSA, VUKE, VWRL  GBp → GBP  en Londres cotizan en libras, no en peniques: salían
+//                    100 veces por debajo (VWRL a 1,64 €; convertido bien, 163,6 € frente a
+//                    169,4 € de VWCE, que es el mismo índice en acumulación).
+//   IMEU, SEMB  → GBp  cotizan en peniques y se leían como euros o dólares: IMEU salía a
+//                    3.410 € en vez de ~40 €.
+//   VEUR, VFEM  → GBP  la línea de Londres que se consulta es la de libras.
+// Nota: MWRD (sin sufijo, Xetra) Yahoo lo declara en GBP, cosa rara en Xetra. Sin
+// comprobar; se deja como estaba hasta verlo en la gestora o en la bolsa.
 const QUOTE_CURRENCY: Record<string, 'USD' | 'EUR' | 'GBp' | 'GBP'> = {
-  VWCE: 'EUR', CSPX: 'USD', IWDA: 'USD', EIMI: 'USD', AGGH: 'USD',
-  VEUR: 'EUR', VFEM: 'USD', IMEU: 'EUR', SEMB: 'USD', VAGF: 'EUR',
-  SXR8: 'EUR', EUNL: 'EUR', VUSA: 'GBp', VUKE: 'GBp',
-  IUSA: 'GBp', XDWD: 'EUR', VWRL: 'GBp', LCUW: 'EUR',
+  VWCE: 'EUR', CSPX: 'USD', IWDA: 'EUR', EIMI: 'USD', AGGH: 'USD',
+  VEUR: 'GBP', VFEM: 'GBP', IMEU: 'GBp', SEMB: 'GBp', VAGF: 'EUR',
+  SXR8: 'EUR', EUNL: 'EUR', VUSA: 'GBP', VUKE: 'GBP',
+  IUSA: 'GBp', XDWD: 'EUR', VWRL: 'GBP', LCUW: 'EUR',
 }
 
 // Yahoo suffix -> MIC code, so Twelve Data consulta el MISMO mercado que
