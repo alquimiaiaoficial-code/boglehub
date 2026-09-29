@@ -1,5 +1,6 @@
 import { ImageResponse } from 'next/og'
 import { NextRequest } from 'next/server'
+import { formatPct } from '@/lib/utils'
 
 export const runtime = 'edge'
 
@@ -109,7 +110,7 @@ export async function GET(req: NextRequest) {
               <span
                 style={{ fontSize: 42, fontWeight: 700, color: '#fafafa' }}
               >
-                {ter.toFixed(2)}%
+                {formatPct(ter / 100, 2)}
               </span>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column' }}>

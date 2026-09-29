@@ -1,6 +1,7 @@
 'use client'
 
 import { Tooltip } from 'recharts'
+import { formatPct } from '@/lib/utils'
 
 interface TooltipPayload {
   name: string
@@ -14,7 +15,7 @@ function CustomTooltip({ active, payload }: { active?: boolean; payload?: Toolti
   return (
     <div className="rounded-lg border border-border bg-surface px-3 py-2 shadow-xl">
       <p className="text-xs text-fg-muted">{item.name || item.payload?.name}</p>
-      <p className="text-sm font-semibold text-fg font-mono">{item.value.toFixed(2)}%</p>
+      <p className="text-sm font-semibold text-fg font-mono">{formatPct(item.value / 100, 2)}</p>
     </div>
   )
 }

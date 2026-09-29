@@ -7,7 +7,7 @@ import { Card, CardTitle } from '@/components/ui/Card'
 import { AllocationPie } from '@/components/charts/AllocationPie'
 import { RegionBar } from '@/components/charts/RegionBar'
 import { SectorBar } from '@/components/charts/SectorBar'
-import { formatEUR, cn } from '@/lib/utils'
+import { formatEUR, cn, formatPct } from '@/lib/utils'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { Sparkles, ArrowRight, Share2 } from 'lucide-react'
@@ -116,7 +116,7 @@ export function AnalysisResults({ analysis }: { analysis: Analysis }) {
         <div className="space-y-4">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             <Stat label="Valor total" value={formatEUR(analysis.allocation.totalValueEUR)} />
-            <Stat label="TER ponderado" value={`${analysis.allocation.weightedTER.toFixed(2)}%`} />
+            <Stat label="TER ponderado" value={`${formatPct(analysis.allocation.weightedTER / 100, 2)}`} />
             <Stat label="Coste anual" value={formatEUR((analysis.allocation.totalValueEUR * analysis.allocation.weightedTER) / 100)} />
             <Stat label="Clases de activo" value={`${Object.keys(analysis.allocation.byAssetClass).length}`} />
           </div>

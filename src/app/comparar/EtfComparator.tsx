@@ -14,6 +14,7 @@ import {
 } from '@/lib/producto-comparable'
 import type { AssetClass, Region } from '@/types/etf'
 import { MessageSquare } from 'lucide-react'
+import { formatPct } from '@/lib/utils'
 
 const REGION_LABELS: Record<Region, string> = {
   US: 'EE.UU.',
@@ -182,7 +183,7 @@ export function EtfComparator() {
                       <InfoRow label="Nombre" a={a.nombre} b={b.nombre} />
                       <InfoRow label="Tipo" a={a.tipo} b={b.tipo} />
                       <InfoRow label="ISIN" a={a.isin ?? '—'} b={b.isin ?? '—'} />
-                      <InfoRow label="TER" a={`${a.ter.toFixed(2)}%`} b={`${b.ter.toFixed(2)}%`} />
+                      <InfoRow label="TER" a={`${formatPct(a.ter / 100, 2)}`} b={`${formatPct(b.ter / 100, 2)}`} />
                       <InfoRow label="Clase de activo" a={CLASE_LABELS[a.claseActivo]} b={CLASE_LABELS[b.claseActivo]} />
                       <InfoRow label="Divisa" a={a.divisa} b={b.divisa} />
                       <InfoRow label="Reparto" a={a.reparto} b={b.reparto} />

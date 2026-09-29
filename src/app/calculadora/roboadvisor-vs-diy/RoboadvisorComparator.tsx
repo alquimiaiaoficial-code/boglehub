@@ -13,7 +13,7 @@ import {
 } from 'recharts'
 import { Card, CardTitle } from '@/components/ui/Card'
 import { Input } from '@/components/ui/Input'
-import { cn, formatEUR } from '@/lib/utils'
+import { cn, formatEUR, formatPct } from '@/lib/utils'
 import { useFireOnce } from '@/lib/analytics'
 
 interface RoboPreset {
@@ -247,7 +247,7 @@ export function RoboadvisorComparator() {
             Diferencia a {years} años
           </p>
           <p className="text-2xl font-bold text-warn">{formatEUR(Math.abs(gap))}</p>
-          <p className="text-xs text-fg-subtle mt-1">{gapPct.toFixed(1)}% de la cartera</p>
+          <p className="text-xs text-fg-subtle mt-1">{formatPct(gapPct / 100, 1)} de la cartera</p>
         </Card>
       </div>
 

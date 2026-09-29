@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Sparkles } from 'lucide-react'
+import { formatPct } from '@/lib/utils'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -51,7 +52,7 @@ export async function generateMetadata({
 
   return {
     title: `Mi nota Boglehead: ${score}/100`,
-    description: `Cartera analizada con BogleHub — TER ${ter.toFixed(2)}%, ${etfs} clases de activo. Analiza la tuya gratis, sin registro.`,
+    description: `Cartera analizada con BogleHub — TER ${formatPct(ter / 100, 2)}, ${etfs} clases de activo. Analiza la tuya gratis, sin registro.`,
     alternates: { canonical: '/score' },
     openGraph: {
       title: `Mi nota Boglehead: ${score}/100`,
@@ -106,7 +107,7 @@ export default async function ScorePage({
                   TER ponderado
                 </div>
                 <div className="mt-1 text-2xl font-bold text-fg">
-                  {ter.toFixed(2)}%
+                  {formatPct(ter / 100, 2)}
                 </div>
               </div>
               <div className="rounded-lg bg-surface-2 p-4 border border-border">

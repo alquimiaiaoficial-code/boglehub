@@ -16,8 +16,14 @@ import {
 import { robotsFor, soloIndexables } from '@/lib/seo-index-policy'
 const BASE_URL = 'https://boglehub.com'
 
+/** Magnitud sin signo, para frases que ya dicen «caída» o «ganancia»: «12,3 %». */
+function pctSinSigno(n: number): string {
+  return formatPct(Math.abs(n)).replace(/^[+-]/, '')
+}
+
+/** Rentabilidad con signo, en formato español: «+12,3 %». */
 function formatPct(n: number): string {
-  return `${n >= 0 ? '+' : ''}${(n * 100).toFixed(1)}%`
+  return `${n >= 0 ? '+' : ''}${(n * 100).toFixed(1).replace('.', ',')}\u00a0%`
 }
 
 /**
@@ -94,15 +100,15 @@ export default async function HistoricoPage({
     },
     {
       q: `¿Si hubiera invertido en ${etf.ticker} a principio de ${year}, cuánto habría ganado?`,
-      a: `Invirtiendo 10.000€ en ${etf.ticker} a principios de ${year} habrías terminado el año con aproximadamente ${formatPct(ret)} más/menos: ${ret >= 0 ? `${(10000 * (1 + ret)).toFixed(0)}€ aproximadamente, ganancia de ${(10000 * ret).toFixed(0)}€` : `${(10000 * (1 + ret)).toFixed(0)}€ aproximadamente, pérdida de ${Math.abs(10000 * ret).toFixed(0)}€`}.`,
+      a: `Invirtiendo 10.000€ en ${etf.ticker} a principios de ${year} habrías terminado el año con un rendimiento de ${formatPct(ret)}: ${ret >= 0 ? `${(10000 * (1 + ret)).toFixed(0)}€ aproximadamente, ganancia de ${(10000 * ret).toFixed(0)}€` : `${(10000 * (1 + ret)).toFixed(0)}€ aproximadamente, pérdida de ${Math.abs(10000 * ret).toFixed(0)}€`}.`,
     },
     {
       q: `¿Fue ${year} un buen año para ${etf.ticker}?`,
       a: ret >= 0.10 ? `Sí, ${year} fue un excelente año para ${etf.ticker} con rendimiento del ${formatPct(ret)}, claramente por encima de la media histórica del 7-10%.` :
          ret >= 0.05 ? `Sí, ${year} fue un buen año para ${etf.ticker} con rendimiento positivo del ${formatPct(ret)}.` :
          ret >= 0 ? `${year} fue un año modesto para ${etf.ticker}, con rendimiento positivo pero por debajo de la media histórica del 7-10%.` :
-         ret >= -0.10 ? `${year} fue un año negativo para ${etf.ticker}, con caída del ${formatPct(ret)}. Caídas similares han sido históricamente normales y se han recuperado en 1-3 años.` :
-         `${year} fue un año muy difícil para ${etf.ticker}, con caída del ${formatPct(ret)}. ${event.summary}`,
+         ret >= -0.10 ? `${year} fue un año negativo para ${etf.ticker}, con una caída del ${pctSinSigno(ret)}. Caídas similares han sido históricamente normales y se han recuperado en 1-3 años.` :
+         `${year} fue un año muy difícil para ${etf.ticker}, con una caída del ${pctSinSigno(ret)}. ${event.summary}`,
     },
   ]
 

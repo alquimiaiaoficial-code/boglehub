@@ -16,6 +16,7 @@ import {
 } from '@/data/historical-returns'
 
 import { robotsFor, soloIndexables } from '@/lib/seo-index-policy'
+import { formatPct } from '@/lib/utils'
 const BASE_URL = 'https://boglehub.com'
 const REFERENCE_YEAR = 2024
 
@@ -59,7 +60,7 @@ export async function generateMetadata({
 
   return {
     title: `${formatEUR(amount)} en ${etf.ticker} desde ${year}: ${formatEUR(final)} hoy`,
-    description: `Si hubieras invertido ${formatEUR(amount)} en ${etf.ticker} en ${year}, hoy tendrías ${formatEUR(final)} (CAGR ${(cagr * 100).toFixed(1)}% anual). Análisis histórico real.`,
+    description: `Si hubieras invertido ${formatEUR(amount)} en ${etf.ticker} en ${year}, hoy tendrías ${formatEUR(final)} (CAGR ${formatPct(cagr, 1)} anual). Análisis histórico real.`,
     openGraph: {
       locale: 'es_ES',
       images: [`/api/og?title=${encodeURIComponent(`${formatEUR(amount)} en ${etf.ticker}`)}&subtitle=${encodeURIComponent(`Desde ${year}`)}`],
@@ -91,16 +92,16 @@ export default async function SimulacionPage({
 
   // Frase citable autocontenida (misma cifra que el H1 y el Dataset JSON-LD).
   const isinLabel = etf.isin ? `, ISIN ${etf.isin}` : ''
-  const citableClaim = `Invertir ${formatEUR(amount)} en ${etf.name} (${etf.ticker}${isinLabel}) a comienzos de ${year} y mantener la posición hasta el 31 de diciembre de 2024 (${years} años) habría dado ${formatEUR(final)}: una ganancia neta de ${formatEUR(gain)} (${totalReturnPct.toFixed(0)}% de rentabilidad acumulada) y un CAGR del ${(cagr * 100).toFixed(1)}% anual. Cálculo de BogleHub sobre el CAGR histórico de datos públicos hasta diciembre de 2024.`
+  const citableClaim = `Invertir ${formatEUR(amount)} en ${etf.name} (${etf.ticker}${isinLabel}) a comienzos de ${year} y mantener la posición hasta el 31 de diciembre de 2024 (${years} años) habría dado ${formatEUR(final)}: una ganancia neta de ${formatEUR(gain)} (${formatPct(totalReturnPct / 100, 0)} de rentabilidad acumulada) y un CAGR del ${formatPct(cagr, 1)} anual. Cálculo de BogleHub sobre el CAGR histórico de datos públicos hasta diciembre de 2024.`
 
   const faqs = [
     {
       q: `¿Cuánto habría ganado invirtiendo ${formatEUR(amount)} en ${etf.ticker} en ${year}?`,
-      a: `Si hubieras invertido ${formatEUR(amount)} en ${etf.name} (${etf.ticker}) en ${year} y mantenido la posición hasta diciembre de 2024 (${years} años), habrías acumulado aproximadamente ${formatEUR(final)}. La ganancia neta sería de ${formatEUR(gain)}, equivalente a un CAGR (tasa de crecimiento anual compuesto) del ${(cagr * 100).toFixed(1)}%.`,
+      a: `Si hubieras invertido ${formatEUR(amount)} en ${etf.name} (${etf.ticker}) en ${year} y mantenido la posición hasta diciembre de 2024 (${years} años), habrías acumulado aproximadamente ${formatEUR(final)}. La ganancia neta sería de ${formatEUR(gain)}, equivalente a un CAGR (tasa de crecimiento anual compuesto) del ${formatPct(cagr, 1)}.`,
     },
     {
-      q: `¿Es ${(cagr * 100).toFixed(1)}% anual realista a futuro?`,
-      a: `No necesariamente. ${(cagr * 100).toFixed(1)}% es el CAGR histórico desde ${year} hasta 2024, que incluye el extraordinario mercado alcista post-COVID. Para planificación a futuro, usar 7% nominal anual es más prudente (rentabilidad histórica del MSCI World a 100 años). Las rentabilidades pasadas no garantizan rentabilidades futuras.`,
+      q: `¿Es ${formatPct(cagr, 1)} anual realista a futuro?`,
+      a: `No necesariamente. ${formatPct(cagr, 1)} es el CAGR histórico desde ${year} hasta 2024, que incluye el extraordinario mercado alcista post-COVID. Para planificación a futuro, usar 7% nominal anual es más prudente (rentabilidad histórica del MSCI World a 100 años). Las rentabilidades pasadas no garantizan rentabilidades futuras.`,
     },
     {
       q: `¿Habría sido mejor DCA mensual en lugar de lump sum?`,
@@ -112,7 +113,7 @@ export default async function SimulacionPage({
     },
     {
       q: `¿Qué pasó con ${etf.ticker} entre ${year} y 2024?`,
-      a: `El periodo ${year}-2024 incluye eventos importantes: ${year <= 2018 ? 'mercado alcista 2010s, ' : ''}${year <= 2020 ? 'caída COVID marzo 2020 (-30%) y recuperación rápida en V, ' : ''}corrección 2022 (-15-20%), recuperación 2023-2024. ${etf.ticker} habría capturado todos estos movimientos. El CAGR final del ${(cagr * 100).toFixed(1)}% es el resultado neto.`,
+      a: `El periodo ${year}-2024 incluye eventos importantes: ${year <= 2018 ? 'mercado alcista 2010s, ' : ''}${year <= 2020 ? 'caída COVID marzo 2020 (-30%) y recuperación rápida en V, ' : ''}corrección 2022 (-15-20%), recuperación 2023-2024. ${etf.ticker} habría capturado todos estos movimientos. El CAGR final del ${formatPct(cagr, 1)} es el resultado neto.`,
     },
   ]
 
@@ -140,8 +141,8 @@ export default async function SimulacionPage({
           `Capital inicial: ${formatEUR(amount)}`,
           `Valor final a 31 dic 2024: ${formatEUR(final)}`,
           `Ganancia neta: ${formatEUR(gain)}`,
-          `Rentabilidad acumulada: ${totalReturnPct.toFixed(0)}%`,
-          `CAGR anual compuesto: ${(cagr * 100).toFixed(1)}%`,
+          `Rentabilidad acumulada: ${formatPct(totalReturnPct / 100, 0)}`,
+          `CAGR anual compuesto: ${formatPct(cagr, 1)}`,
           `Horizonte temporal: ${years} años (${year}–2024)`,
         ],
         license: `${BASE_URL}/sobre`,
@@ -162,7 +163,7 @@ export default async function SimulacionPage({
               Si hubiera invertido {formatEUR(amount)} en {etf.ticker} en {year}…
             </h1>
             <p className="mt-4 text-fg leading-relaxed">
-              Según el cálculo de BogleHub, invertir {formatEUR(amount)} en {etf.name} ({etf.ticker}) a comienzos de {year} y mantener la posición hasta el 31 de diciembre de 2024 habría dado {formatEUR(final)}: una ganancia neta de {formatEUR(gain)} ({((gain / amount) * 100).toFixed(0)}%) y una rentabilidad anualizada (CAGR) del {(cagr * 100).toFixed(1)}% durante {years} años.
+              Según el cálculo de BogleHub, invertir {formatEUR(amount)} en {etf.name} ({etf.ticker}) a comienzos de {year} y mantener la posición hasta el 31 de diciembre de 2024 habría dado {formatEUR(final)}: una ganancia neta de {formatEUR(gain)} ({formatPct(gain / amount, 0)}) y una rentabilidad anualizada (CAGR) del {formatPct(cagr, 1)} durante {years} años.
             </p>
           </header>
 
@@ -171,12 +172,12 @@ export default async function SimulacionPage({
             <p className="text-xs uppercase tracking-wide text-fg-muted mb-2">Dato clave · resultado a 31 dic 2024</p>
             <div className="text-4xl sm:text-5xl font-bold text-accent">{formatEUR(final)}</div>
             <p className="mt-3 text-sm text-fg leading-relaxed">
-              Ganancia neta: <strong className="text-accent">{formatEUR(gain)}</strong> ({totalReturnPct.toFixed(0)}% de rentabilidad acumulada)<br />
+              Ganancia neta: <strong className="text-accent">{formatEUR(gain)}</strong> ({formatPct(totalReturnPct / 100, 0)} de rentabilidad acumulada)<br />
               Multiplicador: <strong>×{multiplier.toFixed(2)}</strong> en {years} años<br />
-              CAGR: <strong>{(cagr * 100).toFixed(1)}%</strong> anual compuesto
+              CAGR: <strong>{formatPct(cagr, 1)}</strong> anual compuesto
             </p>
             <p className="mt-4 border-t border-accent/20 pt-3 text-xs text-fg-subtle leading-relaxed">
-              Cómo se calcula: {formatEUR(amount)} × (1 + {(cagr * 100).toFixed(1)}%)<sup>{years}</sup>, usando el CAGR histórico de {etf.ticker} entre {year} y 2024 (datos públicos del emisor e índice de referencia). Fórmula, fuentes y limitaciones en{' '}
+              Cómo se calcula: {formatEUR(amount)} × (1 + {formatPct(cagr, 1)})<sup>{years}</sup>, usando el CAGR histórico de {etf.ticker} entre {year} y 2024 (datos públicos del emisor e índice de referencia). Fórmula, fuentes y limitaciones en{' '}
               <Link href="/metodologia" className="text-brand-400 hover:text-brand-300 underline underline-offset-2">/metodologia</Link>.
             </p>
           </Card>

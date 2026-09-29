@@ -8,6 +8,7 @@ import { JsonLd } from '@/components/JsonLd'
 import { AGES, getAgeBySlug } from '@/data/ages'
 import { OBJECTIVES, getObjectiveBySlug, monthlyToReach } from '@/data/objectives'
 import { robotsFor, soloIndexables } from '@/lib/seo-index-policy'
+import { formatPct } from '@/lib/utils'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -165,7 +166,7 @@ export default async function PlanPage({ params }: { params: Promise<{ edad: str
               <div><dt className="text-xs uppercase text-fg-muted">Rentabilidad asumida</dt><dd className="font-medium text-fg">7% anual</dd></div>
               <div><dt className="text-xs uppercase text-fg-muted">Aportación mensual</dt><dd className="font-medium text-accent">{formatEUR(monthlyNeeded)}</dd></div>
               <div><dt className="text-xs uppercase text-fg-muted">Total aportado</dt><dd className="font-medium text-fg">{formatEUR(totalAportado)}</dd></div>
-              <div className="sm:col-span-2"><dt className="text-xs uppercase text-fg-muted">Ganancia por interés compuesto</dt><dd className="font-medium text-accent">{formatEUR(compoundGain)} ({((compoundGain / obj.targetAmount) * 100).toFixed(0)}% del total final)</dd></div>
+              <div className="sm:col-span-2"><dt className="text-xs uppercase text-fg-muted">Ganancia por interés compuesto</dt><dd className="font-medium text-accent">{formatEUR(compoundGain)} ({formatPct(compoundGain / obj.targetAmount, 0)} del total final)</dd></div>
             </dl>
           </Card>
 

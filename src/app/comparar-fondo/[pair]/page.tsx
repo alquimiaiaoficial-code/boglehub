@@ -9,6 +9,7 @@ import { getIndexFundBySlug } from '@/data/index-funds'
 import { FUND_PAIRS, fundPairToSlug, slugToFundPair } from '@/data/fund-pairs'
 
 import { DescargoFiscal } from '@/components/DescargoFiscal'
+import { formatPct } from '@/lib/utils'
 const BASE_URL = 'https://boglehub.com'
 
 export function generateStaticParams() {
@@ -79,7 +80,7 @@ export default async function CompararFondoPage({ params }: { params: Promise<{ 
       q: `¿${fA.name} o ${fB.name}: cuál es más barato?`,
       a: terDiff < 0.01
         ? `Ambos tienen TER prácticamente idéntico (${fA.ter}% vs ${fB.ter}%), así que el coste no los separa: lo que queda distinto es la gestora y el índice que replica cada uno.`
-        : `${cheaper.name} es más barato con TER ${cheaper.ter}% frente al ${(cheaper === fA ? fB : fA).ter}% del otro. La diferencia de ${terDiff.toFixed(2)}% anual se acumula a largo plazo, especialmente en carteras grandes.`,
+        : `${cheaper.name} es más barato con TER ${formatPct(cheaper.ter / 100, 2)} frente al ${formatPct((cheaper === fA ? fB : fA).ter / 100, 2)} del otro. La diferencia de ${formatPct(terDiff / 100, 2)} anual se acumula a largo plazo, especialmente en carteras grandes.`,
     },
     {
       q: `¿Qué índice replica cada uno?`,

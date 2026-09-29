@@ -3,7 +3,7 @@
 import { usePortfolio } from '@/lib/store'
 import { Card, CardTitle } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
-import { formatEUR } from '@/lib/utils'
+import { formatEUR, formatPct } from '@/lib/utils'
 import { Trash2, RotateCcw, TrendingUp, TrendingDown } from 'lucide-react'
 
 export function SnapshotHistory() {
@@ -53,7 +53,7 @@ export function SnapshotHistory() {
             <TrendingDown className="h-4 w-4" />
           )}
           {totalDelta >= 0 ? '+' : ''}
-          {formatEUR(totalDelta)} ({(totalDeltaPct * 100).toFixed(1)}%)
+          {formatEUR(totalDelta)} ({formatPct(totalDeltaPct, 1)})
         </span>
       </div>
       <p className="mt-1 text-xs text-fg-subtle">

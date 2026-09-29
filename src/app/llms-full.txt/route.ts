@@ -8,6 +8,7 @@ import {
   BLOG_CATEGORIES,
   getArticleCategory,
 } from '@/data/blog-categories'
+import { formatPct } from '@/lib/utils'
 
 export const dynamic = 'force-static'
 export const revalidate = false
@@ -111,7 +112,7 @@ export async function GET() {
     const fiscal = computeFiscalGradeEtf(etf)
     const acc = esEtc(etf) ? 'No aplica (ETC, no reparte)' : etf.accumulating ? 'Sí' : 'No'
     lines.push(
-      `| ${etf.ticker} | ${etf.name} | ${etf.isin} | ${etf.ter.toFixed(2)}% | ${acc} | ${fiscal.grade} (${fiscal.domicileLabel}) | ${BASE_URL}/etf/${etf.ticker.toLowerCase()} |`,
+      `| ${etf.ticker} | ${etf.name} | ${etf.isin} | ${formatPct(etf.ter / 100, 2)} | ${acc} | ${fiscal.grade} (${fiscal.domicileLabel}) | ${BASE_URL}/etf/${etf.ticker.toLowerCase()} |`,
     )
   }
   lines.push('')

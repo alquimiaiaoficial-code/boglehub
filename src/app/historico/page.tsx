@@ -5,6 +5,7 @@ import { Footer } from '@/components/Footer'
 import { Card } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
 import { YEAR_EVENTS, HISTORICAL_YEAR_TICKERS } from '@/data/historical-years'
+import { formatPct } from '@/lib/utils'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -39,7 +40,7 @@ export default function HistoricoIndexPage() {
                     <Link key={t} href={`/historico/${event.year}/${t.toLowerCase()}`}>
                       <Card className="text-center hover:border-border-strong transition-colors">
                         <div className="font-mono text-sm font-semibold text-fg">{t}</div>
-                        <p className={`text-xs mt-1 font-semibold ${r >= 0 ? 'text-accent' : 'text-danger'}`}>{r >= 0 ? '+' : ''}{(r * 100).toFixed(1)}%</p>
+                        <p className={`text-xs mt-1 font-semibold ${r >= 0 ? 'text-accent' : 'text-danger'}`}>{r >= 0 ? '+' : ''}{formatPct(r, 1)}</p>
                       </Card>
                     </Link>
                   )
