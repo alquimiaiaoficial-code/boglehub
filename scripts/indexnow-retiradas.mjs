@@ -11,8 +11,10 @@
  * URLs sigan en el índice de Bing, el dato equivocado sigue sirviéndose desde la caché del
  * buscador aunque en el sitio ya no esté.
  *
- * ANTES DE ENVIAR comprueba que cada URL devuelve de verdad 404 o 410. Avisar de una que
- * responde 200 la reindexaría, que es lo contrario de lo que se busca.
+ * ANTES DE ENVIAR comprueba que cada URL devuelve de verdad 404, 410 o una redirección
+ * permanente (301/308). Avisar de una que responde 200 la reindexaría, que es lo contrario de
+ * lo que se busca. La redirección se admite desde el 29-sep-2026: una ficha retirada que
+ * redirige al hub de su categoría también tiene que salir del índice, y el buscador la sigue.
  *
  * Uso:  node scripts/indexnow-retiradas.mjs [--dry]
  */
@@ -25,13 +27,12 @@ const dry = process.argv.includes('--dry')
 
 /** Lo retirado, con el motivo al lado: es lo que cuesta reconstruir luego. */
 const RETIRADAS = [
-  // 19-sep-2026, segunda tanda: once fichas de ETF cuyo TICKER pertenecia a otro producto
-  // y que no se podian arreglar sin inventar los repartos por region y sector.
-  '/etf/imid', '/etf/eqds', '/etf/ceug', '/etf/sega', '/etf/ispa', '/etf/fgeq',
-  '/etf/exsg', '/etf/xgig', '/etf/flxe', '/etf/eunh', '/etf/wtef',
-  // Y las comparativas que las emparejaban.
-  '/comparar/vhyl-vs-fgeq', '/comparar/tdiv-vs-ispa',
-  '/comparar/sgln-vs-exsg', '/comparar/eunh-vs-aggh',
+  // 29-sep-2026: SPXS mezclaba dos productos (ahora SPYL); MEUD publicaba el ISIN de otro
+  // índice; LCUW no cotiza en ningún sitio que encontremos. Las tres redirigen con 301.
+  '/etf/spxs', '/etf/meud', '/etf/lcuw', '/comparar/veur-vs-meud',
+  // Enviadas antes y ya fuera de esta lista: el 19-sep, once fichas cuyo ticker era de otro
+  // producto (/etf/imid, eqds, ceug, sega, ispa, fgeq, exsg, xgig, flxe, eunh, wtef) y sus
+  // comparativas (vhyl-vs-fgeq, tdiv-vs-ispa, sgln-vs-exsg, eunh-vs-aggh).
 ]
 
 function leerClave() {
@@ -46,14 +47,14 @@ const urls = RETIRADAS.map((r) => `https://${HOST}${r}`)
 const vivas = []
 for (const url of urls) {
   const res = await fetch(url, { method: 'HEAD', redirect: 'manual' })
-  if (res.status !== 404 && res.status !== 410) vivas.push(`${url} -> ${res.status}`)
+  if (![301, 308, 404, 410].includes(res.status)) vivas.push(`${url} -> ${res.status}`)
 }
 if (vivas.length > 0) {
   console.error('ABORTADO: estas no estan retiradas, avisar de ellas las reindexaria:')
   for (const v of vivas) console.error('  ' + v)
   process.exit(1)
 }
-console.log(`${urls.length} URLs comprobadas: todas 404 o 410.`)
+console.log(`${urls.length} URLs comprobadas: todas retiradas (404, 410 o redirección permanente).`)
 
 if (dry) {
   console.log('--dry: no se envia nada.')
@@ -72,4 +73,4 @@ if (res.status !== 200 && res.status !== 202) {
   console.error('si es 422, alguna URL no pertenece al host.')
   process.exit(1)
 }
-console.log('Avisado. Bing recorrera esas URLs y las sacara del indice al ver el 404.')
+console.log('Avisado. Bing recorrera esas URLs y las sacara del indice al ver que ya no estan (404, 410 o 301).')
