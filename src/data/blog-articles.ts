@@ -201,7 +201,7 @@ Por eso, la decisión sobre emergentes es en realidad una decisión sobre **qué
 
 ## Cómo invertir en emergentes desde España
 
-Si optas por la vía modular, lo haces con un **ETF de mercados emergentes** UCITS domiciliado en Irlanda. El más popular es el **EIMI** (iShares Core MSCI EM IMI), que incluye también pequeñas compañías; hay alternativas de Amundi y otras gestoras (ver [qué gestora elegir](/blog/vanguard-vs-ishares-vs-amundi)). Lo compras desde cualquier bróker de ETFs; la [comparativa de brókers](/blog/mejor-broker-etfs-espana-2026) te ayuda a elegir el más barato. Y si prefieres el formato fondo indexado (con traspaso fiscal libre entre fondos), la misma exposición existe como fondo: el [Fidelity MSCI Emerging Markets Index](/fondo/fidelity-emerging-markets-index), con unos gastos del 0,20 %, o el [Amundi Core MSCI Emerging Markets](/fondo/amundi-index-msci-emerging-markets), que cuesta 0,30 %; tienes su [comparativa cara a cara](/comparar-fondo/amundi-index-msci-emerging-markets-vs-fidelity-emerging-markets-index).
+Si optas por la vía modular, lo haces con un **ETF de mercados emergentes** UCITS domiciliado en Irlanda. El más popular es el **EIMI** (iShares Core MSCI EM IMI), que incluye también pequeñas compañías; hay alternativas de Amundi y otras gestoras (ver [qué gestora elegir](/blog/vanguard-vs-ishares-vs-amundi)). Lo compras desde cualquier bróker de ETFs; la [comparativa de brókers](/blog/mejor-broker-etfs-espana-2026) te ayuda a elegir el más barato. Y si prefieres el formato fondo indexado (con traspaso fiscal libre entre fondos), la misma exposición existe como fondo: el [Fidelity MSCI Emerging Markets Index](/fondo/fidelity-emerging-markets-index), con unos gastos del 0,20 %, o el [Amundi Core MSCI Emerging Markets](/fondo/amundi-index-msci-emerging-markets), que cuesta 0,45 %; tienes su [comparativa cara a cara](/comparar-fondo/amundi-index-msci-emerging-markets-vs-fidelity-emerging-markets-index).
 
 Si combinas World + emergentes, el reparto habitual para replicar el mundo es en torno a **88% desarrollados / 12% emergentes** (su peso por capitalización), reajustándolo al [rebalancear](/blog/como-rebalancear-cartera-indexada). Aun así, recuerda: un All-World hace esto solo.
 
@@ -3343,7 +3343,7 @@ Las diferencias son de **universo de inversión** y **coste**, no de estructura 
 - **Nombre completo**: Vanguard FTSE All-World UCITS ETF (USD) Accumulating
 - **ISIN**: IE00BK5BQT80
 - **Ticker**: VWCE (Xetra), VWRP (LSE en GBP)
-- **TER**: 0,19 %
+- **TER**: 0,14 %
 - **Índice replicado**: FTSE All-World
 - **Método de replicación**: Física por muestreo
 - **Gestora**: Vanguard
@@ -3378,7 +3378,7 @@ El VWCE incluye acciones de China, India, Brasil, Taiwán, Corea del Sur y otros
 
 El VWCE te da ambas caras automáticamente, ponderadas por capitalización. No tienes que decidir: el mercado elige los pesos.
 
-### TER: 0,19 %, competitivo tras la rebaja de 2025
+### TER: 0,14 %, tras la rebaja de julio de 2026
 
 El TER del 0,14 % (Vanguard lo rebajó desde el 0,19 % con efecto del 28 de julio de 2026, y antes desde el 0,22 % en 2025) es competitivo: más caro que el del CSPX (0,07 %, que solo cubre el S&P 500) y por debajo del IWDA (0,20 %). Frente al CSPX, esa diferencia de 0,07 % sobre una cartera de 100 000 € durante 30 años supone unos 14 500 € de patrimonio final (asumiendo 7 % de retorno anual). Significativo pero no decisivo: a cambio, el VWCE incluye los mercados emergentes que el CSPX y el IWDA no cubren.
 
@@ -6824,11 +6824,11 @@ El [analizador de cartera](/analyzer) asigna un grado fiscal de la A a la F a ca
       },
       {
         q: '¿Y para renta fija? ¿Tienen sentido los ETFs de bonos hedged?',
-        a: 'Para renta fija, la cobertura de divisa tiene mucho más sentido. Los bonos tienen una volatilidad baja (2-5% anual), por lo que el riesgo divisa (que añade otro 5-10% de volatilidad) puede dominar completamente el retorno. Un ETF de bonos gubernamentales globales sin cobertura se comporta más como un ETF de divisas que como un inversor en renta fija. Por eso, para la parte de renta fija de una cartera indexada en España, los ETFs con cobertura EUR son generalmente preferibles.',
+        a: 'Para renta fija, la cobertura de divisa tiene mucho más sentido. Los bonos tienen una volatilidad baja (2-5% anual), por lo que el riesgo divisa (que añade otro 5-10% de volatilidad) puede dominar completamente el retorno. Un ETF de bonos gubernamentales globales sin cobertura se comporta más como un ETF de divisas que como un inversor en renta fija. Por eso, para la parte de renta fija de una cartera indexada en España, los ETFs con cobertura EUR eliminan ese riesgo de divisa.',
       },
       {
         q: '¿Qué ETFs hedged en EUR están disponibles en España?',
-        a: 'Algunos de los más usados: HEDJ (WisdomTree Europe Hedged Equity, aunque más específico), EUNL o equivalentes en versión hedged de iShares para MSCI World EUR hedged, y para renta fija: AGGH (iShares Core Global Aggregate Bond UCITS ETF EUR Hedged, TER 0,10%) que cubre bonos globales en euros. La versión EUR Hedged suele llevar "EUR Hedged" o "EUNL" en el nombre. Verifica siempre en JustETF el TER y la liquidez antes de comprar.',
+        a: 'Algunos de los más usados: HEDJ (WisdomTree Europe Hedged Equity, aunque más específico), las versiones EUR Hedged del MSCI World de las grandes gestoras, y para renta fija: AGGH (iShares Core Global Aggregate Bond UCITS ETF EUR Hedged, TER 0,10%) que cubre bonos globales en euros. La versión cubierta suele llevar «EUR Hedged» en el nombre (EUNL, por ejemplo, es el IWDA cotizado en Xetra, sin cobertura). Verifica siempre en JustETF el TER y la liquidez antes de comprar.',
       },
     ],
     content: `# Riesgo divisa en ETFs: ¿cubrir o no cubrir siendo inversor en euros? (2026)
@@ -6892,7 +6892,7 @@ Aquí la respuesta cambia radicalmente. Los bonos tienen una volatilidad intrín
 
 Un ejemplo: el índice Bloomberg Global Aggregate Bond (bonos globales sin cubrir) tuvo en 2022 una caída del ~16% en USD. Desde la perspectiva de un inversor en euros, la caída fue diferente según la evolución del EUR/USD. La renta fija dejó de actuar como amortiguador de la cartera porque el movimiento de divisas dominó el resultado.
 
-**Regla práctica**: para la parte de renta fija de una cartera indexada en España, usa ETFs con cobertura EUR. El ETF más popular para esto es **AGGH** (iShares Core Global Aggregate Bond UCITS ETF EUR Hedged, TER 0,10%), que cubre bonos gubernamentales y corporativos globales en euros.
+**En la práctica**: en la parte de renta fija, un ETF con cobertura EUR quita el riesgo de divisa que acabamos de ver. Un ejemplo es **AGGH** (iShares Core Global Aggregate Bond UCITS ETF EUR Hedged, TER 0,10%), que cubre bonos gubernamentales y corporativos globales en euros.
 
 ---
 
@@ -7098,7 +7098,7 @@ Es una combinación frecuente entre inversores indexados en España. Para profun
       },
       {
         q: '¿Por qué es importante la cobertura EUR en ETFs de renta fija?',
-        a: 'La renta fija tiene volatilidad baja (2-7% anual). Sin cobertura EUR, el riesgo divisa puede añadir 5-10% adicional de volatilidad, dominando completamente el comportamiento del ETF. Un bono americano puede caer un 5% en USD, pero si el dólar cae un 10% frente al euro, el inversor en euros pierde el 15%. La cobertura EUR elimina este efecto y mantiene la renta fija como amortiguador real de la cartera.',
+        a: 'La renta fija tiene volatilidad baja (2-7% anual). Sin cobertura EUR, el riesgo divisa puede añadir 5-10% adicional de volatilidad, dominando completamente el comportamiento del ETF. Un bono americano puede caer un 5% en USD, pero si el dólar cae un 10% frente al euro, el inversor en euros pierde en torno al 14,5%. La cobertura EUR elimina este efecto y mantiene la renta fija como amortiguador real de la cartera.',
       },
       {
         q: '¿Cuál es la diferencia entre bonos gubernamentales y bonos corporativos?',
@@ -7244,7 +7244,7 @@ Los bonos high yield (rating BB o inferior) tienen mayor correlación con la ren
 Predecir los movimientos de los bancos centrales es imposible. Mantener una asignación de renta fija constante y rebalancear es más rentable que intentar entrar y salir según tu pronóstico macroeconómico.
 
 **4. Asignar 0% renta fija "porque soy joven y mi horizonte es largo"**
-Esa lógica es matemáticamente correcta pero psicológicamente peligrosa: la primera caída del 50% te enseñará si tu tolerancia al riesgo real coincide con tu tolerancia teórica. Mejor empezar con un 10-20% de renta fija y subir el peso de renta variable cuando hayas vivido al menos una caída fuerte.
+Esa lógica es matemáticamente correcta pero psicológicamente peligrosa: la primera caída del 50% te enseñará si tu tolerancia al riesgo real coincide con tu tolerancia teórica. Hay quien empieza con un 10-20% de renta fija y sube el peso de renta variable después de haber vivido una caída fuerte.
 
 ---
 
@@ -7782,7 +7782,7 @@ SWRD es el ETF de MSCI World más barato disponible en España. Su TER del 0,12%
 - IWDA: 100€/año en comisiones
 - Diferencia: 40€/año
 
-A 30 años con interés compuesto, los 40€ anuales se convierten en aproximadamente 4.000€ de diferencia acumulada. Para carteras de 200.000€, la diferencia se cuadruplica a ~16.000€.
+A 30 años con interés compuesto, esos 40€ anuales de diferencia se convierten en aproximadamente 8.400€ de diferencia acumulada. Para carteras de 200.000€, la diferencia se cuadruplica a ~33.800€.
 
 Esta diferencia es real y significativa para carteras grandes. Para carteras pequeñas en términos absolutos es menor, pero el porcentaje es el mismo.
 
@@ -7817,7 +7817,7 @@ La gestora con más experiencia y patrimonio (BlackRock con iShares) suele tener
 
 ## Composición y exposición regional
 
-Ambos replican el MSCI World, que incluye aproximadamente 1.500 grandes y medianas empresas de 23 países desarrollados. La composición es prácticamente idéntica:
+Ambos replican el MSCI World, que incluye aproximadamente 1.400 grandes y medianas empresas de 23 países desarrollados. La composición es prácticamente idéntica:
 
 **Por país** (aproximado):
 - EEUU: ~70%
@@ -8314,7 +8314,7 @@ Para entender este riesgo y planificar con la incertidumbre real del mercado, us
       },
       {
         q: '¿Es Nasdaq 100 fiscalmente eficiente para inversores en España?',
-        a: 'Sí. Los principales ETFs Nasdaq 100 UCITS están domiciliados en Irlanda (EQQQ: ISIN IE0032077012; SXRV: ISIN IE00B53SZB19), lo que les da acceso al convenio fiscal Irlanda-EEUU y reduce la retención sobre dividendos americanos del 30% al 15%. EQQQ es de acumulación, lo que difiere el evento fiscal hasta la venta. Es una de las opciones más eficientes fiscalmente para exposición concentrada al mercado tecnológico americano.',
+        a: 'Sí. Los principales ETFs Nasdaq 100 UCITS están domiciliados en Irlanda (EQQQ: ISIN IE0032077012; SXRV: ISIN IE00B53SZB19), lo que les da acceso al convenio fiscal Irlanda-EEUU y reduce la retención sobre dividendos americanos del 30% al 15%. EQQQ es de distribución: reparte dividendos, que tributan cada año en la base del ahorro. Quien prefiera diferir el impuesto hasta la venta tiene las versiones de acumulación del mismo índice, como EQAC (Invesco) o SXRV (iShares).',
       },
     ],
     content: `# Mejores ETFs Nasdaq 100 UCITS para inversores en España (2026)
@@ -8583,7 +8583,7 @@ Para la mayoría de inversores que siguen la filosofía Boglehead y quieren aña
 - **Fracciones**: puedes empezar con 50€
 - **Eficiencia fiscal**: tributa como cualquier ETF, sin tratamiento especial
 
-**Recomendación práctica**: SGLN o IGLN de iShares. Ambos respaldados por oro físico custodiado en Londres por JP Morgan, con auditorías regulares. Coste anual del 0,12%, liquidez excelente en Xetra y LSE.
+**Dos opciones habituales**: SGLN o IGLN de iShares. Ambos respaldados por oro físico custodiado en Londres por JP Morgan, con auditorías regulares. Coste anual del 0,12%, liquidez excelente en Xetra y LSE.
 
 ---
 
@@ -8647,7 +8647,7 @@ No hay tratamiento fiscal especial por ser oro. Las pérdidas pueden compensar g
 
 ## Conclusión práctica
 
-Si quieres añadir oro a tu cartera indexada como diversificador (5-15% del total), los **ETC de oro físico como SGLN o IGLN** son la mejor opción para el inversor en España: bajo coste, liquidez total, respaldo físico verificable y sin costes de custodia adicionales. Para descubrir más sobre ETFs de oro y materias primas, mira la [categoría completa de ETFs de oro](/etfs/oro).
+Si quieres añadir oro a tu cartera indexada como diversificador (5-15% del total), los **ETC de oro físico como SGLN o IGLN** son una opción habitual para el inversor en España: bajo coste, liquidez total, respaldo físico verificable y sin costes de custodia adicionales. Para descubrir más sobre ETFs de oro y materias primas, mira la [categoría completa de ETFs de oro](/etfs/oro).
 
 Para profundizar en cómo integrar oro en una cartera con filosofía robust, lee la [guía de la cartera permanente adaptada a España](/blog/cartera-permanente-harry-browne-espana).
 
@@ -8786,7 +8786,7 @@ A muy largo plazo (>30 años), MSCI ACWI ha rendido similar al MSCI World, con m
 
 ## Cuándo elegir MSCI World y cuándo MSCI ACWI
 
-**Elige MSCI World (IWDA, SWRD) si:**
+**MSCI World (IWDA, SWRD) encaja si:**
 - Quieres TER más bajo (SWRD 0,12% vs ISAC 0,20%)
 - Quieres control sobre el peso de emergentes en tu cartera (los añades por separado)
 - Estás de acuerdo en sobreponderar EEUU vs el resto del mundo
@@ -8805,7 +8805,7 @@ A muy largo plazo (>30 años), MSCI ACWI ha rendido similar al MSCI World, con m
 **Con MSCI World (hacen falta dos ETFs para cubrir todo el mundo):**
 - 88% IWDA o SWRD (MSCI World, desarrollados)
 - 12% EIMI o EMIM (MSCI Emerging Markets)
-- Resultado: exposición global con mayor control y TER ponderado del ~0,14%
+- Resultado: exposición global con mayor control y TER ponderado del ~0,13%
 
 **Con MSCI ACWI o FTSE All-World (un solo ETF):**
 - 100% ISAC, SPYI o VWCE
@@ -8821,7 +8821,7 @@ La diferencia entre estos dos índices se ve mejor en una cartera concreta que e
 
 ## Errores frecuentes al elegir
 
-1. **Asumir que MSCI World incluye "el mundo entero"** — solo cubre desarrollados, falta ~30% del PIB mundial
+1. **Asumir que MSCI World incluye "el mundo entero"** — solo cubre desarrollados, falta ~30% de la capitalización bursátil mundial
 2. **Combinar MSCI World con MSCI ACWI** — solapamiento del 88%, no añade nada
 3. **Combinar MSCI World con FTSE All-World** — el FTSE All-World ya incluye desarrollados, doble exposición innecesaria
 4. **Excluir emergentes "porque son arriesgados"** — los emergentes ya pesan solo ~12% en ACWI, no dominan el riesgo
