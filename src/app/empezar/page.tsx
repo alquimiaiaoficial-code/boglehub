@@ -5,6 +5,7 @@ import { Footer } from '@/components/Footer'
 import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
 import { GLOSSARY_TERMS } from '@/data/glossary'
+import { getAllEtfs } from '@/lib/etf-database'
 
 const BASE_URL = 'https://boglehub.com'
 
@@ -280,7 +281,7 @@ export default function EmpezarPage() {
               <CardTitle className="mb-3">¿Cuánto cuesta cada estrategia? Compáralo en euros</CardTitle>
               <p className="text-sm text-fg-muted leading-relaxed mb-3">
                 La diferencia entre 0,15% (DIY) y 0,50% (roboadvisor) suena pequeña. Sobre 100.000€
-                durante 30 años con interés compuesto al 7%, son ~30.000€ de diferencia. La
+                durante 30 años con interés compuesto al 7%, son ~68.000€ de diferencia. La
                 calculadora te lo enseña en tu caso concreto.
               </p>
               <Link
@@ -389,7 +390,7 @@ export default function EmpezarPage() {
                 </li>
               </ul>
               <p className="mt-4 text-xs text-fg-subtle">
-                Coste total ponderado: ~0,20% anual. Sin más decisiones que rebalancear una vez al año.
+                Coste total ponderado: ~0,13% anual. Sin más decisiones que rebalancear una vez al año.
               </p>
             </Card>
 
@@ -402,7 +403,7 @@ export default function EmpezarPage() {
                 <Link href="/etfs/acumulacion" className="text-brand-400 hover:text-brand-300 hover:underline">→ ETFs acumulación</Link>
                 <Link href="/etfs/renta-fija" className="text-brand-400 hover:text-brand-300 hover:underline">→ ETFs renta fija</Link>
                 <Link href="/etfs/emergentes" className="text-brand-400 hover:text-brand-300 hover:underline">→ ETFs emergentes</Link>
-                <Link href="/etf" className="text-brand-400 hover:text-brand-300 hover:underline">→ Catálogo completo (68 ETFs)</Link>
+                <Link href="/etf" className="text-brand-400 hover:text-brand-300 hover:underline">→ Catálogo completo ({getAllEtfs().length} ETFs)</Link>
                 <Link href="/comparar" className="text-brand-400 hover:text-brand-300 hover:underline">→ Comparador interactivo</Link>
               </div>
             </Card>

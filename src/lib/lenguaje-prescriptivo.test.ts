@@ -162,6 +162,17 @@ const PRESCRIPTIVAS: readonly [RegExp, string][] = [
   [/\bel\s+m[áa]s\s+barato\s+gana\b/i, 'veredicto: di cuánto cuesta la diferencia, no quién gana'],
   [/\bventaja\s+para\s+\{/i, 'veredicto sobre un producto calculado: di los dos grados y por qué'],
   [/\brecib(?:e|es|ir[áa]s)\s+una\s+recomendaci[óo]n\b/i, 'promete recomendación: BogleHub no la da (§1)'],
+  /**
+   * Añadidos el 30-sep-2026, de la auditoría por agentes de las páginas de más impacto. Cada
+   * uno estaba publicado: «la combinación óptima es Trade Republic + MyInvestor» (/datos-clave),
+   * «son la apuesta segura» y «EQQQ es la opción de referencia» (gestoras), «Ideal para quien
+   * empieza» y «hay alternativas mejores» (roboadvisors).
+   */
+  [/\bcombinaci[óo]n\s+[óo]ptima\b/i, '«una combinación habitual»: no hay óptimo sin conocer a quien la lleva'],
+  [/\bapuesta\s+segura\b/i, 'veredicto: di qué tienen en común y cuánto cuestan'],
+  [/\bopci[óo]n\s+de\s+referencia\b/i, 'veredicto: di el dato (antigüedad, patrimonio, TER)'],
+  [/(?:^|[.'"«]\s*)ideal\s+para\s+quien\b/i, '«encaja con quien…»'],
+  [/\balternativas\s+mejores\b/i, 'di en qué cuesta más o menos, no que haya «mejores»'],
 ]
 
 /**

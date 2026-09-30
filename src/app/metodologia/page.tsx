@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const FAQ_ITEMS: { q: string; a: string }[] = [
   {
     q: '¿Cómo se calculan los grados fiscales A/B/C/D para ETFs?',
-    a: 'El grado fiscal combina dos factores: (1) domicilio del ETF — Irlanda es A (aprovecha el convenio EE.UU.-Irlanda y reduce retención de dividendos del 30% al 15%), Luxemburgo es B (menos eficiente para dividendos americanos), otros domicilios son C/D; (2) política de reparto — acumulación bonifica un escalón porque difiere la tributación de dividendos hasta la venta, distribución mantiene el escalón. La metodología completa está en lib/fiscal.ts del código fuente y es 100% determinística desde el ISIN del fondo.',
+    a: 'El grado fiscal combina dos factores: (1) domicilio del ETF — Irlanda es A (aprovecha el convenio EE.UU.-Irlanda y reduce retención de dividendos del 30% al 15%), Luxemburgo es B (menos eficiente para dividendos americanos), otros domicilios son D, acumulen o repartan (EE. UU., F); (2) política de reparto — acumulación mantiene el grado del domicilio porque difiere la tributación de dividendos hasta la venta, distribución lo baja un escalón en Irlanda y Luxemburgo porque los dividendos tributan cada año. Los ETC de oro, que no tienen dividendos, llevan su propia explicación. La metodología completa está en lib/fiscal.ts del código fuente y es 100% determinística desde el ISIN del fondo.',
   },
   {
     q: '¿De dónde sale la información de TER, ISIN y composición de cada ETF?',
@@ -42,7 +42,7 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
   {
     q: '¿El análisis con IA es independiente?',
-    a: `Sí. El analizador usa ${GROQ_MODEL} a través de Groq, contra un system prompt estrictamente educativo (sin recomendaciones de compra/venta). El modelo recibe tu cartera posición a posición —cada ETF con su valor en euros y su peso— más el reparto por región y sector, el TER ponderado y, si la rellenas, la proyección FIRE con tu aportación mensual y tu objetivo. No recibe nombre, correo ni ningún dato que te identifique. El prompt completo está en el código fuente para auditoría.`,
+    a: `Sí. El analizador usa ${GROQ_MODEL} a través de Groq, contra un system prompt estrictamente educativo (sin recomendaciones de compra/venta). El modelo recibe tu cartera posición a posición —cada ETF con su valor en euros y su peso— más el reparto por región y sector, el TER ponderado y, si la rellenas, solo el resultado en años de la proyección FIRE: tu aportación mensual y tu objetivo de patrimonio llegan a nuestro servidor para calcularla, pero no se envían al modelo. No recibe nombre, correo ni ningún dato que te identifique. El prompt completo está en el código fuente para auditoría.`,
   },
 ]
 
@@ -199,7 +199,7 @@ export default function MetodologiaPage() {
                 </li>
                 <li>
                   <code>DE</code>, <code>FR</code>, otros UCITS → punto de partida{' '}
-                  <strong>C</strong> o <strong>D</strong> según el caso.
+                  <strong>D</strong>, acumule o reparta.
                 </li>
               </ul>
             </li>
@@ -354,7 +354,7 @@ export default function MetodologiaPage() {
           <p>
             Cuando pulsas &quot;Analizar con IA&quot;, enviamos tu cartera posición a posición
             —cada ETF con su valor en euros y su peso—, el reparto por región y sector, el TER
-            ponderado y, si la rellenas, la proyección FIRE, al modelo{' '}
+            ponderado y, si rellenas la proyección FIRE, solo su resultado en años (no tu aportación mensual ni tu objetivo), al modelo{' '}
             <strong>{GROQ_MODEL}</strong> de Groq, con un system prompt en español
             que le instruye a:
           </p>

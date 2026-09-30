@@ -36,7 +36,7 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
   {
     q: '¿Cuál es la diferencia de coste entre los principales brokers para ETFs en España?',
-    a: 'Trade Republic cobra 0€ por operación. DEGIRO cobra 0,50€ + 0,004% por orden (mínimo 0,90€). MyInvestor cobra 0,20€ + 0,03% del importe. Para órdenes pequeñas (<667€), MyInvestor es más barato que DEGIRO; para órdenes grandes, DEGIRO empata. Trade Republic gana en todos los casos en pura comisión, pero solo ofrece ETFs (no fondos indexados).',
+    a: 'Trade Republic cobra 0€ por operación. DEGIRO cobra 0,50€ + 0,004% por orden (mínimo 0,90€). MyInvestor cobra 0,20€ + 0,03% del importe. Con esas tarifas, MyInvestor sale más barato que DEGIRO en órdenes de hasta unos 2.333€ (con ese importe los dos cobran 0,90€); por encima, DEGIRO sale más barato. Trade Republic gana en todos los casos en pura comisión, pero solo ofrece ETFs (no fondos indexados).',
   },
   {
     q: '¿Cuáles son los roboadvisors más usados en España y cuánto cobran?',
@@ -223,7 +223,7 @@ Fuente: BogleHub (boglehub.com/datos-clave) — verificable con BOE/AEAT, follet
               <li><a href="#oro" className="text-brand-400 hover:text-brand-300">9. Mejores ETC de oro físico</a></li>
               <li><a href="#brokers" className="text-brand-400 hover:text-brand-300">10. Comparativa de brokers</a></li>
               <li><a href="#roboadvisors" className="text-brand-400 hover:text-brand-300">11. Comparativa de roboadvisors</a></li>
-              <li><a href="#fondos-myinvestor" className="text-brand-400 hover:text-brand-300">12. Fondos indexados en MyInvestor</a></li>
+              <li><a href="#fondos-myinvestor" className="text-brand-400 hover:text-brand-300">12. Fondos indexados con su comisión según la gestora</a></li>
               <li><a href="#planes-pensiones-indexados" className="text-brand-400 hover:text-brand-300">13. Planes de pensiones indexados</a></li>
               <li><a href="#domicilios" className="text-brand-400 hover:text-brand-300">14. Domicilios fiscales y grados</a></li>
               <li><a href="#convenios" className="text-brand-400 hover:text-brand-300">15. Convenios doble imposición</a></li>
@@ -422,9 +422,9 @@ Fuente: BogleHub (boglehub.com/datos-clave) — verificable con BOE/AEAT, follet
               ]}
             />
             <p className="text-sm text-fg-muted leading-relaxed">
-              Para la mayoría de inversores indexados en España, la combinación óptima es Trade
-              Republic (ETFs sin comisión) + MyInvestor (fondos indexados con traspaso fiscal
-              libre).
+              Una combinación habitual entre inversores indexados en España es Trade Republic
+              (ETFs) + MyInvestor (fondos indexados, que se pueden traspasar sin tributar). Es un
+              ejemplo de lo que se usa a menudo, no una recomendación.
             </p>
           </section>
 
@@ -527,11 +527,11 @@ Fuente: BogleHub (boglehub.com/datos-clave) — verificable con BOE/AEAT, follet
               headers={['Cartera', 'Renta variable', 'Renta fija', 'Otros', 'TER ponderado aprox.']}
               rows={[
                 ['Cartera 1 fondo (máx simplicidad)', '100% VWCE', '0%', '—', '0,14%'],
-                ['Cartera 2 fondos', '80% VWCE', '20% AGGH', '—', '0,20%'],
+                ['Cartera 2 fondos', '80% VWCE', '20% AGGH', '—', '0,13%'],
                 ['Cartera 3 fondos (Boglehead clásica)', '60% IWDA + 20% EIMI', '20% AGGH', '—', '0,17%'],
-                ['Cartera permanente Harry Browne', '25% VWCE', '25% IBGL + 25% IBGS', '25% SGLN (oro)', '0,15%'],
-                ['Cartera FIRE agresiva', '90% VWCE', '10% AGGH', '—', '0,21%'],
-                ['Cartera cerca de jubilación', '40% VWCE', '60% AGGH', '—', '0,15%'],
+                ['Cartera permanente Harry Browne', '25% VWCE', '25% IBGL + 25% IBGS', '25% SGLN (oro)', '0,13%'],
+                ['Cartera FIRE agresiva', '90% VWCE', '10% AGGH', '—', '0,14%'],
+                ['Cartera cerca de jubilación', '40% VWCE', '60% AGGH', '—', '0,12%'],
               ]}
             />
           </section>

@@ -91,7 +91,7 @@ export const GESTORAS: Gestora[] = [
       },
       {
         q: '¿Qué significa Core en los ETFs iShares?',
-        a: 'iShares Core son los ETFs más establecidos y populares de la marca, con menor TER y mayor liquidez que los productos no-Core. Diseñados como base de cartera para inversores a largo plazo: IWDA (Core MSCI World), CSPX (Core S&P 500), EIMI (Core MSCI EM IMI), AGGH (Core Global Aggregate Bond). Son la apuesta segura para construir cartera Boglehead.',
+        a: 'iShares Core son los ETFs más establecidos y populares de la marca, con menor TER y mayor liquidez que los productos no-Core. Diseñados como base de cartera para inversores a largo plazo: IWDA (Core MSCI World), CSPX (Core S&P 500), EIMI (Core MSCI EM IMI), AGGH (Core Global Aggregate Bond). Los cuatro son de acumulación, con TER entre el 0,07 % (CSPX) y el 0,20 % (IWDA); AGGH, además, cubre la divisa a euros.',
       },
     ],
   },
@@ -105,12 +105,12 @@ export const GESTORAS: Gestora[] = [
     etfBrand: 'SPDR',
     tagline: 'Pionero de los ETFs: lanzaron el primer ETF en 1993 (SPY)',
     description:
-      'State Street Global Advisors lanzó el primer ETF de la historia en 1993: el SPDR S&P 500 (SPY), aún hoy uno de los más grandes del mundo. La familia SPDR UCITS es popular en Europa por TER muy competitivos en algunos productos clave: SWRD (MSCI World, TER 0,12%) es el ETF MSCI World UCITS más barato del mercado, SPYL (S&P 500, TER 0,03%) compite con CSPX/VUAA.',
+      'State Street Global Advisors lanzó el primer ETF de la historia en 1993: el SPDR S&P 500 (SPY), aún hoy uno de los más grandes del mundo. La familia SPDR UCITS es popular en Europa por TER muy competitivos en algunos productos clave: SWRD (MSCI World, TER 0,12%) está entre los ETFs MSCI World UCITS más baratos, con el mismo TER que XDWD, XDWL y MWRD, SPYL (S&P 500, TER 0,03%) compite con CSPX/VUAA.',
     popularEtfs: [
       { ticker: 'SWRD', name: 'SPDR MSCI World UCITS ETF' },
       { ticker: 'SPYL', name: 'SPDR S&P 500 UCITS ETF (Acc)' },
       { ticker: 'SPYI', name: 'SPDR MSCI ACWI IMI UCITS ETF' },
-      { ticker: 'ZPRV', name: 'SPDR S&P 600 US Small Cap Value UCITS ETF' },
+      { ticker: 'ZPRV', name: 'SPDR MSCI USA Small Cap Value Weighted UCITS ETF' },
       { ticker: 'ZPRG', name: 'SPDR S&P Global Dividend Aristocrats UCITS ETF' },
     ],
     availableInMyInvestor: false,
@@ -170,7 +170,7 @@ export const GESTORAS: Gestora[] = [
     faq: [
       {
         q: '¿Por qué EQQQ es tan popular?',
-        a: 'EQQQ fue uno de los primeros ETFs UCITS de Nasdaq 100 lanzado en Europa (2002), lo que le ha dado tiempo para acumular liquidez y patrimonio (+7.000M USD). TER 0,30%. Para inversores europeos que quieren exposición específica al Nasdaq 100, EQQQ es la opción de referencia por liquidez y reputación.',
+        a: 'EQQQ fue uno de los primeros ETFs UCITS de Nasdaq 100 lanzado en Europa (2002), lo que le ha dado tiempo para acumular liquidez y patrimonio (+7.000M USD). TER 0,30%. Reparte dividendos; sobre el mismo índice hay también versiones de acumulación, como EQAC (Invesco) o SXRV (iShares).',
       },
     ],
   },

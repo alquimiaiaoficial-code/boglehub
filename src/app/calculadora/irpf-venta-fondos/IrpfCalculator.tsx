@@ -30,7 +30,10 @@ export function IrpfCalculator() {
 
   const r = useMemo(() => {
     const ganancia = valorVenta - valorCompra
-    const esPerdida = ganancia <= 0
+    const esPerdida = ganancia < 0
+    // Vender por lo mismo que se pagó: ni ganancia ni pérdida. Hasta el 30-sep-2026 caía en la
+    // rama de pérdida y decía «cierra en pérdidas por 0 €».
+    const sinResultado = ganancia === 0
     const perdidaUsada = esPerdida ? 0 : Math.min(perdidas, ganancia)
     const gananciaImponible = esPerdida ? 0 : Math.max(0, ganancia - perdidas)
     const tax = computeMarginalSavingsTax(otrasGanancias, gananciaImponible)
@@ -41,6 +44,7 @@ export function IrpfCalculator() {
     return {
       ganancia,
       esPerdida,
+      sinResultado,
       perdidaUsada,
       gananciaImponible,
       impuesto,
@@ -182,7 +186,12 @@ export function IrpfCalculator() {
             : 'mb-6 rounded-xl border border-warn/30 bg-warn-dim p-5'
         }
       >
-        {r.esPerdida ? (
+        {r.sinResultado ? (
+          <p className="text-sm text-fg leading-relaxed">
+            Vendes por lo mismo que pagaste: no hay ganancia ni pérdida, así que esta venta no
+            genera IRPF ni deja pérdidas para compensar.
+          </p>
+        ) : r.esPerdida ? (
           <p className="text-sm text-fg leading-relaxed">
             Esta venta cierra en pérdidas por{' '}
             <strong className="text-brand-400">{formatEUR(Math.abs(r.ganancia))}</strong>, así

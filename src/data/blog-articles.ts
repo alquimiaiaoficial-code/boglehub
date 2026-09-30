@@ -2474,7 +2474,7 @@ Para empezar con buen pie, la [guía para elegir tu primer ETF](/blog/como-elegi
     slug: 'etoro-opinion-2026',
     title: 'eToro: opinión y análisis para invertir en España (2026)',
     excerpt:
-      'eToro destaca en copy trading y cripto, pero para inversión indexada su modelo (spread, retiradas, cuenta en dólares) es poco eficiente. Alternativas mejores.',
+      'eToro destaca en copy trading y cripto, pero para inversión indexada su modelo (spread, retiradas, cuenta en dólares) es poco eficiente: cuesta más que un bróker sin spread ni cuenta en dólares.',
     publishedAt: '2026-06-04',
     readingMinutes: 8,
     keywords: ['eToro opinión', 'eToro España', 'eToro ETFs', 'eToro comisiones', 'eToro copy trading'],
@@ -10102,7 +10102,7 @@ El **SPYL** de SPDR es el más barato (0,03%). El **CSPX** de iShares es el más
 
 ## Los fondos indexados de S&P 500 (con traspaso fiscal)
 
-Si prefieres un fondo indexado en lugar de un ETF —para aprovechar el traspaso fiscal libre—, esta es la opción de referencia:
+En formato fondo indexado, que se puede traspasar a otro fondo sin tributar, el que más se cita para el S&P 500 es este:
 
 | Fondo | Gestora | TER | ISIN |
 |---|---|---|---|

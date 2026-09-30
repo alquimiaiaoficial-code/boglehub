@@ -142,7 +142,7 @@ export const ROBOADVISORS: Roboadvisor[] = [
     hasPensionPlan: true,
     tagline: 'Roboadvisor con mínimo de apertura más bajo de España',
     description:
-      'MyInvestor Roboadvisor es el servicio de gestión automatizada del neobanco MyInvestor (grupo Andbank). Su gran ventaja es el mínimo de apertura de solo 150€, el más bajo entre los roboadvisors españoles. Invierte en fondos institucionales de Vanguard, Amundi y Fidelity. El coste total estimado es de los más bajos del mercado (~0,30-0,40%). Ideal para quien empieza con poco capital o quiere probar el modelo roboadvisor sin compromiso.',
+      'MyInvestor Roboadvisor es el servicio de gestión automatizada del neobanco MyInvestor (grupo Andbank). Su gran ventaja es el mínimo de apertura de solo 150€, el más bajo entre los roboadvisors españoles. Invierte en fondos institucionales de Vanguard, Amundi y Fidelity. El coste total estimado es de los más bajos del mercado (~0,30-0,40%). Por ese mínimo, encaja con quien empieza con poco capital o quiere probar el modelo roboadvisor sin compromiso.',
     idealFor: [
       'Empezar con muy poco capital (150€)',
       'Clientes existentes de MyInvestor que quieren unificar',
@@ -206,7 +206,7 @@ export const ROBOADVISORS: Roboadvisor[] = [
     hasPensionPlan: false,
     tagline: 'Roboadvisor de Santander Openbank, comisiones más altas',
     description:
-      'Openbank Roboadvisor es el servicio de gestión automatizada del banco online de Santander. Solo 4 perfiles de riesgo. Las comisiones totales (~0,70-0,90%) son significativamente más altas que Indexa, Finizens o MyInvestor. Para inversores que ya son clientes Openbank/Santander y valoran unificación con su banco, puede tener sentido por comodidad; para quien prioriza coste, hay alternativas mejores.',
+      'Openbank Roboadvisor es el servicio de gestión automatizada del banco online de Santander. Solo 4 perfiles de riesgo. Las comisiones totales (~0,70-0,90%) son significativamente más altas que Indexa, Finizens o MyInvestor. Lo que aporta es operativo: quien ya es cliente de Openbank o del grupo Santander tiene la inversión en su mismo grupo bancario, a cambio de ese sobrecoste.',
     idealFor: [
       'Clientes Openbank/Santander que quieren unificar',
     ],

@@ -83,11 +83,11 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: '¿Cuándo hay que presentar el Modelo 720?',
-        a: 'El Modelo 720 es obligatorio para residentes fiscales en España con bienes en el extranjero por más de 50.000€ por categoría: cuentas bancarias, valores (incluyendo ETFs en DEGIRO o Trade Republic), o inmuebles. Se presenta entre enero y marzo del año siguiente. Es una declaración informativa, no tributaria. Las sanciones desproporcionadas fueron anuladas por el Tribunal Constitucional en 2022, pero la obligación de declarar persiste.',
+        a: 'El Modelo 720 es obligatorio para residentes fiscales en España con bienes en el extranjero por más de 50.000€ por categoría: cuentas bancarias, valores (incluyendo ETFs en DEGIRO o Trade Republic), o inmuebles. Se presenta entre enero y marzo del año siguiente. Es una declaración informativa, no tributaria. Las sanciones desproporcionadas fueron declaradas contrarias al Derecho de la UE por el Tribunal de Justicia de la Unión Europea en enero de 2022, y la Ley 5/2022 las suprimió, pero la obligación de declarar persiste.',
       },
       {
         q: '¿Por qué los ETFs domiciliados en Irlanda son más eficientes fiscalmente?',
-        a: 'Los ETFs domiciliados en Irlanda (ISIN empieza por IE) aprovechan el convenio fiscal Irlanda-EE.UU. que reduce la retención sobre dividendos americanos del 30% al 15%. Como el ~63% del MSCI World son empresas americanas, este ahorro tiene impacto real en la rentabilidad neta. Por eso ETFs como VWCE (IE00BK5BQT80), IWDA (IE00B4L5Y983) o CSPX (IE00B5BMR087) son más eficientes que sus equivalentes domiciliados en Luxemburgo.',
+        a: 'Los ETFs domiciliados en Irlanda (ISIN empieza por IE) aprovechan el convenio fiscal Irlanda-EE.UU. que reduce la retención sobre dividendos americanos del 30% al 15%. Como en torno al 71% del MSCI World son empresas americanas, este ahorro tiene impacto real en la rentabilidad neta. Por eso ETFs como VWCE (IE00BK5BQT80), IWDA (IE00B4L5Y983) o CSPX (IE00B5BMR087) son más eficientes que sus equivalentes domiciliados en Luxemburgo.',
       },
     ],
   },
@@ -105,7 +105,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: '¿Cuál es el ETF MSCI World más barato disponible en España?',
-        a: 'SWRD (SPDR MSCI World UCITS ETF) y MWRD (Lyxor Core MSCI World) tienen TER del 0,12%, los más bajos entre los ETFs MSCI World UCITS disponibles para inversores españoles. IWDA tiene TER del 0,20% pero es más líquido (>75.000M USD AUM). Para carteras grandes y horizonte muy largo, SWRD ahorra ~0,08% anual frente a IWDA.',
+        a: 'SWRD (SPDR MSCI World UCITS ETF) y MWRD (Amundi Core MSCI World UCITS ETF) tienen TER del 0,12%, los más bajos entre los ETFs MSCI World UCITS disponibles para inversores españoles. IWDA tiene TER del 0,20% pero es más líquido (>75.000M USD AUM). Para carteras grandes y horizonte muy largo, SWRD ahorra ~0,08% anual frente a IWDA.',
       },
       {
         q: '¿Qué es el ETF CSPX?',

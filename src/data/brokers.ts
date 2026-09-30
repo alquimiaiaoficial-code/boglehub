@@ -163,7 +163,7 @@ export const BROKERS: Broker[] = [
     supportsFundTransfers: true,
     remuneratedAccount: '2% TAE primer año (con condiciones), 1% después',
     minimumOpening: '1€ en fondos',
-    tagline: 'El único banco español con Vanguard, Amundi y traspaso fiscal libre',
+    tagline: 'Vanguard, Amundi y traspaso fiscal libre en un banco español',
     description:
       'MyInvestor es la marca digital de Andbank España, un banco regulado por CNMV y Banco de España desde 2010. Es el único broker español que ofrece a la vez fondos indexados de Vanguard, Fidelity y otras gestoras, junto con ETFs en bolsa europea. Su combinación única —fondos indexados + ETFs + traspaso fiscal libre + plan de pensiones indexado— lo convierte en la opción más completa para inversores residentes en España que quieren todo en una sola entidad.',
     idealFor: [
