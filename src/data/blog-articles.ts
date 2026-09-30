@@ -2264,7 +2264,7 @@ Para comparar el coste de delegar frente a hacerlo tú mismo, el [comparador de 
 
 **Coste total**: 0,40-0,50%. **Mínimo**: 3.000€. **Perfiles**: 10.
 
-El roboadvisor con más patrimonio gestionado de España (+2.000 millones €), fundado en 2015 y registrado en CNMV (ESI nº 257). Invierte en fondos de Vanguard, iShares y Amundi, con 10 niveles de perfil —la mayor granularidad junto a inbestMe— y el historial auditado más largo del mercado español. Es la opción "por defecto" segura: ni la más barata ni la de menor mínimo, pero la más probada. Detalle en la [opinión de Indexa Capital 2026](/blog/indexa-capital-opinion-2026).
+Según su web, más de 6.200 millones de euros en activos gestionados, asesorados o comercializados y más de 178.000 clientes (29-sep-2026). Fundado en 2015 y registrado en CNMV (ESI nº 257). Invierte en fondos de Vanguard, iShares y Amundi, con 10 niveles de perfil —la mayor granularidad junto a inbestMe— y el historial auditado más largo del mercado español. Es la opción "por defecto" segura: ni la más barata ni la de menor mínimo, pero la más probada. Detalle en la [opinión de Indexa Capital 2026](/blog/indexa-capital-opinion-2026).
 
 ---
 
@@ -6061,7 +6061,7 @@ La comparativa más amplia, con ING, Openbank, Renta 4 o Interactive Brokers, es
     ],
     content: `# Indexa Capital: opinión y análisis completo 2026
 
-Indexa Capital es el roboadvisor con más patrimonio gestionado de España. En 2026 supera los 2.000 millones de euros en activos bajo gestión y gestiona las carteras de más de 70.000 clientes. Es la opción que primero sale en Google cuando alguien busca "invertir sin complicaciones" en España, y con razón: fue pionero en el modelo de gestión automatizada de fondos indexados en el mercado español.
+Indexa Capital es uno de los roboadvisors con más patrimonio de España: según su web, más de 6.200 millones de euros en activos gestionados, asesorados o comercializados y más de 178.000 clientes (29-sep-2026). Es la opción que primero sale en Google cuando alguien busca "invertir sin complicaciones" en España, y con razón: fue pionero en el modelo de gestión automatizada de fondos indexados en el mercado español.
 
 Esta opinión no es un artículo patrocinado. Analizamos los datos reales: comisiones, rentabilidad histórica, regulación y en qué casos concretos Indexa tiene sentido y en cuáles no.
 

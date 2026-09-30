@@ -53,7 +53,8 @@ export const ROBOADVISORS: Roboadvisor[] = [
     totalCost: '0,40-0,50% anual (gestión + custodia + TER de fondos)',
     minimumOpening: '3.000€ (fondos), sin mínimo (pensiones)',
     numProfiles: 10,
-    aum: '+2.000 millones €',
+    // Su web (indexacapital.com/es/esp/stats), 29-sep-2026: incluye asesorados y cuentas remuneradas.
+    aum: '+6.200 millones € (gestionados, asesorados o comercializados, sep-2026)',
     underlyingFunds: ['Vanguard', 'iShares', 'Amundi'],
     hasPensionPlan: true,
     tagline: 'El roboadvisor con más patrimonio gestionado de España',

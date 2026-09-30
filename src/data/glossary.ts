@@ -551,7 +551,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     longDefinition:
       'FIRE (Financial Independence, Retire Early) es una filosofía de vida y planificación financiera que busca alcanzar la libertad económica antes de la edad tradicional de jubilación. La idea central: ahorrar e invertir una proporción alta de los ingresos (25-50%) durante 10-20 años para acumular un patrimonio que genere rentas suficientes para vivir sin trabajar.\n\nLa "regla del 4%" es el atajo clásico para calcular el capital necesario: 25 veces tu gasto anual. Si gastas 30.000€/año, necesitas 750.000€ invertidos. En España, la pensión pública reduce dramáticamente esta cifra: si esperas cobrar 1.500€/mes de pensión a los 65, solo necesitas que la cartera cubra la diferencia hasta entonces.',
     example:
-      'Un inversor español que gasta 25.000€/año y espera pensión pública de 15.000€/año a los 65, necesita una cartera de aproximadamente 250.000€ para vivir desde los 50 hasta los 65 retirando 4% anual. La pensión pública cubre el resto a partir de los 65.',
+      'Un inversor español que gasta 25.000€/año y espera una pensión pública de 15.000€/año a los 65 solo necesita que su cartera cubra 10.000€/año a partir de esa edad: unos 250.000€, retirando un 4% anual. Si se jubila a los 50, hasta los 65 tiene que cubrir además los 15.000€/año que luego pagará la pensión: unos 225.000€ más, sin contar la rentabilidad.',
     relatedArticles: ['fire-espana-cuanto-necesitas'],
     relatedLinks: [
       { label: 'Calculadora FIRE Monte Carlo', href: '/calculadora/fire-monte-carlo' },
@@ -563,7 +563,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       },
       {
         q: '¿Cómo afecta la pensión pública española al número FIRE?',
-        a: 'La reduce drásticamente. Si gastas 25.000€/año y esperas 15.000€/año de pensión a los 65, solo necesitas una cartera de unos 250.000€ para cubrir el tramo desde la jubilación anticipada hasta los 65, retirando un 4% anual.',
+        a: 'La reduce mucho. Si gastas 25.000€/año y esperas 15.000€/año de pensión a los 65, a partir de esa edad la cartera solo tiene que cubrir 10.000€/año: unos 250.000€, retirando un 4% anual. El tramo desde la jubilación anticipada hasta los 65 hay que cubrirlo aparte, porque la pensión todavía no llega.',
       },
       {
         q: '¿Qué es la regla del 4%?',
@@ -662,7 +662,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     longDefinition:
       'Un roboadvisor es una plataforma digital que ofrece gestión automatizada de carteras de inversión basada en fondos indexados de bajo coste. Completas un cuestionario de perfil inversor, el algoritmo te asigna una cartera entre el 1 (muy conservador) y el 10 (máximo riesgo), y la plataforma se encarga del resto: ejecutar compras, rebalancear, reinvertir dividendos.\n\nVentajas: simplicidad total, automatización, rebalanceo sistemático, evita errores emocionales. Desventajas: comisión anual del 0,40-0,60% que se suma al TER de los fondos subyacentes, lo que lo hace más caro que gestionar una cartera DIY (~0,15%) pero significativamente más barato que un fondo de gestión activa bancario (~1,5%).',
     example:
-      'Indexa Capital, el roboadvisor más usado en España, gestiona más de 2.000 millones de euros. Cobra entre el 0,40% y el 0,60% anual (todo incluido) y rebalancea las carteras automáticamente cuando se desvían del peso objetivo.',
+      'Indexa Capital, uno de los roboadvisors más usados en España, declara en su web más de 6.200 millones de euros en activos gestionados, asesorados o comercializados (29-sep-2026). Cobra entre el 0,40% y el 0,60% anual (todo incluido) y rebalancea las carteras automáticamente cuando se desvían del peso objetivo.',
     relatedArticles: [
       'indexa-capital-opinion-2026',
       'finizens-vs-indexa-capital-2026',
@@ -678,7 +678,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       },
       {
         q: '¿Cómo funciona un roboadvisor?',
-        a: 'Completas un cuestionario de perfil de riesgo, el algoritmo te asigna una cartera de fondos indexados (de la más conservadora a la más arriesgada) y la plataforma ejecuta las compras, rebalancea y reinvierte por ti. Indexa Capital, el más usado en España, gestiona más de 2.000 millones de euros.',
+        a: 'Completas un cuestionario de perfil de riesgo, el algoritmo te asigna una cartera de fondos indexados (de la más conservadora a la más arriesgada) y la plataforma ejecuta las compras, rebalancea y reinvierte por ti. Indexa Capital, uno de los más usados en España, declara más de 6.200 millones de euros en activos gestionados, asesorados o comercializados (su web, 29-sep-2026).',
       },
     ],
   },
@@ -729,7 +729,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       },
       {
         q: '¿Cuál es el mejor ETF de MSCI World en España?',
-        a: 'Los más usados son SWRD y MWRD (TER 0,12%), XDWD (0,19%) e IWDA (0,20%). Todos son irlandeses, de acumulación y replican el mismo índice, así que la diferencia principal es el coste y la liquidez.',
+        a: 'Los más usados son SWRD, MWRD y XDWD (TER 0,12%) e IWDA (0,20%). Todos son irlandeses, de acumulación y replican el mismo índice, así que la diferencia principal es el coste y la liquidez.',
       },
       {
         q: '¿El MSCI World está demasiado concentrado en EE.UU.?',
