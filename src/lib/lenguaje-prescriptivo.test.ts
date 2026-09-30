@@ -49,7 +49,7 @@ import { join, sep } from 'node:path'
 
 /** Fórmulas que dictaminan sobre el lector en vez de describir el producto. */
 const PRESCRIPTIVAS: readonly [RegExp, string][] = [
-  [/\bes preferible\b/i, 'di en qué es mejor, no que lo sea: «es más transparente», «tiene menos TER»'],
+  [/\b(?:es|son)\s+(?:\p{L}+mente\s+)?preferibles?\b/iu, 'di en qué es mejor, no que lo sea: «es más transparente», «tiene menos TER»'],
   [/\bes la opci[óo]n correcta\b/i, 'describe el perfil al que encaja: «encaja con este perfil»'],
   [/\bla clave est[áa] en elegir\b/i, 'di qué cambia la elección, no que sea «la clave»'],
   [/\btu mejor opci[óo]n\b/i, 'no hay una «mejor opción» del lector: descríbele las opciones'],
