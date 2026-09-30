@@ -1027,7 +1027,7 @@ Para todo esto, la prioridad es **seguridad y liquidez**, no rentabilidad. Y eso
 
 ### Cuenta remunerada (o de ahorro)
 
-Una cuenta que paga intereses por tu saldo. Ventajas: **liquidez inmediata**, capital garantizado y cubierto por el [Fondo de Garantía de Depósitos hasta 100.000€](/blog/que-pasa-si-quiebra-tu-broker), y simplicidad total. Inconvenientes: el tipo lo fija el banco y puede ser promocional o cambiar; los intereses tributan en el IRPF del ahorro. Es la opción por defecto para el fondo de emergencia. Brókers como [Trade Republic](/blog/trade-republic-opinion-2026) o [XTB](/blog/xtb-opinion-2026) ofrecen cuenta remunerada sin condiciones. Brókers como [Trade Republic](/blog/trade-republic-opinion-2026) (~2-2,5% TAE) o [XTB](/blog/xtb-opinion-2026) (~3% TAE) la incluyen sin condiciones.
+Una cuenta que paga intereses por tu saldo. Ventajas: **liquidez inmediata**, capital garantizado y cubierto por el [Fondo de Garantía de Depósitos hasta 100.000€](/blog/que-pasa-si-quiebra-tu-broker), y simplicidad total. Inconvenientes: el tipo lo fija el banco y puede ser promocional o cambiar; los intereses tributan en el IRPF del ahorro. Es la opción por defecto para el fondo de emergencia. Brókers como [Trade Republic](/blog/trade-republic-opinion-2026), [XTB](/blog/xtb-opinion-2026) o [Scalable Capital](/blog/scalable-capital-opinion-2026) también ofrecen cuenta remunerada, a tipo variable; el tipo y las condiciones cambian, así que conviene mirarlos en su web.
 
 ### Fondo monetario
 
@@ -2474,341 +2474,322 @@ Para empezar con buen pie, la [guía para elegir tu primer ETF](/blog/como-elegi
     slug: 'etoro-opinion-2026',
     title: 'eToro: opinión y análisis para invertir en España (2026)',
     excerpt:
-      'eToro destaca en copy trading y cripto, pero para inversión indexada su modelo (spread, retiradas, cuenta en dólares) es poco eficiente: cuesta más que un bróker sin spread ni cuenta en dólares.',
+      'eToro no cobra comisión en ETF, ni recargo propio sobre el diferencial, ni por inactividad, y retirar desde una cuenta en euros es gratis. Qué cuesta de verdad, el copy trading y para quién encaja.',
     publishedAt: '2026-06-04',
-    readingMinutes: 8,
+    updatedAt: '2026-09-30',
+    readingMinutes: 7,
     keywords: ['eToro opinión', 'eToro España', 'eToro ETFs', 'eToro comisiones', 'eToro copy trading'],
     faq: [
       {
         q: '¿eToro es una buena opción para invertir en ETFs indexados?',
-        a: 'Para una cartera indexada de comprar y mantener, los brokers europeos puros (Trade Republic, DEGIRO, MyInvestor) son más eficientes. El modelo de eToro —spread más amplio, comisión de retirada, cuenta en dólares y comisión de inactividad— penaliza al inversor de largo plazo. eToro tiene sentido sobre todo si buscas copy trading o criptomonedas, no inversión indexada pasiva.',
+        a: 'Depende de lo que busque cada uno. Según su página de comisiones (30-sep-2026), eToro no cobra comisión por operaciones de ETF, sea cual sea el importe, ni recargo propio sobre el diferencial de mercado, y la tarifa por inactividad figura como gratis. Donde puede haber coste es en la conversión de divisa, si se invierte desde una cuenta en una moneda distinta a la del activo, y en las retiradas desde la cuenta en dólares (5 $). No tiene fondos indexados con traspaso sin tributar.',
       },
       {
         q: '¿eToro cobra comisiones de verdad?',
-        a: 'eToro anuncia 0€ de comisión en acciones y ETFs, pero monetiza vía spread (diferencia compra-venta más amplia), comisión fija por retirar dinero, conversión de divisa (las cuentas operan en dólares) y comisión de inactividad. No es "gratis": son costes menos visibles que una comisión por operación. Verifica las condiciones vigentes en su web.',
+        a: 'En ETF, no: su página de comisiones dice que no cobra comisión por operaciones de ETF ni recargo propio sobre el diferencial de mercado. Sí puede cobrar por convertir divisa, y retirar desde la cuenta en dólares cuesta 5 $; desde una cuenta en euros es gratis. Como en cualquier bróker, se paga el diferencial del propio mercado entre precio de compra y de venta.',
       },
       {
         q: '¿Es seguro eToro en España?',
-        a: 'eToro (Europe) está regulado por la CySEC de Chipre, con cobertura del fondo de garantía de inversiones de 20.000€, un nivel similar a DEGIRO o IBKR e inferior a los 100.000€ de un banco español. No está supervisado por la CNMV. Es una plataforma solvente con millones de usuarios, pero su perfil regulatorio y su orientación al trading la alejan del inversor indexado conservador.',
+        a: 'eToro (Europe) está regulado por la CySEC de Chipre, con cobertura del fondo de garantía de inversiones de 20.000 €, un nivel similar al de DEGIRO o IBKR e inferior a los 100.000 € de una entidad española. No está supervisado por la CNMV.',
       },
       {
         q: '¿Qué es el copy trading de eToro y sustituye a una cartera indexada?',
-        a: 'El copy trading permite replicar automáticamente las operaciones de otros usuarios. Es el sello de eToro, pero no sustituye a una cartera indexada: la rentabilidad pasada no garantiza la futura, copias la rotación y los costes de quien sigas, y renuncias a la diversificación y el bajo coste de un fondo indexado global. Puede ser didáctico con una parte pequeña del capital, no como estrategia principal.',
+        a: 'El copy trading permite replicar automáticamente las operaciones de otros usuarios. Es el sello de eToro, pero no es lo mismo que una cartera indexada: la rentabilidad pasada no garantiza la futura, se copian la rotación y los errores de quien se sigue, y se renuncia a la diversificación de un fondo indexado global.',
       },
       {
-        q: '¿eToro o Trade Republic para invertir en ETFs?',
-        a: 'Para inversión indexada, Trade Republic es claramente preferible: 0€ reales por operación, cuenta en euros, planes de ahorro automáticos y regulación alemana. eToro solo compensa si quieres específicamente copy trading o criptomonedas. Para una cartera de ETFs de largo plazo, el modelo de eToro añade costes que Trade Republic no tiene.',
+        q: '¿Qué diferencia hay entre eToro y Trade Republic para invertir en ETFs?',
+        a: 'eToro no cobra comisión por orden de ETF; Trade Republic cobra 1 € por orden suelta y nada en sus planes de inversión periódicos. Trade Republic es un banco alemán con sucursal en España, que informa a Hacienda; eToro es un bróker regulado en Chipre, y la declaración corre a cargo del inversor. eToro añade copy trading y criptomonedas.',
       },
     ],
     content: `# eToro: opinión y análisis para invertir en España (2026)
 
-eToro es uno de los nombres más conocidos —y más anunciados— del mundo de la inversión, sobre todo por haber popularizado el copy trading y por su apuesta por las criptomonedas. Esa fama hace que muchos inversores que empiezan se planteen usarlo para comprar ETFs. Este análisis, sin afiliación, explica por qué para la inversión indexada a largo plazo eToro encaja mal, y para qué perfil sí puede tener sentido.
+> **Corrección del 30 de septiembre de 2026.** Este artículo decía que eToro cobraba por retirar dinero y por inactividad, que su diferencial era «más amplio» que el de otros brókers y que sus cuentas operaban en dólares. Según su página de comisiones, hoy retirar desde una cuenta en euros es gratis, la inactividad figura como gratis, no aplica recargo propio sobre el diferencial de mercado en ETF y hay cuentas en euros. Lo hemos rehecho con esa página.
 
-La conclusión por adelantado: eToro es una plataforma válida si lo que buscas específicamente es copy trading o criptomonedas, pero su modelo de costes (spread, comisión de retirada, cuenta en dólares) penaliza al inversor indexado de comprar y mantener. Para una cartera Boglehead hay opciones europeas más eficientes.
+eToro es uno de los nombres más conocidos del mundo de la inversión, sobre todo por haber popularizado el copy trading y por su oferta de criptomonedas. Este análisis, sin afiliación, explica qué cobra por invertir en ETF, qué es el copy trading y en qué se diferencia de los brókers que más usa quien invierte indexado.
 
 ---
 
 ## Quién es eToro
 
-eToro es un broker fundado en 2007, con sede europea en Chipre y regulado por la **CySEC** (el supervisor chipriota). Su seña de identidad es el **copy trading**: copiar automáticamente las operaciones de otros usuarios. Ofrece acciones, ETFs, criptomonedas y CFDs, y cuenta con cobertura del fondo de garantía de inversiones chipriota de **20.000€**.
-
-A diferencia de un broker europeo "puro" orientado al inversor de largo plazo, eToro está diseñado en torno al trading social y a una experiencia muy gamificada. Eso condiciona tanto su modelo de costes como su encaje para una estrategia indexada.
+eToro es un bróker fundado en 2007, con sede europea en Chipre y regulado por la **CySEC** (el supervisor chipriota). Su seña de identidad es el **copy trading**: copiar automáticamente las operaciones de otros usuarios. Ofrece acciones, ETF, criptomonedas y CFD, con cobertura del fondo de garantía de inversiones chipriota de **20.000 €**.
 
 ---
 
-## El modelo de costes: "0€" con asteriscos
+## Qué cobra por invertir en ETF
 
-eToro anuncia **0€ de comisión** en la compra de acciones y ETFs. La letra pequeña importa, porque monetiza por otras vías:
+Según su página de comisiones, a 30 de septiembre de 2026:
 
-- **Spread**: la diferencia entre el precio de compra y de venta suele ser más amplia que en un broker tradicional. Es un coste que no aparece como "comisión" pero lo pagas igual.
-- **Comisión de retirada**: eToro cobra una comisión fija cada vez que retiras dinero a tu cuenta bancaria.
-- **Cambio de divisa**: las cuentas de eToro operan en **dólares**. Si ingresas y retiras en euros, hay conversión de divisa con su correspondiente coste.
-- **Comisión de inactividad**: si dejas de operar durante un tiempo, eToro aplica una cuota mensual.
-
-Para un inversor indexado que compra y mantiene durante décadas, esta estructura es justo lo contrario de lo que conviene: el spread y la conversión de divisa erosionan cada aportación, y las comisiones de retirada e inactividad castigan precisamente la pasividad que define la buena inversión indexada.
-
----
-
-## Copy trading: por qué no sustituye a una cartera indexada
-
-El copy trading es el gran reclamo de eToro: eliges a un inversor con buen historial y replicas sus operaciones automáticamente. Suena atractivo, pero choca con la evidencia que sostiene la inversión indexada:
-
-- La rentabilidad pasada no predice la futura; un "popular investor" con buen año puede tener uno malo al siguiente.
-- Copiar a alguien que opera activamente implica asumir su rotación, sus costes y sus errores.
-- La diversificación y el bajo coste de un fondo indexado global son, para la mayoría, una apuesta más sólida que seguir a un trader concreto.
-
-El copy trading puede ser entretenido o didáctico con una parte pequeña del capital, pero no es un sustituto de una cartera diversificada de bajo coste. Si quieres entender por qué el coste y la disciplina importan tanto, el artículo sobre [interés compuesto](/blog/interes-compuesto-inversion) lo deja claro.
+- **Comisión por operación de ETF:** 0 €, sea cual sea el importe y tanto en órdenes manuales como en CopyTrader o Smart Portfolios.
+- **Recargo sobre el diferencial:** ninguno propio; se paga el diferencial del mercado entre precio de compra y de venta, como en cualquier bróker.
+- **Retiradas:** gratis desde una cuenta en divisa local (en España, euros); 5 $ desde la cuenta en dólares.
+- **Inactividad:** figura como gratis.
+- **Conversión de divisa:** puede haber coste si se invierte desde una cuenta en una moneda distinta a la del activo; varía según el país, el método de pago y el nivel del Club eToro.
 
 ---
 
-## Fiscalidad: un broker extranjero, como IBKR
+## Copy trading: por qué no es lo mismo que una cartera indexada
 
-eToro es un broker extranjero, así que **no te practica retenciones ni te lo da hecho** de cara a Hacienda. Tú declaras las plusvalías y dividendos en el IRPF (base del ahorro), y si el conjunto de tu patrimonio fuera de España supera los 50.000€, te corresponde el **modelo 720**. Si además operas con criptomonedas, tienen sus propias obligaciones informativas. Es una carga asumible, pero conviene conocerla; la [guía de fiscalidad de ETFs](/blog/fiscalidad-etfs-espana-guia-completa) la detalla.
+El copy trading es el gran reclamo de eToro: se elige a un inversor con buen historial y se replican sus operaciones automáticamente. Choca con la evidencia que sostiene la inversión indexada:
+
+- La rentabilidad pasada no predice la futura; un «popular investor» con buen año puede tener uno malo al siguiente.
+- Copiar a alguien que opera activamente implica asumir su rotación y sus errores.
+- La diversificación y el bajo coste de un fondo indexado global no dependen de acertar con una persona concreta.
+
+El artículo sobre [interés compuesto](/blog/interes-compuesto-inversion) explica por qué el coste y la constancia pesan tanto a largo plazo.
+
+---
+
+## Fiscalidad: un bróker extranjero
+
+eToro es un bróker extranjero, así que **no practica retenciones ni informa a Hacienda** como lo hace una entidad española. Las plusvalías y los dividendos se declaran en el IRPF (base del ahorro), y si los valores depositados fuera de España superan los 50.000 € puede corresponder el **modelo 720**. Las criptomonedas tienen sus propias obligaciones informativas. La [guía de fiscalidad de ETFs](/blog/fiscalidad-etfs-espana-guia-completa) lo detalla.
 
 ---
 
 ## Seguridad
 
-eToro (Europe) está regulado por la CySEC chipriota, con cobertura del fondo de garantía de inversiones de **20.000€**. Es un nivel equivalente al de DEGIRO o IBKR, e inferior a los 100.000€ de un banco español. No es un regulador español, lo que para algunos inversores es un punto en contra frente a opciones supervisadas por la CNMV. La plataforma es solvente y cuenta con millones de usuarios, pero su perfil regulatorio y su orientación al trading la alejan del inversor indexado conservador.
+eToro (Europe) está regulado por la CySEC chipriota, con cobertura del fondo de garantía de inversiones de **20.000 €**, un nivel equivalente al de DEGIRO o IBKR e inferior a los 100.000 € de una entidad española. No está supervisado por la CNMV.
 
 ---
 
-## Para quién tiene sentido eToro (y para quién no)
+## Para quién encaja eToro (y para quién no)
 
-**Puede tener sentido si:**
-- Te interesa específicamente el copy trading como experiencia.
-- Quieres mezclar inversión con criptomonedas en una sola plataforma.
+**Encaja con quien:**
+- Quiere probar el copy trading.
+- Quiere tener ETF y criptomonedas en la misma plataforma.
+- Da órdenes sueltas de ETF y no quiere pagar comisión por cada una.
 
-**No tiene sentido si:**
-- Buscas una cartera indexada de ETFs de comprar y mantener al menor coste.
-- Te molesta el spread, la comisión de retirada o tener la cuenta en dólares.
-- Prefieres un broker regulado en la UE orientado al largo plazo y, mejor aún, en euros.
-
----
-
-## La alternativa para el inversor indexado
-
-Si has llegado a eToro buscando invertir en ETFs a largo plazo, conviene saber en qué se diferencian de él los brókeres europeos orientados a ese uso:
-
-- [Trade Republic](/blog/trade-republic-opinion-2026): 0€ reales por operación, cuenta en euros, planes de ahorro automáticos desde 1€ y regulación alemana.
-- MyInvestor combina ETFs con fondos indexados traspasables sin tributar; DEGIRO da acceso a más mercados. Cada uno cubre una necesidad distinta.
-
-La [comparativa del mejor broker para ETFs en España](/blog/mejor-broker-etfs-espana-2026) los pone uno al lado del otro.
+**Encaja peor con quien:**
+- Quiere fondos indexados con traspaso sin tributar.
+- Prefiere una entidad supervisada por la CNMV que informe a Hacienda por él.
 
 ---
 
-## Conclusión práctica
+## Conclusión
 
-eToro es una buena plataforma para lo que fue diseñada —copy trading y criptomonedas—, pero no para construir una cartera indexada eficiente. El spread, las comisiones de retirada e inactividad y la cuenta en dólares juegan en contra del inversor de comprar y mantener. Si tu objetivo es invertir en ETFs indexados a largo plazo desde España, empieza por un broker europeo a 0€ y en euros, y deja eToro para la curiosidad concreta del copy trading o las cripto, con dinero que puedas permitirte arriesgar.
+En ETF, eToro no cobra comisión por operación ni recargo propio sobre el diferencial, y hoy tampoco cobra por inactividad ni por retirar desde una cuenta en euros. Sus diferencias con los brókers que más usa quien invierte indexado están en otro sitio: regulación en Chipre con garantía de 20.000 €, declaración a cargo del inversor, copy trading y ausencia de fondos con traspaso.
 
-Para comparar todas las opciones según tu patrón real, usa el [comparador de brókers de BogleHub](/calculadora/comparar-brokers).
+La [comparativa de brókers para ETFs](/blog/mejor-broker-etfs-espana-2026) los pone uno al lado del otro, y el [comparador de brókers de BogleHub](/calculadora/comparar-brokers) calcula el coste según tu patrón.
 
 ---
 
 ## Fuentes y lecturas complementarias
 
-- [eToro — Web oficial](https://www.etoro.com/es) — Estructura de comisiones, spread, retiradas y condiciones de la cuenta.
-- [Mejor broker para ETFs en España 2026 — BogleHub](/blog/mejor-broker-etfs-espana-2026) — Las opciones europeas más eficientes para inversión indexada.
-- [Trade Republic opinión 2026 — BogleHub](/blog/trade-republic-opinion-2026) — La alternativa a 0€ en euros para ETFs de largo plazo.
-- [Cómo elegir tu primer ETF en España — BogleHub](/blog/como-elegir-tu-primer-etf-espana-2026) — Guía para empezar con buen pie.
+- [eToro: comisiones](https://www.etoro.com/es/trading/fees/) — ETF sin comisión, retiradas, inactividad y conversión (consultado el 30-sep-2026).
+- [Mejor broker para ETFs en España 2026 — BogleHub](/blog/mejor-broker-etfs-espana-2026) — Comparativa de los brókers más usados por inversores indexados.
+- [Trade Republic opinión 2026 — BogleHub](/blog/trade-republic-opinion-2026) — Bróker alemán con sucursal en España y planes de inversión sin comisión.
+- [Cómo elegir tu primer ETF en España — BogleHub](/blog/como-elegir-tu-primer-etf-espana-2026) — Guía para empezar.
 `,
   },
   {
     slug: 'openbank-opinion-2026',
     title: 'Openbank: opinión y análisis para invertir en ETFs (2026)',
     excerpt:
-      'Openbank, el banco online del Santander, tiene buena cuenta pero su broker (~8€/orden) y su roboadvisor son caros para invertir indexado. Para quién encaja.',
+      'Openbank, el banco online del Santander, cobra 1 € por comprar o vender acciones y ETF en cualquier mercado y deja de cobrar custodia el 1-oct-2026. Qué ofrece y qué no.',
     publishedAt: '2026-06-04',
-    readingMinutes: 8,
+    updatedAt: '2026-09-30',
+    readingMinutes: 7,
     keywords: ['Openbank opinión', 'Openbank invertir ETFs', 'Openbank broker comisiones', 'Openbank roboadvisor', 'invertir Openbank 2026'],
     faq: [
       {
         q: '¿Openbank es una buena opción para invertir en ETFs en 2026?',
-        a: 'Comparado con Trade Republic (0€) o MyInvestor (0,20€ + 0,03%), las comisiones de Openbank por orden de ETF (~8€) son notablemente más altas. Para el inversor que prioriza el coste, hay mejores opciones. Openbank tiene sentido si ya eres cliente del Santander u Openbank y valoras la unificación y el respaldo de un banco grande.',
+        a: 'Depende de lo que busque cada uno. En comisión por orden, Openbank cobra 1 € por comprar o vender acciones y ETF, en cualquier mercado y por cualquier importe, lo mismo que Trade Republic por una orden suelta, y no cobra custodia desde el 1 de octubre de 2026. Lo que no anuncia en su página de bolsa son planes de inversión periódicos en ETF sin comisión, que sí tienen Trade Republic, Scalable Capital o XTB.',
       },
       {
         q: '¿Cuánto cobra Openbank por comprar ETFs?',
-        a: 'Alrededor de 8€ por orden de compra o venta de ETFs. Es más barato que la banca tradicional, pero mucho más caro que los brokers digitales especializados. Sobre una aportación de 200€, 8€ son un 4% de coste solo por entrar. Verifica las tarifas vigentes en la web oficial, porque pueden variar.',
+        a: 'Según su web (30-sep-2026), 1 € por compra o venta de acciones y ETF, en cualquier mercado (España, Europa, EE. UU.) y por cualquier cantidad, con 0 € de custodia a partir del 1 de octubre de 2026. Sobre una aportación de 200 €, 1 € es un 0,5 %.',
       },
       {
         q: '¿El roboadvisor de Openbank merece la pena?',
-        a: 'El roboadvisor de Openbank es cómodo, pero su comisión total suele ser más alta que la de roboadvisors especializados como Indexa Capital o Finizens. Si quieres delegar la gestión en un roboadvisor, compara costes: a largo plazo, una comisión más baja se traduce en una diferencia notable de rentabilidad.',
+        a: 'Openbank tiene un roboadvisor con carteras gestionadas de fondos indexados. Si se compara con otros, lo que cuenta es la comisión total (gestión, custodia y los fondos), que cada entidad publica en su web. BogleHub explica cómo compararlos en el análisis de si los roboadvisors merecen su comisión.',
       },
       {
         q: '¿Es seguro invertir con Openbank?',
-        a: 'Sí. Openbank es el banco online del grupo Santander, regulado por el Banco de España y la CNMV, con cobertura del Fondo de Garantía de Depósitos y del Fondo de Garantía de Inversiones hasta 100.000€. Su solidez es máxima; su desventaja para invertir es el coste, no la seguridad.',
+        a: 'Openbank es el banco online del grupo Santander, supervisado por el Banco de España y la CNMV, con cobertura del Fondo de Garantía de Depósitos hasta 100.000 € y del Fondo de Garantía de Inversiones hasta 100.000 €.',
       },
       {
-        q: '¿Mejor Openbank o Trade Republic para invertir en ETFs?',
-        a: 'En coste, Trade Republic gana con claridad: 0€ por operación y planes de ahorro automáticos desde 1€, frente a los ~8€ por orden de Openbank. Openbank solo compensa si valoras tener la inversión en el mismo banco que tu cuenta o ya eres cliente del Santander. Puedes mantener la cuenta en Openbank y el broker en Trade Republic sin problema.',
+        q: '¿Qué diferencia hay entre Openbank y Trade Republic para invertir en ETFs?',
+        a: 'En una orden suelta cobran lo mismo: 1 €. La diferencia está en lo demás. Trade Republic tiene planes de inversión periódicos sin comisión, que se programan desde 1 €; Openbank no los anuncia en su página de bolsa. Openbank es un banco español con fondos de inversión y traspasos; Trade Republic es un banco alemán con sucursal en España.',
       },
     ],
     content: `# Openbank: opinión y análisis para invertir en ETFs (2026)
 
-Openbank es el banco 100% online del grupo Santander y uno de los más usados de España. Como cuenta del día a día es cómodo y solvente; la duda llega cuando lo usas para invertir en ETFs o fondos, porque sus comisiones quedan lejos de la nueva generación de brokers digitales. Este análisis, sin afiliación, explica qué hace bien Openbank y por qué, para invertir indexado, probablemente te convenga otra herramienta.
+> **Corrección del 30 de septiembre de 2026.** Este artículo decía que Openbank cobraba «alrededor de 8 € por orden» y concluía que era caro para invertir en ETF. No era verdad: según su web, cobra **1 €** por compra o venta. Lo hemos reescrito con la tarifa que publica Openbank.
 
-La conclusión por adelantado: Openbank es un buen banco con el respaldo del Santander, pero una opción cara para invertir. Si ya eres cliente y valoras la unificación, puede compensar; si priorizas el coste, hay alternativas mucho más baratas.
+Openbank es el banco 100 % online del grupo Santander y uno de los más usados de España. Además de cuenta y tarjetas, tiene bróker de acciones y ETF, fondos de inversión y un roboadvisor. Este análisis, sin afiliación, explica qué cobra por invertir y en qué se diferencia de los brókers más usados por quien invierte indexado.
 
 ---
 
 ## Quién es Openbank
 
-Openbank es el banco online del **grupo Santander**, operativo desde 1995 y regulado por el **Banco de España** y la **CNMV**. Ofrece cuenta corriente sin comisiones, tarjetas, y una plataforma de inversión con acciones, ETFs, fondos y un roboadvisor propio. Como entidad del mayor banco español, cuenta con la cobertura del **Fondo de Garantía de Depósitos e Inversiones hasta 100.000€** y un respaldo difícil de igualar en solidez.
-
-Su propuesta es la de un banco grande y completo en formato digital. Para invertir indexado, el coste es donde flojea.
+Openbank es el banco online del **grupo Santander**, operativo desde 1995 y supervisado por el **Banco de España** y la **CNMV**. Ofrece cuenta corriente sin comisiones, tarjetas y una plataforma de inversión con acciones, ETF, fondos y un roboadvisor propio. Los depósitos están cubiertos por el **Fondo de Garantía de Depósitos** hasta 100.000 €, y los valores, por el **Fondo de Garantía de Inversiones** hasta 100.000 €.
 
 ---
 
-## El broker de Openbank: comisiones
+## El bróker de Openbank: comisiones
 
-Openbank cobra alrededor de **8€ por orden** de compra o venta de ETFs. Es más barato que la banca tradicional, pero mucho más caro que los brokers especializados:
+Según su web, a 30 de septiembre de 2026, Openbank cobra **1 € por comprar o vender acciones y ETF**, en cualquier mercado (España, Europa, EE. UU.) y por cualquier importe. La **custodia deja de cobrarse el 1 de octubre de 2026**. Tiene más de 1.200 ETF disponibles.
+
+Así queda frente a otros brókers en una orden suelta de ETF (tarifas leídas en la web de cada uno el mismo día):
 
 | Bróker | Comisión por orden de ETF |
 |---|---|
-| Trade Republic | 0€ |
-| MyInvestor | 0,20€ + 0,03% |
-| DEGIRO | 0,50€ + 0,004% (mín. 0,90€) |
-| **Openbank** | **~8€** |
+| **Openbank** | **1 €** |
+| Trade Republic | 1 € (planes de inversión sin comisión) |
+| DEGIRO | 1 € en su Selección Principal, 3 € en el resto |
+| MyInvestor | 0,12 % (mínimo 1 €, máximo 25 €) |
 
-Como con cualquier comisión fija alta, el daño se concentra en las aportaciones pequeñas y regulares: 8€ sobre 200€ es un **4% de coste solo por entrar**, frente a los 0€ de Trade Republic. Para el inversor que hace DCA mensual, esa diferencia se acumula y el interés compuesto la amplifica con los años.
+En una aportación de 200 €, 1 € es un 0,5 % de la orden. Con una comisión fija, el peso baja a medida que crece la orden: en una de 1.000 € es un 0,1 %.
+
+Lo que Openbank no anuncia en su página de bolsa son **planes de inversión periódicos en ETF sin comisión**, que sí tienen Trade Republic, Scalable Capital o XTB. Para quien aporta cada mes de forma automática, esa es la diferencia que más pesa.
 
 ---
 
 ## El roboadvisor de Openbank
 
-Openbank tiene un **roboadvisor** (carteras gestionadas de fondos indexados) que automatiza la inversión por ti. Es una opción cómoda, pero su comisión total es **más alta que la de los roboadvisors especializados** como Indexa Capital o Finizens, que llevan años optimizando precisamente ese coste. Si lo que buscas es delegar la gestión en un roboadvisor, conviene comparar: el [análisis de Finizens vs Indexa](/blog/finizens-vs-indexa-capital-2026) y la pregunta de fondo de [si los roboadvisors merecen su comisión](/blog/roboadvisors-espana-merecen-comision) ayudan a decidir.
+Openbank tiene un **roboadvisor** (carteras gestionadas de fondos indexados) que automatiza la inversión. Para compararlo con otros roboadvisors, lo que cuenta es la comisión total: gestión, custodia y el coste de los fondos, que cada entidad publica en su web. El [análisis de Finizens vs Indexa](/blog/finizens-vs-indexa-capital-2026) y la pregunta de [si los roboadvisors merecen su comisión](/blog/roboadvisors-espana-merecen-comision) explican cómo hacer esa cuenta.
 
 ---
 
-## Seguridad
+## Para quién encaja Openbank (y para quién no)
 
-En solidez, Openbank juega en primera división: es el banco online del Santander, el mayor grupo bancario de España, regulado por el Banco de España y la CNMV, con cobertura de 100.000€ por los fondos de garantía de depósitos e inversiones. La seguridad no es una preocupación con Openbank; el coste de invertir, sí.
+**Encaja con quien:**
+- Ya es cliente de Openbank o del Santander y quiere tenerlo todo en el mismo banco.
+- Da órdenes sueltas de ETF o acciones, en cualquier mercado: siempre 1 €.
+- Quiere fondos de inversión y traspasos en una entidad española.
 
----
-
-## Para quién tiene sentido Openbank (y para quién no)
-
-**Tiene sentido si:**
-- Ya eres cliente de Openbank o del Santander y quieres tenerlo todo unificado.
-- Valoras el respaldo de un banco grande por encima de optimizar el coste.
-- Buscas una cuenta online sólida para el día a día (donde sí destaca).
-
-**No tiene sentido si:**
-- Aportas cantidades pequeñas o medianas de forma regular a ETFs.
-- Quieres el coste mínimo por operación o el roboadvisor más barato.
-- Te basta con una app especializada y no necesitas un banco completo.
+**Encaja peor con quien:**
+- Quiere aportar cada mes a ETF con un plan automático sin comisión.
+- Busca un bróker especializado solo en inversión indexada.
 
 ---
 
-## La jugada inteligente: banco en Openbank, inversión fuera
+## Conclusión
 
-Igual que con otros bancos, no hace falta renunciar a Openbank para invertir bien. Puedes mantener la cuenta de Openbank para tu operativa diaria y comprar tus ETFs en un broker barato: [Trade Republic](/blog/trade-republic-opinion-2026) a 0€ con planes de ahorro automáticos, o [MyInvestor](/blog/myinvestor-opinion-2026) si quieres combinar ETFs con fondos indexados de traspaso fiscal. Tener el banco en un sitio y la inversión en otro es habitual y no penaliza.
+En comisión por orden de ETF, Openbank está al nivel de los brókers digitales: 1 € por operación y, desde el 1 de octubre de 2026, sin custodia. Su diferencia con Trade Republic, Scalable o XTB está en que no anuncia planes de inversión periódicos en ETF sin comisión.
 
----
-
-## Conclusión práctica
-
-Openbank es un banco online sólido y respaldado por el Santander, pero su broker (~8€ por orden) y su roboadvisor quedan caros para el inversor indexado frente a las alternativas especializadas. Úsalo como banco si te gusta; para invertir, casi siempre saldrás ganando con un broker a 0€ o un roboadvisor más barato.
-
-Para comparar Openbank con el resto según tu patrón real de aportación, usa el [comparador de brókers de BogleHub](/calculadora/comparar-brokers) o lee la [comparativa del mejor broker para ETFs](/blog/mejor-broker-etfs-espana-2026).
+Para comparar Openbank con otros según tu patrón de aportación, está el [comparador de brókers de BogleHub](/calculadora/comparar-brokers) y la [comparativa de brókers para ETFs](/blog/mejor-broker-etfs-espana-2026).
 
 ---
 
 ## Fuentes y lecturas complementarias
 
-- [Openbank — Web oficial](https://www.openbank.es) — Condiciones de la cuenta, tarifas del broker y del roboadvisor.
-- [Mejor broker para ETFs en España 2026 — BogleHub](/blog/mejor-broker-etfs-espana-2026) — Comparativa de los brokers más usados por inversores indexados.
-- [Finizens vs Indexa Capital — BogleHub](/blog/finizens-vs-indexa-capital-2026) — Los dos roboadvisors de referencia, más baratos que el de Openbank.
-- [MyInvestor opinión 2026 — BogleHub](/blog/myinvestor-opinion-2026) — La alternativa española barata para ETFs y fondos indexados.
+- [Openbank: invertir en bolsa](https://www.openbank.es/inversiones/invertir-bolsa-valores) — Comisión de 1 € por compra o venta y custodia a 0 € desde el 1-oct-2026 (consultado el 30-sep-2026).
+- [Mejor broker para ETFs en España 2026 — BogleHub](/blog/mejor-broker-etfs-espana-2026) — Comparativa de los brókers más usados por inversores indexados.
+- [Finizens vs Indexa Capital — BogleHub](/blog/finizens-vs-indexa-capital-2026) — Cómo comparar roboadvisors por su comisión total.
+- [MyInvestor opinión 2026 — BogleHub](/blog/myinvestor-opinion-2026) — Bróker español con ETF y fondos indexados.
 `,
   },
   {
     slug: 'renta-4-opinion-2026',
     title: 'Renta 4 Banco: opinión y análisis para invertir en ETFs (2026)',
     excerpt:
-      'Renta 4 es un banco de inversión español veterano con oficinas, pero sus comisiones de ETF y custodia lo hacen caro frente a MyInvestor. Para quién encaja.',
+      'Renta 4 es un banco de inversión español con oficinas. Por internet cobra 15 € por orden de ETF en bolsas europeas y 4 € en la española, más custodia. Qué ofrece y para quién encaja.',
     publishedAt: '2026-06-04',
-    readingMinutes: 8,
+    updatedAt: '2026-09-30',
+    readingMinutes: 7,
     keywords: ['Renta 4 opinión', 'Renta 4 Banco ETFs', 'Renta 4 comisiones', 'Renta 4 custodia', 'invertir Renta 4 2026'],
     faq: [
       {
         q: '¿Renta 4 es una buena opción para invertir en ETFs en 2026?',
-        a: 'Para la mayoría de inversores indexados particulares, opciones como MyInvestor son bastante más económicas con productos equivalentes. Renta 4 tiene sentido si valoras el servicio en oficina o ya eres cliente histórico. Sus comisiones de ~7-10€ por orden de ETF, más la custodia anual, hacen que para aportaciones pequeñas el coste sea significativo.',
+        a: 'Depende de cómo se invierta. Según su hoja de tarifas (versión del 1-jul-2026), por internet cobra 15 € por orden en bolsas europeas como Fráncfort, Ámsterdam o París (hasta 30.000 €), que es donde cotizan la mayoría de los ETF UCITS, y 4 € en la bolsa española (hasta 6.000 €). Para aportaciones pequeñas y frecuentes eso pesa mucho: 15 € sobre 300 € es un 5 %. En órdenes grandes y poco frecuentes pesa menos, y Renta 4 ofrece oficinas y trato personal.',
       },
       {
         q: '¿Renta 4 cobra comisión de custodia?',
-        a: 'Sí. Renta 4 aplica una comisión de custodia anual sobre los valores, un coste recurrente que la mayoría de brokers digitales (Trade Republic, MyInvestor, DEGIRO) no cobran. Junto con la comisión por operación, es el principal motivo por el que resulta caro para el inversor indexado. Consulta las tarifas vigentes en su web, porque varían según el saldo y el tipo de cuenta.',
+        a: 'Sí. Su hoja de tarifas fija la custodia de valores en el 0,017 % al mes sobre el valor de cada posición internacional (unos 0,2 % al año) y el 0,0125 % en las nacionales, con mínimo. Aparte, cobra 3 € al mes de mantenimiento de cuenta, salvo exenciones, por ejemplo en cuentas que solo tienen fondos o planes de pensiones. Trade Republic, MyInvestor y DEGIRO no cobran custodia.',
       },
       {
         q: '¿Ofrece Renta 4 los mismos fondos indexados baratos que MyInvestor?',
-        a: 'Renta 4 dispone de fondos indexados, pero su acceso a las clases más baratas de Vanguard, Amundi o iShares es más limitado que el de MyInvestor, especializado en ofrecer el TER más bajo. Para una cartera indexada de bajo coste con traspaso fiscal, MyInvestor suele ser mejor opción.',
+        a: 'Renta 4 tiene fondos indexados, con el traspaso sin tributar que comparten todos los fondos en España. Qué clases concretas ofrece cada entidad cambia a menudo; lo que conviene comparar es el TER de la clase que se contrata, que publica la gestora.',
       },
       {
         q: '¿Es seguro Renta 4?',
-        a: 'Sí. Renta 4 es un banco español fundado en 1986, regulado por la CNMV y el Banco de España, con cobertura del Fondo de Garantía de Depósitos y del Fondo de Garantía de Inversiones hasta 100.000€. Tus valores se custodian separados del balance del banco. Su solidez es alta; su desventaja es el coste, no la seguridad.',
+        a: 'Renta 4 es un banco español fundado en 1986, supervisado por la CNMV y el Banco de España, con cobertura del Fondo de Garantía de Depósitos y del Fondo de Garantía de Inversiones hasta 100.000 €. Los valores de los clientes se custodian separados del balance del banco.',
       },
       {
-        q: '¿Merece la pena Renta 4 frente a MyInvestor?',
-        a: 'En coste, MyInvestor gana con claridad: 0,20€ + 0,03% por ETF y sin custodia, frente a los ~7-10€ por orden más custodia de Renta 4, con un catálogo de fondos indexados baratos más amplio. Renta 4 compensa si valoras el servicio en oficina, el asesoramiento personal o ya eres cliente y prefieres no cambiar.',
+        q: '¿Qué diferencia hay entre Renta 4 y MyInvestor?',
+        a: 'En coste de ETF, MyInvestor cobra el 0,12 % por orden (mínimo 1 €) y no cobra custodia; Renta 4 cobra 15 € por orden en bolsas europeas, más custodia. Los dos son entidades españolas con fondos indexados y traspasos. Renta 4 ofrece oficinas y gestores; MyInvestor funciona solo en línea.',
       },
     ],
     content: `# Renta 4 Banco: opinión y análisis para invertir en ETFs (2026)
 
-Renta 4 es uno de los nombres más veteranos de la inversión en España: un banco especializado, con oficinas físicas y décadas de historia, que durante mucho tiempo fue la opción natural para quien quería tener fondos, ETFs y planes de pensiones bajo el mismo techo y con trato personal. La pregunta en 2026, con brokers digitales a 0€, es si ese servicio sigue compensando su coste. Este análisis, sin afiliación, lo aclara.
+> **Corrección del 30 de septiembre de 2026.** Este artículo daba «del orden de 7-10 € por orden de ETF» sin fuente, y comparaba con tarifas de otros brókers que ya no estaban en vigor. Lo hemos rehecho con la hoja de tarifas de Renta 4 (versión del 1-jul-2026) y la web de cada bróker.
 
-La conclusión por adelantado: Renta 4 es un banco solvente y completo, pero caro para el inversor indexado. Tiene sentido si valoras el servicio en oficina o ya eres cliente; si solo buscas comprar ETFs o fondos indexados al menor coste, hay opciones bastante más baratas.
+Renta 4 es uno de los nombres más veteranos de la inversión en España: un banco especializado, con oficinas físicas y décadas de historia, que durante mucho tiempo fue la opción natural para quien quería tener fondos, ETF y planes de pensiones bajo el mismo techo y con trato personal. Este análisis, sin afiliación, explica qué cobra y en qué se diferencia de los brókers digitales.
 
 ---
 
 ## Quién es Renta 4
 
-Renta 4 Banco es una entidad española fundada en **1986**, regulada por la **CNMV** y el **Banco de España**, y miembro del mercado bursátil español. A diferencia de los neobrokers, es un banco de inversión de pleno derecho: ofrece cuenta de valores, fondos, planes de pensiones, ETFs, renta fija y asesoramiento, con red de oficinas y gestores. Su cobertura es la máxima: **Fondo de Garantía de Depósitos y de Inversiones hasta 100.000€**.
-
-Esa amplitud y ese trato personal son su propuesta de valor. El coste es la contrapartida.
+Renta 4 Banco es una entidad española fundada en **1986**, supervisada por la **CNMV** y el **Banco de España**, y miembro del mercado bursátil español. A diferencia de los neobrókers, es un banco de inversión de pleno derecho: ofrece cuenta de valores, fondos, planes de pensiones, ETF, renta fija y asesoramiento, con red de oficinas y gestores. Los depósitos y los valores están cubiertos por el **Fondo de Garantía de Depósitos y el de Inversiones hasta 100.000 €**.
 
 ---
 
-## Comisiones: el punto débil para el inversor indexado
+## Comisiones
 
-Renta 4 cobra del orden de **7-10€ por orden de ETF**, además de **comisiones de custodia** y otras posibles según el producto. Frente a la generación digital, la diferencia es notable:
+Según su hoja de tarifas (versión del 1 de julio de 2026), por internet:
+
+| Mercado | Hasta | Comisión por operación |
+|---|---|---|
+| Bolsa española | 6.000 € | 4 € (más 1 € de canon de la bolsa) |
+| Bolsa española | de 6.000 a 50.000 € | 9 € |
+| Fráncfort, Ámsterdam, Bruselas, Milán, París… | 30.000 € | 15 € |
+| Mismas bolsas | más de 30.000 € | 0,15 % |
+
+La mayoría de los ETF UCITS que usa un inversor indexado cotizan en esas bolsas europeas, así que la cifra que cuenta suele ser la de **15 € por orden**.
+
+A eso se suman dos costes recurrentes:
+
+- **Custodia de valores:** 0,017 % al mes sobre el valor de cada posición internacional (unos 0,2 % al año) y 0,0125 % en las nacionales, con mínimo.
+- **Mantenimiento de cuenta:** 3 € al mes, salvo exenciones (por ejemplo, cuentas que solo tienen fondos o planes de pensiones).
+
+Frente a otros brókers en una orden de ETF (web de cada uno, 30-sep-2026):
 
 | Bróker | Comisión por orden de ETF | Custodia |
 |---|---|---|
-| Trade Republic | 0€ | No |
-| MyInvestor | 0,20€ + 0,03% | No |
-| DEGIRO | 0,50€ + 0,004% (mín. 0,90€) | No (cuenta Custody) |
-| **Renta 4** | **~7-10€** | **Sí (anual)** |
-
-Hay dos costes que conviene mirar con lupa en Renta 4: la **comisión por operación** y, sobre todo, la **comisión de custodia anual** sobre los valores, que la mayoría de brokers digitales no cobran. Para un inversor indexado que aporta poco y a menudo, esa combinación encarece mucho la entrada y el mantenimiento.
+| Trade Republic | 1 € (planes de inversión sin comisión) | No |
+| MyInvestor | 0,12 % (mínimo 1 €, máximo 25 €) | No |
+| DEGIRO | 1 € en su Selección Principal, 3 € en el resto | No |
+| **Renta 4** | **15 € en bolsas europeas** | **Sí** |
 
 ---
 
-## El coste real para el ahorrador mensual
+## Cuánto pesa en una aportación mensual
 
-Sobre una aportación de 200€, una comisión de 7-10€ supone un **3,5%-5% solo por entrar**, a lo que se suma la custodia recurrente. En inversión indexada, donde el coste es el factor que mejor predice el resultado a largo plazo, ese peaje continuado es difícil de justificar cuando existen alternativas a 0€ o céntimos.
-
-Renta 4 se diluye mejor en patrimonios altos y operativa poco frecuente, donde la comisión fija pesa poco en términos relativos y el servicio personalizado aporta valor.
+Sobre una aportación de 300 € en un ETF de bolsa europea, 15 € son un **5 % solo por entrar**, y la custodia se cobra cada mes sobre lo acumulado. Con una comisión fija, el peso baja a medida que crece la orden: en una de 15.000 €, los mismos 15 € son un 0,1 %. Por eso Renta 4 se nota menos en órdenes grandes y poco frecuentes que en aportaciones pequeñas y regulares.
 
 ---
 
-## ¿Y los fondos indexados?
+## Fondos indexados
 
-Renta 4 ofrece una selección de fondos indexados, con la ventaja del **traspaso fiscal libre** que comparten todos los fondos en España. El matiz es el catálogo: el acceso a las clases más baratas de Vanguard, Amundi o iShares es **más limitado** que en [MyInvestor](/blog/myinvestor-opinion-2026), que se ha especializado precisamente en ofrecer los fondos indexados con el TER más bajo del mercado. Para construir una cartera indexada barata con traspaso, MyInvestor sigue siendo la referencia; la [guía de mejores fondos indexados](/blog/mejores-fondos-indexados-espana-2026) detalla las opciones.
-
----
-
-## Seguridad
-
-En solidez, Renta 4 está al máximo nivel: banco español regulado por CNMV y Banco de España, con casi cuatro décadas de historia y cobertura de 100.000€ por los fondos de garantía de depósitos e inversiones. Como en el resto de casos, sus valores se custodian segregados de su balance. La seguridad no es el problema de Renta 4; el coste, sí.
+Renta 4 tiene fondos indexados, con el **traspaso sin tributar** que comparten todos los fondos en España. Qué clases concretas ofrece cada entidad cambia a menudo; lo que conviene comparar es el TER de la clase que se contrata, que publica la gestora. La [guía de fondos indexados](/blog/mejores-fondos-indexados-espana-2026) explica qué mirar.
 
 ---
 
-## Para quién tiene sentido Renta 4 (y para quién no)
+## Para quién encaja Renta 4 (y para quién no)
 
-**Tiene sentido si:**
-- Valoras el servicio en oficina y el trato con un gestor de carne y hueso.
-- Tienes un patrimonio alto y operas poco, de modo que las comisiones fijas se diluyen.
-- Ya eres cliente histórico y prefieres no fragmentar tus inversiones.
+**Encaja con quien:**
+- Valora el servicio en oficina y el trato con un gestor.
+- Da órdenes grandes y poco frecuentes, donde la comisión fija pesa poco.
+- Ya es cliente y prefiere no repartir sus inversiones.
 
-**No tiene sentido si:**
-- Aportas cantidades pequeñas o medianas de forma regular.
-- Buscas el coste mínimo en ETFs o el TER más bajo en fondos indexados.
-- No necesitas oficinas ni asesoramiento y te basta una app.
+**Encaja peor con quien:**
+- Aporta cantidades pequeñas cada mes a ETF de bolsas europeas.
+- No necesita oficinas ni asesoramiento y le basta una app.
 
 ---
 
-## Conclusión práctica
+## Conclusión
 
-Renta 4 es un banco de inversión serio y completo, con la ventaja del trato personal y la tranquilidad de una entidad veterana. Pero para el inversor indexado que prioriza el coste —que debería ser casi todos—, sus comisiones de operación y custodia lo dejan por detrás de las opciones digitales. Si valoras el servicio y puedes asumir el coste, es una opción legítima; si no, [MyInvestor](/blog/myinvestor-opinion-2026) ofrece productos equivalentes mucho más baratos.
+Renta 4 es un banco de inversión veterano y completo, con oficinas y trato personal. Para ETF, su tarifa por internet es de 15 € por orden en bolsas europeas, más custodia y mantenimiento de cuenta, lo que pesa sobre todo en aportaciones pequeñas y frecuentes.
 
-Para comparar Renta 4 con el resto según tu patrón real de aportación, usa el [comparador de brókers de BogleHub](/calculadora/comparar-brokers) o lee la [comparativa del mejor broker para ETFs](/blog/mejor-broker-etfs-espana-2026).
+Para comparar Renta 4 con otros según tu patrón de aportación, está el [comparador de brókers de BogleHub](/calculadora/comparar-brokers) y la [comparativa de brókers para ETFs](/blog/mejor-broker-etfs-espana-2026).
 
 ---
 
 ## Fuentes y lecturas complementarias
 
-- [Renta 4 Banco — Web oficial](https://www.r4.com) — Tarifas de corretaje, comisiones de custodia y catálogo de fondos.
-- [MyInvestor opinión 2026 — BogleHub](/blog/myinvestor-opinion-2026) — La alternativa española barata para ETFs y fondos indexados con traspaso fiscal.
+- [Renta 4: hoja de tarifas (versión 1/7/26)](https://www.r4.com/resources/pdf/tablonanuncios/hoja_tarifas.pdf) — Comisiones por mercado, custodia y mantenimiento (consultada el 30-sep-2026).
+- [MyInvestor opinión 2026 — BogleHub](/blog/myinvestor-opinion-2026) — Bróker español con ETF y fondos indexados con traspaso fiscal.
 - [Mejores fondos indexados en España 2026 — BogleHub](/blog/mejores-fondos-indexados-espana-2026) — Los fondos con el TER más bajo y dónde contratarlos.
 - [Cómo elegir tu primer ETF en España — BogleHub](/blog/como-elegir-tu-primer-etf-espana-2026) — Guía para empezar con buen pie.
 `,
@@ -2817,142 +2798,122 @@ Para comparar Renta 4 con el resto según tu patrón real de aportación, usa el
     slug: 'ing-opinion-2026',
     title: 'ING y el Naranja Broker: opinión para invertir en ETFs (2026)',
     excerpt:
-      'ING tiene la mejor cuenta sin comisiones, pero su Naranja Broker es de los más caros (9-22€ por orden). Cuándo compensa y cuándo invertir desde otro bróker.',
+      'El Broker NARANJA de ING cobra 3 € + 0,10 % por orden de ETF (1,5 € + 0,05 % desde 15 operaciones al trimestre), igual en bolsa española que internacional. Qué ofrece y para quién encaja.',
     publishedAt: '2026-06-04',
-    readingMinutes: 8,
+    updatedAt: '2026-09-30',
+    readingMinutes: 7,
     keywords: ['ING opinión', 'Naranja Broker ING', 'ING ETFs', 'ING broker comisiones', 'invertir con ING 2026'],
     faq: [
       {
         q: '¿ING es una buena opción para invertir en ETFs en 2026?',
-        a: 'Para el inversor indexado puro, las comisiones del Naranja Broker (~9-22€ por orden) son altas frente a brokers especializados como Trade Republic (0€), MyInvestor o DEGIRO. La Cuenta Sin Nómina de ING es excelente, pero para invertir de forma regular compensa operar en otra entidad. Puedes mantener la nómina en ING y el broker fuera sin ninguna penalización.',
+        a: 'Depende de cómo se invierta. Según su web (30-sep-2026), el Broker NARANJA cobra 3 € + 0,10 % por orden, igual en la bolsa española que en la internacional, o 1,5 € + 0,05 % si se hicieron 15 operaciones o más el trimestre anterior. En una aportación de 300 € eso son 3,30 €, un 1,1 %; en Trade Republic, 1 €. En 2026, además, ING devuelve la comisión de compra de los ETF de varias gestoras, en una promoción que acaba el 31 de diciembre.',
       },
       {
         q: '¿Cuánto cobra el Naranja Broker de ING por comprar ETFs?',
-        a: 'Aproximadamente 9-22€ por orden de compra o venta, según el importe y el mercado. Es de las comisiones más altas entre las opciones habituales en España. Sobre una aportación de 200€, una comisión de 10€ supone un 5% de coste solo por entrar; por eso el Naranja Broker solo se diluye en órdenes grandes y poco frecuentes. Verifica las tarifas vigentes en la web oficial de ING.',
+        a: 'Con la tarifa base, 3 € + 0,10 % del importe por orden; con la reducida (15 operaciones o más en el trimestre anterior), 1,5 € + 0,05 %. El cambio de divisa cuesta un 0,50 % (0,25 % en la reducida). La custodia es de 0 € si se opera al menos una vez en el trimestre; si no, 4,84 € por valor y trimestre. En 2026 devuelve la comisión de compra de los ETF de Xtrackers, iShares, Amundi, WisdomTree y JP Morgan, entre otras gestoras, hasta el 31 de diciembre.',
       },
       {
-        q: '¿Merece la pena tener la nómina en ING y el broker en otra entidad?',
-        a: 'Sí, es una estrategia habitual y sin penalización. Aprovechas la Cuenta Sin Nómina sin comisiones de ING para el día a día y compras tus ETFs en un broker barato (Trade Republic, MyInvestor o DEGIRO). No hay ninguna obligación de invertir en el mismo banco donde tienes la cuenta.',
+        q: '¿Se puede tener la cuenta en ING y el bróker en otra entidad?',
+        a: 'Sí. No hay ninguna obligación de invertir en el mismo banco donde se tiene la cuenta, y es habitual tener la cuenta del día a día en un banco y la inversión en otro.',
       },
       {
         q: '¿Los Fondos Naranja de ING son una buena forma de invertir indexado?',
-        a: 'Son fondos indexados con la ventaja del traspaso fiscal libre, pero su TER es más alto que el de los fondos indexados más baratos (Vanguard, Amundi, iShares) que comercializa MyInvestor. En inversión indexada el coste es determinante a largo plazo, así que para fondos con traspaso y TER mínimo hay opciones mejores que los Fondos Naranja.',
+        a: 'Son fondos de ING, y como todo fondo en España se pueden traspasar sin tributar. Para compararlos con otros fondos que siguen el mismo índice, lo que cuenta es el TER de cada clase, que publica la gestora en su ficha y en el documento de datos fundamentales.',
       },
       {
         q: '¿Es seguro invertir con ING en España?',
-        a: 'Sí. ING está regulado por el Banco de España y la CNMV. El efectivo está cubierto por el Fondo de Garantía de Depósitos hasta 100.000€ y los valores por el Fondo de Garantía de Inversiones (FOGAIN) hasta 100.000€. La solidez regulatoria de ING es máxima; su punto débil es el coste de invertir, no la seguridad.',
+        a: 'ING opera en España como sucursal de ING Bank N.V., un banco neerlandés. Según su documentación, el efectivo está cubierto por el sistema de garantía de depósitos holandés hasta 100.000 € por titular. Los valores de los clientes se custodian separados del balance del banco.',
       },
     ],
     content: `# ING y el Naranja Broker: opinión para invertir en ETFs (2026)
 
-ING es, probablemente, el banco online con mejor reputación de España: la Cuenta Sin Nómina sin comisiones convenció a millones de personas de que la banca podía ser gratis y sencilla. Pero cuando esos mismos clientes deciden invertir en ETFs a través del Naranja Broker, se topan con una realidad incómoda: es uno de los brokers más caros del mercado. Este análisis, sin afiliación, separa lo que ING hace muy bien (la cuenta) de lo que hace caro (invertir), para que sepas exactamente cómo usarlo.
+> **Corrección del 30 de septiembre de 2026.** Este artículo decía que el Naranja Broker cobraba «aproximadamente 9-22 € por orden» y que el efectivo lo cubría el fondo de garantía español. Ninguna de las dos cosas era cierta: la tarifa que publica ING es de 3 € + 0,10 % por orden, y los depósitos los cubre el sistema de garantía holandés, porque ING opera en España como sucursal de un banco de los Países Bajos. Lo hemos rehecho con la web y la documentación de ING.
 
-La conclusión por adelantado: ING es un banco excelente para tu día a día y una opción cara para invertir de forma regular. La buena noticia es que no tienes que elegir: puedes quedarte con la cuenta de ING y comprar tus ETFs en otro sitio.
+ING es uno de los bancos online más conocidos de España, sobre todo por sus cuentas sin comisiones. Para invertir tiene el **Broker NARANJA** (acciones y ETF) y sus propios **Fondos NARANJA**. Este análisis, sin afiliación, explica qué cobra por invertir y en qué se diferencia de los brókers digitales.
 
 ---
 
 ## Quién es ING en España
 
-ING Bank N.V., Sucursal en España, opera desde 1999 y está supervisado por el **Banco de España** y la **CNMV**. Es un banco de pleno derecho —no un broker ni un neobanco— con cobertura del **Fondo de Garantía de Depósitos español hasta 100.000€**. Su producto estrella es la Cuenta Sin Nómina, una cuenta corriente sin comisiones de mantenimiento ni condiciones de domiciliación.
-
-Para invertir, ING ofrece el **Naranja Broker** (acciones y ETFs) y sus propios **Fondos Naranja** (fondos indexados de gestión propia). La calidad del banco es indiscutible; la cuestión es si su oferta de inversión es competitiva. En coste, no lo es.
+ING Bank N.V., Sucursal en España, opera desde 1999. Es un banco de pleno derecho, no un bróker ni un neobanco, y como sucursal de un banco neerlandés sus depósitos están cubiertos por el **sistema de garantía de depósitos holandés hasta 100.000 €** por titular, según su propia documentación.
 
 ---
 
-## La Cuenta Sin Nómina: lo mejor de ING
+## El Broker NARANJA: comisiones
 
-Aquí ING brilla. La Cuenta Sin Nómina no cobra comisiones de administración ni mantenimiento, no exige domiciliar nómina y viene con tarjetas sin coste. Para la operativa diaria —cobrar, pagar, domiciliar recibos— es de las mejores cuentas de España, y de vez en cuando ING lanza remuneraciones promocionales para nuevos clientes (verifica las condiciones vigentes, porque cambian).
+Según la web de ING, a 30 de septiembre de 2026:
 
-Si ya eres cliente de ING por la cuenta, tiene todo el sentido seguir usándola. El problema aparece solo cuando intentas invertir desde ahí.
+| Tarifa | Cuándo se aplica | Comisión por orden | Cambio de divisa |
+|---|---|---|---|
+| Base | Menos de 15 operaciones en el trimestre anterior | 3 € + 0,10 % | 0,50 % |
+| Reducida | 15 operaciones o más en el trimestre anterior | 1,5 € + 0,05 % | 0,25 % |
 
----
+La tarifa es la misma en la bolsa española que en las internacionales. La **custodia** es de 0 € si se hace al menos una compraventa en el trimestre; si no, 4,84 € por valor y trimestre.
 
-## El Naranja Broker: cómodo, pero caro
+En **2026**, además, ING devuelve la comisión de compra de los ETF de varias gestoras (Xtrackers, iShares, Amundi, WisdomTree y JP Morgan, y desde marzo otras como Fidelity o Goldman Sachs), en una promoción que acaba el **31 de diciembre de 2026**. Mientras dure, comprar esos ETF no tiene comisión.
 
-El Naranja Broker cobra aproximadamente **9-22€ por orden** de compra o venta de ETFs, según el importe y el mercado. Comparado con la generación de brokers digitales, la diferencia es enorme:
+Así queda frente a otros brókers en una orden suelta de ETF (web de cada uno, 30-sep-2026):
 
 | Bróker | Comisión por orden de ETF |
 |---|---|
-| Trade Republic | 0€ |
-| MyInvestor | 0,20€ + 0,03% |
-| DEGIRO | 0,50€ + 0,004% (mín. 0,90€) |
-| **ING (Naranja Broker)** | **~9-22€** |
-
-No es un matiz: es la diferencia entre pagar 0€ y pagar el equivalente a una comida por cada compra. Y, como verás abajo, sobre aportaciones pequeñas ese coste se come una parte enorme de tu inversión.
+| Trade Republic | 1 € (planes de inversión sin comisión) |
+| MyInvestor | 0,12 % (mínimo 1 €, máximo 25 €) |
+| DEGIRO | 1 € en su Selección Principal, 3 € en el resto |
+| **ING (tarifa base)** | **3 € + 0,10 %** |
 
 ---
 
-## El coste real de una comisión alta
+## Cuánto pesa en una aportación mensual
 
-El problema de una comisión fija alta es que destroza las aportaciones pequeñas y regulares, que son precisamente la base de la inversión indexada sana (el famoso DCA).
-
-Si aportas **200€ al mes** y pagas **10€ de comisión** por cada compra, estás perdiendo un **5% de cada aportación solo en entrar** —antes de que el mercado se mueva—. En Trade Republic o MyInvestor ese mismo movimiento cuesta 0€ o céntimos. A lo largo de los años, ese 5% recurrente es una sangría que el interés compuesto convierte en miles de euros.
-
-La comisión de ING solo se diluye en órdenes grandes y poco frecuentes: si inviertes 10.000€ de golpe, 15€ es un 0,15%, asumible. Por eso el Naranja Broker tiene sentido únicamente para quien aporta sumas grandes muy de vez en cuando, no para el ahorrador mensual.
+Con la tarifa base, una orden de **300 €** paga 3,30 €, un **1,1 %**; una de 1.000 €, 4 €, un 0,4 %. La parte fija pesa más cuanto más pequeña es la orden. Fuera de la promoción de 2026, para quien aporta poco cada mes la diferencia con un bróker de 1 € por orden, o con un plan de inversión sin comisión, se nota.
 
 ---
 
-## ¿Y los Fondos Naranja?
+## Los Fondos NARANJA
 
-ING comercializa sus propios fondos indexados, los **Fondos Naranja**, que replican índices como el IBEX 35, el Euro Stoxx 50, el S&P 500 o un índice mundial. Tienen dos ventajas reales: se contratan sin comisión de suscripción y, al ser fondos, disfrutan del **traspaso fiscal libre** (puedes cambiar de fondo sin tributar la plusvalía).
-
-El pero es el coste: el TER de los Fondos Naranja es **más alto que el de los fondos indexados más baratos** disponibles en España (los de Vanguard, Amundi o iShares que comercializa MyInvestor). En inversión indexada, donde el coste es el factor que mejor predice el resultado a largo plazo, esa diferencia importa. Si quieres fondos indexados con traspaso fiscal y el TER más bajo posible, [MyInvestor](/blog/myinvestor-opinion-2026) sigue siendo la referencia; la [guía del traspaso de fondos](/blog/como-hacer-traspaso-fondos-espana) explica cómo mover tu dinero sin coste fiscal.
+ING comercializa sus propios fondos, los **Fondos NARANJA**, algunos de ellos indexados. Como cualquier fondo en España, se pueden **traspasar sin tributar**. Para compararlos con otros fondos del mismo índice, lo que cuenta es el TER de cada clase, que la gestora publica en su ficha y en el documento de datos fundamentales. La [guía del traspaso de fondos](/blog/como-hacer-traspaso-fondos-espana) explica cómo mover el dinero entre fondos sin coste fiscal.
 
 ---
 
-## Seguridad
+## Para quién encaja ING (y para quién no)
 
-ING es un banco regulado por el Banco de España y la CNMV. El efectivo está cubierto por el **Fondo de Garantía de Depósitos hasta 100.000€**, y los valores por el **Fondo de Garantía de Inversiones (FOGAIN) hasta 100.000€**. En solidez y respaldo regulatorio, ING está al máximo nivel: el problema de su oferta de inversión es el coste, no la seguridad.
+**Encaja con quien:**
+- Ya es cliente de ING y quiere tenerlo todo en el mismo banco.
+- Compra ETF de las gestoras de la promoción durante 2026.
+- Da órdenes grandes y poco frecuentes, donde la parte fija pesa poco.
 
----
+**Encaja peor con quien:**
+- Aporta cantidades pequeñas cada mes fuera de la promoción.
+- Quiere un plan de inversión periódico en ETF sin comisión.
 
-## Para quién tiene sentido ING (y para quién no)
-
-**Tiene sentido si:**
-- Ya eres cliente de ING y valoras tenerlo todo en el mismo banco.
-- Inviertes sumas grandes y muy poco frecuentes, donde la comisión fija se diluye.
-- Priorizas la comodidad y la marca por encima de optimizar cada euro de coste.
-
-**No tiene sentido si:**
-- Aportas cantidades pequeñas o medianas de forma regular (la comisión te penaliza muchísimo).
-- Buscas el coste mínimo en ETFs o en fondos indexados.
-- Quieres automatizar aportaciones periódicas (ING no tiene planes de ahorro a 0€).
+Tener la cuenta del día a día en un banco y la inversión en otro es habitual y no tiene ninguna penalización.
 
 ---
 
-## La estrategia inteligente: nómina en ING, inversión fuera
+## Conclusión
 
-No tienes que renunciar a ING. La jugada que mejor combina lo bueno de cada entidad es sencilla:
+El Broker NARANJA de ING cobra 3 € + 0,10 % por orden (1,5 € + 0,05 % con 15 operaciones o más al trimestre), igual en bolsa española que internacional, y en 2026 devuelve la comisión de compra de los ETF de varias gestoras. En aportaciones pequeñas, esa tarifa pesa más que la de los brókers de 1 € por orden.
 
-- **Tu cuenta del día a día en ING**: cuenta sin comisiones, tarjetas, recibos.
-- **Tus inversiones en un bróker especializado**: [Trade Republic](/blog/trade-republic-opinion-2026) para ETFs a 0€ con planes de ahorro automáticos, o [MyInvestor](/blog/myinvestor-opinion-2026) si quieres combinar ETFs con fondos indexados de traspaso fiscal.
-
-Mantener la nómina en un banco y la inversión en otro es perfectamente normal y no tiene ninguna penalización. Es, de hecho, lo que hacen muchos inversores indexados que valoran la cuenta de ING pero no quieren pagar sus comisiones de broker.
-
----
-
-## Conclusión práctica
-
-ING es un gran banco con una oferta de inversión cara. Su Cuenta Sin Nómina merece la pena por sí sola, pero el Naranja Broker y los Fondos Naranja son difíciles de justificar para un inversor indexado sensible al coste cuando existen alternativas a 0€ o casi. Úsalo como banco, no como broker.
-
-Para comparar ING con el resto de opciones según tu patrón real de aportación, usa el [comparador de brókers de BogleHub](/calculadora/comparar-brokers) o lee la [comparativa del mejor broker para ETFs en España](/blog/mejor-broker-etfs-espana-2026).
+Para comparar ING con otros según tu patrón de aportación, está el [comparador de brókers de BogleHub](/calculadora/comparar-brokers) y la [comparativa de brókers para ETFs](/blog/mejor-broker-etfs-espana-2026).
 
 ---
 
 ## Fuentes y lecturas complementarias
 
-- [ING España — Web oficial](https://www.ing.es) — Condiciones de la Cuenta Sin Nómina, tarifas del Naranja Broker y Fondos Naranja.
-- [Mejor broker para ETFs en España 2026 — BogleHub](/blog/mejor-broker-etfs-espana-2026) — Comparativa de los cinco brokers más usados por inversores indexados, ING incluido.
-- [MyInvestor opinión 2026 — BogleHub](/blog/myinvestor-opinion-2026) — La alternativa española para combinar ETFs y fondos indexados con traspaso fiscal.
-- [Cómo elegir tu primer ETF en España — BogleHub](/blog/como-elegir-tu-primer-etf-espana-2026) — Guía para empezar con buen pie si ING no te encaja.
+- [ING: Broker NARANJA](https://www.ing.es/broker) — Tarifa base y reducida, custodia y promoción de ETF de 2026 (consultado el 30-sep-2026).
+- [ING: Sistema de Garantía de Depósitos](https://www.ing.es/sobre-ing/pdf/DGS.pdf) — Cobertura del sistema holandés hasta 100.000 €.
+- [Mejor broker para ETFs en España 2026 — BogleHub](/blog/mejor-broker-etfs-espana-2026) — Comparativa de los brókers más usados por inversores indexados.
+- [MyInvestor opinión 2026 — BogleHub](/blog/myinvestor-opinion-2026) — Bróker español con ETF y fondos indexados con traspaso fiscal.
+- [Cómo elegir tu primer ETF en España — BogleHub](/blog/como-elegir-tu-primer-etf-espana-2026) — Guía para empezar.
 `,
   },
   {
     slug: 'interactive-brokers-opinion-2026',
     title: 'Interactive Brokers (IBKR): opinión y análisis completo en España (2026)',
     excerpt:
-      'Interactive Brokers (IBKR): comisiones mínimas y acceso a 150 mercados, pero interfaz técnica y fiscalidad por tu cuenta. Para quién encaja en España.',
+      'Interactive Brokers (IBKR): 0,05 % por orden con un mínimo de 1,25 € en ETF de la bolsa alemana, acceso a 150 mercados, interfaz técnica y fiscalidad por tu cuenta. Para quién encaja en España.',
     publishedAt: '2026-06-04',
+    updatedAt: '2026-09-30',
     readingMinutes: 9,
     keywords: ['Interactive Brokers opinión', 'IBKR España', 'Interactive Brokers comisiones', 'IBKR ETFs 2026', 'Interactive Brokers fiscalidad España'],
     faq: [
@@ -2965,23 +2926,23 @@ Para comparar ING con el resto de opciones según tu patrón real de aportación
         a: 'El modelo 720 (bienes en el extranjero) hay que presentarlo si el conjunto de tus valores y cuentas fuera de España supera los 50.000€, y IBKR cuenta como entidad extranjera. El modelo D6, en cambio, dejó de ser exigible para la cartera minorista tras la Orden ECM/57/2024: la mayoría de inversores particulares ya no lo presentan. En todo caso, plusvalías y dividendos tributan en el IRPF igual que con un broker español, pero la declaración recae enteramente en ti.',
       },
       {
-        q: '¿IBKR Lite o IBKR Pro?',
-        a: 'IBKR Lite ofrece 0€ de comisión en acciones de EE.UU. pero opera con order flow (vende las órdenes a creadores de mercado). IBKR Pro cobra comisiones escalonadas muy bajas y no hace order flow. Para el inversor europeo que compra ETFs UCITS, las diferencias prácticas son menores; ambos son válidos.',
+        q: '¿Tarifa fija o por niveles en IBKR?',
+        a: 'En la bolsa alemana (30-sep-2026), la tarifa por niveles cobra el 0,05 % del importe con un mínimo de 1,25 € y un máximo de 29 € por orden, más las tasas de la bolsa; la fija cobra el 0,05 % con un mínimo de 3 €. En órdenes pequeñas la diferencia está sobre todo en el mínimo: por debajo de 2.500 €, la de niveles paga 1,25 € más tasas y la fija, 3 €.',
       },
       {
         q: '¿Tiene Interactive Brokers cuenta remunerada en euros?',
-        a: 'Sí. IBKR remunera el saldo en euros no invertido por encima de cierto umbral (en torno a 1.000-10.000€) con una tasa cercana al tipo de depósito del BCE menos un pequeño margen. Es competitiva, pero las condiciones son específicas y cambian con la política monetaria: verifica siempre la tasa vigente en la web oficial.',
+        a: 'Sí. IBKR remunera el saldo en euros no invertido por encima de cierto umbral, a un tipo ligado al del BCE. Las condiciones cambian con la política monetaria, así que conviene mirar la tasa vigente en su web.',
       },
       {
-        q: '¿Para quién merece la pena IBKR frente a Trade Republic?',
-        a: 'IBKR tiene ventaja cuando tienes una cartera grande, necesitas acceso a muchos mercados o divisas, o quieres conversión de divisa barata al comprar en dólares. Para empezar con aportaciones pequeñas y automatizadas, Trade Republic es más sencillo, igual de barato (0€) y suficiente. La interfaz de IBKR es técnica y tiene curva de aprendizaje.',
+        q: '¿Qué diferencia hay entre IBKR y Trade Republic?',
+        a: 'En una orden de ETF, Trade Republic cobra 1 € y nada en sus planes de inversión periódicos; IBKR cobra el 0,05 % con un mínimo de 1,25 € (tarifa por niveles, más tasas de la bolsa) y no tiene planes automáticos. IBKR da acceso a muchos más mercados y divisas y su interfaz es técnica; Trade Republic tiene sucursal en España e informa a Hacienda, mientras que con IBKR la declaración corre a tu cargo.',
       },
     ],
     content: `# Interactive Brokers (IBKR): opinión y análisis completo en España (2026)
 
-Interactive Brokers es el broker que casi todos los inversores avanzados acaban mirando tarde o temprano: comisiones de las más bajas del mundo, acceso a 150 mercados y la solidez de una empresa fundada en 1978. Pero también es el broker con la interfaz más técnica y el que más responsabilidad fiscal deja en tus manos. Este análisis explica, sin afiliación ni comisiones por recomendarte nada, cuándo IBKR tiene sentido para un inversor indexado en España y cuándo es más herramienta de la que necesitas.
+Interactive Brokers es el broker que casi todos los inversores avanzados acaban mirando tarde o temprano: comisiones bajas en porcentaje, acceso a 150 mercados y la solidez de una empresa fundada en 1978. Pero también es el broker con la interfaz más técnica y el que más responsabilidad fiscal deja en tus manos. Este análisis explica, sin afiliación ni comisiones por recomendarte nada, cuándo IBKR tiene sentido para un inversor indexado en España y cuándo es más herramienta de la que necesitas.
 
-La conclusión por adelantado: IBKR brilla en carteras grandes y perfiles que valoran el coste mínimo y el alcance global. Para quien empieza con aportaciones pequeñas y automatizadas, hay opciones más sencillas e igual de baratas.
+La conclusión por adelantado: IBKR encaja sobre todo en carteras grandes y en quien necesita alcance global. Para aportaciones pequeñas y automáticas, otros brókers tienen planes de inversión sin comisión y una operativa más sencilla.
 
 ---
 
@@ -2995,22 +2956,22 @@ Su escala es difícil de igualar: acceso a más de **150 mercados en 33 países 
 
 ## Comisiones para ETFs
 
-La propuesta de IBKR no es el "0€ comercial" de Trade Republic o XTB, sino un coste **variable muy bajo que se vuelve casi insignificante en volumen**. IBKR ofrece dos esquemas:
+IBKR cobra un **porcentaje del importe con un mínimo por orden**. En la bolsa alemana, donde cotizan muchos ETF UCITS, su web publica dos tarifas (30-sep-2026):
 
-- **IBKR Lite**: comisiones fijas y 0€ en acciones de EE.UU. A cambio, opera con order flow (vende las órdenes a creadores de mercado).
-- **IBKR Pro**: comisiones escalonadas muy bajas (un porcentaje pequeño del importe con un mínimo reducido por operación) y sin order flow.
+- **Por niveles**: 0,05 % del importe, con un mínimo de 1,25 € y un máximo de 29 € por orden, más las tasas de la bolsa.
+- **Fija**: 0,05 % del importe, con un mínimo de 3 € por orden.
 
-Para ETFs europeos UCITS, la comisión escalonada de IBKR Pro es muy competitiva, sobre todo a partir de órdenes de unos pocos miles de euros. En importes pequeños, el mínimo por operación pesa más en términos relativos: ahí un broker de 0€ puro como Trade Republic sale mejor para aportaciones de 100-200€.
+En órdenes de menos de 2.500 € se paga el mínimo: 1,25 € más tasas en la tarifa por niveles. En una aportación de 200 €, eso es un 0,6 %; en una de 10.000 €, el 0,05 % son 5 €. Trade Republic cobra 1 € por orden y nada en sus planes de inversión; Scalable y XTB tampoco cobran en sus planes.
 
 Donde IBKR marca diferencia es en el **cambio de divisa**. Si compras ETFs cotizados en dólares o libras, su conversión es de las más baratas del mercado (un margen mínimo sobre el tipo interbancario), frente a los márgenes opacos que aplican muchos brokers. Para carteras grandes con exposición en varias divisas, ese detalle ahorra más que la propia comisión de compra.
 
-**Nota**: las comisiones exactas cambian con el tiempo y el plan elegido. Verifica siempre las tarifas vigentes en la web oficial antes de operar.
+**Nota**: las comisiones cambian con el tiempo y dependen de la bolsa. Conviene comprobar las vigentes en su web antes de operar.
 
 ---
 
-## IBKR Lite vs IBKR Pro: cuál elegir
+## Tarifa fija o por niveles
 
-Para un inversor indexado europeo que compra ETFs UCITS de acumulación, las diferencias prácticas entre Lite y Pro son menores. La distinción de fondo es el **order flow**: IBKR Lite financia su 0€ vendiendo el flujo de órdenes, mientras que IBKR Pro cobra una comisión transparente y ejecuta buscando el mejor precio. Quien no quiera order flow paga en Pro una comisión explícita a cambio de ejecución al mejor precio; quien priorice el coste fijo tiene Lite gratis allí donde opera.
+La tarifa **por niveles** tiene el mínimo más bajo (1,25 €) pero suma aparte las tasas de la bolsa; la **fija** tiene un mínimo de 3 €. En órdenes pequeñas, la diferencia está sobre todo en ese mínimo. En órdenes grandes, las dos cobran el 0,05 %, y la de niveles tiene un máximo de 29 € por orden.
 
 ---
 
@@ -3040,7 +3001,7 @@ Ninguna de estas obligaciones es insalvable —miles de inversores españoles us
 
 ## La cuenta remunerada
 
-IBKR remunera el **saldo en euros no invertido** por encima de cierto umbral (en torno a 1.000-10.000€, según condiciones) a una tasa cercana al tipo de depósito del BCE menos un pequeño margen. Es competitiva, especialmente para saldos altos, aunque no es el reclamo comercial de su negocio. Como toda remuneración ligada a tipos, fluctúa con la política del BCE: verifica la tasa vigente antes de contar con ella.
+IBKR remunera el **saldo en euros no invertido** por encima de cierto umbral, a un tipo ligado al del BCE. Como toda remuneración ligada a tipos, fluctúa con la política del BCE, así que conviene mirar la tasa vigente en su web.
 
 ---
 
@@ -3055,12 +3016,12 @@ Si tu estrategia se apoya en traspasar entre fondos indexados sin pasar por Haci
 ## Para quién tiene sentido IBKR (y para quién no)
 
 **Ideal para:**
-- Carteras grandes (a partir de varias decenas de miles de euros), donde la comisión escalonada y el cambio de divisa barato pesan de verdad.
+- Carteras grandes, donde el mínimo por orden deja de pesar y el cambio de divisa importa más.
 - Inversores que necesitan acceso a muchos mercados internacionales o varias divisas.
 - Perfiles avanzados o semiprofesionales que quieren ETFs, acciones, futuros, opciones o divisas en una sola cuenta.
 
 **No ideal si:**
-- Empiezas con aportaciones pequeñas (100-300€/mes): la interfaz es técnica y un broker de 0€ puro es más simple y barato para ese caso.
+- Aportas cantidades pequeñas (100-300 €/mes) de forma automática: el mínimo de 1,25 € pesa más y IBKR no tiene planes de inversión periódicos.
 - Solo quieres comprar 1 o 2 ETFs al mes y automatizar: es matar moscas a cañonazos.
 - No quieres encargarte tú de toda la declaración fiscal.
 
@@ -3070,13 +3031,13 @@ Si tu estrategia se apoya en traspasar entre fondos indexados sin pasar por Haci
 
 | Característica | Interactive Brokers | Trade Republic | DEGIRO |
 |---|---|---|---|
-| Comisión ETFs | Variable, muy baja en volumen | 0€ | 0,50€ + 0,004% (mín. 0,90€) |
+| Comisión ETFs | 0,05 % (mín. 1,25 € + tasas de la bolsa) | 1 € | 1 € en su Selección Principal, 3 € en el resto |
 | Cambio de divisa | De los más baratos | Estándar | Con margen |
-| Planes de ahorro automáticos | No (operativa manual) | Sí (desde 1€) | No |
-| Cuenta remunerada | Sobre saldo no invertido | ~2-2,5% TAE | No |
+| Planes de inversión automáticos | No (operativa manual) | Sí, sin comisión (desde 1 €) | No |
+| Cuenta remunerada | Sobre saldo no invertido | Sí (tipo variable) | No aparece en su tarifa |
 | Regulador | CBI (Irlanda) | BaFin (Alemania) | AFM (Países Bajos) |
 | Garantía de inversión | 20.000€ | 100.000€ (depósitos) | 20.000€ |
-| Mercados | 150 mercados | Europa + EE.UU. | 50+ bolsas |
+| Mercados | 150 mercados | Europa + EE.UU. | Muchas bolsas internacionales |
 | Interfaz | Profesional, compleja | Móvil, muy simple | Web técnica |
 
 Frente a **Trade Republic**, IBKR gana en alcance y en coste a gran escala, pero pierde en sencillez y automatización. Frente a **DEGIRO**, ambos apuntan al inversor exigente: DEGIRO es algo más accesible; IBKR, más potente y global. Si dudas entre los dos, el [análisis de DEGIRO 2026](/blog/degiro-opinion-2026) ayuda a decidir.
@@ -3093,7 +3054,7 @@ Si tu caso es ese, IBKR te dará el coste más bajo durante décadas. Si estás 
 
 ## Fuentes y lecturas complementarias
 
-- [Interactive Brokers — Web oficial](https://www.interactivebrokers.com) — Tarifas vigentes, planes Lite/Pro y condiciones de la cuenta remunerada.
+- [Interactive Brokers — Web oficial](https://www.interactivebrokers.com) — Tarifas fija y por niveles y condiciones de la cuenta remunerada.
 - [Central Bank of Ireland](https://www.centralbank.ie) — Regulador de Interactive Brokers Ireland Limited; verifica el registro de la entidad.
 - [Mejor broker para ETFs en España 2026 — BogleHub](/blog/mejor-broker-etfs-espana-2026) — Comparativa de los cinco brokers más usados por inversores indexados.
 - [DEGIRO opinión 2026 — BogleHub](/blog/degiro-opinion-2026) — El otro broker para carteras grandes, con acceso a 50+ bolsas.
@@ -3204,7 +3165,7 @@ La **replicación física** (total o por muestreo) es la más transparente de la
 
 ### Trade Republic
 
-El broker alemán ha conquistado el mercado español con una propuesta clara: **0 € de comisión por orden** y una interfaz mobile-first impecable. Funciona con el sistema de ahorro automático (planes de ahorro mensuales desde 1 €). Custodia segregada. Está regulado por BaFin.
+Banco alemán con sucursal en España. Cobra **1 € por orden suelta** y **nada en sus planes de inversión**, que se programan desde 1 € (su web, 30-sep-2026). Custodia segregada y sin coste. Está supervisado por BaFin.
 
 - Ideal para: principiantes, automatización del ahorro
 - ETFs disponibles: +2 000, incluyendo VWCE, IWDA, CSPX
@@ -3212,19 +3173,19 @@ El broker alemán ha conquistado el mercado español con una propuesta clara: **
 
 ### DEGIRO
 
-Broker holandés con mucha historia en Europa. Tarifas muy bajas (0,50–2 € por orden en bolsas principales). Acceso a más de 50 bolsas mundiales. Tiene un programa de ETFs sin comisión (lista cambia mensualmente).
+Bróker holandés con mucha historia en Europa. Cobra **1 € por orden** en los ETF de su Selección Principal (todos los de Tradegate, entre ellos VWCE, IWDA y CSPX) y 3 € en el resto, más una conectividad de hasta 2,50 € al año por bolsa extranjera (su web, 30-sep-2026). Acceso a muchas bolsas internacionales.
 
 - Ideal para: inversores con carteras más elaboradas, acceso a más productos
 - ETFs disponibles: +5 000
-- Limitaciones: interfaz más técnica; custodia no siempre segregada (revisa "Custody account")
+- Limitaciones: interfaz más técnica; en las cuentas estándar puede prestar tus valores (en la cuenta Custody, no); no anuncia planes de inversión automáticos
 
 ### MyInvestor
 
-El neobanco español del grupo Andbank es el único que ofrece tanto ETFs como fondos indexados Vanguard, Amundi y otros. Es el único sitio de España donde ambos vehículos conviven en la misma cuenta.
+Banco español que ofrece a la vez ETF y fondos indexados de Vanguard, Amundi, iShares o Fidelity, con el traspaso entre fondos sin tributar. De los tres brókers de esta lista, es el único con fondos.
 
 - Ideal para: quien mezcle fondos y ETFs; quiera traspaso fiscal entre fondos
 - ETFs disponibles: selección de los más populares
-- Limitaciones: interfaz menos ágil que Trade Republic; comisiones de ETF ligeras (0,20 € + 0,03 %)
+- Limitaciones: interfaz menos ágil que Trade Republic; en ETF cobra el 0,12 % por orden, con un mínimo de 1 € y un máximo de 25 €
 
 ---
 
@@ -5854,20 +5815,20 @@ Dentro del 80-90 % de renta variable, la división entre desarrollados y emergen
 ## Qué broker usar
 
 ### Trade Republic
-- 0 € por orden. Planes de ahorro automáticos desde 1 €/mes.
+- 1 € por orden suelta; planes de inversión sin comisión desde 1 € al mes (su web, 30-sep-2026).
 - Disponibles: IWDA, SWRD, EMIM, EIMI, AGGH, VWCE y la mayoría de los ETFs de la lista.
 - Ideal para: importes pequeños o medianos, automatización total.
 
 ### DEGIRO
-- 0,50-2 € por orden en bolsas principales. Acceso a más de 50 bolsas.
-- Lista mensual de ETFs sin comisión (rota).
-- Ideal para: importes más grandes donde la comisión fija importa menos.
+- 1 € por orden en los ETF de su Selección Principal (todos los de Tradegate) y 3 € en el resto; conectividad de hasta 2,50 € al año por bolsa extranjera. Acceso a muchas bolsas.
+- Sin planes de inversión automáticos anunciados.
+- Ideal para: órdenes sueltas y quien necesita bolsas que no hay en otros brókers.
 - Lee el [análisis completo de DEGIRO 2026](/blog/degiro-opinion-2026) para ver la diferencia entre cuenta básica y Custody.
 
 ### MyInvestor
 - Permite mezclar ETFs con fondos indexados Vanguard/Amundi (ventaja si quieres el traspaso fiscal).
-- 0,20 € + 0,03 % por orden de ETF.
-- Ideal para: quienes mezclan fondos y ETFs, o quieren operar en euros en Xetra directamente.
+- 0,12 % por orden de ETF, con un mínimo de 1 € y un máximo de 25 €; fondos sin comisión de compra.
+- Ideal para: quienes mezclan fondos y ETFs y quieren poder traspasar los fondos sin tributar.
 
 ---
 
@@ -5917,166 +5878,155 @@ Y si quieres ir más allá de esta selección, puedes explorar todos los ETFs UC
     slug: 'degiro-vs-trade-republic-vs-myinvestor-2026',
     title: 'DEGIRO vs Trade Republic vs MyInvestor: qué broker elegir en España (2026)',
     excerpt:
-      'Comparativa honesta de los tres brokers más usados por inversores indexados en España en 2026: comisiones reales, ETFs disponibles, seguridad y para qué perfil encaja cada uno.',
+      'Comparativa de los tres brókers más usados por inversores indexados en España, con las tarifas de su web (30-sep-2026): orden suelta, planes de inversión, fondos con traspaso, seguridad y qué pesa según el perfil.',
     publishedAt: '2026-05-21',
-    updatedAt: '2026-06-12',
-    readingMinutes: 12,
+    updatedAt: '2026-09-30',
+    readingMinutes: 11,
     keywords: ['mejor broker ETF España 2026', 'DEGIRO vs Trade Republic', 'MyInvestor opiniones', 'broker inversión indexada España'],
     faq: [
       {
         q: '¿Cuál es el mejor broker para comprar ETFs en España en 2026?',
-        a: 'Para aportaciones periódicas pequeñas (DCA mensual): Trade Republic (sin comisión, fracciones, app muy sencilla). Para más variedad de ETFs y volumen mayor: DEGIRO (0,50-1€ por operación en la mayoría de ETFs europeos). Para combinar ETFs y fondos indexados con traspaso libre: MyInvestor. Todos son seguros y están regulados.',
+        a: 'No hay uno mejor para todos: depende de cómo se invierta. Con las tarifas de su web (30-sep-2026), en una orden suelta de ETF Trade Republic cobra 1 €, DEGIRO 1 € en su Selección Principal (3 € en el resto) y MyInvestor el 0,12 % con un mínimo de 1 €. Trade Republic tiene planes de inversión sin comisión; DEGIRO da acceso a más bolsas; MyInvestor es el único de los tres con fondos indexados que se pueden traspasar sin tributar.',
       },
       {
         q: '¿Es seguro DEGIRO para invertir en España?',
-        a: 'Sí. DEGIRO está regulado por la AFM holandesa y es subsidiaria de flatexDEGIRO Bank AG, supervisado por el BaFin alemán. El Fondo de Garantía de Inversores cubre hasta 20.000€ en caso de insolvencia del broker (no cubre pérdidas de mercado). Desde 2021 es parte de un banco regulado, lo que añade solidez al grupo.',
+        a: 'DEGIRO está regulado por la AFM holandesa y forma parte de flatexDEGIRO Bank AG, supervisado por BaFin. El sistema de indemnización de inversores holandés cubre hasta 20.000 € si el bróker quiebra (no las pérdidas de mercado). Los valores de los clientes están separados de los del bróker; en las cuentas estándar puede prestarlos, en la cuenta Custody no.',
       },
       {
         q: '¿Trade Republic es seguro para invertir en España?',
-        a: 'Sí. Trade Republic es un banco alemán regulado por el BaFin con licencia bancaria completa desde 2023. Los depósitos en euros hasta 100.000€ están cubiertos por el Fondo de Garantía de Depósitos alemán. Los ETFs y acciones se custodian como patrimonio segregado (no del banco), cubiertos por el Fondo de Garantía de Inversores hasta 20.000€.',
+        a: 'Trade Republic es un banco alemán supervisado por BaFin y el Bundesbank, con sucursal en España. Según su web, el efectivo está cubierto por los sistemas de garantía de depósitos alemán, francés o irlandés hasta 100.000 € por cliente y entidad. Los ETF y las acciones se custodian como patrimonio separado del banco.',
       },
       {
         q: '¿Puedo traspasar ETFs entre brokers sin tributar en España?',
-        a: 'No. A diferencia de los fondos de inversión, los ETFs no permiten traspaso libre entre brokers sin tributar. Si transfieres ETFs de DEGIRO a Trade Republic, se considera una transmisión y debes declarar la ganancia o pérdida patrimonial en el IRPF. Para evitar este coste, decide bien el broker antes de empezar a invertir.',
+        a: 'Mover el mismo ETF de un bróker a otro (traspaso de valores) no es una venta y no tributa, aunque cada bróker tiene sus condiciones y puede haber costes de terceros. Lo que no se puede hacer con un ETF, a diferencia de un fondo, es cambiar a otro producto sin venderlo: esa venta sí tributa en el IRPF.',
       },
     ],
     content: `# DEGIRO vs Trade Republic vs MyInvestor: qué broker elegir en España (2026)
 
-Elegir broker es la segunda decisión más importante después de elegir tus ETFs. Una mala elección te cuesta en comisiones, spreads y fricciones que se acumulan durante décadas. Esta comparativa se centra en los tres brokers más usados por la comunidad de inversores indexados en España.
+> **Corrección del 30 de septiembre de 2026.** Esta comparativa daba tarifas que no eran las de los brókers: Trade Republic «0 €» (cobra 1 € por orden suelta; sus planes de inversión sí son gratis), DEGIRO «0,50 € + 0,004 %» (tarifa retirada; hoy 1 € en su Selección Principal) y MyInvestor «0,20 € + 0,03 %» (cobra el 0,12 %, mínimo 1 €). También decía que traspasar un ETF de un bróker a otro tributaba, y no es así. La hemos rehecho con la web de cada bróker.
 
-Spoiler: no hay un broker "mejor" para todos. Hay uno que encaja con tu volumen de inversión, tu frecuencia de compra y si mezclas ETFs con fondos indexados.
+Esta comparativa se centra en los tres brókers más usados por quien invierte indexado en España. No hay uno mejor para todos: lo que cambia el coste es el importe y la frecuencia de compra, y si se quieren fondos indexados además de ETF.
 
 ---
 
 ## Comparativa rápida
 
+Datos leídos en la web de cada bróker el 30 de septiembre de 2026:
+
 | | Trade Republic | DEGIRO | MyInvestor |
 |---|---|---|---|
-| Comisión por orden ETF | **0 €** | 0,50-2 € | 0,20 € + 0,03 % |
-| Planes de ahorro automáticos | ✓ (desde 1 €/mes) | ✗ | ✗ |
-| Fondos indexados | ✗ | ✗ | ✓ Vanguard, Amundi |
-| Cuenta remunerada | ✓ (~2-3 % TAE) | ✗ | ✓ (~2 % TAE) |
-| Regulación | BaFin (Alemania) | AFM (Holanda) | CNMV (España) |
-| Custodia segregada | ✓ | Parcial (Custody account) | ✓ |
-| Compensación (Fondo garantía) | 100.000 € (ESIF) | 20.000 € (IFD) | 100.000 € (FGD) |
-| ETFs disponibles | +2.000 | +5.000 | Selección popular |
-| Interfaz | Mobile-first, sencilla | Web completa, técnica | Web bancaria |
+| Orden suelta de ETF | 1 € | 1 € en su Selección Principal, 3 € en el resto | 0,12 % (mínimo 1 €, máximo 25 €) |
+| Planes de inversión en ETF | ✓ sin comisión (desde 1 €) | No los anuncia | No los anuncia (sí aportaciones periódicas en fondos) |
+| Fondos indexados con traspaso | ✗ | ✗ | ✓ Vanguard, iShares, Amundi, Fidelity… |
+| Custodia | 0 € | 0 € (conectividad: hasta 2,50 € al año por bolsa extranjera) | 0 € |
+| Cambio de divisa | — | 0,25 % | 0,30 % |
+| Cuenta remunerada | ✓ tipo variable | No aparece en su tarifa | ✓ tipo variable |
+| Supervisión | BaFin (Alemania), sucursal en España | AFM (Países Bajos) | Banco de España y CNMV |
+| Garantía | Depósitos: 100.000 € | Inversiones: 20.000 € | Depósitos: 100.000 €; inversiones: 100.000 € |
 
-Esta tabla compara funciones, pero el coste real depende de cuánto y con qué frecuencia inviertes. El [comparador de brókers de BogleHub](/calculadora/comparar-brokers) calcula en euros lo que pagarías al año en cada uno según tu patrón de inversión.
+Lo que se paga de verdad depende de cuánto y con qué frecuencia se invierte. El [comparador de brókers de BogleHub](/calculadora/comparar-brokers) lo calcula en euros al año con tus datos.
 
 ---
 
-## Trade Republic: el broker sin fricciones
+## Trade Republic
 
-Trade Republic ha conquistado el mercado español por una razón simple: **0 € de comisión por operación**. No hay asteriscos. No hay lista mensual que cambia. No hay spread oculto disfrazado de "cambio de divisa favorable".
+Trade Republic cobra **1 € por operación** (su «comisión de liquidación»; la orden en sí no tiene comisión) y **nada en los planes de inversión**, que se programan desde 1 € y compran solos cada mes, en fracciones si hace falta. No cobra custodia.
 
-**Cómo gana dinero**: order flow (cobra a los creadores de mercado por enrutar órdenes a través de ellos) y la cuenta remunerada. Es un modelo legítimo y habitual en brokers neobancarios europeos.
-
-**Planes de ahorro automáticos**: la función que lo diferencia de todo lo demás. Puedes programar compras mensuales desde 1 € en cualquiera de sus 2.000+ ETFs. La automatización elimina la tentación de hacer market timing.
-
-**Seguridad**: regulado por BaFin, el regulador alemán más exigente de Europa. Activos custodiados en Citibank. Hasta 100.000 € cubiertos por el Fondo Europeo de Garantía de Inversiones (ESIF).
+Es un banco alemán supervisado por BaFin y el Bundesbank, con **sucursal en España** desde 2025: retiene IRPF sobre dividendos e intereses e informa a la Agencia Tributaria desde que cada cuenta migró a IBAN español.
 
 **Limitaciones**:
-- No ofrece fondos indexados (solo ETFs)
-- En algunos ETFs menos líquidos el spread puede ser mayor que en Xetra directo
-- La interfaz no permite órdenes límite complejas ni stop-loss
-- No hay acceso a acciones fuera de los mercados más populares
+- No ofrece fondos con el régimen español de traspaso.
+- Cada orden suelta cuesta 1 €, que pesa más cuanto menor es la orden.
+- Da acceso a menos bolsas que DEGIRO.
 
-**Ideal para**: inversores que empiezan, importes bajos-medios (<50.000-100.000 €), inversores que quieren automatizar al máximo.
-
----
-
-## DEGIRO: el broker para el inversor más exigente
-
-DEGIRO lleva más tiempo en el mercado y ofrece acceso a más de 50 bolsas mundiales con tarifas muy bajas (0,50 € + 0,004 % en Xetra, mínimo 0,90 €). Para importes grandes, esos 0,90 € fijos son irrelevantes.
-
-**ETFs sin comisión mensual**: DEGIRO publica una lista de ETFs seleccionados por los que no cobra comisión de compra — pero la lista cambia mensualmente y tiene restricciones (solo una operación gratuita por ETF al mes, comisión de gestión si no operas suficiente en un periodo).
-
-**Custodia no completamente segregada**: este es el punto que más debate genera. En la cuenta estándar ("Custody" en el selector), los activos sí están segregados. En la cuenta básica, tus activos pueden ser prestados a terceros (préstamo de valores). Asegúrate de abrir una cuenta "Custody" si la segregación te preocupa.
-
-**Compensación**: hasta 20.000 € cubiertos por el Fondo de Garantía de Inversiones holandés (IFD). Es más bajo que los 100.000 € de Trade Republic y MyInvestor — relevante si tienes más de ese importe en el broker.
-
-**Ideal para**: inversores con carteras más grandes (>100.000 €), acceso a ETFs y activos específicos no disponibles en Trade Republic, inversores técnicos que necesitan tipos de órdenes avanzadas.
+**Encaja con**: quien aporta cada mes con un plan automático y quiere una app sencilla.
 
 ---
 
-## MyInvestor: el único que combina ETFs y fondos indexados
+## DEGIRO
 
-MyInvestor es el neobanco del grupo Andbank y el único de los tres que ofrece fondos indexados Vanguard y Amundi directamente. Esto lo convierte en la única opción si quieres aprovechar el **traspaso fiscal entre fondos** (la gran ventaja de los fondos sobre los ETFs en España: puedes mover dinero entre fondos sin tributar).
+DEGIRO cobra **1 € por operación en los ETF de su Selección Principal**, que son todos los que se negocian en Tradegate (VWCE, IWDA o CSPX, por ejemplo), y **3 €** (2 € + 1 € de tramitación) en el resto. No cobra custodia; sí una **comisión de conectividad** del 0,25 % del valor de la cuenta, con un máximo de 2,50 € al año por cada bolsa en la que operes, salvo la de Madrid.
 
-**Comisiones ETF**: 0,20 € fijo + 0,03 % del importe. Para órdenes pequeñas (<667 €) la comisión mínima de 0,20 € es inferior a la de DEGIRO. Para órdenes grandes, el 0,03 % variable puede ser significativo.
+Da acceso a muchas bolsas internacionales y a órdenes avanzadas (límite, stop, stop-limit). No anuncia planes de inversión automáticos.
 
-**Fondos indexados**: Vanguard Global Stock Index, Amundi Core MSCI Emerging Markets. Misma exposición que los ETFs equivalentes, sin comisión de compra, traspaso sin tributar.
+**Cuenta estándar o Custody**: en las cuentas estándar (Basic, Active o Trader), DEGIRO puede prestar tus valores a terceros; en la cuenta Custody, no.
 
-**Regulación española**: el único de los tres regulado por la CNMV. Para muchos inversores, tener su dinero en una entidad supervisada en España da tranquilidad adicional.
+**Garantía**: el sistema de indemnización de inversores holandés cubre hasta 20.000 € si el bróker quiebra.
+
+**Encaja con**: quien da órdenes sueltas en la Selección Principal, necesita bolsas o productos que no están en otros brókers o quiere órdenes avanzadas.
+
+---
+
+## MyInvestor
+
+MyInvestor es un banco español supervisado por el Banco de España y la CNMV, y el único de los tres que ofrece **fondos indexados** de Vanguard, iShares, Amundi o Fidelity con el **traspaso entre fondos sin tributar** que permite el régimen español.
+
+**ETF**: 0,12 % del importe por operación, con un mínimo de 1 € y un máximo de 25 €. Hasta unos 833 € por orden se paga el mínimo, lo mismo que en Trade Republic o en la Selección Principal de DEGIRO; por encima, cobra más. El cambio de divisa cuesta un 0,30 %.
+
+**Fondos**: sin comisión de compra, sin mínimo de inversión en los indexados de las grandes gestoras y con aportaciones periódicas programables.
 
 **Limitaciones**:
-- Interfaz menos ágil que Trade Republic
-- Selección de ETFs más limitada
-- Sin planes de ahorro automáticos en ETFs (sí en fondos)
+- En ETF, cobra más que los otros dos en órdenes de más de unos 833 €.
+- Selección de ETF más limitada.
+- No anuncia planes de inversión automáticos en ETF (sí aportaciones periódicas en fondos).
 
-**Ideal para**: inversores que mezclan ETFs con fondos indexados, quien quiere aprovechar el traspaso fiscal, quien prefiere regulación española directa.
+**Encaja con**: quien usa fondos indexados y quiere poder traspasarlos sin tributar, o prefiere una entidad española.
 
 ---
 
-## ¿Y la seguridad? ¿Qué pasa si quiebra el broker?
+## ¿Qué pasa si quiebra el bróker?
 
-Los tres están regulados bajo normativa UCITS/MiFID II. En caso de quiebra de un broker europeo, tus activos (las acciones y participaciones de ETF) **no forman parte de la masa concursal** del broker — están custodiados en nombre de los clientes.
+En los tres, las acciones y participaciones de ETF de los clientes **no forman parte de la masa concursal** del bróker: están custodiadas a nombre de los clientes. Los fondos de garantía cubren otra cosa: el efectivo (garantía de depósitos) o el caso de que el bróker no pueda devolver los valores (garantía de inversiones). No cubren las pérdidas de mercado.
 
-Lo que cubre el fondo de garantía es el riesgo de que el broker haya cometido fraude o mala gestión con esos activos. No cubre pérdidas de inversión.
-
-| Broker | Fondo garantía | Límite |
+| Bróker | Qué cubre | Límite |
 |--------|---------------|--------|
-| Trade Republic | ESIF (EU) | 100.000 € |
-| DEGIRO (cuenta Custody) | IFD (Holanda) | 20.000 € |
-| MyInvestor | FGD (España) | 100.000 € |
-
-Para carteras superiores a 20.000 €, la diferencia de cobertura entre DEGIRO y los otros dos es relevante. Para carteras grandes, diversificar entre dos brokers es una estrategia razonable.
+| Trade Republic | Efectivo (sistemas de garantía de depósitos alemán, francés o irlandés) | 100.000 € |
+| DEGIRO | Valores (sistema de indemnización de inversores holandés) | 20.000 € |
+| MyInvestor | Efectivo (Fondo de Garantía de Depósitos) y valores (Fondo de Garantía de Inversiones) | 100.000 € cada uno |
 
 ---
 
 ## El coste real: más allá de la comisión de compra
 
-La comisión por operación es lo más visible, pero el coste total de usar un broker para ETFs tiene cuatro componentes, y solo uno aparece en la portada del anuncio:
+**1. Comisión por orden.** En una aportación mensual de 200 € con orden suelta, los tres cobran 1 € (DEGIRO, en su Selección Principal). Con un plan de inversión en Trade Republic, 0 €.
 
-**1. Comisión de compraventa.** Trade Republic cobra 0 €; MyInvestor 0,20 € + 0,03 %; DEGIRO 0,50 € + 0,004 % (mínimo 0,90 €). Para una aportación mensual de 200 €, eso es 0 €, unos 0,26 € y 0,90 € respectivamente.
+**2. El TER del ETF no depende del bróker.** El TER lo cobra la gestora: un VWCE cuesta un 0,14 % al año lo compres donde lo compres.
 
-**2. El TER del ETF — y aquí está la clave: no depende del broker.** El TER (coste anual del fondo) lo cobra la gestora del ETF, no el broker. Un VWCE tiene un TER del 0,14 % lo compres donde lo compres. Por tanto, el TER no debe influir en qué broker eliges: es idéntico en los tres. Lo que cambia de un broker a otro es todo lo demás.
+**3. Conversión de divisa.** Si se compra un ETF en una línea de cotización en dólares o libras, hay cambio de divisa: 0,25 % en DEGIRO y 0,30 % en MyInvestor. Se evita comprando la línea en euros del mismo ETF, por ejemplo en Xetra.
 
-**3. Conversión de divisa.** Si compras un ETF que cotiza en dólares o libras (por ejemplo, en la Bolsa de Londres), el broker convierte tus euros aplicando un margen que muchas veces no se ve. Se evita comprando la línea de cotización en euros del mismo ETF en Xetra (Frankfurt) o BME. MyInvestor opera en euros; en Trade Republic y DEGIRO conviene elegir la cotización en euros para no pagar conversión.
+**4. Custodia y conectividad.** Ninguno de los tres cobra custodia. DEGIRO cobra conectividad de hasta 2,50 € al año por cada bolsa extranjera en la que se opere.
 
-**4. Custodia y conectividad.** Ninguno de los tres cobra comisión de custodia sobre ETFs. DEGIRO aplica una pequeña comisión de conectividad anual por cada bolsa extranjera en la que operas, que se evita concentrando las compras en una sola bolsa. Verifica las tarifas vigentes antes de operar.
-
-**El resumen del coste real**: para un inversor que compra ETFs en euros (Xetra) con aportaciones mensuales, Trade Republic sale gratis de principio a fin; MyInvestor cuesta unos céntimos por orden pero añade el traspaso fiscal de sus fondos; DEGIRO es muy barato pero exige cuidar la bolsa de cotización para no pagar ni conexión ni divisa. La diferencia entre ellos en comisiones puras es pequeña; la diferencia que de verdad importa a largo plazo es si quieres fondos indexados con traspaso fiscal (solo MyInvestor) o solo ETFs.
+En comisiones puras, las diferencias entre los tres son pequeñas en órdenes de menos de 1.000 €. Lo que más separa a MyInvestor de los otros dos es que tiene fondos indexados con traspaso sin tributar, y lo que más separa a Trade Republic es que tiene planes de inversión sin comisión.
 
 ---
 
-## El ganador por perfil
+## Qué pesa según el perfil
 
-**Principiante** — empiezas, aportas poco y a menudo, quieres simplicidad: **Trade Republic**. 0 €, planes de ahorro automáticos desde 1 € y una app a prueba de errores. Si prefieres arrancar con fondos indexados en vez de ETFs, MyInvestor desde 1 €.
+**Quien empieza y aporta poco cada mes**: pesa la comisión de cada orden y si hay planes automáticos sin comisión (Trade Republic los tiene). Si se prefiere empezar con fondos indexados en vez de ETF, MyInvestor permite aportaciones periódicas desde poco dinero.
 
-**Avanzado** — cartera consolidada, quieres control, varios mercados o tipos de órdenes: **DEGIRO**, o diversifica entre Trade Republic (ETFs core) y DEGIRO (acceso y control). El coste por orden es irrelevante en importes grandes; lo que pesa es el acceso y la flexibilidad.
+**Quien tiene una cartera consolidada y quiere control**: pesan el acceso a bolsas y los tipos de orden, donde DEGIRO es más completo. En órdenes grandes, la comisión fija pesa poco.
 
-**FIRE / largo plazo con optimización fiscal** — rebalanceas, cambias de estrategia y piensas en décadas: **MyInvestor**. El traspaso fiscal libre entre fondos indexados te permite rebalancear y cambiar de fondo sin tributar, algo imposible con ETFs. En la fase de retirada, combinar fondos (con traspaso) y algún ETF de distribución es una estrategia habitual. Lee cómo funciona en la [guía de traspaso de fondos](/blog/como-hacer-traspaso-fondos-espana).
+**Quien piensa en décadas y quiere poder rebalancear sin tributar**: pesa el traspaso entre fondos, que solo tiene MyInvestor de los tres. La [guía de traspaso de fondos](/blog/como-hacer-traspaso-fondos-espana) explica cómo funciona.
 
-**Si ya tienes cartera de ETFs en Trade Republic y funciona**: no cambies de broker por cambiar. Los costes de fricción de mover una cartera rara vez compensan las diferencias en comisiones.
+**Quien ya tiene cartera en un bróker**: mover el mismo ETF a otro bróker no tributa, pero tiene su trámite; conviene comparar si la diferencia de comisiones lo compensa.
 
-Para ver el coste anual exacto de cada broker según tu patrón real de inversión, usa el [comparador de brókers de BogleHub](/calculadora/comparar-brokers). Y si quieres una comparativa más amplia que incluya ING e Interactive Brokers, lee [mejor broker para ETFs en España 2026](/blog/mejor-broker-etfs-espana-2026).
+La comparativa más amplia, con ING, Openbank, Renta 4 o Interactive Brokers, está en [mejor broker para ETFs en España 2026](/blog/mejor-broker-etfs-espana-2026).
 
 ---
 
-*Información educativa, no asesoramiento financiero. Las comisiones y condiciones pueden cambiar. Verifica siempre con el broker antes de operar.*
+*Información educativa, no asesoramiento financiero. Las comisiones cambian: conviene comprobarlas en la web de cada bróker antes de operar.*
 
-**¿Ya tienes cuenta en alguno de estos brokers?** [Analiza tu cartera gratis](/analyzer) e identifica si tu TER y diversificación están optimizados.
+**¿Ya tienes cuenta en alguno de estos brókers?** [Analiza tu cartera gratis](/analyzer) y mira qué TER pagas y cómo está diversificada.
 
 ---
 
 ## Fuentes y lecturas complementarias
 
-- [DEGIRO — Tarifas oficiales 2026](https://www.degiro.es/tarifas) — Verifica las comisiones actuales antes de abrir cuenta.
-- [Trade Republic — Información sobre la cuenta de inversión](https://traderepublic.com/es-es) — Condiciones actualizadas y ETFs disponibles en la plataforma.
-- [Banco de España — Registro de Entidades](https://www.bde.es/bde/es/secciones/servicios/Particulares_y_e/Registros_de_En/) — Comprueba que el broker está registrado y supervisado en España.
-- [Cómo invertir en el MSCI World desde España — BogleHub](/blog/como-invertir-msci-world-espana) — Guía práctica: los mejores ETFs y fondos para replicar este índice y dónde comprarlos.
+- [DEGIRO: tarifas](https://www.degiro.es/tarifas) — Comisiones, Selección Principal, conectividad y custodia (consultado el 30-sep-2026).
+- [Trade Republic: web en España](https://traderepublic.com/es-es) — Fijación de precios, planes de inversión y garantía de depósitos (consultado el 30-sep-2026).
+- [MyInvestor: bróker](https://myinvestor.es/inversion/broker) — Comisiones de ETF, custodia y cambio de divisa (consultado el 30-sep-2026).
+- [Banco de España: registro de entidades](https://www.bde.es/bde/es/secciones/servicios/Particulares_y_e/Registros_de_En/) — Comprueba que una entidad está registrada y supervisada en España.
+- [Cómo invertir en el MSCI World desde España — BogleHub](/blog/como-invertir-msci-world-espana) — ETF y fondos para replicar este índice y dónde comprarlos.
 `,
   },
   {
@@ -6370,12 +6320,12 @@ A largo plazo eso importa, pero la complejidad añadida (dos ETFs, dos órdenes,
 
 | Broker | Comisión por orden |
 |---|---|
-| Trade Republic | 0 € (planes de ahorro automáticos desde 1 €/mes) |
-| [DEGIRO](/blog/degiro-opinion-2026) | 0,50 € + 0,004% (mín. 0,90 €) |
-| MyInvestor | 0,20 € + 0,03% |
-| [XTB](/blog/xtb-opinion-2026) | 0 € hasta 100.000 €/mes en ETFs |
+| [Trade Republic](/blog/trade-republic-opinion-2026) | 1 € por orden suelta; planes de inversión sin comisión desde 1 €/mes |
+| [DEGIRO](/blog/degiro-opinion-2026) | 1 € (el VWCE está en su Selección Principal) |
+| [MyInvestor](/blog/myinvestor-opinion-2026) | 0,12 % (mínimo 1 €, máximo 25 €) |
+| [XTB](/blog/xtb-opinion-2026) | 0 € hasta 100.000 €/mes; planes de inversión sin comisión |
 
-En aportaciones mensuales pequeñas pesa la comisión fija, y Trade Republic cobra 0 € por operación. En órdenes más grandes y con más control técnico, DEGIRO. El VWCE no está disponible en MyInvestor como ETF, pero sí su equivalente en fondo indexado (Vanguard Global Stock Index, que replica MSCI World, no FTSE All-World — índice diferente).
+Tarifas leídas en la web de cada bróker el 30 de septiembre de 2026. En aportaciones mensuales pequeñas pesa la comisión fija de cada orden, o si hay un plan de inversión sin comisión (Trade Republic y XTB los tienen). Quien prefiera un fondo indexado con traspaso sin tributar en lugar del ETF tiene el Vanguard Global Stock Index, que replica el MSCI World y no el FTSE All-World: es un índice diferente, sin emergentes.
 
 ---
 
@@ -7311,26 +7261,27 @@ Esa lógica es matemáticamente correcta pero psicológicamente peligrosa: la pr
     slug: 'myinvestor-opinion-2026',
     title: 'MyInvestor: opinión y análisis completo 2026',
     excerpt:
-      'Análisis honesto de MyInvestor en 2026: cuenta remunerada, fondos indexados Vanguard y Amundi, comisiones reales, seguridad y para quién encaja este neobanco español.',
+      'Análisis de MyInvestor en 2026: fondos indexados de Vanguard, Amundi o Fidelity sin comisión de compra, ETF al 0,12 % (mínimo 1 €), cuenta remunerada, seguridad y para quién encaja.',
     publishedAt: '2026-05-24',
+    updatedAt: '2026-09-30',
     readingMinutes: 9,
     keywords: ['MyInvestor opinión', 'MyInvestor cuenta remunerada', 'MyInvestor fondos indexados', 'MyInvestor seguridad', 'MyInvestor vs Indexa'],
     faq: [
       {
         q: '¿Es seguro MyInvestor?',
-        a: 'Sí. MyInvestor es el neobanco del grupo Andbank España, una entidad regulada por el Banco de España y la CNMV. Los depósitos en euros hasta 100.000€ están cubiertos por el Fondo de Garantía de Depósitos español. Los fondos de inversión y ETFs se custodian como patrimonio separado del banco — en caso de insolvencia, son tuyos y están cubiertos adicionalmente por el Fondo de Garantía de Inversiones hasta 100.000€. La cuenta es 100% online sin oficinas físicas.',
+        a: 'MyInvestor es un banco español supervisado por el Banco de España y la CNMV. Los depósitos en euros hasta 100.000€ están cubiertos por el Fondo de Garantía de Depósitos español. Los fondos de inversión y ETFs se custodian como patrimonio separado del banco — en caso de insolvencia, son tuyos y están cubiertos adicionalmente por el Fondo de Garantía de Inversiones hasta 100.000€. La cuenta es 100% online sin oficinas físicas.',
       },
       {
         q: '¿Qué fondos indexados ofrece MyInvestor?',
-        a: 'MyInvestor ofrece la mayor selección de fondos indexados de bajo coste disponible al inversor particular en España. Incluye gama Vanguard (Global Stock, Emerging Markets, EUR Investment Grade Bond), Amundi (Prime Global con TER 0,05%, Prime Eurozone, Index Emerging Markets), Fidelity (MSCI World, Index Emerging Markets) y otras gestoras. Todos permiten traspaso fiscal libre entre fondos, lo que es la mayor ventaja fiscal de los fondos sobre los ETFs en España.',
+        a: 'Según su web, más de 2.400 fondos de gestión activa e indexada, con fondos indexados de Vanguard, iShares, Amundi, Fidelity y NN (Goldman Sachs) sin mínimo de inversión. Como todo fondo en España, se pueden traspasar sin tributar. Ojo con el Amundi Prime Global, que se cita a menudo como fondo: es un ETF y no tiene ese traspaso. Antes de contratar conviene comprobar el ISIN y el TER de la clase en la documentación de la gestora.',
       },
       {
-        q: '¿Cuál es el TAE de la cuenta remunerada de MyInvestor en 2026?',
-        a: 'La cuenta remunerada de MyInvestor paga el 2% TAE el primer año hasta 70.000€ (con condiciones: aportación periódica desde nómina, recibos domiciliados, etc.). Después del primer año baja al 1% TAE. La cuenta es gratis sin comisiones de mantenimiento. Esta remuneración es competitiva con las mejores cuentas del mercado español, aunque no es la más alta. Verifica las condiciones actuales en la web ya que pueden cambiar.',
+        q: '¿Tiene MyInvestor cuenta remunerada?',
+        a: 'Sí, individual, conjunta o junior, a tipo variable. El tipo, el saldo máximo remunerado y las condiciones cambian a menudo, así que conviene mirarlos en su web. El efectivo está cubierto por el Fondo de Garantía de Depósitos español hasta 100.000 €.',
       },
       {
         q: '¿MyInvestor cobra comisión por comprar ETFs?',
-        a: 'Sí, pero bajas. La comisión por orden de ETF es 0,20€ fijos + 0,03% del importe. Para órdenes pequeñas (<667€), la comisión mínima de 0,20€ es muy competitiva. Para órdenes grandes, el componente variable del 0,03% puede sumar más que en Trade Republic (0€) o DEGIRO (0,50€ + 0,004%). Para combinar ETFs y fondos indexados en una sola plataforma, MyInvestor es el único de los tres que ofrece ambos.',
+        a: 'Sí. Según su web (30-sep-2026), el 0,12 % del importe por operación, con un mínimo de 1 € y un máximo de 25 €: hasta unos 833 € se paga el mínimo. Si el ETF cotiza en otra divisa, el cambio cuesta un 0,30 %. No cobra custodia. En una orden suelta de 1.000 €, MyInvestor cobra 1,20 €; Trade Republic, 1 €, y DEGIRO, 1 € en su Selección Principal. De los tres, MyInvestor es el único que ofrece también fondos indexados con traspaso sin tributar.',
       },
       {
         q: '¿Puedo abrir una cuenta de pensiones indexada en MyInvestor?',
@@ -7339,7 +7290,9 @@ Esa lógica es matemáticamente correcta pero psicológicamente peligrosa: la pr
     ],
     content: `# MyInvestor: opinión y análisis completo 2026
 
-MyInvestor es el neobanco del grupo Andbank España y se ha convertido en una de las plataformas más populares entre inversores indexados en España. Su propuesta combina cuenta corriente remunerada, broker para ETFs y, sobre todo, el acceso al mayor catálogo de fondos indexados de bajo coste disponible al inversor particular español.
+> **Corrección del 30 de septiembre de 2026.** Este artículo daba una comisión de ETF de 0,20 € más el 0,03 % que no es la de MyInvestor (cobra el 0,12 %, con mínimo de 1 € y máximo de 25 €), citaba condiciones de la cuenta remunerada que no hemos podido comprobar y presentaba MyInvestor como el único banco con fondos indexados y traspaso. Lo hemos corregido con su web.
+
+MyInvestor se ha convertido en una de las plataformas más usadas por inversores indexados en España. Su propuesta combina cuenta remunerada, bróker para ETF y, sobre todo, un catálogo amplio de fondos indexados de bajo coste.
 
 Este análisis cubre qué hace bien, qué hace mal y para qué tipo de inversor tiene más sentido.
 
@@ -7347,7 +7300,7 @@ Este análisis cubre qué hace bien, qué hace mal y para qué tipo de inversor 
 
 ## Qué es MyInvestor
 
-MyInvestor es la marca digital de Andbank España, un banco con licencia de la CNMV y supervisión del Banco de España desde 2010. La diferencia con un banco tradicional: 100% online, sin oficinas físicas, sin comisiones de mantenimiento en la mayoría de productos.
+MyInvestor es un banco español supervisado por el Banco de España y la CNMV. La diferencia con un banco tradicional: 100 % en línea, sin oficinas físicas y sin comisiones de mantenimiento en la mayoría de productos.
 
 Lo que ofrece:
 - Cuenta corriente y de ahorro remuneradas
@@ -7362,7 +7315,7 @@ Lo que ofrece:
 
 ## La gran fortaleza: fondos indexados al menor coste
 
-Aquí MyInvestor no tiene competencia real en España. Es el único banco que ofrece a la vez:
+Es donde MyInvestor más se diferencia. Ofrece a la vez:
 
 - **Fondos Vanguard institucionales** (no las clases minoristas más caras)
 - **Vanguard Global Stock Index** con TER del 0,18% (replica el MSCI World y es fondo, no ETF: se traspasa sin tributar)
@@ -7370,38 +7323,39 @@ Aquí MyInvestor no tiene competencia real en España. Es el único banco que of
 - **Mínimo de aportación 1€** (aportaciones recurrentes desde el primer euro)
 - **Traspaso fiscal libre** entre fondos (la mayor ventaja fiscal de los fondos sobre los ETFs en España)
 
-Para una cartera de fondos indexados con traspaso libre y coste mínimo, MyInvestor es el único de los tres que reúne ambas cosas en España.
-
-Las alternativas (Renta 4, Selfbank) ofrecen menos fondos o con comisiones de custodia. Los brokers extranjeros como DEGIRO o Trade Republic solo ofrecen ETFs, no fondos.
+Otras entidades españolas, como Renta 4, Openbank o ING, también comercializan fondos con traspaso; lo que conviene comparar es qué clases ofrece cada una y su TER, que publica la gestora. Los brókers extranjeros como DEGIRO o Trade Republic no ofrecen fondos con el régimen español de traspaso.
 
 ---
 
 ## La cuenta remunerada de MyInvestor
 
-MyInvestor remunera la cuenta corriente al 2% TAE el primer año (hasta 70.000€) con condiciones razonables: aportación mensual de al menos 50€ desde una nómina o ingreso periódico, o domiciliación de algunos recibos. Sin esas condiciones, baja al 1% TAE el primer año.
+MyInvestor tiene cuentas remuneradas (individual, conjunta o junior) a tipo variable. El tipo, el saldo máximo remunerado y las condiciones cambian a menudo, así que conviene mirarlos en su web.
 
-Después del primer año, la remuneración baja: actualmente al 1% TAE. Es competitiva pero no la mejor del mercado.
-
-Una característica interesante: el dinero remunerado está en una cuenta corriente regular (no en un depósito ni un fondo monetario). Tiene disponibilidad inmediata y está cubierta por el Fondo de Garantía de Depósitos hasta 100.000€.
+El dinero está en una cuenta, no en un fondo monetario: tiene disponibilidad inmediata y está cubierto por el Fondo de Garantía de Depósitos español hasta 100.000 €.
 
 ---
 
 ## Comisiones por operar en bolsa
 
-**Acciones y ETFs**:
-- 0,20€ fijos + 0,03% del importe (compra y venta)
-- Mínimo 1€, máximo 200€
+Según su web, a 30 de septiembre de 2026:
+
+**ETF**:
+- 0,12 % del importe por operación (compra y venta)
+- Mínimo 1 €, máximo 25 €
+- Cambio de divisa: 0,30 %
+
+**Acciones**:
+- 0,12 % del importe por operación, con un mínimo de 3 € y un máximo de 25 €
+
+**Todo**:
+- 0 € de custodia, mantenimiento, inactividad y cobro de dividendos
 
 **Fondos de inversión**:
-- 0€ de comisión de compra
-- 0€ de comisión de custodia
-- 0€ de comisión de traspaso
+- Sin comisión de compra
+- Sin mínimo de inversión en los indexados de Vanguard, iShares, Amundi, Fidelity y NN
+- Traspaso entre fondos sin tributar
 
-**Planes de pensiones**:
-- 0€ de comisión de apertura/aportación
-- 0€ de comisión de traspaso
-
-Para ETFs, la comisión de MyInvestor es más alta que Trade Republic (0€) y más alta que DEGIRO en órdenes grandes. Para fondos indexados, es la mejor del mercado. Para ver el coste anual exacto en euros frente a otros brokers según tu volumen y frecuencia de compra, usa el [comparador de brókers de BogleHub](/calculadora/comparar-brokers).
+En ETF, hasta unos 833 € por orden se paga el mínimo de 1 €, lo mismo que en Trade Republic o en la Selección Principal de DEGIRO; por encima, MyInvestor cobra más, hasta 25 €. Trade Republic, además, no cobra en sus planes de inversión. Para ver el coste anual exacto en euros frente a otros brokers según tu volumen y frecuencia de compra, usa el [comparador de brókers de BogleHub](/calculadora/comparar-brokers).
 
 ---
 
@@ -7429,8 +7383,8 @@ MyInvestor encaja con este perfil:
 
 MyInvestor no encaja si:
 
-- **Solo invertirás en ETFs sin fondos**: Trade Republic o DEGIRO son más baratos para órdenes grandes
-- **Tu cartera tiene poco patrimonio y valoras mucho la cuenta remunerada**: hay cuentas con TAE más alta en otros neobancos
+- **Solo invertirás en ETF con órdenes grandes**: a partir de unos 833 € por orden, Trade Republic o DEGIRO cobran menos
+- **Quieres un plan de inversión automático en ETF sin comisión**: MyInvestor no lo anuncia en su página de bróker
 - **Quieres acceso a mercados internacionales avanzados**: MyInvestor cubre bien Europa y EEUU pero no es tan extensivo como brokers especializados
 
 ---
@@ -7445,8 +7399,9 @@ Lo que sí se puede comprobar es el producto. Busca por ISIN, no por nombre, y m
 
 ## Fuentes y lecturas complementarias
 
-- [MyInvestor — Catálogo de fondos indexados](https://myinvestor.es/fondos-de-inversion/) — Lista completa de fondos disponibles con datos de TER actualizados.
-- [Banco de España — Registro de entidades](https://www.bde.es/) — Verifica el registro de Andbank España (matriz de MyInvestor).
+- [MyInvestor: bróker](https://myinvestor.es/inversion/broker) — Comisiones de ETF y acciones, custodia y cambio de divisa (consultado el 30-sep-2026).
+- [MyInvestor: fondos de inversión](https://myinvestor.es/inversion/fondos-inversion) — Catálogo de fondos y aportaciones periódicas.
+- [Banco de España: registro de entidades](https://www.bde.es/) — Registro de MyInvestor como entidad de crédito.
 - [Amundi Prime Global: no es un fondo, es un ETF — BogleHub](/blog/amundi-prime-global-analisis) — Por qué la etiqueta importa y qué cambia en el traspaso.
 `,
   },
@@ -7454,156 +7409,128 @@ Lo que sí se puede comprobar es el producto. Busca por ISIN, no por nombre, y m
     slug: 'trade-republic-opinion-2026',
     title: 'Trade Republic: opinión y análisis completo 2026',
     excerpt:
-      'Análisis de Trade Republic en 2026: 0€ por operar ETFs, planes de ahorro automáticos, cuenta remunerada al 3% TAE y por qué se ha hecho tan popular en España.',
+      'Análisis de Trade Republic en 2026: 1 € por operación, planes de inversión sin comisión desde 1 €, sucursal en España que informa a Hacienda y cuenta remunerada a tipo variable. Qué ofrece y qué no.',
     publishedAt: '2026-05-24',
-    readingMinutes: 9,
+    updatedAt: '2026-09-30',
+    readingMinutes: 8,
     keywords: ['Trade Republic opinión', 'Trade Republic España', 'Trade Republic seguridad', 'Trade Republic comisiones', 'Trade Republic cuenta remunerada'],
     faq: [
       {
         q: '¿Es seguro Trade Republic para invertir desde España?',
-        a: 'Sí. Trade Republic es un banco alemán con licencia bancaria completa supervisado por el BaFin (regulador alemán) y el Bundesbank desde 2023. Los depósitos en euros hasta 100.000€ están cubiertos por el Fondo de Garantía de Depósitos alemán (Entschädigungseinrichtung deutscher Banken). Las acciones y ETFs se custodian como patrimonio separado del banco — son de tu propiedad legalmente, independiente del banco. Adicionalmente cubiertos hasta 20.000€ por el Fondo Europeo de Garantía de Inversiones (ESIF).',
+        a: 'Trade Republic es un banco alemán supervisado por BaFin y el Bundesbank, con sucursal en España. Según su web, el efectivo está cubierto por los sistemas de garantía de depósitos alemán, francés o irlandés (según el banco donde esté) hasta 100.000 € por cliente y entidad. Las acciones y los ETF se custodian como patrimonio separado del banco: son del cliente.',
       },
       {
         q: '¿Cuánto cobra Trade Republic por operar ETFs?',
-        a: '0€ por operación, en cualquier ETF disponible en la plataforma (más de 2.000 ETFs). No hay comisión mínima, no hay comisión de custodia, no hay comisión de mantenimiento. Trade Republic gana dinero principalmente por order flow (cobra a los creadores de mercado por enrutar órdenes) y por el margen de la cuenta remunerada. Es un modelo legítimo y común en brokers neobancarios europeos.',
+        a: 'Según su ayuda (30-sep-2026), una comisión de liquidación de 1 € por operación, salvo en los planes de inversión, que no tienen comisión, más diferenciales y costes de terceros (por ejemplo, la comisión de gestión de cada ETF). Si se elige la bolsa con Precio Directo, 2 €. No cobra custodia ni mantenimiento.',
       },
       {
-        q: '¿Qué son los planes de ahorro automáticos de Trade Republic?',
-        a: 'Una funcionalidad única que permite programar compras periódicas (semanal, mensual o trimestral) de cualquier ETF desde 1€. La automatización es total: indicas qué ETF, cuánto invertir, con qué frecuencia y el día del mes, y Trade Republic ejecuta la compra automáticamente. Sin comisión, fracciones de participación admitidas. Es la mejor herramienta del mercado para implementar dollar cost averaging (DCA) sin esfuerzo.',
+        q: '¿Qué son los planes de inversión de Trade Republic?',
+        a: 'Compras periódicas programadas de un ETF o una acción, desde 1 €, que se ejecutan solas con la frecuencia elegida y admiten fracciones. Según su web, no tienen comisión de Trade Republic. Sirven para aportar una cantidad fija cada mes sin dar órdenes a mano.',
       },
       {
         q: '¿Cuál es el TAE de la cuenta remunerada de Trade Republic en 2026?',
-        a: 'Trade Republic remunera el saldo en cuenta en euros con el tipo de depósito del BCE menos un margen. En 2026, con tipos del BCE alrededor del 2,5-3%, la cuenta paga aproximadamente 2-2,5% TAE sin condiciones. La remuneración se paga mensualmente. No hay límites en el saldo remunerado (a diferencia de otras cuentas que limitan a 30.000-100.000€). La cuenta es 100% gratuita.',
+        a: 'Es variable. El 30 de septiembre de 2026 su web anunciaba un 3,04 % TAE para clientes nuevos, sobre saldos de hasta 50.000 €. El tipo cambia con los del BCE, así que conviene mirarlo en su web.',
       },
       {
         q: '¿Trade Republic ofrece fondos indexados o solo ETFs?',
-        a: 'Solo ETFs. Trade Republic no ofrece fondos de inversión tradicionales. Esto significa que no puedes aprovechar el traspaso fiscal libre entre fondos que sí existe en MyInvestor con Vanguard o Amundi. Para inversores que quieren combinar la ventaja del 0% en ETFs con el traspaso fiscal de los fondos, la estrategia óptima es tener cuenta en Trade Republic (ETFs) y MyInvestor (fondos indexados).',
+        a: 'Su web en España anuncia acciones, fondos de inversión, ETF, criptomonedas y Private Markets. Lo que su ayuda no describe es el régimen español de traspaso entre fondos sin tributar: los traspasos de los que habla son de valores entre entidades. Ese régimen lo tramitan las entidades que comercializan fondos en España, como MyInvestor.',
       },
     ],
     content: `# Trade Republic: opinión y análisis completo 2026
 
-Trade Republic ha sido el broker que más ha cambiado la inversión particular en España en los últimos cinco años. Antes, comprar un ETF costaba 5-15€ por orden en cualquier broker español. Trade Republic llegó con 0€ por operación, planes de ahorro automáticos desde 1€ y una app diseñada para que el inversor no se complique.
+> **Corrección del 30 de septiembre de 2026.** Este artículo decía que Trade Republic cobraba 0 € por operación, que su cuenta pagaba «2-2,5 % sin límite de saldo» y que solo ofrecía ETF. Según su web, cobra 1 € por operación (los planes de inversión no tienen comisión), el tipo anunciado para clientes nuevos es del 3,04 % TAE hasta 50.000 € y ofrece también fondos. Lo hemos rehecho con su web.
 
-Este análisis cubre cómo funciona, dónde está la trampa (porque siempre hay una), y para qué inversor encaja realmente.
+Trade Republic es uno de los brókers que más han cambiado la inversión particular en España: planes de inversión sin comisión desde 1 €, una app pensada para no complicarse y, desde 2025, sucursal en España. Este análisis, sin afiliación, explica qué cobra, qué ofrece y dónde están sus límites.
 
 ---
 
 ## Qué es Trade Republic
 
-Trade Republic es un neobanco alemán fundado en Berlín en 2015. Tiene licencia bancaria completa desde 2023, supervisado por el BaFin (regulador alemán de mercados financieros) y el Bundesbank. En 2024 superó los 5 millones de clientes en Europa y los 1.000 millones de euros en cuentas remuneradas.
+Trade Republic es un banco alemán fundado en 2015 y supervisado por **BaFin** y el **Bundesbank**. Tiene **sucursal en España** (Trade Republic Bank GmbH, Sucursal en España, en Madrid): desde que la cuenta de cada cliente migró a IBAN español en 2025, retiene IRPF sobre dividendos e intereses e informa a la Agencia Tributaria, así que los datos llegan al borrador de la renta. Según su web, tiene más de 10 millones de clientes en 18 países europeos.
 
-Su propuesta es deliberadamente simple:
-- 0€ por comprar o vender ETFs y acciones
-- Cuenta remunerada al 2-3% TAE sin condiciones
-- App móvil sencilla, diseñada para no equivocarse
-- Planes de ahorro automáticos en ETFs desde 1€
+Según su web en España, permite invertir desde 1 € en acciones, fondos de inversión, ETF, criptomonedas y Private Markets.
 
 ---
 
-## La pregunta inevitable: ¿cómo gana dinero?
+## Comisiones
 
-Si cobra 0€ por operar, ¿cómo es viable? Trade Republic gana dinero principalmente por:
+Según su página de precios y su ayuda, a 30 de septiembre de 2026:
 
-**1. Payment for Order Flow (PFOF)**
-Cobra a los creadores de mercado (market makers) por enrutar las órdenes de los clientes hacia ellos. Los market makers obtienen un margen entre el precio de compra y venta (spread), y comparten parte de ese margen con Trade Republic. La práctica está regulada en Europa.
+| Concepto | Coste |
+|---|---|
+| Comisión de orden | 0 € |
+| Comisión de liquidación por operación | **1 €** (2 € en la bolsa con Precio Directo) |
+| Ejecución de planes de inversión | **0 €** |
+| Dividendos y operaciones corporativas | 0 € |
+| Custodia y mantenimiento | 0 € |
 
-**Implicación para el usuario**: el spread en algunas operaciones puede ser ligeramente mayor que si compraras directamente en Xetra. Para ETFs muy líquidos como VWCE o IWDA, la diferencia es marginal (céntimos por operación). Para ETFs menos líquidos puede ser más notable.
-
-**2. La cuenta remunerada**
-Trade Republic recibe el tipo de depósito del BCE por el dinero en cuenta de sus clientes. Paga al cliente un poco menos que ese tipo (por ejemplo, BCE al 3% y cliente recibe 2,5%) y se queda con la diferencia.
-
-**3. Tarjetas, cripto y otros productos**
-Cobra comisiones en otros productos que no son ETFs ni acciones (criptomonedas, tarjetas, etc.).
-
-Es un modelo de negocio legítimo y común en bancos de inversión digital europeos. No es "demasiado bueno para ser verdad": es simplemente más eficiente que los bancos tradicionales.
+Es decir: cada **orden suelta** cuesta 1 €, y las compras de un **plan de inversión** no cuestan nada. Aparte están los diferenciales de compra y venta y los costes de terceros, como la comisión de gestión de cada ETF.
 
 ---
 
-## La verdadera ventaja: planes de ahorro automáticos
+## Planes de inversión
 
-Esta es la funcionalidad que más impacta al inversor indexado de largo plazo. Permite programar compras periódicas de ETFs con automatización total:
+Es la función que más usa quien invierte indexado. Se elige el ETF, el importe (desde 1 €), la frecuencia y el día, y Trade Republic compra solo, en fracciones si hace falta, sin comisión.
 
-- Eliges el ETF (cualquiera de los 2.000+ disponibles)
-- Indicas el importe (desde 1€)
-- Eliges la frecuencia (semanal, mensual o trimestral)
-- Indicas el día del mes
-- Trade Republic compra automáticamente, sin comisión, en fracciones si es necesario
-
-¿Por qué importa tanto? Porque elimina la fricción y la tentación de hacer market timing. Un inversor que quiere aportar 200€ al mes a VWCE programa el plan una vez y se olvida durante años. Sin decisiones que tomar, sin recordatorios, sin tentación de esperar "a que baje".
-
-Es objetivamente la mejor herramienta del mercado español para implementar [Dollar Cost Averaging](/blog/dca-vs-lump-sum-aportar-mensual) sin esfuerzo.
+Sirve para lo que el inversor indexado necesita: aportar una cantidad fija cada mes sin tener que decidir cuándo. El artículo sobre [aportar cada mes o de golpe](/blog/dca-vs-lump-sum-aportar-mensual) explica la diferencia.
 
 ---
 
-## La cuenta remunerada de Trade Republic
+## La cuenta remunerada
 
-Sin condiciones (no requiere nómina, ni recibos domiciliados, ni aportación mínima), Trade Republic remunera el saldo en cuenta al tipo de depósito del BCE menos un pequeño margen. En 2026, con tipos del BCE en el 2,5-3%, la cuenta paga aproximadamente 2-2,5% TAE.
+Trade Republic remunera el efectivo a tipo variable. El 30 de septiembre de 2026 su web anunciaba un **3,04 % TAE para clientes nuevos**, sobre saldos de hasta **50.000 €**. El tipo cambia con los del BCE, así que conviene mirarlo en su web antes de contar con él.
 
-**Sin límite de saldo remunerado**: a diferencia de cuentas como las de MyInvestor (limitada a 70.000€) o N26 (limitada a 100.000€), Trade Republic remunera todo el saldo independientemente del importe. Útil para inversores con liquidez alta esperando ser invertida.
-
-**Pago mensual**: los intereses se acreditan cada mes en la cuenta. Visibilidad clara, sin sorpresas.
+Según su web, el efectivo está cubierto por los sistemas de garantía de depósitos alemán, francés o irlandés, según el banco en el que esté, hasta **100.000 € por cliente y entidad**.
 
 ---
 
 ## Limitaciones de Trade Republic
 
-**1. Solo ETFs, no fondos de inversión**
-No puedes comprar fondos Vanguard, Amundi o Fidelity. Si quieres aprovechar el traspaso fiscal libre entre fondos en España, necesitas un segundo broker (MyInvestor).
+**1. Traspaso entre fondos sin tributar**
+Su ayuda describe traspasos de valores entre entidades, no el régimen español de traspaso entre fondos. Para cambiar de un fondo a otro sin tributar hace falta una entidad que comercialice fondos en España, como [MyInvestor](/blog/myinvestor-opinion-2026).
 
-**2. Mercados limitados**
-Trade Republic da acceso a bolsas europeas principales y a EEUU (NYSE, NASDAQ). No tiene acceso a mercados asiáticos directos ni a ETFs menos comunes.
+**2. Órdenes sueltas**
+Cada orden fuera de un plan cuesta 1 €. Para aportaciones pequeñas hechas a mano, ese euro pesa más cuanto menor es la orden: un 1 % en una de 100 €.
 
-**3. Pocas opciones avanzadas**
-No hay órdenes stop-loss complejas, no hay análisis técnico avanzado, no hay derivados. Es deliberadamente simple, lo que para el inversor indexado es una virtud pero para el trader técnico es una limitación.
-
-**4. Spread en ETFs menos líquidos**
-El order flow puede generar spreads ligeramente mayores que en compra directa en Xetra. Para ETFs como CSPX, VWCE o IWDA, la diferencia es despreciable. Para ETFs nicho, puede ser relevante.
+**3. Mercados**
+Da acceso a bolsas europeas y de EE. UU., pero a menos bolsas que DEGIRO o Interactive Brokers.
 
 ---
 
-## Trade Republic vs DEGIRO vs MyInvestor
+## Trade Republic, DEGIRO y MyInvestor
 
 | | Trade Republic | DEGIRO | MyInvestor |
 |---|---|---|---|
-| Comisión ETF | 0€ | 0,50€ + 0,004% | 0,20€ + 0,03% |
-| Planes ahorro automáticos | ✓ | ✗ | ✗ |
-| Fondos indexados | ✗ | ✗ | ✓ |
-| Cuenta remunerada | ✓ (2-2,5%) | ✗ | ✓ (1-2%) |
-| Mercados | Europa + EEUU | 50+ bolsas mundiales | Principalmente Europa |
-| Tipo de entidad | Banco alemán (BaFin) | Broker holandés (AFM) | Banco español (BdE+CNMV) |
+| Orden suelta de ETF | 1 € | 1 € en su Selección Principal, 3 € en el resto | 0,12 % (mínimo 1 €, máximo 25 €) |
+| Planes de inversión en ETF | ✓ sin comisión | No los anuncia | No los anuncia (sí aportaciones periódicas en fondos) |
+| Fondos indexados con traspaso | ✗ | ✗ | ✓ |
+| Cuenta remunerada | ✓ (variable) | No aparece en su tarifa | ✓ (variable) |
+| Mercados | Europa + EE. UU. | Muchas bolsas internacionales | Principalmente Europa |
+| Entidad | Banco alemán (BaFin) con sucursal en España | Bróker holandés (AFM) | Banco español (BdE + CNMV) |
 
-**Si solo vas a invertir en ETFs**: Trade Republic gana en sencillez y coste.
-**Si quieres acceso a más mercados**: DEGIRO.
-**Si quieres fondos indexados o todo en una entidad española**: MyInvestor.
-**Una combinación habitual**: Trade Republic para ETFs + MyInvestor para fondos.
-
-Si tu prioridad es la cuenta remunerada más alta, también merece la pena mirar [Scalable Capital](/blog/scalable-capital-opinion-2026): otro banco alemán regulado por BaFin que con su plan Prime ofrece hasta el 4% TAE y operaciones ilimitadas a 0€.
-
-La tabla compara comisiones, pero lo que pagas de verdad depende de tu volumen y frecuencia de compra: el [comparador de brókers de BogleHub](/calculadora/comparar-brokers) lo calcula en euros al año para cada uno. Y para profundizar en la comparativa, lee el [análisis completo de DEGIRO vs Trade Republic vs MyInvestor](/blog/degiro-vs-trade-republic-vs-myinvestor-2026).
+Comisiones leídas en la web de cada bróker el 30-sep-2026. Lo que se paga de verdad depende del importe y la frecuencia de compra: el [comparador de brókers de BogleHub](/calculadora/comparar-brokers) lo calcula en euros al año. La comparativa completa está en [DEGIRO vs Trade Republic vs MyInvestor](/blog/degiro-vs-trade-republic-vs-myinvestor-2026), y [Scalable Capital](/blog/scalable-capital-opinion-2026) es el otro banco alemán con planes de inversión sin comisión.
 
 ---
 
-## Para quién es Trade Republic
+## Para quién encaja Trade Republic
 
-Es la opción ideal si:
-- Quieres invertir en ETFs sin complicaciones
-- Aportas pequeñas cantidades de forma regular (DCA)
-- Valoras la simplicidad sobre las funciones avanzadas
-- Buscas la cuenta remunerada sin condiciones
-- Eres un inversor que tiende a sobrepensar las decisiones: la app te ayuda a aportar y olvidar
+**Encaja con quien:**
+- Aporta cada mes a ETF con un plan de inversión automático.
+- Quiere una app sencilla.
+- Quiere una entidad con sucursal en España que informe a Hacienda.
 
-No encaja si:
-- Quieres fondos indexados con traspaso fiscal
-- Necesitas acceso a mercados asiáticos o ETFs nicho
-- Tu cartera es muy grande y quieres negociar con órdenes técnicas avanzadas
+**Encaja peor con quien:**
+- Quiere fondos indexados con traspaso sin tributar.
+- Necesita bolsas que no están en su catálogo.
+- Da muchas órdenes sueltas pequeñas.
 
 ---
 
 ## Fuentes y lecturas complementarias
 
-- [Trade Republic — Cuenta de inversión](https://traderepublic.com/es-es) — Información oficial sobre comisiones, cuenta remunerada y catálogo de productos.
-- [BaFin — Registro de entidades reguladas](https://www.bafin.de) — Verifica el registro de Trade Republic como banco supervisado en Alemania.
-- [DEGIRO vs Trade Republic vs MyInvestor — BogleHub](/blog/degiro-vs-trade-republic-vs-myinvestor-2026) — Comparativa detallada de los tres brokers más usados por inversores indexados en España.
+- [Trade Republic: web en España](https://traderepublic.com/es-es) — Fijación de precios, planes de inversión, cuenta remunerada y garantía de depósitos (consultado el 30-sep-2026).
+- [BaFin: registro de entidades reguladas](https://www.bafin.de) — Registro de Trade Republic como banco supervisado en Alemania.
+- [DEGIRO vs Trade Republic vs MyInvestor — BogleHub](/blog/degiro-vs-trade-republic-vs-myinvestor-2026) — Comparativa de los tres brókers más usados por inversores indexados en España.
 `,
   },
   {
@@ -8082,7 +8009,7 @@ Esta versión funciona excelentemente para inversores americanos. Para un invers
 - Bonos soberanos eurozona corto plazo
 - Volatilidad mínima
 
-**Alternativa**: cuenta remunerada al 2-2,5% en Trade Republic o MyInvestor.
+**Alternativa**: una cuenta remunerada (Trade Republic, MyInvestor, XTB o Scalable la anuncian, a tipo variable).
 
 ---
 
@@ -8526,12 +8453,12 @@ Para el rebalanceo: si el Nasdaq supera mucho al resto y pasa del 15% al 25% de 
 
 | Broker | Comisión por orden |
 |---|---|
-| Trade Republic | 0€ (planes ahorro automáticos disponibles) |
-| [DEGIRO](/blog/degiro-opinion-2026) | 0,50€ + 0,004% |
-| MyInvestor | 0,20€ + 0,03% |
-| [XTB](/blog/xtb-opinion-2026) | 0€ hasta 100.000€/mes |
+| [Trade Republic](/blog/trade-republic-opinion-2026) | 1 € por orden suelta; planes de inversión sin comisión |
+| [DEGIRO](/blog/degiro-opinion-2026) | 1 € en su Selección Principal, 3 € en el resto |
+| [MyInvestor](/blog/myinvestor-opinion-2026) | 0,12 % (mínimo 1 €, máximo 25 €) |
+| [XTB](/blog/xtb-opinion-2026) | 0 € hasta 100.000 €/mes; planes de inversión sin comisión |
 
-Para aportaciones recurrentes pequeñas: Trade Republic. Para órdenes grandes: cualquiera, la comisión es marginal frente al TER anual.
+Tarifas leídas en la web de cada bróker el 30 de septiembre de 2026. En aportaciones recurrentes pequeñas pesa la comisión fija de cada orden, o si hay un plan de inversión sin comisión; en órdenes grandes, la comisión es marginal frente al TER anual.
 
 ---
 
@@ -9130,175 +9057,149 @@ La comparación con los ETFs en términos de flexibilidad fiscal es clara: para 
     slug: 'degiro-opinion-2026',
     title: 'DEGIRO: opinión y análisis completo 2026',
     excerpt:
-      'Análisis honesto de DEGIRO en 2026: comisiones reales, acceso a 50+ bolsas, cuenta Custody vs básica, seguridad y para qué tipo de inversor tiene más sentido este broker holandés.',
+      'Análisis de DEGIRO en 2026: 1 € por operación en los ETF de su Selección Principal y 3 € en el resto, sin custodia, acceso a muchas bolsas, cuenta Custody y para qué inversor encaja.',
     publishedAt: '2026-05-30',
-    readingMinutes: 9,
+    updatedAt: '2026-09-30',
+    readingMinutes: 8,
     keywords: ['DEGIRO opinión', 'DEGIRO seguridad', 'DEGIRO comisiones 2026', 'DEGIRO ETFs España', 'DEGIRO vs Trade Republic'],
     faq: [
       {
         q: '¿Es seguro DEGIRO para invertir en España?',
-        a: 'Sí. DEGIRO está regulado por la AFM holandesa y desde 2021 es subsidiaria de flatexDEGIRO Bank AG, supervisado por el BaFin alemán. Los activos se custodian separados del balance del broker. El Fondo de Garantía de Inversiones holandés (IFD) cubre hasta 20.000€ en caso de insolvencia del broker. La cuenta Custody ofrece más segregación que la básica.',
+        a: 'DEGIRO está regulado por la AFM de Países Bajos y forma parte de flatexDEGIRO Bank AG, supervisado por BaFin. Los valores de los clientes se custodian separados del balance del bróker, y el sistema de indemnización de inversores holandés cubre hasta 20.000 € si el bróker quiebra (no las pérdidas de mercado). En las cuentas estándar DEGIRO puede prestar los valores; en la cuenta Custody, no.',
       },
       {
         q: '¿Qué comisiones cobra DEGIRO por comprar ETFs en España?',
-        a: 'La comisión estándar en bolsas europeas (Euronext, Xetra) es 0,50€ + 0,004% del importe, con un mínimo de 0,90€. Para ETFs de la lista gratuita mensual, DEGIRO permite una operación al mes sin comisión de compra (con restricciones). Por encima de importes de unos 12.500€ por orden, la comisión variable supera a la de otros brokers, así que para órdenes grandes conviene calcular primero.',
+        a: 'Según su web (tarifas del 1-oct-2025, consultadas el 30-sep-2026): los ETF de su Selección Principal, que son todos los que se negocian en Tradegate, pagan 1 € de tramitación por operación y ninguna comisión; el resto de ETF, 2 € de comisión más 1 € de tramitación. No cobra custodia. Sí cobra conectividad: el 0,25 % del valor de la cuenta, con un máximo de 2,50 € al año por cada bolsa en la que operes, salvo la de Madrid.',
       },
       {
         q: '¿Cuál es la diferencia entre la cuenta básica y la Custody en DEGIRO?',
-        a: 'En la cuenta básica, DEGIRO puede prestar tus valores a terceros a cambio de una pequeña compensación (préstamo de valores). En la cuenta Custody, los valores están en cuentas segregadas y no se prestan. La cuenta Custody tiene comisiones algo más altas pero para inversores indexados a largo plazo la diferencia es marginal. Si te preocupa la segregación de activos, elige Custody.',
+        a: 'En las cuentas estándar (Basic, Active o Trader), DEGIRO puede prestar tus valores a terceros (préstamo de valores). En la cuenta Custody no los presta. Según su web, las dos tienen tarifas con algunas diferencias, publicadas en dos relaciones de tarifas distintas.',
       },
       {
         q: '¿DEGIRO tiene cuenta remunerada?',
-        a: 'No. DEGIRO no remunera el saldo en euros en cuenta. Si tienes liquidez esperando ser invertida, considera moverla a una cuenta corriente remunerada (Trade Republic, MyInvestor) mientras decides qué comprar.',
+        a: 'En su página de tarifas no aparece remuneración del saldo en efectivo. Trade Republic, MyInvestor, XTB o Scalable sí anuncian cuenta remunerada, a tipo variable.',
       },
       {
-        q: '¿Para quién es mejor DEGIRO que Trade Republic?',
-        a: 'DEGIRO tiene ventaja cuando: necesitas acceso a mercados que Trade Republic no cubre (bolsas asiáticas, mercados emergentes locales), quieres tipos de órdenes avanzadas (stop-loss, órdenes límite complejas), o tu cartera supera los 100.000€ y quieres más control. Para la mayoría de inversores Boglehead con aportaciones mensuales regulares, Trade Republic (0€ y planes de ahorro automáticos) es más cómodo.',
+        q: '¿Qué diferencia hay entre DEGIRO y Trade Republic?',
+        a: 'En una orden suelta de un ETF de la Selección Principal (VWCE, IWDA o CSPX, por ejemplo) los dos cobran 1 €. Trade Republic tiene planes de inversión periódicos sin comisión y no cobra conectividad; DEGIRO no anuncia planes automáticos, cobra hasta 2,50 € al año por bolsa extranjera y da acceso a más bolsas y tipos de orden.',
       },
     ],
     content: `# DEGIRO: opinión y análisis completo 2026
 
-DEGIRO fue el broker que rompió las comisiones altas en Europa. Cuando llegó en 2008 desde Países Bajos, comprar acciones o ETFs en España costaba 10-25€ por operación en los bancos tradicionales. DEGIRO ofreció 0,50€. Cambió el mercado.
+> **Corrección del 30 de septiembre de 2026.** Este artículo daba la tarifa antigua de DEGIRO (0,50 € más el 0,004 % por orden), hablaba de una «lista mensual» de ETF gratis que ya no existe y comparaba con tarifas de Trade Republic y MyInvestor que tampoco eran las vigentes. Lo hemos rehecho con la web de DEGIRO (tarifas del 1-oct-2025) y la de cada bróker.
 
-Hoy, con Trade Republic en 0€ y XTB también sin comisión hasta cierto umbral, DEGIRO ya no es el más barato para todos los perfiles. Pero sigue siendo el mejor en algo concreto: acceso a mercados internacionales y a activos específicos no disponibles en brokers más sencillos. Esta guía explica qué hace bien, dónde se queda corto y para quién sigue siendo la mejor opción.
+DEGIRO fue uno de los brókers que bajaron las comisiones en Europa: cuando llegó en 2008 desde Países Bajos, comprar acciones o ETF en un banco español costaba bastante más. Hoy sus puntos fuertes son el acceso a muchas bolsas internacionales y una tarifa de 1 € en los ETF de su Selección Principal. Este análisis, sin afiliación, explica qué cobra, qué ofrece y en qué se diferencia de los brókers que más usa quien invierte indexado.
 
 ---
 
 ## Quién es DEGIRO
 
-DEGIRO fue fundado en 2008 en Ámsterdam por ex-empleados del banco holandés Binck. En 2021, fue adquirido por flatexDEGIRO Bank AG, un banco alemán regulado por el BaFin y el Deutsche Bundesbank. Esta integración convirtió a DEGIRO en parte de un banco real, añadiendo una capa de robustez regulatoria adicional a la supervisión original de la AFM (Autoriteit Financiële Markten, el regulador de mercados holandés).
-
-**La propuesta de valor de DEGIRO es distinta a la de Trade Republic**:
-
-- Trade Republic es para el inversor que quiere simplicidad: un solo broker, DCA automático, sin complicaciones.
-- DEGIRO es para quien necesita amplitud: más mercados, más instrumentos, más tipos de órdenes.
+DEGIRO se fundó en 2008 en Ámsterdam. Hoy forma parte de **flatexDEGIRO Bank AG**, un banco alemán supervisado por **BaFin**, y sigue regulado por la **AFM** (Autoriteit Financiële Markten, el supervisor de mercados holandés).
 
 ---
 
-## Comisiones: lo que pagas de verdad
+## Comisiones
 
-**Compra y venta de ETFs (bolsas europeas principales)**:
-- 0,50€ + 0,004% del importe
-- Mínimo 0,90€ por operación
+Según su web (tarifas del 1 de octubre de 2025):
 
-Para una orden de 500€, pagas 0,52€. Para 5.000€, pagas 0,70€. Para 50.000€, pagas 2,50€.
-
-**Comparación directa con competidores**:
-
-| Importe de orden | DEGIRO | Trade Republic | MyInvestor |
+| Producto | Comisión | Tramitación | Total por operación |
 |---|---|---|---|
-| 100€ | 0,90€ | 0€ | 0,23€ |
-| 500€ | 0,52€ | 0€ | 0,35€ |
-| 2.000€ | 0,58€ | 0€ | 1,00€ |
-| 10.000€ | 0,90€ | 0€ | 3,20€ |
+| ETF de la Selección Principal (todos los de Tradegate) | 0 € | 1 € | **1 €** |
+| Resto de ETF | 2 € | 1 € | **3 €** |
+| Acciones de la Bolsa de Madrid | 1 € | 1 € | 2 € |
+| Acciones de EE. UU. | 1 € | 1 € | 2 € |
 
-Trade Republic gana en comisiones puras para cualquier importe. ¿Por qué alguien elegiría DEGIRO? Por lo que ofrece que Trade Republic no tiene.
+La **Selección Principal** incluye más de 1.000 ETF, ETC y ETN, entre ellos el VWCE, el IWDA y el CSPX.
 
-**ETFs con 0€ de comisión**: DEGIRO mantiene una lista mensual de ETFs por los que no cobra comisión de compra (una operación gratuita al mes por ETF). La lista cambia cada mes y tiene restricciones, así que no te fíes de ella como fuente principal de ahorro. Verifica siempre en la web oficial antes de operar.
+Además:
 
----
+- **Custodia**: 0 €.
+- **Conectividad**: el 0,25 % del valor de la cuenta, con un máximo de **2,50 € al año por cada bolsa** en la que operes, salvo la de Madrid. Quien compra solo en Tradegate paga, como mucho, 2,50 € al año.
+- **Cambio de divisa**: 0,25 %.
 
-## Los 50+ bolsas: la gran ventaja
+Así queda frente a otros brókers en una orden suelta de ETF (web de cada uno, 30-sep-2026):
 
-DEGIRO conecta a 50+ bolsas mundiales. La lista incluye:
+| Importe de la orden | DEGIRO (Selección Principal) | Trade Republic | MyInvestor |
+|---|---|---|---|
+| 100 € | 1 € | 1 € | 1 € |
+| 500 € | 1 € | 1 € | 1 € |
+| 2.000 € | 1 € | 1 € | 2,40 € |
+| 10.000 € | 1 € | 1 € | 12 € |
 
-- Euronext (Ámsterdam, Bruselas, París, Lisboa)
-- Xetra (Alemania)
-- LSE (Londres)
-- NYSE y NASDAQ (EE.UU.)
-- Tokyo Stock Exchange (Japón)
-- Hong Kong Exchange
-- Australian Securities Exchange
-- Bolsas de Singapur, Corea, India y muchas más
-
-Para el inversor indexado con una cartera de VWCE y AGGH, esto es irrelevante: esos ETFs están en Euronext y Xetra. Pero si quieres acceder a ETFs concretos no disponibles en Trade Republic, DEGIRO abre puertas.
+MyInvestor cobra el 0,12 % con un mínimo de 1 € y un máximo de 25 €. Trade Republic, además, no cobra en sus planes de inversión periódicos.
 
 ---
 
-## Seguridad: cuenta básica vs cuenta Custody
+## Acceso a muchas bolsas
 
-Este es el punto que más debate genera sobre DEGIRO y merece explicación clara.
-
-**Cuenta básica**: DEGIRO puede prestar tus valores a terceros (préstamo de valores). A cambio, recibes una pequeña compensación. El riesgo teórico: si el prestatario quiebra, podría haber demora en devolver tus activos. En la práctica, DEGIRO cubre este riesgo con colateral, pero introduce una capa de complejidad que muchos inversores prefieren evitar.
-
-**Cuenta Custody**: los valores están en cuentas segregadas y NO se prestan. Es el equivalente a "tus activos son exactamente tuyos, sin préstamos terceros". Las comisiones de custodia son algo más altas, pero para carteras a largo plazo la diferencia es pequeña.
-
-**Recomendación**: si abres DEGIRO, elige Custody. La diferencia de coste es marginal para el inversor indexado a largo plazo, y la segregación es más limpia.
-
-**¿Es seguro DEGIRO?** Sí. La combinación de regulación AFM (Países Bajos) + BaFin (Alemania, vía flatexDEGIRO Bank AG) + segregación de activos + Fondo de Garantía de Inversiones holandés (20.000€) crea una protección sólida. La cobertura de 20.000€ es inferior a la de Trade Republic (100.000€ vía ESIF) o MyInvestor (100.000€ vía FGD), pero para la mayoría de inversores particulares con carteras en fase de construcción, el riesgo práctico es muy bajo.
+DEGIRO conecta con bolsas de Europa, EE. UU. y Asia: Euronext, Xetra, Londres, Nueva York, Tokio o Hong Kong, entre otras. Para una cartera de VWCE y un fondo de bonos da igual, porque esos ETF cotizan en Europa. Para quien busca ETF o acciones que no están en otros brókers, es su ventaja más clara.
 
 ---
 
-## Sin planes de ahorro automáticos
+## Seguridad: cuenta estándar o Custody
 
-Esta es la limitación más importante para el inversor Boglehead que quiere automatizar el DCA mensual. **DEGIRO no tiene planes de ahorro automáticos**: no puedes programar una compra mensual de VWCE el día 1 de cada mes. Cada compra requiere que entres manualmente, pongas la orden y la ejecutes.
+En las **cuentas estándar** (Basic, Active o Trader), DEGIRO puede prestar tus valores a terceros (préstamo de valores). En la **cuenta Custody** no los presta. Según su web, las dos tienen tarifas con algunas diferencias, que publica en dos relaciones de tarifas distintas.
 
-Para quien lleva una cartera grande con aportaciones esporádicas, esto es irrelevante. Para quien quiere aportar 200€ al mes sin pensar, Trade Republic es claramente superior en este aspecto.
+La combinación de regulación de la AFM, supervisión de BaFin sobre la matriz, segregación de los valores de los clientes y el sistema de indemnización de inversores holandés (hasta **20.000 €** si el bróker quiebra) es la protección de DEGIRO. La cobertura de 20.000 € es inferior a los 100.000 € del Fondo de Garantía de Inversiones español que cubre a una entidad española como MyInvestor.
+
+---
+
+## Sin planes de inversión automáticos
+
+DEGIRO **no anuncia planes de inversión periódicos**: cada compra hay que hacerla a mano. Para quien aporta de golpe y de vez en cuando da igual; para quien quiere aportar una cantidad fija cada mes sin intervenir, Trade Republic, Scalable Capital o XTB tienen planes sin comisión.
 
 ---
 
 ## Sin cuenta remunerada
 
-DEGIRO no remunera el saldo en euros en cuenta corriente. Si tienes 5.000€ en liquidez esperando invertir, no genera nada en DEGIRO. Trade Republic remunera al ~2-2,5% TAE sin condiciones; MyInvestor al 2% TAE el primer año.
+En su página de tarifas no aparece remuneración del saldo en efectivo. Trade Republic, MyInvestor, XTB o Scalable sí anuncian cuenta remunerada, a tipo variable.
 
 ---
 
-## Tipos de órdenes avanzadas
+## Tipos de órdenes
 
-Para el inversor técnico, DEGIRO ofrece:
-- Órdenes límite (comprar/vender a un precio máximo/mínimo)
-- Órdenes stop (se activan al alcanzar un precio)
-- Órdenes stop-limit
-- Órdenes GTC (Good Till Cancelled)
-- Órdenes IOC (Immediate or Cancel)
-
-Trade Republic solo permite órdenes de mercado y stop básicas. Para quien gestiona una cartera compleja con varios activos, DEGIRO es más profesional.
+DEGIRO ofrece órdenes límite, stop, stop-limit y órdenes con validez hasta cancelación, entre otras. Para quien gestiona una cartera con varios activos y quiere controlar el precio de entrada, es una herramienta completa.
 
 ---
 
-## Para quién es DEGIRO la mejor opción
+## Para quién encaja DEGIRO
 
-**Elige DEGIRO si:**
-- Tu cartera supera los 100.000€ y quieres diversificación de broker (no tenerlo todo en Trade Republic)
-- Necesitas acceso a ETFs o acciones de mercados no disponibles en Trade Republic (Japón, Corea, ETFs nicho)
-- Quieres tipos de órdenes avanzadas (stop-loss, órdenes límite para entradas específicas)
-- Ya tienes una cartera grande y las comisiones fijas de 0,90€ te importan menos
+**Encaja con quien:**
+- Compra ETF de la Selección Principal con órdenes sueltas (1 € por operación).
+- Necesita bolsas o productos que no están en otros brókers.
+- Quiere tipos de órdenes avanzadas.
 
-**No elijas DEGIRO si:**
-- Quieres aportaciones automáticas mensuales sin intervención
-- Empiezas con menos de 200€/mes (la comisión de 0,90€ es más cara relativamente)
-- Quieres fondos indexados con traspaso fiscal (DEGIRO no los ofrece)
-- Buscas la cuenta remunerada más alta del mercado
+**Encaja peor con quien:**
+- Quiere aportaciones automáticas mensuales sin intervenir.
+- Quiere fondos indexados con traspaso sin tributar (DEGIRO no los ofrece con ese régimen).
+- Quiere que el efectivo sin invertir genere intereses.
 
 ---
 
-## DEGIRO en una estrategia Boglehead combinada
+## DEGIRO junto a otro bróker
 
-Muchos inversores españoles con carteras ya consolidadas optan por dividir entre dos brokers:
+Hay quien reparte entre dos brókers: uno con planes de inversión automáticos para la aportación mensual y DEGIRO para operaciones puntuales en productos concretos. Con la Selección Principal a 1 €, el coste de una orden suelta en DEGIRO es el mismo que en Trade Republic; lo que cambia es la conectividad y la ausencia de planes automáticos.
 
-- **Trade Republic**: para las aportaciones mensuales automáticas de DCA (0€, automático, simple)
-- **DEGIRO**: para operaciones puntuales en activos específicos o cuando quieren diversificar el riesgo de contrapartida
-
-El truco es que DEGIRO, al cobrar 0,90€ mínimo, solo merece la pena para órdenes de más de 1.000€ (donde la comisión relativa cae por debajo del 0,1%). Para aportaciones pequeñas, Trade Republic gana sin discusión.
-
-Para una comparativa numérica detallada del coste anual de cada broker según tu patrón de inversión, usa el [comparador de brókers de BogleHub](/calculadora/comparar-brokers).
+Para calcular el coste anual de cada bróker según tu patrón de inversión, está el [comparador de brókers de BogleHub](/calculadora/comparar-brokers).
 
 ---
 
 ## Fuentes y lecturas complementarias
 
-- [DEGIRO — Tarifas oficiales 2026](https://www.degiro.es/tarifas) — Verifica las comisiones actuales antes de operar, pueden cambiar.
-- [AFM — Registro de entidades](https://www.afm.nl) — Verifica el registro de DEGIRO como empresa de inversión supervisada en Países Bajos.
-- [BaFin — Registro de flatexDEGIRO Bank AG](https://www.bafin.de) — Supervisión bancaria de la matriz de DEGIRO.
-- [DEGIRO vs Trade Republic vs MyInvestor — BogleHub](/blog/degiro-vs-trade-republic-vs-myinvestor-2026) — Comparativa detallada de los tres brokers más usados por inversores indexados en España.
+- [DEGIRO: tarifas](https://www.degiro.es/tarifas) — Comisiones, tramitación, conectividad y custodia (tarifas del 1-oct-2025, consultadas el 30-sep-2026).
+- [DEGIRO: Selección Principal de ETF](https://www.degiro.es/tarifas/etf-core-selection) — 1 € por operación en todos los ETF, ETC y ETN de Tradegate.
+- [AFM: registro de entidades](https://www.afm.nl) — Registro de DEGIRO como empresa de inversión supervisada en Países Bajos.
+- [BaFin: registro de flatexDEGIRO Bank AG](https://www.bafin.de) — Supervisión bancaria de la matriz de DEGIRO.
+- [DEGIRO vs Trade Republic vs MyInvestor — BogleHub](/blog/degiro-vs-trade-republic-vs-myinvestor-2026) — Comparativa de los tres brókers más usados por inversores indexados en España.
 `,
   },
   {
     slug: 'xtb-opinion-2026',
     title: 'XTB: opinión y análisis completo para inversores en España (2026)',
     excerpt:
-      'XTB cobra 0€ en ETFs hasta 100.000€/mes, regulado por la CNMV y con una cuenta remunerada de las más altas. Comisiones, seguridad y para quién encaja.',
+      'XTB cobra 0 € en ETF hasta 100.000 € al mes, tiene planes de inversión sin comisión y sucursal supervisada por la CNMV. Comisiones, seguridad y para quién encaja.',
     publishedAt: '2026-05-30',
+    updatedAt: '2026-09-30',
     readingMinutes: 8,
     keywords: ['XTB opinión', 'XTB seguridad', 'XTB ETFs España 2026', 'XTB cuenta remunerada', 'XTB vs Trade Republic'],
     faq: [
@@ -9311,21 +9212,21 @@ Para una comparativa numérica detallada del coste anual de cada broker según t
         a: '0€ hasta 100.000€ de volumen mensual en ETFs. Por encima de ese umbral, cobra 0,2% del importe con un mínimo de 10€ por operación. Para el inversor particular que aporta mensualmente unos cientos o pocos miles de euros, XTB equivale en la práctica a 0€ de comisión.',
       },
       {
-        q: '¿Cuál es la cuenta remunerada de XTB en 2026?',
-        a: 'La cuenta remunerada de XTB en euros suele estar en torno al 3% TAE en 2026, una de las más altas del mercado europeo de brokers. Las condiciones específicas (saldo máximo, requisitos) cambian periódicamente; verifica siempre las condiciones actuales en la web oficial antes de abrir cuenta.',
+        q: '¿Tiene XTB cuenta remunerada?',
+        a: 'Sí. XTB remunera el capital no invertido a tipo variable. El tipo y las condiciones (saldo máximo, requisitos) cambian a menudo, así que conviene mirarlos en su web.',
       },
       {
         q: '¿XTB ofrece planes de ahorro automáticos como Trade Republic?',
-        a: 'Sí. XTB tiene planes de inversión automáticos (denominados "planes de inversión") desde 15€ al mes. Permiten programar compras periódicas en ETFs. La automatización es similar a Trade Republic, aunque la plataforma es algo más técnica.',
+        a: 'Sí. XTB tiene planes de inversión que permiten programar compras periódicas de ETF y acciones, sin comisión hasta 100.000 € al mes; se pueden tener hasta 10 a la vez. La automatización es similar a la de Trade Republic, aunque la plataforma es algo más técnica.',
       },
       {
-        q: '¿Para quién es mejor XTB que Trade Republic?',
-        a: 'XTB puede tener ventaja cuando: quieres regulación directa de la CNMV española, buscas la cuenta remunerada más alta del mercado, ya usas o necesitas CFDs o forex y quieres tenerlo todo en una plataforma, o prefieres una plataforma más completa (xStation) con más herramientas de análisis. Para inversión indexada pura con aportaciones pequeñas, Trade Republic es más sencillo.',
+        q: '¿Qué diferencia hay entre XTB y Trade Republic?',
+        a: 'En órdenes sueltas de ETF, XTB no cobra hasta 100.000 € al mes y Trade Republic cobra 1 €; en los planes de inversión periódicos, ninguno de los dos cobra. XTB tiene sucursal supervisada por la CNMV, la plataforma xStation y además CFD y forex; Trade Republic es un banco alemán con sucursal en España y una app más sencilla.',
       },
     ],
     content: `# XTB: opinión y análisis completo para inversores en España (2026)
 
-XTB es uno de los brokers con mayor crecimiento en España en los últimos años. Fundado en Polonia en 2002, cotiza en la Bolsa de Varsovia (empresa pública, con obligación de transparencia financiera) y tiene sucursal directamente supervisada por la CNMV en España. Su propuesta para el inversor indexado: 0€ de comisión en ETFs hasta 100.000€ de volumen mensual y una de las cuentas remuneradas más altas del mercado europeo.
+XTB es uno de los brokers con mayor crecimiento en España en los últimos años. Fundado en Polonia en 2002, cotiza en la Bolsa de Varsovia (empresa pública, con obligación de transparencia financiera) y tiene sucursal directamente supervisada por la CNMV en España. Su propuesta para el inversor indexado: 0 € de comisión en ETF hasta 100.000 € de volumen mensual y planes de inversión sin comisión.
 
 ---
 
@@ -9355,28 +9256,28 @@ Por encima de 100.000€ de volumen mensual, la comisión es del 0,2% del import
 
 **Comparación práctica:**
 
-| Importe de orden | XTB | Trade Republic | DEGIRO |
-|---|---|---|---|
-| 200€ | 0€ | 0€ | 0,90€ |
-| 1.000€ | 0€ | 0€ | 0,54€ |
-| 5.000€ | 0€ | 0€ | 0,70€ |
-| 50.000€ | 0€ | 0€ | 2,50€ |
+Comparación con una orden suelta de ETF (web de cada bróker, 30-sep-2026):
 
-Para la mayoría de inversores particulares, XTB y Trade Republic empatan en comisiones a 0€.
+| Importe de orden | XTB | Trade Republic | DEGIRO (Selección Principal) |
+|---|---|---|---|
+| 200 € | 0 € | 1 € | 1 € |
+| 1.000 € | 0 € | 1 € | 1 € |
+| 5.000 € | 0 € | 1 € | 1 € |
+| 50.000 € | 0 € | 1 € | 1 € |
+
+En órdenes sueltas, XTB no cobra hasta 100.000 € al mes; Trade Republic y DEGIRO cobran 1 €. Con planes de inversión periódicos, ni XTB ni Trade Republic cobran; DEGIRO no anuncia planes automáticos. El cambio de divisa en XTB cuesta un 0,5 %.
 
 ---
 
-## La cuenta remunerada: una de las más altas del mercado
+## La cuenta remunerada
 
-En 2026, XTB ofrece una cuenta de ahorro en euros con **~3% TAE**, sin condiciones de nómina ni domiciliación. Las condiciones específicas cambian con la política del BCE, así que verifica siempre la tasa vigente en la web oficial antes de tomar decisiones.
-
-Esta tasa supera generalmente a la de Trade Republic (~2-2,5% TAE) y a la de MyInvestor (~2% TAE el primer año con condiciones). Para quien tiene liquidez que no quiere invertir aún, esta diferencia puede ser relevante.
+XTB remunera el **capital no invertido** a tipo variable. El tipo y las condiciones cambian con la política del BCE y con las ofertas de cada momento, así que conviene mirarlos en su web. Trade Republic, MyInvestor y Scalable también anuncian cuenta remunerada a tipo variable.
 
 ---
 
 ## Planes de inversión automáticos
 
-XTB tiene **planes de inversión periódicos** desde 15€ al mes en ETFs. Puedes programar compras automáticas con la frecuencia que elijas, similar a los planes de ahorro de Trade Republic.
+XTB tiene **planes de inversión periódicos** en ETF y acciones, sin comisión hasta 100.000 € al mes. Se pueden programar compras automáticas con la frecuencia que se elija, como en los planes de Trade Republic, y tener hasta 10 planes a la vez.
 
 La automatización cubre la mayoría de ETFs UCITS disponibles en la plataforma. Para el inversor Boglehead que quiere implementar DCA mensual sin intervenir, XTB permite hacerlo.
 
@@ -9402,39 +9303,38 @@ Para el inversor indexado puro que busca simplicidad, xStation tiene más funcio
 
 **Segregación de activos**: los activos de clientes están separados del balance de XTB. En caso de insolvencia del broker, los activos no forman parte de la masa concursal.
 
-**Fondo de Garantía**: el Fondo de Garantía de Inversiones polaco cubre hasta 20.000€ por cliente (mismo nivel que DEGIRO, inferior a Trade Republic con 100.000€ y MyInvestor con 100.000€).
+**Fondo de Garantía**: el Fondo de Garantía de Inversiones polaco cubre hasta 20.000 € por cliente, el mismo nivel que DEGIRO. En una entidad española, como MyInvestor, el Fondo de Garantía de Inversiones cubre hasta 100.000 €.
 
 ---
 
-## XTB vs Trade Republic: cómo elegir
+## XTB y Trade Republic, lado a lado
 
 | Característica | XTB | Trade Republic |
 |---|---|---|
-| Comisión ETFs | 0€ (hasta 100k€/mes) | 0€ (sin límite) |
-| Planes de ahorro automáticos | ✓ (desde 15€) | ✓ (desde 1€) |
-| Cuenta remunerada | ~3% TAE | ~2-2,5% TAE |
+| Comisión ETF (orden suelta) | 0 € (hasta 100.000 €/mes) | 1 € |
+| Planes de inversión automáticos | ✓ sin comisión | ✓ sin comisión (desde 1 €) |
+| Cuenta remunerada | Sí (tipo variable) | Sí (tipo variable) |
 | Regulador en España | CNMV (directo) | BaFin Alemania |
-| Fondo de garantía | 20.000€ (KNF Polonia) | 100.000€ (ESIF EU) |
+| Garantía | Inversiones: 20.000 € (Polonia) | Depósitos: 100.000 € |
 | Fondos indexados | ✗ | ✗ |
 | Plataforma | xStation (más completa) | App simple (más fácil) |
 | Acceso a mercados | Amplio (acciones, ETFs, CFDs) | ETFs y acciones europeas/US |
 
-**Elige XTB si:**
-- La regulación directa de CNMV en España es importante para ti
-- Quieres la cuenta remunerada más alta del mercado
-- Ya usas o te interesan CFDs/forex y quieres una sola plataforma
-- Prefieres una plataforma con más herramientas de análisis
+**XTB encaja con quien:**
+- Da órdenes sueltas de ETF y no quiere pagar comisión por cada una.
+- Quiere una sucursal supervisada por la CNMV.
+- Usa también CFD o forex y quiere una sola plataforma, o valora las herramientas de xStation.
 
-**Elige Trade Republic si:**
-- Quieres la máxima simplicidad y la app más intuitiva
-- Priorizas la mayor cobertura del fondo de garantía (100.000€)
-- Quieres planes de ahorro desde 1€ (XTB requiere mínimo 15€)
+**Trade Republic encaja con quien:**
+- Quiere una app sencilla.
+- Aporta con planes de inversión desde 1 €.
+- Quiere una entidad con sucursal en España que informe a Hacienda de sus operaciones.
 
 ---
 
 ## Limitaciones de XTB para el inversor indexado
 
-**No ofrece fondos indexados**: igual que Trade Republic, XTB solo tiene ETFs. Si quieres aprovechar el [traspaso fiscal entre fondos](/blog/como-hacer-traspaso-fondos-espana), necesitas MyInvestor.
+**No ofrece fondos indexados con traspaso sin tributar**: para el [traspaso fiscal entre fondos](/blog/como-hacer-traspaso-fondos-espana) hace falta una entidad que comercialice fondos en España, como MyInvestor.
 
 **La plataforma puede ser confusa para principiantes**: los CFDs y los derivados aparecen en la misma interfaz que los ETFs. Es fácil confundirse y comprar el CFD de un índice en lugar del ETF equivalente. Asegúrate de comprar siempre en la sección ETFs, no CFDs.
 
@@ -9444,7 +9344,7 @@ Para el inversor indexado puro que busca simplicidad, xStation tiene más funcio
 
 ## Conclusión práctica
 
-XTB es una opción sólida para el inversor indexado en España, especialmente si valoras la supervisión directa de la CNMV, la cuenta remunerada alta o la plataforma más completa. La propuesta de 0€ en ETFs hasta 100.000€/mes y los planes de inversión automáticos cubren las necesidades del inversor Boglehead de largo plazo.
+XTB no cobra comisión en ETF hasta 100.000 € al mes, tampoco en sus planes de inversión periódicos, y tiene sucursal supervisada por la CNMV. Sus diferencias con otros brókers están en la garantía de 20.000 €, la plataforma xStation y la ausencia de fondos indexados con traspaso.
 
 Para comparar XTB con los otros brokers populares según tu patrón real de inversión, usa el [comparador de brókers de BogleHub](/calculadora/comparar-brokers).
 
@@ -9454,7 +9354,7 @@ Para comparar XTB con los otros brokers populares según tu patrón real de inve
 
 - [XTB — Web oficial para España](https://www.xtb.com/es) — Comisiones actualizadas, plataforma y condiciones de la cuenta remunerada.
 - [CNMV — Registro de XTB en España](https://www.cnmv.es) — Verifica el registro de la sucursal española de XTB como empresa de servicios de inversión supervisada por la CNMV.
-- [DEGIRO opinión 2026 — BogleHub](/blog/degiro-opinion-2026) — Análisis de DEGIRO, el broker técnico con acceso a 50+ bolsas y su diferencia con XTB.
+- [DEGIRO opinión 2026 — BogleHub](/blog/degiro-opinion-2026) — Análisis de DEGIRO, el bróker con acceso a muchas bolsas, y su diferencia con XTB.
 - [DEGIRO vs Trade Republic vs MyInvestor — BogleHub](/blog/degiro-vs-trade-republic-vs-myinvestor-2026) — Comparativa completa de los tres brokers más usados por inversores indexados.
 `,
   },
@@ -9462,306 +9362,294 @@ Para comparar XTB con los otros brokers populares según tu patrón real de inve
     slug: 'scalable-capital-opinion-2026',
     title: 'Scalable Capital: opinión y análisis para inversores en España (2026)',
     excerpt:
-      'Scalable Capital ofrece 0€ en ETFs con el plan Prime, cuenta remunerada hasta el 4% TAE y regulación BaFin. Cuándo compensa frente a Trade Republic o DEGIRO.',
+      'Scalable Capital: planes de inversión sin comisión, 0 € al comprar ETF de las grandes gestoras desde 250 €, plan PRIME+ por 4,99 €/mes y efectivo al 2,63 % TAE. Qué cuesta y para quién encaja.',
     publishedAt: '2026-05-30',
+    updatedAt: '2026-09-30',
     readingMinutes: 7,
     keywords: ['Scalable Capital opinión', 'Scalable Capital España', 'Scalable Capital Prime', 'Scalable Capital ETFs 2026', 'Scalable Capital vs Trade Republic'],
     faq: [
       {
         q: '¿Vale la pena el plan Prime de Scalable Capital?',
-        a: 'Depende del volumen de operaciones y del saldo en cuenta. Si haces varias operaciones al mes y tienes más de 10.000-20.000€ en cuenta remunerada al 4%, el ahorro en comisiones y los intereses pueden compensar la suscripción mensual (~4,99€). Para una única aportación mensual de unos cientos de euros, Trade Republic sin suscripción es más sencillo y barato.',
+        a: 'Depende de cómo se invierta. Según su web (30-sep-2026), los planes de inversión periódicos no tienen comisión en ningún plan, y en el plan gratuito (FREE) comprar ETF de Amundi, iShares, Vanguard o Xtrackers desde 250 € tampoco. PRIME+ cuesta 4,99 € al mes y deja a 0 € cualquier orden desde 250 €; por debajo de 250 €, los dos planes cobran 0,99 €. PRIME+ también reparte el efectivo en hasta cinco bancos con garantía de depósitos. Quien solo aporta con planes o compra ETF de esas gestoras en órdenes de 250 € o más no paga comisión en el plan FREE.',
       },
       {
         q: '¿Es seguro Scalable Capital?',
-        a: 'Sí. Scalable Capital es un neobanco alemán con licencia bancaria completa, regulado por el BaFin (el regulador alemán de mercados financieros). Los depósitos en euros hasta 100.000€ están cubiertos por el Fondo de Garantía de Depósitos alemán. Las inversiones (ETFs, acciones) están custodiadas como patrimonio separado del broker hasta 20.000€ adicionales por el Fondo de Garantía de Inversiones alemán.',
+        a: 'Scalable Capital es un banco alemán supervisado por BaFin. El efectivo está cubierto por los sistemas legales de garantía de depósitos hasta 100.000 € por banco; con PRIME+, el saldo se reparte en hasta cinco bancos (hasta 5 × 100.000 €). Las inversiones se custodian como patrimonio separado del banco.',
       },
       {
         q: '¿Cuánto rinde la cuenta remunerada de Scalable Capital?',
-        a: 'Con el plan Prime, Scalable Capital ofrecía hasta el 4% TAE en 2026, una de las tasas más altas del mercado europeo. Sin plan Prime, la tasa es inferior. Las condiciones varían con la política del BCE; verifica la tasa vigente en la web oficial antes de abrir cuenta.',
+        a: 'El 30 de septiembre de 2026 su web anunciaba un 2,63 % TAE variable (2,60 % TIN) sobre saldos ilimitados, igual en el plan FREE que en PRIME+: el tipo de la facilidad de depósito del BCE más un 0,10 %, con un tope del 2,60 %. Cambia con los tipos del BCE.',
       },
       {
         q: '¿Scalable Capital tiene planes de ahorro automáticos?',
-        a: 'Sí, Scalable Capital tiene planes de inversión periódicos (Sparplan) en ETFs disponibles en España. Con el plan Prime, los planes de ahorro no tienen comisión adicional. Sin Prime, puede haber comisión de 0,99€ por ejecución del plan.',
+        a: 'Sí. Tiene planes de inversión periódicos en ETF, acciones, criptomonedas y fondos desde 1 €, y su web dice que su ejecución no tiene comisión en ninguno de los dos planes.',
       },
       {
-        q: '¿Scalable Capital vs Trade Republic: cuál elegir?',
-        a: 'Trade Republic: más simple, 0€ sin suscripción, ideal para aportación mensual única pequeña. Scalable Capital Prime: tiene sentido si combinas operaciones frecuentes (más de 5 al mes) con saldo alto en cuenta remunerada (>15.000€). Ambos son seguros, alemanes y regulados por BaFin.',
+        q: '¿Qué diferencia hay entre Scalable Capital y Trade Republic?',
+        a: 'Los dos son bancos alemanes supervisados por BaFin y los dos tienen planes de inversión sin comisión. En órdenes sueltas, Trade Republic cobra 1 €; Scalable cobra 0,99 €, o 0 € en su plan FREE al comprar ETF de Amundi, iShares, Vanguard o Xtrackers desde 250 €. Scalable tiene además un plan de cuota mensual (PRIME+) y fondos de inversión sin comisión de emisión.',
       },
     ],
     content: `# Scalable Capital: opinión y análisis para inversores en España (2026)
 
-Scalable Capital es quizás el broker europeo menos conocido entre los inversores indexados españoles, pero merece atención: es el único con un modelo de suscripción mensual que puede hacer que las comisiones por ETFs desaparezcan por completo, y ofrece una de las cuentas remuneradas más altas del mercado. Fundado en Múnich en 2014, tiene licencia bancaria alemana completa y está disponible en España.
+> **Corrección del 30 de septiembre de 2026.** Este artículo decía que Scalable pagaba «hasta el 4 % TAE» con su plan Prime, que sin ese plan cada ejecución de un plan de ahorro costaba 0,99 € y que no ofrecía fondos. Según su web, el efectivo rinde un 2,63 % TAE igual en los dos planes, los planes de inversión no tienen comisión en ninguno y ofrece más de 2.600 fondos. Lo hemos rehecho con su web.
+
+Scalable Capital es un banco alemán fundado en Múnich en 2014, disponible en España. Tiene dos planes, uno gratuito y otro de cuota mensual, y planes de inversión periódicos sin comisión en los dos. Este análisis, sin afiliación, explica qué cobra y en qué se diferencia de los brókers que más usa quien invierte indexado.
 
 ---
 
 ## Quién es Scalable Capital
 
-Scalable Capital nació como roboadvisor antes de evolucionar a broker. Hoy ofrece ambos servicios. La empresa está regulada por el BaFin (Bundesanstalt für Finanzdienstleistungsaufsicht), el regulador financiero alemán, y tiene licencia bancaria completa — igual que Trade Republic. Está disponible en Alemania, Austria, Francia, Italia, España y otros países de la UE.
-
-Su diferencia más notable frente a Trade Republic o DEGIRO es el modelo de precios: en lugar de cobrar por operación, ofrece **planes de suscripción mensual** que dan acceso a operaciones ilimitadas.
+Scalable Capital nació como roboadvisor y hoy es también bróker. Está supervisado por **BaFin**, el regulador financiero alemán, y opera como banco. Según su web, ofrece más de 2.300 ETF, más de 8.000 acciones y más de 2.600 fondos de inversión sin cargos de emisión.
 
 ---
 
-## El modelo de suscripción: plan gratuito vs plan Prime
+## Los dos planes: FREE y PRIME+
 
-**Plan gratuito (Free)**:
-- Compra y venta de ETFs: **0,99€ por operación**
-- Cuenta remunerada: tipo más bajo
-- Planes de ahorro en ETFs: 0,99€ por ejecución
+Según su web, a 30 de septiembre de 2026:
 
-**Plan Prime** (~4,99€/mes, verificar precio vigente en web):
-- Compra y venta de ETFs: **0€** (ilimitadas)
-- Cuenta remunerada: hasta el 4% TAE
-- Planes de ahorro en ETFs: 0€
+| | FREE | PRIME+ |
+|---|---|---|
+| Cuota | 0 € | 4,99 € al mes |
+| Orden de 250 € o más | 0,99 €; **0 €** al comprar ETF de Amundi, iShares, Vanguard y Xtrackers | **0 €** |
+| Orden de menos de 250 € | 0,99 € | 0,99 € |
+| Planes de inversión | **0 €** | **0 €** |
+| Cripto ETP | 0,99 % | 0,69 % |
+| Efectivo | 2,63 % TAE | 2,63 % TAE |
 
-### ¿Cuándo compensa el plan Prime?
+### Cuándo cambia algo el plan PRIME+
 
-El break-even del plan Prime depende de cuántas operaciones hagas y cuánto tengas en cuenta remunerada.
+Para quien aporta con **planes de inversión**, los dos planes cuestan lo mismo en comisiones: nada. Para quien compra ETF de Amundi, iShares, Vanguard o Xtrackers en **órdenes de 250 € o más**, el plan FREE tampoco cobra. PRIME+ deja a 0 € las órdenes de 250 € o más de cualquier otro producto, y reparte el efectivo en hasta cinco bancos con garantía de depósitos.
 
-**Por operaciones**: si haces más de 5 compras al mes, el plan Prime ya ahorra dinero: 5 × 0,99€ = 4,95€ de comisiones frente a 4,99€ de suscripción.
-
-**Por cuenta remunerada**: si tienes 15.000€ en cuenta al 4% TAE frente al 2% de Trade Republic, la diferencia de intereses es 300€/año (25€/mes) — muy por encima del coste de la suscripción. Para saldos grandes, el Prime se amortiza solo.
-
-**Conclusión práctica**:
-
-| Perfil | Veredicto |
-|---|---|
-| Aportación mensual única pequeña (<500€) | Trade Republic más sencillo |
-| 5+ operaciones al mes | Prime puede compensar |
-| >15.000€ en cuenta remunerada | Prime compensa por intereses |
-| Aportación mensual + saldo alto | Prime claramente ganador |
+Por debajo de 250 €, una orden suelta cuesta 0,99 € en los dos planes.
 
 ---
 
-## Cuenta remunerada: la más alta del mercado
+## Cuenta remunerada
 
-Con el plan Prime, Scalable Capital ofrece hasta el **4% TAE** sobre el saldo en cuenta en euros (tipo variable, ligado a la política del BCE). Esta tasa supera a Trade Republic (~2-2,5%) y a MyInvestor (~2% TAE el primer año con condiciones).
-
-La cuenta remunerada de Scalable Capital no tiene límite de saldo remunerado, lo que la hace especialmente interesante para inversores con liquidez alta entre operaciones.
-
-Verificar siempre la tasa vigente en la web oficial — cambia con las decisiones del BCE.
+El 30 de septiembre de 2026, Scalable anunciaba un **2,63 % TAE variable** (2,60 % TIN) sobre saldos ilimitados de su cuenta de ahorro, **igual en FREE que en PRIME+**. El tipo es el de la facilidad de depósito del BCE más un 0,10 %, con un tope del 2,60 %, así que cambia con los tipos del BCE.
 
 ---
 
-## Planes de ahorro automáticos
+## Planes de inversión automáticos
 
-Scalable Capital tiene **Sparplans** (planes de ahorro periódicos) disponibles en España sobre más de 2.500 ETFs. Con el plan Prime, la ejecución de estos planes no tiene comisión adicional. Sin Prime, cada ejecución cuesta 0,99€.
-
-Para el inversor indexado que quiere DCA mensual automático con plan Prime, Scalable Capital es una alternativa sólida a Trade Republic.
+Scalable tiene **planes de inversión periódicos** en ETF, acciones, criptomonedas y fondos, desde 1 €. Según su web, su ejecución no tiene comisión en ninguno de los dos planes. Para quien quiere aportar una cantidad fija cada mes sin intervenir, es la misma idea que los planes de Trade Republic o XTB.
 
 ---
 
 ## Seguridad
 
-**Regulación**: BaFin alemán — mismo regulador que Trade Republic, uno de los más exigentes de Europa.
+**Regulación**: BaFin, el mismo supervisor que Trade Republic.
 
-**Licencia bancaria completa**: Scalable Capital obtuvo licencia bancaria en 2021. Los depósitos están cubiertos por el Fondo de Garantía de Depósitos alemán hasta **100.000€** (igual que Trade Republic, más que DEGIRO con 20.000€ y mejor que la media).
+**Efectivo**: cubierto por los sistemas legales de garantía de depósitos hasta 100.000 € por banco. Con PRIME+, el saldo se reparte en hasta cinco bancos (hasta 5 × 100.000 €); sin PRIME+, puede repartirse en bancos con garantía de depósitos o en fondos del mercado monetario.
 
-**Inversiones**: custodiadas como patrimonio separado del banco, cubierto por el Fondo de Garantía de Inversiones hasta 20.000€ adicionales.
+**Inversiones**: custodiadas como patrimonio separado del banco.
 
 ---
 
 ## Limitaciones
 
-**Sin fondos indexados**: igual que Trade Republic y DEGIRO, Scalable Capital solo ofrece ETFs. No puedes comprar fondos con [traspaso fiscal libre entre fondos](/blog/como-hacer-traspaso-fondos-espana) como en MyInvestor.
+**Traspaso entre fondos**: Scalable ofrece fondos de inversión, pero no anuncia el régimen español de [traspaso entre fondos sin tributar](/blog/como-hacer-traspaso-fondos-espana), que tramitan las entidades que comercializan fondos en España, como MyInvestor.
 
-**El coste del plan Prime hay que ganarlo**: si no operas con frecuencia ni tienes saldo alto, el plan Free con 0,99€ por operación no es competitivo con Trade Republic (0€ siempre).
-
-**Menos conocido en España**: la comunidad Boglehead española habla más de Trade Republic, MyInvestor y DEGIRO. El soporte y la documentación en español son más limitados.
+**Órdenes sueltas pequeñas**: por debajo de 250 €, cada orden cuesta 0,99 €.
 
 ---
 
-## Scalable Capital vs Trade Republic: la decisión práctica
+## Scalable Capital y Trade Republic, lado a lado
 
-Si tienes que elegir entre los dos brokers alemanes regulados por BaFin:
+| | Scalable Capital (FREE) | Trade Republic |
+|---|---|---|
+| Planes de inversión | Sin comisión | Sin comisión |
+| Orden suelta de ETF | 0,99 €; 0 € desde 250 € en ETF de las grandes gestoras | 1 € |
+| Cuota | 0 € (PRIME+: 4,99 €/mes) | 0 € |
+| Efectivo | 2,63 % TAE (30-sep-2026) | Tipo variable |
+| Supervisor | BaFin | BaFin |
 
-- **Trade Republic**: elige si quieres simplicidad máxima, operaciones siempre a 0€ sin suscripción y cuenta remunerada sin condiciones. Ideal para aportaciones pequeñas y periódicas sin más.
-- **Scalable Prime**: elige si haces varias operaciones al mes, tienes saldo considerable en cuenta remunerada o quieres la tasa de interés más alta del mercado.
-
-Para ver el coste real de cada broker con tus datos concretos, usa el [comparador de brókers de BogleHub](/calculadora/comparar-brokers).
+Para ver el coste de cada bróker con tus datos, está el [comparador de brókers de BogleHub](/calculadora/comparar-brokers).
 
 ---
 
 ## Fuentes y lecturas complementarias
 
-- [Scalable Capital — Web oficial España](https://es.scalable.capital) — Planes, comisiones y tasa vigente de la cuenta remunerada.
-- [BaFin — Registro de entidades reguladas](https://www.bafin.de) — Verifica el registro de Scalable Capital como entidad supervisada en Alemania.
-- [DEGIRO opinión 2026 — BogleHub](/blog/degiro-opinion-2026) — Análisis del broker técnico con mayor acceso a mercados.
-- [Trade Republic opinión 2026 — BogleHub](/blog/trade-republic-opinion-2026) — El principal competidor de Scalable para el inversor indexado en España.
+- [Scalable Capital: bróker](https://es.scalable.capital/broker-online) — Planes FREE y PRIME+, comisiones, planes de inversión y remuneración del efectivo (consultado el 30-sep-2026).
+- [BaFin: registro de entidades reguladas](https://www.bafin.de) — Registro de Scalable Capital como entidad supervisada en Alemania.
+- [DEGIRO opinión 2026 — BogleHub](/blog/degiro-opinion-2026) — Análisis del bróker con más acceso a bolsas.
+- [Trade Republic opinión 2026 — BogleHub](/blog/trade-republic-opinion-2026) — El otro banco alemán con planes de inversión sin comisión.
 `,
   },
   {
     slug: 'mejor-broker-etfs-espana-2026',
     title: 'Mejor broker para ETFs en España 2026: comparativa honesta',
     excerpt:
-      'Trade Republic, DEGIRO, MyInvestor, ING e Interactive Brokers comparados para ETFs: comisiones reales, seguridad y cuál elegir según tu perfil inversor.',
+      'Trade Republic, DEGIRO, MyInvestor, ING e Interactive Brokers comparados para ETFs con las tarifas de su web (30-sep-2026): orden suelta, planes de inversión, fondos con traspaso, seguridad y qué pesa según el perfil.',
     publishedAt: '2026-05-30',
-    updatedAt: '2026-06-05',
+    updatedAt: '2026-09-30',
     readingMinutes: 11,
     keywords: ['mejor broker ETF España', 'mejor broker para ETFs', 'broker ETF España 2026', 'comparativa brokers ETF', 'qué broker elegir ETF'],
     faq: [
       {
         q: '¿Cuál es el mejor broker para invertir en ETFs en España en 2026?',
-        a: 'No hay un único "mejor" para todos. Para aportaciones periódicas pequeñas y automatizadas, Trade Republic (0€ por operación, planes de ahorro desde 1€) es el de configuración más corta. Para combinar ETFs con fondos indexados de traspaso fiscal, MyInvestor. Para carteras grandes o acceso a muchos mercados, DEGIRO o Interactive Brokers. ING solo compensa si ya eres cliente, porque su broker es caro (9-22€ por orden).',
+        a: 'No hay uno mejor para todos: depende de cómo se invierta. Para aportar cada mes de forma automática, Trade Republic, Scalable Capital y XTB tienen planes de inversión sin comisión. Para combinar ETF con fondos indexados que se pueden traspasar sin tributar hace falta una entidad española como MyInvestor. Para muchas bolsas o tipos de orden avanzados, DEGIRO o Interactive Brokers.',
       },
       {
         q: '¿Qué broker tiene las comisiones más bajas para ETFs?',
-        a: 'En comisión pura de compraventa, Trade Republic (0€ por operación) es el más barato para cualquier importe, seguido de DEGIRO (0,50€ + 0,004%, mínimo 0,90€) y MyInvestor (0,20€ + 0,03%). Interactive Brokers es muy competitivo en volúmenes altos. ING es el más caro con diferencia (9-22€ por orden). Pero el coste real incluye también cambio de divisa y, en algunos casos, custodia.',
+        a: 'Depende del importe y de si se usa un plan. Con las tarifas de su web (30-sep-2026), en una orden suelta XTB cobra 0 € hasta 100.000 € al mes; Trade Republic, 1 €; DEGIRO, 1 € en su Selección Principal y 3 € en el resto; MyInvestor, el 0,12 % con mínimo de 1 € y máximo de 25 €; Interactive Brokers, el 0,05 % con mínimo de 1,25 € más tasas de la bolsa; e ING, 3 € + 0,10 %. Con un plan de inversión, Trade Republic, Scalable y XTB no cobran. A eso se suman el cambio de divisa y, en algunos casos, custodia o conectividad.',
       },
       {
         q: '¿Es seguro invertir en ETFs a través de estos brokers?',
-        a: 'Sí, todos están regulados en la UE. Trade Republic (BaFin alemán) y MyInvestor e ING (CNMV/Banco de España) cubren hasta 100.000€ de depósitos por el fondo de garantía correspondiente. DEGIRO e Interactive Brokers cubren 20.000€ por el fondo de garantía de inversiones de su país. En todos los casos, tus ETFs se custodian como patrimonio separado del broker.',
+        a: 'Todos están regulados en la UE y custodian los ETF de los clientes como patrimonio separado. Cambia la garantía: el efectivo en Trade Republic y en MyInvestor está cubierto hasta 100.000 € por la garantía de depósitos (alemana, francesa o irlandesa en Trade Republic, española en MyInvestor) y en ING por la holandesa; los valores, hasta 100.000 € en MyInvestor (Fondo de Garantía de Inversiones español) y hasta 20.000 € en DEGIRO e Interactive Brokers.',
       },
       {
         q: '¿Puedo comprar fondos indexados además de ETFs en estos brokers?',
-        a: 'Solo algunos. MyInvestor, Interactive Brokers e ING permiten fondos indexados además de ETFs. Trade Republic y DEGIRO solo ofrecen ETFs. La diferencia es relevante porque los fondos indexados disfrutan del traspaso fiscal libre en España (cambiar de fondo sin tributar), una ventaja que los ETFs no tienen.',
+        a: 'Con el régimen español de traspaso sin tributar, en las entidades que comercializan fondos en España, como MyInvestor o ING. Interactive Brokers da acceso a fondos, pero sin ese régimen. En Trade Republic y DEGIRO no hay fondos con traspaso.',
       },
       {
         q: '¿Qué broker es mejor para un principiante que empieza con poco dinero?',
-        a: 'Trade Republic es el de arranque más corto: 0€ por operación, planes de ahorro automáticos desde 1€/mes, app muy sencilla y cuenta remunerada. MyInvestor es la alternativa si quieres empezar con fondos indexados desde 1€ y aprovechar el traspaso fiscal. Ambos están regulados con cobertura de 100.000€.',
+        a: 'Con poco dinero y aportaciones cada mes, lo que más pesa es la comisión de cada orden y si hay planes de inversión sin comisión: Trade Republic, Scalable Capital y XTB los tienen. Si se prefiere empezar con fondos indexados en vez de ETF, MyInvestor permite aportaciones periódicas desde poco dinero y el traspaso sin tributar.',
       },
     ],
     content: `# Mejor broker para ETFs en España 2026: comparativa honesta
 
-Elegir broker es la segunda decisión más importante después de elegir tus ETFs, y la que más fricción y comisiones te ahorra (o te cuesta) durante décadas. Esta comparativa analiza los cinco brokers más usados por inversores indexados en España en 2026 — Trade Republic, DEGIRO, MyInvestor, ING e Interactive Brokers — sin afiliación ni comisiones por recomendarte ninguno.
+> **Corrección del 30 de septiembre de 2026.** Esta comparativa daba tarifas que no eran las de los brókers: Trade Republic «0 €» (cobra 1 € por orden suelta; sus planes son gratis), DEGIRO «0,50 € + 0,004 %» (hoy 1 € en su Selección Principal), MyInvestor «0,20 € + 0,03 %» (0,12 %, mínimo 1 €), ING «9-22 €» (3 € + 0,10 %), Openbank «~8 €» (1 €) y Renta 4 «~7-10 €» (15 € en bolsas europeas). La hemos rehecho con la web de cada bróker.
 
-La conclusión por adelantado: no existe un "mejor broker" universal. Existe el mejor broker para tu volumen de inversión, tu frecuencia de aportación y según si quieres combinar ETFs con fondos indexados. Vamos a verlo.
+Esta comparativa analiza los cinco brókers más usados por inversores indexados en España, Trade Republic, DEGIRO, MyInvestor, ING e Interactive Brokers, más otros cinco habituales, sin afiliación.
+
+No existe un «mejor bróker» universal. Lo que cambia el coste es el importe de cada orden, la frecuencia de aportación y si se quieren fondos indexados además de ETF.
 
 ---
 
 ## Comparativa rápida
 
+Datos leídos en la web de cada bróker el 30 de septiembre de 2026:
+
 | | Trade Republic | DEGIRO | MyInvestor | ING | Interactive Brokers |
 |---|---|---|---|---|---|
-| Comisión ETF | **0 €** | 0,50 € + 0,004 % (mín. 0,90 €) | 0,20 € + 0,03 % | 9-22 € | Variable, muy baja |
-| Planes de ahorro automáticos | ✓ (desde 1 €) | ✗ | Solo en fondos | ✗ | ✗ |
-| Fondos indexados | ✗ | ✗ | ✓ (traspaso fiscal) | ✓ | ✓ |
-| Cuenta remunerada | ✓ (~2-2,5 %) | ✗ | ✓ (~2 %) | ✓ | Sobre saldo no invertido |
-| Regulación | BaFin (Alemania) | AFM (Países Bajos) | CNMV (España) | CNMV (España) | CBI (Irlanda) |
-| Garantía de inversión | 100.000 € | 20.000 € | 100.000 € | 100.000 € | 20.000 € |
-| Mercados | Europa + EE.UU. | 50+ bolsas | Principalmente Europa | Limitados | 150 mercados |
-| Interfaz | Mobile, muy simple | Web técnica | Web bancaria | Web bancaria | Profesional, compleja |
+| Orden suelta de ETF | 1 € | 1 € (Selección Principal) o 3 € | 0,12 % (mín. 1 €, máx. 25 €) | 3 € + 0,10 % | 0,05 % (mín. 1,25 € + tasas) |
+| Planes de inversión en ETF | ✓ sin comisión | No los anuncia | No los anuncia (sí en fondos) | No los anuncia | ✗ |
+| Fondos con traspaso sin tributar | ✗ | ✗ | ✓ | ✓ | ✗ |
+| Custodia | 0 € | 0 € (conectividad hasta 2,50 €/año por bolsa) | 0 € | 0 € si operas cada trimestre | — |
+| Supervisión | BaFin, sucursal en España | AFM (Países Bajos) | Banco de España y CNMV | Sucursal de banco neerlandés | CBI (Irlanda) |
+| Garantía | Depósitos: 100.000 € | Inversiones: 20.000 € | Depósitos e inversiones: 100.000 € | Depósitos: 100.000 € (holandesa) | Inversiones: 20.000 € |
+| Mercados | Europa + EE. UU. | Muchas bolsas | Principalmente Europa | Bolsa española, europeas y de EE. UU. | 150 mercados |
 
 ---
 
 ## El coste real: no solo la comisión de compra
 
-La comisión por operación es lo primero que mira todo el mundo, pero el coste total de usar un broker incluye más factores:
+La comisión por operación es lo primero que se mira, pero el coste total incluye más cosas:
 
-- **Comisión de compraventa**: lo que pagas cada vez que compras o vendes un ETF.
-- **Cambio de divisa**: si compras un ETF en dólares o libras con euros, el broker aplica un margen en la conversión. Algunos lo incluyen en el spread sin que lo veas.
-- **Comisión de custodia**: cuota por mantener los valores. La mayoría de brokers digitales no la cobran, pero conviene verificarlo.
-- **Comisiones de cobro de dividendos**: algunos brokers cobran por procesar los dividendos de ETFs de distribución.
+- **Comisión por orden**, y si hay **planes de inversión** sin comisión para las aportaciones periódicas.
+- **Cambio de divisa**: si se compra un ETF en una línea en dólares o libras, se paga la conversión (0,25 % en DEGIRO, 0,30 % en MyInvestor, 0,50 % en ING con la tarifa base, 0,5 % en XTB).
+- **Custodia o conectividad**: la mayoría de los brókers digitales no cobra custodia; DEGIRO cobra conectividad de hasta 2,50 € al año por bolsa extranjera, e ING cobra custodia si no se opera en el trimestre.
 
-Para un inversor indexado que compra ETFs en euros domiciliados en Irlanda (lo habitual y recomendable), el cambio de divisa se minimiza eligiendo la cotización en euros (Xetra) en lugar de en dólares (LSE). Sobre esto profundizamos en la [guía para elegir tu primer ETF](/blog/como-elegir-tu-primer-etf-espana-2026).
-
----
-
-## Trade Republic: el más sencillo y barato para empezar
-
-**Comisión**: 0 € por operación, sin asteriscos. Gana dinero por order flow y por la cuenta remunerada.
-
-**Lo mejor**: planes de ahorro automáticos desde 1 €/mes en más de 2.000 ETFs, app diseñada para no equivocarse, cuenta remunerada al ~2-2,5 % sin condiciones. Regulado por el BaFin alemán con cobertura de 100.000 € en depósitos.
-
-**Lo peor**: solo ETFs (no fondos indexados con traspaso fiscal), mercados limitados a Europa y EE.UU., sin órdenes avanzadas.
-
-**Ideal para**: quien empieza, aporta cantidades pequeñas-medianas de forma regular y quiere automatizar al máximo. Es el broker que más recomendamos para un primer inversor indexado. Análisis completo en la [opinión de Trade Republic 2026](/blog/trade-republic-opinion-2026).
+Para un ETF irlandés comprado en su línea en euros (en Xetra, por ejemplo), no hay cambio de divisa. La [guía para elegir tu primer ETF](/blog/como-elegir-tu-primer-etf-espana-2026) lo explica.
 
 ---
 
-## DEGIRO: acceso a más mercados para el inversor exigente
+## Trade Republic
 
-**Comisión**: 0,50 € + 0,004 % por operación en bolsas principales (mínimo 0,90 €). Lista mensual rotatoria de ETFs sin comisión de compra.
+**Comisión**: 1 € por operación (su «comisión de liquidación»); **0 € en los planes de inversión**, que se programan desde 1 €. Sin custodia.
 
-**Lo mejor**: acceso a más de 50 bolsas mundiales, tipos de órdenes avanzadas, comisiones que para órdenes grandes son irrelevantes en términos relativos.
+**Lo que ofrece**: planes de inversión automáticos, app sencilla, cuenta remunerada a tipo variable y, desde 2025, sucursal en España que informa a Hacienda. Supervisado por BaFin; efectivo cubierto hasta 100.000 €.
 
-**Lo peor**: cobertura de garantía de 20.000 € (inferior a la de los bancos), sin planes de ahorro automáticos, sin cuenta remunerada, y la cuenta básica permite préstamo de valores (para evitarlo, abre cuenta Custody).
+**Límites**: no ofrece fondos con el régimen español de traspaso, da acceso a menos bolsas que DEGIRO o IBKR y cada orden suelta paga 1 €.
 
-**Ideal para**: carteras grandes (>100.000 €), acceso a mercados específicos o tipos de órdenes técnicas. Detalle en la [opinión de DEGIRO 2026](/blog/degiro-opinion-2026).
-
----
-
-## MyInvestor: el único que combina ETFs y fondos indexados
-
-**Comisión**: 0,20 € + 0,03 % del importe por orden de ETF. Para órdenes pequeñas (<667 €), la comisión mínima de 0,20 € es muy competitiva.
-
-**Lo mejor**: el único de los cinco que ofrece fondos indexados de Vanguard, Amundi y Fidelity con **traspaso fiscal libre** (cambiar de fondo sin tributar, la gran ventaja fiscal en España). Regulado por la CNMV con cobertura de 100.000 €. Aportaciones desde 1 €.
-
-**Lo peor**: comisión de ETF algo superior a Trade Republic, sin planes de ahorro automáticos en ETFs (sí en fondos), selección de ETFs más limitada.
-
-**Ideal para**: quien quiere combinar ETFs con fondos indexados y aprovechar el traspaso fiscal, o prefiere un banco regulado en España. Más en la [opinión de MyInvestor 2026](/blog/myinvestor-opinion-2026).
+**Encaja con**: quien aporta cada mes con un plan automático. Análisis completo en la [opinión de Trade Republic 2026](/blog/trade-republic-opinion-2026).
 
 ---
 
-## Interactive Brokers: potencia para el inversor avanzado
+## DEGIRO
 
-**Comisión**: variable, muy competitiva en volumen. Plataformas IBKR Lite (comisiones fijas) o IBKR Pro (escalonadas).
+**Comisión**: 1 € por operación en los ETF de su **Selección Principal** (todos los de Tradegate, entre ellos VWCE, IWDA o CSPX); 3 € en el resto. Sin custodia; conectividad de hasta 2,50 € al año por bolsa extranjera.
 
-**Lo mejor**: acceso a más de 150 mercados en 33 países y 27 divisas. Permite ETFs, fondos, acciones, futuros, opciones y divisas. Es uno de los brokers más antiguos (1978) y respetados, regulado en Europa por el Central Bank of Ireland.
+**Lo que ofrece**: acceso a muchas bolsas, órdenes avanzadas y la misma comisión que Trade Republic en una orden suelta de la Selección Principal.
 
-**Lo peor**: interfaz técnica y con curva de aprendizaje, cobertura de garantía de inversiones de 20.000 €, y no es banco (no hay garantía de depósito sobre el efectivo más allá de la de inversiones).
+**Límites**: garantía de inversiones de 20.000 €, sin planes de inversión automáticos anunciados, sin remuneración del efectivo en su tarifa; en las cuentas estándar puede prestar los valores (en la cuenta Custody, no).
 
-**Ideal para**: inversores con cartera grande, perfil avanzado o necesidad de acceso global a mercados. Excesivo para quien solo quiere comprar 1-2 ETFs al mes. Análisis completo en la [opinión de Interactive Brokers 2026](/blog/interactive-brokers-opinion-2026).
-
----
-
-## ING: cómodo solo si ya eres cliente
-
-**Comisión**: 9-22 € por orden a través del Naranja Broker. Es, con diferencia, el más caro de los cinco.
-
-**Lo mejor**: la comodidad de tenerlo todo en el mismo banco si ya usas la Cuenta Sin Nómina de ING. Regulado por el Banco de España y la CNMV con cobertura de 100.000 €. Permite también fondos indexados.
-
-**Lo peor**: el coste por operación es prohibitivo para aportaciones pequeñas regulares. Una aportación mensual de 200 € con una comisión de 10 € supone un 5 % de coste de entrada — inaceptable frente a los 0 € de Trade Republic.
-
-**Ideal para**: clientes de ING que valoran la comodidad bancaria por encima del coste y hacen aportaciones grandes y poco frecuentes. Para el inversor indexado sensible al coste, hay opciones mucho mejores. Análisis completo en la [opinión de ING 2026](/blog/ing-opinion-2026).
+**Encaja con**: quien da órdenes sueltas o necesita bolsas y órdenes que no hay en otros brókers. Detalle en la [opinión de DEGIRO 2026](/blog/degiro-opinion-2026).
 
 ---
 
-## Otros brókers que quizá estés considerando
+## MyInvestor
 
-Fuera de los cinco grandes, hay otros nombres habituales en España. Cada uno tiene su análisis completo:
+**Comisión**: 0,12 % por operación en ETF, con un mínimo de 1 € y un máximo de 25 €. Fondos sin comisión de compra.
 
-- **[XTB](/blog/xtb-opinion-2026)**: 0€ en ETFs hasta 100.000€/mes y cuenta remunerada ~3% TAE, con sucursal supervisada por la CNMV. Alternativa seria a Trade Republic.
-- **[Scalable Capital](/blog/scalable-capital-opinion-2026)**: modelo de suscripción (plan Prime) con operaciones ilimitadas; interesante para quien opera mucho cada mes.
-- **[Renta 4](/blog/renta-4-opinion-2026)**: banco de inversión español veterano, con oficinas y servicio personal; caro para el indexado (~7-10€/orden + custodia).
-- **[Openbank](/blog/openbank-opinion-2026)**: el banco online del Santander; ~8€ por orden, mejor banco que bróker.
-- **[eToro](/blog/etoro-opinion-2026)**: conocido por el copy trading y las cripto; poco eficiente para la indexación pura de largo plazo.
+**Lo que ofrece**: fondos indexados de Vanguard, iShares, Amundi o Fidelity con **traspaso entre fondos sin tributar**, aportaciones periódicas en fondos y un banco español supervisado por el Banco de España y la CNMV, con garantía de 100.000 € en depósitos y en inversiones.
 
-Y si la seguridad te frena con cualquiera de ellos, en [¿qué pasa si quiebra tu bróker?](/blog/que-pasa-si-quiebra-tu-broker) repasamos las garantías de los 10, una a una.
+**Límites**: en ETF cobra más que Trade Republic o DEGIRO en órdenes de más de unos 833 €, no anuncia planes automáticos en ETF y su selección de ETF es más limitada.
+
+**Encaja con**: quien usa fondos indexados y quiere poder traspasarlos sin tributar. Más en la [opinión de MyInvestor 2026](/blog/myinvestor-opinion-2026).
 
 ---
 
-## El ganador según tu perfil
+## Interactive Brokers
 
-**Si empiezas con poco y quieres automatizar**: **Trade Republic**. Sin discusión: 0 €, planes de ahorro desde 1 €, app sencilla.
+**Comisión**: en la bolsa alemana, 0,05 % del importe con un mínimo de 1,25 € por orden en la tarifa por niveles (más tasas de la bolsa), o un mínimo de 3 € en la fija.
 
-**Si quieres fondos indexados con traspaso fiscal**: **MyInvestor**. El único que combina ambos vehículos con la ventaja fiscal española.
+**Lo que ofrece**: acceso a más de 150 mercados, con ETF, fondos, acciones, futuros, opciones y divisas. Regulado en Europa por el Central Bank of Ireland.
 
-**Si tu cartera es grande o necesitas muchos mercados**: **DEGIRO** o **Interactive Brokers**, según si priorizas sencillez relativa (DEGIRO) o potencia y alcance global (IBKR).
+**Límites**: interfaz técnica, garantía de inversiones de 20.000 €, sin planes automáticos y la declaración corre a cargo del inversor.
 
-**Si ya eres cliente de ING y aportas grandes sumas esporádicas**: **ING** puede ser cómodo, aunque casi siempre saldrás ganando con otro broker.
+**Encaja con**: carteras grandes y perfiles que necesitan acceso global. Análisis completo en la [opinión de Interactive Brokers 2026](/blog/interactive-brokers-opinion-2026).
 
-**Una combinación que se ve a menudo**: Trade Republic para los ETFs con DCA automático + MyInvestor para los fondos indexados con traspaso fiscal. Dos brokers, cada uno usado para lo que cobra menos.
+---
+
+## ING
+
+**Comisión**: 3 € + 0,10 % por orden en su Broker NARANJA, igual en bolsa española que internacional (1,5 € + 0,05 % con 15 operaciones o más en el trimestre anterior). En 2026 devuelve la comisión de compra de los ETF de varias gestoras, en una promoción hasta el 31 de diciembre.
+
+**Lo que ofrece**: tenerlo todo en el mismo banco para quien ya es cliente, y fondos propios con traspaso. Como sucursal de ING Bank N.V., el efectivo lo cubre la garantía de depósitos holandesa hasta 100.000 €.
+
+**Límites**: fuera de la promoción, una orden de 200 € paga 3,20 €, un 1,6 %; custodia si no se opera en el trimestre.
+
+**Encaja con**: clientes de ING, sobre todo mientras dure la promoción o con órdenes grandes. Análisis completo en la [opinión de ING 2026](/blog/ing-opinion-2026).
+
+---
+
+## Otros brókers habituales
+
+Cada uno tiene su análisis completo (tarifas de su web, 30-sep-2026):
+
+- **[XTB](/blog/xtb-opinion-2026)**: 0 € en ETF hasta 100.000 € al mes, planes de inversión sin comisión y sucursal supervisada por la CNMV.
+- **[Scalable Capital](/blog/scalable-capital-opinion-2026)**: planes de inversión sin comisión, 0,99 € por orden suelta (0 € desde 250 € en ETF de Amundi, iShares, Vanguard y Xtrackers) y plan PRIME+ por 4,99 € al mes.
+- **[Renta 4](/blog/renta-4-opinion-2026)**: banco de inversión español con oficinas; por internet, 15 € por orden en bolsas europeas (4 € en la española), más custodia.
+- **[Openbank](/blog/openbank-opinion-2026)**: el banco online del Santander; 1 € por compra o venta en cualquier mercado y sin custodia desde el 1-oct-2026.
+- **[eToro](/blog/etoro-opinion-2026)**: 0 € de comisión en ETF y copy trading; regulado en Chipre, con garantía de 20.000 €.
+
+Para ver qué cubre cada garantía, en [¿qué pasa si quiebra tu bróker?](/blog/que-pasa-si-quiebra-tu-broker) las repasamos una a una.
+
+---
+
+## Qué pesa según el perfil
+
+**Quien empieza con poco y quiere automatizar**: la comisión de cada orden y si hay planes sin comisión. Trade Republic, Scalable Capital y XTB los tienen.
+
+**Quien quiere fondos indexados con traspaso sin tributar**: hace falta una entidad que los comercialice en España, como MyInvestor, que además tiene los de las gestoras más grandes sin mínimo.
+
+**Quien tiene una cartera grande o necesita muchos mercados**: el acceso y los tipos de orden, donde DEGIRO e Interactive Brokers son más completos; la comisión fija pesa poco en órdenes grandes.
+
+**Quien ya es cliente de un banco**: Openbank cobra 1 € por orden; ING, 3 € + 0,10 % (con la promoción de ETF de 2026). La cuenta del día a día y la inversión pueden estar en entidades distintas sin ninguna penalización.
+
+Una combinación que se ve a menudo: un bróker con planes de inversión sin comisión para los ETF y una entidad española para los fondos indexados con traspaso.
 
 ---
 
 ## Cómo decidir en 3 preguntas
 
-1. **¿Vas a aportar poco y a menudo?** → Trade Republic (0 € y automático).
-2. **¿Quieres fondos indexados con traspaso fiscal?** → MyInvestor.
-3. **¿Tienes una cartera grande o necesitas mercados internacionales?** → DEGIRO o Interactive Brokers.
+1. **¿Vas a aportar poco y a menudo?** Mira qué brókers tienen planes de inversión sin comisión.
+2. **¿Quieres fondos indexados con traspaso sin tributar?** Necesitas una entidad española que los comercialice.
+3. **¿Tienes una cartera grande o necesitas mercados internacionales?** Mira el acceso a bolsas y los tipos de orden.
 
-Una vez tengas tu cartera montada en el broker que elijas, puedes [analizarla gratis con la herramienta de BogleHub](/analyzer): te dice tu asignación real por región y sector, el TER ponderado que pagas y si tienes solapamiento entre ETFs. Sin registro y sin que tus datos salgan de tu navegador.
+Con la cartera montada, puedes [analizarla gratis con la herramienta de BogleHub](/analyzer): te dice tu asignación real por región y sector, el TER ponderado que pagas y si tienes solapamiento entre ETFs, sin registro.
 
-ETFs habituales para empezar en cualquiera de estos brokers: [VWCE](/etf/vwce) (global All-World), [IWDA](/etf/iwda) (MSCI World), [CSPX](/etf/cspx) (S&P 500), [SWRD](/etf/swrd) (MSCI World barato) y [AGGH](/etf/aggh) (renta fija global) para la parte conservadora.
+ETF habituales en cualquiera de estos brókers: [VWCE](/etf/vwce) (global All-World), [IWDA](/etf/iwda) (MSCI World), [CSPX](/etf/cspx) (S&P 500), [SWRD](/etf/swrd) (MSCI World) y [AGGH](/etf/aggh) (renta fija global).
 
 ---
 
 ## Fuentes y lecturas complementarias
 
-- [DEGIRO vs Trade Republic vs MyInvestor — BogleHub](/blog/degiro-vs-trade-republic-vs-myinvestor-2026) — Comparativa en profundidad de los tres brokers más populares.
-- [Comparador de brókers — BogleHub](/calculadora/comparar-brokers) — Calcula el coste anual exacto en euros de cada broker según tu patrón de inversión.
-- [Cómo elegir tu primer ETF en España — BogleHub](/blog/como-elegir-tu-primer-etf-espana-2026) — Guía de los criterios que importan antes de elegir broker.
+- [DEGIRO vs Trade Republic vs MyInvestor — BogleHub](/blog/degiro-vs-trade-republic-vs-myinvestor-2026) — Comparativa en profundidad de los tres brókers más populares.
+- [Comparador de brókers — BogleHub](/calculadora/comparar-brokers) — Calcula el coste anual en euros de cada bróker según tu patrón de inversión.
+- [Cómo elegir tu primer ETF en España — BogleHub](/blog/como-elegir-tu-primer-etf-espana-2026) — Los criterios que importan antes de elegir bróker.
 `,
   },
   {

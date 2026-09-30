@@ -15,7 +15,7 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
   {
     q: '¿Es mejor un bróker español o uno extranjero?',
-    a: 'Un bróker español simplifica la declaración de la renta y suele ofrecer fondos indexados con régimen de traspaso, que es una ventaja fiscal real. Un bróker extranjero suele dar un catálogo más amplio de ETF y bolsas, pero la declaración requiere algún trámite extra (modelo D-6 si el patrimonio en el extranjero supera ciertos umbrales, y el cálculo manual de plusvalías al vender). Trade Republic, que tiene sucursal en España, informa a Hacienda desde que cada cuenta migró a IBAN español.',
+    a: 'Un bróker español simplifica la declaración de la renta y suele ofrecer fondos indexados con régimen de traspaso, que es una ventaja fiscal real. Un bróker extranjero suele dar un catálogo más amplio de ETF y bolsas, pero la declaración requiere algún trámite extra: el cálculo manual de plusvalías al vender y, si los valores en el extranjero superan 50.000 €, el modelo 720. Trade Republic, que tiene sucursal en España, informa a Hacienda desde que cada cuenta migró a IBAN español.',
   },
   {
     q: '¿Qué bróker es el más barato para hacer DCA mensual?',
@@ -23,7 +23,7 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
   {
     q: '¿Qué pasa con la fiscalidad si uso un bróker extranjero?',
-    a: 'La fiscalidad de la ganancia es la misma, tributa en el IRPF del ahorro español. Lo que cambia es la operativa: el bróker extranjero no aplica retención del 19% al vender ETFs (el español sí en fondos), y tienes que calcular tú las plusvalías al hacer la declaración. Si el valor del patrimonio depositado fuera de España supera 50.000 € a 31 de diciembre, hay que presentar el modelo D-6 en el Banco de España y, en su caso, el modelo 720.',
+    a: 'La fiscalidad de la ganancia es la misma, tributa en el IRPF del ahorro español. Lo que cambia es la operativa: el bróker extranjero no aplica retención del 19% al vender ETFs (el español sí en fondos), y tienes que calcular tú las plusvalías al hacer la declaración. Si los valores depositados fuera de España superan 50.000 €, hay que presentar el modelo 720. El modelo D-6 ya no se presenta por una cartera de ETF: la Orden ECM/57/2024 derogó el procedimiento que lo regulaba.',
   },
   {
     q: '¿Las comisiones de esta calculadora son exactas?',
@@ -160,9 +160,9 @@ export default function CompararBrokersPage() {
               También cambia la operativa fiscal. Un bróker español aplica retención del 19%
               al reembolsar un fondo. Un bróker extranjero no retiene al vender ETF: el
               cálculo de la ganancia y el pago al Tesoro lo haces tú en la declaración. Si
-              tu patrimonio fuera de España supera ciertos umbrales, hay que presentar el
-              modelo D-6 en el Banco de España y, en su caso, el modelo 720. No es complicado,
-              pero hay que tenerlo en cuenta.
+              los valores que tienes fuera de España superan 50.000 €, hay que presentar el
+              modelo 720 (el D-6 ya no se presenta por una cartera de ETF desde la Orden
+              ECM/57/2024). No es complicado, pero hay que tenerlo en cuenta.
             </p>
             <p className="mt-3 text-fg-muted leading-relaxed">
               Si quieres bajar al detalle, lo desarrollamos en la{' '}

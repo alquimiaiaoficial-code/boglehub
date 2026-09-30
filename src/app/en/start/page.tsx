@@ -16,7 +16,7 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
   {
     q: 'What is the best broker to start investing in Spain in 2026?',
-    a: 'For most beginners, Trade Republic is the simplest option: €0 per trade, automatic monthly savings plans from €1, clean mobile app, 2-2.5% remunerated cash account. If you want to combine ETFs with index funds (tax-free fund-to-fund transfers in Spain), MyInvestor is the only platform offering both.',
+    a: 'It depends on how you invest. Trade Republic charges €1 per one-off trade and nothing on its automatic monthly savings plans, which start at €1, and has a simple mobile app. If you want to combine ETFs with index funds that can be switched tax-free under the Spanish fund-transfer regime, you need an entity that distributes funds in Spain, such as MyInvestor (0.12% per ETF trade, minimum €1). Fees as published on 30 Sep 2026.',
   },
   {
     q: 'Is BogleHub for English speakers or only Spanish?',
@@ -92,7 +92,7 @@ export default function EnStartPage() {
             <CardTitle className="mb-3">6-step plan for English speakers in Spain</CardTitle>
             <ol className="space-y-3 text-sm text-fg-muted">
               <li className="flex gap-3"><span className="text-accent">1.</span><span><strong className="text-fg">Build emergency fund:</strong> 3-6 months of expenses in a remunerated account before investing.</span></li>
-              <li className="flex gap-3"><span className="text-accent">2.</span><span><strong className="text-fg">Choose broker:</strong> Trade Republic (€0/trade, German bank, BaFin-regulated) for beginners. MyInvestor (Spanish bank, CNMV-regulated) if you want index funds with tax-free transfers.</span></li>
+              <li className="flex gap-3"><span className="text-accent">2.</span><span><strong className="text-fg">Choose a broker:</strong> for monthly contributions, what matters most is the fee per order and whether there are free savings plans (Trade Republic, XTB and Scalable Capital have them). For index funds with tax-free transfers you need an entity that distributes funds in Spain, such as MyInvestor.</span></li>
               <li className="flex gap-3"><span className="text-accent">3.</span><span><strong className="text-fg">Pick portfolio:</strong> 80% VWCE (global stocks, ISIN IE00BK5BQT80, TER 0.14%) + 20% AGGH (global bonds EUR-hedged, ISIN IE00BDBRDM35, TER 0.10%).</span></li>
               <li className="flex gap-3"><span className="text-accent">4.</span><span><strong className="text-fg">Automate contributions:</strong> Configure monthly savings plan in Trade Republic. Set and forget.</span></li>
               <li className="flex gap-3"><span className="text-accent">5.</span><span><strong className="text-fg">Don’t touch:</strong> Markets will fall 20-40% multiple times in your investing life. Don’t sell. The cost of selling in panic is higher than any TER.</span></li>

@@ -80,7 +80,7 @@ export const COMISIONES: Record<string, ComisionBroker> = {
   'renta-4': {
     corto: '15 € por orden en bolsas europeas, 4 € en la española',
     etf: '4 € por operación por internet en la bolsa española (hasta 6.000 €) y 15 € en bolsas europeas como Fráncfort o Ámsterdam (hasta 30.000 €)',
-    otros: 'En la bolsa española, además, 1 € de canon por orden.',
+    otros: 'En la bolsa española, además, 1 € de canon por orden. Custodia: 0,017 % al mes sobre el valor de cada posición internacional (0,0125 % en las nacionales), con mínimo. Mantenimiento de cuenta: 3 € al mes, salvo exenciones (por ejemplo, cuentas solo con fondos o planes de pensiones).',
     fuente: 'https://www.r4.com/resources/pdf/tablonanuncios/hoja_tarifas.pdf (versión 1/7/26)',
     leido: '2026-09-30',
   },

@@ -82,8 +82,8 @@ export default function GuiaLandingPage() {
             </h2>
             <p className="mt-1 text-sm text-fg-muted">
               Sube tu cartera y BogleHub te dice si está bien diversificada, qué
-              comisiones pagas y dónde se solapan tus fondos. Sin registro y tus
-              datos no salen de tu navegador.
+              comisiones pagas y dónde se solapan tus fondos. Sin registro: para
+              analizarla, la cartera se envía a nuestro servidor, sin tu nombre ni tu correo.
             </p>
             <Link
               href="/analyzer"

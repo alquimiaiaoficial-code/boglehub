@@ -83,9 +83,9 @@ describe('una sola fuente de comisiones', () => {
   }
   recorrer(RAIZ)
 
-  // comisiones-brokers.ts cuenta en su comentario la historia de estas cifras.
-  // blog-articles.ts: se corrige en el commit siguiente (artículo por artículo) y se quita de aquí.
-  const EXCLUIDOS = ['comisiones-brokers.ts', 'blog-articles.ts']
+  // comisiones-brokers.ts cuenta en su comentario la historia de estas cifras, y las notas de
+  // «Corrección del …» de los artículos citan la cifra vieja entre comillas a propósito.
+  const EXCLUIDOS = ['comisiones-brokers.ts']
   const VIEJAS: [string, RegExp][] = [
     ['DEGIRO 0,50 € + 0,004 %', /0,50 ?€ ?\+ ?0,004/],
     ['DEGIRO mínimo 0,90 €', /mín(imo|\.) 0,90/],
@@ -94,6 +94,13 @@ describe('una sola fuente de comisiones', () => {
     ['Openbank ~8 €', /~8 ?€/],
     ['ING 9-22 €', /9-22 ?€/],
     ['Renta 4 ~7-10 €', /~7-10 ?€/],
+    // Las páginas en inglés (/en/*) repetían las mismas cifras.
+    ['DEGIRO €0.50 + 0.004%', /€0\.50 \+ 0\.004/],
+    ['MyInvestor €0.20 + 0.03%', /€0\.20 \+ 0\.03/],
+    ['Trade Republic at €0 per trade', /Trade Republic[^.]{0,60}€0 ?(per|\/) ?(ETF )?trade/],
+    // Tipos de cuentas remuneradas sin fuente: cambian cada pocos meses y ninguno salía del bróker.
+    ['cuenta remunerada «2-2,5 %»', /2-2[,.]5 ?%/],
+    ['Scalable «hasta el 4 %»', /hasta (el )?4 ?% TAE/],
   ]
 
   it('ningún texto de la web vuelve a citar las tarifas viejas', () => {
@@ -102,6 +109,7 @@ describe('una sola fuente de comisiones', () => {
       if (EXCLUIDOS.some((e) => p.endsWith(e))) continue
       const lineas = fs.readFileSync(p, 'utf8').split('\n')
       lineas.forEach((l, i) => {
+        if (/Corrección del \d/.test(l)) return
         for (const [nombre, re] of VIEJAS) {
           if (re.test(l)) fallos.push(`${path.relative(RAIZ, p)}:${i + 1}  ${nombre}`)
         }

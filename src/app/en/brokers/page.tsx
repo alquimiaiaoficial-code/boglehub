@@ -9,11 +9,11 @@ import { DescargoFiscal } from '@/components/DescargoFiscal'
 const BASE_URL = 'https://boglehub.com'
 
 const FAQ = [
-  { q: 'Which broker is best for beginners in Spain?', a: 'Trade Republic (German bank, BaFin-regulated): €0 per ETF trade, automatic savings plans from €1/month, 2-2.5% remunerated cash account. Mobile-first interface. Best for monthly DCA.' },
-  { q: 'Which broker offers index funds with tax-free transfers?', a: 'MyInvestor (Andbank, Spanish CNMV-regulated). The only Spain-based broker offering Vanguard, Amundi and Fidelity institutional index funds with fund-to-fund tax-free transfers (huge Spanish tax advantage). Also has ETFs at €0.20 + 0.03% per trade.' },
-  { q: 'Is DEGIRO safe for Spain residents?', a: 'Yes. DEGIRO is regulated by AFM (Netherlands) and subsidiary of flatexDEGIRO Bank AG (BaFin-regulated since 2021). Dutch Investor Compensation Scheme covers up to €20,000. For full asset segregation, choose the "Custody" account.' },
+  { q: 'Which broker is best for beginners in Spain?', a: 'It depends on how you invest. Trade Republic (German bank, BaFin-regulated, with a Spanish branch) charges €1 per one-off trade and nothing on its automatic savings plans, which start at €1/month; it has a mobile-first app and pays variable interest on cash. XTB and Scalable Capital also offer commission-free savings plans. Fees as published on each broker website on 30 Sep 2026.' },
+  { q: 'Which broker offers index funds with tax-free transfers?', a: 'Fund-to-fund tax-free transfers are a Spanish regime handled by entities that distribute funds in Spain. MyInvestor (Spanish bank, supervised by the Bank of Spain and the CNMV) offers index funds from Vanguard, iShares, Amundi and Fidelity with no purchase fee; other Spanish entities such as Openbank, ING or Renta 4 also distribute funds. MyInvestor charges 0.12% per ETF trade (minimum €1, maximum €25).' },
+  { q: 'Is DEGIRO safe for Spain residents?', a: 'Yes. DEGIRO is regulated by AFM (Netherlands) and subsidiary of flatexDEGIRO Bank AG (BaFin-regulated). Dutch Investor Compensation Scheme covers up to €20,000. In the standard accounts DEGIRO may lend your securities; in the Custody account it does not.' },
   { q: 'Can I keep my US broker if I move to Spain?', a: 'Generally yes, but you become Spain tax-resident under the 183-day rule. Some US brokers (Vanguard, Fidelity) restrict EU residents and may force account closure. Schwab International and Interactive Brokers usually allow EU residents. Tax reporting: declare US income on Spanish IRPF + Modelo 720 if assets exceed €50k.' },
-  { q: 'What is the cheapest broker for ETFs in Spain?', a: 'Trade Republic is the cheapest for ETFs: €0 per trade, no maintenance fees, no custody fees. For large volume orders (>€10k), the order flow spread might marginally increase implicit cost vs direct DEGIRO execution, but for retail amounts Trade Republic wins.' },
+  { q: 'What is the cheapest broker for ETFs in Spain?', a: 'It depends on order size and whether you use a savings plan. Per one-off ETF order (each broker website, 30 Sep 2026): XTB €0 up to €100,000 a month; Trade Republic €1; DEGIRO €1 on its Core Selection (all ETFs traded on Tradegate) and €3 otherwise; MyInvestor 0.12% (minimum €1, maximum €25); Interactive Brokers 0.05% (minimum €1.25 plus exchange fees). Automatic savings plans are free at Trade Republic, XTB and Scalable Capital.' },
 ]
 
 export const metadata: Metadata = {
@@ -34,7 +34,7 @@ export default function BrokersEn() {
 
           <header className="mb-8">
             <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">Best brokers in Spain for ETF investing</h1>
-            <p className="mt-3 text-fg-muted leading-relaxed">English comparison of brokers available for Spain residents: commissions, regulation, products, and best fit per profile.</p>
+            <p className="mt-3 text-fg-muted leading-relaxed">English comparison of brokers available for Spain residents: commissions (read on each broker website on 30 Sep 2026), regulation, products and what matters for each profile.</p>
           </header>
 
           <Card className="mb-6">
@@ -43,10 +43,10 @@ export default function BrokersEn() {
               <table className="w-full text-sm">
                 <thead><tr className="border-b border-border text-left text-xs uppercase text-fg-muted"><th className="pb-2">Broker</th><th className="pb-2">ETF fee</th><th className="pb-2">Index funds</th><th className="pb-2">Regulator</th></tr></thead>
                 <tbody>
-                  <tr><td className="py-2 font-semibold text-fg">Trade Republic</td><td className="py-2 text-fg-muted">€0</td><td className="py-2 text-fg-muted">No</td><td className="py-2 text-fg-muted text-xs">BaFin (Germany)</td></tr>
-                  <tr><td className="py-2 font-semibold text-fg">DEGIRO</td><td className="py-2 text-fg-muted">€0.50 + 0.004%</td><td className="py-2 text-fg-muted">No</td><td className="py-2 text-fg-muted text-xs">AFM (Netherlands)</td></tr>
-                  <tr><td className="py-2 font-semibold text-fg">MyInvestor</td><td className="py-2 text-fg-muted">€0.20 + 0.03%</td><td className="py-2 text-fg-muted">Yes (Vanguard, Amundi)</td><td className="py-2 text-fg-muted text-xs">CNMV (Spain)</td></tr>
-                  <tr><td className="py-2 font-semibold text-fg">XTB</td><td className="py-2 text-fg-muted">€0 up to €100k/mo</td><td className="py-2 text-fg-muted">No</td><td className="py-2 text-fg-muted text-xs">CNMV (Spain)</td></tr>
+                  <tr><td className="py-2 font-semibold text-fg">Trade Republic</td><td className="py-2 text-fg-muted">€1 (savings plans free)</td><td className="py-2 text-fg-muted">No</td><td className="py-2 text-fg-muted text-xs">BaFin (Germany)</td></tr>
+                  <tr><td className="py-2 font-semibold text-fg">DEGIRO</td><td className="py-2 text-fg-muted">€1 (Core Selection) or €3</td><td className="py-2 text-fg-muted">No</td><td className="py-2 text-fg-muted text-xs">AFM (Netherlands)</td></tr>
+                  <tr><td className="py-2 font-semibold text-fg">MyInvestor</td><td className="py-2 text-fg-muted">0.12% (min €1, max €25)</td><td className="py-2 text-fg-muted">Yes (Vanguard, Amundi)</td><td className="py-2 text-fg-muted text-xs">CNMV (Spain)</td></tr>
+                  <tr><td className="py-2 font-semibold text-fg">XTB</td><td className="py-2 text-fg-muted">€0 up to €100k/mo (savings plans free)</td><td className="py-2 text-fg-muted">No</td><td className="py-2 text-fg-muted text-xs">CNMV (Spain)</td></tr>
                   <tr><td className="py-2 font-semibold text-fg">Interactive Brokers</td><td className="py-2 text-fg-muted">Very low (tiered)</td><td className="py-2 text-fg-muted">Yes</td><td className="py-2 text-fg-muted text-xs">CBI (Ireland)</td></tr>
                 </tbody>
               </table>

@@ -378,8 +378,9 @@ export const BROKERS: Broker[] = [
     notIdealFor: [
       'Aportaciones pequeñas: una orden de 300 € paga 3,30 €, un 1,1 %',
     ],
-    depositGuarantee: '100.000€ por el Fondo de Garantía de Depósitos español',
-    investmentGuarantee: '100.000€ por el Fondo de Garantía de Inversiones español',
+    // ING opera como sucursal de ING Bank N.V.: su documentación (ing.es/sobre-ing/pdf/DGS.pdf)
+    // remite al sistema de garantía de depósitos holandés. Hasta el 30-sep-2026 decía «español».
+    depositGuarantee: '100.000€ por el sistema de garantía de depósitos holandés (ING es sucursal de ING Bank N.V.)',
     officialUrl: 'https://www.ing.es',
     faq: [
       {

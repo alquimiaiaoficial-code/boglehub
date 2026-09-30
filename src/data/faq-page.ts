@@ -138,8 +138,8 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
         a: 'Sí. Trade Republic es un banco alemán con licencia bancaria completa supervisado por BaFin y Bundesbank desde 2023. Los depósitos en euros hasta 100.000€ están cubiertos por el Fondo de Garantía de Depósitos alemán. Las acciones y ETFs se custodian como patrimonio segregado del banco. Adicionalmente cubiertos hasta 20.000€ por el Fondo Europeo de Garantía de Inversiones.',
       },
       {
-        q: '¿Por qué MyInvestor es el único broker con fondos indexados Vanguard en España?',
-        a: 'MyInvestor es el neobanco del grupo Andbank, regulado por CNMV y Banco de España. Es uno de los pocos brokers españoles que ofrece la gama institucional de fondos Vanguard, Amundi y Fidelity directamente al inversor particular. Esta combinación —ETFs + fondos con traspaso fiscal libre + plan de pensiones indexado— lo hace único en el mercado español. Sin comisión de custodia ni de compra en fondos.',
+        q: '¿Qué ofrece MyInvestor en fondos indexados?',
+        a: 'MyInvestor es un banco español supervisado por el Banco de España y la CNMV. Según su web, ofrece fondos indexados de Vanguard, iShares, Amundi, Fidelity y NN sin mínimo de inversión ni comisión de compra, con el traspaso entre fondos sin tributar, además de ETF (0,12 % por orden, mínimo 1 €) y planes de pensiones indexados. No es la única entidad española con fondos indexados: Openbank, ING o Renta 4 también los comercializan; lo que conviene comparar es el TER de cada clase.',
       },
       {
         q: '¿Cuál es el plan de pensiones indexado más barato en España?',
