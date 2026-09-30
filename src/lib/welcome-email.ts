@@ -27,7 +27,7 @@ export function welcomeEmail(): EmailContent {
 <div style="font-size:20px;font-weight:700;color:#0a0a0a;letter-spacing:-0.02em;">BogleHub</div>
 <h1 style="margin:20px 0 14px 0;font-size:22px;line-height:1.3;color:#0a0a0a;">Ya estás dentro</h1>
 <p style="margin:0 0 16px 0;font-size:15px;line-height:1.65;color:#3f3f46;">
-Gracias por suscribirte. Cada dos semanas te llega un correo con análisis de ETFs, fiscalidad para inversores en España y novedades de la herramienta. Nada de spam, y te das de baja con un clic cuando quieras.
+Gracias por suscribirte. Como mucho una vez por semana te llega un correo con análisis de ETFs, fiscalidad para inversores en España y novedades de la herramienta. Nada de spam, y te das de baja con un clic cuando quieras.
 </p>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;margin:0 0 20px 0;">
 <tr><td style="padding:16px 18px;">
@@ -76,7 +76,7 @@ Recibes este correo porque te suscribiste en boglehub.com. Información educativ
 
   const text = `Ya estás dentro de BogleHub
 
-Gracias por suscribirte. Cada dos semanas te llega un correo con análisis de ETFs, fiscalidad para inversores en España y novedades de la herramienta. Nada de spam, y te das de baja con un clic cuando quieras.
+Gracias por suscribirte. Como mucho una vez por semana te llega un correo con análisis de ETFs, fiscalidad para inversores en España y novedades de la herramienta. Nada de spam, y te das de baja con un clic cuando quieras.
 
 TU REGALO DE BIENVENIDA
 "Tu primera cartera indexada en España, paso a paso" (PDF): de cero a tu primera aportación automática, con fiscalidad 2026 y checklist final.
