@@ -212,7 +212,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     longDefinition:
       'El TER (Total Expense Ratio) es la métrica fundamental para comparar el coste de fondos y ETFs. Se expresa como porcentaje anual sobre el patrimonio. Un TER del 0,20% sobre 10.000€ supone un coste de 20€ al año, descontado proporcionalmente del valor del fondo.\n\nPara el inversor indexado, el TER es uno de los pocos factores que se pueden controlar y predecir con certeza. La rentabilidad del mercado es incierta, pero el TER se paga sí o sí. Por eso la diferencia entre un fondo con TER del 0,07% y otro del 1,5% puede traducirse en decenas de miles de euros en una cartera mantenida durante 30 años.',
     example:
-      'Comparativa de TER en ETFs MSCI World: SWRD 0,12%, MWRD 0,12%, XDWD 0,19%, IWDA 0,20%. Sobre una cartera de 100.000€ a 30 años con interés compuesto del 7%, la diferencia entre 0,12% y 0,20% supera los 8.000€ acumulados.',
+      'Comparativa de TER en ETFs MSCI World: SWRD 0,12%, MWRD 0,12%, XDWD 0,12%, IWDA 0,20%. Sobre una cartera de 100.000€ a 30 años con interés compuesto del 7%, la diferencia entre 0,12% y 0,20% supera los 8.000€ acumulados.',
     relatedArticles: ['como-elegir-tu-primer-etf-espana-2026', 'mejores-etfs-espana-2026'],
     relatedLinks: [
       { label: 'Calculadora de interés compuesto', href: '/calculadora/interes-compuesto' },
@@ -1183,13 +1183,13 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     shortDefinition:
       'La custodia es el servicio de un banco o broker de mantener los valores (acciones, ETFs, fondos) en nombre del inversor. Es esencial para que tus inversiones estén legalmente seguras.',
     longDefinition:
-      'Cuando compras un ETF, no recibes papelitos físicos: los valores quedan registrados electrónicamente en una entidad custodia. Esta entidad mantiene los valores en cuentas segregadas del banco/broker — son tu propiedad, no del broker. Esta segregación es fundamental: en caso de quiebra del broker, tus valores siguen siendo tuyos y no forman parte de la masa concursal.\n\nLos brokers cobran (o no) por la custodia. Trade Republic: 0€ de custodia. DEGIRO: 0€ en la cuenta básica, comisión menor en la Custody account. MyInvestor: 0€ tanto en ETFs como en fondos. Los bancos tradicionales en España cobran a menudo comisiones de custodia del 0,2-0,5% anual, lo que es competitivamente inaceptable en 2026.\n\nVerifica siempre que el broker ofrece custodia segregada de tus valores. En caso de duda, mira si el broker está adherido a un fondo de garantía de inversiones (el español cubre 100.000€, el holandés 20.000€, el alemán 100.000€).',
+      'Cuando compras un ETF, no recibes papelitos físicos: los valores quedan registrados electrónicamente en una entidad custodia. Esta entidad mantiene los valores en cuentas segregadas del banco/broker — son tu propiedad, no del broker. Esta segregación es fundamental: en caso de quiebra del broker, tus valores siguen siendo tuyos y no forman parte de la masa concursal.\n\nLos brokers cobran (o no) por la custodia. Trade Republic: 0€ de custodia. DEGIRO: 0€ en la cuenta básica, comisión menor en la Custody account. MyInvestor: 0€ tanto en ETFs como en fondos. Los bancos tradicionales en España cobran a menudo comisiones de custodia del 0,2-0,5% anual, lo que es competitivamente inaceptable en 2026.\n\nVerifica siempre que el broker ofrece custodia segregada de tus valores. En caso de duda, mira si el broker está adherido a un fondo de garantía de inversiones (el español cubre 100.000€; el holandés y el alemán, 20.000€).',
     example:
       'Si tienes 50.000€ en VWCE en Trade Republic, esos VWCE son tu propiedad legal, custodiados por Citibank (custodio de Trade Republic). Si Trade Republic quebrara, tus VWCE seguirían siendo tuyos y los podrías transferir a otro broker.',
     faq: [
       {
         q: '¿Qué pasa con mis ETFs si quiebra el broker?',
-        a: 'Tus valores están en cuentas segregadas: son tu propiedad, no del broker, y no forman parte de su masa concursal. Si el broker quiebra, puedes transferir tus ETFs a otro. Además, los fondos de garantía cubren 100.000€ en España y Alemania, y 20.000€ en Países Bajos, ante fraude o fallos operativos.',
+        a: 'Tus valores están en cuentas segregadas: son tu propiedad, no del broker, y no forman parte de su masa concursal. Si el broker quiebra, puedes transferir tus ETFs a otro. Además, el fondo de garantía español cubre 100.000€, y los de Alemania y Países Bajos, 20.000€, ante fraude o fallos operativos.',
       },
       {
         q: '¿Cobran comisión de custodia los brokers en España?',
@@ -1448,7 +1448,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     longDefinition:
       'La gestión pasiva parte de la evidencia empírica: la mayoría de gestores activos no supera consistentemente al mercado después de comisiones y durante periodos largos. En lugar de contratar analistas para elegir acciones ganadoras, un fondo pasivo simplemente replica la composición de un índice (MSCI World, S&P 500, FTSE All-World) comprando las mismas empresas en las mismas proporciones.\n\nEl resultado: el inversor obtiene exactamente la rentabilidad del mercado menos un TER muy bajo (0,05%-0,30%), frente al 1-2% anual de los fondos activos. A 20-30 años, esa diferencia de coste acumulada puede suponer decenas de miles de euros.\n\n**Gestión activa vs pasiva**: la gestión activa contrata gestores que intentan superar al índice mediante selección de acciones y timing de mercado. Los datos de Standard & Poor\'s SPIVA muestran que en periodos de 10-15 años, más del 85% de los fondos activos en Europa no superan a su índice de referencia después de comisiones. La gestión pasiva no promete rentabilidades superiores, pero sí evitar que las comisiones erosionen tu rentabilidad.',
     example:
-      'Un inversor con 50.000€ en un fondo activo con TER del 1,5% paga 750€ al año en comisiones. Con un fondo indexado con TER del 0,10%, pagaría 50€. A 30 años con interés compuesto del 7%, esa diferencia representa aproximadamente 90.000€ en tu cartera final.',
+      'Un inversor con 50.000€ en un fondo activo con TER del 1,5% paga 750€ al año en comisiones. Con un fondo indexado con TER del 0,10%, pagaría 50€. A 30 años con interés compuesto del 7%, esa diferencia representa aproximadamente 121.000€ en tu cartera final.',
     relatedArticles: [
       'bogleheads-espana-guia-completa',
       'fondos-indexados-vs-etfs-espana',
@@ -1465,7 +1465,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       },
       {
         q: '¿Es la gestión pasiva adecuada para todos los inversores?',
-        a: 'Para la gran mayoría de inversores particulares a largo plazo, sí. Requiere disciplina para no vender en momentos de pánico y aceptar que tendrás exactamente la rentabilidad del mercado, ni más ni menos. Si no puedes soportar ver tu cartera caer un 30% sin hacer nada, necesitas una asignación más conservadora, no un gestor activo.',
+        a: 'Para la gran mayoría de inversores particulares a largo plazo, sí. Requiere disciplina para no vender en momentos de pánico y aceptar que tendrás exactamente la rentabilidad del mercado, ni más ni menos. Si no puedes soportar ver tu cartera caer un 30% sin hacer nada, una asignación más conservadora reduce esa volatilidad; un gestor activo no la elimina.',
       },
     ],
   },

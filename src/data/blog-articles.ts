@@ -963,7 +963,7 @@ Más sobre cómo elegir bien tu ETF, en la [guía para elegir tu primer ETF](/bl
 
 ## Conclusión práctica
 
-Si estás construyendo patrimonio a largo plazo, elige **acumulación**: difiere el impuesto, reinvierte el 100% de los dividendos y deja que el interés compuesto trabaje sin fugas anuales a Hacienda. Reserva la **distribución** para cuando quieras o necesites cobrar rentas, sabiendo que vender un poco de un ETF de acumulación logra lo mismo con frecuencia de forma más eficiente. Y si te decides por fondos indexados de acumulación, sumas además el traspaso fiscal: la combinación más eficiente para la fase de ahorro en España.
+Si estás construyendo patrimonio a largo plazo, la acumulación suele ser la opción más eficiente: difiere el impuesto, reinvierte el 100% de los dividendos y deja que el interés compuesto trabaje sin fugas anuales a Hacienda. Reserva la **distribución** para cuando quieras o necesites cobrar rentas, sabiendo que vender un poco de un ETF de acumulación logra lo mismo con frecuencia de forma más eficiente. Y si te decides por fondos indexados de acumulación, sumas además el traspaso fiscal: la combinación más eficiente para la fase de ahorro en España.
 
 ---
 
@@ -1739,7 +1739,7 @@ Si aún no has dado el primer paso, la guía de [cómo empezar a invertir con po
     faq: [
       {
         q: '¿Es mejor invertir en pisos o en fondos indexados?',
-        a: 'Depende de qué valores. Como inversión pura, los fondos indexados ganan en diversificación, liquidez, coste y esfuerzo: compras miles de empresas globales y vendes en días por céntimos. El inmobiliario tiene a su favor el apalancamiento de la hipoteca y ser un activo tangible, a cambio de concentración, iliquidez y gestión. Para muchos inversores, la combinación (vivienda habitual + fondos para el ahorro) es lo más sensato.',
+        a: 'Depende de qué valores. Como inversión pura, los fondos indexados ganan en diversificación, liquidez, coste y esfuerzo: compras miles de empresas globales y vendes en días por céntimos. El inmobiliario tiene a su favor el apalancamiento de la hipoteca y ser un activo tangible, a cambio de concentración, iliquidez y gestión. Para muchos inversores, la combinación (vivienda habitual + fondos para el ahorro) es frecuente.',
       },
       {
         q: '¿Qué da más rentabilidad, un piso o la bolsa?',
@@ -1823,7 +1823,7 @@ Depende de qué valores:
 
 ## Conclusión práctica
 
-El debate "ladrillo o bolsa" suele plantearse como una guerra de identidad, pero es una decisión técnica. Como inversión pura, los fondos indexados son más diversificados, líquidos, baratos y cómodos; el inmobiliario aporta apalancamiento y tangibilidad a cambio de concentración, iliquidez y trabajo. Si solo buscas rentabilizar tus ahorros con el mínimo esfuerzo y sin riesgo concentrado, los fondos indexados son, para la mayoría, el mejor punto de partida. Y si te atrae el inmobiliario, que sea por sus ventajas reales (el apalancamiento), no por el mito de que "nunca baja".
+El debate "ladrillo o bolsa" suele plantearse como una guerra de identidad, pero es una decisión técnica. Como inversión pura, los fondos indexados son más diversificados, líquidos, baratos y cómodos; el inmobiliario aporta apalancamiento y tangibilidad a cambio de concentración, iliquidez y trabajo. Si solo buscas rentabilizar tus ahorros con el mínimo esfuerzo y sin riesgo concentrado, los fondos indexados destacan por su diversificación, liquidez y bajo coste. Y si te atrae el inmobiliario, que sea por sus ventajas reales (el apalancamiento), no por el mito de que "nunca baja".
 
 Para entender por qué el bajo coste y la diversificación pesan tanto a largo plazo, el [interés compuesto](/blog/interes-compuesto-inversion) y la comparativa [fondos indexados vs ETFs](/blog/fondos-indexados-vs-etfs-espana) son buenos siguientes pasos.
 
@@ -1927,7 +1927,7 @@ Si usas fondos indexados, esos ajustes los haces con traspasos **sin coste fisca
 
 ## Errores comunes
 
-- **Esperar a "tener más" para empezar.** El tiempo vale más que el importe: 50€/mes desde el nacimiento baten a 200€/mes empezando a los 10.
+- **Esperar a "tener más" para empezar.** Empezar antes deja más años al interés compuesto: con un 7 % anual, 50€/mes desde el nacimiento suman unos 21.500€ a los 18 años aportando 10.800€; 200€/mes desde los 10 llegan a unos 25.600€, pero aportando 19.200€.
 - **Pagar comisiones altas "porque es para los niños".** Los seguros de ahorro y planes para menores de los bancos suelen tener costes elevados y rentabilidades pobres. Un fondo indexado barato casi siempre gana.
 - **Asumir demasiado riesgo el último tramo.** Una cosa es 100% bolsa con 3 años de edad; otra, con 17.
 - **No contar con la fiscalidad de la donación.** Antes de poner mucho dinero a nombre del menor, infórmate de cómo tributa la donación en tu comunidad autónoma.
@@ -3036,7 +3036,7 @@ Si tu estrategia se apoya en traspasar entre fondos indexados sin pasar por Haci
 | Planes de inversión automáticos | No (operativa manual) | Sí, sin comisión (desde 1 €) | No |
 | Cuenta remunerada | Sobre saldo no invertido | Sí (tipo variable) | No aparece en su tarifa |
 | Regulador | CBI (Irlanda) | BaFin (Alemania) | AFM (Países Bajos) |
-| Garantía de inversión | 20.000€ | 100.000€ (depósitos) | 20.000€ |
+| Garantía de inversión | 20.000€ | 20.000€ (esquema alemán) | 20.000€ |
 | Mercados | 150 mercados | Europa + EE.UU. | Muchas bolsas internacionales |
 | Interfaz | Profesional, compleja | Móvil, muy simple | Web técnica |
 
@@ -3048,7 +3048,7 @@ Frente a **Trade Republic**, IBKR gana en alcance y en coste a gran escala, pero
 
 Interactive Brokers es, objetivamente, uno de los mejores brokers del mundo por coste y alcance. Pero "el mejor del mundo" no significa "el mejor para ti": su interfaz técnica y la carga fiscal que deja en tus manos lo hacen poco recomendable como primer broker para quien empieza con poco. Donde IBKR no tiene rival es en carteras grandes, exposición multidivisa y perfiles que saben lo que hacen.
 
-Si tu caso es ese, IBKR te dará el coste más bajo durante décadas. Si estás empezando, probablemente te convenga más [Trade Republic](/blog/trade-republic-opinion-2026) para los ETFs o [MyInvestor](/blog/myinvestor-opinion-2026) para combinarlos con fondos indexados, y dejar IBKR para cuando tu cartera y tu soltura lo justifiquen. Para comparar las cinco opciones según tu patrón real, usa el [comparador de brókers de BogleHub](/calculadora/comparar-brokers) o lee la [comparativa del mejor broker para ETFs](/blog/mejor-broker-etfs-espana-2026).
+Si tu caso es ese, IBKR te dará el coste más bajo durante décadas. Quien empieza suele apoyarse en brókers como Trade Republic para los ETFs o MyInvestor para combinarlos con fondos indexados, y deja IBKR para cuando la cartera y la soltura lo justifiquen. Para comparar las cinco opciones según tu patrón real, usa el [comparador de brókers de BogleHub](/calculadora/comparar-brokers) o lee la [comparativa del mejor broker para ETFs](/blog/mejor-broker-etfs-espana-2026).
 
 ---
 
@@ -3197,7 +3197,7 @@ Banco español que ofrece a la vez ETF y fondos indexados de Vanguard, Amundi, i
 |------|-------|
 | ISIN | IE00BK5BQT80 |
 | Ticker | VWCE |
-| TER | 0,19 % |
+| TER | 0,14 % |
 | Holdings | ~3 600 |
 | Índice | FTSE All-World |
 | Domicilio | Irlanda |
@@ -3321,7 +3321,7 @@ Esta guía desgrana cada ETF en detalle y te da un marco claro para elegir segú
 | | VWCE | CSPX | IWDA |
 |---|---|---|---|
 | Índice | FTSE All-World | S&P 500 | MSCI World |
-| TER | 0,19 % | 0,07 % | 0,20 % |
+| TER | 0,14 % | 0,07 % | 0,20 % |
 | Holdings | ~3 600 | 503 | ~1 400 |
 | Emergentes | Sí (12 %) | No | No |
 | Domicilio | Irlanda | Irlanda | Irlanda |
@@ -3465,7 +3465,7 @@ Una estrategia popular entre inversores avanzados es [construir el equivalente a
 
 | Criterio | VWCE | CSPX | IWDA |
 |----------|------|------|------|
-| TER | 0,19 % | 0,07 % | 0,20 % |
+| TER | 0,14 % | 0,07 % | 0,20 % |
 | Número de holdings | ~3 600 | ~503 | ~1 400 |
 | Geografía | Global total | Solo EE. UU. | Mundo desarrollado |
 | Emergentes incluidos | Sí | No | No |
@@ -3585,7 +3585,7 @@ Los dividendos se reinvierten automáticamente dentro del fondo. No hay ningún 
 - **ETF distribución**: tributas ~133 € cada año por dividendos + al vender final
 - **[ETF de acumulación](/blog/fondos-indexados-vs-etfs-espana)**: solo tributas al vender. El capital que habrías pagado en impuestos anuales sigue compuesto en el fondo durante décadas
 
-La diferencia puede superar los 20 000–30 000 € en una cartera grande a largo plazo. **Salvo que necesites flujo de caja, usa siempre ETFs de acumulación.**
+La diferencia puede superar los 20 000–30 000 € en una cartera grande a largo plazo. **Salvo que se necesite flujo de caja, los ETFs de acumulación suelen ser más eficientes fiscalmente.**
 
 ---
 
@@ -3634,7 +3634,7 @@ El modelo 720 es obligatorio si tienes activos en el extranjero **valorados en m
 - Trade Republic está en Alemania.
 - Si el valor de tus ETFs supera los 50 000 €, es obligatorio declararlo.
 
-**Penalizaciones**: el régimen sancionador del 720 es de los más duros del sistema tributario español. La Agencia Tributaria revisó el régimen tras sentencia del TJUE de 2022, pero la obligación de declaración sigue vigente. Multa mínima por no presentarlo: 10 000 €.
+**Penalizaciones**: hasta 2022 el régimen sancionador del 720 incluía una multa fija con un mínimo de 10 000 €, pero el Tribunal de Justicia de la UE la declaró contraria al derecho europeo y la Ley 5/2022 suprimió ese régimen sancionador específico, quedando el régimen general de infracciones de la Ley General Tributaria. La obligación de declaración sigue vigente.
 
 **Plazo**: del 1 de enero al 31 de marzo del año siguiente.
 
@@ -3664,7 +3664,7 @@ Los ETFs de Vanguard, iShares o SPDR que cotizan en NYSE o NASDAQ son **no-UCITS
 
 Pero hay más: si un inversor europeo pudiera comprar ETFs americanos, existiría el riesgo de **withholding tax en herencia** (impuesto sucesorio americano del 40 % sobre activos con situs en EE. UU.). Los ETFs UCITS domiciliados en Irlanda eliminan este riesgo.
 
-**Regla de oro**: solo compra ETFs UCITS europeos. ISIN empieza por IE o LU. Punto.
+**En la práctica**: un inversor minorista en España compra ETFs UCITS europeos, y los más usados están domiciliados en Irlanda o Luxemburgo (ISIN que empieza por IE o LU).
 
 ---
 
@@ -3680,7 +3680,7 @@ Un ETF domiciliado en Irlanda pagará el 15 % de retención a la fuente sobre di
 
 Sin convenio comparable. La retención sobre dividendos americanos puede ser del 30 %. Para un inversor en un ETF de renta variable global con 60 % en EE. UU., la diferencia es del 15 % adicional sobre el 60 % de los dividendos. Con una rentabilidad por dividendo del 1,5 %, eso es ~0,135 % de coste oculto adicional cada año.
 
-**Conclusión**: para ETFs de renta variable global, prefiere siempre domicilio en Irlanda.
+**En la práctica**: para ETFs de renta variable global, el domicilio en Irlanda suele ser más eficiente fiscalmente que Luxemburgo.
 
 **Importante**: para ETFs de bonos (renta fija), la diferencia es menor porque los bonos no pagan "dividendos" en el mismo sentido. El cupón tributa diferente.
 
@@ -3723,7 +3723,7 @@ Al ser entidad española, **retiene a cuenta** el 19 % sobre dividendos abonados
 
 4. **Ignorar el modelo 720 por desconocimiento**: la ignorancia no exime de la multa. Si tu cartera en broker extranjero supera 50 000 €, infórmate antes del 31 de marzo.
 
-5. **Compensar pérdidas de ETFs con plusvalías de criptomonedas**: desde 2023, las criptomonedas tributan como "otras ganancias patrimoniales", no en la base del ahorro. Las pérdidas de ETFs no se pueden compensar con ganancias de cripto y viceversa si son de distinta naturaleza.
+5. **Creer que las pérdidas de ETFs no se compensan con ganancias de criptomonedas**: las ganancias y pérdidas por vender criptomonedas son ganancias patrimoniales de la base del ahorro, igual que las de ETFs y acciones, así que se compensan entre sí (arts. 46 y 49 de la Ley del IRPF).
 
 6. **Olvidar los gastos deducibles**: las comisiones de compra y venta son deducibles del precio. Reduce el precio de venta por la comisión de venta y suma la comisión de compra al precio de adquisición.
 
@@ -4467,7 +4467,7 @@ A efectos prácticos, el coste ya no es un criterio que decante la balanza de fo
 - Te interesa la flexibilidad de comprar y vender en tiempo real.
 - No prevés traspasar: tu plan es comprar y mantener durante décadas.
 
-Para mucha gente, la respuesta más cómoda es: **fondos indexados como vehículo principal** por la ventaja del traspaso, y ETFs si su broker o su índice preferido lo exige.
+Quien valore la ventaja del traspaso suele usar fondos indexados como vehículo principal, y ETFs cuando su broker o su índice preferido lo exige.
 
 ---
 
@@ -5517,13 +5517,13 @@ No existe un único "mejor ETF". Existe el mejor ETF para tu objetivo, tu horizo
 
 ---
 
-## Los 10 ETFs más recomendados para España en 2026
+## 10 ETFs habituales en carteras indexadas en España (2026)
 
 ### 1. VWCE — Vanguard FTSE All-World Acc (IE00BK5BQT80)
 
 | Dato | Valor |
 |------|-------|
-| TER | 0,19 % |
+| TER | 0,14 % |
 | AUM | ~60.000 M€ |
 | Holdings | ~3.600 empresas |
 | Índice | FTSE All-World |
@@ -5605,7 +5605,7 @@ No existe un único "mejor ETF". Existe el mejor ETF para tu objetivo, tu horizo
 
 ---
 
-### 7. VEUR — Vanguard FTSE Developed Europe Acc (IE00B945VV12)
+### 7. VEUR — Vanguard FTSE Developed Europe Dist (IE00B945VV12)
 
 | Dato | Valor |
 |------|-------|
@@ -5642,7 +5642,7 @@ No existe un único "mejor ETF". Existe el mejor ETF para tu objetivo, tu horizo
 | Índice | NASDAQ-100 |
 | Grado fiscal (España) | A |
 
-**Para quién**: inversor con convicción en tecnología y tolerancia alta a la volatilidad. No es una alternativa al MSCI World — es una posición de alta concentración. Si no entiendes por qué quieres el NASDAQ-100 en lugar de un índice global, no lo compres. TER más alto y concentración sectorial en tecnología (~50 %). Comparamos EQQQ con sus alternativas (SXRV, CNDX) en la guía de [mejores ETFs Nasdaq 100 para España](/blog/mejores-etfs-nasdaq-100-espana).
+**Para quién**: inversor con convicción en tecnología y tolerancia alta a la volatilidad. No es una alternativa al MSCI World — es una posición de alta concentración. Si no tienes claro por qué querrías el NASDAQ-100 en lugar de un índice global, es una señal de que no encaja con una estrategia indexada simple. TER más alto y concentración sectorial en tecnología (~50 %). Comparamos EQQQ con sus alternativas (SXRV, CNDX) en la guía de [mejores ETFs Nasdaq 100 para España](/blog/mejores-etfs-nasdaq-100-espana).
 
 ---
 
@@ -6226,7 +6226,7 @@ Este análisis cubre todo lo que necesitas saber: qué hay dentro, cuánto cuest
 | Domicilio | Irlanda |
 | Gestora | Vanguard |
 | Índice replicado | FTSE All-World |
-| TER | 0,19% anual |
+| TER | 0,14% anual |
 | Política de dividendos | Acumulación |
 | Replicación | Física por muestreo |
 | Nº de valores aproximado | ~3.700 empresas |
@@ -6289,7 +6289,7 @@ Esta es la comparativa que más se repite en los foros de inversión españoles:
 |---|---|---|
 | Índice | FTSE All-World | MSCI World |
 | Emergentes incluidos | ✓ (~12%) | ✗ |
-| TER | 0,19% | 0,20% |
+| TER | 0,14% | 0,20% |
 | Domicilio | Irlanda | Irlanda |
 | Acumulación | ✓ | ✓ |
 | Patrimonio gestionado | >15.000 M USD | >75.000 M USD |
@@ -6300,7 +6300,7 @@ La diferencia clave: IWDA solo incluye países desarrollados (no emergentes). Pa
 
 **Cuándo elegir IWDA**: quieres más control sobre el peso de emergentes (añadiéndolos por separado), o ya tienes exposición a emergentes por otro lado.
 
-Para la mayoría de inversores que empiezan: **VWCE es la respuesta más sencilla y correcta**.
+Para inversores que empiezan y buscan simplicidad, VWCE cubre el mercado global en un solo producto.
 
 ---
 
@@ -6335,7 +6335,7 @@ Para muchos sí. Es diversificado globalmente, domiciliado en Irlanda, de acumul
 
 Sus únicas limitaciones son el TER algo superior a las alternativas más baratas, y que no está disponible como fondo de inversión (lo que significaría traspaso fiscal libre en España).
 
-Si usas Trade Republic o DEGIRO y buscas la solución más simple para largo plazo: **VWCE es probablemente la mejor opción disponible en España para un ETF todo-en-uno**.
+Si usas Trade Republic o DEGIRO y buscas simplicidad a largo plazo, VWCE es una opción disponible en España como ETF todo-en-uno.
 
 ---
 
@@ -6647,7 +6647,7 @@ Para cuantificar exactamente el coste de un roboadvisor frente a gestionar tu pr
       },
       {
         q: '¿Cómo se valora un ETF en el Impuesto sobre el Patrimonio?',
-        a: 'Por su valor liquidativo a 31 de diciembre, y esto sorprende a mucha gente porque NO es la regla de las acciones. Un ETF es una institución de inversión colectiva, y el artículo 16.2 de la Ley 19/1991 dice que las participaciones en IIC «se computarán por el valor liquidativo en la fecha del devengo del impuesto», que es el 31 de diciembre. Las acciones cotizadas van por el artículo 13, que usa «el valor de negociación media del cuarto trimestre». Mismo mercado, dos formas distintas de valorar. El Patrimonio es un impuesto aparte del IRPF, con un mínimo exento que fija el Estado y que cada comunidad autónoma puede cambiar, así que si declarar o no depende de dónde se resida.',
+        a: 'Por su valor liquidativo a 31 de diciembre, y esto sorprende a mucha gente porque NO es la regla de las acciones. Un ETF es una institución de inversión colectiva, y el artículo 16.2 de la Ley 19/1991 dice que las participaciones en IIC «se computarán por el valor liquidativo en la fecha del devengo del impuesto», que es el 31 de diciembre. Las acciones cotizadas van por el artículo 15, que usa «el valor de negociación media del cuarto trimestre». Mismo mercado, dos formas distintas de valorar. El Patrimonio es un impuesto aparte del IRPF, con un mínimo exento que fija el Estado y que cada comunidad autónoma puede cambiar, así que si declarar o no depende de dónde se resida.',
       },
       {
         q: '¿Puedo compensar las pérdidas de ETFs con ganancias de otros ETFs o acciones?',
@@ -6986,7 +6986,7 @@ Para minimizar el impacto fiscal al rescatar:
 
 **1. Rescate en forma de renta periódica**: cobrar el plan como una pensión mensual durante varios años distribuye el impacto fiscal en lugar de concentrarlo. Cada año tributas como un trabajador con un salario adicional reducido.
 
-**2. Coordinación con la pensión pública**: si vas a cobrar pensión pública de 1.500€/mes, no rescates el plan en el mismo año en grandes cantidades — saturarías tu tipo marginal.
+**2. Coordinación con la pensión pública**: si vas a cobrar pensión pública de 1.500€/mes, rescatar el plan ese mismo año en grandes cantidades satura el tipo marginal.
 
 **3. Aprovechar la reducción del 40%**: si tu plan tiene aportaciones anteriores a 2007, esas aportaciones específicas se benefician de una reducción del 40% si las rescatas en forma de capital en el año de la jubilación o en los dos siguientes.
 
@@ -7000,7 +7000,6 @@ Indexa Pensiones aplica la misma filosofía que su roboadvisor de fondos: carter
 
 **Ventajas**:
 - Sin mínimo de aportación
-- Bonificación del 0,10% sobre las aportaciones nuevas en el primer año (suele renovarse)
 - Carteras según perfil de riesgo (1/10 al 10/10)
 - Misma metodología que su fondo, fácil de combinar
 
@@ -7056,11 +7055,11 @@ Para calcular el impacto exacto del cambio, usa la [calculadora de interés comp
 | Mínimos | Sin mínimo o muy bajos | Desde 1€ (MyInvestor) |
 | Traspaso libre | ✓ (entre planes pensiones) | ✓ (entre fondos) |
 
-**Regla práctica**:
-- **Hasta 1.500€/año** → plan de pensiones indexado (aprovechas la deducción)
-- **Más allá de 1.500€/año** → fondos indexados (mayor liquidez y menores comisiones)
+**Cómo se suele combinar**:
+- **Hasta 1.500€/año**: es lo que un plan de pensiones individual permite reducir de la base imponible
+- **Más allá de 1.500€/año**: la aportación al plan ya no reduce la base, y los fondos indexados dan más liquidez y suelen tener menos comisiones
 
-Esta estrategia combinada es lo que recomienda la mayoría de planificadores financieros indexados en España. Para profundizar en la diferencia fiscal entre ambos productos, lee la [comparativa entre plan de pensiones y fondo indexado](/blog/plan-de-pensiones-vs-fondo-indexado).
+Es una combinación frecuente entre inversores indexados en España. Para profundizar en la diferencia fiscal entre ambos productos, lee la [comparativa entre plan de pensiones y fondo indexado](/blog/plan-de-pensiones-vs-fondo-indexado).
 
 ---
 
@@ -7548,7 +7547,7 @@ Comisiones leídas en la web de cada bróker el 30-sep-2026. Lo que se paga de v
       },
       {
         q: '¿Cuál es el mejor ETF de dividendos disponible en España?',
-        a: 'Para inversores españoles, los más populares son: VHYL (Vanguard FTSE All-World High Dividend Yield UCITS ETF, TER 0,29%, dividend yield ~3,5%), TDIV (VanEck Morningstar Developed Markets Dividend Leaders, TER 0,38%, yield ~4%) y FUSD (Fidelity US Quality Income UCITS ETF, TER 0,25%, foco en EEUU). Todos son de distribución y domiciliados en Irlanda. SCHD es muy popular pero no está disponible directamente en España (es un ETF americano).',
+        a: 'Para inversores españoles, los más populares son: VHYL (Vanguard FTSE All-World High Dividend Yield UCITS ETF, TER 0,29%, dividend yield ~3,5%), TDIV (VanEck Morningstar Developed Markets Dividend Leaders, TER 0,38%, yield ~4%) y FUSD (Fidelity US Quality Income UCITS ETF, TER 0,25%, foco en EEUU). Todos son de distribución; VHYL y FUSD están domiciliados en Irlanda y TDIV en Países Bajos. SCHD es muy popular pero no está disponible directamente en España (es un ETF americano).',
       },
       {
         q: '¿Tributan más los ETFs de distribución que los de acumulación en España?',
@@ -9826,7 +9825,7 @@ La base de casi cualquier cartera. Replican el MSCI World o un índice equivalen
 
 | Fondo | Índice | TER | ISIN |
 |---|---|---|---|
-| Fidelity MSCI World Index | MSCI World | 0,12 % | IE00BYX5MX67 |
+| | Fidelity MSCI World Index | MSCI World | 0,12 % | IE00BYX5NX33 |
 | Vanguard Global Stock Index | MSCI World | 0,18 % | IE00B03HCZ61 |
 
 Falta de esta tabla un producto que aparece en casi todas las listas de fondos baratos: el **Amundi Prime Global**, al 0,05 %. No está porque **no es un fondo, es un ETF**, y por tanto no tiene el traspaso sin tributar que justifica esta sección. Lo contamos en [Amundi Prime Global: no es un fondo, es un ETF](/blog/amundi-prime-global-analisis).
@@ -9878,7 +9877,7 @@ Para quien quiera sobreponderar regiones concretas.
 
 | Fondo | Índice | TER | ISIN |
 |---|---|---|---|
-| Vanguard Eurozone Stock Index | MSCI EMU | 0,16 % | IE0007987690 |
+| Vanguard European Stock Index | MSCI Europe | 0,12 % | IE0007987690 |
 
 ---
 
@@ -9900,9 +9899,9 @@ La versión más sencilla de una cartera Boglehead con fondos:
 - **80 % Vanguard Global Stock Index** (renta variable global, TER 0,18 %)
 - **20 % Vanguard Global Bond EUR Hedged** (renta fija global, TER 0,15%)
 
-TER ponderado: aproximadamente 0,07% anual. Difícil de batir en coste. Para una versión de tres fondos, añade un fondo de emergentes (por ejemplo, 70% global / 10% emergentes / 20% bonos). Más sobre carteras en la [cartera Boglehead de 3 fondos](/blog/cartera-boglehead-3-fondos-espana).
+TER ponderado: aproximadamente 0,17% anual. Difícil de batir en coste. Para una versión de tres fondos, añade un fondo de emergentes (por ejemplo, 70% global / 10% emergentes / 20% bonos). Más sobre carteras en la [cartera Boglehead de 3 fondos](/blog/cartera-boglehead-3-fondos-espana).
 
-Una vez tengas tu cartera, puedes [analizarla gratis](/analyzer) para ver tu diversificación real, el TER ponderado y posibles solapamientos. Sin registro y con los datos solo en tu navegador.
+Una vez tengas tu cartera, puedes [analizarla gratis](/analyzer) para ver tu diversificación real, el TER ponderado y posibles solapamientos. Sin registro, aunque tu cartera se envía al servidor para analizarla.
 
 ---
 
@@ -10116,7 +10115,7 @@ Si prefieres un fondo indexado —para aprovechar el traspaso fiscal libre—, t
 
 | Fondo | Gestora | TER | ISIN |
 |---|---|---|---|
-| **Fidelity MSCI World Index** | Fidelity | 0,12 % | IE00BYX5MX67 |
+| **Fidelity MSCI World Index** | Fidelity | 0,12 % | IE00BYX5NX33 |
 | Vanguard Global Stock Index | Vanguard | 0,18 % | IE00B03HCZ61 |
 
 El **Vanguard Global Stock** replica el MSCI World y es un fondo de inversión, con lo que eso implica en el traspaso. Dos avisos sobre productos que suelen colarse en esta lista: el **Amundi Prime Global** (0,05 %) es un **ETF**, no un fondo, aunque se busque como fondo; y el **Fidelity** de esa gama (IE00BYX5MX67) no es un MSCI World sino un **S&P 500** al 0,06 %, así que da solo Estados Unidos. Fichas: [Fidelity S&P 500](/fondo/fidelity-sp500) y [Vanguard Global Stock](/fondo/vanguard-global-stock). Más en la [guía de mejores fondos indexados](/blog/mejores-fondos-indexados-espana-2026).
@@ -10150,7 +10149,7 @@ Si lo que buscas es exposición solo a EE.UU., mira la guía paralela: [cómo in
 - **ETFs** (SWRD, IWDA): cualquier broker con acceso a bolsa europea. Trade Republic (0€ y planes de ahorro), DEGIRO, MyInvestor. Compara opciones en [mejor broker para ETFs en España](/blog/mejor-broker-etfs-espana-2026).
 - **Fondos** (Vanguard Global Stock): MyInvestor es la plataforma más usada, con traspaso fiscal y aportaciones desde 1€.
 
-Una vez montada tu cartera, puedes [analizarla gratis](/analyzer) para ver tu exposición real por región y comprobar que encaja con lo que quieres. Sin registro y con los datos solo en tu navegador.
+Una vez montada tu cartera, puedes [analizarla gratis](/analyzer) para ver tu exposición real por región y comprobar que encaja con lo que quieres. Sin registro, aunque tu cartera se envía al servidor para analizarla.
 
 ---
 

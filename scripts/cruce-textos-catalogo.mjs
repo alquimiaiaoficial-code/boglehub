@@ -103,23 +103,42 @@ for (const p of ficheros) {
   const rel = path.relative(RAIZ, p).split(path.sep).join('/')
   const lineas = fs.readFileSync(p, 'utf8').split('\n')
   let colTer = -1
+  let cabecera = null // celdas de la cabecera de la tabla en curso
+  let tickerFicha = null // «| Ticker | VWCE |» dentro de una ficha «| Dato | Valor |»
   lineas.forEach((linea, i) => {
     // a) tablas markdown: se recuerda la columna «TER» de la cabecera
     if (/^\s*\|/.test(linea)) {
       const celdas = linea.split('|').slice(1, -1)
+      const limpia = (c) => c.replace(/\*/g, '').trim()
+      if (!cabecera) { cabecera = celdas; tickerFicha = null }
+      // a2) tabla traspuesta (añadido el 30-sep-2026: VWCE a 0,19 % en tres artículos así):
+      //     cabecera «| | VWCE | CSPX | IWDA |» y una fila «| TER | 0,14 % | 0,07 % | 0,20 % |».
+      //     Y la ficha vertical «| Ticker | VWCE |» … «| TER | 0,14 % |».
+      if (/^Ticker$/i.test(limpia(celdas[0] || ''))) tickerFicha = tickerDeCelda(celdas[1] || '')
+      if (/^TER$/i.test(limpia(celdas[0] || ''))) {
+        celdas.slice(1).forEach((c, k) => {
+          const m = c.match(/(\d+[.,]\d+)\s*%/)
+          const t = tickerDeCelda(cabecera[k + 1] || '') || (celdas.length === 2 ? tickerFicha : null)
+          if (m && t) apunta(rel, i, t, m[1], linea)
+        })
+      }
       if (celdas.some((c) => /^\s*TER\b/i.test(c.replace(/\*/g, '')))) colTer = celdas.findIndex((c) => /^\s*TER\b/i.test(c.replace(/\*/g, '')))
       else if (colTer >= 0 && !/^\s*\|[\s:-]+\|/.test(linea)) {
         const t = celdas.map(tickerDeCelda).find(Boolean)
         const m = (celdas[colTer] || '').match(/(\d+[.,]\d+)\s*%/)
         if (t && m) apunta(rel, i, t, m[1], linea)
       }
-    } else colTer = -1
+    } else { colTer = -1; cabecera = null; tickerFicha = null }
     // b) «X (…, TER 0,12 %)» sin otro ticker del catálogo entre medias
     for (const m of linea.matchAll(/(?<![A-Z0-9])([A-Z0-9]{3,6})(?![A-Z0-9])((?:(?!\.\s)[^%|]){0,80}?)\bTER(?:\s+(?:de|del))?\s*(?:[:=]\s*)?(\d+[.,]\d+)\s*%/g)) {
       if (!terDe.has(m[1])) continue
       if ([...m[2].matchAll(/(?<![A-Z0-9])([A-Z0-9]{3,6})(?![A-Z0-9])/g)].some((x) => terDe.has(x[1]))) continue
       apunta(rel, i, m[1], m[3], linea)
     }
+    // d) «XDWD (0,19%)», sin la palabra TER (añadido el 30-sep-2026: así se escapó XDWD a 0,19 %
+    //    en una FAQ del glosario). Solo porcentajes por debajo del 1 %, que es donde viven los TER;
+    //    un peso de cartera («VWCE (80 %)») no entra.
+    for (const m of linea.matchAll(/(?<![A-Z0-9])([A-Z0-9]{3,6})\s*\((0[.,]\d+)\s*%\)/g)) apunta(rel, i, m[1], m[2], linea)
     // c) filas de datos
     for (const m of linea.matchAll(/\['([A-Z0-9]{3,6})',\s*'[^']*',\s*'[A-Z]{2}[A-Z0-9]{10}',\s*'(\d+[.,]\d+)\s*%'/g)) apunta(rel, i, m[1], m[2], linea)
     for (const m of linea.matchAll(/ticker:\s*'([A-Z0-9]{3,6})'[^}]*?ter_anual:\s*'(\d+[.,]\d+)\s*%'/g)) apunta(rel, i, m[1], m[2], linea)
