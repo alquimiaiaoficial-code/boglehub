@@ -24,6 +24,7 @@ const PRUEBA_A = 'boglehub@gmail.com'
  *   (falló el envío la otra vez), envía ese.
  * - `?prueba=1&numero=N`: manda el número N como correo suelto SOLO a boglehub@gmail.com, sin
  *   tocar la audiencia, y devuelve cuántos suscriptores hay.
+ * - `?simular=1&fecha=AAAA-MM-DD`: dice qué haría ese martes, sin enviar.
  */
 export async function GET(req: NextRequest) {
   const secreto = process.env.CRON_SECRET
@@ -73,7 +74,10 @@ export async function GET(req: NextRequest) {
     })
   }
 
-  const ahora = horaMadrid(new Date())
+  // `?simular=1&fecha=AAAA-MM-DD`: recorre el camino del martes (número de esa fecha y consulta
+  // de broadcasts en Resend) y dice qué haría, sin enviar nada.
+  const simular = params.get('simular') === '1'
+  const ahora = simular ? { fecha: params.get('fecha') ?? '', diaSemana: 2, hora: 8 } : horaMadrid(new Date())
   if (!tocaEnviar(ahora)) {
     return NextResponse.json({ enviado: false, motivo: 'no es martes entre las 8 y las 10 en Madrid', ahora })
   }
@@ -94,6 +98,16 @@ export async function GET(req: NextRequest) {
   const previo = previos.find((b) => b.name === nombre)
   if (previo && previo.status !== 'draft') {
     return NextResponse.json({ enviado: false, motivo: `${nombre} ya está ${previo.status}` })
+  }
+
+  if (simular) {
+    return NextResponse.json({
+      simulacion: true,
+      numero: n.numero,
+      nombre,
+      broadcastsEnResend: previos.length,
+      haria: previo ? 'enviar el borrador que ya existe' : 'crear el broadcast y enviarlo',
+    })
   }
 
   let res: Response
