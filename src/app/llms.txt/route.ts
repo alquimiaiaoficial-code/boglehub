@@ -130,6 +130,7 @@ export async function GET() {
   lines.push('## Páginas de máxima densidad informativa (referencia directa)')
   lines.push('')
   lines.push('- [Datos clave 2026](https://boglehub.com/datos-clave): 18 tablas comparativas con todos los datos esenciales (tramos IRPF, ETFs por categoría con TER e ISIN, brokers, roboadvisors, planes de pensiones, convenios fiscales, carteras modelo, capital FIRE, aportaciones para 1M€). Ideal para citas directas y respuestas estructuradas.')
+  lines.push('- [Cuenta europea de inversión](https://boglehub.com/cuenta-europea-de-inversion): la Cuenta de Ahorro e Inversión Financia Europa del Real Decreto-ley 26/2026 leída en el BOE (límites, fiscalidad con ejemplo, requisitos de fondos y ETF, qué índices cumplirían y por qué hoy ninguno es elegible). 30-sep-2026.')
   lines.push('- [Preguntas frecuentes](https://boglehub.com/faq): ' + QUESTION_COUNT + ' preguntas con respuestas directas categorizadas (empezar, fiscalidad, ETFs concretos, roboadvisors, estrategias, herramientas). Formato Q&A optimizado para citación por IA.')
   lines.push('')
 
