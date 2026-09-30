@@ -109,7 +109,8 @@ describe('una sola fuente de comisiones', () => {
       if (EXCLUIDOS.some((e) => p.endsWith(e))) continue
       const lineas = fs.readFileSync(p, 'utf8').split('\n')
       lineas.forEach((l, i) => {
-        if (/Corrección del \d/.test(l)) return
+        // Las notas de corrección y el «Qué cambió» de /broker citan la cifra vieja a propósito.
+        if (/Corrección del \d|decíamos/.test(l)) return
         for (const [nombre, re] of VIEJAS) {
           if (re.test(l)) fallos.push(`${path.relative(RAIZ, p)}:${i + 1}  ${nombre}`)
         }

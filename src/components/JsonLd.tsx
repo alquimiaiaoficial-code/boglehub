@@ -197,6 +197,8 @@ interface CollectionPageSchema {
   url: string
   /** Optional list of items in the collection */
   hasPart?: { name: string; url: string }[]
+  /** Fecha ISO de la última revisión del contenido (p. ej. la tabla de comisiones de /broker). */
+  dateModified?: string
 }
 
 interface ItemListSchema {
@@ -622,6 +624,7 @@ export function JsonLd({ schema }: { schema: Schema }) {
       url: schema.url,
       inLanguage: 'es-ES',
       publisher: { '@id': `${BASE_URL}/#organization` },
+      ...(schema.dateModified && { dateModified: schema.dateModified }),
       ...(schema.hasPart && {
         hasPart: schema.hasPart.map(p => ({
           '@type': 'WebPage',
