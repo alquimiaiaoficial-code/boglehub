@@ -9671,7 +9671,7 @@ ETF habituales en cualquiera de estos brókers: [VWCE](/etf/vwce) (global All-Wo
       },
       {
         q: '¿Sigue existiendo el modelo D6 en 2026?',
-        a: 'El esquema clásico del D6 fue derogado por la Orden ECM/57/2024 e integrado en un conjunto de modelos nuevos (D-1A, D-1B, D-2A, D-2B, D-4, DP-1, DP-2) que cubren la inversión directa significativa. Para el inversor de cartera minorista (ETFs, acciones sueltas sin control de la empresa) ya no hay obligación de declaración ante el Registro de Inversiones Exteriores.',
+        a: 'El esquema clásico del D6 fue derogado por la Orden ECM/57/2024. Los modelos vigentes para la inversión española en el exterior (D-5A, D-5B, D-7A, D-7B, la memoria anual D-8 y las declaraciones previas DP-3 y DP-4, aprobados por la Resolución de 31 de enero de 2024) cubren la inversión directa significativa. Para el inversor de cartera minorista (ETFs, acciones sueltas sin control de la empresa) ya no hay obligación de declaración ante el Registro de Inversiones Exteriores.',
       },
       {
         q: 'Entonces, ¿qué tengo que declarar por mis ETFs?',
@@ -9710,7 +9710,7 @@ Tres normas sucesivas desmontaron la obligación del D6 para el inversor minoris
 
 2. **Real Decreto 571/2023, de 4 de julio**, sobre inversiones exteriores. Reordenó el marco general de las declaraciones de inversión.
 
-3. **Orden ECM/57/2024, de 29 de enero** (BOE-A-2024-1774). Estableció los procedimientos actuales, **derogó el esquema clásico del D6** y lo integró en un conjunto de modelos nuevos (D-1A, D-1B, D-2A, D-2B, D-4, DP-1, DP-2) pensados para la **inversión directa significativa**, no para la cartera diversificada de un particular.
+3. **Orden ECM/57/2024, de 29 de enero** (BOE-A-2024-1774). Estableció los procedimientos actuales, **derogó el esquema clásico del D6**. Los modelos vigentes para la inversión española en el exterior (D-5A, D-5B, D-7A, D-7B, la memoria anual D-8 y las declaraciones previas DP-3 y DP-4) los aprobó la [Resolución de 31 de enero de 2024](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-1977) y están pensados para la **inversión directa significativa**, no para la cartera diversificada de un particular. (Hasta el 30-sep-2026 este artículo citaba aquí los modelos D-1A a DP-2, que son los de inversión extranjera en España.)
 
 El resultado práctico: la obligación de declaración ante el Registro de Inversiones Exteriores quedó reservada a quien mantiene una participación relevante en una empresa concreta (control o influencia significativa, normalmente ≥10%). **Un ETF diversificado reparte tu dinero entre cientos o miles de empresas; tu participación en cualquiera de ellas es minúscula.** Por tanto, nunca activas esa obligación.
 
