@@ -11,15 +11,15 @@ const BASE_URL = 'https://boglehub.com'
 const FAQ_ITEMS: { q: string; a: string }[] = [
   {
     q: '¿Cuál es el mejor bróker para invertir en ETF o fondos indexados desde España?',
-    a: 'No hay un único "mejor bróker", depende de cómo inviertas. Si prefieres fondos indexados y quieres aprovechar el régimen de traspasos sin tributar, lo más práctico es un bróker español como MyInvestor. Si vas a invertir en ETFs con aportaciones mensuales, Trade Republic, Scalable Capital o XTB ofrecen comisiones muy bajas. Si la cartera es grande o quieres acceso a mercados internacionales, Interactive Brokers gana en costes. La calculadora de arriba te ordena los brókers según tu patrón concreto.',
+    a: 'No hay un único "mejor bróker": depende de cómo inviertas. Para poder traspasar fondos indexados sin tributar hace falta una entidad que los comercialice en España, como MyInvestor. Si compras ETF cada mes, pesa sobre todo la comisión de cada orden y si el bróker tiene planes de inversión sin comisión, como Trade Republic, Scalable Capital o XTB. Interactive Brokers da acceso a casi cualquier mercado y cobra un porcentaje con mínimo. La calculadora de arriba ordena los brókers por coste según tu patrón.',
   },
   {
     q: '¿Es mejor un bróker español o uno extranjero?',
-    a: 'Un bróker español simplifica la declaración de la renta y suele ofrecer fondos indexados con régimen de traspaso, que es una ventaja fiscal real. Un bróker extranjero suele tener comisiones más bajas, catálogo más amplio y mejor app, pero la declaración requiere algún trámite extra (modelo D-6 si el patrimonio en el extranjero supera ciertos umbrales, y el cálculo manual de plusvalías al vender). Para la mayoría de inversores particulares, MyInvestor cubre el caso típico con menos fricción.',
+    a: 'Un bróker español simplifica la declaración de la renta y suele ofrecer fondos indexados con régimen de traspaso, que es una ventaja fiscal real. Un bróker extranjero suele dar un catálogo más amplio de ETF y bolsas, pero la declaración requiere algún trámite extra (modelo D-6 si el patrimonio en el extranjero supera ciertos umbrales, y el cálculo manual de plusvalías al vender). Trade Republic, que tiene sucursal en España, informa a Hacienda desde que cada cuenta migró a IBAN español.',
   },
   {
     q: '¿Qué bróker es el más barato para hacer DCA mensual?',
-    a: 'Para una aportación mensual a uno o dos ETFs, Trade Republic (1 € por operación, planes de ahorro gratis) y Scalable Capital (plan FREE 0,99 €) son muy competitivos. MyInvestor es 0 € si el ETF está en su catálogo. XTB también es 0 € hasta 100.000 € de volumen mensual. Si vas a hacer 10 o más operaciones al mes, el plan PRIME de Scalable (4,99 €/mes con operaciones gratis) sale a cuenta.',
+    a: 'Si la aportación va por un plan de inversión automático, Trade Republic, Scalable Capital y XTB no cobran comisión. Con órdenes sueltas: Trade Republic cobra 1 € por operación; Scalable, 0,99 €, o 0 € desde 250 € en ETF de Amundi, iShares, Vanguard y Xtrackers; XTB, 0 € hasta 100.000 € al mes; MyInvestor, el 0,12 % con un mínimo de 1 €; DEGIRO, 1 € en los ETF de su Selección Principal. La calculadora de arriba lo calcula con tus cifras.',
   },
   {
     q: '¿Qué pasa con la fiscalidad si uso un bróker extranjero?',
@@ -27,7 +27,7 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
   {
     q: '¿Las comisiones de esta calculadora son exactas?',
-    a: 'Son aproximaciones para 2026. Los brókers cambian sus tarifas con frecuencia y muchas tienen letra pequeña (tasas de conexión por mercado, mínimos por operación, conversión de divisas, costes del proveedor de datos). La calculadora sirve para tener una idea del orden de magnitud y comparar entre brókers, no para predecir al céntimo lo que vas a pagar. Antes de abrir cuenta, verifica las comisiones en la web del bróker.',
+    a: 'Son las tarifas que cada bróker publica en su web, leídas el 30 de septiembre de 2026, con algunas simplificaciones: DEGIRO se calcula con su Selección Principal y la conectividad de una bolsa, Interactive Brokers sin las tasas de la bolsa, y Scalable con el plan FREE. No incluyen el spread ni la conversión de divisas. Los brókers cambian sus tarifas a menudo, así que antes de abrir cuenta conviene comprobarlas en su web.',
   },
 ]
 

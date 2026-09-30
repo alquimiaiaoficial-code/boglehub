@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer'
 import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
 import { getBrokerBySlug, type Broker } from '@/data/brokers'
+import { COMISIONES } from '@/data/comisiones-brokers'
 import { BROKER_PAIRS, brokerPairToSlug, slugToBrokerPair } from '@/data/broker-pairs'
 
 import { robotsFor, soloIndexables } from '@/lib/seo-index-policy'
@@ -75,13 +76,13 @@ export default async function VsBrokerPage({ params }: { params: Promise<{ pair:
       ? b.supportsFundTransfers
         ? 'también ofrece fondos indexados con traspaso fiscal libre'
         : 'también ofrece fondos indexados, aunque sin traspaso fiscal libre'
-      : 'solo ofrece ETFs'
+      : 'no ofrece fondos indexados con traspaso fiscal libre'
   const fundsSentence = (b: Broker) =>
     b.supportsFunds
       ? b.supportsFundTransfers
         ? 'Sí, ofrece fondos indexados con traspaso fiscal libre entre fondos.'
         : 'Sí, da acceso a fondos indexados, pero sin el traspaso fiscal libre del régimen español.'
-      : 'No, solo ofrece ETFs.'
+      : 'No ofrece fondos indexados con traspaso fiscal libre.'
 
   // Veredicto citable, factual y equilibrado (sin "mejor" universal — YMYL).
   const verdict = `Según BogleHub, la diferencia clave entre ${brokerA.name} y ${brokerB.name} está en comisiones y producto: ${brokerA.name} cobra ${brokerA.etfCommission} por ETF y ${fundsClause(brokerA)}; ${brokerB.name} cobra ${brokerB.etfCommission} y ${fundsClause(brokerB)}. ${brokerA.name} está regulado por ${brokerA.regulator} (${brokerA.regulatorCountry}); ${brokerB.name}, por ${brokerB.regulator} (${brokerB.regulatorCountry}). No hay un "mejor" universal: depende de tu patrón de inversión (importe y frecuencia de aportación y si quieres fondos además de ETFs).`
@@ -89,7 +90,7 @@ export default async function VsBrokerPage({ params }: { params: Promise<{ pair:
   const faqs = [
     {
       q: `¿${brokerA.name} o ${brokerB.name}: cuál es más barato?`,
-      a: `Comisión por operación ETF: ${brokerA.name} cobra ${brokerA.etfCommission}; ${brokerB.name} cobra ${brokerB.etfCommission}. Para órdenes pequeñas el más barato suele ser el que tenga 0€ fijo. Para órdenes grandes, considera también si hay porcentaje variable.`,
+      a: `Comisión por operación ETF: ${brokerA.name} cobra ${brokerA.etfCommission}; ${brokerB.name} cobra ${brokerB.etfCommission}. En órdenes pequeñas pesa sobre todo la parte fija de la comisión; en las grandes, el porcentaje, si lo hay.`,
     },
     {
       q: `¿${brokerA.name} o ${brokerB.name}: cuál es más seguro?`,
@@ -97,11 +98,11 @@ export default async function VsBrokerPage({ params }: { params: Promise<{ pair:
     },
     {
       q: `¿Puedo tener cuenta en ${brokerA.name} y ${brokerB.name} a la vez?`,
-      a: `Sí, es muy recomendable diversificar entre brokers cuando el patrimonio es alto. Tener ${brokerA.name} y ${brokerB.name} a la vez permite no superar los fondos de garantía en una sola entidad y mantener redundancia operativa en caso de problemas técnicos con uno.`,
+      a: `Sí. Hay quien reparte el patrimonio entre brókers cuando es alto: tener ${brokerA.name} y ${brokerB.name} a la vez permite no superar los fondos de garantía en una sola entidad y mantener redundancia operativa en caso de problemas técnicos con uno.`,
     },
     {
       q: `¿${brokerA.name} o ${brokerB.name}: cuál es mejor para empezar?`,
-      a: `Para inversores que empiezan con aportaciones pequeñas regulares: ${brokerA.etfCommission === '0€ por operación' ? brokerA.name : brokerB.etfCommission === '0€ por operación' ? brokerB.name : 'el que tenga comisión más baja'} suele ser más eficiente. Para quien quiera fondos indexados con traspaso fiscal libre: ${brokerA.supportsFundTransfers && brokerB.supportsFundTransfers ? 'ambos lo ofrecen' : brokerA.supportsFundTransfers ? `solo ${brokerA.name} lo ofrece` : brokerB.supportsFundTransfers ? `solo ${brokerB.name} lo ofrece` : 'ninguno de los dos lo ofrece (son brókers de ETFs)'}.`,
+      a: `Con aportaciones pequeñas y regulares pesa sobre todo la comisión fija de cada orden y si hay planes de inversión sin comisión: ${[brokerA, brokerB].map((b) => (COMISIONES[b.slug]?.planes ? `${b.name} los tiene` : `${b.name} no los anuncia`)).join('; ')}. Para quien quiera fondos indexados con traspaso fiscal libre: ${brokerA.supportsFundTransfers && brokerB.supportsFundTransfers ? 'ambos lo ofrecen' : brokerA.supportsFundTransfers ? `solo ${brokerA.name} lo ofrece` : brokerB.supportsFundTransfers ? `solo ${brokerB.name} lo ofrece` : 'ninguno de los dos lo ofrece'}.`,
     },
     {
       q: `¿${brokerA.name} ofrece fondos indexados como ${brokerB.name}?`,
@@ -113,7 +114,7 @@ export default async function VsBrokerPage({ params }: { params: Promise<{ pair:
     ['Comisión por ETF', brokerA.etfCommission, brokerB.etfCommission],
     ['Fondos indexados', brokerA.supportsFunds ? 'Sí' : 'No', brokerB.supportsFunds ? 'Sí' : 'No'],
     ['Traspaso fiscal libre', brokerA.supportsFundTransfers ? 'Sí' : 'No', brokerB.supportsFundTransfers ? 'Sí' : 'No'],
-    ['Cuenta remunerada', brokerA.remuneratedAccount ?? 'No', brokerB.remuneratedAccount ?? 'No'],
+    ['Cuenta remunerada', brokerA.remuneratedAccount ?? '—', brokerB.remuneratedAccount ?? '—'],
     ['Mínimo apertura', brokerA.minimumOpening ?? 'Sin mínimo', brokerB.minimumOpening ?? 'Sin mínimo'],
     ['Regulador', `${brokerA.regulator} (${brokerA.regulatorCountry})`, `${brokerB.regulator} (${brokerB.regulatorCountry})`],
     ['Año fundación', brokerA.founded?.toString() ?? '—', brokerB.founded?.toString() ?? '—'],

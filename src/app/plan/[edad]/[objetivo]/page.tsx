@@ -92,7 +92,7 @@ export default async function PlanPage({ params }: { params: Promise<{ edad: str
     },
     {
       q: `¿Qué broker uso para este plan?`,
-      a: `Para una aportación de ${formatEUR(monthlyNeeded)}/mes Trade Republic cobra 0 € por operación y admite planes de ahorro automáticos desde 1 €. Si prefieres fondos indexados con traspaso fiscal libre, MyInvestor los ofrece con aportaciones pequeñas.`,
+      a: `Depende de cómo vayas a aportar. Con ${formatEUR(monthlyNeeded)} al mes, Trade Republic cobra 1 € por operación y nada en sus planes de inversión automáticos; MyInvestor cobra en ETF el 0,12 % con un mínimo de 1 €, y ofrece fondos indexados que se pueden traspasar sin tributar.`,
     },
     {
       q: `¿Y si no puedo aportar tanto?`,

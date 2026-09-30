@@ -94,7 +94,7 @@ export default async function InvertirPage({ params }: { params: Promise<{ slug:
     },
     {
       q: `¿En qué broker invierto ${m.amount}€ al mes?`,
-      a: `Para aportaciones mensuales pequeñas-medianas como ${m.amount}€, Trade Republic cobra 0 € por operación y admite planes de ahorro automáticos desde 1 €. Si prefieres fondos indexados (con traspaso fiscal libre), MyInvestor los ofrece con aportaciones pequeñas. Para mayor volumen, DEGIRO también es válido.`,
+      a: `Depende de cómo vayas a aportar. Con ${m.amount}€ al mes, lo que más pesa es la comisión fija de cada orden: Trade Republic cobra 1 € por operación y nada en sus planes de inversión automáticos, que admiten desde 1 €; MyInvestor cobra en ETF el 0,12 % con un mínimo de 1 €, y ofrece fondos indexados que se pueden traspasar sin tributar; DEGIRO cobra 1 € en los ETF de su Selección Principal.`,
     },
     {
       q: `¿Cómo tributa lo que gano invirtiendo ${m.amount}€ al mes?`,

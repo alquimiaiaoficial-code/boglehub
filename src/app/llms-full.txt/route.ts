@@ -265,9 +265,13 @@ export async function GET() {
 
   lines.push('### Brokers españoles (datos 2026)')
   lines.push('')
-  lines.push('- Trade Republic: banco alemán regulado por BaFin, 0€ por operación ETF, planes ahorro automáticos desde 1€, cuenta remunerada 2-2,5% TAE, cubierto por Fondo Garantía Depósitos alemán hasta 100.000€')
-  lines.push('- DEGIRO: broker holandés regulado por AFM, 0,50€ + 0,004% por orden ETF, acceso a 50+ bolsas mundiales, cubierto por Fondo Garantía Inversiones holandés hasta 20.000€')
-  lines.push('- MyInvestor: neobanco español del grupo Andbank, regulado por CNMV y Banco de España, 0,20€ + 0,03% por orden ETF, único broker con fondos indexados Vanguard/Amundi y traspaso fiscal libre, cubierto por Fondo Garantía Depósitos español hasta 100.000€')
+  lines.push('Comisiones leídas en la web de cada bróker el 30-sep-2026.')
+  lines.push('')
+  lines.push('- Trade Republic: banco alemán regulado por BaFin, con sucursal en España; 1 € por operación en ETF (comisión de liquidación; la orden no tiene comisión) y planes de inversión sin comisión; sin custodia; cuenta remunerada a tipo variable; depósitos cubiertos hasta 100.000 €')
+  lines.push('- DEGIRO: bróker holandés regulado por la AFM; 1 € por operación en los ETF de su Selección Principal (todos los de Tradegate) y 3 € (2 € + 1 € de tramitación) en el resto; sin custodia; conectividad de hasta 2,50 € al año por bolsa extranjera; Fondo de Garantía de Inversiones holandés hasta 20.000 €')
+  lines.push('- MyInvestor: banco español supervisado por el Banco de España y la CNMV; ETF al 0,12 % por operación (mínimo 1 €, máximo 25 €); fondos indexados de Vanguard, Amundi y otras gestoras, sin comisión de compra y con traspaso fiscal libre; Fondo de Garantía de Depósitos español hasta 100.000 €')
+  lines.push('- XTB: 0 € por operación en ETF hasta 100.000 € al mes (0,2 %, mínimo 10 €, por encima) y planes de inversión sin comisión')
+  lines.push('- Openbank: 1 € por compra o venta de acciones y ETF, en cualquier mercado; sin custodia desde el 1-oct-2026')
   lines.push('')
 
   // ─── 9. Methodology ───────────────────────────────────────────────────

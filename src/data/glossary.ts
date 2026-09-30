@@ -636,7 +636,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     shortDefinition:
       'Un broker es la entidad intermediaria a través de la cual compras y vendes activos financieros (acciones, ETFs, fondos). En España, los más populares son Trade Republic, DEGIRO y MyInvestor.',
     longDefinition:
-      'Un broker es una entidad financiera regulada que actúa como intermediario entre el inversor particular y los mercados financieros. Te da acceso a comprar y vender acciones, ETFs, fondos y otros activos. En España, los brokers más usados por inversores indexados en 2026 son:\n\n- **Trade Republic** (banco alemán, BaFin): 0€ por orden, planes de ahorro automáticos\n- **DEGIRO** (broker holandés, AFM): 0,50€ + 0,004% por orden\n- **MyInvestor** (banco español, CNMV): el único con fondos indexados Vanguard/Amundi y traspaso fiscal libre\n\nLa elección del broker afecta a las comisiones, la oferta de productos y la fiscalidad operativa.',
+      'Un broker es una entidad financiera regulada que actúa como intermediario entre el inversor particular y los mercados financieros. Te da acceso a comprar y vender acciones, ETFs, fondos y otros activos. En España, los brokers más usados por inversores indexados en 2026 son:\n\n- **Trade Republic** (banco alemán, BaFin): 1 € por operación, planes de inversión sin comisión\n- **DEGIRO** (bróker holandés, AFM): 1 € por operación en su Selección Principal, 3 € en el resto\n- **MyInvestor** (banco español, CNMV): 0,12 % por operación (mínimo 1 €), y fondos indexados de Vanguard y Amundi con traspaso fiscal libre\n\nLas comisiones se leyeron en la web de cada uno el 30 de septiembre de 2026. La elección del broker afecta a las comisiones, la oferta de productos y la fiscalidad operativa.',
     relatedArticles: [
       'degiro-vs-trade-republic-vs-myinvestor-2026',
       'trade-republic-opinion-2026',
@@ -645,7 +645,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     faq: [
       {
         q: '¿Cuál es el mejor broker para invertir en ETFs desde España?',
-        a: 'Depende de tu perfil: Trade Republic (alemán, 0€ por orden y planes de ahorro automáticos), DEGIRO (holandés, 0,50€ + 0,004% por orden) y MyInvestor (español, el único con fondos indexados Vanguard/Amundi y traspaso fiscal libre) son los más usados en 2026.',
+        a: 'Depende de cómo vayas a invertir. Los más usados en 2026 son Trade Republic (alemán, 1 € por operación y planes de inversión sin comisión), DEGIRO (holandés, 1 € en su Selección Principal y 3 € en el resto) y MyInvestor (español, 0,12 % con mínimo de 1 €, y fondos indexados con traspaso fiscal libre).',
       },
       {
         q: '¿Qué diferencia hay entre un broker y un banco para invertir?',

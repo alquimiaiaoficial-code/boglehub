@@ -139,7 +139,7 @@ export default async function BrokerPage({
               </div>
               <div>
                 <dt className="text-xs uppercase tracking-wide text-fg-muted">Fondos indexados</dt>
-                <dd className="text-fg font-medium">{broker.supportsFunds ? (broker.supportsFundTransfers ? 'Sí (con traspaso fiscal libre)' : 'Sí (sin traspaso fiscal libre)') : 'No (solo ETFs)'}</dd>
+                <dd className="text-fg font-medium">{broker.supportsFunds ? (broker.supportsFundTransfers ? 'Sí (con traspaso fiscal libre)' : 'Sí (sin traspaso fiscal libre)') : 'No'}</dd>
               </div>
               {broker.remuneratedAccount && (
                 <div>

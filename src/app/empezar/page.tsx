@@ -16,7 +16,7 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
   {
     q: '¿Qué broker es mejor para empezar a invertir en España?',
-    a: 'Trade Republic es el de configuración más corta: 0 € por operación, planes de ahorro automáticos desde 1 €, app móvil clara y cuenta remunerada al 2-2,5 %. Si quieres combinar ETFs con fondos indexados (con traspaso fiscal libre), MyInvestor es la única opción que ofrece ambos en una sola plataforma. DEGIRO da acceso a más bolsas internacionales y su estructura de comisiones escala mejor en órdenes muy grandes.',
+    a: 'Depende de cómo vayas a invertir. Trade Republic cobra 1 € por operación y nada en sus planes de inversión automáticos, que admiten desde 1 €. MyInvestor ofrece a la vez ETF (0,12 % por operación, mínimo 1 €) y fondos indexados que se pueden traspasar sin tributar. DEGIRO cobra 1 € en los ETF de su Selección Principal y da acceso a más bolsas internacionales. En aportaciones pequeñas, lo que más pesa es la comisión fija de cada orden y si hay planes sin comisión.',
   },
   {
     q: '¿Es mejor un ETF, un fondo indexado o un roboadvisor para empezar?',
@@ -86,7 +86,7 @@ export default function EmpezarPage() {
             },
             {
               name: 'Elige tu broker',
-              text: 'Trade Republic (0€ por operación, planes ahorro automáticos), DEGIRO (0,50€ + 0,004%, acceso amplio a bolsas) o MyInvestor (0,20€ + 0,03%, único con fondos indexados y traspaso fiscal libre).',
+              text: 'Trade Republic (1 € por operación, planes de inversión sin comisión), DEGIRO (1 € en su Selección Principal, acceso amplio a bolsas) o MyInvestor (0,12 % con mínimo de 1 €; también fondos indexados con traspaso fiscal libre).',
               url: `${BASE_URL}/empezar#paso-3`,
             },
             {
@@ -311,25 +311,25 @@ export default function EmpezarPage() {
                     <th className="text-left px-4 py-3 text-xs uppercase tracking-wide text-fg-muted">Broker</th>
                     <th className="text-left px-4 py-3 text-xs uppercase tracking-wide text-fg-muted">Comisión ETF</th>
                     <th className="text-left px-4 py-3 text-xs uppercase tracking-wide text-fg-muted">Fondos</th>
-                    <th className="text-left px-4 py-3 text-xs uppercase tracking-wide text-fg-muted">Ideal para</th>
+                    <th className="text-left px-4 py-3 text-xs uppercase tracking-wide text-fg-muted">Uso habitual</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-border">
                   <tr>
                     <td className="px-4 py-3 font-semibold text-fg">Trade Republic</td>
-                    <td className="px-4 py-3 text-fg-muted">0€</td>
+                    <td className="px-4 py-3 text-fg-muted">1 € (planes sin comisión)</td>
                     <td className="px-4 py-3 text-fg-muted">✗</td>
                     <td className="px-4 py-3 text-xs text-fg-muted">Aportaciones pequeñas, automatización</td>
                   </tr>
                   <tr>
                     <td className="px-4 py-3 font-semibold text-fg">DEGIRO</td>
-                    <td className="px-4 py-3 text-fg-muted">0,50€ + 0,004%</td>
+                    <td className="px-4 py-3 text-fg-muted">1 € (Selección Principal) o 3 €</td>
                     <td className="px-4 py-3 text-fg-muted">✗</td>
                     <td className="px-4 py-3 text-xs text-fg-muted">Carteras grandes, mercados internacionales</td>
                   </tr>
                   <tr>
                     <td className="px-4 py-3 font-semibold text-fg">MyInvestor</td>
-                    <td className="px-4 py-3 text-fg-muted">0,20€ + 0,03%</td>
+                    <td className="px-4 py-3 text-fg-muted">0,12 % (mín. 1 €)</td>
                     <td className="px-4 py-3 text-fg-muted">✓</td>
                     <td className="px-4 py-3 text-xs text-fg-muted">Fondos indexados, traspaso fiscal libre</td>
                   </tr>

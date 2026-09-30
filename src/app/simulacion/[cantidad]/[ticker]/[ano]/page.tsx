@@ -17,6 +17,7 @@ import {
 
 import { robotsFor, soloIndexables } from '@/lib/seo-index-policy'
 import { formatPct } from '@/lib/utils'
+import { TRES_BROKERS } from '@/data/comisiones-brokers'
 const BASE_URL = 'https://boglehub.com'
 const REFERENCE_YEAR = 2024
 
@@ -109,7 +110,7 @@ export default async function SimulacionPage({
     },
     {
       q: `¿Cómo invierto hoy en ${etf.ticker}?`,
-      a: `${etf.ticker} (ISIN ${etf.isin}) se compra desde Trade Republic (0€ por operación), DEGIRO (~0,50€) o MyInvestor (0,20€ + 0,03%). Para nuevas aportaciones, considera planes de ahorro automáticos en Trade Republic desde 1€/mes.`,
+      a: `${etf.ticker} (ISIN ${etf.isin}) se compra en brókers como ${TRES_BROKERS}.`,
     },
     {
       q: `¿Qué pasó con ${etf.ticker} entre ${year} y 2024?`,

@@ -1,22 +1,27 @@
 /**
  * Base de datos de brókers populares para inversores indexados en España.
  *
- * Las comisiones son APROXIMADAS y orientativas. Los brókers cambian sus
- * tarifas con frecuencia: cualquier decisión real debe verificarse en la web
- * oficial del bróker. Aquí buscamos una aproximación buena, no exactitud al
- * céntimo. Pensado para 2026.
+ * Las comisiones se leyeron en la web de cada bróker el 30-sep-2026 (fuente y detalle en
+ * `src/data/comisiones-brokers.ts`). Hasta ese día eran «aproximadas» y varias estaban mal:
+ * MyInvestor figuraba a 0 € en ETF (cobra el 0,12 %, mínimo 1 €), DEGIRO a 2 € más 10 € de
+ * custodia (no cobra custodia; 1 € en su Selección Principal), y la fórmula sumaba el mínimo
+ * al porcentaje y aplicaba el porcentaje a la aportación del mes en vez de a cada orden.
  */
 
 export interface BrokerFees {
-  /** € por operación de ETF. */
+  /** € fijos por operación de ETF. */
   etfTradeFee: number
-  /** % adicional sobre el monto de la operación (opcional). */
+  /** % sobre el importe de cada orden (se suma al fijo). */
   etfTradeFeePct?: number
-  /** Mínimo por operación de ETF (anula etfTradeFee si es mayor). */
+  /** Mínimo por operación de ETF. */
   minPerEtfTrade?: number
+  /** Máximo por operación de ETF. */
+  maxPerEtfTrade?: number
+  /** Desde este importe por orden, la compra de ETF sale gratis (Scalable: 250 €). */
+  etfGratisDesdeImporte?: number
   /** € por operación de fondo indexado. null si no ofrece fondos indexados. */
   fondoIndexadoFee: number | null
-  /** € fijos por año (custodia y similares). */
+  /** € fijos por año (custodia, conectividad y similares). */
   custodiaAnual: number
   /** % anual sobre el patrimonio (custodia variable). */
   custodiaPctAnual?: number
@@ -27,7 +32,7 @@ export interface BrokerFeatures {
   fondosIndexadosNacionales: boolean
   /** ¿Permite traspasos entre fondos sin tributar? */
   traspasosFondos: boolean
-  /** ¿Tiene planes de ahorro periódicos gratis para ETFs? */
+  /** ¿Anuncia planes de inversión periódicos en ETF sin comisión? */
   planesAhorroEtfGratis: boolean
   /** ¿La cuenta de efectivo paga intereses? */
   cuentaRemunerada: boolean
@@ -55,30 +60,33 @@ export const BROKERS: Broker[] = [
     country: 'España',
     url: 'https://myinvestor.es',
     shortDescription:
-      'Neobanco español con foco en inversión indexada. 0 comisiones en fondos y ETFs.',
+      'Banco español con fondos indexados sin comisión de compra y ETF al 0,12 % por operación (mínimo 1 €, máximo 25 €).',
     fees: {
       etfTradeFee: 0,
+      etfTradeFeePct: 0.0012,
+      minPerEtfTrade: 1,
+      maxPerEtfTrade: 25,
       fondoIndexadoFee: 0,
       custodiaAnual: 0,
     },
     features: {
       fondosIndexadosNacionales: true,
       traspasosFondos: true,
-      planesAhorroEtfGratis: true,
+      planesAhorroEtfGratis: false,
       cuentaRemunerada: true,
     },
     pros: [
-      '0 € comisiones en fondos indexados y ETFs.',
+      'Fondos indexados sin comisión de compra, y sin custodia.',
       'Permite traspasos entre fondos sin tributar, ventaja fiscal importante en España.',
-      'Planes de ahorro periódicos gratis para ETFs y fondos.',
       'Regulado en España, la declaración fiscal es directa.',
     ],
     cons: [
+      'En ETF cada orden paga al menos 1 € (0,12 % del importe); el cambio de divisa, un 0,30 %.',
       'El catálogo de ETFs es más limitado que en brókers extranjeros.',
       'La app y la web son funcionales pero menos cuidadas que la competencia.',
     ],
     bestFor:
-      'Inversor indexado típico en España que prioriza simplicidad, fiscalidad nacional y operativa sin comisiones.',
+      'Inversor indexado en España que usa fondos indexados y quiere poder traspasarlos sin tributar.',
   },
   {
     id: 'trade-republic',
@@ -87,7 +95,7 @@ export const BROKERS: Broker[] = [
     country: 'Alemania',
     url: 'https://traderepublic.com',
     shortDescription:
-      'Neobróker alemán con app muy cuidada y comisión plana de 1 € por operación.',
+      'Banco alemán con sucursal en España: 1 € por operación y planes de inversión sin comisión.',
     fees: {
       etfTradeFee: 1,
       fondoIndexadoFee: null,
@@ -117,8 +125,7 @@ export const BROKERS: Broker[] = [
       'Tiene sucursal en España desde 2025: retiene IRPF e informa a la AEAT, así que los datos van precargados al borrador de la renta.',
     ],
     cons: [
-      'Solo ofrece ETFs y acciones, no fondos indexados con régimen español.',
-      'No permite traspasos entre fondos.',
+      'No ofrece fondos indexados con el régimen español de traspasos.',
       'Catálogo más reducido que DEGIRO o IBKR.',
       // El matiz que acompaña al dato de arriba y que conviene no perder: el reporte a la
       // AEAT cubre desde la migración de cada cliente, no antes. Quien operase en 2024 o
@@ -135,27 +142,29 @@ export const BROKERS: Broker[] = [
     country: 'Países Bajos',
     url: 'https://degiro.es',
     shortDescription:
-      'Bróker europeo establecido con amplio catálogo de ETFs y costes bajos.',
+      'Bróker europeo con acceso a muchas bolsas: 1 € por operación en los ETF de su Selección Principal y 3 € en el resto.',
+    // Se calcula con la Selección Principal (todos los ETF de Tradegate, entre ellos VWCE,
+    // IWDA y CSPX) y la conectividad de una bolsa extranjera: 2,50 € al año.
     fees: {
-      etfTradeFee: 2,
+      etfTradeFee: 1,
       fondoIndexadoFee: null,
-      custodiaAnual: 10,
+      custodiaAnual: 2.5,
     },
     features: {
       fondosIndexadosNacionales: false,
       traspasosFondos: false,
       planesAhorroEtfGratis: false,
-      cuentaRemunerada: true,
+      cuentaRemunerada: false,
     },
     pros: [
       'Catálogo enorme de ETFs en bolsas internacionales.',
       'Bróker establecido y muy usado en Europa.',
-      'Comisiones bajas para operaciones puntuales.',
+      '1 € por operación en su Selección Principal, que incluye VWCE, IWDA o CSPX; sin custodia.',
     ],
     cons: [
-      'No ofrece fondos indexados, solo ETFs.',
-      'No permite traspasos entre fondos.',
-      'Cobra una pequeña tasa anual por cada mercado en el que operes.',
+      'No ofrece fondos indexados con el régimen español de traspasos.',
+      'Fuera de la Selección Principal, 3 € por operación (2 € + 1 € de tramitación).',
+      'Cobra hasta 2,50 € al año por cada bolsa extranjera en la que operes (conectividad).',
       'La declaración fiscal en España requiere algún trámite extra.',
     ],
     bestFor:
@@ -168,9 +177,11 @@ export const BROKERS: Broker[] = [
     country: 'Alemania',
     url: 'https://scalable.capital',
     shortDescription:
-      'Neobróker alemán con dos planes: FREE (0,99 € por operación) y PRIME (4,99 €/mes con operaciones gratis).',
+      'Bróker alemán: 0,99 € por orden, 0 € en ETF de las grandes gestoras desde 250 € y planes de inversión sin comisión. PRIME+, 4,99 €/mes.',
+    // Se calcula con el plan FREE.
     fees: {
       etfTradeFee: 0.99,
+      etfGratisDesdeImporte: 250,
       fondoIndexadoFee: null,
       custodiaAnual: 0,
     },
@@ -181,14 +192,13 @@ export const BROKERS: Broker[] = [
       cuentaRemunerada: true,
     },
     pros: [
-      'Plan FREE sin cuota fija, ideal para volúmenes bajos.',
-      'Planes de ahorro periódicos gratis.',
-      'Plan PRIME (4,99 €/mes) sale a cuenta si haces muchas operaciones.',
+      'Plan FREE sin cuota: 0 € al comprar ETF de Amundi, iShares, Vanguard o Xtrackers desde 250 €.',
+      'Planes de inversión sin comisión.',
+      'Plan PRIME+ (4,99 €/mes): 0 € en cualquier orden desde 250 €.',
     ],
     cons: [
-      'Solo ETFs y acciones, sin fondos indexados.',
-      'No permite traspasos.',
-      'PRIME solo compensa a partir de unas 6 operaciones al mes.',
+      'Sin fondos indexados con el régimen español de traspasos.',
+      'Las órdenes de menos de 250 € pagan 0,99 € en los dos planes.',
     ],
     bestFor:
       'Inversor con planes de ahorro periódicos o que combina varios ETFs cada mes.',
@@ -202,9 +212,11 @@ export const BROKERS: Broker[] = [
     shortDescription:
       'El bróker profesional global, ahora accesible también para inversores particulares.',
     fees: {
-      etfTradeFee: 1.25,
+      // Tarifa por niveles en la bolsa alemana, sin las tasas de la bolsa.
+      etfTradeFee: 0,
       etfTradeFeePct: 0.0005,
       minPerEtfTrade: 1.25,
+      maxPerEtfTrade: 29,
       fondoIndexadoFee: null,
       custodiaAnual: 0,
     },
@@ -215,9 +227,8 @@ export const BROKERS: Broker[] = [
       cuentaRemunerada: true,
     },
     pros: [
-      'Comisiones muy bajas, especialmente al crecer el patrimonio.',
+      '0,05 % por orden con un mínimo de 1,25 € (tarifa por niveles, más tasas de la bolsa).',
       'Acceso prácticamente a cualquier mercado del mundo.',
-      'Conversión de divisas muy barata (clave si compras en USD).',
       'Cuenta remunerada en varias divisas.',
     ],
     cons: [
@@ -226,7 +237,7 @@ export const BROKERS: Broker[] = [
       'La declaración fiscal recae en el inversor: autoliquidación de plusvalías en el IRPF y modelo 720 si el patrimonio en el extranjero supera 50.000€.',
     ],
     bestFor:
-      'Inversor con cartera mediana o grande que valora costes mínimos y acceso global, y no le importa una interfaz menos amigable.',
+      'Inversor con cartera mediana o grande que quiere acceso global y no le importa una interfaz técnica.',
   },
   {
     id: 'xtb',
@@ -244,11 +255,12 @@ export const BROKERS: Broker[] = [
     features: {
       fondosIndexadosNacionales: false,
       traspasosFondos: false,
-      planesAhorroEtfGratis: false,
+      planesAhorroEtfGratis: true,
       cuentaRemunerada: true,
     },
     pros: [
       '0 € comisiones en ETFs y acciones (hasta 100.000 €/mes de volumen).',
+      'Planes de inversión sin comisión.',
       'App moderna y bien valorada.',
       'Cuenta de efectivo remunerada.',
     ],
@@ -256,9 +268,10 @@ export const BROKERS: Broker[] = [
       'Históricamente asociado a CFDs y forex: asegúrate de usar la cuenta de inversión, no la de CFDs.',
       'Catálogo de ETFs más limitado que DEGIRO o IBKR.',
       'No permite traspasos de fondos.',
+      'Cambio de divisa al 0,5 %.',
     ],
     bestFor:
-      'Inversor que quiere 0 € comisiones puras y opera con volúmenes razonables.',
+      'Inversor que opera con menos de 100.000 € al mes y quiere 0 € de comisión por orden.',
   },
 ]
 
@@ -284,6 +297,8 @@ export function computeBrokerCost(
     tradesPerMonth: number
     years: number
     instrumentType: InstrumentType
+    /** Aporta con planes de inversión automáticos en vez de órdenes sueltas. */
+    usaPlanes?: boolean
   }
 ): BrokerCostBreakdown {
   const { initialCapital, monthlyContribution, tradesPerMonth, years, instrumentType } =
@@ -305,14 +320,13 @@ export function computeBrokerCost(
   let perTradeFee: number
   if (instrumentType === 'fondo') {
     perTradeFee = broker.fees.fondoIndexadoFee ?? 0
+  } else if (params.usaPlanes && broker.features.planesAhorroEtfGratis) {
+    perTradeFee = 0
   } else {
-    const pctPart = broker.fees.etfTradeFeePct
-      ? broker.fees.etfTradeFeePct * monthlyContribution
-      : 0
-    perTradeFee = broker.fees.etfTradeFee + pctPart
-    if (broker.fees.minPerEtfTrade && perTradeFee < broker.fees.minPerEtfTrade) {
-      perTradeFee = broker.fees.minPerEtfTrade
-    }
+    perTradeFee = comisionPorOrdenEtf(
+      broker.fees,
+      tradesPerMonth > 0 ? monthlyContribution / tradesPerMonth : 0
+    )
   }
 
   const tradesCost = perTradeFee * tradesAnnual
@@ -332,6 +346,19 @@ export function computeBrokerCost(
   }
 }
 
+/**
+ * Comisión de UNA orden de compra de ETF por `importe` euros: fijo + porcentaje, acotado por
+ * el mínimo y el máximo del bróker. El porcentaje va sobre cada orden, no sobre lo aportado
+ * en el mes (con 300 € en 3 órdenes, cada una es de 100 €).
+ */
+export function comisionPorOrdenEtf(fees: BrokerFees, importe: number): number {
+  if (fees.etfGratisDesdeImporte != null && importe >= fees.etfGratisDesdeImporte) return 0
+  let c = fees.etfTradeFee + (fees.etfTradeFeePct ?? 0) * importe
+  if (fees.minPerEtfTrade != null) c = Math.max(c, fees.minPerEtfTrade)
+  if (fees.maxPerEtfTrade != null) c = Math.min(c, fees.maxPerEtfTrade)
+  return c
+}
+
 export function rankBrokers(
   params: {
     initialCapital: number
@@ -339,6 +366,7 @@ export function rankBrokers(
     tradesPerMonth: number
     years: number
     instrumentType: InstrumentType
+    usaPlanes?: boolean
   }
 ): BrokerCostBreakdown[] {
   return BROKERS.map((b) => computeBrokerCost(b, params)).sort((a, b) => {

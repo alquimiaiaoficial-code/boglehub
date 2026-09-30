@@ -51,13 +51,13 @@ export async function GET() {
       name: 'Comparativa de brokers para inversores indexados en España 2026',
       description:
         'Comparativa de los principales brokers usados por inversores indexados en España: comisiones por ETF, soporte de fondos indexados, regulación y cuenta remunerada.',
-      source: 'Webs oficiales de cada broker, mayo 2026',
+      source: 'Web de cada bróker, 30-sep-2026',
       headers: ['broker', 'comision_etf', 'fondos_indexados', 'cuenta_remunerada', 'regulador'],
       rows: [
-        { broker: 'Trade Republic', comision_etf: '0€', fondos_indexados: false, cuenta_remunerada: '2-2,5% TAE', regulador: 'BaFin (Alemania)' },
-        { broker: 'DEGIRO', comision_etf: '0,50€ + 0,004%', fondos_indexados: false, cuenta_remunerada: 'No', regulador: 'AFM (Países Bajos)' },
-        { broker: 'MyInvestor', comision_etf: '0,20€ + 0,03%', fondos_indexados: true, cuenta_remunerada: '~2% TAE 1er año', regulador: 'CNMV (España)' },
-        { broker: 'XTB', comision_etf: '0€ hasta 100k€/mes', fondos_indexados: false, cuenta_remunerada: '~3% TAE', regulador: 'CNMV (España)' },
+        { broker: 'Trade Republic', comision_etf: '1 € por operación; planes de inversión sin comisión', fondos_indexados: false, cuenta_remunerada: 'Sí (variable)', regulador: 'BaFin (Alemania)' },
+        { broker: 'DEGIRO', comision_etf: '1 € en su Selección Principal; 3 € en el resto', fondos_indexados: false, cuenta_remunerada: 'No', regulador: 'AFM (Países Bajos)' },
+        { broker: 'MyInvestor', comision_etf: '0,12 % (mínimo 1 €, máximo 25 €)', fondos_indexados: true, cuenta_remunerada: 'Sí (variable)', regulador: 'CNMV (España)' },
+        { broker: 'XTB', comision_etf: '0 € hasta 100.000 €/mes; planes de inversión sin comisión', fondos_indexados: false, cuenta_remunerada: 'Sí (variable)', regulador: 'CNMV (España)' },
       ],
       sourceUrl: `${BASE_URL}/datos-clave#brokers`,
       relatedArticle: `${BASE_URL}/blog/degiro-vs-trade-republic-vs-myinvestor-2026`,

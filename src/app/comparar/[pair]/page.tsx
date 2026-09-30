@@ -5,6 +5,7 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Card, CardTitle } from '@/components/ui/Card'
 import { JsonLd } from '@/components/JsonLd'
+import { TRES_BROKERS } from '@/data/comisiones-brokers'
 import { getEtfByTicker, CATALOGO_ACTUALIZADO } from '@/lib/etf-database'
 import { computeFiscalGradeEtf, politicaDeReparto, GRADE_STYLES } from '@/lib/fiscal'
 import { formatPct } from '@/lib/utils'
@@ -246,7 +247,7 @@ export default async function EtfPairPage({
     },
     {
       q: `¿Dónde puedo comprar ${tickerA} y ${tickerB} en España?`,
-      a: `${tickerA} y ${tickerB} cotizan en bolsas europeas y pueden comprarse en los principales brokers usados por inversores indexados españoles: Trade Republic (0€ por orden, planes de ahorro automáticos desde 1€), DEGIRO (0,50€ + 0,004% por operación, acceso amplio a bolsas) y MyInvestor (0,20€ + 0,03%, único broker español del listado que también ofrece fondos indexados con traspaso fiscal libre). Verifica siempre el spread efectivo y la liquidez en el momento de la operación.`,
+      a: `${tickerA} y ${tickerB} cotizan en bolsas europeas y pueden comprarse en los brókers más usados por inversores indexados españoles: ${TRES_BROKERS}. De los tres, solo MyInvestor ofrece también fondos indexados con traspaso fiscal libre. Verifica siempre el spread efectivo y la liquidez en el momento de la operación.`,
     },
   ]
 

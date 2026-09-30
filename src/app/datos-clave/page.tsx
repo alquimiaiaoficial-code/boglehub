@@ -36,7 +36,7 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
   {
     q: '¿Cuál es la diferencia de coste entre los principales brokers para ETFs en España?',
-    a: 'Trade Republic cobra 0€ por operación. DEGIRO cobra 0,50€ + 0,004% por orden (mínimo 0,90€). MyInvestor cobra 0,20€ + 0,03% del importe. Con esas tarifas, MyInvestor sale más barato que DEGIRO en órdenes de hasta unos 2.333€ (con ese importe los dos cobran 0,90€); por encima, DEGIRO sale más barato. Trade Republic gana en todos los casos en pura comisión, pero solo ofrece ETFs (no fondos indexados).',
+    a: 'Según la web de cada uno (30-sep-2026): Trade Republic cobra 1 € por operación y nada en sus planes de inversión. DEGIRO cobra 1 € en los ETF de su Selección Principal (los que se negocian en Tradegate, como VWCE o IWDA) y 3 € en el resto, más hasta 2,50 € al año por cada bolsa extranjera. MyInvestor cobra el 0,12 % del importe, con un mínimo de 1 € y un máximo de 25 €. En órdenes de hasta unos 833 € los tres cobran 1 € (DEGIRO, en su Selección Principal); por encima, MyInvestor cobra más, hasta 25 €. MyInvestor es el único de los tres con fondos indexados que se pueden traspasar sin tributar.',
   },
   {
     q: '¿Cuáles son los roboadvisors más usados en España y cuánto cobran?',
@@ -201,7 +201,7 @@ export default function DatosClavePage() {
 - Límite de aportación a plan de pensiones individual 2026: 1.500 €/año (deducible en la base general del IRPF).
 - Convenio Irlanda–EE. UU.: retención sobre dividendos estadounidenses del 15% (frente al 30% en otros domicilios); por eso los ETF irlandeses (ISIN IE…) son más eficientes fiscalmente.
 - Capital necesario para FIRE (regla del 4%): 25 veces el gasto anual (p. ej. 30.000 €/año de gasto → 750.000 € de capital).
-- Bróker de ETF sin comisión en España: Trade Republic (0 € por operación, regulado por BaFin alemán).
+- Comisión por compra de ETF (web de cada bróker, 30-sep-2026): Trade Republic 1 € por operación y planes de inversión sin comisión; DEGIRO 1 € en su Selección Principal y 3 € en el resto; MyInvestor 0,12 % (mínimo 1 €); XTB 0 € hasta 100.000 € al mes.
 
 Fuente: BogleHub (boglehub.com/datos-clave) — verificable con BOE/AEAT, folletos de las gestoras y justETF. Actualizado: junio 2026.`}</pre>
           </section>
@@ -411,14 +411,14 @@ Fuente: BogleHub (boglehub.com/datos-clave) — verificable con BOE/AEAT, follet
           <section id="brokers" className="mb-12 scroll-mt-20">
             <DataTable
               caption="10. Comparativa de brokers para inversores indexados en España (2026)"
-              source="Webs oficiales de cada broker, comprobado mayo 2026"
+              source="Web de cada bróker, comprobado el 30-sep-2026"
               headers={['Broker', 'Comisión ETF', 'Fondos indexados', 'Planes ahorro auto', 'Cuenta remunerada', 'Regulación']}
               rows={[
-                ['Trade Republic', '0€', '✗', '✓ (desde 1€)', '~2-2,5% TAE', 'BaFin (Alemania)'],
-                ['DEGIRO', '0,50€ + 0,004%', '✗', '✗', '✗', 'AFM (Países Bajos)'],
-                ['MyInvestor', '0,20€ + 0,03%', '✓ (Vanguard, Amundi)', '✓ (en fondos)', '~2% TAE 1er año', 'CNMV (España)'],
-                ['XTB', '0€ hasta 100k€/mes', '✗', '✗', '~3% TAE', 'CNMV (España)'],
-                ['Renta 4', '~7-10€ + comisiones', '✓ (selección)', '✗', '✗', 'CNMV (España)'],
+                ['Trade Republic', '1 € por operación', '✗', '✓ sin comisión (desde 1 €)', 'Sí (variable)', 'BaFin (Alemania)'],
+                ['DEGIRO', '1 € en su Selección Principal; 3 € en el resto', '✗', '✗', '✗', 'AFM (Países Bajos)'],
+                ['MyInvestor', '0,12 % (mín. 1 €, máx. 25 €)', '✓ (Vanguard, Amundi)', '✓ (en fondos)', 'Sí (variable)', 'CNMV (España)'],
+                ['XTB', '0 € hasta 100.000 €/mes', '✗', '✓ sin comisión', 'Sí (variable)', 'CNMV (España)'],
+                ['Renta 4', '15 € en bolsas europeas; 4 € en la española', '✓ (selección)', '✗', '✗', 'CNMV (España)'],
               ]}
             />
             <p className="text-sm text-fg-muted leading-relaxed">

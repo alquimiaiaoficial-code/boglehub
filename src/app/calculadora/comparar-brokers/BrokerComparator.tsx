@@ -14,6 +14,7 @@ export function BrokerComparator() {
   const [tradesPerMonth, setTradesPerMonth] = useState(1)
   const [years, setYears] = useState(10)
   const [instrumentType, setInstrumentType] = useState<InstrumentType>('etf')
+  const [usaPlanes, setUsaPlanes] = useState(false)
 
   const ranking = useMemo(
     () =>
@@ -23,8 +24,9 @@ export function BrokerComparator() {
         tradesPerMonth,
         years,
         instrumentType,
+        usaPlanes,
       }),
-    [initialCapital, monthlyContribution, tradesPerMonth, years, instrumentType]
+    [initialCapital, monthlyContribution, tradesPerMonth, years, instrumentType, usaPlanes]
   )
 
   const availableRanking = ranking.filter((r) => r.available)
@@ -121,6 +123,33 @@ export function BrokerComparator() {
               brókers ofrecen ambos.
             </p>
           </div>
+          {instrumentType === 'etf' && (
+            <div>
+              <label className="block text-xs text-fg-muted mb-1">Cómo compras</label>
+              <div className="flex gap-2">
+                {([
+                  [false, 'Órdenes sueltas'],
+                  [true, 'Plan de inversión'],
+                ] as const).map(([valor, texto]) => (
+                  <button
+                    key={texto}
+                    onClick={() => setUsaPlanes(valor)}
+                    className={cn(
+                      'flex-1 rounded-lg border px-3 py-2 text-sm transition-colors',
+                      usaPlanes === valor
+                        ? 'border-brand-500 bg-brand-500/10 text-fg'
+                        : 'border-border bg-surface-2 text-fg-muted hover:text-fg'
+                    )}
+                  >
+                    {texto}
+                  </button>
+                ))}
+              </div>
+              <p className="mt-1 text-[11px] text-fg-subtle">
+                Algunos brókers no cobran las compras de un plan periódico automático.
+              </p>
+            </div>
+          )}
         </div>
       </Card>
 
@@ -149,7 +178,7 @@ export function BrokerComparator() {
             </p>
             <p className="text-2xl font-bold text-warn">{formatEUR(spread)}</p>
             <p className="text-xs text-fg-subtle mt-1">
-              elegir bien {years} años seguidos
+              entre el más barato y el más caro, en {years} años
             </p>
           </Card>
         </div>
@@ -211,10 +240,12 @@ export function BrokerComparator() {
           </table>
         </div>
         <p className="mt-4 text-xs text-fg-subtle leading-relaxed">
-          Cifras orientativas, basadas en las tarifas publicadas por cada bróker. Verifica
-          siempre las comisiones actuales en la web del bróker antes de decidir. Los costes
-          ignoran el spread del mercado y la conversión de divisas, que pueden ser
-          relevantes para ETFs cotizados fuera del euro.
+          Tarifas leídas en la web de cada bróker el 30 de septiembre de 2026; cambian a
+          menudo, así que conviene comprobarlas en su web. DEGIRO se calcula con su Selección
+          Principal (1 € por orden) y la conectividad de una bolsa (2,50 € al año); Interactive
+          Brokers, con la tarifa por niveles sin las tasas de la bolsa; Scalable, con el plan
+          FREE. Los costes no incluyen el spread del mercado ni la conversión de divisas, que
+          pesan en ETFs cotizados fuera del euro.
         </p>
       </Card>
 
@@ -255,7 +286,7 @@ export function BrokerComparator() {
             </div>
             <div className="mt-auto pt-3 border-t border-border">
               <p className="text-xs text-fg-muted">
-                <span className="text-fg-subtle">Ideal para: </span>
+                <span className="text-fg-subtle">Perfil habitual: </span>
                 {broker.bestFor}
               </p>
               {(() => {
