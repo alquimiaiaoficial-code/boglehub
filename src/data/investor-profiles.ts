@@ -40,8 +40,8 @@ export const INVESTOR_PROFILES: InvestorProfile[] = [
       horizon: '40 años o más',
       equityWeight: '90-100% renta variable',
       suggestedPortfolio: '80% VWCE + 10% AGGH (renta fija) + 10% liquidez para emergencias',
-      suggestedBroker: 'Trade Republic (planes de ahorro automáticos desde 1€)',
-      monthlyContribution: 'Idealmente 100-300€/mes; lo importante es la regularidad',
+      suggestedBroker: 'Que tenga planes de ahorro automáticos desde importes bajos (por ejemplo, Trade Republic, desde 1€)',
+      monthlyContribution: 'Se suele hablar de 100-300€/mes; pesa más la regularidad que la cantidad',
     },
     considerations: [
       'No tocar la cartera durante caídas del mercado',
@@ -60,7 +60,7 @@ export const INVESTOR_PROFILES: InvestorProfile[] = [
       },
       {
         q: '¿VWCE o IWDA para empezar con 25 años?',
-        a: 'Cualquiera de los dos es excelente. VWCE incluye emergentes (~12%) en un solo producto, IWDA solo desarrollados. VWCE es más sencillo si quieres "todo el mundo" sin gestionar. IWDA + EIMI en 88/12 es marginalmente más barato y te da control. Para empezar y mantener simple: VWCE.',
+        a: 'VWCE incluye emergentes (~12%) en un solo producto, IWDA solo desarrollados. VWCE es más sencillo si quieres "todo el mundo" sin gestionar. IWDA + EIMI en 88/12 es marginalmente más barato y da más control. La diferencia está en el mantenimiento: con VWCE el peso de los emergentes sigue al mercado sin hacer nada; con IWDA + EIMI hay que rebalancear el 88/12 a mano.',
       },
     ],
   },
@@ -74,7 +74,7 @@ export const INVESTOR_PROFILES: InvestorProfile[] = [
       horizon: '25-35 años',
       equityWeight: '80-90% renta variable',
       suggestedPortfolio: '80% VWCE + 20% AGGH (renta fija) — cartera Boglehead estándar',
-      suggestedBroker: 'MyInvestor (combinar fondos indexados con traspaso fiscal libre y ETFs)',
+      suggestedBroker: 'Que tenga fondos indexados, que se traspasan sin tributar, y también ETFs (por ejemplo, MyInvestor)',
       monthlyContribution: '15-25% de los ingresos netos mensuales',
     },
     considerations: [
@@ -104,7 +104,7 @@ export const INVESTOR_PROFILES: InvestorProfile[] = [
       horizon: '15-25 años',
       equityWeight: '70-80% renta variable',
       suggestedPortfolio: '70% VWCE + 30% AGGH',
-      suggestedBroker: 'MyInvestor + Trade Republic (combinar)',
+      suggestedBroker: 'Se suele combinar una plataforma de fondos indexados y un bróker de ETFs (por ejemplo, MyInvestor y Trade Republic)',
       monthlyContribution: '20-30% de ingresos netos si es posible',
     },
     considerations: [
@@ -130,8 +130,8 @@ export const INVESTOR_PROFILES: InvestorProfile[] = [
       horizon: '10-15 años',
       equityWeight: '50-70% renta variable (decreciente)',
       suggestedPortfolio: '60% VWCE + 30% AGGH + 10% IBGS (corto plazo)',
-      suggestedBroker: 'MyInvestor para fondos indexados con traspaso fiscal libre (clave para rebalanceo sin tributar)',
-      monthlyContribution: 'Aportar todo lo posible',
+      suggestedBroker: 'Pesa que tenga fondos indexados: se traspasan sin tributar y eso permite rebalancear (por ejemplo, MyInvestor)',
+      monthlyContribution: 'Suele plantearse aportar todo lo posible',
     },
     considerations: [
       'Empezar a construir colchón de 2-3 años de gastos en liquidez',
@@ -156,8 +156,8 @@ export const INVESTOR_PROFILES: InvestorProfile[] = [
       horizon: '5-15 años',
       equityWeight: '40-50% renta variable',
       suggestedPortfolio: '40% VWCE + 40% AGGH + 20% IBGS (corto plazo) + colchón de 2 años en liquidez',
-      suggestedBroker: 'MyInvestor (clave por el traspaso fiscal libre para rebalanceos sin tributar)',
-      monthlyContribution: 'Aportar lo que se pueda, ya no es el factor principal',
+      suggestedBroker: 'Pesa el traspaso de fondos sin tributar, útil para rebalancear (por ejemplo, MyInvestor)',
+      monthlyContribution: 'Lo que se pueda; a estas alturas ya no es el factor principal',
     },
     considerations: [
       'Riesgo de secuencia de retornos: caer un 40% justo al empezar a vivir de la cartera puede destruir el plan',
@@ -182,8 +182,8 @@ export const INVESTOR_PROFILES: InvestorProfile[] = [
       horizon: 'Depende de la edad, generalmente 20+ años',
       equityWeight: '70-80% renta variable',
       suggestedPortfolio: '70% VWCE + 20% AGGH + 10% liquidez extra',
-      suggestedBroker: 'MyInvestor (cuenta + inversión todo en uno)',
-      monthlyContribution: 'Mejor un porcentaje fijo de la facturación que importe fijo',
+      suggestedBroker: 'Cuenta e inversión en la misma entidad (por ejemplo, MyInvestor)',
+      monthlyContribution: 'Se suele plantear como un porcentaje fijo de la facturación, no como un importe fijo',
     },
     considerations: [
       'Fondo de emergencia 6-12 meses (más alto que asalariado por volatilidad de ingresos)',
@@ -208,8 +208,8 @@ export const INVESTOR_PROFILES: InvestorProfile[] = [
       horizon: 'Depende del plan personal',
       equityWeight: 'Variable según edad',
       suggestedPortfolio: 'VWCE + AGGH (productos UCITS aceptados en toda la UE)',
-      suggestedBroker: 'Interactive Brokers (acceso global, mantiene cuenta en múltiples residencias)',
-      monthlyContribution: 'Adaptarse a la fiscalidad del país de residencia actual',
+      suggestedBroker: 'Acceso a muchas bolsas y que siga dando servicio al cambiar de país (por ejemplo, Interactive Brokers)',
+      monthlyContribution: 'Depende de la fiscalidad del país de residencia',
     },
     considerations: [
       'Confirma residencia fiscal del año en curso (regla 183 días)',
@@ -234,7 +234,7 @@ export const INVESTOR_PROFILES: InvestorProfile[] = [
       horizon: 'Largo plazo, depende del objetivo',
       equityWeight: 'Según edad y perfil de riesgo',
       suggestedPortfolio: 'Cartera estándar Boglehead 60/40 o 70/30 según edad',
-      suggestedBroker: 'MyInvestor (fondos con traspaso fiscal libre para rebalancear sin coste)',
+      suggestedBroker: 'Fondos que se traspasan sin tributar, para rebalancear sin pagar impuestos en ese momento (por ejemplo, MyInvestor)',
       monthlyContribution: 'No aplica — es lump sum o DCA de la herencia',
     },
     considerations: [
@@ -260,7 +260,7 @@ export const INVESTOR_PROFILES: InvestorProfile[] = [
       horizon: '15-25 años hasta el "uso" del dinero',
       equityWeight: '90% renta variable (horizonte largo)',
       suggestedPortfolio: '100% VWCE durante los primeros 15 años, transición a 80/20 los últimos 5',
-      suggestedBroker: 'MyInvestor (fondos con traspaso fiscal libre, útil al cambiar asignación)',
+      suggestedBroker: 'Fondos que se traspasan sin tributar, útil al cambiar la asignación (por ejemplo, MyInvestor)',
       monthlyContribution: '50-200€/mes desde el nacimiento del hijo',
     },
     considerations: [
@@ -272,7 +272,7 @@ export const INVESTOR_PROFILES: InvestorProfile[] = [
     faq: [
       {
         q: '¿Cuánto debería invertir al mes para que mi hijo tenga 100.000€ a los 25 años?',
-        a: 'Asumiendo rentabilidad anual del 7% durante 25 años desde su nacimiento, necesitas aportar aproximadamente 130€/mes. Si empiezas más tarde, la cantidad sube: para 18 años de horizonte, ~265€/mes para 100.000€. Empezar al nacer es el momento óptimo: 25 años de interés compuesto es brutal.',
+        a: 'Asumiendo rentabilidad anual del 7% durante 25 años desde su nacimiento, necesitas aportar aproximadamente 130€/mes. Si empiezas más tarde, la cantidad sube: para 18 años de horizonte, ~240€/mes para 100.000€. Empezar al nacer es el momento óptimo: 25 años de interés compuesto es brutal.',
       },
     ],
   },
@@ -286,7 +286,7 @@ export const INVESTOR_PROFILES: InvestorProfile[] = [
       horizon: '10-20 años hasta el FIRE',
       equityWeight: '80-100% durante acumulación, 60-70% en FIRE',
       suggestedPortfolio: '90% VWCE + 10% AGGH durante acumulación',
-      suggestedBroker: 'Combinar Trade Republic (ETFs sin comisión para acumulación) + MyInvestor (fondos para rebalanceo libre)',
+      suggestedBroker: 'Se suele combinar un bróker de ETFs y una plataforma de fondos para rebalancear sin tributar (por ejemplo, Trade Republic y MyInvestor)',
       monthlyContribution: '40-60% de los ingresos netos',
     },
     considerations: [
@@ -307,13 +307,13 @@ export const INVESTOR_PROFILES: InvestorProfile[] = [
     name: 'Principiantes absolutos',
     tagline: 'Nunca he invertido y no sé por dónde empezar',
     description:
-      'Si nunca has invertido antes, todo parece complicado: ETFs, ISIN, TER, brokers, fiscalidad... La realidad es que para empezar bien solo necesitas decidir 3 cosas: (1) qué ETF comprar — VWCE es una opción excelente, (2) qué broker usar — Trade Republic es lo más sencillo, (3) cuánto aportar al mes — empieza con lo que puedas, aunque sean 50€. El resto se aprende sobre la marcha sin urgencia.',
+      'Si nunca has invertido antes, todo parece complicado: ETFs, ISIN, TER, brokers, fiscalidad... La realidad es que para empezar bien solo necesitas decidir 3 cosas: (1) qué comprar — un indexado global, como VWCE (FTSE All-World: desarrollados y emergentes) o SWRD (MSCI World: solo desarrollados), reparte el dinero entre más de mil empresas en un solo producto, (2) qué bróker usar — lo que suele mirarse es la comisión por compra y si permite planes de ahorro automáticos desde importes bajos, (3) cuánto aportar al mes — se puede empezar con poco, incluso 50€. El resto se aprende sobre la marcha sin urgencia.',
     recommendations: {
       horizon: 'Largo plazo siempre (10+ años)',
       equityWeight: '80-90% para empezar',
-      suggestedPortfolio: 'Empieza simple: 100% VWCE. Añade AGGH (renta fija) cuando tengas 5.000€+',
-      suggestedBroker: 'Trade Republic (cero fricción, planes de ahorro automáticos desde 1€)',
-      monthlyContribution: 'Lo que puedas, mínimo 50€/mes',
+      suggestedPortfolio: '100% VWCE al principio, y AGGH (renta fija) a partir de unos 5.000€, es un planteamiento habitual',
+      suggestedBroker: 'Que sea sencillo y tenga planes de ahorro automáticos desde importes bajos (por ejemplo, Trade Republic, desde 1€)',
+      monthlyContribution: 'Desde unos 50€/mes',
     },
     considerations: [
       'Fondo de emergencia (3-6 meses) ANTES de invertir',
@@ -324,7 +324,7 @@ export const INVESTOR_PROFILES: InvestorProfile[] = [
     faq: [
       {
         q: '¿Por dónde empezar a invertir si nunca lo he hecho?',
-        a: '(1) Construir fondo de emergencia de 3-6 meses de gastos en una cuenta remunerada. (2) Abrir cuenta en Trade Republic (10 minutos, gratis). (3) Comprar VWCE con 50-100€ inicialmente para ver cómo funciona. (4) Configurar plan de ahorro automático mensual de la cantidad que decidas. (5) No tocar nada durante años. Es así de simple.',
+        a: '(1) Construir fondo de emergencia de 3-6 meses de gastos en una cuenta remunerada. (2) Abrir cuenta en un bróker o una plataforma de fondos indexados que permita aportaciones automáticas desde poco dinero. (3) Comprar un fondo o ETF indexado global con 50-100€ al principio para ver cómo funciona. (4) Configurar plan de ahorro automático mensual de la cantidad que decidas. (5) No tocar nada durante años. Es así de simple.',
       },
       {
         q: '¿Cuánto dinero necesito para empezar a invertir?',
@@ -342,7 +342,7 @@ export const INVESTOR_PROFILES: InvestorProfile[] = [
       horizon: 'Largo plazo, generalmente >15 años',
       equityWeight: 'Según edad y plan',
       suggestedPortfolio: 'Combinación de fondos (MyInvestor) para traspaso libre + ETFs (Trade Republic) para coste mínimo',
-      suggestedBroker: 'Diversificar: MyInvestor + Trade Republic + DEGIRO para no superar garantías en un solo broker',
+      suggestedBroker: 'Repartir entre varias entidades para no superar la cobertura del fondo de garantía en una sola (por ejemplo, MyInvestor, Trade Republic y DEGIRO)',
       monthlyContribution: 'Las aportaciones marginales importan menos; el patrimonio ya hace el trabajo',
     },
     considerations: [

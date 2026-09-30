@@ -177,7 +177,7 @@ export const ETF_THEMES: EtfTheme[] = [
       },
       {
         q: '¿Cuál es la diferencia entre EIMI y EMIM?',
-        a: 'Ambos son el mismo fondo iShares Core MSCI Emerging Markets IMI (IE00BKM4GZ66). EIMI cotiza en la Bolsa de Londres (USD) y es de acumulación; EMIM cotiza en Euronext Amsterdam (EUR) y es de distribución. La diferencia práctica suele estar en cuánto cobra cada bróker por comprar uno u otro. Si quieres acumulación, EIMI o IS3N son las opciones.',
+        a: 'Ambos son el mismo fondo iShares Core MSCI Emerging Markets IMI (IE00BKM4GZ66). EIMI cotiza en la Bolsa de Londres (USD) y EMIM en Euronext Amsterdam (EUR). Al compartir ISIN son la misma clase de participación, así que los dos son de acumulación, igual que IS3N. La diferencia práctica suele estar en cuánto cobra cada bróker por comprar uno u otro.',
       },
       {
         q: '¿Los ETFs de emergentes tienen más riesgo que los de países desarrollados?',
@@ -283,7 +283,7 @@ export const ETF_THEMES: EtfTheme[] = [
       },
       {
         q: '¿Cuál es la diferencia entre EQQQ, SXRV y CNDX?',
-        a: 'Los tres son ETFs Nasdaq 100 UCITS, todos domiciliados en Irlanda. EQQQ (Invesco, TER 0,30%) es el más popular y cotiza en múltiples bolsas europeas. SXRV (iShares NASDAQ 100, TER 0,33%) es la versión de BlackRock. CNDX (iShares, TER 0,33%) es funcionalmente equivalente a SXRV pero cotiza en LSE. Para el inversor español, EQQQ suele ser la opción más eficiente por su menor TER y mayor liquidez en bolsas europeas.',
+        a: 'Los tres son ETFs Nasdaq 100 UCITS, todos domiciliados en Irlanda. EQQQ (Invesco, TER 0,30%) es el más popular y cotiza en múltiples bolsas europeas. SXRV (iShares NASDAQ 100, TER 0,33%) es la versión de BlackRock. CNDX (iShares, TER 0,33%) es funcionalmente equivalente a SXRV pero cotiza en LSE. EQQQ tiene el TER más bajo (0,30 % frente al 0,33 % de SXRV y CNDX), pero reparte dividendos, que en España tributan en el IRPF del año en que se cobran, mientras que SXRV y CNDX acumulan; Invesco tiene además una clase de acumulación, EQAC (IE00BFZXGZ54, 0,30 %).',
       },
       {
         q: '¿Qué riesgos tiene concentrar la cartera en Nasdaq 100?',
@@ -321,7 +321,7 @@ export const ETF_THEMES: EtfTheme[] = [
       },
       {
         q: '¿ZPRV es lo mismo que las small caps globales?',
-        a: 'No. ZPRV (SPDR S&P 600 US Small Cap Value UCITS ETF) se centra exclusivamente en small caps americanas con sesgo "value" (empresas baratas según métricas fundamentales). Es una apuesta más concentrada y específica: doble factor (size + value) en un solo mercado. Para diversificación global de small caps, WSML o IUSN son más adecuados. ZPRV tiene sentido como complemento factorial para inversores más sofisticados.',
+        a: 'No. ZPRV (SPDR MSCI USA Small Cap Value Weighted UCITS ETF) se centra exclusivamente en small caps americanas con sesgo "value" (empresas baratas según métricas fundamentales). Es una apuesta más concentrada y específica: doble factor (size + value) en un solo mercado. Para small caps de todo el mundo desarrollado están WSML o IUSN (MSCI World Small Cap). ZPRV es una apuesta factorial concreta sobre un solo mercado.',
       },
     ],
   },

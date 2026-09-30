@@ -187,7 +187,7 @@ export const ROBOADVISORS: Roboadvisor[] = [
     faq: [
       {
         q: '¿Vale la pena inbestMe sobre Indexa por las carteras ESG?',
-        a: 'Si la inversión socialmente responsable (ESG) es importante para ti, inbestMe ofrece carteras 100% sostenibles, algo que Indexa no tiene por defecto. La diferencia de comisiones (0,1-0,2% más cara que Indexa) es el coste de esa especialización. Si ESG no es tu prioridad, Indexa es más económico.',
+        a: 'inbestMe ofrece carteras 100% sostenibles (ESG), algo que Indexa no tiene por defecto. Su coste total es algo mayor: 0,41-0,69% anual en inbestMe frente a 0,40-0,50% en Indexa.',
       },
     ],
   },

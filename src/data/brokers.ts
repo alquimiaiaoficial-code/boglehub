@@ -91,7 +91,7 @@ export const BROKERS: Broker[] = [
       },
       {
         q: '¿Cuál es la diferencia con DEGIRO?',
-        a: 'Trade Republic cobra 0€ por operación y ofrece planes de ahorro automáticos desde 1€, ideal para DCA mensual. DEGIRO cobra 0,50€ + 0,004% por orden pero da acceso a 50+ bolsas mundiales y más opciones técnicas. Para aportaciones pequeñas: Trade Republic. Para volumen alto o mercados específicos: DEGIRO.',
+        a: 'Trade Republic cobra 0€ por operación y ofrece planes de ahorro automáticos desde 1€, pensados para aportar una cantidad fija cada mes. DEGIRO cobra 0,50€ + 0,004% por orden pero da acceso a 50+ bolsas mundiales y más opciones técnicas. En DEGIRO, con el mínimo de 0,90€, una orden de 100€ paga un 0,9 % y una de 10.000€ un 0,009 %: el peso de una comisión fija baja a medida que crece la orden.',
       },
       {
         q: '¿Tributan los ETFs comprados en Trade Republic en España?',
@@ -165,7 +165,7 @@ export const BROKERS: Broker[] = [
     minimumOpening: '1€ en fondos',
     tagline: 'Vanguard, Amundi y traspaso fiscal libre en un banco español',
     description:
-      'MyInvestor es la marca digital de Andbank España, un banco regulado por CNMV y Banco de España desde 2010. Es el único broker español que ofrece a la vez fondos indexados de Vanguard, Fidelity y otras gestoras, junto con ETFs en bolsa europea. Su combinación única —fondos indexados + ETFs + traspaso fiscal libre + plan de pensiones indexado— lo convierte en la opción más completa para inversores residentes en España que quieren todo en una sola entidad.',
+      'MyInvestor es la marca digital de Andbank España, un banco regulado por CNMV y Banco de España desde 2010. Ofrece a la vez fondos indexados de Vanguard, Fidelity y otras gestoras, ETFs en bolsa europea, traspaso de fondos sin tributar y un plan de pensiones indexado, todo en una sola entidad.',
     idealFor: [
       'Quien quiera fondos indexados con traspaso fiscal libre',
       'Inversores que valoran banco regulado en España',
@@ -186,7 +186,7 @@ export const BROKERS: Broker[] = [
       },
       {
         q: '¿Qué fondos indexados de Vanguard ofrece MyInvestor?',
-        a: 'MyInvestor ofrece la gama institucional de Vanguard: Global Stock Index, Emerging Markets Stock Index, Eurozone Stock Index, Global Bond Index (hedged EUR), entre otros. Todos con TER bajo y aportación mínima de 1€. La diferencia con los ETFs es que estos fondos permiten traspaso fiscal libre entre ellos, una ventaja exclusiva del régimen fiscal español de fondos.',
+        a: 'MyInvestor ofrece varios fondos indexados de Vanguard: Global Stock Index, Emerging Markets Stock Index, Eurozone Stock Index, Global Bond Index (hedged EUR), entre otros. Todos con TER bajo y aportación mínima de 1€. La diferencia con los ETFs es que estos fondos permiten traspaso fiscal libre entre ellos, una ventaja exclusiva del régimen fiscal español de fondos.',
       },
       {
         q: '¿Qué es el Amundi Prime Global en MyInvestor?',
@@ -319,7 +319,7 @@ export const BROKERS: Broker[] = [
       },
       {
         q: '¿Ofrece Renta 4 fondos Vanguard como MyInvestor?',
-        a: 'Renta 4 ofrece una selección de fondos indexados, pero el catálogo de fondos baratos Vanguard/Amundi institucionales es más limitado que MyInvestor. Para fondos indexados con TER mínimo, MyInvestor sigue siendo la mejor opción en España.',
+        a: 'Renta 4 ofrece una selección de fondos indexados, pero el catálogo de fondos baratos Vanguard/Amundi institucionales es más limitado que el de MyInvestor.',
       },
     ],
   },

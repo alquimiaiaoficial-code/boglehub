@@ -412,8 +412,10 @@ export default function MetodologiaPage() {
               reports de la gestora y los movimientos reales del fondo.
             </li>
             <li>
-              Los precios de cotización dependen de Yahoo Finance y pueden tener un delay de
-              hasta 15 minutos.
+              Los precios de cotización salen de proveedores de datos de mercado (Twelve Data,
+              Financial Modeling Prep y Yahoo Finance) y no son en tiempo real: llevan el retraso
+              de cada bolsa en el proveedor (entre 15 y 30 minutos en las europeas) más hasta 10
+              minutos de nuestra caché.
             </li>
             <li>
               No cubrimos normativa foral de País Vasco y Navarra: los inversores en esos

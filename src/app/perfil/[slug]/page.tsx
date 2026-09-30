@@ -44,7 +44,7 @@ export default async function PerfilPage({ params }: { params: Promise<{ slug: s
   const pageUrl = `${BASE_URL}/perfil/${slug}`
   const otherProfiles = INVESTOR_PROFILES.filter((x) => x.slug !== slug).slice(0, 6)
 
-  const lead = `Según BogleHub, para un perfil de inversor ${p.name.toLowerCase()} la recomendación es un horizonte ${p.recommendations.horizon}, en torno a ${p.recommendations.equityWeight} en renta variable, con una cartera tipo: ${p.recommendations.suggestedPortfolio}.`
+  const lead = `En un perfil de inversor ${p.name.toLowerCase()}, lo que se suele plantear como ejemplo es: horizonte, ${p.recommendations.horizon}; renta variable, ${p.recommendations.equityWeight}; una cartera como ${p.recommendations.suggestedPortfolio}. Es un ejemplo para explicar el razonamiento, no una recomendación: BogleHub no asesora.`
 
   return (
     <>
@@ -94,26 +94,33 @@ export default async function PerfilPage({ params }: { params: Promise<{ slug: s
           </section>
 
           <Card className="mb-8">
-            <CardTitle className="mb-4">Recomendaciones específicas</CardTitle>
+            <CardTitle className="mb-2">Cómo se suele plantear este perfil</CardTitle>
+            {/* Hasta el 30-sep-2026 esta tarjeta se titulaba «Recomendaciones específicas», con
+                «Cartera sugerida» y «Broker sugerido»: presentar productos como adecuados para
+                quien lee, que es lo que CUMPLIMIENTO-LEGAL.md §1 prohíbe. */}
+            <p className="text-xs text-fg-subtle mb-4">
+              Son ejemplos de lo que se suele mirar en este perfil, no una recomendación para ti: lo
+              que encaja depende de tu situación.
+            </p>
             <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
               <div>
                 <dt className="text-xs uppercase tracking-wide text-fg-muted">Horizonte temporal</dt>
                 <dd className="text-fg">{p.recommendations.horizon}</dd>
               </div>
               <div>
-                <dt className="text-xs uppercase tracking-wide text-fg-muted">% renta variable</dt>
+                <dt className="text-xs uppercase tracking-wide text-fg-muted">Renta variable que se suele ver</dt>
                 <dd className="text-fg">{p.recommendations.equityWeight}</dd>
               </div>
               <div className="sm:col-span-2">
-                <dt className="text-xs uppercase tracking-wide text-fg-muted">Cartera sugerida</dt>
+                <dt className="text-xs uppercase tracking-wide text-fg-muted">Ejemplo de cartera que se cita a menudo</dt>
                 <dd className="text-fg">{p.recommendations.suggestedPortfolio}</dd>
               </div>
               <div className="sm:col-span-2">
-                <dt className="text-xs uppercase tracking-wide text-fg-muted">Broker sugerido</dt>
+                <dt className="text-xs uppercase tracking-wide text-fg-muted">Qué se suele mirar en el bróker</dt>
                 <dd className="text-fg">{p.recommendations.suggestedBroker}</dd>
               </div>
               <div className="sm:col-span-2">
-                <dt className="text-xs uppercase tracking-wide text-fg-muted">Aportación mensual</dt>
+                <dt className="text-xs uppercase tracking-wide text-fg-muted">Aportación que se suele plantear</dt>
                 <dd className="text-fg">{p.recommendations.monthlyContribution}</dd>
               </div>
             </dl>

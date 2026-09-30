@@ -214,7 +214,7 @@ export const GESTORAS: Gestora[] = [
     faq: [
       {
         q: '¿Cuál es la diferencia entre Fidelity y Vanguard?',
-        a: 'Ambas ofrecen fondos indexados de bajo coste. Fidelity MSCI World tiene TER 0,12% (vs Vanguard Global Stock 0,18%). Fidelity es propiedad de la familia Johnson; Vanguard es propiedad mutua. En términos prácticos para el inversor en MyInvestor, ambos son válidos: elegir el TER más bajo (Fidelity en este caso) tiene sentido si no hay otras diferencias relevantes.',
+        a: 'Ambas ofrecen fondos indexados de bajo coste. Fidelity MSCI World tiene TER 0,12% (vs Vanguard Global Stock 0,18%). Fidelity es propiedad de la familia Johnson; Vanguard es propiedad mutua. En la práctica, los dos replican el MSCI World y lo que cambia es la comisión: 0,06 puntos al año, unos 6 € por cada 10.000 € invertidos.',
       },
     ],
   },

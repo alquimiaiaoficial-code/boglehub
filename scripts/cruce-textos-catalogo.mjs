@@ -67,8 +67,12 @@ for (const p of ficheros) {
         const re = new RegExp(`(?<![A-Z0-9])${t}(?![A-Z0-9])`, 'g')
         for (const x of antes.matchAll(re)) if (!mejor || x.index > mejor.pos) mejor = { t, suIsin, pos: x.index }
       }
-      // Si entre ese ticker y el ISIN hay otro ISIN, el ticker ya tenía el suyo.
-      if (mejor && !ISIN_UNO.test(antes.slice(mejor.pos)) && isin !== mejor.suIsin) {
+      // Si entre ese ticker y el ISIN hay otro ISIN, el ticker ya tenía el suyo. Y si hay otro
+      // ticker (aunque no esté en el catálogo) seguido de paréntesis —«EQAC (IE00BFZXGZ54…»—,
+      // el ISIN es de ese.
+      const entre = mejor ? antes.slice(mejor.pos + mejor.t.length) : ''
+      const otroDueño = /(?<![A-Z0-9])[A-Z][A-Z0-9]{2,5}(?![A-Z0-9])\s*\(/.test(entre)
+      if (mejor && !otroDueño && !ISIN_UNO.test(antes.slice(mejor.pos)) && isin !== mejor.suIsin) {
         malos.push(`${rel}:${i + 1}  ${mejor.t} junto a ${isin}, pero su ISIN es ${mejor.suIsin}`)
       }
     }

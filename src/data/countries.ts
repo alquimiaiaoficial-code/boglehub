@@ -117,7 +117,7 @@ export const COUNTRIES: Country[] = [
     relatedEtfs: [
       { ticker: 'EIMI', name: 'iShares Core MSCI EM IMI UCITS ETF' },
       { ticker: 'VFEM', name: 'Vanguard FTSE Emerging Markets UCITS ETF' },
-      { ticker: 'EMIM', name: 'iShares Core MSCI EM IMI (Dist)' },
+      { ticker: 'EMIM', name: 'iShares Core MSCI EM IMI (Acc)' },
     ],
     marketType: 'emergente',
     taxTreaty: 'Varía por país; los ETFs UCITS aplican retenciones según convenios',
