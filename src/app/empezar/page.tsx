@@ -20,7 +20,7 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
   {
     q: '¿Es mejor un ETF, un fondo indexado o un roboadvisor para empezar?',
-    a: 'Depende de tu estilo: un roboadvisor como Indexa Capital es el camino con menos decisiones que tomar, a cambio de ~0,40-0,50 % anual. Un fondo indexado en MyInvestor es la vía donde funciona el traspaso sin tributar de la fiscalidad española. Si prefieres flexibilidad y mínimo coste, un ETF como VWCE en Trade Republic. Las tres opciones son válidas — la peor opción es no empezar.',
+    a: 'Depende de tu estilo: un roboadvisor como Indexa Capital es el camino con menos decisiones que tomar, a cambio de un 0,6-0,7 % anual. Un fondo indexado en MyInvestor es la vía donde funciona el traspaso sin tributar de la fiscalidad española. Si prefieres flexibilidad y mínimo coste, un ETF como VWCE en Trade Republic. Las tres opciones son válidas — la peor opción es no empezar.',
   },
   {
     q: '¿Es seguro invertir en fondos indexados y ETFs en España?',
@@ -81,7 +81,7 @@ export default function EmpezarPage() {
             },
             {
               name: 'Decide tu estrategia',
-              text: 'Elige entre tres caminos: cartera DIY (tú gestionas, coste ~0,15% anual), roboadvisor (Indexa, Finizens, MyInvestor gestionan, coste ~0,40-0,50%), o plan de pensiones indexado (hasta 1.500€/año con deducción IRPF).',
+              text: 'Elige entre tres caminos: cartera DIY (tú gestionas, coste ~0,15% anual), roboadvisor (Indexa, Finizens, MyInvestor gestionan, coste ~0,3-0,7%), o plan de pensiones indexado (hasta 1.500€/año con deducción IRPF).',
               url: `${BASE_URL}/empezar#paso-2`,
             },
             {
@@ -258,7 +258,7 @@ export default function EmpezarPage() {
               <Card className="flex flex-col">
                 <CardTitle className="mb-2">Roboadvisor</CardTitle>
                 <p className="text-xs text-fg-muted flex-1 leading-relaxed">
-                  Indexa, Finizens o MyInvestor gestionan la cartera por ti. Coste ~0,40-0,50%
+                  Indexa, Finizens o MyInvestor gestionan la cartera por ti. Coste ~0,3-0,7%
                   anual pero automatización completa.
                 </p>
                 <Link href="/blog/indexa-capital-opinion-2026" className="mt-3 text-xs text-brand-400 hover:text-brand-300">

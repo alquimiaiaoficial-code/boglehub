@@ -49,9 +49,9 @@ export const ROBOADVISORS: Roboadvisor[] = [
     regulator: 'CNMV',
     regulatorId: '257',
     founded: 2015,
-    managementFee: '0,15% (hasta 10.000€), baja hasta 0,10% (>100.000€)',
-    totalCost: '0,40-0,50% anual (gestión + custodia + TER de fondos)',
-    minimumOpening: '3.000€ (fondos), sin mínimo (pensiones)',
+    managementFee: '0,52% (menos de 2.000€), 0,40% (hasta 10.000€), 0,38% (hasta 100.000€), baja por tramos hasta 0,08%',
+    totalCost: '0,58-0,73% anual hasta 100.000€ (gestión + custodia + coste de los fondos)',
+    minimumOpening: '1.000€ (fondos), 50€ (pensiones)',
     numProfiles: 10,
     // Su web (indexacapital.com/es/esp/stats), 29-sep-2026: incluye asesorados y cuentas remuneradas.
     aum: '+6.200 millones € (gestionados, asesorados o comercializados, sep-2026)',
@@ -68,7 +68,7 @@ export const ROBOADVISORS: Roboadvisor[] = [
     ],
     notIdealFor: [
       'Quien tiene disciplina para gestionar cartera DIY',
-      'Patrimonio muy pequeño (mínimo 3.000€)',
+      'Patrimonio muy pequeño (mínimo 1.000€)',
       'Quien quiere control total sobre cada decisión',
     ],
     officialUrl: 'https://indexacapital.com/es',
@@ -79,11 +79,11 @@ export const ROBOADVISORS: Roboadvisor[] = [
       },
       {
         q: '¿Cuánto cobra Indexa Capital realmente?',
-        a: 'El coste total se compone de: (1) comisión Indexa 0,15% hasta 10.000€ bajando a 0,10% para >100.000€, (2) custodia ~0,12% del banco depositario, (3) TER de los fondos subyacentes ~0,07-0,22%. En total, la mayoría de clientes pagan 0,40-0,50% anual sobre patrimonio.',
+        a: 'El coste total se compone de: (1) comisión de Indexa del 0,52% por debajo de 2.000€, 0,40% hasta 10.000€ y 0,38% hasta 100.000€, que baja por tramos hasta el 0,08%; (2) custodia del 0,109% por debajo de 10.000€ y 0,103% hasta 100.000€; (3) coste de los fondos, de media un 0,096% (tarifas publicadas por Indexa en septiembre de 2026). En total, entre 2.000€ y 100.000€ se paga en torno al 0,58-0,61% anual, y un 0,73% por debajo de 2.000€.',
       },
       {
         q: '¿Indexa o Finizens?',
-        a: 'Indexa tiene 10 niveles de perfil (vs 5 de Finizens), más patrimonio gestionado, y comisiones similares (~0,40-0,50%). Finizens tiene mínimo de apertura más bajo (1.000€ vs 3.000€) y carteras que incluyen oro. Para la mayoría son intercambiables; elige según interfaz preferida.',
+        a: 'Indexa tiene 10 niveles de perfil (vs 5 de Finizens) y más patrimonio gestionado; Finizens incluye oro en sus carteras. Los dos piden 1.000€ de mínimo y su coste total está en una franja parecida (Indexa 0,58-0,73% hasta 100.000€; Finizens 0,29-0,62% según su propia estimación). Para la mayoría son intercambiables.',
       },
       {
         q: '¿Cómo es la rentabilidad histórica de Indexa Capital?',
@@ -98,18 +98,18 @@ export const ROBOADVISORS: Roboadvisor[] = [
     regulator: 'CNMV',
     regulatorId: '286',
     founded: 2016,
-    managementFee: '0,12% (hasta 10.000€), baja hasta 0,099% (>100.000€)',
-    totalCost: '0,32-0,42% anual total',
+    managementFee: '0,41% (1.000-20.000€), baja por tramos hasta 0,14% y un 0,02% cada año de antigüedad',
+    totalCost: '0,29-0,62% anual (estimación de Finizens)',
     minimumOpening: '1.000€',
     numProfiles: 5,
-    aum: '~400 millones €',
+    aum: '+660 millones € gestionados y asesorados (2026)',
     underlyingFunds: ['iShares', 'Vanguard', 'Amundi'],
     hasPensionPlan: true,
     tagline: 'Roboadvisor con carteras que incluyen oro y mínimo bajo',
     description:
-      'Finizens es una agencia de valores registrada en CNMV nº 286, fundada en 2016. Ofrece 5 carteras numeradas del 1 al 5 con asignaciones de activos que incluyen oro físico (vía ETC) en perfiles más conservadores, algo poco común entre roboadvisors. Mínimo de apertura más bajo que Indexa Capital (1.000€ vs 3.000€). Plan de pensiones indexado también disponible.',
+      'Finizens es una agencia de valores registrada en CNMV nº 267, fundada en 2016. Ofrece 5 carteras numeradas del 1 al 5 con asignaciones de activos que incluyen oro físico (vía ETC) en perfiles más conservadores, algo poco común entre roboadvisors. Mínimo de apertura de 1.000€, el mismo que Indexa Capital. Plan de pensiones indexado también disponible.',
     idealFor: [
-      'Patrimonio inicial menor a 3.000€',
+      'Empezar con 1.000€',
       'Quien valora incluir oro como diversificador',
       'Quien prefiere interfaz visual sencilla',
     ],
@@ -120,7 +120,7 @@ export const ROBOADVISORS: Roboadvisor[] = [
     faq: [
       {
         q: '¿Es seguro Finizens?',
-        a: 'Sí. Finizens está registrado en CNMV como agencia de valores nº 286. El dinero se custodia en entidades bancarias separadas de Finizens. En caso de insolvencia, los fondos son del cliente y están cubiertos por el Fondo de Garantía de Inversores hasta 100.000€. Tiene respaldo del grupo Global Savings Group.',
+        a: 'Sí. Finizens está registrado en CNMV como agencia de valores nº 267. El dinero se custodia en entidades bancarias separadas de Finizens. En caso de insolvencia, los fondos son del cliente y están cubiertos por el Fondo de Garantía de Inversores hasta 100.000€.',
       },
       {
         q: '¿Por qué Finizens incluye oro en sus carteras?',
@@ -176,7 +176,7 @@ export const ROBOADVISORS: Roboadvisor[] = [
     hasPensionPlan: true,
     tagline: 'Roboadvisor con 11 perfiles y carteras temáticas (ESG, dividendos)',
     description:
-      'inbestMe es una agencia de valores registrada en CNMV nº 294. Ofrece 11 perfiles de riesgo (más granularidad que Indexa) y, además de carteras estándar de fondos indexados, carteras temáticas: ESG (sostenibilidad), dividendos y crecimiento. Mínimo de apertura 1.000€. Comisiones algo superiores al promedio (0,41-0,69% total).',
+      'inbestMe es una agencia de valores registrada en CNMV nº 272. Ofrece 11 perfiles de riesgo (más granularidad que Indexa) y, además de carteras estándar de fondos indexados, carteras temáticas: ESG (sostenibilidad), dividendos y crecimiento. Mínimo de apertura 1.000€. Coste total del 0,41-0,69% anual.',
     idealFor: [
       'Quien quiere cartera ESG o temática',
       'Quien valora máxima granularidad de perfiles (11)',
@@ -188,7 +188,7 @@ export const ROBOADVISORS: Roboadvisor[] = [
     faq: [
       {
         q: '¿Vale la pena inbestMe sobre Indexa por las carteras ESG?',
-        a: 'inbestMe ofrece carteras 100% sostenibles (ESG), algo que Indexa no tiene por defecto. Su coste total es algo mayor: 0,41-0,69% anual en inbestMe frente a 0,40-0,50% en Indexa.',
+        a: 'inbestMe ofrece carteras 100% sostenibles (ESG), algo que Indexa no tiene por defecto. Su coste total es parecido: 0,41-0,69% anual en inbestMe frente a 0,58-0,73% en Indexa hasta 100.000€.',
       },
     ],
   },

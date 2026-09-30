@@ -143,7 +143,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: '¿Cuál es el plan de pensiones indexado más barato en España?',
-        a: 'Los planes de pensiones indexados más competitivos en 2026 son: MyInvestor Indexado Global (~0,30% comisión total), Indexa Pensiones (~0,40-0,50% total) y Finizens Pensiones (~0,40% total). Todos están por debajo del 1% que cobran los planes tradicionales de la banca. El límite anual de aportación deducible en planes individuales es 1.500€.',
+        a: 'Los planes de pensiones indexados más competitivos en 2026 son: MyInvestor Indexado Global (~0,30% comisión total), Indexa Pensiones (~0,40-0,50% total) y Finizens Pensiones (~0,55% total). Todos están por debajo del 1% que cobran los planes tradicionales de la banca. El límite anual de aportación deducible en planes individuales es 1.500€.',
       },
     ],
   },

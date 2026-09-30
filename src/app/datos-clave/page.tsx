@@ -40,7 +40,7 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
   {
     q: '¿Cuáles son los roboadvisors más usados en España y cuánto cobran?',
-    a: 'En 2026, los tres principales son: Indexa Capital (CNMV 257, comisión total 0,40-0,50% anual, mínimo 3.000€, +2.000M€ AUM), Finizens (CNMV 286, comisión total ~0,40%, mínimo 1.000€) y MyInvestor (roboadvisor propio, comisión total desde 0,30%, mínimo 150€). Todos invierten en fondos indexados de Vanguard, iShares y Amundi.',
+    a: 'En 2026, los tres principales son: Indexa Capital (CNMV 257, coste total 0,58-0,73% anual hasta 100.000€, mínimo 1.000€, +2.000M€ AUM), Finizens (CNMV 267, coste total estimado 0,29-0,62%, mínimo 1.000€) y MyInvestor (roboadvisor propio, comisión total desde 0,30%, mínimo 150€). Todos invierten en fondos indexados de Vanguard, iShares y Amundi.',
   },
   {
     q: '¿Cuál es el límite anual de aportación a un plan de pensiones en España?',
@@ -435,8 +435,8 @@ Fuente: BogleHub (boglehub.com/datos-clave) — verificable con BOE/AEAT, follet
               source="Webs oficiales, registro CNMV, datos mayo 2026"
               headers={['Roboadvisor', 'Coste total estimado', 'Mínimo apertura', 'Nº perfiles', 'AUM aprox.', 'Registro CNMV']}
               rows={[
-                ['Indexa Capital', '0,40-0,50%', '3.000€', '10', '+2.000M€', '257'],
-                ['Finizens', '0,32-0,42%', '1.000€', '5', '~400M€', '286'],
+                ['Indexa Capital', '0,58-0,73%', '1.000€', '10', '+2.000M€', '257'],
+                ['Finizens', '0,29-0,62%', '1.000€', '5', '+660M€', '267'],
                 ['MyInvestor Roboadvisor', '~0,30-0,40%', '150€', '5', 'n/d', '226'],
                 ['Inbestme', '0,41-0,69%', '1.000€', '11', '~150M€', '294'],
                 ['Openbank Roboadvisor', '~0,70-0,90%', '500€', '4', 'n/d', '0086'],
@@ -474,7 +474,7 @@ Fuente: BogleHub (boglehub.com/datos-clave) — verificable con BOE/AEAT, follet
               headers={['Plan', 'Comisión total', 'Mínimo aportación', 'Perfiles', 'Gestora']}
               rows={[
                 ['MyInvestor Indexado Global', '~0,30%', '1€', '1', 'MyInvestor'],
-                ['Indexa Pensiones', '0,40-0,50%', 'Sin mínimo', '10', 'Indexa Capital'],
+                ['Indexa Pensiones', '0,40-0,50%', '50€', '10', 'Indexa Capital'],
                 ['Finizens Pensiones', '~0,40%', '1€', '5', 'Finizens'],
                 ['Caser Plan Indexado', '0,60%', '30€/mes', '5', 'Caser'],
               ]}

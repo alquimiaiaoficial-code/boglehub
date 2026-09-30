@@ -70,8 +70,8 @@ export async function GET() {
       source: 'Webs oficiales y CNMV, mayo 2026',
       headers: ['roboadvisor', 'coste_total_anual', 'minimo_apertura_euros', 'num_perfiles', 'cnmv'],
       rows: [
-        { roboadvisor: 'Indexa Capital', coste_total_anual: '0,40-0,50%', minimo_apertura_euros: 3000, num_perfiles: 10, cnmv: '257' },
-        { roboadvisor: 'Finizens', coste_total_anual: '0,32-0,42%', minimo_apertura_euros: 1000, num_perfiles: 5, cnmv: '286' },
+        { roboadvisor: 'Indexa Capital', coste_total_anual: '0,58-0,73%', minimo_apertura_euros: 1000, num_perfiles: 10, cnmv: '257' },
+        { roboadvisor: 'Finizens', coste_total_anual: '0,29-0,62%', minimo_apertura_euros: 1000, num_perfiles: 5, cnmv: '267' },
         { roboadvisor: 'MyInvestor Roboadvisor', coste_total_anual: '~0,30-0,40%', minimo_apertura_euros: 150, num_perfiles: 5, cnmv: '226' },
         { roboadvisor: 'Inbestme', coste_total_anual: '0,41-0,69%', minimo_apertura_euros: 1000, num_perfiles: 11, cnmv: '294' },
       ],

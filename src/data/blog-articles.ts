@@ -29,11 +29,11 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     faq: [
       {
         q: '¿Es seguro Finizens?',
-        a: 'Sí. Finizens es una agencia de valores registrada en la CNMV (nº 286), con respaldo del grupo Global Savings Group. Tu dinero no está en Finizens: se invierte en fondos a tu nombre custodiados en entidades bancarias separadas. Si Finizens quebrara, tu cartera seguiría siendo tuya, y está cubierta por el Fondo de Garantía de Inversiones hasta 100.000€.',
+        a: 'Sí. Finizens es una agencia de valores registrada en la CNMV (nº 267). Tu dinero no está en Finizens: se invierte en fondos a tu nombre custodiados en entidades bancarias separadas. Si Finizens quebrara, tu cartera seguiría siendo tuya, y está cubierta por el Fondo de Garantía de Inversiones hasta 100.000€.',
       },
       {
         q: '¿Cuánto cobra Finizens?',
-        a: 'El coste total ronda el 0,32-0,42% anual (gestión + custodia + TER de los fondos), de los más bajos del mercado español: la comisión de gestión parte del 0,12% hasta 10.000€ y baja hasta el 0,099% por encima de 100.000€. Está por debajo de Indexa (0,40-0,50%) y de inbestMe (0,41-0,69%), y cerca de MyInvestor (0,30-0,40%).',
+        a: 'El coste total ronda el 0,29-0,62% anual (gestión + custodia + TER de los fondos), de los más bajos del mercado español: la comisión de gestión va del 0,41% desde 1.000€ hasta el 0,14% por encima de 5.000.000€. Está por debajo de Indexa (0,40-0,50%) y de inbestMe (0,41-0,69%), y cerca de MyInvestor (0,30-0,40%).',
       },
       {
         q: '¿Por qué Finizens incluye oro en sus carteras?',
@@ -41,24 +41,24 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       },
       {
         q: '¿Cuál es el mínimo para empezar en Finizens?',
-        a: 'El mínimo de apertura es de 1.000€, claramente más accesible que los 3.000€ de Indexa Capital, aunque por encima de los 150€ de MyInvestor. Para quien empieza con poco capital pero quiere un roboadvisor especializado, es un punto medio razonable. También ofrece plan de pensiones indexado.',
+        a: 'El mínimo de apertura es de 1.000€, el mismo que Indexa Capital y por encima de los 150€ de MyInvestor. Para quien empieza con poco capital pero quiere un roboadvisor especializado, es un punto medio razonable. También ofrece plan de pensiones indexado.',
       },
       {
         q: '¿Finizens o Indexa Capital?',
-        a: 'Son los dos referentes y para la mayoría resultan intercambiables. Finizens gana en mínimo de apertura (1.000€ vs 3.000€), comisiones algo más bajas y el oro como diversificador; Indexa, en granularidad (10 perfiles vs 5), patrimonio gestionado y antigüedad del historial. La diferencia práctica está en el mínimo que se puede aportar y en si el oro encaja como diversificador en cartera.',
+        a: 'Son los dos referentes y para la mayoría resultan intercambiables. Con el mismo mínimo de apertura (1.000€), Finizens se distingue por el oro como diversificador; Indexa, por la granularidad (10 perfiles vs 5), patrimonio gestionado y antigüedad del historial. La diferencia práctica está en el mínimo que se puede aportar y en si el oro encaja como diversificador en cartera.',
       },
     ],
     content: `# Finizens: opinión y análisis completo del roboadvisor (2026)
 
 Finizens es, junto a Indexa Capital, uno de los dos grandes nombres de la gestión indexada automatizada en España. Su propuesta tiene tres señas claras: comisiones de las más bajas del mercado, un mínimo de entrada accesible (1.000€) y una decisión de diseño que no verás en sus competidores: **oro físico** en las carteras como diversificador. Este análisis, sin afiliación ni comisiones por recomendarte nada, explica cómo funciona, cuánto cuesta de verdad y para quién encaja.
 
-La conclusión por adelantado: Finizens es una opción sólida y barata para delegar tu inversión indexada, especialmente si empiezas con 1.000-3.000€ (donde Indexa aún no te deja entrar) o si te convence el oro como amortiguador. Sus 5 perfiles son menos granulares que los 10 de Indexa, pero para la mayoría es suficiente.
+La conclusión por adelantado: Finizens es una opción sólida y barata para delegar tu inversión indexada, especialmente si te convence el oro como amortiguador. Sus 5 perfiles son menos granulares que los 10 de Indexa, pero para la mayoría es suficiente.
 
 ---
 
 ## Quién es Finizens
 
-Finizens es una **agencia de valores registrada en la CNMV (nº 286)**, fundada en 2016 y con el respaldo del grupo Global Savings Group. Gestiona en torno a **400 millones de euros** en carteras de fondos indexados de **iShares, Vanguard y Amundi**, con metodología pasiva: define tu perfil, invierte en una cartera global diversificada y rebalancea automáticamente. Ofrece también **plan de pensiones indexado**.
+Finizens es una **agencia de valores registrada en la CNMV (nº 267)**, fundada en 2016. Según su web, gestiona y asesora más de **660 millones de euros** (dato de 2026). Invierte en carteras de fondos indexados de **iShares, Vanguard y Amundi**, con metodología pasiva: define tu perfil, invierte en una cartera global diversificada y rebalancea automáticamente. Ofrece también **plan de pensiones indexado**.
 
 Es el segundo roboadvisor "puro" por tamaño en España, tras Indexa Capital, y lleva casi una década de historial.
 
@@ -66,13 +66,13 @@ Es el segundo roboadvisor "puro" por tamaño en España, tras Indexa Capital, y 
 
 ## Comisiones: de las más bajas del mercado
 
-El coste total de Finizens —gestión + custodia + TER de los fondos— ronda el **0,32-0,42% anual**. La comisión de gestión parte del **0,12%** hasta 10.000€ y **baja por tramos hasta el 0,099%** por encima de 100.000€, un detalle que premia al patrimonio que crece.
+El coste total de Finizens —gestión + custodia + TER de los fondos— ronda el 0,29-0,62% anual. La comisión de gestión va del 0,41% desde 1.000€ hasta el 0,14% por encima de 5.000.000€, y baja además cada año que el cliente permanece invertido.
 
 | Roboadvisor | Coste total anual | Mínimo |
 |---|---|---|
 | MyInvestor | 0,30-0,40% | 150€ |
-| **Finizens** | **0,32-0,42%** | **1.000€** |
-| Indexa Capital | 0,40-0,50% | 3.000€ |
+| **Finizens** | **0,29-0,62%** | **1.000€** |
+| Indexa Capital | 0,58-0,73% | 1.000€ |
 | inbestMe | 0,41-0,69% | 1.000€ |
 | Openbank | 0,70-0,90% | 500€ |
 
@@ -98,7 +98,7 @@ El resto es el estándar de un buen roboadvisor: test de perfil, aportaciones au
 
 ## Seguridad
 
-- **Regulación**: agencia de valores supervisada por la **CNMV (nº 286)**.
+- **Regulación**: agencia de valores supervisada por la **CNMV (nº 267)**.
 - **Custodia segregada**: tu dinero está en fondos **a tu nombre**, custodiados en entidades bancarias separadas del balance de Finizens. Si Finizens quebrara, tu cartera sigue siendo tuya.
 - **Garantía**: cobertura del Fondo de Garantía de Inversiones hasta **100.000€**, además de la protección estructural de la segregación (la misma lógica que explicamos en [qué pasa si quiebra tu bróker](/blog/que-pasa-si-quiebra-tu-broker)).
 
@@ -109,7 +109,7 @@ En solidez regulatoria, Finizens está al nivel de los grandes del sector.
 ## Para quién tiene sentido Finizens (y para quién no)
 
 **Tiene sentido si:**
-- Quieres delegar la gestión y empiezas con **1.000-3.000€** (Indexa exige 3.000€).
+- Quieres delegar la gestión y empiezas con unos **1.000€** (el mínimo de apertura).
 - Buscas comisiones de las más bajas sin renunciar a un roboadvisor especializado.
 - Te convence el **oro como diversificador** en la parte conservadora.
 - Quieres también un plan de pensiones indexado.
@@ -123,20 +123,20 @@ En solidez regulatoria, Finizens está al nivel de los grandes del sector.
 
 ## Finizens vs Indexa: el clásico
 
-Es la comparación inevitable, y la respuesta corta es que **para la mayoría son intercambiables**: ambos regulados, baratos, pasivos y solventes. Finizens gana en mínimo (1.000€ vs 3.000€), coste y el oro; Indexa, en granularidad (10 perfiles), patrimonio gestionado (+2.000M€) e historial auditado más largo. El desempate fino lo tienes en la comparativa [Finizens vs Indexa Capital](/blog/finizens-vs-indexa-capital-2026), y el panorama completo del sector en [el mejor roboadvisor de España 2026](/blog/mejor-roboadvisor-espana-2026).
+Es la comparación inevitable, y la respuesta corta es que **para la mayoría son intercambiables**: ambos regulados, baratos, pasivos y solventes. Con el mismo mínimo (1.000€), Finizens se distingue por el oro; Indexa, por la granularidad (10 perfiles), patrimonio gestionado (+2.000M€) e historial auditado más largo. El desempate fino lo tienes en la comparativa [Finizens vs Indexa Capital](/blog/finizens-vs-indexa-capital-2026), y el panorama completo del sector en [el mejor roboadvisor de España 2026](/blog/mejor-roboadvisor-espana-2026).
 
 ---
 
 ## Conclusión práctica
 
-Finizens es uno de los roboadvisors más recomendables de España: barato, regulado, con un mínimo accesible y una propuesta de diversificación con personalidad propia (el oro). Si quieres delegar tu inversión indexada y los 3.000€ de Indexa te quedan lejos —o simplemente te convence su filosofía—, es una elección difícil de criticar. Y si dudas entre delegar o hacerlo tú mismo, calcula primero cuánto te cuesta cada camino con el [comparador de roboadvisor vs DIY](/calculadora/roboadvisor-vs-diy).
+Finizens es un roboadvisor regulado por la CNMV, con un mínimo de 1.000 € (el mismo que Indexa) y una propuesta de diversificación con personalidad propia (el oro). Entre los dos, lo que cambia es el coste en cada tramo de patrimonio y la composición de la cartera. Y si dudas entre delegar o hacerlo tú mismo, calcula primero cuánto te cuesta cada camino con el [comparador de roboadvisor vs DIY](/calculadora/roboadvisor-vs-diy).
 
 ---
 
 ## Fuentes y lecturas complementarias
 
 - [Finizens — Web oficial](https://finizens.com) — Comisiones, carteras y condiciones actualizadas.
-- [CNMV — Registro de agencias de valores](https://www.cnmv.es) — Verifica el registro de Finizens (nº 286).
+- [CNMV — Registro de agencias de valores](https://www.cnmv.es) — Verifica el registro de Finizens (nº 267).
 - [Finizens vs Indexa Capital — BogleHub](/blog/finizens-vs-indexa-capital-2026) — La comparativa directa entre los dos referentes.
 - [Mejor roboadvisor en España 2026 — BogleHub](/blog/mejor-roboadvisor-espana-2026) — Los cinco roboadvisors comparados.
 `,
@@ -2090,15 +2090,15 @@ Con el colchón hecho, el siguiente paso es [empezar a invertir](/blog/como-empe
       },
       {
         q: '¿Cuánto cuesta inbestMe?',
-        a: 'El coste total de inbestMe es de 0,41-0,69% anual (gestión + custodia + TER de los fondos), algo por encima de Indexa (0,40-0,50%), Finizens (0,32-0,42%) y MyInvestor (0,30-0,40%). Esa diferencia es el precio de la especialización temática y la granularidad de perfiles.',
+        a: 'El coste total de inbestMe es de 0,41-0,69% anual (gestión + custodia + TER de los fondos). Indexa está en 0,58-0,73% hasta 100.000€, Finizens en 0,29-0,62% según su propia estimación y MyInvestor en 0,30-0,40%: las franjas se solapan, así que cuál sale más barato depende del tramo de patrimonio.',
       },
       {
         q: '¿Es seguro inbestMe?',
-        a: 'Sí. inbestMe es una agencia de valores registrada en la CNMV (nº 294). Tu dinero no está en inbestMe, sino en fondos a tu nombre custodiados en un banco depositario, separados de su patrimonio. Si quebrara, tu cartera seguiría siendo tuya y está cubierta por el Fondo de Garantía de Inversiones hasta 100.000€.',
+        a: 'Sí. inbestMe es una agencia de valores registrada en la CNMV (nº 272). Tu dinero no está en inbestMe, sino en fondos a tu nombre custodiados en un banco depositario, separados de su patrimonio. Si quebrara, tu cartera seguiría siendo tuya y está cubierta por el Fondo de Garantía de Inversiones hasta 100.000€.',
       },
       {
         q: '¿Cuál es el mínimo de apertura de inbestMe?',
-        a: 'El mínimo de inbestMe es de 1.000€, el mismo que Finizens. Es más bajo que Indexa Capital (3.000€) pero más alto que MyInvestor Roboadvisor (150€). Si empiezas con muy poco capital, MyInvestor es más accesible.',
+        a: 'El mínimo de inbestMe es de 1.000€, el mismo que Finizens. Es el mismo que Indexa Capital y más alto que MyInvestor Roboadvisor (150€). Si empiezas con muy poco capital, MyInvestor es más accesible.',
       },
     ],
     content: `# inbestMe: opinión y análisis del roboadvisor ESG (2026)
@@ -2111,7 +2111,7 @@ La conclusión por adelantado: inbestMe brilla si la inversión socialmente resp
 
 ## Quién es inbestMe
 
-inbestMe es una **agencia de valores registrada en la CNMV (nº 294)**, fundada en 2017. Gestiona alrededor de 150 millones de euros e invierte en fondos indexados y ETFs de Vanguard, iShares y SPDR. Como el resto de roboadvisors serios, automatiza la construcción de la cartera, el rebalanceo y las aportaciones, y ofrece también plan de pensiones indexado.
+inbestMe es una **agencia de valores registrada en la CNMV (nº 272)**, fundada en 2017. Gestiona alrededor de 150 millones de euros e invierte en fondos indexados y ETFs de Vanguard, iShares y SPDR. Como el resto de roboadvisors serios, automatiza la construcción de la cartera, el rebalanceo y las aportaciones, y ofrece también plan de pensiones indexado.
 
 Lo que lo distingue no es el tamaño —es más pequeño que Indexa o Finizens— sino su **especialización**: carteras temáticas y una granularidad de perfiles que ningún competidor iguala.
 
@@ -2124,8 +2124,8 @@ El coste total de inbestMe se sitúa en **0,41-0,69% anual** (gestión + custodi
 | Roboadvisor | Coste total anual | Mínimo |
 |---|---|---|
 | MyInvestor | 0,30-0,40% | 150€ |
-| Finizens | 0,32-0,42% | 1.000€ |
-| Indexa Capital | 0,40-0,50% | 3.000€ |
+| Finizens | 0,29-0,62% | 1.000€ |
+| Indexa Capital | 0,58-0,73% | 1.000€ |
 | **inbestMe** | **0,41-0,69%** | **1.000€** |
 
 La diferencia frente a Indexa (en torno a 0,1-0,2 puntos) es el precio de la especialización temática. Sobre 30.000€, hablamos de unas decenas de euros al año: si valoras las carteras ESG o la granularidad, suele compensar; si no, ese sobrecoste no aporta nada.
@@ -2153,7 +2153,7 @@ inbestMe ofrece **11 perfiles de riesgo**, más que ningún otro roboadvisor esp
 
 ## Seguridad
 
-inbestMe está **regulado por la CNMV como agencia de valores (nº 294)**. Tu dinero no está en inbestMe: los fondos se custodian a tu nombre en un banco depositario, separados del patrimonio de la empresa. Si inbestMe quebrara, tu cartera seguiría siendo tuya, y además está cubierta por el Fondo de Garantía de Inversiones hasta 100.000€. Es el mismo mecanismo de [segregación de activos](/blog/que-pasa-si-quiebra-tu-broker) que protege a cualquier roboadvisor o bróker regulado.
+inbestMe está **regulado por la CNMV como agencia de valores (nº 272)**. Tu dinero no está en inbestMe: los fondos se custodian a tu nombre en un banco depositario, separados del patrimonio de la empresa. Si inbestMe quebrara, tu cartera seguiría siendo tuya, y además está cubierta por el Fondo de Garantía de Inversiones hasta 100.000€. Es el mismo mecanismo de [segregación de activos](/blog/que-pasa-si-quiebra-tu-broker) que protege a cualquier roboadvisor o bróker regulado.
 
 ---
 
@@ -2183,14 +2183,14 @@ Para verlos junto al resto de opciones, la [comparativa del mejor roboadvisor en
 
 ## Conclusión práctica
 
-inbestMe no compite por ser el más barato, y no pasa nada: compite por ser el roboadvisor de quien quiere invertir de forma sostenible o con un control fino del riesgo, y en ese nicho es de los mejores. Si el ESG no es tu criterio y solo miras el coste, Indexa o MyInvestor te saldrán más a cuenta. Pero si quieres delegar la gestión sin renunciar a tus valores, inbestMe es una de las pocas opciones serias y reguladas para hacerlo en España.
+inbestMe no compite por ser el más barato, y no pasa nada: compite por ser el roboadvisor de quien quiere invertir de forma sostenible o con un control fino del riesgo. Si el ESG no es tu criterio y solo miras el coste, Indexa o MyInvestor te saldrán más a cuenta. Pero si quieres delegar la gestión sin renunciar a tus valores, inbestMe es una de las pocas opciones serias y reguladas para hacerlo en España.
 
 ---
 
 ## Fuentes y lecturas complementarias
 
 - [inbestMe — Web oficial](https://www.inbestme.com) — Carteras, perfiles, comisiones y condiciones actualizadas.
-- [Mejor roboadvisor en España 2026 — BogleHub](/blog/mejor-roboadvisor-espana-2026) — Comparativa de los cinco roboadvisors más usados.
+- [Mejor roboadvisor en España 2026 — BogleHub](/blog/mejor-roboadvisor-espana-2026) — Comparativa de cinco roboadvisors españoles.
 - [Indexa Capital opinión 2026 — BogleHub](/blog/indexa-capital-opinion-2026) — La alternativa más barata y con más historial.
 - [¿Los roboadvisors merecen su comisión? — BogleHub](/blog/roboadvisors-espana-merecen-comision) — Cuándo compensa delegar frente al DIY.
 `,
@@ -2210,7 +2210,7 @@ inbestMe no compite por ser el más barato, y no pasa nada: compite por ser el r
       },
       {
         q: '¿Cuánto cuesta un roboadvisor en España?',
-        a: 'El coste total (comisión de gestión + custodia + TER de los fondos) va de ~0,30% (MyInvestor) a ~0,90% (Openbank) anual. Indexa ronda el 0,40-0,50%, Finizens el 0,32-0,42% e inbestMe el 0,41-0,69%. Sobre 50.000€, la diferencia entre el más barato y el más caro son unos 300€ al año. Mira siempre el coste total, no solo la comisión de gestión.',
+        a: 'El coste total (comisión de gestión + custodia + TER de los fondos) va de ~0,30% (MyInvestor) a ~0,90% (Openbank) anual. Indexa ronda el 0,58-0,73% hasta 100.000€, Finizens el 0,29-0,62% e inbestMe el 0,41-0,69%. Sobre 50.000€, la diferencia entre el más barato y el más caro son unos 300€ al año. Mira siempre el coste total, no solo la comisión de gestión.',
       },
       {
         q: '¿Indexa o Finizens, cuál es mejor?',
@@ -2237,8 +2237,8 @@ La conclusión por adelantado: no hay un "mejor roboadvisor" universal. El más 
 
 | | Indexa | Finizens | MyInvestor | inbestMe | Openbank |
 |---|---|---|---|---|---|
-| Coste total anual | 0,40-0,50% | 0,32-0,42% | **0,30-0,40%** | 0,41-0,69% | 0,70-0,90% |
-| Mínimo de apertura | 3.000€ | 1.000€ | **150€** | 1.000€ | 500€ |
+| Coste total anual | 0,58-0,73% | 0,29-0,62% | **0,30-0,40%** | 0,41-0,69% | 0,70-0,90% |
+| Mínimo de apertura | 1.000€ | 1.000€ | **150€** | 1.000€ | 500€ |
 | Perfiles de riesgo | 10 | 5 | 5 | **11** | 4 |
 | Fondos | Vanguard, iShares, Amundi | iShares, Vanguard, Amundi | Vanguard, Amundi, Fidelity | Vanguard, iShares, SPDR | Santander AM |
 | Plan de pensiones | Sí | Sí | Sí | Sí | No |
@@ -2254,7 +2254,7 @@ La comisión de un roboadvisor tiene tres capas que conviene entender:
 2. **Custodia** del banco depositario donde están tus fondos: en torno al 0,10-0,15%.
 3. **TER de los fondos** indexados subyacentes (su coste interno): ~0,07-0,22%.
 
-Sumadas dan el **coste total anual**, que es el número que de verdad importa: va desde ~0,30% (MyInvestor) hasta ~0,90% (Openbank). Sobre una cartera de 50.000€, esa diferencia son entre 150€ y 450€ al año, todos los años. En inversión indexada, el coste es lo que mejor predice tu resultado relativo a largo plazo.
+Sumadas dan el **coste total anual**, que es el número que de verdad importa: va desde ~0,30% (MyInvestor) hasta ~0,90% (Openbank). Sobre una cartera de 50.000€, eso va de 150€ a 450€ al año según el roboadvisor elegido, una diferencia de unos 300€ anuales, todos los años. En inversión indexada, el coste es lo que mejor predice tu resultado relativo a largo plazo.
 
 Para comparar el coste de delegar frente a hacerlo tú mismo, el [comparador de roboadvisor vs DIY](/calculadora/roboadvisor-vs-diy) lo calcula con tus cifras.
 
@@ -2262,7 +2262,7 @@ Para comparar el coste de delegar frente a hacerlo tú mismo, el [comparador de 
 
 ## Indexa Capital: el líder establecido
 
-**Coste total**: 0,40-0,50%. **Mínimo**: 3.000€. **Perfiles**: 10.
+**Coste total**: 0,58-0,73% hasta 100.000€. **Mínimo**: 1.000€. **Perfiles**: 10.
 
 Según su web, más de 6.200 millones de euros en activos gestionados, asesorados o comercializados y más de 178.000 clientes (29-sep-2026). Fundado en 2015 y registrado en CNMV (ESI nº 257). Invierte en fondos de Vanguard, iShares y Amundi, con 10 niveles de perfil —la mayor granularidad junto a inbestMe— y el historial auditado más largo del mercado español. Es la opción "por defecto" segura: ni la más barata ni la de menor mínimo, pero la más probada. Detalle en la [opinión de Indexa Capital 2026](/blog/indexa-capital-opinion-2026).
 
@@ -2270,9 +2270,9 @@ Según su web, más de 6.200 millones de euros en activos gestionados, asesorado
 
 ## Finizens: mínimo bajo y un toque de oro
 
-**Coste total**: 0,32-0,42%. **Mínimo**: 1.000€. **Perfiles**: 5.
+**Coste total**: 0,29-0,62%. **Mínimo**: 1.000€. **Perfiles**: 5.
 
-Agencia de valores registrada en CNMV (nº 286), con respaldo del grupo Global Savings Group. Su rasgo diferencial: incluye un porcentaje de **oro físico** (vía ETC) en las carteras conservadoras como diversificador, algo poco común. Mínimo de apertura más bajo que Indexa (1.000€) y comisiones ligeramente inferiores. Buen encaje si empiezas con menos de 3.000€ o te gusta el oro como amortiguador. Análisis completo en la [opinión de Finizens 2026](/blog/finizens-opinion-2026), y la comparativa directa en [Finizens vs Indexa Capital](/blog/finizens-vs-indexa-capital-2026).
+Agencia de valores registrada en CNMV (nº 267). Su rasgo diferencial: incluye un porcentaje de **oro físico** (vía ETC) en las carteras conservadoras como diversificador, algo poco común. Mínimo de apertura más bajo que Indexa (1.000€) y comisiones ligeramente inferiores. Buen encaje si empiezas con menos de 3.000€ o te gusta el oro como amortiguador. Análisis completo en la [opinión de Finizens 2026](/blog/finizens-opinion-2026), y la comparativa directa en [Finizens vs Indexa Capital](/blog/finizens-vs-indexa-capital-2026).
 
 ---
 
@@ -2288,7 +2288,7 @@ El roboadvisor del neobanco MyInvestor (grupo Andbank, CNMV) tiene el **mínimo 
 
 **Coste total**: 0,41-0,69%. **Mínimo**: 1.000€. **Perfiles**: 11.
 
-Agencia de valores (CNMV nº 294) que ofrece la mayor granularidad de perfiles (**11**) y carteras **temáticas** poco habituales: ESG (sostenibilidad), dividendos y crecimiento. Es algo más cara que Indexa o Finizens, y ese sobrecoste es el precio de la especialización. Tiene sentido si la inversión socialmente responsable es una prioridad para ti o quieres un ajuste muy fino del riesgo; si no, hay opciones más baratas.
+Agencia de valores (CNMV nº 272) que ofrece la mayor granularidad de perfiles (**11**) y carteras **temáticas** poco habituales: ESG (sostenibilidad), dividendos y crecimiento. Es algo más cara que Indexa o Finizens, y ese sobrecoste es el precio de la especialización. Tiene sentido si la inversión socialmente responsable es una prioridad para ti o quieres un ajuste muy fino del riesgo; si no, hay opciones más baratas.
 
 ---
 
@@ -2300,13 +2300,13 @@ El roboadvisor del banco online de Santander invierte en **fondos propios de San
 
 ---
 
-## El ganador según tu perfil
+## Qué mirar según tu situación
 
-- **Empiezas con poco capital**: **MyInvestor** (150€ de mínimo, coste más bajo).
-- **Quieres el roboadvisor más establecido y con más historial**: **Indexa Capital**.
-- **Te gusta el oro como diversificador o empiezas con 1.000-3.000€**: **Finizens**.
-- **La inversión ESG/sostenible es tu prioridad**: **inbestMe**.
-- **Eres cliente de Openbank/Santander y priorizas comodidad sobre coste**: **Openbank** (asumiendo que pagas más).
+- **Si empiezas con poco capital**: el mínimo más bajo de la tabla es el de **MyInvestor** (150€).
+- **Si te importa el historial**: **Indexa Capital** opera desde 2015.
+- **Si quieres oro en la cartera**: **Finizens** lo incluye como diversificador.
+- **Si la inversión ESG/sostenible es tu prioridad**: **inbestMe** tiene carteras sostenibles.
+- **Si ya eres cliente de Openbank/Santander**: su roboadvisor te evita abrir otra cuenta, a cambio de un coste más alto.
 
 ---
 
@@ -3129,7 +3129,7 @@ El TER es el coste anual del fondo expresado como porcentaje del patrimonio. Un 
 | 0,07 % | ~2 100 € |
 | 0,20 % | ~6 000 € |
 | 0,75 % | ~22 000 € |
-| 1,50 % | ~43 000 € |
+| 1,50 % | ~45 000 € |
 
 Para ETFs de renta variable global, busca **TER ≤ 0,20 %**. Para renta fija, ≤ 0,10 % es razonable. Los ETFs de mercados emergentes suelen costar algo más (0,14–0,22 %).
 
@@ -3140,7 +3140,7 @@ El domicilio del ETF determina la retención en origen sobre dividendos. La dife
 - **ETFs domiciliados en Irlanda** (UCITS IE): El convenio fiscal Irlanda–EE. UU. reduce la retención sobre dividendos de acciones estadounidenses del 30 % al 15 %. Para un ETF global donde el 60–65 % son empresas americanas, esto es significativo.
 - **ETFs domiciliados en Luxemburgo** (UCITS LU): Retención en origen del 30 % sobre dividendos de acciones americanas. Fiscalmente menos eficiente.
 
-**Conclusión práctica**: cuando exista la opción, elige ETFs domiciliados en Irlanda. El ISIN de los ETFs irlandeses empieza por "IE". Por ejemplo, el VWCE (Vanguard FTSE All-World) tiene ISIN IE00BK5BQT80.
+**En la práctica**: a igualdad de índice, un ETF domiciliado en Irlanda tiene esa ventaja fiscal frente a otros domicilios. El ISIN de los ETFs irlandeses empieza por "IE". Por ejemplo, el VWCE (Vanguard FTSE All-World) tiene ISIN IE00BK5BQT80.
 
 ### 3. Método de replicación
 
@@ -3157,7 +3157,7 @@ La **replicación física** (total o por muestreo) es la más transparente de la
 - **ETFs de acumulación (Acc)**: reinvierten automáticamente los dividendos. No hay evento fiscal hasta que vendas. Ideales para crecimiento a largo plazo.
 - **ETFs de distribución (Dist)**: reparten dividendos periódicamente. Cada pago tributa como rendimiento del capital mobiliario en tu IRPF del año.
 
-**Recomendación**: para un inversor largo-placista en España, los ETFs de **acumulación** son más eficientes fiscalmente. Solo considera distribución si necesitas flujo de caja (por ejemplo, en la fase de retiro). Puedes ver todos los [ETFs de acumulación disponibles en España](/etfs/acumulacion) y compararlos por TER y grado fiscal.
+Para un inversor largo-placista en España, los ETFs de **acumulación** suelen ser más eficientes fiscalmente. Solo considera distribución si necesitas flujo de caja (por ejemplo, en la fase de retiro). Puedes ver todos los [ETFs de acumulación disponibles en España](/etfs/acumulacion) y compararlos por TER y grado fiscal.
 
 ---
 
@@ -3205,7 +3205,7 @@ Banco español que ofrece a la vez ETF y fondos indexados de Vanguard, Amundi, i
 
 **Por qué es el favorito para empezar**: el VWCE incluye tanto países desarrollados como emergentes en una sola posición. Con un TER de 0,14 % y más de 3 600 empresas de 50 países, es la definición de diversificación global. Si solo puedes tener un ETF en tu vida, este es el candidato.
 
-La exposición aproximada es: 60 % EE. UU., 15 % Europa desarrollada, 12 % Asia-Pacífico, 12 % mercados emergentes. El peso de EE. UU. refleja la capitalización real de mercado global.
+La exposición aproximada es: 63 % EE. UU., 16 % Europa desarrollada, 9 % Asia-Pacífico, 12 % mercados emergentes. El peso de EE. UU. refleja la capitalización real de mercado global.
 
 **Disponible en**: Trade Republic, DEGIRO, MyInvestor.
 
@@ -5784,8 +5784,8 @@ Si usas VWCE aquí, el fondo 2 (emergentes) ya está incluido — tendrías una 
 | ETF | TER | Índice |
 |-----|-----|--------|
 | [AGGH](/etf/aggh) | 0,10 % | Bloomberg Global Agg EUR-hedged |
-| [VAGF](/etf/vagf) | 0,10 % | Bloomberg Global Agg EUR-hedged |
-| [VGEA](/etf/vgea) | 0,09 % | Bloomberg Global Agg EUR-hedged |
+| [VAGF](/etf/vagf) | 0,08 % | Bloomberg Global Agg EUR-hedged |
+| [VGEA](/etf/vgea) | 0,07 % | Bloomberg Global Agg EUR-hedged |
 
 Los tres son equivalentes en exposición. AGGH tiene mayor AUM y liquidez.
 
@@ -5808,7 +5808,7 @@ Dentro del 80-90 % de renta variable, la división entre desarrollados y emergen
 - 10 % EMIM (renta variable emergentes)
 - 20 % AGGH (renta fija)
 
-**TER ponderado**: 0,70×0,20 + 0,10×0,18 + 0,20×0,10 = 0,176 % — excelente.
+**TER ponderado**: 0,70×0,20 + 0,10×0,18 + 0,20×0,10 = 0,178 % — excelente.
 
 ---
 
@@ -6044,7 +6044,7 @@ La comparativa más amplia, con ING, Openbank, Renta 4 o Interactive Brokers, es
       },
       {
         q: '¿Cuánto cobra Indexa Capital de verdad?',
-        a: 'El coste total tiene tres capas: la comisión de gestión de Indexa (0,15% hasta 10.000€, bajando hasta 0,10% para patrimonios grandes), la comisión de custodia del banco depositario (~0,12%), y el TER de los fondos indexados en los que invierte (0,07%-0,22% según el activo). En total, la mayoría de clientes pagan entre 0,40% y 0,60% anual sobre el patrimonio, incluyendo todos los costes.',
+        a: 'El coste total tiene tres capas: la comisión de gestión de Indexa (0,52% hasta 2.000€, bajando hasta 0,38% entre 10.000 y 100.000€), la comisión de custodia del banco depositario (~0,12%), y el TER de los fondos indexados en los que invierte (0,07%-0,22% según el activo). En total, la mayoría de clientes pagan entre 0,40% y 0,60% anual sobre el patrimonio, incluyendo todos los costes.',
       },
       {
         q: '¿Es mejor Indexa Capital que gestionar yo mi propia cartera?',
@@ -6056,7 +6056,7 @@ La comparativa más amplia, con ING, Openbank, Renta 4 o Interactive Brokers, es
       },
       {
         q: '¿Cuánto dinero necesito para abrir una cuenta en Indexa Capital?',
-        a: 'El mínimo de apertura es 3.000€ para la cuenta de fondos. Para el plan de pensiones indexado de Indexa no hay mínimo. Indexa también ofrece una cuenta de acciones (carteras de ETFs individuales) desde 10.000€. Con el enlace de referido de un amigo, los primeros 10.000€ se gestionan gratis durante un año.',
+        a: 'El mínimo de apertura es 1.000€ para la cuenta de fondos. Para el plan de pensiones indexado de Indexa no hay mínimo. Indexa también ofrece una cuenta de acciones (carteras de ETFs individuales) desde 10.000€. Con el enlace de referido de un amigo, los primeros 10.000€ se gestionan gratis durante un año.',
       },
     ],
     content: `# Indexa Capital: opinión y análisis completo 2026
@@ -6101,9 +6101,9 @@ Los pesos exactos varían según el perfil y se rebalancean automáticamente cua
 El error más común es pensar que Indexa solo cobra lo que anuncia como "comisión de gestión". El coste real tiene tres capas:
 
 **1. Comisión de Indexa** (por gestión y asesoramiento):
-- 0,15% anual para los primeros 10.000€
-- 0,14% para 10.000–100.000€
-- Baja progresivamente hasta 0,10% para patrimonios grandes
+- 0,52% anual hasta 2.000€ y 0,40% de 2.000€ a 10.000€
+- 0,38% para 10.000–100.000€
+- Baja progresivamente hasta 0,08% para patrimonios de más de 100 millones de euros
 
 **2. Comisión del banco custodio** (Inversis o similar):
 - ~0,12% anual sobre el patrimonio
@@ -6112,7 +6112,7 @@ El error más común es pensar que Indexa solo cobra lo que anuncia como "comisi
 - Los fondos institucionales que usa Indexa tienen TER entre 0,07% y 0,25%
 - La media ponderada de una cartera Indexa suele rondar el 0,12%
 
-**Coste total estimado para un cliente típico**: 0,39% a 0,50% anual, según el patrimonio y la cartera asignada.
+**Coste total estimado para un cliente típico**: 0,58% a 0,73% anual hasta 100.000€, según el patrimonio y la cartera asignada.
 
 Comparado con un fondo de gestión activa en España (1,5–2% anual), Indexa es notablemente más barato. Comparado con una cartera DIY de fondos indexados propia (0,10–0,20% total), Indexa cuesta aproximadamente el doble.
 
@@ -6487,7 +6487,7 @@ página web por nadie, porque la mitad de los datos son personales.
       },
       {
         q: '¿Es seguro Finizens?',
-        a: 'Sí. Finizens está registrado en la CNMV como agencia de valores (número de registro 286). El dinero se custodia en entidades bancarias reguladas separadas de Finizens. En caso de insolvencia de Finizens, los fondos en los que invierte son de tu propiedad y estarían cubiertos por el Fondo de Garantía de Inversores hasta 100.000€. Finizens tiene respaldo del grupo Global Savings Group y de varios fondos de inversión europeos.',
+        a: 'Sí. Finizens está registrado en la CNMV como agencia de valores (número de registro 267). El dinero se custodia en entidades bancarias reguladas separadas de Finizens. En caso de insolvencia de Finizens, los fondos en los que invierte son de tu propiedad y estarían cubiertos por el Fondo de Garantía de Inversores hasta 100.000€. Finizens tiene respaldo del grupo Global Savings Group y de varios fondos de inversión europeos.',
       },
       {
         q: '¿Puedo cambiar de Finizens a Indexa Capital sin tributar?',
@@ -6513,7 +6513,7 @@ Esta comparativa usa datos actualizados a 2026 y no recibe compensación de ning
 | Tipo de entidad | Agencia de valores (CNMV 286) | ESI (CNMV 257) |
 | Fondos usados | iShares, Vanguard, Amundi | Vanguard, iShares, Amundi |
 | Nº de carteras | 5 (1-5) | 10 (1-10) |
-| Mínimo apertura | 1.000 € | 3.000 € (fondos) |
+| Mínimo apertura | 1.000 € | 1.000 € (fondos) |
 | Plan de pensiones | ✓ | ✓ |
 | Cuenta sin comisión | 0-10.000€ primer año (referido) | Primeros 10.000€ gratis (referido) |
 | App móvil | ✓ | ✓ |
@@ -6551,16 +6551,16 @@ Indexa usa fondos de Vanguard, iShares y Amundi. Una particularidad es su exposi
 Ambas entidades tienen estructura similar de tres capas de coste:
 
 **Finizens** (coste total estimado):
-- Comisión de gestión: 0,12% para los primeros 10.000€, hasta 0,099% para >100.000€
+- Comisión de gestión: 0,41% para 1.000-20.000€, bajando hasta 0,14% con antigüedad o patrimonio alto
 - Comisión custodia: ~0,10%
 - TER de fondos: ~0,10-0,15%
-- **Total aproximado: 0,32-0,37% para patrimonio pequeño**
+- **Total aproximado: hasta 0,62% para patrimonio pequeño**
 
 **Indexa Capital** (coste total estimado):
-- Comisión de gestión: 0,15% hasta 10.000€, bajando a 0,10% para >100.000€
+- Comisión de gestión: 0,52% hasta 2.000€, bajando a 0,38% entre 10.000 y 100.000€
 - Comisión custodia: ~0,12%
 - TER de fondos: ~0,10-0,15%
-- **Total aproximado: 0,37-0,42% para patrimonio pequeño**
+- **Total aproximado: puede superar el 0,70% para patrimonio pequeño**
 
 **Conclusión**: Finizens es marginalmente más barato en comisiones de gestión. La diferencia es pequeña (0-0,10% anual) y puede variar según el patrimonio.
 
@@ -6576,7 +6576,7 @@ Lo que sí se puede afirmar con datos: ambos han sido consistentemente más rent
 
 ## Diferencias que importan en la práctica
 
-**Mínimo de apertura**: Finizens permite empezar desde 1.000 €; Indexa exige 3.000 € para la cuenta de fondos. Si tienes menos de 3.000 €, Finizens es la única opción de las dos.
+**Mínimo de apertura**: Finizens permite empezar desde 1.000 €; Mínimo de apertura: tanto Finizens como Indexa permiten empezar desde 1.000 € para la cuenta de fondos.
 
 **Granularidad del perfil de riesgo**: Indexa tiene 10 niveles frente a 5 de Finizens. Para quien quiere afinar más su asignación de activos, Indexa ofrece más precisión.
 
@@ -7969,7 +7969,7 @@ Esta versión funciona excelentemente para inversores americanos. Para un invers
 
 **Opción A — VWCE** (Vanguard FTSE All-World UCITS ETF Acc)
 - ISIN: IE00BK5BQT80
-- TER: 0,19%
+- TER: 0,14%
 - Diversificación máxima global, incluye emergentes
 - Acumulación
 

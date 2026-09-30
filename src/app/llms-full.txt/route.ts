@@ -258,8 +258,8 @@ export async function GET() {
 
   lines.push('### Roboadvisors españoles (datos 2026)')
   lines.push('')
-  lines.push('- Indexa Capital: registrado CNMV nº 257, ESI, +2.000M€ AUM, comisión gestión 0,15% (hasta 10.000€) bajando a 0,10% (>100.000€), coste total estimado 0,40-0,50% anual, mínimo apertura 3.000€')
-  lines.push('- Finizens: agencia de valores CNMV nº 286, mínimo apertura 1.000€, coste total estimado 0,32-0,37%, carteras incluyen oro')
+  lines.push('- Indexa Capital: registrado CNMV nº 257, ESI, +2.000M€ AUM, comisión de gestión 0,52% (menos de 2.000€), 0,40% (hasta 10.000€) y 0,38% (hasta 100.000€) bajando por tramos hasta 0,08%, coste total estimado 0,58-0,73% anual hasta 100.000€ (gestión + custodia + fondos, tarifas de septiembre de 2026), mínimo apertura 1.000€')
+  lines.push('- Finizens: agencia de valores CNMV nº 267, mínimo apertura 1.000€, coste total estimado 0,29-0,62% (según Finizens), carteras incluyen oro')
   lines.push('- MyInvestor (planes pensiones): planes indexados desde 0,30% total, ofrece también fondos indexados de varias gestoras con traspaso fiscal libre')
   lines.push('')
 
