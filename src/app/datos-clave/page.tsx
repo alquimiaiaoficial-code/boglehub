@@ -438,7 +438,7 @@ Fuente: BogleHub (boglehub.com/datos-clave) — verificable con BOE/AEAT, follet
                 ['Indexa Capital', '0,58-0,73%', '1.000€', '10', '+2.000M€', '257'],
                 ['Finizens', '0,29-0,62%', '1.000€', '5', '+660M€', '267'],
                 ['MyInvestor Roboadvisor', '~0,30-0,40%', '150€', '5', 'n/d', '226'],
-                ['Inbestme', '0,41-0,69%', '1.000€', '11', '~150M€', '294'],
+                ['Inbestme', '0,41-0,69%', '1.000€', '11', '~150M€', '272'],
                 ['Openbank Roboadvisor', '~0,70-0,90%', '500€', '4', 'n/d', '0086'],
               ]}
             />

@@ -73,7 +73,7 @@ export async function GET() {
         { roboadvisor: 'Indexa Capital', coste_total_anual: '0,58-0,73%', minimo_apertura_euros: 1000, num_perfiles: 10, cnmv: '257' },
         { roboadvisor: 'Finizens', coste_total_anual: '0,29-0,62%', minimo_apertura_euros: 1000, num_perfiles: 5, cnmv: '267' },
         { roboadvisor: 'MyInvestor Roboadvisor', coste_total_anual: '~0,30-0,40%', minimo_apertura_euros: 150, num_perfiles: 5, cnmv: '226' },
-        { roboadvisor: 'Inbestme', coste_total_anual: '0,41-0,69%', minimo_apertura_euros: 1000, num_perfiles: 11, cnmv: '294' },
+        { roboadvisor: 'Inbestme', coste_total_anual: '0,41-0,69%', minimo_apertura_euros: 1000, num_perfiles: 11, cnmv: '272' },
       ],
       sourceUrl: `${BASE_URL}/datos-clave#roboadvisors`,
       relatedArticle: `${BASE_URL}/blog/finizens-vs-indexa-capital-2026`,

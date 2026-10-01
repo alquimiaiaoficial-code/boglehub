@@ -6487,7 +6487,7 @@ página web por nadie, porque la mitad de los datos son personales.
       },
       {
         q: '¿Es seguro Finizens?',
-        a: 'Sí. Finizens está registrado en la CNMV como agencia de valores (número de registro 267). El dinero se custodia en entidades bancarias reguladas separadas de Finizens. En caso de insolvencia de Finizens, los fondos en los que invierte son de tu propiedad y estarían cubiertos por el Fondo de Garantía de Inversores hasta 100.000€. Finizens tiene respaldo del grupo Global Savings Group y de varios fondos de inversión europeos.',
+        a: 'Sí. Finizens está registrado en la CNMV como agencia de valores (número de registro 267). El dinero se custodia en entidades bancarias reguladas separadas de Finizens. En caso de insolvencia de Finizens, los fondos en los que invierte son de tu propiedad y estarían cubiertos por el Fondo de Garantía de Inversores hasta 100.000€.',
       },
       {
         q: '¿Puedo cambiar de Finizens a Indexa Capital sin tributar?',
