@@ -131,7 +131,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: '¿Qué diferencia hay entre Indexa Capital y Finizens?',
-        a: 'Ambos son roboadvisors registrados en CNMV. Indexa tiene 10 niveles de perfil de riesgo y mayor patrimonio gestionado. Finizens tiene 5 niveles, mínimo de apertura más bajo (1.000€ vs 3.000€) y carteras que incluyen oro. Comisiones similares (~0,40% total). Para la mayoría de inversores, ambos son válidos; la decisión depende más de preferencias de interfaz que de diferencias estructurales.',
+        a: 'Ambos son roboadvisors registrados en CNMV y piden el mismo mínimo de apertura, 1.000€. Indexa tiene 10 niveles de perfil de riesgo y mayor patrimonio gestionado. Finizens tiene 5 niveles y carteras que incluyen oro. Su coste total estimado es parecido, aunque cada uno lo da por tramos distintos: 0,58-0,73% hasta 100.000€ en Indexa y 0,29-0,62% en Finizens. Para la mayoría de inversores, ambos son válidos; la decisión depende más de preferencias de interfaz que de diferencias estructurales.',
       },
       {
         q: '¿Es seguro Trade Republic para inversores españoles?',

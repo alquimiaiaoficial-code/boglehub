@@ -2214,7 +2214,7 @@ inbestMe no compite por ser el más barato, y no pasa nada: compite por ser el r
       },
       {
         q: '¿Indexa o Finizens, cuál es mejor?',
-        a: 'Indexa tiene más perfiles (10 vs 5), más patrimonio gestionado y el historial más largo; Finizens tiene un mínimo de apertura más bajo (1.000€ vs 3.000€) e incluye oro en sus carteras conservadoras. Las comisiones son similares. Para la mayoría son intercambiables: lo que los separa en la práctica es el mínimo de aportación, si el oro entra como diversificador y la interfaz.',
+        a: 'Indexa tiene más perfiles (10 vs 5), más patrimonio gestionado y el historial más largo; Finizens incluye oro en sus carteras conservadoras. Los dos piden 1.000€ de mínimo y sus comisiones son similares. Para la mayoría son intercambiables: lo que los separa en la práctica es si el oro entra como diversificador y la interfaz.',
       },
       {
         q: '¿Merece la pena un roboadvisor o es mejor hacerlo uno mismo?',

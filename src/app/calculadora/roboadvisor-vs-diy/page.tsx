@@ -92,7 +92,7 @@ export default function RoboadvisorVsDiyPage() {
             },
             {
               name: 'Introduce la comisión del roboadvisor',
-              text: 'La comisión total anual del roboadvisor (gestión + custodia + fondo). Indexa Capital cobra ~0,45%, Finizens ~0,40% en 2026.',
+              text: 'La comisión total anual del roboadvisor (gestión + custodia + fondo). Indexa Capital, entre el 0,58% y el 0,73% hasta 100.000€; Finizens, entre el 0,29% y el 0,62% según su propia estimación (2026).',
               url: `${BASE_URL}/calculadora/roboadvisor-vs-diy`,
             },
             {
