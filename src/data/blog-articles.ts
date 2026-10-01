@@ -33,7 +33,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       },
       {
         q: '¿Cuánto cobra Finizens?',
-        a: 'El coste total ronda el 0,29-0,62% anual (gestión + custodia + TER de los fondos), de los más bajos del mercado español: la comisión de gestión va del 0,41% desde 1.000€ hasta el 0,14% por encima de 5.000.000€. Está por debajo de Indexa (0,40-0,50%) y de inbestMe (0,41-0,69%), y cerca de MyInvestor (0,30-0,40%).',
+        a: 'El coste total ronda el 0,29-0,62% anual (gestión + custodia + TER de los fondos), de los más bajos del mercado español: la comisión de gestión va del 0,41% desde 1.000€ hasta el 0,14% por encima de 5.000.000€. Cada roboadvisor da su franja con tramos distintos, así que no se ordenan sin más: Indexa sale al 0,58-0,73% hasta 100.000€, inbestMe al 0,41-0,69% y MyInvestor al 0,30-0,40%.',
       },
       {
         q: '¿Por qué Finizens incluye oro en sus carteras?',
@@ -123,7 +123,7 @@ En solidez regulatoria, Finizens está al nivel de los grandes del sector.
 
 ## Finizens vs Indexa: el clásico
 
-Es la comparación inevitable, y la respuesta corta es que **para la mayoría son intercambiables**: ambos regulados, baratos, pasivos y solventes. Con el mismo mínimo (1.000€), Finizens se distingue por el oro; Indexa, por la granularidad (10 perfiles), patrimonio gestionado (+2.000M€) e historial auditado más largo. El desempate fino lo tienes en la comparativa [Finizens vs Indexa Capital](/blog/finizens-vs-indexa-capital-2026), y el panorama completo del sector en [el mejor roboadvisor de España 2026](/blog/mejor-roboadvisor-espana-2026).
+Es la comparación inevitable, y la respuesta corta es que **para la mayoría son intercambiables**: ambos regulados, baratos, pasivos y solventes. Con el mismo mínimo (1.000€), Finizens se distingue por el oro; Indexa, por la granularidad (10 perfiles), patrimonio (+6.200M€ gestionados, asesorados o administrados) e historial auditado más largo. El desempate fino lo tienes en la comparativa [Finizens vs Indexa Capital](/blog/finizens-vs-indexa-capital-2026), y el panorama completo del sector en [el mejor roboadvisor de España 2026](/blog/mejor-roboadvisor-espana-2026).
 
 ---
 
@@ -6052,11 +6052,11 @@ La comparativa más amplia, con ING, Openbank, Renta 4 o Interactive Brokers, es
       },
       {
         q: '¿Qué rentabilidad ha tenido Indexa Capital históricamente?',
-        a: 'Indexa publica datos históricos auditados desde 2015 en su web. Las carteras 6/10 (moderada) y 10/10 (máxima renta variable) han batido consistentemente a sus benchmarks netos de comisiones, principalmente gracias al rebalanceo sistemático. Para los datos actualizados, consulta directamente indexacapital.com/es/rentabilidad, que publica los rendimientos reales de cada cartera.',
+        a: 'Indexa publica datos históricos auditados desde 2015 en su web. Las carteras 6/10 (moderada) y 10/10 (máxima renta variable) han batido consistentemente a sus benchmarks netos de comisiones, principalmente gracias al rebalanceo sistemático. Para los datos actualizados, consulta directamente indexacapital.com/es/esp/stats, que publica los rendimientos reales de cada cartera.',
       },
       {
         q: '¿Cuánto dinero necesito para abrir una cuenta en Indexa Capital?',
-        a: 'El mínimo de apertura es 1.000€ para la cuenta de fondos. Para el plan de pensiones indexado de Indexa no hay mínimo. Indexa también ofrece una cuenta de acciones (carteras de ETFs individuales) desde 10.000€. Con el enlace de referido de un amigo, los primeros 10.000€ se gestionan gratis durante un año.',
+        a: 'El mínimo de apertura es 1.000€ para la cuenta de fondos. Para la cartera de planes de pensiones el mínimo es de 50€. Indexa también ofrece una cuenta de acciones (carteras de ETFs individuales) desde 10.000€. Con el enlace de referido de un amigo, los primeros 10.000€ se gestionan gratis durante un año.',
       },
     ],
     content: `# Indexa Capital: opinión y análisis completo 2026
@@ -6136,7 +6136,7 @@ Indexa encaja con este perfil:
 - **Valoras la automatización**: el rebalanceo y las aportaciones periódicas funcionan solas, sin que dependan de tu fuerza de voluntad
 - **Estás empezando** y no sabes qué fondos elegir ni en qué proporción
 - **Tienes un historial de vender en caídas**: la interfaz limpia de Indexa, sin cotizaciones en tiempo real, ayuda a no sobre-reaccionar
-- **Quieres un plan de pensiones indexado**: Indexa ofrece también plan de pensiones con la misma filosofía, sin mínimo de apertura
+- **Quieres un plan de pensiones indexado**: Indexa ofrece también una cartera de planes de pensiones con la misma filosofía, desde 50€
 
 ---
 
@@ -6173,7 +6173,7 @@ Si tienes la disciplina para construir y mantener una cartera de fondos indexado
 
 ## Fuentes y lecturas complementarias
 
-- [Indexa Capital — Rentabilidad histórica auditada](https://indexacapital.com/es/rentabilidad) — Datos oficiales verificados por auditor externo.
+- [Indexa Capital — Rentabilidad histórica auditada](https://indexacapital.com/es/esp/stats) — Datos oficiales verificados por auditor externo.
 - [CNMV — Registro de ESIs](https://www.cnmv.es/Portal/Consultas/BusquedaEntidades.aspx) — Verifica el registro de Indexa como entidad supervisada.
 - [Comparador roboadvisor vs DIY — BogleHub](/calculadora/roboadvisor-vs-diy) — Calcula el coste real de Indexa frente a tu propia cartera.
 `,
@@ -6611,7 +6611,7 @@ Para cuantificar exactamente el coste de un roboadvisor frente a gestionar tu pr
 ## Fuentes y lecturas complementarias
 
 - [Finizens — Rentabilidad histórica oficial](https://finizens.com/rentabilidades) — Datos auditados de las carteras desde la apertura.
-- [Indexa Capital — Rentabilidad histórica oficial](https://indexacapital.com/es/rentabilidad) — Datos auditados por tercero desde 2015.
+- [Indexa Capital — Rentabilidad histórica oficial](https://indexacapital.com/es/esp/stats) — Datos auditados por tercero desde 2015.
 - [CNMV — Registros de empresas de servicios de inversión](https://www.cnmv.es) — Verifica el registro de ambas entidades.
 `,
   },
@@ -6945,7 +6945,7 @@ Para comparar ETFs con y sin cobertura divisa disponibles en España, usa el [co
       },
       {
         q: '¿Qué plan de pensiones indexado tiene la comisión más baja en España?',
-        a: 'En 2026, los planes de pensiones indexados más competitivos son los de MyInvestor (gestionados por Indexa o por el propio MyInvestor desde 0,30% de comisión total), Indexa Pensiones (~0,40-0,50% total) y Finizens Pensiones (~0,40% total). Todos ellos están por debajo del 1% que cobran los planes de pensiones tradicionales de la banca, lo que se traduce en decenas de miles de euros más en la jubilación.',
+        a: 'Depende de qué cifra compares. MyInvestor cobra una comisión de gestión del 0,30% en su Indexado Global, a la que se suman la depositaría y el coste de los fondos. Indexa publica un coste total del 0,479% en su plan de acciones y del 0,536% en el de bonos. Finizens estima un 0,55% total en el suyo. Los tres quedan lejos de lo que cobran muchos planes de la banca tradicional, y esa diferencia anual se acumula durante décadas.',
       },
       {
         q: '¿Es mejor un plan de pensiones o un fondo indexado para la jubilación?',
@@ -6996,36 +6996,35 @@ Para minimizar el impacto fiscal al rescatar:
 
 ### 1. Plan de pensiones de Indexa Capital
 
-Indexa Pensiones aplica la misma filosofía que su roboadvisor de fondos: carteras indexadas de bajo coste con rebalanceo automático. Comisión total estimada: 0,40-0,50% anual.
+Indexa aplica la misma filosofía que en su cartera de fondos: carteras indexadas de bajo coste con rebalanceo automático. Sus dos planes (Indexa Más Rentabilidad Acciones y Bonos) los gestiona Caser Pensiones con el asesoramiento de Indexa. Coste total publicado por Indexa: 0,479% anual en el plan de acciones y 0,536% en el de bonos (comisión de gestión de Caser e Indexa del 0,355%, depositaría del 0,048% y el coste de los ETF; tarifas actualizadas el 20 de agosto de 2026).
 
 **Ventajas**:
-- Sin mínimo de aportación
-- Carteras según perfil de riesgo (1/10 al 10/10)
-- Misma metodología que su fondo, fácil de combinar
+- Aportación mínima de 50€
+- Cartera según tu perfil de riesgo, que combina un plan de acciones y uno de bonos
+- Misma metodología que su cartera de fondos, fácil de combinar
 
-**Limitaciones**: comisión total ligeramente superior a las opciones más baratas (~0,10% más que MyInvestor).
+**Limitaciones**: su comisión de gestión (0,355%) es algo más alta que la de MyInvestor (0,30%).
 
 ### 2. Plan de pensiones de MyInvestor
 
-MyInvestor tiene varios planes de pensiones indexados, algunos gestionados por su equipo y otros como white-label de Indexa. El más barato actualmente: el **MyInvestor Indexado Global** con comisión total ~0,30%.
+MyInvestor tiene planes de pensiones indexados propios, como el **MyInvestor Indexado Global** (replica el índice MSCI ACWI) y el Indexado S&P 500, gestionados por Merchbanc, y comercializa también los dos planes de Indexa. El Indexado Global cobra una comisión de gestión del 0,30%, a la que se suman la depositaría y el coste de los fondos.
 
 **Ventajas**:
-- La comisión total más baja del mercado español
-- Aportación mínima 1€
+- Comisión de gestión del 0,30%, que MyInvestor presenta como la más baja del mercado
+- Aportación mínima de 10€
 - Integración con el resto de productos de MyInvestor
 
 **Limitaciones**: cartera menos personalizada que Indexa (suele ser un único producto global, no una cartera ajustada a tu perfil).
 
 ### 3. Finizens Pensiones
 
-Mismo enfoque que el roboadvisor de Finizens: carteras de 1/5 a 5/5 con rebalanceo automático. Comisión total ~0,40%.
+Mismo enfoque que el roboadvisor de Finizens: carteras indexadas con rebalanceo automático, en seis perfiles (de Conservador a Agresivo). Lo gestiona Caser Pensiones. Comisión de gestión del 0,40% y coste total estimado del 0,55%, según Finizens.
 
 **Ventajas**:
-- Carteras incluyen oro (a través de ETC)
 - App muy intuitiva
-- Mínimo bajo
+- Seis perfiles de riesgo
 
-**Limitaciones**: solo 5 perfiles de riesgo (menos granularidad que Indexa).
+**Limitaciones**: su coste total estimado (0,55%) es algo mayor que el de los planes de Indexa (0,479-0,536%).
 
 ---
 
@@ -7049,7 +7048,7 @@ Para calcular el impacto exacto del cambio, usa la [calculadora de interés comp
 | | Plan de pensiones indexado | Fondo indexado |
 |---|---|---|
 | Deducción IRPF aportación | ✓ (hasta 1.500€/año) | ✗ |
-| Comisiones | 0,30-0,50% | 0,05-0,20% |
+| Comisiones | ~0,5% de coste total | 0,05-0,20% |
 | Liquidez | Limitada (jubilación, 10 años...) | Total |
 | Tributación rescate | Rendimientos del trabajo | Base del ahorro |
 | Mínimos | Sin mínimo o muy bajos | Desde 1€ (MyInvestor) |
@@ -7074,8 +7073,8 @@ Es una combinación frecuente entre inversores indexados en España. Para profun
 
 ## Fuentes y lecturas complementarias
 
-- [Indexa Pensiones — Información y rentabilidad](https://indexacapital.com/es/pensiones) — Datos oficiales del plan de pensiones indexado más popular en España.
-- [MyInvestor — Planes de pensiones indexados](https://myinvestor.es/planes-de-pensiones/) — Comparativa de los planes indexados de MyInvestor con comisiones actualizadas.
+- [Indexa Capital — Costes de sus planes de pensiones](https://support.indexacapital.com/es/esp/pensiones-comisiones) — Desglose oficial del coste total de cada plan.
+- [MyInvestor — Planes de pensiones](https://myinvestor.es/inversion/planes-pensiones/) — Comparativa de los planes indexados de MyInvestor con comisiones actualizadas.
 - [AEAT — Aportaciones a planes de pensiones](https://sede.agenciatributaria.gob.es) — Información oficial sobre límites y deducciones aplicables.
 `,
   },
@@ -7284,7 +7283,7 @@ Esa lógica es matemáticamente correcta pero psicológicamente peligrosa: la pr
       },
       {
         q: '¿Puedo abrir una cuenta de pensiones indexada en MyInvestor?',
-        a: 'Sí. MyInvestor ofrece varios planes de pensiones indexados, algunos gestionados internamente y otros como white-label de Indexa Capital. Las comisiones totales rondan el 0,30-0,50% anual, entre las más bajas del mercado español. El mínimo de aportación es de 1€ y permite traspaso libre desde otros planes de pensiones sin coste fiscal ni operativo.',
+        a: 'Sí. MyInvestor tiene planes de pensiones indexados propios, como el Indexado Global y el Indexado S&P 500 (gestionados por Merchbanc), con una comisión de gestión del 0,30% a la que se suman la depositaría y el coste de los fondos, y comercializa también los dos planes de Indexa Capital. La aportación mínima en sus planes indexados es de 10€, y se puede traspasar un plan desde otra entidad sin coste fiscal.',
       },
     ],
     content: `# MyInvestor: opinión y análisis completo 2026

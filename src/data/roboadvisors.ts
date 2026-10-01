@@ -87,7 +87,7 @@ export const ROBOADVISORS: Roboadvisor[] = [
       },
       {
         q: '¿Cómo es la rentabilidad histórica de Indexa Capital?',
-        a: 'Indexa publica rentabilidades auditadas desde 2015 en su web. Sus carteras han batido consistentemente a fondos activos comparables tras comisiones. Para datos actualizados, consulta indexacapital.com/es/rentabilidad. Recuerda que rentabilidades pasadas no garantizan futuras.',
+        a: 'Indexa publica rentabilidades auditadas desde 2015 en su web. Sus carteras han batido consistentemente a fondos activos comparables tras comisiones. Para datos actualizados, consulta indexacapital.com/es/esp/stats. Recuerda que rentabilidades pasadas no garantizan futuras.',
       },
     ],
   },

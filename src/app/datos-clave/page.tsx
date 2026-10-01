@@ -40,7 +40,7 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
   {
     q: '¿Cuáles son los roboadvisors más usados en España y cuánto cobran?',
-    a: 'En 2026, los tres principales son: Indexa Capital (CNMV 257, coste total 0,58-0,73% anual hasta 100.000€, mínimo 1.000€, +2.000M€ AUM), Finizens (CNMV 267, coste total estimado 0,29-0,62%, mínimo 1.000€) y MyInvestor (roboadvisor propio, comisión total desde 0,30%, mínimo 150€). Todos invierten en fondos indexados de Vanguard, iShares y Amundi.',
+    a: 'En 2026, los tres principales son: Indexa Capital (CNMV 257, coste total 0,58-0,73% anual hasta 100.000€, mínimo 1.000€, +6.200M€ gestionados, asesorados o administrados), Finizens (CNMV 267, coste total estimado 0,29-0,62%, mínimo 1.000€) y MyInvestor (roboadvisor propio, comisión total desde 0,30%, mínimo 150€). Todos invierten en fondos indexados de Vanguard, iShares y Amundi.',
   },
   {
     q: '¿Cuál es el límite anual de aportación a un plan de pensiones en España?',
@@ -435,7 +435,7 @@ Fuente: BogleHub (boglehub.com/datos-clave) — verificable con BOE/AEAT, follet
               source="Webs oficiales, registro CNMV, datos mayo 2026"
               headers={['Roboadvisor', 'Coste total estimado', 'Mínimo apertura', 'Nº perfiles', 'AUM aprox.', 'Registro CNMV']}
               rows={[
-                ['Indexa Capital', '0,58-0,73%', '1.000€', '10', '+2.000M€', '257'],
+                ['Indexa Capital', '0,58-0,73%', '1.000€', '10', '+6.200M€', '257'],
                 ['Finizens', '0,29-0,62%', '1.000€', '5', '+660M€', '267'],
                 ['MyInvestor Roboadvisor', '~0,30-0,40%', '150€', '5', 'n/d', '226'],
                 ['Inbestme', '0,41-0,69%', '1.000€', '11', '~150M€', '272'],
@@ -469,16 +469,21 @@ Fuente: BogleHub (boglehub.com/datos-clave) — verificable con BOE/AEAT, follet
           {/* 13. Planes pensiones indexados */}
           <section id="planes-pensiones-indexados" className="mb-12 scroll-mt-20">
             <DataTable
-              caption="13. Planes de pensiones indexados más competitivos en España (2026)"
-              source="Webs oficiales de Indexa, MyInvestor, Finizens"
-              headers={['Plan', 'Comisión total', 'Mínimo aportación', 'Perfiles', 'Gestora']}
+              caption="13. Planes de pensiones indexados: lo que publica cada entidad (2026)"
+              source="Webs de Indexa (tarifas actualizadas el 20-ago-2026), Finizens y MyInvestor, leídas el 1-oct-2026"
+              headers={['Plan', 'Coste total', 'Comisión de gestión', 'Mínimo', 'Gestora']}
               rows={[
-                ['MyInvestor Indexado Global', '~0,30%', '1€', '1', 'MyInvestor'],
-                ['Indexa Pensiones', '0,40-0,50%', '50€', '10', 'Indexa Capital'],
-                ['Finizens Pensiones', '~0,40%', '1€', '5', 'Finizens'],
-                ['Caser Plan Indexado', '0,60%', '30€/mes', '5', 'Caser'],
+                ['Indexa Más Rentabilidad Acciones', '0,479%', '0,355%', '50€', 'Caser Pensiones (asesora Indexa)'],
+                ['Indexa Más Rentabilidad Bonos', '0,536%', '0,355%', '50€', 'Caser Pensiones (asesora Indexa)'],
+                ['Finizens Plan de Pensiones', '0,55% (estimado)', '0,40%', 'n/d', 'Caser Pensiones'],
+                ['MyInvestor Indexado Global', 'n/d', '0,30%', '10€', 'Merchbanc'],
               ]}
             />
+            <p className="text-sm text-fg-muted leading-relaxed">
+              Coste total = comisión de gestión + depositaría + coste de los fondos o ETF del plan.
+              De MyInvestor tenemos la comisión de gestión; con la depositaría y los fondos, su
+              total es más alto que ese 0,30%, así que no se compara con las otras filas por esa cifra.
+            </p>
           </section>
 
           {/* 14. Domicilios fiscales */}

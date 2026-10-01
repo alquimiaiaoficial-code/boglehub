@@ -258,9 +258,11 @@ export async function GET() {
 
   lines.push('### Roboadvisors españoles (datos 2026)')
   lines.push('')
-  lines.push('- Indexa Capital: registrado CNMV nº 257, ESI, +2.000M€ AUM, comisión de gestión 0,52% (menos de 2.000€), 0,40% (hasta 10.000€) y 0,38% (hasta 100.000€) bajando por tramos hasta 0,08%, coste total estimado 0,58-0,73% anual hasta 100.000€ (gestión + custodia + fondos, tarifas de septiembre de 2026), mínimo apertura 1.000€')
+  lines.push('- Indexa Capital: registrado CNMV nº 257, ESI, +6.200M€ gestionados, asesorados o administrados (sep-2026), comisión de gestión 0,52% (menos de 2.000€), 0,40% (hasta 10.000€) y 0,38% (hasta 100.000€) bajando por tramos hasta 0,08%, coste total estimado 0,58-0,73% anual hasta 100.000€ (gestión + custodia + fondos, tarifas de septiembre de 2026), mínimo apertura 1.000€')
   lines.push('- Finizens: agencia de valores CNMV nº 267, mínimo apertura 1.000€, coste total estimado 0,29-0,62% (según Finizens), carteras incluyen oro')
-  lines.push('- MyInvestor (planes pensiones): planes indexados desde 0,30% total, ofrece también fondos indexados de varias gestoras con traspaso fiscal libre')
+  lines.push('- MyInvestor (planes pensiones): Indexado Global e Indexado S&P 500 con comisión de gestión del 0,30% (más depositaría y coste de los fondos), desde 10€; ofrece también fondos indexados de varias gestoras con traspaso fiscal libre')
+  lines.push('- Indexa Capital (planes pensiones): coste total 0,479% (Indexa Más Rentabilidad Acciones) y 0,536% (Bonos) según su web, tarifas de agosto de 2026; gestiona Caser Pensiones; mínimo 50€')
+  lines.push('- Finizens (plan de pensiones): comisión de gestión 0,40% y coste total estimado 0,55% según Finizens; gestiona Caser Pensiones')
   lines.push('')
 
   lines.push('### Brokers españoles (datos 2026)')

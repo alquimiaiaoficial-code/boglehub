@@ -127,7 +127,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
     questions: [
       {
         q: '¿Es Indexa Capital una buena opción para invertir en 2026?',
-        a: 'Indexa Capital es el roboadvisor con más patrimonio gestionado de España (>2.000M€). Registrado en CNMV nº 257. Cobra entre 0,40% y 0,50% anual total (gestión + custodia + TER de fondos). Es buena opción para quien valora la automatización completa (rebalanceo, aportaciones programadas) sin querer gestionar la cartera. Es más caro que una cartera DIY (~0,15%) pero significativamente más barato que cualquier fondo activo bancario (~1,5%).',
+        a: 'Indexa Capital es el roboadvisor con más patrimonio de España (más de 6.280M€ gestionados, asesorados o administrados, según su web en octubre de 2026). Registrado en CNMV nº 257. Su coste total estimado es del 0,58-0,73% anual hasta 100.000€ (gestión + custodia + coste de los fondos, tarifas de septiembre de 2026), con un mínimo de 1.000€. A cambio automatiza la cartera entera (rebalanceo, aportaciones programadas) sin que tengas que gestionarla. Es más caro que una cartera DIY (~0,15%) y bastante más barato que un fondo activo bancario típico (~1,5%).',
       },
       {
         q: '¿Qué diferencia hay entre Indexa Capital y Finizens?',
@@ -143,7 +143,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: '¿Cuál es el plan de pensiones indexado más barato en España?',
-        a: 'Los planes de pensiones indexados más competitivos en 2026 son: MyInvestor Indexado Global (~0,30% comisión total), Indexa Pensiones (~0,40-0,50% total) y Finizens Pensiones (~0,55% total). Todos están por debajo del 1% que cobran los planes tradicionales de la banca. El límite anual de aportación deducible en planes individuales es 1.500€.',
+        a: 'Depende de qué cifra se compare. Indexa publica un coste total del 0,479% en su plan de acciones y del 0,536% en el de bonos (gestión, depositaría y coste de los ETF, tarifas de agosto de 2026). Finizens estima un 0,55% total en su plan de pensiones. MyInvestor da la comisión de gestión de su Indexado Global, un 0,30%, a la que se suman la depositaría y el coste de los fondos. Los tres quedan lejos de lo que cobran muchos planes de la banca tradicional. El límite anual de aportación deducible en planes individuales es 1.500€.',
       },
     ],
   },

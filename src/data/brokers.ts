@@ -200,7 +200,7 @@ export const BROKERS: Broker[] = [
       },
       {
         q: '¿MyInvestor tiene plan de pensiones indexado?',
-        a: 'Sí, varios. El MyInvestor Indexado Global tiene comisión total alrededor del 0,30%, uno de los más bajos del mercado español. También ofrece planes white-label de Indexa Capital. El mínimo de aportación es 1€. Acepta traspasos desde otros planes de pensiones sin coste fiscal ni operativo.',
+        a: 'Sí, varios. El MyInvestor Indexado Global, que replica el índice MSCI ACWI, cobra una comisión de gestión del 0,30%, a la que se suman la depositaría y el coste de los fondos. MyInvestor comercializa también los dos planes de Indexa Capital. La aportación mínima en sus planes indexados es de 10€, y acepta traspasos desde otros planes de pensiones sin coste fiscal.',
       },
       {
         q: '¿Cuánto cobra MyInvestor por comprar un ETF?',
