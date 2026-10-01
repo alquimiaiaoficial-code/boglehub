@@ -183,7 +183,7 @@ export default function CuentaEuropeaPage() {
             <p className="mb-3">Solo dos tipos de activo (art. 348):</p>
             <ul className="space-y-2 list-disc pl-5 mb-4">
               <li><strong className="text-fg">Acciones</strong> cotizadas de empresas con sede en un país del Espacio Económico Europeo (la UE más Noruega, Islandia y Liechtenstein). Quedan fuera las SOCIMI.</li>
-              <li><strong className="text-fg">Fondos y ETF</strong> inscritos en el Registro de IIC Elegibles de la CNMV. Quedan fuera las SICAV.</li>
+              <li><strong className="text-fg">Fondos y ETF</strong> inscritos en el Registro de IIC Elegibles de la CNMV. Quedan fuera las SICAV reguladas en la Ley 35/2003, que son las españolas; el artículo no habla de los fondos extranjeros con forma de SICAV.</li>
             </ul>
             <p className="mb-3">Para inscribirse, el fondo o ETF tiene que acreditar según su folleto (arts. 352, 355 y 356):</p>
             <ul className="space-y-2 list-disc pl-5 mb-4">
