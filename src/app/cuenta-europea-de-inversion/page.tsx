@@ -10,31 +10,36 @@ const BASE_URL = 'https://boglehub.com'
  * Cuenta de Ahorro e Inversión Financia Europa (Real Decreto-ley 26/2026, BOE del 30-sep-2026,
  * BOE-A-2026-20266). Todo lo que dice esta página está leído en el texto del BOE el 30-sep:
  * art. 95 ter de la Ley del IRPF (nuevo) y título XI de la Ley 6/2023 (arts. 341 a 356), más la
- * disposición adicional segunda del RDL (registro de la CNMV en cuatro meses).
+ * disposición adicional segunda del RDL (registro de la CNMV en cuatro meses). El 1-oct se leyeron
+ * además la modalidad Reinversión (disposiciones adicionales 65.ª y 66.ª de la Ley del IRPF y décima
+ * de la Ley 6/2023) y el SIALPFE (disposición adicional 26.ª de la Ley del IRPF).
  *
  * Los pesos de Reino Unido y Suiza en el MSCI Europe salen de la ficha del índice de MSCI a
  * 31-ago-2026 (msci-europe-index-eur-net.pdf): 22,38 % y 14,29 %.
  *
- * Revisar cuando el Congreso vote la convalidación y cuando la CNMV abra el registro: la página
- * dice «hoy ninguno es elegible» y deja de ser verdad ese día.
+ * El Congreso NO convalidó el RDL el 2-oct-2026: quedó derogado y la página se queda como lectura
+ * de lo que decía el texto publicado.
  */
 const FECHA = '30 de septiembre de 2026'
 const FECHA_ISO = '2026-09-30'
+/** Última revisión de la página (el resultado de la convalidación). FECHA sigue siendo la lectura del BOE. */
+const REVISION = '2 de octubre de 2026'
+const REVISION_ISO = '2026-10-02'
 const URL_BOE = 'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20266'
 const URL_MSCI = 'https://www.msci.com/documents/10199/255599/msci-europe-index-eur-net.pdf'
 
 const FAQ = [
   {
     q: '¿Qué es la Cuenta de Ahorro e Inversión Financia Europa?',
-    a: 'Es una cuenta de valores con una subcuenta de efectivo, creada por el Real Decreto-ley 26/2026, de 29 de septiembre (BOE del 30 de septiembre de 2026). Mientras el dinero sigue dentro, las ganancias de comprar y vender no tributan. Se tributa al sacar dinero, y la parte de la ganancia que corresponde a aportaciones con más de cinco años tiene una exención: el 100 % hasta 10.000 € en total por persona y el 20 % de lo que pase de ahí.',
+    a: 'Era una cuenta de valores con una subcuenta de efectivo, creada por el Real Decreto-ley 26/2026, de 29 de septiembre (BOE del 30 de septiembre de 2026). El Congreso no lo convalidó el 2 de octubre de 2026 y quedó derogado. Mientras el dinero sigue dentro, las ganancias de comprar y vender no tributan. Se tributa al sacar dinero, y la parte de la ganancia que corresponde a aportaciones con más de cinco años tiene una exención: el 100 % hasta 10.000 € en total por persona y el 20 % de lo que pase de ahí.',
   },
   {
     q: '¿Cuánto se puede meter?',
-    a: 'Hasta 150.000 € de aportaciones pendientes de recuperar, es decir, lo aportado menos lo ya retirado. Las ganancias que se quedan dentro no cuentan para ese límite. Solo se aportan en dinero y cada persona puede tener una sola cuenta.',
+    a: 'Hasta 150.000 € de aportaciones pendientes de recuperar, es decir, lo aportado menos lo ya retirado. Las ganancias que se quedan dentro no cuentan para ese límite. Solo se aportan en dinero y cada persona puede tener una sola cuenta de la modalidad general. Aparte cabe una de la modalidad Reinversión, que solo admite el dinero de vender ciertas viviendas a organismos públicos.',
   },
   {
     q: '¿Se puede abrir ya?',
-    a: 'No. La norma está en vigor desde el 1 de octubre de 2026, pero los fondos y ETF solo pueden entrar si están inscritos en un Registro de IIC Elegibles que la CNMV tiene cuatro meses para crear. Además, el Congreso tiene que convalidar el real decreto-ley. A 30 de septiembre de 2026 ningún fondo ni ETF es elegible.',
+    a: 'No. El Congreso no convalidó el real decreto-ley el 2 de octubre de 2026, así que quedó derogado y la cuenta no llegó a existir. Ningún fondo ni ETF llegó a ser elegible.',
   },
   {
     q: '¿Un ETF del MSCI World podría entrar?',
@@ -51,8 +56,8 @@ const FAQ = [
 ]
 
 export const metadata: Metadata = {
-  title: 'Cuenta europea de inversión (Financia Europa): qué es, cómo tributa y qué fondos cumplirían',
-  description: `La Cuenta de Ahorro e Inversión Financia Europa del Real Decreto-ley 26/2026, leída en el BOE: límite de 150.000 €, exención tras cinco años, requisitos de los fondos y ETF y por qué hoy ninguno es elegible. Actualizado el ${FECHA}.`,
+  title: 'Cuenta europea de inversión (Financia Europa): qué decía el decreto que no se convalidó',
+  description: `El Congreso no convalidó el Real Decreto-ley 26/2026 el 2 de octubre de 2026, así que la Cuenta de Ahorro e Inversión Financia Europa no llegó a existir. Qué decía el texto del BOE: límite de 150.000 €, exención tras cinco años y requisitos de los fondos y ETF. Actualizado el ${REVISION}.`,
   alternates: { canonical: '/cuenta-europea-de-inversion' },
 }
 
@@ -79,11 +84,11 @@ export default function CuentaEuropeaPage() {
       <JsonLd
         schema={{
           type: 'Article',
-          headline: 'Cuenta de Ahorro e Inversión Financia Europa: qué es, cómo tributa y qué fondos cumplirían',
-          description: 'Lectura del Real Decreto-ley 26/2026 en el BOE: límites, fiscalidad con un ejemplo, requisitos de los fondos y ETF y qué falta para que exista.',
+          headline: 'Cuenta de Ahorro e Inversión Financia Europa: qué decía el decreto que no se convalidó',
+          description: 'Lectura del Real Decreto-ley 26/2026 en el BOE: límites, fiscalidad con un ejemplo y requisitos de los fondos y ETF. El Congreso no lo convalidó el 2 de octubre de 2026.',
           url: `${BASE_URL}/cuenta-europea-de-inversion`,
           datePublished: FECHA_ISO,
-          dateModified: FECHA_ISO,
+          dateModified: REVISION_ISO,
           articleSection: 'Fiscalidad',
           keywords: ['cuenta europea de inversión', 'Cuenta de Ahorro e Inversión Financia Europa', 'Real Decreto-ley 26/2026', 'CAIFE'],
         }}
@@ -100,18 +105,19 @@ export default function CuentaEuropeaPage() {
 
           <header className="mb-8">
             <h1 className="text-3xl sm:text-4xl font-bold text-fg tracking-tight">
-              Cuenta europea de inversión: qué es, cómo tributa y qué fondos cumplirían
+              Cuenta europea de inversión: qué decía el decreto que no se convalidó
             </h1>
             <p className="mt-3">
-              Su nombre oficial es <strong className="text-fg">Cuenta de Ahorro e Inversión Financia Europa</strong>.
-              La crea el <Fuente href={URL_BOE}>Real Decreto-ley 26/2026, de 29 de septiembre</Fuente>, publicado
+              Su nombre oficial era <strong className="text-fg">Cuenta de Ahorro e Inversión Financia Europa</strong>.
+              La creaba el <Fuente href={URL_BOE}>Real Decreto-ley 26/2026, de 29 de septiembre</Fuente>, publicado
               en el BOE el 30 de septiembre de 2026. Todo lo de esta página está leído en ese texto;
-              te decimos el artículo de cada cosa para que lo compruebes. Última revisión: <strong className="text-fg">{FECHA}</strong>.
+              te decimos el artículo de cada cosa para que lo compruebes. Última revisión: <strong className="text-fg">{REVISION}</strong>.
             </p>
             <p className="mt-3 rounded-lg border border-border bg-surface/50 px-4 py-3 text-sm">
-              <strong className="text-fg">Hoy no se puede abrir con fondos ni ETF.</strong> Los fondos
-              tienen que estar inscritos en un registro de la CNMV que todavía no existe (tiene hasta
-              cuatro meses para crearlo) y el Congreso tiene que convalidar el real decreto-ley.
+              <strong className="text-fg">La cuenta no existe.</strong> El Congreso no convalidó el real
+              decreto-ley el 2 de octubre de 2026, y un real decreto-ley que no se convalida queda derogado
+              (art. 86 de la Constitución). Lo que sigue es lo que decía el texto publicado en el BOE,
+              escrito en presente porque así lo escribe la norma.
             </p>
           </header>
 
@@ -120,6 +126,7 @@ export default function CuentaEuropeaPage() {
             <ul className="space-y-2 list-disc pl-5">
               <li>Una cuenta de valores más una subcuenta de efectivo en euros, abierta en un banco o una empresa de servicios de inversión (arts. 341 a 344 de la Ley 6/2023, que añade el RDL).</li>
               <li><strong className="text-fg">Una sola cuenta por persona</strong>, a su nombre y sin poder cederla (art. 341.1).</li>
+              <li>Aparte existe la <strong className="text-fg">modalidad Reinversión</strong>, compatible con la general. Solo admite el dinero de vender a un organismo público de vivienda social una vivienda que llevaba dos años vacía, hasta 800.000 € en total y con hasta 8.000 € de efectivo dentro, y tiene la exención del 20 % pero no la de los primeros 10.000 € (disposiciones adicionales 65.ª y 66.ª de la Ley del IRPF y décima de la Ley 6/2023).</li>
               <li><strong className="text-fg">Hasta 150.000 €</strong> de aportaciones pendientes de recuperar: lo aportado menos lo ya retirado. Solo se aporta en dinero (art. 350 y art. 95 ter.1.f de la Ley del IRPF).</li>
               <li>El efectivo dentro de la cuenta no puede pasar de <strong className="text-fg">1.500 €</strong>. Si una venta lo supera, hay tres meses para reinvertir o sacar el exceso; si no, cuenta como retirada (art. 344.4).</li>
               <li>Se puede trasladar entera a otra entidad <strong className="text-fg">una vez por año natural</strong>, en un plazo máximo de diez días hábiles, sin que cuente como retirada ni se pierda la antigüedad (art. 347).</li>
@@ -193,6 +200,12 @@ export default function CuentaEuropeaPage() {
               <li>no invertir en SOCIMI, fondos inmobiliarios ni SICAV, salvo que estén en el índice que replica;</li>
               <li>decirlo en el folleto y firmar una declaración responsable. Los fondos y ETF de otros países del EEE, como los irlandeses o luxemburgueses, pueden pedirlo si se comercializan en España (art. 353.3).</li>
             </ul>
+            <p className="text-sm">
+              No es lo mismo que el <strong className="text-fg">Seguro Individual de Ahorro a Largo Plazo Financia Europa</strong> (SIALPFE),
+              que crea el mismo decreto. Es un seguro de vida, no esta cuenta: admite primas de hasta 10.000 € al año
+              y puede llevar renta fija del EEE con calificación mínima BBB, que en la cuenta no entra
+              (disposición adicional 26.ª de la Ley del IRPF).
+            </p>
           </section>
 
           <section className="mb-10" aria-labelledby="catalogo">
@@ -247,14 +260,13 @@ export default function CuentaEuropeaPage() {
           </section>
 
           <section className="mb-10" aria-labelledby="falta">
-            <h2 id="falta" className="text-xl font-semibold text-fg mb-3">Qué falta para que exista</h2>
-            <ul className="space-y-2 list-disc pl-5">
-              <li><strong className="text-fg">La convalidación del Congreso.</strong> Un real decreto-ley tiene que votarse en los 30 días siguientes a su promulgación (art. 86 de la Constitución). Si no se convalida, decae.</li>
-              <li><strong className="text-fg">El registro de la CNMV.</strong> La disposición adicional segunda le da cuatro meses desde la entrada en vigor, que fue el 1 de octubre de 2026, para crearlo y abrir las solicitudes.</li>
-              <li><strong className="text-fg">Que las gestoras lo pidan</strong> y cambien el folleto de cada fondo o ETF.</li>
-              <li><strong className="text-fg">Que bancos y brókers la ofrezcan.</strong> La norma dice quién puede, no obliga a nadie.</li>
-              <li>Varias piezas se remiten a un reglamento o a una orden ministerial: la comisión máxima por traslado, la información entre entidades y qué otros instrumentos cuentan como renta variable.</li>
-            </ul>
+            <h2 id="falta" className="text-xl font-semibold text-fg mb-3">Qué pasó en el Congreso</h2>
+            <p>
+              El Congreso votó la convalidación el 2 de octubre de 2026 y no salió adelante. Un real
+              decreto-ley tiene que convalidarse en los 30 días siguientes a su promulgación; si no, queda
+              derogado (art. 86 de la Constitución). Con él decaen la cuenta, su fiscalidad y el registro
+              de fondos elegibles que iba a crear la CNMV.
+            </p>
           </section>
 
           <section className="mb-10" aria-labelledby="faq">

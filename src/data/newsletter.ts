@@ -28,13 +28,13 @@ export const NUMEROS_NEWSLETTER: readonly NumeroNewsletter[] = [
   {
     numero: 1,
     fecha: '2026-10-06',
-    asunto: 'La cuenta europea de inversión, y una pregunta',
-    preencabezado: 'Qué fondos cumplirían los porcentajes, leído en el BOE.',
+    asunto: 'La cuenta europea que no llegó a existir, y una pregunta',
+    preencabezado: 'El Congreso no convalidó el decreto el 2 de octubre.',
     parrafos: [
       'Hola,',
-      'El 30 de septiembre salió en el BOE la Cuenta de Ahorro e Inversión Financia Europa (Real Decreto-ley 26/2026). Dentro de ella se puede vender y cambiar de fondo sin tributar, y al sacar el dinero, la ganancia de lo que lleve más de cinco años dentro queda exenta al 100 % hasta 10.000 € por persona y al 20 % en lo que pase de ahí. Se pueden aportar hasta 150.000 €.',
-      'Donde más nos detuvimos al leerla fue en qué se puede meter. Un fondo o ETF necesita al menos el 70 % de la cartera en el Espacio Económico Europeo. Reino Unido y Suiza no son del EEE, y en el MSCI Europe pesan un 22,38 % y un 14,29 % según la ficha de MSCI a 31 de agosto, así que un fondo de ese índice se queda en torno al 63 %. Uno del MSCI World, con Estados Unidos cerca del 70 %, tampoco llega. De nuestro catálogo, por composición solo cumplirían los tres fondos del MSCI EMU, que es la zona euro, y ninguno de los ETF.',
-      'A 30 de septiembre todavía no se podía abrir con fondos. Falta que el Congreso convalide el decreto y que la CNMV cree el registro de fondos elegibles, para lo que tiene cuatro meses. Lo tienes leído artículo por artículo, con un ejemplo de cuánto se paga dentro y fuera de la cuenta, en [la página de la cuenta europea](https://boglehub.com/cuenta-europea-de-inversion).',
+      'El 30 de septiembre salió en el BOE la Cuenta de Ahorro e Inversión Financia Europa (Real Decreto-ley 26/2026), y el 2 de octubre el Congreso no convalidó el decreto. Un real decreto-ley que no se convalida queda derogado, así que la cuenta no ha llegado a existir: nadie pudo abrirla y ningún fondo llegó a ser elegible.',
+      'Donde más nos detuvimos al leerla fue en qué se podía meter. La norma pedía al menos el 70 % de la cartera en el Espacio Económico Europeo. Reino Unido y Suiza no son del EEE, y en el MSCI Europe pesan un 22,38 % y un 14,29 % según la ficha de MSCI a 31 de agosto, así que un fondo de ese índice se quedaba en torno al 63 %. De nuestro catálogo, por composición solo habrían cumplido los tres fondos del MSCI EMU, que es la zona euro.',
+      'Lo dejamos leído artículo por artículo, con lo que pasó en el Congreso, en [la página de la cuenta europea](https://boglehub.com/cuenta-europea-de-inversion).',
       'Y una pregunta que nos ayudaría mucho: ¿para qué entraste en BogleHub y qué no pudiste hacer? Basta con responder a este correo, lo leemos todo.',
       'Un saludo,',
     ],

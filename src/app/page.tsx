@@ -37,16 +37,6 @@ export default function HomePage() {
       <JsonLd schema={{ type: 'FAQPage', questions: FAQ_QUESTIONS }} />
       <Header />
       <main className="bg-bg">
-        {/* Aviso temporal (30-sep-2026): la cuenta europea de inversión es noticia. Quitar cuando
-            se convalide o decaiga el RDL 26/2026, y como tarde el 1-nov-2026. */}
-        <div className="border-b border-border bg-surface/60">
-          <p className="mx-auto max-w-5xl px-4 sm:px-6 py-2.5 text-sm text-fg-muted text-center">
-            Nuevo: la cuenta europea de inversión, leída en el BOE.{' '}
-            <Link href="/cuenta-europea-de-inversion" className="text-brand-400 hover:underline font-medium">
-              Qué es, cómo tributa y qué fondos cumplirían
-            </Link>
-          </p>
-        </div>
         {/* HERO */}
         <section className="relative overflow-hidden isolate">
           {/* gradient backdrop */}
