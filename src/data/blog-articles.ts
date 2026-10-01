@@ -1104,7 +1104,7 @@ Si aún no tienes claro cuánto reservar aquí, empieza por la [guía del fondo 
       },
       {
         q: '¿Es fiable la regla del 4% para jubilarse joven?',
-        a: 'La regla se calculó para un horizonte de 30 años. Para una jubilación anticipada que puede durar 40-50 años, muchos usan una tasa más conservadora del 3% al 3,5% (es decir, 28-33 veces tus gastos). Además, una caída fuerte en los primeros años de retirada hace más daño (riesgo de secuencia), así que la flexibilidad para gastar menos en años malos es clave.',
+        a: 'La regla se calculó para un horizonte de 30 años. Para una jubilación anticipada que puede durar 40-50 años, muchos usan una tasa más conservadora del 3% al 3,5% (es decir, entre 33 y 28 veces tus gastos). Además, una caída fuerte en los primeros años de retirada hace más daño (riesgo de secuencia), así que la flexibilidad para gastar menos en años malos es clave.',
       },
       {
         q: '¿Cómo afectan los impuestos a la regla del 4% en España?',
@@ -1156,7 +1156,7 @@ No se llega de golpe, sino con aportaciones constantes durante años, dejando qu
 
 La regla del 4% es una guía excelente para fijar un objetivo, pero conviene conocer sus matices:
 
-- **Es un estudio a 30 años.** Para una jubilación anticipada que puede durar 40-50 años, muchos usan una tasa más conservadora (**3% a 3,5%**, es decir, ×28 a ×33), porque el horizonte es más largo.
+- **Es un estudio a 30 años.** Para una jubilación anticipada que puede durar 40-50 años, muchos usan una tasa más conservadora (**3,5% a 3%**, es decir, ×28 a ×33), porque el horizonte es más largo.
 - **El orden de las rentabilidades importa** (riesgo de secuencia): una gran caída en los primeros años de retirada hace más daño que la misma caída más tarde. Tener flexibilidad para gastar menos en los años malos ayuda mucho.
 - **No es una garantía.** Se basa en datos históricos (sobre todo de EE.UU.); el futuro puede diferir. Es una probabilidad alta, no una certeza.
 - **Los impuestos cuentan.** En España, al vender participaciones para vivir, las plusvalías tributan en el IRPF del ahorro. Tu 4% bruto no es lo que te llevas neto: planifícalo.
@@ -3806,7 +3806,7 @@ Hay cuatro factores que hacen que la regla del 4 % sea más arriesgada para un e
 
 1. **Mayor esperanza de vida**: La esperanza de vida en España es de 84 años (mujeres: 87, hombres: 81). Si te retiras a los 45, necesitas que el dinero dure 40+ años, no 30. Los estudios originales de Trinity se basaban en retiros a los 65.
 
-2. **Sin cuentas con ventaja fiscal**: En EE. UU., el 401(k) y la Roth IRA permiten diferir o eliminar impuestos sobre décadas de crecimiento. En España, el plan de pensiones tiene limitaciones serias (máximo 1 500 €/año de aportación desde 2021, penalización por rescate anticipado). Un inversor americano FIRE paga muchos menos impuestos sobre su crecimiento que uno español.
+2. **Sin cuentas con ventaja fiscal**: En EE. UU., el 401(k) y la Roth IRA permiten diferir o eliminar impuestos sobre décadas de crecimiento. En España, el plan de pensiones tiene limitaciones serias (máximo 1 500 €/año de aportación desde 2022, penalización por rescate anticipado). Un inversor americano FIRE paga muchos menos impuestos sobre su crecimiento que uno español.
 
 3. **Inflación y el contexto europeo**: La inflación en la eurozona en 2022–2023 fue significativa (10–12 %). Una cartera que no ajusta a inflación pierde poder adquisitivo rápidamente.
 
@@ -3943,7 +3943,7 @@ El timing del mercado no funciona. Los estudios muestran que ["lump sum"](/blog/
 El movimiento FIRE en su versión madura trata sobre libertad, no inactividad. La mayoría de personas que alcanzan FIRE trabajan en algo diferente: proyectos propios, trabajo parcial elegido, voluntariado. La diferencia es que ya no **necesitan** el dinero de ese trabajo.
 
 ### Mito 5: "Los impuestos destruirán mi retiro"
-Con una retirada de 28 000 €/año en base del ahorro y bien planificada, el IRPF efectivo es manejable. Los primeros 6 000 € tributan al 19 %, el resto al 21–23 %. La planificación de cuando realizas plusvalías importa mucho.
+Con una retirada de 28 000 €/año en base del ahorro y bien planificada, el IRPF efectivo es manejable. Los primeros 6 000 € tributan al 19 % y el resto, hasta 28 000 €, al 21 %. La planificación de cuando realizas plusvalías importa mucho.
 
 ---
 
@@ -4177,7 +4177,7 @@ La diferencia entre saber y actuar es donde la mayoría de los inversores se que
 
 **Día 3**: Define tu objetivo: ¿cuánto necesitas para tu [número FIRE](/blog/fire-espana-cuanto-necesitas)? Usa la regla del 3,5 % y las tablas de esta guía.
 
-**Día 4**: [Elige tu cartera](/blog/como-elegir-tu-primer-etf-espana-2026). Para la mayoría: 100 % VWCE si eres joven y agresivo; 80/20 VWCE/AGGH si quieres algo de estabilidad. Una posición, un ETF.
+**Día 4**: [Mira cómo se construye una cartera](/blog/como-elegir-tu-primer-etf-espana-2026). Dos ejemplos: 100 % VWCE (todo renta variable) o 80/20 VWCE/AGGH (con algo de renta fija).
 
 **Día 5**: Configura una aportación mensual automática (Trade Republic lo llama "plan de ahorro"). Aunque sea 50 € al mes. El hábito importa más que el importe inicial.
 
@@ -4722,7 +4722,7 @@ Promediar una suma grande es razonable cuando:
 - Sabes, siendo honesto contigo mismo, que una caída del 20 % justo después te haría entrar en pánico y vender.
 - El seguro emocional vale, para ti, más que la pequeña pérdida de rentabilidad esperada.
 
-En ese caso, promedia — pero hazlo rápido y con fecha de fin. Repartir en 3 a 6 meses es razonable. Estirarlo dos años es, en la práctica, market timing disfrazado.
+En ese caso, promediar es la forma de pagar ese seguro, siempre que sea rápido y con fecha de fin. Repartir en 3 a 6 meses es razonable. Estirarlo dos años es, en la práctica, market timing disfrazado.
 
 **¿Dónde aparcar el dinero que aún no has invertido?** Mientras promedias, el efectivo que espera su turno no tiene por qué estar a 0% en la cuenta corriente. Un [fondo monetario](/glosario/fondo-monetario) o las [Letras del Tesoro](/glosario/letras-del-tesoro) rinden el tipo de interés a corto plazo del BCE con riesgo muy bajo. El fondo monetario tiene además la ventaja del traspaso fiscal libre: cuando toque invertir, lo mueves a tu fondo indexado sin tributar.
 
