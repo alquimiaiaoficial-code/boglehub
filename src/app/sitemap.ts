@@ -33,6 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/empezar',                      priority: 0.9, freq: 'monthly' },
     { path: '/analyzer',                     priority: 0.9, freq: 'weekly'  },
     { path: '/guia',                         priority: 0.9, freq: 'monthly' },
+    { path: '/newsletter',                   priority: 0.7, freq: 'weekly'  },
     { path: '/etf',                            priority: 0.8, freq: 'monthly' },
     { path: '/comparar',                     priority: 0.9, freq: 'weekly'  },
     // El hub de comparativas de FONDOS. Faltaba: sus comparativas sí se anunciaban y él
