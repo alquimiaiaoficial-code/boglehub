@@ -6934,14 +6934,14 @@ Para comparar ETFs con y sin cobertura divisa disponibles en España, usa el [co
     slug: 'plan-pensiones-indexado-espana-2026',
     title: 'Plan de pensiones indexado en España: guía completa 2026',
     excerpt:
-      'Todo sobre los planes de pensiones indexados en España en 2026: ventajas fiscales, comisiones, mejores opciones (Indexa, Finizens, MyInvestor) y comparativa con fondos indexados.',
+      'Todo sobre los planes de pensiones indexados en España en 2026: ventajas fiscales, comisiones, qué ofrecen Indexa, Finizens y MyInvestor y comparativa con fondos indexados.',
     publishedAt: '2026-05-24',
     readingMinutes: 11,
     keywords: ['plan de pensiones indexado España', 'mejor plan de pensiones 2026', 'Indexa Pensiones opinión', 'MyInvestor plan de pensiones', 'plan pensiones vs fondo indexado'],
     faq: [
       {
         q: '¿Cuál es la principal ventaja fiscal de un plan de pensiones en España?',
-        a: 'Las aportaciones a un plan de pensiones reducen tu base imponible general del IRPF en el año en que se realizan. El límite máximo es 1.500€ anuales en planes individuales (la cifra ha bajado desde los 8.000€ que se permitían antes de 2021). Esta deducción supone un ahorro inmediato del 19-47% según tu marginal del IRPF: para un contribuyente al 37%, aportar 1.500€ supone pagar 555€ menos de impuestos ese año. Sin embargo, al rescatar el plan, todo el dinero (aportaciones + ganancias) tributa como rendimientos del trabajo, no como rentas del ahorro.',
+        a: 'Las aportaciones a un plan de pensiones reducen tu base imponible general del IRPF en el año en que se realizan. En un plan individual se pueden aportar como máximo 1.500€ al año (la cifra ha bajado desde los 8.000€ que se permitían antes de 2021), y la reducción tampoco puede pasar del 30% de los rendimientos netos del trabajo y de actividades económicas. El ahorro es tu tipo marginal: con la escala autonómica por defecto va del 19% al 47%, y cambia según la comunidad. Para un contribuyente al 37%, aportar 1.500€ supone pagar 555€ menos de impuestos ese año. Sin embargo, al rescatar el plan, todo el dinero (aportaciones + ganancias) tributa como rendimientos del trabajo, no como rentas del ahorro.',
       },
       {
         q: '¿Qué plan de pensiones indexado tiene la comisión más baja en España?',
@@ -6949,32 +6949,32 @@ Para comparar ETFs con y sin cobertura divisa disponibles en España, usa el [co
       },
       {
         q: '¿Es mejor un plan de pensiones o un fondo indexado para la jubilación?',
-        a: 'Depende de tu situación fiscal actual y futura. Si pagas IRPF al 37% o más actualmente y esperas tributar al 19-24% en la jubilación, el plan de pensiones es muy ventajoso por la deducción inmediata. Si pagas al 19-24% actualmente y esperas tributar igual o más en la jubilación, el fondo indexado es generalmente mejor: tributa al tipo del ahorro (19-30%) y no como rendimiento del trabajo. La combinación inteligente es usar el plan hasta el límite de 1.500€/año y el resto en fondos indexados.',
+        a: 'Depende de tu situación fiscal actual y futura. Si pagas IRPF al 37% o más actualmente y esperas tributar al 19-24% en la jubilación, el plan de pensiones sale a cuenta por la reducción inmediata. Si pagas al 19-24% actualmente y esperas tributar igual o más en la jubilación, el fondo indexado es generalmente mejor: tributa al tipo del ahorro (19-30%) y no como rendimiento del trabajo. Mucha gente combina las dos cosas: el plan hasta el límite de 1.500€/año y el resto en fondos indexados.',
       },
       {
         q: '¿Cuándo puedo rescatar un plan de pensiones?',
-        a: 'Las contingencias clásicas son: jubilación, incapacidad permanente, dependencia severa, fallecimiento (los beneficiarios) y enfermedad grave. Además, desde 2025 puedes rescatar libremente las aportaciones con más de 10 años de antigüedad (la primera ventana se abrió en 2025). También se permite el rescate por desempleo de larga duración o por emergencia financiera con limitaciones. Verifica las condiciones específicas con tu gestora antes de hacer cuentas con ese dinero.',
+        a: 'Las contingencias que da la ley son jubilación, incapacidad permanente, dependencia severa o gran dependencia y fallecimiento (cobran los beneficiarios). Fuera de ellas, solo se puede rescatar en tres supuestos: enfermedad grave, desempleo de larga duración y aportaciones con al menos diez años de antigüedad (art. 8 de la Ley de Planes y Fondos de Pensiones; la primera ventana de los diez años se abrió en 2025). Verifica las condiciones específicas con tu gestora antes de hacer cuentas con ese dinero.',
       },
       {
         q: '¿Puedo traspasar mi plan de pensiones de banco a un plan indexado sin coste?',
-        a: 'Sí. El traspaso entre planes de pensiones está exento de tributación y de comisiones de salida en España (la mayoría de gestoras no las aplican). Es uno de los movimientos más rentables que puedes hacer si tienes un plan de pensiones en un banco con comisión del 1,5% y lo traspasas a un plan indexado con comisión del 0,40%. El traspaso tarda 5-15 días hábiles y no requiere vender ni rescatar nada.',
+        a: 'Sí. El traspaso entre planes de pensiones no tributa, y la ley no permite cobrar gastos ni penalizaciones por él (art. 50 del Reglamento de planes y fondos de pensiones). Si el plan del banco cobra un 1,5% y uno indexado ronda el 0,5% de coste total, la diferencia es de un punto al año. Se pide en la gestora de destino, que tiene 2 días hábiles para solicitarlo, y la de origen tiene 5 para ordenar la transferencia. No hay que vender ni rescatar nada.',
       },
     ],
     content: `# Plan de pensiones indexado en España: guía completa 2026
 
-Los planes de pensiones indexados son la versión moderna y barata del producto que durante décadas ha sido el rey del ahorro para la jubilación en España. La diferencia con los planes tradicionales de banco no es estética: es estructural. Comisiones cinco veces más bajas, gestión pasiva en lugar de activa, y transparencia total en lo que compras.
+Los planes de pensiones indexados son la versión moderna y barata del producto que durante décadas ha sido el rey del ahorro para la jubilación en España. La diferencia con los planes tradicionales de banco no es estética: es estructural. Comisiones de tres a cinco veces más bajas, gestión pasiva en lugar de activa, y transparencia total en lo que compras.
 
-Esta guía cubre cómo funcionan, las ventajas fiscales reales, las mejores opciones disponibles en 2026 y cuándo tienen sentido frente a fondos indexados normales.
+Esta guía cubre cómo funcionan, las ventajas fiscales reales, las opciones disponibles en 2026 y cuándo tienen sentido frente a fondos indexados normales.
 
 ---
 
 ## La ventaja fiscal del plan de pensiones
 
-Las aportaciones a un plan de pensiones individual reducen la base imponible general del IRPF en el año de la aportación. El límite máximo es 1.500€ anuales (planes individuales) o hasta 8.500€ adicionales si tu empresa tiene plan de pensiones de empleo y tú aportas.
+Las aportaciones a un plan de pensiones individual reducen la base imponible general del IRPF en el año de la aportación. El límite máximo es 1.500€ anuales (planes individuales), y nunca más del 30% de los rendimientos netos del trabajo y de actividades económicas. Sube hasta 8.500€ más si lo que se añade son contribuciones de tu empresa a un plan de empleo, o aportaciones tuyas a ese mismo plan dentro de una tabla que depende de lo que aporta la empresa (art. 52 de la Ley del IRPF).
 
 **Ejemplo numérico**: si tu marginal del IRPF es del 37% y aportas 1.500€ al plan de pensiones, tu factura fiscal baja en 555€ ese año. El coste real de tu aportación es 945€, no 1.500€.
 
-Esta ventaja se conoce como **deducción a la aportación**. Es lo que hace que los planes de pensiones tengan sentido para contribuyentes con marginales altos del IRPF.
+Técnicamente es una **reducción de la base imponible**, no una deducción de la cuota, y el ahorro depende de tu tipo marginal. Es lo que hace que los planes de pensiones tengan sentido para contribuyentes con marginales altos del IRPF.
 
 **El trade-off**: al rescatar el plan, todo el dinero (aportaciones más rendimientos acumulados) tributa como **rendimientos del trabajo**, no como rentas del ahorro. Esto puede penalizar si el rescate se hace en un único año, ya que llevarás tu tipo marginal al máximo.
 
@@ -6992,7 +6992,7 @@ Para minimizar el impacto fiscal al rescatar:
 
 ---
 
-## Mejores planes de pensiones indexados en 2026
+## Planes de pensiones indexados disponibles en 2026
 
 ### 1. Plan de pensiones de Indexa Capital
 
@@ -7030,13 +7030,13 @@ Mismo enfoque que el roboadvisor de Finizens: carteras indexadas con rebalanceo 
 
 ## El traspaso de plan de pensiones: el movimiento más rentable
 
-Si tienes un plan de pensiones en un banco con comisión del 1,5-1,75%, el traspaso a uno indexado al 0,40% es probablemente el movimiento financiero más rentable que puedes hacer este año. La diferencia anual del 1% sobre el saldo se acumula durante décadas hasta convertirse en una proporción significativa del plan al rescatar.
+Si tienes un plan de pensiones en un banco con comisión del 1,5-1,75%, pasarlo a uno indexado con un coste total de alrededor del 0,5% ahorra en torno a un punto al año. Esa diferencia sobre el saldo se acumula durante décadas hasta convertirse en una proporción significativa del plan al rescatar.
 
 **El proceso**:
 1. Solicita el traspaso desde la web del nuevo gestor (Indexa, MyInvestor, Finizens)
 2. Aportas los datos del plan actual (entidad, número de cuenta del plan)
-3. El nuevo gestor inicia el traspaso, sin coste para ti
-4. En 5-15 días hábiles el dinero aparece en el nuevo plan
+3. El nuevo gestor tiene 2 días hábiles, desde que tiene toda la documentación, para pedir el traspaso al antiguo
+4. El antiguo tiene 5 días hábiles para ordenar la transferencia, y no puede cobrar gastos ni penalizaciones por ello (art. 50 del Reglamento de planes y fondos de pensiones)
 5. **No hay evento fiscal**: el traspaso entre planes de pensiones no tributa
 
 Para calcular el impacto exacto del cambio, usa la [calculadora de interés compuesto](/calculadora/interes-compuesto) introduciendo tu saldo actual, los años hasta la jubilación y la diferencia de comisiones (~1%).
@@ -7056,7 +7056,7 @@ Para calcular el impacto exacto del cambio, usa la [calculadora de interés comp
 
 **Cómo se suele combinar**:
 - **Hasta 1.500€/año**: es lo que un plan de pensiones individual permite reducir de la base imponible
-- **Más allá de 1.500€/año**: la aportación al plan ya no reduce la base, y los fondos indexados dan más liquidez y suelen tener menos comisiones
+- **Más allá de 1.500€/año**: la ley no deja aportar más a un plan individual (art. 5.3 de la Ley de Planes y Fondos de Pensiones), así que el resto va a otros productos, como los fondos indexados, que dan más liquidez y suelen tener menos comisiones
 
 Es una combinación frecuente entre inversores indexados en España. Para profundizar en la diferencia fiscal entre ambos productos, lee la [comparativa entre plan de pensiones y fondo indexado](/blog/plan-de-pensiones-vs-fondo-indexado).
 
@@ -7065,7 +7065,7 @@ Es una combinación frecuente entre inversores indexados en España. Para profun
 ## Errores frecuentes al elegir plan de pensiones
 
 1. **Aportar al plan más caro de tu banco** "porque ya lo tienes ahí": la comisión del 1,5% se come la deducción fiscal en pocos años.
-2. **Aportar más de 1.500€/año en un plan individual**: el exceso no es deducible y queda atrapado en el plan con la fiscalidad menos ventajosa que el fondo indexado.
+2. **Contar con aportar más de 1.500€/año a un plan individual**: la ley no lo permite, así que el ahorro que pase de ahí tiene que ir a otro sitio.
 3. **Rescatar todo el plan en un único año al jubilarse**: dispara el tipo marginal del IRPF. Mejor en forma de renta o en varios ejercicios.
 4. **Olvidar la opción de traspaso**: si llevas años en un plan caro, el traspaso a un plan indexado puede salvar decenas de miles de euros del rescate final.
 
@@ -7076,6 +7076,8 @@ Es una combinación frecuente entre inversores indexados en España. Para profun
 - [Indexa Capital — Costes de sus planes de pensiones](https://support.indexacapital.com/es/esp/pensiones-comisiones) — Desglose oficial del coste total de cada plan.
 - [MyInvestor — Planes de pensiones](https://myinvestor.es/inversion/planes-pensiones/) — Comparativa de los planes indexados de MyInvestor con comisiones actualizadas.
 - [AEAT — Aportaciones a planes de pensiones](https://sede.agenciatributaria.gob.es) — Información oficial sobre límites y deducciones aplicables.
+- [BOE — Ley de Planes y Fondos de Pensiones (RDLeg 1/2002)](https://www.boe.es/buscar/act.php?id=BOE-A-2002-24252) — Límite de aportaciones (art. 5.3), contingencias y supuestos de liquidez (art. 8).
+- [BOE — Reglamento de planes y fondos de pensiones (RD 304/2004)](https://www.boe.es/buscar/act.php?id=BOE-A-2004-3453) — Traspasos, plazos y prohibición de gastos (art. 50).
 `,
   },
   {
