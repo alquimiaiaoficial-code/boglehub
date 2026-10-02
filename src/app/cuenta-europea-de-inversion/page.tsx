@@ -267,6 +267,12 @@ export default function CuentaEuropeaPage() {
               derogado (art. 86 de la Constitución). Con él decaen la cuenta, su fiscalidad y el registro
               de fondos elegibles que iba a crear la CNMV.
             </p>
+            <p className="mt-3">
+              Votaron en contra 178 diputados y a favor 172, según{' '}
+              <Fuente href="https://www.finect.com/usuario/eduardogarcia/articulos/la-cuenta-financia-europa-tendra-que-esperar-el-congreso-tumba-el-decreto-que-la-creaba">Finect</Fuente>.
+              El Gobierno puede volver a aprobar la cuenta en otro real decreto-ley o en un proyecto de
+              ley. Si lo hace, esta página se actualizará con el texto nuevo.
+            </p>
           </section>
 
           <section className="mb-10" aria-labelledby="faq">
